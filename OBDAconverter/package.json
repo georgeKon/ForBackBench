@@ -1,0 +1,19 @@
+{
+  "name": "obda-converters",
+  "description": "A collection of converter tools for OBDA file formats",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "James Errington",
+  "private": true,
+  "bin": {
+    "obdaconvert": "./index.js"
+  },
+  "scripts": {
+    "grammars": "node ./app/misc/grammars",
+    "postinstall": "yarn run grammars"
+  },
+  "dependencies": {
+    "commander": "2.19.0",
+    "pegjs": "0.10.0"
+  }
+}
