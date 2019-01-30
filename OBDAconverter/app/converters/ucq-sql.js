@@ -62,7 +62,7 @@ function convertUcqToSql(ucqArray, schemaString) {
     acc.push(selectStatement)
 
     let fromStatement = fixedConstraints.reduce((accum, [name], i) => {
-      accum += `${name} as ${toChar(i)}, `
+      accum += `"${name}" as ${toChar(i)}, `
       return accum
     }, 'FROM ')
 
@@ -75,17 +75,17 @@ function convertUcqToSql(ucqArray, schemaString) {
         variables.forEach((variable, k) => {
           if(variable.charAt(0) === '?') {
             otherVariables.forEach((otherVariable, l) => {
-              if(variable === otherVariable) accum += `${getAttributeString(j, otherName, parsedSchema, l)} = ${getAttributeString(i, name, parsedSchema, k)}, `
+              if(variable === otherVariable) accum += `${getAttributeString(j, otherName, parsedSchema, l)} = ${getAttributeString(i, name, parsedSchema, k)} AND `
             })
           } else {
-            accum += `${getAttributeString(i, name, parsedSchema, k)} = ${variable.substring(variable.lastIndexOf('/') + 1)}, `
+            accum += `${getAttributeString(i, name, parsedSchema, k)} = '${variable}' AND `
           }
         })
       })
       return accum
     }, 'WHERE ')
 
-    whereStatement = whereStatement.substring(0, whereStatement.lastIndexOf(', '))
+    whereStatement = whereStatement.substring(0, whereStatement.lastIndexOf(' AND '))
     acc.push(whereStatement, 'UNION')
 
     return acc
