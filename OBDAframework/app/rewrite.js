@@ -28,9 +28,6 @@ async function computeRewritings(queryPath, ontologyPath, tool, config) {
   
   let ucqs
 
-  console.log('query path:', queryPath)
-  console.log('ontology path', ontologyPath)
-
   switch(tool) {
     case 'rapid':
       ucqs = await new Promise((resolve, reject) => {

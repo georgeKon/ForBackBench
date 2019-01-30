@@ -5,6 +5,8 @@ const { version } = require('./package.json')
 const { loadDataCmd } = require('./app/load')
 const { computeRewritingsCmd } = require('./app/rewrite')
 const { executeUcqCmd } = require('./app/execute')
+const { runBenchmarkCmd } = require('./app/combined')
+
 
 program
   .version(version, '-v, --version')
@@ -26,5 +28,11 @@ program
   .arguments('<ucq> <shema> <config>')
   .description('Execute a UCQ against a database')
   .action((ucq, schema, options) => executeUcqCmd(ucq, schema, options))
+
+program
+  .command('test')
+  .arguments('<schema> <data> <query> <ontology> <tool> <config>')
+  .description('Run a full test with the given query and ontology')
+  .action((schema, data, query, ontology, tool, config, options) => runBenchmarkCmd(schema, data, query, ontology, tool, config, options))
 
 program.parse(process.argv)

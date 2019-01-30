@@ -18,6 +18,7 @@ async function loadDataCmd(schemaPath, dataPath, configPath, options) {
 async function loadData(schemaPath, dataPath, client, config, options) {
 
   const schema = fs.readFileSync(path.resolve(schemaPath), 'utf-8')
+  // FIXME: Could be join to be consistent
   const query = convertSchemaToSql(schema).reduce((acc, elem) => acc.concat(elem))
 
   console.log('Importing schema...')

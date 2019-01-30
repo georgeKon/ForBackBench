@@ -9,7 +9,7 @@ function convertUcqToSqlCmd(ucqPath, schemaPath) {
   const schemaString = fs.readFileSync(path.resolve(schemaPath), 'utf8')
 
   const sqlArray = convertUcqToSql(ucqArray, schemaString)
-  console.log(sqlArray)
+  console.log(sqlArray) 
 }
 
 function convertUcqToSql(ucqArray, schemaString) {
@@ -19,12 +19,10 @@ function convertUcqToSql(ucqArray, schemaString) {
   const lines = ucqArray.reduce((acc, elem, index) => {
     let parsed
     try {
-      console.log('Rapid parse')
       parsed = rapidUcqParser.parse(elem)
     } catch(err) {
-      console.log(err)
+      console.error(err)
       try {
-        console.log('Iqaros parse')
         parsed = iqarosUcqParser.parse(elem)
       } catch(err) {
         console.error('Error parsing UCQ')
