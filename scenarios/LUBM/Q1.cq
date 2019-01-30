@@ -1,1 +1,1 @@
-Q(?0) <- GraduateStudent(?0), takesCourse(?0, Department0-University0-GraduateCourse0) .
+Q(?0) <- GraduateStudent(?0), takesCourse(?0, Department0-University0-GraduateCourse0)

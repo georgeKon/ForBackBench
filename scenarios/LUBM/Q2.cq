@@ -1,1 +1,1 @@
-Q(?0, ?1, ?2) <- GraduateStudent(?0), University(?1), Department(?2), memberOf(?1, ?2), subOrganizationOf(?2, ?1), undergraduateDegreeFrom(?0, ?1) .
+Q(?X,?Y,?Z) <- GraduateStudent(?X),University(?Y),Department(?Z),memberOf(?X,?Z),subOrganizationOf(?Z,?Y),undergraduateDegreeFrom(?X,?Y)
