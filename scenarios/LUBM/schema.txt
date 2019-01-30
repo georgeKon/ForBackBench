@@ -1,0 +1,226 @@
+AdministrativeStaff {
+	c0 : STRING
+}
+advisor {
+	c0 : STRING
+	c1 : STRING
+}
+affiliatedOrganizationOf {
+	c0 : STRING
+	c1 : STRING
+}
+affiliateOf {
+	c0 : STRING
+	c1 : STRING
+}
+age {
+	c0 : STRING
+	c1 : STRING
+}
+Article {
+	c0 : STRING
+}
+AssistantProfessor {
+	c0 : STRING
+}
+AssociateProfessor {
+	c0 : STRING
+}
+Book {
+	c0 : STRING
+}
+Chair {
+	c0 : STRING
+}
+ClericalStaff {
+	c0 : STRING
+}
+College {
+	c0 : STRING
+}
+ConferencePaper {
+	c0 : STRING
+}
+Course {
+	c0 : STRING
+}
+Dean {
+	c0 : STRING
+}
+degreeFrom {
+	c0 : STRING
+	c1 : STRING
+}
+Department {
+	c0 : STRING
+}
+Director {
+	c0 : STRING
+}
+doctoralDegreeFrom {
+	c0 : STRING
+	c1 : STRING
+}
+emailAddress {
+	c0 : STRING
+	c1 : STRING
+}
+Employee {
+	c0 : STRING
+}
+Faculty {
+	c0 : STRING
+}
+FullProfessor {
+	c0 : STRING
+}
+GraduateCourse {
+	c0 : STRING
+}
+GraduateStudent {
+	c0 : STRING
+}
+hasAlumnus {
+	c0 : STRING
+	c1 : STRING
+}
+headOf {
+	c0 : STRING
+	c1 : STRING
+}
+Institute {
+	c0 : STRING
+}
+JournalArticle {
+	c0 : STRING
+}
+Lecturer {
+	c0 : STRING
+}
+listedCourse {
+	c0 : STRING
+	c1 : STRING
+}
+Manual {
+	c0 : STRING
+}
+mastersDegreeFrom {
+	c0 : STRING
+	c1 : STRING
+}
+member {
+	c0 : STRING
+	c1 : STRING
+}
+memberOf {
+	c0 : STRING
+	c1 : STRING
+}
+orgPublication {
+	c0 : STRING
+	c1 : STRING
+}
+PostDoc {
+	c0 : STRING
+}
+Professor {
+	c0 : STRING
+}
+Program {
+	c0 : STRING
+}
+publicationAuthor {
+	c0 : STRING
+	c1 : STRING
+}
+publicationDate {
+	c0 : STRING
+	c1 : STRING
+}
+publicationResearch {
+	c0 : STRING
+	c1 : STRING
+}
+Research {
+	c0 : STRING
+}
+ResearchAssistant {
+	c0 : STRING
+}
+ResearchGroup {
+	c0 : STRING
+}
+researchProject {
+	c0 : STRING
+	c1 : STRING
+}
+Software {
+	c0 : STRING
+}
+softwareDocumentation {
+	c0 : STRING
+	c1 : STRING
+}
+softwareVersion {
+	c0 : STRING
+	c1 : STRING
+}
+Specification {
+	c0 : STRING
+}
+Student {
+	c0 : STRING
+}
+subOrganizationOf {
+	c0 : STRING
+	c1 : STRING
+}
+SystemsStaff {
+	c0 : STRING
+}
+teacherOf {
+	c0 : STRING
+	c1 : STRING
+}
+TeachingAssistant {
+	c0 : STRING
+}
+teachingAssistantOf {
+	c0 : STRING
+	c1 : STRING
+}
+TechnicalReport {
+	c0 : STRING
+}
+telephone {
+	c0 : STRING
+	c1 : STRING
+}
+tenured {
+	c0 : STRING
+	c1 : STRING
+}
+title {
+	c0 : STRING
+	c1 : STRING
+}
+undergraduateDegreeFrom {
+	c0 : STRING
+	c1 : STRING
+}
+UndergraduateStudent {
+	c0 : STRING
+}
+University {
+	c0 : STRING
+}
+UnofficialPublication {
+	c0 : STRING
+}
+VisitingProfessor {
+	c0 : STRING
+}
+worksFor {
+	c0 : STRING
+	c1 : STRING
+}

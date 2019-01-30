@@ -1,0 +1,13 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://vicodi.org/ontology#>
+
+SELECT DISTINCT ?0 
+WHERE {
+	?0  rdf:type :Individual .
+	?0  :hasRole ?1  .
+	?1  rdf:type :Scientist .
+	?0  :hasRole ?2  .
+	?2  rdf:type :Discoverer .
+	?0  :hasRole ?3  .
+	?3  rdf:type :Inventor
+}

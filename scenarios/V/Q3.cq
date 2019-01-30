@@ -1,0 +1,1 @@
+Q(?0,?1) <- Time-Dependant-Relation(?0), hasRelationMember(?0,?1), Event(?1)

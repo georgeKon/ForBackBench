@@ -1,0 +1,1 @@
+Q(?0) <- Individual(?0), hasRole(?0,?1), Scientist(?1), hasRole(?0,?2), Discoverer(?2), hasRole(?0,?3), Inventor(?3)
