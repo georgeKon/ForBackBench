@@ -3,6 +3,7 @@
 const program = require('commander');
 const { version } = require('./package.json')
 const { convertSchemaToSql, convertSchemaToSqlCmd } = require('./app/converters/schema-sql')
+const { convertSparqlToQuery, convertSparqlToQueryCmd } = require('./app/converters/sparql-query')
 
 program
   .version(version, '-v, --version')
@@ -22,5 +23,6 @@ program
 program.parse(process.argv)
 
 module.exports = {
-  convertSchemaToSql
+  convertSchemaToSql,
+  convertSparqlToQuery
 }
