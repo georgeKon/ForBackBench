@@ -1,0 +1,16 @@
+{
+  "name": "obda-benchmark",
+  "description": "Benchmarking framework for OBDA query rewriters based on ChaseBench",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "James Errington",
+  "private": true,
+  "bin": {
+    "obdabenchmark": "./index.js"
+  },
+  "dependencies": {
+    "commander": "2.19.0",
+    "pg": "7.8.0",
+    "pg-copy-streams": "1.2.0"
+  }
+}
