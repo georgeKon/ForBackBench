@@ -11,7 +11,10 @@ atoms
   = (atom ", " / atom)+
 
 var
-  = "?" name:[a-zA-Z0-9\_]+ { return name.join('') }
+  = name:("?" [a-zA-Z0-9\_]+) { return name.join('') }
+
+const
+  = name:[a-zA-Z0-9\_\-\:\/\.]+ { return name.join('') }
 
 vars
-  =  (var ", "/ var)+ 
+  =  (var ", " / var / const ", "/ const)+

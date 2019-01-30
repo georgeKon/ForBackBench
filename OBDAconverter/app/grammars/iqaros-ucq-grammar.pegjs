@@ -11,7 +11,7 @@ atoms
   = (atom " ^ " / atom)+
 
 var
-  = "X" name:[a-zA-Z0-9\_]+ { return name.join('') }
+  = name:("X" [a-zA-Z0-9\_]+) { return name.join('') }
 
 vars
   =  (var ","/ var)+ 

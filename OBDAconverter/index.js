@@ -4,6 +4,7 @@ const program = require('commander');
 const { version } = require('./package.json')
 const { convertSchemaToSql, convertSchemaToSqlCmd } = require('./app/converters/schema-sql')
 const { convertSparqlToQuery, convertSparqlToQueryCmd } = require('./app/converters/sparql-query')
+const { convertUcqToSql, convertUcqToSqlCmd } = require('./app/converters/ucq-sql')
 
 program
   .version(version, '-v, --version')
@@ -20,9 +21,16 @@ program
   .description('Convert SPARQL query to conjunctive query')
   .action((query, options) => convertSparqlToQueryCmd(query))
 
+program
+  .command('ucq')
+  .arguments('<ucq> <schema>')
+  .description('Convert UCQ to SQL')
+  .action((ucq, schema, options) => convertUcqToSqlCmd(ucq, schema))
+
 program.parse(process.argv)
 
 module.exports = {
   convertSchemaToSql,
-  convertSparqlToQuery
+  convertSparqlToQuery,
+  convertUcqToSql
 }

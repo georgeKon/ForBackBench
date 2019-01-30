@@ -28,6 +28,9 @@ async function computeRewritings(queryPath, ontologyPath, tool, config) {
   
   let ucqs
 
+  console.log('query path:', queryPath)
+  console.log('ontology path', ontologyPath)
+
   switch(tool) {
     case 'rapid':
       ucqs = await new Promise((resolve, reject) => {
@@ -50,7 +53,7 @@ async function computeRewritings(queryPath, ontologyPath, tool, config) {
       break
     case 'iqaros':
       ucqs = await new Promise((resolve, reject) => {
-        exec(`java -jar ${toolPath} ${conjunctiveQueryPath} ${ontologyPath}`, (err, stdout, stderr) => {
+        exec(`java -jar ${toolPath} ${ontologyPath} ${conjunctiveQueryPath}`, (err, stdout, stderr) => {
           if(err) {
             console.error(err)
             if(stderr) {

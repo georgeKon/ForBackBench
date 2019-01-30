@@ -1,0 +1,2 @@
+Q(?X, ?Y, ?Z) <- GraduateStudent(?X), undergraduateDegreeFrom(?X, ?Y), Department(?Z), headOf(?X, ?Z), subOrganizationOf(?Z, ?Y)
+Q(?X, ?Y, ?Z) <- GraduateStudent(?X), undergraduateDegreeFrom(?X, ?Y), Department(?Z), member(?Z, ?X), subOrganizationOf(?Z, ?Y)
