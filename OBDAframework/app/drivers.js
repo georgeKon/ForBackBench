@@ -19,15 +19,35 @@ async function queryDatabase(client, query) {
   return client.query(query)
 }
 
+async function beginTransaction(client) {
+  return client.query('BEGIN;')
+}
+
+async function commitTransaction(client) {
+  return client.query('COMMIT;')
+}
+
+async function abortTransaction(client) {
+  return client.query('ROLLBACK;')
+}
+
 async function closeDatabaseConnection(client) {
   console.log('Closing Postgres connection...')
   await client.end()
   console.log('Connection closed')
 }
 
+const db = {
+  openDatabaseConnection,
+  beginTransaction,
+  queryDatabase,
+  commitTransaction,
+  abortTransaction,
+  closeDatabaseConnection
+}
+
+
 module.exports = {
   parseConfig,
-  openDatabaseConnection,
-  queryDatabase,
-  closeDatabaseConnection
+  db
 }

@@ -17,12 +17,11 @@ async function computeRewritings(queryPath, ontologyPath, tool, config) {
   console.log(`Running ${tool}`)
   const toolPath = path.resolve(config.tools.find(({ name }) => name === tool).path)
   queryPath = path.resolve(queryPath)
-  let conjunctiveQueryPath = queryPath.replace('.rq', '.cq')
+  const conjunctiveQueryPath = queryPath.replace('.rq', '.cq')
   ontologyPath = path.resolve(ontologyPath)
-  let commonQuery
 
   if(path.extname(queryPath) === '.rq') {
-    commonQuery = convertSparqlToQuery(fs.readFileSync(queryPath, 'utf8'))
+    const commonQuery = convertSparqlToQuery(fs.readFileSync(queryPath, 'utf8'))
     fs.writeFileSync(conjunctiveQueryPath, commonQuery)
   }
   
@@ -60,6 +59,24 @@ async function computeRewritings(queryPath, ontologyPath, tool, config) {
           }
           if(stdout) {
             const array = stdout.split('\r\n')
+            array.pop()
+            resolve(array)
+          }
+        })
+      })
+      break
+    case 'graal':
+      ucqs = await new Promise((resolve, reject) => {
+        exec(`java -jar ${toolPath} ${ontologyPath} ${queryPath} rewrite`, (err, stdout, stderr) => {
+          if(err) {
+            console.error(err)
+            if(stderr) {
+              console.error(stderr)
+              return
+            }
+          }
+          if(stdout) {
+            const array = stdout.split('\n')
             array.pop()
             resolve(array)
           }
