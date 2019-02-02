@@ -1,12 +1,12 @@
 const fs = require('fs')
 const path = require('path')
-const { parseConfig, openDatabaseConnection, queryDatabase, closeDatabaseConnection } = require('./drivers')
+const { parseConfig, db } = require('./drivers')
 const { convertUcqToSql } = require('obda-converters')
 
 async function executeUcqCmd(ucqPath, schemaPath, configPath, options) {
   const config = parseConfig(configPath)
 
-  const client = await openDatabaseConnection(config)
+  const client = await db.openDatabaseConnection(config)
 
   const ucqString = fs.readFileSync(path.resolve(ucqPath), 'utf8')
   const ucqArray = ucqString.split(/\r?\n/)
@@ -16,7 +16,7 @@ async function executeUcqCmd(ucqPath, schemaPath, configPath, options) {
 
   console.log(result.rows)
 
-  await closeDatabaseConnection(client)
+  await db.closeDatabaseConnection(client)
 }
 
 async function executeUcq(ucqArray, schema, client) {
@@ -24,8 +24,8 @@ async function executeUcq(ucqArray, schema, client) {
   const sql = convertUcqToSql(ucqArray, schemaString).join('\n')
 
   // console.log(sql)
+  const result = await db.queryDatabase(client, sql)
 
-  const result = await queryDatabase(client, sql)
   return result
 }
 

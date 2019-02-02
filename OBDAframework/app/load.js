@@ -21,7 +21,7 @@ async function loadData(schemaPath, dataPath, client, config, options) {
   // FIXME: Could be join to be consistent
   const query = convertSchemaToSql(schema).reduce((acc, elem) => acc.concat(elem))
 
-  const test = await db.beginTransaction(client)
+  await db.beginTransaction(client)
   try {
     console.log('Importing schema...')
     const result = await db.queryDatabase(client, query)
@@ -37,6 +37,7 @@ async function loadData(schemaPath, dataPath, client, config, options) {
       fileStream.pipe(stream)
       const promise = new Promise((resolve, reject) => {
         stream.on('end', () => resolve())
+        stream.on('error', () => reject())
       })
       await promise
     }

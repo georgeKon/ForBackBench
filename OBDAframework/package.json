@@ -10,9 +10,9 @@
   },
   "scripts": {
     "loadTest": "obdabenchmark load ..\\scenarios\\LUBM\\schema.txt ..\\scenarios\\LUBM\\data\\ .\\configs\\testconfig.json",
-    "rewriteTestRapid": "",
-    "rewriteTestIqaros": "",
-    "rewriteTestGraal": ""
+    "rewriteTestRapid": "obdabenchmark rewrite ..\\scenarios\\V\\Q1.rq ..\\scenarios\\V\\ontology.owl rapid .\\configs\\testconfig.json",
+    "rewriteTestIqaros": "obdabenchmark rewrite ..\\scenarios\\V\\Q1.rq ..\\scenarios\\V\\ontology.owl iqaros .\\configs\\testconfig.json",
+    "rewriteTestGraal": "obdabenchmark rewrite ..\\scenarios\\V\\Q1.rq ..\\scenarios\\V\\ontology.owl graal .\\configs\\testconfig.json"
   },
   "dependencies": {
     "commander": "2.19.0",
