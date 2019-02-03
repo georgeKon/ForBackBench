@@ -5,6 +5,8 @@ const { version } = require('./package.json')
 const { convertSchemaToSql, convertSchemaToSqlCmd } = require('./app/converters/schema-sql')
 const { convertSparqlToQuery, convertSparqlToQueryCmd } = require('./app/converters/sparql-query')
 const { convertUcqToSql, convertUcqToSqlCmd } = require('./app/converters/ucq-sql')
+const { convertTgdToSchema, convertTgdToSchemaCmd } = require('./app/converters/tgd-schema')
+const { convertOwlToTgd, convertOwlToTgdCmd } = require('./app/converters/owl-tgd')
 
 program
   .version(version, '-v, --version')
@@ -26,6 +28,18 @@ program
   .arguments('<ucq> <schema>')
   .description('Convert UCQ to SQL')
   .action((ucq, schema, options) => convertUcqToSqlCmd(ucq, schema))
+
+program
+  .command('tgds')
+  .arguments('<tgds>')
+  .description('Convert TGDs to common format schema')
+  .action((tgds, options) => convertTgdToSchemaCmd(tgds, options))
+
+program
+  .command('owl')
+  .arguments('<owl>')
+  .description('Convert OWL ontology to common format TGDs')
+  .action((owl, options) => convertOwlToTgdCmd(owl, options))
 
 program.parse(process.argv)
 

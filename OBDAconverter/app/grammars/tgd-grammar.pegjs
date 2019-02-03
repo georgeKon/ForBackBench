@@ -14,4 +14,4 @@ var
   = "?" name:[a-zA-Z0-9\_]+ { return name.join('') }
 
 vars
-  =  (var ", "/ var)+ 
+  =  (var ","/ var)+ 
