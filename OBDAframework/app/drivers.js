@@ -7,11 +7,15 @@ function parseConfig(configPath) {
   return configObj
 }
 
+function printMessage(message) {
+  console.log(`---${message}---`)
+}
+
 async function openDatabaseConnection({ database }) {
   const client = new Client(database)
-  console.log('Connecting to Postgres...')
+  printMessage('Connecting to Postgres')
   await client.connect()
-  console.log('Postgres connection successful')
+  printMessage('Postgres connection successful')
   return client
 }
 
@@ -32,9 +36,9 @@ async function abortTransaction(client) {
 }
 
 async function closeDatabaseConnection(client) {
-  console.log('Closing Postgres connection...')
+  printMessage('Closing Postgres connection')
   await client.end()
-  console.log('Connection closed')
+  printMessage('Connection closed')
 }
 
 const db = {
@@ -49,5 +53,6 @@ const db = {
 
 module.exports = {
   parseConfig,
+  printMessage,
   db
 }

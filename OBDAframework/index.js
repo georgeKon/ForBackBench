@@ -15,13 +15,15 @@ program
   .command('load')
   .arguments('<schema> <data> <config>')
   .description('Initialise a database with given schema and insert data')
+  .option('-F, --force', 'Force use of provided schema even if cached version exists')
   .action((schema, data, config, options) => loadDataCmd(schema, data, config, options))
 
 program
   .command('rewrite')
   .arguments('<query> <ontology> <tool> <config>')
   .description('Compute UCQ rewriting of given query using specified tool')
-  .action((query, ontology, tool, options) => computeRewritingsCmd(query, ontology, tool, options))
+  .option('-F, --force', 'Force use of provided query even if cached version exists')
+  .action((query, ontology, tool, config, options) => computeRewritingsCmd(query, ontology, tool, config, options))
 
 program
   .command('execute')

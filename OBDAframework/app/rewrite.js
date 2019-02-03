@@ -2,27 +2,35 @@ const fs = require('fs')
 const path = require('path')
 const { exec } = require('child_process')
 const { convertSparqlToQuery } = require('obda-converters')
-const { parseConfig } = require('./drivers')
+const { parseConfig, printMessage } = require('./drivers')
 
-async function computeRewritingsCmd(queryPath, ontologyPath, tool, configPath) {
+async function computeRewritingsCmd(queryPath, ontologyPath, tool, configPath, options) {
   const config = parseConfig(configPath)
 
-  const result = await computeRewritings(queryPath, ontologyPath, tool, config)
+  const result = await computeRewritings(queryPath, ontologyPath, tool, config, options)
 
   console.log(result)
 }
 
-async function computeRewritings(queryPath, ontologyPath, tool, config) {
+async function computeRewritings(queryPath, ontologyPath, tool, config, options) {
 
-  console.log(`Running ${tool}`)
+  printMessage(`Running ${tool}`)
   const toolPath = path.resolve(config.tools.find(({ name }) => name === tool).path)
   queryPath = path.resolve(queryPath)
-  const conjunctiveQueryPath = queryPath.replace('.rq', '.cq')
+  const commonQueryPath = queryPath.replace('.rq', '.cq')
   ontologyPath = path.resolve(ontologyPath)
 
-  if(path.extname(queryPath) === '.rq') {
-    const commonQuery = convertSparqlToQuery(fs.readFileSync(queryPath, 'utf8'))
-    fs.writeFileSync(conjunctiveQueryPath, commonQuery)
+  let commonQuery
+  if(fs.existsSync(commonQueryPath) && !options.force) {
+    printMessage('Using cached common query')
+    commonQuery = fs.readFileSync(commonQueryPath, 'utf8')
+  } else if(path.extname(queryPath) === '.rq') {
+    printMessage('Converting query')
+    commonQuery = convertSparqlToQuery(fs.readFileSync(queryPath, 'utf8'))
+    fs.writeFileSync(commonQueryPath, commonQuery)
+    printMessage('Query conversion successful')
+  } else {
+    throw new Error('No common query or SPARQL file provided')
   }
   
   let ucqs
@@ -30,7 +38,7 @@ async function computeRewritings(queryPath, ontologyPath, tool, config) {
   switch(tool) {
     case 'rapid':
       ucqs = await new Promise((resolve, reject) => {
-        exec(`java -jar ${toolPath} DU SHORT ${ontologyPath} ${conjunctiveQueryPath}`, (err, stdout, stderr) => {
+        exec(`java -jar ${toolPath} DU SHORT ${ontologyPath} ${commonQueryPath}`, (err, stdout, stderr) => {
           if(err) {
             console.error(err)
             if(stderr) {
@@ -49,7 +57,7 @@ async function computeRewritings(queryPath, ontologyPath, tool, config) {
       break
     case 'iqaros':
       ucqs = await new Promise((resolve, reject) => {
-        exec(`java -jar ${toolPath} ${ontologyPath} ${conjunctiveQueryPath}`, (err, stdout, stderr) => {
+        exec(`java -jar ${toolPath} ${ontologyPath} ${commonQueryPath}`, (err, stdout, stderr) => {
           if(err) {
             console.error(err)
             if(stderr) {
