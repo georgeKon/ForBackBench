@@ -75,7 +75,7 @@ async function computeRewritings(queryPath, ontologyPath, tool, config, options)
       break
     case 'graal':
       ucqs = await new Promise((resolve, reject) => {
-        exec(`java -jar ${toolPath} ${ontologyPath} ${queryPath} rewrite`, (err, stdout, stderr) => {
+        exec(`java -jar ${toolPath} ${ontologyPath} ${queryPath} ${options.mode} ${config.database.host} ${config.database.database} ${config.database.user} ${config.database.password}`, (err, stdout, stderr) => {
           if(err) {
             console.error(err)
             if(stderr) {

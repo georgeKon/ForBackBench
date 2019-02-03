@@ -35,6 +35,8 @@ program
   .command('test')
   .arguments('<schema> <data> <query> <ontology> <tool> <config>')
   .description('Run a full test with the given query and ontology')
+  .option('-m, --mode <mode>', 'Graal mode')
+  .option('-F, --force', 'Force use of provided query even if cached version exists')
   .action((schema, data, query, ontology, tool, config, options) => runBenchmarkCmd(schema, data, query, ontology, tool, config, options))
 
 program.parse(process.argv)
