@@ -76,7 +76,7 @@ function convertUcqToSql(ucqArray, schemaString) {
               if(variable === otherVariable) accum += `${getAttributeString(j, otherName, parsedSchema, l)} = ${getAttributeString(i, name, parsedSchema, k)} AND `
             })
           } else {
-            accum += `${getAttributeString(i, name, parsedSchema, k)} = '${variable}' AND `
+            accum += `${getAttributeString(i, name, parsedSchema, k)} = '${variable.replace(/\"/g, '')}' AND `
           }
         })
       })

@@ -1,3 +1,4 @@
+const fs = require('fs')
 const { parseConfig, db } = require('./drivers')
 const { loadData } = require('./load')
 const { computeRewritings } = require('./rewrite')
@@ -9,13 +10,18 @@ async function runBenchmarkCmd(schemaPath, dataPath, queryPath, ontologyPath, to
   const client = await db.openDatabaseConnection(config)
 
   try {
-    const schema = await loadData(schemaPath, dataPath, client, config, options)
+    let schema
+    if(options.init) {
+      schema = await loadData(schemaPath, dataPath, client, config, options)
+    } else {
+      schema = fs.readFileSync(schemaPath, 'utf8')
+    }
     const ucq = await computeRewritings(queryPath, ontologyPath, tool, config, options)
     console.log(ucq)
-    if(!options.mode === 'execute') {
+    // if(!options.mode === 'execute') {
       const result = await executeUcq(ucq, schema, client)
       console.log(result.rows)
-    }
+    // }
   } catch(err) {
     console.error(err)
   } finally {

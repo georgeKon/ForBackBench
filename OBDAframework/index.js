@@ -16,6 +16,7 @@ program
   .arguments('<schema> <data> <config>')
   .description('Initialise a database with given schema and insert data')
   .option('-F, --force', 'Force use of provided schema even if cached version exists')
+  .option('-t, --tgd', 'Flags use of tgd file that must be converted to schema')
   .action((schema, data, config, options) => loadDataCmd(schema, data, config, options))
 
 program
@@ -23,6 +24,7 @@ program
   .arguments('<query> <ontology> <tool> <config>')
   .description('Compute UCQ rewriting of given query using specified tool')
   .option('-F, --force', 'Force use of provided query even if cached version exists')
+  .option('-m, --mode <mode>', 'Graal mode')
   .action((query, ontology, tool, config, options) => computeRewritingsCmd(query, ontology, tool, config, options))
 
 program
@@ -35,8 +37,10 @@ program
   .command('test')
   .arguments('<schema> <data> <query> <ontology> <tool> <config>')
   .description('Run a full test with the given query and ontology')
-  .option('-m, --mode <mode>', 'Graal mode')
+  .option('-I, --init', 'Initalise the database')
   .option('-F, --force', 'Force use of provided query even if cached version exists')
+  .option('-m, --mode <mode>', 'Graal mode')
+  .option('-t, --tgd', 'Flags use of tgd file that must be converted to schema')
   .action((schema, data, query, ontology, tool, config, options) => runBenchmarkCmd(schema, data, query, ontology, tool, config, options))
 
 program.parse(process.argv)

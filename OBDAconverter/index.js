@@ -46,5 +46,6 @@ program.parse(process.argv)
 module.exports = {
   convertSchemaToSql,
   convertSparqlToQuery,
-  convertUcqToSql
+  convertUcqToSql,
+  convertTgdToSchema
 }

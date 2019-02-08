@@ -1,6 +1,6 @@
 const fs = require('fs')
 const path = require('path')
-const { convertSchemaToSql } = require('obda-converters')
+const { convertSchemaToSql, convertTgdToSchema } = require('obda-converters')
 const copyFrom = require('pg-copy-streams').from
 const { parseConfig, printMessage, db } = require('./drivers')
 
@@ -16,7 +16,10 @@ async function loadDataCmd(schemaPath, dataPath, configPath, options) {
 
 
 async function loadData(schemaPath, dataPath, client, config, options) {
-  const schema = fs.readFileSync(path.resolve(schemaPath), 'utf-8')
+  let schema = fs.readFileSync(path.resolve(schemaPath), 'utf-8')
+  if(options.tgd) {
+    schema = convertTgdToSchema(schema.split(/\r?\n/)).join('\n')
+  }
   const sqlPath = schemaPath.replace('.txt', '.sql')
 
   let query

@@ -1,1 +1,1 @@
-Q(?0, ?1, ?2, ?3) <- Professor(?0), worksFor(?0, Department0-University0), name(?0, ?1), emailAddress(?0, ?2), telephone(?0, ?3) .
+Q(?X,?Y1,?Y2,?Y3) <- Professor(?X),worksFor(?X,"Department0-University0"),name(?X,?Y1),emailAddress(?X,?Y2),telephone(?X,?Y3)

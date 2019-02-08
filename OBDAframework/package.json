@@ -10,10 +10,14 @@
   },
   "scripts": {
     "loadTest": "obdabenchmark load ..\\scenarios\\LUBM\\schema.txt ..\\scenarios\\LUBM\\data\\ .\\configs\\testconfig.json",
-    "rewriteTestRapid": "obdabenchmark rewrite ..\\scenarios\\V\\Q1.rq ..\\scenarios\\V\\ontology.owl rapid .\\configs\\testconfig.json",
-    "rewriteTestIqaros": "obdabenchmark rewrite ..\\scenarios\\V\\Q1.rq ..\\scenarios\\V\\ontology.owl iqaros .\\configs\\testconfig.json",
-    "rewriteTestGraal": "obdabenchmark rewrite ..\\scenarios\\V\\Q1.rq ..\\scenarios\\V\\ontology.owl graal .\\configs\\testconfig.json -m rewrite",
-    "testGraal": "obdabenchmark test ..\\scenarios\\LUBM\\schema.txt ..\\scenarios\\LUBM\\data\\ ..\\scenarios\\V\\Q1.rq ..\\scenarios\\V\\ontology.owl graal .\\configs\\testconfig.json -m execute"
+    "loadTestLarge": "obdabenchmark load ..\\scenarios\\LUBM\\schema.txt ..\\scenarios\\LUBM\\cb-data\\ .\\configs\\testconfig.json",
+    "rewriteTestRapid": "obdabenchmark rewrite ..\\scenarios\\LUBM\\Q2.rq ..\\scenarios\\LUBM\\U.owl rapid .\\configs\\testconfig.json",
+    "executeTest": "obdabenchmark execute ..\\scenarios\\LUBM\\Q1.ucq ..\\scenarios\\LUBM\\schema.txt .\\configs\\testconfig.json",
+    "rewriteTestIqaros": "obdabenchmark rewrite ..\\scenarios\\LUBM\\Q1.rq ..\\scenarios\\LUBM\\U.owl iqaros .\\configs\\testconfig.json",
+    "rewriteTestGraal": "obdabenchmark rewrite ..\\scenarios\\LUBM\\Q2.rq ..\\scenarios\\LUBM\\ontology-dllite.owl graal .\\configs\\testconfig.json -m rewrite",
+    "testGraal": "obdabenchmark test ..\\scenarios\\LUBM\\schema.txt ..\\scenarios\\LUBM\\data\\ ..\\scenarios\\LUBM\\Q1.rq ..\\scenarios\\LUBM\\ontology.owl graal .\\configs\\testconfig.json -m execute",
+    "testRapid": "obdabenchmark test ..\\scenarios\\LUBM\\schema.txt ..\\scenarios\\LUBM\\cb-data\\ ..\\scenarios\\LUBM\\Q1.rq ..\\scenarios\\LUBM\\ontology.owl rapid .\\configs\\testconfig.json",
+    "testIqaros": "obdabenchmark test ..\\scenarios\\LUBM\\schema.txt ..\\scenarios\\LUBM\\cb-data\\ ..\\scenarios\\LUBM\\Q1.rq ..\\scenarios\\LUBM\\ontology.owl iqaros .\\configs\\testconfig.json"
   },
   "dependencies": {
     "commander": "2.19.0",

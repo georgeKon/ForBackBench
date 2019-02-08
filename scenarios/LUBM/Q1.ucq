@@ -1,1 +1,1 @@
-Q(?X) <- GraduateStudent(?X), takesCourse(?X, http://www.Department0.University0.edu/GraduateCourse0)
+Q(?X) <- GraduateStudent(?X), takesCourse(?X, Department0-University0-GraduateCourse0)

@@ -1,1 +1,1 @@
-Q(?x) <- Actress(?x),birthName(?x,"Pfeiffer, Michelle")
+Q(?x) <- Actress(?x),http://dbpedia.org/ontology/birthName(?x,"Pfeiffer, Michelle")

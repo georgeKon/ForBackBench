@@ -1,1 +1,1 @@
-Q(?0) <- Publication(?0), publicationAuthor(?0, Department0-University0-AssistantProfessor0) .
+Q(?X) <- Publication(?X),publicationAuthor(?X,"Department0-University0-AssistantProfessor0")
