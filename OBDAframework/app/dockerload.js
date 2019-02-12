@@ -3,7 +3,7 @@ const Logger = require('./utils/logger')
 const DB = require('./utils/db')
 
 async function loadDataCmd() {
-  const logger = new Logger({ label: 'DockerLoad', logPath: '../logs' })
+  const logger = new Logger({ label: 'DockerLoad', logPath: './logs' })
   try {
     const db = new DB(logger)
     await db.connect()

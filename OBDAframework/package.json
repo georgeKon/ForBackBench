@@ -9,6 +9,7 @@
     "obdabenchmark": "./index.js"
   },
   "scripts": {
+    "build": "tsc",
     "loadTest": "obdabenchmark load ..\\scenarios\\LUBM\\schema.txt ..\\scenarios\\LUBM\\data\\ .\\configs\\testconfig.json",
     "loadTestLarge": "obdabenchmark load ..\\scenarios\\LUBM\\schema.txt ..\\scenarios\\LUBM\\cb-data\\ .\\configs\\testconfig.json",
     "rewriteTestRapid": "obdabenchmark rewrite ..\\scenarios\\LUBM\\Q2.rq ..\\scenarios\\LUBM\\U.owl rapid .\\configs\\testconfig.json",
@@ -22,6 +23,10 @@
   "dependencies": {
     "commander": "2.19.0",
     "pg": "7.8.0",
-    "pg-copy-streams": "1.2.0"
+    "pg-copy-streams": "1.2.0",
+    "typescript": "3.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "11.9.2"
   }
 }

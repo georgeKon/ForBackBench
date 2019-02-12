@@ -1,6 +1,6 @@
-const fs = require('fs')
-const path = require('path')
-const DateTime= require('./datetime')
+import * as fs from 'fs'
+import * as path from 'path'
+import DateTime from './datetime'
 
 class Logger {
   constructor({ logPath, label, mute } = { logPath: __dirname, label: '', mute: false}) {
@@ -10,7 +10,7 @@ class Logger {
     this.mute = mute
   }
 
-  log(message, type) {
+  log(message : String, type : String) {
     const dateTime = new DateTime()
     const line = `${dateTime.timeStamp} ${type} ${message}`
     if(!this.mute) {
@@ -19,17 +19,23 @@ class Logger {
     this.stream.write(line)
   }
 
-  info(message) {
+  info(message : String) {
     this.log(message, 'INFO')
   }
 
-  error(message) {
+  error(message : String) {
     this.log(message, 'ERROR')
   }
 
-  out(message) {
-    this.info(message, 'OUT')
+  out(message : String) {
+    this.log(message, 'OUT')
   }
 }
 
-module.exports = Logger
+interface Logger {
+  mute : Boolean
+  stream : any
+}
+
+const logger = new Logger()
+logger.info('test typescript')

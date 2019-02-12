@@ -16,4 +16,8 @@ class DateTime {
   }
 }
 
-module.exports = DateTime
+interface DateTime {
+  date : Date
+}
+
+export default DateTime

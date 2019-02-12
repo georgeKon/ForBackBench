@@ -7,10 +7,8 @@ services:
       POSTGRES_USER: ${PG_USER}
       POSTGRES_PASSWORD: ${PG_PASSWORD}
       POSTGRES_DB: ${PG_DB}
-  converters:
-    build: ./OBDAconverter
   framework:
-    build: ./OBDAframework
+    build: ./
     environment:
       PGUSER: ${PG_USER}
       PGHOST: db
@@ -21,4 +19,3 @@ services:
       - db
     links:
       - db
-      - converters
