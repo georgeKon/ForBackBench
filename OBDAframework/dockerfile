@@ -1,13 +1,14 @@
 FROM node:10-alpine
 
-RUN mkdir -p /framework
-WORKDIR /framework
+RUN mkdir -p /usr/src/
+RUN mkdir -p /usr/logs/
+WORKDIR /usr/src/
 
-COPY package.json /framework/
-COPY yarn.lock /framework/
+COPY package.json /usr/src/
+COPY yarn.lock /usr/src/
+
+COPY . /usr/src/
+
 RUN yarn
 
-COPY . /framework
-COPY ./scenarios /framework/
-
-CMD ["node", "./app/dockerload.js"]
+CMD ["node", "app/dockerload.js"]
