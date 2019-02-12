@@ -3,7 +3,7 @@ const path = require('path')
 const DateTime= require('./datetime')
 
 class Logger {
-  constructor({ logPath = __dirname, label = '', mute = false }) {
+  constructor({ logPath, label, mute } = { logPath: __dirname, label: '', mute: false}) {
     const dateTime = new DateTime()
     const name = `${dateTime.dateTimeStamp}-${label}.log`
     this.stream = fs.createWriteStream(path.resolve(logPath, name), { flags: 'a+' })
