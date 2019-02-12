@@ -4,17 +4,17 @@ services:
     image: postgres:11
     restart: always
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: lubm
+      POSTGRES_USER: ${PG_USER}
+      POSTGRES_PASSWORD: ${PG_PASSWORD}
+      POSTGRES_DB: ${PG_DB}
   framework:
     build: ./OBDAframework
-    enviroment:
-      PGUSER: postgres
+    environ;ment:
+      PGUSER: ${PG_USER}
       PGHOST: db
-      PGPASSWORD: password
-      PGDATABASE: lubm
-      PGPORT: 5432
+      PGPASSWORD: ${PG_PASSWORD}
+      PGDATABASE: ${PG_DB}
+      PGPORT: ${PG_PORT}
     depends_on:
       - db
     links:
