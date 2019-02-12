@@ -6,6 +6,7 @@ async function loadDataCmd() {
   const logger = new Logger({ label: 'DockerLoad', logPath: './logs' })
   try {
     const db = new DB()
+    await db.connect()
     await loadData(db, logger)
     await db.close()
   } catch(err) {
@@ -14,7 +15,6 @@ async function loadDataCmd() {
 }
 
 async function loadData(db, logger) {
-  console.log(db)
   try {
     await db.transact()
     await db.query({
@@ -23,7 +23,7 @@ async function loadData(db, logger) {
     await db.commit()
     logger.info('Schema import committed')
   } catch(err) {
-    db.abort()
+    await db.abort()
     throw new Error(err)
   }
 }

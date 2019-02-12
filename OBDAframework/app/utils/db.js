@@ -1,11 +1,9 @@
 const { Client } = require('pg')
 
 class DB {
-  constructor({ autoOpen } = { autoOpen: true }) {
+  constructor() {
     this.connection = null
-    if (autoOpen) {
-      this.connect()
-    }
+    this.transaction = false
   }
 
   async connect() {
@@ -16,32 +14,47 @@ class DB {
 
   async transact() {
     if (this.connection) {
-      this.connection.query('BEGIN;')
+      this.transaction = true
+      await this.connection.query('BEGIN;')
+    } else {
+      throw new Error('Cannot begin transction - No open database connection')
     }
   }
 
   async commit() {
     if (this.connection) {
-      this.connection.query('COMMIT;')
+      await this.connection.query('COMMIT;')
+      this.transaction = false
+    } else {
+      throw new Error('Cannot commit transction - No open database connection')
     }
   }
 
   async abort() {
     if (this.connection) {
-      this.connection.query('ABORT;')
+      await this.connection.query('ABORT;')
+      this.transaction = false
+    } else {
+      throw new Error('Cannot abort transction - No open database connection')
     }
   }
 
   async query(query) {
     if (this.connection) {
       return this.connection.query(query)
+    } else {
+      throw new Error('Cannot perform query - No open database connection')
     }
   }
 
   async close() {
     if (this.connection) {
-      this.abort()
-      this.connection.end()
+      if(this.transaction) {
+        await this.abort()
+      }
+      await this.connection.end()
+    } else {
+      throw new Error('Cannot close connection - No open database connection')
     }
   }
 }
