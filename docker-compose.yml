@@ -1,0 +1,21 @@
+version: '3'
+services:
+  db:
+    image: postgres:11
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: lubm
+  framework:
+    build: ./OBDAframework
+    enviroment:
+      PGUSER: postgres
+      PGHOST: db
+      PGPASSWORD: password
+      PGDATABASE: lubm
+      PGPORT: 5432
+    depends_on:
+      - db
+    links:
+      - db

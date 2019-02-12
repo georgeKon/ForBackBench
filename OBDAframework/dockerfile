@@ -1,0 +1,8 @@
+FROM node:10-alpine
+
+COPY . /framework
+COPY ../scenarios /framework
+
+RUN yarn
+
+CMD ["node", "app/dockerload.js"]
