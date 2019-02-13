@@ -3,3 +3,4 @@ configs
 logs
 dist
 .vscode
+app/converters/grammars/*.js

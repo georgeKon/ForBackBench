@@ -9,6 +9,7 @@
     "obdabenchmark": "./index.js"
   },
   "scripts": {
+    "postinstall": "node ./app/utils/postinstall",
     "build": "tsc",
     "loadTest": "obdabenchmark load ..\\scenarios\\LUBM\\schema.txt ..\\scenarios\\LUBM\\data\\ .\\configs\\testconfig.json",
     "loadTestLarge": "obdabenchmark load ..\\scenarios\\LUBM\\schema.txt ..\\scenarios\\LUBM\\cb-data\\ .\\configs\\testconfig.json",
@@ -23,11 +24,12 @@
   "dependencies": {
     "commander": "2.19.0",
     "pg": "7.8.0",
-    "pg-copy-streams": "1.2.0",
-    "typescript": "3.3.3"
+    "pg-copy-streams": "1.2.0"
   },
   "devDependencies": {
+    "typescript": "3.3.3",
     "@types/node": "11.9.2",
-    "@types/pg": "^7.4.11"
+    "@types/pg": "7.4.11",
+    "pegjs": "0.10.0"
   }
 }
