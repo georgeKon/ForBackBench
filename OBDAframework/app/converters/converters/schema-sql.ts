@@ -11,16 +11,19 @@ export function convertSchemaToSqlCmd(schemaPath : string, options : any) : void
   console.log(sqlArray)
 }
 
-export function convertSchemaToSql(schemaString : string, options : any) : string[] {
+export function convertSchemaToSql(schemaString : string, options? : any) : string[] {
   const trimmedInput = schemaString.trim().replace(/[\s+]+/g, ' ')
   const parsed = parser.parse(trimmedInput)
-  
+
+  // @ts-ignore
   const lines = parsed.reduce((acc : string[], [name, attributes] : [string, Array<string>]) => {
     let createStatment = `CREATE TABLE "${name}" (`
     attributes.forEach((attribute : string, i : number) => {
-      let string = `${attribute[0]} ${types.get(attribute[1])}`
-      if(i < attributes.length - 1) string += ', '
-      createStatment += string
+      let command = `${attribute[0]} ${types.get(attribute[1])}`
+      if(i < attributes.length - 1){
+        command += ', '
+      }
+      createStatment += command
     })
     createStatment += ');'
     acc.push(`DROP TABLE IF EXISTS "${name}";`, createStatment)

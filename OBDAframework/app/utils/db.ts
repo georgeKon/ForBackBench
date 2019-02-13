@@ -1,10 +1,10 @@
 import { Client, QueryConfig } from 'pg'
 import Logger from './logger'
 
-class DB {
+export default class DB {
   private logger : Logger
   private connection : Client | null
-  private transaction : Boolean
+  private transaction : boolean
 
   constructor(logger : Logger) {
     this.logger = logger
@@ -19,7 +19,7 @@ class DB {
       const client = new Client()
       await client.connect()
       this.connection = client
-      
+
       this.logger.info('Database connection open')
     } catch(err) {
       this.logger.error('Failed to open database connection')
@@ -51,10 +51,13 @@ class DB {
 
   public async abort() {
     if (this.connection) {
-      await this.connection.query('ABORT;')
-      this.transaction = false
-
-      this.logger.info('Abort database transaction')
+      if(this.transaction) {
+        await this.connection.query('ABORT;')
+        this.transaction = false
+        this.logger.info('Abort database transaction')
+      } else {
+        this.logger.warn('Cannot abort transaction - No current transaction')
+      }
     } else {
       throw new Error('Cannot abort transction - No open database connection')
     }
@@ -74,7 +77,7 @@ class DB {
       if(this.transaction) {
         await this.abort()
       }
-      
+
       await this.connection.end()
       this.logger.info('Close database connection')
     } else {
@@ -82,5 +85,3 @@ class DB {
     }
   }
 }
-
-module.exports = DB

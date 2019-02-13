@@ -1,6 +1,6 @@
 node_modules
 configs
-logs
 dist
 .vscode
+*.log
 app/converters/grammars/*.js
