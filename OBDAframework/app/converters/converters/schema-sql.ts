@@ -26,7 +26,10 @@ export function convertSchemaToSql(schemaString : string, options? : any) : stri
       createStatment += command
     })
     createStatment += ');'
-    acc.push(`DROP TABLE IF EXISTS "${name}";`, createStatment)
+    if(options.clean) {
+      acc.push(`DROP TABLE IF EXISTS "${name}";`)
+    }
+    acc.push(createStatment)
     return acc
   }, [])
   return lines

@@ -1,32 +1,35 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import { convertSchemaToSql, convertSchemaToSqlCmd } from './converters/converters/schema-sql'
+import { convertSchemaToSql } from './converters/converters/schema-sql'
+import { convertTgdToSchema } from './converters/converters/tgd-schema'
 import { from as copyFrom } from 'pg-copy-streams'
 import DB from './utils/db'
 import Logger from './utils/logger'
 
 interface LoadDataOptions {
   tgd? : boolean,
+  clean? : boolean
   logger? : Logger
 }
 
 export async function loadDataCmd(schemaPath : string, dataPath : string, options : any) {
   const logger = new Logger({ logPath: './logs' })
   const db = new DB(logger)
+  // await db.connect()
 
-  loadData(schemaPath, dataPath, db, { logger })
+  loadData(schemaPath, dataPath, db, { logger, tgd: options.tgd, clean: options.clean })
 }
 
-export async function loadData(schemaPath : string, dataPath : string, db : DB, { logger } : LoadDataOptions) {
+export async function loadData(schemaPath : string, dataPath : string, db : DB, { logger, tgd, clean } : LoadDataOptions) {
   if(!logger) {
     logger = new Logger({ })
   }
 
   schemaPath = path.resolve(schemaPath)
-  const schema = fs.readFileSync(schemaPath, 'utf-8')
-  // if(options.tgd) {
-  //   schema = convertTgdToSchema(schema.split(/\r?\n/)).join('\n')
-  // }
+  let schema = fs.readFileSync(schemaPath, 'utf-8')
+  if(tgd) {
+    schema = convertTgdToSchema(schema.split(/\r?\n/)).join('\n')
+  }
   const sqlPath = schemaPath.replace('.txt', '.sql')
 
   // let query
@@ -39,8 +42,9 @@ export async function loadData(schemaPath : string, dataPath : string, db : DB, 
   //   fs.writeFileSync(sqlPath, query)
   //   printMessage('Schema conversion successful')
   // }
-  const query = convertSchemaToSql(schema).join('\n')
-  logger.info('Schema converted')
+  logger.info('Begin schema convert')
+  const query = convertSchemaToSql(schema, { clean }).join('\n')
+  logger.pass('Schema convert complete')
   fs.writeFileSync(sqlPath, query)
   logger.info(`SQL written to ${sqlPath}`)
 

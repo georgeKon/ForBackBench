@@ -11,8 +11,8 @@
   "scripts": {
     "postinstall": "node ./app/utils/postinstall",
     "lint": "tslint --project ./",
-    "build": "tsc",
-    "loadTest": "obdabenchmark load",
+    "build": "rm -rf ./dist/ && tsc",
+    "loadTest": "obdabenchmark load ../../scenarios/LUBM/schema.txt ../../scenarios/LUBM/data/",
     "loadTestLarge": "obdabenchmark load ..\\scenarios\\LUBM\\schema.txt ..\\scenarios\\LUBM\\cb-data\\ .\\configs\\testconfig.json",
     "rewriteTestRapid": "obdabenchmark rewrite ..\\scenarios\\LUBM\\Q2.rq ..\\scenarios\\LUBM\\U.owl rapid .\\configs\\testconfig.json",
     "executeTest": "obdabenchmark execute ..\\scenarios\\LUBM\\Q1.ucq ..\\scenarios\\LUBM\\schema.txt .\\configs\\testconfig.json",

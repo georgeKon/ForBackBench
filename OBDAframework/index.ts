@@ -15,7 +15,8 @@ program
   .arguments('<schema> <data>')
   .description('Initialise a database with given schema and insert data')
   // .option('-F, --force', 'Force use of provided schema even if cached version exists')
-  // .option('-t, --tgd', 'Flags use of tgd file that must be converted to schema')
+  .option('-t, --tgd', 'Flags use of tgd file that must be converted to schema')
+  .option('-c, --clean', 'Create clean instance of database by including DROP IF EXISTS commands')
   .action((schema, data, options) => loadDataCmd(schema, data, options))
 
 // program

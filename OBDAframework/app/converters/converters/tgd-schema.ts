@@ -1,30 +1,33 @@
-const fs = require('fs')
-const path = require('path')
-const parser = require('../grammars/tgd-grammar')
+import * as fs from 'fs'
+import * as path from 'path'
+import parser from '../grammars/tgd-grammar'
 
 const defaultType = 'STRING'
 
-function convertTgdToSchemaCmd(tgdPath, options) {
-  console.log(tgdPath)
+export function convertTgdToSchemaCmd(tgdPath : string, options : any) {
   const tgdArray = fs.readFileSync(path.resolve(tgdPath), 'utf8').split(/\r?\n/)
 
-  const result = convertTgdToSchema(tgdArray, options)
+  const result = convertTgdToSchema(tgdArray)
   console.log(result)
 }
 
-function convertTgdToSchema(tgdArray, options) {
+export function convertTgdToSchema(tgdArray : string[]) {
   const names = new Set()
   const relations = tgdArray.map(line => parser.parse(line))
-    .reduce((acc, tgd) => {
+    .reduce((acc : string[], tgd) => {
     // ignore tgds with more than 1 atom on the left
-    if(tgd[0].length > 1) return acc
+    if(tgd[0].length > 1) {
+      return acc
+    }
     const leftName = tgd[0][0][0]
     if(!names.has(leftName)) {
       names.add(leftName)
       acc.push(`${leftName} {`, ...(Array(tgd[0][0][1].length).fill().map((_, i) => `\tc${i} : ${defaultType}`)), '}')
     }
     tgd[1].forEach(atom => {
-      if(atom[1] === ', ') atom = atom[0]
+      if(atom[1] === ', ') {
+        atom = atom[0]
+      }
       const name = atom[0]
       if(!names.has(name)) {
         names.add(name)
@@ -34,9 +37,4 @@ function convertTgdToSchema(tgdArray, options) {
     return acc
   }, [])
   return relations
-}
-
-module.exports = {
-  convertTgdToSchema,
-  convertTgdToSchemaCmd
 }

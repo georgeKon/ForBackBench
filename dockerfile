@@ -12,4 +12,4 @@ WORKDIR /usr/dist/framework/
 
 RUN npm link
 
-CMD ["yarn", "loadTest", "-h"]
+CMD ["yarn", "loadTest"]

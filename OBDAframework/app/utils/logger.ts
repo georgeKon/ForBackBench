@@ -14,7 +14,7 @@ export default class Logger {
 
   constructor({ label, logPath, mute } : LoggerOptions) {
     const dateTime = new DateTime()
-    const name = `${dateTime.dateTimeStamp}-${label ? label : ''}.log`
+    const name = `${dateTime.dateTimeStamp}-${label ? label : 'run'}.log`
     this.stream = fs.createWriteStream(path.resolve(logPath ? logPath : __dirname, name), { flags: 'a+' })
     this.mute = mute ? mute : false
   }
@@ -25,7 +25,7 @@ export default class Logger {
     if(!this.mute) {
       console.log(line)
     }
-    this.stream.write(line)
+    this.stream.write(line + '\n')
   }
 
   public info(message : string) : void {
