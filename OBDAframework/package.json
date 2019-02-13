@@ -25,11 +25,13 @@
   "dependencies": {
     "commander": "2.19.0",
     "pg": "7.8.0",
-    "pg-copy-streams": "1.2.0"
+    "pg-copy-streams": "1.2.0",
+    "sparqljs": "^2.2.1"
   },
   "devDependencies": {
     "@types/node": "11.9.2",
     "@types/pg": "7.4.11",
+    "@types/sparqljs": "^2.1.0",
     "pegjs": "0.10.0",
     "tslint": "5.12.1",
     "tslint-config-standard": "^8.0.1",

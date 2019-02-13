@@ -16,11 +16,11 @@ export function convertSchemaToSql(schemaString : string, options? : any) : stri
   const parsed = parser.parse(trimmedInput)
 
   // @ts-ignore
-  const lines = parsed.reduce((acc : string[], [name, attributes] : [string, Array<string>]) => {
+  const lines = parsed.reduce((acc : string[], [name, attributes] : [string, string[]]) => {
     let createStatment = `CREATE TABLE "${name}" (`
     attributes.forEach((attribute : string, i : number) => {
       let command = `${attribute[0]} ${types.get(attribute[1])}`
-      if(i < attributes.length - 1){
+      if(i < attributes.length - 1) {
         command += ', '
       }
       createStatment += command
