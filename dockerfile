@@ -1,15 +1,15 @@
 FROM node:10-alpine
 
-RUN mkdir -p /usr/src/converters/
+COPY /scenarios/ /usr/scenarios/
+
 RUN mkdir -p /usr/logs/converters/
 COPY /OBDAconverter/ /usr/src/converters/
 
 WORKDIR /usr/src/converters/
-RUN yarn
+RUN yarn && run build --outDir ../../dist/converters/
 
 WORKDIR /
 
-RUN mkdir -p /usr/src/framework/
 RUN mkdir -p /usr/logs/framework/
 COPY /OBDAframework/ /usr/src/framework/
 

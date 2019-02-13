@@ -4,7 +4,7 @@ import DateTime from './datetime'
 
 class Logger {
   private stream : any
-  private mute : Boolean
+  private mute : boolean
 
   constructor({ logPath, label, mute } = { logPath: __dirname, label: '', mute: false}) {
     const dateTime = new DateTime()
@@ -13,7 +13,7 @@ class Logger {
     this.mute = mute
   }
 
-  public log(message : String, type : String) : void {
+  public log(message : string, type : string) : void {
     const dateTime = new DateTime()
     const line = `${dateTime.timeStamp} ${type} ${message}`
     if(!this.mute) {
@@ -22,15 +22,15 @@ class Logger {
     this.stream.write(line)
   }
 
-  public info(message : String) : void {
+  public info(message : string) : void {
     this.log(message, 'INFO')
   }
 
-  public error(message : String) : void {
+  public error(message : string) : void {
     this.log(message, 'ERROR')
   }
 
-  public out(message : String) : void {
+  public out(message : string) : void {
     this.log(message, 'OUT')
   }
 }
