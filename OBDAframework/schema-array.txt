@@ -1,0 +1,19 @@
+[
+  [
+    "AdministrativeStaff",
+    [
+      ["c0","STRING"]
+    ]
+  ],
+  [
+    "age",
+    [
+      ["c0","STRING"],
+      ["c1","STRING"]
+    ]
+  ]
+]
+
+["age", [["c0","STRING"], ["c1","STRING"]]]
+
+Array<Array<[string, Array<[string, string]>]>>

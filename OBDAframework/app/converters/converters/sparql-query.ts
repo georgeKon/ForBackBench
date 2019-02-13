@@ -1,6 +1,6 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import { Parser as SparqlParser, SelectQuery, BgpPattern } from 'sparqljs'
+import { Parser as SparqlParser, SelectQuery } from 'sparqljs'
 
 interface Triple {
   subject : string,

@@ -27,3 +27,20 @@
 [[[["Person",["X"]],", "],["headOf",[["X",","],"X1"]]],[["Chair",["X"]]]]
 
 [string, string | [string | string[]]]
+
+
+
+
+[ 'Article', [ 'X' ] ]
+[ [ 'teachingAssistantOf', [ [Array], 'Y' ] ], ', ' ]
+[ 'degreeFrom', [ [ 'X', ',' ], 'Y' ] ]
+
+atom[0] = 'Article'                                     atom[1] = [ 'X' ]
+atom[0] = [ 'teachingAssistantOf', [ [Array], 'Y' ] ]   atom[1] = ', '
+atom[0] = 'degreeFrom'                                  atom[1] = [ [ 'X', ',' ], 'Y' ]
+
+[string, string | (string | string[])[]]
+
+interface RootObject {
+  cats: (string[] | string[] | string[] | string[] | string[] | string[] | (string[] | string)[] | (string[] | string)[] | (string[] | string)[] | (string[] | string)[] | (string[] | string)[] | ((string[] | string)[] | string)[] | ((string[] | string)[] | string)[] | ((string[] | string)[] | string)[] | string | string | string | string | string | string | string | string)[][][][][];
+}

@@ -14,7 +14,7 @@ export function convertUcqToSqlCmd(ucqPath : string, schemaPath : string) {
 
 export function convertUcqToSql(ucqArray : string[], schemaString : string) {
   const trimmedInput = schemaString.trim().replace(/[\s+]+/g, ' ')
-  const parsedSchema = schemaParser.parse(trimmedInput)
+  const parsedSchema = schemaParser.parse(trimmedInput) as ParsedSchema
 
   const lines = ucqArray.reduce((acc, elem, index) => {
     let parsed
@@ -29,7 +29,8 @@ export function convertUcqToSql(ucqArray : string[], schemaString : string) {
         console.error(err)
       }
     }
-    const [selection, constraints] = parsed
+    console.log(JSON.stringify(parsed))
+    const [selection, constraints] = parsed as ParsedUCQ
     const fixedSelection = selection.map(variable => handleConjunction(variable))
 
     // console.log(fixedSelection)
@@ -100,11 +101,12 @@ export function convertUcqToSql(ucqArray : string[], schemaString : string) {
   return lines
 }
 
-function handleConjunction(variable : string[]) {
-  return variable.includes(',') || variable.includes(', ') || variable.includes(' ^ ') ? variable[0] : variable
+function handleConjunction(variable : string | string[]) : string {
+  return typeof variable === 'string' ? variable : variable[0]
+  // return variable.includes(',') || variable.includes(', ') || variable.includes(' ^ ') ? variable[0] : variable
 }
 
-function getAttributeString(charCode : string | number, table : string, schema, index : number) {
+function getAttributeString(charCode : string | number, table : string, schema : ParsedSchema, index : number) {
   return `${toChar(charCode)}.${getAttributeName(table, schema, index)}`
 }
 
@@ -112,7 +114,7 @@ function toChar(charCode : string | number) {
   return String.fromCharCode(65 + +charCode)
 }
 
-function getAttributeName(table : string, schema, index : number) {
+function getAttributeName(table : string, schema : ParsedSchema, index : number) {
   const [[tableName, attributes]] = schema.filter(([name] : string[]) => name === table)
   return attributes[index][0]
 }

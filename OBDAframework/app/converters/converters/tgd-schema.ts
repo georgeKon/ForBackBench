@@ -26,6 +26,7 @@ export function convertTgdToSchema(tgdArray : string[]) {
       acc.push(...sql)
     }
     tgd[1].forEach(atom => {
+      console.log(atom)
       if(atom[1] === ', ') {
         // @ts-ignore
         atom = atom[0]

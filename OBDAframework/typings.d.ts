@@ -5,4 +5,8 @@ declare module 'pg-copy-streams' {
 
 // type Atom = [string, string | [string | string[]]]
 
-type ParsedTGD = [[string, string | [string | string[]]][], [string, string | [string | string[]]][]]
+type ParsedTGD = [[string, string | (string | string[])[]][], [string, string | (string | string[])[]][]]
+
+type ParsedSchema = Array<[string, Array<[string, string]>]>
+
+type ParsedUCQ = [Array<string | string[]>, Array<string | Array<string | string[]>>]

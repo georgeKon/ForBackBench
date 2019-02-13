@@ -1,1 +1,8 @@
-Person(?X), headOf(?X,?X1) -> Chair(?X) .
+AdministrativeStaff {
+    c0 : STRING
+}
+
+age {
+    c0 : STRING,
+    c1 : STRING
+}
