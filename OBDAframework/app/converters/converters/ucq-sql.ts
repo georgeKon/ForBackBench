@@ -3,48 +3,58 @@ import * as path from 'path'
 import rapidUcqParser from '../grammars/rapid-ucq-grammar'
 import iqarosUcqParser from '../grammars/iqaros-ucq-grammar'
 import schemaParser from '../grammars/schema-grammar'
+import Logger from '../../utils/logger'
 
-export function convertUcqToSqlCmd(ucqPath : string, schemaPath : string) {
-  const ucqArray = fs.readFileSync(path.resolve(ucqPath), 'utf8').split(/\r?\n/)
-  const schemaString = fs.readFileSync(path.resolve(schemaPath), 'utf8')
-
-  const sqlArray = convertUcqToSql(ucqArray, schemaString)
-  // console.log(sqlArray)
+interface UcqSqlOptions {
+  logger? : Logger
 }
 
-export function convertUcqToSql(ucqArray : string[], schemaString : string) {
+// export function convertUcqToSqlCmd(ucqPath : string, schemaPath : string) {
+//   const ucqArray = fs.readFileSync(path.resolve(ucqPath), 'utf8').split(/\r?\n/)
+//   const schemaString = fs.readFileSync(path.resolve(schemaPath), 'utf8')
+
+//   const sqlArray = convertUcqToSql(ucqArray, schemaString, { })
+// }
+
+export function convertUcqToSql(ucqArray : string[], schemaString : string, options : UcqSqlOptions) {
+  let { logger } = options
+  if(!logger) {
+    logger = new Logger('ucq-sql', './logs')
+  }
+
   const trimmedInput = schemaString.trim().replace(/[\s+]+/g, ' ')
   const parsedSchema = schemaParser.parse(trimmedInput) as ParsedSchema
 
-  const lines = ucqArray.reduce((acc, elem, index) => {
+  const lines = ucqArray.reduce((acc : string[], elem) => {
     let parsed
     try {
       parsed = rapidUcqParser.parse(elem)
+      // @ts-ignore
+      logger.info('Parsed with Rapid Parser')
     } catch(err) {
-      // console.error(err)
       try {
         parsed = iqarosUcqParser.parse(elem)
+        // @ts-ignore
+        logger.info('Parsed with Iqaros Parser')
       } catch(err) {
-        // console.error('Error parsing UCQ')
-        // console.error(err)
+        // @ts-ignore
+        logger.error('Cannot parse UCQ')
+        // @ts-ignore
+        logger.error(err.message)
       }
     }
+
     const [selection, constraints] = parsed as ParsedUCQ
-    const fixedSelection = selection.map(variable => handleConjunction(variable))
+    const fixedSelection = selection.map(variable => handleConjunction(variable)) as string[]
 
-    // console.log(fixedSelection)
-
-    const fixedConstraints = constraints.reduce((accum, element) => {
-      const fixedElement = handleConjunction(element)
-      const fixedVariables = fixedElement[1].map(variable => handleConjunction(variable))
+    const fixedConstraints = constraints.reduce((accum : Array<[string, string[]]>, element) => {
+      const fixedElement = handleConjunction(element) as [string, string[]]
+      const fixedVariables = fixedElement[1].map(variable => handleConjunction(variable)) as string[]
       accum.push([fixedElement[0], fixedVariables])
       return accum
     }, [])
 
-    // console.log(fixedConstraints)
-
-    const selectStatement = fixedSelection.reduce((accum : string, elemnt, i : number) => {
-      // console.log(elemnt)
+    const selectStatement = fixedSelection.reduce((accum, elemnt, i) => {
       for(const j in fixedConstraints) {
         if(fixedConstraints.hasOwnProperty(j)) {
           const [name, variables] = fixedConstraints[j]
@@ -63,7 +73,7 @@ export function convertUcqToSql(ucqArray : string[], schemaString : string) {
 
     acc.push(selectStatement)
 
-    let fromStatement = fixedConstraints.reduce((accum : string, [ name ] : string[], i : number) => {
+    let fromStatement = fixedConstraints.reduce((accum, [ name ], i) => {
       accum += `"${name}" as ${toChar(i)}, `
       return accum
     }, 'FROM ')
@@ -102,9 +112,9 @@ export function convertUcqToSql(ucqArray : string[], schemaString : string) {
   return lines
 }
 
-function handleConjunction(variable : string | string[]) : string {
-  return typeof variable === 'string' ? variable : variable[0]
-  // return variable.includes(',') || variable.includes(', ') || variable.includes(' ^ ') ? variable[0] : variable
+function handleConjunction(variable : string | Array<string | string[]>) : [string, string[]] | string {
+  // @ts-ignore
+  return variable.includes(',') || variable.includes(', ') || variable.includes(' ^ ') ? variable[0] : variable
 }
 
 function getAttributeString(charCode : string | number, table : string, schema : ParsedSchema, index : number) {
@@ -116,6 +126,6 @@ function toChar(charCode : string | number) {
 }
 
 function getAttributeName(table : string, schema : ParsedSchema, index : number) {
-  const [[tableName, attributes]] = schema.filter(([name] : string[]) => name === table)
+  const [[tableName, attributes]] = schema.filter(([name]) => name === table)
   return attributes[index][0]
 }

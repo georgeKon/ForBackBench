@@ -1,8 +1,2 @@
-AdministrativeStaff {
-    c0 : STRING
-}
-
-age {
-    c0 : STRING,
-    c1 : STRING
-}
+AdministrativeStaff(?X) -> Employee(?X) .
+advisor(?X,?X1) -> Person(?X) .
