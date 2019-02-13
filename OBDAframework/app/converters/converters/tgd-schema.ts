@@ -8,7 +8,7 @@ export function convertTgdToSchemaCmd(tgdPath : string, options : any) {
   const tgdArray = fs.readFileSync(path.resolve(tgdPath), 'utf8').split(/\r?\n/)
 
   const result = convertTgdToSchema(tgdArray)
-  console.log(result)
+  // console.log(result)
 }
 
 export function convertTgdToSchema(tgdArray : string[]) {
@@ -26,7 +26,7 @@ export function convertTgdToSchema(tgdArray : string[]) {
       acc.push(...sql)
     }
     tgd[1].forEach(atom => {
-      console.log(atom)
+      // console.log(atom)
       if(atom[1] === ', ') {
         // @ts-ignore
         atom = atom[0]

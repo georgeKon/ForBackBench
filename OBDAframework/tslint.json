@@ -23,6 +23,7 @@
         "variable-declaration": "onespace"
       }
     ],
+    "no-string-literal": [false],
     "interface-name": [true, "never-prefix"],
     "whitespace": [
       true,

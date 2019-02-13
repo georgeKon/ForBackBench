@@ -8,7 +8,7 @@ export function convertSchemaToSqlCmd(schemaPath : string, options : any) : void
   const schemaString = fs.readFileSync(path.resolve(schemaPath), 'utf8')
 
   const sqlArray = convertSchemaToSql(schemaString, options)
-  console.log(sqlArray)
+  // console.log(sqlArray)
 }
 
 export function convertSchemaToSql(schemaString : string, options? : any) : string[] {

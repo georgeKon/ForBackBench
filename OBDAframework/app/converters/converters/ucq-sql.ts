@@ -9,7 +9,7 @@ export function convertUcqToSqlCmd(ucqPath : string, schemaPath : string) {
   const schemaString = fs.readFileSync(path.resolve(schemaPath), 'utf8')
 
   const sqlArray = convertUcqToSql(ucqArray, schemaString)
-  console.log(sqlArray)
+  // console.log(sqlArray)
 }
 
 export function convertUcqToSql(ucqArray : string[], schemaString : string) {
@@ -21,15 +21,14 @@ export function convertUcqToSql(ucqArray : string[], schemaString : string) {
     try {
       parsed = rapidUcqParser.parse(elem)
     } catch(err) {
-      console.error(err)
+      // console.error(err)
       try {
         parsed = iqarosUcqParser.parse(elem)
       } catch(err) {
-        console.error('Error parsing UCQ')
-        console.error(err)
+        // console.error('Error parsing UCQ')
+        // console.error(err)
       }
     }
-    console.log(JSON.stringify(parsed))
     const [selection, constraints] = parsed as ParsedUCQ
     const fixedSelection = selection.map(variable => handleConjunction(variable))
 
@@ -44,12 +43,12 @@ export function convertUcqToSql(ucqArray : string[], schemaString : string) {
 
     // console.log(fixedConstraints)
 
-    const selectStatement = fixedSelection.reduce((accum : string, elem, i : number) => {
-      // console.log(elem)
+    const selectStatement = fixedSelection.reduce((accum : string, elemnt, i : number) => {
+      // console.log(elemnt)
       for(const j in fixedConstraints) {
         if(fixedConstraints.hasOwnProperty(j)) {
           const [name, variables] = fixedConstraints[j]
-          const idx = variables.indexOf(elem)
+          const idx = variables.indexOf(elemnt)
           if(idx > -1) {
             accum += `${getAttributeString(j, name, parsedSchema, idx)}`
             if(i < fixedSelection.length - 1) {
@@ -74,7 +73,9 @@ export function convertUcqToSql(ucqArray : string[], schemaString : string) {
 
     let whereStatement = fixedConstraints.reduce((accum, [name, variables], i) => {
       fixedConstraints.forEach(([otherName, otherVariables], j) => {
-        if(i === j) return
+        if(i === j) {
+          return
+        }
         variables.forEach((variable, k) => {
           if(variable.charAt(0) === '?') {
             otherVariables.forEach((otherVariable, l) => {

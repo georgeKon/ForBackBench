@@ -62,8 +62,5 @@
     "app/combined.js",
     "app/drivers.js",
     "app/rewrite.js",
-    "app/converters/converters/owl-tgd.js",
-    "app/converters/converters/tgd-owl.ts",
-    "app/converters/converters/ucq-sql.js",
   ]
 }

@@ -1,17 +1,17 @@
-const fs = require('fs')
-const path = require('path')
-const parser = require('xml2js');
+import * as fs from 'fs'
+import * as path from 'path'
+import parser from 'xml2js'
 
-async function convertOwlToTgdCmd(owlPath, options) {
+export async function convertOwlToTgdCmd(owlPath : string, options : any) {
   const owlString = fs.readFileSync(path.resolve(owlPath), 'utf8')
-  
+
   const result = await convertOwlToTgd(owlString)
-  console.log(result)
+  // console.log(result)
 }
 
-async function convertOwlToTgd(owlString) {
-  const parsed = await parseXml(owlString)
-  
+export async function convertOwlToTgd(owlString : string) {
+  const parsed = await parseXml(owlString) as any
+
   const classes = handleClasses(parsed['rdf:RDF']['owl:Class'])
   const objects = handleObjects(parsed['rdf:RDF']['owl:ObjectProperty'])
   const transitives = handleTransitives(parsed['rdf:RDF']['owl:TransitiveProperty'])
@@ -21,17 +21,19 @@ async function convertOwlToTgd(owlString) {
   return [...classes, ...objects, ...transitives, ...datatypes]
 }
 
-function handleClasses(classes) {
-  if(!classes) return []
-  const lines = []
-  classes.forEach(classObj => {
+function handleClasses(classes : any) {
+  if(!classes) {
+    return []
+  }
+  const lines : string[] = []
+  classes.forEach((classObj : any) => {
     const name = (classObj['$']['rdf:ID'] || classObj['$']['rdf:about']).split('#').pop()
 
     if(classObj.hasOwnProperty('owl:intersectionOf')) {
       const intersection = classObj['owl:intersectionOf'][0]
 
       if(intersection.hasOwnProperty('owl:Class')) {
-        const intClass = formatText(intersection['owl:Class'], 'rdf:about')
+        const intClass = formatText(intersection['owl:Class'])
         lines.push(`${name}(?X) -> ${intClass}(?X) .`)
       }
 
@@ -40,12 +42,14 @@ function handleClasses(classes) {
     }
 
     if(classObj.hasOwnProperty('rdfs:subClassOf')) {
-      classObj['rdfs:subClassOf'].forEach(subClass => {
+      classObj['rdfs:subClassOf'].forEach((subClass : any) => {
         if(subClass.hasOwnProperty('owl:Restriction')) {
           const subRestriction = handleRestriction(subClass['owl:Restriction'][0], name)
           lines.push(subRestriction)
         } else {
-          const sub = subClass.hasOwnProperty('owl:Class') ? formatText(subClass['owl:Class']) : subClass['$']['rdf:resource'].split('#').pop()
+          const sub = subClass.hasOwnProperty('owl:Class')
+            ? formatText(subClass['owl:Class'])
+            : subClass['$']['rdf:resource'].split('#').pop()
           lines.push(`${name}(?X) -> ${sub}(?X) .`)
         }
       })
@@ -54,17 +58,23 @@ function handleClasses(classes) {
   return lines
 }
 
-function handleRestriction(restriction, name) {
-  const property = restriction['owl:onProperty'][0].hasOwnProperty('owl:ObjectProperty') ? formatText(restriction['owl:onProperty'][0]['owl:ObjectProperty']) : formatText(restriction['owl:onProperty'])
-  const resClass = restriction['owl:someValuesFrom'][0].hasOwnProperty('owl:Class') ? formatText(restriction['owl:someValuesFrom'][0]['owl:Class']) : formatText(restriction['owl:someValuesFrom'])
-  
+function handleRestriction(restriction : any, name : string) {
+  const property = restriction['owl:onProperty'][0].hasOwnProperty('owl:ObjectProperty')
+    ? formatText(restriction['owl:onProperty'][0]['owl:ObjectProperty'])
+    : formatText(restriction['owl:onProperty'])
+  const resClass = restriction['owl:someValuesFrom'][0].hasOwnProperty('owl:Class')
+    ? formatText(restriction['owl:someValuesFrom'][0]['owl:Class'])
+    : formatText(restriction['owl:someValuesFrom'])
+
   return `${name}(?X) -> ${property}(?X, ?Y), ${resClass}(?Y) .`
 }
 
-function handleObjects(objects) {
-  if(!objects) return []
-  const lines = []
-  objects.forEach(object => {
+function handleObjects(objects : any) {
+  if(!objects) {
+    return []
+  }
+  const lines : string[] = []
+  objects.forEach((object : any) => {
     const name = (object['$']['rdf:ID'] || object['$']['rdf:about']).split('#').pop()
 
     if(object.hasOwnProperty('rdfs:domain')) {
@@ -76,9 +86,11 @@ function handleObjects(objects) {
       const range = formatText(object['rdfs:range'])
       lines.push(`${name}(?X, ?X1) -> ${range}(?X1) .`)
     }
-    
+
     if(object.hasOwnProperty('owl:inverseOf')) {
-      const inverse = object['owl:inverseOf'][0].hasOwnProperty('owl:ObjectProperty') ? formatText(object['owl:inverseOf'][0]['owl:ObjectProperty']) : formatText(object['owl:inverseOf'])
+      const inverse = object['owl:inverseOf'][0].hasOwnProperty('owl:ObjectProperty')
+        ? formatText(object['owl:inverseOf'][0]['owl:ObjectProperty'])
+        : formatText(object['owl:inverseOf'])
       lines.push(`${name}(?Y, ?X) -> ${inverse}(?X, ?Y) .`)
     }
 
@@ -90,10 +102,12 @@ function handleObjects(objects) {
   return lines
 }
 
-function handleTransitives(transitives) {
-  if(!transitives) return []
-  const lines = []
-  transitives.forEach(transitive => {
+function handleTransitives(transitives : any) {
+  if(!transitives) {
+    return []
+  }
+  const lines : string[] = []
+  transitives.forEach((transitive : any) => {
     const name = (transitive['$']['rdf:ID'] || transitive['$']['rdf:about']).split('#').pop()
 
     if(transitive.hasOwnProperty('rdfs:domain')) {
@@ -111,10 +125,12 @@ function handleTransitives(transitives) {
   return lines
 }
 
-function handleDatatypes(datatypes) {
-  if(!datatypes) return []
-  const lines = []
-  datatypes.forEach(datatype => {
+function handleDatatypes(datatypes : any) {
+  if(!datatypes) {
+    return []
+  }
+  const lines : string[] = []
+  datatypes.forEach((datatype : any) => {
     const name = (datatype['$']['rdf:ID'] || datatype['$']['rdf:about']).split('#').pop()
 
     if(datatype.hasOwnProperty('rdfs:domain')) {
@@ -125,22 +141,24 @@ function handleDatatypes(datatypes) {
   return lines
 }
 
-function formatText(node) {
-  if(node[0]['$'].hasOwnProperty('rdf:about')) return node[0]['$']['rdf:about'].split('#').pop()
-  if(node[0]['$'].hasOwnProperty('rdf:ID')) return node[0]['$']['rdf:ID'].split('#').pop()
-  return node[0]['$']['rdf:resource'].split('#').pop()
+function formatText(node : any) {
+  if(node[0]['$'].hasOwnProperty('rdf:about')) {
+    return node[0]['$']['rdf:about'].split('#').pop()
+  } else if(node[0]['$'].hasOwnProperty('rdf:ID')) {
+    return node[0]['$']['rdf:ID'].split('#').pop()
+  } else {
+    return node[0]['$']['rdf:resource'].split('#').pop()
+  }
 }
 
-function parseXml(string) {
+function parseXml(input : string) {
   return new Promise((res, rej) => {
-    parser.parseString(string, (err, data) => {
-      if(err) rej(err)
-      else res(data)
+    parser.parseString(input, (err, data) => {
+      if(err) {
+        rej(err)
+      } else {
+        res(data)
+      }
     })
   })
-}
-
-module.exports = {
-  convertOwlToTgd,
-  convertOwlToTgdCmd
 }

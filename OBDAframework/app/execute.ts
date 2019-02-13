@@ -23,7 +23,6 @@ export async function executeUcq(ucqArray : string[], schema : string, logger : 
   const schemaString = schema.trim().replace(/[\s+]+/g, ' ')
   const sql = convertUcqToSql(ucqArray, schemaString).join('\n')
 
-  console.log(sql)
   // const result = await db.queryDatabase(client, sql)
 
   // return result

@@ -14,7 +14,7 @@ export function convertSparqlToQueryCmd(sparqlPath : string) {
   const sparqlString = fs.readFileSync(path.resolve(sparqlPath), 'utf8')
 
   const result = convertSparqlToQuery(sparqlString)
-  console.log(result)
+  // console.log(result)
 }
 
 export function convertSparqlToQuery(sparqlString : string) {

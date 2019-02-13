@@ -20,7 +20,11 @@ export async function loadDataCmd(schemaPath : string, dataPath : string, option
   loadData(schemaPath, dataPath, db, { logger, tgd: options.tgd, clean: options.clean })
 }
 
-export async function loadData(schemaPath : string, dataPath : string, db : DB, { logger, tgd, clean } : LoadDataOptions) {
+export async function loadData(
+  schemaPath : string,
+  dataPath : string,
+  db : DB,
+  { logger, tgd, clean } : LoadDataOptions) {
   if(!logger) {
     logger = new Logger({ })
   }

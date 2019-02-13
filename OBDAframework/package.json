@@ -26,7 +26,8 @@
     "commander": "2.19.0",
     "pg": "7.8.0",
     "pg-copy-streams": "1.2.0",
-    "sparqljs": "^2.2.1"
+    "sparqljs": "^2.2.1",
+    "xml2js": "^0.4.19"
   },
   "devDependencies": {
     "@types/node": "11.9.2",

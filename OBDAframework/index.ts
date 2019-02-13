@@ -41,6 +41,7 @@ program
 //   .option('-F, --force', 'Force use of provided query even if cached version exists')
 //   .option('-m, --mode <mode>', 'Graal mode')
 //   .option('-t, --tgd', 'Flags use of tgd file that must be converted to schema')
-//   .action((schema, data, query, ontology, tool, config, options) => runBenchmarkCmd(schema, data, query, ontology, tool, config, options))
+//   .action((schema, data, query, ontology, tool, config, options) =>
+        // runBenchmarkCmd(schema, data, query, ontology, tool, config, options))
 
 program.parse(process.argv)

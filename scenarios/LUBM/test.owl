@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rdf:RDF
+  xmlns = "http://swat.cse.lehigh.edu/onto/univ-bench.owl#"
+  xml:base = "http://swat.cse.lehigh.edu/onto/univ-bench.owl"
+  xmlns:rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+>
+
+<owl:Ontology rdf:about="">
+  <rdfs:comment>An university ontology for benchmark tests</rdfs:comment>
+  <rdfs:label>Univ-bench Ontology</rdfs:label>
+  <owl:versionInfo>univ-bench-ontology-owl, ver April 1, 2004</owl:versionInfo>
+</owl:Ontology>
+
+<owl:Class rdf:ID="AdministrativeStaff">
+  <rdfs:label>administrative staff worker</rdfs:label>
+  <rdfs:subClassOf rdf:resource="#Employee" />
+</owl:Class>
+
+<owl:Class rdf:ID="Article">
+  <rdfs:label>article</rdfs:label>
+  <rdfs:subClassOf rdf:resource="#Publication" />
+</owl:Class>
+
+</rdf:RDF>

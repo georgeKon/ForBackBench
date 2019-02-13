@@ -1,0 +1,34 @@
+[{"$":{"rdf:ID":"AdministrativeStaff"},"rdfs:label":["administrative staff worker"],"rdfs:subClassOf":[{"$":{"rdf:resource":"#Employee"}}]},{"$":{"rdf:ID":"Article"},"rdfs:label":["article"],"rdfs:subClassOf":[{"$":{"rdf:resource":"#Publication"}}]}]
+
+[  
+   {  
+      "$":{  
+         "rdf:ID":"AdministrativeStaff"
+      },
+      "rdfs:label":[  
+         "administrative staff worker"
+      ],
+      "rdfs:subClassOf":[  
+         {  
+            "$":{  
+               "rdf:resource":"#Employee"
+            }
+         }
+      ]
+   },
+   {  
+      "$":{  
+         "rdf:ID":"Article"
+      },
+      "rdfs:label":[  
+         "article"
+      ],
+      "rdfs:subClassOf":[  
+         {  
+            "$":{  
+               "rdf:resource":"#Publication"
+            }
+         }
+      ]
+   }
+]
