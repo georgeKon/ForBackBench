@@ -61,10 +61,9 @@
     "app/converters/grammars/*.js",
     "app/combined.js",
     "app/drivers.js",
-    "app/excute.js",
     "app/rewrite.js",
     "app/converters/converters/owl-tgd.js",
-    "app/converters/converters/tgd-owl.js",
+    "app/converters/converters/tgd-owl.ts",
     "app/converters/converters/ucq-sql.js",
   ]
 }

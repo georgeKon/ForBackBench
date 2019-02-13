@@ -1,3 +1,1 @@
-advisor(?X,?X1) -> Person(?X) .
-advisor(?X,?X1) -> Professor(?X1) .
-age(?X,?X1) -> Person(?X) .
+Person(?X), headOf(?X,?X1) -> Chair(?X) .

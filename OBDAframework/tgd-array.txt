@@ -1,0 +1,29 @@
+[[["advisor",[["X",","],"X1"]]],[["Person",["X"]]]]
+
+[["advisor",[["X",","],"X1"]]],[["Person",["X"]]]
+
+["advisor",[["X",","],"X1"]]
+
+[["Person",["X"]]
+
+[[[string, [string | string[]]]], [[string, [string | string[]]]]]
+
+["advisor",[["X",","],"X1"]]
+
+[string, string[]]
+
+[[["advisor",["X"]]],[["Person",["X"]]]]
+
+["advisor",["X"]]
+
+[string, string[] | [string | string[]]]
+
+"advisor",[["X",","],"X1"]]
+
+[["advisor",[["X",","],["Y",","],"Z"]]],[["Person",["X"]]]]
+
+[[], []]
+
+[[[["Person",["X"]],", "],["headOf",[["X",","],"X1"]]],[["Chair",["X"]]]]
+
+[string, string | [string | string[]]]

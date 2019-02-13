@@ -4,7 +4,7 @@ import program from 'commander'
 import { version } from './package.json'
 import { loadDataCmd } from './app/load'
 // const { computeRewritingsCmd } = require('./app/rewrite')
-// const { executeUcqCmd } = require('./app/execute')
+import { executeUcqCmd } from './app/execute'
 // const { runBenchmarkCmd } = require('./app/combined')
 
 program
@@ -27,11 +27,11 @@ program
 //   .option('-m, --mode <mode>', 'Graal mode')
 //   .action((query, ontology, tool, config, options) => computeRewritingsCmd(query, ontology, tool, config, options))
 
-// program
-//   .command('execute')
-//   .arguments('<ucq> <shema> <config>')
-//   .description('Execute a UCQ against a database')
-//   .action((ucq, schema, options) => executeUcqCmd(ucq, schema, options))
+program
+  .command('execute')
+  .arguments('<ucq> <schema>')
+  .description('Execute a UCQ against a database')
+  .action((ucq, schema, options) => executeUcqCmd(ucq, schema, options))
 
 // program
 //   .command('test')
