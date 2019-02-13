@@ -3,6 +3,9 @@ import * as path from 'path'
 import DateTime from './datetime'
 
 class Logger {
+  private stream : any
+  private mute : Boolean
+
   constructor({ logPath, label, mute } = { logPath: __dirname, label: '', mute: false}) {
     const dateTime = new DateTime()
     const name = `${dateTime.dateTimeStamp}-${label}.log`
@@ -10,7 +13,7 @@ class Logger {
     this.mute = mute
   }
 
-  log(message : String, type : String) {
+  public log(message : String, type : String) : void {
     const dateTime = new DateTime()
     const line = `${dateTime.timeStamp} ${type} ${message}`
     if(!this.mute) {
@@ -19,23 +22,20 @@ class Logger {
     this.stream.write(line)
   }
 
-  info(message : String) {
+  public info(message : String) : void {
     this.log(message, 'INFO')
   }
 
-  error(message : String) {
+  public error(message : String) : void {
     this.log(message, 'ERROR')
   }
 
-  out(message : String) {
+  public out(message : String) : void {
     this.log(message, 'OUT')
   }
 }
 
-interface Logger {
-  mute : Boolean
-  stream : any
-}
+export default Logger
 
 const logger = new Logger()
 logger.info('test typescript')

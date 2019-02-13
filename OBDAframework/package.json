@@ -27,6 +27,7 @@
     "typescript": "3.3.3"
   },
   "devDependencies": {
-    "@types/node": "11.9.2"
+    "@types/node": "11.9.2",
+    "@types/pg": "^7.4.11"
   }
 }

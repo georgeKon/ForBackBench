@@ -1,3 +1,7 @@
+interface DateTime {
+  date : Date
+}
+
 class DateTime {
   constructor(date = new Date()) {
     this.date = date
@@ -14,10 +18,6 @@ class DateTime {
   get timeStamp() {
     return `${this.date.getHours()}:${this.date.getMinutes()}:${this.date.getSeconds()}:${this.date.getMilliseconds()}`
   }
-}
-
-interface DateTime {
-  date : Date
 }
 
 export default DateTime

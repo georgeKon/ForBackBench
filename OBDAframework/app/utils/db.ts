@@ -1,13 +1,18 @@
-const { Client } = require('pg')
+import { Client, QueryConfig } from 'pg'
+import Logger from './logger'
 
 class DB {
-  constructor(logger) {
+  private logger : Logger
+  private connection : Client | null
+  private transaction : Boolean
+
+  constructor(logger : Logger) {
     this.logger = logger
     this.connection = null
     this.transaction = false
   }
 
-  async connect() {
+  public async connect() {
     try {
       this.logger.info('Open database connection')
 
@@ -22,7 +27,7 @@ class DB {
     }
   }
 
-  async transact() {
+  public async transact() {
     if (this.connection) {
       this.transaction = true
       await this.connection.query('BEGIN;')
@@ -33,7 +38,7 @@ class DB {
     }
   }
 
-  async commit() {
+  public async commit() {
     if (this.connection) {
       await this.connection.query('COMMIT;')
       this.transaction = false
@@ -44,7 +49,7 @@ class DB {
     }
   }
 
-  async abort() {
+  public async abort() {
     if (this.connection) {
       await this.connection.query('ABORT;')
       this.transaction = false
@@ -55,7 +60,7 @@ class DB {
     }
   }
 
-  async query(query) {
+  public async query(query : string | QueryConfig) {
     if (this.connection) {
       this.logger.info('Run database query')
       return this.connection.query(query)
@@ -64,7 +69,7 @@ class DB {
     }
   }
 
-  async close() {
+  public async close() {
     if (this.connection) {
       if(this.transaction) {
         await this.abort()
