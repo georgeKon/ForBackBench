@@ -13,20 +13,18 @@ interface LoadDataOptions {
 }
 
 export async function loadDataCmd(schemaPath : string, dataPath : string, options : any) {
-  const logger = new Logger({ logPath: './logs' })
+  const logger = new Logger('load', './logs')
   const db = new DB(logger)
   // await db.connect()
 
   loadData(schemaPath, dataPath, db, { logger, tgd: options.tgd, clean: options.clean })
 }
 
-export async function loadData(
-  schemaPath : string,
-  dataPath : string,
-  db : DB,
-  { logger, tgd, clean } : LoadDataOptions) {
+export async function loadData(schemaPath : string, dataPath : string, db : DB, options : LoadDataOptions) {
+  const { tgd, clean } = options
+  let { logger } = options
   if(!logger) {
-    logger = new Logger({ })
+    logger = new Logger('load', './logs')
   }
 
   schemaPath = path.resolve(schemaPath)
@@ -34,7 +32,6 @@ export async function loadData(
   if(tgd) {
     schema = convertTgdToSchema(schema.split(/\r?\n/)).join('\n')
   }
-  const sqlPath = schemaPath.replace('.txt', '.sql')
 
   // let query
   // if(fs.existsSync(sqlPath) && !options.force) {
@@ -46,34 +43,33 @@ export async function loadData(
   //   fs.writeFileSync(sqlPath, query)
   //   printMessage('Schema conversion successful')
   // }
+
   logger.info('Begin schema convert')
   const query = convertSchemaToSql(schema, { clean }).join('\n')
   logger.pass('Schema convert complete')
+
+  const sqlPath = schemaPath.replace('.txt', '.sql')
   fs.writeFileSync(sqlPath, query)
-  logger.info(`SQL written to ${sqlPath}`)
+  logger.info('SQL written to ' + sqlPath)
 
   try {
     await db.transact()
-    // printMessage('Importing schema')
     logger.info('Begin schema import')
     const result = await db.query(query)
     logger.pass('Schema import complete')
 
     const files = fs.readdirSync(path.resolve(dataPath))
       .filter(file => path.extname(file) === '.csv')
-    // printMessage('Importing data')
+
     logger.info('Begin data import')
     // For of loop because promises don't work in forEach
     for(const file of files) {
       logger.info(`Import ${file}`)
       const fileStream = fs.createReadStream(path.resolve(dataPath, file))
-      const stream = await db.query(copyFrom(`COPY "${path.parse(file).name}" FROM STDIN DELIMITER ','`))
-      // @ts-ignore
+      const stream = await db.query(copyFrom(`COPY "${path.parse(file).name}" FROM STDIN DELIMITER ','`)) as any
       fileStream.pipe(stream)
       const promise = new Promise((resolve, reject) => {
-        // @ts-ignore
         stream.on('end', () => resolve())
-        // @ts-ignore
         stream.on('error', () => reject())
       })
       await promise

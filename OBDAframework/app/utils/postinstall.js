@@ -8,10 +8,18 @@ generateGrammar('./app/converters/grammars/tgd-grammar.pegjs')
 function generateGrammar(path) {
   exec(`node ./node_modules/pegjs/bin/pegjs ${path}`, (err, stdout, stderr) => {
     if(err) {
+      /* tslint:disable */
       console.error(err)
-      if(stderr) console.log(stderr)
+      /* tslint:enable */
+      if(stderr) {
+        /* tslint:disable */
+        console.log(stderr)
+        /* tslint:enable */
+      }
       return
     }
+    /* tslint:disable */
     console.log(`Grammar at ${path} generated successfully`)
+    /* tslint:enable */
   })
 }
