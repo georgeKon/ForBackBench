@@ -1,8 +1,6 @@
-interface DateTime {
-  date : Date
-}
+export default class DateTime {
+  private date : Date
 
-class DateTime {
   constructor(date = new Date()) {
     this.date = date
   }
@@ -19,5 +17,3 @@ class DateTime {
     return `${this.date.getHours()}:${this.date.getMinutes()}:${this.date.getSeconds()}:${this.date.getMilliseconds()}`
   }
 }
-
-export default DateTime
