@@ -13,6 +13,7 @@
     "lint": "tslint --project ./ --format stylish",
     "format": "yarn run lint --fix",
     "test": "mocha -r ts-node/register ./test/**/*.test.ts --pretty",
+    "dev": "rm -rf ./dist/ && tsc",
     "build": "yarn run lint && rm -rf ./dist/ && tsc",
     "loadTest": "obdabenchmark load ../../scenarios/LUBM/schema.txt ../../scenarios/LUBM/data/",
     "loadTestLarge": "obdabenchmark load ..\\scenarios\\LUBM\\schema.txt ..\\scenarios\\LUBM\\cb-data\\ .\\configs\\testconfig.json",

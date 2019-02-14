@@ -7,11 +7,11 @@ const staticDate = new Date(2019, 0, 1, 12, 30, 15, 200)
 
 describe('DateTime util class', () => {
 
-  before(() => {
+  beforeEach(() => {
     MockDate.set(new Date(2019, 11, 31, 20, 45, 10, 500))
   })
 
-  after(() => {
+  afterEach(() => {
     MockDate.reset()
   })
 

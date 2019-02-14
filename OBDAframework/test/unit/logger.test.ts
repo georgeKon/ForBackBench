@@ -15,7 +15,7 @@ let logger : Logger
 describe('Logger util class', () => {
 
   beforeEach(function() {
-    this.sinon.stub(console, 'log')
+    this.sinon.spy(console, 'log')
     MockDate.set(new Date(2019, 0, 1, 12, 30, 15, 200))
     mock({
       'logs/': {  }
