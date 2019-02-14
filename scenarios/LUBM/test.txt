@@ -1,1 +1,2 @@
-AdministrativeStaff(?X) -> Employee(?X) .
+advisor(?X,?X1) -> Person(?X) .
+advisor(?X,?X1) -> Professor(?X1) .
