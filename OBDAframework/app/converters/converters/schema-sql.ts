@@ -2,16 +2,22 @@ import * as fs from 'fs'
 import * as path from 'path'
 import parser from '../grammars/schema-grammar'
 
-const types = new Map([['STRING', 'text'], ['DOUBLE', 'double precision'], ['INTEGER', 'integer'], ['SYMBOL', 'text']])
+type ParsedSchema = Array<[string, Array<[string, string]>]>
 
-export function convertSchemaToSqlCmd(schemaPath : string, options : any) : void {
-  const schemaString = fs.readFileSync(path.resolve(schemaPath), 'utf8')
-
-  const sqlArray = convertSchemaToSql(schemaString, options)
-  // console.log(sqlArray)
+interface SchemaSqlOptions {
+  clean? : boolean
 }
 
-export function convertSchemaToSql(schemaString : string, options? : any) : string[] {
+const types = new Map([['STRING', 'text'], ['DOUBLE', 'double precision'], ['INTEGER', 'integer'], ['SYMBOL', 'text']])
+
+// export function convertSchemaToSqlCmd(schemaPath : string, options : any) : void {
+//   const schemaString = fs.readFileSync(path.resolve(schemaPath), 'utf8')
+
+//   const sqlArray = convertSchemaToSql(schemaString, options)
+//   // console.log(sqlArray)
+// }
+
+export function convertSchemaToSql(schemaString : string, options? : SchemaSqlOptions) : string[] {
   const trimmedInput = schemaString.trim().replace(/[\s+]+/g, ' ')
   const parsed = parser.parse(trimmedInput) as ParsedSchema
 
@@ -25,7 +31,7 @@ export function convertSchemaToSql(schemaString : string, options? : any) : stri
       createStatment += command
     })
     createStatment += ');'
-    if(options.clean) {
+    if(options && options.clean) {
       acc.push(`DROP TABLE IF EXISTS "${name}";`)
     }
     acc.push(createStatment)

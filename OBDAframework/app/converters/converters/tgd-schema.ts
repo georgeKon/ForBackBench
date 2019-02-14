@@ -2,14 +2,17 @@ import * as fs from 'fs'
 import * as path from 'path'
 import * as parser from '../grammars/tgd-grammar'
 
+type SingleTGD = Array<[string, string | Array<string | string[]>]>
+type ParsedTGD = [SingleTGD, SingleTGD]
+
 const defaultType = 'STRING'
 
-export function convertTgdToSchemaCmd(tgdPath : string, options : any) {
-  const tgdArray = fs.readFileSync(path.resolve(tgdPath), 'utf8').split(/\r?\n/)
+// export function convertTgdToSchemaCmd(tgdPath : string, options : any) {
+//   const tgdArray = fs.readFileSync(path.resolve(tgdPath), 'utf8').split(/\r?\n/)
 
-  const result = convertTgdToSchema(tgdArray)
-  // console.log(result)
-}
+//   const result = convertTgdToSchema(tgdArray)
+//   // console.log(result)
+// }
 
 export function convertTgdToSchema(tgdArray : string[]) {
   const names = new Set()

@@ -9,6 +9,10 @@ interface UcqSqlOptions {
   logger? : Logger
 }
 
+type ParsedSchema = Array<[string, Array<[string, string]>]>
+
+type ParsedUCQ = [Array<string | string[]>, Array<string | Array<string | string[]>>]
+
 // export function convertUcqToSqlCmd(ucqPath : string, schemaPath : string) {
 //   const ucqArray = fs.readFileSync(path.resolve(ucqPath), 'utf8').split(/\r?\n/)
 //   const schemaString = fs.readFileSync(path.resolve(schemaPath), 'utf8')
@@ -16,11 +20,8 @@ interface UcqSqlOptions {
 //   const sqlArray = convertUcqToSql(ucqArray, schemaString, { })
 // }
 
-export function convertUcqToSql(ucqArray : string[], schemaString : string, options : UcqSqlOptions) {
-  let { logger } = options
-  if(!logger) {
-    logger = new Logger('ucq-sql', './logs')
-  }
+export function convertUcqToSql(ucqArray : string[], schemaString : string, options? : UcqSqlOptions) {
+  const logger = options && options.logger ? options.logger : new Logger('', '', true)
 
   const trimmedInput = schemaString.trim().replace(/[\s+]+/g, ' ')
   const parsedSchema = schemaParser.parse(trimmedInput) as ParsedSchema
@@ -29,17 +30,13 @@ export function convertUcqToSql(ucqArray : string[], schemaString : string, opti
     let parsed
     try {
       parsed = rapidUcqParser.parse(elem)
-      // @ts-ignore
       logger.info('Parsed with Rapid Parser')
     } catch(err) {
       try {
         parsed = iqarosUcqParser.parse(elem)
-        // @ts-ignore
         logger.info('Parsed with Iqaros Parser')
       } catch(err) {
-        // @ts-ignore
         logger.error('Cannot parse UCQ')
-        // @ts-ignore
         logger.error(err.message)
       }
     }

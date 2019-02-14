@@ -3,8 +3,6 @@ declare module 'pg-copy-streams' {
   export const from : any
 }
 
-// type Atom = [string, string | [string | string[]]]
-
 type ParsedTGD = [[string, string | (string | string[])[]][], [string, string | (string | string[])[]][]]
 
 type ParsedSchema = Array<[string, Array<[string, string]>]>

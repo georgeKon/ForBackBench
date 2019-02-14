@@ -10,12 +10,12 @@ interface Triple {
 
 const parser = new SparqlParser()
 
-export function convertSparqlToQueryCmd(sparqlPath : string) {
-  const sparqlString = fs.readFileSync(path.resolve(sparqlPath), 'utf8')
+// export function convertSparqlToQueryCmd(sparqlPath : string) {
+//   const sparqlString = fs.readFileSync(path.resolve(sparqlPath), 'utf8')
 
-  const result = convertSparqlToQuery(sparqlString)
-  // console.log(result)
-}
+//   const result = convertSparqlToQuery(sparqlString)
+//   // console.log(result)
+// }
 
 export function convertSparqlToQuery(sparqlString : string) {
   // @ts-ignore

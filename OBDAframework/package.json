@@ -11,7 +11,9 @@
   "scripts": {
     "postinstall": "node ./app/utils/postinstall",
     "lint": "tslint --project ./ --format stylish",
-    "build": "rm -rf ./dist/ && tsc",
+    "fix": "yarn run lint --fix",
+    "test": "mocha -r ts-node/register ./test/**/*.test.ts --pretty",
+    "build": "yarn run lint && rm -rf ./dist/ && tsc",
     "loadTest": "obdabenchmark load ../../scenarios/LUBM/schema.txt ../../scenarios/LUBM/data/",
     "loadTestLarge": "obdabenchmark load ..\\scenarios\\LUBM\\schema.txt ..\\scenarios\\LUBM\\cb-data\\ .\\configs\\testconfig.json",
     "rewriteTestRapid": "obdabenchmark rewrite ..\\scenarios\\LUBM\\Q2.rq ..\\scenarios\\LUBM\\U.owl rapid .\\configs\\testconfig.json",
@@ -30,11 +32,16 @@
     "xml2js": "0.4.19"
   },
   "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.6",
     "@types/node": "11.9.2",
     "@types/pg": "7.4.11",
     "@types/sparqljs": "2.1.0",
     "@types/xml2js": "0.4.3",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
     "pegjs": "0.10.0",
+    "ts-node": "^8.0.2",
     "tslint": "5.12.1",
     "tslint-config-standard": "8.0.1",
     "typescript": "3.3.3"

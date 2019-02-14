@@ -9,8 +9,10 @@ export default class Logger {
   constructor(label? : string, logPath? : string, mute? : boolean) {
     const dateTime = new DateTime()
     const name = `${dateTime.dateTimeStamp}-${label ? label : 'run'}.log`
-    this.stream = fs.createWriteStream(path.resolve(logPath ? logPath : __dirname, name), { flags: 'a+' })
     this.mute = mute ? mute : false
+    if(!this.mute) {
+      this.stream = fs.createWriteStream(path.resolve(logPath ? logPath : __dirname, name), { flags: 'a+' })
+    }
   }
 
   public log(message : string, type : string) : void {
@@ -20,8 +22,8 @@ export default class Logger {
       /* tslint:disable */
       console.log(line)
       /* tslint:enable */
+      this.stream.write(line + '\n')
     }
-    this.stream.write(line + '\n')
   }
 
   public info(message : string) : void {

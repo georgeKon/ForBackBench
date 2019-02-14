@@ -2,12 +2,12 @@ import * as fs from 'fs'
 import * as path from 'path'
 import parser from 'xml2js'
 
-export async function convertOwlToTgdCmd(owlPath : string, options : any) {
-  const owlString = fs.readFileSync(path.resolve(owlPath), 'utf8')
+// export async function convertOwlToTgdCmd(owlPath : string, options : any) {
+//   const owlString = fs.readFileSync(path.resolve(owlPath), 'utf8')
 
-  const result = await convertOwlToTgd(owlString)
-  // console.log(result)
-}
+//   const result = await convertOwlToTgd(owlString)
+//   // console.log(result)
+// }
 
 export async function convertOwlToTgd(owlString : string) {
   const parsed = await parseXml(owlString) as any
@@ -34,7 +34,7 @@ function handleClasses(classes : any) {
 
       if(intersection.hasOwnProperty('owl:Class')) {
         const intClass = formatText(intersection['owl:Class'])
-        lines.push(`${name}(?X) -> ${intClass}(?X) .`)
+        lines.push(`${name}(?X) -> ${intClass}(?X)`)
       }
 
       const restriction = handleRestriction(intersection['owl:Restriction'][0], name)
@@ -50,7 +50,7 @@ function handleClasses(classes : any) {
           const sub = subClass.hasOwnProperty('owl:Class')
             ? formatText(subClass['owl:Class'])
             : subClass['$']['rdf:resource'].split('#').pop()
-          lines.push(`${name}(?X) -> ${sub}(?X) .`)
+          lines.push(`${name}(?X) -> ${sub}(?X)`)
         }
       })
     }
@@ -66,7 +66,7 @@ function handleRestriction(restriction : any, name : string) {
     ? formatText(restriction['owl:someValuesFrom'][0]['owl:Class'])
     : formatText(restriction['owl:someValuesFrom'])
 
-  return `${name}(?X) -> ${property}(?X, ?Y), ${resClass}(?Y) .`
+  return `${name}(?X) -> ${property}(?X, ?Y), ${resClass}(?Y)`
 }
 
 function handleObjects(objects : any) {
@@ -79,24 +79,26 @@ function handleObjects(objects : any) {
 
     if(object.hasOwnProperty('rdfs:domain')) {
       const domain = formatText(object['rdfs:domain'])
-      lines.push(`${name}(?X, ?X1) -> ${domain}(?X) .`)
+
+      lines.push(`${name}(?X, ?X1) -> ${domain}(?X)`)
     }
 
     if(object.hasOwnProperty('rdfs:range')) {
       const range = formatText(object['rdfs:range'])
-      lines.push(`${name}(?X, ?X1) -> ${range}(?X1) .`)
+
+      lines.push(`${name}(?X, ?X1) -> ${range}(?X1)`)
     }
 
     if(object.hasOwnProperty('owl:inverseOf')) {
       const inverse = object['owl:inverseOf'][0].hasOwnProperty('owl:ObjectProperty')
         ? formatText(object['owl:inverseOf'][0]['owl:ObjectProperty'])
         : formatText(object['owl:inverseOf'])
-      lines.push(`${name}(?Y, ?X) -> ${inverse}(?X, ?Y) .`)
+      lines.push(`${name}(?Y, ?X) -> ${inverse}(?X, ?Y)`)
     }
 
     if(object.hasOwnProperty('rdfs:subPropertyOf')) {
       const sub = formatText(object['rdfs:subPropertyOf'])
-      lines.push(`${name}(?X, ?Y) -> ${sub}(?X, ?Y) .`)
+      lines.push(`${name}(?X, ?Y) -> ${sub}(?X, ?Y)`)
     }
   })
   return lines
@@ -112,15 +114,15 @@ function handleTransitives(transitives : any) {
 
     if(transitive.hasOwnProperty('rdfs:domain')) {
       const domain = formatText(transitive['rdfs:domain'])
-      lines.push(`${name}(?X, ?X1) -> ${domain}(?X) .`)
+      lines.push(`${name}(?X, ?X1) -> ${domain}(?X)`)
     }
 
     if(transitive.hasOwnProperty('rdfs:range')) {
       const range = formatText(transitive['rdfs:range'])
-      lines.push(`${name}(?X, ?X1) -> ${range}(?X1) .`)
+      lines.push(`${name}(?X, ?X1) -> ${range}(?X1)`)
     }
 
-    lines.push(`${name}(?X, ?Y), ${name}(?Y, ?Z) -> ${name}(?X, ?Z) .`)
+    lines.push(`${name}(?X, ?Y), ${name}(?Y, ?Z) -> ${name}(?X, ?Z)`)
   })
   return lines
 }
@@ -135,7 +137,7 @@ function handleDatatypes(datatypes : any) {
 
     if(datatype.hasOwnProperty('rdfs:domain')) {
       const domain = formatText(datatype['rdfs:domain'])
-      lines.push(`${name}(?X, ?X1) -> ${domain}(?X) .`)
+      lines.push(`${name}(?X, ?X1) -> ${domain}(?X)`)
     }
   })
   return lines
