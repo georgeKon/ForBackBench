@@ -1,6 +1,6 @@
 import 'mocha'
 import { expect } from 'chai'
-import { convertSchemaToSql } from '../app/converters/converters/schema-sql'
+import { convertSchemaToSql } from '../../app/converters/converters/schema-sql'
 
 const schema = 't0 { c0 : STRING } t1 { c0 : STRING, c1 : STRING }'
 

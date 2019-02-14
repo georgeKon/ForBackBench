@@ -12,5 +12,5 @@ const defaultUri = 'http://example.com/example.owl#'
 // }
 
 export function convertTgdToOwl(tgdArray : string[]) {
-
+  const foo = 'bar'
 }

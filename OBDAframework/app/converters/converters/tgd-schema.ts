@@ -29,7 +29,6 @@ export function convertTgdToSchema(tgdArray : string[]) {
       acc.push(...sql)
     }
     tgd[1].forEach(atom => {
-      // console.log(atom)
       if(atom[1] === ', ') {
         // @ts-ignore
         atom = atom[0]
@@ -37,7 +36,7 @@ export function convertTgdToSchema(tgdArray : string[]) {
       const name = atom[0]
       if(!names.has(name)) {
         names.add(name)
-        const sql = createSql(name, tgd[0][0][1].length)
+        const sql = createSql(name, atom[1].length)
         acc.push(...sql)
       }
     })

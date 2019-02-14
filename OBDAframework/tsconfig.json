@@ -59,6 +59,7 @@
   "exclude": [
     "node_modules",
     "app/converters/grammars/*.js",
+    "test",
     "app/combined.js",
     "app/drivers.js",
     "app/rewrite.js",

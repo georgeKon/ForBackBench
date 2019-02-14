@@ -28,13 +28,16 @@ export function convertUcqToSql(ucqArray : string[], schemaString : string, opti
 
   const lines = ucqArray.reduce((acc : string[], elem) => {
     let parsed
+    let rapid : boolean
     try {
       parsed = rapidUcqParser.parse(elem)
       logger.info('Parsed with Rapid Parser')
+      rapid = true
     } catch(err) {
       try {
         parsed = iqarosUcqParser.parse(elem)
         logger.info('Parsed with Iqaros Parser')
+        rapid = false
       } catch(err) {
         logger.error('Cannot parse UCQ')
         logger.error(err.message)
@@ -84,7 +87,7 @@ export function convertUcqToSql(ucqArray : string[], schemaString : string, opti
           return
         }
         variables.forEach((variable, k) => {
-          if(variable.charAt(0) === '?') {
+          if((rapid && variable.charAt(0) === '?') || (!rapid && variable.charAt(0) === 'X')) {
             otherVariables.forEach((otherVariable, l) => {
               if(variable === otherVariable) {
                 accum += `${getAttributeString(j, otherName, parsedSchema, l)} = `
