@@ -3,16 +3,14 @@ import * as path from 'path'
 import DateTime from './datetime'
 
 export default class Logger {
-  private stream : any
+  private writePath : string
   private mute : boolean
 
   constructor(label? : string, logPath? : string, mute? : boolean) {
     const dateTime = new DateTime()
     const name = `${dateTime.dateTimeStamp}-${label ? label : 'run'}.log`
     this.mute = mute ? mute : false
-    if(!this.mute) {
-      this.stream = fs.createWriteStream(path.resolve(logPath ? logPath : __dirname, name), { flags: 'a+' })
-    }
+    this.writePath = path.resolve(logPath ? logPath : __dirname, name)
   }
 
   public log(message : string, type : string) : void {
@@ -22,7 +20,7 @@ export default class Logger {
       /* tslint:disable */
       console.log(line)
       /* tslint:enable */
-      this.stream.write(line + '\n')
+      fs.appendFileSync(this.writePath, line + '\n')
     }
   }
 
