@@ -12,7 +12,7 @@
     "postinstall": "node ./app/utils/postinstall",
     "lint": "tslint --project ./ --format stylish",
     "format": "yarn run lint --fix",
-    "test": "mocha -r ts-node/register ./test/**/*.test.ts --pretty",
+    "test": "ts-mocha ./test/**/*.test.ts --pretty",
     "dev": "rm -rf ./dist/ && tsc && node dist/app/converters/converters/tgd-owl.js",
     "build": "yarn run lint && rm -rf ./dist/ && tsc",
     "loadTest": "obdabenchmark load ../../scenarios/LUBM/schema.txt ../../scenarios/LUBM/data/",
@@ -51,7 +51,7 @@
     "mockdate": "2.0.2",
     "pegjs": "0.10.0",
     "sinon": "7.2.3",
-    "ts-node": "8.0.2",
+    "ts-mocha": "2.0.0",
     "tslint": "5.12.1",
     "tslint-config-standard": "8.0.1",
     "typescript": "3.3.3"

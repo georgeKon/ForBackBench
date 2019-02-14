@@ -2,8 +2,6 @@ import * as fs from 'fs'
 import * as path from 'path'
 import XMLWriter from 'xml-writer'
 import parser from '../grammars/tgd-grammar'
-import { stringify } from 'querystring';
-import { isRegExp } from 'util';
 
 type SingleTGD = Array<[string, string | Array<string | string[]>]>
 type ParsedTGD = [SingleTGD, SingleTGD]
@@ -24,7 +22,7 @@ const defaultUri = 'http://example.com/example.owl#'
 //   // console.log(result)
 // }
 
-export function convertTgdToOwl(tgdArray : string[]) {
+export function convertTgdToOwl(tgdArray : string[]) : string {
   const writer = new XMLWriter()
   writer.startDocument()
 
@@ -72,7 +70,7 @@ export function convertTgdToOwl(tgdArray : string[]) {
 
   writer.endDocument()
 
-  console.log(writer.toString())
+  return writer.toString()
 }
 
 function writePreamble(writer : any) {
@@ -102,6 +100,7 @@ function writeRdf(writer : any) {
 function writeOntology(writer : any) {
   writer.startElement('owl:Ontology')
     .writeAttribute('rdf:about', defaultUri.split('#')[0])
+    .endElement()
 }
 
 function writeAtoms(writer : any, atoms : Map<string, Atom>) {
@@ -148,9 +147,4 @@ function handleConjunction(variable : string | Array<string | string[]>) : [stri
 }
 
 const tgdArray = fs.readFileSync(path.resolve('../scenarios/LUBM/test.txt'), 'utf8').split(/\r?\n/)
-console.log(tgdArray)
 convertTgdToOwl(tgdArray)
-
-// <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person">
-//         <rdfs:label>person</rdfs:label>
-//     </owl:Class>
