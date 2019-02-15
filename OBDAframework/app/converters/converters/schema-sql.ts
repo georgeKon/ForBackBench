@@ -4,10 +4,6 @@ import parser from '../grammars/schema-grammar'
 
 type ParsedSchema = Array<[string, Array<[string, string]>]>
 
-interface SchemaSqlOptions {
-  clean? : boolean
-}
-
 const types = new Map([['STRING', 'text'], ['DOUBLE', 'double precision'], ['INTEGER', 'integer'], ['SYMBOL', 'text']])
 
 // export function convertSchemaToSqlCmd(schemaPath : string, options : any) : void {
@@ -17,7 +13,7 @@ const types = new Map([['STRING', 'text'], ['DOUBLE', 'double precision'], ['INT
 //   // console.log(sqlArray)
 // }
 
-export function convertSchemaToSql(schemaString : string, options? : SchemaSqlOptions) : string[] {
+export function convertSchemaToSql(schemaString : string, options? : SchemaSqlOptions) {
   const trimmedInput = schemaString.trim().replace(/[\s+]+/g, ' ')
   const parsed = parser.parse(trimmedInput) as ParsedSchema
 

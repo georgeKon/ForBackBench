@@ -1,13 +1,6 @@
-import * as fs from 'fs'
-import * as path from 'path'
 import rapidUcqParser from '../grammars/rapid-ucq-grammar'
 import iqarosUcqParser from '../grammars/iqaros-ucq-grammar'
 import schemaParser from '../grammars/schema-grammar'
-import Logger from '../../utils/logger'
-
-interface UcqSqlOptions {
-  logger? : Logger
-}
 
 type ParsedSchema = Array<[string, Array<[string, string]>]>
 
@@ -20,28 +13,26 @@ type ParsedUCQ = [Array<string | string[]>, Array<string | Array<string | string
 //   const sqlArray = convertUcqToSql(ucqArray, schemaString, { })
 // }
 
-export function convertUcqToSql(ucqArray : string[], schemaString : string, options? : UcqSqlOptions) {
-  const logger = options && options.logger ? options.logger : new Logger('', '', true)
-
+export function convertUcqToSql(ucqArray : string[], schemaString : string, options : UcqSqlOptions) {
   const trimmedInput = schemaString.trim().replace(/[\s+]+/g, ' ')
   const parsedSchema = schemaParser.parse(trimmedInput) as ParsedSchema
 
   const lines = ucqArray.reduce((acc : string[], elem) => {
     let parsed
-    let rapid : boolean
-    try {
-      parsed = rapidUcqParser.parse(elem)
-      logger.info('Parsed with Rapid Parser')
-      rapid = true
-    } catch(err) {
+    if(options.format === 'rapid') {
+      try {
+        parsed = rapidUcqParser.parse(elem)
+      } catch(err) {
+        console.error('Cannot parse UCQ with format \'rapid\'')
+      }
+    } else if(options.format === 'iqaros') {
       try {
         parsed = iqarosUcqParser.parse(elem)
-        logger.info('Parsed with Iqaros Parser')
-        rapid = false
       } catch(err) {
-        logger.error('Cannot parse UCQ')
-        logger.error(err.message)
+        console.error('Cannot parse UCQ with format \'iqaros\'')
       }
+    } else {
+      throw new Error(`Unknown UCQ format '${options.format}'`)
     }
 
     const [selection, constraints] = parsed as ParsedUCQ
@@ -87,7 +78,8 @@ export function convertUcqToSql(ucqArray : string[], schemaString : string, opti
           return
         }
         variables.forEach((variable, k) => {
-          if((rapid && variable.charAt(0) === '?') || (!rapid && variable.charAt(0) === 'X')) {
+          if((options.format === 'rapid' && variable.charAt(0) === '?')
+            || (!(options.format === 'rapid') && variable.charAt(0) === 'X')) {
             otherVariables.forEach((otherVariable, l) => {
               if(variable === otherVariable) {
                 accum += `${getAttributeString(j, otherName, parsedSchema, l)} = `

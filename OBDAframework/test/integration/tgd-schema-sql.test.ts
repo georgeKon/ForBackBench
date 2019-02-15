@@ -1,7 +1,6 @@
 import 'mocha'
 import { expect } from 'chai'
-import { convertTgdToSchema } from '../../app/converters/converters/tgd-schema'
-import { convertSchemaToSql } from '../../app/converters/converters/schema-sql'
+import OBDAConverter from '../../app/converter'
 
 describe('TGD-Schema-SQL integration', () => {
 
@@ -17,8 +16,7 @@ describe('TGD-Schema-SQL integration', () => {
       'CREATE TABLE "t2" (c0 text);'
     ]
 
-    const schemaString = convertTgdToSchema(tgdArray).join('\n')
-    const result = convertSchemaToSql(schemaString, { clean: false })
+    const result = OBDAConverter.convertTgdToSql(tgdArray, { clean: false })
 
     expect(result).to.deep.equal(expected)
   })

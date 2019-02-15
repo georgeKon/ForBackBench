@@ -2,7 +2,7 @@ import * as fs from 'fs'
 import * as path from 'path'
 import DateTime from './datetime'
 
-export default class Logger {
+export default class Logger implements ILogger {
   private writePath : string
   private mute : boolean
 

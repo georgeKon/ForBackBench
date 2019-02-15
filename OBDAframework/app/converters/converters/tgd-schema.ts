@@ -14,7 +14,7 @@ const defaultType = 'STRING'
 //   // console.log(result)
 // }
 
-export function convertTgdToSchema(tgdArray : string[]) {
+export function convertTgdToSchema(tgdArray : string[], options? : TgdSchemaOptions) {
   const names = new Set()
   const relations = (tgdArray.map(line => parser.parse(line)) as ParsedTGD[])
     .reduce((acc : string[], tgd : ParsedTGD) => {

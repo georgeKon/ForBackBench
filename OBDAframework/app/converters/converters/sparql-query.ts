@@ -17,7 +17,7 @@ const parser = new SparqlParser()
 //   // console.log(result)
 // }
 
-export function convertSparqlToQuery(sparqlString : string) {
+export function convertSparqlToQuery(sparqlString : string, options? : SparqlQueryOptions) {
   // @ts-ignore
   const { variables, where: [ { triples } ] } = parser.parse(sparqlString) as SelectQuery
   const atoms = triples.map((triple : Triple) => generateString(triple))

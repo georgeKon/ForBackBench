@@ -1,70 +1,36 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import { convertSchemaToSql } from './converters/converters/schema-sql'
-import { convertTgdToSchema } from './converters/converters/tgd-schema'
 import { from as copyFrom } from 'pg-copy-streams'
 import DB from './utils/db'
-import Logger from './utils/logger'
-
-interface LoadDataOptions {
-  tgd? : boolean,
-  clean? : boolean
-  logger? : Logger
-}
-
-export async function loadDataCmd(schemaPath : string, dataPath : string, options : any) {
-  const logger = new Logger('load', './logs')
-  const db = new DB(logger)
-  // await db.connect()
-
-  loadData(schemaPath, dataPath, db, { logger, tgd: options.tgd, clean: options.clean })
-}
+import OBDAconverter from './converter'
 
 export async function loadData(schemaPath : string, dataPath : string, db : DB, options : LoadDataOptions) {
-  const { tgd, clean } = options
-  let { logger } = options
-  if(!logger) {
-    logger = new Logger('load', './logs')
-  }
+  const { clean, logger, tgd } = options
 
   schemaPath = path.resolve(schemaPath)
-  let schema = fs.readFileSync(schemaPath, 'utf-8')
-  if(tgd) {
-    schema = convertTgdToSchema(schema.split(/\r?\n/)).join('\n')
-  }
+  const schema = fs.readFileSync(schemaPath, 'utf8')
 
-  // let query
-  // if(fs.existsSync(sqlPath) && !options.force) {
-  //   printMessage('Using cached schema SQL')
-  //   query = fs.readFileSync(sqlPath, 'utf8')
-  // } else {
-  //   printMessage('Converting schema')
-  //   query = convertSchemaToSql(schema).join('\n')
-  //   fs.writeFileSync(sqlPath, query)
-  //   printMessage('Schema conversion successful')
-  // }
-
-  logger.info('Begin schema convert')
-  const query = convertSchemaToSql(schema, { clean }).join('\n')
-  logger.pass('Schema convert complete')
+  const query = options.tgd
+    ? OBDAconverter.convertTgdToSql(schema.split(/\r?\n/), { clean })
+    : OBDAconverter.convertSchemaToSql(schema, { clean })
 
   const sqlPath = schemaPath.replace('.txt', '.sql')
   fs.writeFileSync(sqlPath, query)
-  logger.info('SQL written to ' + sqlPath)
+  logger && logger.info('SQL written to ' + sqlPath)
 
   try {
     await db.transact()
-    logger.info('Begin schema import')
-    const result = await db.query(query)
-    logger.pass('Schema import complete')
+    logger && logger.info('Begin schema import')
+    await db.query(query.join(' '))
+    logger && logger.pass('Schema import complete')
 
     const files = fs.readdirSync(path.resolve(dataPath))
       .filter(file => path.extname(file) === '.csv')
 
-    logger.info('Begin data import')
+    logger && logger.info('Begin data import')
     // For of loop because promises don't work in forEach
     for(const file of files) {
-      logger.info(`Import ${file}`)
+      logger && logger.info(`Import ${file}`)
       const fileStream = fs.createReadStream(path.resolve(dataPath, file))
       const stream = await db.query(copyFrom(`COPY "${path.parse(file).name}" FROM STDIN DELIMITER ','`)) as any
       fileStream.pipe(stream)
@@ -73,12 +39,12 @@ export async function loadData(schemaPath : string, dataPath : string, db : DB, 
         stream.on('error', () => reject())
       })
       await promise
-      logger.pass(`${file} imported`)
+      logger && logger.pass(`${file} imported`)
     }
-    logger.pass('Data import complete')
+    logger && logger.pass('Data import complete')
     await db.commit()
   } catch(err) {
-    logger.error(err.message)
+    logger && logger.error(err.message)
     db.abort()
   }
   return schema

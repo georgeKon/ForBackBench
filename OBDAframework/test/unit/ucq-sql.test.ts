@@ -14,7 +14,7 @@ describe('UCQ-SQL converter', () => {
       'WHERE B.c0 = A.c0 AND A.c0 = B.c0;'
     ]
 
-    const result = convertUcqToSql(rapidUcqSingle, schema)
+    const result = convertUcqToSql(rapidUcqSingle, schema, { format: 'rapid' })
 
     expect(result).to.deep.equal(expected)
   })
@@ -27,7 +27,7 @@ describe('UCQ-SQL converter', () => {
       'WHERE B.c0 = A.c0 AND A.c0 = B.c0;'
     ]
 
-    const result = convertUcqToSql(iqarosUcqSingle, schema)
+    const result = convertUcqToSql(iqarosUcqSingle, schema, { format: 'iqaros' })
 
     expect(result).to.deep.equal(expected)
   })
@@ -47,12 +47,12 @@ describe('UCQ-SQL converter', () => {
       'WHERE B.c0 = A.c0 AND A.c0 = B.c0;'
     ]
 
-    const result = convertUcqToSql(rapidUcqUnion, schema)
+    const result = convertUcqToSql(rapidUcqUnion, schema, { format: 'rapid' })
 
     expect(result).to.deep.equal(expected)
   })
 
-  it('should convert a union Rapid UCQ to SQL', () => {
+  it('should convert a union iqaros UCQ to SQL', () => {
     const iqarosUcqUnion = [
       'Q(X0) <- t0(X0) ^ t1(X0,X1)',
       'Q(X0,X1) <- t0(X0) ^ t1(X0,X1)'
@@ -67,7 +67,7 @@ describe('UCQ-SQL converter', () => {
       'WHERE B.c0 = A.c0 AND A.c0 = B.c0;'
     ]
 
-    const result = convertUcqToSql(iqarosUcqUnion, schema)
+    const result = convertUcqToSql(iqarosUcqUnion, schema, { format: 'iqaros' })
 
     expect(result).to.deep.equal(expected)
   })

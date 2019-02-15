@@ -2,10 +2,7 @@
 
 import program from 'commander'
 import { version } from './package.json'
-import { loadDataCmd } from './app/load'
-// const { computeRewritingsCmd } = require('./app/rewrite')
-import { executeUcqCmd } from './app/execute'
-// const { runBenchmarkCmd } = require('./app/combined')
+import { loadDataCmd } from './app/commands'
 
 program
   .version(version, '-v, --version')
@@ -14,7 +11,6 @@ program
   .command('load')
   .arguments('<schema> <data>')
   .description('Initialise a database with given schema and insert data')
-  // .option('-F, --force', 'Force use of provided schema even if cached version exists')
   .option('-t, --tgd', 'Flags use of tgd file that must be converted to schema')
   .option('-c, --clean', 'Create clean instance of database by including DROP IF EXISTS commands')
   .action((schema, data, options) => loadDataCmd(schema, data, options))
@@ -27,11 +23,11 @@ program
 //   .option('-m, --mode <mode>', 'Graal mode')
 //   .action((query, ontology, tool, config, options) => computeRewritingsCmd(query, ontology, tool, config, options))
 
-program
-  .command('execute')
-  .arguments('<ucq> <schema>')
-  .description('Execute a UCQ against a database')
-  .action((ucq, schema, options) => executeUcqCmd(ucq, schema, options))
+// program
+//   .command('execute')
+//   .arguments('<ucq> <schema>')
+//   .description('Execute a UCQ against a database')
+//   .action((ucq, schema, options) => executeUcqCmd(ucq, schema, options))
 
 // program
 //   .command('test')

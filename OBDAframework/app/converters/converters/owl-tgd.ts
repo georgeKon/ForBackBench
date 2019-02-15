@@ -9,7 +9,7 @@ import parser from 'xml2js'
 //   // console.log(result)
 // }
 
-export async function convertOwlToTgd(owlString : string) {
+export async function convertOwlToTgd(owlString : string, options? : OwlTgdOptions) {
   const parsed = await parseXml(owlString) as any
 
   const classes = handleClasses(parsed['rdf:RDF']['owl:Class'])

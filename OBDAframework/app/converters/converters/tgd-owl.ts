@@ -36,7 +36,7 @@ const defaultUri = 'http://example.com/example.owl#'
 //   // console.log(result)
 // }
 
-export function convertTgdToOwl(tgdArray : string[]) : string {
+export function convertTgdToOwl(tgdArray : string[], options? : TgdOwlOptions) : string {
   const writer = new XMLWriter()
   writer.startDocument()
 
