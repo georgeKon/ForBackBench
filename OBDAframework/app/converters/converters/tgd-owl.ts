@@ -50,74 +50,55 @@ export function convertTgdToOwl(tgdArray : string[]) : string {
     if(head.length > 1) {
       throw new Error('Only 1 atom allowed in head')
     }
-    const [headName, headVars] = head[0] as [string, Array<string[] | string>]
-    const fixedHeadVars = headVars.map(variable => handleConjunction(variable)) as string[]
+    const [headName, headVars] = fixVariables(head[0])
 
-    if(fixedHeadVars.length > 2) {
-      throw new Error('Atoms can be at max binary')
-    }
     // @ts-ignore
     const headAtom : Atom = atoms.has(headName)
       ? atoms.get(headName)
-      : { name: headName, variables: fixedHeadVars, subClassOf: [] }
+      : { name: headName, variables: headVars, subClassOf: [] }
 
     const dependency = body[0]
-    if(dependency.includes(', ')) {
-      // @ts-ignore
-      dependency = dependency[0]
-    }
-
-    const [bodyName, bodyVars] = dependency as [string, Array<string[] | string>]
-    const fixedBodyVars = bodyVars.map(variable => handleConjunction(variable)) as string[]
+    const [dependencyName, dependencyVars] = fixVariables(dependency)
     // @ts-ignore
-    const bodyAtom : Atom = atoms.has(bodyName)
-      ? atoms.get(bodyName)
-      : { name: bodyName, variables: fixedBodyVars, subClassOf: [] }
-    atoms.set(bodyName, bodyAtom)
+    const dependencyAtom : Atom = atoms.has(dependencyName)
+      ? atoms.get(dependencyName)
+      : { name: dependencyName, variables: dependencyVars, subClassOf: [] }
+    atoms.set(dependencyName, dependencyAtom)
 
     if(body.length === 1) {
-      if(fixedBodyVars.length > 2) {
-        throw new Error('Atoms can be at max binary')
-      }
       // Check for domain and range
-      if((fixedBodyVars[0] === fixedHeadVars[0]) && !headAtom.domain) {
-        headAtom.domain = bodyName
-      } else if((fixedBodyVars[0] === fixedHeadVars[1]) && !headAtom.range) {
-        headAtom.range = bodyName
+      if((dependencyVars[0] === headVars[0]) && !headAtom.domain) {
+        headAtom.domain = dependencyName
+      } else if((dependencyVars[0] === headVars[1]) && !headAtom.range) {
+        headAtom.range = dependencyName
       }
       // Check for inverseOf
-      if((fixedBodyVars[0] === fixedHeadVars[1]) && (fixedBodyVars[1] === fixedHeadVars[0])) {
-        headAtom.inverseOf = bodyName
-        bodyAtom.inverseOf = headName
+      if((dependencyVars[0] === headVars[1]) && (dependencyVars[1] === headVars[0])) {
+        headAtom.inverseOf = dependencyName
+        dependencyAtom.inverseOf = headName
       }
       // Check for subPropertyOf
-      if((fixedBodyVars[0] === fixedHeadVars[0]) && (fixedBodyVars[1] === fixedHeadVars[1])) {
-        headAtom.subPropertyOf = bodyName
+      if((dependencyVars[0] === headVars[0]) && (dependencyVars[1] === headVars[1])) {
+        headAtom.subPropertyOf = dependencyName
       }
       // Check for subClassOf
-      if(fixedBodyVars[0] === fixedHeadVars[0]) {
-        headAtom.subClassOf.push({ name: bodyName })
+      if(dependencyVars[0] === headVars[0]) {
+        headAtom.subClassOf.push({ name: dependencyName })
       }
     } else if(body.length === 2) {
       const restriction = body[1]
-      if(restriction.includes(', ')) {
-        // @ts-ignore
-        restriction = restriction[0]
-      }
-
-      const [restrictionName, restrictionVars] = restriction as [string, Array<string[] | string>]
-      const fixedRestrictionVars = restrictionVars.map(variable => handleConjunction(variable)) as string[]
+      const [restrictionName, restrictionVars] = fixVariables(restriction)
       // @ts-ignore
       const restrictionAtom : Atom = atoms.has(restrictionName)
         ? atoms.get(restrictionName)
-        : { name: restrictionName, variables: fixedRestrictionVars, subClassOf: [] }
+        : { name: restrictionName, variables: restrictionVars, subClassOf: [] }
       atoms.set(restrictionName, restrictionAtom)
 
       // Check for subClassOf
-      if((fixedBodyVars[0] === fixedHeadVars[0]) && (fixedRestrictionVars[0] === fixedBodyVars[1])) {
+      if((dependencyVars[0] === headVars[0]) && (restrictionVars[0] === dependencyVars[1])) {
         headAtom.subClassOf.push({
-          name: bodyName,
-          restriction: { onProperty: bodyName, someValuesFrom: restrictionName }
+          name: dependencyName,
+          restriction: { onProperty: dependencyName, someValuesFrom: restrictionName }
         })
       }
     }
@@ -238,13 +219,33 @@ function writeObject(writer : any, { name, domain, range, inverseOf, subProperty
   writer.endElement()
 }
 
+function fixVariables(dependency : any) : [string, Array<string[] | string>] {
+  if(dependency.includes(', ')) {
+    // @ts-ignore
+    dependency = dependency[0]
+  }
+  const [name, vars] = dependency as [string, Array<string[] | string>]
+  const fixedVars = vars.map(variable => handleConjunction(variable)) as string[]
+
+  if(fixedVars.length > 2) {
+    throw new Error('Atoms can at max be binary')
+  }
+
+  return [name, fixedVars]
+}
+
 function handleConjunction(variable : string | Array<string | string[]>) : [string, string[]] | string {
   // @ts-ignore
   return variable.includes(',') || variable.includes(', ') || variable.includes(' ^ ') ? variable[0] : variable
 }
 
+function handleAtom(atom : Atom) {
+
+}
+
 const tgdArray = fs.readFileSync(path.resolve('../scenarios/LUBM/test.txt'), 'utf8').split(/\r?\n/)
-console.log(convertTgdToOwl(tgdArray))
+const owl = convertTgdToOwl(tgdArray)
+fs.writeFileSync(path.resolve('../scenarios/LUBM/test.owl'), owl)
 
 // <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#TeachingAssistant">
 //     <rdfs:label>university teaching assistant</rdfs:label>

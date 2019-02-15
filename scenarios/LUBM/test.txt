@@ -1,4 +1,3 @@
-TeachingAssistant(?X) -> Person(?X) .
-TeachingAssistant(?X) -> teachingAssistantOf(?X,?Y), Course(?Y) .
-teachingAssistantOf(?X,?X1) -> Course(?X1) .
-teachingAssistantOf(?X,?X1) -> TeachingAssistant(?X) .
+GraduateStudent(?X) -> Person(?X) .
+GraduateStudent(?X) -> takesCourse(?X,?Y), GraduateCourse(?Y) .
+Student(?X) -> takesCourse(?X,?Y), Course(?Y) .
