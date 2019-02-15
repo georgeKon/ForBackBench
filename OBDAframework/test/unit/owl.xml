@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.com/example.owl#" xml:base="http://example.com/example.owl" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+
+    <owl:Ontology rdf:about="http://example.com/example.owl"/>
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/example.owl#degreeFrom">
+
+
+        <rdfs:domain rdf:resource="http://example.com/example.owl#Person"/>
+
+
+        <rdfs:range rdf:resource="http://example.com/example.owl#University"/>
+
+
+        <owl:inverseOf rdf:resource="http://example.com/example.owl#hasAlumnus"/>
+
+
+    </owl:ObjectProperty>
+
+
+    <owl:ObjectProperty rdf:about="http://example.com/example.owl#hasAlumnus">
+
+
+        <owl:inverseOf rdf:resource="http://example.com/example.owl#degreeFrom"/>
+
+
+    </owl:ObjectProperty>
+
+
+    <owl:Class rdf:about="http://example.com/example.owl#Person"/>
+
+
+    <owl:Class rdf:about="http://example.com/example.owl#University"/>
+
+
+</rdf:RDF>

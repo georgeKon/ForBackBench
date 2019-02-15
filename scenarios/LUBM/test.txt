@@ -1,2 +1,4 @@
-advisor(?X,?X1) -> Person(?X) .
-advisor(?X,?X1) -> Professor(?X1) .
+TeachingAssistant(?X) -> Person(?X) .
+TeachingAssistant(?X) -> teachingAssistantOf(?X,?Y), Course(?Y) .
+teachingAssistantOf(?X,?X1) -> Course(?X1) .
+teachingAssistantOf(?X,?X1) -> TeachingAssistant(?X) .

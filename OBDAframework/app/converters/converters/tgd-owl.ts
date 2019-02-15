@@ -1,6 +1,7 @@
 import * as fs from 'fs'
 import * as path from 'path'
 import XMLWriter from 'xml-writer'
+import format from 'xml-formatter'
 import parser from '../grammars/tgd-grammar'
 
 type SingleTGD = Array<[string, string | Array<string | string[]>]>
@@ -9,8 +10,21 @@ type ParsedTGD = [SingleTGD, SingleTGD]
 interface Atom {
   name : string
   variables : string[]
+  subClassOf : SubClass[]
   domain? : string
-  range? : string
+  range? : string,
+  inverseOf? : string,
+  subPropertyOf? : string
+}
+
+interface Restriction {
+  onProperty : string
+  someValuesFrom : string
+}
+
+interface SubClass {
+  name : string
+  restriction? : Restriction
 }
 
 const defaultUri = 'http://example.com/example.owl#'
@@ -43,25 +57,70 @@ export function convertTgdToOwl(tgdArray : string[]) : string {
       throw new Error('Atoms can be at max binary')
     }
     // @ts-ignore
-    const headAtom : Atom = atoms.has(headName) ? atoms.get(headName) : { name: headName, variables: fixedHeadVars }
+    const headAtom : Atom = atoms.has(headName)
+      ? atoms.get(headName)
+      : { name: headName, variables: fixedHeadVars, subClassOf: [] }
 
-    body.forEach(dependency => {
-      const [bodyName, bodyVars] = dependency as [string, Array<string[] | string>]
-      const fixedBodyVars = bodyVars.map(variable => handleConjunction(variable)) as string[]
+    const dependency = body[0]
+    if(dependency.includes(', ')) {
+      // @ts-ignore
+      dependency = dependency[0]
+    }
 
-      const bodyAtom : Atom = { name: bodyName, variables: fixedBodyVars }
-      atoms.set(bodyAtom.name, bodyAtom)
+    const [bodyName, bodyVars] = dependency as [string, Array<string[] | string>]
+    const fixedBodyVars = bodyVars.map(variable => handleConjunction(variable)) as string[]
+    // @ts-ignore
+    const bodyAtom : Atom = atoms.has(bodyName)
+      ? atoms.get(bodyName)
+      : { name: bodyName, variables: fixedBodyVars, subClassOf: [] }
+    atoms.set(bodyName, bodyAtom)
 
+    if(body.length === 1) {
       if(fixedBodyVars.length > 2) {
         throw new Error('Atoms can be at max binary')
       }
-
-      if(fixedBodyVars[0] === fixedHeadVars[0]) {
+      // Check for domain and range
+      if((fixedBodyVars[0] === fixedHeadVars[0]) && !headAtom.domain) {
         headAtom.domain = bodyName
-      } else if(fixedBodyVars[0] === fixedHeadVars[1]) {
+      } else if((fixedBodyVars[0] === fixedHeadVars[1]) && !headAtom.range) {
         headAtom.range = bodyName
       }
-    })
+      // Check for inverseOf
+      if((fixedBodyVars[0] === fixedHeadVars[1]) && (fixedBodyVars[1] === fixedHeadVars[0])) {
+        headAtom.inverseOf = bodyName
+        bodyAtom.inverseOf = headName
+      }
+      // Check for subPropertyOf
+      if((fixedBodyVars[0] === fixedHeadVars[0]) && (fixedBodyVars[1] === fixedHeadVars[1])) {
+        headAtom.subPropertyOf = bodyName
+      }
+      // Check for subClassOf
+      if(fixedBodyVars[0] === fixedHeadVars[0]) {
+        headAtom.subClassOf.push({ name: bodyName })
+      }
+    } else if(body.length === 2) {
+      const restriction = body[1]
+      if(restriction.includes(', ')) {
+        // @ts-ignore
+        restriction = restriction[0]
+      }
+
+      const [restrictionName, restrictionVars] = restriction as [string, Array<string[] | string>]
+      const fixedRestrictionVars = restrictionVars.map(variable => handleConjunction(variable)) as string[]
+      // @ts-ignore
+      const restrictionAtom : Atom = atoms.has(restrictionName)
+        ? atoms.get(restrictionName)
+        : { name: restrictionName, variables: fixedRestrictionVars, subClassOf: [] }
+      atoms.set(restrictionName, restrictionAtom)
+
+      // Check for subClassOf
+      if((fixedBodyVars[0] === fixedHeadVars[0]) && (fixedRestrictionVars[0] === fixedBodyVars[1])) {
+        headAtom.subClassOf.push({
+          name: bodyName,
+          restriction: { onProperty: bodyName, someValuesFrom: restrictionName }
+        })
+      }
+    }
 
     atoms.set(headAtom.name, headAtom)
   })
@@ -70,7 +129,8 @@ export function convertTgdToOwl(tgdArray : string[]) : string {
 
   writer.endDocument()
 
-  return writer.toString()
+  const output = format(writer.toString())
+  return format(output)
 }
 
 function writePreamble(writer : any) {
@@ -104,25 +164,50 @@ function writeOntology(writer : any) {
 }
 
 function writeAtoms(writer : any, atoms : Map<string, Atom>) {
-  atoms.forEach((atom, name) => {
+  const filters : { objects : Atom[], classes : Atom[] } = { objects: [], classes: [] }
+
+  atoms.forEach(atom => {
     // FIXME: we are assuming that 1 variable = Class and 2 = ObjectDependency
     if(atom.variables.length === 1) {
-      writeClass(writer, atom)
+      filters.classes.push(atom)
     } else if(atom.variables.length === 2) {
-      writeObject(writer, atom)
+      filters.objects.push(atom)
     } else {
       throw new Error('Atoms can be at max binary')
     }
   })
+
+  filters.objects.forEach(objectAtom => writeObject(writer, objectAtom))
+  filters.classes.forEach(classAtom => writeClass(writer, classAtom))
 }
 
-function writeClass(writer : any, { name } : Atom) {
+function writeClass(writer : any, { name, subClassOf } : Atom) {
   writer.startElement('owl:Class')
     .writeAttribute('rdf:about', defaultUri + name)
-    .endElement()
+
+  subClassOf.forEach(subClass => {
+    writer.startElement('rdfs:subClassOf')
+
+    if(subClass.restriction) {
+      writer.startElement('owl:Restriction')
+        .startElement('owl:onProperty')
+        .writeAttribute('rdf:resource', defaultUri + subClass.restriction.onProperty)
+        .endElement()
+        .startElement('owl:someValuesFrom')
+        .writeAttribute('rdf:resource', defaultUri + subClass.restriction.someValuesFrom)
+        .endElement()
+        .endElement()
+    } else {
+      writer.writeAttribute('rdf:resource', defaultUri + subClass.name)
+    }
+
+    writer.endElement()
+  })
+
+  writer.endElement()
 }
 
-function writeObject(writer : any, { name, domain, range } : Atom) {
+function writeObject(writer : any, { name, domain, range, inverseOf, subPropertyOf } : Atom) {
   writer.startElement('owl:ObjectProperty')
     .writeAttribute('rdf:about', defaultUri + name)
 
@@ -138,6 +223,18 @@ function writeObject(writer : any, { name, domain, range } : Atom) {
       .endElement()
   }
 
+  if(inverseOf) {
+    writer.startElement('owl:inverseOf')
+      .writeAttribute('rdf:resource', defaultUri + inverseOf)
+      .endElement()
+  }
+
+  if(subPropertyOf) {
+    writer.startElement('rdfs:subPropertyOf')
+      .writeAttribute('rdf:resource', defaultUri + subPropertyOf)
+      .endElement()
+  }
+
   writer.endElement()
 }
 
@@ -147,4 +244,15 @@ function handleConjunction(variable : string | Array<string | string[]>) : [stri
 }
 
 const tgdArray = fs.readFileSync(path.resolve('../scenarios/LUBM/test.txt'), 'utf8').split(/\r?\n/)
-convertTgdToOwl(tgdArray)
+console.log(convertTgdToOwl(tgdArray))
+
+// <owl:Class rdf:about="http://swat.cse.lehigh.edu/onto/univ-bench.owl#TeachingAssistant">
+//     <rdfs:label>university teaching assistant</rdfs:label>
+//     <rdfs:subClassOf rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Person"/>
+//     <rdfs:subClassOf>
+//         <owl:Restriction>
+//             <owl:onProperty rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#teachingAssistantOf"/>
+//             <owl:someValuesFrom rdf:resource="http://swat.cse.lehigh.edu/onto/univ-bench.owl#Course"/>
+//         </owl:Restriction>
+//     </rdfs:subClassOf>
+// </owl:Class>

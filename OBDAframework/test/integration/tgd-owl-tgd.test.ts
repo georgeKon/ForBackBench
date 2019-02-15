@@ -7,13 +7,15 @@ describe('TGD-OWL-TGD integration', () => {
 
   it('should convert common format TGDs to OWL and back to TGDs', async () => {
     const tgdArray = [
-      'advisor(?X,?X1) -> Person(?X) .',
-      'advisor(?X,?X1) -> Professor(?X1) .'
+      'degreeFrom(?X,?X1) -> Person(?X) .',
+      'degreeFrom(?X,?X1) -> University(?X1) .',
+      'degreeFrom(?Y,?X) -> hasAlumnus(?X,?Y) .'
     ]
 
     const expected = [
-      'advisor(?X,?X1) -> Person(?X) .',
-      'advisor(?X,?X1) -> Professor(?X1) .'
+      'degreeFrom(?X,?X1) -> Person(?X) .',
+      'degreeFrom(?X,?X1) -> University(?X1) .',
+      'degreeFrom(?Y,?X) -> hasAlumnus(?X,?Y) .'
     ]
 
     const owlString = convertTgdToOwl(tgdArray)
