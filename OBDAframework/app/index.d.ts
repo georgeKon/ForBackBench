@@ -44,7 +44,12 @@ interface LoadDataOptions {
   logger? : ILogger
 }
 
+interface ComputeRewritingsOptions {
+  common? : boolean
+  logger? : ILogger
+}
+
 interface ExecuteUcqOptions{
-  format : string 
+  format? : string 
   logger? : ILogger
 }

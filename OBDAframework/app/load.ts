@@ -6,13 +6,24 @@ import { from as copyFrom } from 'pg-copy-streams'
 import DB from './utils/db'
 import OBDAconverter from './utils/converter'
 
-export async function loadData(schemaPath : string, dataPath : string, db : DB, options : LoadDataOptions) {
+export default async function loadData(schemaPath : string, dataPath : string, db : DB, options? : LoadDataOptions) {
+  if(options === undefined) {
+    options = { }
+  }
+
+  if(options.clean === undefined) {
+    options.clean = false
+  }
+
+  if(options.tgd === undefined) {
+    options.tgd = false
+  }
   const { clean, logger, tgd } = options
 
   schemaPath = path.resolve(schemaPath)
   const schema = fs.readFileSync(schemaPath, 'utf8')
 
-  const query = options.tgd
+  const query = tgd
     ? OBDAconverter.convertTgdToSql(schema.split(/\r?\n/), { clean })
     : OBDAconverter.convertSchemaToSql(schema, { clean })
 

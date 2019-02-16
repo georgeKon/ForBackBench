@@ -95,8 +95,3 @@ async function computeRewritings(queryPath, ontologyPath, tool, config, options)
 
   return ucqs
 }
-
-module.exports = {
-  computeRewritings,
-  computeRewritingsCmd
-}

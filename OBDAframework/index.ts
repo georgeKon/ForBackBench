@@ -2,7 +2,7 @@
 
 import program from 'commander'
 import { version } from './package.json'
-import { loadDataCmd, executeUcqCmd } from './app/commands'
+import { loadDataCmd, computeRewritingsCmd, executeUcqCmd } from './app/commands'
 
 program
   .version(version, '-v, --version')
@@ -15,13 +15,12 @@ program
   .option('-c, --clean', 'Create clean instance of database by including DROP IF EXISTS commands')
   .action((schema, data, options) => loadDataCmd(schema, data, options))
 
-// program
-//   .command('rewrite')
-//   .arguments('<query> <ontology> <tool> <config>')
-//   .description('Compute UCQ rewriting of given query using specified tool')
-//   .option('-F, --force', 'Force use of provided query even if cached version exists')
-//   .option('-m, --mode <mode>', 'Graal mode')
-//   .action((query, ontology, tool, config, options) => computeRewritingsCmd(query, ontology, tool, config, options))
+program
+  .command('rewrite')
+  .arguments('<query> <ontology> <tool>')
+  .description('Compute UCQ rewriting of given query using specified tool')
+  .option('-f, --common', 'Flags use of common format query instead of SPARQL')
+  .action((query, ontology, tool, options) => computeRewritingsCmd(query, ontology, tool, options))
 
 program
   .command('execute')

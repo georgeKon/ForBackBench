@@ -3,7 +3,14 @@
 import DB from './utils/db'
 import OBDAconverter from './utils/converter'
 
-export async function executeUcq(ucqArray : string[], schema : string, db : DB, options : ExecuteUcqOptions) {
+export async function executeUcq(ucqArray : string[], schema : string, db : DB, options? : ExecuteUcqOptions) {
+  if(options === undefined) {
+    options = { }
+  }
+
+  if(options.format === undefined) {
+    options.format = 'rapid'
+  }
   const { format, logger } = options
 
   const schemaString = schema.trim().replace(/[\s+]+/g, ' ')
