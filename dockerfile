@@ -1,6 +1,7 @@
-FROM node:10-alpine
+FROM timbru31/java-node:latest
 
 COPY /scenarios/ /usr/scenarios/
+COPY /tools/ /usr/tools/
 
 RUN mkdir -p /usr/logs/
 COPY /OBDAframework/ /usr/

@@ -1,6 +1,12 @@
 import fs from 'fs'
 import path from 'path'
 import OBDAconverter from './app/utils/converter'
-import { loadDataCmd } from './app/commands'
+import { runBenchmark } from './app/commands'
 
-loadDataCmd('../scenarios/LUBM/schema.txt', '../scenarios/LUBM/data/')
+async function run() {
+  const result = await runBenchmark(
+    '../scenarios/LUBM/schema.txt', '../scenarios/LUBM/cb-data/', '../scenarios/LUBM/Q1.rq',
+    '../scenarios/LUBM/ontology.owl', 'rapid', { clean: true, format: 'rapid', common: false, tgd: false })
+}
+
+run()

@@ -3,7 +3,7 @@
 import DB from './utils/db'
 import OBDAconverter from './utils/converter'
 
-export async function executeUcq(ucqArray : string[], schema : string, db : DB, options? : ExecuteUcqOptions) {
+export default async function executeUcq(ucqArray : string[], schema : string, db : DB, options? : ExecuteUcqOptions) {
   if(options === undefined) {
     options = { }
   }

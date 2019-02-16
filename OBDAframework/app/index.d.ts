@@ -53,3 +53,11 @@ interface ExecuteUcqOptions{
   format? : string 
   logger? : ILogger
 }
+
+interface RunBenchmarkOptions {
+  format? : string
+  common? : boolean
+  clean? : boolean
+  tgd? : boolean
+  logger? : ILogger
+}
