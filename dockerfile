@@ -2,14 +2,12 @@ FROM node:10-alpine
 
 COPY /scenarios/ /usr/scenarios/
 
-RUN mkdir -p /usr/logs/framework/
-COPY /OBDAframework/ /usr/src/framework/
+RUN mkdir -p /usr/logs/
+COPY /OBDAframework/ /usr/
 
-WORKDIR /usr/src/framework/
-RUN yarn && yarn run build --outDir ../../dist/framework/
+WORKDIR /usr/
+RUN yarn && yarn run build --outDir ./dist/
 
-WORKDIR /usr/dist/framework/
+WORKDIR /usr/dist/
 
-RUN npm link
-
-CMD ["yarn", "loadTest"]
+CMD ["node", "test.js"]

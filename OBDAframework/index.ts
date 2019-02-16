@@ -2,7 +2,7 @@
 
 import program from 'commander'
 import { version } from './package.json'
-import { loadDataCmd } from './app/commands'
+import { loadDataCmd, executeUcqCmd } from './app/commands'
 
 program
   .version(version, '-v, --version')
@@ -23,11 +23,11 @@ program
 //   .option('-m, --mode <mode>', 'Graal mode')
 //   .action((query, ontology, tool, config, options) => computeRewritingsCmd(query, ontology, tool, config, options))
 
-// program
-//   .command('execute')
-//   .arguments('<ucq> <schema>')
-//   .description('Execute a UCQ against a database')
-//   .action((ucq, schema, options) => executeUcqCmd(ucq, schema, options))
+program
+  .command('execute')
+  .arguments('<ucq> <schema>')
+  .description('Execute a UCQ against a database')
+  .action((ucq, schema, options) => executeUcqCmd(ucq, schema, options))
 
 // program
 //   .command('test')

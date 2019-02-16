@@ -1,13 +1,4 @@
-import * as fs from 'fs'
-import * as path from 'path'
 import parser from 'xml2js'
-
-// export async function convertOwlToTgdCmd(owlPath : string, options : any) {
-//   const owlString = fs.readFileSync(path.resolve(owlPath), 'utf8')
-
-//   const result = await convertOwlToTgd(owlString)
-//   // console.log(result)
-// }
 
 export async function convertOwlToTgd(owlString : string, options? : OwlTgdOptions) {
   const parsed = await parseXml(owlString) as any

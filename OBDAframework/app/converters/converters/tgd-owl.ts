@@ -1,40 +1,10 @@
-import * as fs from 'fs'
-import * as path from 'path'
+import fs from 'fs'
+import path from 'path'
 import XMLWriter from 'xml-writer'
 import format from 'xml-formatter'
 import parser from '../grammars/tgd-grammar'
 
-type SingleTGD = Array<[string, string | Array<string | string[]>]>
-type ParsedTGD = [SingleTGD, SingleTGD]
-
-interface Atom {
-  name : string
-  variables : string[]
-  subClassOf : SubClass[]
-  domain? : string
-  range? : string,
-  inverseOf? : string,
-  subPropertyOf? : string
-}
-
-interface Restriction {
-  onProperty : string
-  someValuesFrom : string
-}
-
-interface SubClass {
-  name : string
-  restriction? : Restriction
-}
-
 const defaultUri = 'http://example.com/example.owl#'
-
-// function convertTgdToOwlCmd(tgdPath, options) {
-//   const tgdArray = fs.readFileSync(path.resolve(tgdPath), 'utf8').split(/\r?\n/)
-
-//   const result = convertTgdToOwl(tgdArray, options)
-//   // console.log(result)
-// }
 
 export function convertTgdToOwl(tgdArray : string[], options? : TgdOwlOptions) : string {
   const writer = new XMLWriter()

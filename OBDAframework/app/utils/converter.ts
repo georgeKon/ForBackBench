@@ -1,9 +1,9 @@
-import { convertSchemaToSql } from './converters/converters/schema-sql'
-import { convertTgdToSchema } from './converters/converters/tgd-schema'
-import { convertUcqToSql } from './converters/converters/ucq-sql'
-import { convertSparqlToQuery } from './converters/converters/sparql-query'
-import { convertOwlToTgd } from './converters/converters/owl-tgd'
-import { convertTgdToOwl } from './converters/converters/tgd-owl'
+import { convertSchemaToSql } from '../converters/converters/schema-sql'
+import { convertTgdToSchema } from '../converters/converters/tgd-schema'
+import { convertUcqToSql } from '../converters/converters/ucq-sql'
+import { convertSparqlToQuery } from '../converters/converters/sparql-query'
+import { convertOwlToTgd } from '../converters/converters/owl-tgd'
+import { convertTgdToOwl } from '../converters/converters/tgd-owl'
 
 export default class OBDAconverter {
   public static convertSchemaToSql(schema : string, options? : SchemaSqlOptions) {

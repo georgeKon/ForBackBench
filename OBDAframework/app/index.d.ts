@@ -43,3 +43,8 @@ interface LoadDataOptions {
   tgd? : boolean
   logger? : ILogger
 }
+
+interface ExecuteUcqOptions{
+  format : string 
+  logger? : ILogger
+}

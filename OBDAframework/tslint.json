@@ -24,6 +24,7 @@
       }
     ],
     "no-string-literal": [false],
+    "no-unused-expression": [false],
     "interface-name": [true, "never-prefix"],
     "whitespace": [
       true,

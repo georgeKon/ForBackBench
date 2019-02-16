@@ -1,8 +1,10 @@
-import * as fs from 'fs'
-import * as path from 'path'
+/* eslint-disable no-unused-expressions */
+
+import fs from 'fs'
+import path from 'path'
 import { from as copyFrom } from 'pg-copy-streams'
 import DB from './utils/db'
-import OBDAconverter from './converter'
+import OBDAconverter from './utils/converter'
 
 export async function loadData(schemaPath : string, dataPath : string, db : DB, options : LoadDataOptions) {
   const { clean, logger, tgd } = options
@@ -21,7 +23,7 @@ export async function loadData(schemaPath : string, dataPath : string, db : DB, 
   try {
     await db.transact()
     logger && logger.info('Begin schema import')
-    await db.query(query.join(' '))
+    await db.query(query.join('\n'))
     logger && logger.pass('Schema import complete')
 
     const files = fs.readdirSync(path.resolve(dataPath))

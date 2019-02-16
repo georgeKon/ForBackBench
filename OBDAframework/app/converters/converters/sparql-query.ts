@@ -1,21 +1,6 @@
-import * as fs from 'fs'
-import * as path from 'path'
 import { Parser as SparqlParser, SelectQuery } from 'sparqljs'
 
-interface Triple {
-  subject : string,
-  object : string,
-  predicate : string
-}
-
 const parser = new SparqlParser()
-
-// export function convertSparqlToQueryCmd(sparqlPath : string) {
-//   const sparqlString = fs.readFileSync(path.resolve(sparqlPath), 'utf8')
-
-//   const result = convertSparqlToQuery(sparqlString)
-//   // console.log(result)
-// }
 
 export function convertSparqlToQuery(sparqlString : string, options? : SparqlQueryOptions) {
   // @ts-ignore

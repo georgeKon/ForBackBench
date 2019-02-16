@@ -1,38 +1,17 @@
-// import * as fs from 'fs'
-// import * as path from 'path'
-// import DB from './utils/db'
-// import Logger from './utils/logger'
-// import { convertUcqToSql } from './converters/converters/ucq-sql'
+/* tslint-disable no-unused-expressions */
 
-// interface ExecuteUcqOptions {
-//   logger? : Logger
-// }
+import DB from './utils/db'
+import OBDAconverter from './utils/converter'
 
-// export async function executeUcqCmd(ucqPath : string, schemaPath : string, options : any) {
-//   const logger = new Logger('execute', './logs')
-//   // const client = await db.openDatabaseConnection(config)
+export async function executeUcq(ucqArray : string[], schema : string, db : DB, options : ExecuteUcqOptions) {
+  const { format, logger } = options
 
-//   const ucqString = fs.readFileSync(path.resolve(ucqPath), 'utf8')
-//   const ucqArray = ucqString.split(/\r?\n/)
-//   const schema = fs.readFileSync(path.resolve(schemaPath), 'utf8')
+  const schemaString = schema.trim().replace(/[\s+]+/g, ' ')
+  const query = OBDAconverter.convertUcqToSql(ucqArray, schemaString, { format })
 
-//   const result = await executeUcq(ucqArray, schema, { logger })
+  logger && logger.info('Execute SQL query')
+  const result = await db.query(query.join('\n'))
+  logger && logger.info('Rows returned: ' + result.rowCount)
 
-//   // console.log(result.rows)
-
-//   // await db.closeDatabaseConnection(client)
-// }
-
-// export async function executeUcq(ucqArray : string[], schema : string, options : ExecuteUcqOptions, db? : DB) {
-//   let { logger } = options
-//   if(!logger) {
-//     logger = new Logger('execute', './logs')
-//   }
-
-//   const schemaString = schema.trim().replace(/[\s+]+/g, ' ')
-//   const sql = convertUcqToSql(ucqArray, schemaString).join('\n')
-
-//   // const result = await db.queryDatabase(client, sql)
-
-//   // return result
-// }
+  return result
+}

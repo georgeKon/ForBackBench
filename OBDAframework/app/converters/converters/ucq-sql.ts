@@ -2,17 +2,6 @@ import rapidUcqParser from '../grammars/rapid-ucq-grammar'
 import iqarosUcqParser from '../grammars/iqaros-ucq-grammar'
 import schemaParser from '../grammars/schema-grammar'
 
-type ParsedSchema = Array<[string, Array<[string, string]>]>
-
-type ParsedUCQ = [Array<string | string[]>, Array<string | Array<string | string[]>>]
-
-// export function convertUcqToSqlCmd(ucqPath : string, schemaPath : string) {
-//   const ucqArray = fs.readFileSync(path.resolve(ucqPath), 'utf8').split(/\r?\n/)
-//   const schemaString = fs.readFileSync(path.resolve(schemaPath), 'utf8')
-
-//   const sqlArray = convertUcqToSql(ucqArray, schemaString, { })
-// }
-
 export function convertUcqToSql(ucqArray : string[], schemaString : string, options : UcqSqlOptions) {
   const trimmedInput = schemaString.trim().replace(/[\s+]+/g, ' ')
   const parsedSchema = schemaParser.parse(trimmedInput) as ParsedSchema
