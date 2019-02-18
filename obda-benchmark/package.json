@@ -1,0 +1,51 @@
+{
+  "name": "obda-benchmark",
+  "description": "Benchmarking framework for OBDA query rewriters based on ChaseBench",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "James Errington",
+  "private": true,
+  "bin": {
+    "obdabenchmark": "./dist/index.js"
+  },
+  "scripts": {
+    "postinstall": "node ./app/utils/postinstall",
+    "lint": "tslint --project ./ --format stylish",
+    "format": "yarn run lint --fix",
+    "test": "ts-mocha ./test/**/*.test.ts --pretty",
+    "dev": "yarn run build && node dist/test.js",
+    "build": "rm -rf ./dist/ && tsc"
+  },
+  "dependencies": {
+    "commander": "2.19.0",
+    "pg": "7.8.0",
+    "pg-copy-streams": "1.2.0",
+    "sparqljs": "2.2.1",
+    "xml-formatter": "^1.0.1",
+    "xml-writer": "1.7.0",
+    "xml2js": "0.4.19"
+  },
+  "devDependencies": {
+    "@types/chai": "4.1.7",
+    "@types/chai-fs": "2.0.1",
+    "@types/mocha": "5.2.6",
+    "@types/mock-fs": "3.6.30",
+    "@types/mockdate": "2.0.0",
+    "@types/node": "11.9.2",
+    "@types/pg": "7.4.11",
+    "@types/sparqljs": "2.1.0",
+    "@types/xml2js": "0.4.3",
+    "chai": "4.2.0",
+    "chai-fs": "2.0.0",
+    "mocha": "5.2.0",
+    "mocha-sinon": "2.1.0",
+    "mock-fs": "4.8.0",
+    "mockdate": "2.0.2",
+    "pegjs": "0.10.0",
+    "sinon": "7.2.3",
+    "ts-mocha": "2.0.0",
+    "tslint": "5.12.1",
+    "tslint-config-standard": "8.0.1",
+    "typescript": "3.3.3"
+  }
+}
