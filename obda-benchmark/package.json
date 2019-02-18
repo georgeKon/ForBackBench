@@ -10,10 +10,13 @@
   },
   "scripts": {
     "lint": "tslint --project ./ --format stylish",
-    "format": "yarn run lint --fix",
+    "lint:format": "yarn run lint --fix",
     "test": "ts-mocha ./test/**/*.test.ts --pretty",
+    "test:unit": "ts-mocha ./test/unit/*.test.ts --pretty",
+    "test:integration": "ts-mocha ./test/integration/*.test.ts --pretty",
     "dev": "yarn run build && node dist/test.js",
-    "build": "rm -rf ./dist/ && tsc"
+    "build": "rm -rf ./dist/ && tsc",
+    "build:prod": "yarn run lint && yarn run test && yarn run build"
   },
   "dependencies": {
     "commander": "2.19.0",
@@ -21,7 +24,7 @@
     "pg": "7.8.0",
     "pg-copy-streams": "1.2.0",
     "sparqljs": "2.2.1",
-    "xml-formatter": "^1.0.1",
+    "xml-formatter": "1.0.1",
     "xml-writer": "1.7.0",
     "xml2js": "0.4.19"
   },
