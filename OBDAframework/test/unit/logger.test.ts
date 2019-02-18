@@ -1,12 +1,12 @@
 import 'mocha'
 import 'mocha-sinon'
-import 'chai-fs'
 import chai from 'chai'
+import chaifs from 'chai-fs'
 import MockDate from 'mockdate'
 import mock from 'mock-fs'
 import Logger from '../../app/utils/logger'
 /* tslint:disable */
-chai.use(require('chai-fs'))
+chai.use(chaifs)
 /* tslint:enable */
 const { expect } = chai
 

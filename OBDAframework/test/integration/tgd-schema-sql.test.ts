@@ -1,6 +1,6 @@
 import 'mocha'
 import { expect } from 'chai'
-import OBDAConverter from '../../app/converter'
+import OBDAConverter from '../../app/utils/converter'
 
 describe('TGD-Schema-SQL integration', () => {
 

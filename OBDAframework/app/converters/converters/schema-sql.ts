@@ -2,7 +2,7 @@ import parser from '../grammars/schema-grammar'
 
 const types = new Map([['STRING', 'text'], ['DOUBLE', 'double precision'], ['INTEGER', 'integer'], ['SYMBOL', 'text']])
 
-export function convertSchemaToSql(schemaString : string, options? : SchemaSqlOptions) {
+export default function convertSchemaToSql(schemaString : string, options? : SchemaSqlOptions) {
   const trimmedInput = schemaString.trim().replace(/[\s+]+/g, ' ')
   const parsed = parser.parse(trimmedInput) as ParsedSchema
 
