@@ -3,6 +3,11 @@ declare module 'pg-copy-streams' {
   export const from : any
 }
 
+declare module 'obda-converter' {
+  const value : any
+  export default value
+}
+
 interface ILogger {
   log : (message : string, type : string) => void
   info : (message : string) => void

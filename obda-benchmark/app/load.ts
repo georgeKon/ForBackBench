@@ -2,9 +2,9 @@
 
 import fs from 'fs'
 import path from 'path'
+import OBDAconverter from 'obda-converter'
 import { from as copyFrom } from 'pg-copy-streams'
 import DB from './utils/db'
-import OBDAconverter from './utils/converter'
 
 export default async function loadData(schemaPath : string, dataPath : string, db : DB, options? : LoadDataOptions) {
   if(options === undefined) {

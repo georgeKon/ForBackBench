@@ -556,6 +556,18 @@ nise@^1.4.8:
     path-to-regexp "^1.7.0"
     text-encoding "^0.6.4"
 
+obda-converter@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/obda-converter/-/obda-converter-0.1.1.tgz#33adda4ee6598541b7f58055a23f9aa6877cea16"
+  integrity sha512-wFHu7Z0BuNidupl0J/SVAAYZMe+m5i8iNbXjmox/+Zgb//SF7fQIBIMz9WscRaaHXwyrQWq+2fbIxlMaGK+fsA==
+  dependencies:
+    commander "2.19.0"
+    pegjs "0.10.0"
+    sparqljs "2.1.0"
+    xml-formatter "1.0.1"
+    xml-writer "1.7.0"
+    xml2js "0.4.19"
+
 once@^1.3.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/once/-/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
@@ -730,6 +742,11 @@ source-map@^0.6.0:
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==
 
+sparqljs@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/sparqljs/-/sparqljs-2.1.0.tgz#4c53bd4dcc9ec1e9a851201c654c4e2adbb42f45"
+  integrity sha512-WXb2utLh6A9tbpkz4I23grNuv42fh2ttxGONLz1mz5TvZtJEelody0jEpC7U84cZZn+sNqOQSTdv+kcESHlGqw==
+
 sparqljs@2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/sparqljs/-/sparqljs-2.2.1.tgz#9bac98bc783ade98b802a8e1794339f65a516e86"
@@ -900,7 +917,7 @@ wrappy@1:
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 
-xml-formatter@^1.0.1:
+xml-formatter@1.0.1, xml-formatter@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/xml-formatter/-/xml-formatter-1.0.1.tgz#380833ddd0bcea2c0986defebba71f84384f353d"
   integrity sha1-OAgz3dC86iwJht7+u6cfhDhPNT0=

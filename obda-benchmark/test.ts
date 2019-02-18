@@ -1,6 +1,3 @@
-import fs from 'fs'
-import path from 'path'
-import OBDAconverter from './app/utils/converter'
 import { runBenchmark } from './app/commands'
 
 async function run() {

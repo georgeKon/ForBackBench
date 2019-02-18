@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import OBDAconverter from './utils/converter'
+import OBDAconverter from 'obda-converter'
 import execAsync from './utils/exec'
 
 export default async function computeRewritings(
