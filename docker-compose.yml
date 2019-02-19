@@ -1,4 +1,4 @@
-version: '3'
+version: '2'
 services:
   db:
     image: postgres:11
@@ -15,6 +15,8 @@ services:
       PGPASSWORD: ${PG_PASSWORD}
       PGDATABASE: ${PG_DB}
       PGPORT: ${PG_PORT}
+    volumes:
+      - ./logs:/usr/logs
     depends_on:
       - db
     links:
