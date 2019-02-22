@@ -7,8 +7,8 @@ RUN mkdir -p /usr/logs/
 COPY /obda-benchmark/ /usr/
 
 WORKDIR /usr/
-RUN yarn && yarn run build --outDir ./dist/
+RUN yarn && yarn run build
 
 WORKDIR /usr/dist/
 
-CMD ["node", "test.js"]
+CMD ["node", "./test.js"]

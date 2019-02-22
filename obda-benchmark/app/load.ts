@@ -5,6 +5,9 @@ import path from 'path'
 import OBDAconverter from 'obda-converter'
 import { from as copyFrom } from 'pg-copy-streams'
 import DB from './utils/db'
+import Timer from './utils/timer'
+
+const timer = new Timer()
 
 export default async function loadData(schemaPath : string, dataPath : string, db : DB, options? : LoadDataOptions) {
   if(options === undefined) {
@@ -34,8 +37,10 @@ export default async function loadData(schemaPath : string, dataPath : string, d
   try {
     await db.transact()
     logger && logger.info('Begin schema import')
+    timer.start()
     await db.query(query.join('\n'))
-    logger && logger.pass('Schema import complete')
+    const duration = timer.stop()
+    logger && logger.pass('Schema import complete', duration)
 
     const files = fs.readdirSync(path.resolve(dataPath))
       .filter(file => path.extname(file) === '.csv')

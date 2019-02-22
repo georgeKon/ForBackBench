@@ -13,9 +13,9 @@ export default class Logger implements ILogger {
     this.writePath = path.resolve(logPath ? logPath : __dirname, name)
   }
 
-  public log(message : string, type : string) : void {
+  public log(message : string, type : string, time? : string) : void {
     const dateTime = new DateTime()
-    const line = `${dateTime.timeStamp} ${type} ${message}`
+    const line = `${dateTime.timeStamp} ${type} ${message} ${time ? `in ${time}` : ''}`
     if(!this.mute) {
       /* tslint:disable */
       console.log(line)
@@ -40,7 +40,7 @@ export default class Logger implements ILogger {
     this.log(message, 'WARN')
   }
 
-  public pass(message : string) : void {
-    this.log(message, 'PASS')
+  public pass(message : string, time? : string) : void {
+    this.log(message, 'PASS', time)
   }
 }

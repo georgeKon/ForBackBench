@@ -8,13 +8,22 @@ declare module 'obda-converter' {
   export default value
 }
 
+declare module 'statman-stopwatch' {
+  const value : any
+  export default value
+}
+
 interface ILogger {
-  log : (message : string, type : string) => void
+  log : (message : string, type : string, time? : string) => void
   info : (message : string) => void
   error : (message : string) => void
   out : (message : string) => void
   warn : (message : string) => void
-  pass : (message : string) => void
+  pass : (message : string, time? : string) => void
+}
+
+interface ITimer {
+  
 }
 
 interface SchemaSqlOptions {

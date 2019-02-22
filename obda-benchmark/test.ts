@@ -1,9 +1,7 @@
-import { runBenchmark } from './app/commands'
+import { loadDataCmd } from './app/commands'
 
-async function run() {
-  const result = await runBenchmark(
-    '../scenarios/LUBM/schema.txt', '../scenarios/LUBM/cb-data/', '../scenarios/LUBM/Q1.rq',
-    '../scenarios/LUBM/ontology.owl', 'rapid', { clean: true, format: 'rapid', common: false, tgd: false })
+function run() {
+  loadDataCmd('../scenarios/LUBM/schema.txt', '../scenarios/LUBM/data/', { clean: true, tgd: false })
 }
 
 run()

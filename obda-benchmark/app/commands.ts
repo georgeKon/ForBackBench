@@ -38,7 +38,7 @@ export async function executeUcqCmd(ucqPath : string, schemaPath : string, optio
   await db.close()
 }
 
-export async function runBenchmark(
+export async function runBenchmarkCmd(
   schemaPath : string, dataPath : string, queryPath : string,
   ontologyPath : string, tool : string, options : RunBenchmarkOptions) {
   const logger = new Logger('run', '../logs')
