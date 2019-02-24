@@ -43,4 +43,14 @@ export default class Logger implements ILogger {
   public pass(message : string, time? : string) : void {
     this.log(message, 'PASS', time)
   }
+
+  public title(message : string) {
+    if(!this.mute) {
+      const line = `===== ${message.toUpperCase()} =====`
+      /* tslint:disable */
+      console.log(line)
+      /* tslint:enable */
+      fs.appendFileSync(this.writePath, line + '\n')
+    }
+  }
 }

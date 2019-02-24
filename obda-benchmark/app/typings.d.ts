@@ -20,35 +20,10 @@ interface ILogger {
   out : (message : string) => void
   warn : (message : string) => void
   pass : (message : string, time? : string) => void
+  title : (message : string) => void
 }
 
 interface ITimer {
-  
-}
-
-interface SchemaSqlOptions {
-  clean? : boolean
-}
-
-interface TgdSchemaOptions {
-
-}
-
-type TgdSqlOptions = TgdSchemaOptions | SchemaSqlOptions
-
-interface UcqSqlOptions {
-  format: string
-}
-
-interface SparqlQueryOptions {
-
-}
-
-interface TgdOwlOptions {
-
-}
-
-interface OwlTgdOptions {
   
 }
 
@@ -74,4 +49,5 @@ interface RunBenchmarkOptions {
   clean? : boolean
   tgd? : boolean
   logger? : ILogger
+  skip? : boolean
 }

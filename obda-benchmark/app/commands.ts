@@ -44,13 +44,30 @@ export async function runBenchmarkCmd(
   const logger = new Logger('run', '../logs')
   const db = new DB(logger)
 
-  await db.connect()
+  try {
+    await db.connect()
 
-  const schema = await loadData(schemaPath, dataPath, db, { logger, ...options })
+    let schema : string
+    if(options.skip) {
+      logger.info(`Option Skip: ${options.skip} - Skipping load data`)
+      schemaPath = path.resolve(schemaPath)
+      schema = fs.readFileSync(schemaPath, 'utf8')
+    } else {
+      logger.title('Load data')
+      schema = await loadData(schemaPath, dataPath, db, { logger, ...options })
+    }
 
-  const rewritings = await computeRewritings(queryPath, ontologyPath, tool, { logger, ...options })
+    const rewritings = await computeRewritings(queryPath, ontologyPath, tool, { logger, ...options })
+    logger.title('Rewritings')
+    rewritings.forEach(query => logger.out(query))
 
-  const result = await executeUcq(rewritings, schema, db, { logger, ...options })
-
-  await db.close()
+    const result = await executeUcq(rewritings, schema, db, { logger, format: tool, ...options })
+    logger.title('Answers')
+    logger.info('Rows returned: ' + result.rowCount)
+    result.rows.forEach(row => logger.out(JSON.stringify(row)))
+  } catch(err) {
+    logger.info('Benchmark exited after error')
+  } finally {
+    await db.close()
+  }
 }

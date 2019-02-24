@@ -16,7 +16,7 @@ services:
       PGDATABASE: ${PG_DB}
       PGPORT: ${PG_PORT}
     volumes:
-      - ./logs:/usr/logs
+      - ./logs:/logs
     depends_on:
       - db
     links:

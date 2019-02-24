@@ -22,8 +22,7 @@ export default class DB {
 
       this.logger.info('Database connection open')
     } catch(err) {
-      this.logger.error('Failed to open database connection')
-      throw err
+      throw new Error('Failed to open database connection: ' + err.message)
     }
   }
 
@@ -81,7 +80,7 @@ export default class DB {
       await this.connection.end()
       this.logger.info('Close database connection')
     } else {
-      throw new Error('Cannot close connection - No open database connection')
+      this.logger.info('No need to close connection - No open database connection')
     }
   }
 }

@@ -31,6 +31,7 @@ program
   .command('test')
   .arguments('<schema> <data> <query> <ontology> <tool>')
   .description('Run a full test with the given query and ontology')
+  .option('-s, --skip', 'Skip creation of database')
   .option('-c, --clean', 'Create clean instance of database by including DROP IF EXISTS commands')
   .option('-f, --common', 'Flags use of common format query instead of SPARQL')
   .option('-t, --tgd', 'Flags use of tgd file that must be converted to schema')

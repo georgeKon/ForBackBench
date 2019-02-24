@@ -14,16 +14,14 @@ export default async function executeUcq(ucqArray : string[], schema : string, d
     options.format = 'rapid'
   }
   const { format, logger } = options
-
-  const schemaString = schema.trim().replace(/[\s+]+/g, ' ')
-  const query = OBDAconverter.convertUcqToSql(ucqArray, schemaString, { format })
-
-  logger && logger.info('Execute SQL query')
-  const result = await db.query(query.join('\n'))
-  logger && logger.info('Rows returned: ' + result.rowCount)
-  result.rows.forEach(row => {
-    console.log(JSON.stringify(row))
-  })
-
-  return result
+  try {
+    const schemaString = schema.trim().replace(/[\s+]+/g, ' ')
+    const query = OBDAconverter.convertUcqToSql(ucqArray, schemaString, { format })
+    logger && logger.info('Execute SQL query')
+    const result = await db.query(query.join('\n'))
+    return result
+  } catch(err) {
+    logger && logger.error(err.message)
+    throw new Error(err)
+  }
 }
