@@ -5,6 +5,7 @@ import execAsync from './utils/exec'
 
 export default async function computeRewritings(
   queryPath : string, ontologyPath : string, tool : string, options : ComputeRewritingsOptions) {
+  console.log('Entering computeRewritings')
   if(options === undefined) {
     options = { }
   }

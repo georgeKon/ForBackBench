@@ -9,19 +9,8 @@ import Timer from './utils/timer'
 
 const timer = new Timer()
 
-export default async function loadData(schemaPath : string, dataPath : string, db : DB, options? : LoadDataOptions) {
-  if(options === undefined) {
-    options = { }
-  }
-
-  if(options.clean === undefined) {
-    options.clean = false
-  }
-
-  if(options.tgd === undefined) {
-    options.tgd = false
-  }
-  const { clean, logger, tgd } = options
+export default async function loadData(
+    schemaPath : string, dataPath : string, db : DB, { clean, logger, tgd } : LoadDataOptions) {
 
   schemaPath = path.resolve(schemaPath)
   const schema = fs.readFileSync(schemaPath, 'utf8')
@@ -39,13 +28,13 @@ export default async function loadData(schemaPath : string, dataPath : string, d
     logger && logger.info('Begin schema import')
     timer.start()
     await db.query(query.join('\n'))
-    const duration = timer.stop()
-    logger && logger.pass('Schema import complete', duration)
+    logger && logger.pass('Schema import complete', timer.stop())
 
     const files = fs.readdirSync(path.resolve(dataPath))
       .filter(file => path.extname(file) === '.csv')
 
     logger && logger.info('Begin data import')
+    timer.start()
     // For of loop because promises don't work in forEach
     for(const file of files) {
       logger && logger.info(`Import ${file}`)
@@ -59,7 +48,7 @@ export default async function loadData(schemaPath : string, dataPath : string, d
       await promise
       logger && logger.pass(`${file} imported`)
     }
-    logger && logger.pass('Data import complete')
+    logger && logger.pass('Data import complete', timer.stop())
     await db.commit()
   } catch(err) {
     logger && logger.error(err.message)

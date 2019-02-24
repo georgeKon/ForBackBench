@@ -4,6 +4,8 @@ import OBDAconverter from 'obda-converter'
 import DB from './utils/db'
 
 export default async function executeUcq(ucqArray : string[], schema : string, db : DB, options? : ExecuteUcqOptions) {
+  console.log('Entering executeUcq')
+
   if(options === undefined) {
     options = { }
   }
@@ -19,6 +21,9 @@ export default async function executeUcq(ucqArray : string[], schema : string, d
   logger && logger.info('Execute SQL query')
   const result = await db.query(query.join('\n'))
   logger && logger.info('Rows returned: ' + result.rowCount)
+  result.rows.forEach(row => {
+    console.log(JSON.stringify(row))
+  })
 
   return result
 }
