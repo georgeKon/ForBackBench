@@ -31,6 +31,8 @@ export default async function computeRewritings(
       fs.writeFileSync(commonQueryPath, commonQuery)
       logger && logger.info(`Common format query written to ${commonQueryPath}`)
       queryPath = commonQueryPath
+    } else {
+      logger && logger.info('Option Common - Skipping SPARQL conversion')
     }
   } catch(err) {
     logger && logger.error(err.message)

@@ -36,6 +36,6 @@ program
   .option('-f, --common', 'Flags use of common format query instead of SPARQL')
   .option('-t, --tgd', 'Flags use of tgd file that must be converted to schema')
   .action((schema, data, query, ontology, tool, options) =>
-        runBenchmarkCmd(schema, data, query, ontology, tool, options))
+    runBenchmarkCmd(schema, data, query, ontology, tool, options))
 
 program.parse(process.argv)

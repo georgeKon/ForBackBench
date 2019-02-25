@@ -49,7 +49,7 @@ export async function runBenchmarkCmd(
 
     let schema : string
     if(options.skip) {
-      logger.info(`Option Skip: ${options.skip} - Skipping load data`)
+      logger.info(`Option Skip - Skipping load data`)
       schemaPath = path.resolve(schemaPath)
       schema = fs.readFileSync(schemaPath, 'utf8')
     } else {

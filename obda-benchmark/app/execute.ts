@@ -18,6 +18,7 @@ export default async function executeUcq(ucqArray : string[], schema : string, d
   const { format, logger, tgd } = options
   try {
     let schemaString
+    // FIXME: This is a real hack that repeats work that we have already done
     if(tgd) {
       schemaString = OBDAconverter.convertTgdToSchema(schema.split(/\r?\n/)).join('\n')
     } else {
