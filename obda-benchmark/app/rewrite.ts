@@ -2,10 +2,12 @@ import fs from 'fs'
 import path from 'path'
 import OBDAconverter from 'obda-converter'
 import execAsync from './utils/exec'
+import Timer from './utils/timer'
+
+const timer = new Timer()
 
 export default async function computeRewritings(
   queryPath : string, ontologyPath : string, tool : string, options : ComputeRewritingsOptions) {
-  console.log('Entering computeRewritings')
   if(options === undefined) {
     options = { }
   }
@@ -22,7 +24,9 @@ export default async function computeRewritings(
     if(!common) {
       logger && logger.info('Converting SPARQL query to common format')
       const sparql = fs.readFileSync(queryPath, 'utf8')
+      timer.start()
       const commonQuery = OBDAconverter.convertSparqlToQuery(sparql)
+      logger && logger.pass('Sparql converted successfully', timer.stop())
       const commonQueryPath = queryPath.replace('.rq', '.cq')
       fs.writeFileSync(commonQueryPath, commonQuery)
       logger && logger.info(`Common format query written to ${commonQueryPath}`)
@@ -38,7 +42,10 @@ export default async function computeRewritings(
   switch(tool) {
     case 'rapid':
       try {
+        timer.start()
         const out = await execAsync(`java -jar ../tools/Rapid2.jar DU SHORT ${ontologyPath} ${queryPath}`)
+        const time = timer.stop()
+        logger && logger.pass(`${tool} ran successfully`, time)
         const array = out.split(/\r?\n/)
         array.shift()
         array.pop()
@@ -50,7 +57,10 @@ export default async function computeRewritings(
       }
     case 'iqaros':
       try {
+        timer.start()
         const out = await execAsync(`java -jar ../tools/iqaros.jar ${ontologyPath} ${queryPath}`)
+        const time = timer.stop()
+        logger && logger.pass(`${tool} ran successfully`, time)
         const array = out.split(/\r?\n/)
         array.shift()
         array.shift()

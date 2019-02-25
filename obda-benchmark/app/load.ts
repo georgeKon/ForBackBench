@@ -19,11 +19,15 @@ export default async function loadData(
   try {
     schemaPath = path.resolve(schemaPath)
     schema = fs.readFileSync(schemaPath, 'utf8')
-
-    query = tgd
-      ? OBDAconverter.convertTgdToSql(schema.split(/\r?\n/), { clean })
-      : OBDAconverter.convertSchemaToSql(schema, { clean })
-
+    if(tgd) {
+      logger && logger.info('Option TGD: converting TGDs to Schema before SQL')
+      timer.start()
+      query = OBDAconverter.convertTgdToSql(schema.split(/\r?\n/), { clean })
+    } else {
+      timer.start()
+      query = OBDAconverter.convertSchemaToSql(schema, { clean })
+    }
+    logger && logger.pass('Schema converted successfully', timer.stop())
     const sqlPath = schemaPath.replace('.txt', '.sql')
     fs.writeFileSync(sqlPath, query)
     logger && logger.info('SQL written to ' + sqlPath)

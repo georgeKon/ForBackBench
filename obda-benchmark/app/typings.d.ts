@@ -41,6 +41,7 @@ interface ComputeRewritingsOptions {
 interface ExecuteUcqOptions{
   format? : string 
   logger? : ILogger
+  tgd? : boolean
 }
 
 interface RunBenchmarkOptions {

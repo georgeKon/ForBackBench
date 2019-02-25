@@ -2,9 +2,11 @@
 
 import OBDAconverter from 'obda-converter'
 import DB from './utils/db'
+import Timer from './utils/timer'
+
+const timer = new Timer()
 
 export default async function executeUcq(ucqArray : string[], schema : string, db : DB, options? : ExecuteUcqOptions) {
-  console.log('Entering executeUcq')
 
   if(options === undefined) {
     options = { }
@@ -13,11 +15,17 @@ export default async function executeUcq(ucqArray : string[], schema : string, d
   if(options.format === undefined) {
     options.format = 'rapid'
   }
-  const { format, logger } = options
+  const { format, logger, tgd } = options
   try {
-    const schemaString = schema.trim().replace(/[\s+]+/g, ' ')
+    let schemaString
+    if(tgd) {
+      schemaString = OBDAconverter.convertTgdToSchema(schema.split(/\r?\n/)).join('\n')
+    } else {
+      schemaString = schema.trim().replace(/[\s+]+/g, ' ')
+    }
+    timer.start()
     const query = OBDAconverter.convertUcqToSql(ucqArray, schemaString, { format })
-    logger && logger.info('Execute SQL query')
+    logger && logger.pass('Query convetered successfully', timer.stop())
     const result = await db.query(query.join('\n'))
     return result
   } catch(err) {

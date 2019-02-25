@@ -14,7 +14,7 @@ export default class Timer {
 
   public stop() {
     this.stopwatch.stop()
-    const datetime = new DateTime(new Date(this.stopwatch.read()))
+    const datetime = new DateTime(new Date(0, 0, 0, 0, 0, 0, this.stopwatch.read()))
     this.stopwatch.reset()
     return datetime.timeStamp
   }
