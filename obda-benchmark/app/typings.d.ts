@@ -34,8 +34,9 @@ interface LoadDataOptions {
 }
 
 interface ComputeRewritingsOptions {
-  common? : boolean
+  query? : boolean
   logger? : ILogger
+  owl? : boolean
 }
 
 interface ExecuteUcqOptions{
@@ -46,9 +47,10 @@ interface ExecuteUcqOptions{
 
 interface RunBenchmarkOptions {
   format? : string
-  common? : boolean
+  query? : boolean
   clean? : boolean
   tgd? : boolean
   logger? : ILogger
   skip? : boolean
+  owl? : boolean
 }

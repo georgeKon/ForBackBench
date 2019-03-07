@@ -566,10 +566,10 @@ nise@^1.4.8:
     path-to-regexp "^1.7.0"
     text-encoding "^0.6.4"
 
-obda-converter@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/obda-converter/-/obda-converter-0.1.1.tgz#33adda4ee6598541b7f58055a23f9aa6877cea16"
-  integrity sha512-wFHu7Z0BuNidupl0J/SVAAYZMe+m5i8iNbXjmox/+Zgb//SF7fQIBIMz9WscRaaHXwyrQWq+2fbIxlMaGK+fsA==
+obda-converter@^0.2.9:
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/obda-converter/-/obda-converter-0.2.9.tgz#e1c6ac9ea82ebb7bc0e732391ace04472e13f7d9"
+  integrity sha512-+N51QHRP4px/Yo8UZutfFiNASzIdAAB08LW0Mb29O/SpzneCJ4RWmSdy7MoQntFKPZKYPp0wMvYzgayUxr9+7w==
   dependencies:
     commander "2.19.0"
     pegjs "0.10.0"
@@ -779,7 +779,7 @@ sprintf-js@~1.0.2:
   resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
-statman-stopwatch@^2.7.0:
+statman-stopwatch@2.7.0:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/statman-stopwatch/-/statman-stopwatch-2.7.0.tgz#cfa7c203420ab3804d8d2b0745cc0519a60cf143"
   integrity sha1-z6fCA0IKs4BNjSsHRcwFGaYM8UM=
