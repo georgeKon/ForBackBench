@@ -1,0 +1,4 @@
+Q(X0,X1,X2)  <-  belongsToCompany(X1,X0) ^ listsStock(X2,X1)
+Q(X0,X1,X2)  <-  hasStock(X0,X1) ^ isListedIn(X1,X2)
+Q(X0,X1,X2)  <-  belongsToCompany(X1,X0) ^ isListedIn(X1,X2)
+Q(X0,X1,X2)  <-  hasStock(X0,X1) ^ listsStock(X2,X1)

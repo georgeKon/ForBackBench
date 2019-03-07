@@ -1,8 +1,0 @@
-PREFIX lubm: <http://swat.cse.lehigh.edu/onto/univ-bench.owl#>
-
-SELECT ?0 ?1   
-WHERE { 
-	?0 a lubm:Person .
-	?0 lubm:worksFor ?1 .
-	?1 a lubm:Organization .
-}

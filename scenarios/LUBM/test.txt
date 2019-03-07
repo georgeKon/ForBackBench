@@ -1,3 +1,0 @@
-GraduateStudent(?X) -> Person(?X) .
-GraduateStudent(?X) -> takesCourse(?X,?Y), GraduateCourse(?Y) .
-Student(?X) -> takesCourse(?X,?Y), Course(?Y) .

@@ -1,0 +1,6 @@
+Q(X0)  <-  StockTrader(X0)
+Q(X0)  <-  isExecutedBy(X501,X0)
+Q(X0)  <-  Trader(X0)
+Q(X0)  <-  StockBroker(X0)
+Q(X0)  <-  StockExchangeMember(X0)
+Q(X0)  <-  Dealer(X0)
