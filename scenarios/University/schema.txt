@@ -1,0 +1,186 @@
+AdministrativeStaff {
+	c0 : STRING
+}
+Employee {
+	c0 : STRING
+}
+AssistantProfessor {
+	c0 : STRING
+}
+Professor {
+	c0 : STRING
+}
+AssociateProfessor {
+	c0 : STRING
+}
+BachelorExam {
+	c0 : STRING
+}
+Exam {
+	c0 : STRING
+}
+Career {
+	c0 : STRING
+}
+Work {
+	c0 : STRING
+}
+Chair {
+	c0 : STRING
+}
+ClericalStaff {
+	c0 : STRING
+}
+College {
+	c0 : STRING
+}
+Organization {
+	c0 : STRING
+}
+Course {
+	c0 : STRING
+}
+Dean {
+	c0 : STRING
+}
+headOf {
+	c0 : STRING
+	c1 : STRING
+}
+Degree {
+	c0 : STRING
+}
+Director {
+	c0 : STRING
+}
+Person {
+	c0 : STRING
+}
+Program {
+	c0 : STRING
+}
+worksFor {
+	c0 : STRING
+	c1 : STRING
+}
+ExDean {
+	c0 : STRING
+}
+ExamRecord {
+	c0 : STRING
+}
+Faculty {
+	c0 : STRING
+}
+FacultyStaff {
+	c0 : STRING
+}
+FullProfessor {
+	c0 : STRING
+}
+GraduateCourse {
+	c0 : STRING
+}
+GraduateStudent {
+	c0 : STRING
+}
+takesCourse {
+	c0 : STRING
+	c1 : STRING
+}
+Lecturer {
+	c0 : STRING
+}
+PostDoc {
+	c0 : STRING
+}
+ResearchAssistant {
+	c0 : STRING
+}
+Student {
+	c0 : STRING
+}
+SystemsStaff {
+	c0 : STRING
+}
+UndergraduateStudent {
+	c0 : STRING
+}
+University {
+	c0 : STRING
+}
+VisitingProfessor {
+	c0 : STRING
+}
+advisor {
+	c0 : STRING
+	c1 : STRING
+}
+affiliateOf {
+	c0 : STRING
+	c1 : STRING
+}
+affiliatedOrganizationOf {
+	c0 : STRING
+	c1 : STRING
+}
+degreeFrom {
+	c0 : STRING
+	c1 : STRING
+}
+hasAlumnus {
+	c0 : STRING
+	c1 : STRING
+}
+doctoralDegreeFrom {
+	c0 : STRING
+	c1 : STRING
+}
+hasExamRecord {
+	c0 : STRING
+	c1 : STRING
+}
+hasFaculty {
+	c0 : STRING
+	c1 : STRING
+}
+isPartOfUniversity {
+	c0 : STRING
+	c1 : STRING
+}
+mastersDegreeFrom {
+	c0 : STRING
+	c1 : STRING
+}
+member {
+	c0 : STRING
+	c1 : STRING
+}
+memberOf {
+	c0 : STRING
+	c1 : STRING
+}
+orgPublication {
+	c0 : STRING
+	c1 : STRING
+}
+publicationAuthor {
+	c0 : STRING
+	c1 : STRING
+}
+teacherOf {
+	c0 : STRING
+	c1 : STRING
+}
+teachingAssistantOf {
+	c0 : STRING
+	c1 : STRING
+}
+tenured {
+	c0 : STRING
+	c1 : STRING
+}
+undergraduateDegreeFrom {
+	c0 : STRING
+	c1 : STRING
+}
