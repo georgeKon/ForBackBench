@@ -162,11 +162,11 @@
     <!-- http://www.owl-ontologies.com/Ontology1207768242.owl#Address -->
 
     <owl:Class rdf:about="#Address">
-        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf rdf:resource="Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="#inverseofhasAddress"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -200,7 +200,7 @@
 
     <owl:Class rdf:about="#Investor">
         <rdfs:subClassOf rdf:resource="#Person"/>
-        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf rdf:resource="Thing"/>
     </owl:Class>
     
 
@@ -224,11 +224,11 @@
     <!-- http://www.owl-ontologies.com/Ontology1207768242.owl#Person -->
 
     <owl:Class rdf:about="#Person">
-        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf rdf:resource="Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="#hasAddress"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -255,13 +255,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="#isListedIn"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="#belongsToCompany"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -275,7 +275,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="#tradesOnBehalfOf"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -292,7 +292,7 @@
 
     <owl:Class rdf:about="#StockExchangeMember">
         <rdfs:subClassOf rdf:resource="#Person"/>
-        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf rdf:resource="Thing"/>
     </owl:Class>
     
 
@@ -317,23 +317,23 @@
     <!-- http://www.owl-ontologies.com/Ontology1207768242.owl#Transaction -->
 
     <owl:Class rdf:about="#Transaction">
-        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:subClassOf rdf:resource="Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="#isExecutedFor"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="#isExecutedBy"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="#involvesInstrument"/>
-                <owl:someValuesFrom rdf:resource="&owl;Thing"/>
+                <owl:someValuesFrom rdf:resource="Thing"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -342,7 +342,7 @@
 
     <!-- http://www.w3.org/2002/07/owl#Thing -->
 
-    <owl:Class rdf:about="&owl;Thing"/>
+    <owl:Class rdf:about="Thing"/>
 </rdf:RDF>
 
 
