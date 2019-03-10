@@ -1,0 +1,9 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX : <http://vicodi.org/ontology#>
+SELECT DISTINCT ?0 ?1 
+WHERE
+{
+	?0  rdf:type :Time-Dependent-Relation .
+	?0  :hasRelationMember ?1  .
+	?1  rdf:type :Event
+}

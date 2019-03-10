@@ -1,0 +1,27 @@
+?(VAR_x) :- <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x), <file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#isAssistedBy>(VAR_y, VAR_x).
+?(VAR_x) :- <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x), <http://ksg.meraka.co.za/adolena.owl#assistsWith>(VAR_x, VAR_y).
+?(VAR_x) :- <file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#AssistiveDevice>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#BatteryPowered_Wheelchair>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Communication_Device>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#FaceToFaceCommunicationDevice>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#FaceToFaceCommunicationSoftware>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Foldable_Wheelchair>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LightweightFoldable_Wheelchair>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Lightweight_Wheelchair>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Manual_Wheelchair>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MobilityDevice>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Motorised_Wheelchair>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SymbolBoard>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Talking_Thermometer>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#TelephoneAid>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Wheelchair>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <http://ksg.meraka.co.za/adolena.owl#BrailleAlarmClock>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <http://ksg.meraka.co.za/adolena.owl#BraillePillOrganiser>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <http://ksg.meraka.co.za/adolena.owl#BrailleWatch>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <http://ksg.meraka.co.za/adolena.owl#BrailleWritingDevice>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <http://ksg.meraka.co.za/adolena.owl#ListenDevice>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <http://ksg.meraka.co.za/adolena.owl#ReadingDevice>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <http://ksg.meraka.co.za/adolena.owl#SpeechDevice>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <http://ksg.meraka.co.za/adolena.owl#TactileReading>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <http://ksg.meraka.co.za/adolena.owl#TalkingReading>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
+?(VAR_x) :- <http://ksg.meraka.co.za/adolena.owl#WritingDevice>(VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x).
