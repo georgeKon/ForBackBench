@@ -1,0 +1,2 @@
+Q(X0)  <-  affiliatedOrganizationOf(X1,X2) ^ worksFor(X0,X1)
+Q(X0)  <-  affiliatedOrganizationOf(X1,X2) ^ headOf(X0,X1)

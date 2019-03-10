@@ -1,0 +1,3 @@
+hasStock_EXT(x, y) :- belongsToCompany(y, x)
+hasStock_EXT(x, y) :- hasStock(x, y)
+q(0, 1) :- hasStock_EXT(0, 1)

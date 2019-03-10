@@ -1,0 +1,7 @@
+StockExchangeMember_EXT(x) :- isExecutedBy(_, x)
+StockExchangeMember_EXT(x) :- Trader(x)
+StockExchangeMember_EXT(x) :- StockTrader(x)
+StockExchangeMember_EXT(x) :- Dealer(x)
+StockExchangeMember_EXT(x) :- StockBroker(x)
+StockExchangeMember_EXT(x) :- StockExchangeMember(x)
+q(0) :- StockExchangeMember_EXT(0)
