@@ -13,17 +13,18 @@ export default async function executeUcq(ucqArray : string[], schema : string, d
   }
 
   if(options.format === undefined) {
-    options.format = 'rapid'
+    throw new Error('No UCQ format specified')
   }
-  const { format, logger, tgd } = options
+  const { format, logger } = options
   try {
-    let schemaString
-    // FIXME: This is a real hack that repeats work that we have already done
-    if(tgd) {
-      schemaString = OBDAconverter.convertTgdToSchema(schema.split(/\r?\n/)).join('\n')
-    } else {
-      schemaString = schema.trim().replace(/[\s+]+/g, ' ')
-    }
+    // let schemaString
+    // // FIXME: This is a real hack that repeats work that we have already done
+    // if(tgd) {
+    //   schemaString = OBDAconverter.convertTgdToSchema(schema.split(/\r?\n/)).join('\n')
+    // } else {
+    //   schemaString = schema.trim().replace(/[\s+]+/g, ' ')
+    // }
+    const schemaString = schema.trim().replace(/[\s+]+/g, ' ')
     timer.start()
     const query = OBDAconverter.convertUcqToSql(ucqArray, schemaString, { format })
     logger && logger.pass('Query convetered successfully', timer.stop())

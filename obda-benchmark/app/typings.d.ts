@@ -28,29 +28,20 @@ interface ITimer {
 }
 
 interface LoadDataOptions {
-  clean? : boolean
-  tgd? : boolean
   logger? : ILogger
 }
 
 interface ComputeRewritingsOptions {
-  query? : boolean
   logger? : ILogger
-  owl? : boolean
 }
 
 interface ExecuteUcqOptions{
   format? : string 
   logger? : ILogger
-  tgd? : boolean
 }
 
 interface RunBenchmarkOptions {
   format? : string
-  query? : boolean
-  clean? : boolean
-  tgd? : boolean
   logger? : ILogger
   skip? : boolean
-  owl? : boolean
 }

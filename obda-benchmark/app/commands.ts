@@ -21,7 +21,9 @@ export async function computeRewritingsCmd(
   queryPath : string, ontologyPath : string, tool : string, options : ComputeRewritingsOptions) {
   const logger = new Logger('rewrite', '../logs')
 
-  await computeRewritings(queryPath, ontologyPath, tool, { logger, ...options })
+  const rewritings = await computeRewritings(queryPath, ontologyPath, tool, { logger, ...options })
+  logger.title('Rewritings')
+  rewritings.forEach(query => logger.out(query))
 }
 
 export async function executeUcqCmd(ucqPath : string, schemaPath : string, options : ExecuteUcqOptions) {

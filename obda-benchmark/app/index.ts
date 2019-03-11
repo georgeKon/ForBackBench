@@ -32,10 +32,6 @@ program
   .arguments('<schema> <data> <query> <ontology> <tool>')
   .description('Run a full test with the given query and ontology')
   .option('-s, --skip', 'Skip creation of database')
-  .option('-c, --clean', 'Create clean instance of database by including DROP IF EXISTS commands')
-  .option('-q, --query', 'Flags use of SPARQL query instead of common format')
-  .option('-t, --tgd', 'Flags use of tgd file that must be converted to schema')
-  .option('-o, --owl', 'Flags use of owl ontology instead of tgds')
   .action((schema, data, query, ontology, tool, options) =>
     runBenchmarkCmd(schema, data, query, ontology, tool, options))
 
