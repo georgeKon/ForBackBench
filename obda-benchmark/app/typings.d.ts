@@ -29,6 +29,7 @@ interface ITimer {
 
 interface LoadDataOptions {
   logger? : ILogger
+  verbose? : boolean
 }
 
 interface ComputeRewritingsOptions {
@@ -44,4 +45,5 @@ interface RunBenchmarkOptions {
   format? : string
   logger? : ILogger
   skip? : boolean
+  verbose? : boolean
 }

@@ -10,7 +10,7 @@ import Timer from './utils/timer'
 const timer = new Timer()
 
 export default async function loadData(
-    schemaPath : string, dataPath : string, db : DB, { logger } : LoadDataOptions) {
+    schemaPath : string, dataPath : string, db : DB, { logger, verbose } : LoadDataOptions) {
 
   // we need to read the schema, and the sql, and then import the data into the database
   let schema : string
@@ -52,7 +52,7 @@ export default async function loadData(
     timer.start()
     // For of loop because promises don't work in forEach
     for(const file of files) {
-      logger && logger.info(`Import ${file}`)
+      logger && verbose && logger.info(`Import ${file}`)
       const fileStream = fs.createReadStream(path.resolve(dataPath, file))
       const stream = await db.query(copyFrom(`COPY "${path.parse(file).name}" FROM STDIN DELIMITER ','`)) as any
       fileStream.pipe(stream)
@@ -61,7 +61,7 @@ export default async function loadData(
         stream.on('error', () => reject())
       })
       await promise
-      logger && logger.pass(`${file} imported`)
+      logger && verbose && logger.pass(`${file} imported`)
     }
     logger && logger.pass('Data import complete', timer.stop())
     await db.commit()

@@ -6,7 +6,7 @@ import Timer from './utils/timer'
 
 const timer = new Timer()
 
-export default async function executeUcq(ucqArray : string[], schema : string, db : DB, options? : ExecuteUcqOptions) {
+export default async function executeUcq(ucqArray : string[], schema : string, db : DB, options : ExecuteUcqOptions) {
 
   if(options === undefined) {
     options = { }

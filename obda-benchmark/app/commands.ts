@@ -61,12 +61,16 @@ export async function runBenchmarkCmd(
 
     const rewritings = await computeRewritings(queryPath, ontologyPath, tool, { logger, ...options })
     logger.title('Rewritings')
-    rewritings.forEach(query => logger.out(query))
+    if(options.verbose) {
+      rewritings.forEach(query => logger.out(query))
+    }
 
     const result = await executeUcq(rewritings, schema, db, { logger, format: tool, ...options })
     logger.title('Answers')
     logger.info('Rows returned: ' + result.rowCount)
-    result.rows.forEach(row => logger.out(JSON.stringify(row)))
+    if(options.verbose) {
+      result.rows.forEach(row => logger.out(JSON.stringify(row)))
+    }
   } catch(err) {
     logger.info('Benchmark exited after error')
   } finally {

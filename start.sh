@@ -7,10 +7,10 @@ then
   ONTO="scenarios/Adolena/ontology.owl"
 elif [ $1 = "U" ]
 then
-  SCHEMA="scenarios/LUBM/schema.txt"
-  DATA="scenarios/LUBM/data/"
-  QUERY="scenarios/LUBM/Q${2}"
-  ONTO="scenarios/LUBM/ontology.owl"
+  SCHEMA="scenarios/University/schema.txt"
+  DATA="scenarios/University/data/"
+  QUERY="scenarios/University/Q${2}"
+  ONTO="scenarios/University/ontology.owl"
 elif [ $1 = "S" ]
 then
   SCHEMA="scenarios/StockExchange/schema.txt"

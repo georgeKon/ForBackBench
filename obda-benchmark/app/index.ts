@@ -32,6 +32,7 @@ program
   .arguments('<schema> <data> <query> <ontology> <tool>')
   .description('Run a full test with the given query and ontology')
   .option('-s, --skip', 'Skip creation of database')
+  .option('-b, --verbose', 'Log rewriting and query answers')
   .action((schema, data, query, ontology, tool, options) =>
     runBenchmarkCmd(schema, data, query, ontology, tool, options))
 

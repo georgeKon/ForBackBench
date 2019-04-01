@@ -1,6 +1,6 @@
 import fs from 'fs'
 import path from 'path'
-import OBDAconverter from 'obda-converter'
+// import OBDAconverter from 'obda-converter'
 import execAsync from './utils/exec'
 import Timer from './utils/timer'
 
