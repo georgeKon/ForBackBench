@@ -1,0 +1,30 @@
+Acquisition_src { c0: STRING }
+Transaction_src { c0: STRING }
+Address_src { c0: STRING }
+Thing_src { c0: STRING }
+inverseofhasAddress_src { c0: STRING, c1: STRING }
+Company_src { c0: STRING }
+LegalPerson_src { c0: STRING }
+Dealer_src { c0: STRING }
+StockBroker_src { c0: STRING }
+Investor_src { c0: STRING }
+Person_src { c0: STRING }
+Offer_src { c0: STRING }
+hasAddress_src { c0: STRING, c1: STRING }
+PhysicalPerson_src { c0: STRING }
+Stock_src { c0: STRING }
+FinantialInstrument_src { c0: STRING }
+isListedIn_src { c0: STRING, c1: STRING }
+belongsToCompany_src { c0: STRING, c1: STRING }
+StockExchangeMember_src { c0: STRING }
+tradesOnBehalfOf_src { c0: STRING, c1: STRING }
+StockTrader_src { c0: STRING }
+Trader_src { c0: STRING }
+isExecutedFor_src { c0: STRING, c1: STRING }
+isExecutedBy_src { c0: STRING, c1: STRING }
+involvesInstrument_src { c0: STRING, c1: STRING }
+hasStock_src { c0: STRING, c1: STRING }
+StockExchangeList_src { c0: STRING }
+listsStock_src { c0: STRING, c1: STRING }
+isTradedIn_src { c0: STRING, c1: STRING }
+usesBroker_src { c0: STRING, c1: STRING }

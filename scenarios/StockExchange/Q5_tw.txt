@@ -1,5 +1,0 @@
-listsStock_EXT(x, y) :- isListedIn(y, x)
-listsStock_EXT(x, y) :- listsStock(x, y)
-hasStock_EXT(x, y) :- belongsToCompany(y, x)
-hasStock_EXT(x, y) :- hasStock(x, y)
-q(0, 1, 2, 3) :- hasStock_EXT(1, 0), listsStock_EXT(3, 1), hasStock_EXT(1, 2)

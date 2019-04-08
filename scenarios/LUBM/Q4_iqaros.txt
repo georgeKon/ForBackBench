@@ -1,2 +1,0 @@
-Q(X0,X1)  <-  headOf(X0,X1)
-Q(X0,X1)  <-  worksFor(X0,X1)

@@ -1,0 +1,55 @@
+AdministrativeStaff_src { c0: STRING }
+Employee_src { c0: STRING }
+AssistantProfessor_src { c0: STRING }
+Professor_src { c0: STRING }
+AssociateProfessor_src { c0: STRING }
+BachelorExam_src { c0: STRING }
+Exam_src { c0: STRING }
+Career_src { c0: STRING }
+Work_src { c0: STRING }
+Chair_src { c0: STRING }
+ClericalStaff_src { c0: STRING }
+College_src { c0: STRING }
+Organization_src { c0: STRING }
+Course_src { c0: STRING }
+Dean_src { c0: STRING }
+headOf_src { c0: STRING, c1: STRING }
+Degree_src { c0: STRING }
+Director_src { c0: STRING }
+Person_src { c0: STRING }
+Program_src { c0: STRING }
+worksFor_src { c0: STRING, c1: STRING }
+ExDean_src { c0: STRING }
+ExamRecord_src { c0: STRING }
+Faculty_src { c0: STRING }
+FacultyStaff_src { c0: STRING }
+FullProfessor_src { c0: STRING }
+GraduateCourse_src { c0: STRING }
+GraduateStudent_src { c0: STRING }
+takesCourse_src { c0: STRING, c1: STRING }
+Lecturer_src { c0: STRING }
+PostDoc_src { c0: STRING }
+ResearchAssistant_src { c0: STRING }
+Student_src { c0: STRING }
+SystemsStaff_src { c0: STRING }
+UndergraduateStudent_src { c0: STRING }
+University_src { c0: STRING }
+VisitingProfessor_src { c0: STRING }
+advisor_src { c0: STRING, c1: STRING }
+affiliateOf_src { c0: STRING, c1: STRING }
+affiliatedOrganizationOf_src { c0: STRING, c1: STRING }
+degreeFrom_src { c0: STRING, c1: STRING }
+hasAlumnus_src { c0: STRING, c1: STRING }
+doctoralDegreeFrom_src { c0: STRING, c1: STRING }
+hasExamRecord_src { c0: STRING, c1: STRING }
+hasFaculty_src { c0: STRING, c1: STRING }
+isPartOfUniversity_src { c0: STRING, c1: STRING }
+mastersDegreeFrom_src { c0: STRING, c1: STRING }
+member_src { c0: STRING, c1: STRING }
+memberOf_src { c0: STRING, c1: STRING }
+orgPublication_src { c0: STRING, c1: STRING }
+publicationAuthor_src { c0: STRING, c1: STRING }
+teacherOf_src { c0: STRING, c1: STRING }
+teachingAssistantOf_src { c0: STRING, c1: STRING }
+tenured_src { c0: STRING, c1: STRING }
+undergraduateDegreeFrom_src { c0: STRING, c1: STRING }

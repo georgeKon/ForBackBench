@@ -1,2 +1,0 @@
-Q(?0) <- headOf(?0, ?1), affiliatedOrganizationOf(?1, ?2)
-Q(?0) <- worksFor(?0, ?1), affiliatedOrganizationOf(?1, ?2)
