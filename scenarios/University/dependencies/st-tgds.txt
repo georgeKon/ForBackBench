@@ -1,55 +1,30 @@
-AdministrativeStaff_src(X) -> AdministrativeStaff(X)
-Employee_src(X) -> Employee(X)
-AssistantProfessor_src(X) -> AssistantProfessor(X)
-Professor_src(X) -> Professor(X)
-AssociateProfessor_src(X) -> AssociateProfessor(X)
-BachelorExam_src(X) -> BachelorExam(X)
-Exam_src(X) -> Exam(X)
-Career_src(X) -> Career(X)
-Work_src(X) -> Work(X)
-Chair_src(X) -> Chair(X)
-ClericalStaff_src(X) -> ClericalStaff(X)
-College_src(X) -> College(X)
-Organization_src(X) -> Organization(X)
-Course_src(X) -> Course(X)
-Dean_src(X) -> Dean(X)
-headOf_src(X,Y) -> headOf(X,Y)
-Degree_src(X) -> Degree(X)
-Director_src(X) -> Director(X)
-Person_src(X) -> Person(X)
-Program_src(X) -> Program(X)
-worksFor_src(X,Y) -> worksFor(X,Y)
-ExDean_src(X) -> ExDean(X)
-ExamRecord_src(X) -> ExamRecord(X)
-Faculty_src(X) -> Faculty(X)
-FacultyStaff_src(X) -> FacultyStaff(X)
-FullProfessor_src(X) -> FullProfessor(X)
-GraduateCourse_src(X) -> GraduateCourse(X)
-GraduateStudent_src(X) -> GraduateStudent(X)
-takesCourse_src(X,Y) -> takesCourse(X,Y)
-Lecturer_src(X) -> Lecturer(X)
-PostDoc_src(X) -> PostDoc(X)
-ResearchAssistant_src(X) -> ResearchAssistant(X)
-Student_src(X) -> Student(X)
-SystemsStaff_src(X) -> SystemsStaff(X)
-UndergraduateStudent_src(X) -> UndergraduateStudent(X)
-University_src(X) -> University(X)
-VisitingProfessor_src(X) -> VisitingProfessor(X)
-advisor_src(X,Y) -> advisor(X,Y)
-affiliateOf_src(X,Y) -> affiliateOf(X,Y)
-affiliatedOrganizationOf_src(X,Y) -> affiliatedOrganizationOf(X,Y)
-degreeFrom_src(X,Y) -> degreeFrom(X,Y)
-hasAlumnus_src(X,Y) -> hasAlumnus(X,Y)
-doctoralDegreeFrom_src(X,Y) -> doctoralDegreeFrom(X,Y)
-hasExamRecord_src(X,Y) -> hasExamRecord(X,Y)
-hasFaculty_src(X,Y) -> hasFaculty(X,Y)
-isPartOfUniversity_src(X,Y) -> isPartOfUniversity(X,Y)
-mastersDegreeFrom_src(X,Y) -> mastersDegreeFrom(X,Y)
-member_src(X,Y) -> member(X,Y)
-memberOf_src(X,Y) -> memberOf(X,Y)
-orgPublication_src(X,Y) -> orgPublication(X,Y)
-publicationAuthor_src(X,Y) -> publicationAuthor(X,Y)
-teacherOf_src(X,Y) -> teacherOf(X,Y)
-teachingAssistantOf_src(X,Y) -> teachingAssistantOf(X,Y)
-tenured_src(X,Y) -> tenured(X,Y)
-undergraduateDegreeFrom_src(X,Y) -> undergraduateDegreeFrom(X,Y)
+src_advisor(?X,?Y) -> advisor(?X,?Y) .
+src_AssistantProfessor(?X) -> AssistantProfessor(?X) .
+src_AssociateProfessor(?X) -> AssociateProfessor(?X) .
+src_Course(?X) -> Course(?X) .
+src_Department(?X) -> Department(?X) .
+src_doctoralDegreeFrom(?X,?Y) -> doctoralDegreeFrom(?X,?Y) .
+src_emailAddress(?X,?Y) -> emailAddress(?X,?Y) .
+src_FullProfessor(?X) -> FullProfessor(?X) .
+src_GraduateCourse(?X) -> GraduateCourse(?X) .
+src_GraduateStudent(?X) -> GraduateStudent(?X) .
+src_headOf(?X,?Y) -> headOf(?X,?Y) .
+src_Lecturer(?X) -> Lecturer(?X) .
+src_mastersDegreeFrom(?X,?Y) -> mastersDegreeFrom(?X,?Y) .
+src_memberOf(?X,?Y) -> memberOf(?X,?Y) .
+src_name(?X,?Y) -> name(?X,?Y) .
+src_Publication(?X) -> Publication(?X) .
+src_publicationAuthor(?X,?Y) -> publicationAuthor(?X,?Y) .
+src_ResearchAssistant(?X) -> ResearchAssistant(?X) .
+src_ResearchGroup(?X) -> ResearchGroup(?X) .
+src_researchInterest(?X,?Y) -> researchInterest(?X,?Y) .
+src_subOrganizationOf(?X,?Y) -> subOrganizationOf(?X,?Y) .
+src_takesCourse(?X,?Y) -> takesCourse(?X,?Y) .
+src_teacherOf(?X,?Y) -> teacherOf(?X,?Y) .
+src_TeachingAssistant(?X) -> TeachingAssistant(?X) .
+src_teachingAssistantOf(?X,?Y) -> teachingAssistantOf(?X,?Y) .
+src_telephone(?X,?Y) -> telephone(?X,?Y) .
+src_undergraduateDegreeFrom(?X,?Y) -> undergraduateDegreeFrom(?X,?Y) .
+src_UndergraduateStudent(?X) -> UndergraduateStudent(?X) .
+src_University(?X) -> University(?X) .
+src_worksFor(?X,?Y) -> worksFor(?X,?Y) .
