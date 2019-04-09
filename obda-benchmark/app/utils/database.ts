@@ -1,7 +1,7 @@
 import { Client, QueryConfig } from 'pg'
 import Logger from './logger'
 
-export default class DB {
+export default class Database {
   private logger : Logger
   private connection : Client | null
   private transaction : boolean

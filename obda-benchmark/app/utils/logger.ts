@@ -3,14 +3,14 @@ import * as path from 'path'
 import DateTime from './datetime'
 
 export default class Logger implements ILogger {
-  private writePath : string
+  // private writePath : string
   private mute : boolean
 
   constructor(label? : string, logPath? : string, mute? : boolean) {
     const dateTime = new DateTime()
     const name = `${dateTime.dateTimeStamp}-${label ? label : 'run'}.log`
     this.mute = mute ? mute : false
-    this.writePath = path.resolve(logPath ? logPath : __dirname, name)
+    // this.writePath = path.resolve(logPath ? logPath : __dirname, name)
   }
 
   public log(message : string, type : string, time? : string) : void {
@@ -20,7 +20,7 @@ export default class Logger implements ILogger {
       /* tslint:disable */
       console.log(line)
       /* tslint:enable */
-      fs.appendFileSync(this.writePath, line + '\n')
+      // fs.appendFileSync(this.writePath, line + '\n')
     }
   }
 
@@ -50,7 +50,7 @@ export default class Logger implements ILogger {
       /* tslint:disable */
       console.log(line)
       /* tslint:enable */
-      fs.appendFileSync(this.writePath, line + '\n')
+      // fs.appendFileSync(this.writePath, line + '\n')
     }
   }
 }

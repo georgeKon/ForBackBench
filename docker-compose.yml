@@ -3,18 +3,10 @@ services:
   db:
     image: postgres:11
     restart: always
-    environment:
-      POSTGRES_USER: ${PG_USER}
-      POSTGRES_PASSWORD: ${PG_PASSWORD}
-      POSTGRES_DB: ${PG_DB}
   framework:
     build: ./
     environment:
-      PGUSER: ${PG_USER}
       PGHOST: db
-      PGPASSWORD: ${PG_PASSWORD}
-      PGDATABASE: ${PG_DB}
-      PGPORT: ${PG_PORT}
     volumes:
       - ./logs:/logs
     depends_on:

@@ -1,7 +1,7 @@
 /* tslint-disable no-unused-expressions */
 
 import OBDAconverter from 'obda-converter'
-import DB from './utils/db'
+import DB from './utils/database'
 import Timer from './utils/timer'
 
 const timer = new Timer()

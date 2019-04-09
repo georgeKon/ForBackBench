@@ -1,10 +1,20 @@
 #!/usr/bin/env node
 
 import program from 'commander'
-import { loadDataCmd, computeRewritingsCmd, executeUcqCmd, runBenchmarkCmd } from './commands'
+import { loadDataCmd, computeRewritingsCmd, executeUcqCmd, runBenchmarkCmd, bootstrapCmd } from './commands'
 
 program
   .version('0.0.1', '-v, --version')
+
+program
+  .command('bootstrap')
+  .option('--mode <mode>')
+  .option('--t-tgds <tgds>')
+  .option('--t-schema <schema>')
+  .option('--data <data>')
+  .option('--onto <onto>')
+  .option('--qdir <qdir>')
+  .action((options) => bootstrapCmd(options))
 
 program
   .command('load')
@@ -12,7 +22,7 @@ program
   .description('Initialise a database with given schema and insert data')
   .option('-t, --tgd', 'Flags use of tgd file that must be converted to schema')
   .option('-c, --clean', 'Create clean instance of database by including DROP IF EXISTS commands')
-  .action((schema, data, options) => loadDataCmd(schema, data, options))
+  .action((schema, data, options) => loadDataCmd(schema, data))
 
 program
   .command('rewrite')
