@@ -7,3 +7,4 @@ elif [ $1 = "dllite" ]
 then
   obdabenchmark bootstrap --mode dllite --qdir $BASE_DIR/queries/ --onto $BASE_DIR/dependencies/ontology.owl --data $BASE_DIR/data/
 fi
+
