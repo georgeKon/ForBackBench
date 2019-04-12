@@ -566,10 +566,10 @@ nise@^1.4.8:
     path-to-regexp "^1.7.0"
     text-encoding "^0.6.4"
 
-obda-converter@^0.2.15:
-  version "0.2.15"
-  resolved "https://registry.yarnpkg.com/obda-converter/-/obda-converter-0.2.15.tgz#1c4a60113d58673f1228f6effaa304d182063f6d"
-  integrity sha512-zTPqQdhBs99dpSgmyBGCLET9hiy7T3mzvOnsayYmOvze0+wGiMa1z2f41iCa5YTOKn6H7KuYEGi0L5jS/sYTag==
+obda-converter@^0.2.16:
+  version "0.2.16"
+  resolved "https://registry.yarnpkg.com/obda-converter/-/obda-converter-0.2.16.tgz#95ba772ffcbf768f6ca9bf668dfd67d953ce4329"
+  integrity sha512-qF2uPpoOOhU7a+DUbLUeBmbFqYpbzjBO7vw26qGaaB4E0Z5/cvk6bEnKorNO8Cn95S8TlTe7eH1RB6frRvbOqQ==
   dependencies:
     commander "2.19.0"
     pegjs "0.10.0"

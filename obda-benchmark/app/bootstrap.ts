@@ -9,7 +9,7 @@ export async function createSourceSchema(schemaPath : string, outPath : string) 
   const parsed = OBDAconverter.parseSchema(schemaString)
 
   const newSchema = parsed.map(([name, attributes] : [string, string[]]) => {
-    return `${name + '_src'} { ${attributes.map(([field, type]) => `${field}: ${type}`).join(', ')} }`
+    return `${'src_' + name} {\n\t${attributes.map(([field, type]) => `${field} : ${type}`).join(',\n\t')}\n}`
   }).join('\n')
 
   return writeFile(outPath, newSchema)
@@ -30,8 +30,8 @@ export async function createSourceTargetDependencies(schemaPath : string, outPat
   const parsed = OBDAconverter.parseSchema(schemaString)
 
   const dependencies = parsed.map(([name, attributes] : [string, string[]]) => {
-    const args = `${attributes.map((_, i) => String.fromCharCode(88 + i)).join(',')}`
-    return `${name}_src(${args}) -> ${name}(${args})`
+    const args = `${attributes.map((_, i) => `?${String.fromCharCode(88 + i)}`).join(',')}`
+    return `src_${name}(${args}) -> ${name}(${args}) .`
   }).join('\n')
 
   return writeFile(outPath, dependencies)

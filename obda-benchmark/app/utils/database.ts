@@ -14,13 +14,13 @@ export default class Database {
 
   public async connect() {
     try {
-      this.logger.info('Open database connection')
+      this.logger.info(`Opening connection to database '${process.env.PGDATABASE}'`)
 
       const client = new Client()
       await client.connect()
       this.connection = client
 
-      this.logger.info('Database connection open')
+      this.logger.info('Database connection opened')
     } catch(err) {
       throw new Error('Failed to open database connection: ' + err.message)
     }
@@ -31,7 +31,7 @@ export default class Database {
       this.transaction = true
       await this.connection.query('BEGIN;')
 
-      this.logger.info('Begin database transaction')
+      this.logger.info('Database transaction opened')
     } else {
       throw new Error('Cannot begin transaction - No open database connection')
     }
@@ -42,7 +42,7 @@ export default class Database {
       await this.connection.query('COMMIT;')
       this.transaction = false
 
-      this.logger.info('Commit database transaction')
+      this.logger.info('Committed changes to database')
     } else {
       throw new Error('Cannot commit transction - No open database connection')
     }
@@ -53,7 +53,7 @@ export default class Database {
       if(this.transaction) {
         await this.connection.query('ABORT;')
         this.transaction = false
-        this.logger.info('Abort database transaction')
+        this.logger.info('Aborted changes to database')
       } else {
         this.logger.warn('Cannot abort transaction - No current transaction')
       }
@@ -64,7 +64,6 @@ export default class Database {
 
   public async query(query : string | QueryConfig) {
     if (this.connection) {
-      this.logger.info('Run database query')
       return this.connection.query(query)
     } else {
       throw new Error('Cannot perform query - No open database connection')
@@ -78,7 +77,7 @@ export default class Database {
       }
 
       await this.connection.end()
-      this.logger.info('Close database connection')
+      this.logger.info('Database connection closed')
     } else {
       this.logger.info('No need to close connection - No open database connection')
     }
