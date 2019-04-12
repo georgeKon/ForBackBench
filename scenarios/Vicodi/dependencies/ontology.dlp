@@ -1,0 +1,227 @@
+@prefix : <http://vicodi.org/ontology#>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#>
+@prefix ontology: <http://vicodi.org/ontology#>
+@top top
+ontology:Abstract-Notion(X0) :- ontology:Ideology(X0).
+ontology:Scientist(X0) :- ontology:Economist(X0).
+ontology:Creator(X0) :- ontology:Architect(X0).
+ontology:Flavour(X0) :- ontology:Object(X0).
+ontology:Work-of-Art(X0) :- ontology:Painting(X0).
+ontology:Natural-Object(X0) :- ontology:Disease(X0).
+ontology:Political-Organisation(X0) :- ontology:Governmental-Organisation(X0).
+ontology:Building(X0) :- ontology:Abbey(X0).
+ontology:Creator(X0) :- ontology:Film-Maker(X0).
+ontology:Economic-Organisation(X0) :- ontology:Economic-Enterprise(X0).
+ontology:Location(X0) :- ontology:Intra-State-Group(X0).
+ontology:Conceptual-Object(X0) :- ontology:Ritual(X0).
+ontology:Flavour(X0) :- ontology:Event(X0).
+ontology:Scientist(X0) :- ontology:Psychologist(X0).
+ontology:Artefact(X0) :- ontology:Liturgical-Object(X0).
+ontology:Event(X0) :- ontology:Battle(X0).
+ontology:Abstract-Notion(X0) :- ontology:Artistic-Style(X0).
+ontology:Building(X0) :- ontology:Monastery(X0).
+ontology:Artefact(X0) :- ontology:Clothing(X0).
+ontology:VicodiOI(X0) :- ontology:Time-Dependent(X0).
+ontology:Work-of-Art(X0) :- ontology:Piece-of-Music(X0).
+ontology:Artefact(X0) :- ontology:Pollution(X0).
+ontology:Event(X0) :- ontology:Fictional-Event(X0).
+ontology:Person-Role(X0) :- ontology:Criminal(X0).
+ontology:Building(X0) :- ontology:Cathedral(X0).
+ontology:Individual(X0) :- ontology:Fictional-Person(X0).
+ontology:Event(X0) :- ontology:Non-Military-Conflict(X0).
+ontology:Person-Role(X0) :- ontology:Leader(X0).
+ontology:Person-Role(X0) :- ontology:Other-Religious-Person(X0).
+ontology:Ideology(X0) :- ontology:Religious-Ideology(X0).
+ontology:Head-of-State(X0) :- ontology:Sultan(X0).
+ontology:Role(X0) :- ontology:Symbol(X0).
+ontology:Abstract-Notion(X0) :- ontology:Language(X0).
+ontology:Symbol(X0) :- ontology:National-Symbol(X0).
+ontology:Organisation(X0) :- ontology:Military-Organisation(X0).
+ontology:Symbol(X0) :- ontology:Economic-Symbol(X0).
+ontology:Abstract-Notion(X0) :- ontology:Art-Form(X0).
+ontology:Artefact(X0) :- ontology:Armament(X0).
+ontology:Event(X0) :- ontology:Legislation(X0).
+ontology:Military-Organisation(X0) :- ontology:Military-Unit(X0).
+ontology:Object(X0) :- ontology:Natural-Object(X0).
+ontology:Abstract-Notion(X0) :- ontology:Intellectual-Construct(X0).
+ontology:Cultural-Organisation(X0) :- ontology:Religious-Organisation(X0).
+ontology:Head-of-State(X0) :- ontology:Emperor(X0).
+ontology:Time-Dependent(X0) :- ontology:Time-Dependent-Relation(X0).
+ontology:Object(X0) :- ontology:Conceptual-Object(X0).
+ontology:Secular-Leader(X0) :- ontology:Magnate(X0).
+ontology:Flavour(X0) :- ontology:Abstract-Notion(X0).
+ontology:Geographical-Feature(X0) :- ontology:Geographical-Region(X0).
+ontology:Event(X0) :- ontology:Geographical-Discovery(X0).
+ontology:Social-Group(X0) :- ontology:Social-Stratum(X0).
+ontology:Flavour(X0) :- ontology:Individual(X0).
+ontology:Movement(X0) :- ontology:Religious-Movement(X0).
+ontology:Person-Role(X0) :- ontology:Professor(X0).
+ontology:Event(X0) :- ontology:Treaty(X0).
+ontology:Cultural-Organisation(X0) :- ontology:Masonic-Lodge(X0).
+ontology:Creator(X0) :- ontology:Artist(X0).
+ontology:Person-Role(X0) :- ontology:Inventor(X0).
+ontology:Head-of-State(X0) :- ontology:King(X0).
+ontology:Head-of-State(X0) :- ontology:Queen(X0).
+ontology:Abstract-Notion(X0) :- ontology:Measurable-Trend(X0).
+ontology:Secular-Leader(X0) :- ontology:Head-of-Government(X0).
+ontology:Movement(X0) :- ontology:Artistic-Movement(X0).
+ontology:Natural-Object(X0) :- ontology:Commodity(X0).
+ontology:Time(X0) :- ontology:FuzzyTemporalInterval(X0).
+ontology:Person-Role(X0) :- ontology:Physician(X0).
+ontology:Economic-Organisation(X0) :- ontology:Trades-Union(X0).
+ontology:Entertainer(X0) :- ontology:Dancer(X0).
+ontology:Location(X0) :- ontology:Geographical-Feature(X0).
+ontology:Organisation(X0) :- ontology:Management-Organisation(X0).
+ontology:Geographical-Feature(X0) :- ontology:Water(X0).
+ontology:Event(X0) :- ontology:Uprising(X0).
+ontology:Person-Role(X0) :- ontology:Sportsman(X0).
+ontology:Event(X0) :- ontology:Life-Event(X0).
+ontology:Event(X0) :- ontology:Crime(X0).
+ontology:Symbol(X0) :- ontology:Religious-Symbol(X0).
+ontology:Individual(X0) :- ontology:Person(X0).
+ontology:Vehicle(X0) :- ontology:Ship(X0).
+ontology:Person-Role(X0) :- ontology:Saint(X0).
+ontology:Discoverer(X0) :- ontology:Astronaut(X0).
+ontology:Head-of-State(X0) :- ontology:Prince(X0).
+ontology:Magnate(X0) :- ontology:Business-Leader(X0).
+ontology:Functionary(X0) :- ontology:Diplomat(X0).
+ontology:Artist(X0) :- ontology:Sculptor(X0).
+ontology:Intellectual-Construct(X0) :- ontology:Field-of-Knowledge(X0).
+ontology:Person-Role(X0) :- ontology:Functionary(X0).
+ontology:Political-Organisation(X0) :- ontology:League(X0).
+ontology:Conceptual-Object(X0) :- ontology:Badge(X0).
+ontology:Natural-Object(X0) :- ontology:Animal(X0).
+ontology:Artist(X0) :- ontology:Painter(X0).
+ontology:Religious-Leader(X0) :- ontology:Pope(X0).
+ontology:Time-Dependent-Relation(X0) :- ontology:Location-Part-Relation(X0).
+ontology:Writing(X0) :- ontology:Pamphlet(X0).
+ontology:Secular-Leader(X0) :- ontology:Head-of-State(X0).
+ontology:Organisation(X0) :- ontology:Political-Organisation(X0).
+ontology:Time-Dependent(X0) :- ontology:Role(X0).
+ontology:Event(X0) :- ontology:Cultural-Agreement(X0).
+ontology:Organisation(X0) :- ontology:Economic-Organisation(X0).
+ontology:Location(X0) :- ontology:Political-Region(X0).
+ontology:Secular-Leader(X0) :- ontology:Trades-Unionist(X0).
+ontology:Social-Group(X0) :- ontology:Dynasty(X0).
+ontology:Event(X0) :- ontology:Public-Oration(X0).
+ontology:Natural-Object(X0) :- ontology:Food(X0).
+ontology:Location(X0) :- ontology:Country(X0).
+ontology:Artefact(X0) :- ontology:Building(X0).
+ontology:Political-Organisation(X0) :- ontology:International-Alliance(X0).
+ontology:Creator(X0) :- ontology:Dramaturge(X0).
+ontology:Religious-Organisation(X0) :- ontology:Religious-Community(X0).
+ontology:Artist(X0) :- ontology:Composer(X0).
+ontology:Flavour(X0) :- ontology:Location(X0).
+ontology:Natural-Object(X0) :- ontology:Environment(X0).
+ontology:Entertainer(X0) :- ontology:Musician(X0).
+ontology:Management-Organisation(X0) :- ontology:Board(X0).
+ontology:Artefact(X0) :- ontology:Work-of-Art(X0).
+ontology:Symbol(X0) :- ontology:Political-Symbol(X0).
+ontology:Political-Organisation(X0) :- ontology:Party(X0).
+ontology:Functionary(X0) :- ontology:Jurist(X0).
+ontology:Object(X0) :- ontology:Artefact(X0).
+ontology:Ideology(X0) :- ontology:Secular-Ideology(X0).
+ontology:Writing(X0) :- ontology:Book(X0).
+ontology:Flavour(X0) :- ontology:Organisation(X0).
+ontology:Social-Group(X0) :- ontology:Movement(X0).
+ontology:Leader(X0) :- ontology:Secular-Leader(X0).
+ontology:Event(X0) :- ontology:Population-Movement(X0).
+ontology:Artefact(X0) :- ontology:Structure(X0).
+ontology:Person-Role(X0) :- ontology:Philanthropist(X0).
+ontology:Work-of-Art(X0) :- ontology:Sculpture(X0).
+ontology:Event(X0) :- ontology:Disaster(X0).
+ontology:Movement(X0) :- ontology:Intellectual-Movement(X0).
+ontology:Event(X0) :- ontology:Period(X0).
+ontology:Religious-Organisation(X0) :- ontology:Religious-Order(X0).
+ontology:Location(X0) :- ontology:Settlement(X0).
+ontology:Social-Group(X0) :- ontology:Stereotype-Group(X0).
+ontology:Artefact(X0) :- ontology:Scientific-Instrument(X0).
+ontology:Event(X0) :- ontology:Election(X0).
+ontology:Organisation(X0) :- ontology:International-Organisation(X0).
+ontology:Settlement(X0) :- ontology:City(X0).
+ontology:Person-Role(X0) :- ontology:Cleric(X0).
+ontology:Social-Group(X0) :- ontology:Ethnic-Group(X0).
+ontology:Artefact(X0) :- ontology:Writing(X0).
+ontology:Event(X0) :- ontology:Trial(X0).
+ontology:Vehicle(X0) :- ontology:Train(X0).
+ontology:Flavour(X0) :- ontology:Social-Group(X0).
+ontology:Creator(X0) :- ontology:Publisher(X0).
+ontology:VicodiOI(X0) :- ontology:Time(X0).
+ontology:Artefact(X0) :- ontology:Relic(X0).
+ontology:Economic-Organisation(X0) :- ontology:Trade-Association(X0).
+ontology:Creator(X0) :- ontology:Engineer(X0).
+ontology:Organisation(X0) :- ontology:Cultural-Organisation(X0).
+ontology:Minister(X0) :- ontology:Foreign-Minister(X0).
+ontology:Religious-Leader(X0) :- ontology:Church-Reformer(X0).
+ontology:Person-Role(X0) :- ontology:Theologian(X0).
+ontology:Conceptual-Object(X0) :- ontology:Religious-Practice(X0).
+ontology:Abstract-Notion(X0) :- ontology:Idea(X0).
+ontology:Creator(X0) :- ontology:Journalist(X0).
+ontology:Scientist(X0) :- ontology:Philosopher(X0).
+ontology:Building(X0) :- ontology:Church(X0).
+ontology:Writing(X0) :- ontology:Journal(X0).
+ontology:Time-Dependent(X0) :- ontology:Flavour(X0).
+ontology:Creator(X0) :- ontology:Author(X0).
+ontology:Religious-Leader(X0) :- ontology:Other-Religious-Leader(X0).
+ontology:Religious-Leader(X0) :- ontology:Ecclesiarch(X0).
+ontology:Entertainer(X0) :- ontology:Actor(X0).
+ontology:Person-Role(X0) :- ontology:Creator(X0).
+ontology:Functionary(X0) :- ontology:Minister(X0).
+ontology:Writing(X0) :- ontology:Newspaper(X0).
+ontology:Life-Event(X0) :- ontology:Illness(X0).
+ontology:Educational-Organisation(X0) :- ontology:University(X0).
+ontology:Leader(X0) :- ontology:Clerical-Leader(X0).
+ontology:Leader(X0) :- ontology:Religious-Leader(X0).
+ontology:Geographical-Feature(X0) :- ontology:Landmark(X0).
+ontology:Person-Role(X0) :- ontology:Military-Person(X0).
+ontology:Conceptual-Object(X0) :- ontology:Pastime(X0).
+ontology:Event(X0) :- ontology:Economic-Process(X0).
+ontology:Event(X0) :- ontology:Meeting(X0).
+ontology:Settlement(X0) :- ontology:Village(X0).
+ontology:Event(X0) :- ontology:Technical-Scientific-Advance(X0).
+ontology:Person-Role(X0) :- ontology:Scientist(X0).
+ontology:Entertainer(X0) :- ontology:Conductor(X0).
+ontology:Organisation(X0) :- ontology:Educational-Organisation(X0).
+ontology:Role(X0) :- ontology:Person-Role(X0).
+ontology:Scientist(X0) :- ontology:Geographer(X0).
+ontology:Functionary(X0) :- ontology:Politician(X0).
+ontology:Time(X0) :- ontology:TemporalInterval(X0).
+ontology:Person-Role(X0) :- ontology:Discoverer(X0).
+ontology:VicodiOI(X0) :- ontology:Category(X0).
+ontology:Event(X0) :- ontology:War(X0).
+ontology:Political-Organisation(X0) :- ontology:Representative-Institution(X0).
+ontology:Person-Role(X0) :- ontology:Entertainer(X0).
+ontology:Movement(X0) :- ontology:Secular-Movement(X0).
+ontology:Artefact(X0) :- ontology:Vehicle(X0).
+ontology:Event(X0) :- ontology:Scandal(X0).
+ontology:Event(X0) :- ontology:Period-in-Office(X0).
+ontology:isRelationMemberOf(X0, X1) :- ontology:isLocationPartMemberOf(X0, X1).
+ontology:related(X0, X1) :- ontology:exists(X0, X1).
+ontology:related(X0, X1) :- ontology:hasCategory(X0, X1).
+ontology:related(X0, X1) :- ontology:isRelationMemberOf(X0, X1).
+ontology:isRelationMemberOf(X0, X1) :- ontology:isLocationContainerMemberOf(X0, X1).
+ontology:related(X0, X1) :- ontology:hasRole(X0, X1).
+ontology:hasRelationMember(X0, X1) :- ontology:hasLocationContainerMember(X0, X1).
+ontology:related(X0, X1) :- ontology:hasRelationMember(X0, X1).
+ontology:hasRelationMember(X0, X1) :- ontology:hasLocationPartMember(X0, X1).
+ontology:Time-Dependent(X0) :- ontology:hasCategory(X0, X3).
+ontology:Flavour(X0) :- ontology:hasRole(X0, X3).
+ontology:VicodiOI(X0) :- ontology:related(X0, X3).
+ontology:Location(X0) :- ontology:isLocationPartMemberOf(X0, X3).
+ontology:Time-Dependent(X0) :- ontology:exists(X0, X3).
+ontology:Location-Part-Relation(X0) :- ontology:hasLocationContainerMember(X0, X3).
+ontology:Time-Dependent(X0) :- ontology:isRelationMemberOf(X0, X3).
+ontology:Location(X0) :- ontology:isLocationContainerMemberOf(X0, X3).
+ontology:Location-Part-Relation(X0) :- ontology:hasLocationPartMember(X0, X3).
+ontology:Time-Dependent-Relation(X0) :- ontology:hasRelationMember(X0, X3).
+ontology:Location(X0) :- ontology:hasLocationContainerMember(X3, X0).
+ontology:Time-Dependent-Relation(X0) :- ontology:isRelationMemberOf(X3, X0).
+ontology:Location(X0) :- ontology:hasLocationPartMember(X3, X0).
+ontology:Category(X0) :- ontology:hasCategory(X3, X0).
+ontology:Location-Part-Relation(X0) :- ontology:isLocationPartMemberOf(X3, X0).
+ontology:Location-Part-Relation(X0) :- ontology:isLocationContainerMemberOf(X3, X0).
+ontology:Role(X0) :- ontology:hasRole(X3, X0).
+ontology:Time(X0) :- ontology:exists(X3, X0).
+ontology:VicodiOI(X0) :- ontology:related(X3, X0).
+ontology:Time-Dependent(X0) :- ontology:hasRelationMember(X3, X0).

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario>
+  <source>
+    <type>DBMS</type>
+    <access-configuration>
+      <driver>org.postgresql.Driver</driver>
+      <uri>jdbc:postgresql:university_src</uri>
+      <schema>source</schema>
+      <login>postgres</login>
+      <password>password</password>
+    </access-configuration>
+    <schemaFile schema="source">schema/s-schema.txt</schemaFile>
+  </source>
+  <target>
+    <type>DBMS</type>
+    <generateFromDependencies>true</generateFromDependencies>
+    <access-configuration>
+      <driver>org.postgresql.Driver</driver>
+      <uri>jdbc:postgresql:university_trg</uri>
+      <schema>target</schema>
+      <login>postgres</login>
+      <password>password</password>
+    </access-configuration>
+    <schemaFile schema="target">schema/t-schema.txt</schemaFile>
+  </target>
+  <configuration>
+    <printResults>true</printResults>
+    <exportSolutions>true</exportSolutions>
+    <exportSolutionsPath>trg_data</exportSolutionsPath>
+    <exportSolutionsType>CSV</exportSolutionsType>
+    <exportQueryResults>true</exportQueryResults>
+    <exportQueryResultsPath>answers</exportQueryResultsPath>
+    <exportQueryResultsType>CSV</exportQueryResultsType>
+  </configuration>
+  <dependencies>
+    <sttgdsFile>dependencies/st-tgds.txt</sttgdsFile>
+    <ttgdsFile>dependencies/t-tgds.txt</ttgdsFile>
+  </dependencies>
+  <queries>
+    <queryFile>queries/Q1.txt</queryFile>
+    <queryFile>queries/Q2.txt</queryFile>
+    <queryFile>queries/Q3.txt</queryFile>
+    <queryFile>queries/Q4.txt</queryFile>
+    <queryFile>queries/Q5.txt</queryFile>
+  </queries>
+</scenario>

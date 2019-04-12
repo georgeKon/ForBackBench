@@ -1,204 +1,204 @@
-Abbey_src(X) -> Abbey(X)
-Building_src(X) -> Building(X)
-Abstract-Notion_src(X) -> Abstract-Notion(X)
-Flavour_src(X) -> Flavour(X)
-Actor_src(X) -> Actor(X)
-Entertainer_src(X) -> Entertainer(X)
-Animal_src(X) -> Animal(X)
-Natural-Object_src(X) -> Natural-Object(X)
-Architect_src(X) -> Architect(X)
-Creator_src(X) -> Creator(X)
-Armament_src(X) -> Armament(X)
-Artefact_src(X) -> Artefact(X)
-Art-Form_src(X) -> Art-Form(X)
-Object_src(X) -> Object(X)
-Artist_src(X) -> Artist(X)
-Artistic-Movement_src(X) -> Artistic-Movement(X)
-Movement_src(X) -> Movement(X)
-Artistic-Style_src(X) -> Artistic-Style(X)
-Astronaut_src(X) -> Astronaut(X)
-Discoverer_src(X) -> Discoverer(X)
-Author_src(X) -> Author(X)
-Badge_src(X) -> Badge(X)
-Conceptual-Object_src(X) -> Conceptual-Object(X)
-Battle_src(X) -> Battle(X)
-Event_src(X) -> Event(X)
-Board_src(X) -> Board(X)
-Management-Organisation_src(X) -> Management-Organisation(X)
-Book_src(X) -> Book(X)
-Writing_src(X) -> Writing(X)
-Business-Leader_src(X) -> Business-Leader(X)
-Magnate_src(X) -> Magnate(X)
-Category_src(X) -> Category(X)
-VicodiOI_src(X) -> VicodiOI(X)
-Cathedral_src(X) -> Cathedral(X)
-Church_src(X) -> Church(X)
-Church-Reformer_src(X) -> Church-Reformer(X)
-Religious-Leader_src(X) -> Religious-Leader(X)
-City_src(X) -> City(X)
-Settlement_src(X) -> Settlement(X)
-Cleric_src(X) -> Cleric(X)
-Person-Role_src(X) -> Person-Role(X)
-Clerical-Leader_src(X) -> Clerical-Leader(X)
-Leader_src(X) -> Leader(X)
-Clothing_src(X) -> Clothing(X)
-Commodity_src(X) -> Commodity(X)
-Composer_src(X) -> Composer(X)
-Conductor_src(X) -> Conductor(X)
-Country_src(X) -> Country(X)
-Location_src(X) -> Location(X)
-Crime_src(X) -> Crime(X)
-Criminal_src(X) -> Criminal(X)
-Cultural-Agreement_src(X) -> Cultural-Agreement(X)
-Cultural-Organisation_src(X) -> Cultural-Organisation(X)
-Organisation_src(X) -> Organisation(X)
-Dancer_src(X) -> Dancer(X)
-Diplomat_src(X) -> Diplomat(X)
-Functionary_src(X) -> Functionary(X)
-Disaster_src(X) -> Disaster(X)
-Disease_src(X) -> Disease(X)
-Dramaturge_src(X) -> Dramaturge(X)
-Dynasty_src(X) -> Dynasty(X)
-Social-Group_src(X) -> Social-Group(X)
-Ecclesiarch_src(X) -> Ecclesiarch(X)
-Economic-Enterprise_src(X) -> Economic-Enterprise(X)
-Economic-Organisation_src(X) -> Economic-Organisation(X)
-Economic-Process_src(X) -> Economic-Process(X)
-Economic-Symbol_src(X) -> Economic-Symbol(X)
-Symbol_src(X) -> Symbol(X)
-Economist_src(X) -> Economist(X)
-Scientist_src(X) -> Scientist(X)
-Educational-Organisation_src(X) -> Educational-Organisation(X)
-Election_src(X) -> Election(X)
-Emperor_src(X) -> Emperor(X)
-Head-of-State_src(X) -> Head-of-State(X)
-Engineer_src(X) -> Engineer(X)
-Environment_src(X) -> Environment(X)
-Ethnic-Group_src(X) -> Ethnic-Group(X)
-Fictional-Event_src(X) -> Fictional-Event(X)
-Fictional-Person_src(X) -> Fictional-Person(X)
-Individual_src(X) -> Individual(X)
-Field-of-Knowledge_src(X) -> Field-of-Knowledge(X)
-Intellectual-Construct_src(X) -> Intellectual-Construct(X)
-Film-Maker_src(X) -> Film-Maker(X)
-Time-Dependent_src(X) -> Time-Dependent(X)
-Food_src(X) -> Food(X)
-Foreign-Minister_src(X) -> Foreign-Minister(X)
-Minister_src(X) -> Minister(X)
-FuzzyTemporalInterval_src(X) -> FuzzyTemporalInterval(X)
-Time_src(X) -> Time(X)
-Geographer_src(X) -> Geographer(X)
-Geographical-Discovery_src(X) -> Geographical-Discovery(X)
-Geographical-Feature_src(X) -> Geographical-Feature(X)
-Geographical-Region_src(X) -> Geographical-Region(X)
-Governmental-Organisation_src(X) -> Governmental-Organisation(X)
-Political-Organisation_src(X) -> Political-Organisation(X)
-Head-of-Government_src(X) -> Head-of-Government(X)
-Secular-Leader_src(X) -> Secular-Leader(X)
-Idea_src(X) -> Idea(X)
-Ideology_src(X) -> Ideology(X)
-Illness_src(X) -> Illness(X)
-Life-Event_src(X) -> Life-Event(X)
-Intellectual-Movement_src(X) -> Intellectual-Movement(X)
-International-Alliance_src(X) -> International-Alliance(X)
-International-Organisation_src(X) -> International-Organisation(X)
-Intra-State-Group_src(X) -> Intra-State-Group(X)
-Inventor_src(X) -> Inventor(X)
-Journal_src(X) -> Journal(X)
-Journalist_src(X) -> Journalist(X)
-Jurist_src(X) -> Jurist(X)
-King_src(X) -> King(X)
-Landmark_src(X) -> Landmark(X)
-Language_src(X) -> Language(X)
-League_src(X) -> League(X)
-Legislation_src(X) -> Legislation(X)
-Liturgical-Object_src(X) -> Liturgical-Object(X)
-Location-Part-Relation_src(X) -> Location-Part-Relation(X)
-Time-Dependent-Relation_src(X) -> Time-Dependent-Relation(X)
-Masonic-Lodge_src(X) -> Masonic-Lodge(X)
-Measurable-Trend_src(X) -> Measurable-Trend(X)
-Meeting_src(X) -> Meeting(X)
-Military-Organisation_src(X) -> Military-Organisation(X)
-Military-Person_src(X) -> Military-Person(X)
-Military-Unit_src(X) -> Military-Unit(X)
-Monastery_src(X) -> Monastery(X)
-Musician_src(X) -> Musician(X)
-National-Symbol_src(X) -> National-Symbol(X)
-Newspaper_src(X) -> Newspaper(X)
-Non-Military-Conflict_src(X) -> Non-Military-Conflict(X)
-Other-Religious-Leader_src(X) -> Other-Religious-Leader(X)
-Other-Religious-Person_src(X) -> Other-Religious-Person(X)
-Painter_src(X) -> Painter(X)
-Painting_src(X) -> Painting(X)
-Work-of-Art_src(X) -> Work-of-Art(X)
-Pamphlet_src(X) -> Pamphlet(X)
-Party_src(X) -> Party(X)
-Pastime_src(X) -> Pastime(X)
-Period_src(X) -> Period(X)
-Period-in-Office_src(X) -> Period-in-Office(X)
-Person_src(X) -> Person(X)
-Role_src(X) -> Role(X)
-Philanthropist_src(X) -> Philanthropist(X)
-Philosopher_src(X) -> Philosopher(X)
-Physician_src(X) -> Physician(X)
-Piece-of-Music_src(X) -> Piece-of-Music(X)
-Political-Region_src(X) -> Political-Region(X)
-Political-Symbol_src(X) -> Political-Symbol(X)
-Politician_src(X) -> Politician(X)
-Pollution_src(X) -> Pollution(X)
-Pope_src(X) -> Pope(X)
-Population-Movement_src(X) -> Population-Movement(X)
-Prince_src(X) -> Prince(X)
-Professor_src(X) -> Professor(X)
-Psychologist_src(X) -> Psychologist(X)
-Public-Oration_src(X) -> Public-Oration(X)
-Publisher_src(X) -> Publisher(X)
-Queen_src(X) -> Queen(X)
-Relic_src(X) -> Relic(X)
-Religious-Community_src(X) -> Religious-Community(X)
-Religious-Organisation_src(X) -> Religious-Organisation(X)
-Religious-Ideology_src(X) -> Religious-Ideology(X)
-Religious-Movement_src(X) -> Religious-Movement(X)
-Religious-Order_src(X) -> Religious-Order(X)
-Religious-Practice_src(X) -> Religious-Practice(X)
-Religious-Symbol_src(X) -> Religious-Symbol(X)
-Representative-Institution_src(X) -> Representative-Institution(X)
-Ritual_src(X) -> Ritual(X)
-Saint_src(X) -> Saint(X)
-Scandal_src(X) -> Scandal(X)
-Scientific-Instrument_src(X) -> Scientific-Instrument(X)
-Sculptor_src(X) -> Sculptor(X)
-Sculpture_src(X) -> Sculpture(X)
-Secular-Ideology_src(X) -> Secular-Ideology(X)
-Secular-Movement_src(X) -> Secular-Movement(X)
-Ship_src(X) -> Ship(X)
-Vehicle_src(X) -> Vehicle(X)
-Social-Stratum_src(X) -> Social-Stratum(X)
-Sportsman_src(X) -> Sportsman(X)
-Stereotype-Group_src(X) -> Stereotype-Group(X)
-Structure_src(X) -> Structure(X)
-Sultan_src(X) -> Sultan(X)
-Technical-Scientific-Advance_src(X) -> Technical-Scientific-Advance(X)
-TemporalInterval_src(X) -> TemporalInterval(X)
-Theologian_src(X) -> Theologian(X)
-Trade-Association_src(X) -> Trade-Association(X)
-Trades-Union_src(X) -> Trades-Union(X)
-Trades-Unionist_src(X) -> Trades-Unionist(X)
-Train_src(X) -> Train(X)
-Treaty_src(X) -> Treaty(X)
-Trial_src(X) -> Trial(X)
-University_src(X) -> University(X)
-Uprising_src(X) -> Uprising(X)
-Village_src(X) -> Village(X)
-War_src(X) -> War(X)
-Water_src(X) -> Water(X)
-exists_src(X,Y) -> exists(X,Y)
-related_src(X,Y) -> related(X,Y)
-hasCategory_src(X,Y) -> hasCategory(X,Y)
-hasLocationContainerMember_src(X,Y) -> hasLocationContainerMember(X,Y)
-hasRelationMember_src(X,Y) -> hasRelationMember(X,Y)
-hasLocationPartMember_src(X,Y) -> hasLocationPartMember(X,Y)
-hasRole_src(X,Y) -> hasRole(X,Y)
-isLocationContainerMemberOf_src(X,Y) -> isLocationContainerMemberOf(X,Y)
-isRelationMemberOf_src(X,Y) -> isRelationMemberOf(X,Y)
-isLocationPartMemberOf_src(X,Y) -> isLocationPartMemberOf(X,Y)
+src_Abbey(?X) -> Abbey(?X) .
+src_Building(?X) -> Building(?X) .
+src_Abstract-Notion(?X) -> Abstract-Notion(?X) .
+src_Flavour(?X) -> Flavour(?X) .
+src_Actor(?X) -> Actor(?X) .
+src_Entertainer(?X) -> Entertainer(?X) .
+src_Animal(?X) -> Animal(?X) .
+src_Natural-Object(?X) -> Natural-Object(?X) .
+src_Architect(?X) -> Architect(?X) .
+src_Creator(?X) -> Creator(?X) .
+src_Armament(?X) -> Armament(?X) .
+src_Artefact(?X) -> Artefact(?X) .
+src_Art-Form(?X) -> Art-Form(?X) .
+src_Object(?X) -> Object(?X) .
+src_Artist(?X) -> Artist(?X) .
+src_Artistic-Movement(?X) -> Artistic-Movement(?X) .
+src_Movement(?X) -> Movement(?X) .
+src_Artistic-Style(?X) -> Artistic-Style(?X) .
+src_Astronaut(?X) -> Astronaut(?X) .
+src_Discoverer(?X) -> Discoverer(?X) .
+src_Author(?X) -> Author(?X) .
+src_Badge(?X) -> Badge(?X) .
+src_Conceptual-Object(?X) -> Conceptual-Object(?X) .
+src_Battle(?X) -> Battle(?X) .
+src_Event(?X) -> Event(?X) .
+src_Board(?X) -> Board(?X) .
+src_Management-Organisation(?X) -> Management-Organisation(?X) .
+src_Book(?X) -> Book(?X) .
+src_Writing(?X) -> Writing(?X) .
+src_Business-Leader(?X) -> Business-Leader(?X) .
+src_Magnate(?X) -> Magnate(?X) .
+src_Category(?X) -> Category(?X) .
+src_VicodiOI(?X) -> VicodiOI(?X) .
+src_Cathedral(?X) -> Cathedral(?X) .
+src_Church(?X) -> Church(?X) .
+src_Church-Reformer(?X) -> Church-Reformer(?X) .
+src_Religious-Leader(?X) -> Religious-Leader(?X) .
+src_City(?X) -> City(?X) .
+src_Settlement(?X) -> Settlement(?X) .
+src_Cleric(?X) -> Cleric(?X) .
+src_Person-Role(?X) -> Person-Role(?X) .
+src_Clerical-Leader(?X) -> Clerical-Leader(?X) .
+src_Leader(?X) -> Leader(?X) .
+src_Clothing(?X) -> Clothing(?X) .
+src_Commodity(?X) -> Commodity(?X) .
+src_Composer(?X) -> Composer(?X) .
+src_Conductor(?X) -> Conductor(?X) .
+src_Country(?X) -> Country(?X) .
+src_Location(?X) -> Location(?X) .
+src_Crime(?X) -> Crime(?X) .
+src_Criminal(?X) -> Criminal(?X) .
+src_Cultural-Agreement(?X) -> Cultural-Agreement(?X) .
+src_Cultural-Organisation(?X) -> Cultural-Organisation(?X) .
+src_Organisation(?X) -> Organisation(?X) .
+src_Dancer(?X) -> Dancer(?X) .
+src_Diplomat(?X) -> Diplomat(?X) .
+src_Functionary(?X) -> Functionary(?X) .
+src_Disaster(?X) -> Disaster(?X) .
+src_Disease(?X) -> Disease(?X) .
+src_Dramaturge(?X) -> Dramaturge(?X) .
+src_Dynasty(?X) -> Dynasty(?X) .
+src_Social-Group(?X) -> Social-Group(?X) .
+src_Ecclesiarch(?X) -> Ecclesiarch(?X) .
+src_Economic-Enterprise(?X) -> Economic-Enterprise(?X) .
+src_Economic-Organisation(?X) -> Economic-Organisation(?X) .
+src_Economic-Process(?X) -> Economic-Process(?X) .
+src_Economic-Symbol(?X) -> Economic-Symbol(?X) .
+src_Symbol(?X) -> Symbol(?X) .
+src_Economist(?X) -> Economist(?X) .
+src_Scientist(?X) -> Scientist(?X) .
+src_Educational-Organisation(?X) -> Educational-Organisation(?X) .
+src_Election(?X) -> Election(?X) .
+src_Emperor(?X) -> Emperor(?X) .
+src_Head-of-State(?X) -> Head-of-State(?X) .
+src_Engineer(?X) -> Engineer(?X) .
+src_Environment(?X) -> Environment(?X) .
+src_Ethnic-Group(?X) -> Ethnic-Group(?X) .
+src_Fictional-Event(?X) -> Fictional-Event(?X) .
+src_Fictional-Person(?X) -> Fictional-Person(?X) .
+src_Individual(?X) -> Individual(?X) .
+src_Field-of-Knowledge(?X) -> Field-of-Knowledge(?X) .
+src_Intellectual-Construct(?X) -> Intellectual-Construct(?X) .
+src_Film-Maker(?X) -> Film-Maker(?X) .
+src_Time-Dependent(?X) -> Time-Dependent(?X) .
+src_Food(?X) -> Food(?X) .
+src_Foreign-Minister(?X) -> Foreign-Minister(?X) .
+src_Minister(?X) -> Minister(?X) .
+src_FuzzyTemporalInterval(?X) -> FuzzyTemporalInterval(?X) .
+src_Time(?X) -> Time(?X) .
+src_Geographer(?X) -> Geographer(?X) .
+src_Geographical-Discovery(?X) -> Geographical-Discovery(?X) .
+src_Geographical-Feature(?X) -> Geographical-Feature(?X) .
+src_Geographical-Region(?X) -> Geographical-Region(?X) .
+src_Governmental-Organisation(?X) -> Governmental-Organisation(?X) .
+src_Political-Organisation(?X) -> Political-Organisation(?X) .
+src_Head-of-Government(?X) -> Head-of-Government(?X) .
+src_Secular-Leader(?X) -> Secular-Leader(?X) .
+src_Idea(?X) -> Idea(?X) .
+src_Ideology(?X) -> Ideology(?X) .
+src_Illness(?X) -> Illness(?X) .
+src_Life-Event(?X) -> Life-Event(?X) .
+src_Intellectual-Movement(?X) -> Intellectual-Movement(?X) .
+src_International-Alliance(?X) -> International-Alliance(?X) .
+src_International-Organisation(?X) -> International-Organisation(?X) .
+src_Intra-State-Group(?X) -> Intra-State-Group(?X) .
+src_Inventor(?X) -> Inventor(?X) .
+src_Journal(?X) -> Journal(?X) .
+src_Journalist(?X) -> Journalist(?X) .
+src_Jurist(?X) -> Jurist(?X) .
+src_King(?X) -> King(?X) .
+src_Landmark(?X) -> Landmark(?X) .
+src_Language(?X) -> Language(?X) .
+src_League(?X) -> League(?X) .
+src_Legislation(?X) -> Legislation(?X) .
+src_Liturgical-Object(?X) -> Liturgical-Object(?X) .
+src_Location-Part-Relation(?X) -> Location-Part-Relation(?X) .
+src_Time-Dependent-Relation(?X) -> Time-Dependent-Relation(?X) .
+src_Masonic-Lodge(?X) -> Masonic-Lodge(?X) .
+src_Measurable-Trend(?X) -> Measurable-Trend(?X) .
+src_Meeting(?X) -> Meeting(?X) .
+src_Military-Organisation(?X) -> Military-Organisation(?X) .
+src_Military-Person(?X) -> Military-Person(?X) .
+src_Military-Unit(?X) -> Military-Unit(?X) .
+src_Monastery(?X) -> Monastery(?X) .
+src_Musician(?X) -> Musician(?X) .
+src_National-Symbol(?X) -> National-Symbol(?X) .
+src_Newspaper(?X) -> Newspaper(?X) .
+src_Non-Military-Conflict(?X) -> Non-Military-Conflict(?X) .
+src_Other-Religious-Leader(?X) -> Other-Religious-Leader(?X) .
+src_Other-Religious-Person(?X) -> Other-Religious-Person(?X) .
+src_Painter(?X) -> Painter(?X) .
+src_Painting(?X) -> Painting(?X) .
+src_Work-of-Art(?X) -> Work-of-Art(?X) .
+src_Pamphlet(?X) -> Pamphlet(?X) .
+src_Party(?X) -> Party(?X) .
+src_Pastime(?X) -> Pastime(?X) .
+src_Period(?X) -> Period(?X) .
+src_Period-in-Office(?X) -> Period-in-Office(?X) .
+src_Person(?X) -> Person(?X) .
+src_Role(?X) -> Role(?X) .
+src_Philanthropist(?X) -> Philanthropist(?X) .
+src_Philosopher(?X) -> Philosopher(?X) .
+src_Physician(?X) -> Physician(?X) .
+src_Piece-of-Music(?X) -> Piece-of-Music(?X) .
+src_Political-Region(?X) -> Political-Region(?X) .
+src_Political-Symbol(?X) -> Political-Symbol(?X) .
+src_Politician(?X) -> Politician(?X) .
+src_Pollution(?X) -> Pollution(?X) .
+src_Pope(?X) -> Pope(?X) .
+src_Population-Movement(?X) -> Population-Movement(?X) .
+src_Prince(?X) -> Prince(?X) .
+src_Professor(?X) -> Professor(?X) .
+src_Psychologist(?X) -> Psychologist(?X) .
+src_Public-Oration(?X) -> Public-Oration(?X) .
+src_Publisher(?X) -> Publisher(?X) .
+src_Queen(?X) -> Queen(?X) .
+src_Relic(?X) -> Relic(?X) .
+src_Religious-Community(?X) -> Religious-Community(?X) .
+src_Religious-Organisation(?X) -> Religious-Organisation(?X) .
+src_Religious-Ideology(?X) -> Religious-Ideology(?X) .
+src_Religious-Movement(?X) -> Religious-Movement(?X) .
+src_Religious-Order(?X) -> Religious-Order(?X) .
+src_Religious-Practice(?X) -> Religious-Practice(?X) .
+src_Religious-Symbol(?X) -> Religious-Symbol(?X) .
+src_Representative-Institution(?X) -> Representative-Institution(?X) .
+src_Ritual(?X) -> Ritual(?X) .
+src_Saint(?X) -> Saint(?X) .
+src_Scandal(?X) -> Scandal(?X) .
+src_Scientific-Instrument(?X) -> Scientific-Instrument(?X) .
+src_Sculptor(?X) -> Sculptor(?X) .
+src_Sculpture(?X) -> Sculpture(?X) .
+src_Secular-Ideology(?X) -> Secular-Ideology(?X) .
+src_Secular-Movement(?X) -> Secular-Movement(?X) .
+src_Ship(?X) -> Ship(?X) .
+src_Vehicle(?X) -> Vehicle(?X) .
+src_Social-Stratum(?X) -> Social-Stratum(?X) .
+src_Sportsman(?X) -> Sportsman(?X) .
+src_Stereotype-Group(?X) -> Stereotype-Group(?X) .
+src_Structure(?X) -> Structure(?X) .
+src_Sultan(?X) -> Sultan(?X) .
+src_Technical-Scientific-Advance(?X) -> Technical-Scientific-Advance(?X) .
+src_TemporalInterval(?X) -> TemporalInterval(?X) .
+src_Theologian(?X) -> Theologian(?X) .
+src_Trade-Association(?X) -> Trade-Association(?X) .
+src_Trades-Union(?X) -> Trades-Union(?X) .
+src_Trades-Unionist(?X) -> Trades-Unionist(?X) .
+src_Train(?X) -> Train(?X) .
+src_Treaty(?X) -> Treaty(?X) .
+src_Trial(?X) -> Trial(?X) .
+src_University(?X) -> University(?X) .
+src_Uprising(?X) -> Uprising(?X) .
+src_Village(?X) -> Village(?X) .
+src_War(?X) -> War(?X) .
+src_Water(?X) -> Water(?X) .
+src_exists(?X,?Y) -> exists(?X,?Y) .
+src_related(?X,?Y) -> related(?X,?Y) .
+src_hasCategory(?X,?Y) -> hasCategory(?X,?Y) .
+src_hasLocationContainerMember(?X,?Y) -> hasLocationContainerMember(?X,?Y) .
+src_hasRelationMember(?X,?Y) -> hasRelationMember(?X,?Y) .
+src_hasLocationPartMember(?X,?Y) -> hasLocationPartMember(?X,?Y) .
+src_hasRole(?X,?Y) -> hasRole(?X,?Y) .
+src_isLocationContainerMemberOf(?X,?Y) -> isLocationContainerMemberOf(?X,?Y) .
+src_isRelationMemberOf(?X,?Y) -> isRelationMemberOf(?X,?Y) .
+src_isLocationPartMemberOf(?X,?Y) -> isLocationPartMemberOf(?X,?Y) .
