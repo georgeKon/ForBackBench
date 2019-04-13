@@ -1,0 +1,66 @@
+AdministrativeStaff(?X) -> Employee(?X), Person(?X), worksFor(?X,?01), memberOf(?X,?01), member(?01,?X), Organization(?01), Organization(?01) .
+advisor(?X,?X1) -> Person(?X), Professor(?X1), Faculty(?X1), Employee(?X1), Person(?X1), worksFor(?X1,?11), memberOf(?X1,?11), member(?11,?X1), Organization(?11), Organization(?11) .
+affiliatedOrganizationOf(?X,?X1) -> Organization(?X), Organization(?X1) .
+affiliateOf(?X,?X1) -> Organization(?X), Person(?X1) .
+age(?X,?X1) -> Person(?X) .
+Article(?X) -> Publication(?X) .
+AssistantProfessor(?X) -> Professor(?X), Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?61), memberOf(?X,?61), member(?61,?X), Organization(?61), Organization(?61) .
+AssociateProfessor(?X) -> Professor(?X), Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?71), memberOf(?X,?71), member(?71,?X), Organization(?71), Organization(?71) .
+Book(?X) -> Publication(?X) .
+Chair(?X) -> headOf(?X,?91), worksFor(?X,?91), memberOf(?X,?91), member(?91,?X), Organization(?91), Person(?X), Department(?91), Professor(?X), Faculty(?X), Employee(?X), worksFor(?X,?92), memberOf(?X,?92), member(?92,?X), Organization(?92), Organization(?92) .
+ClericalStaff(?X) -> AdministrativeStaff(?X), Employee(?X), Person(?X), worksFor(?X,?101), memberOf(?X,?101), member(?101,?X), Organization(?101), Organization(?101) .
+College(?X) -> Organization(?X) .
+ConferencePaper(?X) -> Article(?X), Publication(?X) .
+Course(?X) -> Work(?X) .
+Dean(?X) -> headOf(?X,?141), worksFor(?X,?141), memberOf(?X,?141), member(?141,?X), Organization(?141), Person(?X), College(?141), Professor(?X), Faculty(?X), Employee(?X), worksFor(?X,?142), memberOf(?X,?142), member(?142,?X), Organization(?142), Organization(?142) .
+degreeFrom(?X,?X1) -> Person(?X), University(?X1), Organization(?X1), hasAlumnus(?X1,?X) .
+Department(?X) -> Organization(?X) .
+Director(?X) -> headOf(?X,?171), worksFor(?X,?171), memberOf(?X,?171), member(?171,?X), Organization(?171), Person(?X), Program(?171) .
+doctoralDegreeFrom(?X,?X1) -> Person(?X), University(?X1), Organization(?X1), degreeFrom(?X,?X1), hasAlumnus(?X1,?X) .
+emailAddress(?X,?X1) -> Person(?X) .
+Employee(?X) -> Person(?X), worksFor(?X,?201), memberOf(?X,?201), member(?201,?X), Organization(?201), Organization(?201) .
+Faculty(?X) -> Employee(?X), Person(?X), worksFor(?X,?211), memberOf(?X,?211), member(?211,?X), Organization(?211), Organization(?211) .
+FullProfessor(?X) -> Professor(?X), Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?221), memberOf(?X,?221), member(?221,?X), Organization(?221), Organization(?221) .
+GraduateCourse(?X) -> Course(?X), Work(?X) .
+GraduateStudent(?X) -> Person(?X), takesCourse(?X,?241), GraduateCourse(?241), Course(?241), Work(?241) .
+hasAlumnus(?X,?X1) -> Person(?X1), University(?X), Organization(?X), degreeFrom(?X1,?X) .
+headOf(?X,?Y) -> worksFor(?X,?Y), memberOf(?X,?Y), member(?Y,?X), Organization(?Y), Person(?X) .
+Institute(?X) -> Organization(?X) .
+JournalArticle(?X) -> Article(?X), Publication(?X) .
+Lecturer(?X) -> Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?291), memberOf(?X,?291), member(?291,?X), Organization(?291), Organization(?291) .
+listedCourse(?X,?X1) -> Course(?X1), Work(?X1), Schedule(?X) .
+Manual(?X) -> Publication(?X) .
+mastersDegreeFrom(?X,?X1) -> Person(?X), University(?X1), Organization(?X1), degreeFrom(?X,?X1), hasAlumnus(?X1,?X) .
+member(?X,?X1) -> Organization(?X), Person(?X1), memberOf(?X1,?X) .
+memberOf(?Y,?X) -> member(?X,?Y), Organization(?X), Person(?Y) .
+orgPublication(?X,?X1) -> Organization(?X), Publication(?X1) .
+PostDoc(?X) -> Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?361), memberOf(?X,?361), member(?361,?X), Organization(?361), Organization(?361) .
+Professor(?X) -> Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?371), memberOf(?X,?371), member(?371,?X), Organization(?371), Organization(?371) .
+Program(?X) -> Organization(?X) .
+publicationAuthor(?X,?X1) -> Person(?X1), Publication(?X) .
+publicationDate(?X,?X1) -> Publication(?X) .
+publicationResearch(?X,?X1) -> Publication(?X), Research(?X1), Work(?X1) .
+Research(?X) -> Work(?X) .
+ResearchAssistant(?X) -> Person(?X), worksFor(?X,?431), memberOf(?X,?431), member(?431,?X), Organization(?431), ResearchGroup(?431) .
+ResearchGroup(?X) -> Organization(?X) .
+researchProject(?X,?X1) -> Research(?X1), Work(?X1), ResearchGroup(?X), Organization(?X) .
+Software(?X) -> Publication(?X) .
+softwareDocumentation(?X,?X1) -> Publication(?X1), Software(?X), Publication(?X) .
+softwareVersion(?X,?X1) -> Software(?X), Publication(?X) .
+Specification(?X) -> Publication(?X) .
+Student(?X) -> Person(?X), takesCourse(?X,?501), Course(?501), Work(?501) .
+subOrganizationOf(?X,?X1) -> Organization(?X), Organization(?X1) .
+SystemsStaff(?X) -> AdministrativeStaff(?X), Employee(?X), Person(?X), worksFor(?X,?521), memberOf(?X,?521), member(?521,?X), Organization(?521), Organization(?521) .
+teacherOf(?X,?X1) -> Course(?X1), Work(?X1), Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?531), memberOf(?X,?531), member(?531,?X), Organization(?531), Organization(?531) .
+TeachingAssistant(?X) -> Person(?X), teachingAssistantOf(?X,?541), Course(?541), Work(?541), Course(?541) .
+teachingAssistantOf(?X,?X1) -> Course(?X1), Work(?X1), TeachingAssistant(?X), Person(?X), teachingAssistantOf(?X,?551), Course(?551), Work(?551), Course(?551) .
+TechnicalReport(?X) -> Article(?X), Publication(?X) .
+telephone(?X,?X1) -> Person(?X) .
+tenured(?X,?X1) -> Professor(?X), Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?581), memberOf(?X,?581), member(?581,?X), Organization(?581), Organization(?581) .
+title(?X,?X1) -> Person(?X) .
+undergraduateDegreeFrom(?X,?X1) -> Person(?X), University(?X1), Organization(?X1), degreeFrom(?X,?X1), hasAlumnus(?X1,?X) .
+UndergraduateStudent(?X) -> Student(?X), Person(?X), takesCourse(?X,?611), Course(?611), Work(?611) .
+University(?X) -> Organization(?X) .
+UnofficialPublication(?X) -> Publication(?X) .
+VisitingProfessor(?X) -> Professor(?X), Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?641), memberOf(?X,?641), member(?641,?X), Organization(?641), Organization(?641) .
+worksFor(?X,?Y) -> memberOf(?X,?Y), member(?Y,?X), Organization(?Y), Person(?X) .

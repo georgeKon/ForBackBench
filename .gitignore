@@ -10,3 +10,5 @@ scenarios/*/data
 # Ignore compiled target data
 scenarios/*/out
 scenarios/*/results
+scenarios/*/cs-out
+scenarios/*/cs-results
