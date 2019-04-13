@@ -1,9 +1,3 @@
-# # for d in $1/*; do
-#   if [ -d "$1" ]; then
-#     source <(grep = $1/config.ini)
-#     PGHOST=$PGHOST PGPORT=$PGPORT PGUSER=$PGUSER PGDATABASE=$PGDATABASE PGPASSWORD=$PGPASSWORD obdabenchmark run $1/dependencies/ontology.owl $1/queries/ $1/schema/t-schema.txt
-#   fi
-# # done
 source <(grep = $1/config.ini)
 export PGPASSWORD
 

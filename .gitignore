@@ -3,3 +3,10 @@
 *.log
 
 obdabenchmark\.code-workspace
+
+# Ignore generated source data
+scenarios/*/data
+
+# Ignore compiled target data
+scenarios/*/out
+scenarios/*/results
