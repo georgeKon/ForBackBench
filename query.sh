@@ -1,6 +1,6 @@
 
 ## SETUP
-NUM_TESTS=1
+NUM_TESTS=6
 BASE_DIR=$1
 QUERY=$2
 # Clean output directories
