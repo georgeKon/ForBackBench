@@ -15,3 +15,6 @@ scenarios/*/cs-results
 
 # Ignore test results
 scenarios/*/tests
+
+# Ignore llunatic for now
+tools/Llunatic
