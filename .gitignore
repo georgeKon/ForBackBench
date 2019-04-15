@@ -5,16 +5,16 @@
 obdabenchmark.code-workspace
 
 # Ignore generated source data
-scenarios/*/data
+# scenarios/*/data
 
 # Ignore compiled target data
-scenarios/*/out
-scenarios/*/results
-scenarios/*/cs-out
-scenarios/*/cs-results
+scenarios/Adolena
+scenarios/deep
+scenarios/StockExchange
+scenarios/University
 
 # Ignore test results
-scenarios/*/tests
+# scenarios/*/tests
 
 # Ignore llunatic for now
 tools/Llunatic

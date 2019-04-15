@@ -1,1 +1,0 @@
-Q(X0,X1)  <-  teacherOf(X0,X1)

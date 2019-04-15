@@ -1,4 +1,0 @@
-?(VAR_0,VAR_1,VAR_2) :- <http://www.owl-ontologies.com/Ontology1207768242.owl#belongsToCompany>(VAR_1, VAR_0), <http://www.owl-ontologies.com/Ontology1207768242.owl#isListedIn>(VAR_1, VAR_2).
-?(VAR_0,VAR_1,VAR_2) :- <http://www.owl-ontologies.com/Ontology1207768242.owl#belongsToCompany>(VAR_1, VAR_0), <http://www.owl-ontologies.com/Ontology1207768242.owl#listsStock>(VAR_2, VAR_1).
-?(VAR_0,VAR_1,VAR_2) :- <http://www.owl-ontologies.com/Ontology1207768242.owl#hasStock>(VAR_0, VAR_1), <http://www.owl-ontologies.com/Ontology1207768242.owl#isListedIn>(VAR_1, VAR_2).
-?(VAR_0,VAR_1,VAR_2) :- <http://www.owl-ontologies.com/Ontology1207768242.owl#hasStock>(VAR_0, VAR_1), <http://www.owl-ontologies.com/Ontology1207768242.owl#listsStock>(VAR_2, VAR_1).
