@@ -2,7 +2,7 @@
 .vscode
 *.log
 
-obdabenchmark\.code-workspace
+obdabenchmark.code-workspace
 
 # Ignore generated source data
 scenarios/*/data
@@ -12,3 +12,6 @@ scenarios/*/out
 scenarios/*/results
 scenarios/*/cs-out
 scenarios/*/cs-results
+
+# Ignore test results
+scenarios/*/tests
