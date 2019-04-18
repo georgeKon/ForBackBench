@@ -1,0 +1,58 @@
+@prefix : <http://www.owl-ontologies.com/Ontology1207768242.owl#>
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+@prefix owl2xml: <http://www.w3.org/2006/12/owl2-xml#>
+@prefix Ontology1207768242: <http://www.owl-ontologies.com/Ontology1207768242.owl#>
+@top top
+Ontology1207768242:isListedIn(X0, X3) :- Ontology1207768242:Stock(X0).
+Ontology1207768242:Person(X0) :- Ontology1207768242:Investor(X0).
+Ontology1207768242:isExecutedFor(X0, X3) :- Ontology1207768242:Transaction(X0).
+Ontology1207768242:Transaction(X0) :- Ontology1207768242:Offer(X0).
+Ontology1207768242:FinantialInstrument(X0) :- Ontology1207768242:Stock(X0).
+Ontology1207768242:belongsToCompany(X0, X3) :- Ontology1207768242:Stock(X0).
+Ontology1207768242:isExecutedBy(X0, X3) :- Ontology1207768242:Transaction(X0).
+Ontology1207768242:Transaction(X0) :- Ontology1207768242:Acquisition(X0).
+Ontology1207768242:StockExchangeMember(X0) :- Ontology1207768242:StockBroker(X0).
+! :- Ontology1207768242:LegalPerson(X0), Ontology1207768242:PhysicalPerson(X0).
+Ontology1207768242:LegalPerson(X0) :- Ontology1207768242:Company(X0).
+Ontology1207768242:Person(X0) :- Ontology1207768242:StockExchangeMember(X0).
+Ontology1207768242:StockBroker(X0) :- Ontology1207768242:StockTrader(X0).
+Ontology1207768242:StockBroker(X0) :- Ontology1207768242:Dealer(X0).
+Ontology1207768242:tradesOnBehalfOf(X0, X3) :- Ontology1207768242:StockBroker(X0).
+Ontology1207768242:Person(X0) :- Ontology1207768242:PhysicalPerson(X0).
+Ontology1207768242:involvesInstrument(X0, X3) :- Ontology1207768242:Transaction(X0).
+Ontology1207768242:StockBroker(X0) :- Ontology1207768242:Trader(X0).
+Ontology1207768242:Person(X0) :- Ontology1207768242:LegalPerson(X0).
+Ontology1207768242:hasAddress(X0, X3) :- Ontology1207768242:Person(X0).
+Ontology1207768242:inverseofhasAddress(X0, X3) :- Ontology1207768242:Address(X0).
+Ontology1207768242:Investor(X0) :- Ontology1207768242:isExecutedFor(X3, X0).
+Ontology1207768242:StockExchangeMember(X0) :- Ontology1207768242:isExecutedBy(X3, X0).
+Ontology1207768242:Transaction(X0) :- Ontology1207768242:isTradedIn(X3, X0).
+Ontology1207768242:Address(X0) :- Ontology1207768242:hasAddress(X3, X0).
+Ontology1207768242:Stock(X0) :- Ontology1207768242:listsStock(X3, X0).
+Ontology1207768242:FinantialInstrument(X0) :- Ontology1207768242:involvesInstrument(X3, X0).
+Ontology1207768242:Stock(X0) :- Ontology1207768242:hasStock(X3, X0).
+Ontology1207768242:StockExchangeList(X0) :- Ontology1207768242:isListedIn(X3, X0).
+Ontology1207768242:Person(X0) :- Ontology1207768242:inverseofhasAddress(X3, X0).
+Ontology1207768242:Company(X0) :- Ontology1207768242:belongsToCompany(X3, X0).
+Ontology1207768242:Trader(X0) :- Ontology1207768242:Dealer(X0).
+Ontology1207768242:Dealer(X0) :- Ontology1207768242:Trader(X0).
+Ontology1207768242:Trader(X0) :- Ontology1207768242:StockTrader(X0).
+Ontology1207768242:StockTrader(X0) :- Ontology1207768242:Trader(X0).
+Ontology1207768242:Stock(X0) :- Ontology1207768242:belongsToCompany(X0, X3).
+Ontology1207768242:Address(X0) :- Ontology1207768242:inverseofhasAddress(X0, X3).
+Ontology1207768242:Person(X0) :- Ontology1207768242:hasAddress(X0, X3).
+Ontology1207768242:Transaction(X0) :- Ontology1207768242:involvesInstrument(X0, X3).
+Ontology1207768242:Stock(X0) :- Ontology1207768242:isListedIn(X0, X3).
+Ontology1207768242:Transaction(X0) :- Ontology1207768242:isExecutedFor(X0, X3).
+Ontology1207768242:Company(X0) :- Ontology1207768242:hasStock(X0, X3).
+Ontology1207768242:Transaction(X0) :- Ontology1207768242:isExecutedBy(X0, X3).
+Ontology1207768242:isTradedIn(X1, X0) :- Ontology1207768242:involvesInstrument(X0, X1).
+Ontology1207768242:involvesInstrument(X0, X1) :- Ontology1207768242:isTradedIn(X1, X0).
+Ontology1207768242:usesBroker(X1, X0) :- Ontology1207768242:tradesOnBehalfOf(X0, X1).
+Ontology1207768242:tradesOnBehalfOf(X0, X1) :- Ontology1207768242:usesBroker(X1, X0).
+Ontology1207768242:inverseofhasAddress(X1, X0) :- Ontology1207768242:hasAddress(X0, X1).
+Ontology1207768242:hasAddress(X0, X1) :- Ontology1207768242:inverseofhasAddress(X1, X0).
+Ontology1207768242:listsStock(X1, X0) :- Ontology1207768242:isListedIn(X0, X1).
+Ontology1207768242:isListedIn(X0, X1) :- Ontology1207768242:listsStock(X1, X0).
+Ontology1207768242:hasStock(X1, X0) :- Ontology1207768242:belongsToCompany(X0, X1).
+Ontology1207768242:belongsToCompany(X0, X1) :- Ontology1207768242:hasStock(X1, X0).

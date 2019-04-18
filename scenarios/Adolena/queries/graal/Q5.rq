@@ -1,0 +1,12 @@
+PREFIX : <http://ksg.meraka.co.za/adolena.owl#>
+PREFIX NAP: <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#>
+
+SELECT ?x WHERE {
+?x a NAP:Device.
+?x :assistsWith ?y.
+?y a NAP:PhysicalAbility. 
+?z :affects ?y. 
+?z a NAP:Quadriplegia.
+}
+
+

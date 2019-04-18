@@ -1,0 +1,6 @@
+Q(?0) <- Dealer(?0)
+Q(?0) <- StockBroker(?0)
+Q(?0) <- StockExchangeMember(?0)
+Q(?0) <- StockTrader(?0)
+Q(?0) <- Trader(?0)
+Q(?0) <- isExecutedBy(?_u0, ?0)

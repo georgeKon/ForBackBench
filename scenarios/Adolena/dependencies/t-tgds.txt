@@ -1,0 +1,104 @@
+MovementAbility(?X) -> PhysicalAbility(?X) .
+Stuttering(?X) -> SpeechDisability(?X) .
+LowerLimbMobility(?X) -> LimbMobility(?X) .
+FaceToFaceCommunicationDevice(?X) -> Communication_Device(?X) .
+FaceToFaceCommunicationDevice(?X) -> assistsWith(?X,?Y), SpeechAbility(?Y) .
+WritingDevice(?X) -> Communication_Device(?X) .
+Multiple_sclerosis(?X) -> PhysicalDisability(?X) .
+Achondroplasia(?X) -> PhysicalDisability(?X) .
+BraillePillOrganiser(?X) -> TactileReading(?X) .
+TelephoneAid(?X) -> ListenDevice(?X) .
+TelephoneAid(?X) -> SpeechDevice(?X) .
+MentalDisability(?X) -> Disability(?X) .
+BatteryPowered_Wheelchair(?X) -> Motorised_Wheelchair(?X) .
+Hear(?X) -> HearingAbility(?X) .
+Muscular_dystrophy(?X) -> PhysicalDisability(?X) .
+Wheelchair(?X) -> MobilityDevice(?X) .
+Wheelchair(?X) -> assistsWith(?X,?Y), LimbMobility(?Y) .
+Paraplegia(?X) -> affects(?X,?Y), LowerLimbMobility(?Y) .
+Paraplegia(?X) -> PhysicalDisability(?X) .
+See(?X) -> SightAbility(?X) .
+BrailleAlarmClock(?X) -> TactileReading(?X) .
+Hear_partially(?X) -> HearingAbility(?X) .
+Communication_Device(?X) -> AssistiveDevice(?X) .
+Motorised_Wheelchair(?X) -> Wheelchair(?X) .
+Motorised_Wheelchair(?X) -> assistsWith(?X,?Y), UpperLimbMobility(?Y) .
+Motorised_Wheelchair(?X) -> assistsWith(?X,?Y), LowerLimbMobility(?Y) .
+SensoryAbility(?X) -> Ability(?X) .
+LowVision(?X) -> VisualDisability(?X) .
+HearingAbility(?X) -> SensoryAbility(?X) .
+Talking_Thermometer(?X) -> TalkingReading(?X) .
+SightAbility(?X) -> SensoryAbility(?X) .
+TalkingReading(?X) -> ReadingDevice(?X) .
+TalkingReading(?X) -> assistsWith(?X,?Y), SightAbility(?Y) .
+TalkingReading(?X) -> requiresAbility(?X,?Y), HearingAbility(?Y) .
+Epilepsy(?X) -> MentalDisability(?X) .
+IntellectualDisability(?X) -> MentalDisability(?X) .
+Autism(?X) -> MentalDisability(?X) .
+Amputation(?X) -> PhysicalDisability(?X) .
+AssistiveDevice(?X) -> Device(?X) .
+AssistiveDevice(?X) -> assistsWith(?X,?Y), Ability(?Y) .
+Manual_Wheelchair(?X) -> requiresAbility(?X,?Y), UpperLimbMobility(?Y) .
+Manual_Wheelchair(?X) -> Wheelchair(?X) .
+Manual_Wheelchair(?X) -> assistsWith(?X,?Y), LowerLimbMobility(?Y) .
+BrailleWatch(?X) -> TactileReading(?X) .
+Foldable_Wheelchair(?X) -> Manual_Wheelchair(?X) .
+Osteogensis_Imperfecta(?X) -> PhysicalDisability(?X) .
+Hemiplegia(?X) -> PhysicalDisability(?X) .
+Quadriplegia(?X) -> PhysicalDisability(?X) .
+Quadriplegia(?X) -> affects(?X,?Y), UpperLimbMobility(?Y) .
+Quadriplegia(?X) -> affects(?X,?Y), LowerLimbMobility(?Y) .
+Guillaume_Barre(?X) -> PhysicalDisability(?X) .
+SpeechAbility(?X) -> Ability(?X) .
+BrailleWritingDevice(?X) -> WritingDevice(?X) .
+BrailleWritingDevice(?X) -> assistsWith(?X,?Y), SightAbility(?Y) .
+See_partially(?X) -> SightAbility(?X) .
+Spina_Bifida(?X) -> PhysicalDisability(?X) .
+ReadingDevice(?X) -> Communication_Device(?X) .
+ReadingDevice(?X) -> assistsWith(?X,?Y), SightAbility(?Y) .
+TactileAbility(?X) -> SensoryAbility(?X) .
+PhysicalAbility(?X) -> Ability(?X) .
+Ability(?X) -> Thing(?X) .
+Ability(?X) -> isAssistedBy(?X,?Y), Device(?Y) .
+Ability(?X) -> isAffectedBy(?X,?Y), Disability(?Y) .
+LightweightFoldable_Wheelchair(?X) -> Foldable_Wheelchair(?X) .
+LightweightFoldable_Wheelchair(?X) -> Lightweight_Wheelchair(?X) .
+Blind(?X) -> VisualDisability(?X) .
+Reach(?X) -> MovementAbility(?X) .
+UpperLimbMobility(?X) -> LimbMobility(?X) .
+Disability(?X) -> Thing(?X) .
+Disability(?X) -> affects(?X,?Y), Ability(?Y) .
+TactileReading(?X) -> ReadingDevice(?X) .
+TactileReading(?X) -> assistsWith(?X,?Y), SightAbility(?Y) .
+TactileReading(?X) -> requiresAbility(?X,?Y), TactileAbility(?Y) .
+Deaf(?X) -> affects(?X,?Y), SpeechAbility(?Y) .
+Deaf(?X) -> HearingDisability(?X) .
+Deafened(?X) -> HearingDisability(?X) .
+SymbolBoard(?X) -> FaceToFaceCommunicationDevice(?X) .
+ListenDevice(?X) -> Communication_Device(?X) .
+ListenDevice(?X) -> assistsWith(?X,?Y), HearingAbility(?Y) .
+Dystonia(?X) -> PhysicalDisability(?X) .
+PhysicalDisability(?X) -> affects(?X,?Y), PhysicalAbility(?Y) .
+PhysicalDisability(?X) -> Disability(?X) .
+FaceToFaceCommunicationSoftware(?X) -> FaceToFaceCommunicationDevice(?X) .
+Kyphosis(?X) -> PhysicalDisability(?X) .
+Hard_of_hearing(?X) -> HearingDisability(?X) .
+HearingDisability(?X) -> affects(?X,?Y), HearingAbility(?Y) .
+HearingDisability(?X) -> Disability(?X) .
+Cerebral_palsy(?X) -> PhysicalDisability(?X) .
+SpeechDevice(?X) -> Communication_Device(?X) .
+SpeechDevice(?X) -> assistsWith(?X,?Y), SpeechAbility(?Y) .
+Lightweight_Wheelchair(?X) -> Manual_Wheelchair(?X) .
+LimbMobility(?X) -> MovementAbility(?X) .
+VisualDisability(?X) -> Disability(?X) .
+MobilityDevice(?X) -> AssistiveDevice(?X) .
+MobilityDevice(?X) -> assistsWith(?X,?Y), MovementAbility(?Y) .
+SpeechDisability(?X) -> Disability(?X) .
+Poliomyelitis(?X) -> PhysicalDisability(?X) .
+Little_or_No_Speech(?X) -> affects(?X,?Y), SpeechAbility(?Y) .
+Little_or_No_Speech(?X) -> SpeechDisability(?X) .
+Scoliosis(?X) -> PhysicalDisability(?X) .
+affects(?Y,?X) -> isAffectedBy(?X,?Y) .
+isAffectedBy(?Y,?X) -> affects(?X,?Y) .
+isAssistedBy(?Y,?X) -> assistsWith(?X,?Y) .
+assistsWith(?Y,?X) -> isAssistedBy(?X,?Y) .

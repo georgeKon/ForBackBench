@@ -2,15 +2,14 @@
 .vscode
 *.log
 
-obdabenchmark.code-workspace
+*.code-workspace
 
 # Ignore generated source data
-# scenarios/*/data
+scenarios/*/data/*/*.csv
+scenarios/*/queries/*/*.rule
 
-# Ignore compiled target data
-scenarios/Adolena
+
 scenarios/deep
-scenarios/StockExchange
 scenarios/University
 
 # Ignore test results
