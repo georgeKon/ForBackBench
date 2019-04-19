@@ -123,8 +123,8 @@ done
 echo "rewrite,convert,execute,total,size,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/rapid.csv
 echo "rewrite,convert,execute,total,size,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/iqaros.csv
 echo "rewrite,convert,execute,total,size,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/graal.csv
-echo "chase,total,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/chasestepper.csv
-echo "block,chase,total,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/rdfox.csv
+echo "chase,total,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/rdfox.csv
+echo "block,chase,total,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/chasestepper.csv
 
 for ((i=1;i<$NUM_TESTS;++i)); do
   echo "${REWRITE[0,$i]},${CONVERT[0,$i]},${EXECUTE[0,$i]},${TOTAL[0,$i]},${SIZE[0,$i]},${TUPLES[0,$i]}" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/rapid.csv

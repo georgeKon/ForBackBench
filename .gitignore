@@ -17,3 +17,6 @@ scenarios/University
 
 # Ignore llunatic for now
 tools/Llunatic
+
+# Ignore retrieval script
+retrieve.sh

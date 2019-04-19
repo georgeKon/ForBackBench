@@ -19,22 +19,26 @@ import {
   createSourceData
 } from './bootstrap'
 import execAsync from './utils/exec'
+import writeLlunaticConfig from './llunatic';
 
 export async function bootstrapCmd(options : any) {
   const queryFolder = resolve(options['qdir'])
+  const dataFolder = resolve(options['data'])
 
   if(options['mode'] === 'chasebench') {
     const dependenciesPath = resolve(options['tTgds'])
     const schemaPath = resolve(options['tSchema'])
-    const ontologyPath = dependenciesPath.replace(path.basename(dependenciesPath), 'ontology.owl')
-    const sqlPath = schemaPath.replace(path.extname(schemaPath), '.sql')
 
-    Promise.all([
-      createOntology(dependenciesPath, ontologyPath),
-      createSQL(schemaPath, sqlPath),
-      createSQL(schemaPath.replace(path.basename(schemaPath), 's-schema.txt'), sqlPath.replace(path.basename(sqlPath), 's-schema.sql')),
-      createSparqlQueries(queryFolder)
-    ])
+    writeLlunaticConfig(dataFolder)
+    // const ontologyPath = dependenciesPath.replace(path.basename(dependenciesPath), 'ontology.owl')
+    // const sqlPath = schemaPath.replace(path.extname(schemaPath), '.sql')
+
+    // Promise.all([
+    //   createOntology(dependenciesPath, ontologyPath),
+    //   createSQL(schemaPath, sqlPath),
+    //   createSQL(schemaPath.replace(path.basename(schemaPath), 's-schema.txt'), sqlPath.replace(path.basename(sqlPath), 's-schema.sql')),
+    //   createSparqlQueries(queryFolder)
+    // ])
     return
   }
 

@@ -13,6 +13,11 @@ declare module 'statman-stopwatch' {
   export default value
 }
 
+declare module 'xml-writer' {
+  const value : any
+  export default value
+}
+
 interface ILogger {
   log : (message : string, type : string, time? : string) => void
   info : (message : string) => void
