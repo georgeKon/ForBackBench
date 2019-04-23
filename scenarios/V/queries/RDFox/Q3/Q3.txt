@@ -1,0 +1,1 @@
+Q3(?A,?B) <- Time-Dependent-Relation(?A),hasRelationMember(?A,?B),Event(?B) .

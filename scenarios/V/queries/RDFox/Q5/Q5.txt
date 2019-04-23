@@ -1,0 +1,1 @@
+Q5(?A) <- Individual(?A),hasRole(?A,?B),Scientist(?B),hasRole(?A,?C),Discoverer(?C),hasRole(?A,?D),Inventor(?D) .
