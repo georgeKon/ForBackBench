@@ -1,9 +1,27 @@
-BASE_DIR=$2
+BASE_DIR=$1
 
-if [ $1 = "chasebench" ] 
+source <(grep = $BASE_DIR/config.ini)
+
+if [[ $2 = "chasebench" ]]
 then
-  obdabenchmark bootstrap --mode chasebench --qdir $BASE_DIR/queries/ --data $BASE_DIR/data/small --t-tgds $BASE_DIR/dependencies/t-tgds.txt --t-schema $BASE_DIR/schema/t-schema.txt 
-elif [ $1 = "dllite" ]
+# generate data
+mkdir -p $BASE_DIR/data
+  for size in "small"; do
+    mkdir -p $BASE_DIR/data/$size
+    mkdir -p $BASE_DIR/tests/$size
+    ./generate.sh $BASE_DIR $size
+  done
+  obdabenchmark bootstrap $BASE_DIR chasebench
+elif [[ $2 = "dllite" ]]
 then
-  obdabenchmark bootstrap --mode dllite --qdir $BASE_DIR/queries/ --onto $BASE_DIR/dependencies/ontology.owl --data $BASE_DIR/data/
+  mkdir -p $BASE_DIR/schema
+  obdabenchmark bootstrap $BASE_DIR dllite
+  # generate data
+  for size in "small"; do
+    mkdir -p $BASE_DIR/data/$size
+    mkdir -p $BASE_DIR/tests/$size
+    ./generate.sh $BASE_DIR $size
+  done
 fi
+
+PGUSER=$PGUSER PGDATABASE=$PGDATABASE PGPASSWORD=$PGPASSWORD obdabenchmark llunatic $BASE_DIR

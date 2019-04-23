@@ -1,20 +1,20 @@
 #!/usr/bin/env node
 
 import program from 'commander'
-import { loadDataCmd, computeRewritingsCmd, executeUcqCmd, runBenchmarkCmd, bootstrapCmd, runScenarioCmd } from './commands'
+import { loadDataCmd, computeRewritingsCmd, executeUcqCmd, runBenchmarkCmd, bootstrapCmd, runScenarioCmd, llunaticCmd } from './commands'
 
 program
   .version('0.0.1', '-v, --version')
 
 program
   .command('bootstrap')
-  .option('--mode <mode>')
-  .option('--t-tgds <tgds>')
-  .option('--t-schema <schema>')
-  .option('--data <data>')
-  .option('--onto <onto>')
-  .option('--qdir <qdir>')
-  .action((options) => bootstrapCmd(options))
+  .arguments('<folder> <mode>')
+  .action((folder, mode) => bootstrapCmd(folder, mode))
+
+program
+  .command('llunatic')
+  .arguments('<folder>')
+  .action((folder) => llunaticCmd(folder))
 
 program
   .command('load')

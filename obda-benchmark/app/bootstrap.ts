@@ -2,6 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import OBDAconverter from 'obda-converter'
 import { copyFile, readFile, readFileSync, writeFile, readdir, exists, mkdir } from './utils/filesystem'
+import writeLlunaticConfig from './llunatic';
 
 export async function createSourceSchema(schemaPath : string, outPath : string) {
   // Read file and format string
@@ -58,14 +59,14 @@ export async function createSQL(schemaPath : string, outPath : string) {
   return writeFile(outPath, sql)
 }
 
-export async function createSparqlQueries(queryFolder : string) {
+export async function createSparqlQueries(queryFolder : string, outFolder : string) {
   const queryFiles = (await readdir(queryFolder)).filter(file => path.extname(file) === '.txt')
 
   return Promise.all(queryFiles.map(async (queryFile) => {
     const query = (await readFile(path.resolve(queryFolder, queryFile))).trim()
     const sparql = OBDAconverter.convertQueryToSparql(query)
 
-    return writeFile(path.resolve(queryFolder, queryFile.replace('.txt', '.rq')), sparql)
+    return writeFile(path.resolve(outFolder, queryFile.replace('.txt', '.rq')), sparql)
   }))
 }
 
@@ -76,13 +77,57 @@ export async function createTargetDependencies(ontologyPath : string, outPath : 
   return writeFile(outPath, dependencies)
 }
 
-export async function createRuleQueries(queryFolder : string) {
-  const queryFiles = (await readdir(queryFolder)).filter(file => path.extname(file) === '.rq')
+export async function createRuleQueries(baseFolder : string) {
+  fs.mkdirSync(path.resolve(baseFolder, 'queries/RDFox'))
+  fs.mkdirSync(path.resolve(baseFolder, 'queries/graal'))
+  fs.mkdirSync(path.resolve(baseFolder, 'queries/iqaros'))
 
-  return Promise.all(queryFiles.map(async (queryFile, i) => {
-    const sparql = (await readFile(path.resolve(queryFolder, queryFile))).trim()
+  const queryFiles = (await readdir(path.resolve(baseFolder, 'queries'))).filter(file => path.extname(file) === '.rq')
+
+  await Promise.all(queryFiles.map(async (queryFile, i) => {
+    const sparql = (await readFile(path.resolve(baseFolder, 'queries', queryFile))).trim()
     const query = OBDAconverter.convertSparqlToQuery(sparql, { num: (i + 1) })
 
-    return writeFile(path.resolve(queryFolder, queryFile.replace('.rq', '.txt')), query)
+    let match = /(\?[0-9])/g.exec(query)
+    let newQuery = query
+    while(match != null) {
+      const name = match[0].split('?')[1]
+      newQuery = newQuery.replace(match[0], `?${String.fromCharCode(+name + 65)}`)
+      match = /(\?[0-9])/g.exec(newQuery)
+    }
+    fs.writeFileSync(path.resolve(baseFolder, 'queries/iqaros', queryFile.replace('.rq', '.txt')), query.replace(' .', ''))
+    fs.renameSync(path.resolve(baseFolder, 'queries', queryFile), path.resolve(baseFolder, 'queries/graal', queryFile))
+
+    fs.mkdirSync(path.resolve(baseFolder, 'queries/RDFox', path.basename(queryFile, '.rq')))
+    return writeFile(path.resolve(baseFolder, 'queries/RDFox', path.basename(queryFile, '.rq') , queryFile.replace('.rq', '.txt')), newQuery)
   }))
+}
+
+export async function createLLunaticConfigs(baseFolder : string, sizes : string[]) {
+  const queryFolders = await readdir(path.resolve(baseFolder, 'queries/RDFox'))
+  queryFolders.forEach(folder => {
+    sizes.forEach(size => writeLlunaticConfig(baseFolder, folder, size))
+  })
+}
+
+export async function createQueryFolders(baseFolder : string) {
+  fs.mkdirSync(path.resolve(baseFolder, 'queries/RDFox'))
+  fs.mkdirSync(path.resolve(baseFolder, 'queries/graal'))
+  fs.mkdirSync(path.resolve(baseFolder, 'queries/iqaros'))
+
+  await createSparqlQueries(path.resolve(baseFolder, 'queries'), path.resolve(baseFolder, 'queries/graal'))
+
+  const queries = (await readdir(path.resolve(baseFolder, 'queries'))).filter(file => path.extname(file) === '.txt')
+  queries.forEach(file => {
+    let query = fs.readFileSync(path.resolve(baseFolder, 'queries', file), 'utf8').replace(' .', '')
+    let match = /(\?[A-Z])/g.exec(query)
+    while(match != null) {
+      const name = match[0].split('?')[1]
+      query = query.replace(match[0], `?${name.charCodeAt(0)}`)
+      match = /(\?[A-Z])/g.exec(query)
+    }
+    fs.writeFileSync(path.resolve(baseFolder, 'queries/iqaros', file), query)
+    fs.mkdirSync(path.resolve(baseFolder, 'queries/RDFox', path.basename(file, '.txt')))
+    fs.renameSync(path.resolve(baseFolder, 'queries', file), path.resolve(baseFolder, 'queries/RDFox', path.basename(file, '.txt'), file))
+  })
 }

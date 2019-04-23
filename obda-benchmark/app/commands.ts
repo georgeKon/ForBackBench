@@ -16,55 +16,44 @@ import {
   createRuleQueries,
   createSourceSchema,
   createSourceTargetDependencies,
-  createSourceData
+  createSourceData,
+  createLLunaticConfigs,
+  createQueryFolders
 } from './bootstrap'
-import execAsync from './utils/exec'
-import writeLlunaticConfig from './llunatic';
+import { readdir } from './utils/filesystem'
 
-export async function bootstrapCmd(options : any) {
-  const queryFolder = resolve(options['qdir'])
-  const dataFolder = resolve(options['data'])
+export async function bootstrapCmd(baseFolder : string, mode : string) {
+  baseFolder = resolve(baseFolder)
+  const sizes = await readdir(path.resolve(baseFolder, 'data'))
 
-  if(options['mode'] === 'chasebench') {
-    const dependenciesPath = resolve(options['tTgds'])
-    const schemaPath = resolve(options['tSchema'])
-
-    writeLlunaticConfig(dataFolder)
-    // const ontologyPath = dependenciesPath.replace(path.basename(dependenciesPath), 'ontology.owl')
-    // const sqlPath = schemaPath.replace(path.extname(schemaPath), '.sql')
-
-    // Promise.all([
-    //   createOntology(dependenciesPath, ontologyPath),
-    //   createSQL(schemaPath, sqlPath),
-    //   createSQL(schemaPath.replace(path.basename(schemaPath), 's-schema.txt'), sqlPath.replace(path.basename(sqlPath), 's-schema.sql')),
-    //   createSparqlQueries(queryFolder)
-    // ])
+  if(mode === 'chasebench') {
+    await createOntology(path.resolve(baseFolder, 'dependencies/t-tgds.txt'), path.resolve(baseFolder, 'dependencies/ontology.owl'))
+    await createSQL(path.resolve(baseFolder, 'schema/s-schema.txt'), path.resolve(baseFolder, 'schema/s-schema.sql'))
+    await createSQL(path.resolve(baseFolder, 'schema/t-schema.txt'), path.resolve(baseFolder, 'schema/t-schema.sql'))
+    await createQueryFolders(baseFolder)
     return
   }
 
-  if(options['mode'] === 'dllite') {
-    // query rewriting mode
-    const ontologyPath = resolve(options['onto'])
-    const dataPath = resolve(options['data'])
-
-    const dependenciesPath = ontologyPath.replace(path.basename(ontologyPath), 't-tgds.txt')
-    const sourceSchemaPath = path.normalize(ontologyPath + '/../../schema/s-schema.txt')
-    const targetSchemaPath = path.normalize(ontologyPath + '/../../schema/t-schema.txt')
-    await createTargetDependencies(ontologyPath, dependenciesPath)
-    await createTargetSchema(dependenciesPath, targetSchemaPath)
-    await createSourceSchema(targetSchemaPath, targetSchemaPath.replace(path.basename(targetSchemaPath), 's-schema.txt')),
+  if(mode === 'dllite') {
+    await createTargetDependencies(path.resolve(baseFolder, 'dependencies/ontology.owl'), path.resolve(baseFolder, 'dependencies/t-tgds.txt'))
+    await createTargetSchema(path.resolve(baseFolder, 'dependencies/t-tgds.txt'), path.resolve(baseFolder, 'schema/t-schema.txt'))
+    await createSourceSchema(path.resolve(baseFolder, 'schema/t-schema.txt'), path.resolve(baseFolder, 'schema/s-schema.txt')),
 
     Promise.all([
-      createSQL(sourceSchemaPath, sourceSchemaPath.replace(path.extname(sourceSchemaPath), '.sql')),
-      createSQL(targetSchemaPath, targetSchemaPath.replace(path.extname(targetSchemaPath), '.sql')),
-      createRuleQueries(queryFolder),
-      createSourceTargetDependencies(targetSchemaPath, dependenciesPath.replace(path.basename(dependenciesPath), 'st-tgds.txt')),
-      // FIXME: this is not what we need
-      // createSourceData(dataPath, path.resolve(dataPath, '../data_src'))
+      createSQL(path.resolve(baseFolder, 'schema/s-schema.txt'), path.resolve(baseFolder, 'schema/s-schema.sql')),
+      createSQL(path.resolve(baseFolder, 'schema/t-schema.txt'), path.resolve(baseFolder, 'schema/t-schema.sql')),
+      createRuleQueries(baseFolder),
+      createSourceTargetDependencies(path.resolve(baseFolder, 'schema/t-schema.txt'), path.resolve(baseFolder, 'dependencies/st-tgds.txt')),
     ])
     return
   }
 }
+
+export async function llunaticCmd(baseFolder : string) {
+  const sizes = await readdir(path.resolve(baseFolder, 'data'))
+  createLLunaticConfigs(baseFolder, sizes)
+}
+
 
 export async function loadDataCmd(schemaPath : string, dataPath : string) {
   const logger = new Logger('load', '../logs')
