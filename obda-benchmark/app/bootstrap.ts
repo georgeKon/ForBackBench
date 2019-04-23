@@ -88,18 +88,11 @@ export async function createRuleQueries(baseFolder : string) {
     const sparql = (await readFile(path.resolve(baseFolder, 'queries', queryFile))).trim()
     const query = OBDAconverter.convertSparqlToQuery(sparql, { num: (i + 1) })
 
-    let match = /(\?[0-9])/g.exec(query)
-    let newQuery = query
-    while(match != null) {
-      const name = match[0].split('?')[1]
-      newQuery = newQuery.replace(match[0], `?${String.fromCharCode(+name + 65)}`)
-      match = /(\?[0-9])/g.exec(newQuery)
-    }
-    fs.writeFileSync(path.resolve(baseFolder, 'queries/iqaros', queryFile.replace('.rq', '.txt')), query.replace(' .', ''))
+    fs.writeFileSync(path.resolve(baseFolder, 'queries/iqaros', queryFile.replace('.rq', '.txt')), query.replace(' .', '').replace(/^Q[0-9]/, 'Q'))
     fs.renameSync(path.resolve(baseFolder, 'queries', queryFile), path.resolve(baseFolder, 'queries/graal', queryFile))
 
     fs.mkdirSync(path.resolve(baseFolder, 'queries/RDFox', path.basename(queryFile, '.rq')))
-    return writeFile(path.resolve(baseFolder, 'queries/RDFox', path.basename(queryFile, '.rq') , queryFile.replace('.rq', '.txt')), newQuery)
+    return writeFile(path.resolve(baseFolder, 'queries/RDFox', path.basename(queryFile, '.rq') , queryFile.replace('.rq', '.txt')), query)
   }))
 }
 
@@ -119,14 +112,8 @@ export async function createQueryFolders(baseFolder : string) {
 
   const queries = (await readdir(path.resolve(baseFolder, 'queries'))).filter(file => path.extname(file) === '.txt')
   queries.forEach(file => {
-    let query = fs.readFileSync(path.resolve(baseFolder, 'queries', file), 'utf8').replace(' .', '')
-    let match = /(\?[A-Z])/g.exec(query)
-    while(match != null) {
-      const name = match[0].split('?')[1]
-      query = query.replace(match[0], `?${name.charCodeAt(0)}`)
-      match = /(\?[A-Z])/g.exec(query)
-    }
-    fs.writeFileSync(path.resolve(baseFolder, 'queries/iqaros', file), query)
+    const query = fs.readFileSync(path.resolve(baseFolder, 'queries', file), 'utf8').replace(' .', '')
+    fs.writeFileSync(path.resolve(baseFolder, 'queries/iqaros', file), query.replace(/^Q[0-9]/, 'Q'))
     fs.mkdirSync(path.resolve(baseFolder, 'queries/RDFox', path.basename(file, '.txt')))
     fs.renameSync(path.resolve(baseFolder, 'queries', file), path.resolve(baseFolder, 'queries/RDFox', path.basename(file, '.txt'), file))
   })

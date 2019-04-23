@@ -11,5 +11,8 @@ scenarios/Vicodi
 scenarios/LUBM
 
 tools/Llunatic-build
+tools/tw-rewriting.jar
+tools/obda-benchmark-graal-1.0-SNAPSHOT.jar
+tools/graal-2-0.0.1-SNAPSHOT-spring-boot.jar
 # Ignore retrieval script
 retrieve.sh

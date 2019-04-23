@@ -1,32 +1,32 @@
 # query.sh runs a test on one query of a scenario
-
 NUM_TESTS=6
-SCENARIOS=("scenarios/LUBM" "scenarios/Vicodi")
+SCENARIOS=("scenarios/V" "scenarios/U")
+SIZES=("small" "medium" "large" "huge")
 
 for BASE_DIR in "${SCENARIOS[@]}"; do
-  # we first need to build up and tear down the database 6 times 
-  source <(grep = $BASE_DIR/config.ini)
-  export PGPASSWORD
-  for((i=0;i<$NUM_TESTS;++i)); do
-    START_TIME=$(date +%s%N)
-    psql -h $PGHOST -p $PGPORT -U $PGUSER -c "DROP DATABASE IF EXISTS \"${PGDATABASE}\";" -q
-    psql -h $PGHOST -p $PGPORT -U $PGUSER -c "CREATE DATABASE \"${PGDATABASE}\";" -q
-    psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -f $1/schema/s-schema.sql -q
-    for file in $1/data/$2/*.csv; do
-      TABLE=$(basename "$file" .csv)
-      cat $file | psql -c "COPY \"$TABLE\" from stdin CSV DELIMITER ','" -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -q
+  for SIZE in ${SIZES[*]}; do
+    mkdir -p $BASE_DIR/tests/$SIZE
+    # we first need to build up and tear down the database 6 times 
+    source <(grep = $BASE_DIR/config.ini)
+    export PGPASSWORD
+    for ((i=0;i<$NUM_TESTS;++i)); do
+      START_TIME=$(date +%s%N)
+      psql -h $PGHOST -p $PGPORT -U $PGUSER -c "DROP DATABASE IF EXISTS \"${PGDATABASE}\";"
+      psql -h $PGHOST -p $PGPORT -U $PGUSER -c "CREATE DATABASE \"${PGDATABASE}\";"
+      psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -f $BASE_DIR/schema/s-schema.sql
+      for file in $BASE_DIR/data/$SIZE/*.csv; do
+        TABLE=$(basename "$file" .csv)
+        cat $file | psql -c "COPY \"$TABLE\" from stdin CSV DELIMITER ','" -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE
+      done
+      DATABASE[$i]=$(($(date +%s%N) - $START_TIME))
     done
-    DATABASE[$i]=$(($(date +%s%N) - $START_TIME))
-  done
-
     # then we run all 5 queries
-    for((i=1;i<=5;++i)); do
-      ./query.sh $BASE_DIR $i $SIZE
+    for ((i=1;i<=1;++i)); do
+      ./scripts/query.sh $BASE_DIR $i $SIZE
     done
-
     # Finally, we write the results out
     echo "database" >> $BASE_DIR/tests/$SIZE/database.csv
-    for((i=1;i<$NUM_TESTS;++i)); do
+    for ((i=1;i<$NUM_TESTS;++i)); do
       echo ${DATABASE[$i]} >> $BASE_DIR/tests/$SIZE/database.csv
     done
   done

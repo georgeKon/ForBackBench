@@ -1,1 +1,1 @@
-Q1(?X) <- worksFor(?X,?Y),affiliatedOrganizationOf(?Y,?Z) .
+Q1(?0) <- worksFor(?0,?1),affiliatedOrganizationOf(?1,?2) .
