@@ -1,1 +1,1 @@
-Q4(?0,?1) <- Person(?0),worksFor(?0,?1),Organization(?1) .
+Q4(?X,?Y) <- Person(?X),worksFor(?X,?Y),Organization(?Y) .
