@@ -1,6 +1,0 @@
-OUT ?(VAR_0) :- <http://www.owl-ontologies.com/Ontology1207768242.owl#Dealer>(VAR_0). 
-OUT ?(VAR_0) :- <http://www.owl-ontologies.com/Ontology1207768242.owl#StockBroker>(VAR_0). 
-OUT ?(VAR_0) :- <http://www.owl-ontologies.com/Ontology1207768242.owl#StockExchangeMember>(VAR_0). 
-OUT ?(VAR_0) :- <http://www.owl-ontologies.com/Ontology1207768242.owl#StockTrader>(VAR_0). 
-OUT ?(VAR_0) :- <http://www.owl-ontologies.com/Ontology1207768242.owl#Trader>(VAR_0). 
-OUT ?(VAR_0) :- <http://www.owl-ontologies.com/Ontology1207768242.owl#isExecutedBy>(VAR_0, VAR_0).

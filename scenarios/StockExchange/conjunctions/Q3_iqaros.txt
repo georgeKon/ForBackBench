@@ -1,4 +1,0 @@
-Q(X0,X1,X2)  <-  hasStock(X1,X2) ^ hasStock(X1,X0)
-Q(X0,X1,X2)  <-  belongsToCompany(X0,X1) ^ hasStock(X1,X2)
-Q(X0,X1,X2)  <-  belongsToCompany(X2,X1) ^ belongsToCompany(X0,X1)
-Q(X0,X1,X2)  <-  belongsToCompany(X2,X1) ^ hasStock(X1,X0)

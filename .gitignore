@@ -10,5 +10,6 @@ scenarios/StockExchange
 scenarios/Vicodi
 scenarios/LUBM
 
+tools/Llunatic-build
 # Ignore retrieval script
 retrieve.sh

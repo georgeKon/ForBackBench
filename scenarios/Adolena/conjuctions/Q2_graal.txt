@@ -1,2 +1,0 @@
-?(VAR_x) :- <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x), <file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#isAssistedBy>(VAR_y, VAR_x), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#UpperLimbMobility>(VAR_y).
-?(VAR_x) :- <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device>(VAR_x), <http://ksg.meraka.co.za/adolena.owl#assistsWith>(VAR_x, VAR_y), <file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#UpperLimbMobility>(VAR_y).
