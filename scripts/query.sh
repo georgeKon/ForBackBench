@@ -18,7 +18,6 @@ declare -A EXECUTE
 declare -A SIZE
 declare -A TUPLES
 declare -A RDFOX
-declare -A LLUNATIC
 
 # RUN TESTS
 echo "===== RAPID ====="
@@ -95,8 +94,10 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   TUPLES[3,$i]=$(echo $OUT | cut -d ':' -f 2)
   if [ $? -eq 0 ]; then
     RDFOX[0,$i]=$(($(date +%s%N) - $START_TIME))
-  else
+  elif [ $? -eq 124 ]; then
     RDFOX[0,$i]="TIME"
+  else 
+    RDFOX[0,$i]="ERR"
   fi
   TOTAL[3,$i]=$(($(date +%s%N) - ${TOTAL[3,$i]}))
   echo "Time elapsed: $((${TOTAL[3,$i]}/1000000)) milliseconds"
@@ -107,18 +108,16 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   TOTAL[4,$i]=$START_TIME
   java -jar ./tools/chasestepper/chasestepper-1.0.jar $BASE_DIR/dependencies/st-tgds.txt $BASE_DIR/dependencies/t-tgds.txt $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY.txt > /dev/null
-  if [ $? -eq 0 ]; then
-    BLOCK_TIME[$i]=$(($(date +%s%N) - $START_TIME))
-  else
-    BLOCK_TIME[$i]="ERR"
-  fi
+  BLOCK_TIME[$i]=$(($(date +%s%N) - $START_TIME))
   START_TIME=$(date +%s%N)
   OUT=$(timeout $TIMEOUT java -jar ./tools/RDFox/chaseRDFox-linux.jar -chase standard -s-sch $BASE_DIR/schema/s-schema.txt -t-sch $BASE_DIR/schema/t-schema.txt -st-tgds $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY-tgds.rule -src $BASE_DIR/data/$DATA_SIZE -qdir $BASE_DIR/queries/RDFox/Q$QUERY/ | grep "Query" -A1 | grep -v "Query")
   TUPLES[4,$i]=$(echo $OUT | cut -d ':' -f 2)
   if [ $? -eq 0 ]; then
     RDFOX[1,$i]=$(($(date +%s%N) - $START_TIME))
-  else
+  elif [ $? -eq 124 ]; then
     RDFOX[1,$i]="TIME"
+  else 
+    RDFOX[1,$i]="ERR"
   fi
   TOTAL[4,$i]=$(($(date +%s%N) - ${TOTAL[4,$i]}))
   echo "Time elapsed: $((${TOTAL[4,$i]}/1000000)) milliseconds"
@@ -130,7 +129,6 @@ echo "rewrite,convert,execute,total,size,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q
 echo "rewrite,convert,execute,total,size,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/graal.csv
 echo "chase,total,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/rdfox.csv
 echo "block,chase,total,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/chasestepper.csv
-echo "chase,total" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/llunatic.csv
 
 for ((i=1;i<$NUM_TESTS;++i)); do
   echo "${REWRITE[0,$i]},${CONVERT[0,$i]},${EXECUTE[0,$i]},${TOTAL[0,$i]},${SIZE[0,$i]},${TUPLES[0,$i]}" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/rapid.csv
@@ -138,5 +136,4 @@ for ((i=1;i<$NUM_TESTS;++i)); do
   echo "${REWRITE[2,$i]},${CONVERT[2,$i]},${EXECUTE[2,$i]},${TOTAL[2,$i]},${SIZE[2,$i]},${TUPLES[2,$i]}" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/graal.csv
   echo "${RDFOX[0,$i]},${TOTAL[3,$i]},${TUPLES[3,$i]}" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/rdfox.csv
   echo "${BLOCK_TIME[$i]},${RDFOX[1,$i]},${TOTAL[4,$i]},${TUPLES[4,$i]}" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/chasestepper.csv
-  echo "${LLNATIC[$i]},${TOTAL[5,$i]}" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/llunatic.csv
 done

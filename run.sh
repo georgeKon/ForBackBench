@@ -1,6 +1,6 @@
 # query.sh runs a test on one query of a scenario
 NUM_TESTS=6
-SCENARIOS=("scenarios/V" "scenarios/U")
+SCENARIOS=("scenarios/A" "scenarios/S")
 SIZES=("small" "medium" "large" "huge")
 
 for BASE_DIR in "${SCENARIOS[@]}"; do
@@ -21,7 +21,7 @@ for BASE_DIR in "${SCENARIOS[@]}"; do
       DATABASE[$i]=$(($(date +%s%N) - $START_TIME))
     done
     # then we run all 5 queries
-    for ((i=1;i<=1;++i)); do
+    for ((i=1;i<=5;++i)); do
       ./scripts/query.sh $BASE_DIR $i $SIZE
     done
     # Finally, we write the results out
