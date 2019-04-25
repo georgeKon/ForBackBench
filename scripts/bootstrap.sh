@@ -2,7 +2,7 @@ BASE_DIR=$1
 DATA=$3
 mkdir -p $BASE_DIR/data
 mkdir -p $BASE_DIR/out
-SIZES=("small" "medium" "large" "huge")
+SIZES=("small" "medium" "large")
 
 mkdir -p $BASE_DIR/tests/$size
 

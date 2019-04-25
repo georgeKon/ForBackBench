@@ -91,7 +91,6 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   TOTAL[3,$i]=$START_TIME
   OUT=$(timeout $TIMEOUT java -jar tools/RDFox/chaseRDFox-linux.jar -chase standard -s-sch $BASE_DIR/schema/s-schema.txt -t-sch $BASE_DIR/schema/t-schema.txt -st-tgds $BASE_DIR/dependencies/st-tgds.txt -src $BASE_DIR/data/$DATA_SIZE -t-tgds $BASE_DIR/dependencies/t-tgds.txt -qdir $BASE_DIR/queries/RDFox/Q$QUERY/ | grep "Query" -A1 | grep -v "Query")
-  TUPLES[3,$i]=$(echo $OUT | cut -d ':' -f 2)
   if [ $? -eq 0 ]; then
     RDFOX[0,$i]=$(($(date +%s%N) - $START_TIME))
   elif [ $? -eq 124 ]; then
@@ -99,8 +98,10 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   else 
     RDFOX[0,$i]="ERR"
   fi
+  TUPLES[3,$i]=$(echo $OUT | cut -d ':' -f 2)
   TOTAL[3,$i]=$(($(date +%s%N) - ${TOTAL[3,$i]}))
   echo "Time elapsed: $((${TOTAL[3,$i]}/1000000)) milliseconds"
+  echo "# of tuples: ${TUPLES[3,$i]}"
 done
 
 echo "===== ChaseStepper ====="
@@ -111,7 +112,6 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   BLOCK_TIME[$i]=$(($(date +%s%N) - $START_TIME))
   START_TIME=$(date +%s%N)
   OUT=$(timeout $TIMEOUT java -jar ./tools/RDFox/chaseRDFox-linux.jar -chase standard -s-sch $BASE_DIR/schema/s-schema.txt -t-sch $BASE_DIR/schema/t-schema.txt -st-tgds $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY-tgds.rule -src $BASE_DIR/data/$DATA_SIZE -qdir $BASE_DIR/queries/RDFox/Q$QUERY/ | grep "Query" -A1 | grep -v "Query")
-  TUPLES[4,$i]=$(echo $OUT | cut -d ':' -f 2)
   if [ $? -eq 0 ]; then
     RDFOX[1,$i]=$(($(date +%s%N) - $START_TIME))
   elif [ $? -eq 124 ]; then
@@ -119,8 +119,10 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   else 
     RDFOX[1,$i]="ERR"
   fi
+  TUPLES[4,$i]=$(echo $OUT | cut -d ':' -f 2)
   TOTAL[4,$i]=$(($(date +%s%N) - ${TOTAL[4,$i]}))
   echo "Time elapsed: $((${TOTAL[4,$i]}/1000000)) milliseconds"
+  echo "# of tuples: ${TUPLES[4,$i]}"
 done
 
 ## WRITE RESULTS
