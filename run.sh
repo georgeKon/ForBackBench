@@ -1,7 +1,7 @@
 # query.sh runs a test on one query of a scenario
-NUM_TESTS=6
-SCENARIOS=("scenarios/V" "scenarios/U")
-SIZES=("small" "medium" "large")
+NUM_TESTS=1
+SCENARIOS=("scenarios/Adolena")
+SIZES=("small")
 
 for BASE_DIR in "${SCENARIOS[@]}"; do
   for SIZE in ${SIZES[*]}; do
@@ -9,7 +9,7 @@ for BASE_DIR in "${SCENARIOS[@]}"; do
     # we first need to build up and tear down the database 6 times 
     source <(grep = $BASE_DIR/config.ini)
     export PGPASSWORD
-    for ((i=0;i<$NUM_TESTS;++i)); do
+    for ((i=0;i<1;++i)); do
       START_TIME=$(date +%s%N)
       psql -h $PGHOST -p $PGPORT -U $PGUSER -c "DROP DATABASE IF EXISTS \"${PGDATABASE}\";"
       psql -h $PGHOST -p $PGPORT -U $PGUSER -c "CREATE DATABASE \"${PGDATABASE}\";"

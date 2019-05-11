@@ -30,7 +30,8 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   echo "Rewriting: $((${REWRITE[0,$i]}/1000000)) milliseconds, Size: ${SIZE[0,$i]}"
 
   START_TIME=$(date +%s%N)
-  SQL=$(obdaconvert ucqstring "$RAPID" $BASE_DIR/schema/t-schema.txt rapid)
+  echo "$RAPID"
+  SQL=$(obdaconvert ucq "$RAPID" $BASE_DIR/schema/t-schema.txt rapid --string)
   CONVERT[0,$i]=$(($(date +%s%N) - $START_TIME))
   echo "Converting: $((${CONVERT[0,$i]}/1000000)) milliseconds"
 
@@ -52,7 +53,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   echo "Rewriting: $((${REWRITE[1,$i]}/1000000)) milliseconds, Size: ${SIZE[1,$i]}"
 
   START_TIME=$(date +%s%N)
-  SQL=$(obdaconvert ucqstring "$IQAROS" $BASE_DIR/schema/t-schema.txt iqaros)
+  SQL=$(obdaconvert ucq "$IQAROS" $BASE_DIR/schema/t-schema.txt iqaros --string)
   CONVERT[1,$i]=$(($(date +%s%N) - $START_TIME))
   echo "Converting: $((${CONVERT[1,$i]}/1000000)) milliseconds"
 
@@ -74,7 +75,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   echo "Rewriting: $((${REWRITE[2,$i]}/1000000)) milliseconds, Size: ${SIZE[2,$i]}"
 
   START_TIME=$(date +%s%N)
-  SQL=$(obdaconvert ucqstring "$GRAAL" $BASE_DIR/schema/t-schema.txt graal)
+  SQL=$(obdaconvert ucq "$GRAAL" $BASE_DIR/schema/t-schema.txt graal --string)
   CONVERT[2,$i]=$(($(date +%s%N) - $START_TIME))
   echo "Converting: $((${CONVERT[2,$i]}/1000000)) milliseconds"
 
