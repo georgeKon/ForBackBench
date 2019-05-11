@@ -1,7 +1,7 @@
 # query.sh runs a test on one query of a scenario
-NUM_TESTS=1
-SCENARIOS=("scenarios/Adolena")
-SIZES=("small")
+NUM_TESTS=6
+SCENARIOS=("scenarios/V" "scenarios/U")
+SIZES=("small" "medium" "large")
 
 for BASE_DIR in "${SCENARIOS[@]}"; do
   for SIZE in ${SIZES[*]}; do

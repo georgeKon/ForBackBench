@@ -19,73 +19,73 @@ declare -A SIZE
 declare -A TUPLES
 declare -A RDFOX
 
-# # RUN TESTS
-# echo "===== RAPID ====="
-# for ((i=0;i<$NUM_TESTS;++i)); do
-#   START_TIME=$(date +%s%N)
-#   TOTAL[0,$i]=$START_TIME
-#   RAPID=$(java -jar tools/rapid/Rapid2.jar DU SHORT $BASE_DIR/dependencies/ontology.owl $BASE_DIR/queries/iqaros/Q$QUERY.txt 2> /dev/null | grep -G '^Q')
-#   REWRITE[0,$i]=$(($(date +%s%N) - $START_TIME))
-#   SIZE[0,$i]=$(echo "$RAPID" | grep -c "<-")
-#   echo "Rewriting: $((${REWRITE[0,$i]}/1000000)) milliseconds, Size: ${SIZE[0,$i]}"
+# RUN TESTS
+echo "===== RAPID ====="
+for ((i=0;i<$NUM_TESTS;++i)); do
+  START_TIME=$(date +%s%N)
+  TOTAL[0,$i]=$START_TIME
+  RAPID=$(java -jar tools/rapid/Rapid2.jar DU SHORT $BASE_DIR/dependencies/ontology.owl $BASE_DIR/queries/iqaros/Q$QUERY.txt 2> /dev/null | grep -G '^Q')
+  REWRITE[0,$i]=$(($(date +%s%N) - $START_TIME))
+  SIZE[0,$i]=$(echo "$RAPID" | grep -c "<-")
+  echo "Rewriting: $((${REWRITE[0,$i]}/1000000)) milliseconds, Size: ${SIZE[0,$i]}"
 
-#   START_TIME=$(date +%s%N)
-#   echo "$RAPID"
-#   SQL=$(obdaconvert ucq "$RAPID" $BASE_DIR/schema/t-schema.txt rapid --string)
-#   CONVERT[0,$i]=$(($(date +%s%N) - $START_TIME))
-#   echo "Converting: $((${CONVERT[0,$i]}/1000000)) milliseconds"
+  START_TIME=$(date +%s%N)
+  echo "$RAPID"
+  SQL=$(obdaconvert ucq "$RAPID" $BASE_DIR/schema/t-schema.txt rapid --string)
+  CONVERT[0,$i]=$(($(date +%s%N) - $START_TIME))
+  echo "Converting: $((${CONVERT[0,$i]}/1000000)) milliseconds"
 
-#   START_TIME=$(date +%s%N)
-#   TUPLES[0,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
-#   EXECUTE[0,$i]=$(($(date +%s%N) - $START_TIME))
-#   TOTAL[0,$i]=$(($(date +%s%N) - ${TOTAL[0,$i]}))
-#   echo "Executing: $((${EXECUTE[0,$i]}/1000000)) milliseconds"
-#   echo "# of tuples: ${TUPLES[0,$i]}"
-# done
+  START_TIME=$(date +%s%N)
+  TUPLES[0,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+  EXECUTE[0,$i]=$(($(date +%s%N) - $START_TIME))
+  TOTAL[0,$i]=$(($(date +%s%N) - ${TOTAL[0,$i]}))
+  echo "Executing: $((${EXECUTE[0,$i]}/1000000)) milliseconds"
+  echo "# of tuples: ${TUPLES[0,$i]}"
+done
 
-# echo "===== IQAROS ====="
-# for ((i=0;i<$NUM_TESTS;++i)); do
-#   START_TIME=$(date +%s%N)
-#   TOTAL[1,$i]=$START_TIME 
-#   IQAROS=$(java -jar tools/iqaros/iqaros.jar $BASE_DIR/dependencies/ontology.owl $BASE_DIR/queries/iqaros/Q$QUERY.txt 2> /dev/null | grep -G '^Q')
-#   REWRITE[1,$i]=$(($(date +%s%N) - $START_TIME))
-#   SIZE[1,$i]=$(echo "$IQAROS" | grep -c "<-")
-#   echo "Rewriting: $((${REWRITE[1,$i]}/1000000)) milliseconds, Size: ${SIZE[1,$i]}"
+echo "===== IQAROS ====="
+for ((i=0;i<$NUM_TESTS;++i)); do
+  START_TIME=$(date +%s%N)
+  TOTAL[1,$i]=$START_TIME 
+  IQAROS=$(java -jar tools/iqaros/iqaros.jar $BASE_DIR/dependencies/ontology.owl $BASE_DIR/queries/iqaros/Q$QUERY.txt 2> /dev/null | grep -G '^Q')
+  REWRITE[1,$i]=$(($(date +%s%N) - $START_TIME))
+  SIZE[1,$i]=$(echo "$IQAROS" | grep -c "<-")
+  echo "Rewriting: $((${REWRITE[1,$i]}/1000000)) milliseconds, Size: ${SIZE[1,$i]}"
 
-#   START_TIME=$(date +%s%N)
-#   SQL=$(obdaconvert ucq "$IQAROS" $BASE_DIR/schema/t-schema.txt iqaros --string)
-#   CONVERT[1,$i]=$(($(date +%s%N) - $START_TIME))
-#   echo "Converting: $((${CONVERT[1,$i]}/1000000)) milliseconds"
+  START_TIME=$(date +%s%N)
+  SQL=$(obdaconvert ucq "$IQAROS" $BASE_DIR/schema/t-schema.txt iqaros --string)
+  CONVERT[1,$i]=$(($(date +%s%N) - $START_TIME))
+  echo "Converting: $((${CONVERT[1,$i]}/1000000)) milliseconds"
 
-#   START_TIME=$(date +%s%N)
-#   TUPLES[1,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
-#   EXECUTE[1,$i]=$(($(date +%s%N) - $START_TIME))
-#   TOTAL[1,$i]=$(($(date +%s%N) - ${TOTAL[1,$i]}))
-#   echo "Executing: $((${EXECUTE[1,$i]}/1000000)) milliseconds"
-#   echo "# of tuples: ${TUPLES[1,$i]}"
-# done
+  START_TIME=$(date +%s%N)
+  TUPLES[1,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+  EXECUTE[1,$i]=$(($(date +%s%N) - $START_TIME))
+  TOTAL[1,$i]=$(($(date +%s%N) - ${TOTAL[1,$i]}))
+  echo "Executing: $((${EXECUTE[1,$i]}/1000000)) milliseconds"
+  echo "# of tuples: ${TUPLES[1,$i]}"
+done
 
-# echo "===== GRAAL ====="
-# for ((i=0;i<$NUM_TESTS;++i)); do
-#   START_TIME=$(date +%s%N)
-#   TOTAL[2,$i]=$START_TIME
-#   GRAAL=$(java -jar tools/graal/obda-benchmark-graal-1.0-SNAPSHOT-spring-boot.jar $BASE_DIR/dependencies/ontology.owl $BASE_DIR/queries/graal/Q$QUERY.rq 2> /dev/null | grep -G '^?')
-#   REWRITE[2,$i]=$(($(date +%s%N) - $START_TIME))
-#   SIZE[2,$i]=$(echo "$GRAAL" | grep -c ":-")
-#   echo "Rewriting: $((${REWRITE[2,$i]}/1000000)) milliseconds, Size: ${SIZE[2,$i]}"
+echo "===== GRAAL ====="
+for ((i=0;i<$NUM_TESTS;++i)); do
+  START_TIME=$(date +%s%N)
+  TOTAL[2,$i]=$START_TIME
+  GRAAL=$(java -jar tools/graal/obda-benchmark-graal-1.0-SNAPSHOT-spring-boot.jar $BASE_DIR/dependencies/ontology.owl $BASE_DIR/queries/graal/Q$QUERY.rq 2> /dev/null | grep -G '^?')
+  REWRITE[2,$i]=$(($(date +%s%N) - $START_TIME))
+  SIZE[2,$i]=$(echo "$GRAAL" | grep -c ":-")
+  echo "Rewriting: $((${REWRITE[2,$i]}/1000000)) milliseconds, Size: ${SIZE[2,$i]}"
 
-#   START_TIME=$(date +%s%N)
-#   SQL=$(obdaconvert ucq "$GRAAL" $BASE_DIR/schema/t-schema.txt graal --string)
-#   CONVERT[2,$i]=$(($(date +%s%N) - $START_TIME))
-#   echo "Converting: $((${CONVERT[2,$i]}/1000000)) milliseconds"
+  START_TIME=$(date +%s%N)
+  SQL=$(obdaconvert ucq "$GRAAL" $BASE_DIR/schema/t-schema.txt graal --string)
+  CONVERT[2,$i]=$(($(date +%s%N) - $START_TIME))
+  echo "Converting: $((${CONVERT[2,$i]}/1000000)) milliseconds"
 
-#   START_TIME=$(date +%s%N)
-#   TUPLES[2,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
-#   EXECUTE[2,$i]=$(($(date +%s%N) - $START_TIME))
-#   TOTAL[2,$i]=$(($(date +%s%N) - ${TOTAL[2,$i]}))
-#   echo "Executing: $((${EXECUTE[2,$i]}/1000000)) milliseconds"
-#   echo "# of tuples: ${TUPLES[2,$i]}"
-# done
+  START_TIME=$(date +%s%N)
+  TUPLES[2,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+  EXECUTE[2,$i]=$(($(date +%s%N) - $START_TIME))
+  TOTAL[2,$i]=$(($(date +%s%N) - ${TOTAL[2,$i]}))
+  echo "Executing: $((${EXECUTE[2,$i]}/1000000)) milliseconds"
+  echo "# of tuples: ${TUPLES[2,$i]}"
+done
 
 echo "===== RDFox ====="
 for ((i=0;i<$NUM_TESTS;++i)); do
