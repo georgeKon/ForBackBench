@@ -1,0 +1,46 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "arrow-parens": [false],
+    "semicolon": [true, "never"],
+    "quotemark": [true, "single"],
+    "ordered-imports": [false],
+    "trailing-comma": [false],
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "onespace",
+        "index-signature": "onespace",
+        "parameter": "onespace",
+        "property-declaration": "onespace",
+        "variable-declaration": "onespace"
+      },
+      {
+        "call-signature": "onespace",
+        "index-signature": "onespace",
+        "parameter": "onespace",
+        "property-declaration": "onespace",
+        "variable-declaration": "onespace"
+      }
+    ],
+    "no-string-literal": [false],
+    "no-unused-expression": [false],
+    "interface-name": [true, "never-prefix"],
+    "whitespace": [
+      true,
+      "check-decl",
+      "check-operator",
+      "check-typecast",
+      "check-module",
+      "check-separator",
+      "check-type",
+      "check-type-operator",
+      "check-preblock",
+      "check-postbrace"
+    ]
+  },
+  "jsRules": true,
+  "linterOptions": {
+    "exclude": ["./dist/**/*.js", "./app/converters/grammars/*.js"]
+  }
+}
