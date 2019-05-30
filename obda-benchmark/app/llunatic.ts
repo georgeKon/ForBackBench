@@ -3,6 +3,11 @@ import path from 'path'
 import XMLWriter from 'xml-writer'
 
 export default function writeLlunaticConfig(baseFolder : string, query : string, size : string) {
+  writeDefaultLlunaticConfig(baseFolder, query, size)
+  writeBCALlunaticConfig(baseFolder, query, size)
+}
+
+function writeDefaultLlunaticConfig(baseFolder : string, query : string, size : string) {
   const writer = new XMLWriter(true)
   writer.startDocument()
   writer.startElement('scenario')
@@ -11,7 +16,7 @@ export default function writeLlunaticConfig(baseFolder : string, query : string,
 
   writeTargetConfig(writer, baseFolder)
 
-  writeExportConfig(writer, baseFolder, query)
+  writeExportConfig(writer, baseFolder, size, query)
 
   writeDependenciesConfig(writer, baseFolder)
 
@@ -20,6 +25,26 @@ export default function writeLlunaticConfig(baseFolder : string, query : string,
   writer.endDocument()
 
   fs.writeFileSync(path.resolve(baseFolder, 'queries/RDFox/', `${query}/${size}.xml`), writer.toString())
+}
+
+function writeBCALlunaticConfig(baseFolder : string, query : string, size : string) {
+  const writer = new XMLWriter(true)
+  writer.startDocument()
+  writer.startElement('scenario')
+
+  writeSourceConfig(writer, baseFolder, size)
+
+  writeTargetConfig(writer, baseFolder)
+
+  writeExportConfig(writer, baseFolder, size, query)
+
+  writeBCADependenciesConfig(writer, baseFolder, query)
+
+  writeQueriesConfig(writer, baseFolder, query)
+
+  writer.endDocument()
+
+  fs.writeFileSync(path.resolve(baseFolder, 'queries/RDFox/', `${query}/${size}-bca.xml`), writer.toString())
 }
 
 function writeSourceConfig(writer : any, baseFolder : string, size : string) {
@@ -74,13 +99,17 @@ function writeAccessConfig(writer : any, schema : string) {
   writer.endElement()
 }
 
-function writeExportConfig(writer : any, baseFolder : string, query : string) {
+function writeExportConfig(writer : any, baseFolder : string, size : string, query : string) {
   writer.startElement('configuration')
 
   writer.writeElement('printResults', 'true')
   writer.writeElement('exportQueryResults', 'true')
-  writer.writeElement('exportQueryResultsPath', path.resolve(baseFolder, 'out', query, ))
+  writer.writeElement('exportQueryResultsPath', path.resolve(baseFolder, 'out', size, query, ))
   writer.writeElement('exportQueryResultsType', 'CSV')
+  writer.writeElement('exportSolutions', 'true')
+  writer.writeElement('exportQueryResults', 'true')
+  writer.writeElement('exportSolutionsPath', path.resolve(baseFolder, 'out', size, query, ))
+  writer.writeElement('exportSolutionsType', 'CSV')
 
   writer.endElement()
 }
@@ -90,6 +119,14 @@ function writeDependenciesConfig(writer : any, baseFolder : string) {
 
   writer.writeElement('sttgdsFile', path.resolve(baseFolder, 'dependencies/st-tgds.txt'))
   writer.writeElement('ttgdsFile', path.resolve(baseFolder, 'dependencies/t-tgds.txt'))
+
+  writer.endElement()
+}
+
+function writeBCADependenciesConfig(writer : any, baseFolder : string, query : string) {
+  writer.startElement('dependencies')
+
+  writer.writeElement('sttgdsFile', path.resolve(baseFolder, `queries/RDFox/${query}/${query}-tgds.rule`))
 
   writer.endElement()
 }

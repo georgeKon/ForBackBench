@@ -22,10 +22,10 @@ program
   .description('Initialise a database with given schema and insert data')
   .action((schema, data, options) => loadDataCmd(schema, data))
 
-program
-  .command('run')
-  .arguments('<ontology> <queries> <schema>')
-  .action((ontology, query, schema) => runScenarioCmd(ontology, query, schema))
+// program
+//   .command('run')
+//   .arguments('<ontology> <queries> <schema>')
+//   .action((ontology, query, schema) => runScenarioCmd(ontology, query, schema))
 
 // program
 //   .command('rewrite')
