@@ -4,13 +4,11 @@
 *.code-workspace
 
 scenarios/deep
-scenarios/University
-scenarios/Adolena
-scenarios/StockExchange
-scenarios/Vicodi
 scenarios/LUBM
-
-scenarios/V/data
+scenarios/V
+scenarios/A
+scenarios/U
+scenarios/S
 
 tools/Llunatic-build
 tools/tw-rewriting.jar
