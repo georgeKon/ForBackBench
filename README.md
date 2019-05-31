@@ -1,3 +1,4 @@
+# Overview
 The project is split across 3 repositories
 
 - obdabenchmark https://git.soton.ac.uk/gk1e17/obdabenchmark
@@ -25,8 +26,8 @@ Use `sudo npm link` to update the local binary command
 
 The `obdabenchmark llunatic <folder>` command is used to generate the llunatic xml files for a scenario
 
-Scenario folder structure
-
+# Scenario folder structure
+```
 name/
 |-- data/               := CSV data files
 | |-- a.csv
@@ -59,9 +60,9 @@ name/
 |     |-- tool.csv
 |   |-- database.csv
 |-- config.ini          := INI database config
-
+```
 The majority of this structure can be bootstrapped using the provided scripts. For a DL-Lite scenario, the minimum set up to be bootstrapped is the following:
-
+```
 name/
 |-- data/
 | |-- a.csv
@@ -70,9 +71,9 @@ name/
 |-- queries
 | |-- Qx.rq
 |-- config.ini
-
+```
 For a ChaseBench scenario:
-
+```
 name/
 |-- data/
 | |-- a.csv
@@ -85,3 +86,22 @@ name/
 | |-- s-schema.txt
 | |-- t-schema.txt
 |-- config.ini
+```
+# Scripts
+
+Bootstrap DL Lite scenarios with `./scripts/bootstrap.sh <folder> dllite [data]` - add data if you also want to generate data
+Bootstrap ChaseBench scenarios with `./scripts/bootstrap.sh <folder> chasebench`
+The setup.sh script is used to automate the bootstrapping of multiple scenarios - edit it as you need
+
+The generate.sh script automates data generation - use `./scripts/generate.sh <folder> <size>` where 'folder' is the top level scenario name and 'size' is a data size defined
+in the config.ini in tools/datagenerator
+
+build.sh drops a database if exists, then creates and imports - use `./scripts/build.sh <folder> <size>` where 'folder' is the top level scenario name and 'size' is a data size defined in the data folder of that scenario. The database information is taken from the scenario config.ini file
+
+query.sh is the main heavy lifter of the scripts, and runs a test of a query on each tool, 6 times. It is invoked using `./scripts/query.sh <folder> <query number> <size>`, where 'folder' is the top level scenario name, query number is self explanatory and 'size' is a data size defined in the data folder of that scenario
+
+Most of these commands are automated using the run.sh script. At the moment, the parameters of the test have to be changed in the script itself, but this could be changed to take command line arguments
+
+# Things that need to be tested and fixed
+- The BCA algorithm assigns numbers to labelled nulls - a prefix of the index of the tree, and then the number of the null. I have realised this does not guarantee unique nulls and while maybe it hasn't made a difference, should be fixed. It also needs to change because, guess what, Llunatic cannot take numbered variables.
+- A way to fix non-trivial st-tgds
