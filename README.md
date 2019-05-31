@@ -24,3 +24,64 @@ To build - `yarn build`
 Use `sudo npm link` to update the local binary command
 
 The `obdabenchmark llunatic <folder>` command is used to generate the llunatic xml files for a scenario
+
+Scenario folder structure
+
+name/
+|-- data/               := CSV data files
+| |-- a.csv
+|-- dependencies/
+| |-- ontology.owl      := OWL ontology file
+| |-- st-tgds.txt       := ChaseBench rules 
+| |-- t-tgds.txt        := ChaseBench rules
+|-- out/                := LLunatic output folders
+| |-- size/
+|   |-- Qx/
+|     |-- Qx.csv
+|-- queries
+| |-- graal             := SPARQL queries
+|   |-- Qx.rq
+| |-- iqaros            := IQAROS queries
+|   |-- Qx.txt
+| |-- RDFox             := ChaseBench queries
+|   |-- Qx/
+|     |-- Qx.txt
+|     |-- size.xml      := LLunatic XML
+|     |-- size-bca.xml  := LLunatic XML for BCA
+|-- schema/             
+| |-- s-schema.sql      := PostgreSQL sql
+| |-- s-schema.txt      := ChaseBench schema
+| |-- t-schema.sql      := PostgreSQL sql
+| |-- t-schema.txt      := ChaseBench schema
+|-- tests
+| |-- size/
+|   |-- Qx/
+|     |-- tool.csv
+|   |-- database.csv
+|-- config.ini          := INI database config
+
+The majority of this structure can be bootstrapped using the provided scripts. For a DL-Lite scenario, the minimum set up to be bootstrapped is the following:
+
+name/
+|-- data/
+| |-- a.csv
+|-- dependencies/
+| |-- ontology.owl
+|-- queries
+| |-- Qx.rq
+|-- config.ini
+
+For a ChaseBench scenario:
+
+name/
+|-- data/
+| |-- a.csv
+|-- dependencies/
+| |-- st-tgds.txt
+| |-- t-tgds.txt
+|-- queries
+| |-- Qx.txt
+|-- schema/
+| |-- s-schema.txt
+| |-- t-schema.txt
+|-- config.ini
