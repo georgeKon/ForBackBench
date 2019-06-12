@@ -1,0 +1,5 @@
+PREFIX : <http://example.com/example.owl#>
+SELECT DISTINCT ?0 WHERE {
+  ?0 :worksFor ?1.
+  ?1 :affiliatedOrganizationOf ?2.
+}

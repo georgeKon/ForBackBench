@@ -1,1 +1,0 @@
-Q2(?0,?1) <- Person(?0),teacherOf(?0,?1),Course(?1) .
