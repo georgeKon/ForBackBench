@@ -1,326 +1,326 @@
 AdministrativeStaff {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Article {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 AssistantProfessor {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 AssociateProfessor {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Book {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Chair {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 ClericalStaff {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 College {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 ConferencePaper {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Course {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Dean {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Department {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Director {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Employee {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Faculty {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 FullProfessor {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 GraduateCourse {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 GraduateStudent {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Institute {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 JournalArticle {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Lecturer {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Manual {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Organization {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Person {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 PostDoc {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Professor {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Program {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Publication {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Research {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 ResearchAssistant {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 ResearchGroup {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Schedule {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Software {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Specification {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Student {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 SystemsStaff {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 TeachingAssistant {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 TechnicalReport {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 UndergraduateStudent {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 University {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 UnofficialPublication {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 VisitingProfessor {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 Work {
-    c0 : SYMBOL
+    c0 : STRING
 }
 
 age {
-    c0 : SYMBOL,
-    c1 : INTEGER
+    c0 : STRING,
+    c1 : STRING
 }
     
 advisor {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 affiliateOf {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 affiliatedOrganizationOf {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 degreeFrom {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 doctoralDegreeFrom {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 emailAddress {
-    c0 : SYMBOL,
+    c0 : STRING,
     c1 : STRING
 }
 
 hasAlumnus {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 headOf {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 listedCourse {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 mastersDegreeFrom {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 member {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 memberOf {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 name {
-    c0 : SYMBOL,
+    c0 : STRING,
     c1 : STRING
 }
 
 orgPublication {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 publicationAuthor {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 publicationDate {
-    c0 : SYMBOL,
+    c0 : STRING,
     c1 : STRING
 }
 
 publicationResearch {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 researchInterest {
-    c0 : SYMBOL,
+    c0 : STRING,
     c1 : STRING
 }
 
 researchProject {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 softwareDocumentation {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 softwareVersion {
-    c0 : SYMBOL,
-    c1 : INTEGER
+    c0 : STRING,
+    c1 : STRING
 }
 
 subOrganizationOf {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 takesCourse {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 teacherOf {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 teachingAssistantOf {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 telephone {
-    c0 : SYMBOL,
+    c0 : STRING,
     c1 : STRING
 }
 
 tenured {
-    c0 : SYMBOL,
-    c1 : INTEGER
+    c0 : STRING,
+    c1 : STRING
 }
 
 title {
-    c0 : SYMBOL,
+    c0 : STRING,
     c1 : STRING
 }
 
 undergraduateDegreeFrom {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
 
 worksFor {
-    c0 : SYMBOL,
-    c1 : SYMBOL
+    c0 : STRING,
+    c1 : STRING
 }
