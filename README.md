@@ -16,7 +16,8 @@ To build
 - `gradle dataJar`
 - Can also use `gradle clean` to clear previous builds 
 
-Obdabenchmark
+### Obdabenchmark
+
 To download dependencies - `yarn` - this must be done on first downloading the code, or any time the 'node_modules' folder is deleted
 
 To build 
@@ -101,7 +102,7 @@ name/
 
 Bootstrap DL Lite scenarios with `./scripts/bootstrap.sh <folder> dllite [data]` - add data if you also want to generate data
 Bootstrap ChaseBench scenarios with `./scripts/bootstrap.sh <folder> chasebench`
-The setup.sh script is used to automate the bootstrapping of multiple scenarios - edit it as you need
+The setup.sh script is used to automate the bootstrapping of multiple scenarios - edit it as you need. Within the bootstrap.sh script, you will need to change the SIZES list to match which data sizes you wish to generate.
 
 The generate.sh script automates data generation - use `./scripts/generate.sh <folder> <size>` where 'folder' is the top level scenario name and 'size' is a data size defined
 in the config.ini in tools/datagenerator
@@ -111,6 +112,21 @@ build.sh drops a database if exists, then creates and imports - use `./scripts/b
 query.sh is the main heavy lifter of the scripts, and runs a test of a query on each tool, 6 times. It is invoked using `./scripts/query.sh <folder> <query number> <size>`, where 'folder' is the top level scenario name, query number is self explanatory and 'size' is a data size defined in the data folder of that scenario
 
 Most of these commands are automated using the run.sh script. At the moment, the parameters of the test have to be changed in the script itself, but this could be changed to take command line arguments
+
+# Getting it to run
+
+When first using the codebase, you need to download the Javascript dependencies and build the scripts. To do this:
+
+```
+cd obda-benchmark
+yarn && yarn build && sudo npm link
+```
+
+Then, make sure you have the scenario folders set up as you need, following the layout defined above. You can use the setup.sh or bootstrap.sh scripts to automate the building of much of them.
+
+Then, you need to edit the query.sh and run.sh scripts to define which tools you wish to run, over which scenarios and data sizes.
+
+When the code has finished, the results are printed to set of CSV files found in the test/ folder of the scenarios.
 
 # Tools
 ## Rapid
@@ -221,7 +237,7 @@ There is also a seperate download for the tree-witness rewriter that is used int
 ```
 java -jar tw-rewriting.jar <OWL ontology file> <SPARQL query file>
 ```
-However, this rewriter produces Datalog which is not currently supported since I could not find a parser / converter and did not have time to write one.
+However, this rewriter produces Datalog which is not currently supported since I could not find a parser / converter and did not have time to write one. With a Datalog -> SQL converter, it would be trivial to add the Tree Witness Rewriter akin to Rapid or IQAROS.
 
 For the end-to-end, the download comes with a script with various commands - one of these is the bootstrap command, which creates the mapping files needed for Ontop:
 ```
@@ -232,3 +248,21 @@ The other command is to query
 ./ontop query -d <jdbc driver name> -l <jdbc url> -m <mapping file> -o <output folder> -p <database password> -q <SPARQL query file> -t <ontology file> -u <database username>
 ```
 The errors seem to be in the mapping file - from what I can ascertain by inspection, they seem to be mislabelling the relation names with the column names, which makes the ontology invalid - but this is just a guess. I've also tried the lower case Postgres fix, no help.
+
+## Llunatic
+While Llunatic I think has been discounted from this due to it only using one thread and therefore being very slow compared to RDFox, I can still provide some pointers for its use.
+
+Download from https://github.com/donatellosantoro/Llunatic as this version definitely includes the fix that I had to submit to them. Build it with the ant command they define 
+
+```
+ant gfp
+```` 
+and then use the runExp.sh script in the lunaticEngine folder. I have written a Javascript command that autogenerates the XML files needed to define a scenario in Llunatic:
+
+```
+obdabenchmark llunatic <folder>
+```
+
+If you provide a valid scenario folder of the structure defined above, this command should produce an XML file for each query for each data size you have data for.
+
+I think there were still issues with its use for some of the scenarios, but we definitely got it to work for LUBM.
