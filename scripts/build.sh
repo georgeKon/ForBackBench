@@ -1,3 +1,5 @@
+#!/bin/bash
+
 BASE_DIR=$1
 SIZE=$2
 

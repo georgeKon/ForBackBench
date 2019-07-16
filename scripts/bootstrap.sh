@@ -1,3 +1,5 @@
+#!/bin/bash
+
 BASE_DIR=$1
 DATA=$3
 mkdir -p $BASE_DIR/data

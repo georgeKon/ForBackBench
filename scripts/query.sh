@@ -1,9 +1,12 @@
+#!/bin/bash
+
 ## SETUP
 NUM_TESTS=6
 TIMEOUT=1800
 BASE_DIR=$1
 QUERY=$2
 DATA_SIZE=$3
+JRE=~/.sdkman/candidates/java/8.0.201-oracle/jre/bin/java
 
 mkdir -p $BASE_DIR/tests/$DATA_SIZE/Q$QUERY
 
@@ -22,6 +25,7 @@ declare -A LLUNATIC
 declare -A LOAD
 
 # RUN TESTS
+
 echo "===== RAPID ====="
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
@@ -95,7 +99,7 @@ echo "===== RDFox ====="
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   TOTAL[3,$i]=$START_TIME
-  OUT=$(timeout $TIMEOUT java -jar tools/RDFox/chaseRDFox-linux.jar -chase standard -s-sch $BASE_DIR/schema/s-schema.txt -t-sch $BASE_DIR/schema/t-schema.txt -st-tgds $BASE_DIR/dependencies/st-tgds.txt -src $BASE_DIR/data/$DATA_SIZE -t-tgds $BASE_DIR/dependencies/t-tgds.txt -qdir $BASE_DIR/queries/RDFox/Q$QUERY/)
+  OUT=$(timeout $TIMEOUT $JRE -jar tools/RDFox/chaseRDFox-linux.jar -chase standard -s-sch $BASE_DIR/schema/s-schema.txt -t-sch $BASE_DIR/schema/t-schema.txt -st-tgds $BASE_DIR/dependencies/st-tgds.txt -src $BASE_DIR/data/$DATA_SIZE -t-tgds $BASE_DIR/dependencies/t-tgds.txt -qdir $BASE_DIR/queries/RDFox/Q$QUERY/)
   if [ $? -eq 0 ]; then
     TOTAL[3,$i]=$(($(date +%s%N) - ${TOTAL[3,$i]}))
   elif [ $? -eq 124 ]; then
@@ -119,7 +123,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   java -jar ./tools/chasestepper/chasestepper-1.0.jar $BASE_DIR/dependencies/st-tgds.txt $BASE_DIR/dependencies/t-tgds.txt $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY.txt > /dev/null
   BLOCK_TIME[$i]=$(($(date +%s%N) - $START_TIME))
   START_TIME=$(date +%s%N)
-  OUT=$(timeout $TIMEOUT java -jar ./tools/RDFox/chaseRDFox-linux.jar -chase standard -s-sch $BASE_DIR/schema/s-schema.txt -t-sch $BASE_DIR/schema/t-schema.txt -st-tgds $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY-tgds.rule -src $BASE_DIR/data/$DATA_SIZE -qdir $BASE_DIR/queries/RDFox/Q$QUERY/)
+  OUT=$(timeout $TIMEOUT $JRE -jar ./tools/RDFox/chaseRDFox-linux.jar -chase standard -s-sch $BASE_DIR/schema/s-schema.txt -t-sch $BASE_DIR/schema/t-schema.txt -st-tgds $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY-tgds.rule -src $BASE_DIR/data/$DATA_SIZE -qdir $BASE_DIR/queries/RDFox/Q$QUERY/)
   if [ $? -eq 0 ]; then
     TOTAL[4,$i]=$(($(date +%s%N) - ${TOTAL[4,$i]}))
   elif [ $? -eq 124 ]; then
@@ -135,6 +139,28 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   echo "Time elapsed: $((${TOTAL[4,$i]}/1000000)) milliseconds"
   echo "# of tuples: ${TUPLES[4,$i]}"
 done
+
+echo "===== GQR ====="
+for ((i=0;i<$NUM_TESTS;++i)); do
+  START_TIME=$(date +%s%N)
+  TOTAL[3,$i]=$START_TIME
+  OUT=$(timeout $TIMEOUT java -jar tools/GQR/GQR.jar -st-tgds $BASE_DIR/dependencies/st-tgds.txt -q $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY.txt)
+  if [ $? -eq 0 ]; then
+    TOTAL[5,$i]=$(($(date +%s%N) - ${TOTAL[3,$i]}))
+  elif [ $? -eq 124 ]; then
+    TOTAL[5,$i]="TIME"
+  else 
+    TOTAL[5,$i]="ERR"
+  fi
+  REWRITE[3,$i]=$(echo "$OUT" | grep "rewNo" | cut -d ' ' -f 2 | cut -d ':' -f 2)
+  EXECUTE[5,$i]=$(echo "$OUT" | grep "rewNo:" | cut -d ' ' -f 1 | cut -d ':' -f 2)
+  TUPLES[5,$i]=$(echo "$OUT" | grep "Query" | cut -d ':' -f 2)
+  echo "$OUT"
+  echo "Executing: $((${EXECUTE[5,$i]})) milliseconds"
+  echo "Time elapsed: $((${TOTAL[5,$i]}/1000000)) milliseconds"
+  echo "# of tuples writes: ${REWRITE[3,$i]}"
+done
+
 
 # echo "===== Llunatic ====="
 # for ((i=0;i<$NUM_TESTS;++i)); do
@@ -170,5 +196,6 @@ for ((i=1;i<$NUM_TESTS;++i)); do
   echo "${REWRITE[2,$i]},${CONVERT[2,$i]},${EXECUTE[2,$i]},${TOTAL[2,$i]},${SIZE[2,$i]},${TUPLES[2,$i]}" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/graal.csv
   echo "${CHASE[0,$i]},${EXECUTE[3,$i]},${TOTAL[3,$i]},${TUPLES[3,$i]}" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/rdfox.csv
   echo "${BLOCK_TIME[$i]},${CHASE[1,$i]},${EXECUTE[4,$i]},${TOTAL[4,$i]},${TUPLES[4,$i]}" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/chasestepper.csv
+  echo "${REWRITE[3,$i]},${EXECUTE[5,$i]},${TOTAL[5,$i]},${TUPLES[5,$i]}" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/gqr.csv
   # echo "${LOAD[5,$i]},${LLUNATIC[$i]},${EXECUTE[5,$i]},${TOTAL[5,$i]},${TUPLES[5,$i]}" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/llunatic.csv
 done

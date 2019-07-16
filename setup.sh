@@ -1,4 +1,6 @@
-./scripts/bootstrap.sh scenarios/V dllite
+#!/bin/bash
+
+./scripts/bootstrap.sh scenarios/Vicodi dllite data
 # ./scripts/bootstrap.sh scenarios/U chasebench
 
 # cd scenarios/U/data/small && tar -xf small.tar.xz && rm small.tar.xz &&\

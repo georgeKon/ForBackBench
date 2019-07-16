@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # query.sh runs a test on one query of a scenario
 NUM_TESTS=6
 SCENARIOS=("scenarios/University")
