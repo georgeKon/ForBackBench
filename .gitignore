@@ -10,7 +10,7 @@ scenarios/A
 scenarios/U
 scenarios/S
 scenarios/*/data
-scenarios/trees-*.txt
+scenarios/*/trees-*.txt
 
 tools/Llunatic-build
 tools/tw-rewriting.jar
