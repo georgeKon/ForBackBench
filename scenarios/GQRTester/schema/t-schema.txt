@@ -1,0 +1,132 @@
+m10004 {
+    X1 : STRING,
+    X2 : STRING,
+    X7 : STRING,
+    X8 : STRING
+}
+
+m1004 {
+    X2 : STRING,
+    X3 : STRING,
+    X9 : STRING,
+    X10 : STRING
+}
+
+m11004 {
+    X2 : STRING,
+    X3 : STRING,
+    X9 : STRING,
+    X10 : STRING
+}
+
+m12004 {
+    X5 : STRING,
+    X6 : STRING,
+    X15 : STRING,
+    X16 : STRING
+}
+
+m13004 {
+    X6 : STRING,
+    X7 : STRING,
+    X17 : STRING,
+    X18 : STRING
+}
+
+m14004 {
+    X3 : STRING,
+    X4 : STRING,
+    X11 : STRING,
+    X12 : STRING
+}
+
+m15004 {
+    X7 : STRING,
+    X8 : STRING,
+    X19 : STRING,
+    X20 : STRING
+}
+
+m16004 {
+    X4 : STRING,
+    X5 : STRING,
+    X13 : STRING,
+    X14 : STRING
+}
+
+m17004 {
+    X1 : STRING,
+    X2 : STRING,
+    X7 : STRING,
+    X8 : STRING
+}
+
+m18004 {
+    X5 : STRING,
+    X6 : STRING,
+    X15 : STRING,
+    X16 : STRING
+}
+
+m19004 {
+    X4 : STRING,
+    X5 : STRING,
+    X13 : STRING,
+    X14 : STRING
+}
+
+m2004 {
+    X0 : STRING,
+    X1 : STRING,
+    X5 : STRING,
+    X6 : STRING
+}
+
+m3004 {
+    X7 : STRING,
+    X8 : STRING,
+    X19 : STRING,
+    X20 : STRING
+}
+
+m4004 {
+    X3 : STRING,
+    X4 : STRING,
+    X11 : STRING,
+    X12 : STRING
+}
+
+m5004 {
+    X3 : STRING,
+    X4 : STRING,
+    X11 : STRING,
+    X12 : STRING
+}
+
+m6004 {
+    X7 : STRING,
+    X8 : STRING,
+    X19 : STRING,
+    X20 : STRING
+}
+
+m7004 {
+    X4 : STRING,
+    X5 : STRING,
+    X13 : STRING,
+    X14 : STRING
+}
+
+m8004 {
+    X7 : STRING,
+    X8 : STRING,
+    X19 : STRING,
+    X20 : STRING
+}
+
+m9004 {
+    X2 : STRING,
+    X3 : STRING,
+    X9 : STRING,
+    X10 : STRING
+}
