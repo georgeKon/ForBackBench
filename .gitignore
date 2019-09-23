@@ -13,6 +13,8 @@ scenarios/*/data
 scenarios/*/trees-*.txt
 scenarios/*/tests
 scenarios/*/queries/RDFox/*/*-tgds.rule
+scenarios/STB-128
+scripts/testers
 data
 
 tools/Llunatic-build
