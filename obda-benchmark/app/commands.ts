@@ -27,6 +27,7 @@ export async function bootstrapCmd(baseFolder : string, mode : string) {
   const sizes = await readdir(path.resolve(baseFolder, 'data'))
 
   if(mode === 'chasebench') {
+    if(path.resolve(baseFolder,'dependencies/t-tgds.txt'))
     await createOntology(path.resolve(baseFolder, 'dependencies/t-tgds.txt'), path.resolve(baseFolder, 'dependencies/ontology.owl'))
     await createSQL(path.resolve(baseFolder, 'schema/s-schema.txt'), path.resolve(baseFolder, 'schema/s-schema.sql'))
     await createSQL(path.resolve(baseFolder, 'schema/t-schema.txt'), path.resolve(baseFolder, 'schema/t-schema.sql'))

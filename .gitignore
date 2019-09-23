@@ -11,6 +11,9 @@ scenarios/U
 scenarios/S
 scenarios/*/data
 scenarios/*/trees-*.txt
+scenarios/*/tests
+scenarios/*/queries/RDFox/*/*-tgds.rule
+data
 
 tools/Llunatic-build
 tools/tw-rewriting.jar

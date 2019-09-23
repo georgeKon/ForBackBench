@@ -2,7 +2,7 @@
 
 # query.sh runs a test on one query of a scenario
 NUM_TESTS=1
-SCENARIOS=("scenarios/LUBM_new")
+SCENARIOS=("scenarios/DeepSTs" )
 SIZES=("small")
 
 for BASE_DIR in "${SCENARIOS[@]}"; do
@@ -22,9 +22,9 @@ for BASE_DIR in "${SCENARIOS[@]}"; do
       done
       DATABASE[$i]=$(($(date +%s%N) - $START_TIME))
     done
-    # then we run all 5 queries
-    for ((i=1;i<=19;++i)); do
-      ./scripts/query.sh $BASE_DIR $i $SIZE
+    # then we run all 5 queriesd
+    for ((i=1;i<=5;++i)); do
+      ./scripts/newQuery.sh $BASE_DIR $i $SIZE
     done
     # Finally, we write the results out
     echo "database" >> $BASE_DIR/tests/$SIZE/database.csv
