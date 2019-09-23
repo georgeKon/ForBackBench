@@ -1,0 +1,312 @@
+[PrefixDeclaration]
+obda:		https://w3id.org/obda/vocabulary#
+owl:		http://www.w3.org/2002/07/owl#
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+xsd:		http://www.w3.org/2001/XMLSchema#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+
+[SourceDeclaration]
+sourceUri	529a5c55-108a-47d2-ab11-60ca9c77358f
+connectionUrl	jdbc:postgresql://localhost:5432/university
+username	postgres
+password	password
+driverClass	org.postgresql.Driver
+
+[MappingDeclaration] @collection [[
+mappingId	urn:MAPPING-ID1
+target		BNODE({c0}) a <http://example.com/example.owl/src_AdministrativeStaff> ; <http://example.com/example.owl/src_AdministrativeStaff#c0> {c0} . 
+source		SELECT * FROM "public"."src_AdministrativeStaff"
+
+mappingId	urn:MAPPING-ID2
+target		BNODE({c0}) a <http://example.com/example.owl/src_Article> ; <http://example.com/example.owl/src_Article#c0> {c0} . 
+source		SELECT * FROM "public"."src_Article"
+
+mappingId	urn:MAPPING-ID3
+target		BNODE({c0}) a <http://example.com/example.owl/src_AssistantProfessor> ; <http://example.com/example.owl/src_AssistantProfessor#c0> {c0} . 
+source		SELECT * FROM "public"."src_AssistantProfessor"
+
+mappingId	urn:MAPPING-ID4
+target		BNODE({c0}) a <http://example.com/example.owl/src_AssociateProfessor> ; <http://example.com/example.owl/src_AssociateProfessor#c0> {c0} . 
+source		SELECT * FROM "public"."src_AssociateProfessor"
+
+mappingId	urn:MAPPING-ID5
+target		BNODE({c0}) a <http://example.com/example.owl/src_Book> ; <http://example.com/example.owl/src_Book#c0> {c0} . 
+source		SELECT * FROM "public"."src_Book"
+
+mappingId	urn:MAPPING-ID6
+target		BNODE({c0}) a <http://example.com/example.owl/src_Chair> ; <http://example.com/example.owl/src_Chair#c0> {c0} . 
+source		SELECT * FROM "public"."src_Chair"
+
+mappingId	urn:MAPPING-ID7
+target		BNODE({c0}) a <http://example.com/example.owl/src_ClericalStaff> ; <http://example.com/example.owl/src_ClericalStaff#c0> {c0} . 
+source		SELECT * FROM "public"."src_ClericalStaff"
+
+mappingId	urn:MAPPING-ID8
+target		BNODE({c0}) a <http://example.com/example.owl/src_College> ; <http://example.com/example.owl/src_College#c0> {c0} . 
+source		SELECT * FROM "public"."src_College"
+
+mappingId	urn:MAPPING-ID9
+target		BNODE({c0}) a <http://example.com/example.owl/src_ConferencePaper> ; <http://example.com/example.owl/src_ConferencePaper#c0> {c0} . 
+source		SELECT * FROM "public"."src_ConferencePaper"
+
+mappingId	urn:MAPPING-ID10
+target		BNODE({c0}) a <http://example.com/example.owl/src_Course> ; <http://example.com/example.owl/src_Course#c0> {c0} . 
+source		SELECT * FROM "public"."src_Course"
+
+mappingId	urn:MAPPING-ID11
+target		BNODE({c0}) a <http://example.com/example.owl/src_Dean> ; <http://example.com/example.owl/src_Dean#c0> {c0} . 
+source		SELECT * FROM "public"."src_Dean"
+
+mappingId	urn:MAPPING-ID12
+target		BNODE({c0}) a <http://example.com/example.owl/src_Department> ; <http://example.com/example.owl/src_Department#c0> {c0} . 
+source		SELECT * FROM "public"."src_Department"
+
+mappingId	urn:MAPPING-ID13
+target		BNODE({c0}) a <http://example.com/example.owl/src_Director> ; <http://example.com/example.owl/src_Director#c0> {c0} . 
+source		SELECT * FROM "public"."src_Director"
+
+mappingId	urn:MAPPING-ID14
+target		BNODE({c0}) a <http://example.com/example.owl/src_Employee> ; <http://example.com/example.owl/src_Employee#c0> {c0} . 
+source		SELECT * FROM "public"."src_Employee"
+
+mappingId	urn:MAPPING-ID15
+target		BNODE({c0}) a <http://example.com/example.owl/src_Faculty> ; <http://example.com/example.owl/src_Faculty#c0> {c0} . 
+source		SELECT * FROM "public"."src_Faculty"
+
+mappingId	urn:MAPPING-ID16
+target		BNODE({c0}) a <http://example.com/example.owl/src_FullProfessor> ; <http://example.com/example.owl/src_FullProfessor#c0> {c0} . 
+source		SELECT * FROM "public"."src_FullProfessor"
+
+mappingId	urn:MAPPING-ID17
+target		BNODE({c0}) a <http://example.com/example.owl/src_GraduateCourse> ; <http://example.com/example.owl/src_GraduateCourse#c0> {c0} . 
+source		SELECT * FROM "public"."src_GraduateCourse"
+
+mappingId	urn:MAPPING-ID18
+target		BNODE({c0}) a <http://example.com/example.owl/src_GraduateStudent> ; <http://example.com/example.owl/src_GraduateStudent#c0> {c0} . 
+source		SELECT * FROM "public"."src_GraduateStudent"
+
+mappingId	urn:MAPPING-ID19
+target		BNODE({c0}) a <http://example.com/example.owl/src_Institute> ; <http://example.com/example.owl/src_Institute#c0> {c0} . 
+source		SELECT * FROM "public"."src_Institute"
+
+mappingId	urn:MAPPING-ID20
+target		BNODE({c0}) a <http://example.com/example.owl/src_JournalArticle> ; <http://example.com/example.owl/src_JournalArticle#c0> {c0} . 
+source		SELECT * FROM "public"."src_JournalArticle"
+
+mappingId	urn:MAPPING-ID21
+target		BNODE({c0}) a <http://example.com/example.owl/src_Lecturer> ; <http://example.com/example.owl/src_Lecturer#c0> {c0} . 
+source		SELECT * FROM "public"."src_Lecturer"
+
+mappingId	urn:MAPPING-ID22
+target		BNODE({c0}) a <http://example.com/example.owl/src_Manual> ; <http://example.com/example.owl/src_Manual#c0> {c0} . 
+source		SELECT * FROM "public"."src_Manual"
+
+mappingId	urn:MAPPING-ID23
+target		BNODE({c0}) a <http://example.com/example.owl/src_Organization> ; <http://example.com/example.owl/src_Organization#c0> {c0} . 
+source		SELECT * FROM "public"."src_Organization"
+
+mappingId	urn:MAPPING-ID24
+target		BNODE({c0}) a <http://example.com/example.owl/src_Person> ; <http://example.com/example.owl/src_Person#c0> {c0} . 
+source		SELECT * FROM "public"."src_Person"
+
+mappingId	urn:MAPPING-ID25
+target		BNODE({c0}) a <http://example.com/example.owl/src_PostDoc> ; <http://example.com/example.owl/src_PostDoc#c0> {c0} . 
+source		SELECT * FROM "public"."src_PostDoc"
+
+mappingId	urn:MAPPING-ID26
+target		BNODE({c0}) a <http://example.com/example.owl/src_Professor> ; <http://example.com/example.owl/src_Professor#c0> {c0} . 
+source		SELECT * FROM "public"."src_Professor"
+
+mappingId	urn:MAPPING-ID27
+target		BNODE({c0}) a <http://example.com/example.owl/src_Program> ; <http://example.com/example.owl/src_Program#c0> {c0} . 
+source		SELECT * FROM "public"."src_Program"
+
+mappingId	urn:MAPPING-ID28
+target		BNODE({c0}) a <http://example.com/example.owl/src_Publication> ; <http://example.com/example.owl/src_Publication#c0> {c0} . 
+source		SELECT * FROM "public"."src_Publication"
+
+mappingId	urn:MAPPING-ID29
+target		BNODE({c0}) a <http://example.com/example.owl/src_Research> ; <http://example.com/example.owl/src_Research#c0> {c0} . 
+source		SELECT * FROM "public"."src_Research"
+
+mappingId	urn:MAPPING-ID30
+target		BNODE({c0}) a <http://example.com/example.owl/src_ResearchAssistant> ; <http://example.com/example.owl/src_ResearchAssistant#c0> {c0} . 
+source		SELECT * FROM "public"."src_ResearchAssistant"
+
+mappingId	urn:MAPPING-ID31
+target		BNODE({c0}) a <http://example.com/example.owl/src_ResearchGroup> ; <http://example.com/example.owl/src_ResearchGroup#c0> {c0} . 
+source		SELECT * FROM "public"."src_ResearchGroup"
+
+mappingId	urn:MAPPING-ID32
+target		BNODE({c0}) a <http://example.com/example.owl/src_Schedule> ; <http://example.com/example.owl/src_Schedule#c0> {c0} . 
+source		SELECT * FROM "public"."src_Schedule"
+
+mappingId	urn:MAPPING-ID33
+target		BNODE({c0}) a <http://example.com/example.owl/src_Software> ; <http://example.com/example.owl/src_Software#c0> {c0} . 
+source		SELECT * FROM "public"."src_Software"
+
+mappingId	urn:MAPPING-ID34
+target		BNODE({c0}) a <http://example.com/example.owl/src_Specification> ; <http://example.com/example.owl/src_Specification#c0> {c0} . 
+source		SELECT * FROM "public"."src_Specification"
+
+mappingId	urn:MAPPING-ID35
+target		BNODE({c0}) a <http://example.com/example.owl/src_Student> ; <http://example.com/example.owl/src_Student#c0> {c0} . 
+source		SELECT * FROM "public"."src_Student"
+
+mappingId	urn:MAPPING-ID36
+target		BNODE({c0}) a <http://example.com/example.owl/src_SystemsStaff> ; <http://example.com/example.owl/src_SystemsStaff#c0> {c0} . 
+source		SELECT * FROM "public"."src_SystemsStaff"
+
+mappingId	urn:MAPPING-ID37
+target		BNODE({c0}) a <http://example.com/example.owl/src_TeachingAssistant> ; <http://example.com/example.owl/src_TeachingAssistant#c0> {c0} . 
+source		SELECT * FROM "public"."src_TeachingAssistant"
+
+mappingId	urn:MAPPING-ID38
+target		BNODE({c0}) a <http://example.com/example.owl/src_TechnicalReport> ; <http://example.com/example.owl/src_TechnicalReport#c0> {c0} . 
+source		SELECT * FROM "public"."src_TechnicalReport"
+
+mappingId	urn:MAPPING-ID39
+target		BNODE({c0}) a <http://example.com/example.owl/src_UndergraduateStudent> ; <http://example.com/example.owl/src_UndergraduateStudent#c0> {c0} . 
+source		SELECT * FROM "public"."src_UndergraduateStudent"
+
+mappingId	urn:MAPPING-ID40
+target		BNODE({c0}) a <http://example.com/example.owl/src_University> ; <http://example.com/example.owl/src_University#c0> {c0} . 
+source		SELECT * FROM "public"."src_University"
+
+mappingId	urn:MAPPING-ID41
+target		BNODE({c0}) a <http://example.com/example.owl/src_UnofficialPublication> ; <http://example.com/example.owl/src_UnofficialPublication#c0> {c0} . 
+source		SELECT * FROM "public"."src_UnofficialPublication"
+
+mappingId	urn:MAPPING-ID42
+target		BNODE({c0}) a <http://example.com/example.owl/src_VisitingProfessor> ; <http://example.com/example.owl/src_VisitingProfessor#c0> {c0} . 
+source		SELECT * FROM "public"."src_VisitingProfessor"
+
+mappingId	urn:MAPPING-ID43
+target		BNODE({c0}) a <http://example.com/example.owl/src_Work> ; <http://example.com/example.owl/src_Work#c0> {c0} . 
+source		SELECT * FROM "public"."src_Work"
+
+mappingId	urn:MAPPING-ID44
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_advisor> ; <http://example.com/example.owl/src_advisor#c0> {c0} ; <http://example.com/example.owl/src_advisor#c1> {c1} . 
+source		SELECT * FROM "public"."src_advisor"
+
+mappingId	urn:MAPPING-ID45
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_affiliateOf> ; <http://example.com/example.owl/src_affiliateOf#c0> {c0} ; <http://example.com/example.owl/src_affiliateOf#c1> {c1} . 
+source		SELECT * FROM "public"."src_affiliateOf"
+
+mappingId	urn:MAPPING-ID46
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_affiliatedOrganizationOf> ; <http://example.com/example.owl/src_affiliatedOrganizationOf#c0> {c0} ; <http://example.com/example.owl/src_affiliatedOrganizationOf#c1> {c1} . 
+source		SELECT * FROM "public"."src_affiliatedOrganizationOf"
+
+mappingId	urn:MAPPING-ID47
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_age> ; <http://example.com/example.owl/src_age#c0> {c0} ; <http://example.com/example.owl/src_age#c1> {c1} . 
+source		SELECT * FROM "public"."src_age"
+
+mappingId	urn:MAPPING-ID48
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_degreeFrom> ; <http://example.com/example.owl/src_degreeFrom#c0> {c0} ; <http://example.com/example.owl/src_degreeFrom#c1> {c1} . 
+source		SELECT * FROM "public"."src_degreeFrom"
+
+mappingId	urn:MAPPING-ID49
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_doctoralDegreeFrom> ; <http://example.com/example.owl/src_doctoralDegreeFrom#c0> {c0} ; <http://example.com/example.owl/src_doctoralDegreeFrom#c1> {c1} . 
+source		SELECT * FROM "public"."src_doctoralDegreeFrom"
+
+mappingId	urn:MAPPING-ID50
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_emailAddress> ; <http://example.com/example.owl/src_emailAddress#c0> {c0} ; <http://example.com/example.owl/src_emailAddress#c1> {c1} . 
+source		SELECT * FROM "public"."src_emailAddress"
+
+mappingId	urn:MAPPING-ID51
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_hasAlumnus> ; <http://example.com/example.owl/src_hasAlumnus#c0> {c0} ; <http://example.com/example.owl/src_hasAlumnus#c1> {c1} . 
+source		SELECT * FROM "public"."src_hasAlumnus"
+
+mappingId	urn:MAPPING-ID52
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_headOf> ; <http://example.com/example.owl/src_headOf#c0> {c0} ; <http://example.com/example.owl/src_headOf#c1> {c1} . 
+source		SELECT * FROM "public"."src_headOf"
+
+mappingId	urn:MAPPING-ID53
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_listedCourse> ; <http://example.com/example.owl/src_listedCourse#c0> {c0} ; <http://example.com/example.owl/src_listedCourse#c1> {c1} . 
+source		SELECT * FROM "public"."src_listedCourse"
+
+mappingId	urn:MAPPING-ID54
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_mastersDegreeFrom> ; <http://example.com/example.owl/src_mastersDegreeFrom#c0> {c0} ; <http://example.com/example.owl/src_mastersDegreeFrom#c1> {c1} . 
+source		SELECT * FROM "public"."src_mastersDegreeFrom"
+
+mappingId	urn:MAPPING-ID55
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_member> ; <http://example.com/example.owl/src_member#c0> {c0} ; <http://example.com/example.owl/src_member#c1> {c1} . 
+source		SELECT * FROM "public"."src_member"
+
+mappingId	urn:MAPPING-ID56
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_memberOf> ; <http://example.com/example.owl/src_memberOf#c0> {c0} ; <http://example.com/example.owl/src_memberOf#c1> {c1} . 
+source		SELECT * FROM "public"."src_memberOf"
+
+mappingId	urn:MAPPING-ID57
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_name> ; <http://example.com/example.owl/src_name#c0> {c0} ; <http://example.com/example.owl/src_name#c1> {c1} . 
+source		SELECT * FROM "public"."src_name"
+
+mappingId	urn:MAPPING-ID58
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_orgPublication> ; <http://example.com/example.owl/src_orgPublication#c0> {c0} ; <http://example.com/example.owl/src_orgPublication#c1> {c1} . 
+source		SELECT * FROM "public"."src_orgPublication"
+
+mappingId	urn:MAPPING-ID59
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_publicationAuthor> ; <http://example.com/example.owl/src_publicationAuthor#c0> {c0} ; <http://example.com/example.owl/src_publicationAuthor#c1> {c1} . 
+source		SELECT * FROM "public"."src_publicationAuthor"
+
+mappingId	urn:MAPPING-ID60
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_publicationDate> ; <http://example.com/example.owl/src_publicationDate#c0> {c0} ; <http://example.com/example.owl/src_publicationDate#c1> {c1} . 
+source		SELECT * FROM "public"."src_publicationDate"
+
+mappingId	urn:MAPPING-ID61
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_publicationResearch> ; <http://example.com/example.owl/src_publicationResearch#c0> {c0} ; <http://example.com/example.owl/src_publicationResearch#c1> {c1} . 
+source		SELECT * FROM "public"."src_publicationResearch"
+
+mappingId	urn:MAPPING-ID62
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_researchInterest> ; <http://example.com/example.owl/src_researchInterest#c0> {c0} ; <http://example.com/example.owl/src_researchInterest#c1> {c1} . 
+source		SELECT * FROM "public"."src_researchInterest"
+
+mappingId	urn:MAPPING-ID63
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_researchProject> ; <http://example.com/example.owl/src_researchProject#c0> {c0} ; <http://example.com/example.owl/src_researchProject#c1> {c1} . 
+source		SELECT * FROM "public"."src_researchProject"
+
+mappingId	urn:MAPPING-ID64
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_softwareDocumentation> ; <http://example.com/example.owl/src_softwareDocumentation#c0> {c0} ; <http://example.com/example.owl/src_softwareDocumentation#c1> {c1} . 
+source		SELECT * FROM "public"."src_softwareDocumentation"
+
+mappingId	urn:MAPPING-ID65
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_softwareVersion> ; <http://example.com/example.owl/src_softwareVersion#c0> {c0} ; <http://example.com/example.owl/src_softwareVersion#c1> {c1} . 
+source		SELECT * FROM "public"."src_softwareVersion"
+
+mappingId	urn:MAPPING-ID66
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_subOrganizationOf> ; <http://example.com/example.owl/src_subOrganizationOf#c0> {c0} ; <http://example.com/example.owl/src_subOrganizationOf#c1> {c1} . 
+source		SELECT * FROM "public"."src_subOrganizationOf"
+
+mappingId	urn:MAPPING-ID67
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_takesCourse> ; <http://example.com/example.owl/src_takesCourse#c0> {c0} ; <http://example.com/example.owl/src_takesCourse#c1> {c1} . 
+source		SELECT * FROM "public"."src_takesCourse"
+
+mappingId	urn:MAPPING-ID68
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_teacherOf> ; <http://example.com/example.owl/src_teacherOf#c0> {c0} ; <http://example.com/example.owl/src_teacherOf#c1> {c1} . 
+source		SELECT * FROM "public"."src_teacherOf"
+
+mappingId	urn:MAPPING-ID69
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_teachingAssistantOf> ; <http://example.com/example.owl/src_teachingAssistantOf#c0> {c0} ; <http://example.com/example.owl/src_teachingAssistantOf#c1> {c1} . 
+source		SELECT * FROM "public"."src_teachingAssistantOf"
+
+mappingId	urn:MAPPING-ID70
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_telephone> ; <http://example.com/example.owl/src_telephone#c0> {c0} ; <http://example.com/example.owl/src_telephone#c1> {c1} . 
+source		SELECT * FROM "public"."src_telephone"
+
+mappingId	urn:MAPPING-ID71
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_tenured> ; <http://example.com/example.owl/src_tenured#c0> {c0} ; <http://example.com/example.owl/src_tenured#c1> {c1} . 
+source		SELECT * FROM "public"."src_tenured"
+
+mappingId	urn:MAPPING-ID72
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_title> ; <http://example.com/example.owl/src_title#c0> {c0} ; <http://example.com/example.owl/src_title#c1> {c1} . 
+source		SELECT * FROM "public"."src_title"
+
+mappingId	urn:MAPPING-ID73
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_undergraduateDegreeFrom> ; <http://example.com/example.owl/src_undergraduateDegreeFrom#c0> {c0} ; <http://example.com/example.owl/src_undergraduateDegreeFrom#c1> {c1} . 
+source		SELECT * FROM "public"."src_undergraduateDegreeFrom"
+
+mappingId	urn:MAPPING-ID74
+target		BNODE({c0}, {c1}) a <http://example.com/example.owl/src_worksFor> ; <http://example.com/example.owl/src_worksFor#c0> {c0} ; <http://example.com/example.owl/src_worksFor#c1> {c1} . 
+source		SELECT * FROM "public"."src_worksFor"
+]]
+

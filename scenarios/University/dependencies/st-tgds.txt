@@ -1,4 +1,5 @@
 src_advisor(?X,?Y) -> advisor(?X,?Y) .
+src_affiliatedOrganizationOf(?X,?Y) -> affiliatedOrganizationOf(?X,?Y) .
 src_AssistantProfessor(?X) -> AssistantProfessor(?X) .
 src_AssociateProfessor(?X) -> AssociateProfessor(?X) .
 src_Course(?X) -> Course(?X) .

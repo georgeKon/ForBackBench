@@ -1,0 +1,120 @@
+[PrefixDeclaration]
+example:    http://example.com/example.owl#
+
+[MappingDeclaration] @collection [[
+mappingId	MAPPING-ID1
+target		example:AssistantProfessor/{c0} a example:AssistantProfessor . 
+source		SELECT * FROM "src_AssistantProfessor"
+
+mappingId	MAPPING-ID2
+target		example:AssociateProfessor/{c0} a example:AssociateProfessor . 
+source		SELECT * FROM "src_AssociateProfessor"
+
+mappingId	MAPPING-ID3
+target		example:Course/{c0} a example:Course . 
+source		SELECT * FROM "src_Course"
+
+mappingId	MAPPING-ID4
+target		example:Department/{c0} a example:Department . 
+source		SELECT * FROM "src_Department"
+
+mappingId	MAPPING-ID5
+target		example:FullProfessor/{c0} a example:FullProfessor . 
+source		SELECT * FROM "src_FullProfessor"
+
+mappingId	MAPPING-ID6
+target		example:GraduateCourse/{c0} a example:GraduateCourse . 
+source		SELECT * FROM "src_GraduateCourse"
+
+mappingId	MAPPING-ID7
+target		example:GraduateStudent/{c0} a example:GraduateStudent . 
+source		SELECT * FROM "src_GraduateStudent"
+
+mappingId	MAPPING-ID8
+target		example:Lecturer/{c0} a example:Lecturer . 
+source		SELECT * FROM "src_Lecturer"
+
+mappingId	MAPPING-ID9
+target		example:Publication/{c0} a example:Publication . 
+source		SELECT * FROM "src_Publication"
+
+mappingId	MAPPING-ID10
+target		example:ResearchAssistant/{c0} a example:ResearchAssistant . 
+source		SELECT * FROM "src_ResearchAssistant"
+
+mappingId	MAPPING-ID11
+target		example:ResearchGroup/{c0} a example:ResearchGroup . 
+source		SELECT * FROM "src_ResearchGroup"
+
+mappingId	MAPPING-ID12
+target		example:TeachingAssistant/{c0} a example:TeachingAssistant . 
+source		SELECT * FROM "src_TeachingAssistant"
+
+mappingId	MAPPING-ID13
+target		example:UndergraduateStudent/{c0} a example:UndergraduateStudent . 
+source		SELECT * FROM "src_UndergraduateStudent"
+
+mappingId	MAPPING-ID14
+target		example:University/{c0} a example:University . 
+source		SELECT * FROM "src_University"
+
+mappingId	MAPPING-ID15
+target		example:Person/{c0} example:advisor example:Professor/{c1} . 
+source		SELECT * FROM "src_advisor"
+
+mappingId	MAPPING-ID20
+target		example:Organization/{c0} example:affiliatedOrganizationOf example:Organization/{c1} . 
+source		SELECT * FROM "src_affiliatedOrganizationOf"
+
+mappingId	MAPPING-ID21
+target		example:Person/{c0} example:emailAddress example:null/{c1} . 
+source		SELECT * FROM "src_emailAddress"
+
+mappingId	MAPPING-ID22
+target		example:Dean/{c0} example:headOf example:College/{c1} . 
+source		SELECT * FROM "src_headOf"
+
+mappingId	MAPPING-ID23
+target		example:Person/{c0} example:mastersDegreeFrom example:University/{c1} . 
+source		SELECT * FROM "src_mastersDegreeFrom"
+
+mappingId	MAPPING-ID24
+target		example:Person/{c0} example:memberOf example:Organization/{c1} . 
+source		SELECT * FROM "src_memberOf" 
+
+mappingId	MAPPING-ID50
+target		example:Organization/{c0} example:member example:Person/{c1} . 
+source		SELECT * FROM "src_member" 
+
+mappingId	MAPPING-ID25
+target		example:Person/{c0} example:publicationAuthor example:Publication/{c1} . 
+source		SELECT * FROM "src_publicationAuthor"
+
+mappingId	MAPPING-ID27
+target		example:Organization/{c0} example:subOrganizationOf example:Organization/{c1} . 
+source		SELECT * FROM "src_subOrganizationOf"
+
+mappingId	MAPPING-ID28
+target		example:Person/{c0} example:takesCourse example:Course/{c1} . 
+source		SELECT * FROM "src_takesCourse"
+
+mappingId	MAPPING-ID59
+target		example:Faculty/{c0} example:teacherOf example:Course/{c1} . 
+source		SELECT * FROM "src_teacherOf"
+
+mappingId	MAPPING-ID61
+target		example:TeachingAssistant/{c0} example:teachingAssistantOf example:Course/{c1} . 
+source		SELECT * FROM "src_teachingAssistantOf"
+
+mappingId	MAPPING-ID62
+target		example:Person/{c0} example:telephone example:null/{c1} . 
+source		SELECT * FROM "src_telephone"
+
+mappingId	MAPPING-ID63
+target		example:Person/{c0} example:undergraduateDegreeFrom example:University/{c1} . 
+source		SELECT * FROM "src_undergraduateDegreeFrom"
+
+mappingId	MAPPING-ID60
+target		example:Person/{c0} example:worksFor example:Organization/{c1} . 
+source		SELECT * FROM "src_worksFor"
+]]

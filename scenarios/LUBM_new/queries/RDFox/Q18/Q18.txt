@@ -1,0 +1,1 @@
+Q18(?0) <- Person(?0),hasAlumnus(?1,?0) .

@@ -1,0 +1,10 @@
+PREFIX : <http://example.com/example.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?0 ?1 WHERE {
+  ?0 rdf:type :GraduateStudent.
+  ?1 rdf:type :University.
+  ?2 rdf:type :Department.
+  ?0 :memberOf ?2.
+  ?2 :subOrganizationOf ?1.
+  ?0 :undergraduateDegreeFrom ?1.
+}

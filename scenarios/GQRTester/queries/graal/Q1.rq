@@ -1,0 +1,11 @@
+PREFIX : <http://example.com/example.owl#>
+SELECT DISTINCT ?X,0 ?X,1 ?X,2 ?X,4 ?X,1,1 ?X,1,3 ?X,1,4 ?X,1,8 ?X,1,9 ? WHERE {
+  ?X,0 :m1004 ?X,1.
+  ?X,1 :m19004 ?X,2.
+  ?X,2 :m14004 ?X,3.
+  ?X,3 :m13004 ?X,4.
+  ?X,4 :m13004 ?X,5.
+  ?X,5 :m5004 ?X,6.
+  ?X,6 :m4004 ?X,7.
+  ?X,7 :m4004 ?X,8.
+}

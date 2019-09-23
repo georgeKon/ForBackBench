@@ -51,10 +51,10 @@
     
     
     <owl:ObjectProperty rdf:about="http://example.com/example.owl#headOf">
-        
-        
-        <rdfs:domain rdf:resource="http://example.com/example.owl#worksFor"/>
-        
+                
+        <rdfs:domain rdf:resource="http://example.com/example.owl#Person"/>
+
+        <rdfs:range rdf:resource="http://example.com/example.owl#Organization"/>
         
         <rdfs:subPropertyOf rdf:resource="http://example.com/example.owl#worksFor"/>
         
@@ -118,10 +118,10 @@
     
     <owl:ObjectProperty rdf:about="http://example.com/example.owl#worksFor">
         
-        
-        <rdfs:domain rdf:resource="http://example.com/example.owl#memberOf"/>
-        
-        
+        <rdfs:domain rdf:resource="http://example.com/example.owl#Person"/>
+
+        <rdfs:range rdf:resource="http://example.com/example.owl#Organization"/>
+                
         <rdfs:subPropertyOf rdf:resource="http://example.com/example.owl#memberOf"/>
         
     
@@ -175,10 +175,10 @@
     
     <owl:ObjectProperty rdf:about="http://example.com/example.owl#memberOf">
         
-        
-        <rdfs:range rdf:resource="http://example.com/example.owl#member"/>
-        
-        
+        <rdfs:domain rdf:resource="http://example.com/example.owl#Person"/>
+
+        <rdfs:range rdf:resource="http://example.com/example.owl#Organization"/>
+               
         <owl:inverseOf rdf:resource="http://example.com/example.owl#member"/>
         
     

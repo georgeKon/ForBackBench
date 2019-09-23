@@ -1,0 +1,293 @@
+[PrefixDeclaration]
+ns:  http://example.com/example.owl#
+
+[MappingDeclaration] @collection [[
+mappingId ID991517780
+target  ns:ns/{c0} a ns:AdministrativeStaff . 
+source  SELECT c0 FROM "src_AdministrativeStaff"
+
+mappingId ID-1817798243
+target  ns:ns/{c0} ns:advisor ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_advisor"
+
+mappingId ID1416997679
+target  ns:ns/{c0} ns:affiliatedOrganizationOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_affiliatedOrganizationOf"
+
+mappingId ID264281603
+target  ns:ns/{c0} ns:affiliateOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_affiliateOf"
+
+mappingId ID-1933148296
+target  ns:ns/{c0} ns:age ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_age"
+
+mappingId ID-1314597452
+target  ns:ns/{c0} a ns:Article . 
+source  SELECT c0 FROM "src_Article"
+
+mappingId ID-2096885392
+target  ns:ns/{c0} a ns:AssistantProfessor . 
+source  SELECT c0 FROM "src_AssistantProfessor"
+
+mappingId ID450464622
+target  ns:ns/{c0} a ns:AssociateProfessor . 
+source  SELECT c0 FROM "src_AssociateProfessor"
+
+mappingId ID-301076279
+target  ns:ns/{c0} a ns:Book . 
+source  SELECT c0 FROM "src_Book"
+
+mappingId ID1585310562
+target  ns:ns/{c0} a ns:Chair . 
+source  SELECT c0 FROM "src_Chair"
+
+mappingId ID-509975940
+target  ns:ns/{c0} a ns:ClericalStaff . 
+source  SELECT c0 FROM "src_ClericalStaff"
+
+mappingId ID-2067805312
+target  ns:ns/{c0} a ns:College . 
+source  SELECT c0 FROM "src_College"
+
+mappingId ID216691750
+target  ns:ns/{c0} a ns:ConferencePaper . 
+source  SELECT c0 FROM "src_ConferencePaper"
+
+mappingId ID1537830459
+target  ns:ns/{c0} a ns:Course . 
+source  SELECT c0 FROM "src_Course"
+
+mappingId ID1000552439
+target  ns:ns/{c0} a ns:Dean . 
+source  SELECT c0 FROM "src_Dean"
+
+mappingId ID-424790053
+target  ns:ns/{c0} ns:degreeFrom ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_degreeFrom"
+
+mappingId ID-606407502
+target  ns:ns/{c0} a ns:Department . 
+source  SELECT c0 FROM "src_Department"
+
+mappingId ID2028102062
+target  ns:ns/{c0} a ns:Director . 
+source  SELECT c0 FROM "src_Director"
+
+mappingId ID-2057451681
+target  ns:ns/{c0} ns:doctoralDegreeFrom ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_doctoralDegreeFrom"
+
+mappingId ID1897864075
+target  ns:ns/{c0} ns:emailAddress ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_emailAddress"
+
+mappingId ID1098961040
+target  ns:ns/{c0} a ns:Employee . 
+source  SELECT c0 FROM "src_Employee"
+
+mappingId ID1666159485
+target  ns:ns/{c0} a ns:Faculty . 
+source  SELECT c0 FROM "src_Faculty"
+
+mappingId ID1279303024
+target  ns:ns/{c0} a ns:FullProfessor . 
+source  SELECT c0 FROM "src_FullProfessor"
+
+mappingId ID-228469601
+target  ns:ns/{c0} a ns:GraduateCourse . 
+source  SELECT c0 FROM "src_GraduateCourse"
+
+mappingId ID-1578066706
+target  ns:ns/{c0} a ns:GraduateStudent . 
+source  SELECT c0 FROM "src_GraduateStudent"
+
+mappingId ID-659379864
+target  ns:ns/{c0} ns:hasAlumnus ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasAlumnus"
+
+mappingId ID-2109592631
+target  ns:ns/{c0} ns:headOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_headOf"
+
+mappingId ID1592818426
+target  ns:ns/{c0} a ns:Institute . 
+source  SELECT c0 FROM "src_Institute"
+
+mappingId ID-2105760187
+target  ns:ns/{c0} a ns:JournalArticle . 
+source  SELECT c0 FROM "src_JournalArticle"
+
+mappingId ID-1970416085
+target  ns:ns/{c0} a ns:Lecturer . 
+source  SELECT c0 FROM "src_Lecturer"
+
+mappingId ID2120879310
+target  ns:ns/{c0} ns:listedCourse ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_listedCourse"
+
+mappingId ID-528965526
+target  ns:ns/{c0} a ns:Manual . 
+source  SELECT c0 FROM "src_Manual"
+
+mappingId ID930132190
+target  ns:ns/{c0} ns:mastersDegreeFrom ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_mastersDegreeFrom"
+
+mappingId ID-1212454485
+target  ns:ns/{c0} ns:member ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_member"
+
+mappingId ID-1780997680
+target  ns:ns/{c0} ns:memberOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_memberOf"
+
+mappingId ID1680309753
+target  ns:ns/{c0} a ns:Organization . 
+source  SELECT c0 FROM "src_Organization"
+
+mappingId ID-1934967401
+target  ns:ns/{c0} ns:orgPublication ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_orgPublication"
+
+mappingId ID-1829654421
+target  ns:ns/{c0} a ns:Person . 
+source  SELECT c0 FROM "src_Person"
+
+mappingId ID-744689813
+target  ns:ns/{c0} a ns:PostDoc . 
+source  SELECT c0 FROM "src_PostDoc"
+
+mappingId ID687547011
+target  ns:ns/{c0} a ns:Professor . 
+source  SELECT c0 FROM "src_Professor"
+
+mappingId ID-1770727706
+target  ns:ns/{c0} a ns:Program . 
+source  SELECT c0 FROM "src_Program"
+
+mappingId ID1432409668
+target  ns:ns/{c0} a ns:Publication . 
+source  SELECT c0 FROM "src_Publication"
+
+mappingId ID-711926737
+target  ns:ns/{c0} ns:publicationAuthor ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_publicationAuthor"
+
+mappingId ID551515784
+target  ns:ns/{c0} ns:publicationDate ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_publicationDate"
+
+mappingId ID2076191262
+target  ns:ns/{c0} ns:publicationResearch ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_publicationResearch"
+
+mappingId ID-1254113195
+target  ns:ns/{c0} a ns:Research . 
+source  SELECT c0 FROM "src_Research"
+
+mappingId ID1460548994
+target  ns:ns/{c0} a ns:ResearchAssistant . 
+source  SELECT c0 FROM "src_ResearchAssistant"
+
+mappingId ID1551313219
+target  ns:ns/{c0} a ns:ResearchGroup . 
+source  SELECT c0 FROM "src_ResearchGroup"
+
+mappingId ID-970854159
+target  ns:ns/{c0} ns:researchProject ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_researchProject"
+
+mappingId ID-336063945
+target  ns:ns/{c0} a ns:Schedule . 
+source  SELECT c0 FROM "src_Schedule"
+
+mappingId ID1112284868
+target  ns:ns/{c0} a ns:Software . 
+source  SELECT c0 FROM "src_Software"
+
+mappingId ID-824321285
+target  ns:ns/{c0} ns:softwareDocumentation ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_softwareDocumentation"
+
+mappingId ID183955253
+target  ns:ns/{c0} ns:softwareVersion ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_softwareVersion"
+
+mappingId ID-2047815051
+target  ns:ns/{c0} a ns:Specification . 
+source  SELECT c0 FROM "src_Specification"
+
+mappingId ID1817628340
+target  ns:ns/{c0} a ns:Student . 
+source  SELECT c0 FROM "src_Student"
+
+mappingId ID-1380837224
+target  ns:ns/{c0} ns:subOrganizationOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_subOrganizationOf"
+
+mappingId ID203065579
+target  ns:ns/{c0} a ns:SystemsStaff . 
+source  SELECT c0 FROM "src_SystemsStaff"
+
+mappingId ID-1845861829
+target  ns:ns/{c0} ns:takesCourse ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_takesCourse"
+
+mappingId ID948158226
+target  ns:ns/{c0} ns:teacherOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_teacherOf"
+
+mappingId ID-1886716808
+target  ns:ns/{c0} a ns:TeachingAssistant . 
+source  SELECT c0 FROM "src_TeachingAssistant"
+
+mappingId ID2045424764
+target  ns:ns/{c0} ns:teachingAssistantOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_teachingAssistantOf"
+
+mappingId ID391494732
+target  ns:ns/{c0} a ns:TechnicalReport . 
+source  SELECT c0 FROM "src_TechnicalReport"
+
+mappingId ID-49892732
+target  ns:ns/{c0} ns:telephone ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_telephone"
+
+mappingId ID1223067779
+target  ns:ns/{c0} ns:tenured ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_tenured"
+
+mappingId ID-1943909052
+target  ns:ns/{c0} ns:title ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_title"
+
+mappingId ID-629395655
+target  ns:ns/{c0} ns:undergraduateDegreeFrom ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_undergraduateDegreeFrom"
+
+mappingId ID-46746435
+target  ns:ns/{c0} a ns:UndergraduateStudent . 
+source  SELECT c0 FROM "src_UndergraduateStudent"
+
+mappingId ID-757396100
+target  ns:ns/{c0} a ns:University . 
+source  SELECT c0 FROM "src_University"
+
+mappingId ID-1213756844
+target  ns:ns/{c0} a ns:UnofficialPublication . 
+source  SELECT c0 FROM "src_UnofficialPublication"
+
+mappingId ID-1184102705
+target  ns:ns/{c0} a ns:VisitingProfessor . 
+source  SELECT c0 FROM "src_VisitingProfessor"
+
+mappingId ID1700821211
+target  ns:ns/{c0} a ns:Work . 
+source  SELECT c0 FROM "src_Work"
+
+mappingId ID1084699546
+target  ns:ns/{c0} ns:worksFor ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_worksFor"
+
+]]

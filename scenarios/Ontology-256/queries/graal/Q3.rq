@@ -1,0 +1,6 @@
+PREFIX : <http://example.com/example.owl#>
+SELECT DISTINCT ?0 WHERE {
+  ?0 :waxad60nl0ce0 ?1;
+    :steelad42nl0ce0 ?2.
+  ?1 :tightvi49nl0ce1 ?3.
+}

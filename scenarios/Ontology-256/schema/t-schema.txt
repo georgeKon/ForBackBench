@@ -1,0 +1,2008 @@
+acceptvnm4nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+accountvh9nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+achievevh48nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+actvh17nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+adjustmentvnm14nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+advertisementvi14nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+affordvh16nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+agenciesvh20nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+agreementvh35nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+amountvnm18nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+angryvnm39nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+animalvh6nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+answervh59nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+approvalvi2nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+approvalvi37nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+archvi46nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+arguevnm6nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+armvnm49nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+arrangevh19nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+attackvnm19nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+attorneyvh34nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+authorityvnm24nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+authorityvnm26nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+avoidvi61nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+avoidvnm18nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+awakevnm7nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+babyvnm17nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+backvh13nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+bandvi18nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+bandvi36nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+basevh62nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+beautifulvh11nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+bedvi22nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+beevi16nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+believevnm14nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+bellvnm62nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+bloodvnm54nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+blowvi2nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+bluevh1nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+bluevh61nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+bluevnm22nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+bodyvh43nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+bootvnm5nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+bottlevnm37nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+branchvnm22nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+breathvnm38nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+brickvnm50nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+brushvh19nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+bucketvh49nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+businessvi11nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+buttervnm15nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+canvasvnm31nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+cardvnm52nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+carryvnm57nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+cartvh57nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+chalkvi19nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+changevi15nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+chargevh3nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+chemicalvh38nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+churchvnm10nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+churchvnm7nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+clearvh48nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+climbvi32nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+clockad7nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+clothvh46nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+coatvh14nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+collarvi33nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+collarvnm63nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+collectionvnm2nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+colorvnm30nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+comevi10nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+commonvnm60nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+comparevi46nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+comparevnm11nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+complainvi8nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+completevh4nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+complexvh12nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+concernvh23nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+concernvnm63nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+confirmvh21nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+connectionvh42nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+consciousvnm13nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+containvh15nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+containvnm38nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+contributevnm45nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+cookvi21nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+copyad36nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+couldvnm62nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+countvh4nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+countvnm31nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+cowvh31nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+crossvh17nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+curvevi58nl0ce0m {
+    c0 : STRING,
+    c1 : STRING
+}
+
+cushionvnm62nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+cutvh39nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+damagead33nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+darkvnm27nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+dayvh43nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+deepad16nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+degreevh28nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+degreevi9nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+delicatevi26nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+delicatevi38nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+delivervh51nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+delivervi28nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+dependentvnm5nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+describevh1nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+developvi36nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+dievnm37nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+differentvi1nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+digestionvnm10nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+discovervi29nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+discussvnm32nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+diseasevi45nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+doorvh3nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+dustvi25nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+eatad8nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+edgevi29nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+effectvi47nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+electricvi25nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+encouragevi64nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+endvnm21nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+enginevnm12nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+errorvi56nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+examinevnm20nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+examplevh23nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+existvnm42nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+expansionvnm1nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+experiencevnm40nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+expertvi31nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+expressvnm26nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+facevh25nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+facevh28nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+factvi48nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+fallvh29nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+fallvh47nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+fallvnm60nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+familyvnm20nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+farmvnm3nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+fathervh14nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+feeblevi33nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+femalevi60nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+fertilevh7nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+fertilevnm57nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+fictionvh9nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+firstvnm11nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+fishvi49nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+flowervnm48nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+flyvh39nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+flyvh64nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+flyvi7nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+forgivevi9nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+forgivevnm33nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+foundvh44nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+gardenvnm45nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+girlvh57nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+givevi6nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+glovevh36nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+goldvnm40nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+goldvnm4nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+grassvnm46nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+greenvnm8nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+greyvi61nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+greyvnm64nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+groupvnm44nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+gunvi63nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+hammervnm7nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+handlevnm2nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+happenvh45nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+hatevh6nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+havevh27nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+havevi24nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+helpvi35nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+hidevi17nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+hidevi20nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+historyvnm25nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+holdvnm50nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+horsevnm64nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+illvi32nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+imaginevi28nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+indicatevi40nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+industryvi52nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+industryvnm44nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+intendvnm47nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+inventionvh26nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+involvevh2nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+involvevi16nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+involvevi4nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+involvevnm21nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+jellyvi60nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+jewelvi15nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+joinvi34nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+jumpvh36nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+jumpvnm8nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+killad38nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+kindvi3nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+knockvh58nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+knotvnm27nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+knotvnm33nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+knowledgevi38nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+knowvh15nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+languagevh49nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+languagevnm21nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+languagevnm3nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+latevi7nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+latevnm6nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+layvnm58nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+learnvh56nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+leathervnm27nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+leftvnm22nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+letvh37nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+levelvh18nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+liftvi30nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+lightvi52nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+linevh53nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+liquidvnm58nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+lockvnm54nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+longvi10nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+lookvi13nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+loosevh56nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+loosevnm13nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+loosevnm58nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+machinevnm24nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+managervnm49nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+materialvh31nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+mattervnm19nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+mealvh46nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+meanvi59nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+measurevnm12nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+mentionvi4nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+mindvh22nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+minevh32nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+mistvnm25nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+moonvnm32nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+mouthvnm44nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+movevh40nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+movevnm37nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+movevnm53nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+musicvnm53nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+mustvnm48nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+narrowvi45nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+nationvh58nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+nationvi27nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+neckvi64nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+needvi27nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+nightvh38nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+obtainvi48nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+offervnm57nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+officevnm46nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+openvh33nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+orangevh41nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+ovenvh25nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+ovenvi6nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+ovenvnm18nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+ownvnm47nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+pagevh60nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+paintvh24nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+painvi5nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+painvnm4nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+papervh22nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+parallelvnm2nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+peacevi34nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+peacevi40nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+placevh40nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+placevnm1nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+platevi30nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+playvh59nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+playvi58nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+playvnm11nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+pointvi18nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+pointvnm10nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+poisonvnm46nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+politicalvnm3nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+presentvh18nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+presentvnm15nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+privatevnm54nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+probablevh5nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+processvnm49nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+protestad56nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+protestvh30nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+protestvi35nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+provevi3nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+providevi12nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+providevi26nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+punishmentvnm24nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+raisevnm17nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+readingad32nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+readingvnm16nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+reasonad18nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+recordvh5nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+recordvnm23nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+reflectvh16nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+regretvi54nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+regretvnm30nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+relatevnm42nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+relationvnm53nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+remainvnm20nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+replyvh10nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+replyvh30nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+reportvnm38nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+requirevh10nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+respectvh37nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+restvh34nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+restvnm1nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+returnvnm28nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+ringvnm40nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+ringvnm9nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+risevnm28nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+roomvnm9nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+roundvh51nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+safevnm60nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+sciencevnm63nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+screwvi21nl0ce0 {
+    c0 : STRING
+}
+
+seaad21nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+seavnm5nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+secondvnm16nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+secretvi12nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+seemvh35nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+selectionvnm29nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+sensevnm42nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+separatevh27nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+separatevi41nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+settlevh8nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+shadevh45nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+shakevnm23nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+shamevnm29nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+shoevi17nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+shutvi37nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+shutvnm28nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+sidevh41nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+simplevnm23nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+sistervnm15nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+sizevnm17nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+skinvi24nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+skinvnm14nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+sleepvnm12nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+smellvh62nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+smilevi19nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+smokevi14nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+smokevnm52nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+snakevi8nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+snowvnm52nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+societyvi1nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+societyvi22nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+sockvnm26nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+softvnm29nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+solidvh47nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+sortvi31nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+soundvi47nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+stickvh61nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+stitchvnm19nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+stitchvnm32nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+stonevh7nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+straightvi5nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+substancevi59nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+summervnm39nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+summervnm6nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+sunvh42nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+swimvi54nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+systemvh24nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+testvh32nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+threadvi13nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+thumbvh29nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+tightvi49nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+tinvnm16nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+touchvh21nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+touchvh8nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+touchvi41nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+trayvh44nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+trickvnm8nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+truevnm47nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+tryvh12nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+twistvh64nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+twistvi56nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+usead61nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+usevh26nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+usevh2nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+usevi23nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+usevnm64nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+versevh33nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+violentvi20nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+voicevnm48nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+voicevnm9nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+waitvnm13nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+warvnm25nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+watchvh11nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+watchvh53nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+wavevh20nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+wayvnm39nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+weathervnm31nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+weightvh60nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+wetvh13nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+whistlead49nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+whitevi23nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+workvnm30nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+workvnm50nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+wouldvi63nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+yellowvi11nl0ce1 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+yellowvnm33nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+yellowvnm45nl0ce2 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+waxad60nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}
+
+steelad42nl0ce0 {
+    c0 : STRING,
+    c1 : STRING
+}

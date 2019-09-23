@@ -1,0 +1,1 @@
+Q19(?0) <- UndergraduateStudent(?0) .

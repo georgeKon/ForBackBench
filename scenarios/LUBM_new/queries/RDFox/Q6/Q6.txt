@@ -1,0 +1,1 @@
+Q6(?0) <- GraduateStudent(?0),takesCourse(?0,?1) .

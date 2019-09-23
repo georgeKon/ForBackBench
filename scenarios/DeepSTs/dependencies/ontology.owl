@@ -1,0 +1,859 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.com/example.owl#" xml:base="http://example.com/example.owl" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">  
+
+<owl:Ontology rdf:about="http://example.com/example.owl"/>
+
+<owl:Class rdf:about="#m57004"/>
+<owl:Class rdf:about="#m161004"/>
+<owl:ObjectProperty rdf:about="#m184004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m184004">
+<owl:inverseOf rdf:resource="m184004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m190004"/>
+<owl:Class rdf:about="#m235004"/>
+<owl:Class rdf:about="#m212004"/>
+<owl:ObjectProperty rdf:about="#m11004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m11004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m216004"/>
+<owl:someValuesFrom rdf:resource="#m255004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m11004">
+<owl:inverseOf rdf:resource="m11004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m100004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m100004">
+<owl:inverseOf rdf:resource="m100004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m255004"/>
+<owl:ObjectProperty rdf:about="#m92004">
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m92004"/>
+<owl:someValuesFrom rdf:resource="#m180004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m92004">
+<owl:inverseOf rdf:resource="m92004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m48004"/>
+<owl:Class rdf:about="#m169004"/>
+<owl:ObjectProperty rdf:about="#m40004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m40004">
+<owl:inverseOf rdf:resource="m40004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m287004"/>
+<owl:ObjectProperty rdf:about="#m155004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m155004">
+<owl:inverseOf rdf:resource="m155004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m3004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m3004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m84004"/>
+<owl:someValuesFrom rdf:resource="#m112004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m3004">
+<owl:inverseOf rdf:resource="m3004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m117004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m117004">
+<owl:inverseOf rdf:resource="m117004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m63004"/>
+<owl:ObjectProperty rdf:about="#m264004">
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m264004"/>
+<owl:someValuesFrom rdf:resource="#m76004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m264004">
+<owl:inverseOf rdf:resource="m264004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m25004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m25004">
+<owl:inverseOf rdf:resource="m25004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m83004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m83004">
+<owl:inverseOf rdf:resource="m83004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m114004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m114004">
+<owl:inverseOf rdf:resource="m114004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m296004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m296004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m296004">
+<owl:inverseOf rdf:resource="m296004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m77004"/>
+<owl:ObjectProperty rdf:about="#m166004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m166004">
+<owl:inverseOf rdf:resource="m166004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m238004"/>
+<owl:Class rdf:about="#m39004"/>
+<owl:Class rdf:about="#m52004"/>
+<owl:ObjectProperty rdf:about="#m120004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m120004">
+<owl:inverseOf rdf:resource="m120004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m108004"/>
+<owl:Class rdf:about="#m141004"/>
+<owl:ObjectProperty rdf:about="#m217004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m217004">
+<owl:inverseOf rdf:resource="m217004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m31004"/>
+<owl:Class rdf:about="#m250004"/>
+<owl:Class rdf:about="#m258004"/>
+<owl:ObjectProperty rdf:about="#m72004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m3004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m72004"/>
+<owl:someValuesFrom rdf:resource="#m225004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m72004">
+<owl:inverseOf rdf:resource="m72004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m6004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m6004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m6004">
+<owl:inverseOf rdf:resource="m6004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m45004"/>
+<owl:Class rdf:about="#m198004"/>
+<owl:Class rdf:about="#m282004"/>
+<owl:Class rdf:about="#m97004"/>
+<owl:ObjectProperty rdf:about="#m152004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m152004">
+<owl:inverseOf rdf:resource="m152004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m66004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m10004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+<rdfs:range rdf:resource="#m253004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m66004">
+<owl:inverseOf rdf:resource="m66004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m128004">
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m128004"/>
+<owl:someValuesFrom rdf:resource="#m138004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m128004">
+<owl:inverseOf rdf:resource="m128004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m149004"/>
+<owl:ObjectProperty rdf:about="#m20004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m20004">
+<owl:inverseOf rdf:resource="m20004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m206004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m206004">
+<owl:inverseOf rdf:resource="m206004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m55004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m55004">
+<owl:inverseOf rdf:resource="m55004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m138004"/>
+<owl:ObjectProperty rdf:about="#m84004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m84004">
+<owl:inverseOf rdf:resource="m84004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m1004"/>
+<owl:ObjectProperty rdf:about="#m78004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m78004">
+<owl:inverseOf rdf:resource="m78004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m144004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m5004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m144004">
+<owl:inverseOf rdf:resource="m144004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m90004"/>
+<owl:ObjectProperty rdf:about="#m105004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m5004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m105004"/>
+<owl:someValuesFrom rdf:resource="#m27004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m105004">
+<owl:inverseOf rdf:resource="m105004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m230004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m230004">
+<owl:inverseOf rdf:resource="m230004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m272004"/>
+<owl:ObjectProperty rdf:about="#m36004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m36004">
+<owl:inverseOf rdf:resource="m36004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m13004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m13004">
+<owl:inverseOf rdf:resource="m13004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m210004">
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m210004"/>
+<owl:someValuesFrom rdf:resource="#m280004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m210004">
+<owl:inverseOf rdf:resource="m210004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m9004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m9004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m288004"/>
+<owl:someValuesFrom rdf:resource="#m108004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m9004">
+<owl:inverseOf rdf:resource="m9004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m125004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m125004">
+<owl:inverseOf rdf:resource="m125004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m153004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m153004">
+<owl:inverseOf rdf:resource="m153004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m285004"/>
+<owl:Class rdf:about="#m172004"/>
+<owl:ObjectProperty rdf:about="#m299004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m299004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m298004"/>
+<owl:someValuesFrom rdf:resource="#m113004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m299004">
+<owl:inverseOf rdf:resource="m299004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m167004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m167004">
+<owl:inverseOf rdf:resource="m167004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m27004"/>
+<owl:ObjectProperty rdf:about="#m61004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m61004">
+<owl:inverseOf rdf:resource="m61004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m111004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m111004">
+<owl:inverseOf rdf:resource="m111004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m33004"/>
+<owl:ObjectProperty rdf:about="#m58004">
+<rdfs:range rdf:resource="#m45004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m58004">
+<owl:inverseOf rdf:resource="m58004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m81004"/>
+<owl:ObjectProperty rdf:about="#m164004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m164004">
+<owl:inverseOf rdf:resource="m164004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m288004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m288004">
+<owl:inverseOf rdf:resource="m288004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m75004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m2004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+<rdfs:range rdf:resource="#m151004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m75004">
+<owl:inverseOf rdf:resource="m75004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m50004"/>
+<owl:ObjectProperty rdf:about="#m102004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m102004">
+<owl:inverseOf rdf:resource="m102004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m280004"/>
+<owl:ObjectProperty rdf:about="#m150004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m150004">
+<owl:inverseOf rdf:resource="m150004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m277004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m277004">
+<owl:inverseOf rdf:resource="m277004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m4004"/>
+<owl:Class rdf:about="#m147004"/>
+<owl:ObjectProperty rdf:about="#m175004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m175004">
+<owl:inverseOf rdf:resource="m175004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m89004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m89004">
+<owl:inverseOf rdf:resource="m89004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m64004"/>
+<owl:ObjectProperty rdf:about="#m263004">
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m263004"/>
+<owl:someValuesFrom rdf:resource="#m115004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m263004">
+<owl:inverseOf rdf:resource="m263004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m133004"/>
+<owl:ObjectProperty rdf:about="#m229004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m229004">
+<owl:inverseOf rdf:resource="m229004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m204004"/>
+<owl:Class rdf:about="#m113004"/>
+<owl:Class rdf:about="#m82004"/>
+<owl:ObjectProperty rdf:about="#m268004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m268004">
+<owl:inverseOf rdf:resource="m268004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m188004"/>
+<owl:Class rdf:about="#m297004"/>
+<owl:Class rdf:about="#m251004"/>
+<owl:Class rdf:about="#m180004"/>
+<owl:Class rdf:about="#m76004"/>
+<owl:Class rdf:about="#m274004"/>
+<owl:ObjectProperty rdf:about="#m53004">
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m53004"/>
+<owl:someValuesFrom rdf:resource="#m168004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m53004">
+<owl:inverseOf rdf:resource="m53004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m107004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m107004">
+<owl:inverseOf rdf:resource="m107004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m38004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m10004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m38004"/>
+<owl:someValuesFrom rdf:resource="#m149004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m38004">
+<owl:inverseOf rdf:resource="m38004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m216004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m216004">
+<owl:inverseOf rdf:resource="m216004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m30004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m30004">
+<owl:inverseOf rdf:resource="m30004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m151004"/>
+<owl:ObjectProperty rdf:about="#m283004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m283004">
+<owl:inverseOf rdf:resource="m283004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m44004"/>
+<owl:Class rdf:about="#m7004"/>
+<owl:Class rdf:about="#m197004"/>
+<owl:Class rdf:about="#m67004"/>
+<owl:ObjectProperty rdf:about="#m127004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m10004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m127004"/>
+<owl:someValuesFrom rdf:resource="#m202004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m127004">
+<owl:inverseOf rdf:resource="m127004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m174004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m174004">
+<owl:inverseOf rdf:resource="m174004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m260004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m296004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m260004"/>
+<owl:someValuesFrom rdf:resource="#m297004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m260004">
+<owl:inverseOf rdf:resource="m260004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m207004"/>
+<owl:ObjectProperty rdf:about="#m21004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m5004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m21004">
+<owl:inverseOf rdf:resource="m21004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m10004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m2004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m10004">
+<owl:inverseOf rdf:resource="m10004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m56004"/>
+<owl:Class rdf:about="#m271004"/>
+<owl:Class rdf:about="#m35004"/>
+<owl:ObjectProperty rdf:about="#m139004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m139004">
+<owl:inverseOf rdf:resource="m139004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m87004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m87004">
+<owl:inverseOf rdf:resource="m87004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m156004"/>
+<owl:Class rdf:about="#m104004"/>
+<owl:Class rdf:about="#m234004"/>
+<owl:Class rdf:about="#m213004"/>
+<owl:Class rdf:about="#m145004"/>
+<owl:Class rdf:about="#m93004"/>
+<owl:Class rdf:about="#m279004"/>
+<owl:ObjectProperty rdf:about="#m2004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m2004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m240004"/>
+<owl:someValuesFrom rdf:resource="#m4004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m2004">
+<owl:inverseOf rdf:resource="m2004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m202004"/>
+<owl:ObjectProperty rdf:about="#m131004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m131004">
+<owl:inverseOf rdf:resource="m131004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m227004"/>
+<owl:ObjectProperty rdf:about="#m265004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m265004">
+<owl:inverseOf rdf:resource="m265004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m62004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m62004">
+<owl:inverseOf rdf:resource="m62004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m24004"/>
+<owl:Class rdf:about="#m110004"/>
+<owl:Class rdf:about="#m41004"/>
+<owl:ObjectProperty rdf:about="#m240004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m240004">
+<owl:inverseOf rdf:resource="m240004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m220004">
+<rdfs:range rdf:resource="#m255004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m220004">
+<owl:inverseOf rdf:resource="m220004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m80004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m80004">
+<owl:inverseOf rdf:resource="m80004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m109004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m109004">
+<owl:inverseOf rdf:resource="m109004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m134004">
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m134004"/>
+<owl:someValuesFrom rdf:resource="#m50004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m134004">
+<owl:inverseOf rdf:resource="m134004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m59004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m59004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m59004">
+<owl:inverseOf rdf:resource="m59004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m163004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m6004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m163004"/>
+<owl:someValuesFrom rdf:resource="#m97004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m163004">
+<owl:inverseOf rdf:resource="m163004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m295004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m295004">
+<owl:inverseOf rdf:resource="m295004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m289004"/>
+<owl:Class rdf:about="#m157004"/>
+<owl:Class rdf:about="#m88004"/>
+<owl:Class rdf:about="#m51004"/>
+<owl:Class rdf:about="#m253004"/>
+<owl:ObjectProperty rdf:about="#m121004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m6004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m121004"/>
+<owl:someValuesFrom rdf:resource="#m227004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m121004">
+<owl:inverseOf rdf:resource="m121004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m32004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m32004">
+<owl:inverseOf rdf:resource="m32004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m199004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m199004">
+<owl:inverseOf rdf:resource="m199004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m281004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m281004">
+<owl:inverseOf rdf:resource="m281004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m46004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m46004">
+<owl:inverseOf rdf:resource="m46004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m5004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m296004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m5004"/>
+<owl:someValuesFrom rdf:resource="#m24004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m5004">
+<owl:inverseOf rdf:resource="m5004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m176004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m176004">
+<owl:inverseOf rdf:resource="m176004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m129004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m5004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#m60004"/>
+<owl:someValuesFrom rdf:resource="#m1004"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m129004">
+<owl:inverseOf rdf:resource="m129004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m94004"/>
+<owl:Class rdf:about="#m65004"/>
+<owl:Class rdf:about="#m115004"/>
+<owl:Class rdf:about="#m228004"/>
+<owl:Class rdf:about="#m23004"/>
+<owl:ObjectProperty rdf:about="#m185004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m185004">
+<owl:inverseOf rdf:resource="m185004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m112004"/>
+<owl:ObjectProperty rdf:about="#m137004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m137004">
+<owl:inverseOf rdf:resource="m137004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m60004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m60004">
+<owl:inverseOf rdf:resource="m60004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m79004"/>
+<owl:ObjectProperty rdf:about="#m85004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m10004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m85004">
+<owl:inverseOf rdf:resource="m85004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m298004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m298004">
+<owl:inverseOf rdf:resource="m298004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m191004"/>
+<owl:ObjectProperty rdf:about="#m179004">
+<rdfs:range rdf:resource="#m37004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m179004">
+<owl:inverseOf rdf:resource="m179004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m37004"/>
+<owl:ObjectProperty rdf:about="#m290004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m290004">
+<owl:inverseOf rdf:resource="m290004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m54004"/>
+<owl:ObjectProperty rdf:about="#m273004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m273004">
+<owl:inverseOf rdf:resource="m273004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m12004"/>
+<owl:ObjectProperty rdf:about="#m231004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m231004">
+<owl:inverseOf rdf:resource="m231004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m256004"/>
+<owl:ObjectProperty rdf:about="#m91004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m9004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+<rdfs:range rdf:resource="#m285004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m91004">
+<owl:inverseOf rdf:resource="m91004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#m74004">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_m5004"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:domain>
+<rdfs:range rdf:resource="#m63004"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m74004">
+<owl:inverseOf rdf:resource="m74004"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#m168004"/>
+<owl:Class rdf:about="#m43004"/>
+<owl:Class rdf:about="#m225004"/>
+<owl:ObjectProperty rdf:about="#m208004">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:ID="io_m208004">
+<owl:inverseOf rdf:resource="m208004"/>
+</owl:ObjectProperty>
+</rdf:RDF>
+

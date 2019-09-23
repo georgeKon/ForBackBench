@@ -1,0 +1,130 @@
+[PrefixDeclaration]
+obda:		https://w3id.org/obda/vocabulary#
+xsd:		http://www.w3.org/2001/XMLSchema#
+owl:		http://www.w3.org/2002/07/owl#
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+exchange:   http://www.owl-ontologies.com/Ontology1207768242.owl#
+
+[MappingDeclaration] @collection [[
+mappingId	MAPPING-ID1
+target		exchange:Acqusitions/{c0} a exchange:Acquisition . 
+source		SELECT * FROM "src_Acquisition"
+
+mappingId	MAPPING-ID2
+target		exchange:Address/{c0} a exchange:Address . 
+source		SELECT * FROM "src_Address"
+
+mappingId	MAPPING-ID3
+target		exchange:Company/{c0} a exchange:Company . 
+source		SELECT * FROM "src_Company"
+
+mappingId	MAPPING-ID4
+target		exchange:Dealer/{c0} a exchange:Dealer . 
+source		SELECT * FROM "src_Dealer"
+
+mappingId	MAPPING-ID5
+target		exchange:FinantialInstrument/{c0} a exchange:FinantialInstrument . 
+source		SELECT * FROM "src_FinantialInstrument"
+
+mappingId	MAPPING-ID6
+target		exchange:Investor/{c0} a exchange:Investor . 
+source		SELECT * FROM "src_Investor"
+
+mappingId	MAPPING-ID7
+target		exchange:LegalPerson/{c0} a exchange:LegalPerson . 
+source		SELECT * FROM "src_LegalPerson"
+
+mappingId	MAPPING-ID8
+target		exchange:Offer/{c0} a exchange:Offer . 
+source		SELECT * FROM "src_Offer"
+
+mappingId	MAPPING-ID9
+target		exchange:Person/{c0} a exchange:Person . 
+source		SELECT * FROM "src_Person"
+
+mappingId	MAPPING-ID10
+target		exchange:PhysicalPerson/{c0} a exchange:PhysicalPerson . 
+source		SELECT * FROM "src_PhysicalPerson"
+
+mappingId	MAPPING-ID11
+target		exchange:Stock/{c0} a exchange:Stock . 
+source		SELECT * FROM "src_Stock"
+
+mappingId	MAPPING-ID12
+target		exchange:StockBroker/{c0} a exchange:StockBroker . 
+source		SELECT * FROM "src_StockBroker"
+
+mappingId	MAPPING-ID13
+target		exchange:StockExchangeList/{c0} a exchange:StockExchangeList . 
+source		SELECT * FROM "src_StockExchangeList"
+
+mappingId	MAPPING-ID14
+target		exchange:StockExchangeMember/{c0} a exchange:StockExchangeMember . 
+source		SELECT * FROM "src_StockExchangeMember"
+
+mappingId	MAPPING-ID15
+target		exchange:StockTrader/{c0} a exchange:StockTrader . 
+source		SELECT * FROM "src_StockTrader"
+
+mappingId	MAPPING-ID16
+target		exchange:Thing/{c0} a exchange:Thing . 
+source		SELECT * FROM "src_Thing"
+
+mappingId	MAPPING-ID17
+target		exchange:Trader/{c0} a exchange:Trader . 
+source		SELECT * FROM "src_Trader"
+
+mappingId	MAPPING-ID18
+target		exchange:Transaction/{c0} a exchange:Transaction . 
+source		SELECT * FROM "src_Transaction"
+
+mappingId	MAPPING-ID19
+target		exchange:FinantialInstrument/{c0} exchange:belongsToCompany exchange:Company/{c1} . 
+source		SELECT * FROM "src_belongsToCompany"
+
+mappingId	MAPPING-ID20
+target		exchange:Person/{c0} exchange:hasAddress exchange:Address/{c1} . 
+source		SELECT * FROM "src_hasAddress"
+
+mappingId	MAPPING-ID21
+target		exchange:Company/{c0} exchange:hasStock exchange:Stock/{c1} . 
+source		SELECT * FROM "src_hasStock"
+
+mappingId	MAPPING-ID22
+target		exchange:Address/{c0} exchange:inverseofhasAddress exchange:Person/{c1} . 
+source		SELECT * FROM "src_inverseofhasAddress"
+
+mappingId	MAPPING-ID23
+target		exchange:Transaction/{c0} exchange:involvesInstrument exchange:FinantialInstrument/{c1} . 
+source		SELECT * FROM "src_involvesInstrument"
+
+mappingId	MAPPING-ID24
+target		exchange:Transaction/{c0} exchange:isExecutedBy exchange:StockExchangeMember/{c1} . 
+source		SELECT * FROM "src_isExecutedBy"
+
+mappingId	MAPPING-ID25
+target		exchange:Transaction/{c0} exchange:isExecutedFor exchange:Investor/{c1} . 
+source		SELECT * FROM "src_isExecutedFor"
+
+mappingId	MAPPING-ID26
+target		exchange:Stock/{c0} exchange:isListedIn exchange:StockExchangeList/{c1} . 
+source		SELECT * FROM "src_isListedIn"
+
+mappingId	MAPPING-ID27
+target		exchange:FinantialInstrument/{c0} exchange:isTradedIn exchange:Transaction/{c1} . 
+source		SELECT * FROM "src_isTradedIn"
+
+mappingId	MAPPING-ID28
+target		exchange:StockExchangeList/{c0} exchange:listsStock exchange:Stock/{c1} . 
+source		SELECT * FROM "src_listsStock"
+
+mappingId	MAPPING-ID59
+target		exchange:StockBroker/{c0} exchange:tradesOnBehalfOf exchange:Thing/{c1} . 
+source		SELECT * FROM "src_tradesOnBehalfOf"
+
+mappingId	MAPPING-ID60
+target		exchange:Thing/{c0} exchange:usesBroker exchange:StockBroker/{c1} . 
+source		SELECT * FROM "src_usesBroker"
+]]
+

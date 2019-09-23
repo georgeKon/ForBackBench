@@ -1,0 +1,5 @@
+PREFIX : <http://example.com/example.owl#>
+SELECT DISTINCT ?0 WHERE {
+  ?0 rdf:type :m258004 .
+  ?0 rdf:type :m51004 
+}

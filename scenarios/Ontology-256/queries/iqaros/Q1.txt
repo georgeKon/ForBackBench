@@ -1,0 +1,1 @@
+Q(?0) <- languagevnm3nl0ce2(?0,?1),examinevnm20nl0ce2(?0,?2),officevnm46nl0ce2(?0,?3)
