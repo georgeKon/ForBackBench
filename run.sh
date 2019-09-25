@@ -7,7 +7,7 @@ SIZES=("small")
 
 for BASE_DIR in "${SCENARIOS[@]}"; do
   for SIZE in ${SIZES[*]}; do
-    mkdir -p $BASE_DIR/tests/$SIZE
+    mkdir -p experiments/$BASE_DIR
     # we first need to build up and tear down the database 6 times 
     source <(grep = $BASE_DIR/config.ini)
     export PGPASSWORD

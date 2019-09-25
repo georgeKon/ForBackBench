@@ -3,14 +3,15 @@
 #PATH=$(npm bin):$PATH
 
 ## SETUP
-NUM_TESTS=6
+NUM_TESTS=1
 TIMEOUT=1800
 BASE_DIR=$1
 QUERY=$2
 DATA_SIZE=$3
 JRE=~/.sdkman/candidates/java/8.0.201-oracle/bin/java
 
-mkdir -p $BASE_DIR/tests/$DATA_SIZE/Q$QUERY
+mkdir -p experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY
+mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY
 
 # Read database config file
 source <(grep = $BASE_DIR/config.ini)
@@ -38,11 +39,13 @@ declare -A BCASTC
 declare -A RDFOX
 
 echo "===== RAPID ====="
+mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/rapid
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   RAPID[$TOTAL,$i]=$START_TIME
   rapidOutput=$($JRE -jar tools/rapid/Rapid2.jar DU SHORT $BASE_DIR/dependencies/ontology.owl $BASE_DIR/queries/iqaros/Q$QUERY.txt 2> /dev/null | grep -G '^Q' | grep 'io_' -v | grep -v 'AUX')
   RAPID[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
+  echo "$rapidOutput" > outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/rapid/rewriting-$i.txt
   RAPID[$SIZE,$i]=$(echo "$rapidOutput" | grep -c "<-")
   echo "Rewriting: $((${RAPID[$REWRITE,$i]}/1000000)) milliseconds, Size: ${RAPID[$SIZE,$i]}"
 
@@ -62,12 +65,14 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 done
 
 echo "===== IQAROS ====="
+mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/iqaros
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   IQAROS[$TOTAL,$i]=$START_TIME 
   iqarosOutput=$($JRE -jar tools/iqaros/iqaros.jar $BASE_DIR/dependencies/ontology.owl $BASE_DIR/queries/iqaros/Q$QUERY.txt 2> /dev/null | grep -G '^Q' | grep 'io_' -v)
   IQAROS[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
   IQAROS[$SIZE,$i]=$(echo "$iqarosOutput" | grep -c "<-")
+  echo "$iqarosOutput" > outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/iqaros/rewriting-$i.txt
   echo "Rewriting: $((${IQAROS[$REWRITE,$i]}/1000000)) milliseconds, Size: ${IQAROS[$SIZE,$i]}"
   
   iqCB=$(echo "$iqarosOutput" | sed 's/\^/,/g; s/$/ ./g; s/X/?X/g')
@@ -87,14 +92,16 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 done
 
 echo "===== GRAAL ====="
+mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/graal
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   GRAAL[$TOTAL,$i]=$START_TIME
   graalOutput=$($JRE -jar tools/graal/obda-benchmark-graal-1.0-SNAPSHOT-spring-boot.jar $BASE_DIR/dependencies/ontology.owl $BASE_DIR/queries/graal/Q$QUERY.rq 2> /dev/null | grep -G '^?' | grep 'io_' -v)
   GRAAL[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
   GRAAL[$SIZE,$i]=$(echo "$graalOutput" | grep -c ":-")
+  echo "$graalOutput" > outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/graal/rewriting-$i.txt
   echo "Rewriting: $((${GRAAL[$REWRITE,$i]}/1000000)) milliseconds, Size: ${GRAAL[$SIZE,$i]}"
-  graalCB=$(echo "$graalOutput" | sed 's/?/Q/g; s/VAR_/?/g;s/<[a-zA-Z0-9\-\_\.\/\~\:]*#//g; s/>//g; s/:-/<-/g')
+  graalCB=$(echo "$graalOutput" | sed 's/?/Q/g; s/VAR_/?/g;s,<[a-zA-Z0-9\:\/~][^#]*#,,g; s/>//g; s/:-/<-/g')
   START_TIME=$(date +%s%N)
   #SQL=$(obdaconvert ucq "$GRAAL" $BASE_DIR/schema/t-schema.txt graal --string --src)
   SQL=$(java -jar tools/ontopmappinggenerator/sqlConvert-1.08.jar "$graalCB" --src)
@@ -135,17 +142,21 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 done
 
 echo "===== BCA GQR ====="
+mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcagqr
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   BCAGQR[$TOTAL,$i]=$START_TIME
   $JRE -jar ./tools/chasestepper/chasestepper-1.01.jar $BASE_DIR/dependencies/st-tgds.txt $BASE_DIR/dependencies/t-tgds.txt $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY.txt > /dev/null
+  mv $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY-tgds.rule outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcagqr
+  mv  outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcagqr/Q$QUERY-tgds.rule outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcagqr/Q$QUERY-$i-tgds.rule
   BCAGQR[$BLOCK,$i]=$(($(date +%s%N) - $START_TIME))
   START_TIME=$(date +%s%N)
-  OUT=$($JRE -jar ./tools/GQR/GQR.jar -st-tgds $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY-tgds.rule -q $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY.txt)
+  OUT=$($JRE -jar ./tools/GQR/GQR.jar -st-tgds outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcagqr/Q$QUERY-$i-tgds.rule -q $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY.txt)
   BCAGQR[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
   nulls=$(echo "$OUT" | grep -c "rewNo:null")
   if [ "$nulls" = "0" ]; then 
     SQL=$(echo "$OUT"| grep "SELECT")
+    echo SQL > outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcagqr/gqr-$i.txt
     BCAGQR[$SIZE,$i]=$(echo "UNION $SQL" |grep -o -i "UNION" | wc -l)
     START_TIME=$(date +%s%N)
     BCAGQR[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
@@ -168,12 +179,13 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 done
 
 echo "===== ONTOP ====="
+mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/ontop
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
-
   ONTOP[$TOTAL,$i]=$START_TIME
   ontopOutput=$(timeout $TIMEOUT ./tools/ontop/ontop query -t $BASE_DIR/dependencies/ontology.owl -q $BASE_DIR/queries/graal/Q$QUERY.rq -m $BASE_DIR/ontop-files/mapping.obda -p $BASE_DIR/ontop-files/properties.txt)
   if [ $? -eq 0 ]; then
+   echo "$ontopOutput" > outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/ontop/log-$i.txt
    ONTOP[$TOTAL,$i]=$(($(date +%s%N) - ${ONTOP[$TOTAL,$i]}))
    loadStart=$(echo "$ontopOutput" | grep "Loaded OntologyID"  | cut -d'[' -f 1);
    loadSTime=$(date -u -d "$loadStart" +"%s.%N"); 
@@ -218,13 +230,16 @@ done
 
 
 echo "===== BCA STChase ====="
+mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcastc
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   BCASTC[$TOTAL,$i]=$START_TIME 
   $JRE -jar ./tools/chasestepper/chasestepper-1.01.jar $BASE_DIR/dependencies/st-tgds.txt $BASE_DIR/dependencies/t-tgds.txt $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY.txt > /dev/null
+  mv $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY-tgds.rule outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcastc
+  mv outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcastc/Q$QUERY-tgds.rule outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcastc/Q$QUERY-$i-tgds.rule
   BCASTC[$BLOCK,$i]=$(($(date +%s%N) - $START_TIME))
   START_TIME=$(date +%s%N)
-  OUT=$(timeout $TIMEOUT java -jar ./tools/ontopmappinggenerator/singleStep-1.08.jar -t-sql $BASE_DIR/schema/t-schema.sql -s-sch $BASE_DIR/schema/s-schema.txt -t-sch $BASE_DIR/schema/t-schema.txt -st-tgds $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY-tgds.rule -q $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY.txt -data $BASE_DIR/data/$DATA_SIZE)
+  OUT=$(timeout $TIMEOUT java -jar ./tools/ontopmappinggenerator/singleStep-1.08.jar -t-sql $BASE_DIR/schema/t-schema.sql -s-sch $BASE_DIR/schema/s-schema.txt -t-sch $BASE_DIR/schema/t-schema.txt -st-tgds outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcastc/Q$QUERY-$i-tgds.rule -q $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY.txt -data $BASE_DIR/data/$DATA_SIZE)
   if [ $? -eq 0 ]; then
    BCASTC[$TOTAL,$i]=$(($(date +%s%N) - ${BCASTC[$TOTAL,$i]}))
    BCASTC[$CHASE,$i]=$(($(date +%s%N) - $START_TIME))
@@ -242,11 +257,13 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 done
 
 echo "===== ONTOP RW ====="
+mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/ontoprw
 for ((i=0;i<$NUM_TESTS;++i)); do
  START_TIME=$(date +%s%N | sed 's/^0*//')
  ONTOPRW[$TOTAL,$i]=$START_TIME
  OUTPUT=$($JRE -jar tools/tw-rewriting/tw-rewriting.jar $BASE_DIR/dependencies/ontology.owl $BASE_DIR/queries/graal/Q$QUERY.rq | sed '/FINAL REWRITING/,$!d; /REWRITING OVER/,$d')
  ONTOPRW[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
+ echo "$OUTPUT" > outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/ontoprw/rewriting-$i.txt
  subs=$(echo "$OUTPUT" | grep ':-' | grep -v 'q' | sed 's/$/ ./g')
  query=$(echo "$OUTPUT" | grep ':-' | grep 'q' | cut -d '#' -f1 | sed 's/$/ ./g')
  TW=$(java -jar tools/ontopmappinggenerator/datalogToCB-1.08.jar -exts "$subs" -query "$query")
@@ -288,24 +305,25 @@ done
 # done
 
 ## WRITE RESULTS
-echo "rewrite,convert,execute,total,size,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/rapid.csv
-echo "rewrite,convert,execute,total,size,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/iqaros.csv
-echo "rewrite,convert,execute,total,size,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/graal.csv
-echo "chase,execute,loading,total,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/rdfox.csv
-echo "block,rewrite,execute,total,size,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/chasestepper.csv
-#echo "block,rewrite,convert,execute,total,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/gqr.csv
-echo "rewrite,convert,execute,loading,total,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/ontop.csv
-echo "block,chase,total,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/chasestepperST.csv
-echo "rewrite,convert,execute,total,size,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/ontopR.csv
-#echo "load,chase,execute,total,tuples" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/llunatic.csv
+
+echo "rewrite,convert,execute,total,size,tuples" >> experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY/rapid.csv
+echo "rewrite,convert,execute,total,size,tuples" >> experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY/iqaros.csv
+echo "rewrite,convert,execute,total,size,tuples" >> experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY/graal.csv
+echo "chase,execute,loading,total,tuples" >> experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY/rdfox.csv
+echo "block,rewrite,execute,total,size,tuples" >> experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY/chasestepper.csv
+#echo "block,rewrite,convert,execute,total,tuples" >> experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY/gqr.csv
+echo "rewrite,convert,execute,loading,total,tuples" >> experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY/ontop.csv
+echo "block,chase,total,tuples" >> experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY/chasestepperST.csv
+echo "rewrite,convert,execute,total,size,tuples" >> experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY/ontopR.csv
+#echo "load,chase,execute,total,tuples" >> experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY/llunatic.csv
 for ((i=1;i<$NUM_TESTS;++i)); do
- echo "${RAPID[$REWRITE,$i]},${RAPID[$CONVERT,$i]},${RAPID[$EXECUTE,$i]},${RAPID[$TOTAL,$i]},${RAPID[$SIZE,$i]},${RAPID[$TUPLES,$i]}" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/rapid.csv
- echo "${IQAROS[$REWRITE,$i]},${IQAROS[$CONVERT,$i]},${IQAROS[$EXECUTE,$i]},${IQAROS[$TOTAL,$i]},${IQAROS[$SIZE,$i]},${IQAROS[$TUPLES,$i]}" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/iqaros.csv
- echo "${GRAAL[$REWRITE,$i]},${GRAAL[$CONVERT,$i]},${GRAAL[$EXECUTE,$i]},${GRAAL[$TOTAL,$i]},${GRAAL[$SIZE,$i]},${GRAAL[$TUPLES,$i]}" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/graal.csv
- echo "${ONTOPRW[$REWRITE,$i]},${ONTOPRW[$CONVERT,$i]},${ONTOPRW[$EXECUTE,$i]},${ONTOPRW[$TOTAL,$i]},${ONTOPRW[$SIZE,$i]},${ONTOPRW[$TUPLES,$i]}" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/ontopR.csv
- echo "${RDFOX[$CHASE,$i]},${RDFOX[$EXECUTE,$i]},${RDFOX[$LOAD,$i]},${RDFOX[$TOTAL,$i]},${RDFOX[$TUPLES,$i]}" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/rdfox.csv
- echo "${BCAGQR[$BLOCK,$i]},${BCAGQR[$REWRITE,$i]},${BCAGQR[$EXECUTE,$i]},${BCAGQR[$TOTAL,$i]},${BCAGQR[$SIZE,$i]},${BCAGQR[$TUPLES,$i]}" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/chasestepper.csv
- echo "${ONTOP[$REWRITE,$i]},${ONTOP[$CONVERT,$i]},${ONTOP[$EXECUTE,$i]},${ONTOP[$LOAD,$i]},${ONTOP[$TOTAL,$i]},${ONTOP[$TUPLES,$i]}" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/ontop.csv
- echo "${BCASTC[$BLOCK,$i]},${BCASTC[$CHASE,$i]},${BCASTC[$TOTAL,$i]},${BCASTC[$TUPLES,$i]}" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/chasestepperST.csv
- #echo "${LOAD[5,$i]},${LLUNATIC[$i]},${EXECUTE[5,$i]},${TOTAL[5,$i]},${TUPLES[5,$i]}" >> $BASE_DIR/tests/$DATA_SIZE/Q$QUERY/llunatic.csv
+ echo "${RAPID[$REWRITE,$i]},${RAPID[$CONVERT,$i]},${RAPID[$EXECUTE,$i]},${RAPID[$TOTAL,$i]},${RAPID[$SIZE,$i]},${RAPID[$TUPLES,$i]}" >> experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY/rapid.csv
+ echo "${IQAROS[$REWRITE,$i]},${IQAROS[$CONVERT,$i]},${IQAROS[$EXECUTE,$i]},${IQAROS[$TOTAL,$i]},${IQAROS[$SIZE,$i]},${IQAROS[$TUPLES,$i]}" >> experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY/iqaros.csv
+ echo "${GRAAL[$REWRITE,$i]},${GRAAL[$CONVERT,$i]},${GRAAL[$EXECUTE,$i]},${GRAAL[$TOTAL,$i]},${GRAAL[$SIZE,$i]},${GRAAL[$TUPLES,$i]}" >> experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY/graal.csv
+ echo "${ONTOPRW[$REWRITE,$i]},${ONTOPRW[$CONVERT,$i]},${ONTOPRW[$EXECUTE,$i]},${ONTOPRW[$TOTAL,$i]},${ONTOPRW[$SIZE,$i]},${ONTOPRW[$TUPLES,$i]}" >> experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY/ontopR.csv
+ echo "${RDFOX[$CHASE,$i]},${RDFOX[$EXECUTE,$i]},${RDFOX[$LOAD,$i]},${RDFOX[$TOTAL,$i]},${RDFOX[$TUPLES,$i]}" >> experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY/rdfox.csv
+ echo "${BCAGQR[$BLOCK,$i]},${BCAGQR[$REWRITE,$i]},${BCAGQR[$EXECUTE,$i]},${BCAGQR[$TOTAL,$i]},${BCAGQR[$SIZE,$i]},${BCAGQR[$TUPLES,$i]}" >> experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY/chasestepper.csv
+ echo "${ONTOP[$REWRITE,$i]},${ONTOP[$CONVERT,$i]},${ONTOP[$EXECUTE,$i]},${ONTOP[$LOAD,$i]},${ONTOP[$TOTAL,$i]},${ONTOP[$TUPLES,$i]}" >> experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY/ontop.csv
+ echo "${BCASTC[$BLOCK,$i]},${BCASTC[$CHASE,$i]},${BCASTC[$TOTAL,$i]},${BCASTC[$TUPLES,$i]}" >> experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY/chasestepperST.csv
+ #echo "${LOAD[5,$i]},${LLUNATIC[$i]},${EXECUTE[5,$i]},${TOTAL[5,$i]},${TUPLES[5,$i]}" >> experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY/llunatic.csv
 done
