@@ -1,0 +1,1 @@
+Q1(?0) <- Device(?0),assistsWith(?0,?1),BrailleWatch(?0),TactileAbility(?0),LightweightFoldable_Wheelchair(?0),isAffectedBy(?0,?1)  .
