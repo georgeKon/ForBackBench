@@ -52,7 +52,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 
   START_TIME=$(date +%s%N)
   rapidCB=$(echo "$rapidOutput" | sed 's/$/ ./g')
-  SQL=$(java -jar tools/ontopmappinggenerator/sqlConvert-1.08.jar "$rapidCB" --src)
+  SQL=$(java -jar tools/obdabenchmarkingtools/sqlConvert-1.08.jar "$rapidCB" --src)
   #SQL=$(obdaconvert ucq "$RAPID" $BASE_DIR/schema/t-schema.txt rapid --string --src)
   
   RAPID[$CONVERT,$i]=$(($(date +%s%N) - $START_TIME))
@@ -82,7 +82,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 
   START_TIME=$(date +%s%N)
   #SQL=$(obdaconvert ucq "$IQAROS" $BASE_DIR/schema/t-schema.txt iqaros --string --src)
-  SQL=$(java -jar tools/ontopmappinggenerator/sqlConvert-1.08.jar "$iqCB" --src)
+  SQL=$(java -jar tools/obdabenchmarkingtools/sqlConvert-1.08.jar "$iqCB" --src)
   IQAROS[$CONVERT,$i]=$(($(date +%s%N) - $START_TIME))
   echo "Converting: $((${IQAROS[$CONVERT,$i]}/1000000)) milliseconds"
 
@@ -109,7 +109,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   graalCB=$(echo "$graalOutput" | sed 's/?/Q/g; s/VAR_/?/g;s,<[a-zA-Z0-9\:\/~][^#]*#,,g; s/>//g; s/:-/<-/g')
   START_TIME=$(date +%s%N)
   #SQL=$(obdaconvert ucq "$GRAAL" $BASE_DIR/schema/t-schema.txt graal --string --src)
-  SQL=$(java -jar tools/ontopmappinggenerator/sqlConvert-1.08.jar "$graalCB" --src)
+  SQL=$(java -jar tools/obdabenchmarkingtools/sqlConvert-1.08.jar "$graalCB" --src)
   GRAAL[$CONVERT,$i]=$(($(date +%s%N) - $START_TIME))
   echo "Converting: $((${GRAAL[$CONVERT,$i]}/1000000)) milliseconds"
 
@@ -248,7 +248,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   mv $BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY-tgds.rule outputs/bcastc/$BASE_DIR/chased-mapping
   BCASTC[$BLOCK,$i]=$(($(date +%s%N) - $START_TIME))
   START_TIME=$(date +%s%N)
-  OUT=$(timeout $TIMEOUT java -jar ./tools/ontopmappinggenerator/singleStep-1.08.jar -t-sql $BASE_DIR/schema/t-schema.sql -s-sch $BASE_DIR/schema/s-schema.txt -t-sch $BASE_DIR/schema/t-schema.txt -st-tgds outputs/bcastc/$BASE_DIR/chased-mapping/Q$QUERY-tgds.rule -q $BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt -data $BASE_DIR/data/$DATA_SIZE)
+  OUT=$(timeout $TIMEOUT java -jar ./tools/obdabenchmarkingtools/singleStep-1.08.jar -t-sql $BASE_DIR/schema/t-schema.sql -s-sch $BASE_DIR/schema/s-schema.txt -t-sch $BASE_DIR/schema/t-schema.txt -st-tgds outputs/bcastc/$BASE_DIR/chased-mapping/Q$QUERY-tgds.rule -q $BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt -data $BASE_DIR/data/$DATA_SIZE)
   if [ $? -eq 0 ]; then
    BCASTC[$TOTAL,$i]=$(($(date +%s%N) - ${BCASTC[$TOTAL,$i]}))
    BCASTC[$CHASE,$i]=$(($(date +%s%N) - $START_TIME))
@@ -277,12 +277,12 @@ for ((i=0;i<$NUM_TESTS;++i)); do
  echo "$OUTPUT" > outputs/ontoprw/$BASE_DIR/rewritings/Q$QUERY-rewriting.txt
  subs=$(echo "$OUTPUT" | grep ':-' | grep -v 'q' | sed 's/$/ ./g')
  query=$(echo "$OUTPUT" | grep ':-' | grep 'q' | cut -d '#' -f1 | sed 's/$/ ./g')
- TW=$(java -jar tools/ontopmappinggenerator/datalogToCB-1.08.jar -exts "$subs" -query "$query")
+ TW=$(java -jar tools/obdabenchmarkingtools/datalogToCB-1.08.jar -exts "$subs" -query "$query")
  ONTOPRW[$SIZE,$i]=$(echo "$TW" | grep -c "<-")
  echo "Rewriting: $((${ONTOPRW[$REWRITE,$i]}/1000000)) milliseconds, Size: ${ONTOPRW[$SIZE,$i]}"
 
   START_TIME=$(date +%s%N)
-  SQL=$(java -jar tools/ontopmappinggenerator/sqlConvert-1.08.jar "$TW" --src)
+  SQL=$(java -jar tools/obdabenchmarkingtools/sqlConvert-1.08.jar "$TW" --src)
   ONTOPRW[$CONVERT,$i]=$(($(date +%s%N) - $START_TIME))
   echo "Converting: $((${ONTOPRW[$CONVERT,$i]}/1000000)) milliseconds"
 
