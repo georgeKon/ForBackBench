@@ -14,7 +14,7 @@ mkdir -p experiments/$BASE_DIR/$DATA_SIZE/Q$QUERY
 mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY
 
 # Read database config file
-source <(grep = $BASE_DIR/config.ini)
+source <(grep = $BASE_DIR/postgres-config.ini)
 export PGPASSWORD
 
 ##Enums for the recording results
@@ -43,7 +43,7 @@ mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/rapid
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   RAPID[$TOTAL,$i]=$START_TIME
-  rapidOutput=$($JRE -jar tools/rapid/Rapid2.jar DU SHORT $BASE_DIR/dependencies/ontology.owl $BASE_DIR/queries/iqaros/Q$QUERY.txt 2> /dev/null | grep -G '^Q' | grep 'io_' -v | grep -v 'AUX')
+  rapidOutput=$($JRE -jar tools/rapid/Rapid2.jar DU SHORT $BASE_DIR/owl/ontology.owl $BASE_DIR/queries/iqaros/Q$QUERY.txt 2> /dev/null | grep -G '^Q' | grep 'io_' -v | grep -v 'AUX')
   RAPID[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
   echo "$rapidOutput" > outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/rapid/rewriting-$i.txt
   RAPID[$SIZE,$i]=$(echo "$rapidOutput" | grep -c "<-")
@@ -69,7 +69,7 @@ mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/iqaros
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   IQAROS[$TOTAL,$i]=$START_TIME 
-  iqarosOutput=$($JRE -jar tools/iqaros/iqaros.jar $BASE_DIR/dependencies/ontology.owl $BASE_DIR/queries/iqaros/Q$QUERY.txt 2> /dev/null | grep -G '^Q' | grep 'io_' -v)
+  iqarosOutput=$($JRE -jar tools/iqaros/iqaros.jar $BASE_DIR/owl/ontology.owl $BASE_DIR/queries/iqaros/Q$QUERY.txt 2> /dev/null | grep -G '^Q' | grep 'io_' -v)
   IQAROS[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
   IQAROS[$SIZE,$i]=$(echo "$iqarosOutput" | grep -c "<-")
   echo "$iqarosOutput" > outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/iqaros/rewriting-$i.txt
@@ -96,7 +96,7 @@ mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/graal
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   GRAAL[$TOTAL,$i]=$START_TIME
-  graalOutput=$($JRE -jar tools/graal/obda-benchmark-graal-1.0-SNAPSHOT-spring-boot.jar $BASE_DIR/dependencies/ontology.owl $BASE_DIR/queries/graal/Q$QUERY.rq 2> /dev/null | grep -G '^?' | grep 'io_' -v)
+  graalOutput=$($JRE -jar tools/graal/obda-benchmark-graal-1.0-SNAPSHOT-spring-boot.jar $BASE_DIR/owl/ontology.owl $BASE_DIR/queries/SPARQL/Q$QUERY.rq 2> /dev/null | grep -G '^?' | grep 'io_' -v)
   GRAAL[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
   GRAAL[$SIZE,$i]=$(echo "$graalOutput" | grep -c ":-")
   echo "$graalOutput" > outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/graal/rewriting-$i.txt
@@ -120,7 +120,7 @@ echo "===== RDFox ====="
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   RDFOX[$TOTAL,$i]=$START_TIME
-  OUT=$(timeout $TIMEOUT $JRE -jar tools/RDFox/chaseRDFox-linux.jar -chase standard -s-sch $BASE_DIR/schema/s-schema.txt -t-sch $BASE_DIR/schema/t-schema.txt -st-tgds $BASE_DIR/dependencies/st-tgds.txt -src $BASE_DIR/data/$DATA_SIZE -t-tgds $BASE_DIR/dependencies/t-tgds.txt -qdir $BASE_DIR/queries/RDFox/Q$QUERY/)
+  OUT=$(timeout $TIMEOUT $JRE -jar tools/RDFox/chaseRDFox-linux.jar -chase standard -s-sch $BASE_DIR/schema/s-schema.txt -t-sch $BASE_DIR/schema/t-schema.txt -st-tgds $BASE_DIR/dependencies/st-tgds.txt -src $BASE_DIR/data/$DATA_SIZE -t-tgds $BASE_DIR/dependencies/t-tgds.txt -qdir $BASE_DIR/queries/Chasebench/Q$QUERY/)
   if [ $? -eq 0 ]; then
     RDFOX[$TOTAL,$i]=$(($(date +%s%N) - $START_TIME))
     RDFOX[$LOAD,$i]=$(echo "$OUT" | grep "Loading source instance data" | cut -d'.' -f4 | cut -d'm' -f1)
@@ -146,12 +146,12 @@ mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcagqr
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   BCAGQR[$TOTAL,$i]=$START_TIME
-  $JRE -jar ./tools/chasestepper/chasestepper-1.01.jar $BASE_DIR/dependencies/st-tgds.txt $BASE_DIR/dependencies/t-tgds.txt $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY.txt > /dev/null
-  mv $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY-tgds.rule outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcagqr
+  $JRE -jar ./tools/chasestepper/chasestepper-1.01.jar $BASE_DIR/dependencies/st-tgds.txt $BASE_DIR/dependencies/t-tgds.txt $BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt > /dev/null
+  mv $BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY-tgds.rule outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcagqr
   mv  outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcagqr/Q$QUERY-tgds.rule outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcagqr/Q$QUERY-$i-tgds.rule
   BCAGQR[$BLOCK,$i]=$(($(date +%s%N) - $START_TIME))
   START_TIME=$(date +%s%N)
-  OUT=$($JRE -jar ./tools/GQR/GQR.jar -st-tgds outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcagqr/Q$QUERY-$i-tgds.rule -q $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY.txt)
+  OUT=$($JRE -jar ./tools/GQR/GQR.jar -st-tgds outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcagqr/Q$QUERY-$i-tgds.rule -q $BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt)
   BCAGQR[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
   nulls=$(echo "$OUT" | grep -c "rewNo:null")
   if [ "$nulls" = "0" ]; then 
@@ -183,7 +183,7 @@ mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/ontop
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   ONTOP[$TOTAL,$i]=$START_TIME
-  ontopOutput=$(timeout $TIMEOUT ./tools/ontop/ontop query -t $BASE_DIR/dependencies/ontology.owl -q $BASE_DIR/queries/graal/Q$QUERY.rq -m $BASE_DIR/ontop-files/mapping.obda -p $BASE_DIR/ontop-files/properties.txt)
+  ontopOutput=$(timeout $TIMEOUT ./tools/ontop/ontop query -t $BASE_DIR/owl/ontology.owl -q $BASE_DIR/queries/SPARQL/Q$QUERY.rq -m $BASE_DIR/ontop-files/mapping.obda -p $BASE_DIR/ontop-files/properties.txt)
   if [ $? -eq 0 ]; then
    echo "$ontopOutput" > outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/ontop/log-$i.txt
    ONTOP[$TOTAL,$i]=$(($(date +%s%N) - ${ONTOP[$TOTAL,$i]}))
@@ -234,12 +234,12 @@ mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcastc
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   BCASTC[$TOTAL,$i]=$START_TIME 
-  $JRE -jar ./tools/chasestepper/chasestepper-1.01.jar $BASE_DIR/dependencies/st-tgds.txt $BASE_DIR/dependencies/t-tgds.txt $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY.txt > /dev/null
-  mv $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY-tgds.rule outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcastc
+  $JRE -jar ./tools/chasestepper/chasestepper-1.01.jar $BASE_DIR/dependencies/st-tgds.txt $BASE_DIR/dependencies/t-tgds.txt $BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt > /dev/null
+  mv $BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY-tgds.rule outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcastc
   mv outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcastc/Q$QUERY-tgds.rule outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcastc/Q$QUERY-$i-tgds.rule
   BCASTC[$BLOCK,$i]=$(($(date +%s%N) - $START_TIME))
   START_TIME=$(date +%s%N)
-  OUT=$(timeout $TIMEOUT java -jar ./tools/ontopmappinggenerator/singleStep-1.08.jar -t-sql $BASE_DIR/schema/t-schema.sql -s-sch $BASE_DIR/schema/s-schema.txt -t-sch $BASE_DIR/schema/t-schema.txt -st-tgds outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcastc/Q$QUERY-$i-tgds.rule -q $BASE_DIR/queries/RDFox/Q$QUERY/Q$QUERY.txt -data $BASE_DIR/data/$DATA_SIZE)
+  OUT=$(timeout $TIMEOUT java -jar ./tools/ontopmappinggenerator/singleStep-1.08.jar -t-sql $BASE_DIR/schema/t-schema.sql -s-sch $BASE_DIR/schema/s-schema.txt -t-sch $BASE_DIR/schema/t-schema.txt -st-tgds outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcastc/Q$QUERY-$i-tgds.rule -q $BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt -data $BASE_DIR/data/$DATA_SIZE)
   if [ $? -eq 0 ]; then
    BCASTC[$TOTAL,$i]=$(($(date +%s%N) - ${BCASTC[$TOTAL,$i]}))
    BCASTC[$CHASE,$i]=$(($(date +%s%N) - $START_TIME))
@@ -261,7 +261,7 @@ mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/ontoprw
 for ((i=0;i<$NUM_TESTS;++i)); do
  START_TIME=$(date +%s%N | sed 's/^0*//')
  ONTOPRW[$TOTAL,$i]=$START_TIME
- OUTPUT=$($JRE -jar tools/tw-rewriting/tw-rewriting.jar $BASE_DIR/dependencies/ontology.owl $BASE_DIR/queries/graal/Q$QUERY.rq | sed '/FINAL REWRITING/,$!d; /REWRITING OVER/,$d')
+ OUTPUT=$($JRE -jar tools/tw-rewriting/tw-rewriting.jar $BASE_DIR/owl/ontology.owl $BASE_DIR/queries/SPARQL/Q$QUERY.rq | sed '/FINAL REWRITING/,$!d; /REWRITING OVER/,$d')
  ONTOPRW[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
  echo "$OUTPUT" > outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/ontoprw/rewriting-$i.txt
  subs=$(echo "$OUTPUT" | grep ':-' | grep -v 'q' | sed 's/$/ ./g')
@@ -287,7 +287,7 @@ done
 # echo "===== Llunatic ====="
 # for ((i=0;i<$NUM_TESTS;++i)); do
 #   START_TIME=$(date +%s%N)
-#   OUT=$(timeout $TIMEOUT ./tools/Llunatic-master/lunaticEngine/runExp.sh $BASE_DIR/queries/RDFox/Q$QUERY/$DATA_SIZE.xml)
+#   OUT=$(timeout $TIMEOUT ./tools/Llunatic-master/lunaticEngine/runExp.sh $BASE_DIR/queries/Chasebench/Q$QUERY/$DATA_SIZE.xml)
 #   if [ $? -eq 0 ]; then
 #     TOTAL[1,$i]=$(($(date +%s%N) - $START_TIME))
 #   elif [ $? -eq 124 ]; then

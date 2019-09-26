@@ -9,7 +9,7 @@ for BASE_DIR in "${SCENARIOS[@]}"; do
   for SIZE in ${SIZES[*]}; do
     mkdir -p experiments/$BASE_DIR
     # we first need to build up and tear down the database 6 times 
-    source <(grep = $BASE_DIR/config.ini)
+    source <(grep = $BASE_DIR/postgres-config.ini)
     export PGPASSWORD
     for ((i=0;i<1;++i)); do
       START_TIME=$(date +%s%N)

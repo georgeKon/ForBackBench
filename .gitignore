@@ -15,6 +15,8 @@ scenarios/*/tests
 scenarios/*/queries/RDFox/*/*-tgds.rule
 scenarios/STB-128
 scripts/testers
+outputs
+experiments
 data
 
 tools/Llunatic-build
