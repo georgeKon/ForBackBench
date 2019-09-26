@@ -164,7 +164,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   nulls=$(echo "$OUT" | grep -c "rewNo:null")
   if [ "$nulls" = "0" ]; then 
     SQL=$(echo "$OUT"| grep "SELECT")
-    echo SQL > outputs/bcagqr/$BASE_DIR/rewritings/Q$QUERY-rewriting.txt
+    echo "$SQL" > outputs/bcagqr/$BASE_DIR/rewritings/Q$QUERY-rewriting.txt
     BCAGQR[$SIZE,$i]=$(echo "UNION $SQL" |grep -o -i "UNION" | wc -l)
     START_TIME=$(date +%s%N)
     BCAGQR[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
