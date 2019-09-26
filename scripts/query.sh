@@ -39,13 +39,14 @@ declare -A BCASTC
 declare -A RDFOX
 
 echo "===== RAPID ====="
-mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/rapid
+mkdir -p outputs/rapid/$BASE_DIR/rewritings
+mkdir -p outputs/rapid/$BASE_DIR/answer/$DATA_SIZE
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   RAPID[$TOTAL,$i]=$START_TIME
   rapidOutput=$($JRE -jar tools/rapid/Rapid2.jar DU SHORT $BASE_DIR/owl/ontology.owl $BASE_DIR/queries/iqaros/Q$QUERY.txt 2> /dev/null | grep -G '^Q' | grep 'io_' -v | grep -v 'AUX')
   RAPID[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
-  echo "$rapidOutput" > outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/rapid/rewriting-$i.txt
+  echo "$rapidOutput" > outputs/rapid/$BASE_DIR/rewritings/Q$QUERY-rewriting.txt
   RAPID[$SIZE,$i]=$(echo "$rapidOutput" | grep -c "<-")
   echo "Rewriting: $((${RAPID[$REWRITE,$i]}/1000000)) milliseconds, Size: ${RAPID[$SIZE,$i]}"
 
@@ -58,6 +59,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   echo "Converting: $((${RAPID[$CONVERT,$i]}/1000000)) milliseconds"
   START_TIME=$(date +%s%N)
   RAPID[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+  echo ${RAPID[$TUPLES,$i]} > outputs/rapid/$BASE_DIR/answer/$DATA_SIZE/Q$QUERY.txt
   RAPID[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
   RAPID[$TOTAL,$i]=$(($(date +%s%N) - ${RAPID[$TOTAL,$i]}))
   echo "Executing: $((${RAPID[$EXECUTE,$i]}/1000000)) milliseconds"
@@ -65,14 +67,15 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 done
 
 echo "===== IQAROS ====="
-mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/iqaros
+mkdir -p outputs/iqaros/$BASE_DIR/rewritings
+mkdir -p outputs/iqaros/$BASE_DIR/answer/$DATA_SIZE
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   IQAROS[$TOTAL,$i]=$START_TIME 
   iqarosOutput=$($JRE -jar tools/iqaros/iqaros.jar $BASE_DIR/owl/ontology.owl $BASE_DIR/queries/iqaros/Q$QUERY.txt 2> /dev/null | grep -G '^Q' | grep 'io_' -v)
   IQAROS[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
   IQAROS[$SIZE,$i]=$(echo "$iqarosOutput" | grep -c "<-")
-  echo "$iqarosOutput" > outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/iqaros/rewriting-$i.txt
+  echo "$iqarosOutput" > outputs/iqaros/$BASE_DIR/rewritings/Q$QUERY-rewriting.txt
   echo "Rewriting: $((${IQAROS[$REWRITE,$i]}/1000000)) milliseconds, Size: ${IQAROS[$SIZE,$i]}"
   
   iqCB=$(echo "$iqarosOutput" | sed 's/\^/,/g; s/$/ ./g; s/X/?X/g')
@@ -85,6 +88,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 
   START_TIME=$(date +%s%N)
   IQAROS[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+  echo ${IQAROS[$TUPLES,$i]} > outputs/iqaros/$BASE_DIR/answer/$DATA_SIZE/Q$QUERY.txt
   IQAROS[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
   IQAROS[$TOTAL,$i]=$(($(date +%s%N) - ${IQAROS[$TOTAL,$i]}))
   echo "Executing: $((${IQAROS[$EXECUTE,$i]}/1000000)) milliseconds"
@@ -92,14 +96,15 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 done
 
 echo "===== GRAAL ====="
-mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/graal
+mkdir -p outputs/graal/$BASE_DIR/rewritings
+mkdir -p outputs/graal/$BASE_DIR/answer/$DATA_SIZE
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   GRAAL[$TOTAL,$i]=$START_TIME
   graalOutput=$($JRE -jar tools/graal/obda-benchmark-graal-1.0-SNAPSHOT-spring-boot.jar $BASE_DIR/owl/ontology.owl $BASE_DIR/queries/SPARQL/Q$QUERY.rq 2> /dev/null | grep -G '^?' | grep 'io_' -v)
   GRAAL[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
   GRAAL[$SIZE,$i]=$(echo "$graalOutput" | grep -c ":-")
-  echo "$graalOutput" > outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/graal/rewriting-$i.txt
+  echo "$graalOutput" > outputs/graal/$BASE_DIR/rewritings/Q$QUERY-rewriting.txt
   echo "Rewriting: $((${GRAAL[$REWRITE,$i]}/1000000)) milliseconds, Size: ${GRAAL[$SIZE,$i]}"
   graalCB=$(echo "$graalOutput" | sed 's/?/Q/g; s/VAR_/?/g;s,<[a-zA-Z0-9\:\/~][^#]*#,,g; s/>//g; s/:-/<-/g')
   START_TIME=$(date +%s%N)
@@ -110,6 +115,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 
   START_TIME=$(date +%s%N)
   GRAAL[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+  echo ${GRAAL[$TUPLES,$i]} > outputs/graal/$BASE_DIR/answer/$DATA_SIZE/Q$QUERY.txt
   GRAAL[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
   GRAAL[$TOTAL,$i]=$(($(date +%s%N) - ${GRAAL[$TOTAL,$i]}))
   echo "Executing: $((${GRAAL[$EXECUTE,$i]}/1000000)) milliseconds"
@@ -117,6 +123,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 done
 
 echo "===== RDFox ====="
+mkdir -p outputs/rdfox/$BASE_DIR
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   RDFOX[$TOTAL,$i]=$START_TIME
@@ -142,24 +149,26 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 done
 
 echo "===== BCA GQR ====="
-mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcagqr
+mkdir -p outputs/bcagqr/$BASE_DIR/chased-mapping
+mkdir -p outputs/bcagqr/$BASE_DIR/rewritings
+mkdir -p outputs/bcagqr/$BASE_DIR/answer/$DATA_SIZE
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   BCAGQR[$TOTAL,$i]=$START_TIME
   $JRE -jar ./tools/chasestepper/chasestepper-1.01.jar $BASE_DIR/dependencies/st-tgds.txt $BASE_DIR/dependencies/t-tgds.txt $BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt > /dev/null
-  mv $BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY-tgds.rule outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcagqr
-  mv  outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcagqr/Q$QUERY-tgds.rule outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcagqr/Q$QUERY-$i-tgds.rule
+  mv $BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY-tgds.rule outputs/bcagqr/$BASE_DIR/chased-mapping
   BCAGQR[$BLOCK,$i]=$(($(date +%s%N) - $START_TIME))
   START_TIME=$(date +%s%N)
-  OUT=$($JRE -jar ./tools/GQR/GQR.jar -st-tgds outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcagqr/Q$QUERY-$i-tgds.rule -q $BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt)
+  OUT=$($JRE -jar ./tools/GQR/GQR.jar -st-tgds outputs/bcagqr/$BASE_DIR/chased-mapping/Q$QUERY-tgds.rule -q $BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt)
   BCAGQR[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
   nulls=$(echo "$OUT" | grep -c "rewNo:null")
   if [ "$nulls" = "0" ]; then 
     SQL=$(echo "$OUT"| grep "SELECT")
-    echo SQL > outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcagqr/gqr-$i.txt
+    echo SQL > outputs/bcagqr/$BASE_DIR/rewritings/Q$QUERY-rewriting.txt
     BCAGQR[$SIZE,$i]=$(echo "UNION $SQL" |grep -o -i "UNION" | wc -l)
     START_TIME=$(date +%s%N)
     BCAGQR[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+    echo ${BCAGQR[$TUPLES,$i]} > outputs/bcagqr/$BASE_DIR/answer/$DATA_SIZE/Q$QUERY.txt
     BCAGQR[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
     BCAGQR[$TOTAL,$i]=$(($(date +%s%N) - ${BCAGQR[$TOTAL,$i]}))
   else
@@ -179,13 +188,13 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 done
 
 echo "===== ONTOP ====="
-mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/ontop
+mkdir -p outputs/ontop/$BASE_DIR/log/$DATA_SIZE
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   ONTOP[$TOTAL,$i]=$START_TIME
   ontopOutput=$(timeout $TIMEOUT ./tools/ontop/ontop query -t $BASE_DIR/owl/ontology.owl -q $BASE_DIR/queries/SPARQL/Q$QUERY.rq -m $BASE_DIR/ontop-files/mapping.obda -p $BASE_DIR/ontop-files/properties.txt)
   if [ $? -eq 0 ]; then
-   echo "$ontopOutput" > outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/ontop/log-$i.txt
+   echo "$ontopOutput" > outputs/ontop/$BASE_DIR/log/$DATA_SIZE/Q$QUERY-log.txt
    ONTOP[$TOTAL,$i]=$(($(date +%s%N) - ${ONTOP[$TOTAL,$i]}))
    loadStart=$(echo "$ontopOutput" | grep "Loaded OntologyID"  | cut -d'[' -f 1);
    loadSTime=$(date -u -d "$loadStart" +"%s.%N"); 
@@ -230,19 +239,20 @@ done
 
 
 echo "===== BCA STChase ====="
-mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcastc
+mkdir -p outputs/bcastc/$BASE_DIR/chased-mapping
+mkdir -p outputs/bcastc/$BASE_DIR/answer/$DATA_SIZE
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   BCASTC[$TOTAL,$i]=$START_TIME 
   $JRE -jar ./tools/chasestepper/chasestepper-1.01.jar $BASE_DIR/dependencies/st-tgds.txt $BASE_DIR/dependencies/t-tgds.txt $BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt > /dev/null
-  mv $BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY-tgds.rule outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcastc
-  mv outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcastc/Q$QUERY-tgds.rule outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcastc/Q$QUERY-$i-tgds.rule
+  mv $BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY-tgds.rule outputs/bcastc/$BASE_DIR/chased-mapping
   BCASTC[$BLOCK,$i]=$(($(date +%s%N) - $START_TIME))
   START_TIME=$(date +%s%N)
-  OUT=$(timeout $TIMEOUT java -jar ./tools/ontopmappinggenerator/singleStep-1.08.jar -t-sql $BASE_DIR/schema/t-schema.sql -s-sch $BASE_DIR/schema/s-schema.txt -t-sch $BASE_DIR/schema/t-schema.txt -st-tgds outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/bcastc/Q$QUERY-$i-tgds.rule -q $BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt -data $BASE_DIR/data/$DATA_SIZE)
+  OUT=$(timeout $TIMEOUT java -jar ./tools/ontopmappinggenerator/singleStep-1.08.jar -t-sql $BASE_DIR/schema/t-schema.sql -s-sch $BASE_DIR/schema/s-schema.txt -t-sch $BASE_DIR/schema/t-schema.txt -st-tgds outputs/bcastc/$BASE_DIR/chased-mapping/Q$QUERY-tgds.rule -q $BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt -data $BASE_DIR/data/$DATA_SIZE)
   if [ $? -eq 0 ]; then
    BCASTC[$TOTAL,$i]=$(($(date +%s%N) - ${BCASTC[$TOTAL,$i]}))
    BCASTC[$CHASE,$i]=$(($(date +%s%N) - $START_TIME))
+   echo "$OUT" > outputs/bcastc/$BASE_DIR/answer/$DATA_SIZE/Q$QUERY.txt
    BCASTC[$TUPLES,$i]=$(echo "$OUT" | grep "Count :" | cut -d':' -f2)
   else
    BCASTC[$BLOCK,$i]="-1"
@@ -257,13 +267,14 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 done
 
 echo "===== ONTOP RW ====="
-mkdir -p outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/ontoprw
+mkdir -p outputs/ontoprw/$BASE_DIR/rewritings
+mkdir -p outputs/ontoprw/$BASE_DIR/answer/$DATA_SIZE
 for ((i=0;i<$NUM_TESTS;++i)); do
  START_TIME=$(date +%s%N | sed 's/^0*//')
  ONTOPRW[$TOTAL,$i]=$START_TIME
  OUTPUT=$($JRE -jar tools/tw-rewriting/tw-rewriting.jar $BASE_DIR/owl/ontology.owl $BASE_DIR/queries/SPARQL/Q$QUERY.rq | sed '/FINAL REWRITING/,$!d; /REWRITING OVER/,$d')
  ONTOPRW[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
- echo "$OUTPUT" > outputs/$BASE_DIR/$DATA_SIZE/Q$QUERY/ontoprw/rewriting-$i.txt
+ echo "$OUTPUT" > outputs/ontoprw/$BASE_DIR/rewritings/Q$QUERY-rewriting.txt
  subs=$(echo "$OUTPUT" | grep ':-' | grep -v 'q' | sed 's/$/ ./g')
  query=$(echo "$OUTPUT" | grep ':-' | grep 'q' | cut -d '#' -f1 | sed 's/$/ ./g')
  TW=$(java -jar tools/ontopmappinggenerator/datalogToCB-1.08.jar -exts "$subs" -query "$query")
@@ -278,6 +289,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 
   START_TIME=$(date +%s%N)
   ONTOPRW[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+  echo ${ONTOPRW[$TUPLES,$i]} > outputs/ontoprw/$BASE_DIR/answer/$DATA_SIZE/Q$QUERY.txt
   ONTOPRW[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
   ONTOPRW[$TOTAL,$i]=$(($(date +%s%N) - ${ONTOPRW[$TOTAL,$i]}))
  echo "Executing: $((${ONTOPRW[$EXECUTE,$i]}/1000000)) milliseconds"
