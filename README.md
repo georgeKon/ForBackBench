@@ -53,8 +53,63 @@ This project has many tools tools and also uses the gradle build system
 - `gradle modifyChaseBench`
 - `gradle datalogToUCQ`
 - `gradle sqlConv`
-- `gradle singleStep`
+- `gradle stChase`
 - `gradle deepData`
+
+
+## Output Folder Structure
+
+This is where the experiment results go
+
+```
+outputs/
+
+|-- rewriting-tool/ := Rewriting tools output (Iqaros, Rapid, Graal, OntopRW)
+| |-- scenario/ := For each scenario
+| | |-- rewriting/ := Q1-5
+| | | |-- QX-rewritings.txt := Rewriting
+| | |-- answers/ := Tuples Returned
+| | | |-- size/
+| | | | |-- QX.txt := Result for each query
+
+|-- ontop/ := Ontop outputs
+| |-- scenarios
+| | |-- log/ := Ontop Output Log files
+| | | |-- size/
+| | | | |-- QX.txt := Log file for each query
+
+|-- bcagqr/ := BCA and GQR
+| |-- scenario/ := For each scenario
+| | |-- chased-mappings/ := Q1-5
+| | | |-- QX-tgds.rule := BCA chased mappings
+| | |-- rewriting/ := Q1-5
+| | | |-- QX-rewritings.txt := Rewriting
+| | |-- answers/ := Tuples Returned
+| | | |-- size/
+| | | | |-- QX.txt := Result for each query
+
+|-- bcastc/ := BCA and ST Chase
+| |-- scenario/ := For each scenario
+| | |-- chased-mappings/ := Q1-5
+| | | |-- QX-tgds.rule := BCA chased mappings
+| | |-- answers/ := Tuples Returned
+| | | |-- size/
+| | | | |-- QX.txt := Result for each query
+
+```
+
+
+## Experiments Folder Structure
+
+This is where the experiment results go
+
+```
+experiments/
+|-- scenario/ := Scenario Name
+| |-- size/ := small/medium/large dataset
+| | |-- query/ := Q1-5
+| | | |-- tool.csv := result of that query with each tool in the scenario
+```
 
 ## Scenario folder structure
 
@@ -63,23 +118,18 @@ name/
 |-- data/               := CSV data files
 | |-- a.csv
 |-- dependencies/
-| |-- ontology.owl      := OWL ontology file
 | |-- st-tgds.txt       := ChaseBench rules 
 | |-- t-tgds.txt        := ChaseBench rules
-|-- out/                := LLunatic output folders
-| |-- size/
-|   |-- Qx/
-|     |-- Qx.csv
+|-- owl/
+| |-- ontology.owl      := OWL ontology file
 |-- queries
-| |-- graal             := SPARQL queries
+| |-- SPARQL             := SPARQL queries
 |   |-- Qx.rq
 | |-- iqaros            := IQAROS queries
 |   |-- Qx.txt
-| |-- RDFox             := ChaseBench queries
+| |-- Chasebench            := ChaseBench queries
 |   |-- Qx/
 |     |-- Qx.txt
-|     |-- size.xml      := LLunatic XML
-|     |-- size-bca.xml  := LLunatic XML for BCA
 |-- schema/
 | |-- s-schema.sql      := PostgreSQL sql
 | |-- s-schema.txt      := ChaseBench schema
@@ -88,12 +138,7 @@ name/
 |-- ontop-files
 | |-- mapping.obda      := Ontop Mapping file (Similar to st-tgds)
 | |-- properties.txt    := Ontop specific DB config file. (Similar to config.ini)
-|-- tests
-| |-- size/
-|   |-- Qx/
-|     |-- tool.csv
-|   |-- database.csv
-|-- config.ini          := INI database config
+|--postgres-config.ini          := INI database config
 ```
 
 The majority of this structure can be bootstrapped using the provided scripts. For a DL-Lite scenario, the minimum set up to be bootstrapped is the following:
@@ -236,7 +281,7 @@ java -jar GQR.jar -st-tgds <source to target tgds> -q <rule query file>
 Also another prototype name. This is a basic chase that only does one chase step based on a query and the st-tgds file. It should only be used seriously be used with BCA as this chase is not complete and would give inaccurate results.
 
 ```
-java -jar ./tools/ontopmappinggenerator/singleStep-1.08.jar -t-sql <Target Schema in SQL> -s-sch <Source Schema in CB> -t-sch <Target Schema in CB> -st-tgds <BCA generated st-tgds> -q <CB query> -data <Folder of csv files>
+java -jar ./tools/obdabenchmarkingtools/stChase-1.08.jar -t-sql <Target Schema in SQL> -s-sch <Source Schema in CB> -t-sch <Target Schema in CB> -st-tgds <BCA generated st-tgds> -q <CB query> -data <Folder of csv files>
 ```
 
 This tool has a more in-depth on the obdabenchmarkingtools github project

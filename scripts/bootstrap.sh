@@ -31,5 +31,5 @@ then
     done
   fi
 fi
-java -jar tools/obdabenchmarkingtools/owlGenerator-1.08.jar -t-tgds $BASE_DIR/dependencies/t-tgds.txt -out $BASE_DIR/dependencies/ontology.owl
+java -jar tools/obdabenchmarkingtools/owlGenerator-1.08.jar -t-tgds $BASE_DIR/dependencies/t-tgds.txt -out $BASE_DIR/owl/ontology.owl
 java -jar tools/obdabenchmarkingtools/ontopMappingGenerator-1.08.jar -st-tgds $BASE_DIR/dependencies/st-tgds.txt -owl $BASE_DIR/dependencies/ontology.owl -out $BASE_DIR/ontop-files/mapping.obda
