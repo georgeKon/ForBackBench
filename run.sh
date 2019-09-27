@@ -2,8 +2,8 @@
 
 # query.sh runs a test on one query of a scenario
 NUM_TESTS=1
-SCENARIOS=("scenarios/LUBM_new")
-SIZES=("small")
+SCENARIOS=("scenarios/Adolena" "scenarios/Deep")
+SIZES=("small" "medium" "large")
 
 for BASE_DIR in "${SCENARIOS[@]}"; do
   for SIZE in ${SIZES[*]}; do
