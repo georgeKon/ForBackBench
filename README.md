@@ -5,15 +5,15 @@ The project is split across 4 repositories
 - obdabenchmark <https://git.soton.ac.uk/gk1e17/obdabenchmark> (Written by JE)
 - chasestepper <https://git.soton.ac.uk/jde1g16/chasestepper> (Written by JE, modified by NB)
 - obda-converter <https://github.com/JamesErrington/obda-converter> (Written by JE)
-- obdabenchmarkingtools <https://github.com/jhhfrjou/OBDABenchmarkingTools> (Written by NB)
+- obdabenchmarkingtools <https://git.soton.ac.uk/gk1e17/obda-chase-bench> (Written by NB)
 
 This structure is very fluid and can be easily changed if needed - probably will need to be as the 'chasestepper' name was only meant to be a placeholder, and having stuff across 2 different git systems on 3 accounts probably isn't the best
 
-obda-converter is a JavaScript project, written using TypeScript and bundled with NPM. obdabenchmark also contains a TypeScript segment, but is mostly bash scripts, data integration tools and scenario data. chasestepper is a Java project, bundled with Gradle - this could be altered to use maven or some other system if needed but is probably not recommended? It also contains the data generator files. Obdabenchmarkingtools is the recent addition to the previous 3 tools. Originally this was just a tool to generate mappings for Ontop but has significantly more tools bundled with it. Recommend looking at <https://github.com/jhhfrjou/OBDABenchmarkingTools/blob/master/README.md> for more information on that.
+obda-converter is a JavaScript project, written using TypeScript and bundled with NPM. obdabenchmark also contains a TypeScript segment, but is mostly bash scripts, data integration tools and scenario data. chasestepper is a Java project, bundled with Gradle - this could be altered to use maven or some other system if needed but is probably not recommended? It also contains the data generator files. Obdabenchmarkingtools is the recent addition to the previous 3 tools. Originally this was just a tool to generate mappings for Ontop but has significantly more tools bundled with it. Recommend looking at <https://git.soton.ac.uk/gk1e17/obda-chase-bench/blob/master/README.md> for more information on that.
 
 ### ChaseStepper
 
-To build 
+To build
 
 - `gradle chasestepperJar`
 - `gradle dataJar`
@@ -56,7 +56,6 @@ This project has many tools tools and also uses the gradle build system
 - `gradle stChase`
 - `gradle deepData`
 
-
 ## Output Folder Structure
 
 This is where the experiment results go
@@ -98,7 +97,6 @@ outputs/
 
 ```
 
-
 ## Experiments Folder Structure
 
 This is where the experiment results go
@@ -118,7 +116,7 @@ name/
 |-- data/               := CSV data files
 | |-- a.csv
 |-- dependencies/
-| |-- st-tgds.txt       := ChaseBench rules 
+| |-- st-tgds.txt       := ChaseBench rules
 | |-- t-tgds.txt        := ChaseBench rules
 |-- owl/
 | |-- ontology.owl      := OWL ontology file
@@ -170,6 +168,7 @@ name/
 | |-- t-schema.txt
 |-- config.ini
 ```
+
 There hasn't been an automated way of generating the `properties.txt` but a manual copy from is simple `config.ini`
 
 ## Scripts
@@ -187,6 +186,21 @@ build.sh drops a database if exists, then creates and imports - use `./scripts/b
 query.sh is the main heavy lifter of the scripts, and runs a test of a query on each tool, 6 times. It is invoked using `./scripts/query.sh <folder> <query number> <size>`, where 'folder' is the top level scenario name, query number is self explanatory and 'size' is a data size defined in the data folder of that scenario. Below will be a guide to modifying this script to expand it to more tools.
 
 Most of these commands are automated using the run.sh script. At the moment, the parameters of the test have to be changed in the script itself, but this could be changed to take command line arguments
+
+### Run.sh
+
+This script automates the running of the query script. To add scenarios this script expand the `SCENARIOS` array to become something like
+
+```
+SCENARIOS=("scenarios/<SCENARIO NAME>" "scenarios/<SCENARIO NAME>")
+```
+To add test data sizes do the same but with the `SIZES` array to become something like
+
+```
+SIZES=("small" "medium")
+```
+
+The run the deep datasets change the SIZES to ```"deep"```
 
 ## Getting it to run
 
@@ -239,9 +253,7 @@ It is invoked with the following command:
 In terms of progress towards the end-to-end system, it was found that Graal does not properly support Postgres in the fact that it cannot handle upper case letters in names. In emails to the creators, the following responses are highlighted:
 
 >the main problem comes from the case sensitiveness detection. However PostgreSQL is case sensitive, JDBC says me not (through DatabaseMetaData.supportsMixedCaseIdentifiers())) so wrong processing is done over predicate and table names.
-
 > but it's not an option in Graal. I think we misunderstood the semantic of the "supportsMixedCaseIdentifiers" method, so it's surely a bug.
-
 >I just wanted to inform you that we have planned a more in-depth analysis of this problem during the week of May 20. We will keep you informed.
 
 If this bug is fixed, I do not think it would be much work to get Graal working, since all the other infrastructure (ontologies, queries, databases) is already set up.
@@ -249,11 +261,13 @@ If this bug is fixed, I do not think it would be much work to get Graal working,
 ### RDFox
 
 The RDFox jar is taken from the ChaseBench, and is invoked with the following command:
+
 ```
 java -jar chaseRDFox-linux.jar -threads <number> -chase [standard | skolem] -s-sch <source schema> -t-sch <target schema> -st-tgds <source to target tgds> -src <data folder> -t-tgds <target tgds> -qdir <query folder>
 ```
 
 I have added a run.sh script that simplifies running the code based on the folder structure defined above:
+
 ```
 ./run.sh <base scenario folder> <data size> <query number>
 ```
@@ -263,9 +277,11 @@ Queries have to use letters for variables
 ### BCA
 
 The base BCA code that generates the new st-tgds is invoked with the following command:
+
 ```
 java -jar chasestepper-1.0.jar <source to target tgds> <target tgds> <rule query file>
 ```
+
 This was originally used in conjunction with RDFox to do the chasing, however has been paired with two other systems
 
 #### GQR
@@ -286,13 +302,14 @@ java -jar ./tools/obdabenchmarkingtools/stChase-1.08.jar -t-sql <Target Schema i
 
 This tool has a more in-depth on the obdabenchmarkingtools github project
 
-
 ### ChaseFun
+
 The ChaseFun code is from George's dropbox, and includes a jar, a start script, and some sample properties files. I have not got ChaseFun to work properly, but I have made some progress and can provide some help.
 
 Firstly, the properties file. Although there is both a 'userdb' and 'pwddb' field, the code internally only reads the 'userdb' property and assigns the it to the username and password - the result of this being your Postgres role must have the same username and password in order for ChaseFun to run.
 
 From decompiling the jar, I can provide the following API
+
 ```
 userdb : username for rdmbs
 pwddb : COMPLETELY USELESS
@@ -331,31 +348,38 @@ In ChaseFun, you can only have one file named 's-schema' or 't-schema', regardle
 
 Ontop has finally decided to cooperate however requires is own unique files to run. Download from here <https://sourceforge.net/projects/ontop4obda/files/> and documentation here <https://ontop.inf.unibz.it/documentation/>.
 
-There is also a seperate download for the tree-witness rewriter that is used internally http://www.dcs.bbk.ac.uk/~roman/tw-rewriting/ and that can be used as such:
+There is also a seperate download for the tree-witness rewriter that is used internally <http://www.dcs.bbk.ac.uk/~roman/tw-rewriting/> and that can be used as such:
+
 ```
 java -jar tw-rewriting.jar <OWL ontology file> <SPARQL query file>
 ```
+
 However, this rewriter produces Datalog which now has been converted into ChaseBench format and this can be converted to SQL and has been added to the tests as the Tree Witness Rewriter like Rapid or IQAROS. This converter is also in the obdabenmarkingtools project and will be explained in that readme as well.
 
 For the end-to-end, the download comes with a script with various commands - one of these is the bootstrap command, which creates the mapping files needed for Ontop:
+
 ```
-./ontop bootstrap -m <mapping file name> -l <jdbc url> -p <database password> -u <database username> -d <jdbc driver name> -t <ontology file name> -b <base uri> 
+./ontop bootstrap -m <mapping file name> -l <jdbc url> -p <database password> -u <database username> -d <jdbc driver name> -t <ontology file name> -b <base uri>
 ```
+
 I would recommend not using this bootstrapping tool as it just doesn't really work and using the Ontop mapping generator that I have created. It probably isn't completely correctly either but it is much closer to working that their own tool. It does work for all the currently tested scenarios (It returns the same answers as the other tools)
 
 The other command is to query
+
 ```
 ./ontop query -t <OWL ontology file> -q  <SPARQL query file> -m <Ontop Mapping file> -p <database properties file>
 ```
 
 ### Llunatic
+
 While Llunatic I think has been discounted from this due to it only using one thread and therefore being very slow compared to RDFox, I can still provide some pointers for its use.
 
-Download from https://github.com/donatellosantoro/Llunatic as this version definitely includes the fix that I had to submit to them. Build it with the ant command they define 
+Download from <https://github.com/donatellosantoro/Llunatic> as this version definitely includes the fix that I had to submit to them. Build it with the ant command they define
 
 ```
 ant gfp
 ```
+
 and then use the runExp.sh script in the lunaticEngine folder. I have written a Javascript command that autogenerates the XML files needed to define a scenario in Llunatic:
 
 ```
@@ -366,10 +390,9 @@ If you provide a valid scenario folder of the structure defined above, this comm
 
 I think there were still issues with its use for some of the scenarios, but we definitely got it to work for LUBM.
 
-
 ## Query Script
 
-This script probably deserved its own readme but it can be broken down into the sections below
+This script is can be broken down into the sections below
 
 ### Timing
 
@@ -390,11 +413,12 @@ ENDEVENT=$(echo <ONTOP OUTPUT> | grep <END MESSAGE>  | cut -d'[' -f 1);
 ENDTIME=$(date -u -d <ENDEVENT> +"%s.%N");
 ONTOP[$ACTION,$i]=$(date -u -d "0 $ENDTIME sec - $STARTTIME sec" +%S%N | sed 's/^0*//')
 ```
+
 There is now error handling so that if a tool fails the whole of that run is set to having a time of -1 which can be caught by the tools that produce the graphs
 
 ### Recording the times
 
-As shown there is a modified way of storing the times of the scripts compared to the original version by JE. This new system, I hope is more readable and is better for noticing mistakes. Each tool has an array declared with their name i.e 
+As shown there is a modified way of storing the times of the scripts compared to the original version by JE. This new system, I hope is more readable and is better for noticing mistakes. Each tool has an array declared with their name i.e
 
 ```
 declare -A RAPID
