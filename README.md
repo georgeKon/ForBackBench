@@ -414,6 +414,26 @@ ENDTIME=$(date -u -d <ENDEVENT> +"%s.%N");
 ONTOP[$ACTION,$i]=$(date -u -d "0 $ENDTIME sec - $STARTTIME sec" +%S%N | sed 's/^0*//')
 ```
 
+
+#### Issue
+
+With Ontop sometimes it throws a curveball saying the query is empty. I haven't worked out why yet. It is a valid query and I think there are valid responses for that. This results in the timing being end event I was looking for not existing. Like below:
+
+```
+16:15:51.066 [main] DEBUG i.u.i.o.a.r.impl.QuestQueryProcessor - Directly translated (SPARQL) intermediate query:
+ans1(x)
+CONSTRUCT [x] []
+   JOIN
+      INTENSIONAL file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device(x)
+      INTENSIONAL http://ksg.meraka.co.za/adolena.owl#assistsWith(x,y)
+      INTENSIONAL file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalAbility(y)
+
+16:15:51.066 [main] DEBUG i.u.i.o.a.r.impl.QuestQueryProcessor - Start the unfolding...
+16:15:51.071 [main] DEBUG i.u.i.o.a.r.impl.QuestQueryProcessor - Empty query --> no solution.
+16:15:51.072 [Thread-2] DEBUG i.u.i.o.a.c.impl.QuestStatement - Executing the query and get the result...
+16:15:51.073 [Thread-2] DEBUG i.u.i.o.a.c.impl.QuestStatement - Execution finished.
+```
+
 There is now error handling so that if a tool fails the whole of that run is set to having a time of -1 which can be caught by the tools that produce the graphs
 
 ### Recording the times
