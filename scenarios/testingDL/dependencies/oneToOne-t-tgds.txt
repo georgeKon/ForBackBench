@@ -1,0 +1,48 @@
+Acquisition(?X) -> Transaction(?X) .
+Address(?X) -> Thing(?X) .
+Address(?X) -> inverseofhasAddress(?X,?Y), Thing(?Y) .
+Company(?X) -> LegalPerson(?X) .
+Dealer(?X) -> StockBroker(?X) .
+Investor(?X) -> Person(?X) .
+Investor(?X) -> Thing(?X) .
+LegalPerson(?X) -> Person(?X) .
+Offer(?X) -> Transaction(?X) .
+Person(?X) -> Thing(?X) .
+Person(?X) -> hasAddress(?X,?Y), Thing(?Y) .
+PhysicalPerson(?X) -> Person(?X) .
+Stock(?X) -> FinantialInstrument(?X) .
+Stock(?X) -> isListedIn(?X,?Y), Thing(?Y) .
+Stock(?X) -> belongsToCompany(?X,?Y), Thing(?Y) .
+StockBroker(?X) -> StockExchangeMember(?X) .
+StockBroker(?X) -> tradesOnBehalfOf(?X,?Y), Thing(?Y) .
+StockExchangeMember(?X) -> Person(?X) .
+StockExchangeMember(?X) -> Thing(?X) .
+StockTrader(?X) -> StockBroker(?X) .
+Trader(?X) -> StockBroker(?X) .
+Transaction(?X) -> Thing(?X) .
+Transaction(?X) -> isExecutedFor(?X,?Y), Thing(?Y) .
+Transaction(?X) -> isExecutedBy(?X,?Y), Thing(?Y) .
+Transaction(?X) -> involvesInstrument(?X,?Y), Thing(?Y) .
+belongsToCompany(?X,?X1) -> Stock(?X) .
+belongsToCompany(?X,?X1) -> Company(?X1) .
+belongsToCompany(?Y,?X) -> hasStock(?X,?Y) .
+hasAddress(?X,?X1) -> Person(?X) .
+hasAddress(?X,?X1) -> Address(?X1) .
+hasStock(?X,?X1) -> Company(?X) .
+hasStock(?X,?X1) -> Stock(?X1) .
+inverseofhasAddress(?X,?X1) -> Address(?X) .
+inverseofhasAddress(?X,?X1) -> Person(?X1) .
+inverseofhasAddress(?Y,?X) -> hasAddress(?X,?Y) .
+involvesInstrument(?X,?X1) -> Transaction(?X) .
+involvesInstrument(?X,?X1) -> FinantialInstrument(?X1) .
+isExecutedBy(?X,?X1) -> Transaction(?X) .
+isExecutedBy(?X,?X1) -> StockExchangeMember(?X1) .
+isExecutedFor(?X,?X1) -> Transaction(?X) .
+isExecutedFor(?X,?X1) -> Investor(?X1) .
+isListedIn(?X,?X1) -> Stock(?X) .
+isListedIn(?X,?X1) -> StockExchangeList(?X1) .
+isListedIn(?Y,?X) -> listsStock(?X,?Y) .
+isTradedIn(?X,?X1) -> Transaction(?X1) .
+isTradedIn(?Y,?X) -> involvesInstrument(?X,?Y) .
+listsStock(?X,?X1) -> Stock(?X1) .
+usesBroker(?Y,?X) -> tradesOnBehalfOf(?X,?Y) .

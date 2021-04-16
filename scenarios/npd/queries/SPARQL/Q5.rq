@@ -1,0 +1,16 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX npdv: <http://sws.ifi.uio.no/vocab/npd-v2#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT  ?0 ?1 ?2 ?3 ?4 ?5  
+WHERE {
+  ?0 a npdv:FieldReserve .
+  ?0 npdv:remainingCondensate     ?1 .
+  ?0 npdv:remainingGas            ?2 .
+  ?0 npdv:remainingNGL            ?3 .
+  ?0 npdv:remainingOil            ?4 .
+  ?0 npdv:remainingOilEquivalents ?5  .
+  
+} 

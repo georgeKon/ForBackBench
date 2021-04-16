@@ -7,7 +7,7 @@
     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
     xmlns:owl="http://www.w3.org/2002/07/owl#"
-    xmlns:NAP="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#"
+    xmlns:NAP="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
   xml:base="http://ksg.meraka.co.za/adolena.owl">
   <owl:Ontology rdf:about="">
@@ -23,30 +23,30 @@ The next release will be a 'full' domain ontology mainly about abilities, disabi
     >ADOLENA v2 -- the Abilities and Disabilities OntoLogy for ENhancing Accessibility
 This version is a simplified version from the Adolena v1 ontology.</owl:versionInfo>
   </owl:Ontology>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MovementAbility">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MovementAbility">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalAbility"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalAbility"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Stuttering">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Stuttering">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechDisability"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LowerLimbMobility">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LowerLimbMobility">
     <owl:disjointWith>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#UpperLimbMobility"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#UpperLimbMobility"/>
     </owl:disjointWith>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >MK: renamed from "move only lower limb" instance
 RA: Removed isAssistedBy some NAP:Wheelchair</rdfs:comment>
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LimbMobility"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LimbMobility"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#FaceToFaceCommunicationDevice">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#FaceToFaceCommunicationDevice">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Communication_Device"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Communication_Device"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -54,24 +54,24 @@ RA: Removed isAssistedBy some NAP:Wheelchair</rdfs:comment>
           <owl:ObjectProperty rdf:ID="assistsWith"/>
         </owl:onProperty>
         <owl:someValuesFrom>
-          <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechAbility"/>
+          <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechAbility"/>
         </owl:someValuesFrom>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="WritingDevice">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Communication_Device"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Communication_Device"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Multiple_sclerosis">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Multiple_sclerosis">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Achondroplasia">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Achondroplasia">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
     </rdfs:subClassOf>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Achondroplasia is a type of autosomal dominant genetic disorder that is a common cause of dwarfism. Achondroplastic dwarfs have short stature, with an average adult height of 131 cm (4 feet 3.8 inches) for males and 123 cm (4 feet 0.6 inches) for females.
@@ -83,7 +83,7 @@ Achondroplasia is a result of an autosomal dominant mutation in the fibroblast g
       <owl:Class rdf:ID="TactileReading"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#TelephoneAid">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#TelephoneAid">
     <rdfs:subClassOf>
       <owl:Class rdf:ID="ListenDevice"/>
     </rdfs:subClassOf>
@@ -91,41 +91,41 @@ Achondroplasia is a result of an autosomal dominant mutation in the fibroblast g
       <owl:Class rdf:ID="SpeechDevice"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MentalDisability">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MentalDisability">
     <owl:disjointWith>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingDisability"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#VisualDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#VisualDisability"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechDisability"/>
     </owl:disjointWith>
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Disability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Disability"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#BatteryPowered_Wheelchair">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#BatteryPowered_Wheelchair">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Motorised_Wheelchair"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Motorised_Wheelchair"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Hear">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Hear">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingAbility"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingAbility"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Muscular_dystrophy">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Muscular_dystrophy">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Wheelchair">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Wheelchair">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MobilityDevice"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MobilityDevice"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
@@ -133,27 +133,27 @@ Achondroplasia is a result of an autosomal dominant mutation in the fibroblast g
           <owl:ObjectProperty rdf:about="#assistsWith"/>
         </owl:onProperty>
         <owl:someValuesFrom>
-          <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LimbMobility"/>
+          <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LimbMobility"/>
         </owl:someValuesFrom>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Paraplegia">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Paraplegia">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LowerLimbMobility"/>
+        <owl:someValuesFrom rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LowerLimbMobility"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:ID="affects"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#See">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#See">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SightAbility"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SightAbility"/>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:ID="BrailleAlarmClock">
@@ -161,28 +161,28 @@ Achondroplasia is a result of an autosomal dominant mutation in the fibroblast g
       <owl:Class rdf:about="#TactileReading"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Hear_partially">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Hear_partially">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingAbility"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingAbility"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Communication_Device">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Communication_Device">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#AssistiveDevice"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#AssistiveDevice"/>
     </rdfs:subClassOf>
     <owl:disjointWith>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MobilityDevice"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MobilityDevice"/>
     </owl:disjointWith>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Motorised_Wheelchair">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Wheelchair"/>
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Motorised_Wheelchair">
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Wheelchair"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#assistsWith"/>
         </owl:onProperty>
         <owl:someValuesFrom>
-          <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#UpperLimbMobility"/>
+          <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#UpperLimbMobility"/>
         </owl:someValuesFrom>
       </owl:Restriction>
     </rdfs:subClassOf>
@@ -191,40 +191,40 @@ Achondroplasia is a result of an autosomal dominant mutation in the fibroblast g
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#assistsWith"/>
         </owl:onProperty>
-        <owl:someValuesFrom rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LowerLimbMobility"/>
+        <owl:someValuesFrom rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LowerLimbMobility"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SensoryAbility">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SensoryAbility">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Ability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Ability"/>
     </rdfs:subClassOf>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >RA:Moved from under NAP:PhyscalAbility to under NAP: Ability</rdfs:comment>
     <owl:disjointWith>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechAbility"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechAbility"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalAbility"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalAbility"/>
     </owl:disjointWith>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LowVision">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LowVision">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#VisualDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#VisualDisability"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingAbility">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SensoryAbility"/>
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingAbility">
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SensoryAbility"/>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Talking_Thermometer">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Talking_Thermometer">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Tells indoor / outdoor temperature and alarm time. Gives readings on large LCD display and in voice with volume and on/off control</rdfs:comment>
     <rdfs:subClassOf>
       <owl:Class rdf:ID="TalkingReading"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SightAbility">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SensoryAbility"/>
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SightAbility">
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SensoryAbility"/>
   </owl:Class>
   <owl:Class rdf:about="#TalkingReading">
     <rdfs:subClassOf>
@@ -232,7 +232,7 @@ Achondroplasia is a result of an autosomal dominant mutation in the fibroblast g
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SightAbility"/>
+        <owl:someValuesFrom rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SightAbility"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#assistsWith"/>
         </owl:onProperty>
@@ -240,39 +240,39 @@ Achondroplasia is a result of an autosomal dominant mutation in the fibroblast g
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingAbility"/>
+        <owl:someValuesFrom rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingAbility"/>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#requiresAbility"/>
+          <owl:ObjectProperty rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#requiresAbility"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >like books on audio tape</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Epilepsy">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MentalDisability"/>
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Epilepsy">
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MentalDisability"/>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#IntellectualDisability">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MentalDisability"/>
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#IntellectualDisability">
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MentalDisability"/>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Autism">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MentalDisability"/>
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Autism">
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MentalDisability"/>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Amputation">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Amputation">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
     </rdfs:subClassOf>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >MK: changed from "Amputee" (which is the person that has something amputated, whereas here we do not focus on the person him/herself)</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#AssistiveDevice">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#AssistiveDevice">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:someValuesFrom>
-          <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Ability"/>
+          <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Ability"/>
         </owl:someValuesFrom>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#assistsWith"/>
@@ -280,20 +280,20 @@ Achondroplasia is a result of an autosomal dominant mutation in the fibroblast g
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Manual_Wheelchair">
-    <owl:disjointWith rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Motorised_Wheelchair"/>
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Manual_Wheelchair">
+    <owl:disjointWith rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Motorised_Wheelchair"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:onProperty rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#requiresAbility"/>
+        <owl:onProperty rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#requiresAbility"/>
         <owl:someValuesFrom>
-          <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#UpperLimbMobility"/>
+          <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#UpperLimbMobility"/>
         </owl:someValuesFrom>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Wheelchair"/>
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Wheelchair"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LowerLimbMobility"/>
+        <owl:someValuesFrom rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LowerLimbMobility"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#assistsWith"/>
         </owl:onProperty>
@@ -305,27 +305,27 @@ Achondroplasia is a result of an autosomal dominant mutation in the fibroblast g
       <owl:Class rdf:about="#TactileReading"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Foldable_Wheelchair">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Manual_Wheelchair"/>
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Foldable_Wheelchair">
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Manual_Wheelchair"/>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Osteogensis_Imperfecta">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Osteogensis_Imperfecta">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Hemiplegia">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Hemiplegia">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Quadriplegia">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Quadriplegia">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:someValuesFrom>
-          <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#UpperLimbMobility"/>
+          <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#UpperLimbMobility"/>
         </owl:someValuesFrom>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#affects"/>
@@ -334,7 +334,7 @@ Achondroplasia is a result of an autosomal dominant mutation in the fibroblast g
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LowerLimbMobility"/>
+        <owl:someValuesFrom rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LowerLimbMobility"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#affects"/>
         </owl:onProperty>
@@ -343,132 +343,132 @@ Achondroplasia is a result of an autosomal dominant mutation in the fibroblast g
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >MK: it is arguable if quadriplegia is also a type of Muscle_Impairment. Clearly, if the nerves do not work well, then the muscles do not, but from the perspective of subject domain semantics, this may not be a particularly useful logical deduction.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Guillaume_Barre">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Guillaume_Barre">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechAbility">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechAbility">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Ability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Ability"/>
     </rdfs:subClassOf>
-    <owl:disjointWith rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SensoryAbility"/>
+    <owl:disjointWith rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SensoryAbility"/>
     <owl:disjointWith>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalAbility"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalAbility"/>
     </owl:disjointWith>
   </owl:Class>
   <owl:Class rdf:ID="BrailleWritingDevice">
     <rdfs:subClassOf rdf:resource="#WritingDevice"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SightAbility"/>
+        <owl:someValuesFrom rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SightAbility"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#assistsWith"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#See_partially">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SightAbility"/>
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#See_partially">
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SightAbility"/>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Spina_Bifida">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Spina_Bifida">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
     </rdfs:subClassOf>
   </owl:Class>
   <owl:Class rdf:about="#ReadingDevice">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Communication_Device"/>
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Communication_Device"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#assistsWith"/>
         </owl:onProperty>
-        <owl:someValuesFrom rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SightAbility"/>
+        <owl:someValuesFrom rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SightAbility"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#TactileAbility">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SensoryAbility"/>
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#TactileAbility">
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SensoryAbility"/>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalAbility">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalAbility">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Ability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Ability"/>
     </rdfs:subClassOf>
-    <owl:disjointWith rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechAbility"/>
-    <owl:disjointWith rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SensoryAbility"/>
+    <owl:disjointWith rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechAbility"/>
+    <owl:disjointWith rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SensoryAbility"/>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device">
     <owl:disjointWith>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Ability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Ability"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Disability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Disability"/>
     </owl:disjointWith>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Ability">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Ability">
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device"/>
+        <owl:someValuesFrom rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device"/>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#isAssistedBy"/>
+          <owl:ObjectProperty rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#isAssistedBy"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:someValuesFrom>
-          <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Disability"/>
+          <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Disability"/>
         </owl:someValuesFrom>
         <owl:onProperty>
-          <owl:ObjectProperty rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#isAffectedBy"/>
+          <owl:ObjectProperty rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#isAffectedBy"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:disjointWith rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device"/>
+    <owl:disjointWith rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device"/>
     <owl:disjointWith>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Disability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Disability"/>
     </owl:disjointWith>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >The Abilities are divided into two main groups: Physical abilities and sensory abilities. Other abilities will be added later such as mental and intellectual abilities.</rdfs:comment>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LightweightFoldable_Wheelchair">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LightweightFoldable_Wheelchair">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >Light weight rigid foldable manual wheelchair</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Foldable_Wheelchair"/>
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Foldable_Wheelchair"/>
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Lightweight_Wheelchair"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Lightweight_Wheelchair"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Blind">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Blind">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#VisualDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#VisualDisability"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Reach">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MovementAbility"/>
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Reach">
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MovementAbility"/>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#UpperLimbMobility">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#UpperLimbMobility">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >MK: renamed from "move only upper limb" instance</rdfs:comment>
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LimbMobility"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LimbMobility"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Disability">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Disability">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >MK: do these things count as "diseases", or, say, a certain constellation of physical observables, put differently, as a "system", in the sense of being composed of endurants [more precisely: physical objects] and perdurants? If the latter, I think we can put "system" under endurant and say it has as parts EDs and POBs, and then Disability under System.
 
 summary of duscussion: a disability is not a disease, but a consequence of a disease (or of other things, like congenital, accident, etc.). So, e.g. "Multiple Sclerosis" in the ontology here is not meant to be the disease as classified in e.g. ICD10 but the debilitating effects of the disease.</rdfs:comment>
-    <owl:disjointWith rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Ability"/>
-    <owl:disjointWith rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device"/>
+    <owl:disjointWith rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Ability"/>
+    <owl:disjointWith rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device"/>
     <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#affects"/>
         </owl:onProperty>
-        <owl:someValuesFrom rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Ability"/>
+        <owl:someValuesFrom rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Ability"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
@@ -479,186 +479,186 @@ summary of duscussion: a disability is not a disease, but a consequence of a dis
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#assistsWith"/>
         </owl:onProperty>
-        <owl:someValuesFrom rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SightAbility"/>
+        <owl:someValuesFrom rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SightAbility"/>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#TactileAbility"/>
-        <owl:onProperty rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#requiresAbility"/>
+        <owl:someValuesFrom rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#TactileAbility"/>
+        <owl:onProperty rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#requiresAbility"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Deaf">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Deaf">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechAbility"/>
+        <owl:someValuesFrom rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechAbility"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#affects"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingDisability"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Deafened">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Deafened">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingDisability"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SymbolBoard">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#FaceToFaceCommunicationDevice"/>
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SymbolBoard">
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#FaceToFaceCommunicationDevice"/>
   </owl:Class>
   <owl:Class rdf:about="#ListenDevice">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Communication_Device"/>
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Communication_Device"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#assistsWith"/>
         </owl:onProperty>
-        <owl:someValuesFrom rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingAbility"/>
+        <owl:someValuesFrom rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingAbility"/>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Dystonia">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Dystonia">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability">
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#affects"/>
         </owl:onProperty>
-        <owl:someValuesFrom rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalAbility"/>
+        <owl:someValuesFrom rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalAbility"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Disability"/>
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Disability"/>
     <owl:disjointWith>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingDisability"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#VisualDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#VisualDisability"/>
     </owl:disjointWith>
     <owl:disjointWith>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechDisability"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MentalDisability"/>
+    <owl:disjointWith rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MentalDisability"/>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#FaceToFaceCommunicationSoftware">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#FaceToFaceCommunicationDevice"/>
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#FaceToFaceCommunicationSoftware">
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#FaceToFaceCommunicationDevice"/>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Kyphosis">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Kyphosis">
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Hard_of_hearing">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Hard_of_hearing">
     <rdfs:subClassOf>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingDisability"/>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingDisability">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingDisability">
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingAbility"/>
+        <owl:someValuesFrom rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingAbility"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#affects"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Disability"/>
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Disability"/>
     <owl:disjointWith>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#VisualDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#VisualDisability"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
-    <owl:disjointWith rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MentalDisability"/>
+    <owl:disjointWith rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
+    <owl:disjointWith rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MentalDisability"/>
     <owl:disjointWith>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechDisability"/>
     </owl:disjointWith>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Cerebral_palsy">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Cerebral_palsy">
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
   </owl:Class>
   <owl:Class rdf:about="#SpeechDevice">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Communication_Device"/>
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Communication_Device"/>
     <rdfs:subClassOf>
       <owl:Restriction>
-        <owl:someValuesFrom rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechAbility"/>
+        <owl:someValuesFrom rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechAbility"/>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#assistsWith"/>
         </owl:onProperty>
       </owl:Restriction>
     </rdfs:subClassOf>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Lightweight_Wheelchair">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Manual_Wheelchair"/>
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Lightweight_Wheelchair">
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Manual_Wheelchair"/>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LimbMobility">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#LimbMobility">
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >MK: renamed from "move all limbs" instance</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MovementAbility"/>
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MovementAbility"/>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#VisualDisability">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#VisualDisability">
     <owl:disjointWith>
-      <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechDisability"/>
+      <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechDisability"/>
     </owl:disjointWith>
-    <owl:disjointWith rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
-    <owl:disjointWith rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MentalDisability"/>
-    <owl:disjointWith rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingDisability"/>
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Disability"/>
+    <owl:disjointWith rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
+    <owl:disjointWith rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MentalDisability"/>
+    <owl:disjointWith rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingDisability"/>
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Disability"/>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MobilityDevice">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#AssistiveDevice"/>
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MobilityDevice">
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#AssistiveDevice"/>
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#assistsWith"/>
         </owl:onProperty>
-        <owl:someValuesFrom rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MovementAbility"/>
+        <owl:someValuesFrom rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MovementAbility"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <owl:disjointWith rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Communication_Device"/>
+    <owl:disjointWith rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Communication_Device"/>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechDisability">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Disability"/>
-    <owl:disjointWith rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingDisability"/>
-    <owl:disjointWith rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#VisualDisability"/>
-    <owl:disjointWith rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MentalDisability"/>
-    <owl:disjointWith rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechDisability">
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Disability"/>
+    <owl:disjointWith rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#HearingDisability"/>
+    <owl:disjointWith rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#VisualDisability"/>
+    <owl:disjointWith rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#MentalDisability"/>
+    <owl:disjointWith rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Poliomyelitis">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Poliomyelitis">
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Little_or_No_Speech">
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Little_or_No_Speech">
     <rdfs:subClassOf>
       <owl:Restriction>
         <owl:onProperty>
           <owl:ObjectProperty rdf:about="#affects"/>
         </owl:onProperty>
-        <owl:someValuesFrom rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechAbility"/>
+        <owl:someValuesFrom rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechAbility"/>
       </owl:Restriction>
     </rdfs:subClassOf>
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechDisability"/>
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#SpeechDisability"/>
   </owl:Class>
-  <owl:Class rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Scoliosis">
-    <rdfs:subClassOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
+  <owl:Class rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Scoliosis">
+    <rdfs:subClassOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalDisability"/>
   </owl:Class>
   <owl:ObjectProperty rdf:about="#affects">
     <owl:inverseOf>
-      <owl:ObjectProperty rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#isAffectedBy"/>
+      <owl:ObjectProperty rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#isAffectedBy"/>
     </owl:inverseOf>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#isAffectedBy">
+  <owl:ObjectProperty rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#isAffectedBy">
     <owl:inverseOf rdf:resource="#affects"/>
   </owl:ObjectProperty>
-  <owl:ObjectProperty rdf:about="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#isAssistedBy">
+  <owl:ObjectProperty rdf:about="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#isAssistedBy">
     <owl:inverseOf>
       <owl:ObjectProperty rdf:about="#assistsWith"/>
     </owl:inverseOf>
   </owl:ObjectProperty>
   <owl:ObjectProperty rdf:about="#assistsWith">
-    <owl:inverseOf rdf:resource="file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#isAssistedBy"/>
+    <owl:inverseOf rdf:resource="file:/home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#isAssistedBy"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
     >MK: the "assistsWith" in the sense of that some person has a disability and then the device assists with realizing some ability</rdfs:comment>
   </owl:ObjectProperty>

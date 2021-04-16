@@ -1,0 +1,1105 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.com/example.owl#" xml:base="http://example.com/example.owl" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">  
+
+<owl:Ontology rdf:about="http://example.com/example.owl"/>
+
+<owl:ObjectProperty rdf:about="#fallvnm60nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#hidevi17nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#protestvi35nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#ringvnm9nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#forgivevnm33nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#deepad16nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#acceptvnm4nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#painvnm4nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#goldvnm4nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#delivervh51nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#politicalvnm3nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#doorvh3nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#jumpvh36nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#glovevh36nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#clearvh48nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#platevi30nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#tightvi49nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#fishvi49nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#concernvh23nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#flyvh39nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#factvi48nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#bandvi36nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#developvi36nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#cushionvnm62nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#examinevnm20nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#farmvnm3nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#societyvi22nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#familyvnm20nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#remainvnm20nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#mouthvnm44nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#accountvh9nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#industryvnm44nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#animalvh6nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#awakevnm7nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#poisonvnm46nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#warvnm25nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#mustvnm48nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#voicevnm48nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#flowervnm48nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#havevi24nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#delivervi28nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#imaginevi28nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#mentionvi4nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#involvevi4nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#knowvh15nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#containvh15nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#placevnm1nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#approvalvi37nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#shutvi37nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#recordvnm23nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#simplevnm23nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#shakevnm23nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#simplevnm23nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#tinvnm16nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#delivervi28nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#advertisementvi14nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#touchvh21nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#couldvnm62nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#bellvnm62nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#cushionvnm62nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#mindvh22nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#papervh22nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#liftvi30nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#platevi30nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#concernvnm63nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#comevi10nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#liquidvnm58nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#stickvh61nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#bluevh61nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#stonevh7nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#delicatevi26nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#ownvnm47nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#givevi6nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#ovenvi6nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#hammervnm7nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#awakevnm7nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#churchvnm7nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#avoidvi61nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#softvnm29nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#countvh4nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#completevh4nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#seavnm5nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#bootvnm5nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#dependentvnm5nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#nightvh38nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#respectvh37nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#letvh37nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#obtainvi48nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#factvi48nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#reflectvh16nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#affordvh16nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#diseasevi45nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#narrowvi45nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#shoevi17nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#hidevi17nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#pointvnm10nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#flyvi7nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#snowvnm52nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#describevh1nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#bluevh1nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#settlevh8nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#touchvh8nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#societyvi22nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#bedvi22nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#narrowvi45nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#truevnm47nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#ownvnm47nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#intendvnm47nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#buttervnm15nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#presentvnm15nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#sistervnm15nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#nationvh58nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#delicatevi26nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#providevi26nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#gardenvnm45nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#greyvnm64nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#ovenvi6nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#authorityvnm26nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#bottlevnm37nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#dievnm37nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#movevnm37nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#summervnm6nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#latevnm6nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#arguevnm6nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#playvnm11nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#firstvnm11nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#comparevnm11nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#layvnm58nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#liquidvnm58nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#loosevnm58nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#greenvnm8nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#hidevi20nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#violentvi20nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#workvnm50nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#holdvnm50nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#brickvnm50nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#straightvi5nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#painvi5nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#imaginevi28nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#facevh28nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#complainvi8nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#avoidvnm18nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#amountvnm18nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#ovenvnm18nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#wavevh20nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#agenciesvh20nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#systemvh24nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#replyvh30nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#protestvh30nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#inventionvh26nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#ringvnm40nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#bluevnm22nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#leftvnm22nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#branchvnm22nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#bluevh1nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#horsevnm64nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#greyvnm64nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#usevnm64nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#jewelvi15nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#moonvnm32nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#punishmentvnm24nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#stitchvnm32nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#discussvnm32nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#bluevh1nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#wouldvi63nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#approvalvi2nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#bucketvh49nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#languagevh49nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#leftvnm22nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#playvi58nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#curvevi58nl0ce0m"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#seaad21nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#clothvh46nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#roomvnm9nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#voicevnm9nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#ringvnm9nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#usevnm64nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#handlevnm2nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#parallelvnm2nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#collectionvnm2nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#helpvi35nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#protestvi35nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#parallelvnm2nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#firstvnm11nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#sensevnm42nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#shutvi37nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#degreevh28nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#facevh28nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#flyvh64nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#effectvi47nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#stitchvnm19nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#fertilevnm57nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#ovenvnm18nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#linevh53nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#accountvh9nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#whistlead49nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#watchvh11nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#beautifulvh11nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#babyvnm17nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#raisevnm17nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#sizevnm17nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#encouragevi64nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#neckvi64nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#amountvnm18nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#minevh32nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#jewelvi15nl0ce0"/>
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_testvh32nl0ce0"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#chemicalvh38nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#nightvh38nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#endvnm21nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#believevnm14nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#containvnm38nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#chalkvi19nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#reportvnm38nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#breathvnm38nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#containvnm38nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#industryvi52nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#lightvi52nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#longvi10nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#comevi10nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#touchvi41nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#probablevh5nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#recordvh5nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#digestionvnm10nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#pointvnm10nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#churchvnm10nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#holdvnm50nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#consciousvnm13nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#beautifulvh11nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#protestad56nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#glovevh36nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#changevi15nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#jewelvi15nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#languagevnm21nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#killad38nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#foundvh44nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#backvh13nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#wetvh13nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#nationvi27nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#recordvh5nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#electricvi25nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#chargevh3nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#indicatevi40nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#doorvh3nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#attackvnm19nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#shamevnm29nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#latevnm6nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#sistervnm15nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#separatevh27nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#havevh27nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#lookvi13nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#threadvi13nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#confirmvh21nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#touchvh21nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#materialvh31nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#punishmentvnm24nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#yellowvi11nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#businessvi11nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#industryvnm44nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#tinvnm16nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#separatevi41nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#touchvi41nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#bluevh1nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#kindvi3nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#yellowvi11nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#beevi16nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#enginevnm12nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#sleepvnm12nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#measurevnm12nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#affordvh16nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#developvi36nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#requirevh10nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#replyvh10nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#movevnm37nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#differentvi1nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#havevh27nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#orangevh41nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#sidevh41nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#relatevnm42nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#existvnm42nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#sensevnm42nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#sciencevnm63nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#concernvnm63nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#collarvnm63nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#joinvi34nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#safevnm60nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#fallvnm60nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#commonvnm60nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#intendvnm47nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#sidevh41nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#readingvnm16nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#facevh25nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#dievnm37nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#sleepvnm12nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#movevnm53nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#bodyvh43nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#substancevi59nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#historyvnm25nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#steelad42nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#forgivevi9nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#protestvh30nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#edgevi29nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#discovervi29nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#watchvh53nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#linevh53nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#tryvh12nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#painvi5nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#presentvnm15nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#expansionvnm1nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#placevnm1nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#restvnm1nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#existvnm42nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#solidvh47nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#papervh22nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#countvnm31nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#dayvh43nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#bodyvh43nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#agreementvh35nl0ce1">
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_seemvh35nl0ce0"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#yellowvnm45nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#gardenvnm45nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#contributevnm45nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#knowledgevi38nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#providevi26nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#languagevnm3nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#politicalvnm3nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#farmvnm3nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#bootvnm5nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#indicatevi40nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#peacevi40nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#blowvi2nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#approvalvi2nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#achievevh48nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#clearvh48nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#knotvnm33nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#archvi46nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#knotvnm27nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#latevi7nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#flyvi7nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#peacevi40nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#ovenvh25nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#facevh25nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#coatvh14nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#brickvnm50nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#learnvh56nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#playvh59nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#answervh59nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#armvnm49nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#processvnm49nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#managervnm49nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#armvnm49nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#jellyvi60nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#femalevi60nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#dependentvnm5nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#weightvh60nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#arrangevh19nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#movevh40nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#sunvh42nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#carryvnm57nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#offervnm57nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#fertilevnm57nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#narrowvi45nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#darkvnm27nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#sensevnm42nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#fallvh29nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#thumbvh29nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#mistvnm25nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#painvnm4nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#warvnm25nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#historyvnm25nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#delicatevi38nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#smokevnm52nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#girlvh57nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#officevnm46nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#poisonvnm46nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#grassvnm46nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#complexvh12nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#tryvh12nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#forgivevi9nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#degreevi9nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#experiencevnm40nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#hatevh6nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#consciousvnm13nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#animalvh6nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#regretvnm30nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#greyvi61nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#avoidvi61nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#neckvi64nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#peacevi40nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#bellvnm62nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#violentvi20nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#damagead33nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#whistlead49nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#completevh4nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#goldvnm4nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#discussvnm32nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#bluevh61nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#paintvh24nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#systemvh24nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#discussvnm32nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#cartvh57nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#girlvh57nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#returnvnm28nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#shutvnm28nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#risevnm28nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#climbvi32nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#secondvnm16nl0ce2"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#measurevnm12nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#pointvi18nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#ownvnm47nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#lockvnm54nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#bloodvnm54nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#privatevnm54nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#readingad32nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#colorvnm30nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#wayvnm39nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#waitvnm13nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#offervnm57nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#restvnm1nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#happenvh45nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#errorvi56nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#levelvh18nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#sockvnm26nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#curvevi58nl0ce0m">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#fertilevh7nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#sleepvnm12nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#stonevh7nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#deepad16nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#eatad8nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#placevh40nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#movevh40nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#managervnm49nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#feeblevi33nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#softvnm29nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#inventionvh26nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#voicevnm48nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#illvi32nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#climbvi32nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#groupvnm44nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#industryvnm44nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#mouthvnm44nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#answervh59nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#cookvi21nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#risevnm28nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#versevh33nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#firstvnm11nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#peacevi34nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#joinvi34nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#weathervnm31nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#canvasvnm31nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#completevh4nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#countvnm31nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#delivervi28nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#threadvi13nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#goldvnm40nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#ringvnm40nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#experiencevnm40nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#thumbvh29nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#reasonad18nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#readingad32nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#machinevnm24nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#skinvnm14nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#remainvnm20nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#fathervh14nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#coatvh14nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#trayvh44nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#breathvnm38nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#testvh32nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#providevi12nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#cowvh31nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#materialvh31nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#twistvh64nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#flyvh64nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#flowervnm48nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#smellvh62nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#summervnm39nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#gunvi63nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#wouldvi63nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#branchvnm22nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#secretvi12nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#providevi12nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#dustvi25nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#electricvi25nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#farmvnm3nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#crossvh17nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#authorityvnm24nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#punishmentvnm24nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#machinevnm24nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#foundvh44nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#trayvh44nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#ovenvi6nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#raisevnm17nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#bedvi22nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#swimvi54nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#musicvnm53nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#movevnm53nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#relationvnm53nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#actvh17nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#crossvh17nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#angryvnm39nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#summervnm39nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#wayvnm39nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#attorneyvh34nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#restvh34nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#knockvh58nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#nationvh58nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#usevi23nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#separatevi41nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#societyvi1nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#differentvi1nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#waxad60nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#shadevh45nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#involvevh2nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#copyad36nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#languagevh49nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#examplevh23nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#concernvh23nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#loosevnm13nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#waitvnm13nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#consciousvnm13nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#fishvi49nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#twistvi56nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#errorvi56nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#churchvnm7nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#placevnm1nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#usevh2nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#involvevh2nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#collarvnm63nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#regretvi54nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#swimvi54nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#pagevh60nl0ce1">
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_weightvh60nl0ce0"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#wetvh13nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#restvh34nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#sizevnm17nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#ovenvnm18nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#brushvh19nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#arrangevh19nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#cardvnm52nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#smokevnm52nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#snowvnm52nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#smokevi14nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#advertisementvi14nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#meanvi59nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#substancevi59nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#shadevh45nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#businessvi11nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#happenvh45nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#involvevi4nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#fallvh47nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#solidvh47nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#fictionvh9nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#accountvh9nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#shakevnm23nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#flyvh64nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#delicatevi38nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#knowledgevi38nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#yellowvnm33nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#forgivevnm33nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#knotvnm33nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#involvevnm21nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#languagevnm21nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#endvnm21nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#snakevi8nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#complainvi8nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#expressvnm26nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#authorityvnm26nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#sockvnm26nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#collarvi33nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#feeblevi33nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#touchvh8nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#canvasvnm31nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#trickvnm8nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#privatevnm54nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#authorityvnm26nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#voicevnm9nl0ce1">
+</owl:ObjectProperty>
+<owl:Class rdf:about="#screwvi21nl0ce0">
+</owl:Class>
+<owl:ObjectProperty rdf:about="#loosevh56nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#learnvh56nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#collectionvnm2nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#needvi27nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#nationvi27nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#involvevi16nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#smilevi19nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#chalkvi19nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#businessvi11nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#movevnm37nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#knotvnm33nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#bandvi18nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#pointvi18nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#bloodvnm54nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#stitchvnm32nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#roundvh51nl0ce1">
+<rdfs:range>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#io_delivervh51nl0ce0"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Restriction>
+</rdfs:range>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#beevi16nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#skinvi24nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#involvevi16nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#leathervnm27nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#darkvnm27nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#knotvnm27nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#readingvnm16nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#recordvnm23nl0ce2"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#usevh26nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#inventionvh26nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#connectionvh42nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#sunvh42nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#jumpvnm8nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#trickvnm8nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#greenvnm8nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#sortvi31nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#expertvi31nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#clockad7nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#seaad21nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#endvnm21nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#openvh33nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#versevh33nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#lightvi52nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#discovervi29nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#languagevh49nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#femalevi60nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#mattervnm19nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#stitchvnm19nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#attackvnm19nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#degreevi9nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#adjustmentvnm14nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#believevnm14nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#skinvnm14nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#arguevnm6nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#workvnm30nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#colorvnm30nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#regretvnm30nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#grassvnm46nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#seemvh35nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#skinvi24nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#havevi24nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#comparevi46nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#archvi46nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#painvnm4nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#expertvi31nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#contributevnm45nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#replyvh10nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#whitevi23nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#usevi23nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#provevi3nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#kindvi3nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#commonvnm60nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#letvh37nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#protestad56nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#familyvnm20nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#comparevnm11nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#soundvi47nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#effectvi47nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#relationvnm53nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#loosevnm58nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#usead61nl0ce0">
+<rdfs:subPropertyOf rdf:resource="#knowvh15nl0ce1"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#mealvh46nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#clothvh46nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#selectionvnm29nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#softvnm29nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#shamevnm29nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#presentvh18nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#levelvh18nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#secondvnm16nl0ce2">
+<rdfs:subPropertyOf rdf:resource="#readingvnm16nl0ce1"/>
+<rdfs:subPropertyOf rdf:resource="#tinvnm16nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#shutvnm28nl0ce1">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#churchvnm10nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#containvh15nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#basevh62nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#touchvi41nl0ce0"/>
+<rdfs:subPropertyOf rdf:resource="#smellvh62nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#cutvh39nl0ce1">
+<rdfs:subPropertyOf rdf:resource="#flyvh39nl0ce0"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#agenciesvh20nl0ce0">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#eatad8nl0ce0">
+</owl:ObjectProperty>
+</rdf:RDF>
+

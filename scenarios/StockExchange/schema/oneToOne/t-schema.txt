@@ -1,0 +1,102 @@
+Acquisition {
+	c0 : STRING
+}
+Transaction {
+	c0 : STRING
+}
+Address {
+	c0 : STRING
+}
+Thing {
+	c0 : STRING
+}
+inverseofhasAddress {
+	c0 : STRING,
+	c1 : STRING
+}
+Company {
+	c0 : STRING
+}
+LegalPerson {
+	c0 : STRING
+}
+Dealer {
+	c0 : STRING
+}
+StockBroker {
+	c0 : STRING
+}
+Investor {
+	c0 : STRING
+}
+Person {
+	c0 : STRING
+}
+Offer {
+	c0 : STRING
+}
+hasAddress {
+	c0 : STRING,
+	c1 : STRING
+}
+PhysicalPerson {
+	c0 : STRING
+}
+Stock {
+	c0 : STRING
+}
+FinantialInstrument {
+	c0 : STRING
+}
+isListedIn {
+	c0 : STRING,
+	c1 : STRING
+}
+belongsToCompany {
+	c0 : STRING,
+	c1 : STRING
+}
+StockExchangeMember {
+	c0 : STRING
+}
+tradesOnBehalfOf {
+	c0 : STRING,
+	c1 : STRING
+}
+StockTrader {
+	c0 : STRING
+}
+Trader {
+	c0 : STRING
+}
+isExecutedFor {
+	c0 : STRING,
+	c1 : STRING
+}
+isExecutedBy {
+	c0 : STRING,
+	c1 : STRING
+}
+involvesInstrument {
+	c0 : STRING,
+	c1 : STRING
+}
+hasStock {
+	c0 : STRING,
+	c1 : STRING
+}
+StockExchangeList {
+	c0 : STRING
+}
+listsStock {
+	c0 : STRING,
+	c1 : STRING
+}
+isTradedIn {
+	c0 : STRING,
+	c1 : STRING
+}
+usesBroker {
+	c0 : STRING,
+	c1 : STRING
+}

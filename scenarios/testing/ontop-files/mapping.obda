@@ -1,0 +1,17 @@
+[PrefixDeclaration]
+ns:  http://example.com/example.owl#
+
+[MappingDeclaration] @collection [[
+mappingId ID-1072041577
+target  ns:ns/{c0} ns:A ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_A"
+
+mappingId ID268255728
+target  ns:ns/{c0} ns:P ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_P"
+
+mappingId ID-1186852982
+target  ns:ns/{c0} ns:P1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_P1"
+
+]]

@@ -1,0 +1,369 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.com/example.owl#" xml:base="http://example.com/example.owl" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">  
+
+<owl:Ontology rdf:about="http://example.com/example.owl"/>
+
+<owl:Class rdf:about="#Professor">
+<rdfs:subClassOf rdf:resource="#Faculty"/>
+</owl:Class>
+<owl:Class rdf:about="#Manual">
+<rdfs:subClassOf rdf:resource="#Publication"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#affiliatedOrganizationOf">
+<rdfs:domain rdf:resource="#Organization"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#affiliatedOrganizationOf">
+<rdfs:range rdf:resource="#Organization"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Department">
+</owl:Class>
+<owl:Class rdf:about="#Department">
+<rdfs:subClassOf rdf:resource="#Organization"/>
+</owl:Class>
+<owl:Class rdf:about="#ResearchGroup">
+</owl:Class>
+<owl:Class rdf:about="#ResearchGroup">
+<rdfs:subClassOf rdf:resource="#Organization"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#listedCourse">
+<rdfs:range rdf:resource="#Course"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#listedCourse">
+<rdfs:domain rdf:resource="#Schedule"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Book">
+<rdfs:subClassOf rdf:resource="#Publication"/>
+</owl:Class>
+<owl:Class rdf:about="#Work">
+</owl:Class>
+<owl:ObjectProperty rdf:about="#mastersDegreeFrom">
+<rdfs:subPropertyOf rdf:resource="#degreeFrom"/>
+<rdfs:domain rdf:resource="#Person"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#mastersDegreeFrom">
+<rdfs:range rdf:resource="#University"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Director">
+<rdfs:subClassOf rdf:resource="#Person"/>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#headOf"/>
+<owl:someValuesFrom rdf:resource="#Program"/>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="#Publication">
+</owl:Class>
+<owl:Class rdf:about="#Student">
+<rdfs:subClassOf rdf:resource="#Person"/>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#takesCourse"/>
+<owl:someValuesFrom rdf:resource="#Course"/>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="#Employee">
+<rdfs:subClassOf rdf:resource="#Person"/>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#worksFor"/>
+<owl:someValuesFrom rdf:resource="#Organization"/>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#io_degreeFrom">
+<owl:inverseOf rdf:resource="#degreeFrom"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#TeachingAssistant">
+<rdfs:subClassOf rdf:resource="#Person"/>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#teachingAssistantOf"/>
+<owl:someValuesFrom rdf:resource="#Course"/>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#io_member">
+<owl:inverseOf rdf:resource="#member"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#subOrganizationOf">
+<rdfs:domain rdf:resource="#Organization"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#subOrganizationOf">
+<rdfs:range rdf:resource="#Organization"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#subOrganizationOf">
+<rdfs:domain>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#subOrganizationOf"/>
+<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing">
+</owl:someValuesFrom>
+</owl:Restriction>
+</rdfs:domain>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Person">
+<rdfs:subClassOf rdf:resource="#Employee"/>
+<rdfs:subClassOf rdf:resource="#TeachingAssistant"/>
+<rdfs:subClassOf rdf:resource="#Chair"/>
+<rdfs:subClassOf rdf:resource="#Director"/>
+<rdfs:subClassOf rdf:resource="#Student"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#softwareVersion">
+<rdfs:domain rdf:resource="#Software"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#GraduateStudent">
+<rdfs:subClassOf rdf:resource="#Person"/>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#takesCourse"/>
+<owl:someValuesFrom rdf:resource="#GraduateCourse"/>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="#Organization">
+</owl:Class>
+<owl:Class rdf:about="#Organization">
+</owl:Class>
+<owl:Class rdf:about="#Chair">
+<rdfs:subClassOf rdf:resource="#Professor"/>
+<rdfs:subClassOf rdf:resource="#Person"/>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#headOf"/>
+<owl:someValuesFrom rdf:resource="#Department"/>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="#ClericalStaff">
+<rdfs:subClassOf rdf:resource="#AdministrativeStaff"/>
+</owl:Class>
+<owl:Class rdf:about="#Article">
+<rdfs:subClassOf rdf:resource="#Publication"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#undergraduateDegreeFrom">
+<rdfs:subPropertyOf rdf:resource="#degreeFrom"/>
+<rdfs:domain rdf:resource="#Person"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#undergraduateDegreeFrom">
+<rdfs:range rdf:resource="#University"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#FullProfessor">
+<rdfs:subClassOf rdf:resource="#Professor"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#publicationResearch">
+<rdfs:domain rdf:resource="#Publication"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#publicationResearch">
+<rdfs:range rdf:resource="#Research"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Research">
+<rdfs:subClassOf rdf:resource="#Work"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#degreeFrom">
+<rdfs:domain rdf:resource="#Person"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#degreeFrom">
+<rdfs:subPropertyOf rdf:resource="#io_hasAlumnus"/>
+<rdfs:range rdf:resource="#University"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#advisor">
+<rdfs:domain rdf:resource="#Person"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#advisor">
+<rdfs:range rdf:resource="#Professor"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Institute">
+<rdfs:subClassOf rdf:resource="#Organization"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#member">
+<rdfs:domain rdf:resource="#Organization"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#member">
+<rdfs:subPropertyOf rdf:resource="#io_memberOf"/>
+<rdfs:range rdf:resource="#Person"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#AssistantProfessor">
+<rdfs:subClassOf rdf:resource="#Professor"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#memberOf">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#memberOf">
+<rdfs:subPropertyOf rdf:resource="#io_member"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#publicationDate">
+<rdfs:domain rdf:resource="#Publication"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#io_memberOf">
+<owl:inverseOf rdf:resource="#memberOf"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Faculty">
+<rdfs:subClassOf rdf:resource="#Employee"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#affiliateOf">
+<rdfs:domain rdf:resource="#Organization"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#affiliateOf">
+<rdfs:range rdf:resource="#Person"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#tenured">
+<rdfs:domain rdf:resource="#Professor"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Specification">
+<rdfs:subClassOf rdf:resource="#Publication"/>
+</owl:Class>
+<owl:Class rdf:about="#AdministrativeStaff">
+<rdfs:subClassOf rdf:resource="#Employee"/>
+</owl:Class>
+<owl:Class rdf:about="#TechnicalReport">
+<rdfs:subClassOf rdf:resource="#Article"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#orgPublication">
+<rdfs:domain rdf:resource="#Organization"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#orgPublication">
+<rdfs:range rdf:resource="#Publication"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#UnofficialPublication">
+<rdfs:subClassOf rdf:resource="#Publication"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#emailAddress">
+<rdfs:domain rdf:resource="#Person"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#VisitingProfessor">
+<rdfs:subClassOf rdf:resource="#Professor"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#io_hasAlumnus">
+<owl:inverseOf rdf:resource="#hasAlumnus"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Course">
+<rdfs:subClassOf rdf:resource="#Work"/>
+</owl:Class>
+<owl:Class rdf:about="#Course">
+</owl:Class>
+<owl:Class rdf:about="#Program">
+</owl:Class>
+<owl:Class rdf:about="#Program">
+<rdfs:subClassOf rdf:resource="#Organization"/>
+</owl:Class>
+<owl:Class rdf:about="#SystemsStaff">
+<rdfs:subClassOf rdf:resource="#AdministrativeStaff"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#telephone">
+<rdfs:domain rdf:resource="#Person"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#AssociateProfessor">
+<rdfs:subClassOf rdf:resource="#Professor"/>
+</owl:Class>
+<owl:Class rdf:about="#Dean">
+<rdfs:subClassOf rdf:resource="#Professor"/>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#headOf"/>
+<owl:someValuesFrom rdf:resource="#College"/>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#doctoralDegreeFrom">
+<rdfs:subPropertyOf rdf:resource="#degreeFrom"/>
+<rdfs:domain rdf:resource="#Person"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#doctoralDegreeFrom">
+<rdfs:range rdf:resource="#University"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#teachingAssistantOf">
+<rdfs:domain rdf:resource="#TeachingAssistant"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#teachingAssistantOf">
+<rdfs:range rdf:resource="#Course"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#University">
+<rdfs:subClassOf rdf:resource="#Organization"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#teacherOf">
+<rdfs:range rdf:resource="#Course"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#teacherOf">
+<rdfs:domain rdf:resource="#Faculty"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#College">
+<rdfs:subClassOf rdf:resource="#Organization"/>
+</owl:Class>
+<owl:Class rdf:about="#College">
+</owl:Class>
+<owl:Class rdf:about="#Software">
+<rdfs:subClassOf rdf:resource="#Publication"/>
+</owl:Class>
+<owl:Class rdf:about="#PostDoc">
+<rdfs:subClassOf rdf:resource="#Faculty"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#researchProject">
+<rdfs:range rdf:resource="#Research"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#researchProject">
+<rdfs:domain rdf:resource="#ResearchGroup"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#worksFor">
+<rdfs:subPropertyOf rdf:resource="#memberOf"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#publicationAuthor">
+<rdfs:range rdf:resource="#Person"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#publicationAuthor">
+<rdfs:domain rdf:resource="#Publication"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#title">
+<rdfs:domain rdf:resource="#Person"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#ResearchAssistant">
+<rdfs:subClassOf rdf:resource="#Person"/>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#worksFor"/>
+<owl:someValuesFrom rdf:resource="#ResearchGroup"/>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="#JournalArticle">
+<rdfs:subClassOf rdf:resource="#Article"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#softwareDocumentation">
+<rdfs:range rdf:resource="#Publication"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#softwareDocumentation">
+<rdfs:domain rdf:resource="#Software"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#UndergraduateStudent">
+<rdfs:subClassOf rdf:resource="#Student"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#hasAlumnus">
+<rdfs:domain rdf:resource="#University"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#hasAlumnus">
+<rdfs:subPropertyOf rdf:resource="#io_degreeFrom"/>
+<rdfs:range rdf:resource="#Person"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#headOf">
+<rdfs:subPropertyOf rdf:resource="#worksFor"/>
+<rdfs:domain rdf:resource="#Dean"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#ConferencePaper">
+<rdfs:subClassOf rdf:resource="#Article"/>
+</owl:Class>
+<owl:Class rdf:about="#GraduateCourse">
+<rdfs:subClassOf rdf:resource="#Course"/>
+</owl:Class>
+<owl:Class rdf:about="#GraduateCourse">
+</owl:Class>
+<owl:Class rdf:about="#Lecturer">
+<rdfs:subClassOf rdf:resource="#Faculty"/>
+</owl:Class>
+<owl:Class rdf:about="#Schedule">
+</owl:Class>
+<owl:ObjectProperty rdf:about="#takesCourse">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#age">
+<rdfs:domain rdf:resource="#Person"/>
+</owl:ObjectProperty>
+</rdf:RDF>
+

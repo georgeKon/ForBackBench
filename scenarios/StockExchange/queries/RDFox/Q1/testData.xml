@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<scenario>
+    <source>
+        <type>DBMS</type>
+        <access-configuration>
+            <driver>org.postgresql.Driver</driver>
+            <uri>jdbc:postgresql:postgres_llunatic</uri>
+            <schema>source</schema>
+            <login>postgres</login>
+            <password>password</password>
+        </access-configuration>
+        <schemaFile schema="source">/home/aa2c19/obdabenchmark/scenarios/StockExchange/schema/s-schema.txt</schemaFile>
+        <import>
+            <input type="csv" separator="," hasHeader="false" table="src_address">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/testData/src_Address.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_person">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/testData/src_Person.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_thing">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/testData/src_Thing.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_hasaddress">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/testData/src_hasAddress.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_inverseofhasaddress">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/testData/src_inverseofhasAddress.csv</input>
+        </import>
+    </source>
+    <target>
+        <generateFromDependencies>true</generateFromDependencies>
+        <type>DBMS</type>
+        <access-configuration>
+            <driver>org.postgresql.Driver</driver>
+            <uri>jdbc:postgresql:postgres_llunatic</uri>
+            <schema>target</schema>
+            <login>postgres</login>
+            <password>password</password>
+        </access-configuration>
+        <schemaFile schema="target">/home/aa2c19/obdabenchmark/scenarios/StockExchange/schema/t-schema.txt</schemaFile>
+    </target>
+    <configuration>
+        <printResults>true</printResults>
+        <exportQueryResults>true</exportQueryResults>
+        <exportQueryResultsPath>/home/aa2c19/obdabenchmark/scenarios/StockExchange/out/testData/Q1</exportQueryResultsPath>
+        <exportQueryResultsType>CSV</exportQueryResultsType>
+        <exportSolutions>true</exportSolutions>
+        <exportQueryResults>true</exportQueryResults>
+        <exportSolutionsPath>/home/aa2c19/obdabenchmark/scenarios/StockExchange/out/testData/Q1</exportSolutionsPath>
+        <exportSolutionsType>CSV</exportSolutionsType>
+    </configuration>
+    <dependencies>
+        <sttgdsFile>/home/aa2c19/obdabenchmark/scenarios/StockExchange/dependencies/st-tgds.txt</sttgdsFile>
+        <ttgdsFile>/home/aa2c19/obdabenchmark/scenarios/StockExchange/dependencies/t-tgds.txt</ttgdsFile>
+    </dependencies>
+    <queries>
+        <queryFile>/home/aa2c19/obdabenchmark/scenarios/StockExchange/queries/RDFox/Q1/Q1.txt</queryFile>
+    </queries>
+</scenario>

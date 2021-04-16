@@ -1,0 +1,14 @@
+src_A {
+    c0 : STRING,
+    c1 : STRING
+}
+
+src_P {
+    c0 : STRING,
+    c1 : STRING
+}
+
+src_P1 {
+    c0 : STRING,
+    c1 : STRING
+}

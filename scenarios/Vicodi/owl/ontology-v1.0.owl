@@ -1,0 +1,643 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://vicodi.org/ontology#"
+     xml:base="http://vicodi.org/ontology"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:ontology="http://vicodi.org/ontology#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about=""/>
+    
+<owl:Class rdf:about="#Artist">
+<rdfs:subClassOf rdf:resource="#Creator"/>
+</owl:Class>
+<owl:Class rdf:about="#Water">
+<rdfs:subClassOf rdf:resource="#Geographical-Feature"/>
+</owl:Class>
+<owl:Class rdf:about="#Business-Leader">
+<rdfs:subClassOf rdf:resource="#Magnate"/>
+</owl:Class>
+<owl:Class rdf:about="#Ethnic-Group">
+<rdfs:subClassOf rdf:resource="#Social-Group"/>
+</owl:Class>
+<owl:Class rdf:about="#Religious-Leader">
+<rdfs:subClassOf rdf:resource="#Leader"/>
+</owl:Class>
+<owl:Class rdf:about="#Politician">
+<rdfs:subClassOf rdf:resource="#Functionary"/>
+</owl:Class>
+<owl:Class rdf:about="#Functionary">
+<rdfs:subClassOf rdf:resource="#Person-Role"/>
+</owl:Class>
+<owl:Class rdf:about="#Sculpture">
+<rdfs:subClassOf rdf:resource="#Work-of-Art"/>
+</owl:Class>
+<owl:Class rdf:about="#Musician">
+<rdfs:subClassOf rdf:resource="#Entertainer"/>
+</owl:Class>
+<owl:Class rdf:about="#Actor">
+<rdfs:subClassOf rdf:resource="#Entertainer"/>
+</owl:Class>
+<owl:Class rdf:about="#Painter">
+<rdfs:subClassOf rdf:resource="#Artist"/>
+</owl:Class>
+<owl:Class rdf:about="#Military-Person">
+<rdfs:subClassOf rdf:resource="#Person-Role"/>
+</owl:Class>
+<owl:Class rdf:about="#Trial">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#Village">
+<rdfs:subClassOf rdf:resource="#Settlement"/>
+</owl:Class>
+<owl:Class rdf:about="#Landmark">
+<rdfs:subClassOf rdf:resource="#Geographical-Feature"/>
+</owl:Class>
+<owl:Class rdf:about="#Liturgical-Object">
+<rdfs:subClassOf rdf:resource="#Artefact"/>
+</owl:Class>
+<owl:Class rdf:about="#Philosopher">
+<rdfs:subClassOf rdf:resource="#Scientist"/>
+</owl:Class>
+<owl:Class rdf:about="#International-Organisation">
+<rdfs:subClassOf rdf:resource="#Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#Jurist">
+<rdfs:subClassOf rdf:resource="#Functionary"/>
+</owl:Class>
+<owl:Class rdf:about="#Other-Religious-Leader">
+<rdfs:subClassOf rdf:resource="#Religious-Leader"/>
+</owl:Class>
+<owl:Class rdf:about="#Newspaper">
+<rdfs:subClassOf rdf:resource="#Writing"/>
+</owl:Class>
+<owl:Class rdf:about="#Location-Part-Relation">
+<rdfs:subClassOf rdf:resource="#Time-Dependent-Relation"/>
+</owl:Class>
+<owl:Class rdf:about="#Author">
+<rdfs:subClassOf rdf:resource="#Creator"/>
+</owl:Class>
+<owl:Class rdf:about="#Building">
+<rdfs:subClassOf rdf:resource="#Artefact"/>
+</owl:Class>
+<owl:Class rdf:about="#Ecclesiarch">
+<rdfs:subClassOf rdf:resource="#Religious-Leader"/>
+</owl:Class>
+<owl:Class rdf:about="#Leader">
+<rdfs:subClassOf rdf:resource="#Person-Role"/>
+</owl:Class>
+<owl:Class rdf:about="#Educational-Organisation">
+<rdfs:subClassOf rdf:resource="#Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#Secular-Ideology">
+<rdfs:subClassOf rdf:resource="#Ideology"/>
+</owl:Class>
+<owl:Class rdf:about="#Badge">
+<rdfs:subClassOf rdf:resource="#Conceptual-Object"/>
+</owl:Class>
+<owl:Class rdf:about="#Pastime">
+<rdfs:subClassOf rdf:resource="#Conceptual-Object"/>
+</owl:Class>
+<owl:Class rdf:about="#Period-in-Office">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#Party">
+<rdfs:subClassOf rdf:resource="#Political-Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#Food">
+<rdfs:subClassOf rdf:resource="#Natural-Object"/>
+</owl:Class>
+<owl:Class rdf:about="#Time-Dependent">
+<rdfs:subClassOf rdf:resource="#VicodiOI"/>
+</owl:Class>
+<owl:Class rdf:about="#Artistic-Style">
+<rdfs:subClassOf rdf:resource="#Abstract-Notion"/>
+</owl:Class>
+<owl:Class rdf:about="#Publisher">
+<rdfs:subClassOf rdf:resource="#Creator"/>
+</owl:Class>
+<owl:Class rdf:about="#Religious-Ideology">
+<rdfs:subClassOf rdf:resource="#Ideology"/>
+</owl:Class>
+<owl:Class rdf:about="#Economic-Process">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#Settlement">
+<rdfs:subClassOf rdf:resource="#Location"/>
+</owl:Class>
+<owl:Class rdf:about="#Pope">
+<rdfs:subClassOf rdf:resource="#Religious-Leader"/>
+</owl:Class>
+<owl:Class rdf:about="#Foreign-Minister">
+<rdfs:subClassOf rdf:resource="#Minister"/>
+</owl:Class>
+<owl:Class rdf:about="#Treaty">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#Geographical-Feature">
+<rdfs:subClassOf rdf:resource="#Location"/>
+</owl:Class>
+<owl:Class rdf:about="#Public-Oration">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#FuzzyTemporalInterval">
+<rdfs:subClassOf rdf:resource="#Time"/>
+</owl:Class>
+<owl:Class rdf:about="#Writing">
+<rdfs:subClassOf rdf:resource="#Artefact"/>
+</owl:Class>
+<owl:Class rdf:about="#Theologian">
+<rdfs:subClassOf rdf:resource="#Person-Role"/>
+</owl:Class>
+<owl:Class rdf:about="#Event">
+<rdfs:subClassOf rdf:resource="#Flavour"/>
+</owl:Class>
+<owl:Class rdf:about="#Ship">
+<rdfs:subClassOf rdf:resource="#Vehicle"/>
+</owl:Class>
+<owl:Class rdf:about="#Saint">
+<rdfs:subClassOf rdf:resource="#Person-Role"/>
+</owl:Class>
+<owl:Class rdf:about="#Astronaut">
+<rdfs:subClassOf rdf:resource="#Discoverer"/>
+</owl:Class>
+<owl:Class rdf:about="#Journalist">
+<rdfs:subClassOf rdf:resource="#Creator"/>
+</owl:Class>
+<owl:Class rdf:about="#Social-Group">
+<rdfs:subClassOf rdf:resource="#Flavour"/>
+</owl:Class>
+<owl:Class rdf:about="#Creator">
+<rdfs:subClassOf rdf:resource="#Person-Role"/>
+</owl:Class>
+<owl:Class rdf:about="#Trades-Union">
+<rdfs:subClassOf rdf:resource="#Economic-Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#Vehicle">
+<rdfs:subClassOf rdf:resource="#Artefact"/>
+</owl:Class>
+<owl:Class rdf:about="#Pollution">
+<rdfs:subClassOf rdf:resource="#Artefact"/>
+</owl:Class>
+<owl:Class rdf:about="#Population-Movement">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#Conceptual-Object">
+<rdfs:subClassOf rdf:resource="#Object"/>
+</owl:Class>
+<owl:Class rdf:about="#Geographical-Region">
+<rdfs:subClassOf rdf:resource="#Geographical-Feature"/>
+</owl:Class>
+<owl:Class rdf:about="#Stereotype-Group">
+<rdfs:subClassOf rdf:resource="#Social-Group"/>
+</owl:Class>
+<owl:Class rdf:about="#Religious-Order">
+<rdfs:subClassOf rdf:resource="#Religious-Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#Geographer">
+<rdfs:subClassOf rdf:resource="#Scientist"/>
+</owl:Class>
+<owl:Class rdf:about="#Military-Unit">
+<rdfs:subClassOf rdf:resource="#Military-Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#Military-Organisation">
+<rdfs:subClassOf rdf:resource="#Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#Clothing">
+<rdfs:subClassOf rdf:resource="#Artefact"/>
+</owl:Class>
+<owl:Class rdf:about="#Political-Organisation">
+<rdfs:subClassOf rdf:resource="#Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#Legislation">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#Ritual">
+<rdfs:subClassOf rdf:resource="#Conceptual-Object"/>
+</owl:Class>
+<owl:Class rdf:about="#Cultural-Organisation">
+<rdfs:subClassOf rdf:resource="#Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#Psychologist">
+<rdfs:subClassOf rdf:resource="#Scientist"/>
+</owl:Class>
+<owl:Class rdf:about="#Discoverer">
+<rdfs:subClassOf rdf:resource="#Person-Role"/>
+</owl:Class>
+<owl:Class rdf:about="#Dancer">
+<rdfs:subClassOf rdf:resource="#Entertainer"/>
+</owl:Class>
+<owl:Class rdf:about="#Role">
+<rdfs:subClassOf rdf:resource="#Time-Dependent"/>
+</owl:Class>
+<owl:Class rdf:about="#Economist">
+<rdfs:subClassOf rdf:resource="#Scientist"/>
+</owl:Class>
+<owl:Class rdf:about="#University">
+<rdfs:subClassOf rdf:resource="#Educational-Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#Individual">
+<rdfs:subClassOf rdf:resource="#Flavour"/>
+</owl:Class>
+<owl:Class rdf:about="#Sculptor">
+<rdfs:subClassOf rdf:resource="#Artist"/>
+</owl:Class>
+<owl:Class rdf:about="#Conductor">
+<rdfs:subClassOf rdf:resource="#Entertainer"/>
+</owl:Class>
+<owl:Class rdf:about="#Intra-State-Group">
+<rdfs:subClassOf rdf:resource="#Location"/>
+</owl:Class>
+<owl:Class rdf:about="#Dramaturge">
+<rdfs:subClassOf rdf:resource="#Creator"/>
+</owl:Class>
+<owl:Class rdf:about="#TemporalInterval">
+<rdfs:subClassOf rdf:resource="#Time"/>
+</owl:Class>
+<owl:Class rdf:about="#Armament">
+<rdfs:subClassOf rdf:resource="#Artefact"/>
+</owl:Class>
+<owl:Class rdf:about="#Uprising">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#Political-Region">
+<rdfs:subClassOf rdf:resource="#Location"/>
+</owl:Class>
+<owl:Class rdf:about="#Representative-Institution">
+<rdfs:subClassOf rdf:resource="#Political-Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#War">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#Time">
+<rdfs:subClassOf rdf:resource="#VicodiOI"/>
+</owl:Class>
+<owl:Class rdf:about="#Scandal">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#Trade-Association">
+<rdfs:subClassOf rdf:resource="#Economic-Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#Engineer">
+<rdfs:subClassOf rdf:resource="#Creator"/>
+</owl:Class>
+<owl:Class rdf:about="#Language">
+<rdfs:subClassOf rdf:resource="#Abstract-Notion"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#related">
+<rdfs:domain rdf:resource="#VicodiOI"/>
+<rdfs:range rdf:resource="#VicodiOI"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Person-Role">
+<rdfs:subClassOf rdf:resource="#Role"/>
+</owl:Class>
+<owl:Class rdf:about="#Social-Stratum">
+<rdfs:subClassOf rdf:resource="#Social-Group"/>
+</owl:Class>
+<owl:Class rdf:about="#Film-Maker">
+<rdfs:subClassOf rdf:resource="#Creator"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#hasLocationContainerMember">
+<rdfs:subPropertyOf rdf:resource="#hasRelationMember"/>
+<rdfs:domain rdf:resource="#Location-Part-Relation"/>
+<rdfs:range rdf:resource="#Location"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Church-Reformer">
+<rdfs:subClassOf rdf:resource="#Religious-Leader"/>
+</owl:Class>
+<owl:Class rdf:about="#Trades-Unionist">
+<rdfs:subClassOf rdf:resource="#Secular-Leader"/>
+</owl:Class>
+<owl:Class rdf:about="#Organisation">
+<rdfs:subClassOf rdf:resource="#Flavour"/>
+</owl:Class>
+<owl:Class rdf:about="#Cleric">
+<rdfs:subClassOf rdf:resource="#Person-Role"/>
+</owl:Class>
+<owl:Class rdf:about="#Artistic-Movement">
+<rdfs:subClassOf rdf:resource="#Movement"/>
+</owl:Class>
+<owl:Class rdf:about="#Physician">
+<rdfs:subClassOf rdf:resource="#Person-Role"/>
+</owl:Class>
+<owl:Class rdf:about="#Election">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#Diplomat">
+<rdfs:subClassOf rdf:resource="#Functionary"/>
+</owl:Class>
+<owl:Class rdf:about="#Sportsman">
+<rdfs:subClassOf rdf:resource="#Person-Role"/>
+</owl:Class>
+<owl:Class rdf:about="#Battle">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#Location">
+<rdfs:subClassOf rdf:resource="#Flavour"/>
+</owl:Class>
+<owl:Class rdf:about="#Professor">
+<rdfs:subClassOf rdf:resource="#Person-Role"/>
+</owl:Class>
+<owl:Class rdf:about="#Disaster">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#Time-Dependent-Relation">
+<rdfs:subClassOf rdf:resource="#Time-Dependent"/>
+</owl:Class>
+<owl:Class rdf:about="#Board">
+<rdfs:subClassOf rdf:resource="#Management-Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#Book">
+<rdfs:subClassOf rdf:resource="#Writing"/>
+</owl:Class>
+<owl:Class rdf:about="#Head-of-State">
+<rdfs:subClassOf rdf:resource="#Secular-Leader"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#isLocationPartMemberOf">
+<rdfs:subPropertyOf rdf:resource="#isRelationMemberOf"/>
+<rdfs:domain rdf:resource="#Location"/>
+<rdfs:range rdf:resource="#Location-Part-Relation"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Flavour">
+<rdfs:subClassOf rdf:resource="#Time-Dependent"/>
+</owl:Class>
+<owl:Class rdf:about="#Minister">
+<rdfs:subClassOf rdf:resource="#Functionary"/>
+</owl:Class>
+<owl:Class rdf:about="#Natural-Object">
+<rdfs:subClassOf rdf:resource="#Object"/>
+</owl:Class>
+<owl:Class rdf:about="#Fictional-Event">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#League">
+<rdfs:subClassOf rdf:resource="#Political-Organisation"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#isRelationMemberOf">
+<rdfs:subPropertyOf rdf:resource="#related"/>
+<rdfs:domain rdf:resource="#Time-Dependent"/>
+<rdfs:range rdf:resource="#Time-Dependent-Relation"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Cathedral">
+<rdfs:subClassOf rdf:resource="#Building"/>
+</owl:Class>
+<owl:Class rdf:about="#Religious-Practice">
+<rdfs:subClassOf rdf:resource="#Conceptual-Object"/>
+</owl:Class>
+<owl:Class rdf:about="#Religious-Community">
+<rdfs:subClassOf rdf:resource="#Religious-Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#Cultural-Agreement">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#Idea">
+<rdfs:subClassOf rdf:resource="#Abstract-Notion"/>
+</owl:Class>
+<owl:Class rdf:about="#Political-Symbol">
+<rdfs:subClassOf rdf:resource="#Symbol"/>
+</owl:Class>
+<owl:Class rdf:about="#Animal">
+<rdfs:subClassOf rdf:resource="#Natural-Object"/>
+</owl:Class>
+<owl:Class rdf:about="#Crime">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#Country">
+<rdfs:subClassOf rdf:resource="#Location"/>
+</owl:Class>
+<owl:Class rdf:about="#Object">
+<rdfs:subClassOf rdf:resource="#Flavour"/>
+</owl:Class>
+<owl:Class rdf:about="#Entertainer">
+<rdfs:subClassOf rdf:resource="#Person-Role"/>
+</owl:Class>
+<owl:Class rdf:about="#Person">
+<rdfs:subClassOf rdf:resource="#Individual"/>
+</owl:Class>
+<owl:Class rdf:about="#Train">
+<rdfs:subClassOf rdf:resource="#Vehicle"/>
+</owl:Class>
+<owl:Class rdf:about="#Religious-Movement">
+<rdfs:subClassOf rdf:resource="#Movement"/>
+</owl:Class>
+<owl:Class rdf:about="#Intellectual-Construct">
+<rdfs:subClassOf rdf:resource="#Abstract-Notion"/>
+</owl:Class>
+<owl:Class rdf:about="#Meeting">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#Measurable-Trend">
+<rdfs:subClassOf rdf:resource="#Abstract-Notion"/>
+</owl:Class>
+<owl:Class rdf:about="#Governmental-Organisation">
+<rdfs:subClassOf rdf:resource="#Political-Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#Technical-Scientific-Advance">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#VicodiOI">
+</owl:Class>
+<owl:Class rdf:about="#Criminal">
+<rdfs:subClassOf rdf:resource="#Person-Role"/>
+</owl:Class>
+<owl:Class rdf:about="#Secular-Leader">
+<rdfs:subClassOf rdf:resource="#Leader"/>
+</owl:Class>
+<owl:Class rdf:about="#Structure">
+<rdfs:subClassOf rdf:resource="#Artefact"/>
+</owl:Class>
+<owl:Class rdf:about="#Composer">
+<rdfs:subClassOf rdf:resource="#Artist"/>
+</owl:Class>
+<owl:Class rdf:about="#Movement">
+<rdfs:subClassOf rdf:resource="#Social-Group"/>
+</owl:Class>
+<owl:Class rdf:about="#Abstract-Notion">
+<rdfs:subClassOf rdf:resource="#Flavour"/>
+</owl:Class>
+<owl:Class rdf:about="#Religious-Organisation">
+<rdfs:subClassOf rdf:resource="#Cultural-Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#Art-Form">
+<rdfs:subClassOf rdf:resource="#Abstract-Notion"/>
+</owl:Class>
+<owl:Class rdf:about="#Sultan">
+<rdfs:subClassOf rdf:resource="#Head-of-State"/>
+</owl:Class>
+<owl:Class rdf:about="#Philanthropist">
+<rdfs:subClassOf rdf:resource="#Person-Role"/>
+</owl:Class>
+<owl:Class rdf:about="#Abbey">
+<rdfs:subClassOf rdf:resource="#Building"/>
+</owl:Class>
+<owl:Class rdf:about="#Illness">
+<rdfs:subClassOf rdf:resource="#Life-Event"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#exists">
+<rdfs:subPropertyOf rdf:resource="#related"/>
+<rdfs:domain rdf:resource="#Time-Dependent"/>
+<rdfs:range rdf:resource="#Time"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Church">
+<rdfs:subClassOf rdf:resource="#Building"/>
+</owl:Class>
+<owl:Class rdf:about="#Disease">
+<rdfs:subClassOf rdf:resource="#Natural-Object"/>
+</owl:Class>
+<owl:Class rdf:about="#Geographical-Discovery">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#Artefact">
+<rdfs:subClassOf rdf:resource="#Object"/>
+</owl:Class>
+<owl:Class rdf:about="#Journal">
+<rdfs:subClassOf rdf:resource="#Writing"/>
+</owl:Class>
+<owl:Class rdf:about="#Emperor">
+<rdfs:subClassOf rdf:resource="#Head-of-State"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#hasLocationPartMember">
+<rdfs:subPropertyOf rdf:resource="#hasRelationMember"/>
+<rdfs:domain rdf:resource="#Location-Part-Relation"/>
+<rdfs:range rdf:resource="#Location"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Prince">
+<rdfs:subClassOf rdf:resource="#Head-of-State"/>
+</owl:Class>
+<owl:Class rdf:about="#King">
+<rdfs:subClassOf rdf:resource="#Head-of-State"/>
+</owl:Class>
+<owl:Class rdf:about="#Ideology">
+<rdfs:subClassOf rdf:resource="#Abstract-Notion"/>
+</owl:Class>
+<owl:Class rdf:about="#Inventor">
+<rdfs:subClassOf rdf:resource="#Person-Role"/>
+</owl:Class>
+<owl:Class rdf:about="#Piece-of-Music">
+<rdfs:subClassOf rdf:resource="#Work-of-Art"/>
+</owl:Class>
+<owl:Class rdf:about="#Monastery">
+<rdfs:subClassOf rdf:resource="#Building"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#isLocationContainerMemberOf">
+<rdfs:subPropertyOf rdf:resource="#isRelationMemberOf"/>
+<rdfs:domain rdf:resource="#Location"/>
+<rdfs:range rdf:resource="#Location-Part-Relation"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Intellectual-Movement">
+<rdfs:subClassOf rdf:resource="#Movement"/>
+</owl:Class>
+<owl:Class rdf:about="#Queen">
+<rdfs:subClassOf rdf:resource="#Head-of-State"/>
+</owl:Class>
+<owl:Class rdf:about="#Scientist">
+<rdfs:subClassOf rdf:resource="#Person-Role"/>
+</owl:Class>
+<owl:Class rdf:about="#National-Symbol">
+<rdfs:subClassOf rdf:resource="#Symbol"/>
+</owl:Class>
+<owl:Class rdf:about="#Period">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#Clerical-Leader">
+<rdfs:subClassOf rdf:resource="#Leader"/>
+</owl:Class>
+<owl:Class rdf:about="#City">
+<rdfs:subClassOf rdf:resource="#Settlement"/>
+</owl:Class>
+<owl:Class rdf:about="#Fictional-Person">
+<rdfs:subClassOf rdf:resource="#Individual"/>
+</owl:Class>
+<owl:Class rdf:about="#Management-Organisation">
+<rdfs:subClassOf rdf:resource="#Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#Life-Event">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#International-Alliance">
+<rdfs:subClassOf rdf:resource="#Political-Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#Magnate">
+<rdfs:subClassOf rdf:resource="#Secular-Leader"/>
+</owl:Class>
+<owl:Class rdf:about="#Religious-Symbol">
+<rdfs:subClassOf rdf:resource="#Symbol"/>
+</owl:Class>
+<owl:Class rdf:about="#Scientific-Instrument">
+<rdfs:subClassOf rdf:resource="#Artefact"/>
+</owl:Class>
+<owl:Class rdf:about="#Environment">
+<rdfs:subClassOf rdf:resource="#Natural-Object"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#hasRole">
+<rdfs:subPropertyOf rdf:resource="#related"/>
+<rdfs:domain rdf:resource="#Flavour"/>
+<rdfs:range rdf:resource="#Role"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Economic-Organisation">
+<rdfs:subClassOf rdf:resource="#Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#Field-of-Knowledge">
+<rdfs:subClassOf rdf:resource="#Intellectual-Construct"/>
+</owl:Class>
+<owl:Class rdf:about="#Category">
+<rdfs:subClassOf rdf:resource="#VicodiOI"/>
+</owl:Class>
+<owl:Class rdf:about="#Symbol">
+<rdfs:subClassOf rdf:resource="#Role"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#hasRelationMember">
+<rdfs:subPropertyOf rdf:resource="#related"/>
+<rdfs:domain rdf:resource="#Time-Dependent-Relation"/>
+<rdfs:range rdf:resource="#Time-Dependent"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Dynasty">
+<rdfs:subClassOf rdf:resource="#Social-Group"/>
+</owl:Class>
+<owl:Class rdf:about="#Pamphlet">
+<rdfs:subClassOf rdf:resource="#Writing"/>
+</owl:Class>
+<owl:Class rdf:about="#Commodity">
+<rdfs:subClassOf rdf:resource="#Natural-Object"/>
+</owl:Class>
+<owl:Class rdf:about="#Non-Military-Conflict">
+<rdfs:subClassOf rdf:resource="#Event"/>
+</owl:Class>
+<owl:Class rdf:about="#Work-of-Art">
+<rdfs:subClassOf rdf:resource="#Artefact"/>
+</owl:Class>
+<owl:Class rdf:about="#Other-Religious-Person">
+<rdfs:subClassOf rdf:resource="#Person-Role"/>
+</owl:Class>
+<owl:Class rdf:about="#Relic">
+<rdfs:subClassOf rdf:resource="#Artefact"/>
+</owl:Class>
+<owl:Class rdf:about="#Economic-Enterprise">
+<rdfs:subClassOf rdf:resource="#Economic-Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#Secular-Movement">
+<rdfs:subClassOf rdf:resource="#Movement"/>
+</owl:Class>
+<owl:Class rdf:about="#Economic-Symbol">
+<rdfs:subClassOf rdf:resource="#Symbol"/>
+</owl:Class>
+<owl:Class rdf:about="#Masonic-Lodge">
+<rdfs:subClassOf rdf:resource="#Cultural-Organisation"/>
+</owl:Class>
+<owl:Class rdf:about="#Painting">
+<rdfs:subClassOf rdf:resource="#Work-of-Art"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#hasCategory">
+<rdfs:subPropertyOf rdf:resource="#related"/>
+<rdfs:domain rdf:resource="#Time-Dependent"/>
+<rdfs:range rdf:resource="#Category"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Architect">
+<rdfs:subClassOf rdf:resource="#Creator"/>
+</owl:Class>
+<owl:Class rdf:about="#Head-of-Government">
+<rdfs:subClassOf rdf:resource="#Secular-Leader"/>
+</owl:Class>
+</rdf:RDF>
+

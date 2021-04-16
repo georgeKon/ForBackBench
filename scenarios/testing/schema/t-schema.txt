@@ -1,0 +1,14 @@
+A {
+    c0 : STRING,
+    c1 : STRING
+}
+
+P {
+    c0 : STRING,
+    c1 : STRING
+}
+
+P1 {
+    c0 : STRING,
+    c1 : STRING
+}

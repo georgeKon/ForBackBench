@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.com/example.owl#" xml:base="http://example.com/example.owl" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">  
+
+<owl:Ontology rdf:about="http://example.com/example.owl"/>
+
+<owl:ObjectProperty rdf:about="#isExecutedBy">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#isExecutedBy">
+<rdfs:domain rdf:resource="#Transaction"/>
+<rdfs:range rdf:resource="#StockExchangeMember"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Company">
+<rdfs:subClassOf rdf:resource="#LegalPerson"/>
+</owl:Class>
+<owl:Class rdf:about="#Company">
+</owl:Class>
+<owl:Class rdf:about="#Address">
+<rdfs:subClassOf rdf:resource="#Thing"/>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#inverseofhasAddress"/>
+<owl:someValuesFrom rdf:resource="#Thing"/>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="#Address">
+</owl:Class>
+<owl:ObjectProperty rdf:about="#io_belongsToCompany">
+<owl:inverseOf rdf:resource="#belongsToCompany"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#io_involvesInstrument">
+<owl:inverseOf rdf:resource="#involvesInstrument"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#listsStock">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#listsStock">
+<rdfs:range rdf:resource="#Stock"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#listsStock">
+<rdfs:subPropertyOf rdf:resource="#io_isListedIn"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#StockExchangeMember">
+<rdfs:subClassOf rdf:resource="#Person"/>
+<rdfs:subClassOf rdf:resource="#Thing"/>
+</owl:Class>
+<owl:Class rdf:about="#StockExchangeMember">
+</owl:Class>
+<owl:ObjectProperty rdf:about="#inverseofhasAddress">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#inverseofhasAddress">
+<rdfs:domain rdf:resource="#Address"/>
+<rdfs:range rdf:resource="#Person"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#inverseofhasAddress">
+<rdfs:subPropertyOf rdf:resource="#io_hasAddress"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#tradesOnBehalfOf">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#io_listsStock">
+<owl:inverseOf rdf:resource="#listsStock"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#tradesOnBehalfOf">
+<rdfs:subPropertyOf rdf:resource="#io_usesBroker"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#StockTrader">
+<rdfs:subClassOf rdf:resource="#StockBroker"/>
+</owl:Class>
+<owl:Class rdf:about="#Thing">
+</owl:Class>
+<owl:Class rdf:about="#Thing">
+</owl:Class>
+<owl:ObjectProperty rdf:about="#hasStock">
+<rdfs:subPropertyOf rdf:resource="#io_belongsToCompany"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#hasStock">
+<rdfs:domain rdf:resource="#Company"/>
+<rdfs:range rdf:resource="#Stock"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#StockExchangeList">
+</owl:Class>
+<owl:Class rdf:about="#PhysicalPerson">
+<rdfs:subClassOf rdf:resource="#LegalPerson"/>
+<rdfs:subClassOf rdf:resource="#Person"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#io_inverseofhasAddress">
+<owl:inverseOf rdf:resource="#inverseofhasAddress"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#involvesInstrument">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#involvesInstrument">
+<rdfs:domain rdf:resource="#Transaction"/>
+<rdfs:range rdf:resource="#FinantialInstrument"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#isExecutedFor">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#isExecutedFor">
+<rdfs:domain rdf:resource="#Transaction"/>
+<rdfs:range rdf:resource="#Investor"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Acquisition">
+<rdfs:subClassOf rdf:resource="#Transaction"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#io_tradesOnBehalfOf">
+<owl:inverseOf rdf:resource="#tradesOnBehalfOf"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#io_usesBroker">
+<owl:inverseOf rdf:resource="#usesBroker"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Transaction">
+<rdfs:subClassOf rdf:resource="#Thing"/>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#isExecutedBy"/>
+<owl:someValuesFrom rdf:resource="#Thing"/>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#involvesInstrument"/>
+<owl:someValuesFrom rdf:resource="#Thing"/>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#isExecutedFor"/>
+<owl:someValuesFrom rdf:resource="#Thing"/>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="#Transaction">
+</owl:Class>
+<owl:Class rdf:about="#Offer">
+<rdfs:subClassOf rdf:resource="#Transaction"/>
+</owl:Class>
+<owl:Class rdf:about="#Person">
+<rdfs:subClassOf rdf:resource="#Thing"/>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#hasAddress"/>
+<owl:someValuesFrom rdf:resource="#Thing"/>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="#Person">
+</owl:Class>
+<owl:Class rdf:about="#Stock">
+<rdfs:subClassOf rdf:resource="#FinantialInstrument"/>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#isListedIn"/>
+<owl:someValuesFrom rdf:resource="#Thing"/>
+</owl:Restriction>
+</rdfs:subClassOf>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#belongsToCompany"/>
+<owl:someValuesFrom rdf:resource="#Thing"/>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:Class rdf:about="#Stock">
+</owl:Class>
+<owl:ObjectProperty rdf:about="#hasAddress">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#hasAddress">
+<rdfs:domain rdf:resource="#Person"/>
+<rdfs:range rdf:resource="#Address"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#hasAddress">
+<rdfs:subPropertyOf rdf:resource="#io_inverseofhasAddress"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#FinantialInstrument">
+</owl:Class>
+<owl:Class rdf:about="#FinantialInstrument">
+</owl:Class>
+<owl:ObjectProperty rdf:about="#io_hasStock">
+<owl:inverseOf rdf:resource="#hasStock"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#io_isListedIn">
+<owl:inverseOf rdf:resource="#isListedIn"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#belongsToCompany">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#belongsToCompany">
+<rdfs:domain rdf:resource="#Stock"/>
+<rdfs:range rdf:resource="#Company"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#belongsToCompany">
+<rdfs:subPropertyOf rdf:resource="#io_hasStock"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Trader">
+<rdfs:subClassOf rdf:resource="#StockBroker"/>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#usesBroker">
+<rdfs:subPropertyOf rdf:resource="#io_tradesOnBehalfOf"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#usesBroker">
+</owl:ObjectProperty>
+<owl:Class rdf:about="#LegalPerson">
+<rdfs:subClassOf rdf:resource="#Person"/>
+</owl:Class>
+<owl:Class rdf:about="#StockBroker">
+<rdfs:subClassOf rdf:resource="#StockExchangeMember"/>
+<rdfs:subClassOf>
+<owl:Restriction>
+<owl:onProperty rdf:resource="#tradesOnBehalfOf"/>
+<owl:someValuesFrom rdf:resource="#Thing"/>
+</owl:Restriction>
+</rdfs:subClassOf>
+</owl:Class>
+<owl:ObjectProperty rdf:about="#io_hasAddress">
+<owl:inverseOf rdf:resource="#hasAddress"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#isTradedIn">
+<rdfs:range rdf:resource="#Transaction"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#isTradedIn">
+<rdfs:subPropertyOf rdf:resource="#io_involvesInstrument"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#isListedIn">
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#isListedIn">
+<rdfs:domain rdf:resource="#Stock"/>
+<rdfs:range rdf:resource="#StockExchangeList"/>
+</owl:ObjectProperty>
+<owl:ObjectProperty rdf:about="#isListedIn">
+<rdfs:subPropertyOf rdf:resource="#io_listsStock"/>
+</owl:ObjectProperty>
+<owl:Class rdf:about="#Investor">
+<rdfs:subClassOf rdf:resource="#Person"/>
+<rdfs:subClassOf rdf:resource="#Thing"/>
+</owl:Class>
+<owl:Class rdf:about="#Investor">
+</owl:Class>
+<owl:Class rdf:about="#Dealer">
+<rdfs:subClassOf rdf:resource="#StockBroker"/>
+</owl:Class>
+</rdf:RDF>
+

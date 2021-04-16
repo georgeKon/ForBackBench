@@ -1,0 +1,328 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@source srcemailAddress[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_emailAddress.csv") .
+@source undergraduateDegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_undergraduateDegreeFrom.csv") .
+@source srcStudent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Student.csv") .
+@source srcDean[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Dean.csv") .
+@source softwareDocumentation[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_softwareDocumentation.csv") .
+@source Manual[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Manual.csv") .
+@source softwareVersion[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_softwareVersion.csv") .
+@source Person[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Person.csv") .
+@source ConferencePaper[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_ConferencePaper.csv") .
+@source srcUnofficialPublication[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_UnofficialPublication.csv") .
+@source Specification[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Specification.csv") .
+@source teacherOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_teacherOf.csv") .
+@source srcFaculty[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Faculty.csv") .
+@source srcage[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_age.csv") .
+@source srcResearchGroup[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_ResearchGroup.csv") .
+@source University[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_University.csv") .
+@source member[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_member.csv") .
+@source srcpublicationAuthor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_publicationAuthor.csv") .
+@source AssistantProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_AssistantProfessor.csv") .
+@source srcCollege[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_College.csv") .
+@source publicationAuthor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_publicationAuthor.csv") .
+@source Article[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Article.csv") .
+@source srcdegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_degreeFrom.csv") .
+@source UndergraduateStudent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_UndergraduateStudent.csv") .
+@source listedCourse[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_listedCourse.csv") .
+@source srcBook[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Book.csv") .
+@source GraduateStudent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_GraduateStudent.csv") .
+@source AdministrativeStaff[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_AdministrativeStaff.csv") .
+@source headOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_headOf.csv") .
+@source srcWork[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Work.csv") .
+@source srcVisitingProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_VisitingProfessor.csv") .
+@source ClericalStaff[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_ClericalStaff.csv") .
+@source srcresearchProject[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_researchProject.csv") .
+@source tenured[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_tenured.csv") .
+@source VisitingProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_VisitingProfessor.csv") .
+@source srcPerson[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Person.csv") .
+@source srcDepartment[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Department.csv") .
+@source Book[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Book.csv") .
+@source FullProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_FullProfessor.csv") .
+@source Work[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Work.csv") .
+@source srcCourse[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Course.csv") .
+@source srcConferencePaper[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_ConferencePaper.csv") .
+@source orgPublication[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_orgPublication.csv") .
+@source TechnicalReport[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_TechnicalReport.csv") .
+@source srcmemberOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_memberOf.csv") .
+@source srcSystemsStaff[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_SystemsStaff.csv") .
+@source srcpublicationDate[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_publicationDate.csv") .
+@source JournalArticle[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_JournalArticle.csv") .
+@source srcundergraduateDegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_undergraduateDegreeFrom.csv") .
+@source srcDirector[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Director.csv") .
+@source Research[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Research.csv") .
+@source srcmember[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_member.csv") .
+@source College[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_College.csv") .
+@source subOrganizationOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_subOrganizationOf.csv") .
+@source teachingAssistantOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_teachingAssistantOf.csv") .
+@source worksFor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_worksFor.csv") .
+@source srctelephone[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_telephone.csv") .
+@source srctenured[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_tenured.csv") .
+@source srcTeachingAssistant[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_TeachingAssistant.csv") .
+@source PostDoc[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_PostDoc.csv") .
+@source takesCourse[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_takesCourse.csv") .
+@source Dean[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Dean.csv") .
+@source telephone[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_telephone.csv") .
+@source affiliateOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_affiliateOf.csv") .
+@source srcSoftware[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Software.csv") .
+@source ResearchAssistant[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_ResearchAssistant.csv") .
+@source srcOrganization[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Organization.csv") .
+@source srcLecturer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Lecturer.csv") .
+@source publicationDate[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_publicationDate.csv") .
+@source srcTechnicalReport[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_TechnicalReport.csv") .
+@source Publication[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Publication.csv") .
+@source Schedule[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Schedule.csv") .
+@source srctakesCourse[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_takesCourse.csv") .
+@source researchProject[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_researchProject.csv") .
+@source srcChair[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Chair.csv") .
+@source srcGraduateCourse[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_GraduateCourse.csv") .
+@source srcteacherOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_teacherOf.csv") .
+@source srcmastersDegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_mastersDegreeFrom.csv") .
+@source srclistedCourse[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_listedCourse.csv") .
+@source title[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_title.csv") .
+@source srcJournalArticle[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_JournalArticle.csv") .
+@source srcEmployee[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Employee.csv") .
+@source Organization[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Organization.csv") .
+@source srcorgPublication[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_orgPublication.csv") .
+@source Department[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Department.csv") .
+@source srcUndergraduateStudent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_UndergraduateStudent.csv") .
+@source GraduateCourse[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_GraduateCourse.csv") .
+@source SystemsStaff[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_SystemsStaff.csv") .
+@source srcpublicationResearch[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_publicationResearch.csv") .
+@source mastersDegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_mastersDegreeFrom.csv") .
+@source srcSchedule[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Schedule.csv") .
+@source srcPostDoc[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_PostDoc.csv") .
+@source srcteachingAssistantOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_teachingAssistantOf.csv") .
+@source Lecturer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Lecturer.csv") .
+@source degreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_degreeFrom.csv") .
+@source srcadvisor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_advisor.csv") .
+@source srcAssistantProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_AssistantProfessor.csv") .
+@source Course[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Course.csv") .
+@source emailAddress[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_emailAddress.csv") .
+@source Program[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Program.csv") .
+@source srcaffiliateOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_affiliateOf.csv") .
+@source Employee[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Employee.csv") .
+@source srctitle[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_title.csv") .
+@source Chair[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Chair.csv") .
+@source srcProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Professor.csv") .
+@source UnofficialPublication[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_UnofficialPublication.csv") .
+@source srcUniversity[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_University.csv") .
+@source Faculty[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Faculty.csv") .
+@source age[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_age.csv") .
+@source affiliatedOrganizationOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_affiliatedOrganizationOf.csv") .
+@source srcworksFor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_worksFor.csv") .
+@source Student[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Student.csv") .
+@source srcArticle[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Article.csv") .
+@source srcSpecification[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Specification.csv") .
+@source Software[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Software.csv") .
+@source srcGraduateStudent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_GraduateStudent.csv") .
+@source srcResearch[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Research.csv") .
+@source srcsoftwareDocumentation[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_softwareDocumentation.csv") .
+@source memberOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_memberOf.csv") .
+@source srcAdministrativeStaff[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_AdministrativeStaff.csv") .
+@source srcProgram[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Program.csv") .
+@source TeachingAssistant[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_TeachingAssistant.csv") .
+@source AssociateProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_AssociateProfessor.csv") .
+@source srcInstitute[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Institute.csv") .
+@source srcResearchAssistant[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_ResearchAssistant.csv") .
+@source publicationResearch[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_publicationResearch.csv") .
+@source advisor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_advisor.csv") .
+@source hasAlumnus[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_hasAlumnus.csv") .
+@source srcheadOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_headOf.csv") .
+@source srcPublication[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Publication.csv") .
+@source srcsoftwareVersion[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_softwareVersion.csv") .
+@source ResearchGroup[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_ResearchGroup.csv") .
+@source srcsubOrganizationOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_subOrganizationOf.csv") .
+@source srchasAlumnus[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_hasAlumnus.csv") .
+@source srcAssociateProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_AssociateProfessor.csv") .
+@source srcManual[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Manual.csv") .
+@source srcaffiliatedOrganizationOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_affiliatedOrganizationOf.csv") .
+@source srcClericalStaff[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_ClericalStaff.csv") .
+@source Institute[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Institute.csv") .
+@source Director[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Director.csv") .
+@source srcdoctoralDegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_doctoralDegreeFrom.csv") .
+@source doctoralDegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_doctoralDegreeFrom.csv") .
+@source srcFullProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_FullProfessor.csv") .
+@source Professor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/LUBM_new/data/large/src_Professor.csv") .
+headOf(?X,?Y) :- srcheadOf(?X,?Y)  .
+softwareVersion(?X,?Y) :- srcsoftwareVersion(?X,?Y)  .
+publicationResearch(?X,?Y) :- srcpublicationResearch(?X,?Y)  .
+Director(?X) :- srcDirector(?X)  .
+Faculty(?X) :- srcFaculty(?X)  .
+listedCourse(?X,?Y) :- srclistedCourse(?X,?Y)  .
+Research(?X) :- srcResearch(?X)  .
+FullProfessor(?X) :- srcFullProfessor(?X)  .
+Software(?X) :- srcSoftware(?X)  .
+worksFor(?X,?Y) :- srcworksFor(?X,?Y)  .
+AssociateProfessor(?X) :- srcAssociateProfessor(?X)  .
+Schedule(?X) :- srcSchedule(?X)  .
+Book(?X) :- srcBook(?X)  .
+Specification(?X) :- srcSpecification(?X)  .
+Dean(?X) :- srcDean(?X)  .
+Person(?X) :- srcPerson(?X)  .
+Professor(?X) :- srcProfessor(?X)  .
+TechnicalReport(?X) :- srcTechnicalReport(?X)  .
+UnofficialPublication(?X) :- srcUnofficialPublication(?X)  .
+affiliatedOrganizationOf(?X,?Y) :- srcaffiliatedOrganizationOf(?X,?Y)  .
+telephone(?X,?Y) :- srctelephone(?X,?Y)  .
+tenured(?X,?Y) :- srctenured(?X,?Y)  .
+Article(?X) :- srcArticle(?X)  .
+subOrganizationOf(?X,?Y) :- srcsubOrganizationOf(?X,?Y)  .
+UndergraduateStudent(?X) :- srcUndergraduateStudent(?X)  .
+College(?X) :- srcCollege(?X)  .
+PostDoc(?X) :- srcPostDoc(?X)  .
+emailAddress(?X,?Y) :- srcemailAddress(?X,?Y)  .
+GraduateCourse(?X) :- srcGraduateCourse(?X)  .
+affiliateOf(?X,?Y) :- srcaffiliateOf(?X,?Y)  .
+TeachingAssistant(?X) :- srcTeachingAssistant(?X)  .
+Employee(?X) :- srcEmployee(?X)  .
+University(?X) :- srcUniversity(?X)  .
+softwareDocumentation(?X,?Y) :- srcsoftwareDocumentation(?X,?Y)  .
+age(?X,?Y) :- srcage(?X,?Y)  .
+Program(?X) :- srcProgram(?X)  .
+SystemsStaff(?X) :- srcSystemsStaff(?X)  .
+degreeFrom(?X,?Y) :- srcdegreeFrom(?X,?Y)  .
+Department(?X) :- srcDepartment(?X)  .
+JournalArticle(?X) :- srcJournalArticle(?X)  .
+ConferencePaper(?X) :- srcConferencePaper(?X)  .
+VisitingProfessor(?X) :- srcVisitingProfessor(?X)  .
+member(?X,?Y) :- srcmember(?X,?Y)  .
+teachingAssistantOf(?X,?Y) :- srcteachingAssistantOf(?X,?Y)  .
+title(?X,?Y) :- srctitle(?X,?Y)  .
+ClericalStaff(?X) :- srcClericalStaff(?X)  .
+doctoralDegreeFrom(?X,?Y) :- srcdoctoralDegreeFrom(?X,?Y)  .
+Institute(?X) :- srcInstitute(?X)  .
+Lecturer(?X) :- srcLecturer(?X)  .
+researchProject(?X,?Y) :- srcresearchProject(?X,?Y)  .
+advisor(?X,?Y) :- srcadvisor(?X,?Y)  .
+AssistantProfessor(?X) :- srcAssistantProfessor(?X)  .
+publicationDate(?X,?Y) :- srcpublicationDate(?X,?Y)  .
+ResearchGroup(?X) :- srcResearchGroup(?X)  .
+publicationAuthor(?X,?Y) :- srcpublicationAuthor(?X,?Y)  .
+Course(?X) :- srcCourse(?X)  .
+Student(?X) :- srcStudent(?X)  .
+AdministrativeStaff(?X) :- srcAdministrativeStaff(?X)  .
+Chair(?X) :- srcChair(?X)  .
+Work(?X) :- srcWork(?X)  .
+Organization(?X) :- srcOrganization(?X)  .
+hasAlumnus(?X,?Y) :- srchasAlumnus(?X,?Y)  .
+orgPublication(?X,?Y) :- srcorgPublication(?X,?Y)  .
+GraduateStudent(?X) :- srcGraduateStudent(?X)  .
+mastersDegreeFrom(?X,?Y) :- srcmastersDegreeFrom(?X,?Y)  .
+ResearchAssistant(?X) :- srcResearchAssistant(?X)  .
+Publication(?X) :- srcPublication(?X)  .
+memberOf(?X,?Y) :- srcmemberOf(?X,?Y)  .
+Manual(?X) :- srcManual(?X)  .
+teacherOf(?X,?Y) :- srcteacherOf(?X,?Y)  .
+takesCourse(?X,?Y) :- srctakesCourse(?X,?Y)  .
+undergraduateDegreeFrom(?X,?Y) :- srcundergraduateDegreeFrom(?X,?Y)  .
+Faculty(?X) :- teacherOf(?X,?Y)  .
+Person(?X) :- doctoralDegreeFrom(?X,?Y)  .
+Faculty(?X) :- Lecturer(?X)  .
+worksFor(?X,!Y),ResearchGroup(!Y) :- ResearchAssistant(?X)  .
+Organization(?X) :- College(?X)  .
+Faculty(?X) :- Professor(?X)  .
+Employee(?X) :- AdministrativeStaff(?X)  .
+Organization(?X) :- Institute(?X)  .
+University(?X) :- undergraduateDegreeFrom(?Y,?X)  .
+Person(?X) :- Chair(?X)  .
+University(?X) :- doctoralDegreeFrom(?Y,?X)  .
+Article(?X) :- TechnicalReport(?X)  .
+Person(?X) :- hasAlumnus(?Y,?X)  .
+Publication(?X) :- publicationResearch(?X,?Y)  .
+Publication(?X) :- softwareDocumentation(?Y,?X)  .
+Publication(?X) :- UnofficialPublication(?X)  .
+Employee(?X) :- Person(?X), worksFor(?X,?Y), Organization(?Y)  .
+University(?X) :- mastersDegreeFrom(?Y,?X)  .
+Employee(?X) :- Faculty(?X)  .
+headOf(?X,!Y),Program(!Y) :- Director(?X)  .
+memberOf(?X,?Y) :- member(?Y,?X)  .
+Organization(?X) :- affiliatedOrganizationOf(?Y,?X)  .
+Organization(?X) :- Program(?X)  .
+takesCourse(?X,!Y),Course(!Y) :- Student(?X)  .
+Course(?X) :- teachingAssistantOf(?Y,?X)  .
+Person(?X) :- affiliateOf(?Y,?X)  .
+Publication(?X) :- Specification(?X)  .
+Faculty(?X) :- PostDoc(?X)  .
+Organization(?X) :- subOrganizationOf(?X,?Y)  .
+Organization(?X) :- Department(?X)  .
+Organization(?X) :- affiliateOf(?X,?Y)  .
+Person(?X) :- Employee(?X)  .
+Course(?X) :- listedCourse(?Y,?X)  .
+Course(?X) :- GraduateCourse(?X)  .
+degreeFrom(?X,?Y) :- doctoralDegreeFrom(?X,?Y)  .
+member(?X,?Y) :- memberOf(?Y,?X)  .
+worksFor(?X,?Y) :- headOf(?X,?Y)  .
+worksFor(?X,!Y),Organization(!Y) :- Employee(?X)  .
+Software(?X) :- softwareDocumentation(?X,?Y)  .
+Person(?X) :- degreeFrom(?X,?Y)  .
+Chair(?X) :- Person(?X), headOf(?X,?Y), Department(?Y)  .
+Organization(?X) :- University(?X)  .
+Work(?X) :- Research(?X)  .
+University(?X) :- degreeFrom(?Y,?X)  .
+Student(?X) :- UndergraduateStudent(?X)  .
+Person(?X) :- age(?X,?Y)  .
+Professor(?X) :- FullProfessor(?X)  .
+hasAlumnus(?X,?Y) :- degreeFrom(?Y,?X)  .
+Publication(?X) :- publicationAuthor(?X,?Y)  .
+teachingAssistantOf(?X,!Y),Course(!Y) :- TeachingAssistant(?X)  .
+TeachingAssistant(?X) :- teachingAssistantOf(?X,?Y)  .
+Person(?X) :- undergraduateDegreeFrom(?X,?Y)  .
+Work(?X) :- Course(?X)  .
+Publication(?X) :- orgPublication(?Y,?X)  .
+Professor(?X) :- AssistantProfessor(?X)  .
+Person(?X) :- Student(?X)  .
+takesCourse(?X,!Y),GraduateCourse(!Y) :- GraduateStudent(?X)  .
+Organization(?X) :- ResearchGroup(?X)  .
+Schedule(?X) :- listedCourse(?X,?Y)  .
+Person(?X) :- mastersDegreeFrom(?X,?Y)  .
+ResearchGroup(?X) :- researchProject(?X,?Y)  .
+Course(?X) :- teacherOf(?Y,?X)  .
+AdministrativeStaff(?X) :- ClericalStaff(?X)  .
+Software(?X) :- softwareVersion(?X,?Y)  .
+Organization(?X) :- orgPublication(?X,?Y)  .
+Person(?X) :- title(?X,?Y)  .
+Person(?X) :- publicationAuthor(?Y,?X)  .
+Research(?X) :- researchProject(?Y,?X)  .
+Director(?X) :- Person(?X), headOf(?X,?Y), Program(?Y)  .
+degreeFrom(?X,?Y) :- hasAlumnus(?Y,?X)  .
+Professor(?X) :- Chair(?X)  .
+memberOf(?X,?Y) :- worksFor(?X,?Y)  .
+Article(?X) :- JournalArticle(?X)  .
+subOrganizationOf(?X,?Y) :- subOrganizationOf(?X,?X1), subOrganizationOf(?X1,?Y)  .
+Article(?X) :- ConferencePaper(?X)  .
+degreeFrom(?X,?Y) :- mastersDegreeFrom(?X,?Y)  .
+Publication(?X) :- Article(?X)  .
+Publication(?X) :- Book(?X)  .
+Publication(?X) :- publicationDate(?X,?Y)  .
+Professor(?X) :- AssociateProfessor(?X)  .
+Professor(?X) :- VisitingProfessor(?X)  .
+Person(?X) :- advisor(?X,?Y)  .
+Person(?X) :- telephone(?X,?Y)  .
+Person(?X) :- GraduateStudent(?X)  .
+Person(?X) :- emailAddress(?X,?Y)  .
+Dean(?X) :- headOf(?X,?Y), College(?Y)  .
+University(?X) :- hasAlumnus(?X,?Y)  .
+Student(?X) :- Person(?X), takesCourse(?X,?Y), Course(?Y)  .
+Person(?X) :- Director(?X)  .
+Organization(?X) :- member(?X,?Y)  .
+TeachingAssistant(?X) :- Person(?X), teachingAssistantOf(?X,?Y), Course(?Y)  .
+Publication(?X) :- Software(?X)  .
+headOf(?X,!Y),Department(!Y) :- Chair(?X)  .
+Publication(?X) :- Manual(?X)  .
+Professor(?X) :- Dean(?X)  .
+Organization(?X) :- affiliatedOrganizationOf(?X,?Y)  .
+degreeFrom(?X,?Y) :- undergraduateDegreeFrom(?X,?Y)  .
+Professor(?X) :- advisor(?Y,?X)  .
+Research(?X) :- publicationResearch(?Y,?X)  .
+Organization(?X) :- subOrganizationOf(?Y,?X)  .
+Person(?X) :- TeachingAssistant(?X)  .
+Person(?X) :- ResearchAssistant(?X)  .
+Professor(?X) :- tenured(?X,?Y)  .
+Person(?X) :- member(?Y,?X)  .
+AdministrativeStaff(?X) :- SystemsStaff(?X)  .
+headOf(?X,!Y),College(!Y) :- Dean(?X)  .
+Q1(?X) :- worksFor(?X,?Y),affiliatedOrganizationOf(?Y,?X1) .
+Q2(?X,?Y) :- Person(?X),teacherOf(?X,?Y),Course(?Y) .
+Q3(?X,?Y) :- Student(?X),advisor(?X,?Y),takesCourse(?X,?X1),teacherOf(?Y,?X1),Course(?X1) .
+Q4(?X,?Y) :- Person(?X),worksFor(?X,?Y),Organization(?Y) .
+Q5(?X) :- Person(?X),worksFor(?X,?Y),University(?Y),hasAlumnus(?Y,?X) .

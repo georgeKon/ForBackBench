@@ -1,0 +1,6 @@
+Address(?X) -> inverseofhasAddress(?X,?Y), Thing(?Y) .
+Person(?X) -> hasAddress(?X,?Y), Thing(?Y) .
+hasAddress(?X,?X1) -> Address(?X1) .
+inverseofhasAddress(?X,?X1) -> Person(?X1) .
+inverseofhasAddress(?Y,?X) -> hasAddress(?X,?Y) .
+hasAddress(?Y,?X) -> inverseofhasAddress(?X,?Y) .

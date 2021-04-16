@@ -1,0 +1,102 @@
+src_AcquisitionTEMP {
+	c0 : STRING
+}
+src_TransactionTEMP {
+	c0 : STRING
+}
+src_AddressTEMP {
+	c0 : STRING
+}
+src_ThingTEMP {
+	c0 : STRING
+}
+src_inverseofhasAddressTEMP {
+	c0 : STRING,
+	c1 : STRING
+}
+src_CompanyTEMP {
+	c0 : STRING
+}
+src_LegalPersonTEMP {
+	c0 : STRING
+}
+src_DealerTEMP {
+	c0 : STRING
+}
+src_StockBrokerTEMP {
+	c0 : STRING
+}
+src_InvestorTEMP {
+	c0 : STRING
+}
+src_PersonTEMP {
+	c0 : STRING
+}
+src_OfferTEMP {
+	c0 : STRING
+}
+src_hasAddressTEMP {
+	c0 : STRING,
+	c1 : STRING
+}
+src_PhysicalPersonTEMP {
+	c0 : STRING
+}
+src_StockTEMP {
+	c0 : STRING
+}
+src_FinantialInstrumentTEMP {
+	c0 : STRING
+}
+src_isListedInTEMP {
+	c0 : STRING,
+	c1 : STRING
+}
+src_belongsToCompanyTEMP {
+	c0 : STRING,
+	c1 : STRING
+}
+src_StockExchangeMemberTEMP {
+	c0 : STRING
+}
+src_tradesOnBehalfOfTEMP {
+	c0 : STRING,
+	c1 : STRING
+}
+src_StockTraderTEMP {
+	c0 : STRING
+}
+src_TraderTEMP {
+	c0 : STRING
+}
+src_isExecutedForTEMP {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isExecutedByTEMP {
+	c0 : STRING,
+	c1 : STRING
+}
+src_involvesInstrumentTEMP {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasStockTEMP {
+	c0 : STRING,
+	c1 : STRING
+}
+src_StockExchangeListTEMP {
+	c0 : STRING
+}
+src_listsStockTEMP {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isTradedInTEMP {
+	c0 : STRING,
+	c1 : STRING
+}
+src_usesBrokerTEMP {
+	c0 : STRING,
+	c1 : STRING
+}

@@ -24,7 +24,7 @@ function writeDefaultLlunaticConfig(baseFolder : string, query : string, size : 
 
   writer.endDocument()
 
-  fs.writeFileSync(path.resolve(baseFolder, 'queries/RDFox/', `${query}/${size}.xml`), writer.toString())
+  fs.writeFileSync(path.resolve(baseFolder, 'queries/RDFox/', '${query}/${size}.xml'), writer.toString())
 }
 
 function writeBCALlunaticConfig(baseFolder : string, query : string, size : string) {
@@ -44,7 +44,7 @@ function writeBCALlunaticConfig(baseFolder : string, query : string, size : stri
 
   writer.endDocument()
 
-  fs.writeFileSync(path.resolve(baseFolder, 'queries/RDFox/', `${query}/${size}-bca.xml`), writer.toString())
+  fs.writeFileSync(path.resolve(baseFolder, 'queries/RDFox/', '${query}/${size}-bca.xml'), writer.toString())
 }
 
 function writeSourceConfig(writer : any, baseFolder : string, size : string) {
@@ -92,7 +92,7 @@ function writeAccessConfig(writer : any, schema : string) {
 
   writer.startElement('access-configuration')
   writer.writeElement('driver', 'org.postgresql.Driver')
-  writer.writeElement('uri', `jdbc:postgresql:${process.env.PGDATABASE}_llunatic`)
+  writer.writeElement('uri', 'jdbc:postgresql:${process.env.PGDATABASE}_llunatic')
   writer.writeElement('schema', schema)
   writer.writeElement('login', process.env.PGUSER)
   writer.writeElement('password', process.env.PGPASSWORD)
@@ -126,7 +126,7 @@ function writeDependenciesConfig(writer : any, baseFolder : string) {
 function writeBCADependenciesConfig(writer : any, baseFolder : string, query : string) {
   writer.startElement('dependencies')
 
-  writer.writeElement('sttgdsFile', path.resolve(baseFolder, `queries/RDFox/${query}/${query}-tgds.rule`))
+  writer.writeElement('sttgdsFile', path.resolve(baseFolder, 'queries/RDFox/${query}/${query}-tgds.rule'))
 
   writer.endElement()
 }
@@ -134,7 +134,7 @@ function writeBCADependenciesConfig(writer : any, baseFolder : string, query : s
 function writeQueriesConfig(writer : any, baseFolder : string, query : string) {
   writer.startElement('queries')
 
-  writer.writeElement('queryFile', path.resolve(baseFolder, 'queries/RDFox/', query, `${query}.txt`))
+  writer.writeElement('queryFile', path.resolve(baseFolder, 'queries/RDFox/', query, '${query}.txt'))
 
   writer.endElement()
 }

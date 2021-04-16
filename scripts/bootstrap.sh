@@ -2,34 +2,83 @@
 
 BASE_DIR=$1
 DATA=$3
-mkdir -p $BASE_DIR/data
-mkdir -p $BASE_DIR/out
+GAVorLAV=$4
+
+mkdir -p $BASE_DIR/data/GAV
+mkdir -p $BASE_DIR/data/LAV
+
+mkdir -p $BASE_DIR/schema/GAV
+mkdir -p $BASE_DIR/schema/LAV
+mkdir -p $BASE_DIR/schema/oneToOne
+
 SIZES=("small" "medium" "large")
 
-mkdir -p $BASE_DIR/tests/$size
+
 
 if [[ $2 = "chasebench" ]]
 then
-  if [[ $3 = "data" ]]; then
+  
+  java -jar utilityTools/modifyChaseBench-1.08.jar -st-tgds $BASE_DIR/dependencies/oneToOne-st-tgds.txt -t-tgds $BASE_DIR/dependencies/oneToOne-t-tgds.txt -q $BASE_DIR/queries
+  java -jar utilityTools/schemaGenerator-1.08.jar -st-tgds $BASE_DIR/dependencies/oneToOne-st-tgds.txt -t-tgds $BASE_DIR/dependencies/oneToOne-t-tgds.txt -s-schema $BASE_DIR/schema/oneToOne/s-schema.txt -t-schema $BASE_DIR/schema/oneToOne/t-schema.txt
+  
+  # TODO: create GAV and LAV Schema
+	
+	if [[ $3 = "data" ]]; then
     for size in ${SIZES[*]}; do
-      mkdir -p $BASE_DIR/data/$size
-      ./scripts/generate.sh $BASE_DIR $size
+      mkdir -p $BASE_DIR/data/$GAVorLAV/$size
+      ./scripts/generate.sh $BASE_DIR $size $GAVorLAV
     done
   fi
-  java -jar tools/obdabenchmarkingtools/modifyChaseBench-1.08.jar -st-tgds $BASE_DIR/dependencies/st-tgds.txt -t-tgds $BASE_DIR/dependencies/t-tgds.txt -q $BASE_DIR/queries
-  java -jar tools/obdabenchmarkingtools/schemaGenerator-1.08.jar -st-tgds $BASE_DIR/dependencies/st-tgds.txt -t-tgds $BASE_DIR/dependencies/t-tgds.txt -s-schema $BASE_DIR/schema/s-schema.txt -t-schema $BASE_DIR/schema/t-schema.txt
-
   obdabenchmark bootstrap $BASE_DIR chasebench
+  mkdir -p $BASE_DIR/owl
+  java -jar utilityTools/TGDToOWL-v1.10.jar -t-tgds $BASE_DIR/dependencies/oneToOne-t-tgds.txt -out $BASE_DIR/owl/ontology.owl
 elif [[ $2 = "dllite" ]]
 then
-  mkdir -p $BASE_DIR/schema
+
   obdabenchmark bootstrap $BASE_DIR dllite
+	
+    # change the name of st-tgds.txt files that created by node js 
+	mv $BASE_DIR/dependencies/t-tgds.txt $BASE_DIR/dependencies/oneToOne-t-tgds.txt
+	mv $BASE_DIR/dependencies/st-tgds.txt $BASE_DIR/dependencies/oneToOne-st-tgds.txt
+
+	mv $BASE_DIR/schema/s-schema.txt $BASE_DIR/schema/oneToOne/s-schema.txt
+	mv $BASE_DIR/schema/s-schema.sql $BASE_DIR/schema/oneToOne/s-schema.sql
+	mv $BASE_DIR/schema/t-schema.txt $BASE_DIR/schema/oneToOne/t-schema.txt
+	mv $BASE_DIR/schema/t-schema.sql $BASE_DIR/schema/oneToOne/t-schema.sql
+
+
+# 	java -jar utilityTools/schemaGenerator-1.08.jar -st-tgds $BASE_DIR/dependencies/oneToOne-st-tgds.txt -t-tgds $BASE_DIR/dependencies/oneToOne-t-tgds.txt -s-schema $BASE_DIR/schema/oneToOne/s-schema.txt -t-schema $BASE_DIR/schema/oneToOne/t-schema.txt
+   # TODO: create GAV and LAV Schema
+	
   if [[ $3 = "data" ]]; then
     for size in ${SIZES[*]}; do
-      mkdir -p $BASE_DIR/data/$size
-      ./scripts/generate.sh $BASE_DIR $size
+      mkdir -p $BASE_DIR/data/$GAVorLAV/$size
+      ./scripts/generate.sh $BASE_DIR $size $GAVorLAV
     done
   fi
 fi
-java -jar tools/obdabenchmarkingtools/owlGenerator-1.08.jar -t-tgds $BASE_DIR/dependencies/t-tgds.txt -out $BASE_DIR/owl/ontology.owl
-java -jar tools/obdabenchmarkingtools/ontopMappingGenerator-1.08.jar -st-tgds $BASE_DIR/dependencies/st-tgds.txt -owl $BASE_DIR/dependencies/ontology.owl -out $BASE_DIR/ontop-files/mapping.obda
+
+mkdir -p $BASE_DIR/ontop-files
+java -jar utilityTools/ontopMappingGenerator-1.08.jar -st-tgds $BASE_DIR/dependencies/oneToOne-st-tgds.txt -owl $BASE_DIR/owl/ontology.owl -out $BASE_DIR/ontop-files/mapping.obda
+
+mkdir -p $BASE_DIR/CGQRFiles
+# TODO: create t-tgd.txt and st-tgd.txt from jar file (that Tom has) and place it inside CGQRFiles
+
+mkdir -p $BASE_DIR/rulewerkfiles/GAV
+mkdir -p $BASE_DIR/rulewerkfiles/LAV
+mkdir -p $BASE_DIR/rulewerkfiles/oneToOne
+
+for size in ${SIZES[*]}; do
+   mkdir -p $BASE_DIR/rulewerkfiles/oneToOne/$size
+   java -jar utilityTools/TGDsToRlsConverter.jar -st-tgds "$BASE_DIR/dependencies/oneToOne-st-tgds.txt" -t-tgds "$BASE_DIR/dependencies/oneToOne-t-tgds.txt" -out "$BASE_DIR/rulewerkfiles/oneToOne/$size" -data "$BASE_DIR/data/oneToOne/$size"
+done
+
+# for size in ${SIZES[*]}; do
+#    mkdir -p $BASE_DIR/rulewerkfiles/GAV/$size
+#    java -jar utilityTools/TGDsToRlsConverter.jar -st-tgds "$BASE_DIR/dependencies/GAV-st-tgds.txt" -t-tgds "$BASE_DIR/dependencies/GAV-t-tgds.txt" -out "$BASE_DIR/rulewerkfiles/GAV/$size" -data "$BASE_DIR/data/GAV/$size"
+# done
+# 
+# for size in ${SIZES[*]}; do
+#    mkdir -p $BASE_DIR/rulewerkfiles/LAV/$size
+#    java -jar utilityTools/TGDsToRlsConverter.jar -st-tgds "$BASE_DIR/dependencies/LAV-st-tgds.txt" -t-tgds "$BASE_DIR/dependencies/LAV-t-tgds.txt" -out "$BASE_DIR/rulewerkfiles/LAV/$size" -data "$BASE_DIR/data/LAV/$size"
+# done

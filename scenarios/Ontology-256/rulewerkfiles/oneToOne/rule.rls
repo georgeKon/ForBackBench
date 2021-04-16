@@ -1,0 +1,1486 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@source srcnightvh38nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_nightvh38nl0ce0.csv") .
+@source movevh40nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_movevh40nl0ce0.csv") .
+@source srcbandvi18nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bandvi18nl0ce1.csv") .
+@source srcflyvh64nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_flyvh64nl0ce0.csv") .
+@source srcusevnm64nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_usevnm64nl0ce0.csv") .
+@source painvnm4nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_painvnm4nl0ce1.csv") .
+@source srcregretvnm30nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_regretvnm30nl0ce0.csv") .
+@source machinevnm24nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_machinevnm24nl0ce0.csv") .
+@source collectionvnm2nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_collectionvnm2nl0ce1.csv") .
+@source tightvi49nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_tightvi49nl0ce1.csv") .
+@source industryvnm44nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_industryvnm44nl0ce1.csv") .
+@source voicevnm48nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_voicevnm48nl0ce0.csv") .
+@source srchelpvi35nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_helpvi35nl0ce1.csv") .
+@source settlevh8nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_settlevh8nl0ce1.csv") .
+@source srcrecordvh5nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_recordvh5nl0ce0.csv") .
+@source societyvi1nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_societyvi1nl0ce1.csv") .
+@source srclanguagevnm3nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_languagevnm3nl0ce2.csv") .
+@source bluevh1nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bluevh1nl0ce0.csv") .
+@source loosevnm13nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_loosevnm13nl0ce2.csv") .
+@source advertisementvi14nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_advertisementvi14nl0ce0.csv") .
+@source smellvh62nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_smellvh62nl0ce0.csv") .
+@source comevi10nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_comevi10nl0ce0.csv") .
+@source nationvh58nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_nationvh58nl0ce0.csv") .
+@source srctightvi49nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_tightvi49nl0ce1.csv") .
+@source languagevnm21nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_languagevnm21nl0ce0.csv") .
+@source recordvh5nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_recordvh5nl0ce0.csv") .
+@source srcsidevh41nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_sidevh41nl0ce0.csv") .
+@source tinvnm16nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_tinvnm16nl0ce0.csv") .
+@source regretvnm30nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_regretvnm30nl0ce0.csv") .
+@source srcauthorityvnm26nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_authorityvnm26nl0ce1.csv") .
+@source srcgreyvi61nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_greyvi61nl0ce1.csv") .
+@source srcsortvi31nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_sortvi31nl0ce1.csv") .
+@source srcrelationvnm53nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_relationvnm53nl0ce0.csv") .
+@source whistlead49nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_whistlead49nl0ce0.csv") .
+@source skinvnm14nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_skinvnm14nl0ce0.csv") .
+@source platevi30nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_platevi30nl0ce0.csv") .
+@source srcfirstvnm11nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_firstvnm11nl0ce1.csv") .
+@source srcholdvnm50nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_holdvnm50nl0ce1.csv") .
+@source srcexpansionvnm1nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_expansionvnm1nl0ce2.csv") .
+@source happenvh45nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_happenvh45nl0ce0.csv") .
+@source srcgirlvh57nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_girlvh57nl0ce0.csv") .
+@source srchistoryvnm25nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_historyvnm25nl0ce1.csv") .
+@source imaginevi28nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_imaginevi28nl0ce0.csv") .
+@source dayvh43nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_dayvh43nl0ce1.csv") .
+@source shakevnm23nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_shakevnm23nl0ce1.csv") .
+@source voicevnm9nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_voicevnm9nl0ce1.csv") .
+@source srchorsevnm64nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_horsevnm64nl0ce2.csv") .
+@source srcyellowvnm45nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_yellowvnm45nl0ce2.csv") .
+@source involvevi16nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_involvevi16nl0ce0.csv") .
+@source srcsettlevh8nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_settlevh8nl0ce1.csv") .
+@source srcskinvnm14nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_skinvnm14nl0ce0.csv") .
+@source bloodvnm54nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bloodvnm54nl0ce1.csv") .
+@source girlvh57nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_girlvh57nl0ce0.csv") .
+@source srcauthorityvnm24nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_authorityvnm24nl0ce2.csv") .
+@source forgivevnm33nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_forgivevnm33nl0ce1.csv") .
+@source srcgroupvnm44nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_groupvnm44nl0ce2.csv") .
+@source playvi58nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_playvi58nl0ce1.csv") .
+@source facevh28nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_facevh28nl0ce0.csv") .
+@source srcclothvh46nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_clothvh46nl0ce0.csv") .
+@source srcownvnm47nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_ownvnm47nl0ce0.csv") .
+@source holdvnm50nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_holdvnm50nl0ce1.csv") .
+@source srcfoundvh44nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_foundvh44nl0ce1.csv") .
+@source srccompletevh4nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_completevh4nl0ce0.csv") .
+@source srcflyvi7nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_flyvi7nl0ce0.csv") .
+@source srcclockad7nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_clockad7nl0ce0.csv") .
+@source sockvnm26nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_sockvnm26nl0ce0.csv") .
+@source srchammervnm7nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_hammervnm7nl0ce2.csv") .
+@source srcchalkvi19nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_chalkvi19nl0ce0.csv") .
+@source flowervnm48nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_flowervnm48nl0ce1.csv") .
+@source srcdelicatevi38nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_delicatevi38nl0ce1.csv") .
+@source crossvh17nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_crossvh17nl0ce0.csv") .
+@source poisonvnm46nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_poisonvnm46nl0ce1.csv") .
+@source srcsmellvh62nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_smellvh62nl0ce0.csv") .
+@source sidevh41nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_sidevh41nl0ce0.csv") .
+@source srcbelievevnm14nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_believevnm14nl0ce1.csv") .
+@source snowvnm52nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_snowvnm52nl0ce0.csv") .
+@source srccartvh57nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_cartvh57nl0ce1.csv") .
+@source knowvh15nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_knowvh15nl0ce1.csv") .
+@source srclookvi13nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_lookvi13nl0ce1.csv") .
+@source srcsecondvnm16nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_secondvnm16nl0ce2.csv") .
+@source respectvh37nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_respectvh37nl0ce1.csv") .
+@source fallvh29nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_fallvh29nl0ce1.csv") .
+@source hidevi17nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_hidevi17nl0ce0.csv") .
+@source languagevh49nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_languagevh49nl0ce0.csv") .
+@source knotvnm33nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_knotvnm33nl0ce0.csv") .
+@source srclightvi52nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_lightvi52nl0ce0.csv") .
+@source srcrestvnm1nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_restvnm1nl0ce0.csv") .
+@source srcfarmvnm3nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_farmvnm3nl0ce0.csv") .
+@source srcillvi32nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_illvi32nl0ce1.csv") .
+@source srcangryvnm39nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_angryvnm39nl0ce2.csv") .
+@source srcstitchvnm32nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_stitchvnm32nl0ce0.csv") .
+@source involvevi4nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_involvevi4nl0ce0.csv") .
+@source versevh33nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_versevh33nl0ce0.csv") .
+@source shoevi17nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_shoevi17nl0ce1.csv") .
+@source moonvnm32nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_moonvnm32nl0ce2.csv") .
+@source srcencouragevi64nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_encouragevi64nl0ce1.csv") .
+@source srcovenvnm18nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_ovenvnm18nl0ce0.csv") .
+@source societyvi22nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_societyvi22nl0ce1.csv") .
+@source srcblowvi2nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_blowvi2nl0ce1.csv") .
+@source srcneedvi27nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_needvi27nl0ce1.csv") .
+@source srcpainvnm4nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_painvnm4nl0ce1.csv") .
+@source srcrestvh34nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_restvh34nl0ce0.csv") .
+@source srcwaxad60nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_waxad60nl0ce0.csv") .
+@source businessvi11nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_businessvi11nl0ce0.csv") .
+@source srctouchvh21nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_touchvh21nl0ce0.csv") .
+@source srcraisevnm17nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_raisevnm17nl0ce1.csv") .
+@source confirmvh21nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_confirmvh21nl0ce1.csv") .
+@source srcreportvnm38nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_reportvnm38nl0ce2.csv") .
+@source srcmovevh40nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_movevh40nl0ce0.csv") .
+@source srcversevh33nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_versevh33nl0ce0.csv") .
+@source paintvh24nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_paintvh24nl0ce1.csv") .
+@source wouldvi63nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_wouldvi63nl0ce0.csv") .
+@source shamevnm29nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_shamevnm29nl0ce0.csv") .
+@source srcattackvnm19nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_attackvnm19nl0ce0.csv") .
+@source clothvh46nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_clothvh46nl0ce0.csv") .
+@source remainvnm20nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_remainvnm20nl0ce1.csv") .
+@source bandvi18nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bandvi18nl0ce1.csv") .
+@source srcletvh37nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_letvh37nl0ce0.csv") .
+@source srcinvolvevh2nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_involvevh2nl0ce0.csv") .
+@source srcsummervnm39nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_summervnm39nl0ce0.csv") .
+@source helpvi35nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_helpvi35nl0ce1.csv") .
+@source srcknowledgevi38nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_knowledgevi38nl0ce0.csv") .
+@source srcjellyvi60nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_jellyvi60nl0ce1.csv") .
+@source srcfactvi48nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_factvi48nl0ce0.csv") .
+@source requirevh10nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_requirevh10nl0ce1.csv") .
+@source srcexamplevh23nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_examplevh23nl0ce1.csv") .
+@source affordvh16nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_affordvh16nl0ce0.csv") .
+@source srcachievevh48nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_achievevh48nl0ce1.csv") .
+@source srcwayvnm39nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_wayvnm39nl0ce1.csv") .
+@source srccrossvh17nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_crossvh17nl0ce0.csv") .
+@source srcsockvnm26nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_sockvnm26nl0ce0.csv") .
+@source srcdelicatevi26nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_delicatevi26nl0ce1.csv") .
+@source srcsteelad42nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_steelad42nl0ce0.csv") .
+@source srctinvnm16nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_tinvnm16nl0ce0.csv") .
+@source srcflyvh39nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_flyvh39nl0ce0.csv") .
+@source actvh17nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_actvh17nl0ce1.csv") .
+@source basevh62nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_basevh62nl0ce1.csv") .
+@source avoidvnm18nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_avoidvnm18nl0ce2.csv") .
+@source mustvnm48nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_mustvnm48nl0ce2.csv") .
+@source attackvnm19nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_attackvnm19nl0ce0.csv") .
+@source srcpresentvnm15nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_presentvnm15nl0ce0.csv") .
+@source workvnm30nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_workvnm30nl0ce2.csv") .
+@source placevh40nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_placevh40nl0ce1.csv") .
+@source curvevi58nl0ce0m[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_curvevi58nl0ce0m.csv") .
+@source srcpainvi5nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_painvi5nl0ce0.csv") .
+@source greyvi61nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_greyvi61nl0ce1.csv") .
+@source politicalvnm3nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_politicalvnm3nl0ce1.csv") .
+@source dependentvnm5nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_dependentvnm5nl0ce1.csv") .
+@source carryvnm57nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_carryvnm57nl0ce2.csv") .
+@source reportvnm38nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_reportvnm38nl0ce2.csv") .
+@source srcovenvi6nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_ovenvi6nl0ce0.csv") .
+@source srccomplexvh12nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_complexvh12nl0ce1.csv") .
+@source cushionvnm62nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_cushionvnm62nl0ce0.csv") .
+@source srcchargevh3nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_chargevh3nl0ce1.csv") .
+@source touchvh21nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_touchvh21nl0ce0.csv") .
+@source achievevh48nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_achievevh48nl0ce1.csv") .
+@source srcreadingvnm16nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_readingvnm16nl0ce1.csv") .
+@source reasonad18nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_reasonad18nl0ce0.csv") .
+@source flyvi7nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_flyvi7nl0ce0.csv") .
+@source srcrequirevh10nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_requirevh10nl0ce1.csv") .
+@source painvi5nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_painvi5nl0ce0.csv") .
+@source involvevnm21nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_involvevnm21nl0ce2.csv") .
+@source srccollarvnm63nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_collarvnm63nl0ce0.csv") .
+@source digestionvnm10nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_digestionvnm10nl0ce2.csv") .
+@source srcsleepvnm12nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_sleepvnm12nl0ce0.csv") .
+@source mindvh22nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_mindvh22nl0ce1.csv") .
+@source measurevnm12nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_measurevnm12nl0ce1.csv") .
+@source srceffectvi47nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_effectvi47nl0ce0.csv") .
+@source srcmaterialvh31nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_materialvh31nl0ce0.csv") .
+@source srcmoonvnm32nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_moonvnm32nl0ce2.csv") .
+@source srcconsciousvnm13nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_consciousvnm13nl0ce0.csv") .
+@source srcexpressvnm26nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_expressvnm26nl0ce2.csv") .
+@source stitchvnm32nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_stitchvnm32nl0ce0.csv") .
+@source srcchangevi15nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_changevi15nl0ce1.csv") .
+@source srcparallelvnm2nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_parallelvnm2nl0ce0.csv") .
+@source srcattorneyvh34nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_attorneyvh34nl0ce1.csv") .
+@source srccontainvh15nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_containvh15nl0ce0.csv") .
+@source delivervh51nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_delivervh51nl0ce0.csv") .
+@source srcrespectvh37nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_respectvh37nl0ce1.csv") .
+@source climbvi32nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_climbvi32nl0ce0.csv") .
+@source srcworkvnm50nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_workvnm50nl0ce2.csv") .
+@source smilevi19nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_smilevi19nl0ce1.csv") .
+@source srccontainvnm38nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_containvnm38nl0ce0.csv") .
+@source srccomparevi46nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_comparevi46nl0ce1.csv") .
+@source srcdamagead33nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_damagead33nl0ce0.csv") .
+@source srcdiscovervi29nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_discovervi29nl0ce0.csv") .
+@source weathervnm31nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_weathervnm31nl0ce2.csv") .
+@source wetvh13nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_wetvh13nl0ce0.csv") .
+@source srchidevi17nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_hidevi17nl0ce0.csv") .
+@source agreementvh35nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_agreementvh35nl0ce1.csv") .
+@source lookvi13nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_lookvi13nl0ce1.csv") .
+@source degreevh28nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_degreevh28nl0ce1.csv") .
+@source srcplatevi30nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_platevi30nl0ce0.csv") .
+@source completevh4nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_completevh4nl0ce0.csv") .
+@source srcamountvnm18nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_amountvnm18nl0ce1.csv") .
+@source srcpointvnm10nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_pointvnm10nl0ce1.csv") .
+@source srcerrorvi56nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_errorvi56nl0ce0.csv") .
+@source obtainvi48nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_obtainvi48nl0ce1.csv") .
+@source knotvnm27nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_knotvnm27nl0ce1.csv") .
+@source electricvi25nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_electricvi25nl0ce0.csv") .
+@source srcbranchvnm22nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_branchvnm22nl0ce1.csv") .
+@source srcdiscussvnm32nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_discussvnm32nl0ce1.csv") .
+@source truevnm47nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_truevnm47nl0ce2.csv") .
+@source nightvh38nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_nightvh38nl0ce0.csv") .
+@source pointvi18nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_pointvi18nl0ce0.csv") .
+@source regretvi54nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_regretvi54nl0ce1.csv") .
+@source differentvi1nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_differentvi1nl0ce0.csv") .
+@source srcfictionvh9nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_fictionvh9nl0ce1.csv") .
+@source srcseaad21nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_seaad21nl0ce0.csv") .
+@source summervnm6nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_summervnm6nl0ce2.csv") .
+@source yellowvnm45nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_yellowvnm45nl0ce2.csv") .
+@source srcvoicevnm9nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_voicevnm9nl0ce1.csv") .
+@source needvi27nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_needvi27nl0ce1.csv") .
+@source srcclearvh48nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_clearvh48nl0ce0.csv") .
+@source mentionvi4nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_mentionvi4nl0ce1.csv") .
+@source farmvnm3nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_farmvnm3nl0ce0.csv") .
+@source churchvnm7nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_churchvnm7nl0ce1.csv") .
+@source srcprivatevnm54nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_privatevnm54nl0ce0.csv") .
+@source srcviolentvi20nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_violentvi20nl0ce0.csv") .
+@source srcseparatevi41nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_separatevi41nl0ce1.csv") .
+@source flyvh64nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_flyvh64nl0ce0.csv") .
+@source srcforgivevi9nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_forgivevi9nl0ce1.csv") .
+@source replyvh10nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_replyvh10nl0ce0.csv") .
+@source greenvnm8nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_greenvnm8nl0ce1.csv") .
+@source replyvh30nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_replyvh30nl0ce1.csv") .
+@source srcprobablevh5nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_probablevh5nl0ce1.csv") .
+@source factvi48nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_factvi48nl0ce0.csv") .
+@source srcprotestvi35nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_protestvi35nl0ce0.csv") .
+@source materialvh31nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_materialvh31nl0ce0.csv") .
+@source srclayvnm58nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_layvnm58nl0ce2.csv") .
+@source srcminevh32nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_minevh32nl0ce1.csv") .
+@source substancevi59nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_substancevi59nl0ce0.csv") .
+@source srcliftvi30nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_liftvi30nl0ce1.csv") .
+@source srcdelivervi28nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_delivervi28nl0ce1.csv") .
+@source approvalvi37nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_approvalvi37nl0ce1.csv") .
+@source srcdeepad16nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_deepad16nl0ce0.csv") .
+@source srclinevh53nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_linevh53nl0ce0.csv") .
+@source authorityvnm26nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_authorityvnm26nl0ce1.csv") .
+@source srccouldvnm62nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_couldvnm62nl0ce2.csv") .
+@source officevnm46nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_officevnm46nl0ce2.csv") .
+@source srcsensevnm42nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_sensevnm42nl0ce0.csv") .
+@source srcjumpvnm8nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_jumpvnm8nl0ce2.csv") .
+@source bodyvh43nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bodyvh43nl0ce0.csv") .
+@source srccontributevnm45nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_contributevnm45nl0ce1.csv") .
+@source jewelvi15nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_jewelvi15nl0ce0.csv") .
+@source watchvh11nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_watchvh11nl0ce1.csv") .
+@source processvnm49nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_processvnm49nl0ce2.csv") .
+@source damagead33nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_damagead33nl0ce0.csv") .
+@source endvnm21nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_endvnm21nl0ce1.csv") .
+@source meanvi59nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_meanvi59nl0ce1.csv") .
+@source srcsolidvh47nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_solidvh47nl0ce0.csv") .
+@source srcringvnm40nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_ringvnm40nl0ce0.csv") .
+@source srcleathervnm27nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_leathervnm27nl0ce2.csv") .
+@source srcdarkvnm27nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_darkvnm27nl0ce0.csv") .
+@source ringvnm9nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_ringvnm9nl0ce0.csv") .
+@source bucketvh49nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bucketvh49nl0ce1.csv") .
+@source havevi24nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_havevi24nl0ce0.csv") .
+@source srcinventionvh26nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_inventionvh26nl0ce0.csv") .
+@source srcjumpvh36nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_jumpvh36nl0ce1.csv") .
+@source srcgrassvnm46nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_grassvnm46nl0ce0.csv") .
+@source srcdayvh43nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_dayvh43nl0ce1.csv") .
+@source srcbabyvnm17nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_babyvnm17nl0ce2.csv") .
+@source amountvnm18nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_amountvnm18nl0ce1.csv") .
+@source srccutvh39nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_cutvh39nl0ce1.csv") .
+@source kindvi3nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_kindvi3nl0ce0.csv") .
+@source mouthvnm44nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_mouthvnm44nl0ce0.csv") .
+@source srcsecretvi12nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_secretvi12nl0ce1.csv") .
+@source srcbeautifulvh11nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_beautifulvh11nl0ce0.csv") .
+@source violentvi20nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_violentvi20nl0ce0.csv") .
+@source srcregretvi54nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_regretvi54nl0ce1.csv") .
+@source canvasvnm31nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_canvasvnm31nl0ce0.csv") .
+@source srcaccountvh9nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_accountvh9nl0ce0.csv") .
+@source srcpunishmentvnm24nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_punishmentvnm24nl0ce1.csv") .
+@source srcchurchvnm7nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_churchvnm7nl0ce1.csv") .
+@source srccomparevnm11nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_comparevnm11nl0ce0.csv") .
+@source smokevnm52nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_smokevnm52nl0ce1.csv") .
+@source experiencevnm40nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_experiencevnm40nl0ce1.csv") .
+@source srcbackvh13nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_backvh13nl0ce1.csv") .
+@source srcshamevnm29nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_shamevnm29nl0ce0.csv") .
+@source avoidvi61nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_avoidvi61nl0ce0.csv") .
+@source smokevi14nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_smokevi14nl0ce1.csv") .
+@source ringvnm40nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_ringvnm40nl0ce0.csv") .
+@source stitchvnm19nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_stitchvnm19nl0ce1.csv") .
+@source fathervh14nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_fathervh14nl0ce1.csv") .
+@source srcmealvh46nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_mealvh46nl0ce1.csv") .
+@source awakevnm7nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_awakevnm7nl0ce0.csv") .
+@source srcbootvnm5nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bootvnm5nl0ce0.csv") .
+@source srcfeeblevi33nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_feeblevi33nl0ce0.csv") .
+@source srccanvasvnm31nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_canvasvnm31nl0ce0.csv") .
+@source facevh25nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_facevh25nl0ce0.csv") .
+@source involvevh2nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_involvevh2nl0ce0.csv") .
+@source srcwatchvh11nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_watchvh11nl0ce1.csv") .
+@source beevi16nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_beevi16nl0ce1.csv") .
+@source hatevh6nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_hatevh6nl0ce1.csv") .
+@source acceptvnm4nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_acceptvnm4nl0ce2.csv") .
+@source srcmovevnm37nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_movevnm37nl0ce0.csv") .
+@source providevi26nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_providevi26nl0ce0.csv") .
+@source providevi12nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_providevi12nl0ce0.csv") .
+@source srcconcernvnm63nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_concernvnm63nl0ce1.csv") .
+@source darkvnm27nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_darkvnm27nl0ce0.csv") .
+@source cookvi21nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_cookvi21nl0ce1.csv") .
+@source srcplacevh40nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_placevh40nl0ce1.csv") .
+@source srcanimalvh6nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_animalvh6nl0ce0.csv") .
+@source encouragevi64nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_encouragevi64nl0ce1.csv") .
+@source arguevnm6nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_arguevnm6nl0ce0.csv") .
+@source srcsystemvh24nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_systemvh24nl0ce0.csv") .
+@source srcrecordvnm23nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_recordvnm23nl0ce2.csv") .
+@source srcedgevi29nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_edgevi29nl0ce1.csv") .
+@source grassvnm46nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_grassvnm46nl0ce0.csv") .
+@source srcmouthvnm44nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_mouthvnm44nl0ce0.csv") .
+@source srclatevi7nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_latevi7nl0ce1.csv") .
+@source secretvi12nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_secretvi12nl0ce1.csv") .
+@source srcdegreevi9nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_degreevi9nl0ce0.csv") .
+@source liquidvnm58nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_liquidvnm58nl0ce0.csv") .
+@source delicatevi26nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_delicatevi26nl0ce1.csv") .
+@source srcroomvnm9nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_roomvnm9nl0ce2.csv") .
+@source protestvh30nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_protestvh30nl0ce0.csv") .
+@source srcmovevnm53nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_movevnm53nl0ce1.csv") .
+@source effectvi47nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_effectvi47nl0ce0.csv") .
+@source srcarguevnm6nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_arguevnm6nl0ce0.csv") .
+@source seavnm5nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_seavnm5nl0ce2.csv") .
+@source srcselectionvnm29nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_selectionvnm29nl0ce2.csv") .
+@source srcwavevh20nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_wavevh20nl0ce1.csv") .
+@source srcsmokevi14nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_smokevi14nl0ce1.csv") .
+@source latevnm6nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_latevnm6nl0ce1.csv") .
+@source srcbottlevnm37nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bottlevnm37nl0ce2.csv") .
+@source srcopenvh33nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_openvh33nl0ce1.csv") .
+@source srcnationvi27nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_nationvi27nl0ce0.csv") .
+@source describevh1nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_describevh1nl0ce1.csv") .
+@source givevi6nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_givevi6nl0ce1.csv") .
+@source srcusead61nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_usead61nl0ce0.csv") .
+@source srcsnowvnm52nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_snowvnm52nl0ce0.csv") .
+@source srcawakevnm7nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_awakevnm7nl0ce0.csv") .
+@source usead61nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_usead61nl0ce0.csv") .
+@source workvnm50nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_workvnm50nl0ce2.csv") .
+@source srcfertilevnm57nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_fertilevnm57nl0ce1.csv") .
+@source srctouchvh8nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_touchvh8nl0ce0.csv") .
+@source weightvh60nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_weightvh60nl0ce0.csv") .
+@source srcpagevh60nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_pagevh60nl0ce1.csv") .
+@source sciencevnm63nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_sciencevnm63nl0ce2.csv") .
+@source srchandlevnm2nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_handlevnm2nl0ce2.csv") .
+@source srcactvh17nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_actvh17nl0ce1.csv") .
+@source srccollarvi33nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_collarvi33nl0ce1.csv") .
+@source srcstickvh61nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_stickvh61nl0ce1.csv") .
+@source srcjoinvi34nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_joinvi34nl0ce0.csv") .
+@source relationvnm53nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_relationvnm53nl0ce0.csv") .
+@source industryvi52nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_industryvi52nl0ce1.csv") .
+@source srcpointvi18nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_pointvi18nl0ce0.csv") .
+@source srctruevnm47nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_truevnm47nl0ce2.csv") .
+@source musicvnm53nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_musicvnm53nl0ce2.csv") .
+@source srcforgivevnm33nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_forgivevnm33nl0ce1.csv") .
+@source srcknotvnm27nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_knotvnm27nl0ce1.csv") .
+@source srcmanagervnm49nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_managervnm49nl0ce0.csv") .
+@source srcknotvnm33nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_knotvnm33nl0ce0.csv") .
+@source lightvi52nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_lightvi52nl0ce0.csv") .
+@source indicatevi40nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_indicatevi40nl0ce1.csv") .
+@source familyvnm20nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_familyvnm20nl0ce0.csv") .
+@source srcbluevh61nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bluevh61nl0ce0.csv") .
+@source srcsummervnm6nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_summervnm6nl0ce2.csv") .
+@source srceatad8nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_eatad8nl0ce0.csv") .
+@source beautifulvh11nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_beautifulvh11nl0ce0.csv") .
+@source colorvnm30nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_colorvnm30nl0ce1.csv") .
+@source srcshutvi37nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_shutvi37nl0ce0.csv") .
+@source expansionvnm1nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_expansionvnm1nl0ce2.csv") .
+@source raisevnm17nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_raisevnm17nl0ce1.csv") .
+@source srcmentionvi4nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_mentionvi4nl0ce1.csv") .
+@source srcpoisonvnm46nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_poisonvnm46nl0ce1.csv") .
+@source clearvh48nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_clearvh48nl0ce0.csv") .
+@source narrowvi45nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_narrowvi45nl0ce0.csv") .
+@source srcnationvh58nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_nationvh58nl0ce0.csv") .
+@source ovenvnm18nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_ovenvnm18nl0ce0.csv") .
+@source srcsocietyvi22nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_societyvi22nl0ce1.csv") .
+@source fertilevh7nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_fertilevh7nl0ce1.csv") .
+@source summervnm39nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_summervnm39nl0ce0.csv") .
+@source srcsizevnm17nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_sizevnm17nl0ce0.csv") .
+@source yellowvnm33nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_yellowvnm33nl0ce2.csv") .
+@source clockad7nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_clockad7nl0ce0.csv") .
+@source srccountvnm31nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_countvnm31nl0ce1.csv") .
+@source srcwhistlead49nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_whistlead49nl0ce0.csv") .
+@source srcpaintvh24nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_paintvh24nl0ce1.csv") .
+@source risevnm28nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_risevnm28nl0ce0.csv") .
+@source ownvnm47nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_ownvnm47nl0ce0.csv") .
+@source srcplacevnm1nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_placevnm1nl0ce1.csv") .
+@source srcscrewvi21nl0ce0[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_screwvi21nl0ce0.csv") .
+@source srcusevh26nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_usevh26nl0ce1.csv") .
+@source playvh59nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_playvh59nl0ce1.csv") .
+@source srcimaginevi28nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_imaginevi28nl0ce0.csv") .
+@source languagevnm3nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_languagevnm3nl0ce2.csv") .
+@source jellyvi60nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_jellyvi60nl0ce1.csv") .
+@source armvnm49nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_armvnm49nl0ce1.csv") .
+@source srcbandvi36nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bandvi36nl0ce1.csv") .
+@source srcbeevi16nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_beevi16nl0ce1.csv") .
+@source srcgreenvnm8nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_greenvnm8nl0ce1.csv") .
+@source examinevnm20nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_examinevnm20nl0ce2.csv") .
+@source reflectvh16nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_reflectvh16nl0ce1.csv") .
+@source complexvh12nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_complexvh12nl0ce1.csv") .
+@source copyad36nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_copyad36nl0ce0.csv") .
+@source srcagenciesvh20nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_agenciesvh20nl0ce0.csv") .
+@source srcoffervnm57nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_offervnm57nl0ce0.csv") .
+@source srcavoidvi61nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_avoidvi61nl0ce0.csv") .
+@source srcmattervnm19nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_mattervnm19nl0ce2.csv") .
+@source softvnm29nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_softvnm29nl0ce1.csv") .
+@source srcmustvnm48nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_mustvnm48nl0ce2.csv") .
+@source srchatevh6nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_hatevh6nl0ce1.csv") .
+@source srcthreadvi13nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_threadvi13nl0ce0.csv") .
+@source srcstonevh7nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_stonevh7nl0ce0.csv") .
+@source srcreturnvnm28nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_returnvnm28nl0ce2.csv") .
+@source srcavoidvnm18nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_avoidvnm18nl0ce2.csv") .
+@source srctestvh32nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_testvh32nl0ce0.csv") .
+@source illvi32nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_illvi32nl0ce1.csv") .
+@source solidvh47nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_solidvh47nl0ce0.csv") .
+@source steelad42nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_steelad42nl0ce0.csv") .
+@source srcshoevi17nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_shoevi17nl0ce1.csv") .
+@source srcseparatevh27nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_separatevh27nl0ce1.csv") .
+@source firstvnm11nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_firstvnm11nl0ce1.csv") .
+@source srcconcernvh23nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_concernvh23nl0ce0.csv") .
+@source approvalvi2nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_approvalvi2nl0ce0.csv") .
+@source countvh4nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_countvh4nl0ce1.csv") .
+@source archvi46nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_archvi46nl0ce0.csv") .
+@source srcfallvh47nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_fallvh47nl0ce1.csv") .
+@source srcmistvnm25nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_mistvnm25nl0ce2.csv") .
+@source srcplayvi58nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_playvi58nl0ce1.csv") .
+@source srcfacevh28nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_facevh28nl0ce0.csv") .
+@source srcbrushvh19nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_brushvh19nl0ce1.csv") .
+@source srcprovevi3nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_provevi3nl0ce1.csv") .
+@source twistvi56nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_twistvi56nl0ce1.csv") .
+@source historyvnm25nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_historyvnm25nl0ce1.csv") .
+@source srcbusinessvi11nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_businessvi11nl0ce0.csv") .
+@source simplevnm23nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_simplevnm23nl0ce0.csv") .
+@source srcgoldvnm4nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_goldvnm4nl0ce0.csv") .
+@source gunvi63nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_gunvi63nl0ce1.csv") .
+@source srcprotestad56nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_protestad56nl0ce0.csv") .
+@source changevi15nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_changevi15nl0ce1.csv") .
+@source groupvnm44nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_groupvnm44nl0ce2.csv") .
+@source srcdevelopvi36nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_developvi36nl0ce0.csv") .
+@source discussvnm32nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_discussvnm32nl0ce1.csv") .
+@source srcinvolvevnm21nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_involvevnm21nl0ce2.csv") .
+@source glovevh36nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_glovevh36nl0ce0.csv") .
+@source srcbloodvnm54nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bloodvnm54nl0ce1.csv") .
+@source srcsunvh42nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_sunvh42nl0ce0.csv") .
+@source connectionvh42nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_connectionvh42nl0ce1.csv") .
+@source screwvi21nl0ce0[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_screwvi21nl0ce0.csv") .
+@source srcbedvi22nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bedvi22nl0ce0.csv") .
+@source srchidevi20nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_hidevi20nl0ce1.csv") .
+@source srcinvolvevi4nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_involvevi4nl0ce0.csv") .
+@source srcbrickvnm50nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_brickvnm50nl0ce0.csv") .
+@source mistvnm25nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_mistvnm25nl0ce2.csv") .
+@source delicatevi38nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_delicatevi38nl0ce1.csv") .
+@source threadvi13nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_threadvi13nl0ce0.csv") .
+@source expressvnm26nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_expressvnm26nl0ce2.csv") .
+@source srclockvnm54nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_lockvnm54nl0ce2.csv") .
+@source ovenvh25nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_ovenvh25nl0ce1.csv") .
+@source srcpresentvh18nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_presentvh18nl0ce1.csv") .
+@source angryvnm39nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_angryvnm39nl0ce2.csv") .
+@source srcusevh2nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_usevh2nl0ce1.csv") .
+@source soundvi47nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_soundvi47nl0ce1.csv") .
+@source srcsistervnm15nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_sistervnm15nl0ce1.csv") .
+@source brushvh19nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_brushvh19nl0ce1.csv") .
+@source playvnm11nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_playvnm11nl0ce2.csv") .
+@source srcdievnm37nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_dievnm37nl0ce1.csv") .
+@source srctwistvi56nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_twistvi56nl0ce1.csv") .
+@source srckindvi3nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_kindvi3nl0ce0.csv") .
+@source srcdependentvnm5nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_dependentvnm5nl0ce1.csv") .
+@source neckvi64nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_neckvi64nl0ce0.csv") .
+@source cutvh39nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_cutvh39nl0ce1.csv") .
+@source fictionvh9nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_fictionvh9nl0ce1.csv") .
+@source srcchurchvnm10nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_churchvnm10nl0ce0.csv") .
+@source srcpoliticalvnm3nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_politicalvnm3nl0ce1.csv") .
+@source dustvi25nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_dustvi25nl0ce1.csv") .
+@source srcdustvi25nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_dustvi25nl0ce1.csv") .
+@source srcplayvnm11nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_playvnm11nl0ce2.csv") .
+@source punishmentvnm24nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_punishmentvnm24nl0ce1.csv") .
+@source yellowvi11nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_yellowvi11nl0ce1.csv") .
+@source loosevnm58nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_loosevnm58nl0ce1.csv") .
+@source srcroundvh51nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_roundvh51nl0ce1.csv") .
+@source skinvi24nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_skinvi24nl0ce1.csv") .
+@source srcsocietyvi1nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_societyvi1nl0ce1.csv") .
+@source srcsimplevnm23nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_simplevnm23nl0ce0.csv") .
+@source learnvh56nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_learnvh56nl0ce0.csv") .
+@source usevh26nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_usevh26nl0ce1.csv") .
+@source srcvoicevnm48nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_voicevnm48nl0ce0.csv") .
+@source srchavevh27nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_havevh27nl0ce0.csv") .
+@source srcaffordvh16nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_affordvh16nl0ce0.csv") .
+@source breathvnm38nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_breathvnm38nl0ce1.csv") .
+@source srcapprovalvi2nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_approvalvi2nl0ce0.csv") .
+@source killad38nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_killad38nl0ce0.csv") .
+@source believevnm14nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_believevnm14nl0ce1.csv") .
+@source srcwhitevi23nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_whitevi23nl0ce1.csv") .
+@source sistervnm15nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_sistervnm15nl0ce1.csv") .
+@source srcenginevnm12nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_enginevnm12nl0ce2.csv") .
+@source developvi36nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_developvi36nl0ce0.csv") .
+@source protestad56nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_protestad56nl0ce0.csv") .
+@source lockvnm54nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_lockvnm54nl0ce2.csv") .
+@source srccountvh4nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_countvh4nl0ce1.csv") .
+@source fishvi49nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_fishvi49nl0ce0.csv") .
+@source straightvi5nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_straightvi5nl0ce1.csv") .
+@source warvnm25nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_warvnm25nl0ce0.csv") .
+@source srcsciencevnm63nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_sciencevnm63nl0ce2.csv") .
+@source coatvh14nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_coatvh14nl0ce0.csv") .
+@source srcshakevnm23nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_shakevnm23nl0ce1.csv") .
+@source bellvnm62nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bellvnm62nl0ce1.csv") .
+@source longvi10nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_longvi10nl0ce1.csv") .
+@source srccolorvnm30nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_colorvnm30nl0ce1.csv") .
+@source srcreasonad18nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_reasonad18nl0ce0.csv") .
+@source stickvh61nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_stickvh61nl0ce1.csv") .
+@source srccushionvnm62nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_cushionvnm62nl0ce0.csv") .
+@source srcsubstancevi59nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_substancevi59nl0ce0.csv") .
+@source existvnm42nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_existvnm42nl0ce1.csv") .
+@source provevi3nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_provevi3nl0ce1.csv") .
+@source srccardvnm52nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_cardvnm52nl0ce2.csv") .
+@source layvnm58nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_layvnm58nl0ce2.csv") .
+@source srcrisevnm28nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_risevnm28nl0ce0.csv") .
+@source srcseavnm5nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_seavnm5nl0ce2.csv") .
+@source srcweathervnm31nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_weathervnm31nl0ce2.csv") .
+@source adjustmentvnm14nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_adjustmentvnm14nl0ce2.csv") .
+@source sizevnm17nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_sizevnm17nl0ce0.csv") .
+@source dievnm37nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_dievnm37nl0ce1.csv") .
+@source srcsmokevnm52nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_smokevnm52nl0ce1.csv") .
+@source srcindustryvnm44nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_industryvnm44nl0ce1.csv") .
+@source srcmeasurevnm12nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_measurevnm12nl0ce1.csv") .
+@source arrangevh19nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_arrangevh19nl0ce0.csv") .
+@source parallelvnm2nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_parallelvnm2nl0ce0.csv") .
+@source linevh53nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_linevh53nl0ce0.csv") .
+@source hammervnm7nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_hammervnm7nl0ce2.csv") .
+@source trayvh44nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_trayvh44nl0ce0.csv") .
+@source srcusevi23nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_usevi23nl0ce0.csv") .
+@source intendvnm47nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_intendvnm47nl0ce1.csv") .
+@source srcgivevi6nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_givevi6nl0ce1.csv") .
+@source placevnm1nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_placevnm1nl0ce1.csv") .
+@source discovervi29nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_discovervi29nl0ce0.csv") .
+@source inventionvh26nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_inventionvh26nl0ce0.csv") .
+@source srcknockvh58nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_knockvh58nl0ce1.csv") .
+@source animalvh6nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_animalvh6nl0ce0.csv") .
+@source hidevi20nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_hidevi20nl0ce1.csv") .
+@source usevh2nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_usevh2nl0ce1.csv") .
+@source privatevnm54nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_privatevnm54nl0ce0.csv") .
+@source srclanguagevnm21nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_languagevnm21nl0ce0.csv") .
+@source srcsoftvnm29nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_softvnm29nl0ce1.csv") .
+@source loosevh56nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_loosevh56nl0ce1.csv") .
+@source movevnm37nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_movevnm37nl0ce0.csv") .
+@source srcswimvi54nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_swimvi54nl0ce0.csv") .
+@source answervh59nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_answervh59nl0ce0.csv") .
+@source goldvnm4nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_goldvnm4nl0ce0.csv") .
+@source srcelectricvi25nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_electricvi25nl0ce0.csv") .
+@source whitevi23nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_whitevi23nl0ce1.csv") .
+@source relatevnm42nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_relatevnm42nl0ce2.csv") .
+@source srclanguagevh49nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_languagevh49nl0ce0.csv") .
+@source srcpapervh22nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_papervh22nl0ce0.csv") .
+@source snakevi8nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_snakevi8nl0ce1.csv") .
+@source srcseemvh35nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_seemvh35nl0ce0.csv") .
+@source srcreadingad32nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_readingad32nl0ce0.csv") .
+@source srcloosevnm13nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_loosevnm13nl0ce2.csv") .
+@source srcskinvi24nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_skinvi24nl0ce1.csv") .
+@source recordvnm23nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_recordvnm23nl0ce2.csv") .
+@source srcsnakevi8nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_snakevi8nl0ce1.csv") .
+@source consciousvnm13nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_consciousvnm13nl0ce0.csv") .
+@source trickvnm8nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_trickvnm8nl0ce0.csv") .
+@source presentvh18nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_presentvh18nl0ce1.csv") .
+@source srcstraightvi5nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_straightvi5nl0ce1.csv") .
+@source srcdigestionvnm10nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_digestionvnm10nl0ce2.csv") .
+@source srcprovidevi12nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_providevi12nl0ce0.csv") .
+@source srcsafevnm60nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_safevnm60nl0ce2.csv") .
+@source srcchemicalvh38nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_chemicalvh38nl0ce1.csv") .
+@source havevh27nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_havevh27nl0ce0.csv") .
+@source srcmachinevnm24nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_machinevnm24nl0ce0.csv") .
+@source srcliquidvnm58nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_liquidvnm58nl0ce0.csv") .
+@source srcwarvnm25nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_warvnm25nl0ce0.csv") .
+@source srclearnvh56nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_learnvh56nl0ce0.csv") .
+@source babyvnm17nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_babyvnm17nl0ce2.csv") .
+@source srcfishvi49nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_fishvi49nl0ce0.csv") .
+@source srcsoundvi47nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_soundvi47nl0ce1.csv") .
+@source presentvnm15nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_presentvnm15nl0ce0.csv") .
+@source handlevnm2nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_handlevnm2nl0ce2.csv") .
+@source latevi7nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_latevi7nl0ce1.csv") .
+@source readingvnm16nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_readingvnm16nl0ce1.csv") .
+@source srcadjustmentvnm14nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_adjustmentvnm14nl0ce2.csv") .
+@source mealvh46nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_mealvh46nl0ce1.csv") .
+@source srcexpertvi31nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_expertvi31nl0ce0.csv") .
+@source containvnm38nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_containvnm38nl0ce0.csv") .
+@source srcagreementvh35nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_agreementvh35nl0ce1.csv") .
+@source srcweightvh60nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_weightvh60nl0ce0.csv") .
+@source srccommonvnm60nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_commonvnm60nl0ce1.csv") .
+@source tryvh12nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_tryvh12nl0ce0.csv") .
+@source goldvnm40nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_goldvnm40nl0ce2.csv") .
+@source srcbluevnm22nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bluevnm22nl0ce2.csv") .
+@source srcorangevh41nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_orangevh41nl0ce1.csv") .
+@source srchappenvh45nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_happenvh45nl0ce0.csv") .
+@source srcgardenvnm45nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_gardenvnm45nl0ce0.csv") .
+@source roundvh51nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_roundvh51nl0ce1.csv") .
+@source movevnm53nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_movevnm53nl0ce1.csv") .
+@source srclongvi10nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_longvi10nl0ce1.csv") .
+@source srcnarrowvi45nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_narrowvi45nl0ce0.csv") .
+@source attorneyvh34nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_attorneyvh34nl0ce1.csv") .
+@source greyvnm64nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_greyvnm64nl0ce1.csv") .
+@source srcshadevh45nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_shadevh45nl0ce1.csv") .
+@source contributevnm45nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_contributevnm45nl0ce1.csv") .
+@source srcgunvi63nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_gunvi63nl0ce1.csv") .
+@source srclevelvh18nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_levelvh18nl0ce0.csv") .
+@source countvnm31nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_countvnm31nl0ce1.csv") .
+@source sleepvnm12nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_sleepvnm12nl0ce0.csv") .
+@source watchvh53nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_watchvh53nl0ce1.csv") .
+@source srcthumbvh29nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_thumbvh29nl0ce0.csv") .
+@source commonvnm60nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_commonvnm60nl0ce1.csv") .
+@source diseasevi45nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_diseasevi45nl0ce1.csv") .
+@source edgevi29nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_edgevi29nl0ce1.csv") .
+@source srcfallvnm60nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_fallvnm60nl0ce0.csv") .
+@source srcfertilevh7nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_fertilevh7nl0ce1.csv") .
+@source waitvnm13nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_waitvnm13nl0ce1.csv") .
+@source swimvi54nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_swimvi54nl0ce0.csv") .
+@source returnvnm28nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_returnvnm28nl0ce2.csv") .
+@source srcbuttervnm15nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_buttervnm15nl0ce2.csv") .
+@source shutvi37nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_shutvi37nl0ce0.csv") .
+@source srcfemalevi60nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_femalevi60nl0ce0.csv") .
+@source touchvh8nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_touchvh8nl0ce0.csv") .
+@source srcleftvnm22nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_leftvnm22nl0ce0.csv") .
+@source sunvh42nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_sunvh42nl0ce0.csv") .
+@source srccomplainvi8nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_complainvi8nl0ce0.csv") .
+@source srcprocessvnm49nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_processvnm49nl0ce2.csv") .
+@source srclatevnm6nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_latevnm6nl0ce1.csv") .
+@source collarvnm63nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_collarvnm63nl0ce0.csv") .
+@source srcbluevh1nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bluevh1nl0ce0.csv") .
+@source srcprotestvh30nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_protestvh30nl0ce0.csv") .
+@source feeblevi33nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_feeblevi33nl0ce0.csv") .
+@source knowledgevi38nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_knowledgevi38nl0ce0.csv") .
+@source srctrayvh44nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_trayvh44nl0ce0.csv") .
+@source openvh33nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_openvh33nl0ce1.csv") .
+@source bedvi22nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bedvi22nl0ce0.csv") .
+@source srcdifferentvi1nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_differentvi1nl0ce0.csv") .
+@source bluevnm22nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bluevnm22nl0ce2.csv") .
+@source leftvnm22nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_leftvnm22nl0ce0.csv") .
+@source srcconnectionvh42nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_connectionvh42nl0ce1.csv") .
+@source srcexaminevnm20nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_examinevnm20nl0ce2.csv") .
+@source chemicalvh38nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_chemicalvh38nl0ce1.csv") .
+@source pagevh60nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_pagevh60nl0ce1.csv") .
+@source shutvnm28nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_shutvnm28nl0ce1.csv") .
+@source containvh15nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_containvh15nl0ce0.csv") .
+@source protestvi35nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_protestvi35nl0ce0.csv") .
+@source srcbasevh62nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_basevh62nl0ce1.csv") .
+@source bluevh61nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bluevh61nl0ce0.csv") .
+@source wayvnm39nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_wayvnm39nl0ce1.csv") .
+@source srccollectionvnm2nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_collectionvnm2nl0ce1.csv") .
+@source probablevh5nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_probablevh5nl0ce1.csv") .
+@source joinvi34nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_joinvi34nl0ce0.csv") .
+@source eatad8nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_eatad8nl0ce0.csv") .
+@source levelvh18nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_levelvh18nl0ce0.csv") .
+@source forgivevi9nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_forgivevi9nl0ce1.csv") .
+@source separatevh27nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_separatevh27nl0ce1.csv") .
+@source srcpeacevi34nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_peacevi34nl0ce1.csv") .
+@source offervnm57nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_offervnm57nl0ce0.csv") .
+@source srcpeacevi40nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_peacevi40nl0ce0.csv") .
+@source srcgreyvnm64nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_greyvnm64nl0ce1.csv") .
+@source degreevi9nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_degreevi9nl0ce0.csv") .
+@source srcwatchvh53nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_watchvh53nl0ce1.csv") .
+@source srctrickvnm8nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_trickvnm8nl0ce0.csv") .
+@source srcmindvh22nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_mindvh22nl0ce1.csv") .
+@source srcintendvnm47nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_intendvnm47nl0ce1.csv") .
+@source authorityvnm24nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_authorityvnm24nl0ce2.csv") .
+@source chargevh3nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_chargevh3nl0ce1.csv") .
+@source complainvi8nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_complainvi8nl0ce0.csv") .
+@source seemvh35nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_seemvh35nl0ce0.csv") .
+@source srcdescribevh1nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_describevh1nl0ce1.csv") .
+@source srcarchvi46nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_archvi46nl0ce0.csv") .
+@source srcwaitvnm13nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_waitvnm13nl0ce1.csv") .
+@source nationvi27nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_nationvi27nl0ce0.csv") .
+@source femalevi60nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_femalevi60nl0ce0.csv") .
+@source srcreplyvh30nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_replyvh30nl0ce1.csv") .
+@source srcwouldvi63nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_wouldvi63nl0ce0.csv") .
+@source fallvnm60nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_fallvnm60nl0ce0.csv") .
+@source srcarmvnm49nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_armvnm49nl0ce1.csv") .
+@source srcwetvh13nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_wetvh13nl0ce0.csv") .
+@source mattervnm19nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_mattervnm19nl0ce2.csv") .
+@source srcreplyvh10nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_replyvh10nl0ce0.csv") .
+@source twistvh64nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_twistvh64nl0ce1.csv") .
+@source srcreflectvh16nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_reflectvh16nl0ce1.csv") .
+@source concernvnm63nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_concernvnm63nl0ce1.csv") .
+@source srcconfirmvh21nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_confirmvh21nl0ce1.csv") .
+@source jumpvh36nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_jumpvh36nl0ce1.csv") .
+@source srctouchvi41nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_touchvi41nl0ce0.csv") .
+@source testvh32nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_testvh32nl0ce0.csv") .
+@source sensevnm42nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_sensevnm42nl0ce0.csv") .
+@source srcringvnm9nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_ringvnm9nl0ce0.csv") .
+@source srcjewelvi15nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_jewelvi15nl0ce0.csv") .
+@source concernvh23nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_concernvh23nl0ce0.csv") .
+@source srcindicatevi40nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_indicatevi40nl0ce1.csv") .
+@source collarvi33nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_collarvi33nl0ce1.csv") .
+@source srcfamilyvnm20nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_familyvnm20nl0ce0.csv") .
+@source srcadvertisementvi14nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_advertisementvi14nl0ce0.csv") .
+@source srccopyad36nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_copyad36nl0ce0.csv") .
+@source leathervnm27nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_leathervnm27nl0ce2.csv") .
+@source buttervnm15nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_buttervnm15nl0ce2.csv") .
+@source comparevnm11nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_comparevnm11nl0ce0.csv") .
+@source bandvi36nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bandvi36nl0ce1.csv") .
+@source srcremainvnm20nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_remainvnm20nl0ce1.csv") .
+@source srcclimbvi32nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_climbvi32nl0ce0.csv") .
+@source srcplayvh59nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_playvh59nl0ce1.csv") .
+@source srcmusicvnm53nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_musicvnm53nl0ce2.csv") .
+@source srcyellowvnm33nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_yellowvnm33nl0ce2.csv") .
+@source srcindustryvi52nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_industryvi52nl0ce1.csv") .
+@source srcdiseasevi45nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_diseasevi45nl0ce1.csv") .
+@source liftvi30nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_liftvi30nl0ce1.csv") .
+@source srccarryvnm57nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_carryvnm57nl0ce2.csv") .
+@source srccurvevi58nl0ce0m[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_curvevi58nl0ce0m.csv") .
+@source papervh22nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_papervh22nl0ce0.csv") .
+@source srcdoorvh3nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_doorvh3nl0ce0.csv") .
+@source selectionvnm29nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_selectionvnm29nl0ce2.csv") .
+@source peacevi34nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_peacevi34nl0ce1.csv") .
+@source seaad21nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_seaad21nl0ce0.csv") .
+@source srctryvh12nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_tryvh12nl0ce0.csv") .
+@source srcanswervh59nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_answervh59nl0ce0.csv") .
+@source separatevi41nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_separatevi41nl0ce1.csv") .
+@source srcstitchvnm19nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_stitchvnm19nl0ce1.csv") .
+@source srcflowervnm48nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_flowervnm48nl0ce1.csv") .
+@source fallvh47nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_fallvh47nl0ce1.csv") .
+@source letvh37nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_letvh37nl0ce0.csv") .
+@source gardenvnm45nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_gardenvnm45nl0ce0.csv") .
+@source srctwistvh64nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_twistvh64nl0ce1.csv") .
+@source foundvh44nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_foundvh44nl0ce1.csv") .
+@source srcgoldvnm40nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_goldvnm40nl0ce2.csv") .
+@source cowvh31nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_cowvh31nl0ce1.csv") .
+@source srccomevi10nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_comevi10nl0ce0.csv") .
+@source usevi23nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_usevi23nl0ce0.csv") .
+@source srcdelivervh51nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_delivervh51nl0ce0.csv") .
+@source horsevnm64nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_horsevnm64nl0ce2.csv") .
+@source managervnm49nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_managervnm49nl0ce0.csv") .
+@source srccowvh31nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_cowvh31nl0ce1.csv") .
+@source srcbodyvh43nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bodyvh43nl0ce0.csv") .
+@source branchvnm22nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_branchvnm22nl0ce1.csv") .
+@source srcyellowvi11nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_yellowvi11nl0ce1.csv") .
+@source stonevh7nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_stonevh7nl0ce0.csv") .
+@source jumpvnm8nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_jumpvnm8nl0ce2.csv") .
+@source srcloosevnm58nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_loosevnm58nl0ce1.csv") .
+@source deepad16nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_deepad16nl0ce0.csv") .
+@source srcfathervh14nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_fathervh14nl0ce1.csv") .
+@source srcloosevh56nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_loosevh56nl0ce1.csv") .
+@source secondvnm16nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_secondvnm16nl0ce2.csv") .
+@source srcsmilevi19nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_smilevi19nl0ce1.csv") .
+@source touchvi41nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_touchvi41nl0ce0.csv") .
+@source srcrelatevnm42nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_relatevnm42nl0ce2.csv") .
+@source srcexperiencevnm40nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_experiencevnm40nl0ce1.csv") .
+@source bootvnm5nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bootvnm5nl0ce0.csv") .
+@source srcacceptvnm4nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_acceptvnm4nl0ce2.csv") .
+@source safevnm60nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_safevnm60nl0ce2.csv") .
+@source srcarrangevh19nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_arrangevh19nl0ce0.csv") .
+@source flyvh39nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_flyvh39nl0ce0.csv") .
+@source srcmeanvi59nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_meanvi59nl0ce1.csv") .
+@source srcdegreevh28nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_degreevh28nl0ce1.csv") .
+@source srcendvnm21nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_endvnm21nl0ce1.csv") .
+@source pointvnm10nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_pointvnm10nl0ce1.csv") .
+@source errorvi56nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_errorvi56nl0ce0.csv") .
+@source bottlevnm37nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bottlevnm37nl0ce2.csv") .
+@source orangevh41nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_orangevh41nl0ce1.csv") .
+@source expertvi31nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_expertvi31nl0ce0.csv") .
+@source srcprovidevi26nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_providevi26nl0ce0.csv") .
+@source srcinvolvevi16nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_involvevi16nl0ce0.csv") .
+@source sortvi31nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_sortvi31nl0ce1.csv") .
+@source srcneckvi64nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_neckvi64nl0ce0.csv") .
+@source readingad32nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_readingad32nl0ce0.csv") .
+@source srcovenvh25nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_ovenvh25nl0ce1.csv") .
+@source srcobtainvi48nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_obtainvi48nl0ce1.csv") .
+@source ovenvi6nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_ovenvi6nl0ce0.csv") .
+@source srchavevi24nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_havevi24nl0ce0.csv") .
+@source comparevi46nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_comparevi46nl0ce1.csv") .
+@source usevnm64nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_usevnm64nl0ce0.csv") .
+@source shadevh45nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_shadevh45nl0ce1.csv") .
+@source srcbellvnm62nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bellvnm62nl0ce1.csv") .
+@source systemvh24nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_systemvh24nl0ce0.csv") .
+@source srcofficevnm46nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_officevnm46nl0ce2.csv") .
+@source fertilevnm57nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_fertilevnm57nl0ce1.csv") .
+@source srcfacevh25nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_facevh25nl0ce0.csv") .
+@source agenciesvh20nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_agenciesvh20nl0ce0.csv") .
+@source enginevnm12nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_enginevnm12nl0ce2.csv") .
+@source couldvnm62nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_couldvnm62nl0ce2.csv") .
+@source churchvnm10nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_churchvnm10nl0ce0.csv") .
+@source backvh13nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_backvh13nl0ce1.csv") .
+@source srcexistvnm42nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_existvnm42nl0ce1.csv") .
+@source srcapprovalvi37nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_approvalvi37nl0ce1.csv") .
+@source cardvnm52nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_cardvnm52nl0ce2.csv") .
+@source srcshutvnm28nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_shutvnm28nl0ce1.csv") .
+@source srcglovevh36nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_glovevh36nl0ce0.csv") .
+@source roomvnm9nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_roomvnm9nl0ce2.csv") .
+@source chalkvi19nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_chalkvi19nl0ce0.csv") .
+@source srcfallvh29nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_fallvh29nl0ce1.csv") .
+@source srcknowvh15nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_knowvh15nl0ce1.csv") .
+@source brickvnm50nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_brickvnm50nl0ce0.csv") .
+@source cartvh57nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_cartvh57nl0ce1.csv") .
+@source srckillad38nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_killad38nl0ce0.csv") .
+@source delivervi28nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_delivervi28nl0ce1.csv") .
+@source srcbucketvh49nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_bucketvh49nl0ce1.csv") .
+@source srccoatvh14nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_coatvh14nl0ce0.csv") .
+@source restvh34nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_restvh34nl0ce0.csv") .
+@source doorvh3nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_doorvh3nl0ce0.csv") .
+@source restvnm1nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_restvnm1nl0ce0.csv") .
+@source srcworkvnm30nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_workvnm30nl0ce2.csv") .
+@source waxad60nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_waxad60nl0ce0.csv") .
+@source peacevi40nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_peacevi40nl0ce0.csv") .
+@source blowvi2nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_blowvi2nl0ce1.csv") .
+@source minevh32nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_minevh32nl0ce1.csv") .
+@source srccookvi21nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_cookvi21nl0ce1.csv") .
+@source srcbreathvnm38nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_breathvnm38nl0ce1.csv") .
+@source examplevh23nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_examplevh23nl0ce1.csv") .
+@source wavevh20nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_wavevh20nl0ce1.csv") .
+@source thumbvh29nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_thumbvh29nl0ce0.csv") .
+@source knockvh58nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_knockvh58nl0ce1.csv") .
+@source accountvh9nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/medium/src_accountvh9nl0ce0.csv") .
+industryvi52nl0ce1(?X,?Y) :- srcindustryvi52nl0ce1(?X,?Y)  .
+indicatevi40nl0ce1(?X,?Y) :- srcindicatevi40nl0ce1(?X,?Y)  .
+chemicalvh38nl0ce1(?X,?Y) :- srcchemicalvh38nl0ce1(?X,?Y)  .
+damagead33nl0ce0(?X,?Y) :- srcdamagead33nl0ce0(?X,?Y)  .
+doorvh3nl0ce0(?X,?Y) :- srcdoorvh3nl0ce0(?X,?Y)  .
+safevnm60nl0ce2(?X,?Y) :- srcsafevnm60nl0ce2(?X,?Y)  .
+shamevnm29nl0ce0(?X,?Y) :- srcshamevnm29nl0ce0(?X,?Y)  .
+mattervnm19nl0ce2(?X,?Y) :- srcmattervnm19nl0ce2(?X,?Y)  .
+cardvnm52nl0ce2(?X,?Y) :- srccardvnm52nl0ce2(?X,?Y)  .
+testvh32nl0ce0(?X,?Y) :- srctestvh32nl0ce0(?X,?Y)  .
+babyvnm17nl0ce2(?X,?Y) :- srcbabyvnm17nl0ce2(?X,?Y)  .
+snowvnm52nl0ce0(?X,?Y) :- srcsnowvnm52nl0ce0(?X,?Y)  .
+lookvi13nl0ce1(?X,?Y) :- srclookvi13nl0ce1(?X,?Y)  .
+peacevi40nl0ce0(?X,?Y) :- srcpeacevi40nl0ce0(?X,?Y)  .
+imaginevi28nl0ce0(?X,?Y) :- srcimaginevi28nl0ce0(?X,?Y)  .
+movevnm53nl0ce1(?X,?Y) :- srcmovevnm53nl0ce1(?X,?Y)  .
+stitchvnm32nl0ce0(?X,?Y) :- srcstitchvnm32nl0ce0(?X,?Y)  .
+threadvi13nl0ce0(?X,?Y) :- srcthreadvi13nl0ce0(?X,?Y)  .
+measurevnm12nl0ce1(?X,?Y) :- srcmeasurevnm12nl0ce1(?X,?Y)  .
+comparevi46nl0ce1(?X,?Y) :- srccomparevi46nl0ce1(?X,?Y)  .
+concernvnm63nl0ce1(?X,?Y) :- srcconcernvnm63nl0ce1(?X,?Y)  .
+waitvnm13nl0ce1(?X,?Y) :- srcwaitvnm13nl0ce1(?X,?Y)  .
+sleepvnm12nl0ce0(?X,?Y) :- srcsleepvnm12nl0ce0(?X,?Y)  .
+recordvh5nl0ce0(?X,?Y) :- srcrecordvh5nl0ce0(?X,?Y)  .
+restvh34nl0ce0(?X,?Y) :- srcrestvh34nl0ce0(?X,?Y)  .
+attackvnm19nl0ce0(?X,?Y) :- srcattackvnm19nl0ce0(?X,?Y)  .
+societyvi22nl0ce1(?X,?Y) :- srcsocietyvi22nl0ce1(?X,?Y)  .
+summervnm39nl0ce0(?X,?Y) :- srcsummervnm39nl0ce0(?X,?Y)  .
+familyvnm20nl0ce0(?X,?Y) :- srcfamilyvnm20nl0ce0(?X,?Y)  .
+reasonad18nl0ce0(?X,?Y) :- srcreasonad18nl0ce0(?X,?Y)  .
+steelad42nl0ce0(?X,?Y) :- srcsteelad42nl0ce0(?X,?Y)  .
+flyvh64nl0ce0(?X,?Y) :- srcflyvh64nl0ce0(?X,?Y)  .
+fishvi49nl0ce0(?X,?Y) :- srcfishvi49nl0ce0(?X,?Y)  .
+readingad32nl0ce0(?X,?Y) :- srcreadingad32nl0ce0(?X,?Y)  .
+accountvh9nl0ce0(?X,?Y) :- srcaccountvh9nl0ce0(?X,?Y)  .
+workvnm50nl0ce2(?X,?Y) :- srcworkvnm50nl0ce2(?X,?Y)  .
+tinvnm16nl0ce0(?X,?Y) :- srctinvnm16nl0ce0(?X,?Y)  .
+industryvnm44nl0ce1(?X,?Y) :- srcindustryvnm44nl0ce1(?X,?Y)  .
+sunvh42nl0ce0(?X,?Y) :- srcsunvh42nl0ce0(?X,?Y)  .
+nationvh58nl0ce0(?X,?Y) :- srcnationvh58nl0ce0(?X,?Y)  .
+involvevnm21nl0ce2(?X,?Y) :- srcinvolvevnm21nl0ce2(?X,?Y)  .
+feeblevi33nl0ce0(?X,?Y) :- srcfeeblevi33nl0ce0(?X,?Y)  .
+liquidvnm58nl0ce0(?X,?Y) :- srcliquidvnm58nl0ce0(?X,?Y)  .
+presentvnm15nl0ce0(?X,?Y) :- srcpresentvnm15nl0ce0(?X,?Y)  .
+loosevh56nl0ce1(?X,?Y) :- srcloosevh56nl0ce1(?X,?Y)  .
+substancevi59nl0ce0(?X,?Y) :- srcsubstancevi59nl0ce0(?X,?Y)  .
+trayvh44nl0ce0(?X,?Y) :- srctrayvh44nl0ce0(?X,?Y)  .
+actvh17nl0ce1(?X,?Y) :- srcactvh17nl0ce1(?X,?Y)  .
+believevnm14nl0ce1(?X,?Y) :- srcbelievevnm14nl0ce1(?X,?Y)  .
+delivervi28nl0ce1(?X,?Y) :- srcdelivervi28nl0ce1(?X,?Y)  .
+probablevh5nl0ce1(?X,?Y) :- srcprobablevh5nl0ce1(?X,?Y)  .
+yellowvi11nl0ce1(?X,?Y) :- srcyellowvi11nl0ce1(?X,?Y)  .
+comevi10nl0ce0(?X,?Y) :- srccomevi10nl0ce0(?X,?Y)  .
+developvi36nl0ce0(?X,?Y) :- srcdevelopvi36nl0ce0(?X,?Y)  .
+placevnm1nl0ce1(?X,?Y) :- srcplacevnm1nl0ce1(?X,?Y)  .
+societyvi1nl0ce1(?X,?Y) :- srcsocietyvi1nl0ce1(?X,?Y)  .
+mistvnm25nl0ce2(?X,?Y) :- srcmistvnm25nl0ce2(?X,?Y)  .
+chalkvi19nl0ce0(?X,?Y) :- srcchalkvi19nl0ce0(?X,?Y)  .
+involvevh2nl0ce0(?X,?Y) :- srcinvolvevh2nl0ce0(?X,?Y)  .
+snakevi8nl0ce1(?X,?Y) :- srcsnakevi8nl0ce1(?X,?Y)  .
+killad38nl0ce0(?X,?Y) :- srckillad38nl0ce0(?X,?Y)  .
+fathervh14nl0ce1(?X,?Y) :- srcfathervh14nl0ce1(?X,?Y)  .
+fallvh47nl0ce1(?X,?Y) :- srcfallvh47nl0ce1(?X,?Y)  .
+fallvh29nl0ce1(?X,?Y) :- srcfallvh29nl0ce1(?X,?Y)  .
+smilevi19nl0ce1(?X,?Y) :- srcsmilevi19nl0ce1(?X,?Y)  .
+historyvnm25nl0ce1(?X,?Y) :- srchistoryvnm25nl0ce1(?X,?Y)  .
+clockad7nl0ce0(?X,?Y) :- srcclockad7nl0ce0(?X,?Y)  .
+pointvnm10nl0ce1(?X,?Y) :- srcpointvnm10nl0ce1(?X,?Y)  .
+deepad16nl0ce0(?X,?Y) :- srcdeepad16nl0ce0(?X,?Y)  .
+ringvnm9nl0ce0(?X,?Y) :- srcringvnm9nl0ce0(?X,?Y)  .
+separatevh27nl0ce1(?X,?Y) :- srcseparatevh27nl0ce1(?X,?Y)  .
+degreevh28nl0ce1(?X,?Y) :- srcdegreevh28nl0ce1(?X,?Y)  .
+tightvi49nl0ce1(?X,?Y) :- srctightvi49nl0ce1(?X,?Y)  .
+illvi32nl0ce1(?X,?Y) :- srcillvi32nl0ce1(?X,?Y)  .
+sistervnm15nl0ce1(?X,?Y) :- srcsistervnm15nl0ce1(?X,?Y)  .
+sidevh41nl0ce0(?X,?Y) :- srcsidevh41nl0ce0(?X,?Y)  .
+countvh4nl0ce1(?X,?Y) :- srccountvh4nl0ce1(?X,?Y)  .
+containvnm38nl0ce0(?X,?Y) :- srccontainvnm38nl0ce0(?X,?Y)  .
+wavevh20nl0ce1(?X,?Y) :- srcwavevh20nl0ce1(?X,?Y)  .
+nightvh38nl0ce0(?X,?Y) :- srcnightvh38nl0ce0(?X,?Y)  .
+armvnm49nl0ce1(?X,?Y) :- srcarmvnm49nl0ce1(?X,?Y)  .
+arrangevh19nl0ce0(?X,?Y) :- srcarrangevh19nl0ce0(?X,?Y)  .
+yellowvnm45nl0ce2(?X,?Y) :- srcyellowvnm45nl0ce2(?X,?Y)  .
+secondvnm16nl0ce2(?X,?Y) :- srcsecondvnm16nl0ce2(?X,?Y)  .
+presentvh18nl0ce1(?X,?Y) :- srcpresentvh18nl0ce1(?X,?Y)  .
+clearvh48nl0ce0(?X,?Y) :- srcclearvh48nl0ce0(?X,?Y)  .
+shoevi17nl0ce1(?X,?Y) :- srcshoevi17nl0ce1(?X,?Y)  .
+avoidvnm18nl0ce2(?X,?Y) :- srcavoidvnm18nl0ce2(?X,?Y)  .
+sizevnm17nl0ce0(?X,?Y) :- srcsizevnm17nl0ce0(?X,?Y)  .
+pagevh60nl0ce1(?X1,?Y) :- srcpagevh60nl0ce1(?X1,?Y)  .
+painvi5nl0ce0(?X,?Y) :- srcpainvi5nl0ce0(?X,?Y)  .
+summervnm6nl0ce2(?X,?Y) :- srcsummervnm6nl0ce2(?X,?Y)  .
+leathervnm27nl0ce2(?X,?Y) :- srcleathervnm27nl0ce2(?X,?Y)  .
+learnvh56nl0ce0(?X,?Y) :- srclearnvh56nl0ce0(?X,?Y)  .
+regretvi54nl0ce1(?X,?Y) :- srcregretvi54nl0ce1(?X,?Y)  .
+farmvnm3nl0ce0(?X,?Y) :- srcfarmvnm3nl0ce0(?X,?Y)  .
+recordvnm23nl0ce2(?X,?Y) :- srcrecordvnm23nl0ce2(?X,?Y)  .
+nationvi27nl0ce0(?X,?Y) :- srcnationvi27nl0ce0(?X,?Y)  .
+skinvi24nl0ce1(?X,?Y) :- srcskinvi24nl0ce1(?X,?Y)  .
+eatad8nl0ce0(?X,?Y) :- srceatad8nl0ce0(?X,?Y)  .
+shutvi37nl0ce0(?X,?Y) :- srcshutvi37nl0ce0(?X,?Y)  .
+breathvnm38nl0ce1(?X,?Y) :- srcbreathvnm38nl0ce1(?X,?Y)  .
+examinevnm20nl0ce2(?X,?Y) :- srcexaminevnm20nl0ce2(?X,?Y)  .
+comparevnm11nl0ce0(?X,?Y) :- srccomparevnm11nl0ce0(?X,?Y)  .
+relatevnm42nl0ce2(?X,?Y) :- srcrelatevnm42nl0ce2(?X,?Y)  .
+moonvnm32nl0ce2(?X,?Y) :- srcmoonvnm32nl0ce2(?X,?Y)  .
+bloodvnm54nl0ce1(?X,?Y) :- srcbloodvnm54nl0ce1(?X,?Y)  .
+languagevnm3nl0ce2(?X,?Y) :- srclanguagevnm3nl0ce2(?X,?Y)  .
+answervh59nl0ce0(?X,?Y) :- srcanswervh59nl0ce0(?X,?Y)  .
+providevi12nl0ce0(?X,?Y) :- srcprovidevi12nl0ce0(?X,?Y)  .
+forgivevnm33nl0ce1(?X,?Y) :- srcforgivevnm33nl0ce1(?X,?Y)  .
+flyvh39nl0ce0(?X,?Y) :- srcflyvh39nl0ce0(?X,?Y)  .
+seemvh35nl0ce0(?X,?Y) :- srcseemvh35nl0ce0(?X,?Y)  .
+touchvh21nl0ce0(?X,?Y) :- srctouchvh21nl0ce0(?X,?Y)  .
+processvnm49nl0ce2(?X,?Y) :- srcprocessvnm49nl0ce2(?X,?Y)  .
+soundvi47nl0ce1(?X,?Y) :- srcsoundvi47nl0ce1(?X,?Y)  .
+amountvnm18nl0ce1(?X,?Y) :- srcamountvnm18nl0ce1(?X,?Y)  .
+digestionvnm10nl0ce2(?X,?Y) :- srcdigestionvnm10nl0ce2(?X,?Y)  .
+touchvh8nl0ce0(?X,?Y) :- srctouchvh8nl0ce0(?X,?Y)  .
+mouthvnm44nl0ce0(?X,?Y) :- srcmouthvnm44nl0ce0(?X,?Y)  .
+describevh1nl0ce1(?X,?Y) :- srcdescribevh1nl0ce1(?X,?Y)  .
+politicalvnm3nl0ce1(?X,?Y) :- srcpoliticalvnm3nl0ce1(?X,?Y)  .
+swimvi54nl0ce0(?X,?Y) :- srcswimvi54nl0ce0(?X,?Y)  .
+fallvnm60nl0ce0(?X,?Y) :- srcfallvnm60nl0ce0(?X,?Y)  .
+wouldvi63nl0ce0(?X,?Y) :- srcwouldvi63nl0ce0(?X,?Y)  .
+angryvnm39nl0ce2(?X,?Y) :- srcangryvnm39nl0ce2(?X,?Y)  .
+settlevh8nl0ce1(?X,?Y) :- srcsettlevh8nl0ce1(?X,?Y)  .
+awakevnm7nl0ce0(?X,?Y) :- srcawakevnm7nl0ce0(?X,?Y)  .
+neckvi64nl0ce0(?X,?Y) :- srcneckvi64nl0ce0(?X,?Y)  .
+fertilevnm57nl0ce1(?X,?Y) :- srcfertilevnm57nl0ce1(?X,?Y)  .
+replyvh10nl0ce0(?X,?Y) :- srcreplyvh10nl0ce0(?X,?Y)  .
+brushvh19nl0ce1(?X,?Y) :- srcbrushvh19nl0ce1(?X,?Y)  .
+churchvnm7nl0ce1(?X,?Y) :- srcchurchvnm7nl0ce1(?X,?Y)  .
+knowvh15nl0ce1(?X,?Y) :- srcknowvh15nl0ce1(?X,?Y)  .
+encouragevi64nl0ce1(?X,?Y) :- srcencouragevi64nl0ce1(?X,?Y)  .
+jumpvnm8nl0ce2(?X,?Y) :- srcjumpvnm8nl0ce2(?X,?Y)  .
+layvnm58nl0ce2(?X,?Y) :- srclayvnm58nl0ce2(?X,?Y)  .
+bootvnm5nl0ce0(?X,?Y) :- srcbootvnm5nl0ce0(?X,?Y)  .
+shakevnm23nl0ce1(?X,?Y) :- srcshakevnm23nl0ce1(?X,?Y)  .
+agreementvh35nl0ce1(?X1,?Y) :- srcagreementvh35nl0ce1(?X1,?Y)  .
+brickvnm50nl0ce0(?X,?Y) :- srcbrickvnm50nl0ce0(?X,?Y)  .
+inventionvh26nl0ce0(?X,?Y) :- srcinventionvh26nl0ce0(?X,?Y)  .
+watchvh11nl0ce1(?X,?Y) :- srcwatchvh11nl0ce1(?X,?Y)  .
+roundvh51nl0ce1(?X1,?Y) :- srcroundvh51nl0ce1(?X1,?Y)  .
+sortvi31nl0ce1(?X,?Y) :- srcsortvi31nl0ce1(?X,?Y)  .
+workvnm30nl0ce2(?X,?Y) :- srcworkvnm30nl0ce2(?X,?Y)  .
+separatevi41nl0ce1(?X,?Y) :- srcseparatevi41nl0ce1(?X,?Y)  .
+dependentvnm5nl0ce1(?X,?Y) :- srcdependentvnm5nl0ce1(?X,?Y)  .
+peacevi34nl0ce1(?X,?Y) :- srcpeacevi34nl0ce1(?X,?Y)  .
+softvnm29nl0ce1(?X,?Y) :- srcsoftvnm29nl0ce1(?X,?Y)  .
+connectionvh42nl0ce1(?X,?Y) :- srcconnectionvh42nl0ce1(?X,?Y)  .
+liftvi30nl0ce1(?X,?Y) :- srcliftvi30nl0ce1(?X,?Y)  .
+clothvh46nl0ce0(?X,?Y) :- srcclothvh46nl0ce0(?X,?Y)  .
+bodyvh43nl0ce0(?X,?Y) :- srcbodyvh43nl0ce0(?X,?Y)  .
+factvi48nl0ce0(?X,?Y) :- srcfactvi48nl0ce0(?X,?Y)  .
+enginevnm12nl0ce2(?X,?Y) :- srcenginevnm12nl0ce2(?X,?Y)  .
+replyvh30nl0ce1(?X,?Y) :- srcreplyvh30nl0ce1(?X,?Y)  .
+machinevnm24nl0ce0(?X,?Y) :- srcmachinevnm24nl0ce0(?X,?Y)  .
+achievevh48nl0ce1(?X,?Y) :- srcachievevh48nl0ce1(?X,?Y)  .
+containvh15nl0ce0(?X,?Y) :- srccontainvh15nl0ce0(?X,?Y)  .
+diseasevi45nl0ce1(?X,?Y) :- srcdiseasevi45nl0ce1(?X,?Y)  .
+acceptvnm4nl0ce2(?X,?Y) :- srcacceptvnm4nl0ce2(?X,?Y)  .
+seaad21nl0ce0(?X,?Y) :- srcseaad21nl0ce0(?X,?Y)  .
+dayvh43nl0ce1(?X,?Y) :- srcdayvh43nl0ce1(?X,?Y)  .
+goldvnm40nl0ce2(?X,?Y) :- srcgoldvnm40nl0ce2(?X,?Y)  .
+expressvnm26nl0ce2(?X,?Y) :- srcexpressvnm26nl0ce2(?X,?Y)  .
+bluevh61nl0ce0(?X,?Y) :- srcbluevh61nl0ce0(?X,?Y)  .
+ovenvi6nl0ce0(?X,?Y) :- srcovenvi6nl0ce0(?X,?Y)  .
+bluevnm22nl0ce2(?X,?Y) :- srcbluevnm22nl0ce2(?X,?Y)  .
+cushionvnm62nl0ce0(?X,?Y) :- srccushionvnm62nl0ce0(?X,?Y)  .
+carryvnm57nl0ce2(?X,?Y) :- srccarryvnm57nl0ce2(?X,?Y)  .
+backvh13nl0ce1(?X,?Y) :- srcbackvh13nl0ce1(?X,?Y)  .
+stitchvnm19nl0ce1(?X,?Y) :- srcstitchvnm19nl0ce1(?X,?Y)  .
+needvi27nl0ce1(?X,?Y) :- srcneedvi27nl0ce1(?X,?Y)  .
+knockvh58nl0ce1(?X,?Y) :- srcknockvh58nl0ce1(?X,?Y)  .
+cartvh57nl0ce1(?X,?Y) :- srccartvh57nl0ce1(?X,?Y)  .
+jellyvi60nl0ce1(?X,?Y) :- srcjellyvi60nl0ce1(?X,?Y)  .
+languagevnm21nl0ce0(?X,?Y) :- srclanguagevnm21nl0ce0(?X,?Y)  .
+animalvh6nl0ce0(?X,?Y) :- srcanimalvh6nl0ce0(?X,?Y)  .
+copyad36nl0ce0(?X,?Y) :- srccopyad36nl0ce0(?X,?Y)  .
+smokevi14nl0ce1(?X,?Y) :- srcsmokevi14nl0ce1(?X,?Y)  .
+horsevnm64nl0ce2(?X,?Y) :- srchorsevnm64nl0ce2(?X,?Y)  .
+selectionvnm29nl0ce2(?X,?Y) :- srcselectionvnm29nl0ce2(?X,?Y)  .
+versevh33nl0ce0(?X,?Y) :- srcversevh33nl0ce0(?X,?Y)  .
+intendvnm47nl0ce1(?X,?Y) :- srcintendvnm47nl0ce1(?X,?Y)  .
+cutvh39nl0ce1(?X,?Y) :- srccutvh39nl0ce1(?X,?Y)  .
+linevh53nl0ce0(?X,?Y) :- srclinevh53nl0ce0(?X,?Y)  .
+complexvh12nl0ce1(?X,?Y) :- srccomplexvh12nl0ce1(?X,?Y)  .
+whistlead49nl0ce0(?X,?Y) :- srcwhistlead49nl0ce0(?X,?Y)  .
+knotvnm33nl0ce0(?X,?Y) :- srcknotvnm33nl0ce0(?X,?Y)  .
+mustvnm48nl0ce2(?X,?Y) :- srcmustvnm48nl0ce2(?X,?Y)  .
+errorvi56nl0ce0(?X,?Y) :- srcerrorvi56nl0ce0(?X,?Y)  .
+returnvnm28nl0ce2(?X,?Y) :- srcreturnvnm28nl0ce2(?X,?Y)  .
+privatevnm54nl0ce0(?X,?Y) :- srcprivatevnm54nl0ce0(?X,?Y)  .
+trickvnm8nl0ce0(?X,?Y) :- srctrickvnm8nl0ce0(?X,?Y)  .
+paintvh24nl0ce1(?X,?Y) :- srcpaintvh24nl0ce1(?X,?Y)  .
+knotvnm27nl0ce1(?X,?Y) :- srcknotvnm27nl0ce1(?X,?Y)  .
+fictionvh9nl0ce1(?X,?Y) :- srcfictionvh9nl0ce1(?X,?Y)  .
+simplevnm23nl0ce0(?X,?Y) :- srcsimplevnm23nl0ce0(?X,?Y)  .
+coatvh14nl0ce0(?X,?Y) :- srccoatvh14nl0ce0(?X,?Y)  .
+glovevh36nl0ce0(?X,?Y) :- srcglovevh36nl0ce0(?X,?Y)  .
+jewelvi15nl0ce0(?X,?Y) :- srcjewelvi15nl0ce0(?X,?Y)  .
+officevnm46nl0ce2(?X,?Y) :- srcofficevnm46nl0ce2(?X,?Y)  .
+approvalvi2nl0ce0(?X,?Y) :- srcapprovalvi2nl0ce0(?X,?Y)  .
+facevh25nl0ce0(?X,?Y) :- srcfacevh25nl0ce0(?X,?Y)  .
+regretvnm30nl0ce0(?X,?Y) :- srcregretvnm30nl0ce0(?X,?Y)  .
+managervnm49nl0ce0(?X,?Y) :- srcmanagervnm49nl0ce0(?X,?Y)  .
+skinvnm14nl0ce0(?X,?Y) :- srcskinvnm14nl0ce0(?X,?Y)  .
+fertilevh7nl0ce1(?X,?Y) :- srcfertilevh7nl0ce1(?X,?Y)  .
+consciousvnm13nl0ce0(?X,?Y) :- srcconsciousvnm13nl0ce0(?X,?Y)  .
+canvasvnm31nl0ce0(?X,?Y) :- srccanvasvnm31nl0ce0(?X,?Y)  .
+lightvi52nl0ce0(?X,?Y) :- srclightvi52nl0ce0(?X,?Y)  .
+stonevh7nl0ce0(?X,?Y) :- srcstonevh7nl0ce0(?X,?Y)  .
+whitevi23nl0ce1(?X,?Y) :- srcwhitevi23nl0ce1(?X,?Y)  .
+couldvnm62nl0ce2(?X,?Y) :- srccouldvnm62nl0ce2(?X,?Y)  .
+secretvi12nl0ce1(?X,?Y) :- srcsecretvi12nl0ce1(?X,?Y)  .
+usevi23nl0ce0(?X,?Y) :- srcusevi23nl0ce0(?X,?Y)  .
+playvi58nl0ce1(?X,?Y) :- srcplayvi58nl0ce1(?X,?Y)  .
+sensevnm42nl0ce0(?X,?Y) :- srcsensevnm42nl0ce0(?X,?Y)  .
+touchvi41nl0ce0(?X,?Y) :- srctouchvi41nl0ce0(?X,?Y)  .
+happenvh45nl0ce0(?X,?Y) :- srchappenvh45nl0ce0(?X,?Y)  .
+affordvh16nl0ce0(?X,?Y) :- srcaffordvh16nl0ce0(?X,?Y)  .
+handlevnm2nl0ce2(?X,?Y) :- srchandlevnm2nl0ce2(?X,?Y)  .
+expansionvnm1nl0ce2(?X,?Y) :- srcexpansionvnm1nl0ce2(?X,?Y)  .
+hatevh6nl0ce1(?X,?Y) :- srchatevh6nl0ce1(?X,?Y)  .
+thumbvh29nl0ce0(?X,?Y) :- srcthumbvh29nl0ce0(?X,?Y)  .
+endvnm21nl0ce1(?X,?Y) :- srcendvnm21nl0ce1(?X,?Y)  .
+loosevnm13nl0ce2(?X,?Y) :- srcloosevnm13nl0ce2(?X,?Y)  .
+mealvh46nl0ce1(?X,?Y) :- srcmealvh46nl0ce1(?X,?Y)  .
+bluevh1nl0ce0(?X,?Y) :- srcbluevh1nl0ce0(?X,?Y)  .
+archvi46nl0ce0(?X,?Y) :- srcarchvi46nl0ce0(?X,?Y)  .
+branchvnm22nl0ce1(?X,?Y) :- srcbranchvnm22nl0ce1(?X,?Y)  .
+truevnm47nl0ce2(?X,?Y) :- srctruevnm47nl0ce2(?X,?Y)  .
+tryvh12nl0ce0(?X,?Y) :- srctryvh12nl0ce0(?X,?Y)  .
+offervnm57nl0ce0(?X,?Y) :- srcoffervnm57nl0ce0(?X,?Y)  .
+advertisementvi14nl0ce0(?X,?Y) :- srcadvertisementvi14nl0ce0(?X,?Y)  .
+obtainvi48nl0ce1(?X,?Y) :- srcobtainvi48nl0ce1(?X,?Y)  .
+readingvnm16nl0ce1(?X,?Y) :- srcreadingvnm16nl0ce1(?X,?Y)  .
+wetvh13nl0ce0(?X,?Y) :- srcwetvh13nl0ce0(?X,?Y)  .
+givevi6nl0ce1(?X,?Y) :- srcgivevi6nl0ce1(?X,?Y)  .
+grassvnm46nl0ce0(?X,?Y) :- srcgrassvnm46nl0ce0(?X,?Y)  .
+risevnm28nl0ce0(?X,?Y) :- srcrisevnm28nl0ce0(?X,?Y)  .
+buttervnm15nl0ce2(?X,?Y) :- srcbuttervnm15nl0ce2(?X,?Y)  .
+letvh37nl0ce0(?X,?Y) :- srcletvh37nl0ce0(?X,?Y)  .
+collarvi33nl0ce1(?X,?Y) :- srccollarvi33nl0ce1(?X,?Y)  .
+involvevi4nl0ce0(?X,?Y) :- srcinvolvevi4nl0ce0(?X,?Y)  .
+bucketvh49nl0ce1(?X,?Y) :- srcbucketvh49nl0ce1(?X,?Y)  .
+openvh33nl0ce1(?X,?Y) :- srcopenvh33nl0ce1(?X,?Y)  .
+bandvi18nl0ce1(?X,?Y) :- srcbandvi18nl0ce1(?X,?Y)  .
+usevh26nl0ce1(?X,?Y) :- srcusevh26nl0ce1(?X,?Y)  .
+longvi10nl0ce1(?X,?Y) :- srclongvi10nl0ce1(?X,?Y)  .
+gunvi63nl0ce1(?X,?Y) :- srcgunvi63nl0ce1(?X,?Y)  .
+avoidvi61nl0ce0(?X,?Y) :- srcavoidvi61nl0ce0(?X,?Y)  .
+authorityvnm24nl0ce2(?X,?Y) :- srcauthorityvnm24nl0ce2(?X,?Y)  .
+involvevi16nl0ce0(?X,?Y) :- srcinvolvevi16nl0ce0(?X,?Y)  .
+delivervh51nl0ce0(?X,?Y) :- srcdelivervh51nl0ce0(?X,?Y)  .
+greyvi61nl0ce1(?X,?Y) :- srcgreyvi61nl0ce1(?X,?Y)  .
+minevh32nl0ce1(?X1,?Y) :- srcminevh32nl0ce1(?X1,?Y)  .
+protestvi35nl0ce0(?X,?Y) :- srcprotestvi35nl0ce0(?X,?Y)  .
+usevh2nl0ce1(?X,?Y) :- srcusevh2nl0ce1(?X,?Y)  .
+edgevi29nl0ce1(?X,?Y) :- srcedgevi29nl0ce1(?X,?Y)  .
+usevnm64nl0ce0(?X,?Y) :- srcusevnm64nl0ce0(?X,?Y)  .
+solidvh47nl0ce0(?X,?Y) :- srcsolidvh47nl0ce0(?X,?Y)  .
+beautifulvh11nl0ce0(?X,?Y) :- srcbeautifulvh11nl0ce0(?X,?Y)  .
+movevnm37nl0ce0(?X,?Y) :- srcmovevnm37nl0ce0(?X,?Y)  .
+straightvi5nl0ce1(?X,?Y) :- srcstraightvi5nl0ce1(?X,?Y)  .
+holdvnm50nl0ce1(?X,?Y) :- srcholdvnm50nl0ce1(?X,?Y)  .
+materialvh31nl0ce0(?X,?Y) :- srcmaterialvh31nl0ce0(?X,?Y)  .
+reflectvh16nl0ce1(?X,?Y) :- srcreflectvh16nl0ce1(?X,?Y)  .
+voicevnm9nl0ce1(?X,?Y) :- srcvoicevnm9nl0ce1(?X,?Y)  .
+commonvnm60nl0ce1(?X,?Y) :- srccommonvnm60nl0ce1(?X,?Y)  .
+smokevnm52nl0ce1(?X,?Y) :- srcsmokevnm52nl0ce1(?X,?Y)  .
+lockvnm54nl0ce2(?X,?Y) :- srclockvnm54nl0ce2(?X,?Y)  .
+papervh22nl0ce0(?X,?Y) :- srcpapervh22nl0ce0(?X,?Y)  .
+hidevi20nl0ce1(?X,?Y) :- srchidevi20nl0ce1(?X,?Y)  .
+arguevnm6nl0ce0(?X,?Y) :- srcarguevnm6nl0ce0(?X,?Y)  .
+greyvnm64nl0ce1(?X,?Y) :- srcgreyvnm64nl0ce1(?X,?Y)  .
+degreevi9nl0ce0(?X,?Y) :- srcdegreevi9nl0ce0(?X,?Y)  .
+delicatevi38nl0ce1(?X,?Y) :- srcdelicatevi38nl0ce1(?X,?Y)  .
+beevi16nl0ce1(?X,?Y) :- srcbeevi16nl0ce1(?X,?Y)  .
+flyvi7nl0ce0(?X,?Y) :- srcflyvi7nl0ce0(?X,?Y)  .
+violentvi20nl0ce0(?X,?Y) :- srcviolentvi20nl0ce0(?X,?Y)  .
+languagevh49nl0ce0(?X,?Y) :- srclanguagevh49nl0ce0(?X,?Y)  .
+experiencevnm40nl0ce1(?X,?Y) :- srcexperiencevnm40nl0ce1(?X,?Y)  .
+sciencevnm63nl0ce2(?X,?Y) :- srcsciencevnm63nl0ce2(?X,?Y)  .
+twistvi56nl0ce1(?X,?Y) :- srctwistvi56nl0ce1(?X,?Y)  .
+collectionvnm2nl0ce1(?X,?Y) :- srccollectionvnm2nl0ce1(?X,?Y)  .
+placevh40nl0ce1(?X,?Y) :- srcplacevh40nl0ce1(?X,?Y)  .
+approvalvi37nl0ce1(?X,?Y) :- srcapprovalvi37nl0ce1(?X,?Y)  .
+completevh4nl0ce0(?X,?Y) :- srccompletevh4nl0ce0(?X,?Y)  .
+complainvi8nl0ce0(?X,?Y) :- srccomplainvi8nl0ce0(?X,?Y)  .
+darkvnm27nl0ce0(?X,?Y) :- srcdarkvnm27nl0ce0(?X,?Y)  .
+changevi15nl0ce1(?X,?Y) :- srcchangevi15nl0ce1(?X,?Y)  .
+havevh27nl0ce0(?X,?Y) :- srchavevh27nl0ce0(?X,?Y)  .
+confirmvh21nl0ce1(?X,?Y) :- srcconfirmvh21nl0ce1(?X,?Y)  .
+femalevi60nl0ce0(?X,?Y) :- srcfemalevi60nl0ce0(?X,?Y)  .
+ovenvnm18nl0ce0(?X,?Y) :- srcovenvnm18nl0ce0(?X,?Y)  .
+electricvi25nl0ce0(?X,?Y) :- srcelectricvi25nl0ce0(?X,?Y)  .
+dievnm37nl0ce1(?X,?Y) :- srcdievnm37nl0ce1(?X,?Y)  .
+facevh28nl0ce0(?X,?Y) :- srcfacevh28nl0ce0(?X,?Y)  .
+smellvh62nl0ce0(?X,?Y) :- srcsmellvh62nl0ce0(?X,?Y)  .
+twistvh64nl0ce1(?X,?Y) :- srctwistvh64nl0ce1(?X,?Y)  .
+dustvi25nl0ce1(?X,?Y) :- srcdustvi25nl0ce1(?X,?Y)  .
+adjustmentvnm14nl0ce2(?X,?Y) :- srcadjustmentvnm14nl0ce2(?X,?Y)  .
+stickvh61nl0ce1(?X,?Y) :- srcstickvh61nl0ce1(?X,?Y)  .
+examplevh23nl0ce1(?X,?Y) :- srcexamplevh23nl0ce1(?X,?Y)  .
+painvnm4nl0ce1(?X,?Y) :- srcpainvnm4nl0ce1(?X,?Y)  .
+ringvnm40nl0ce0(?X,?Y) :- srcringvnm40nl0ce0(?X,?Y)  .
+colorvnm30nl0ce1(?X,?Y) :- srccolorvnm30nl0ce1(?X,?Y)  .
+meanvi59nl0ce1(?X,?Y) :- srcmeanvi59nl0ce1(?X,?Y)  .
+havevi24nl0ce0(?X,?Y) :- srchavevi24nl0ce0(?X,?Y)  .
+cowvh31nl0ce1(?X,?Y) :- srccowvh31nl0ce1(?X,?Y)  .
+roomvnm9nl0ce2(?X,?Y) :- srcroomvnm9nl0ce2(?X,?Y)  .
+crossvh17nl0ce0(?X,?Y) :- srccrossvh17nl0ce0(?X,?Y)  .
+bellvnm62nl0ce1(?X,?Y) :- srcbellvnm62nl0ce1(?X,?Y)  .
+waxad60nl0ce0(?X,?Y) :- srcwaxad60nl0ce0(?X,?Y)  .
+latevnm6nl0ce1(?X,?Y) :- srclatevnm6nl0ce1(?X,?Y)  .
+girlvh57nl0ce0(?X,?Y) :- srcgirlvh57nl0ce0(?X,?Y)  .
+remainvnm20nl0ce1(?X,?Y) :- srcremainvnm20nl0ce1(?X,?Y)  .
+loosevnm58nl0ce1(?X,?Y) :- srcloosevnm58nl0ce1(?X,?Y)  .
+businessvi11nl0ce0(?X,?Y) :- srcbusinessvi11nl0ce0(?X,?Y)  .
+greenvnm8nl0ce1(?X,?Y) :- srcgreenvnm8nl0ce1(?X,?Y)  .
+mindvh22nl0ce1(?X,?Y) :- srcmindvh22nl0ce1(?X,?Y)  .
+authorityvnm26nl0ce1(?X,?Y) :- srcauthorityvnm26nl0ce1(?X,?Y)  .
+musicvnm53nl0ce2(?X,?Y) :- srcmusicvnm53nl0ce2(?X,?Y)  .
+concernvh23nl0ce0(?X,?Y) :- srcconcernvh23nl0ce0(?X,?Y)  .
+poisonvnm46nl0ce1(?X,?Y) :- srcpoisonvnm46nl0ce1(?X,?Y)  .
+watchvh53nl0ce1(?X,?Y) :- srcwatchvh53nl0ce1(?X,?Y)  .
+discussvnm32nl0ce1(?X,?Y) :- srcdiscussvnm32nl0ce1(?X,?Y)  .
+provevi3nl0ce1(?X,?Y) :- srcprovevi3nl0ce1(?X,?Y)  .
+ovenvh25nl0ce1(?X,?Y) :- srcovenvh25nl0ce1(?X,?Y)  .
+climbvi32nl0ce0(?X,?Y) :- srcclimbvi32nl0ce0(?X,?Y)  .
+hidevi17nl0ce0(?X,?Y) :- srchidevi17nl0ce0(?X,?Y)  .
+protestad56nl0ce0(?X,?Y) :- srcprotestad56nl0ce0(?X,?Y)  .
+raisevnm17nl0ce1(?X,?Y) :- srcraisevnm17nl0ce1(?X,?Y)  .
+flowervnm48nl0ce1(?X,?Y) :- srcflowervnm48nl0ce1(?X,?Y)  .
+latevi7nl0ce1(?X,?Y) :- srclatevi7nl0ce1(?X,?Y)  .
+differentvi1nl0ce0(?X,?Y) :- srcdifferentvi1nl0ce0(?X,?Y)  .
+expertvi31nl0ce0(?X,?Y) :- srcexpertvi31nl0ce0(?X,?Y)  .
+levelvh18nl0ce0(?X,?Y) :- srclevelvh18nl0ce0(?X,?Y)  .
+weathervnm31nl0ce2(?X,?Y) :- srcweathervnm31nl0ce2(?X,?Y)  .
+screwvi21nl0ce0(?X) :- srcscrewvi21nl0ce0(?X)  .
+platevi30nl0ce0(?X,?Y) :- srcplatevi30nl0ce0(?X,?Y)  .
+hammervnm7nl0ce2(?X,?Y) :- srchammervnm7nl0ce2(?X,?Y)  .
+pointvi18nl0ce0(?X,?Y) :- srcpointvi18nl0ce0(?X,?Y)  .
+shutvnm28nl0ce1(?X,?Y) :- srcshutvnm28nl0ce1(?X,?Y)  .
+warvnm25nl0ce0(?X,?Y) :- srcwarvnm25nl0ce0(?X,?Y)  .
+churchvnm10nl0ce0(?X,?Y) :- srcchurchvnm10nl0ce0(?X,?Y)  .
+cookvi21nl0ce1(?Y,?X1) :- srccookvi21nl0ce1(?Y,?X1)  .
+firstvnm11nl0ce1(?X,?Y) :- srcfirstvnm11nl0ce1(?X,?Y)  .
+countvnm31nl0ce1(?X,?Y) :- srccountvnm31nl0ce1(?X,?Y)  .
+relationvnm53nl0ce0(?X,?Y) :- srcrelationvnm53nl0ce0(?X,?Y)  .
+reportvnm38nl0ce2(?X,?Y) :- srcreportvnm38nl0ce2(?X,?Y)  .
+bandvi36nl0ce1(?X,?Y) :- srcbandvi36nl0ce1(?X,?Y)  .
+forgivevi9nl0ce1(?X,?Y) :- srcforgivevi9nl0ce1(?X,?Y)  .
+seavnm5nl0ce2(?X,?Y) :- srcseavnm5nl0ce2(?X,?Y)  .
+shadevh45nl0ce1(?X,?Y) :- srcshadevh45nl0ce1(?X,?Y)  .
+kindvi3nl0ce0(?X,?Y) :- srckindvi3nl0ce0(?X,?Y)  .
+mentionvi4nl0ce1(?X,?Y) :- srcmentionvi4nl0ce1(?X,?Y)  .
+ownvnm47nl0ce0(?X,?Y) :- srcownvnm47nl0ce0(?X,?Y)  .
+attorneyvh34nl0ce1(?X,?Y) :- srcattorneyvh34nl0ce1(?X,?Y)  .
+punishmentvnm24nl0ce1(?X,?Y) :- srcpunishmentvnm24nl0ce1(?X,?Y)  .
+agenciesvh20nl0ce0(?X,?Y) :- srcagenciesvh20nl0ce0(?X,?Y)  .
+bedvi22nl0ce0(?X,?Y) :- srcbedvi22nl0ce0(?X,?Y)  .
+discovervi29nl0ce0(?X,?Y) :- srcdiscovervi29nl0ce0(?X,?Y)  .
+basevh62nl0ce1(?X,?Y) :- srcbasevh62nl0ce1(?X,?Y)  .
+orangevh41nl0ce1(?X,?Y) :- srcorangevh41nl0ce1(?X,?Y)  .
+knowledgevi38nl0ce0(?X,?Y) :- srcknowledgevi38nl0ce0(?X,?Y)  .
+jumpvh36nl0ce1(?X,?Y) :- srcjumpvh36nl0ce1(?X,?Y)  .
+parallelvnm2nl0ce0(?X,?Y) :- srcparallelvnm2nl0ce0(?X,?Y)  .
+yellowvnm33nl0ce2(?X,?Y) :- srcyellowvnm33nl0ce2(?X,?Y)  .
+delicatevi26nl0ce1(?X,?Y) :- srcdelicatevi26nl0ce1(?X,?Y)  .
+sockvnm26nl0ce0(?X,?Y) :- srcsockvnm26nl0ce0(?X,?Y)  .
+playvh59nl0ce1(?X,?Y) :- srcplayvh59nl0ce1(?X,?Y)  .
+collarvnm63nl0ce0(?X,?Y) :- srccollarvnm63nl0ce0(?X,?Y)  .
+blowvi2nl0ce1(?X,?Y) :- srcblowvi2nl0ce1(?X,?Y)  .
+providevi26nl0ce0(?X,?Y) :- srcprovidevi26nl0ce0(?X,?Y)  .
+narrowvi45nl0ce0(?X,?Y) :- srcnarrowvi45nl0ce0(?X,?Y)  .
+requirevh10nl0ce1(?X,?Y) :- srcrequirevh10nl0ce1(?X,?Y)  .
+voicevnm48nl0ce0(?X,?Y) :- srcvoicevnm48nl0ce0(?X,?Y)  .
+contributevnm45nl0ce1(?X,?Y) :- srccontributevnm45nl0ce1(?X,?Y)  .
+chargevh3nl0ce1(?X,?Y) :- srcchargevh3nl0ce1(?X,?Y)  .
+gardenvnm45nl0ce0(?X,?Y) :- srcgardenvnm45nl0ce0(?X,?Y)  .
+leftvnm22nl0ce0(?X,?Y) :- srcleftvnm22nl0ce0(?X,?Y)  .
+protestvh30nl0ce0(?X,?Y) :- srcprotestvh30nl0ce0(?X,?Y)  .
+curvevi58nl0ce0m(?X,?Y) :- srccurvevi58nl0ce0m(?X,?Y)  .
+groupvnm44nl0ce2(?X,?Y) :- srcgroupvnm44nl0ce2(?X,?Y)  .
+respectvh37nl0ce1(?X,?Y) :- srcrespectvh37nl0ce1(?X,?Y)  .
+helpvi35nl0ce1(?X,?Y) :- srchelpvi35nl0ce1(?X,?Y)  .
+playvnm11nl0ce2(?X,?Y) :- srcplayvnm11nl0ce2(?X,?Y)  .
+systemvh24nl0ce0(?X,?Y) :- srcsystemvh24nl0ce0(?X,?Y)  .
+bottlevnm37nl0ce2(?X,?Y) :- srcbottlevnm37nl0ce2(?X,?Y)  .
+weightvh60nl0ce0(?X,?Y) :- srcweightvh60nl0ce0(?X,?Y)  .
+wayvnm39nl0ce1(?X,?Y) :- srcwayvnm39nl0ce1(?X,?Y)  .
+effectvi47nl0ce0(?X,?Y) :- srceffectvi47nl0ce0(?X,?Y)  .
+restvnm1nl0ce0(?X,?Y) :- srcrestvnm1nl0ce0(?X,?Y)  .
+movevh40nl0ce0(?X,?Y) :- srcmovevh40nl0ce0(?X,?Y)  .
+existvnm42nl0ce1(?X,?Y) :- srcexistvnm42nl0ce1(?X,?Y)  .
+foundvh44nl0ce1(?X,?Y) :- srcfoundvh44nl0ce1(?X,?Y)  .
+joinvi34nl0ce0(?X,?Y) :- srcjoinvi34nl0ce0(?X,?Y)  .
+usead61nl0ce0(?X,?Y) :- srcusead61nl0ce0(?X,?Y)  .
+goldvnm4nl0ce0(?X,?Y) :- srcgoldvnm4nl0ce0(?X,?Y)  .
+simplevnm23nl0ce0(?X,?Y) :- recordvnm23nl0ce2(?X,?Y)  .
+historyvnm25nl0ce1(?X,?Y) :- mistvnm25nl0ce2(?X,?Y)  .
+painvnm4nl0ce1(?X,?Y) :- mistvnm25nl0ce2(?X,?Y)  .
+peacevi40nl0ce0(?X,?Y) :- indicatevi40nl0ce1(?X,?Y)  .
+restvnm1nl0ce0(?X,?Y) :- expansionvnm1nl0ce2(?X,?Y)  .
+materialvh31nl0ce0(?X,?Y) :- cowvh31nl0ce1(?X,?Y)  .
+touchvi41nl0ce0(?X,?Y) :- basevh62nl0ce1(?X,?Y)  .
+affordvh16nl0ce0(?X,?Y) :- reflectvh16nl0ce1(?X,?Y)  .
+risevnm28nl0ce0(?X,?Y) :- returnvnm28nl0ce2(?X,?Y)  .
+flyvi7nl0ce0(?X,?Y) :- latevi7nl0ce1(?X,?Y)  .
+loosevnm58nl0ce1(?X,?Y) :- layvnm58nl0ce2(?X,?Y)  .
+painvnm4nl0ce1(?X,?Y) :- acceptvnm4nl0ce2(?X,?Y)  .
+voicevnm48nl0ce0(?X,?Y) :- mustvnm48nl0ce2(?X,?Y)  .
+foundvh44nl0ce1(?X,?Y) :- killad38nl0ce0(?X,?Y)  .
+coatvh14nl0ce0(?X,?Y) :- fathervh14nl0ce1(?X,?Y)  .
+countvnm31nl0ce1(?X,?Y) :- weathervnm31nl0ce2(?X,?Y)  .
+mouthvnm44nl0ce0(?X,?Y) :- groupvnm44nl0ce2(?X,?Y)  .
+knotvnm33nl0ce0(?X,?Y) :- yellowvnm33nl0ce2(?X,?Y)  .
+ringvnm40nl0ce0(?X,?Y) :- goldvnm40nl0ce2(?X,?Y)  .
+testvh32nl0ce0(!X,?Y) :- minevh32nl0ce1(?X1,?Y)  .
+liquidvnm58nl0ce0(?X,?Y) :- layvnm58nl0ce2(?X,?Y)  .
+delivervi28nl0ce1(?X,?Y) :- simplevnm23nl0ce0(?X,?Y)  .
+awakevnm7nl0ce0(?X,?Y) :- hammervnm7nl0ce2(?X,?Y)  .
+protestvh30nl0ce0(?X,?Y) :- replyvh30nl0ce1(?X,?Y)  .
+beevi16nl0ce1(?X,?Y) :- kindvi3nl0ce0(?X,?Y)  .
+replyvh10nl0ce0(?X,?Y) :- requirevh10nl0ce1(?X,?Y)  .
+contributevnm45nl0ce1(?X,?Y) :- yellowvnm45nl0ce2(?X,?Y)  .
+fishvi49nl0ce0(?X,?Y) :- tightvi49nl0ce1(?X,?Y)  .
+ovenvi6nl0ce0(?X,?Y) :- greyvnm64nl0ce1(?X,?Y)  .
+flyvh64nl0ce0(?X,?Y) :- twistvh64nl0ce1(?X,?Y)  .
+churchvnm7nl0ce1(?X,?Y) :- hammervnm7nl0ce2(?X,?Y)  .
+wayvnm39nl0ce1(?X,?Y) :- angryvnm39nl0ce2(?X,?Y)  .
+politicalvnm3nl0ce1(?X,?Y) :- languagevnm3nl0ce2(?X,?Y)  .
+swimvi54nl0ce0(?X,?Y) :- regretvi54nl0ce1(?X,?Y)  .
+shamevnm29nl0ce0(?X,?Y) :- selectionvnm29nl0ce2(?X,?Y)  .
+greenvnm8nl0ce1(?X,?Y) :- jumpvnm8nl0ce2(?X,?Y)  .
+ringvnm9nl0ce0(?X,?Y) :- roomvnm9nl0ce2(?X,?Y)  .
+bloodvnm54nl0ce1(?X,?Y) :- lockvnm54nl0ce2(?X,?Y)  .
+readingad32nl0ce0(?X,?Y) :- reasonad18nl0ce0(?X,?Y)  .
+movevnm37nl0ce0(?X,?Y) :- businessvi11nl0ce0(?X,?Y)  .
+voicevnm9nl0ce1(?X,?Y) :- roomvnm9nl0ce2(?X,?Y)  .
+placevnm1nl0ce1(?X,?Y) :- expansionvnm1nl0ce2(?X,?Y)  .
+skinvi24nl0ce1(?X,?Y) :- beevi16nl0ce1(?X,?Y)  .
+violentvi20nl0ce0(?X,?Y) :- hidevi20nl0ce1(?X,?Y)  .
+fertilevnm57nl0ce1(?X,?Y) :- carryvnm57nl0ce2(?X,?Y)  .
+discussvnm32nl0ce1(?X,?Y) :- paintvh24nl0ce1(?X,?Y)  .
+secondvnm16nl0ce2(?X,?Y) :- climbvi32nl0ce0(?X,?Y)  .
+screwvi21nl0ce0(!X) :- cookvi21nl0ce1(?Y,?X1)  .
+jewelvi15nl0ce0(?X,?Y) :- minevh32nl0ce1(?X,?Y)  .
+answervh59nl0ce0(?X,?Y) :- playvh59nl0ce1(?X,?Y)  .
+movevnm53nl0ce1(?X,?Y) :- musicvnm53nl0ce2(?X,?Y)  .
+approvalvi2nl0ce0(?X,?Y) :- blowvi2nl0ce1(?X,?Y)  .
+farmvnm3nl0ce0(?X,?Y) :- examinevnm20nl0ce2(?X,?Y)  .
+imaginevi28nl0ce0(?X,?Y) :- delivervi28nl0ce1(?X,?Y)  .
+deepad16nl0ce0(?X,?Y) :- forgivevnm33nl0ce1(?X,?Y)  .
+familyvnm20nl0ce0(?X,?Y) :- examinevnm20nl0ce2(?X,?Y)  .
+facevh25nl0ce0(?X,?Y) :- ovenvh25nl0ce1(?X,?Y)  .
+completevh4nl0ce0(?X,?Y) :- weathervnm31nl0ce2(?X,?Y)  .
+societyvi22nl0ce1(?X,?Y) :- examinevnm20nl0ce2(?X,?Y)  .
+flyvh39nl0ce0(?X,?Y) :- cutvh39nl0ce1(?X,?Y)  .
+ovenvi6nl0ce0(?X,?Y) :- givevi6nl0ce1(?X,?Y)  .
+endvnm21nl0ce1(?X,?Y) :- chemicalvh38nl0ce1(?X,?Y)  .
+gardenvnm45nl0ce0(?X,?Y) :- yellowvnm45nl0ce2(?X,?Y)  .
+sensevnm42nl0ce0(?X,?Y) :- relatevnm42nl0ce2(?X,?Y)  .
+sleepvnm12nl0ce0(?X,?Y) :- fertilevh7nl0ce1(?X,?Y)  .
+raisevnm17nl0ce1(?X,?Y) :- babyvnm17nl0ce2(?X,?Y)  .
+dependentvnm5nl0ce1(?X,?Y) :- seavnm5nl0ce2(?X,?Y)  .
+beautifulvh11nl0ce0(?X,?Y) :- watchvh11nl0ce1(?X,?Y)  .
+shadevh45nl0ce1(?X,?Y) :- waxad60nl0ce0(?X,?Y)  .
+believevnm14nl0ce1(?X,?Y) :- adjustmentvnm14nl0ce2(?X,?Y)  .
+ownvnm47nl0ce0(?X,?Y) :- truevnm47nl0ce2(?X,?Y)  .
+firstvnm11nl0ce1(?X,?Y) :- parallelvnm2nl0ce0(?X,?Y)  .
+privatevnm54nl0ce0(?X,?Y) :- lockvnm54nl0ce2(?X,?Y)  .
+accountvh9nl0ce0(?X,?Y) :- mouthvnm44nl0ce0(?X,?Y)  .
+delicatevi38nl0ce1(?X,?Y) :- mistvnm25nl0ce2(?X,?Y)  .
+businessvi11nl0ce0(?X,?Y) :- yellowvi11nl0ce1(?X,?Y)  .
+canvasvnm31nl0ce0(?X,?Y) :- weathervnm31nl0ce2(?X,?Y)  .
+bluevh1nl0ce0(?X,?Y) :- moonvnm32nl0ce2(?X,?Y)  .
+concernvnm63nl0ce1(?X,?Y) :- sciencevnm63nl0ce2(?X,?Y)  .
+movevh40nl0ce0(?X,?Y) :- placevh40nl0ce1(?X,?Y)  .
+touchvi41nl0ce0(?X,?Y) :- separatevi41nl0ce1(?X,?Y)  .
+softvnm29nl0ce1(?X,?Y) :- feeblevi33nl0ce0(?X,?Y)  .
+languagevh49nl0ce0(?X,?Y) :- bucketvh49nl0ce1(?X,?Y)  .
+yellowvi11nl0ce1(?X,?Y) :- kindvi3nl0ce0(?X,?Y)  .
+weightvh60nl0ce0(!X,?Y) :- pagevh60nl0ce1(?X1,?Y)  .
+seaad21nl0ce0(?X,?Y) :- clockad7nl0ce0(?X,?Y)  .
+havevi24nl0ce0(?X,?Y) :- skinvi24nl0ce1(?X,?Y)  .
+seemvh35nl0ce0(!X,?Y) :- agreementvh35nl0ce1(?X1,?Y)  .
+involvevh2nl0ce0(?X,?Y) :- usevh2nl0ce1(?X,?Y)  .
+stitchvnm32nl0ce0(?X,?Y) :- moonvnm32nl0ce2(?X,?Y)  .
+darkvnm27nl0ce0(?X,?Y) :- leathervnm27nl0ce2(?X,?Y)  .
+parallelvnm2nl0ce0(?X,?Y) :- handlevnm2nl0ce2(?X,?Y)  .
+nationvi27nl0ce0(?X,?Y) :- needvi27nl0ce1(?X,?Y)  .
+intendvnm47nl0ce1(?X,?Y) :- truevnm47nl0ce2(?X,?Y)  .
+eatad8nl0ce0(?X,?Y) :- deepad16nl0ce0(?X,?Y)  .
+dievnm37nl0ce1(?X,?Y) :- bottlevnm37nl0ce2(?X,?Y)  .
+commonvnm60nl0ce1(?X,?Y) :- safevnm60nl0ce2(?X,?Y)  .
+amountvnm18nl0ce1(?X,?Y) :- avoidvnm18nl0ce2(?X,?Y)  .
+holdvnm50nl0ce1(?X,?Y) :- workvnm50nl0ce2(?X,?Y)  .
+protestvi35nl0ce0(?X,?Y) :- helpvi35nl0ce1(?X,?Y)  .
+involvevi4nl0ce0(?X,?Y) :- mentionvi4nl0ce1(?X,?Y)  .
+chalkvi19nl0ce0(?X,?Y) :- smilevi19nl0ce1(?X,?Y)  .
+ownvnm47nl0ce0(?X,?Y) :- stonevh7nl0ce0(?X,?Y)  .
+bellvnm62nl0ce1(?X,?Y) :- couldvnm62nl0ce2(?X,?Y)  .
+stitchvnm19nl0ce1(?X,?Y) :- mattervnm19nl0ce2(?X,?Y)  .
+separatevi41nl0ce1(?X,?Y) :- usevi23nl0ce0(?X,?Y)  .
+effectvi47nl0ce0(?X,?Y) :- soundvi47nl0ce1(?X,?Y)  .
+climbvi32nl0ce0(?X,?Y) :- illvi32nl0ce1(?X,?Y)  .
+smellvh62nl0ce0(?X,?Y) :- basevh62nl0ce1(?X,?Y)  .
+knowvh15nl0ce1(?X,?Y) :- usead61nl0ce0(?X,?Y)  .
+concernvh23nl0ce0(?X,?Y) :- examplevh23nl0ce1(?X,?Y)  .
+readingvnm16nl0ce1(?X,?Y) :- leathervnm27nl0ce2(?X,?Y)  .
+havevh27nl0ce0(?X,?Y) :- separatevh27nl0ce1(?X,?Y)  .
+tryvh12nl0ce0(?X,?Y) :- complexvh12nl0ce1(?X,?Y)  .
+placevnm1nl0ce1(?X,?Y) :- knowvh15nl0ce1(?X,?Y)  .
+substancevi59nl0ce0(?X,?Y) :- meanvi59nl0ce1(?X,?Y)  .
+pointvi18nl0ce0(?X,?Y) :- bandvi18nl0ce1(?X,?Y)  .
+factvi48nl0ce0(?X,?Y) :- obtainvi48nl0ce1(?X,?Y)  .
+recordvnm23nl0ce2(?X,?Y) :- leathervnm27nl0ce2(?X,?Y)  .
+inventionvh26nl0ce0(?X,?Y) :- feeblevi33nl0ce0(?X,?Y)  .
+languagevnm21nl0ce0(?X,?Y) :- involvevnm21nl0ce2(?X,?Y)  .
+existvnm42nl0ce1(?X,?Y) :- relatevnm42nl0ce2(?X,?Y)  .
+electricvi25nl0ce0(?X,?Y) :- dustvi25nl0ce1(?X,?Y)  .
+versevh33nl0ce0(?X,?Y) :- openvh33nl0ce1(?X,?Y)  .
+brickvnm50nl0ce0(?X,?Y) :- workvnm50nl0ce2(?X,?Y)  .
+completevh4nl0ce0(?X,?Y) :- countvh4nl0ce1(?X,?Y)  .
+authorityvnm26nl0ce1(?X,?Y) :- expressvnm26nl0ce2(?X,?Y)  .
+sleepvnm12nl0ce0(?X,?Y) :- enginevnm12nl0ce2(?X,?Y)  .
+nationvh58nl0ce0(?X,?Y) :- knockvh58nl0ce1(?X,?Y)  .
+nightvh38nl0ce0(?X,?Y) :- chemicalvh38nl0ce1(?X,?Y)  .
+consciousvnm13nl0ce0(?X,?Y) :- hatevh6nl0ce1(?X,?Y)  .
+regretvnm30nl0ce0(?X,?Y) :- workvnm30nl0ce2(?X,?Y)  .
+whistlead49nl0ce0(?X,?Y) :- damagead33nl0ce0(?X,?Y)  .
+arguevnm6nl0ce0(?X,?Y) :- summervnm6nl0ce2(?X,?Y)  .
+delivervi28nl0ce1(?X,?Y) :- weathervnm31nl0ce2(?X,?Y)  .
+summervnm39nl0ce0(?X,?Y) :- angryvnm39nl0ce2(?X,?Y)  .
+complainvi8nl0ce0(?X,?Y) :- snakevi8nl0ce1(?X,?Y)  .
+levelvh18nl0ce0(?X,?Y) :- presentvh18nl0ce1(?X,?Y)  .
+fallvnm60nl0ce0(?X,?Y) :- safevnm60nl0ce2(?X,?Y)  .
+glovevh36nl0ce0(?X,?Y) :- jumpvh36nl0ce1(?X,?Y)  .
+degreevi9nl0ce0(?X,?Y) :- forgivevi9nl0ce1(?X,?Y)  .
+punishmentvnm24nl0ce1(?X,?Y) :- moonvnm32nl0ce2(?X,?Y)  .
+leftvnm22nl0ce0(?X,?Y) :- bluevnm22nl0ce2(?X,?Y)  .
+avoidvi61nl0ce0(?X,?Y) :- greyvi61nl0ce1(?X,?Y)  .
+peacevi40nl0ce0(?X,?Y) :- latevi7nl0ce1(?X,?Y)  .
+attackvnm19nl0ce0(?X,?Y) :- mattervnm19nl0ce2(?X,?Y)  .
+ovenvnm18nl0ce0(?X,?Y) :- sizevnm17nl0ce0(?X,?Y)  .
+bootvnm5nl0ce0(?X,?Y) :- seavnm5nl0ce2(?X,?Y)  .
+sizevnm17nl0ce0(?X,?Y) :- babyvnm17nl0ce2(?X,?Y)  .
+flowervnm48nl0ce1(?X,?Y) :- mustvnm48nl0ce2(?X,?Y)  .
+collarvnm63nl0ce0(?X,?Y) :- sciencevnm63nl0ce2(?X,?Y)  .
+bluevh61nl0ce0(?X,?Y) :- stickvh61nl0ce1(?X,?Y)  .
+latevnm6nl0ce1(?X,?Y) :- summervnm6nl0ce2(?X,?Y)  .
+advertisementvi14nl0ce0(?X,?Y) :- smokevi14nl0ce1(?X,?Y)  .
+clearvh48nl0ce0(?X,?Y) :- achievevh48nl0ce1(?X,?Y)  .
+kindvi3nl0ce0(?X,?Y) :- provevi3nl0ce1(?X,?Y)  .
+managervnm49nl0ce0(?X,?Y) :- processvnm49nl0ce2(?X,?Y)  .
+touchvh8nl0ce0(?X,?Y) :- settlevh8nl0ce1(?X,?Y)  .
+recordvh5nl0ce0(?X,?Y) :- probablevh5nl0ce1(?X,?Y)  .
+usevi23nl0ce0(?X,?Y) :- whitevi23nl0ce1(?X,?Y)  .
+sunvh42nl0ce0(?X,?Y) :- connectionvh42nl0ce1(?X,?Y)  .
+discovervi29nl0ce0(?X,?Y) :- edgevi29nl0ce1(?X,?Y)  .
+trayvh44nl0ce0(?X,?Y) :- foundvh44nl0ce1(?X,?Y)  .
+sockvnm26nl0ce0(?X,?Y) :- expressvnm26nl0ce2(?X,?Y)  .
+linevh53nl0ce0(?X,?Y) :- watchvh53nl0ce1(?X,?Y)  .
+shutvi37nl0ce0(?X,?Y) :- approvalvi37nl0ce1(?X,?Y)  .
+bluevh1nl0ce0(?X,?Y) :- bluevnm22nl0ce2(?X,?Y)  .
+forgivevi9nl0ce1(?X,?Y) :- steelad42nl0ce0(?X,?Y)  .
+breathvnm38nl0ce1(?X,?Y) :- reportvnm38nl0ce2(?X,?Y)  .
+experiencevnm40nl0ce1(?X,?Y) :- goldvnm40nl0ce2(?X,?Y)  .
+wouldvi63nl0ce0(?X,?Y) :- gunvi63nl0ce1(?X,?Y)  .
+lightvi52nl0ce0(?X,?Y) :- industryvi52nl0ce1(?X,?Y)  .
+platevi30nl0ce0(?X,?Y) :- liftvi30nl0ce1(?X,?Y)  .
+papervh22nl0ce0(?X,?Y) :- mindvh22nl0ce1(?X,?Y)  .
+ovenvnm18nl0ce0(?X,?Y) :- avoidvnm18nl0ce2(?X,?Y)  .
+accountvh9nl0ce0(?X,?Y) :- fictionvh9nl0ce1(?X,?Y)  .
+archvi46nl0ce0(?X,?Y) :- comparevi46nl0ce1(?X,?Y)  .
+bedvi22nl0ce0(?X,?Y) :- societyvi22nl0ce1(?X,?Y)  .
+knowledgevi38nl0ce0(?X,?Y) :- delicatevi38nl0ce1(?X,?Y)  .
+machinevnm24nl0ce0(?X,?Y) :- authorityvnm24nl0ce2(?X,?Y)  .
+narrowvi45nl0ce0(?X,?Y) :- societyvi22nl0ce1(?X,?Y)  .
+consciousvnm13nl0ce0(?X,?Y) :- loosevnm13nl0ce2(?X,?Y)  .
+happenvh45nl0ce0(?X,?Y) :- shadevh45nl0ce1(?X,?Y)  .
+neckvi64nl0ce0(?X,?Y) :- encouragevi64nl0ce1(?X,?Y)  .
+feeblevi33nl0ce0(?X,?Y) :- collarvi33nl0ce1(?X,?Y)  .
+delivervh51nl0ce0(!X,?Y) :- roundvh51nl0ce1(?X1,?Y)  .
+pointvnm10nl0ce1(?X,?Y) :- digestionvnm10nl0ce2(?X,?Y)  .
+facevh28nl0ce0(?X,?Y) :- degreevh28nl0ce1(?X,?Y)  .
+restvh34nl0ce0(?X,?Y) :- attorneyvh34nl0ce1(?X,?Y)  .
+sidevh41nl0ce0(?X,?Y) :- orangevh41nl0ce1(?X,?Y)  .
+armvnm49nl0ce1(?X,?Y) :- processvnm49nl0ce2(?X,?Y)  .
+presentvnm15nl0ce0(?X,?Y) :- buttervnm15nl0ce2(?X,?Y)  .
+shakevnm23nl0ce1(?X,?Y) :- recordvnm23nl0ce2(?X,?Y)  .
+femalevi60nl0ce0(?X,?Y) :- jellyvi60nl0ce1(?X,?Y)  .
+animalvh6nl0ce0(?X,?Y) :- hatevh6nl0ce1(?X,?Y)  .
+cushionvnm62nl0ce0(?X,?Y) :- couldvnm62nl0ce2(?X,?Y)  .
+industryvnm44nl0ce1(?X,?Y) :- mouthvnm44nl0ce0(?X,?Y)  .
+branchvnm22nl0ce1(?X,?Y) :- bluevnm22nl0ce2(?X,?Y)  .
+snowvnm52nl0ce0(?X,?Y) :- cardvnm52nl0ce2(?X,?Y)  .
+smokevnm52nl0ce1(?X,?Y) :- cardvnm52nl0ce2(?X,?Y)  .
+containvh15nl0ce0(?X,?Y) :- knowvh15nl0ce1(?X,?Y)  .
+providevi26nl0ce0(?X,?Y) :- delicatevi26nl0ce1(?X,?Y)  .
+bodyvh43nl0ce0(?X,?Y) :- dayvh43nl0ce1(?X,?Y)  .
+grassvnm46nl0ce0(?X,?Y) :- officevnm46nl0ce2(?X,?Y)  .
+expertvi31nl0ce0(?X,?Y) :- sortvi31nl0ce1(?X,?Y)  .
+solidvh47nl0ce0(?X,?Y) :- fallvh47nl0ce1(?X,?Y)  .
+protestad56nl0ce0(?X,?Y) :- letvh37nl0ce0(?X,?Y)  .
+endvnm21nl0ce1(?X,?Y) :- involvevnm21nl0ce2(?X,?Y)  .
+movevnm37nl0ce0(?X,?Y) :- bottlevnm37nl0ce2(?X,?Y)  .
+tinvnm16nl0ce0(?X,?Y) :- secondvnm16nl0ce2(?X,?Y)  .
+touchvh21nl0ce0(?X,?Y) :- confirmvh21nl0ce1(?X,?Y)  .
+relationvnm53nl0ce0(?X,?Y) :- musicvnm53nl0ce2(?X,?Y)  .
+containvnm38nl0ce0(?X,?Y) :- reportvnm38nl0ce2(?X,?Y)  .
+wetvh13nl0ce0(?X,?Y) :- backvh13nl0ce1(?X,?Y)  .
+crossvh17nl0ce0(?X,?Y) :- actvh17nl0ce1(?X,?Y)  .
+arrangevh19nl0ce0(?X,?Y) :- brushvh19nl0ce1(?X,?Y)  .
+inventionvh26nl0ce0(?X,?Y) :- usevh26nl0ce1(?X,?Y)  .
+agenciesvh20nl0ce0(?X,?Y) :- wavevh20nl0ce1(?X,?Y)  .
+comevi10nl0ce0(?X,?Y) :- longvi10nl0ce1(?X,?Y)  .
+clothvh46nl0ce0(?X,?Y) :- mealvh46nl0ce1(?X,?Y)  .
+doorvh3nl0ce0(?X,?Y) :- chargevh3nl0ce1(?X,?Y)  .
+knotvnm27nl0ce1(?X,?Y) :- leathervnm27nl0ce2(?X,?Y)  .
+knotvnm33nl0ce0(?X,?Y) :- businessvi11nl0ce0(?X,?Y)  .
+hidevi17nl0ce0(?X,?Y) :- shoevi17nl0ce1(?X,?Y)  .
+stonevh7nl0ce0(?X,?Y) :- fertilevh7nl0ce1(?X,?Y)  .
+comparevnm11nl0ce0(?X,?Y) :- playvnm11nl0ce2(?X,?Y)  .
+learnvh56nl0ce0(?X,?Y) :- loosevh56nl0ce1(?X,?Y)  .
+languagevh49nl0ce0(?X,?Y) :- copyad36nl0ce0(?X,?Y)  .
+waitvnm13nl0ce1(?X,?Y) :- loosevnm13nl0ce2(?X,?Y)  .
+developvi36nl0ce0(?X,?Y) :- bandvi36nl0ce1(?X,?Y)  .
+softvnm29nl0ce1(?X,?Y) :- selectionvnm29nl0ce2(?X,?Y)  .
+painvi5nl0ce0(?X,?Y) :- straightvi5nl0ce1(?X,?Y)  .
+differentvi1nl0ce0(?X,?Y) :- societyvi1nl0ce1(?X,?Y)  .
+systemvh24nl0ce0(?X,?Y) :- paintvh24nl0ce1(?X,?Y)  .
+poisonvnm46nl0ce1(?X,?Y) :- officevnm46nl0ce2(?X,?Y)  .
+collectionvnm2nl0ce1(?X,?Y) :- handlevnm2nl0ce2(?X,?Y)  .
+farmvnm3nl0ce0(?X,?Y) :- languagevnm3nl0ce2(?X,?Y)  .
+warvnm25nl0ce0(?X,?Y) :- mistvnm25nl0ce2(?X,?Y)  .
+punishmentvnm24nl0ce1(?X,?Y) :- authorityvnm24nl0ce2(?X,?Y)  .
+delicatevi26nl0ce1(?X,?Y) :- stonevh7nl0ce0(?X,?Y)  .
+greyvnm64nl0ce1(?X,?Y) :- horsevnm64nl0ce2(?X,?Y)  .
+industryvnm44nl0ce1(?X,?Y) :- groupvnm44nl0ce2(?X,?Y)  .
+indicatevi40nl0ce1(?X,?Y) :- chargevh3nl0ce1(?X,?Y)  .
+churchvnm10nl0ce0(?X,?Y) :- digestionvnm10nl0ce2(?X,?Y)  .
+bluevh1nl0ce0(?X,?Y) :- describevh1nl0ce1(?X,?Y)  .
+joinvi34nl0ce0(?X,?Y) :- peacevi34nl0ce1(?X,?Y)  .
+flyvh64nl0ce0(?X,?Y) :- shakevnm23nl0ce1(?X,?Y)  .
+narrowvi45nl0ce0(?X,?Y) :- diseasevi45nl0ce1(?X,?Y)  .
+colorvnm30nl0ce1(?X,?Y) :- workvnm30nl0ce2(?X,?Y)  .
+curvevi58nl0ce0m(?X,?Y) :- playvi58nl0ce1(?X,?Y)  .
+businessvi11nl0ce0(?X,?Y) :- shadevh45nl0ce1(?X,?Y)  .
+providevi12nl0ce0(?X,?Y) :- secretvi12nl0ce1(?X,?Y)  .
+usevnm64nl0ce0(?X,?Y) :- horsevnm64nl0ce2(?X,?Y)  .
+firstvnm11nl0ce1(?X,?Y) :- playvnm11nl0ce2(?X,?Y)  .
+forgivevnm33nl0ce1(?X,?Y) :- yellowvnm33nl0ce2(?X,?Y)  .
+girlvh57nl0ce0(?X,?Y) :- cartvh57nl0ce1(?X,?Y)  .
+jewelvi15nl0ce0(?X,?Y) :- changevi15nl0ce1(?X,?Y)  .
+sistervnm15nl0ce1(?X,?Y) :- buttervnm15nl0ce2(?X,?Y)  .
+involvevi16nl0ce0(?X,?Y) :- beevi16nl0ce1(?X,?Y)  .
+readingvnm16nl0ce1(?X,?Y) :- secondvnm16nl0ce2(?X,?Y)  .
+remainvnm20nl0ce1(?X,?Y) :- examinevnm20nl0ce2(?X,?Y)  .
+errorvi56nl0ce0(?X,?Y) :- twistvi56nl0ce1(?X,?Y)  .
+sensevnm42nl0ce0(?X,?Y) :- parallelvnm2nl0ce0(?X,?Y)  .
+measurevnm12nl0ce1(?X,?Y) :- enginevnm12nl0ce2(?X,?Y)  .
+threadvi13nl0ce0(?X,?Y) :- lookvi13nl0ce1(?X,?Y)  .
+discussvnm32nl0ce1(?X,?Y) :- moonvnm32nl0ce2(?X,?Y)  .
+tinvnm16nl0ce0(?X,?Y) :- simplevnm23nl0ce0(?X,?Y)  .
+goldvnm4nl0ce0(?X,?Y) :- acceptvnm4nl0ce2(?X,?Y)  .
+trickvnm8nl0ce0(?X,?Y) :- jumpvnm8nl0ce2(?X,?Y)  .
+shutvnm28nl0ce1(?X,?Y) :- returnvnm28nl0ce2(?X,?Y)  .
+authorityvnm26nl0ce1(?X,?Y) :- privatevnm54nl0ce0(?X,?Y)  .
+letvh37nl0ce0(?X,?Y) :- respectvh37nl0ce1(?X,?Y)  .
+skinvnm14nl0ce0(?X,?Y) :- adjustmentvnm14nl0ce2(?X,?Y)  .
+offervnm57nl0ce0(?X,?Y) :- carryvnm57nl0ce2(?X,?Y)  .
+thumbvh29nl0ce0(?X,?Y) :- fallvh29nl0ce1(?X,?Y)  .
+Q1(?X) :- languagevnm3nl0ce2(?X,?Y),examinevnm20nl0ce2(?X,?X1),officevnm46nl0ce2(?X,?Y1) .
+Q2(?X,?Y) :- enginevnm12nl0ce2(?X1,?X),settlevh8nl0ce1(?X,?Y),delicatevi38nl0ce1(?Y1,?X) .
+Q3(?X) :- waxad60nl0ce0(?X,?Y),steelad42nl0ce0(?X,?X1),tightvi49nl0ce1(?Y,?Y1) .
+Q4(?X,?Y) :- animalvh6nl0ce0(?X,?X1),lookvi13nl0ce1(?Y,?X),presentvnm15nl0ce0(?Y1,?X) .

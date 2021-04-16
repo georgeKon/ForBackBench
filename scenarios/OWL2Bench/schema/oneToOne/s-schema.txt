@@ -1,0 +1,774 @@
+src_AeronauticalEngineering {
+	c0 : STRING
+}
+src_Engineering {
+	c0 : STRING
+}
+src_Anthropology {
+	c0 : STRING
+}
+src_HumanitiesAndSocial {
+	c0 : STRING
+}
+src_Architecture {
+	c0 : STRING
+}
+src_FineArts {
+	c0 : STRING
+}
+src_Article {
+	c0 : STRING
+}
+src_Publication {
+	c0 : STRING
+}
+src_AsianArts {
+	c0 : STRING
+}
+src_AssistantProfessor {
+	c0 : STRING
+}
+src_Professor {
+	c0 : STRING
+}
+src_AssociateProfessor {
+	c0 : STRING
+}
+src_Astronomy {
+	c0 : STRING
+}
+src_Science {
+	c0 : STRING
+}
+src_Badminton {
+	c0 : STRING
+}
+src_Sports {
+	c0 : STRING
+}
+src_BasketBall {
+	c0 : STRING
+}
+src_BasketBallFan {
+	c0 : STRING
+}
+src_isCrazyAbout {
+	c0 : STRING,
+	c1 : STRING
+}
+src_BasketBallLover {
+	c0 : STRING
+}
+src_loves {
+	c0 : STRING,
+	c1 : STRING
+}
+src_Biology {
+	c0 : STRING
+}
+src_BiomedicalEngineering {
+	c0 : STRING
+}
+src_Book {
+	c0 : STRING
+}
+src_Chair {
+	c0 : STRING
+}
+src_FullProfessor {
+	c0 : STRING
+}
+src_isHeadOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_Department {
+	c0 : STRING
+}
+src_ChemicalEngineering {
+	c0 : STRING
+}
+src_Chemistry {
+	c0 : STRING
+}
+src_CivilEngineering {
+	c0 : STRING
+}
+src_ClericalStaff {
+	c0 : STRING
+}
+src_SupportingStaff {
+	c0 : STRING
+}
+src_CoEdCollege {
+	c0 : STRING
+}
+src_College {
+	c0 : STRING
+}
+src_Organization {
+	c0 : STRING
+}
+src_ComputerEngineering {
+	c0 : STRING
+}
+src_ComputerScience {
+	c0 : STRING
+}
+src_ConferencePaper {
+	c0 : STRING
+}
+src_Cricket {
+	c0 : STRING
+}
+src_Dean {
+	c0 : STRING
+}
+src_DesignManagement {
+	c0 : STRING
+}
+src_Management {
+	c0 : STRING
+}
+src_Director {
+	c0 : STRING
+}
+src_Program {
+	c0 : STRING
+}
+src_Drama {
+	c0 : STRING
+}
+src_Economics {
+	c0 : STRING
+}
+src_ElectiveCourse {
+	c0 : STRING
+}
+src_Course {
+	c0 : STRING
+}
+src_ElectricalEngineering {
+	c0 : STRING
+}
+src_Employee {
+	c0 : STRING
+}
+src_Person {
+	c0 : STRING
+}
+src_worksFor {
+	c0 : STRING,
+	c1 : STRING
+}
+src_EmployeeEvaluationCommittee {
+	c0 : STRING
+}
+src_EvaluationCommittee {
+	c0 : STRING
+}
+src_CollegeDiscipline {
+	c0 : STRING
+}
+src_English {
+	c0 : STRING
+}
+src_Faculty {
+	c0 : STRING
+}
+src_teachesCourse {
+	c0 : STRING,
+	c1 : STRING
+}
+src_FinancialAndAccountingManagement {
+	c0 : STRING
+}
+src_FootBall {
+	c0 : STRING
+}
+src_Game {
+	c0 : STRING
+}
+src_Interest {
+	c0 : STRING
+}
+src_Geosciences {
+	c0 : STRING
+}
+src_History {
+	c0 : STRING
+}
+src_HumanResourceManagement {
+	c0 : STRING
+}
+src_Humanities {
+	c0 : STRING
+}
+src_IndustryEngineering {
+	c0 : STRING
+}
+src_Institute {
+	c0 : STRING
+}
+src_JournalArticle {
+	c0 : STRING
+}
+src_LatinArts {
+	c0 : STRING
+}
+src_Lecturer {
+	c0 : STRING
+}
+src_Linguistics {
+	c0 : STRING
+}
+src_Manual {
+	c0 : STRING
+}
+src_MarineScience {
+	c0 : STRING
+}
+src_MarketingManagement {
+	c0 : STRING
+}
+src_MaterialScienceEngineering {
+	c0 : STRING
+}
+src_MaterialsScience {
+	c0 : STRING
+}
+src_Mathematics {
+	c0 : STRING
+}
+src_MechanicalEngineering {
+	c0 : STRING
+}
+src_MediaArtsAndSciences {
+	c0 : STRING
+}
+src_MedievalArts {
+	c0 : STRING
+}
+src_ModernArts {
+	c0 : STRING
+}
+src_ModernLanguages {
+	c0 : STRING
+}
+src_Movie {
+	c0 : STRING
+}
+src_Music {
+	c0 : STRING
+}
+src_MusicsClass {
+	c0 : STRING
+}
+src_NonScience {
+	c0 : STRING
+}
+src_NonScienceStudent {
+	c0 : STRING
+}
+src_Student {
+	c0 : STRING
+}
+src_hasMajor {
+	c0 : STRING,
+	c1 : STRING
+}
+src_OperationsManagement {
+	c0 : STRING
+}
+src_OtherStaff {
+	c0 : STRING
+}
+src_PGProgram {
+	c0 : STRING
+}
+src_PGStudent {
+	c0 : STRING
+}
+src_enrollFor {
+	c0 : STRING,
+	c1 : STRING
+}
+src_Painting {
+	c0 : STRING
+}
+src_PeopleWithHobby {
+	c0 : STRING
+}
+src_likes {
+	c0 : STRING,
+	c1 : STRING
+}
+src_PerformingArts {
+	c0 : STRING
+}
+src_PetroleumlEngineering {
+	c0 : STRING
+}
+src_PhDProgram {
+	c0 : STRING
+}
+src_PhDStudent {
+	c0 : STRING
+}
+src_Philosophy {
+	c0 : STRING
+}
+src_Physics {
+	c0 : STRING
+}
+src_PostDoc {
+	c0 : STRING
+}
+src_ProjectManagement {
+	c0 : STRING
+}
+src_Psychology {
+	c0 : STRING
+}
+src_PublicRelationsManagement {
+	c0 : STRING
+}
+src_Reading {
+	c0 : STRING
+}
+src_Religions {
+	c0 : STRING
+}
+src_ResearchAssistant {
+	c0 : STRING
+}
+src_ResearchGroup {
+	c0 : STRING
+}
+src_ResearchProject {
+	c0 : STRING
+}
+src_Work {
+	c0 : STRING
+}
+src_RiskManagement {
+	c0 : STRING
+}
+src_SalesManagement {
+	c0 : STRING
+}
+src_School {
+	c0 : STRING
+}
+src_ScienceStudent {
+	c0 : STRING
+}
+src_Software {
+	c0 : STRING
+}
+src_Specification {
+	c0 : STRING
+}
+src_SportsFan {
+	c0 : STRING
+}
+src_SportsLover {
+	c0 : STRING
+}
+src_Statistics {
+	c0 : STRING
+}
+src_enrollIn {
+	c0 : STRING,
+	c1 : STRING
+}
+src_StudentEvaluationCommittee {
+	c0 : STRING
+}
+src_SupplyChainManagement {
+	c0 : STRING
+}
+src_Swimming {
+	c0 : STRING
+}
+src_SystemStaff {
+	c0 : STRING
+}
+src_TeachingAssistant {
+	c0 : STRING
+}
+src_isTeachingAssistantOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_TeachingCourse {
+	c0 : STRING
+}
+src_TechnicalReport {
+	c0 : STRING
+}
+src_Tennis {
+	c0 : STRING
+}
+src_TheatreAndDance {
+	c0 : STRING
+}
+src_ThesisEvaluationCommittee {
+	c0 : STRING
+}
+src_Travelling {
+	c0 : STRING
+}
+src_UGCourse {
+	c0 : STRING
+}
+src_UGProgram {
+	c0 : STRING
+}
+src_UGStudent {
+	c0 : STRING
+}
+src_University {
+	c0 : STRING
+}
+src_UnofficialPublication {
+	c0 : STRING
+}
+src_VisitingProfessor {
+	c0 : STRING
+}
+src_WomanCollege {
+	c0 : STRING
+}
+src_dislikes {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isStudentOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_evaluatedBy {
+	c0 : STRING,
+	c1 : STRING
+}
+src_evaluates {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasAlumnus {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasDegreeFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasAssistantProfessor {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isAssistantProfessorOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasProfessor {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasAssociateProfessor {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isAssociateProfessorOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasAuthor {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasClericalStaff {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasSupportingStaff {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasCollaborationWith {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasCollege {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isCollegeOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasSubOrganization {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasCollegeDiscipline {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasCommitteeMembers {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasMember {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasDean {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isDeanOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasDepartment {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isDepartmentOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasDoctoralDegreeFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasEmployee {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasEmployeeEvaluationCommittee {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasEvaluationCommittee {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasFaculty {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isFacultyOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasFullProfessor {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isFullProfessorOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasHead {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasLecturer {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isLecturerOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasMasterDegreeFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isMemberOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasOtherStaff {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasPGProgram {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasProgram {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasPart {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isPartOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasPhDProgram {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasPostDoc {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isPostDocOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isProfessorOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasResearchAssistant {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isResearchAssistantOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasResearchGroup {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isResearchGroupOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasResearchProject {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasWork {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasStudent {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasStudentEvaluationCommittee {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isSubOrganizationOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasSystemStaff {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasThesisEvaluationCommittee {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasUGProgram {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasUndergraduateDegreeFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasVisitingProfessor {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isVisitingProfessorOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasWomenCollege {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isAdvisedBy {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasAdvisor{
+	c0 : STRING,
+	c1 : STRING
+}
+src_isAffiliatedOrganizationOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isClericalStaffOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isSupportingStaffOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isOtherStaffOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isSystemStaffOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isTaughtBy {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isWomenCollegeOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_offerCourse {
+	c0 : STRING,
+	c1 : STRING
+}
+src_orgPublication {
+	c0 : STRING,
+	c1 : STRING
+}
+src_publicationResearch {
+	c0 : STRING,
+	c1 : STRING
+}
+src_takesCourse {
+	c0 : STRING,
+	c1 : STRING
+}
+src_tenured {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasAge {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasEmailAddress {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasFirstName {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasLastName {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasTelephone {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasTitle {
+	c0 : STRING,
+	c1 : STRING
+}

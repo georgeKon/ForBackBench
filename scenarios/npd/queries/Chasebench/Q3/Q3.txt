@@ -1,0 +1,1 @@
+Q3(?1,?2,?3) <- ProductionLicence(?0),name(?0,?1),dateLicenceGranted(?0,?2),dateLicenceValidTo(?0,?3) .

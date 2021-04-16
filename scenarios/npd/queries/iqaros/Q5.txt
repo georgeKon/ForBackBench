@@ -1,0 +1,1 @@
+Q(?0,?1,?2,?3,?4,?5) <- FieldReserve(?0),remainingCondensate(?0,?1),remainingGas(?0,?2),remainingNGL(?0,?3),remainingOil(?0,?4),remainingOilEquivalents(?0,?5)

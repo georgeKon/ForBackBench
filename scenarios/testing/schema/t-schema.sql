@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS "A";
+CREATE TABLE "A" (c0 text, c1 text);
+DROP TABLE IF EXISTS "P";
+CREATE TABLE "P" (c0 text, c1 text);
+DROP TABLE IF EXISTS "P1";
+CREATE TABLE "P1" (c0 text, c1 text);

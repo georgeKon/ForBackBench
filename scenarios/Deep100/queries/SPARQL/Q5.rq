@@ -1,0 +1,6 @@
+PREFIX : <http://example.com/example.owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?0 WHERE {
+  ?0 :m102004 ?1 .
+  ?0 rdf:type :m168004
+}

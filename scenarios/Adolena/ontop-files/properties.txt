@@ -1,4 +1,3 @@
-
 jdbc.driver=org.postgresql.Driver
 jdbc.url=jdbc:postgresql://localhost/adolena
 jdbc.user=postgres

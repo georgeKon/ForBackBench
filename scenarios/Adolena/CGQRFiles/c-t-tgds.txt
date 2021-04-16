@@ -1,0 +1,76 @@
+MovementAbility(A) -> PhysicalAbility(A) .
+Stuttering(A) -> SpeechDisability(A) .
+LowerLimbMobility(A) -> LimbMobility(A) .
+FaceToFaceCommunicationDevice(A) -> assistsWith(A,B), SpeechAbility(B) , Communication_Device(A) .
+WritingDevice(A) -> Communication_Device(A) .
+Multiple_sclerosis(A) -> PhysicalDisability(A) .
+Achondroplasia(A) -> PhysicalDisability(A) .
+BraillePillOrganiser(A) -> TactileReading(A) .
+TelephoneAid(A) -> SpeechDevice(A) , ListenDevice(A) .
+MentalDisability(A) -> Disability(A) .
+BatteryPowered_Wheelchair(A) -> Motorised_Wheelchair(A) .
+Hear(A) -> HearingAbility(A) .
+Muscular_dystrophy(A) -> PhysicalDisability(A) .
+Wheelchair(A) -> assistsWith(A,B), LimbMobility(B) , MobilityDevice(A) .
+Paraplegia(A) -> PhysicalDisability(A) , affects(A,B), LowerLimbMobility(B) .
+See(A) -> SightAbility(A) .
+BrailleAlarmClock(A) -> TactileReading(A) .
+Hear_partially(A) -> HearingAbility(A) .
+Communication_Device(A) -> AssistiveDevice(A) .
+Motorised_Wheelchair(A) -> assistsWith(A,B), LowerLimbMobility(B) , assistsWith(A,B), UpperLimbMobility(B) , Wheelchair(A) .
+SensoryAbility(A) -> Ability(A) .
+LowVision(A) -> VisualDisability(A) .
+HearingAbility(A) -> SensoryAbility(A) .
+Talking_Thermometer(A) -> TalkingReading(A) .
+SightAbility(A) -> SensoryAbility(A) .
+TalkingReading(A) -> requiresAbility(A,B), HearingAbility(B) , assistsWith(A,B), SightAbility(B) , ReadingDevice(A) .
+Epilepsy(A) -> MentalDisability(A) .
+IntellectualDisability(A) -> MentalDisability(A) .
+Autism(A) -> MentalDisability(A) .
+Amputation(A) -> PhysicalDisability(A) .
+AssistiveDevice(A) -> assistsWith(A,B), Ability(B) , Device(A) .
+Manual_Wheelchair(A) -> assistsWith(A,B), LowerLimbMobility(B) , Wheelchair(A) , requiresAbility(A,B), UpperLimbMobility(B) .
+BrailleWatch(A) -> TactileReading(A) .
+Foldable_Wheelchair(A) -> Manual_Wheelchair(A) .
+Osteogensis_Imperfecta(A) -> PhysicalDisability(A) .
+Hemiplegia(A) -> PhysicalDisability(A) .
+Quadriplegia(A) -> affects(A,B), LowerLimbMobility(B) , affects(A,B), UpperLimbMobility(B) , PhysicalDisability(A) .
+Guillaume_Barre(A) -> PhysicalDisability(A) .
+SpeechAbility(A) -> Ability(A) .
+BrailleWritingDevice(A) -> assistsWith(A,B), SightAbility(B) , WritingDevice(A) .
+See_partially(A) -> SightAbility(A) .
+Spina_Bifida(A) -> PhysicalDisability(A) .
+ReadingDevice(A) -> assistsWith(A,B), SightAbility(B) , Communication_Device(A) .
+TactileAbility(A) -> SensoryAbility(A) .
+PhysicalAbility(A) -> Ability(A) .
+Ability(A) -> isAffectedBy(A,B), Disability(B) , isAssistedBy(A,B), Device(B) , Thing(A) .
+LightweightFoldable_Wheelchair(A) -> Lightweight_Wheelchair(A) , Foldable_Wheelchair(A) .
+Blind(A) -> VisualDisability(A) .
+Reach(A) -> MovementAbility(A) .
+UpperLimbMobility(A) -> LimbMobility(A) .
+Disability(A) -> affects(A,B), Ability(B) , Thing(A) .
+TactileReading(A) -> requiresAbility(A,B), TactileAbility(B) , assistsWith(A,B), SightAbility(B) , ReadingDevice(A) .
+Deaf(A) -> HearingDisability(A) , affects(A,B), SpeechAbility(B) .
+Deafened(A) -> HearingDisability(A) .
+SymbolBoard(A) -> FaceToFaceCommunicationDevice(A) .
+ListenDevice(A) -> assistsWith(A,B), HearingAbility(B) , Communication_Device(A) .
+Dystonia(A) -> PhysicalDisability(A) .
+PhysicalDisability(A) -> Disability(A) , affects(A,B), PhysicalAbility(B) .
+FaceToFaceCommunicationSoftware(A) -> FaceToFaceCommunicationDevice(A) .
+Kyphosis(A) -> PhysicalDisability(A) .
+Hard_of_hearing(A) -> HearingDisability(A) .
+HearingDisability(A) -> Disability(A) , affects(A,B), HearingAbility(B) .
+Cerebral_palsy(A) -> PhysicalDisability(A) .
+SpeechDevice(A) -> assistsWith(A,B), SpeechAbility(B) , Communication_Device(A) .
+Lightweight_Wheelchair(A) -> Manual_Wheelchair(A) .
+LimbMobility(A) -> MovementAbility(A) .
+VisualDisability(A) -> Disability(A) .
+MobilityDevice(A) -> assistsWith(A,B), MovementAbility(B) , AssistiveDevice(A) .
+SpeechDisability(A) -> Disability(A) .
+Poliomyelitis(A) -> PhysicalDisability(A) .
+Little_or_No_Speech(A) -> SpeechDisability(A) , affects(A,B), SpeechAbility(B) .
+Scoliosis(A) -> PhysicalDisability(A) .
+affects(A,B) -> isAffectedBy(B,A) .
+isAffectedBy(A,B) -> affects(B,A) .
+isAssistedBy(A,B) -> assistsWith(B,A) .
+assistsWith(A,B) -> isAssistedBy(B,A) .

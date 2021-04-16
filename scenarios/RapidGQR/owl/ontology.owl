@@ -1,0 +1,1173 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://example.com/example.owl#" xml:base="http://example.com/example.owl" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">  
+
+<owl:Ontology rdf:about="http://example.com/example.owl"/>
+
+<!-- 
+Acquisition(?X) -> Acquisition(?X), Transaction(?X), Thing(?X), isExecutedFor(?X,?01), Investor(?01), Person(?01), Thing(?01), hasAddress(?01,?02), Address(?02), Thing(?02) .
+ -->
+		
+<owl:Class rdf:about="#Acquisition">
+	<rdfs:subClassOf rdf:resource="#Acquisition"/>
+	<rdfs:subClassOf rdf:resource="#Transaction"/>
+	<rdfs:subClassOf rdf:resource="#Thing"/>
+	
+	<owl:subClassOf>
+	  	<owl:Restriction>
+	  		<owl:onProperty rdf:resource="#isExecutedFor"/>
+	  		<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Thing"/>
+ 						<owl:Class rdf:about="#Investor"/>
+						<owl:Class rdf:about="#Person"/>
+						<owl:Restriction>
+							<owl:onProperty rdf:resource="#hasAddress"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Thing"/>
+										<owl:Class rdf:about="#Address"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+	  		</owl:someValuesFrom>
+	  	</owl:Restriction>
+	</owl:subClassOf>	
+</owl:Class>
+
+<!-- 
+Transaction(?X) -> Transaction(?X), Thing(?X), isExecutedFor(?X,?141), Investor(?141), Person(?141), Thing(?141), hasAddress(?141,?142), Address(?142), Thing(?142) .
+ -->
+
+<owl:Class rdf:about="#Transaction">
+	<rdfs:subClassOf rdf:resource="#Transaction"/>
+	<rdfs:subClassOf rdf:resource="#Thing"/>
+	
+	<owl:subClassOf>
+	  	<owl:Restriction>
+	  		<owl:onProperty rdf:resource="#isExecutedFor"/>
+	  		<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Thing"/>
+ 						<owl:Class rdf:about="#Investor"/>
+						<owl:Class rdf:about="#Person"/>
+						<owl:Restriction>
+							<owl:onProperty rdf:resource="#hasAddress"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Thing"/>
+										<owl:Class rdf:about="#Address"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+	  		</owl:someValuesFrom>
+	  	</owl:Restriction>
+	</owl:subClassOf>
+	
+</owl:Class>
+
+<!-- 
+Address(?X) -> Address(?X), Thing(?X), inverseofhasAddress(?X,?11), Person(?11), Thing(?11), hasAddress(?11,?12), Address(?12), Thing(?12) .
+ -->
+
+<owl:Class rdf:about="#Address">
+	<rdfs:subClassOf rdf:resource="#Address"/>
+	<rdfs:subClassOf rdf:resource="#Thing"/>
+	
+	<owl:subClassOf>
+	  	<owl:Restriction>
+	  		<owl:onProperty rdf:resource="#inverseofhasAddress"/>
+	  		<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Person"/>
+ 						<owl:Class rdf:about="#Thing"/>
+						<owl:Restriction>
+							<owl:onProperty rdf:resource="#hasAddress"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Thing"/>
+										<owl:Class rdf:about="#Address"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+	  		</owl:someValuesFrom>
+	  	</owl:Restriction>
+	</owl:subClassOf>
+	
+</owl:Class>
+
+<!-- 
+Company(?X) -> Company(?X), LegalPerson(?X), Person(?X), Thing(?X), hasAddress(?X,?21), Address(?21), Thing(?21), inverseofhasAddress(?21,?22), Person(?22) .
+ -->
+<owl:Class rdf:about="#Company">
+	<rdfs:subClassOf rdf:resource="#Company"/>
+	<rdfs:subClassOf rdf:resource="#LegalPerson"/>
+	<rdfs:subClassOf rdf:resource="#Person"/>
+	<rdfs:subClassOf rdf:resource="#Thing"/>
+	
+	<owl:subClassOf>
+	  	<owl:Restriction>
+	  		<owl:onProperty rdf:resource="#hasAddress"/>
+	  		<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Address"/>
+ 						<owl:Class rdf:about="#Thing"/>
+						<owl:Restriction>
+							<owl:onProperty rdf:resource="#inverseofhasAddress"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Person"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+	  		</owl:someValuesFrom>
+	  	</owl:Restriction>
+	</owl:subClassOf>
+	
+</owl:Class>
+
+<!-- 
+LegalPerson(?X) -> LegalPerson(?X), Person(?X), Thing(?X), hasAddress(?X,?51), Address(?51), Thing(?51), inverseofhasAddress(?51,?52), Person(?52), Thing(?52) .
+ -->
+
+<owl:Class rdf:about="#LegalPerson">
+	<rdfs:subClassOf rdf:resource="#LegalPerson"/>
+	<rdfs:subClassOf rdf:resource="#Person"/>
+	<rdfs:subClassOf rdf:resource="#Thing"/>
+	
+	<owl:subClassOf>
+	  	<owl:Restriction>
+	  		<owl:onProperty rdf:resource="#hasAddress"/>
+	  		<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Address"/>
+ 						<owl:Class rdf:about="#Thing"/>
+						<owl:Restriction>
+							<owl:onProperty rdf:resource="#inverseofhasAddress"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Person"/>
+										<owl:Class rdf:about="#Thing"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+	  		</owl:someValuesFrom>
+	  	</owl:Restriction>
+	</owl:subClassOf>
+	
+</owl:Class>
+
+
+<!-- 
+Dealer(?X) -> Dealer(?X), StockBroker(?X), StockExchangeMember(?X), Person(?X), Thing(?X), hasAddress(?X,?31), Address(?31), Thing(?31) .
+ -->
+
+<owl:Class rdf:about="#Dealer">
+	<rdfs:subClassOf rdf:resource="#Dealer"/>
+	<rdfs:subClassOf rdf:resource="#StockBroker"/>
+	<rdfs:subClassOf rdf:resource="#StockExchangeMember"/>
+	<rdfs:subClassOf rdf:resource="#Person"/>
+	<rdfs:subClassOf rdf:resource="#Thing"/>
+	
+	<owl:subClassOf>
+	  	<owl:Restriction>
+	  		<owl:onProperty rdf:resource="#hasAddress"/>
+	  		<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Address"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+	  		</owl:someValuesFrom>
+	  	</owl:Restriction>
+	</owl:subClassOf>
+	
+</owl:Class>
+
+
+<!-- 
+StockBroker(?X) -> StockBroker(?X), StockExchangeMember(?X), Person(?X), Thing(?X), hasAddress(?X,?101), Address(?101), Thing(?101) .
+ -->
+
+<owl:Class rdf:about="#StockBroker">
+	<rdfs:subClassOf rdf:resource="#StockBroker"/>
+	<rdfs:subClassOf rdf:resource="#StockExchangeMember"/>
+	<rdfs:subClassOf rdf:resource="#Person"/>
+	<rdfs:subClassOf rdf:resource="#Thing"/>
+
+	<owl:subClassOf>
+	  	<owl:Restriction>
+	  		<owl:onProperty rdf:resource="#hasAddress"/>
+	  		<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Address"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+	  		</owl:someValuesFrom>
+	  	</owl:Restriction>
+	</owl:subClassOf>
+	
+</owl:Class>
+
+<!-- 
+Investor(?X) -> Investor(?X), Person(?X), Thing(?X), hasAddress(?X,?41), Address(?41), Thing(?41), inverseofhasAddress(?41,?42), Person(?42), Thing(?42) .
+ -->
+
+<owl:Class rdf:about="#Investor">
+	<rdfs:subClassOf rdf:resource="#Investor"/>
+	<rdfs:subClassOf rdf:resource="#Person"/>
+	<rdfs:subClassOf rdf:resource="#Thing"/>
+	
+	<owl:subClassOf>
+	  	<owl:Restriction>
+	  		<owl:onProperty rdf:resource="#hasAddress"/>
+	  		<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Address"/>
+ 						<owl:Class rdf:about="#Thing"/>
+						<owl:Restriction>
+							<owl:onProperty rdf:resource="#inverseofhasAddress"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Person"/>
+										<owl:Class rdf:about="#Thing"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+	  		</owl:someValuesFrom>
+	  	</owl:Restriction>
+	</owl:subClassOf>
+	
+</owl:Class>
+
+
+<!-- 
+Person(?X) -> Person(?X), Thing(?X), hasAddress(?X,?71), Address(?71), Thing(?71), inverseofhasAddress(?71,?72), Person(?72), Thing(?72) .
+ -->
+
+<owl:Class rdf:about="#Person">
+	<rdfs:subClassOf rdf:resource="#Person"/>
+	<rdfs:subClassOf rdf:resource="#Thing"/>
+	
+	<owl:subClassOf>
+	  	<owl:Restriction>
+	  		<owl:onProperty rdf:resource="#hasAddress"/>
+	  		<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Address"/>
+ 						<owl:Class rdf:about="#Thing"/>
+						<owl:Restriction>
+							<owl:onProperty rdf:resource="#inverseofhasAddress"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Person"/>
+										<owl:Class rdf:about="#Thing"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+	  		</owl:someValuesFrom>
+	  	</owl:Restriction>
+	</owl:subClassOf>
+	
+</owl:Class>
+
+<!-- 
+Offer(?X) -> Offer(?X), Transaction(?X), Thing(?X), isExecutedFor(?X,?61), Investor(?61), Person(?61), Thing(?61), hasAddress(?61,?62), Address(?62), Thing(?62) .
+ -->
+
+<owl:Class rdf:about="#Offer">
+	<rdfs:subClassOf rdf:resource="#Offer"/>
+	<rdfs:subClassOf rdf:resource="#Transaction"/>
+	<rdfs:subClassOf rdf:resource="#Thing"/>
+
+	<owl:subClassOf>
+	  	<owl:Restriction>
+	  		<owl:onProperty rdf:resource="#isExecutedFor"/>
+	  		<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Investor"/>
+ 						<owl:Class rdf:about="#Person"/>
+ 						<owl:Class rdf:about="#Thing"/>
+						<owl:Restriction>
+							<owl:onProperty rdf:resource="#hasAddress"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Address"/>
+										<owl:Class rdf:about="#Thing"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+	  		</owl:someValuesFrom>
+	  	</owl:Restriction>
+	</owl:subClassOf>
+	
+</owl:Class>
+
+<!-- 
+PhysicalPerson(?X) -> PhysicalPerson(?X), Person(?X), Thing(?X), hasAddress(?X,?81), Address(?81), Thing(?81), inverseofhasAddress(?81,?82), Person(?82) .
+ -->
+
+<owl:Class rdf:about="#PhysicalPerson">
+	<rdfs:subClassOf rdf:resource="#PhysicalPerson"/>
+	<rdfs:subClassOf rdf:resource="#Person"/>
+	<rdfs:subClassOf rdf:resource="#Thing"/>
+
+	<owl:subClassOf>
+	  	<owl:Restriction>
+	  		<owl:onProperty rdf:resource="#hasAddress"/>
+	  		<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Address"/>
+ 						<owl:Class rdf:about="#Thing"/>
+						<owl:Restriction>
+							<owl:onProperty rdf:resource="#inverseofhasAddress"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Person"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+	  		</owl:someValuesFrom>
+	  	</owl:Restriction>
+	</owl:subClassOf>
+	
+</owl:Class>
+
+<!-- 
+Stock(?X) -> Stock(?X), FinantialInstrument(?X), isListedIn(?X,?91), StockExchangeList(?91), listsStock(?91,?X), Thing(?91), belongsToCompany(?X,?92), Company(?92) .
+ -->
+
+<owl:Class rdf:about="#Stock">
+	<rdfs:subClassOf rdf:resource="#Stock"/>
+	<rdfs:subClassOf rdf:resource="#FinantialInstrument"/>
+	
+	<owl:subClassOf>
+	  	<owl:Restriction>
+	  		<owl:onProperty rdf:resource="#isListedIn"/>
+	  		<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#StockExchangeList"/>
+ 						 <owl:Class rdf:about="#Thing"/>
+						<owl:Restriction>
+							<owl:onProperty rdf:resource="#listsStock"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Stock"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+	  		</owl:someValuesFrom>
+	  	</owl:Restriction>
+	</owl:subClassOf>
+	
+	<owl:subClassOf>
+	  	<owl:Restriction>
+	  		<owl:onProperty rdf:resource="#belongsToCompany"/>
+	  		<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Company"/>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+	  		</owl:someValuesFrom>
+	  	</owl:Restriction>
+	</owl:subClassOf>
+	
+</owl:Class>
+
+<!-- 
+FinantialInstrument(?X) -> FinantialInstrument(?X) .
+ -->
+
+<owl:Class rdf:about="#FinantialInstrument">
+	<rdfs:subClassOf rdf:resource="#FinantialInstrument"/>
+</owl:Class>
+
+<!-- 
+StockExchangeMember(?X) -> StockExchangeMember(?X), Person(?X), Thing(?X), hasAddress(?X,?111), Address(?111), Thing(?111), inverseofhasAddress(?111,?112), Person(?112), Thing(?112) .
+ -->
+
+<owl:Class rdf:about="#StockExchangeMember">
+	<rdfs:subClassOf rdf:resource="#StockExchangeMember"/>
+	<rdfs:subClassOf rdf:resource="#Person"/>
+	<rdfs:subClassOf rdf:resource="#Thing"/>
+	
+	<owl:subClassOf>
+	  	<owl:Restriction>
+	  		<owl:onProperty rdf:resource="#hasAddress"/>
+	  		<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Address"/>
+ 						<owl:Class rdf:about="#Thing"/>
+						<owl:Restriction>
+							<owl:onProperty rdf:resource="#inverseofhasAddress"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Person"/>
+										<owl:Class rdf:about="#Thing"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+	  		</owl:someValuesFrom>
+	  	</owl:Restriction>
+	</owl:subClassOf>
+	
+</owl:Class>
+
+<!-- 
+StockTrader(?X) -> StockTrader(?X), StockBroker(?X), StockExchangeMember(?X), Person(?X), Thing(?X), hasAddress(?X,?121), Address(?121), Thing(?121) .
+ -->
+
+<owl:Class rdf:about="#StockTrader">
+	<rdfs:subClassOf rdf:resource="#StockTrader"/>
+	<rdfs:subClassOf rdf:resource="#StockBroker"/>
+	<rdfs:subClassOf rdf:resource="#StockExchangeMember"/>
+	<rdfs:subClassOf rdf:resource="#Person"/>
+	<rdfs:subClassOf rdf:resource="#Thing"/>
+
+	<owl:subClassOf>
+	  	<owl:Restriction>
+	  		<owl:onProperty rdf:resource="#hasAddress"/>
+	  		<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Address"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+	  		</owl:someValuesFrom>
+	  	</owl:Restriction>
+	</owl:subClassOf>
+	
+</owl:Class>
+
+<!-- 
+Trader(?X) -> Trader(?X), StockBroker(?X), StockExchangeMember(?X), Person(?X), Thing(?X), hasAddress(?X,?131), Address(?131), Thing(?131) .
+ -->
+
+<owl:Class rdf:about="#Trader">
+	<rdfs:subClassOf rdf:resource="#Trader"/>
+	<rdfs:subClassOf rdf:resource="#StockBroker"/>
+	<rdfs:subClassOf rdf:resource="#StockExchangeMember"/>
+	<rdfs:subClassOf rdf:resource="#Person"/>
+	<rdfs:subClassOf rdf:resource="#Thing"/>
+
+	<owl:subClassOf>
+	  	<owl:Restriction>
+	  		<owl:onProperty rdf:resource="#hasAddress"/>
+	  		<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Address"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+	  		</owl:someValuesFrom>
+	  	</owl:Restriction>
+	</owl:subClassOf>
+	
+</owl:Class>
+
+<!-- 
+StockExchangeList(?X) -> StockExchangeList(?X) .
+ -->
+
+<owl:Class rdf:about="#StockExchangeList">
+	<rdfs:subClassOf rdf:resource="#StockExchangeList"/>
+</owl:Class>
+
+<!-- 
+listsStock(?X,?Y) -> listsStock(?X,?Y), Stock(?Y), FinantialInstrument(?Y), isListedIn(?Y,?241), StockExchangeList(?241), listsStock(?241,?Y), Thing(?241) .
+ -->
+
+<owl:ObjectProperty rdf:about="#listsStock">
+	<rdfs:subPropertyOf rdf:resource="#listsStock"/>
+	
+	<rdfs:domain>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#listsStock"/>
+			<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+		</owl:Restriction>
+	</rdfs:domain>
+	 
+	<rdfs:range>
+		<owl:Class rdf:about="#Stock"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#isListedIn"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#StockExchangeList"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 						<owl:Restriction>
+							<owl:onProperty rdf:resource="#listsStock"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Stock"/>
+										<owl:Class rdf:about="#FinantialInstrument"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:range>
+
+	<rdfs:range>
+		<owl:Class rdf:about="#FinantialInstrument"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#isListedIn"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#StockExchangeList"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 						<owl:Restriction>
+							<owl:onProperty rdf:resource="#listsStock"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Stock"/>
+										<owl:Class rdf:about="#FinantialInstrument"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:range>
+	
+</owl:ObjectProperty>
+
+<!-- 
+isTradedIn(?X,?Y) -> isTradedIn(?X,?Y), Transaction(?Y), Thing(?Y), isExecutedFor(?Y,?231), Investor(?231), Person(?231), Thing(?231), hasAddress(?231,?232), Address(?232), Thing(?232) .
+ -->
+
+<owl:ObjectProperty rdf:about="#isTradedIn">
+	<rdfs:subPropertyOf rdf:resource="#isTradedIn"/>
+	
+	<rdfs:domain>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#isTradedIn"/>
+			<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+		</owl:Restriction>
+	</rdfs:domain>
+	
+	<rdfs:range>
+		<owl:Class rdf:about="#Transaction"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#isExecutedFor"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Investor"/>
+ 						<owl:Class rdf:about="#Person"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 						<owl:Restriction>
+							<owl:onProperty rdf:resource="#hasAddress"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Address"/>
+										<owl:Class rdf:about="#Thing"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:range>
+	
+	<rdfs:range>
+		<owl:Class rdf:about="#Thing"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#isExecutedFor"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Investor"/>
+ 						<owl:Class rdf:about="#Person"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 						<owl:Restriction>
+							<owl:onProperty rdf:resource="#hasAddress"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Address"/>
+										<owl:Class rdf:about="#Thing"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:range>
+
+</owl:ObjectProperty>
+
+<!-- 
+usesBroker(?X,?Y) -> usesBroker(?X,?Y), tradesOnBehalfOf(?Y,?X) .
+ -->
+
+<owl:ObjectProperty rdf:about="#usesBroker">
+	<rdfs:subPropertyOf rdf:resource="#usesBroker"/>
+	<rdfs:inverseOf rdf:resource="#tradesOnBehalfOf"/>
+</owl:ObjectProperty>
+
+<!-- 
+inverseofhasAddress(?X,?Y) -> inverseofhasAddress(?X,?Y), Address(?X), Thing(?X), inverseofhasAddress(?X,?181), Person(?181), Thing(?181), hasAddress(?181,?182),Address(?182), Thing(?182) .
+ -->
+
+<owl:ObjectProperty rdf:about="#inverseofhasAddress">
+	<rdfs:subPropertyOf rdf:resource="#inverseofhasAddress"/>
+	
+	<rdfs:domain>
+		<owl:Class rdf:about="#Address"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#inverseofhasAddress"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Person"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 						<owl:Restriction>
+							<owl:onProperty rdf:resource="#hasAddress"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Address"/>
+										<owl:Class rdf:about="#Thing"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:domain>
+	
+	<rdfs:domain>
+		<owl:Class rdf:about="#Thing"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#inverseofhasAddress"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Person"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 						<owl:Restriction>
+							<owl:onProperty rdf:resource="#hasAddress"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Address"/>
+										<owl:Class rdf:about="#Thing"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:domain>
+
+</owl:ObjectProperty>
+
+
+<!-- 
+hasAddress(?X,?Y) -> hasAddress(?X,?Y), Person(?X), Thing(?X), hasAddress(?X,?161), Address(?161), Thing(?161), inverseofhasAddress(?161,?162), Person(?162) .
+ -->
+ 
+<owl:ObjectProperty rdf:about="#hasAddress">
+	<rdfs:subPropertyOf rdf:resource="#hasAddress"/>
+	
+	<rdfs:domain>
+		<owl:Class rdf:about="#Person"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#hasAddress"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Address"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 						<owl:Restriction>
+							<owl:onProperty rdf:resource="#inverseofhasAddress"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Person"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:domain>
+	
+	<rdfs:domain>
+		<owl:Class rdf:about="#Thing"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#hasAddress"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Address"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 						<owl:Restriction>
+							<owl:onProperty rdf:resource="#inverseofhasAddress"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Person"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:domain>
+
+</owl:ObjectProperty>
+
+<!-- 
+isListedIn(?X,?Y) -> isListedIn(?X,?Y), Stock(?X), FinantialInstrument(?X), isListedIn(?X,?221), StockExchangeList(?221), listsStock(?221,?X), Thing(?221) .
+ -->
+
+<owl:ObjectProperty rdf:about="#isListedIn">
+	<rdfs:subPropertyOf rdf:resource="#isListedIn"/>
+	
+	<rdfs:domain>
+		<owl:Class rdf:about="#Stock"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#isListedIn"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#StockExchangeList"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 						<owl:Restriction>
+							<owl:onProperty rdf:resource="#listsStock"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Stock"/>
+										<owl:Class rdf:about="#FinantialInstrument"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:domain>
+	
+	<rdfs:domain>
+		<owl:Class rdf:about="#FinantialInstrument"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#isListedIn"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#StockExchangeList"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 						<owl:Restriction>
+							<owl:onProperty rdf:resource="#listsStock"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Stock"/>
+										<owl:Class rdf:about="#FinantialInstrument"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:domain>
+
+</owl:ObjectProperty>
+
+<!-- 
+belongsToCompany(?X,?Y) -> belongsToCompany(?X,?Y), Stock(?X), FinantialInstrument(?X), 
+isListedIn(?X,?151), StockExchangeList(?151) .
+ -->
+
+<owl:ObjectProperty rdf:about="#belongsToCompany">
+	<rdfs:subPropertyOf rdf:resource="#belongsToCompany"/>
+	
+	<rdfs:domain>
+		<owl:Class rdf:about="#Stock"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#isListedIn"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#StockExchangeList"/>
+ 						<!-- 
+<owl:Restriction>
+							<owl:onProperty rdf:resource="#listsStock"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Stock"/>
+										<owl:Class rdf:about="#FinantialInstrument"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ -->
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:domain>
+	
+	<rdfs:domain>
+		<owl:Class rdf:about="#FinantialInstrument"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#isListedIn"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#StockExchangeList"/>
+ 						<owl:Restriction>
+							<owl:onProperty rdf:resource="#listsStock"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Stock"/>
+										<owl:Class rdf:about="#FinantialInstrument"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:domain>
+
+</owl:ObjectProperty>
+
+<!-- 
+tradesOnBehalfOf(?X,?Y) -> tradesOnBehalfOf(?X,?Y), usesBroker(?Y,?X) .
+ -->
+
+<owl:ObjectProperty rdf:about="#tradesOnBehalfOf">
+	<rdfs:subPropertyOf rdf:resource="#tradesOnBehalfOf"/>
+	<rdfs:inverseOf rdf:resource="#usesBroker"/>
+</owl:ObjectProperty>
+
+<!-- 
+isExecutedBy(?X,?Y) -> isExecutedBy(?X,?Y), Transaction(?X), Thing(?X), isExecutedFor(?X,?201), Investor(?201), Person(?201), Thing(?201), hasAddress(?201,?202), Address(?202), Thing(?202) .
+ -->
+
+<owl:ObjectProperty rdf:about="#isExecutedBy">
+	<rdfs:subPropertyOf rdf:resource="#isExecutedBy"/>
+	
+	<rdfs:domain>
+		<owl:Class rdf:about="#Transaction"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#isExecutedFor"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Investor"/>
+ 						<owl:Class rdf:about="#Person"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 						<owl:Restriction>
+							<owl:onProperty rdf:resource="#hasAddress"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Address"/>
+										<owl:Class rdf:about="#Thing"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:domain>
+	
+	<rdfs:domain>
+		<owl:Class rdf:about="#Thing"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#isExecutedFor"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Investor"/>
+ 						<owl:Class rdf:about="#Person"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 						<owl:Restriction>
+							<owl:onProperty rdf:resource="#hasAddress"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Address"/>
+										<owl:Class rdf:about="#Thing"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:domain>
+</owl:ObjectProperty>
+
+
+<!-- 
+isExecutedFor(?X,?Y) -> isExecutedFor(?X,?Y), Transaction(?X), Thing(?X), isExecutedFor(?X,?211), Investor(?211), Person(?211), Thing(?211), hasAddress(?211,?212), Address(?212), Thing(?212) .
+ -->
+
+<owl:ObjectProperty rdf:about="#isExecutedFor">
+	<rdfs:subPropertyOf rdf:resource="#isExecutedFor"/>
+	
+	<rdfs:domain>
+		<owl:Class rdf:about="#Transaction"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#isExecutedFor"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Investor"/>
+ 						<owl:Class rdf:about="#Person"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 						<owl:Restriction>
+							<owl:onProperty rdf:resource="#hasAddress"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Address"/>
+										<owl:Class rdf:about="#Thing"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:domain>
+	
+	<rdfs:domain>
+		<owl:Class rdf:about="#Thing"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#isExecutedFor"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Investor"/>
+ 						<owl:Class rdf:about="#Person"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 						<owl:Restriction>
+							<owl:onProperty rdf:resource="#hasAddress"/>
+							<owl:someValuesFrom>
+								<owl:Class>
+									<owl:intersectionOf>
+										<owl:Class rdf:about="#Address"/>
+										<owl:Class rdf:about="#Thing"/>
+									</owl:intersectionOf>
+								</owl:Class>
+							</owl:someValuesFrom>
+						</owl:Restriction>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:domain>
+</owl:ObjectProperty>
+
+<!-- 
+involvesInstrument(?X,?Y) -> involvesInstrument(?X,?Y), Transaction(?X), Thing(?X), isExecutedFor(?X,?191), Investor(?191), Person(?191), Thing(?191) .
+ -->
+
+<owl:ObjectProperty rdf:about="#involvesInstrument">
+	<rdfs:subPropertyOf rdf:resource="#involvesInstrument"/>
+	
+	<rdfs:domain>
+		<owl:Class rdf:about="#Transaction"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#isExecutedFor"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Investor"/>
+ 						<owl:Class rdf:about="#Person"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:domain>
+	
+	<rdfs:domain>
+		<owl:Class rdf:about="#Thing"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#isExecutedFor"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Investor"/>
+ 						<owl:Class rdf:about="#Person"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:domain>
+	
+</owl:ObjectProperty>
+
+<!-- 
+hasStock(?X,?Y) -> hasStock(?X,?Y), Company(?X), LegalPerson(?X), Person(?X), Thing(?X), hasAddress(?X,?171), Address(?171), Thing(?171) .
+ -->
+
+<owl:ObjectProperty rdf:about="#hasStock">
+	<rdfs:subPropertyOf rdf:resource="#hasStock"/>
+	
+	<rdfs:domain>
+		<owl:Class rdf:about="#Company"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#hasAddress"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Address"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:domain>
+	
+	<rdfs:domain>
+		<owl:Class rdf:about="#LegalPerson"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#hasAddress"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Address"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:domain>
+	
+	<rdfs:domain>
+		<owl:Class rdf:about="#Person"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#hasAddress"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Address"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:domain>
+	
+	<rdfs:domain>
+		<owl:Class rdf:about="#Thing"/>
+		<owl:Restriction>
+			<owl:onProperty rdf:resource="#hasAddress"/>
+			<owl:someValuesFrom>
+	  			<owl:Class>
+ 					<owl:intersectionOf>
+ 						<owl:Class rdf:about="#Address"/>
+ 						<owl:Class rdf:about="#Thing"/>
+ 					</owl:intersectionOf>
+ 				</owl:Class>
+ 			</owl:someValuesFrom>
+		</owl:Restriction>
+	</rdfs:domain>
+
+</owl:ObjectProperty>
+
+
+</rdf:RDF>
+

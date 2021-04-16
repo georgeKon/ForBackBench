@@ -1,0 +1,1 @@
+Q(?0) <- Student(?0),Organization(?1),hasDean(?1,?2),teachesCourse(?2,?3),takesCourse(?0,?3)

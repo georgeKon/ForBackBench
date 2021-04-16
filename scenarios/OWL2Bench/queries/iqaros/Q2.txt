@@ -1,0 +1,1 @@
+Q(?0,?1) <- Student(?0),isStudentOf(?0,?1),isPartOf(?1,?2),hasCollegeDiscipline(?2,?3),Engineering(?3)

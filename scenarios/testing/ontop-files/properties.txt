@@ -1,0 +1,4 @@
+jdbc.driver=org.postgresql.Driver
+jdbc.url=jdbc:postgresql://localhost/testing
+jdbc.user=postgres
+jdbc.password=password

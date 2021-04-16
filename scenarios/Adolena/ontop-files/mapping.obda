@@ -1,41 +1,44 @@
 [PrefixDeclaration]
-ns:  http://example.com/example.owl#
+ns:  http://ksg.meraka.co.za/adolena.owl#
+NAP: file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#
+owl: http://www.w3.org/2002/07/owl#
+
 
 [MappingDeclaration] @collection [[
 mappingId ID1200485808
-target  ns:ns/{c0} a ns:MovementAbility . 
+target  ns:ns/{c0} a NAP:MovementAbility . 
 source  SELECT * FROM "src_MovementAbility"
 
 mappingId ID-744337381
-target  ns:ns/{c0} a ns:PhysicalAbility . 
+target  ns:ns/{c0} a NAP:PhysicalAbility . 
 source  SELECT * FROM "src_PhysicalAbility"
 
 mappingId ID-1828478859
-target  ns:ns/{c0} a ns:Stuttering . 
+target  ns:ns/{c0} a NAP:Stuttering . 
 source  SELECT * FROM "src_Stuttering"
 
 mappingId ID1995384893
-target  ns:ns/{c0} a ns:SpeechDisability . 
+target  ns:ns/{c0} a NAP:SpeechDisability . 
 source  SELECT * FROM "src_SpeechDisability"
 
 mappingId ID801376335
-target  ns:ns/{c0} a ns:LowerLimbMobility . 
+target  ns:ns/{c0} a NAP:LowerLimbMobility . 
 source  SELECT * FROM "src_LowerLimbMobility"
 
 mappingId ID-2136033094
-target  ns:ns/{c0} a ns:LimbMobility . 
+target  ns:ns/{c0} a NAP:LimbMobility . 
 source  SELECT * FROM "src_LimbMobility"
 
 mappingId ID1002170587
-target  ns:ns/{c0} a ns:FaceToFaceCommunicationDevice . 
+target  ns:ns/{c0} a NAP:FaceToFaceCommunicationDevice . 
 source  SELECT * FROM "src_FaceToFaceCommunicationDevice"
 
 mappingId ID-337198697
-target  ns:ns/{c0} a ns:Communication_Device . 
+target  ns:ns/{c0} a NAP:Communication_Device . 
 source  SELECT * FROM "src_Communication_Device"
 
 mappingId ID-1065814081
-target  ns:ns/{c0} a ns:SpeechAbility . 
+target  ns:ns/{c0} a NAP:SpeechAbility . 
 source  SELECT * FROM "src_SpeechAbility"
 
 mappingId ID-849764489
@@ -43,15 +46,15 @@ target  ns:ns/{c0} a ns:WritingDevice .
 source  SELECT * FROM "src_WritingDevice"
 
 mappingId ID-460185874
-target  ns:ns/{c0} a ns:Multiple_sclerosis . 
+target  ns:ns/{c0} a NAP:Multiple_sclerosis . 
 source  SELECT * FROM "src_Multiple_sclerosis"
 
 mappingId ID1947863407
-target  ns:ns/{c0} a ns:PhysicalDisability . 
+target  ns:ns/{c0} a NAP:PhysicalDisability . 
 source  SELECT * FROM "src_PhysicalDisability"
 
 mappingId ID-243782711
-target  ns:ns/{c0} a ns:Achondroplasia . 
+target  ns:ns/{c0} a NAP:Achondroplasia . 
 source  SELECT * FROM "src_Achondroplasia"
 
 mappingId ID1819022126
@@ -63,7 +66,7 @@ target  ns:ns/{c0} a ns:TactileReading .
 source  SELECT * FROM "src_TactileReading"
 
 mappingId ID1243318828
-target  ns:ns/{c0} a ns:TelephoneAid . 
+target  ns:ns/{c0} a NAP:TelephoneAid . 
 source  SELECT * FROM "src_TelephoneAid"
 
 mappingId ID-844928766
@@ -75,51 +78,51 @@ target  ns:ns/{c0} a ns:SpeechDevice .
 source  SELECT * FROM "src_SpeechDevice"
 
 mappingId ID-1884459148
-target  ns:ns/{c0} a ns:MentalDisability . 
+target  ns:ns/{c0} a NAP:MentalDisability . 
 source  SELECT * FROM "src_MentalDisability"
 
 mappingId ID-2004911953
-target  ns:ns/{c0} a ns:Disability . 
+target  ns:ns/{c0} a NAP:Disability . 
 source  SELECT * FROM "src_Disability"
 
 mappingId ID1570727039
-target  ns:ns/{c0} a ns:BatteryPowered_Wheelchair . 
+target  ns:ns/{c0} a NAP:BatteryPowered_Wheelchair . 
 source  SELECT * FROM "src_BatteryPowered_Wheelchair"
 
 mappingId ID-1139823538
-target  ns:ns/{c0} a ns:Motorised_Wheelchair . 
+target  ns:ns/{c0} a NAP:Motorised_Wheelchair . 
 source  SELECT * FROM "src_Motorised_Wheelchair"
 
 mappingId ID-1398241006
-target  ns:ns/{c0} a ns:Hear . 
+target  ns:ns/{c0} a NAP:Hear . 
 source  SELECT * FROM "src_Hear"
 
 mappingId ID469791790
-target  ns:ns/{c0} a ns:HearingAbility . 
+target  ns:ns/{c0} a NAP:HearingAbility . 
 source  SELECT * FROM "src_HearingAbility"
 
 mappingId ID-1246961072
-target  ns:ns/{c0} a ns:Muscular_dystrophy . 
+target  ns:ns/{c0} a NAP:Muscular_dystrophy . 
 source  SELECT * FROM "src_Muscular_dystrophy"
 
 mappingId ID-371171167
-target  ns:ns/{c0} a ns:Wheelchair . 
+target  ns:ns/{c0} a NAP:Wheelchair . 
 source  SELECT * FROM "src_Wheelchair"
 
 mappingId ID-169429618
-target  ns:ns/{c0} a ns:MobilityDevice . 
+target  ns:ns/{c0} a NAP:MobilityDevice . 
 source  SELECT * FROM "src_MobilityDevice"
 
 mappingId ID-2011564532
-target  ns:ns/{c0} a ns:Paraplegia . 
+target  ns:ns/{c0} a NAP:Paraplegia . 
 source  SELECT * FROM "src_Paraplegia"
 
 mappingId ID603776530
-target  ns:ns/{c0} a ns:See . 
+target  ns:ns/{c0} a NAP:See . 
 source  SELECT * FROM "src_See"
 
 mappingId ID-1648713707
-target  ns:ns/{c0} a ns:SightAbility . 
+target  ns:ns/{c0} a NAP:SightAbility . 
 source  SELECT * FROM "src_SightAbility"
 
 mappingId ID882657801
@@ -127,35 +130,35 @@ target  ns:ns/{c0} a ns:BrailleAlarmClock .
 source  SELECT * FROM "src_BrailleAlarmClock"
 
 mappingId ID-518516791
-target  ns:ns/{c0} a ns:Hear_partially . 
+target  ns:ns/{c0} a NAP:Hear_partially . 
 source  SELECT * FROM "src_Hear_partially"
 
 mappingId ID1341499610
-target  ns:ns/{c0} a ns:AssistiveDevice . 
+target  ns:ns/{c0} a NAP:AssistiveDevice . 
 source  SELECT * FROM "src_AssistiveDevice"
 
 mappingId ID-2112825568
-target  ns:ns/{c0} a ns:UpperLimbMobility . 
+target  ns:ns/{c0} a NAP:UpperLimbMobility . 
 source  SELECT * FROM "src_UpperLimbMobility"
 
 mappingId ID-1591825419
-target  ns:ns/{c0} a ns:SensoryAbility . 
+target  ns:ns/{c0} a NAP:SensoryAbility . 
 source  SELECT * FROM "src_SensoryAbility"
 
 mappingId ID-355356504
-target  ns:ns/{c0} a ns:Ability . 
+target  ns:ns/{c0} a NAP:Ability . 
 source  SELECT * FROM "src_Ability"
 
 mappingId ID262860314
-target  ns:ns/{c0} a ns:LowVision . 
+target  ns:ns/{c0} a NAP:LowVision . 
 source  SELECT * FROM "src_LowVision"
 
 mappingId ID2031355449
-target  ns:ns/{c0} a ns:VisualDisability . 
+target  ns:ns/{c0} a NAP:VisualDisability . 
 source  SELECT * FROM "src_VisualDisability"
 
 mappingId ID-1170104606
-target  ns:ns/{c0} a ns:Talking_Thermometer . 
+target  ns:ns/{c0} a NAP:Talking_Thermometer . 
 source  SELECT * FROM "src_Talking_Thermometer"
 
 mappingId ID-384013510
@@ -167,27 +170,27 @@ target  ns:ns/{c0} a ns:ReadingDevice .
 source  SELECT * FROM "src_ReadingDevice"
 
 mappingId ID1252878108
-target  ns:ns/{c0} a ns:Epilepsy . 
+target  ns:ns/{c0} a NAP:Epilepsy . 
 source  SELECT * FROM "src_Epilepsy"
 
 mappingId ID1872778008
-target  ns:ns/{c0} a ns:IntellectualDisability . 
+target  ns:ns/{c0} a NAP:IntellectualDisability . 
 source  SELECT * FROM "src_IntellectualDisability"
 
 mappingId ID-1146687283
-target  ns:ns/{c0} a ns:Autism . 
+target  ns:ns/{c0} a NAP:Autism . 
 source  SELECT * FROM "src_Autism"
 
 mappingId ID-1058381947
-target  ns:ns/{c0} a ns:Amputation . 
+target  ns:ns/{c0} a NAP:Amputation . 
 source  SELECT * FROM "src_Amputation"
 
 mappingId ID12871517
-target  ns:ns/{c0} a ns:Device . 
+target  ns:ns/{c0} a NAP:Device . 
 source  SELECT * FROM "src_Device"
 
 mappingId ID1747858195
-target  ns:ns/{c0} a ns:Manual_Wheelchair . 
+target  ns:ns/{c0} a NAP:Manual_Wheelchair . 
 source  SELECT * FROM "src_Manual_Wheelchair"
 
 mappingId ID-388881960
@@ -195,23 +198,23 @@ target  ns:ns/{c0} a ns:BrailleWatch .
 source  SELECT * FROM "src_BrailleWatch"
 
 mappingId ID-2051082437
-target  ns:ns/{c0} a ns:Foldable_Wheelchair . 
+target  ns:ns/{c0} a NAP:Foldable_Wheelchair . 
 source  SELECT * FROM "src_Foldable_Wheelchair"
 
 mappingId ID1232750484
-target  ns:ns/{c0} a ns:Osteogensis_Imperfecta . 
+target  ns:ns/{c0} a NAP:Osteogensis_Imperfecta . 
 source  SELECT * FROM "src_Osteogensis_Imperfecta"
 
 mappingId ID64544100
-target  ns:ns/{c0} a ns:Hemiplegia . 
+target  ns:ns/{c0} a NAP:Hemiplegia . 
 source  SELECT * FROM "src_Hemiplegia"
 
 mappingId ID-608696753
-target  ns:ns/{c0} a ns:Quadriplegia . 
+target  ns:ns/{c0} a NAP:Quadriplegia . 
 source  SELECT * FROM "src_Quadriplegia"
 
 mappingId ID1138334256
-target  ns:ns/{c0} a ns:Guillaume_Barre . 
+target  ns:ns/{c0} a NAP:Guillaume_Barre . 
 source  SELECT * FROM "src_Guillaume_Barre"
 
 mappingId ID1073374072
@@ -219,103 +222,122 @@ target  ns:ns/{c0} a ns:BrailleWritingDevice .
 source  SELECT * FROM "src_BrailleWritingDevice"
 
 mappingId ID1387857916
-target  ns:ns/{c0} a ns:See_partially . 
+target  ns:ns/{c0} a NAP:See_partially . 
 source  SELECT * FROM "src_See_partially"
 
 mappingId ID958954382
-target  ns:ns/{c0} a ns:Spina_Bifida . 
+target  ns:ns/{c0} a NAP:Spina_Bifida . 
 source  SELECT * FROM "src_Spina_Bifida"
 
 mappingId ID-503614539
-target  ns:ns/{c0} a ns:TactileAbility . 
+target  ns:ns/{c0} a NAP:TactileAbility . 
 source  SELECT * FROM "src_TactileAbility"
 
 mappingId ID-87070383
-target  ns:ns/{c0} a ns:Thing . 
+target  ns:ns/{c0} a NAP:Thing . 
 source  SELECT * FROM "src_Thing"
 
 mappingId ID-1181267530
-target  ns:ns/{c0} a ns:LightweightFoldable_Wheelchair . 
+target  ns:ns/{c0} a NAP:LightweightFoldable_Wheelchair . 
 source  SELECT * FROM "src_LightweightFoldable_Wheelchair"
 
 mappingId ID1492377664
-target  ns:ns/{c0} a ns:Lightweight_Wheelchair . 
+target  ns:ns/{c0} a NAP:Lightweight_Wheelchair . 
 source  SELECT * FROM "src_Lightweight_Wheelchair"
 
 mappingId ID-1546254504
-target  ns:ns/{c0} a ns:Blind . 
+target  ns:ns/{c0} a NAP:Blind . 
 source  SELECT * FROM "src_Blind"
 
 mappingId ID1452456237
-target  ns:ns/{c0} a ns:Reach . 
+target  ns:ns/{c0} a NAP:Reach . 
 source  SELECT * FROM "src_Reach"
 
 mappingId ID-1092684563
-target  ns:ns/{c0} a ns:Deaf . 
+target  ns:ns/{c0} a NAP:Deaf . 
 source  SELECT * FROM "src_Deaf"
 
 mappingId ID140455280
-target  ns:ns/{c0} a ns:HearingDisability . 
+target  ns:ns/{c0} a NAP:HearingDisability . 
 source  SELECT * FROM "src_HearingDisability"
 
 mappingId ID-1862383136
-target  ns:ns/{c0} a ns:Deafened . 
+target  ns:ns/{c0} a NAP:Deafened . 
 source  SELECT * FROM "src_Deafened"
 
 mappingId ID-1508205740
-target  ns:ns/{c0} a ns:SymbolBoard . 
+target  ns:ns/{c0} a NAP:SymbolBoard . 
 source  SELECT * FROM "src_SymbolBoard"
 
 mappingId ID-430985462
-target  ns:ns/{c0} a ns:Dystonia . 
+target  ns:ns/{c0} a NAP:Dystonia . 
 source  SELECT * FROM "src_Dystonia"
 
 mappingId ID-435164289
-target  ns:ns/{c0} a ns:FaceToFaceCommunicationSoftware . 
+target  ns:ns/{c0} a NAP:FaceToFaceCommunicationSoftware . 
 source  SELECT * FROM "src_FaceToFaceCommunicationSoftware"
 
 mappingId ID1153488795
-target  ns:ns/{c0} a ns:Kyphosis . 
+target  ns:ns/{c0} a NAP:Kyphosis . 
 source  SELECT * FROM "src_Kyphosis"
 
 mappingId ID-1048244631
-target  ns:ns/{c0} a ns:Hard_of_hearing . 
+target  ns:ns/{c0} a NAP:Hard_of_hearing . 
 source  SELECT * FROM "src_Hard_of_hearing"
 
 mappingId ID-1527379059
-target  ns:ns/{c0} a ns:Cerebral_palsy . 
+target  ns:ns/{c0} a NAP:Cerebral_palsy . 
 source  SELECT * FROM "src_Cerebral_palsy"
 
 mappingId ID197789875
-target  ns:ns/{c0} a ns:Poliomyelitis . 
+target  ns:ns/{c0} a NAP:Poliomyelitis . 
 source  SELECT * FROM "src_Poliomyelitis"
 
 mappingId ID1105720195
-target  ns:ns/{c0} a ns:Little_or_No_Speech . 
+target  ns:ns/{c0} a NAP:Little_or_No_Speech . 
 source  SELECT * FROM "src_Little_or_No_Speech"
 
 mappingId ID-331479056
-target  ns:ns/{c0} a ns:Scoliosis . 
+target  ns:ns/{c0} a NAP:Scoliosis . 
 source  SELECT * FROM "src_Scoliosis"
 
 mappingId ID-578384887
 target  ns:ns/{c0} ns:assistsWith ns:ns/{c1} . 
 source  SELECT * FROM "src_assistsWith"
 
+
+mappingId ID-932673431243545
+target  ns:ns/{c1} ns:assistsWith ns:ns/{c0} . 
+source  SELECT * FROM "src_isAssistedBy"
+
 mappingId ID1669982393
 target  ns:ns/{c0} ns:affects ns:ns/{c1} . 
 source  SELECT * FROM "src_affects"
 
+mappingId ID16699823934556
+target  ns:ns/{c1} ns:affects ns:ns/{c0} . 
+source  SELECT * FROM "src_isAffectedBy"
+
 mappingId ID-1934268670
-target  ns:ns/{c0} ns:requiresAbility ns:ns/{c1} . 
+target  ns:ns/{c0} NAP:requiresAbility ns:ns/{c1} . 
 source  SELECT * FROM "src_requiresAbility"
 
+
+mappingId ID-93267343134578
+target  ns:ns/{c1} NAP:isAssistedBy ns:ns/{c0} . 
+source  SELECT * FROM "src_assistsWith"
+
 mappingId ID-932673431
-target  ns:ns/{c0} ns:isAssistedBy ns:ns/{c1} . 
+target  ns:ns/{c0} NAP:isAssistedBy ns:ns/{c1} . 
 source  SELECT * FROM "src_isAssistedBy"
 
+mappingId ID61938964856567
+target  ns:ns/{c1} NAP:isAffectedBy ns:ns/{c0} . 
+source  SELECT * FROM "src_affects"
+
 mappingId ID619389648
-target  ns:ns/{c0} ns:isAffectedBy ns:ns/{c1} . 
+target  ns:ns/{c0} NAP:isAffectedBy ns:ns/{c1} . 
 source  SELECT * FROM "src_isAffectedBy"
+
 
 ]]

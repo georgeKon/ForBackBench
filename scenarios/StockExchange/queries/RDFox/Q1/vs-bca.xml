@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<scenario>
+    <source>
+        <type>DBMS</type>
+        <access-configuration>
+            <driver>org.postgresql.Driver</driver>
+            <uri>jdbc:postgresql:postgres_llunatic</uri>
+            <schema>source</schema>
+            <login>postgres</login>
+            <password>password</password>
+        </access-configuration>
+        <schemaFile schema="source">/home/aa2c19/obdabenchmark/scenarios/StockExchange/schema/s-schema.txt</schemaFile>
+        <import>
+            <input type="csv" separator="," hasHeader="false" table="src_acquisition">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_Acquisition.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_address">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_Address.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_company">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_Company.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_dealer">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_Dealer.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_finantialinstrument">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_FinantialInstrument.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_investor">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_Investor.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_legalperson">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_LegalPerson.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_offer">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_Offer.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_person">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_Person.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_physicalperson">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_PhysicalPerson.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_stock">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_Stock.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_stockbroker">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_StockBroker.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_stockexchangelist">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_StockExchangeList.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_stockexchangemember">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_StockExchangeMember.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_stocktrader">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_StockTrader.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_thing">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_Thing.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_trader">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_Trader.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_transaction">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_Transaction.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_belongstocompany">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_belongsToCompany.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_hasaddress">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_hasAddress.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_hasstock">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_hasStock.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_inverseofhasaddress">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_inverseofhasAddress.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_involvesinstrument">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_involvesInstrument.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_isexecutedby">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_isExecutedBy.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_isexecutedfor">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_isExecutedFor.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_islistedin">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_isListedIn.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_istradedin">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_isTradedIn.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_listsstock">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_listsStock.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_tradesonbehalfof">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_tradesOnBehalfOf.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_usesbroker">/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/vs/src_usesBroker.csv</input>
+        </import>
+    </source>
+    <target>
+        <generateFromDependencies>true</generateFromDependencies>
+        <type>DBMS</type>
+        <access-configuration>
+            <driver>org.postgresql.Driver</driver>
+            <uri>jdbc:postgresql:postgres_llunatic</uri>
+            <schema>target</schema>
+            <login>postgres</login>
+            <password>password</password>
+        </access-configuration>
+        <schemaFile schema="target">/home/aa2c19/obdabenchmark/scenarios/StockExchange/schema/t-schema.txt</schemaFile>
+    </target>
+    <configuration>
+        <printResults>true</printResults>
+        <exportQueryResults>true</exportQueryResults>
+        <exportQueryResultsPath>/home/aa2c19/obdabenchmark/scenarios/StockExchange/out/vs/Q1</exportQueryResultsPath>
+        <exportQueryResultsType>CSV</exportQueryResultsType>
+        <exportSolutions>true</exportSolutions>
+        <exportQueryResults>true</exportQueryResults>
+        <exportSolutionsPath>/home/aa2c19/obdabenchmark/scenarios/StockExchange/out/vs/Q1</exportSolutionsPath>
+        <exportSolutionsType>CSV</exportSolutionsType>
+    </configuration>
+    <dependencies>
+        <sttgdsFile>/home/aa2c19/obdabenchmark/scenarios/StockExchange/queries/RDFox/Q1/Q1-tgds.rule</sttgdsFile>
+    </dependencies>
+    <queries>
+        <queryFile>/home/aa2c19/obdabenchmark/scenarios/StockExchange/queries/RDFox/Q1/Q1.txt</queryFile>
+    </queries>
+</scenario>

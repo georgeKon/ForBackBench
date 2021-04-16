@@ -1,1 +1,0 @@
-q3(?0) <- waxad60nl0ce0(?0,?1),steelad42nl0ce0(?0,?2),tightvi49nl0ce1(?1,?3) .

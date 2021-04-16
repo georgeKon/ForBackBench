@@ -1,0 +1,95 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@source srcAcquisition[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Acquisition.csv") .
+@source Investor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Investor.csv") .
+@source srchasStock[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_hasStock.csv") .
+@source srcFinantialInstrument[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_FinantialInstrument.csv") .
+@source Trader[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Trader.csv") .
+@source Dealer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Dealer.csv") .
+@source srcStockBroker[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_StockBroker.csv") .
+@source srcinverseofhasAddress[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_inverseofhasAddress.csv") .
+@source srcPhysicalPerson[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_PhysicalPerson.csv") .
+@source Acquisition[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Acquisition.csv") .
+@source srcOffer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Offer.csv") .
+@source LegalPerson[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_LegalPerson.csv") .
+@source Offer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Offer.csv") .
+@source srcStockExchangeMember[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_StockExchangeMember.csv") .
+@source tradesOnBehalfOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_tradesOnBehalfOf.csv") .
+@source StockExchangeList[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_StockExchangeList.csv") .
+@source srcPerson[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Person.csv") .
+@source Address[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Address.csv") .
+@source srctradesOnBehalfOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_tradesOnBehalfOf.csv") .
+@source StockBroker[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_StockBroker.csv") .
+@source srcStock[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Stock.csv") .
+@source FinantialInstrument[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_FinantialInstrument.csv") .
+@source srcStockExchangeList[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_StockExchangeList.csv") .
+@source srcAddress[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Address.csv") .
+@source srcDealer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Dealer.csv") .
+@source srcTrader[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Trader.csv") .
+@source belongsToCompany[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_belongsToCompany.csv") .
+@source srcisExecutedFor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_isExecutedFor.csv") .
+@source Transaction[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Transaction.csv") .
+@source srclistsStock[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_listsStock.csv") .
+@source Stock[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Stock.csv") .
+@source inverseofhasAddress[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_inverseofhasAddress.csv") .
+@source srcStockTrader[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_StockTrader.csv") .
+@source Company[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Company.csv") .
+@source srcisTradedIn[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_isTradedIn.csv") .
+@source srcInvestor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Investor.csv") .
+@source isListedIn[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_isListedIn.csv") .
+@source Person[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Person.csv") .
+@source srcbelongsToCompany[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_belongsToCompany.csv") .
+@source StockTrader[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_StockTrader.csv") .
+@source hasStock[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_hasStock.csv") .
+@source isTradedIn[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_isTradedIn.csv") .
+@source srcCompany[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Company.csv") .
+@source srchasAddress[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_hasAddress.csv") .
+@source srcLegalPerson[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_LegalPerson.csv") .
+@source StockExchangeMember[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_StockExchangeMember.csv") .
+@source srcisExecutedBy[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_isExecutedBy.csv") .
+@source Thing[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Thing.csv") .
+@source listsStock[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_listsStock.csv") .
+@source isExecutedFor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_isExecutedFor.csv") .
+@source involvesInstrument[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_involvesInstrument.csv") .
+@source isExecutedBy[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_isExecutedBy.csv") .
+@source srcisListedIn[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_isListedIn.csv") .
+@source srcusesBroker[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_usesBroker.csv") .
+@source usesBroker[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_usesBroker.csv") .
+@source srcinvolvesInstrument[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_involvesInstrument.csv") .
+@source PhysicalPerson[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_PhysicalPerson.csv") .
+@source hasAddress[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_hasAddress.csv") .
+@source srcTransaction[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/RapidGQR/data/medium/src_Transaction.csv") .
+isTradedIn(?X,?Y),Transaction(?Y),Thing(?Y),isExecutedFor(?Y,!X131),Investor(!X131),Person(!X131),Thing(!X131),hasAddress(!X131,!X132) :- srcisTradedIn(?X,?Y)  .
+isExecutedFor(?X,?Y),Transaction(?X),Thing(?X),isExecutedFor(?X,!X111),Investor(!X111),Person(!X111),Thing(!X111),hasAddress(!X111,!X112) :- srcisExecutedFor(?X,?Y)  .
+PhysicalPerson(?X),Person(?X),Thing(?X),hasAddress(?X,!X81),Address(!X81),Thing(!X81),inverseofhasAddress(!X81,!X82),Person(!X82) :- srcPhysicalPerson(?X)  .
+inverseofhasAddress(?X,?Y),Address(?X),Thing(?X),inverseofhasAddress(?X,!Y81),Person(!Y81),Thing(!Y81),hasAddress(!Y81,!Y82) :- srcinverseofhasAddress(?X,?Y)  .
+Offer(?X),Transaction(?X),Thing(?X),isExecutedFor(?X,!X61),Investor(!X61),Person(!X61),Thing(!X61),hasAddress(!X61,!X62),Address(!X62),Thing(!X62) :- srcOffer(?X)  .
+involvesInstrument(?X,?Y),Transaction(?X),Thing(?X),isExecutedFor(?X,!Y91),Investor(!Y91),Person(!Y91),Thing(!Y91) :- srcinvolvesInstrument(?X,?Y)  .
+Stock(?X),FinantialInstrument(?X),isListedIn(?X,!X91),StockExchangeList(!X91),listsStock(!X91,?X),Thing(!X91),belongsToCompany(?X,!X92),Company(!X92) :- srcStock(?X)  .
+usesBroker(?X,?Y),tradesOnBehalfOf(?Y,?X) :- srcusesBroker(?X,?Y)  .
+tradesOnBehalfOf(?X,?Y),usesBroker(?Y,?X) :- srctradesOnBehalfOf(?X,?Y)  .
+Transaction(?X),Thing(?X),isExecutedFor(?X,!Y41),Investor(!Y41),Person(!Y41),Thing(!Y41),hasAddress(!Y41,!Y42),Address(!Y42),Thing(!Y42) :- srcTransaction(?X)  .
+StockBroker(?X),StockExchangeMember(?X),Person(?X),Thing(?X),hasAddress(?X,!Y01),Address(!Y01),Thing(!Y01) :- srcStockBroker(?X)  .
+belongsToCompany(?X,?Y),Stock(?X),FinantialInstrument(?X),isListedIn(?X,!Y51),StockExchangeList(!Y51),listsStock(!Y51,?X) :- srcbelongsToCompany(?X,?Y)  .
+hasAddress(?X,?Y),Person(?X),Thing(?X),hasAddress(?X,!Y61),Address(!Y61),Thing(!Y61),inverseofhasAddress(!Y61,!Y62),Person(!Y62) :- srchasAddress(?X,?Y)  .
+Company(?X),LegalPerson(?X),Person(?X),Thing(?X),hasAddress(?X,!X11),Address(!X11),Thing(!X11),inverseofhasAddress(!X11,!X12),Person(!X12) :- srcCompany(?X)  .
+Investor(?X),Person(?X),Thing(?X),hasAddress(?X,!X41),Address(!X41),Thing(!X41),inverseofhasAddress(!X41,!X42),Person(!X42),Thing(!X42) :- srcInvestor(?X)  .
+Trader(?X),StockBroker(?X),StockExchangeMember(?X),Person(?X),Thing(?X),hasAddress(?X,!Y31),Address(!Y31),Thing(!Y31) :- srcTrader(?X)  .
+Person(?X),Thing(?X),hasAddress(?X,!X71),Address(!X71),Thing(!X71),inverseofhasAddress(!X71,!X72),Person(!X72),Thing(!X72),hasAddress(!X72,!X73) :- srcPerson(?X)  .
+StockTrader(?X),StockBroker(?X),StockExchangeMember(?X),Person(?X),Thing(?X),hasAddress(?X,!Y21),Address(!Y21),Thing(!Y21) :- srcStockTrader(?X)  .
+StockExchangeMember(?X),Person(?X),Thing(?X),hasAddress(?X,!Y11),Address(!Y11),Thing(!Y11),inverseofhasAddress(!Y11,!Y12) :- srcStockExchangeMember(?X)  .
+StockExchangeList(?X) :- srcStockExchangeList(?X)  .
+Address(?X),Thing(?X),inverseofhasAddress(?X,!Y1),Person(!Y1),Thing(!Y1),hasAddress(!Y1,!Y2),Address(!Y2),Thing(!Y2) :- srcAddress(?X)  .
+Dealer(?X),StockBroker(?X),StockExchangeMember(?X),Person(?X),Thing(?X),hasAddress(?X,!X21),Address(!X21),Thing(!X21) :- srcDealer(?X)  .
+Acquisition(?X),Transaction(?X),Thing(?X),isExecutedFor(?X,!X1),Investor(!X1),Person(!X1),Thing(!X1),hasAddress(!X1,!X2),Address(!X2),Thing(!X2) :- srcAcquisition(?X)  .
+hasStock(?X,?Y),Company(?X),LegalPerson(?X),Person(?X),Thing(?X),hasAddress(?X,!Y71),Address(!Y71),Thing(!Y71) :- srchasStock(?X,?Y)  .
+isExecutedBy(?X,?Y),Transaction(?X),Thing(?X),isExecutedFor(?X,!X101),Investor(!X101),Person(!X101),Thing(!X101),hasAddress(!X101,!X102) :- srcisExecutedBy(?X,?Y)  .
+FinantialInstrument(?X) :- srcFinantialInstrument(?X)  .
+listsStock(?X,?Y),Stock(?Y),FinantialInstrument(?Y),isListedIn(?Y,!X141),StockExchangeList(!X141),listsStock(!X141,?Y),Thing(!X141) :- srclistsStock(?X,?Y)  .
+LegalPerson(?X),Person(?X),Thing(?X),hasAddress(?X,!X51),Address(!X51),Thing(!X51),inverseofhasAddress(!X51,!X52),Person(!X52),Thing(!X52) :- srcLegalPerson(?X)  .
+isListedIn(?X,?Y),Stock(?X),FinantialInstrument(?X),isListedIn(?X,!X121),StockExchangeList(!X121),listsStock(!X121,?X),Thing(!X121) :- srcisListedIn(?X,?Y)  .
+usesBroker(?X,?Y),tradesOnBehalfOf(?Y,?X) :- usesBroker(?X,?Y)  .
+Q1(?X) :- StockExchangeMember(?X) .
+Q2(?X,?Y) :- Person(?X),hasStock(?X,?Y),Stock(?Y) .
+Q3(?X,?Y,?X1) :- FinantialInstrument(?X),belongsToCompany(?X,?Y),Company(?Y),hasStock(?Y,?X1),Stock(?X1) .
+Q4(?X,?Y,?X1) :- Person(?X),hasStock(?X,?Y),Stock(?Y),isListedIn(?Y,?X1),StockExchangeList(?X1) .
+Q5(?X,?Y,?X1,?Y1) :- FinantialInstrument(?X),belongsToCompany(?X,?Y),Company(?Y),hasStock(?Y,?X1),Stock(?X1),isListedIn(?Y,?Y1),StockExchangeList(?Y1) .

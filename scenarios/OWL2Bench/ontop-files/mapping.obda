@@ -1,0 +1,1128 @@
+[PrefixDeclaration]
+ns:  http://benchmark/OWL2Bench#
+xsd: http://www.w3.org/2001/XMLSchema#
+
+[MappingDeclaration] @collection [[
+mappingId ID1145564095
+target  ns:ns/{c0} a ns:AeronauticalEngineering . 
+source  SELECT c0 FROM "src_AeronauticalEngineering"
+
+mappingId ID-257280103
+target  ns:ns/{c0} a ns:Engineering . 
+source  SELECT c0 FROM "src_Engineering"
+
+mappingId ID-1541291936
+target  ns:ns/{c0} a ns:Anthropology . 
+source  SELECT c0 FROM "src_Anthropology"
+
+mappingId ID-857247072
+target  ns:ns/{c0} a ns:HumanitiesAndSocial . 
+source  SELECT c0 FROM "src_HumanitiesAndSocial"
+
+mappingId ID2101144146
+target  ns:ns/{c0} a ns:Architecture . 
+source  SELECT c0 FROM "src_Architecture"
+
+mappingId ID-1595390908
+target  ns:ns/{c0} a ns:FineArts . 
+source  SELECT c0 FROM "src_FineArts"
+
+mappingId ID-1245828375
+target  ns:ns/{c0} a ns:Article . 
+source  SELECT c0 FROM "src_Article"
+
+mappingId ID570290665
+target  ns:ns/{c0} a ns:Publication . 
+source  SELECT c0 FROM "src_Publication"
+
+mappingId ID524253317
+target  ns:ns/{c0} a ns:AsianArts . 
+source  SELECT c0 FROM "src_AsianArts"
+
+mappingId ID-334989849
+target  ns:ns/{c0} a ns:AssistantProfessor . 
+source  SELECT c0 FROM "src_AssistantProfessor"
+
+mappingId ID909483096
+target  ns:ns/{c0} a ns:Professor . 
+source  SELECT c0 FROM "src_Professor"
+
+mappingId ID-473351592
+target  ns:ns/{c0} a ns:AssociateProfessor . 
+source  SELECT c0 FROM "src_AssociateProfessor"
+
+mappingId ID864251040
+target  ns:ns/{c0} a ns:Astronomy . 
+source  SELECT c0 FROM "src_Astronomy"
+
+mappingId ID-1238803265
+target  ns:ns/{c0} a ns:Science . 
+source  SELECT c0 FROM "src_Science"
+
+mappingId ID-12631588
+target  ns:ns/{c0} a ns:Badminton . 
+source  SELECT c0 FROM "src_Badminton"
+
+mappingId ID-1214489354
+target  ns:ns/{c0} a ns:Sports . 
+source  SELECT c0 FROM "src_Sports"
+
+mappingId ID1656729469
+target  ns:ns/{c0} a ns:BasketBall . 
+source  SELECT c0 FROM "src_BasketBall"
+
+mappingId ID-1019554098
+target  ns:ns/{c0} a ns:BasketBallFan . 
+source  SELECT c0 FROM "src_BasketBallFan"
+
+mappingId ID1105632547
+target  ns:ns/{c0} ns:isCrazyAbout ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isCrazyAbout"
+
+mappingId ID396690742
+target  ns:ns/{c0} a ns:BasketBallLover . 
+source  SELECT c0 FROM "src_BasketBallLover"
+
+mappingId ID2116463468
+target  ns:ns/{c0} ns:loves ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_loves"
+
+mappingId ID781590257
+target  ns:ns/{c0} a ns:Biology . 
+source  SELECT c0 FROM "src_Biology"
+
+mappingId ID1313204184
+target  ns:ns/{c0} a ns:BiomedicalEngineering . 
+source  SELECT c0 FROM "src_BiomedicalEngineering"
+
+mappingId ID140537890
+target  ns:ns/{c0} a ns:Book . 
+source  SELECT c0 FROM "src_Book"
+
+mappingId ID-734247594
+target  ns:ns/{c0} a ns:Chair . 
+source  SELECT c0 FROM "src_Chair"
+
+mappingId ID-1390462671
+target  ns:ns/{c0} a ns:FullProfessor . 
+source  SELECT c0 FROM "src_FullProfessor"
+
+mappingId ID2021960557
+target  ns:ns/{c0} ns:isHeadOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isHeadOf"
+
+mappingId ID2021960557446
+target  ns:ns/{c1} ns:isHeadOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasHead"
+
+mappingId ID906765015
+target  ns:ns/{c0} a ns:Department . 
+source  SELECT c0 FROM "src_Department"
+
+mappingId ID-928005084
+target  ns:ns/{c0} a ns:ChemicalEngineering . 
+source  SELECT c0 FROM "src_ChemicalEngineering"
+
+mappingId ID52449369
+target  ns:ns/{c0} a ns:Chemistry . 
+source  SELECT c0 FROM "src_Chemistry"
+
+mappingId ID-104754919
+target  ns:ns/{c0} a ns:CivilEngineering . 
+source  SELECT c0 FROM "src_CivilEngineering"
+
+mappingId ID80155699
+target  ns:ns/{c0} a ns:ClericalStaff . 
+source  SELECT c0 FROM "src_ClericalStaff"
+
+mappingId ID132270689
+target  ns:ns/{c0} a ns:SupportingStaff . 
+source  SELECT c0 FROM "src_SupportingStaff"
+
+mappingId ID553965767
+target  ns:ns/{c0} a ns:CoEdCollege . 
+source  SELECT c0 FROM "src_CoEdCollege"
+
+mappingId ID1081781796
+target  ns:ns/{c0} a ns:College . 
+source  SELECT c0 FROM "src_College"
+
+mappingId ID-936428084
+target  ns:ns/{c0} a ns:Organization . 
+source  SELECT c0 FROM "src_Organization"
+
+mappingId ID-30882275
+target  ns:ns/{c0} a ns:ComputerEngineering . 
+source  SELECT c0 FROM "src_ComputerEngineering"
+
+mappingId ID102993031
+target  ns:ns/{c0} a ns:ComputerScience . 
+source  SELECT c0 FROM "src_ComputerScience"
+
+mappingId ID-1283993502
+target  ns:ns/{c0} a ns:ConferencePaper . 
+source  SELECT c0 FROM "src_ConferencePaper"
+
+mappingId ID1133692963
+target  ns:ns/{c0} a ns:Cricket . 
+source  SELECT c0 FROM "src_Cricket"
+
+mappingId ID1919056661
+target  ns:ns/{c0} a ns:Dean . 
+source  SELECT c0 FROM "src_Dean"
+
+mappingId ID1680053405
+target  ns:ns/{c0} a ns:DesignManagement . 
+source  SELECT c0 FROM "src_DesignManagement"
+
+mappingId ID409898748
+target  ns:ns/{c0} a ns:Management . 
+source  SELECT c0 FROM "src_Management"
+
+mappingId ID831211033
+target  ns:ns/{c0} a ns:Director . 
+source  SELECT c0 FROM "src_Director"
+
+mappingId ID560696080
+target  ns:ns/{c0} a ns:Program . 
+source  SELECT c0 FROM "src_Program"
+
+mappingId ID695890849
+target  ns:ns/{c0} a ns:Drama . 
+source  SELECT c0 FROM "src_Drama"
+
+mappingId ID1154491253
+target  ns:ns/{c0} a ns:Economics . 
+source  SELECT c0 FROM "src_Economics"
+
+mappingId ID72135585
+target  ns:ns/{c0} a ns:ElectiveCourse . 
+source  SELECT c0 FROM "src_ElectiveCourse"
+
+mappingId ID2122653835
+target  ns:ns/{c0} a ns:Course . 
+source  SELECT c0 FROM "src_Course"
+
+mappingId ID-1958378095
+target  ns:ns/{c0} a ns:ElectricalEngineering . 
+source  SELECT c0 FROM "src_ElectricalEngineering"
+
+mappingId ID1739411180
+target  ns:ns/{c0} a ns:Employee . 
+source  SELECT c0 FROM "src_Employee"
+
+mappingId ID1851337654
+target  ns:ns/{c0} a ns:Person . 
+source  SELECT c0 FROM "src_Person"
+
+mappingId ID-1304223848
+target  ns:ns/{c0} ns:worksFor ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_worksFor"
+
+mappingId ID-130422384845
+target  ns:ns/{c1} ns:worksFor ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasEmployee"
+
+mappingId ID-409261854
+target  ns:ns/{c0} a ns:EmployeeEvaluationCommittee . 
+source  SELECT c0 FROM "src_EmployeeEvaluationCommittee"
+
+mappingId ID-2019766370
+target  ns:ns/{c0} a ns:EvaluationCommittee . 
+source  SELECT c0 FROM "src_EvaluationCommittee"
+
+mappingId ID-656045681
+target  ns:ns/{c0} a ns:CollegeDiscipline . 
+source  SELECT c0 FROM "src_CollegeDiscipline"
+
+mappingId ID539590914
+target  ns:ns/{c0} a ns:English . 
+source  SELECT c0 FROM "src_English"
+
+mappingId ID1184687320
+target  ns:ns/{c0} a ns:Faculty . 
+source  SELECT c0 FROM "src_Faculty"
+
+mappingId ID-212522321
+target  ns:ns/{c0} ns:teachesCourse ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_teachesCourse"
+
+
+mappingId ID-212522321565
+target  ns:ns/{c1} ns:teachesCourse ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isTaughtBy"
+
+mappingId ID2034919697
+target  ns:ns/{c0} a ns:FinancialAndAccountingManagement . 
+source  SELECT c0 FROM "src_FinancialAndAccountingManagement"
+
+mappingId ID287423413
+target  ns:ns/{c0} a ns:FootBall . 
+source  SELECT c0 FROM "src_FootBall"
+
+mappingId ID1263870231
+target  ns:ns/{c0} a ns:Game . 
+source  SELECT c0 FROM "src_Game"
+
+mappingId ID-1754083799
+target  ns:ns/{c0} a ns:Interest . 
+source  SELECT c0 FROM "src_Interest"
+
+mappingId ID-1398785403
+target  ns:ns/{c0} a ns:Geosciences . 
+source  SELECT c0 FROM "src_Geosciences"
+
+mappingId ID814932060
+target  ns:ns/{c0} a ns:History . 
+source  SELECT c0 FROM "src_History"
+
+mappingId ID-754957704
+target  ns:ns/{c0} a ns:HumanResourceManagement . 
+source  SELECT c0 FROM "src_HumanResourceManagement"
+
+mappingId ID-336605372
+target  ns:ns/{c0} a ns:Humanities . 
+source  SELECT c0 FROM "src_Humanities"
+
+mappingId ID123493770
+target  ns:ns/{c0} a ns:IndustryEngineering . 
+source  SELECT c0 FROM "src_IndustryEngineering"
+
+mappingId ID-915584181
+target  ns:ns/{c0} a ns:Institute . 
+source  SELECT c0 FROM "src_Institute"
+
+mappingId ID722092320
+target  ns:ns/{c0} a ns:JournalArticle . 
+source  SELECT c0 FROM "src_JournalArticle"
+
+mappingId ID2019739879
+target  ns:ns/{c0} a ns:LatinArts . 
+source  SELECT c0 FROM "src_LatinArts"
+
+mappingId ID-1179617459
+target  ns:ns/{c0} a ns:Lecturer . 
+source  SELECT c0 FROM "src_Lecturer"
+
+mappingId ID-1171976032
+target  ns:ns/{c0} a ns:Linguistics . 
+source  SELECT c0 FROM "src_Linguistics"
+
+mappingId ID-653849649
+target  ns:ns/{c0} a ns:Manual . 
+source  SELECT c0 FROM "src_Manual"
+
+mappingId ID-1955684753
+target  ns:ns/{c0} a ns:MarineScience . 
+source  SELECT c0 FROM "src_MarineScience"
+
+mappingId ID-1748207626
+target  ns:ns/{c0} a ns:MarketingManagement . 
+source  SELECT c0 FROM "src_MarketingManagement"
+
+mappingId ID-391870812
+target  ns:ns/{c0} a ns:MaterialScienceEngineering . 
+source  SELECT c0 FROM "src_MaterialScienceEngineering"
+
+mappingId ID763186293
+target  ns:ns/{c0} a ns:MaterialsScience . 
+source  SELECT c0 FROM "src_MaterialsScience"
+
+mappingId ID2015700654
+target  ns:ns/{c0} a ns:Mathematics . 
+source  SELECT c0 FROM "src_Mathematics"
+
+mappingId ID37159781
+target  ns:ns/{c0} a ns:MechanicalEngineering . 
+source  SELECT c0 FROM "src_MechanicalEngineering"
+
+mappingId ID1005752950
+target  ns:ns/{c0} a ns:MediaArtsAndSciences . 
+source  SELECT c0 FROM "src_MediaArtsAndSciences"
+
+mappingId ID-675257846
+target  ns:ns/{c0} a ns:MedievalArts . 
+source  SELECT c0 FROM "src_MedievalArts"
+
+mappingId ID-2017787083
+target  ns:ns/{c0} a ns:ModernArts . 
+source  SELECT c0 FROM "src_ModernArts"
+
+mappingId ID-847826659
+target  ns:ns/{c0} a ns:ModernLanguages . 
+source  SELECT c0 FROM "src_ModernLanguages"
+
+mappingId ID1323211498
+target  ns:ns/{c0} a ns:Movie . 
+source  SELECT c0 FROM "src_Movie"
+
+mappingId ID395289502
+target  ns:ns/{c0} a ns:Music . 
+source  SELECT c0 FROM "src_Music"
+
+mappingId ID1594566614
+target  ns:ns/{c0} a ns:MusicsClass . 
+source  SELECT c0 FROM "src_MusicsClass"
+
+mappingId ID210098048
+target  ns:ns/{c0} a ns:NonScience . 
+source  SELECT c0 FROM "src_NonScience"
+
+mappingId ID-675396178
+target  ns:ns/{c0} a ns:NonScienceStudent . 
+source  SELECT c0 FROM "src_NonScienceStudent"
+
+mappingId ID-167886673
+target  ns:ns/{c0} a ns:Student . 
+source  SELECT c0 FROM "src_Student"
+
+mappingId ID843896420
+target  ns:ns/{c0} ns:hasMajor ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasMajor"
+
+mappingId ID-1507076548
+target  ns:ns/{c0} a ns:OperationsManagement . 
+source  SELECT c0 FROM "src_OperationsManagement"
+
+mappingId ID862413486
+target  ns:ns/{c0} a ns:OtherStaff . 
+source  SELECT c0 FROM "src_OtherStaff"
+
+mappingId ID-1282911558
+target  ns:ns/{c0} a ns:PGProgram . 
+source  SELECT c0 FROM "src_PGProgram"
+
+mappingId ID507974332
+target  ns:ns/{c0} a ns:PGStudent . 
+source  SELECT c0 FROM "src_PGStudent"
+
+mappingId ID-170519547
+target  ns:ns/{c0} ns:enrollFor ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_enrollFor"
+
+mappingId ID1330817465
+target  ns:ns/{c0} a ns:Painting . 
+source  SELECT c0 FROM "src_Painting"
+
+mappingId ID-1167133676
+target  ns:ns/{c0} a ns:PeopleWithHobby . 
+source  SELECT c0 FROM "src_PeopleWithHobby"
+
+mappingId ID-109522167
+target  ns:ns/{c0} ns:likes ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_likes"
+
+mappingId ID1807688580
+target  ns:ns/{c0} a ns:PerformingArts . 
+source  SELECT c0 FROM "src_PerformingArts"
+
+mappingId ID-293982620
+target  ns:ns/{c0} a ns:PetroleumlEngineering . 
+source  SELECT c0 FROM "src_PetroleumlEngineering"
+
+mappingId ID1539207161
+target  ns:ns/{c0} a ns:PhDProgram . 
+source  SELECT c0 FROM "src_PhDProgram"
+
+mappingId ID157118530
+target  ns:ns/{c0} a ns:PhDStudent . 
+source  SELECT c0 FROM "src_PhDStudent"
+
+mappingId ID1775879054
+target  ns:ns/{c0} a ns:Philosophy . 
+source  SELECT c0 FROM "src_Philosophy"
+
+mappingId ID-1336889810
+target  ns:ns/{c0} a ns:Physics . 
+source  SELECT c0 FROM "src_Physics"
+
+mappingId ID939450341
+target  ns:ns/{c0} a ns:PostDoc . 
+source  SELECT c0 FROM "src_PostDoc"
+
+mappingId ID610867959
+target  ns:ns/{c0} a ns:ProjectManagement . 
+source  SELECT c0 FROM "src_ProjectManagement"
+
+mappingId ID702983833
+target  ns:ns/{c0} a ns:Psychology . 
+source  SELECT c0 FROM "src_Psychology"
+
+mappingId ID2002590948
+target  ns:ns/{c0} a ns:PublicRelationsManagement . 
+source  SELECT c0 FROM "src_PublicRelationsManagement"
+
+mappingId ID-742340062
+target  ns:ns/{c0} a ns:Reading . 
+source  SELECT c0 FROM "src_Reading"
+
+mappingId ID-791586739
+target  ns:ns/{c0} a ns:Religions . 
+source  SELECT c0 FROM "src_Religions"
+
+mappingId ID-1328321173
+target  ns:ns/{c0} a ns:ResearchAssistant . 
+source  SELECT c0 FROM "src_ResearchAssistant"
+
+mappingId ID-1881664697
+target  ns:ns/{c0} a ns:ResearchGroup . 
+source  SELECT c0 FROM "src_ResearchGroup"
+
+mappingId ID-1321429598
+target  ns:ns/{c0} a ns:ResearchProject . 
+source  SELECT c0 FROM "src_ResearchProject"
+
+mappingId ID250727239
+target  ns:ns/{c0} a ns:Work . 
+source  SELECT c0 FROM "src_Work"
+
+mappingId ID187113747
+target  ns:ns/{c0} a ns:RiskManagement . 
+source  SELECT c0 FROM "src_RiskManagement"
+
+mappingId ID-329317397
+target  ns:ns/{c0} a ns:SalesManagement . 
+source  SELECT c0 FROM "src_SalesManagement"
+
+mappingId ID-1537939698
+target  ns:ns/{c0} a ns:School . 
+source  SELECT c0 FROM "src_School"
+
+mappingId ID1683869254
+target  ns:ns/{c0} a ns:ScienceStudent . 
+source  SELECT c0 FROM "src_ScienceStudent"
+
+mappingId ID-786597859
+target  ns:ns/{c0} a ns:Software . 
+source  SELECT c0 FROM "src_Software"
+
+mappingId ID-1045734815
+target  ns:ns/{c0} a ns:Specification . 
+source  SELECT c0 FROM "src_Specification"
+
+mappingId ID-1833354466
+target  ns:ns/{c0} a ns:SportsFan . 
+source  SELECT c0 FROM "src_SportsFan"
+
+mappingId ID-558653230
+target  ns:ns/{c0} a ns:SportsLover . 
+source  SELECT c0 FROM "src_SportsLover"
+
+mappingId ID1046430464
+target  ns:ns/{c0} a ns:Statistics . 
+source  SELECT c0 FROM "src_Statistics"
+
+mappingId ID-394663784
+target  ns:ns/{c0} ns:enrollIn ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_enrollIn"
+
+mappingId ID-1612230101
+target  ns:ns/{c0} a ns:StudentEvaluationCommittee . 
+source  SELECT c0 FROM "src_StudentEvaluationCommittee"
+
+mappingId ID-1689375334
+target  ns:ns/{c0} a ns:SupplyChainManagement . 
+source  SELECT c0 FROM "src_SupplyChainManagement"
+
+mappingId ID-1270129701
+target  ns:ns/{c0} a ns:Swimming . 
+source  SELECT c0 FROM "src_Swimming"
+
+mappingId ID-2001648000
+target  ns:ns/{c0} a ns:SystemStaff . 
+source  SELECT c0 FROM "src_SystemStaff"
+
+mappingId ID-375439103
+target  ns:ns/{c0} a ns:TeachingAssistant . 
+source  SELECT c0 FROM "src_TeachingAssistant"
+
+mappingId ID-1489064775
+target  ns:ns/{c0} ns:isTeachingAssistantOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isTeachingAssistantOf"
+
+mappingId ID-306588320
+target  ns:ns/{c0} a ns:TeachingCourse . 
+source  SELECT c0 FROM "src_TeachingCourse"
+
+mappingId ID1620838383
+target  ns:ns/{c0} a ns:TechnicalReport . 
+source  SELECT c0 FROM "src_TechnicalReport"
+
+mappingId ID-1907934470
+target  ns:ns/{c0} a ns:Tennis . 
+source  SELECT c0 FROM "src_Tennis"
+
+mappingId ID29861434
+target  ns:ns/{c0} a ns:TheatreAndDance . 
+source  SELECT c0 FROM "src_TheatreAndDance"
+
+mappingId ID1531880720
+target  ns:ns/{c0} a ns:ThesisEvaluationCommittee . 
+source  SELECT c0 FROM "src_ThesisEvaluationCommittee"
+
+mappingId ID1492511944
+target  ns:ns/{c0} a ns:Travelling . 
+source  SELECT c0 FROM "src_Travelling"
+
+mappingId ID687434055
+target  ns:ns/{c0} a ns:UGCourse . 
+source  SELECT c0 FROM "src_UGCourse"
+
+mappingId ID925309150
+target  ns:ns/{c0} a ns:UGProgram . 
+source  SELECT c0 FROM "src_UGProgram"
+
+mappingId ID1594899624
+target  ns:ns/{c0} a ns:UGStudent . 
+source  SELECT c0 FROM "src_UGStudent"
+
+mappingId ID1087991641
+target  ns:ns/{c0} a ns:University . 
+source  SELECT c0 FROM "src_University"
+
+mappingId ID1070031760
+target  ns:ns/{c0} a ns:UnofficialPublication . 
+source  SELECT c0 FROM "src_UnofficialPublication"
+
+mappingId ID1914030364
+target  ns:ns/{c0} a ns:VisitingProfessor . 
+source  SELECT c0 FROM "src_VisitingProfessor"
+
+mappingId ID1883883227
+target  ns:ns/{c0} a ns:WomanCollege . 
+source  SELECT c0 FROM "src_WomanCollege"
+
+mappingId ID1703761157
+target  ns:ns/{c0} ns:dislikes ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_dislikes"
+
+mappingId ID627318208
+target  ns:ns/{c0} ns:isStudentOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isStudentOf"
+
+mappingId ID627318208456
+target  ns:ns/{c1} ns:isStudentOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasStudent"
+
+mappingId ID1413348456
+target  ns:ns/{c0} ns:evaluatedBy ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_evaluatedBy"
+
+mappingId ID-1928856768
+target  ns:ns/{c0} ns:evaluates ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_evaluates"
+
+mappingId ID134751522
+target  ns:ns/{c0} ns:hasAlumnus ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasAlumnus"
+
+mappingId ID1347515224556
+target  ns:ns/{c1} ns:hasAlumnus ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasDegreeFrom"
+
+mappingId ID1897815833
+target  ns:ns/{c0} ns:hasDegreeFrom ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasDegreeFrom"
+
+mappingId ID1897815833342
+target  ns:ns/{c1} ns:hasDegreeFrom ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasAlumnus"
+
+mappingId ID827073720
+target  ns:ns/{c0} ns:hasAssistantProfessor ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasAssistantProfessor"
+
+mappingId ID827073720465
+target  ns:ns/{c1} ns:hasAssistantProfessor ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isAssistantProfessorOf"
+
+mappingId ID-268780147
+target  ns:ns/{c0} ns:isAssistantProfessorOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isAssistantProfessorOf"
+
+mappingId ID-2687801474656
+target  ns:ns/{c1} ns:isAssistantProfessorOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasAssistantProfessor"
+
+mappingId ID1593420324
+target  ns:ns/{c0} ns:hasProfessor ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasProfessor"
+
+mappingId ID1593420324565
+target  ns:ns/{c1} ns:hasProfessor ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isProfessorOf"
+
+mappingId ID-1406986610
+target  ns:ns/{c0} ns:hasAssociateProfessor ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasAssociateProfessor"
+
+mappingId ID-14069866103445
+target  ns:ns/{c1} ns:hasAssociateProfessor ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isAssociateProfessorOf"
+
+mappingId ID23085123
+target  ns:ns/{c0} ns:isAssociateProfessorOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isAssociateProfessorOf"
+
+mappingId ID23085123345
+target  ns:ns/{c1} ns:isAssociateProfessorOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasAssociateProfessor"
+
+mappingId ID1735719941
+target  ns:ns/{c0} ns:hasAuthor ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasAuthor"
+
+mappingId ID780722426
+target  ns:ns/{c0} ns:hasClericalStaff ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasClericalStaff"
+
+mappingId ID780722426454
+target  ns:ns/{c1} ns:hasClericalStaff ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isClericalStaffOf"
+
+mappingId ID-90169263
+target  ns:ns/{c0} ns:hasSupportingStaff ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasSupportingStaff"
+
+mappingId ID-90169263456
+target  ns:ns/{c1} ns:hasSupportingStaff ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isSupportingStaffOf"
+
+mappingId ID516878731
+target  ns:ns/{c0} ns:hasCollaborationWith ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasCollaborationWith"
+
+mappingId ID937918767
+target  ns:ns/{c0} ns:hasCollege ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasCollege"
+
+mappingId ID93791876745434
+target  ns:ns/{c1} ns:hasCollege ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isCollegeOf"
+
+mappingId ID-118031688
+target  ns:ns/{c0} ns:isCollegeOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isCollegeOf"
+
+mappingId ID-1180316883345
+target  ns:ns/{c1} ns:isCollegeOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasCollege"
+
+mappingId ID-2797399
+target  ns:ns/{c0} ns:hasSubOrganization ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasSubOrganization"
+
+mappingId ID-27973995465
+target  ns:ns/{c1} ns:hasSubOrganization ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isSubOrganizationOf"
+
+mappingId ID-2071096419
+target  ns:ns/{c0} ns:hasCollegeDiscipline ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasCollegeDiscipline"
+
+mappingId ID1892330696
+target  ns:ns/{c0} ns:hasCommitteeMembers ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasCommitteeMembers"
+
+mappingId ID993940597
+target  ns:ns/{c0} ns:hasMember ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasMember"
+
+mappingId ID993940597564
+target  ns:ns/{c1} ns:hasMember ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isMemberOf"
+
+mappingId ID-1096099831
+target  ns:ns/{c0} ns:hasDean ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasDean"
+
+mappingId ID-10960998314656
+target  ns:ns/{c1} ns:hasDean ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isDeanOf"
+
+mappingId ID647286423
+target  ns:ns/{c0} ns:isDeanOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isDeanOf"
+
+mappingId ID647286423345
+target  ns:ns/{c1} ns:isDeanOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasDean"
+
+mappingId ID-2118760455
+target  ns:ns/{c0} ns:hasDepartment ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasDepartment"
+
+mappingId ID-2118760455454
+target  ns:ns/{c1} ns:hasDepartment ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isDepartmentOf"
+
+mappingId ID147753334
+target  ns:ns/{c0} ns:isDepartmentOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isDepartmentOf"
+
+mappingId ID147753334456
+target  ns:ns/{c1} ns:isDepartmentOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasDepartment"
+
+mappingId ID-767470498
+target  ns:ns/{c0} ns:hasDoctoralDegreeFrom ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasDoctoralDegreeFrom"
+
+mappingId ID1211723883
+target  ns:ns/{c0} ns:hasEmployee ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasEmployee"
+
+mappingId ID1211723883465
+target  ns:ns/{c1} ns:hasEmployee ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_worksFor"
+
+mappingId ID-1650071348
+target  ns:ns/{c0} ns:hasEmployeeEvaluationCommittee ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasEmployeeEvaluationCommittee"
+
+mappingId ID133497739
+target  ns:ns/{c0} ns:hasEvaluationCommittee ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasEvaluationCommittee"
+
+mappingId ID-1402920024
+target  ns:ns/{c0} ns:hasFaculty ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasFaculty"
+
+mappingId ID-1402920024565
+target  ns:ns/{c1} ns:hasFaculty ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isFacultyOf"
+
+mappingId ID-1909223967
+target  ns:ns/{c0} ns:isFacultyOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isFacultyOf"
+
+mappingId ID-1909223967454
+target  ns:ns/{c1} ns:isFacultyOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasFaculty"
+
+mappingId ID-1218733860
+target  ns:ns/{c0} ns:hasFullProfessor ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasFullProfessor"
+
+mappingId ID-12187338604556
+target  ns:ns/{c1} ns:hasFullProfessor ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isFullProfessorOf"
+
+mappingId ID1335078329
+target  ns:ns/{c0} ns:isFullProfessorOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isFullProfessorOf"
+
+mappingId ID13350783294546
+target  ns:ns/{c1} ns:isFullProfessorOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasFullProfessor"
+
+mappingId ID133417932
+target  ns:ns/{c0} ns:hasHead ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasHead"
+
+mappingId ID133417932674
+target  ns:ns/{c1} ns:hasHead ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isHeadOf"
+
+mappingId ID1594372066
+target  ns:ns/{c0} ns:hasLecturer ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasLecturer"
+
+mappingId ID1594372066456
+target  ns:ns/{c1} ns:hasLecturer ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isLecturerOf"
+
+mappingId ID851030860
+target  ns:ns/{c0} ns:isLecturerOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isLecturerOf"
+
+mappingId ID851030860456
+target  ns:ns/{c1} ns:isLecturerOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasLecturer"
+
+mappingId ID-591549160
+target  ns:ns/{c0} ns:hasMasterDegreeFrom ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasMasterDegreeFrom"
+
+mappingId ID-183792729
+target  ns:ns/{c0} ns:isMemberOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isMemberOf"
+
+mappingId ID-18379272945456
+target  ns:ns/{c1} ns:isMemberOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasMember"
+
+mappingId ID-452325134
+target  ns:ns/{c0} ns:hasOtherStaff ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasOtherStaff"
+
+mappingId ID-45232513445
+target  ns:ns/{c1} ns:hasOtherStaff ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isOtherStaffOf"
+
+mappingId ID-1761071623
+target  ns:ns/{c0} ns:hasPGProgram ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasPGProgram"
+
+mappingId ID1307329534
+target  ns:ns/{c0} ns:hasProgram ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasProgram"
+
+mappingId ID-1347786394
+target  ns:ns/{c0} ns:hasPart ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasPart"
+
+mappingId ID-1347786394564
+target  ns:ns/{c1} ns:hasPart ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isPartOf"
+
+mappingId ID1701457662
+target  ns:ns/{c0} ns:isPartOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isPartOf"
+
+mappingId ID170145766235
+target  ns:ns/{c1} ns:isPartOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasPart"
+
+mappingId ID-592920077
+target  ns:ns/{c0} ns:hasPhDProgram ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasPhDProgram"
+
+mappingId ID-1208204451
+target  ns:ns/{c0} ns:hasPostDoc ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasPostDoc"
+
+mappingId ID-1208204451465
+target  ns:ns/{c1} ns:hasPostDoc ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isPostDocOf"
+
+mappingId ID1136349716
+target  ns:ns/{c0} ns:isPostDocOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isPostDocOf"
+
+mappingId ID1136349716456
+target  ns:ns/{c1} ns:isPostDocOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasPostDoc"
+
+mappingId ID1478047063
+target  ns:ns/{c0} ns:isProfessorOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isProfessorOf"
+
+mappingId ID1478047063454
+target  ns:ns/{c1} ns:isProfessorOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasProfessor"
+
+mappingId ID1358997288
+target  ns:ns/{c0} ns:hasResearchAssistant ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasResearchAssistant"
+
+mappingId ID1358997288546
+target  ns:ns/{c1} ns:hasResearchAssistant ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isResearchAssistantOf"
+
+mappingId ID-783896983
+target  ns:ns/{c0} ns:isResearchAssistantOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isResearchAssistantOf"
+
+mappingId ID-7838969834354
+target  ns:ns/{c1} ns:isResearchAssistantOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasResearchAssistant"
+
+mappingId ID482680436
+target  ns:ns/{c0} ns:hasResearchGroup ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasResearchGroup"
+
+mappingId ID482680436456
+target  ns:ns/{c1} ns:hasResearchGroup ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isResearchGroupOf"
+
+mappingId ID-1194917122
+target  ns:ns/{c0} ns:isResearchGroupOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isResearchGroupOf"
+
+mappingId ID-119491712245
+target  ns:ns/{c1} ns:isResearchGroupOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasResearchGroup"
+
+mappingId ID1687541602
+target  ns:ns/{c0} ns:hasResearchProject ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasResearchProject"
+
+mappingId ID1328379005
+target  ns:ns/{c0} ns:hasWork ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasWork"
+
+mappingId ID1611174160
+target  ns:ns/{c0} ns:hasStudent ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasStudent"
+
+mappingId ID16111741605657
+target  ns:ns/{c1} ns:hasStudent ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isStudentOf"
+
+mappingId ID-362950367
+target  ns:ns/{c0} ns:hasStudentEvaluationCommittee ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasStudentEvaluationCommittee"
+
+mappingId ID617155698
+target  ns:ns/{c0} ns:isSubOrganizationOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isSubOrganizationOf"
+
+mappingId ID617155698565
+target  ns:ns/{c1} ns:isSubOrganizationOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasSubOrganization"
+
+mappingId ID1151296831
+target  ns:ns/{c0} ns:hasSystemStaff ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasSystemStaff"
+
+mappingId ID1151296831565
+target  ns:ns/{c1} ns:hasSystemStaff ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isSystemStaffOf"
+
+mappingId ID20423057
+target  ns:ns/{c0} ns:hasThesisEvaluationCommittee ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasThesisEvaluationCommittee"
+
+mappingId ID-2144682523
+target  ns:ns/{c0} ns:hasUGProgram ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasUGProgram"
+
+mappingId ID863301037
+target  ns:ns/{c0} ns:hasUndergraduateDegreeFrom ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasUndergraduateDegreeFrom"
+
+mappingId ID312787713
+target  ns:ns/{c0} ns:hasVisitingProfessor ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasVisitingProfessor"
+
+mappingId ID3127877135345
+target  ns:ns/{c1} ns:hasVisitingProfessor ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isVisitingProfessorOf"
+
+mappingId ID637905233
+target  ns:ns/{c0} ns:isVisitingProfessorOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isVisitingProfessorOf"
+
+mappingId ID637905233454
+target  ns:ns/{c1} ns:isVisitingProfessorOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasVisitingProfessor"
+
+mappingId ID-1698840730
+target  ns:ns/{c0} ns:hasWomenCollege ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasWomenCollege"
+
+mappingId ID-1698840730454
+target  ns:ns/{c1} ns:hasWomenCollege ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isWomenCollegeOf"
+
+mappingId ID105783447
+target  ns:ns/{c0} ns:isAdvisedBy ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isAdvisedBy"
+
+mappingId ID1057834474545
+target  ns:ns/{c0} ns:hasAdvisor ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasAdvisor"
+
+mappingId ID825759594
+target  ns:ns/{c0} ns:isAffiliatedOrganizationOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isAffiliatedOrganizationOf"
+
+mappingId ID-1196079826
+target  ns:ns/{c0} ns:isClericalStaffOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isClericalStaffOf"
+
+mappingId ID-119607982645
+target  ns:ns/{c1} ns:isClericalStaffOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasClericalStaff"
+
+mappingId ID-827899141
+target  ns:ns/{c0} ns:isSupportingStaffOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isSupportingStaffOf"
+
+mappingId ID-827899141465
+target  ns:ns/{c1} ns:isSupportingStaffOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasSupportingStaff"
+
+mappingId ID1298608350
+target  ns:ns/{c0} ns:isOtherStaffOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isOtherStaffOf"
+
+mappingId ID129860835045
+target  ns:ns/{c1} ns:isOtherStaffOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasOtherStaff"
+
+mappingId ID-993710507
+target  ns:ns/{c0} ns:isSystemStaffOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isSystemStaffOf"
+
+mappingId ID-99371050756
+target  ns:ns/{c1} ns:isSystemStaffOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasSystemStaff"
+
+
+mappingId ID650248353
+target  ns:ns/{c0} ns:isTaughtBy ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isTaughtBy"
+
+mappingId ID650248353535
+target  ns:ns/{c1} ns:isTaughtBy ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_teachesCourse"
+
+mappingId ID65024835353524
+target  ns:ns/{c1} ns:teachesCourse ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_isTaughtBy"
+
+mappingId ID-791020354
+target  ns:ns/{c0} ns:isWomenCollegeOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isWomenCollegeOf"
+
+mappingId ID-791020354454
+target  ns:ns/{c1} ns:isWomenCollegeOf ns:ns/{c0} . 
+source  SELECT c0, c1 FROM "src_hasWomenCollege"
+
+mappingId ID-17398903
+target  ns:ns/{c0} ns:offerCourse ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_offerCourse"
+
+mappingId ID-975021320
+target  ns:ns/{c0} ns:orgPublication ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_orgPublication"
+
+mappingId ID-1273946610
+target  ns:ns/{c0} ns:publicationResearch ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_publicationResearch"
+
+mappingId ID1004251979
+target  ns:ns/{c0} ns:takesCourse ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_takesCourse"
+
+mappingId ID-1918121615
+target  ns:ns/{c0} ns:tenured ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_tenured"
+
+mappingId ID58092361
+target  ns:ns/{c0} ns:hasAge  {c0}^^xsd:string  . 
+source  SELECT c0, c1 FROM "src_hasAge"
+
+mappingId ID-1779036068
+target  ns:ns/{c0} ns:hasEmailAddress  {c0}^^xsd:string . 
+source  SELECT c0, c1 FROM "src_hasEmailAddress"
+
+mappingId ID-2108173370
+target  ns:ns/{c0} ns:hasFirstName  {c0}^^xsd:string  . 
+source  SELECT c0, c1 FROM "src_hasFirstName"
+
+mappingId ID-775576337
+target  ns:ns/{c0} ns:hasLastName  {c0}^^xsd:string . 
+source  SELECT c0, c1 FROM "src_hasLastName"
+
+mappingId ID-1379930724
+target  ns:ns/{c0} ns:hasTelephone  {c0}^^xsd:string . 
+source  SELECT c0, c1 FROM "src_hasTelephone"
+
+mappingId ID420248008
+target  ns:ns/{c0} ns:hasTitle  {c0}^^xsd:string . 
+source  SELECT c0, c1 FROM "src_hasTitle"
+
+]]
