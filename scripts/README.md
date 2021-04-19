@@ -26,13 +26,29 @@ Most of these commands are automated using the `run.sh` script. At the moment, t
 
 #### SYNOPSIS
 
-bootstrap <*base_dir*> <**chasebench**|**dllite**> <**data|none**> <**GAV|LAV**>
+bootstrap <*base dir*> <**chasebench**|**dllite**> <**data|none**> <**GAV|LAV**>
 
 **TODO: Be aware that if the "data" variable is not used (i.e., not replaced with a dummy like "none"), the GAV or LAV variable will fail**
 
 #### DESCRIPTION
 
-This script initialises the necessary data for the benchmarking scenarios, using the collection of utility tools to generate (and, where necessary, convert) data suitable to be used for forward- and backward-chaining approached to query resolution.
+This script initialises the necessary data for a benchmarking scenario, using the collection of utility tools to generate (and, where necessary, convert) data suitable to be used for forward- and backward-chaining approached to query resolution.
+
+Internally, the script:
+* makes `data` and `schema` directories if none exist in the `base dir` scenario
+* if using the `chasebench` arg:
+	- modifies the chasebench data to additional formats and generates matching schemas
+	- if the `data` arg is used, calls `generate.sh` to create either `GAV` or `LAV` data
+	- calls `obdabenchmark bootstrap` (the node.js app) to complete the bootstrapping
+	- generates a matching owl ontology
+* if using the `dllite` arg:
+	- calls `obdabenchmark bootstrap` (the node.js app) to initialise the bootstrapping
+	- renames the generated files as `oneToOne` (trivial) mappings
+	- if the `data` arg is used, calls `generate.sh` to create either `GAV` or `LAV` data
+* creates `GAV` or `LAV` conversions of the trivial mappings **TODO: confirm this is the right place to do so**
+* creates OnTop mappings
+* creates ChaseGQR mappings **TODO: confirm this is the right place to do so**
+* creates Rulewerk mappings
 
 
 ### build.sh
