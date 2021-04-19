@@ -1,0 +1,18 @@
+v0{
+	c0 : STRING,
+}
+
+v1{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+}
+
+v2{
+	c0 : STRING,
+}
+
+v3{
+	c0 : STRING,
+}
+

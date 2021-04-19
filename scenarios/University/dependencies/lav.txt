@@ -1,0 +1,4 @@
+src_advisor(?X0,?X1) -> src_advisor(?X1,?Y0) , src_affiliatedOrganizationOf(?X2,?Y0) , src_AssistantProfessor(?X0) , src_AssociateProfessor(?X0) , src_Course(?X0) , src_Department(?X0) , src_doctoralDegreeFrom(?X7,?Y7) , src_emailAddress(?X8,?Y8) .
+src_FullProfessor(?X2,?Y0) -> src_FullProfessor(?X0) , src_GraduateCourse(?X2) , src_GraduateStudent(?X3) , src_headOf(?X4,?Y0) , src_Lecturer(?X5) , src_mastersDegreeFrom(?X0,?Y0) , src_memberOf(?X0,?Y0) , src_name(?X0,?Y8) , src_Publication(?X0) .
+src_publicationAuthor(?X0,?X6) -> src_publicationAuthor(?X0,?Y1) , src_ResearchAssistant(?X0) , src_ResearchGroup(?X0) , src_researchInterest(?X4,?Y0) , src_subOrganizationOf(?X0,?Y0) , src_takesCourse(?X6,?Y0) , src_teacherOf(?X0,?Y7) , src_TeachingAssistant(?X8) , src_teachingAssistantOf(?X0,?Y0) , src_telephone(?X10,?Y0) .
+src_undergraduateDegreeFrom(?X0) -> src_undergraduateDegreeFrom(?X0,?Y1) , src_UndergraduateStudent(?X2) , src_University(?X0) , src_worksFor(?X4,?Y4) .

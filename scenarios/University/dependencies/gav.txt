@@ -1,0 +1,31 @@
+src_affiliatedOrganizationOf(?X,?Y) , src_teacherOf(?X,?Y) , src_subOrganizationOf(?X,?Y) , src_doctoralDegreeFrom(?X,?Y) , src_advisor(?X,?Y) -> advisor(?X,?Y) .
+src_TeachingAssistant(?X) , src_emailAddress(?X,?Y) , src_undergraduateDegreeFrom(?X,?Y) , src_memberOf(?X,?Y) , src_affiliatedOrganizationOf(?X,?Y) -> affiliatedOrganizationOf(?X,?Y) .
+src_AssociateProfessor(?X) , src_UndergraduateStudent(?X) , src_takesCourse(?X,?Y) , src_AssistantProfessor(?X) -> AssistantProfessor(?X) .
+src_memberOf(?X,?Y) , src_headOf(?X,?Y) , src_teacherOf(?X,?Y) , src_Publication(?X) , src_AssociateProfessor(?X) -> AssociateProfessor(?X) .
+src_publicationAuthor(?X,?Y) , src_AssistantProfessor(?X) , src_Department(?X) , src_worksFor(?X,?Y) , src_GraduateStudent(?X) , src_AssociateProfessor(?X) , src_Course(?X) -> Course(?X) .
+src_mastersDegreeFrom(?X,?Y) , src_TeachingAssistant(?X) , src_headOf(?X,?Y) , src_takesCourse(?X,?Y) , src_undergraduateDegreeFrom(?X,?Y) , src_Department(?X) -> Department(?X) .
+src_publicationAuthor(?X,?Y) , src_telephone(?X,?Y) , src_worksFor(?X,?Y) , src_teacherOf(?X,?Y) , src_doctoralDegreeFrom(?X,?Y) -> doctoralDegreeFrom(?X,?Y) .
+src_memberOf(?X,?Y) , src_name(?X,?Y) , src_ResearchGroup(?X) , src_UndergraduateStudent(?X) , src_emailAddress(?X,?Y) -> emailAddress(?X,?Y) .
+src_subOrganizationOf(?X,?Y) , src_Publication(?X) , src_ResearchGroup(?X) , src_GraduateStudent(?X) , src_FullProfessor(?X) -> FullProfessor(?X) .
+src_Department(?X) , src_UndergraduateStudent(?X) , src_Publication(?X) , src_GraduateCourse(?X) -> GraduateCourse(?X) .
+src_subOrganizationOf(?X,?Y) , src_Course(?X) , src_telephone(?X,?Y) , src_publicationAuthor(?X,?Y) , src_Lecturer(?X) , src_takesCourse(?X,?Y) , src_GraduateStudent(?X) -> GraduateStudent(?X) .
+src_Publication(?X) , src_memberOf(?X,?Y) , src_name(?X,?Y) , src_University(?X) , src_headOf(?X,?Y) -> headOf(?X,?Y) .
+src_undergraduateDegreeFrom(?X,?Y) , src_ResearchAssistant(?X) , src_GraduateCourse(?X) , src_Lecturer(?X) -> Lecturer(?X) .
+src_doctoralDegreeFrom(?X,?Y) , src_publicationAuthor(?X,?Y) , src_worksFor(?X,?Y) , src_undergraduateDegreeFrom(?X,?Y) , src_mastersDegreeFrom(?X,?Y) -> mastersDegreeFrom(?X,?Y) .
+src_University(?X) , src_teacherOf(?X,?Y) , src_teachingAssistantOf(?X,?Y) , src_TeachingAssistant(?X) , src_Lecturer(?X) , src_undergraduateDegreeFrom(?X,?Y) , src_memberOf(?X,?Y) -> memberOf(?X,?Y) .
+src_Lecturer(?X) , src_AssistantProfessor(?X) , src_ResearchAssistant(?X) , src_name(?X,?Y) -> name(?X,?Y) .
+src_worksFor(?X,?Y) , src_teacherOf(?X,?Y) , src_takesCourse(?X,?Y) , src_name(?X,?Y) , src_GraduateCourse(?X) , src_subOrganizationOf(?X,?Y) , src_Publication(?X) -> Publication(?X) .
+src_advisor(?X,?Y) , src_headOf(?X,?Y) , src_Publication(?X) , src_publicationAuthor(?X,?Y) -> publicationAuthor(?X,?Y) .
+src_advisor(?X,?Y) , src_memberOf(?X,?Y) , src_TeachingAssistant(?X) , src_Publication(?X) , src_ResearchAssistant(?X) -> ResearchAssistant(?X) .
+src_affiliatedOrganizationOf(?X,?Y) , src_subOrganizationOf(?X,?Y) , src_publicationAuthor(?X,?Y) , src_ResearchAssistant(?X) , src_ResearchGroup(?X) -> ResearchGroup(?X) .
+src_mastersDegreeFrom(?X,?Y) , src_Lecturer(?X) , src_doctoralDegreeFrom(?X,?Y) , src_teacherOf(?X,?Y) , src_Publication(?X) , src_researchInterest(?X,?Y) -> researchInterest(?X,?Y) .
+src_mastersDegreeFrom(?X,?Y) , src_advisor(?X,?Y) , src_GraduateCourse(?X) , src_memberOf(?X,?Y) , src_subOrganizationOf(?X,?Y) -> subOrganizationOf(?X,?Y) .
+src_UndergraduateStudent(?X) , src_GraduateCourse(?X) , src_subOrganizationOf(?X,?Y) , src_takesCourse(?X,?Y) -> takesCourse(?X,?Y) .
+src_telephone(?X,?Y) , src_teachingAssistantOf(?X,?Y) , src_headOf(?X,?Y) , src_TeachingAssistant(?X) , src_worksFor(?X,?Y) , src_Lecturer(?X) , src_teacherOf(?X,?Y) -> teacherOf(?X,?Y) .
+src_telephone(?X,?Y) , src_researchInterest(?X,?Y) , src_University(?X) , src_worksFor(?X,?Y) , src_AssistantProfessor(?X) , src_ResearchAssistant(?X) , src_TeachingAssistant(?X) -> TeachingAssistant(?X) .
+src_GraduateCourse(?X) , src_GraduateStudent(?X) , src_Lecturer(?X) , src_name(?X,?Y) , src_Course(?X) , src_ResearchAssistant(?X) , src_teachingAssistantOf(?X,?Y) -> teachingAssistantOf(?X,?Y) .
+src_doctoralDegreeFrom(?X,?Y) , src_teachingAssistantOf(?X,?Y) , src_Lecturer(?X) , src_Course(?X) , src_teacherOf(?X,?Y) , src_GraduateStudent(?X) , src_telephone(?X,?Y) -> telephone(?X,?Y) .
+src_Department(?X) , src_memberOf(?X,?Y) , src_TeachingAssistant(?X) , src_ResearchGroup(?X) , src_emailAddress(?X,?Y) , src_undergraduateDegreeFrom(?X,?Y) -> undergraduateDegreeFrom(?X,?Y) .
+src_affiliatedOrganizationOf(?X,?Y) , src_University(?X) , src_telephone(?X,?Y) , src_publicationAuthor(?X,?Y) , src_worksFor(?X,?Y) , src_UndergraduateStudent(?X) -> UndergraduateStudent(?X) .
+src_advisor(?X,?Y) , src_Course(?X) , src_mastersDegreeFrom(?X,?Y) , src_telephone(?X,?Y) , src_GraduateStudent(?X) , src_University(?X) -> University(?X) .
+src_Publication(?X) , src_Course(?X) , src_researchInterest(?X,?Y) , src_GraduateStudent(?X) , src_advisor(?X,?Y) , src_telephone(?X,?Y) , src_worksFor(?X,?Y) -> worksFor(?X,?Y) .

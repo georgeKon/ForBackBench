@@ -1,0 +1,4 @@
+src_Acquisition(?X5) -> src_Acquisition(?X0) , src_Transaction(?X2) , src_Address(?X3) , src_inverseofhasAddress(?X0,?Y4) , src_Company(?X5) , src_LegalPerson(?X0) .
+src_Dealer(?X3) -> src_Dealer(?X0) , src_StockBroker(?X0) , src_Investor(?X3) , src_Person(?X0) , src_Offer(?X0) , src_hasAddress(?X0,?Y6) , src_PhysicalPerson(?X7) , src_Stock(?X8) , src_FinantialInstrument(?X0) .
+src_isListedIn(?X4,?X5) -> src_isListedIn(?X1,?Y1) , src_belongsToCompany(?X0,?Y0) , src_StockExchangeMember(?X0) , src_tradesOnBehalfOf(?X4,?Y0) , src_StockTrader(?X5) , src_Trader(?X6) .
+src_isExecutedFor(?X3,?X5) -> src_isExecutedFor(?X0,?Y0) , src_isExecutedBy(?X0,?Y2) , src_involvesInstrument(?X3,?Y0) , src_hasStock(?X0,?Y4) , src_StockExchangeList(?X5) , src_listsStock(?X0,?Y0) , src_isTradedIn(?X0,?Y0) , src_usesBroker(?X8,?Y0) .

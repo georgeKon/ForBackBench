@@ -1,0 +1,10 @@
+src_AdministrativeStaff(?01,?05,?12) -> src_AdministrativeStaff(?01) , src_advisor(?02,?12) , src_affiliatedOrganizationOf(?03,?10) , src_affiliateOf(?00,?14) , src_age(?05,?10) , src_Article(?00) , src_AssistantProfessor(?00) , src_AssociateProfessor(?08) , src_Book(?09) , src_Chair(?010) .
+src_ClericalStaff(?02,?05,?07) -> src_ClericalStaff(?01) , src_College(?02) , src_ConferencePaper(?00) , src_Course(?04) , src_Dean(?05) , src_degreeFrom(?00,?16) , src_Department(?07) , src_Director(?08) , src_doctoralDegreeFrom(?09,?10) , src_emailAddress(?00,?110) .
+src_Employee(?05,?07) -> src_Employee(?00) , src_Faculty(?02) , src_FullProfessor(?00) , src_GraduateCourse(?04) , src_GraduateStudent(?05) , src_hasAlumnus(?00,?10) , src_headOf(?07,?17) .
+src_Institute(?00,?17) -> src_Institute(?01) , src_JournalArticle(?02) , src_Lecturer(?00) , src_listedCourse(?00,?14) , src_Manual(?05) , src_mastersDegreeFrom(?00,?16) , src_member(?00,?17) .
+src_memberOf(?10) -> src_memberOf(?00,?10) , src_Organization(?02) , src_orgPublication(?00,?10) , src_Person(?00) , src_PostDoc(?00) .
+src_Professor(?01,?15) -> src_Professor(?01) , src_Program(?02) , src_Publication(?00) , src_publicationAuthor(?04,?14) , src_publicationDate(?00,?15) , src_publicationResearch(?00,?16) , src_Research(?00) .
+src_ResearchAssistant(?04,?16) -> src_ResearchAssistant(?01) , src_ResearchGroup(?02) , src_researchProject(?00,?13) , src_Schedule(?04) , src_Software(?00) , src_softwareDocumentation(?06,?16) .
+src_softwareVersion(?03,?05) -> src_softwareVersion(?00,?11) , src_Specification(?02) , src_Student(?03) , src_subOrganizationOf(?04,?10) , src_SystemsStaff(?05) , src_takesCourse(?00,?16) , src_teacherOf(?00,?10) , src_TeachingAssistant(?00) , src_teachingAssistantOf(?00,?10) .
+src_TechnicalReport(?10) -> src_TechnicalReport(?01) , src_telephone(?02,?10) , src_tenured(?00,?10) , src_title(?00,?10) , src_undergraduateDegreeFrom(?00,?15) , src_UndergraduateStudent(?00) .
+src_University(?02) -> src_University(?01) , src_UnofficialPublication(?02) , src_VisitingProfessor(?03) , src_Work(?04) , src_worksFor(?00,?10) .
