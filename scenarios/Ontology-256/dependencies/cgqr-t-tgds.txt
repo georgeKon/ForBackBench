@@ -1,0 +1,191 @@
+societyvi1nl0ce1(?A,?B) -> differentvi1nl0ce0(?A,?B) .
+describevh1nl0ce1(?A,?B) -> bluevh1nl0ce0(?A,?B) .
+expansionvnm1nl0ce2(?A,?B) -> placevnm1nl0ce1(?A,?B) , restvnm1nl0ce0(?A,?B) .
+blowvi2nl0ce1(?A,?B) -> approvalvi2nl0ce0(?A,?B) .
+usevh2nl0ce1(?A,?B) -> involvevh2nl0ce0(?A,?B) .
+handlevnm2nl0ce2(?A,?B) -> collectionvnm2nl0ce1(?A,?B) , parallelvnm2nl0ce0(?A,?B) .
+provevi3nl0ce1(?A,?B) -> kindvi3nl0ce0(?A,?B) .
+chargevh3nl0ce1(?A,?B) -> indicatevi40nl0ce1(?A,?B) , doorvh3nl0ce0(?A,?B) .
+languagevnm3nl0ce2(?A,?B) -> politicalvnm3nl0ce1(?A,?B) , farmvnm3nl0ce0(?A,?B) .
+mentionvi4nl0ce1(?A,?B) -> involvevi4nl0ce0(?A,?B) .
+countvh4nl0ce1(?A,?B) -> completevh4nl0ce0(?A,?B) .
+acceptvnm4nl0ce2(?A,?B) -> painvnm4nl0ce1(?A,?B) , goldvnm4nl0ce0(?A,?B) .
+straightvi5nl0ce1(?A,?B) -> painvi5nl0ce0(?A,?B) .
+probablevh5nl0ce1(?A,?B) -> recordvh5nl0ce0(?A,?B) .
+seavnm5nl0ce2(?A,?B) -> dependentvnm5nl0ce1(?A,?B) , bootvnm5nl0ce0(?A,?B) .
+givevi6nl0ce1(?A,?B) -> ovenvi6nl0ce0(?A,?B) .
+hatevh6nl0ce1(?A,?B) -> consciousvnm13nl0ce0(?A,?B) , animalvh6nl0ce0(?A,?B) .
+summervnm6nl0ce2(?A,?B) -> latevnm6nl0ce1(?A,?B) , arguevnm6nl0ce0(?A,?B) .
+latevi7nl0ce1(?A,?B) -> peacevi40nl0ce0(?A,?B) , flyvi7nl0ce0(?A,?B) .
+fertilevh7nl0ce1(?A,?B) -> sleepvnm12nl0ce0(?A,?B) , stonevh7nl0ce0(?A,?B) .
+hammervnm7nl0ce2(?A,?B) -> churchvnm7nl0ce1(?A,?B) , awakevnm7nl0ce0(?A,?B) .
+snakevi8nl0ce1(?A,?B) -> complainvi8nl0ce0(?A,?B) .
+settlevh8nl0ce1(?A,?B) -> touchvh8nl0ce0(?A,?B) .
+jumpvnm8nl0ce2(?A,?B) -> greenvnm8nl0ce1(?A,?B) , trickvnm8nl0ce0(?A,?B) .
+forgivevi9nl0ce1(?A,?B) -> degreevi9nl0ce0(?A,?B) .
+fictionvh9nl0ce1(?A,?B) -> accountvh9nl0ce0(?A,?B) .
+roomvnm9nl0ce2(?A,?B) -> voicevnm9nl0ce1(?A,?B) , ringvnm9nl0ce0(?A,?B) .
+longvi10nl0ce1(?A,?B) -> comevi10nl0ce0(?A,?B) .
+requirevh10nl0ce1(?A,?B) -> replyvh10nl0ce0(?A,?B) .
+digestionvnm10nl0ce2(?A,?B) -> pointvnm10nl0ce1(?A,?B) , churchvnm10nl0ce0(?A,?B) .
+yellowvi11nl0ce1(?A,?B) -> businessvi11nl0ce0(?A,?B) .
+watchvh11nl0ce1(?A,?B) -> beautifulvh11nl0ce0(?A,?B) .
+playvnm11nl0ce2(?A,?B) -> firstvnm11nl0ce1(?A,?B) , comparevnm11nl0ce0(?A,?B) .
+secretvi12nl0ce1(?A,?B) -> providevi12nl0ce0(?A,?B) .
+complexvh12nl0ce1(?A,?B) -> tryvh12nl0ce0(?A,?B) .
+enginevnm12nl0ce2(?A,?B) -> measurevnm12nl0ce1(?A,?B) , sleepvnm12nl0ce0(?A,?B) .
+lookvi13nl0ce1(?A,?B) -> threadvi13nl0ce0(?A,?B) .
+backvh13nl0ce1(?A,?B) -> wetvh13nl0ce0(?A,?B) .
+loosevnm13nl0ce2(?A,?B) -> waitvnm13nl0ce1(?A,?B) , consciousvnm13nl0ce0(?A,?B) .
+smokevi14nl0ce1(?A,?B) -> advertisementvi14nl0ce0(?A,?B) .
+fathervh14nl0ce1(?A,?B) -> coatvh14nl0ce0(?A,?B) .
+adjustmentvnm14nl0ce2(?A,?B) -> believevnm14nl0ce1(?A,?B) , skinvnm14nl0ce0(?A,?B) .
+changevi15nl0ce1(?A,?B) -> jewelvi15nl0ce0(?A,?B) .
+knowvh15nl0ce1(?A,?B) -> placevnm1nl0ce1(?A,?B) , containvh15nl0ce0(?A,?B) .
+buttervnm15nl0ce2(?A,?B) -> sistervnm15nl0ce1(?A,?B) , presentvnm15nl0ce0(?A,?B) .
+beevi16nl0ce1(?A,?B) -> skinvi24nl0ce1(?A,?B) , involvevi16nl0ce0(?A,?B) .
+reflectvh16nl0ce1(?A,?B) -> affordvh16nl0ce0(?A,?B) .
+secondvnm16nl0ce2(?A,?B) -> readingvnm16nl0ce1(?A,?B) , tinvnm16nl0ce0(?A,?B) .
+shoevi17nl0ce1(?A,?B) -> hidevi17nl0ce0(?A,?B) .
+actvh17nl0ce1(?A,?B) -> crossvh17nl0ce0(?A,?B) .
+babyvnm17nl0ce2(?A,?B) -> raisevnm17nl0ce1(?A,?B) , sizevnm17nl0ce0(?A,?B) .
+bandvi18nl0ce1(?A,?B) -> pointvi18nl0ce0(?A,?B) .
+presentvh18nl0ce1(?A,?B) -> levelvh18nl0ce0(?A,?B) .
+avoidvnm18nl0ce2(?A,?B) -> amountvnm18nl0ce1(?A,?B) , ovenvnm18nl0ce0(?A,?B) .
+smilevi19nl0ce1(?A,?B) -> chalkvi19nl0ce0(?A,?B) .
+brushvh19nl0ce1(?A,?B) -> arrangevh19nl0ce0(?A,?B) .
+mattervnm19nl0ce2(?A,?B) -> stitchvnm19nl0ce1(?A,?B) , attackvnm19nl0ce0(?A,?B) .
+hidevi20nl0ce1(?A,?B) -> violentvi20nl0ce0(?A,?B) .
+wavevh20nl0ce1(?A,?B) -> agenciesvh20nl0ce0(?A,?B) .
+examinevnm20nl0ce2(?A,?B) -> societyvi22nl0ce1(?A,?B) , farmvnm3nl0ce0(?A,?B) , remainvnm20nl0ce1(?A,?B) , familyvnm20nl0ce0(?A,?B) .
+cookvi21nl0ce1(?A,?B) -> screwvi21nl0ce0(?EX1) .
+confirmvh21nl0ce1(?A,?B) -> touchvh21nl0ce0(?A,?B) .
+involvevnm21nl0ce2(?A,?B) -> endvnm21nl0ce1(?A,?B) , languagevnm21nl0ce0(?A,?B) .
+societyvi22nl0ce1(?A,?B) -> narrowvi45nl0ce0(?A,?B) , bedvi22nl0ce0(?A,?B) .
+mindvh22nl0ce1(?A,?B) -> papervh22nl0ce0(?A,?B) .
+bluevnm22nl0ce2(?A,?B) -> bluevh1nl0ce0(?A,?B) , branchvnm22nl0ce1(?A,?B) , leftvnm22nl0ce0(?A,?B) .
+whitevi23nl0ce1(?A,?B) -> usevi23nl0ce0(?A,?B) .
+examplevh23nl0ce1(?A,?B) -> concernvh23nl0ce0(?A,?B) .
+recordvnm23nl0ce2(?A,?B) -> shakevnm23nl0ce1(?A,?B) , simplevnm23nl0ce0(?A,?B) .
+skinvi24nl0ce1(?A,?B) -> havevi24nl0ce0(?A,?B) .
+paintvh24nl0ce1(?A,?B) -> discussvnm32nl0ce1(?A,?B) , systemvh24nl0ce0(?A,?B) .
+authorityvnm24nl0ce2(?A,?B) -> punishmentvnm24nl0ce1(?A,?B) , machinevnm24nl0ce0(?A,?B) .
+dustvi25nl0ce1(?A,?B) -> electricvi25nl0ce0(?A,?B) .
+ovenvh25nl0ce1(?A,?B) -> facevh25nl0ce0(?A,?B) .
+mistvnm25nl0ce2(?A,?B) -> painvnm4nl0ce1(?A,?B) , delicatevi38nl0ce1(?A,?B) , historyvnm25nl0ce1(?A,?B) , warvnm25nl0ce0(?A,?B) .
+delicatevi26nl0ce1(?A,?B) -> providevi26nl0ce0(?A,?B) .
+usevh26nl0ce1(?A,?B) -> inventionvh26nl0ce0(?A,?B) .
+expressvnm26nl0ce2(?A,?B) -> authorityvnm26nl0ce1(?A,?B) , sockvnm26nl0ce0(?A,?B) .
+needvi27nl0ce1(?A,?B) -> nationvi27nl0ce0(?A,?B) .
+separatevh27nl0ce1(?A,?B) -> havevh27nl0ce0(?A,?B) .
+leathervnm27nl0ce2(?A,?B) -> readingvnm16nl0ce1(?A,?B) , recordvnm23nl0ce2(?A,?B) , knotvnm27nl0ce1(?A,?B) , darkvnm27nl0ce0(?A,?B) .
+delivervi28nl0ce1(?A,?B) -> imaginevi28nl0ce0(?A,?B) .
+degreevh28nl0ce1(?A,?B) -> facevh28nl0ce0(?A,?B) .
+returnvnm28nl0ce2(?A,?B) -> shutvnm28nl0ce1(?A,?B) , risevnm28nl0ce0(?A,?B) .
+edgevi29nl0ce1(?A,?B) -> discovervi29nl0ce0(?A,?B) .
+fallvh29nl0ce1(?A,?B) -> thumbvh29nl0ce0(?A,?B) .
+selectionvnm29nl0ce2(?A,?B) -> softvnm29nl0ce1(?A,?B) , shamevnm29nl0ce0(?A,?B) .
+liftvi30nl0ce1(?A,?B) -> platevi30nl0ce0(?A,?B) .
+replyvh30nl0ce1(?A,?B) -> protestvh30nl0ce0(?A,?B) .
+workvnm30nl0ce2(?A,?B) -> colorvnm30nl0ce1(?A,?B) , regretvnm30nl0ce0(?A,?B) .
+sortvi31nl0ce1(?A,?B) -> expertvi31nl0ce0(?A,?B) .
+cowvh31nl0ce1(?A,?B) -> materialvh31nl0ce0(?A,?B) .
+weathervnm31nl0ce2(?A,?B) -> delivervi28nl0ce1(?A,?B) , completevh4nl0ce0(?A,?B) , countvnm31nl0ce1(?A,?B) , canvasvnm31nl0ce0(?A,?B) .
+illvi32nl0ce1(?A,?B) -> climbvi32nl0ce0(?A,?B) .
+minevh32nl0ce1(?A,?B) -> jewelvi15nl0ce0(?A,?B) , testvh32nl0ce0(?EX2,?B) .
+moonvnm32nl0ce2(?A,?B) -> punishmentvnm24nl0ce1(?A,?B) , bluevh1nl0ce0(?A,?B) , discussvnm32nl0ce1(?A,?B) , stitchvnm32nl0ce0(?A,?B) .
+collarvi33nl0ce1(?A,?B) -> feeblevi33nl0ce0(?A,?B) .
+openvh33nl0ce1(?A,?B) -> versevh33nl0ce0(?A,?B) .
+yellowvnm33nl0ce2(?A,?B) -> forgivevnm33nl0ce1(?A,?B) , knotvnm33nl0ce0(?A,?B) .
+peacevi34nl0ce1(?A,?B) -> joinvi34nl0ce0(?A,?B) .
+attorneyvh34nl0ce1(?A,?B) -> restvh34nl0ce0(?A,?B) .
+helpvi35nl0ce1(?A,?B) -> protestvi35nl0ce0(?A,?B) .
+agreementvh35nl0ce1(?A,?B) -> seemvh35nl0ce0(?EX3,?B) .
+bandvi36nl0ce1(?A,?B) -> developvi36nl0ce0(?A,?B) .
+jumpvh36nl0ce1(?A,?B) -> glovevh36nl0ce0(?A,?B) .
+approvalvi37nl0ce1(?A,?B) -> shutvi37nl0ce0(?A,?B) .
+respectvh37nl0ce1(?A,?B) -> letvh37nl0ce0(?A,?B) .
+bottlevnm37nl0ce2(?A,?B) -> dievnm37nl0ce1(?A,?B) , movevnm37nl0ce0(?A,?B) .
+delicatevi38nl0ce1(?A,?B) -> knowledgevi38nl0ce0(?A,?B) .
+chemicalvh38nl0ce1(?A,?B) -> endvnm21nl0ce1(?A,?B) , nightvh38nl0ce0(?A,?B) .
+reportvnm38nl0ce2(?A,?B) -> breathvnm38nl0ce1(?A,?B) , containvnm38nl0ce0(?A,?B) .
+cutvh39nl0ce1(?A,?B) -> flyvh39nl0ce0(?A,?B) .
+angryvnm39nl0ce2(?A,?B) -> wayvnm39nl0ce1(?A,?B) , summervnm39nl0ce0(?A,?B) .
+indicatevi40nl0ce1(?A,?B) -> peacevi40nl0ce0(?A,?B) .
+placevh40nl0ce1(?A,?B) -> movevh40nl0ce0(?A,?B) .
+goldvnm40nl0ce2(?A,?B) -> experiencevnm40nl0ce1(?A,?B) , ringvnm40nl0ce0(?A,?B) .
+separatevi41nl0ce1(?A,?B) -> touchvi41nl0ce0(?A,?B) .
+orangevh41nl0ce1(?A,?B) -> sidevh41nl0ce0(?A,?B) .
+feeblevi33nl0ce0(?A,?B) -> inventionvh26nl0ce0(?A,?B) , softvnm29nl0ce1(?A,?B) .
+connectionvh42nl0ce1(?A,?B) -> sunvh42nl0ce0(?A,?B) .
+relatevnm42nl0ce2(?A,?B) -> existvnm42nl0ce1(?A,?B) , sensevnm42nl0ce0(?A,?B) .
+clockad7nl0ce0(?A,?B) -> seaad21nl0ce0(?A,?B) .
+dayvh43nl0ce1(?A,?B) -> bodyvh43nl0ce0(?A,?B) .
+simplevnm23nl0ce0(?A,?B) -> tinvnm16nl0ce0(?A,?B) , delivervi28nl0ce1(?A,?B) .
+climbvi32nl0ce0(?A,?B) -> secondvnm16nl0ce2(?A,?B) .
+foundvh44nl0ce1(?A,?B) -> trayvh44nl0ce0(?A,?B) .
+groupvnm44nl0ce2(?A,?B) -> industryvnm44nl0ce1(?A,?B) , mouthvnm44nl0ce0(?A,?B) .
+diseasevi45nl0ce1(?A,?B) -> narrowvi45nl0ce0(?A,?B) .
+shadevh45nl0ce1(?A,?B) -> businessvi11nl0ce0(?A,?B) , happenvh45nl0ce0(?A,?B) .
+yellowvnm45nl0ce2(?A,?B) -> contributevnm45nl0ce1(?A,?B) , gardenvnm45nl0ce0(?A,?B) .
+comparevi46nl0ce1(?A,?B) -> archvi46nl0ce0(?A,?B) .
+mealvh46nl0ce1(?A,?B) -> clothvh46nl0ce0(?A,?B) .
+officevnm46nl0ce2(?A,?B) -> poisonvnm46nl0ce1(?A,?B) , grassvnm46nl0ce0(?A,?B) .
+soundvi47nl0ce1(?A,?B) -> effectvi47nl0ce0(?A,?B) .
+fallvh47nl0ce1(?A,?B) -> solidvh47nl0ce0(?A,?B) .
+truevnm47nl0ce2(?A,?B) -> intendvnm47nl0ce1(?A,?B) , ownvnm47nl0ce0(?A,?B) .
+obtainvi48nl0ce1(?A,?B) -> factvi48nl0ce0(?A,?B) .
+achievevh48nl0ce1(?A,?B) -> clearvh48nl0ce0(?A,?B) .
+mustvnm48nl0ce2(?A,?B) -> flowervnm48nl0ce1(?A,?B) , voicevnm48nl0ce0(?A,?B) .
+tightvi49nl0ce1(?A,?B) -> fishvi49nl0ce0(?A,?B) .
+bucketvh49nl0ce1(?A,?B) -> languagevh49nl0ce0(?A,?B) .
+processvnm49nl0ce2(?A,?B) -> armvnm49nl0ce1(?A,?B) , managervnm49nl0ce0(?A,?B) .
+usevi23nl0ce0(?A,?B) -> separatevi41nl0ce1(?A,?B) .
+workvnm50nl0ce2(?A,?B) -> holdvnm50nl0ce1(?A,?B) , brickvnm50nl0ce0(?A,?B) .
+kindvi3nl0ce0(?A,?B) -> beevi16nl0ce1(?A,?B) , yellowvi11nl0ce1(?A,?B) .
+roundvh51nl0ce1(?A,?B) -> delivervh51nl0ce0(?EX4,?B) .
+mouthvnm44nl0ce0(?A,?B) -> industryvnm44nl0ce1(?A,?B) , accountvh9nl0ce0(?A,?B) .
+industryvi52nl0ce1(?A,?B) -> lightvi52nl0ce0(?A,?B) .
+cardvnm52nl0ce2(?A,?B) -> smokevnm52nl0ce1(?A,?B) , snowvnm52nl0ce0(?A,?B) .
+watchvh53nl0ce1(?A,?B) -> linevh53nl0ce0(?A,?B) .
+musicvnm53nl0ce2(?A,?B) -> movevnm53nl0ce1(?A,?B) , relationvnm53nl0ce0(?A,?B) .
+regretvi54nl0ce1(?A,?B) -> swimvi54nl0ce0(?A,?B) .
+lockvnm54nl0ce2(?A,?B) -> bloodvnm54nl0ce1(?A,?B) , privatevnm54nl0ce0(?A,?B) .
+reasonad18nl0ce0(?A,?B) -> readingad32nl0ce0(?A,?B) .
+stonevh7nl0ce0(?A,?B) -> ownvnm47nl0ce0(?A,?B) , delicatevi26nl0ce1(?A,?B) .
+twistvi56nl0ce1(?A,?B) -> errorvi56nl0ce0(?A,?B) .
+loosevh56nl0ce1(?A,?B) -> learnvh56nl0ce0(?A,?B) .
+parallelvnm2nl0ce0(?A,?B) -> sensevnm42nl0ce0(?A,?B) , firstvnm11nl0ce1(?A,?B) .
+damagead33nl0ce0(?A,?B) -> whistlead49nl0ce0(?A,?B) .
+cartvh57nl0ce1(?A,?B) -> girlvh57nl0ce0(?A,?B) .
+carryvnm57nl0ce2(?A,?B) -> fertilevnm57nl0ce1(?A,?B) , offervnm57nl0ce0(?A,?B) .
+playvi58nl0ce1(?A,?B) -> curvevi58nl0ce0m(?A,?B) .
+knockvh58nl0ce1(?A,?B) -> nationvh58nl0ce0(?A,?B) .
+layvnm58nl0ce2(?A,?B) -> loosevnm58nl0ce1(?A,?B) , liquidvnm58nl0ce0(?A,?B) .
+meanvi59nl0ce1(?A,?B) -> substancevi59nl0ce0(?A,?B) .
+playvh59nl0ce1(?A,?B) -> answervh59nl0ce0(?A,?B) .
+businessvi11nl0ce0(?A,?B) -> movevnm37nl0ce0(?A,?B) , knotvnm33nl0ce0(?A,?B) .
+jellyvi60nl0ce1(?A,?B) -> femalevi60nl0ce0(?A,?B) .
+pagevh60nl0ce1(?A,?B) -> weightvh60nl0ce0(?EX5,?B) .
+safevnm60nl0ce2(?A,?B) -> commonvnm60nl0ce1(?A,?B) , fallvnm60nl0ce0(?A,?B) .
+greyvi61nl0ce1(?A,?B) -> avoidvi61nl0ce0(?A,?B) .
+stickvh61nl0ce1(?A,?B) -> bluevh61nl0ce0(?A,?B) .
+deepad16nl0ce0(?A,?B) -> eatad8nl0ce0(?A,?B) .
+basevh62nl0ce1(?A,?B) -> touchvi41nl0ce0(?A,?B) , smellvh62nl0ce0(?A,?B) .
+couldvnm62nl0ce2(?A,?B) -> bellvnm62nl0ce1(?A,?B) , cushionvnm62nl0ce0(?A,?B) .
+gunvi63nl0ce1(?A,?B) -> wouldvi63nl0ce0(?A,?B) .
+sciencevnm63nl0ce2(?A,?B) -> concernvnm63nl0ce1(?A,?B) , collarvnm63nl0ce0(?A,?B) .
+encouragevi64nl0ce1(?A,?B) -> neckvi64nl0ce0(?A,?B) .
+twistvh64nl0ce1(?A,?B) -> flyvh64nl0ce0(?A,?B) .
+horsevnm64nl0ce2(?A,?B) -> greyvnm64nl0ce1(?A,?B) , usevnm64nl0ce0(?A,?B) .
+letvh37nl0ce0(?A,?B) -> protestad56nl0ce0(?A,?B) .
+copyad36nl0ce0(?A,?B) -> languagevh49nl0ce0(?A,?B) .
+privatevnm54nl0ce0(?A,?B) -> authorityvnm26nl0ce1(?A,?B) .
+greyvnm64nl0ce1(?A,?B) -> ovenvi6nl0ce0(?A,?B) .
+sizevnm17nl0ce0(?A,?B) -> ovenvnm18nl0ce0(?A,?B) .
+shakevnm23nl0ce1(?A,?B) -> flyvh64nl0ce0(?A,?B) .
+killad38nl0ce0(?A,?B) -> foundvh44nl0ce1(?A,?B) .
+forgivevnm33nl0ce1(?A,?B) -> deepad16nl0ce0(?A,?B) .
+usead61nl0ce0(?A,?B) -> knowvh15nl0ce1(?A,?B) .
+waxad60nl0ce0(?A,?B) -> shadevh45nl0ce1(?A,?B) .
+steelad42nl0ce0(?A,?B) -> forgivevi9nl0ce1(?A,?B) .

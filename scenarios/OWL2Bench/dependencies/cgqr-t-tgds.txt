@@ -1,0 +1,216 @@
+AeronauticalEngineering(?A) -> Engineering(?A) .
+Anthropology(?A) -> HumanitiesAndSocial(?A) .
+Architecture(?A) -> FineArts(?A) .
+Article(?A) -> Publication(?A) .
+AsianArts(?A) -> FineArts(?A) .
+AssistantProfessor(?A) -> Professor(?A) .
+AssociateProfessor(?A) -> Professor(?A) .
+Astronomy(?A) -> Science(?A) .
+Badminton(?A) -> Sports(?A) .
+BasketBall(?A) -> Sports(?A) .
+BasketBallFan(?A) -> isCrazyAbout(?A,?EX1), BasketBall(?EX1) .
+BasketBallLover(?A) -> loves(?A,?EX2), BasketBall(?EX2) .
+Biology(?A) -> Science(?A) .
+BiomedicalEngineering(?A) -> Engineering(?A) .
+Book(?A) -> Publication(?A) .
+Chair(?A) -> isHeadOf(?A,?EX3), Department(?EX3) , FullProfessor(?A) .
+ChemicalEngineering(?A) -> Engineering(?A) .
+Chemistry(?A) -> Science(?A) .
+CivilEngineering(?A) -> Engineering(?A) .
+ClericalStaff(?A) -> SupportingStaff(?A) .
+CoEdCollege(?A) -> College(?A) .
+College(?A) -> Organization(?A) .
+ComputerEngineering(?A) -> Engineering(?A) .
+ComputerScience(?A) -> Science(?A) .
+ConferencePaper(?A) -> Article(?A) .
+Cricket(?A) -> Sports(?A) .
+Dean(?A) -> isHeadOf(?A,?EX4), College(?EX4) , FullProfessor(?A) .
+Department(?A) -> Organization(?A) .
+DesignManagement(?A) -> Management(?A) .
+Director(?A) -> isHeadOf(?A,?EX5), Program(?EX5) , FullProfessor(?A) .
+Drama(?A) -> FineArts(?A) .
+Economics(?A) -> HumanitiesAndSocial(?A) .
+ElectiveCourse(?A) -> Course(?A) .
+ElectricalEngineering(?A) -> Engineering(?A) .
+Employee(?A) -> worksFor(?A,?EX6), Organization(?EX6) , Person(?A) .
+EmployeeEvaluationCommittee(?A) -> EvaluationCommittee(?A) .
+Engineering(?A) -> CollegeDiscipline(?A) .
+English(?A) -> HumanitiesAndSocial(?A) .
+Faculty(?A) -> teachesCourse(?A,?EX7), Course(?EX7) .
+FinancialAndAccountingManagement(?A) -> Management(?A) .
+FineArts(?A) -> CollegeDiscipline(?A) .
+FootBall(?A) -> Sports(?A) .
+FullProfessor(?A) -> Professor(?A) .
+Game(?A) -> Interest(?A) .
+Geosciences(?A) -> Science(?A) .
+History(?A) -> HumanitiesAndSocial(?A) .
+HumanResourceManagement(?A) -> Management(?A) .
+Humanities(?A) -> HumanitiesAndSocial(?A) .
+HumanitiesAndSocial(?A) -> CollegeDiscipline(?A) .
+IndustryEngineering(?A) -> Engineering(?A) .
+Institute(?A) -> Organization(?A) .
+JournalArticle(?A) -> Article(?A) .
+LatinArts(?A) -> FineArts(?A) .
+Lecturer(?A) -> Faculty(?A) .
+Linguistics(?A) -> HumanitiesAndSocial(?A) .
+Management(?A) -> CollegeDiscipline(?A) .
+Manual(?A) -> Publication(?A) .
+MarineScience(?A) -> Science(?A) .
+MarketingManagement(?A) -> Management(?A) .
+MaterialScienceEngineering(?A) -> Engineering(?A) .
+MaterialsScience(?A) -> Science(?A) .
+Mathematics(?A) -> Science(?A) .
+MechanicalEngineering(?A) -> Engineering(?A) .
+MediaArtsAndSciences(?A) -> FineArts(?A) .
+MedievalArts(?A) -> FineArts(?A) .
+ModernArts(?A) -> FineArts(?A) .
+ModernLanguages(?A) -> HumanitiesAndSocial(?A) .
+Movie(?A) -> Interest(?A) .
+Music(?A) -> Interest(?A) .
+MusicsClass(?A) -> FineArts(?A) .
+NonScience(?A) -> CollegeDiscipline(?A) .
+NonScienceStudent(?A) -> hasMajor(?A,?EX8), NonScience(?EX8) , Student(?A) .
+OperationsManagement(?A) -> Management(?A) .
+OtherStaff(?A) -> SupportingStaff(?A) .
+PGProgram(?A) -> Program(?A) .
+PGStudent(?A) -> enrollFor(?A,?EX9), PGProgram(?EX9) .
+Painting(?A) -> Interest(?A) .
+PeopleWithHobby(?A) -> likes(?A,?EX10), Interest(?EX10) .
+PerformingArts(?A) -> FineArts(?A) .
+PetroleumlEngineering(?A) -> Engineering(?A) .
+PhDProgram(?A) -> Program(?A) .
+PhDStudent(?A) -> enrollFor(?A,?EX11), PhDProgram(?EX11) .
+Philosophy(?A) -> HumanitiesAndSocial(?A) .
+Physics(?A) -> Science(?A) .
+PostDoc(?A) -> Faculty(?A) .
+Professor(?A) -> Faculty(?A) .
+ProjectManagement(?A) -> Management(?A) .
+Psychology(?A) -> HumanitiesAndSocial(?A) .
+PublicRelationsManagement(?A) -> Management(?A) .
+Reading(?A) -> Interest(?A) .
+Religions(?A) -> HumanitiesAndSocial(?A) .
+ResearchAssistant(?A) -> Employee(?A) .
+ResearchGroup(?A) -> Organization(?A) .
+ResearchProject(?A) -> Work(?A) .
+RiskManagement(?A) -> Management(?A) .
+SalesManagement(?A) -> Management(?A) .
+School(?A) -> College(?A) , Organization(?A) .
+Science(?A) -> CollegeDiscipline(?A) .
+ScienceStudent(?A) -> hasMajor(?A,?EX12), Science(?EX12) .
+Software(?A) -> Publication(?A) .
+Specification(?A) -> Publication(?A) .
+Sports(?A) -> Interest(?A) .
+SportsFan(?A) -> isCrazyAbout(?A,?EX13), Sports(?EX13) .
+SportsLover(?A) -> loves(?A,?EX14), Sports(?EX14) .
+Statistics(?A) -> Science(?A) .
+Student(?A) -> enrollIn(?A,?EX15), Department(?EX15) .
+StudentEvaluationCommittee(?A) -> EvaluationCommittee(?A) .
+SupplyChainManagement(?A) -> Management(?A) .
+Swimming(?A) -> Sports(?A) .
+SystemStaff(?A) -> SupportingStaff(?A) .
+TeachingAssistant(?A) -> isTeachingAssistantOf(?A,?EX16), Course(?EX16) .
+TeachingCourse(?A) -> Course(?A) , Work(?A) .
+TechnicalReport(?A) -> Article(?A) .
+Tennis(?A) -> Sports(?A) .
+TheatreAndDance(?A) -> FineArts(?A) .
+ThesisEvaluationCommittee(?A) -> StudentEvaluationCommittee(?A) .
+Travelling(?A) -> Interest(?A) .
+UGCourse(?A) -> Course(?A) .
+UGProgram(?A) -> Program(?A) .
+UGStudent(?A) -> enrollFor(?A,?EX17), UGProgram(?EX17) .
+University(?A) -> Organization(?A) .
+UnofficialPublication(?A) -> Publication(?A) .
+VisitingProfessor(?A) -> Professor(?A) .
+WomanCollege(?A) -> College(?A) .
+dislikes(?A,?B) -> Interest(?B) , Person(?A) .
+enrollIn(?A,?B) -> isStudentOf(?A,?B) , Department(?B) , Student(?A) .
+evaluatedBy(?A,?B) -> evaluates(?B,?A) , EvaluationCommittee(?B) , Person(?A) .
+evaluates(?A,?B) -> Person(?B) , EvaluationCommittee(?A) .
+hasAlumnus(?A,?B) -> hasDegreeFrom(?B,?A) , Person(?B) , University(?A) .
+hasAssistantProfessor(?A,?B) -> hasProfessor(?A,?B) , isAssistantProfessorOf(?B,?A) , AssistantProfessor(?B) , Department(?A) .
+hasAssociateProfessor(?A,?B) -> hasProfessor(?A,?B) , isAssociateProfessorOf(?B,?A) , AssociateProfessor(?B) , Department(?A) .
+hasAuthor(?A,?B) -> Person(?B) , Publication(?A) .
+hasClericalStaff(?A,?B) -> hasSupportingStaff(?A,?B) , ClericalStaff(?B) , Department(?A) .
+hasCollaborationWith(?A,?B) -> Person(?B) , Person(?A) .
+hasCollege(?A,?B) -> hasSubOrganization(?A,?B) , isCollegeOf(?B,?A) , College(?B) , University(?A) .
+hasCollegeDiscipline(?A,?B) -> CollegeDiscipline(?B) , College(?A) .
+hasCommitteeMembers(?A,?B) -> hasMember(?A,?B) , Person(?B) , EvaluationCommittee(?A) .
+hasDean(?A,?B) -> isDeanOf(?B,?A) , Person(?B) , Organization(?A) .
+hasDegreeFrom(?A,?B) -> University(?B) , Person(?A) .
+hasDepartment(?A,?B) -> hasSubOrganization(?A,?B) , isDepartmentOf(?B,?A) , Department(?B) , College(?A) .
+hasDoctoralDegreeFrom(?A,?B) -> hasDegreeFrom(?A,?B) , University(?B) , Person(?A) .
+hasEmployee(?A,?B) -> hasMember(?A,?B) , worksFor(?B,?A) .
+hasEmployeeEvaluationCommittee(?A,?B) -> hasEvaluationCommittee(?A,?B) , EmployeeEvaluationCommittee(?B) , Organization(?A) .
+hasEvaluationCommittee(?A,?B) -> EvaluationCommittee(?B) , Organization(?A) .
+hasFaculty(?A,?B) -> hasEmployee(?A,?B) , isFacultyOf(?B,?A) , Faculty(?B) , Department(?A) .
+hasFullProfessor(?A,?B) -> hasProfessor(?A,?B) , isFullProfessorOf(?B,?A) , FullProfessor(?B) , Department(?A) .
+hasHead(?A,?B) -> hasFullProfessor(?A,?B) , isHeadOf(?B,?A) .
+hasLecturer(?A,?B) -> hasFaculty(?A,?B) , isLecturerOf(?B,?A) , Lecturer(?B) , Department(?A) .
+hasMajor(?A,?B) -> Person(?A) .
+hasMasterDegreeFrom(?A,?B) -> hasDegreeFrom(?A,?B) , University(?B) , Person(?A) .
+hasMember(?A,?B) -> isMemberOf(?B,?A) , Person(?B) , Organization(?A) .
+hasOtherStaff(?A,?B) -> hasSupportingStaff(?A,?B) , OtherStaff(?B) , Department(?A) .
+hasPGProgram(?A,?B) -> hasProgram(?A,?B) , PGProgram(?B) , Department(?A) .
+hasPart(?A,?B) -> isPartOf(?B,?A) , Organization(?B) , Organization(?A) .
+hasPhDProgram(?A,?B) -> hasProgram(?A,?B) , PhDProgram(?B) , Department(?A) .
+hasPostDoc(?A,?B) -> hasFaculty(?A,?B) , isPostDocOf(?B,?A) , PostDoc(?B) , Department(?A) .
+hasProfessor(?A,?B) -> hasFaculty(?A,?B) , isProfessorOf(?B,?A) , Professor(?B) , Department(?A) .
+hasProgram(?A,?B) -> Program(?B) , Department(?A) .
+hasResearchAssistant(?A,?B) -> hasEmployee(?A,?B) , isResearchAssistantOf(?B,?A) , ResearchAssistant(?B) , ResearchGroup(?A) .
+hasResearchGroup(?A,?B) -> hasSubOrganization(?A,?B) , isResearchGroupOf(?B,?A) , ResearchGroup(?B) , University(?A) .
+hasResearchProject(?A,?B) -> hasWork(?A,?B) , ResearchProject(?B) , ResearchGroup(?A) .
+hasStudent(?A,?B) -> hasMember(?A,?B) , isStudentOf(?B,?A) , Student(?B) , Organization(?A) .
+hasStudentEvaluationCommittee(?A,?B) -> hasEvaluationCommittee(?A,?B) , StudentEvaluationCommittee(?B) , Organization(?A) .
+hasSubOrganization(?A,?B) -> hasPart(?A,?B) , isSubOrganizationOf(?B,?A) , Organization(?B) , Organization(?A) .
+hasSupportingStaff(?A,?B) -> hasEmployee(?A,?B) , SupportingStaff(?B) , Department(?A) .
+hasSystemStaff(?A,?B) -> hasSupportingStaff(?A,?B) , SystemStaff(?B) , Department(?A) .
+hasThesisEvaluationCommittee(?A,?B) -> hasStudentEvaluationCommittee(?A,?B) , ThesisEvaluationCommittee(?B) , Organization(?A) .
+hasUGProgram(?A,?B) -> hasProgram(?A,?B) , UGProgram(?B) , Department(?A) .
+hasUndergraduateDegreeFrom(?A,?B) -> hasDegreeFrom(?A,?B) , University(?B) , Person(?A) .
+hasVisitingProfessor(?A,?B) -> hasProfessor(?A,?B) , isVisitingProfessorOf(?B,?A) , VisitingProfessor(?B) , Department(?A) .
+hasWomenCollege(?A,?B) -> hasCollege(?A,?B) .
+hasWork(?A,?B) -> Work(?B) , Employee(?A) .
+isAdvisedBy(?A,?B) -> Professor(?B) , Person(?A) .
+isAffiliatedOrganizationOf(?A,?B) -> Organization(?B) , Organization(?A) .
+isAssistantProfessorOf(?A,?B) -> isProfessorOf(?A,?B) .
+isAssociateProfessorOf(?A,?B) -> isProfessorOf(?A,?B) .
+isClericalStaffOf(?A,?B) -> isSupportingStaffOf(?A,?B) .
+isCollegeOf(?A,?B) -> isSubOrganizationOf(?A,?B) , University(?B) , College(?A) .
+isCrazyAbout(?A,?B) -> loves(?A,?B) , Interest(?B) , Person(?A) .
+isDeanOf(?A,?B) -> Organization(?B) , Person(?A) .
+isDepartmentOf(?A,?B) -> isSubOrganizationOf(?A,?B) , College(?B) , Department(?A) .
+isFacultyOf(?A,?B) -> worksFor(?A,?B) , Organization(?B) , Faculty(?A) .
+isFullProfessorOf(?A,?B) -> isProfessorOf(?A,?B) .
+isHeadOf(?A,?B) -> isFullProfessorOf(?A,?B) .
+isLecturerOf(?A,?B) -> isFacultyOf(?A,?B) .
+isMemberOf(?A,?B) -> Organization(?B) , Person(?A) .
+isOtherStaffOf(?A,?B) -> isSupportingStaffOf(?A,?B) .
+isPartOf(?A,?B) -> Organization(?B) , Organization(?A) .
+isPostDocOf(?A,?B) -> isFacultyOf(?A,?B) .
+isProfessorOf(?A,?B) -> isFacultyOf(?A,?B) .
+isResearchAssistantOf(?A,?B) -> worksFor(?A,?B) .
+isResearchGroupOf(?A,?B) -> isSubOrganizationOf(?A,?B) , University(?B) , ResearchGroup(?A) .
+isStudentOf(?A,?B) -> isMemberOf(?A,?B) , Organization(?B) , Student(?A) .
+isSubOrganizationOf(?A,?B) -> isPartOf(?A,?B) , Organization(?B) , Organization(?A) .
+isSupportingStaffOf(?A,?B) -> worksFor(?A,?B) .
+isSystemStaffOf(?A,?B) -> isSupportingStaffOf(?A,?B) .
+isTaughtBy(?A,?B) -> teachesCourse(?B,?A) , Faculty(?B) , Course(?A) .
+isTeachingAssistantOf(?A,?B) -> Course(?B) , TeachingAssistant(?A) .
+isVisitingProfessorOf(?A,?B) -> isProfessorOf(?A,?B) .
+isWomenCollegeOf(?A,?B) -> isCollegeOf(?A,?B) .
+likes(?A,?B) -> Interest(?B) , Person(?A) .
+loves(?A,?B) -> likes(?A,?B) , Interest(?B) , Person(?A) .
+offerCourse(?A,?B) -> Course(?B) , Department(?A) .
+orgPublication(?A,?B) -> Publication(?B) , Organization(?A) .
+publicationResearch(?A,?B) -> Publication(?A) .
+takesCourse(?A,?B) -> Course(?B) , Student(?A) .
+teachesCourse(?A,?B) -> hasWork(?A,?B) , Course(?B) , Faculty(?A) .
+tenured(?A,?B) -> Professor(?A) .
+worksFor(?A,?B) -> isMemberOf(?A,?B) , Organization(?B) , Employee(?A) .
+hasAge(?A,?B) -> Person(?A) .
+hasEmailAddress(?A,?B) -> Person(?A) .
+hasFirstName(?A,?B) -> Person(?A) .
+hasLastName(?A,?B) -> Person(?A) .
+hasTelephone(?A,?B) -> Person(?A) .
+hasTitle(?A,?B) -> Person(?A) .
+hasAdvisor(?A,?B) -> isAdvisedBy(?A,?B) .
