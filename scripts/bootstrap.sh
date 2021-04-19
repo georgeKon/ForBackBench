@@ -57,6 +57,9 @@ then
   if [[ $4 = "LAV" ]]; then
     java -jar utilityTools/CreateLAVandGAV.jar --create LAV
   fi
+  # if [[ $4 = "BOTH" ]]; then
+  #   java -jar utilityTools/CreateLAVandGAV.jar
+  # fi
 
 
   if [[ $3 = "data" ]]; then
