@@ -49,18 +49,6 @@ then
 
   # java -jar utilityTools/schemaGenerator-1.08.jar -st-tgds $BASE_DIR/dependencies/oneToOne-st-tgds.txt -t-tgds $BASE_DIR/dependencies/oneToOne-t-tgds.txt -s-schema $BASE_DIR/schema/oneToOne/s-schema.txt -t-schema $BASE_DIR/schema/oneToOne/t-schema.txt
   # TODO: create GAV and LAV Schema
-	
-  # TODO: confirm this is the correct place to be creating it
-  if [[ $4 = "GAV" ]]; then
-    java -jar utilityTools/CreateLAVandGAV.jar --create GAV
-  fi
-  if [[ $4 = "LAV" ]]; then
-    java -jar utilityTools/CreateLAVandGAV.jar --create LAV
-  fi
-  # if [[ $4 = "BOTH" ]]; then
-  #   java -jar utilityTools/CreateLAVandGAV.jar
-  # fi
-
 
   if [[ $3 = "data" ]]; then
     for size in ${SIZES[*]}; do
@@ -69,6 +57,19 @@ then
     done
   fi
 fi
+
+
+# TODO: confirm this is the correct place to be creating GAV/LAV mappings
+if [[ $4 = "GAV" ]]; then
+  java -jar utilityTools/CreateLAVandGAV.jar --create GAV
+fi
+if [[ $4 = "LAV" ]]; then
+  java -jar utilityTools/CreateLAVandGAV.jar --create LAV
+fi
+# if [[ $4 = "BOTH" ]]; then
+#   java -jar utilityTools/CreateLAVandGAV.jar
+# fi
+
 
 mkdir -p $BASE_DIR/ontop-files
 java -jar utilityTools/ontopMappingGenerator-1.08.jar -st-tgds $BASE_DIR/dependencies/oneToOne-st-tgds.txt -owl $BASE_DIR/owl/ontology.owl -out $BASE_DIR/ontop-files/mapping.obda
