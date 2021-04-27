@@ -1,48 +1,74 @@
-Acquisition(?X) -> Transaction(?X) .
-Address(?X) -> Thing(?X) .
-Address(?X) -> inverseofhasAddress(?X,?Y), Thing(?Y) .
-Company(?X) -> LegalPerson(?X) .
-Dealer(?X) -> StockBroker(?X) .
-Investor(?X) -> Person(?X) .
-Investor(?X) -> Thing(?X) .
-LegalPerson(?X) -> Person(?X) .
-Offer(?X) -> Transaction(?X) .
-Person(?X) -> Thing(?X) .
-Person(?X) -> hasAddress(?X,?Y), Thing(?Y) .
-PhysicalPerson(?X) -> Person(?X) .
-Stock(?X) -> FinantialInstrument(?X) .
-Stock(?X) -> isListedIn(?X,?Y), Thing(?Y) .
-Stock(?X) -> belongsToCompany(?X,?Y), Thing(?Y) .
-StockBroker(?X) -> StockExchangeMember(?X) .
-StockBroker(?X) -> tradesOnBehalfOf(?X,?Y), Thing(?Y) .
-StockExchangeMember(?X) -> Person(?X) .
-StockExchangeMember(?X) -> Thing(?X) .
-StockTrader(?X) -> StockBroker(?X) .
-Trader(?X) -> StockBroker(?X) .
-Transaction(?X) -> Thing(?X) .
-Transaction(?X) -> isExecutedFor(?X,?Y), Thing(?Y) .
-Transaction(?X) -> isExecutedBy(?X,?Y), Thing(?Y) .
-Transaction(?X) -> involvesInstrument(?X,?Y), Thing(?Y) .
-belongsToCompany(?X,?X1) -> Stock(?X) .
-belongsToCompany(?X,?X1) -> Company(?X1) .
-belongsToCompany(?Y,?X) -> hasStock(?X,?Y) .
-hasAddress(?X,?X1) -> Person(?X) .
-hasAddress(?X,?X1) -> Address(?X1) .
-hasStock(?X,?X1) -> Company(?X) .
-hasStock(?X,?X1) -> Stock(?X1) .
-inverseofhasAddress(?X,?X1) -> Address(?X) .
-inverseofhasAddress(?X,?X1) -> Person(?X1) .
-inverseofhasAddress(?Y,?X) -> hasAddress(?X,?Y) .
-involvesInstrument(?X,?X1) -> Transaction(?X) .
-involvesInstrument(?X,?X1) -> FinantialInstrument(?X1) .
-isExecutedBy(?X,?X1) -> Transaction(?X) .
-isExecutedBy(?X,?X1) -> StockExchangeMember(?X1) .
-isExecutedFor(?X,?X1) -> Transaction(?X) .
-isExecutedFor(?X,?X1) -> Investor(?X1) .
-isListedIn(?X,?X1) -> Stock(?X) .
-isListedIn(?X,?X1) -> StockExchangeList(?X1) .
-isListedIn(?Y,?X) -> listsStock(?X,?Y) .
-isTradedIn(?X,?X1) -> Transaction(?X1) .
-isTradedIn(?Y,?X) -> involvesInstrument(?X,?Y) .
-listsStock(?X,?X1) -> Stock(?X1) .
-usesBroker(?Y,?X) -> tradesOnBehalfOf(?X,?Y) .
+AdministrativeStaff(?X) -> Employee(?X) .
+AssistantProfessor(?X) -> Professor(?X) .
+AssociateProfessor(?X) -> Professor(?X) .
+BachelorExam(?X) -> Exam(?X) .
+Career(?X) -> Work(?X) .
+Chair(?X) -> Professor(?X) .
+ClericalStaff(?X) -> AdministrativeStaff(?X) .
+College(?X) -> Organization(?X) .
+Course(?X) -> Work(?X) .
+Dean(?X) -> Professor(?X) .
+Dean(?X) -> headOf(?X,?Y), College(?Y) .
+Degree(?X) -> Work(?X) .
+Director(?X) -> Person(?X) .
+Director(?X) -> headOf(?X,?Y), Program(?Y) .
+Employee(?X) -> Person(?X) .
+Employee(?X) -> worksFor(?X,?Y), Organization(?Y) .
+ExDean(?X) -> Professor(?X) .
+Exam(?X) -> Work(?X) .
+ExamRecord(?X) -> Work(?X) .
+Faculty(?X) -> Organization(?X) .
+FacultyStaff(?X) -> Employee(?X) .
+FullProfessor(?X) -> Professor(?X) .
+GraduateCourse(?X) -> Course(?X) .
+GraduateStudent(?X) -> Person(?X) .
+GraduateStudent(?X) -> takesCourse(?X,?Y), GraduateCourse(?Y) .
+Lecturer(?X) -> FacultyStaff(?X) .
+PostDoc(?X) -> FacultyStaff(?X) .
+Professor(?X) -> FacultyStaff(?X) .
+Program(?X) -> Organization(?X) .
+ResearchAssistant(?X) -> Student(?X) .
+Student(?X) -> Person(?X) .
+Student(?X) -> takesCourse(?X,?Y), Course(?Y) .
+SystemsStaff(?X) -> AdministrativeStaff(?X) .
+UndergraduateStudent(?X) -> Student(?X) .
+University(?X) -> Organization(?X) .
+VisitingProfessor(?X) -> Professor(?X) .
+advisor(?X,?X1) -> Person(?X) .
+advisor(?X,?X1) -> Professor(?X1) .
+affiliateOf(?X,?X1) -> Organization(?X) .
+affiliateOf(?X,?X1) -> Person(?X1) .
+affiliatedOrganizationOf(?X,?X1) -> Organization(?X) .
+affiliatedOrganizationOf(?X,?X1) -> Organization(?X1) .
+degreeFrom(?X,?X1) -> Person(?X) .
+degreeFrom(?X,?X1) -> University(?X1) .
+degreeFrom(?Y,?X) -> hasAlumnus(?X,?Y) .
+doctoralDegreeFrom(?X,?X1) -> Person(?X) .
+doctoralDegreeFrom(?X,?X1) -> University(?X1) .
+doctoralDegreeFrom(?X,?Y) -> degreeFrom(?X,?Y) .
+hasAlumnus(?X,?X1) -> University(?X) .
+hasAlumnus(?X,?X1) -> Person(?X1) .
+hasExamRecord(?X,?X1) -> Student(?X) .
+hasExamRecord(?X,?X1) -> ExamRecord(?X1) .
+hasFaculty(?X,?X1) -> University(?X) .
+hasFaculty(?X,?X1) -> Faculty(?X1) .
+hasFaculty(?Y,?X) -> isPartOfUniversity(?X,?Y) .
+headOf(?X,?Y) -> worksFor(?X,?Y) .
+isPartOfUniversity(?X,?X1) -> Faculty(?X) .
+isPartOfUniversity(?X,?X1) -> University(?X1) .
+mastersDegreeFrom(?X,?X1) -> Person(?X) .
+mastersDegreeFrom(?X,?X1) -> University(?X1) .
+mastersDegreeFrom(?X,?Y) -> degreeFrom(?X,?Y) .
+member(?X,?X1) -> Organization(?X) .
+member(?X,?X1) -> Person(?X1) .
+member(?Y,?X) -> memberOf(?X,?Y) .
+orgPublication(?X,?X1) -> Organization(?X) .
+publicationAuthor(?X,?X1) -> Person(?X1) .
+teacherOf(?X,?X1) -> FacultyStaff(?X) .
+teacherOf(?X,?X1) -> Course(?X1) .
+teachingAssistantOf(?X,?X1) -> Course(?X1) .
+tenured(?X,?X1) -> Professor(?X) .
+undergraduateDegreeFrom(?X,?X1) -> Person(?X) .
+undergraduateDegreeFrom(?X,?X1) -> University(?X1) .
+undergraduateDegreeFrom(?X,?Y) -> degreeFrom(?X,?Y) .
+worksFor(?X,?Y) -> memberOf(?X,?Y) .

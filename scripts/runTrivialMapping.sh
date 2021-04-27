@@ -2,8 +2,8 @@
 
 # query.sh runs a test on one query of a scenario
 NUM_TESTS=1
-SCENARIOS=("scenarios/LUBM_new")
-SIZES=("small")
+SCENARIOS=("scenarios/StockExchange")
+SIZES=("medium")
 
 for BASE_DIR in "${SCENARIOS[@]}"; do
   for SIZE in ${SIZES[*]}; do
@@ -22,7 +22,7 @@ for BASE_DIR in "${SCENARIOS[@]}"; do
       cat $file | psql -c "COPY \"$TABLE\" from stdin CSV DELIMITER ','" -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE
     done
     # then we run all 5 queries
-    for ((i=1;i<=1;++i)); do
+    for ((i=1;i<=5;++i)); do
       ./queryTrivialMapping.sh $BASE_DIR $i $SIZE
     done
   done

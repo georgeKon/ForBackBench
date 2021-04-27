@@ -1,0 +1,55 @@
+src_FullProfessor(?X) -> worksFor(?X, ?n1) , memberOf(?X, ?n2) , Employee(?X) , FullProfessor(?X) , member(?n3, ?X) , Person(?X) , Professor(?X) , Organization(?n4) , FacultyStaff(?X) .
+src_Career(?X) -> Career(?X) , Work(?X) .
+src_mastersDegreeFrom(?X,?Y) -> degreeFrom(?X, ?Y) , University(?Y) , mastersDegreeFrom(?X, ?Y) , Person(?X) , Organization(?Y) , hasAlumnus(?Y, ?X) .
+src_GraduateStudent(?X) -> GraduateCourse(?n5) , Person(?X) , Work(?n6) , Course(?n7) , GraduateStudent(?X) , takesCourse(?X, ?n8) .
+src_affiliateOf(?X,?Y) -> Person(?Y) , Organization(?X) , affiliateOf(?X, ?Y) .
+src_memberOf(?X,?Y) -> memberOf(?X, ?Y) , member(?Y, ?X) , Person(?X) , Organization(?Y) .
+src_Program(?X) -> Program(?X) , Organization(?X) .
+src_AdministrativeStaff(?X) -> worksFor(?X, ?n9) , memberOf(?X, ?n10) , Employee(?X) , member(?n11, ?X) , AdministrativeStaff(?X) , Person(?X) , Organization(?n12) .
+src_VisitingProfessor(?X) -> worksFor(?X, ?n13) , memberOf(?X, ?n14) , Employee(?X) , member(?n15, ?X) , Person(?X) , Professor(?X) , Organization(?n16) , FacultyStaff(?X) , VisitingProfessor(?X) .
+src_member(?X,?Y) -> memberOf(?Y, ?X) , member(?X, ?Y) , Person(?Y) , Organization(?X) .
+src_teachingAssistantOf(?X,?Y) -> Work(?Y) , Course(?Y) , teachingAssistantOf(?X, ?Y) .
+src_Professor(?X) -> worksFor(?X, ?n17) , memberOf(?X, ?n18) , Employee(?X) , member(?n19, ?X) , Person(?X) , Professor(?X) , Organization(?n20) , FacultyStaff(?X) .
+src_advisor(?X,?Y) -> worksFor(?Y, ?n21) , memberOf(?Y, ?n22) , Employee(?Y) , member(?n23, ?Y) , Person(?X) , Person(?Y) , Professor(?Y) , Organization(?n24) , FacultyStaff(?Y) , advisor(?X, ?Y) .
+src_hasAlumnus(?X,?Y) -> degreeFrom(?Y, ?X) , University(?X) , Person(?Y) , Organization(?X) , hasAlumnus(?X, ?Y) .
+src_undergraduateDegreeFrom(?X,?Y) -> undergraduateDegreeFrom(?X, ?Y) , degreeFrom(?X, ?Y) , University(?Y) , Person(?X) , Organization(?Y) , hasAlumnus(?Y, ?X) .
+src_BachelorExam(?X) -> BachelorExam(?X) , Work(?X) , Exam(?X) .
+src_hasFaculty(?X,?Y) -> Faculty(?Y) , University(?X) , Organization(?Y) , Organization(?X) , hasFaculty(?X, ?Y) , isPartOfUniversity(?Y, ?X) .
+src_takesCourse(?X,?Y) -> takesCourse(?X, ?Y) .
+src_ResearchAssistant(?X) -> Student(?X) , Person(?X) , ResearchAssistant(?X) , Work(?n25) , Course(?n26) , takesCourse(?X, ?n27) .
+src_affiliatedOrganizationOf(?X,?Y) -> Organization(?X) , Organization(?Y) , affiliatedOrganizationOf(?X, ?Y) .
+src_AssistantProfessor(?X) -> worksFor(?X, ?n28) , memberOf(?X, ?n29) , Employee(?X) , member(?n30, ?X) , Person(?X) , Professor(?X) , Organization(?n31) , FacultyStaff(?X) , AssistantProfessor(?X) .
+src_Employee(?X) -> worksFor(?X, ?n32) , memberOf(?X, ?n33) , Employee(?X) , member(?n34, ?X) , Person(?X) , Organization(?n35) .
+src_Lecturer(?X) -> worksFor(?X, ?n36) , memberOf(?X, ?n37) , Lecturer(?X) , Employee(?X) , member(?n38, ?X) , Person(?X) , Organization(?n39) , FacultyStaff(?X) .
+src_orgPublication(?X,?Y) -> orgPublication(?X, ?Y) , Organization(?X) .
+src_College(?X) -> College(?X) , Organization(?X) .
+src_degreeFrom(?X,?Y) -> degreeFrom(?X, ?Y) , University(?Y) , Person(?X) , Organization(?Y) , hasAlumnus(?Y, ?X) .
+src_isPartOfUniversity(?X,?Y) -> Faculty(?X) , University(?Y) , Organization(?X) , Organization(?Y) , hasFaculty(?Y, ?X) , isPartOfUniversity(?X, ?Y) .
+src_Organization(?X) -> Organization(?X) .
+src_Director(?X) -> worksFor(?X, ?n40) , Program(?n41) , memberOf(?X, ?n42) , Director(?X) , member(?n43, ?X) , Person(?X) , headOf(?X, ?n44) , Organization(?n45) .
+src_Exam(?X) -> Work(?X) , Exam(?X) .
+src_worksFor(?X,?Y) -> worksFor(?X, ?Y) , memberOf(?X, ?Y) , member(?Y, ?X) , Person(?X) , Organization(?Y) .
+src_ExamRecord(?X) -> ExamRecord(?X) , Work(?X) .
+src_tenured(?X,?Y) -> worksFor(?X, ?n46) , memberOf(?X, ?n47) , Employee(?X) , member(?n48, ?X) , Person(?X) , Professor(?X) , Organization(?n49) , tenured(?X, ?Y) , FacultyStaff(?X) .
+src_Person(?X) -> Person(?X) .
+src_FacultyStaff(?X) -> worksFor(?X, ?n50) , memberOf(?X, ?n51) , Employee(?X) , member(?n52, ?X) , Person(?X) , Organization(?n53) , FacultyStaff(?X) .
+src_AssociateProfessor(?X) -> worksFor(?X, ?n54) , memberOf(?X, ?n55) , AssociateProfessor(?X) , Employee(?X) , member(?n56, ?X) , Person(?X) , Professor(?X) , Organization(?n57) , FacultyStaff(?X) .
+src_Faculty(?X) -> Faculty(?X) , Organization(?X) .
+src_ExDean(?X) -> worksFor(?X, ?n58) , memberOf(?X, ?n59) , Employee(?X) , member(?n60, ?X) , Person(?X) , Professor(?X) , Organization(?n61) , FacultyStaff(?X) , ExDean(?X) .
+src_doctoralDegreeFrom(?X,?Y) -> doctoralDegreeFrom(?X, ?Y) , degreeFrom(?X, ?Y) , University(?Y) , Person(?X) , Organization(?Y) , hasAlumnus(?Y, ?X) .
+src_UndergraduateStudent(?X) -> Student(?X) , Person(?X) , UndergraduateStudent(?X) , Work(?n62) , Course(?n63) , takesCourse(?X, ?n64) .
+src_PostDoc(?X) -> worksFor(?X, ?n65) , memberOf(?X, ?n66) , Employee(?X) , PostDoc(?X) , member(?n67, ?X) , Person(?X) , Organization(?n68) , FacultyStaff(?X) .
+src_SystemsStaff(?X) -> worksFor(?X, ?n69) , memberOf(?X, ?n70) , SystemsStaff(?X) , Employee(?X) , member(?n71, ?X) , AdministrativeStaff(?X) , Person(?X) , Organization(?n72) .
+src_publicationAuthor(?X,?Y) -> publicationAuthor(?X, ?Y) , Person(?Y) .
+src_Course(?X) -> Work(?X) , Course(?X) .
+src_Dean(?X) -> worksFor(?X, ?n73) , worksFor(?X, ?n74) , memberOf(?X, ?n75) , memberOf(?X, ?n76) , Dean(?X) , Employee(?X) , College(?n77) , member(?n78, ?X) , member(?n79, ?X) , Person(?X) , Professor(?X) , headOf(?X, ?n80) , Organization(?n81) , Organization(?n82) , FacultyStaff(?X) .
+src_ClericalStaff(?X) -> worksFor(?X, ?n83) , memberOf(?X, ?n84) , Employee(?X) , member(?n85, ?X) , AdministrativeStaff(?X) , Person(?X) , Organization(?n86) , ClericalStaff(?X) .
+src_Chair(?X) -> worksFor(?X, ?n87) , memberOf(?X, ?n88) , Employee(?X) , member(?n89, ?X) , Person(?X) , Professor(?X) , Organization(?n90) , Chair(?X) , FacultyStaff(?X) .
+src_hasExamRecord(?X,?Y) -> Student(?X) , Person(?X) , hasExamRecord(?X, ?Y) , ExamRecord(?Y) , Work(?Y) , Work(?n91) , Course(?n92) , takesCourse(?X, ?n93) .
+src_teacherOf(?X,?Y) -> worksFor(?X, ?n94) , memberOf(?X, ?n95) , Employee(?X) , member(?n96, ?X) , Person(?X) , Organization(?n97) , FacultyStaff(?X) , Work(?Y) , teacherOf(?X, ?Y) , Course(?Y) .
+src_GraduateCourse(?X) -> GraduateCourse(?X) , Work(?X) , Course(?X) .
+src_University(?X) -> University(?X) , Organization(?X) .
+src_headOf(?X,?Y) -> worksFor(?X, ?Y) , memberOf(?X, ?Y) , member(?Y, ?X) , Person(?X) , headOf(?X, ?Y) , Organization(?Y) .
+src_Student(?X) -> Student(?X) , Person(?X) , Work(?n98) , Course(?n99) , takesCourse(?X, ?n100) .
+src_Degree(?X) -> Degree(?X) , Work(?X) .
+src_Work(?X) -> Work(?X) .

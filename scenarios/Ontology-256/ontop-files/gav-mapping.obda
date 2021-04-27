@@ -1,0 +1,1569 @@
+[PrefixDeclaration]
+ns:  http://example.com/example.owl#
+
+[MappingDeclaration] @collection [[
+mappingId ID-1312469396
+target  ns:ns/{c0} ns:fallvnm60nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_sleepvnm12nl0ce0"
+
+mappingId ID-1536265478
+target  ns:ns/{c0} ns:hidevi17nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_bluevh1nl0ce0"
+
+mappingId ID1731893187
+target  ns:ns/{c0} ns:protestvi35nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_killad38nl0ce0"
+
+mappingId ID-196714185
+target  ns:ns/{c0} ns:ringvnm9nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_eatad8nl0ce0"
+
+mappingId ID1047069830
+target  ns:ns/{c0} ns:forgivevnm33nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_cushionvnm62nl0ce0"
+
+mappingId ID-1405726859
+target  ns:ns/{c0} ns:delivervh51nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_goldvnm4nl0ce0"
+
+mappingId ID-414233665
+target  ns:ns/{c0} ns:politicalvnm3nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_ownvnm47nl0ce0"
+
+mappingId ID-982705500
+target  ns:ns/{c0} ns:doorvh3nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_twistvi56nl0ce1"
+
+mappingId ID1395989764
+target  ns:ns/{c0} ns:jumpvh36nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_stonevh7nl0ce0"
+
+mappingId ID-1585374710
+target  ns:ns/{c0} ns:clearvh48nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_layvnm58nl0ce2"
+
+mappingId ID-1707542166
+target  ns:ns/{c0} ns:platevi30nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_glovevh36nl0ce0"
+
+mappingId ID-399584229
+target  ns:ns/{c0} ns:tightvi49nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_ovenvh25nl0ce1"
+
+mappingId ID887352572
+target  ns:ns/{c0} ns:concernvh23nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_femalevi60nl0ce0"
+
+mappingId ID-719494374
+target  ns:ns/{c0} ns:flyvh39nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_shamevnm29nl0ce0"
+
+mappingId ID1456138780
+target  ns:ns/{c0} ns:factvi48nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_flyvh64nl0ce0"
+
+mappingId ID-1825169287
+target  ns:ns/{c0} ns:bandvi36nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_flowervnm48nl0ce1"
+
+mappingId ID50034620
+target  ns:ns/{c0} ns:cushionvnm62nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_existvnm42nl0ce1"
+
+mappingId ID-2088268784
+target  ns:ns/{c0} ns:examinevnm20nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_loosevnm13nl0ce2"
+
+mappingId ID-739703722
+target  ns:ns/{c0} ns:mouthvnm44nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_complexvh12nl0ce1"
+
+mappingId ID955944108
+target  ns:ns/{c0} ns:animalvh6nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_indicatevi40nl0ce1"
+
+mappingId ID1517146878
+target  ns:ns/{c0} ns:awakevnm7nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_reasonad18nl0ce0"
+
+mappingId ID-1523897986
+target  ns:ns/{c0} ns:poisonvnm46nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_testvh32nl0ce0"
+
+mappingId ID-1011159786
+target  ns:ns/{c0} ns:warvnm25nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_tightvi49nl0ce1"
+
+mappingId ID-1645787019
+target  ns:ns/{c0} ns:mustvnm48nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_comparevnm11nl0ce0"
+
+mappingId ID207559259
+target  ns:ns/{c0} ns:havevi24nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_processvnm49nl0ce2"
+
+mappingId ID-1604983930
+target  ns:ns/{c0} ns:delivervi28nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_officevnm46nl0ce2"
+
+mappingId ID1642031724
+target  ns:ns/{c0} ns:mentionvi4nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_longvi10nl0ce1"
+
+mappingId ID-952297618
+target  ns:ns/{c0} ns:knowvh15nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_usevh2nl0ce1"
+
+mappingId ID2056431101
+target  ns:ns/{c0} ns:approvalvi37nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_babyvnm17nl0ce2"
+
+mappingId ID1221425275
+target  ns:ns/{c0} ns:recordvnm23nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_reasonad18nl0ce0"
+
+mappingId ID-1277502643
+target  ns:ns/{c0} ns:simplevnm23nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_weightvh60nl0ce0"
+
+mappingId ID-114045362
+target  ns:ns/{c0} ns:touchvh21nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_havevh27nl0ce0"
+
+mappingId ID1424521369
+target  ns:ns/{c0} ns:couldvnm62nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_narrowvi45nl0ce0"
+
+mappingId ID871417287
+target  ns:ns/{c0} ns:mindvh22nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_swimvi54nl0ce0"
+
+mappingId ID-212543322
+target  ns:ns/{c0} ns:liftvi30nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_fertilevh7nl0ce1"
+
+mappingId ID677372012
+target  ns:ns/{c0} ns:concernvnm63nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_managervnm49nl0ce0"
+
+mappingId ID208607387
+target  ns:ns/{c0} ns:comevi10nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_learnvh56nl0ce0"
+
+mappingId ID342227726
+target  ns:ns/{c0} ns:liquidvnm58nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_knotvnm27nl0ce1"
+
+mappingId ID1986417588
+target  ns:ns/{c0} ns:stickvh61nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_copyad36nl0ce0"
+
+mappingId ID-542850687
+target  ns:ns/{c0} ns:stonevh7nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_givevi6nl0ce1"
+
+mappingId ID-1742911326
+target  ns:ns/{c0} ns:givevi6nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_attorneyvh34nl0ce1"
+
+mappingId ID-69837933
+target  ns:ns/{c0} ns:hammervnm7nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_differentvi1nl0ce0"
+
+mappingId ID1551549842
+target  ns:ns/{c0} ns:avoidvi61nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_whitevi23nl0ce1"
+
+mappingId ID1631920049
+target  ns:ns/{c0} ns:softvnm29nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_trickvnm8nl0ce0"
+
+mappingId ID277500718
+target  ns:ns/{c0} ns:countvh4nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_cardvnm52nl0ce2"
+
+mappingId ID509227482
+target  ns:ns/{c0} ns:seavnm5nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_affordvh16nl0ce0"
+
+mappingId ID-1822669805
+target  ns:ns/{c0} ns:nightvh38nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_placevh40nl0ce1"
+
+mappingId ID-1288816180
+target  ns:ns/{c0} ns:respectvh37nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_concernvnm63nl0ce1"
+
+mappingId ID439541143
+target  ns:ns/{c0} ns:obtainvi48nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_familyvnm20nl0ce0"
+
+mappingId ID-130164337
+target  ns:ns/{c0} ns:reflectvh16nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_collarvi33nl0ce1"
+
+mappingId ID-919892015
+target  ns:ns/{c0} ns:diseasevi45nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_bluevh1nl0ce0"
+
+mappingId ID-726936112
+target  ns:ns/{c0} ns:shoevi17nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_shakevnm23nl0ce1"
+
+mappingId ID742618688
+target  ns:ns/{c0} ns:pointvnm10nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_bluevnm22nl0ce2"
+
+mappingId ID-1645018202
+target  ns:ns/{c0} ns:flyvi7nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_delicatevi38nl0ce1"
+
+mappingId ID1115844486
+target  ns:ns/{c0} ns:snowvnm52nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_pointvnm10nl0ce1"
+
+mappingId ID-762930254
+target  ns:ns/{c0} ns:describevh1nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_approvalvi2nl0ce0"
+
+mappingId ID197218828
+target  ns:ns/{c0} ns:settlevh8nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_whitevi23nl0ce1"
+
+mappingId ID93296835
+target  ns:ns/{c0} ns:societyvi22nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_tryvh12nl0ce0"
+
+mappingId ID-1861227367
+target  ns:ns/{c0} ns:truevnm47nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_churchvnm10nl0ce0"
+
+mappingId ID375838813
+target  ns:ns/{c0} ns:buttervnm15nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_arrangevh19nl0ce0"
+
+mappingId ID-1820529391
+target  ns:ns/{c0} ns:nationvh58nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_indicatevi40nl0ce1"
+
+mappingId ID1668144603
+target  ns:ns/{c0} ns:delicatevi26nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_historyvnm25nl0ce1"
+
+mappingId ID-471644932
+target  ns:ns/{c0} ns:gardenvnm45nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_jewelvi15nl0ce0"
+
+mappingId ID-1284379398
+target  ns:ns/{c0} ns:greyvnm64nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_stitchvnm19nl0ce1"
+
+mappingId ID1338081931
+target  ns:ns/{c0} ns:authorityvnm26nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_dependentvnm5nl0ce1"
+
+mappingId ID1184349978
+target  ns:ns/{c0} ns:bottlevnm37nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_weathervnm31nl0ce2"
+
+mappingId ID1217635892
+target  ns:ns/{c0} ns:summervnm6nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_loosevh56nl0ce1"
+
+mappingId ID-1531384206
+target  ns:ns/{c0} ns:playvnm11nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_measurevnm12nl0ce1"
+
+mappingId ID-59797485
+target  ns:ns/{c0} ns:layvnm58nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_stitchvnm19nl0ce1"
+
+mappingId ID669082887
+target  ns:ns/{c0} ns:greenvnm8nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_factvi48nl0ce0"
+
+mappingId ID817890744
+target  ns:ns/{c0} ns:hidevi20nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_animalvh6nl0ce0"
+
+mappingId ID-965527248
+target  ns:ns/{c0} ns:workvnm50nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_soundvi47nl0ce1"
+
+mappingId ID1952438288
+target  ns:ns/{c0} ns:straightvi5nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_placevnm1nl0ce1"
+
+mappingId ID641038309
+target  ns:ns/{c0} ns:imaginevi28nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_coatvh14nl0ce0"
+
+mappingId ID-79451521
+target  ns:ns/{c0} ns:facevh28nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_greyvi61nl0ce1"
+
+mappingId ID-1587020501
+target  ns:ns/{c0} ns:complainvi8nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_protestvh30nl0ce0"
+
+mappingId ID-1395681427
+target  ns:ns/{c0} ns:avoidvnm18nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_layvnm58nl0ce2"
+
+mappingId ID-438848164
+target  ns:ns/{c0} ns:wavevh20nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_skinvi24nl0ce1"
+
+mappingId ID20003796
+target  ns:ns/{c0} ns:systemvh24nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_machinevnm24nl0ce0"
+
+mappingId ID76940835
+target  ns:ns/{c0} ns:replyvh30nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_placevnm1nl0ce1"
+
+mappingId ID1986912908
+target  ns:ns/{c0} ns:inventionvh26nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_summervnm6nl0ce2"
+
+mappingId ID227064920
+target  ns:ns/{c0} ns:ringvnm40nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_replyvh30nl0ce1"
+
+mappingId ID-1250989716
+target  ns:ns/{c0} ns:bluevnm22nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_inventionvh26nl0ce0"
+
+mappingId ID-2074524630
+target  ns:ns/{c0} ns:horsevnm64nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_kindvi3nl0ce0"
+
+mappingId ID-1431478918
+target  ns:ns/{c0} ns:jewelvi15nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_summervnm6nl0ce2"
+
+mappingId ID-440388815
+target  ns:ns/{c0} ns:moonvnm32nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_societyvi22nl0ce1"
+
+mappingId ID267354297
+target  ns:ns/{c0} ns:wouldvi63nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_chemicalvh38nl0ce1"
+
+mappingId ID-1404970907
+target  ns:ns/{c0} ns:approvalvi2nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_mistvnm25nl0ce2"
+
+mappingId ID1451017059
+target  ns:ns/{c0} ns:bucketvh49nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_avoidvi61nl0ce0"
+
+mappingId ID-908022772
+target  ns:ns/{c0} ns:playvi58nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hammervnm7nl0ce2"
+
+mappingId ID-1540914304
+target  ns:ns/{c0} ns:seaad21nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_usead61nl0ce0"
+
+mappingId ID1774758419
+target  ns:ns/{c0} ns:clothvh46nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_watchvh11nl0ce1"
+
+mappingId ID1052504391
+target  ns:ns/{c0} ns:roomvnm9nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_knockvh58nl0ce1"
+
+mappingId ID-1415910528
+target  ns:ns/{c0} ns:usevnm64nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_mattervnm19nl0ce2"
+
+mappingId ID452891561
+target  ns:ns/{c0} ns:handlevnm2nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_advertisementvi14nl0ce0"
+
+mappingId ID-1639331889
+target  ns:ns/{c0} ns:helpvi35nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_jumpvh36nl0ce1"
+
+mappingId ID-1645582355
+target  ns:ns/{c0} ns:parallelvnm2nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_existvnm42nl0ce1"
+
+mappingId ID65828220
+target  ns:ns/{c0} ns:shutvi37nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_punishmentvnm24nl0ce1"
+
+mappingId ID468961365
+target  ns:ns/{c0} ns:degreevh28nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_curvevi58nl0ce0m"
+
+mappingId ID242030865
+target  ns:ns/{c0} ns:flyvh64nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_actvh17nl0ce1"
+
+mappingId ID1088911640
+target  ns:ns/{c0} ns:effectvi47nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_secretvi12nl0ce1"
+
+mappingId ID2105508967
+target  ns:ns/{c0} ns:stitchvnm19nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_sizevnm17nl0ce0"
+
+mappingId ID489996342
+target  ns:ns/{c0} ns:fertilevnm57nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_imaginevi28nl0ce0"
+
+mappingId ID11150330
+target  ns:ns/{c0} ns:ovenvnm18nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_flowervnm48nl0ce1"
+
+mappingId ID-1318349832
+target  ns:ns/{c0} ns:linevh53nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_farmvnm3nl0ce0"
+
+mappingId ID401657480
+target  ns:ns/{c0} ns:accountvh9nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_painvi5nl0ce0"
+
+mappingId ID-941980390
+target  ns:ns/{c0} ns:whistlead49nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_dievnm37nl0ce1"
+
+mappingId ID-1004803248
+target  ns:ns/{c0} ns:watchvh11nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_inventionvh26nl0ce0"
+
+mappingId ID459629795
+target  ns:ns/{c0} ns:babyvnm17nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_expertvi31nl0ce0"
+
+mappingId ID-857621081
+target  ns:ns/{c0} ns:encouragevi64nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_developvi36nl0ce0"
+
+mappingId ID567841991
+target  ns:ns/{c0} ns:amountvnm18nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_blowvi2nl0ce1"
+
+mappingId ID1218848966
+target  ns:ns/{c0} ns:believevnm14nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_shamevnm29nl0ce0"
+
+mappingId ID903658564
+target  ns:ns/{c0} ns:containvnm38nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_goldvnm40nl0ce2"
+
+mappingId ID352582900
+target  ns:ns/{c0} ns:chalkvi19nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_provevi3nl0ce1"
+
+mappingId ID462627598
+target  ns:ns/{c0} ns:reportvnm38nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_skinvnm14nl0ce0"
+
+mappingId ID-1447204991
+target  ns:ns/{c0} ns:industryvi52nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_clockad7nl0ce0"
+
+mappingId ID195588307
+target  ns:ns/{c0} ns:longvi10nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_girlvh57nl0ce0"
+
+mappingId ID1723171112
+target  ns:ns/{c0} ns:touchvi41nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_ownvnm47nl0ce0"
+
+mappingId ID1624172826
+target  ns:ns/{c0} ns:probablevh5nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_reflectvh16nl0ce1"
+
+mappingId ID-1841839401
+target  ns:ns/{c0} ns:digestionvnm10nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_bootvnm5nl0ce0"
+
+mappingId ID-614223610
+target  ns:ns/{c0} ns:holdvnm50nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_pointvi18nl0ce0"
+
+mappingId ID-1483575574
+target  ns:ns/{c0} ns:consciousvnm13nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_jumpvnm8nl0ce2"
+
+mappingId ID-453110264
+target  ns:ns/{c0} ns:beautifulvh11nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_sensevnm42nl0ce0"
+
+mappingId ID967069017
+target  ns:ns/{c0} ns:protestad56nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_violentvi20nl0ce0"
+
+mappingId ID-337479738
+target  ns:ns/{c0} ns:glovevh36nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_greyvnm64nl0ce1"
+
+mappingId ID-254508173
+target  ns:ns/{c0} ns:changevi15nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_farmvnm3nl0ce0"
+
+mappingId ID-418171716
+target  ns:ns/{c0} ns:languagevnm21nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_armvnm49nl0ce1"
+
+mappingId ID922969107
+target  ns:ns/{c0} ns:killad38nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_coatvh14nl0ce0"
+
+mappingId ID-1708386202
+target  ns:ns/{c0} ns:backvh13nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_jumpvnm8nl0ce2"
+
+mappingId ID967697268
+target  ns:ns/{c0} ns:nationvi27nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_knotvnm27nl0ce1"
+
+mappingId ID-2109990158
+target  ns:ns/{c0} ns:recordvh5nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_protestad56nl0ce0"
+
+mappingId ID-778407407
+target  ns:ns/{c0} ns:electricvi25nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_feeblevi33nl0ce0"
+
+mappingId ID-1157753392
+target  ns:ns/{c0} ns:chargevh3nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_encouragevi64nl0ce1"
+
+mappingId ID-448302026
+target  ns:ns/{c0} ns:attackvnm19nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_damagead33nl0ce0"
+
+mappingId ID208942483
+target  ns:ns/{c0} ns:shamevnm29nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_reportvnm38nl0ce2"
+
+mappingId ID-348002267
+target  ns:ns/{c0} ns:latevnm6nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_parallelvnm2nl0ce0"
+
+mappingId ID-884426495
+target  ns:ns/{c0} ns:sistervnm15nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_approvalvi37nl0ce1"
+
+mappingId ID-1578556669
+target  ns:ns/{c0} ns:separatevh27nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_linevh53nl0ce0"
+
+mappingId ID-755055031
+target  ns:ns/{c0} ns:lookvi13nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_bootvnm5nl0ce0"
+
+mappingId ID808742119
+target  ns:ns/{c0} ns:confirmvh21nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_amountvnm18nl0ce1"
+
+mappingId ID742005430
+target  ns:ns/{c0} ns:materialvh31nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_couldvnm62nl0ce2"
+
+mappingId ID-296436028
+target  ns:ns/{c0} ns:punishmentvnm24nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_cushionvnm62nl0ce0"
+
+mappingId ID1557063253
+target  ns:ns/{c0} ns:yellowvi11nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_touchvi41nl0ce0"
+
+mappingId ID1129482493
+target  ns:ns/{c0} ns:industryvnm44nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_trickvnm8nl0ce0"
+
+mappingId ID-1887202201
+target  ns:ns/{c0} ns:tinvnm16nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_completevh4nl0ce0"
+
+mappingId ID1338132459
+target  ns:ns/{c0} ns:separatevi41nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_horsevnm64nl0ce2"
+
+mappingId ID1961648799
+target  ns:ns/{c0} ns:bluevh1nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_watchvh11nl0ce1"
+
+mappingId ID54416284
+target  ns:ns/{c0} ns:kindvi3nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_ovenvnm18nl0ce0"
+
+mappingId ID-1026503564
+target  ns:ns/{c0} ns:enginevnm12nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_languagevnm21nl0ce0"
+
+mappingId ID1081531026
+target  ns:ns/{c0} ns:affordvh16nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_darkvnm27nl0ce0"
+
+mappingId ID1749140750
+target  ns:ns/{c0} ns:developvi36nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_tightvi49nl0ce1"
+
+mappingId ID1759961934
+target  ns:ns/{c0} ns:requirevh10nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_doorvh3nl0ce0"
+
+mappingId ID-1524182626
+target  ns:ns/{c0} ns:movevnm37nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_involvevnm21nl0ce2"
+
+mappingId ID48076516
+target  ns:ns/{c0} ns:differentvi1nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_joinvi34nl0ce0"
+
+mappingId ID1009852186
+target  ns:ns/{c0} ns:havevh27nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_mouthvnm44nl0ce0"
+
+mappingId ID-1957460235
+target  ns:ns/{c0} ns:orangevh41nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_ringvnm40nl0ce0"
+
+mappingId ID1632958904
+target  ns:ns/{c0} ns:relatevnm42nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_protestvi35nl0ce0"
+
+mappingId ID1369189307
+target  ns:ns/{c0} ns:sciencevnm63nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_expansionvnm1nl0ce2"
+
+mappingId ID588409246
+target  ns:ns/{c0} ns:joinvi34nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_waitvnm13nl0ce1"
+
+mappingId ID-218428657
+target  ns:ns/{c0} ns:safevnm60nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_movevh40nl0ce0"
+
+mappingId ID621311901
+target  ns:ns/{c0} ns:intendvnm47nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_degreevh28nl0ce1"
+
+mappingId ID-1064114293
+target  ns:ns/{c0} ns:sidevh41nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_mouthvnm44nl0ce0"
+
+mappingId ID580357618
+target  ns:ns/{c0} ns:readingvnm16nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_usevh26nl0ce1"
+
+mappingId ID150179643
+target  ns:ns/{c0} ns:facevh25nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_meanvi59nl0ce1"
+
+mappingId ID-1079059356
+target  ns:ns/{c0} ns:dievnm37nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_coatvh14nl0ce0"
+
+mappingId ID391279485
+target  ns:ns/{c0} ns:sleepvnm12nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_weightvh60nl0ce0"
+
+mappingId ID457141305
+target  ns:ns/{c0} ns:movevnm53nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_sockvnm26nl0ce0"
+
+mappingId ID1208725499
+target  ns:ns/{c0} ns:bodyvh43nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_dayvh43nl0ce1"
+
+mappingId ID-1637681198
+target  ns:ns/{c0} ns:substancevi59nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_authorityvnm24nl0ce2"
+
+mappingId ID-376464162
+target  ns:ns/{c0} ns:historyvnm25nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_presentvh18nl0ce1"
+
+mappingId ID415396598
+target  ns:ns/{c0} ns:protestvh30nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_shamevnm29nl0ce0"
+
+mappingId ID530974906
+target  ns:ns/{c0} ns:edgevi29nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_deepad16nl0ce0"
+
+mappingId ID-303903729
+target  ns:ns/{c0} ns:watchvh53nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_usevh2nl0ce1"
+
+mappingId ID-943730502
+target  ns:ns/{c0} ns:tryvh12nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_fallvh47nl0ce1"
+
+mappingId ID-822567963
+target  ns:ns/{c0} ns:painvi5nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_facevh25nl0ce0"
+
+mappingId ID-1371778543
+target  ns:ns/{c0} ns:presentvnm15nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_peacevi34nl0ce1"
+
+mappingId ID-1337685859
+target  ns:ns/{c0} ns:expansionvnm1nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_knowledgevi38nl0ce0"
+
+mappingId ID126823876
+target  ns:ns/{c0} ns:existvnm42nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_nationvi27nl0ce0"
+
+mappingId ID1046602248
+target  ns:ns/{c0} ns:solidvh47nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_softvnm29nl0ce1"
+
+mappingId ID-1677746107
+target  ns:ns/{c0} ns:papervh22nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_neckvi64nl0ce0"
+
+mappingId ID-452214651
+target  ns:ns/{c0} ns:countvnm31nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_fictionvh9nl0ce1"
+
+mappingId ID-208973704
+target  ns:ns/{c0} ns:dayvh43nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_fictionvh9nl0ce1"
+
+mappingId ID-596146945
+target  ns:ns/{c0} ns:yellowvnm45nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_meanvi59nl0ce1"
+
+mappingId ID828343828
+target  ns:ns/{c0} ns:knowledgevi38nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_doorvh3nl0ce0"
+
+mappingId ID-1902161966
+target  ns:ns/{c0} ns:providevi26nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_bellvnm62nl0ce1"
+
+mappingId ID694959491
+target  ns:ns/{c0} ns:languagevnm3nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_feeblevi33nl0ce0"
+
+mappingId ID125676956
+target  ns:ns/{c0} ns:bootvnm5nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hammervnm7nl0ce2"
+
+mappingId ID295313328
+target  ns:ns/{c0} ns:indicatevi40nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_waitvnm13nl0ce1"
+
+mappingId ID724804675
+target  ns:ns/{c0} ns:blowvi2nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_arguevnm6nl0ce0"
+
+mappingId ID-1323889054
+target  ns:ns/{c0} ns:achievevh48nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_grassvnm46nl0ce0"
+
+mappingId ID-1728952394
+target  ns:ns/{c0} ns:knotvnm33nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_attorneyvh34nl0ce1"
+
+mappingId ID-753710581
+target  ns:ns/{c0} ns:archvi46nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_sensevnm42nl0ce0"
+
+mappingId ID-666608325
+target  ns:ns/{c0} ns:knotvnm27nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_comparevnm11nl0ce0"
+
+mappingId ID1779188808
+target  ns:ns/{c0} ns:latevi7nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_languagevnm3nl0ce2"
+
+mappingId ID-1104206531
+target  ns:ns/{c0} ns:ovenvh25nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_relationvnm53nl0ce0"
+
+mappingId ID-1773041067
+target  ns:ns/{c0} ns:coatvh14nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_churchvnm10nl0ce0"
+
+mappingId ID-1175226628
+target  ns:ns/{c0} ns:brickvnm50nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_gardenvnm45nl0ce0"
+
+mappingId ID2074993988
+target  ns:ns/{c0} ns:learnvh56nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_selectionvnm29nl0ce2"
+
+mappingId ID-643645809
+target  ns:ns/{c0} ns:playvh59nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_reasonad18nl0ce0"
+
+mappingId ID224618946
+target  ns:ns/{c0} ns:armvnm49nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_smokevi14nl0ce1"
+
+mappingId ID-1034717932
+target  ns:ns/{c0} ns:processvnm49nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_describevh1nl0ce1"
+
+mappingId ID-1930967133
+target  ns:ns/{c0} ns:jellyvi60nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_workvnm50nl0ce2"
+
+mappingId ID-1587272695
+target  ns:ns/{c0} ns:dependentvnm5nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_givevi6nl0ce1"
+
+mappingId ID2019051920
+target  ns:ns/{c0} ns:weightvh60nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_bluevnm22nl0ce2"
+
+mappingId ID-1425719274
+target  ns:ns/{c0} ns:arrangevh19nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_selectionvnm29nl0ce2"
+
+mappingId ID1535553426
+target  ns:ns/{c0} ns:movevh40nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_countvnm31nl0ce1"
+
+mappingId ID1595667679
+target  ns:ns/{c0} ns:sunvh42nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_threadvi13nl0ce0"
+
+mappingId ID-1935412408
+target  ns:ns/{c0} ns:narrowvi45nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_havevh27nl0ce0"
+
+mappingId ID-454448499
+target  ns:ns/{c0} ns:darkvnm27nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_fertilevh7nl0ce1"
+
+mappingId ID1899045640
+target  ns:ns/{c0} ns:sensevnm42nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_platevi30nl0ce0"
+
+mappingId ID-1702531280
+target  ns:ns/{c0} ns:fallvh29nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_glovevh36nl0ce0"
+
+mappingId ID754215235
+target  ns:ns/{c0} ns:mistvnm25nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_recordvh5nl0ce0"
+
+mappingId ID-1456352978
+target  ns:ns/{c0} ns:smokevnm52nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_twistvi56nl0ce1"
+
+mappingId ID-440461342
+target  ns:ns/{c0} ns:girlvh57nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_attackvnm19nl0ce0"
+
+mappingId ID1617423700
+target  ns:ns/{c0} ns:officevnm46nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_advertisementvi14nl0ce0"
+
+mappingId ID695581551
+target  ns:ns/{c0} ns:complexvh12nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_involvevnm21nl0ce2"
+
+mappingId ID-468137396
+target  ns:ns/{c0} ns:forgivevi9nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_degreevh28nl0ce1"
+
+mappingId ID2061230158
+target  ns:ns/{c0} ns:experiencevnm40nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_warvnm25nl0ce0"
+
+mappingId ID622486648
+target  ns:ns/{c0} ns:hatevh6nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_complainvi8nl0ce0"
+
+mappingId ID-570956717
+target  ns:ns/{c0} ns:regretvnm30nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_fishvi49nl0ce0"
+
+mappingId ID-951822192
+target  ns:ns/{c0} ns:greyvi61nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_touchvh21nl0ce0"
+
+mappingId ID-1515194003
+target  ns:ns/{c0} ns:neckvi64nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_answervh59nl0ce0"
+
+mappingId ID682080365
+target  ns:ns/{c0} ns:peacevi40nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_presentvnm15nl0ce0"
+
+mappingId ID-1742278064
+target  ns:ns/{c0} ns:bellvnm62nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_delivervi28nl0ce1"
+
+mappingId ID-948857624
+target  ns:ns/{c0} ns:violentvi20nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_grassvnm46nl0ce0"
+
+mappingId ID-150560716
+target  ns:ns/{c0} ns:damagead33nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_believevnm14nl0ce1"
+
+mappingId ID-1933313860
+target  ns:ns/{c0} ns:completevh4nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_concernvnm63nl0ce1"
+
+mappingId ID-330956503
+target  ns:ns/{c0} ns:goldvnm4nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_pointvi18nl0ce0"
+
+mappingId ID703447999
+target  ns:ns/{c0} ns:discussvnm32nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_consciousvnm13nl0ce0"
+
+mappingId ID-1958915950
+target  ns:ns/{c0} ns:bluevh61nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_illvi32nl0ce1"
+
+mappingId ID-1758471427
+target  ns:ns/{c0} ns:paintvh24nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_expansionvnm1nl0ce2"
+
+mappingId ID-152975420
+target  ns:ns/{c0} ns:cartvh57nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_consciousvnm13nl0ce0"
+
+mappingId ID296405359
+target  ns:ns/{c0} ns:returnvnm28nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_reflectvh16nl0ce1"
+
+mappingId ID-276196649
+target  ns:ns/{c0} ns:climbvi32nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_selectionvnm29nl0ce2"
+
+mappingId ID388564584
+target  ns:ns/{c0} ns:measurevnm12nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_damagead33nl0ce0"
+
+mappingId ID1979170353
+target  ns:ns/{c0} ns:pointvi18nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_snowvnm52nl0ce0"
+
+mappingId ID-457051661
+target  ns:ns/{c0} ns:ownvnm47nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_involvevi4nl0ce0"
+
+mappingId ID201571156
+target  ns:ns/{c0} ns:lockvnm54nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_stickvh61nl0ce1"
+
+mappingId ID-1755642708
+target  ns:ns/{c0} ns:readingad32nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_mentionvi4nl0ce1"
+
+mappingId ID1616584683
+target  ns:ns/{c0} ns:colorvnm30nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_factvi48nl0ce0"
+
+mappingId ID-1859190815
+target  ns:ns/{c0} ns:wayvnm39nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_containvnm38nl0ce0"
+
+mappingId ID-676626370
+target  ns:ns/{c0} ns:waitvnm13nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_usevi23nl0ce0"
+
+mappingId ID145615871
+target  ns:ns/{c0} ns:offervnm57nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hidevi20nl0ce1"
+
+mappingId ID1861307998
+target  ns:ns/{c0} ns:restvnm1nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_actvh17nl0ce1"
+
+mappingId ID-2051492202
+target  ns:ns/{c0} ns:happenvh45nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_countvnm31nl0ce1"
+
+mappingId ID-1081767465
+target  ns:ns/{c0} ns:errorvi56nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_stitchvnm32nl0ce0"
+
+mappingId ID1384978038
+target  ns:ns/{c0} ns:levelvh18nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_summervnm6nl0ce2"
+
+mappingId ID-319596631
+target  ns:ns/{c0} ns:sockvnm26nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_actvh17nl0ce1"
+
+mappingId ID1906004914
+target  ns:ns/{c0} ns:curvevi58nl0ce0m ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_steelad42nl0ce0"
+
+mappingId ID-96509745
+target  ns:ns/{c0} ns:fertilevh7nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_letvh37nl0ce0"
+
+mappingId ID-1273922922
+target  ns:ns/{c0} ns:deepad16nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_restvnm1nl0ce0"
+
+mappingId ID586851748
+target  ns:ns/{c0} ns:placevh40nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_presentvnm15nl0ce0"
+
+mappingId ID232565702
+target  ns:ns/{c0} ns:managervnm49nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_approvalvi37nl0ce1"
+
+mappingId ID1622761190
+target  ns:ns/{c0} ns:feeblevi33nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_developvi36nl0ce0"
+
+mappingId ID-199198422
+target  ns:ns/{c0} ns:voicevnm48nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_mindvh22nl0ce1"
+
+mappingId ID410720548
+target  ns:ns/{c0} ns:illvi32nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_yellowvnm45nl0ce2"
+
+mappingId ID1299766860
+target  ns:ns/{c0} ns:groupvnm44nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_nightvh38nl0ce0"
+
+mappingId ID-1750301226
+target  ns:ns/{c0} ns:answervh59nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_nationvi27nl0ce0"
+
+mappingId ID-297192362
+target  ns:ns/{c0} ns:risevnm28nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_nationvi27nl0ce0"
+
+mappingId ID145560957
+target  ns:ns/{c0} ns:versevh33nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_smellvh62nl0ce0"
+
+mappingId ID-2129537833
+target  ns:ns/{c0} ns:firstvnm11nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_snowvnm52nl0ce0"
+
+mappingId ID1234985072
+target  ns:ns/{c0} ns:peacevi34nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_musicvnm53nl0ce2"
+
+mappingId ID1412940780
+target  ns:ns/{c0} ns:weathervnm31nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_risevnm28nl0ce0"
+
+mappingId ID1460551752
+target  ns:ns/{c0} ns:threadvi13nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_separatevh27nl0ce1"
+
+mappingId ID-558169717
+target  ns:ns/{c0} ns:goldvnm40nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_bodyvh43nl0ce0"
+
+mappingId ID816009733
+target  ns:ns/{c0} ns:thumbvh29nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_twistvi56nl0ce1"
+
+mappingId ID1362549501
+target  ns:ns/{c0} ns:reasonad18nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_bucketvh49nl0ce1"
+
+mappingId ID-1530398363
+target  ns:ns/{c0} ns:machinevnm24nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_connectionvh42nl0ce1"
+
+mappingId ID-903999282
+target  ns:ns/{c0} ns:skinvnm14nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_industryvnm44nl0ce1"
+
+mappingId ID-1347815417
+target  ns:ns/{c0} ns:remainvnm20nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_brushvh19nl0ce1"
+
+mappingId ID-1012026701
+target  ns:ns/{c0} ns:fathervh14nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_consciousvnm13nl0ce0"
+
+mappingId ID-1078538429
+target  ns:ns/{c0} ns:trayvh44nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_levelvh18nl0ce0"
+
+mappingId ID1942782527
+target  ns:ns/{c0} ns:breathvnm38nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_reasonad18nl0ce0"
+
+mappingId ID-1870626322
+target  ns:ns/{c0} ns:testvh32nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_languagevh49nl0ce0"
+
+mappingId ID-1324265890
+target  ns:ns/{c0} ns:providevi12nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_authorityvnm24nl0ce2"
+
+mappingId ID-574721186
+target  ns:ns/{c0} ns:cowvh31nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_watchvh11nl0ce1"
+
+mappingId ID1801280742
+target  ns:ns/{c0} ns:twistvh64nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_learnvh56nl0ce0"
+
+mappingId ID576398176
+target  ns:ns/{c0} ns:flowervnm48nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_differentvi1nl0ce0"
+
+mappingId ID-2137166645
+target  ns:ns/{c0} ns:smellvh62nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_collarvi33nl0ce1"
+
+mappingId ID399110921
+target  ns:ns/{c0} ns:summervnm39nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_threadvi13nl0ce0"
+
+mappingId ID2117431981
+target  ns:ns/{c0} ns:gunvi63nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_comparevi46nl0ce1"
+
+mappingId ID-928971637
+target  ns:ns/{c0} ns:branchvnm22nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_ovenvh25nl0ce1"
+
+mappingId ID161135324
+target  ns:ns/{c0} ns:secretvi12nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_illvi32nl0ce1"
+
+mappingId ID-2020591507
+target  ns:ns/{c0} ns:dustvi25nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_havevi24nl0ce0"
+
+mappingId ID1472980751
+target  ns:ns/{c0} ns:farmvnm3nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_smokevi14nl0ce1"
+
+mappingId ID252662997
+target  ns:ns/{c0} ns:authorityvnm24nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_knowvh15nl0ce1"
+
+mappingId ID272440149
+target  ns:ns/{c0} ns:foundvh44nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_probablevh5nl0ce1"
+
+mappingId ID909187025
+target  ns:ns/{c0} ns:ovenvi6nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_peacevi40nl0ce0"
+
+mappingId ID1730407694
+target  ns:ns/{c0} ns:raisevnm17nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_swimvi54nl0ce0"
+
+mappingId ID1948804023
+target  ns:ns/{c0} ns:bedvi22nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_smokevi14nl0ce1"
+
+mappingId ID-243394573
+target  ns:ns/{c0} ns:swimvi54nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_twistvi56nl0ce1"
+
+mappingId ID541027611
+target  ns:ns/{c0} ns:musicvnm53nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_attackvnm19nl0ce0"
+
+mappingId ID1531965546
+target  ns:ns/{c0} ns:actvh17nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_curvevi58nl0ce0m"
+
+mappingId ID1476453350
+target  ns:ns/{c0} ns:angryvnm39nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_degreevi9nl0ce0"
+
+mappingId ID-670773310
+target  ns:ns/{c0} ns:attorneyvh34nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_ovenvi6nl0ce0"
+
+mappingId ID-1441722987
+target  ns:ns/{c0} ns:knockvh58nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_changevi15nl0ce1"
+
+mappingId ID1432460815
+target  ns:ns/{c0} ns:usevi23nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_animalvh6nl0ce0"
+
+mappingId ID1241234611
+target  ns:ns/{c0} ns:societyvi1nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_returnvnm28nl0ce2"
+
+mappingId ID1399715504
+target  ns:ns/{c0} ns:involvevh2nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_goldvnm40nl0ce2"
+
+mappingId ID-1384803852
+target  ns:ns/{c0} ns:copyad36nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_coatvh14nl0ce0"
+
+mappingId ID-1402110002
+target  ns:ns/{c0} ns:examplevh23nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_churchvnm7nl0ce1"
+
+mappingId ID1579617715
+target  ns:ns/{c0} ns:loosevnm13nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_electricvi25nl0ce0"
+
+mappingId ID-715408804
+target  ns:ns/{c0} ns:fishvi49nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_examinevnm20nl0ce2"
+
+mappingId ID-863945578
+target  ns:ns/{c0} ns:twistvi56nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_touchvh21nl0ce0"
+
+mappingId ID-1216340144
+target  ns:ns/{c0} ns:churchvnm7nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_voicevnm9nl0ce1"
+
+mappingId ID955467938
+target  ns:ns/{c0} ns:placevnm1nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_layvnm58nl0ce2"
+
+mappingId ID-975265741
+target  ns:ns/{c0} ns:usevh2nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_cushionvnm62nl0ce0"
+
+mappingId ID1814659083
+target  ns:ns/{c0} ns:collarvnm63nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_advertisementvi14nl0ce0"
+
+mappingId ID-1664228281
+target  ns:ns/{c0} ns:regretvi54nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_truevnm47nl0ce2"
+
+mappingId ID942114180
+target  ns:ns/{c0} ns:wetvh13nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_amountvnm18nl0ce1"
+
+mappingId ID1078309054
+target  ns:ns/{c0} ns:restvh34nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_mattervnm19nl0ce2"
+
+mappingId ID-381359657
+target  ns:ns/{c0} ns:sizevnm17nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_stitchvnm32nl0ce0"
+
+mappingId ID877011429
+target  ns:ns/{c0} ns:brushvh19nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_colorvnm30nl0ce1"
+
+mappingId ID142898444
+target  ns:ns/{c0} ns:cardvnm52nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_contributevnm45nl0ce1"
+
+mappingId ID1534428212
+target  ns:ns/{c0} ns:smokevi14nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_placevnm1nl0ce1"
+
+mappingId ID-1957137035
+target  ns:ns/{c0} ns:meanvi59nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_shadevh45nl0ce1"
+
+mappingId ID-515569775
+target  ns:ns/{c0} ns:shadevh45nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_crossvh17nl0ce0"
+
+mappingId ID851023170
+target  ns:ns/{c0} ns:involvevi4nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_pointvi18nl0ce0"
+
+mappingId ID986383446
+target  ns:ns/{c0} ns:fallvh47nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_voicevnm9nl0ce1"
+
+mappingId ID-155677795
+target  ns:ns/{c0} ns:fictionvh9nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_collarvnm63nl0ce0"
+
+mappingId ID447178968
+target  ns:ns/{c0} ns:shakevnm23nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_greenvnm8nl0ce1"
+
+mappingId ID-1100575649
+target  ns:ns/{c0} ns:delicatevi38nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_reportvnm38nl0ce2"
+
+mappingId ID797439868
+target  ns:ns/{c0} ns:yellowvnm33nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_clothvh46nl0ce0"
+
+mappingId ID2065969609
+target  ns:ns/{c0} ns:involvevnm21nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_flowervnm48nl0ce1"
+
+mappingId ID-1791061855
+target  ns:ns/{c0} ns:snakevi8nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_levelvh18nl0ce0"
+
+mappingId ID555535867
+target  ns:ns/{c0} ns:expressvnm26nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_smokevnm52nl0ce1"
+
+mappingId ID1813293290
+target  ns:ns/{c0} ns:collarvi33nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_probablevh5nl0ce1"
+
+mappingId ID1768238581
+target  ns:ns/{c0} ns:touchvh8nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_churchvnm10nl0ce0"
+
+mappingId ID-1982753884
+target  ns:ns/{c0} ns:canvasvnm31nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_bluevnm22nl0ce2"
+
+mappingId ID-671879575
+target  ns:ns/{c0} ns:trickvnm8nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_fallvh29nl0ce1"
+
+mappingId ID1128481383
+target  ns:ns/{c0} ns:privatevnm54nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_usead61nl0ce0"
+
+mappingId ID1911038631
+target  ns:ns/{c0} ns:voicevnm9nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_regretvnm30nl0ce0"
+
+mappingId ID-256059875
+target  ns:ns/{c0} a ns:screwvi21nl0ce0 . 
+source  SELECT c0 FROM "src_businessvi11nl0ce0"
+
+mappingId ID1988446305
+target  ns:ns/{c0} ns:loosevh56nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_canvasvnm31nl0ce0"
+
+mappingId ID-1955157232
+target  ns:ns/{c0} ns:collectionvnm2nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_forgivevnm33nl0ce1"
+
+mappingId ID200009518
+target  ns:ns/{c0} ns:needvi27nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_actvh17nl0ce1"
+
+mappingId ID1360509116
+target  ns:ns/{c0} ns:involvevi16nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_providevi26nl0ce0"
+
+mappingId ID-1136011040
+target  ns:ns/{c0} ns:smilevi19nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_flyvi7nl0ce0"
+
+mappingId ID2035810153
+target  ns:ns/{c0} ns:businessvi11nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_flyvh39nl0ce0"
+
+mappingId ID-1458069459
+target  ns:ns/{c0} ns:bandvi18nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_armvnm49nl0ce1"
+
+mappingId ID-1554800417
+target  ns:ns/{c0} ns:bloodvnm54nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_privatevnm54nl0ce0"
+
+mappingId ID-1684048565
+target  ns:ns/{c0} ns:stitchvnm32nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_actvh17nl0ce1"
+
+mappingId ID1826813620
+target  ns:ns/{c0} ns:beevi16nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_smokevi14nl0ce1"
+
+mappingId ID1748720731
+target  ns:ns/{c0} ns:leathervnm27nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_knowvh15nl0ce1"
+
+mappingId ID-154742782
+target  ns:ns/{c0} ns:usevh26nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_watchvh53nl0ce1"
+
+mappingId ID-1435975718
+target  ns:ns/{c0} ns:connectionvh42nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_sortvi31nl0ce1"
+
+mappingId ID-1623012987
+target  ns:ns/{c0} ns:jumpvnm8nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_awakevnm7nl0ce0"
+
+mappingId ID2079799683
+target  ns:ns/{c0} ns:sortvi31nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_delicatevi38nl0ce1"
+
+mappingId ID-372720011
+target  ns:ns/{c0} ns:clockad7nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_openvh33nl0ce1"
+
+mappingId ID1972207155
+target  ns:ns/{c0} ns:endvnm21nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_churchvnm7nl0ce1"
+
+mappingId ID360607126
+target  ns:ns/{c0} ns:openvh33nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_waxad60nl0ce0"
+
+mappingId ID994137554
+target  ns:ns/{c0} ns:lightvi52nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_colorvnm30nl0ce1"
+
+mappingId ID1814883664
+target  ns:ns/{c0} ns:discovervi29nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_concernvh23nl0ce0"
+
+mappingId ID-858311083
+target  ns:ns/{c0} ns:languagevh49nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_usevh2nl0ce1"
+
+mappingId ID2089564887
+target  ns:ns/{c0} ns:femalevi60nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_degreevh28nl0ce1"
+
+mappingId ID42144081
+target  ns:ns/{c0} ns:mattervnm19nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_reflectvh16nl0ce1"
+
+mappingId ID-1086037084
+target  ns:ns/{c0} ns:degreevi9nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_reflectvh16nl0ce1"
+
+mappingId ID-1644153417
+target  ns:ns/{c0} ns:adjustmentvnm14nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_jumpvnm8nl0ce2"
+
+mappingId ID-1135456823
+target  ns:ns/{c0} ns:arguevnm6nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_yellowvnm45nl0ce2"
+
+mappingId ID-1601543249
+target  ns:ns/{c0} ns:workvnm30nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_forgivevi9nl0ce1"
+
+mappingId ID-1268954381
+target  ns:ns/{c0} ns:grassvnm46nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_intendvnm47nl0ce1"
+
+mappingId ID176776880
+target  ns:ns/{c0} ns:seemvh35nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_ownvnm47nl0ce0"
+
+mappingId ID-778421492
+target  ns:ns/{c0} ns:skinvi24nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_accountvh9nl0ce0"
+
+mappingId ID-82556348
+target  ns:ns/{c0} ns:comparevi46nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_gardenvnm45nl0ce0"
+
+mappingId ID-29663519
+target  ns:ns/{c0} ns:painvnm4nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_layvnm58nl0ce2"
+
+mappingId ID1582143513
+target  ns:ns/{c0} ns:expertvi31nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_seavnm5nl0ce2"
+
+mappingId ID1616111670
+target  ns:ns/{c0} ns:contributevnm45nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_secondvnm16nl0ce2"
+
+mappingId ID528585298
+target  ns:ns/{c0} ns:replyvh10nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_completevh4nl0ce0"
+
+mappingId ID712713258
+target  ns:ns/{c0} ns:whitevi23nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_replyvh30nl0ce1"
+
+mappingId ID-1559291088
+target  ns:ns/{c0} ns:provevi3nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_accountvh9nl0ce0"
+
+mappingId ID149724645
+target  ns:ns/{c0} ns:commonvnm60nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_holdvnm50nl0ce1"
+
+mappingId ID-711490675
+target  ns:ns/{c0} ns:letvh37nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hidevi17nl0ce0"
+
+mappingId ID-528672042
+target  ns:ns/{c0} ns:familyvnm20nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_endvnm21nl0ce1"
+
+mappingId ID430365631
+target  ns:ns/{c0} ns:comparevnm11nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_bluevnm22nl0ce2"
+
+mappingId ID-901994729
+target  ns:ns/{c0} ns:soundvi47nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_knotvnm33nl0ce0"
+
+mappingId ID-2008928548
+target  ns:ns/{c0} ns:relationvnm53nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_softvnm29nl0ce1"
+
+mappingId ID596991915
+target  ns:ns/{c0} ns:loosevnm58nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_knowledgevi38nl0ce0"
+
+mappingId ID-1572186499
+target  ns:ns/{c0} ns:usead61nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_sockvnm26nl0ce0"
+
+mappingId ID517935544
+target  ns:ns/{c0} ns:mealvh46nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_girlvh57nl0ce0"
+
+mappingId ID2070308193
+target  ns:ns/{c0} ns:selectionvnm29nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_separatevh27nl0ce1"
+
+mappingId ID286224611
+target  ns:ns/{c0} ns:presentvh18nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_curvevi58nl0ce0m"
+
+mappingId ID1959793075
+target  ns:ns/{c0} ns:secondvnm16nl0ce2 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_offervnm57nl0ce0"
+
+mappingId ID1709991036
+target  ns:ns/{c0} ns:shutvnm28nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_chargevh3nl0ce1"
+
+mappingId ID-1708287049
+target  ns:ns/{c0} ns:churchvnm10nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_attackvnm19nl0ce0"
+
+mappingId ID1599932959
+target  ns:ns/{c0} ns:containvh15nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_firstvnm11nl0ce1"
+
+mappingId ID-1104118750
+target  ns:ns/{c0} ns:basevh62nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_encouragevi64nl0ce1"
+
+mappingId ID-313893393
+target  ns:ns/{c0} ns:cutvh39nl0ce1 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_knotvnm27nl0ce1"
+
+mappingId ID-15319686
+target  ns:ns/{c0} ns:agenciesvh20nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_neckvi64nl0ce0"
+
+mappingId ID1841449883
+target  ns:ns/{c0} ns:eatad8nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_clearvh48nl0ce0"
+
+mappingId ID872109603
+target  ns:ns/{c0} ns:waxad60nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_collarvi33nl0ce1"
+
+mappingId ID1548751049
+target  ns:ns/{c0} ns:steelad42nl0ce0 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_separatevh27nl0ce1"
+
+]]

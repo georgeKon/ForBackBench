@@ -127,7 +127,8 @@ def drawGraph(folder,query,subplots):
     ticks = map(lambda x: x.split('.')[0].capitalize(),files)
     plt.yticks(size,ticks)
     if subplots % 10 == 1:
-    	  plt.legend((loads[0],rewrites[0],gqrs[0],blocks[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','GQR','Block','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
+          plt.legend((loads[0],rewrites[0],gqrs[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','GQR','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
+#     	  plt.legend((loads[0],rewrites[0],gqrs[0],blocks[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','GQR','Block','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
 #         plt.legend((loads[0],rewrites[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
 
 if len(sys.argv) > 1:

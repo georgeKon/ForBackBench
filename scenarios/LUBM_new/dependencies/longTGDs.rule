@@ -1,0 +1,72 @@
+src_Organization(?0) -> Organization(?X0) .
+src_Student(?0) -> Student(?X0) , Person(?X0) , Work(?n1) , Course(?n2) , takesCourse(?X0, ?n3) .
+src_degreeFrom(?0,?1) -> degreeFrom(?X0, ?X1) , University(?X1) , Person(?X0) , Organization(?X1) , hasAlumnus(?X1, ?X0) .
+src_orgPublication(?0,?1) -> orgPublication(?X0, ?X1) , Publication(?X1) , Organization(?X0) .
+src_hasAlumnus(?0,?1) -> degreeFrom(?X1, ?X0) , University(?X0) , Person(?X1) , Organization(?X0) , hasAlumnus(?X0, ?X1) .
+src_ConferencePaper(?0) -> Publication(?X0) , ConferencePaper(?X0) , Article(?X0) .
+src_Institute(?0) -> Organization(?X0) , Institute(?X0) .
+src_title(?0,?1) -> title(?X0, ?X1) , Person(?X0) .
+src_publicationAuthor(?0,?1) -> publicationAuthor(?X0, ?X1) , Publication(?X0) , Person(?X1) .
+src_Schedule(?0) -> Schedule(?X0) .
+src_Article(?0) -> Publication(?X0) , Article(?X0) .
+src_UnofficialPublication(?0) -> Publication(?X0) , UnofficialPublication(?X0) .
+src_AssociateProfessor(?0) -> worksFor(?X0, ?n4) , memberOf(?X0, ?n5) , Faculty(?X0) , AssociateProfessor(?X0) , Employee(?X0) , member(?n6, ?X0) , Person(?X0) , Professor(?X0) , Organization(?n7) .
+src_takesCourse(?0,?1) -> takesCourse(?X0, ?X1) .
+src_teacherOf(?0,?1) -> worksFor(?X0, ?n8) , memberOf(?X0, ?n9) , Faculty(?X0) , Employee(?X0) , member(?n10, ?X0) , Person(?X0) , Organization(?n11) , Work(?X1) , teacherOf(?X0, ?X1) , Course(?X1) .
+src_member(?0,?1) -> memberOf(?X1, ?X0) , member(?X0, ?X1) , Person(?X1) , Organization(?X0) .
+src_softwareDocumentation(?0,?1) -> Publication(?X1) , Publication(?X0) , Software(?X0) , softwareDocumentation(?X0, ?X1) .
+src_memberOf(?0,?1) -> memberOf(?X0, ?X1) , member(?X1, ?X0) , Person(?X0) , Organization(?X1) .
+src_VisitingProfessor(?0) -> worksFor(?X0, ?n12) , memberOf(?X0, ?n13) , Faculty(?X0) , Employee(?X0) , member(?n14, ?X0) , Person(?X0) , Professor(?X0) , Organization(?n15) , VisitingProfessor(?X0) .
+src_AdministrativeStaff(?0) -> worksFor(?X0, ?n16) , memberOf(?X0, ?n17) , Employee(?X0) , member(?n18, ?X0) , AdministrativeStaff(?X0) , Person(?X0) , Organization(?n19) .
+src_Program(?0) -> Program(?X0) , Organization(?X0) .
+src_affiliatedOrganizationOf(?0,?1) -> Organization(?X1) , Organization(?X0) , affiliatedOrganizationOf(?X0, ?X1) .
+src_College(?0) -> College(?X0) , Organization(?X0) .
+src_mastersDegreeFrom(?0,?1) -> degreeFrom(?X0, ?X1) , University(?X1) , mastersDegreeFrom(?X0, ?X1) , Person(?X0) , Organization(?X1) , hasAlumnus(?X1, ?X0) .
+src_Professor(?0) -> worksFor(?X0, ?n20) , memberOf(?X0, ?n21) , Faculty(?X0) , Employee(?X0) , member(?n22, ?X0) , Person(?X0) , Professor(?X0) , Organization(?n23) .
+src_Dean(?0) -> worksFor(?X0, ?n24) , worksFor(?X0, ?n25) , memberOf(?X0, ?n26) , memberOf(?X0, ?n27) , Faculty(?X0) , Dean(?X0) , Employee(?X0) , College(?n28) , member(?n29, ?X0) , member(?n30, ?X0) , Person(?X0) , Professor(?X0) , headOf(?X0, ?n31) , Organization(?n32) , Organization(?n33) .
+src_Specification(?0) -> Specification(?X0) , Publication(?X0) .
+src_TechnicalReport(?0) -> Publication(?X0) , Article(?X0) , TechnicalReport(?X0) .
+src_researchProject(?0,?1) -> researchProject(?X0, ?X1) , Organization(?X0) , Research(?X1) , ResearchGroup(?X0) , Work(?X1) .
+src_ClericalStaff(?0) -> worksFor(?X0, ?n34) , memberOf(?X0, ?n35) , Employee(?X0) , member(?n36, ?X0) , AdministrativeStaff(?X0) , Person(?X0) , Organization(?n37) , ClericalStaff(?X0) .
+src_Course(?0) -> Work(?X0) , Course(?X0) .
+src_University(?0) -> University(?X0) , Organization(?X0) .
+src_Employee(?0) -> worksFor(?X0, ?n38) , memberOf(?X0, ?n39) , Employee(?X0) , member(?n40, ?X0) , Person(?X0) , Organization(?n41) .
+src_headOf(?0,?1) -> worksFor(?X0, ?X1) , memberOf(?X0, ?X1) , Employee(?X0) , member(?X1, ?X0) , Person(?X0) , headOf(?X0, ?X1) , Organization(?X1) .
+src_FullProfessor(?0) -> worksFor(?X0, ?n42) , memberOf(?X0, ?n43) , Faculty(?X0) , Employee(?X0) , FullProfessor(?X0) , member(?n44, ?X0) , Person(?X0) , Professor(?X0) , Organization(?n45) .
+src_Lecturer(?0) -> worksFor(?X0, ?n46) , memberOf(?X0, ?n47) , Faculty(?X0) , Lecturer(?X0) , Employee(?X0) , member(?n48, ?X0) , Person(?X0) , Organization(?n49) .
+src_teachingAssistantOf(?0,?1) -> TeachingAssistant(?X0) , Person(?X0) , Work(?X1) , Course(?X1) , teachingAssistantOf(?X0, ?X1) .
+src_Director(?0) -> worksFor(?X0, ?n50) , Program(?n51) , memberOf(?X0, ?n52) , Director(?X0) , Employee(?X0) , member(?n53, ?X0) , Person(?X0) , headOf(?X0, ?n54) , Organization(?n55) .
+src_subOrganizationOf(?0,?1) -> Organization(?X0) , Organization(?X1) , subOrganizationOf(?X0, ?X1) .
+src_age(?0,?1) -> Person(?X0) , age(?X0, ?X1) .
+src_GraduateStudent(?0) -> GraduateCourse(?n56) , Student(?X0) , Person(?X0) , Work(?n57) , Course(?n58) , GraduateStudent(?X0) , takesCourse(?X0, ?n59) .
+src_publicationResearch(?0,?1) -> publicationResearch(?X0, ?X1) , Publication(?X0) , Research(?X1) , Work(?X1) .
+src_UndergraduateStudent(?0) -> Student(?X0) , Person(?X0) , UndergraduateStudent(?X0) , Work(?n60) , Course(?n61) , takesCourse(?X0, ?n62) .
+src_Faculty(?0) -> worksFor(?X0, ?n63) , memberOf(?X0, ?n64) , Faculty(?X0) , Employee(?X0) , member(?n65, ?X0) , Person(?X0) , Organization(?n66) .
+src_publicationDate(?0,?1) -> Publication(?X0) , publicationDate(?X0, ?X1) .
+src_doctoralDegreeFrom(?0,?1) -> doctoralDegreeFrom(?X0, ?X1) , degreeFrom(?X0, ?X1) , University(?X1) , Person(?X0) , Organization(?X1) , hasAlumnus(?X1, ?X0) .
+src_JournalArticle(?0) -> Publication(?X0) , Article(?X0) , JournalArticle(?X0) .
+src_Manual(?0) -> Publication(?X0) , Manual(?X0) .
+src_Chair(?0) -> worksFor(?X0, ?n67) , worksFor(?X0, ?n68) , memberOf(?X0, ?n69) , memberOf(?X0, ?n70) , Faculty(?X0) , Employee(?X0) , member(?n71, ?X0) , member(?n72, ?X0) , Person(?X0) , Professor(?X0) , headOf(?X0, ?n73) , Organization(?n74) , Organization(?n75) , Chair(?X0) , Department(?n76) .
+src_Research(?0) -> Research(?X0) , Work(?X0) .
+src_SystemsStaff(?0) -> worksFor(?X0, ?n77) , memberOf(?X0, ?n78) , SystemsStaff(?X0) , Employee(?X0) , member(?n79, ?X0) , AdministrativeStaff(?X0) , Person(?X0) , Organization(?n80) .
+src_affiliateOf(?0,?1) -> Person(?X1) , Organization(?X0) , affiliateOf(?X0, ?X1) .
+src_PostDoc(?0) -> worksFor(?X0, ?n81) , memberOf(?X0, ?n82) , Faculty(?X0) , Employee(?X0) , PostDoc(?X0) , member(?n83, ?X0) , Person(?X0) , Organization(?n84) .
+src_Software(?0) -> Publication(?X0) , Software(?X0) .
+src_Book(?0) -> Publication(?X0) , Book(?X0) .
+src_ResearchGroup(?0) -> Organization(?X0) , ResearchGroup(?X0) .
+src_advisor(?0,?1) -> worksFor(?X1, ?n85) , memberOf(?X1, ?n86) , Faculty(?X1) , Employee(?X1) , member(?n87, ?X1) , Person(?X0) , Person(?X1) , Professor(?X1) , Organization(?n88) , advisor(?X0, ?X1) .
+src_telephone(?0,?1) -> Person(?X0) , telephone(?X0, ?X1) .
+src_worksFor(?0,?1) -> worksFor(?X0, ?X1) , memberOf(?X0, ?X1) , Employee(?X0) , member(?X1, ?X0) , Person(?X0) , Organization(?X1) .
+src_softwareVersion(?0,?1) -> Publication(?X0) , Software(?X0) , softwareVersion(?X0, ?X1) .
+src_TeachingAssistant(?0) -> TeachingAssistant(?X0) , Person(?X0) , Work(?n89) , Course(?n90) , teachingAssistantOf(?X0, ?n91) .
+src_Work(?0) -> Work(?X0) .
+src_undergraduateDegreeFrom(?0,?1) -> undergraduateDegreeFrom(?X0, ?X1) , degreeFrom(?X0, ?X1) , University(?X1) , Person(?X0) , Organization(?X1) , hasAlumnus(?X1, ?X0) .
+src_listedCourse(?0,?1) -> Schedule(?X0) , listedCourse(?X0, ?X1) , Work(?X1) , Course(?X1) .
+src_tenured(?0,?1) -> worksFor(?X0, ?n92) , memberOf(?X0, ?n93) , Faculty(?X0) , Employee(?X0) , member(?n94, ?X0) , Person(?X0) , Professor(?X0) , Organization(?n95) , tenured(?X0, ?X1) .
+src_Person(?0) -> Person(?X0) .
+src_Department(?0) -> Organization(?X0) , Department(?X0) .
+src_emailAddress(?0,?1) -> Person(?X0) , emailAddress(?X0, ?X1) .
+src_GraduateCourse(?0) -> GraduateCourse(?X0) , Work(?X0) , Course(?X0) .
+src_AssistantProfessor(?0) -> worksFor(?X0, ?n96) , memberOf(?X0, ?n97) , Faculty(?X0) , Employee(?X0) , member(?n98, ?X0) , Person(?X0) , Professor(?X0) , Organization(?n99) , AssistantProfessor(?X0) .
+src_Publication(?0) -> Publication(?X0) .
+src_ResearchAssistant(?0) -> worksFor(?X0, ?n100) , memberOf(?X0, ?n101) , Employee(?X0) , member(?n102, ?X0) , Person(?X0) , Organization(?n103) , ResearchGroup(?n104) , ResearchAssistant(?X0) .

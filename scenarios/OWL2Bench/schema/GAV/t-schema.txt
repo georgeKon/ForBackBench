@@ -1,0 +1,774 @@
+AeronauticalEngineering {
+	c0 : STRING
+}
+Engineering {
+	c0 : STRING
+}
+Anthropology {
+	c0 : STRING
+}
+HumanitiesAndSocial {
+	c0 : STRING
+}
+Architecture {
+	c0 : STRING
+}
+FineArts {
+	c0 : STRING
+}
+Article {
+	c0 : STRING
+}
+Publication {
+	c0 : STRING
+}
+AsianArts {
+	c0 : STRING
+}
+AssistantProfessor {
+	c0 : STRING
+}
+Professor {
+	c0 : STRING
+}
+AssociateProfessor {
+	c0 : STRING
+}
+Astronomy {
+	c0 : STRING
+}
+Science {
+	c0 : STRING
+}
+Badminton {
+	c0 : STRING
+}
+Sports {
+	c0 : STRING
+}
+BasketBall {
+	c0 : STRING
+}
+BasketBallFan {
+	c0 : STRING
+}
+isCrazyAbout {
+	c0 : STRING,
+	c1 : STRING
+}
+BasketBallLover {
+	c0 : STRING
+}
+loves {
+	c0 : STRING,
+	c1 : STRING
+}
+Biology {
+	c0 : STRING
+}
+BiomedicalEngineering {
+	c0 : STRING
+}
+Book {
+	c0 : STRING
+}
+Chair {
+	c0 : STRING
+}
+FullProfessor {
+	c0 : STRING
+}
+isHeadOf {
+	c0 : STRING,
+	c1 : STRING
+}
+Department {
+	c0 : STRING
+}
+ChemicalEngineering {
+	c0 : STRING
+}
+Chemistry {
+	c0 : STRING
+}
+CivilEngineering {
+	c0 : STRING
+}
+ClericalStaff {
+	c0 : STRING
+}
+SupportingStaff {
+	c0 : STRING
+}
+CoEdCollege {
+	c0 : STRING
+}
+College {
+	c0 : STRING
+}
+Organization {
+	c0 : STRING
+}
+ComputerEngineering {
+	c0 : STRING
+}
+ComputerScience {
+	c0 : STRING
+}
+ConferencePaper {
+	c0 : STRING
+}
+Cricket {
+	c0 : STRING
+}
+Dean {
+	c0 : STRING
+}
+DesignManagement {
+	c0 : STRING
+}
+Management {
+	c0 : STRING
+}
+Director {
+	c0 : STRING
+}
+Program {
+	c0 : STRING
+}
+Drama {
+	c0 : STRING
+}
+Economics {
+	c0 : STRING
+}
+ElectiveCourse {
+	c0 : STRING
+}
+Course {
+	c0 : STRING
+}
+ElectricalEngineering {
+	c0 : STRING
+}
+Employee {
+	c0 : STRING
+}
+Person {
+	c0 : STRING
+}
+worksFor {
+	c0 : STRING,
+	c1 : STRING
+}
+EmployeeEvaluationCommittee {
+	c0 : STRING
+}
+EvaluationCommittee {
+	c0 : STRING
+}
+CollegeDiscipline {
+	c0 : STRING
+}
+English {
+	c0 : STRING
+}
+Faculty {
+	c0 : STRING
+}
+teachesCourse {
+	c0 : STRING,
+	c1 : STRING
+}
+FinancialAndAccountingManagement {
+	c0 : STRING
+}
+FootBall {
+	c0 : STRING
+}
+Game {
+	c0 : STRING
+}
+Interest {
+	c0 : STRING
+}
+Geosciences {
+	c0 : STRING
+}
+History {
+	c0 : STRING
+}
+HumanResourceManagement {
+	c0 : STRING
+}
+Humanities {
+	c0 : STRING
+}
+IndustryEngineering {
+	c0 : STRING
+}
+Institute {
+	c0 : STRING
+}
+JournalArticle {
+	c0 : STRING
+}
+LatinArts {
+	c0 : STRING
+}
+Lecturer {
+	c0 : STRING
+}
+Linguistics {
+	c0 : STRING
+}
+Manual {
+	c0 : STRING
+}
+MarineScience {
+	c0 : STRING
+}
+MarketingManagement {
+	c0 : STRING
+}
+MaterialScienceEngineering {
+	c0 : STRING
+}
+MaterialsScience {
+	c0 : STRING
+}
+Mathematics {
+	c0 : STRING
+}
+MechanicalEngineering {
+	c0 : STRING
+}
+MediaArtsAndSciences {
+	c0 : STRING
+}
+MedievalArts {
+	c0 : STRING
+}
+ModernArts {
+	c0 : STRING
+}
+ModernLanguages {
+	c0 : STRING
+}
+Movie {
+	c0 : STRING
+}
+Music {
+	c0 : STRING
+}
+MusicsClass {
+	c0 : STRING
+}
+NonScience {
+	c0 : STRING
+}
+NonScienceStudent {
+	c0 : STRING
+}
+Student {
+	c0 : STRING
+}
+hasMajor {
+	c0 : STRING,
+	c1 : STRING
+}
+OperationsManagement {
+	c0 : STRING
+}
+OtherStaff {
+	c0 : STRING
+}
+PGProgram {
+	c0 : STRING
+}
+PGStudent {
+	c0 : STRING
+}
+enrollFor {
+	c0 : STRING,
+	c1 : STRING
+}
+Painting {
+	c0 : STRING
+}
+PeopleWithHobby {
+	c0 : STRING
+}
+likes {
+	c0 : STRING,
+	c1 : STRING
+}
+PerformingArts {
+	c0 : STRING
+}
+PetroleumlEngineering {
+	c0 : STRING
+}
+PhDProgram {
+	c0 : STRING
+}
+PhDStudent {
+	c0 : STRING
+}
+Philosophy {
+	c0 : STRING
+}
+Physics {
+	c0 : STRING
+}
+PostDoc {
+	c0 : STRING
+}
+ProjectManagement {
+	c0 : STRING
+}
+Psychology {
+	c0 : STRING
+}
+PublicRelationsManagement {
+	c0 : STRING
+}
+Reading {
+	c0 : STRING
+}
+Religions {
+	c0 : STRING
+}
+ResearchAssistant {
+	c0 : STRING
+}
+ResearchGroup {
+	c0 : STRING
+}
+ResearchProject {
+	c0 : STRING
+}
+Work {
+	c0 : STRING
+}
+RiskManagement {
+	c0 : STRING
+}
+SalesManagement {
+	c0 : STRING
+}
+School {
+	c0 : STRING
+}
+ScienceStudent {
+	c0 : STRING
+}
+Software {
+	c0 : STRING
+}
+Specification {
+	c0 : STRING
+}
+SportsFan {
+	c0 : STRING
+}
+SportsLover {
+	c0 : STRING
+}
+Statistics {
+	c0 : STRING
+}
+enrollIn {
+	c0 : STRING,
+	c1 : STRING
+}
+StudentEvaluationCommittee {
+	c0 : STRING
+}
+SupplyChainManagement {
+	c0 : STRING
+}
+Swimming {
+	c0 : STRING
+}
+SystemStaff {
+	c0 : STRING
+}
+TeachingAssistant {
+	c0 : STRING
+}
+isTeachingAssistantOf {
+	c0 : STRING,
+	c1 : STRING
+}
+TeachingCourse {
+	c0 : STRING
+}
+TechnicalReport {
+	c0 : STRING
+}
+Tennis {
+	c0 : STRING
+}
+TheatreAndDance {
+	c0 : STRING
+}
+ThesisEvaluationCommittee {
+	c0 : STRING
+}
+Travelling {
+	c0 : STRING
+}
+UGCourse {
+	c0 : STRING
+}
+UGProgram {
+	c0 : STRING
+}
+UGStudent {
+	c0 : STRING
+}
+University {
+	c0 : STRING
+}
+UnofficialPublication {
+	c0 : STRING
+}
+VisitingProfessor {
+	c0 : STRING
+}
+WomanCollege {
+	c0 : STRING
+}
+dislikes {
+	c0 : STRING,
+	c1 : STRING
+}
+isStudentOf {
+	c0 : STRING,
+	c1 : STRING
+}
+evaluatedBy {
+	c0 : STRING,
+	c1 : STRING
+}
+evaluates {
+	c0 : STRING,
+	c1 : STRING
+}
+hasAlumnus {
+	c0 : STRING,
+	c1 : STRING
+}
+hasDegreeFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+hasAssistantProfessor {
+	c0 : STRING,
+	c1 : STRING
+}
+isAssistantProfessorOf {
+	c0 : STRING,
+	c1 : STRING
+}
+hasProfessor {
+	c0 : STRING,
+	c1 : STRING
+}
+hasAssociateProfessor {
+	c0 : STRING,
+	c1 : STRING
+}
+isAssociateProfessorOf {
+	c0 : STRING,
+	c1 : STRING
+}
+hasAuthor {
+	c0 : STRING,
+	c1 : STRING
+}
+hasClericalStaff {
+	c0 : STRING,
+	c1 : STRING
+}
+hasSupportingStaff {
+	c0 : STRING,
+	c1 : STRING
+}
+hasCollaborationWith {
+	c0 : STRING,
+	c1 : STRING
+}
+hasCollege {
+	c0 : STRING,
+	c1 : STRING
+}
+isCollegeOf {
+	c0 : STRING,
+	c1 : STRING
+}
+hasSubOrganization {
+	c0 : STRING,
+	c1 : STRING
+}
+hasCollegeDiscipline {
+	c0 : STRING,
+	c1 : STRING
+}
+hasCommitteeMembers {
+	c0 : STRING,
+	c1 : STRING
+}
+hasMember {
+	c0 : STRING,
+	c1 : STRING
+}
+hasDean {
+	c0 : STRING,
+	c1 : STRING
+}
+isDeanOf {
+	c0 : STRING,
+	c1 : STRING
+}
+hasDepartment {
+	c0 : STRING,
+	c1 : STRING
+}
+isDepartmentOf {
+	c0 : STRING,
+	c1 : STRING
+}
+hasDoctoralDegreeFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+hasEmployee {
+	c0 : STRING,
+	c1 : STRING
+}
+hasEmployeeEvaluationCommittee {
+	c0 : STRING,
+	c1 : STRING
+}
+hasEvaluationCommittee {
+	c0 : STRING,
+	c1 : STRING
+}
+hasFaculty {
+	c0 : STRING,
+	c1 : STRING
+}
+isFacultyOf {
+	c0 : STRING,
+	c1 : STRING
+}
+hasFullProfessor {
+	c0 : STRING,
+	c1 : STRING
+}
+isFullProfessorOf {
+	c0 : STRING,
+	c1 : STRING
+}
+hasHead {
+	c0 : STRING,
+	c1 : STRING
+}
+hasLecturer {
+	c0 : STRING,
+	c1 : STRING
+}
+isLecturerOf {
+	c0 : STRING,
+	c1 : STRING
+}
+hasMasterDegreeFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+isMemberOf {
+	c0 : STRING,
+	c1 : STRING
+}
+hasOtherStaff {
+	c0 : STRING,
+	c1 : STRING
+}
+hasPGProgram {
+	c0 : STRING,
+	c1 : STRING
+}
+hasProgram {
+	c0 : STRING,
+	c1 : STRING
+}
+hasPart {
+	c0 : STRING,
+	c1 : STRING
+}
+isPartOf {
+	c0 : STRING,
+	c1 : STRING
+}
+hasPhDProgram {
+	c0 : STRING,
+	c1 : STRING
+}
+hasPostDoc {
+	c0 : STRING,
+	c1 : STRING
+}
+isPostDocOf {
+	c0 : STRING,
+	c1 : STRING
+}
+isProfessorOf {
+	c0 : STRING,
+	c1 : STRING
+}
+hasResearchAssistant {
+	c0 : STRING,
+	c1 : STRING
+}
+isResearchAssistantOf {
+	c0 : STRING,
+	c1 : STRING
+}
+hasResearchGroup {
+	c0 : STRING,
+	c1 : STRING
+}
+isResearchGroupOf {
+	c0 : STRING,
+	c1 : STRING
+}
+hasResearchProject {
+	c0 : STRING,
+	c1 : STRING
+}
+hasWork {
+	c0 : STRING,
+	c1 : STRING
+}
+hasStudent {
+	c0 : STRING,
+	c1 : STRING
+}
+hasStudentEvaluationCommittee {
+	c0 : STRING,
+	c1 : STRING
+}
+isSubOrganizationOf {
+	c0 : STRING,
+	c1 : STRING
+}
+hasSystemStaff {
+	c0 : STRING,
+	c1 : STRING
+}
+hasThesisEvaluationCommittee {
+	c0 : STRING,
+	c1 : STRING
+}
+hasUGProgram {
+	c0 : STRING,
+	c1 : STRING
+}
+hasUndergraduateDegreeFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+hasVisitingProfessor {
+	c0 : STRING,
+	c1 : STRING
+}
+isVisitingProfessorOf {
+	c0 : STRING,
+	c1 : STRING
+}
+hasWomenCollege {
+	c0 : STRING,
+	c1 : STRING
+}
+isAdvisedBy {
+	c0 : STRING,
+	c1 : STRING
+}
+hasAdvisor{
+	c0 : STRING,
+	c1 : STRING
+}
+isAffiliatedOrganizationOf {
+	c0 : STRING,
+	c1 : STRING
+}
+isClericalStaffOf {
+	c0 : STRING,
+	c1 : STRING
+}
+isSupportingStaffOf {
+	c0 : STRING,
+	c1 : STRING
+}
+isOtherStaffOf {
+	c0 : STRING,
+	c1 : STRING
+}
+isSystemStaffOf {
+	c0 : STRING,
+	c1 : STRING
+}
+isTaughtBy {
+	c0 : STRING,
+	c1 : STRING
+}
+isWomenCollegeOf {
+	c0 : STRING,
+	c1 : STRING
+}
+offerCourse {
+	c0 : STRING,
+	c1 : STRING
+}
+orgPublication {
+	c0 : STRING,
+	c1 : STRING
+}
+publicationResearch {
+	c0 : STRING,
+	c1 : STRING
+}
+takesCourse {
+	c0 : STRING,
+	c1 : STRING
+}
+tenured {
+	c0 : STRING,
+	c1 : STRING
+}
+hasAge {
+	c0 : STRING,
+	c1 : STRING
+}
+hasEmailAddress {
+	c0 : STRING,
+	c1 : STRING
+}
+hasFirstName {
+	c0 : STRING,
+	c1 : STRING
+}
+hasLastName {
+	c0 : STRING,
+	c1 : STRING
+}
+hasTelephone {
+	c0 : STRING,
+	c1 : STRING
+}
+hasTitle {
+	c0 : STRING,
+	c1 : STRING
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<scenario>
+    <source>
+        <type>DBMS</type>
+        <access-configuration>
+            <driver>org.postgresql.Driver</driver>
+            <uri>jdbc:postgresql:lubm_llunatic</uri>
+            <schema>source</schema>
+            <login>postgres</login>
+            <password>password</password>
+        </access-configuration>
+        <schemaFile schema="source">/home/james/Documents/project/obdabenchmark/scenarios/University/schema/s-schema.txt</schemaFile>
+        <import>
+            <input type="csv" separator="," hasHeader="false" table="src_assistantprofessor">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_AssistantProfessor.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_associateprofessor">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_AssociateProfessor.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_course">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_Course.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_department">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_Department.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_fullprofessor">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_FullProfessor.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_graduatecourse">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_GraduateCourse.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_graduatestudent">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_GraduateStudent.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_lecturer">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_Lecturer.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_publication">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_Publication.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_researchassistant">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_ResearchAssistant.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_researchgroup">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_ResearchGroup.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_teachingassistant">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_TeachingAssistant.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_undergraduatestudent">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_UndergraduateStudent.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_university">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_University.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_advisor">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_advisor.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_doctoraldegreefrom">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_doctoralDegreeFrom.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_emailaddress">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_emailAddress.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_headof">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_headOf.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_mastersdegreefrom">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_mastersDegreeFrom.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_memberof">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_memberOf.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_name">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_name.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_publicationauthor">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_publicationAuthor.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_researchinterest">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_researchInterest.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_suborganizationof">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_subOrganizationOf.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_takescourse">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_takesCourse.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_teacherof">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_teacherOf.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_teachingassistantof">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_teachingAssistantOf.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_telephone">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_telephone.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_undergraduatedegreefrom">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_undergraduateDegreeFrom.csv</input>
+            <input type="csv" separator="," hasHeader="false" table="src_worksfor">/home/james/Documents/project/obdabenchmark/scenarios/University/data/large/src_worksFor.csv</input>
+        </import>
+    </source>
+    <target>
+        <generateFromDependencies>true</generateFromDependencies>
+        <type>DBMS</type>
+        <access-configuration>
+            <driver>org.postgresql.Driver</driver>
+            <uri>jdbc:postgresql:lubm_llunatic</uri>
+            <schema>target</schema>
+            <login>postgres</login>
+            <password>password</password>
+        </access-configuration>
+        <schemaFile schema="target">/home/james/Documents/project/obdabenchmark/scenarios/University/schema/t-schema.txt</schemaFile>
+    </target>
+    <configuration>
+        <printResults>true</printResults>
+        <exportQueryResults>true</exportQueryResults>
+        <exportQueryResultsPath>/home/james/Documents/project/obdabenchmark/scenarios/University/out/large/Q2</exportQueryResultsPath>
+        <exportQueryResultsType>CSV</exportQueryResultsType>
+        <exportSolutions>true</exportSolutions>
+        <exportQueryResults>true</exportQueryResults>
+        <exportSolutionsPath>/home/james/Documents/project/obdabenchmark/scenarios/University/out/large/Q2</exportSolutionsPath>
+        <exportSolutionsType>CSV</exportSolutionsType>
+    </configuration>
+    <dependencies>
+        <sttgdsFile>/home/james/Documents/project/obdabenchmark/scenarios/University/dependencies/st-tgds.txt</sttgdsFile>
+        <ttgdsFile>/home/james/Documents/project/obdabenchmark/scenarios/University/dependencies/t-tgds.txt</ttgdsFile>
+    </dependencies>
+    <queries>
+        <queryFile>/home/james/Documents/project/obdabenchmark/scenarios/University/queries/RDFox/Q2/Q2.txt</queryFile>
+    </queries>
+</scenario>

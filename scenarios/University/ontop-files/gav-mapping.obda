@@ -1,0 +1,173 @@
+[PrefixDeclaration]
+ns:  http://example.com/example.owl#
+
+[MappingDeclaration] @collection [[
+mappingId ID994966963
+target  ns:ns/{c0} a ns:AdministrativeStaff . 
+source  SELECT c0 FROM "src_ExamRecord"
+
+mappingId ID-1668394425
+target  ns:ns/{c0} a ns:Employee . 
+source  SELECT c0 FROM "src_headOf"
+
+mappingId ID-578178088
+target  ns:ns/{c0} a ns:AssistantProfessor . 
+source  SELECT c0 FROM "src_isPartOfUniversity"
+
+mappingId ID213690094
+target  ns:ns/{c0} a ns:Professor . 
+source  SELECT c0 FROM "src_Work"
+
+mappingId ID-995218282
+target  ns:ns/{c0} a ns:AssociateProfessor . 
+source  SELECT c0 FROM "src_GraduateCourse"
+
+mappingId ID-1334437918
+target  ns:ns/{c0} a ns:BachelorExam . 
+source  SELECT c0 FROM "src_takesCourse"
+
+mappingId ID1001067225
+target  ns:ns/{c0} a ns:Exam . 
+source  SELECT c0 FROM "src_Degree"
+
+mappingId ID1212495083
+target  ns:ns/{c0} a ns:Career . 
+source  SELECT c0 FROM "src_advisor"
+
+mappingId ID-822248075
+target  ns:ns/{c0} a ns:Work . 
+source  SELECT c0 FROM "src_advisor"
+
+mappingId ID258063954
+target  ns:ns/{c0} a ns:Chair . 
+source  SELECT c0 FROM "src_hasAlumnus"
+
+mappingId ID2085762810
+target  ns:ns/{c0} a ns:ClericalStaff . 
+source  SELECT c0 FROM "src_GraduateCourse"
+
+mappingId ID391309483
+target  ns:ns/{c0} a ns:College . 
+source  SELECT c0 FROM "src_degreeFrom"
+
+mappingId ID2054137499
+target  ns:ns/{c0} a ns:Organization . 
+source  SELECT c0 FROM "src_tenured"
+
+mappingId ID-1832984293
+target  ns:ns/{c0} a ns:Course . 
+source  SELECT c0 FROM "src_headOf"
+
+mappingId ID-877967002
+target  ns:ns/{c0} a ns:Dean . 
+source  SELECT c0 FROM "src_SystemsStaff"
+
+mappingId ID-2052119585
+target  ns:ns/{c0} ns:headOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_mastersDegreeFrom"
+
+mappingId ID991998047
+target  ns:ns/{c0} a ns:Degree . 
+source  SELECT c0 FROM "src_College"
+
+mappingId ID-380308766
+target  ns:ns/{c0} a ns:Director . 
+source  SELECT c0 FROM "src_orgPublication"
+
+mappingId ID-380068042
+target  ns:ns/{c0} a ns:Person . 
+source  SELECT c0 FROM "src_PostDoc"
+
+mappingId ID-839126890
+target  ns:ns/{c0} a ns:Program . 
+source  SELECT c0 FROM "src_UndergraduateStudent"
+
+mappingId ID1360265401
+target  ns:ns/{c0} a ns:ExDean . 
+source  SELECT c0 FROM "src_PostDoc"
+
+mappingId ID-676060297
+target  ns:ns/{c0} a ns:ExamRecord . 
+source  SELECT c0 FROM "src_AdministrativeStaff"
+
+mappingId ID-1107148504
+target  ns:ns/{c0} a ns:Faculty . 
+source  SELECT c0 FROM "src_affiliatedOrganizationOf"
+
+mappingId ID766279904
+target  ns:ns/{c0} a ns:FacultyStaff . 
+source  SELECT c0 FROM "src_ResearchAssistant"
+
+mappingId ID786435095
+target  ns:ns/{c0} a ns:FullProfessor . 
+source  SELECT c0 FROM "src_affiliatedOrganizationOf"
+
+mappingId ID194912789
+target  ns:ns/{c0} a ns:GraduateCourse . 
+source  SELECT c0 FROM "src_tenured"
+
+mappingId ID-1943422322
+target  ns:ns/{c0} a ns:GraduateStudent . 
+source  SELECT c0 FROM "src_mastersDegreeFrom"
+
+mappingId ID1544783028
+target  ns:ns/{c0} ns:takesCourse ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_worksFor"
+
+mappingId ID-232538255
+target  ns:ns/{c0} a ns:Lecturer . 
+source  SELECT c0 FROM "src_orgPublication"
+
+mappingId ID96616424
+target  ns:ns/{c0} a ns:PostDoc . 
+source  SELECT c0 FROM "src_AssistantProfessor"
+
+mappingId ID-973642872
+target  ns:ns/{c0} a ns:ResearchAssistant . 
+source  SELECT c0 FROM "src_hasExamRecord"
+
+mappingId ID-2090436077
+target  ns:ns/{c0} a ns:Student . 
+source  SELECT c0 FROM "src_Lecturer"
+
+mappingId ID2099247002
+target  ns:ns/{c0} a ns:SystemsStaff . 
+source  SELECT c0 FROM "src_hasAlumnus"
+
+mappingId ID-1162168626
+target  ns:ns/{c0} a ns:UndergraduateStudent . 
+source  SELECT c0 FROM "src_publicationAuthor"
+
+mappingId ID1532336757
+target  ns:ns/{c0} a ns:University . 
+source  SELECT c0 FROM "src_isPartOfUniversity"
+
+mappingId ID-2031920276
+target  ns:ns/{c0} a ns:VisitingProfessor . 
+source  SELECT c0 FROM "src_FullProfessor"
+
+mappingId ID-1415538215
+target  ns:ns/{c0} ns:isPartOfUniversity ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_teacherOf"
+
+mappingId ID-2033117087
+target  ns:ns/{c0} ns:member ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_takesCourse"
+
+mappingId ID-805199706
+target  ns:ns/{c0} ns:orgPublication ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_mastersDegreeFrom"
+
+mappingId ID473452610
+target  ns:ns/{c0} ns:publicationAuthor ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_affiliateOf"
+
+mappingId ID1543905720
+target  ns:ns/{c0} ns:teacherOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_affiliateOf"
+
+mappingId ID871115061
+target  ns:ns/{c0} ns:teachingAssistantOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_headOf"
+
+]]

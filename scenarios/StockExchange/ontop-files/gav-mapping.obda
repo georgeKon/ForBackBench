@@ -1,0 +1,97 @@
+[PrefixDeclaration]
+ns:  http://example.com/example.owl#
+
+[MappingDeclaration] @collection [[
+mappingId ID-1080060781
+target  ns:ns/{c0} a ns:Acquisition . 
+source  SELECT c0 FROM "src_Stock"
+
+mappingId ID-1250627372
+target  ns:ns/{c0} a ns:Transaction . 
+source  SELECT c0 FROM "src_Investor"
+
+mappingId ID-189018572
+target  ns:ns/{c0} a ns:Address . 
+source  SELECT c0 FROM "src_inverseofhasAddress"
+
+mappingId ID441232409
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_Stock"
+
+mappingId ID1859790815
+target  ns:ns/{c0} a ns:Company . 
+source  SELECT c0 FROM "src_StockExchangeMember"
+
+mappingId ID-1592285514
+target  ns:ns/{c0} a ns:LegalPerson . 
+source  SELECT c0 FROM "src_listsStock"
+
+mappingId ID-222471089
+target  ns:ns/{c0} a ns:Dealer . 
+source  SELECT c0 FROM "src_FinantialInstrument"
+
+mappingId ID-174631745
+target  ns:ns/{c0} a ns:StockBroker . 
+source  SELECT c0 FROM "src_FinantialInstrument"
+
+mappingId ID935525836
+target  ns:ns/{c0} a ns:Investor . 
+source  SELECT c0 FROM "src_listsStock"
+
+mappingId ID651093937
+target  ns:ns/{c0} a ns:Person . 
+source  SELECT c0 FROM "src_tradesOnBehalfOf"
+
+mappingId ID-585758807
+target  ns:ns/{c0} a ns:Offer . 
+source  SELECT c0 FROM "src_involvesInstrument"
+
+mappingId ID-1672998420
+target  ns:ns/{c0} a ns:PhysicalPerson . 
+source  SELECT c0 FROM "src_Transaction"
+
+mappingId ID854030397
+target  ns:ns/{c0} a ns:Stock . 
+source  SELECT c0 FROM "src_hasAddress"
+
+mappingId ID-154815134
+target  ns:ns/{c0} a ns:FinantialInstrument . 
+source  SELECT c0 FROM "src_inverseofhasAddress"
+
+mappingId ID1230325800
+target  ns:ns/{c0} ns:isListedIn ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isExecutedFor"
+
+mappingId ID362563228
+target  ns:ns/{c0} a ns:StockExchangeMember . 
+source  SELECT c0 FROM "src_inverseofhasAddress"
+
+mappingId ID-514173732
+target  ns:ns/{c0} a ns:StockTrader . 
+source  SELECT c0 FROM "src_isExecutedBy"
+
+mappingId ID1970075034
+target  ns:ns/{c0} a ns:Trader . 
+source  SELECT c0 FROM "src_tradesOnBehalfOf"
+
+mappingId ID-842328127
+target  ns:ns/{c0} ns:isExecutedFor ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isListedIn"
+
+mappingId ID-1820471276
+target  ns:ns/{c0} ns:involvesInstrument ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_isListedIn"
+
+mappingId ID1164974195
+target  ns:ns/{c0} a ns:StockExchangeList . 
+source  SELECT c0 FROM "src_hasAddress"
+
+mappingId ID1435671837
+target  ns:ns/{c0} ns:isTradedIn ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_usesBroker"
+
+mappingId ID-763281434
+target  ns:ns/{c0} ns:usesBroker ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_listsStock"
+
+]]

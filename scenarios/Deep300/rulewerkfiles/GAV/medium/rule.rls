@@ -1,0 +1,599 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@source srcm56004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m56004.csv") .
+@source srcm183004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m183004.csv") .
+@source srcm87004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m87004.csv") .
+@source srcm187004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m187004.csv") .
+@source srcm84004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m84004.csv") .
+@source srcm283004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m283004.csv") .
+@source srcm276004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m276004.csv") .
+@source srcm190004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m190004.csv") .
+@source srcm194004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m194004.csv") .
+@source srcm198004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m198004.csv") .
+@source srcm43004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m43004.csv") .
+@source srcm265004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m265004.csv") .
+@source srcm269004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m269004.csv") .
+@source srcm74004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m74004.csv") .
+@source srcm71004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m71004.csv") .
+@source srcm59004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m59004.csv") .
+@source srcm169004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m169004.csv") .
+@source srcm294004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m294004.csv") .
+@source srcm6004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m6004.csv") .
+@source srcm258004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m258004.csv") .
+@source srcm53004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m53004.csv") .
+@source srcm254004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m254004.csv") .
+@source srcm158004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m158004.csv") .
+@source srcm30004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m30004.csv") .
+@source srcm18004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m18004.csv") .
+@source srcm290004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m290004.csv") .
+@source srcm243004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m243004.csv") .
+@source srcm147004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m147004.csv") .
+@source srcm97004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m97004.csv") .
+@source srcm40004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m40004.csv") .
+@source srcm247004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m247004.csv") .
+@source srcm232004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m232004.csv") .
+@source srcm229004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m229004.csv") .
+@source srcm22004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m22004.csv") .
+@source srcm221004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m221004.csv") .
+@source srcm132004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m132004.csv") .
+@source srcm126004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m126004.csv") .
+@source srcm38004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m38004.csv") .
+@source srcm122004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m122004.csv") .
+@source srcm237004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m237004.csv") .
+@source srcm236004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m236004.csv") .
+@source srcm111004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m111004.csv") .
+@source srcm215004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m215004.csv") .
+@source srcm214004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m214004.csv") .
+@source srcm210004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m210004.csv") .
+@source srcm240004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m240004.csv") .
+@source srcm20004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m20004.csv") .
+@source srcm143004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m143004.csv") .
+@source srcm211004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m211004.csv") .
+@source srcm140004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m140004.csv") .
+@source srcm154004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m154004.csv") .
+@source srcm100004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m100004.csv") .
+@source srcm103004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m103004.csv") .
+@source srcm104004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m104004.csv") .
+@source srcm151004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m151004.csv") .
+@source srcm262004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m262004.csv") .
+@source srcm298004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m298004.csv") .
+@source srcm81004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m81004.csv") .
+@source srcm150004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m150004.csv") .
+@source srcm15004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m15004.csv") .
+@source srcm49004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m49004.csv") .
+@source srcm46004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m46004.csv") .
+@source srcm12004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m12004.csv") .
+@source srcm219004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m219004.csv") .
+@source srcm172004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m172004.csv") .
+@source srcm176004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m176004.csv") .
+@source srcm273004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m273004.csv") .
+@source srcm173004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m173004.csv") .
+@source srcm208004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m208004.csv") .
+@source srcm287004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m287004.csv") .
+@source srcm108004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m108004.csv") .
+@source srcm288004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m288004.csv") .
+@source srcm186004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m186004.csv") .
+@source srcm10004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m10004.csv") .
+@source srcm13004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m13004.csv") .
+@source srcm182004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m182004.csv") .
+@source srcm177004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m177004.csv") .
+@source srcm95004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m95004.csv") .
+@source srcm297004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m297004.csv") .
+@source srcm89004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m89004.csv") .
+@source srcm268004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m268004.csv") .
+@source srcm195004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m195004.csv") .
+@source srcm197004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m197004.csv") .
+@source srcm26004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m26004.csv") .
+@source srcm191004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m191004.csv") .
+@source srcm291004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m291004.csv") .
+@source srcm295004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m295004.csv") .
+@source srcm54004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m54004.csv") .
+@source srcm155004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m155004.csv") .
+@source srcm293004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m293004.csv") .
+@source srcm180004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m180004.csv") .
+@source srcm255004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m255004.csv") .
+@source srcm64004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m64004.csv") .
+@source srcm98004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m98004.csv") .
+@source srcm193004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m193004.csv") .
+@source srcm29004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m29004.csv") .
+@source srcm259004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m259004.csv") .
+@source srcm2004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m2004.csv") .
+@source srcm41004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m41004.csv") .
+@source srcm257004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m257004.csv") .
+@source srcm144004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m144004.csv") .
+@source srcm246004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m246004.csv") .
+@source srcm248004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m248004.csv") .
+@source srcm146004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m146004.csv") .
+@source srcm133004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m133004.csv") .
+@source srcm135004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m135004.csv") .
+@source srcm39004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m39004.csv") .
+@source srcm148004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m148004.csv") .
+@source srcm51004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m51004.csv") .
+@source srcm85004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m85004.csv") .
+@source srcm136004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m136004.csv") .
+@source srcm138004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m138004.csv") .
+@source srcm3004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m3004.csv") .
+@source srcm50004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m50004.csv") .
+@source srcm137004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m137004.csv") .
+@source srcm58004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m58004.csv") .
+@source srcm55004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m55004.csv") .
+@source srcm218004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m218004.csv") .
+@source srcm141004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m141004.csv") .
+@source srcm217004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m217004.csv") .
+@source srcm216004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m216004.csv") .
+@source srcm142004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m142004.csv") .
+@source srcm28004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m28004.csv") .
+@source srcm102004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m102004.csv") .
+@source srcm94004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m94004.csv") .
+@source srcm253004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m253004.csv") .
+@source srcm25004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m25004.csv") .
+@source srcm31004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m31004.csv") .
+@source srcm101004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m101004.csv") .
+@source srcm99004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m99004.csv") .
+@source srcm207004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m207004.csv") .
+@source srcm209004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m209004.csv") .
+@source srcm201004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m201004.csv") .
+@source srcm203004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m203004.csv") .
+@source srcm251004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m251004.csv") .
+@source srcm200004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m200004.csv") .
+@source srcm204004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m204004.csv") .
+@source srcm8004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m8004.csv") .
+@source srcm250004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m250004.csv") .
+@source srcm107004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m107004.csv") .
+@source srcm70004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m70004.csv") .
+@source srcm106004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m106004.csv") .
+@source srcm199004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m199004.csv") .
+@source srcm35004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m35004.csv") .
+@source srcm152004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m152004.csv") .
+@source srcm202004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m202004.csv") .
+@source srcm69004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m69004.csv") .
+@source srcm261004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m261004.csv") .
+@source srcm83004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m83004.csv") .
+@source srcm45004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m45004.csv") .
+@source srcm188004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m188004.csv") .
+@source srcm189004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m189004.csv") .
+@source srcm79004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m79004.csv") .
+@source srcm281004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m281004.csv") .
+@source srcm181004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m181004.csv") .
+@source srcm289004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m289004.csv") .
+@source srcm178004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m178004.csv") .
+@source srcm285004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m285004.csv") .
+@source srcm174004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m174004.csv") .
+@source srcm90004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m90004.csv") .
+@source srcm278004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m278004.csv") .
+@source srcm185004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m185004.csv") .
+@source srcm21004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m21004.csv") .
+@source srcm1004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m1004.csv") .
+@source srcm170004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m170004.csv") .
+@source srcm267004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m267004.csv") .
+@source srcm196004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m196004.csv") .
+@source srcm167004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m167004.csv") .
+@source srcm37004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m37004.csv") .
+@source srcm296004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m296004.csv") .
+@source srcm292004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m292004.csv") .
+@source srcm11004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m11004.csv") .
+@source srcm80004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m80004.csv") .
+@source srcm65004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m65004.csv") .
+@source srcm156004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m156004.csv") .
+@source srcm256004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m256004.csv") .
+@source srcm78004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m78004.csv") .
+@source srcm192004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m192004.csv") .
+@source srcm52004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m52004.csv") .
+@source srcm245004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m245004.csv") .
+@source srcm145004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m145004.csv") .
+@source srcm134004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m134004.csv") .
+@source srcm120004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m120004.csv") .
+@source srcm249004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m249004.csv") .
+@source srcm149004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m149004.csv") .
+@source srcm220004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m220004.csv") .
+@source srcm16004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m16004.csv") .
+@source srcm223004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m223004.csv") .
+@source srcm234004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m234004.csv") .
+@source srcm7004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m7004.csv") .
+@source srcm235004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m235004.csv") .
+@source srcm44004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m44004.csv") .
+@source srcm231004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m231004.csv") .
+@source srcm123004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m123004.csv") .
+@source srcm238004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m238004.csv") .
+@source srcm9004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m9004.csv") .
+@source srcm130004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m130004.csv") .
+@source srcm86004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m86004.csv") .
+@source srcm242004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m242004.csv") .
+@source srcm241004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m241004.csv") .
+@source srcm117004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m117004.csv") .
+@source srcm14004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m14004.csv") .
+@source srcm213004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m213004.csv") .
+@source srcm88004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m88004.csv") .
+@source srcm19004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m19004.csv") .
+@source srcm212004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m212004.csv") .
+@source srcm153004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m153004.csv") .
+@source srcm105004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m105004.csv") .
+@source srcm109004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m109004.csv") .
+@source srcm62004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m62004.csv") .
+@source srcm252004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m252004.csv") .
+@source srcm93004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m93004.csv") .
+@source srcm206004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m206004.csv") .
+@source srcm24004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m24004.csv") .
+@source srcm264004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m264004.csv") .
+@source srcm263004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m263004.csv") .
+@source srcm205004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m205004.csv") .
+@source srcm4004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m4004.csv") .
+@source srcm299004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m299004.csv") .
+@source srcm164004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m164004.csv") .
+@source srcm260004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m260004.csv") .
+@source srcm34004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m34004.csv") .
+@source srcm60004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m60004.csv") .
+@source srcm68004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m68004.csv") .
+@source srcm280004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m280004.csv") .
+@source srcm282004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m282004.csv") .
+@source srcm179004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m179004.csv") .
+@source srcm286004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m286004.csv") .
+@source srcm175004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m175004.csv") .
+@source srcm73004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m73004.csv") .
+@source srcm67004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m67004.csv") .
+@source srcm284004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m284004.csv") .
+@source srcm171004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m171004.csv") .
+@source srcm166004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m166004.csv") .
+@source srcm277004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m277004.csv") .
+@source srcm32004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m32004.csv") .
+@source srcm184004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m184004.csv") .
+@source srcm279004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m279004.csv") .
+@source srcm48004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m48004.csv") .
+@source srcm266004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m266004.csv") .
+@source srcm168004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m168004.csv") .
+@source srcm91004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m91004.csv") .
+@source srcm157004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m157004.csv") .
+@source srcm76004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m76004.csv") .
+@source srcm42004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m42004.csv") .
+@source srcm159004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m159004.csv") .
+@source srcm110004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m110004.csv") .
+@source srcm244004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m244004.csv") .
+@source srcm139004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m139004.csv") .
+@source srcm66004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m66004.csv") .
+@source srcm63004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m63004.csv") .
+@source srcm17004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m17004.csv") .
+@source srcm121004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m121004.csv") .
+@source srcm233004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m233004.csv") .
+@source srcm125004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m125004.csv") .
+@source srcm127004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m127004.csv") .
+@source srcm124004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m124004.csv") .
+@source srcm36004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m36004.csv") .
+@source srcm129004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m129004.csv") .
+@source srcm96004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m96004.csv") .
+@source srcm27004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m27004.csv") .
+@source srcm33004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m33004.csv") .
+@source srcm230004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m230004.csv") .
+@source srcm128004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m128004.csv") .
+@source srcm224004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m224004.csv") .
+@source srcm239004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m239004.csv") .
+@source srcm131004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m131004.csv") .
+@source srcm222004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m222004.csv") .
+@source srcm75004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m75004.csv") .
+@source srcm72004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m72004.csv") .
+@source srcm115004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m115004.csv") .
+@source srcm112004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m112004.csv") .
+@source srcm116004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m116004.csv") .
+@source srcm77004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m77004.csv") .
+@source srcm5004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m5004.csv") .
+@source srcm225004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m225004.csv") .
+@source srcm226004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m226004.csv") .
+@source srcm227004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m227004.csv") .
+@source srcm228004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m228004.csv") .
+@source srcm113004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m113004.csv") .
+@source srcm114004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m114004.csv") .
+@source srcm82004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m82004.csv") .
+@source srcm47004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m47004.csv") .
+@source srcm163004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m163004.csv") .
+@source srcm165004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m165004.csv") .
+@source srcm61004[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m61004.csv") .
+@source srcm118004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m118004.csv") .
+@source srcm92004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m92004.csv") .
+@source srcm119004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m119004.csv") .
+@source srcm270004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m270004.csv") .
+@source srcm271004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m271004.csv") .
+@source srcm57004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m57004.csv") .
+@source srcm274004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m274004.csv") .
+@source srcm23004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m23004.csv") .
+@source srcm275004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m275004.csv") .
+@source srcm162004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m162004.csv") .
+@source srcm161004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m161004.csv") .
+@source srcm272004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m272004.csv") .
+@source srcm160004[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Deep300/data/GAV/medium/src_m160004.csv") .
+m133004(?X0) :- srcm116004(?X0),srcm192004(?X0,?X1),srcm233004(?X0),srcm158004(?X0,?X1),srcm151004(?X0),srcm28004(?X0,?X1),srcm133004(?X0) .
+m175004(?X0,?X1) :- srcm136004(?X0),srcm216004(?X0,?X1),srcm235004(?X0),srcm21004(?X0),srcm158004(?X0,?X1),srcm175004(?X0,?X1) .
+m95004(?X0) :- srcm89004(?X0),srcm21004(?X0),srcm262004(?X0),srcm243004(?X0),srcm95004(?X0) .
+m220004(?X0,?X1) :- srcm164004(?X0,?X1),srcm70004(?X0),srcm25004(?X0),srcm220004(?X0,?X1) .
+m267004(?X0,?X1) :- srcm35004(?X0),srcm141004(?X0),srcm290004(?X0,?X1),srcm267004(?X0,?X1) .
+m292004(?X0,?X1) :- srcm264004(?X0),srcm71004(?X1),srcm207004(?X0),srcm27004(?X0),srcm86004(?X0,?X1),srcm239004(?X0,?X1),srcm292004(?X0,?X1) .
+m279004(?X0) :- srcm152004(?X0,?X1),srcm55004(?X0),srcm154004(?X0),srcm45004(?X0),srcm218004(?X0,?X1),srcm279004(?X0) .
+m72004(?X0) :- srcm56004(?X0),srcm109004(?X0),srcm31004(?X0),srcm92004(?X0),srcm63004(?X0),srcm197004(?X0),srcm72004(?X0) .
+m107004(?X0,?X1) :- srcm10004(?X0),srcm8004(?X0),srcm74004(?X0,?X1),srcm245004(?X0),srcm107004(?X0,?X1) .
+m89004(?X0) :- srcm13004(?X0,?X1),srcm217004(?X0,?X1),srcm197004(?X0),srcm162004(?X0),srcm89004(?X0) .
+m148004(?X0) :- srcm276004(?X0),srcm260004(?X0),srcm164004(?X0,?X1),srcm148004(?X0) .
+m219004(?X0) :- srcm152004(?X0,?X1),srcm14004(?X0),srcm103004(?X0),srcm219004(?X0) .
+m68004(?X0) :- srcm20004(?X0),srcm263004(?X0),srcm231004(?X0,?X1),srcm68004(?X0) .
+m9004(?X0,?X1) :- srcm163004(?X0),srcm23004(?X0),srcm281004(?X0),srcm248004(?X0),srcm177004(?X0),srcm9004(?X0,?X1) .
+m33004(?X0) :- srcm163004(?X0),srcm88004(?X0),srcm49004(?X0,?X1),srcm165004(?X0),srcm33004(?X0) .
+m35004(?X0) :- srcm14004(?X0),srcm275004(?X0),srcm288004(?X0),srcm44004(?X0),srcm35004(?X0) .
+m280004(?X0) :- srcm54004(?X0),srcm268004(?X0,?X1),srcm235004(?X0),srcm70004(?X0),srcm280004(?X0) .
+m254004(?X0) :- srcm242004(?X0),srcm166004(?X0,?X1),srcm204004(?X0),srcm81004(?X0),srcm194004(?X0),srcm71004(?X1),srcm254004(?X0) .
+m165004(?X0) :- srcm215004(?X0),srcm5004(?X0,?X1),srcm252004(?X0,?X1),srcm103004(?X0),srcm218004(?X0,?X1),srcm165004(?X0) .
+m261004(?X0,?X1) :- srcm117004(?X0,?X1),srcm136004(?X0),srcm151004(?X0),srcm199004(?X0,?X1),srcm188004(?X0),srcm261004(?X0,?X1) .
+m286004(?X0) :- srcm76004(?X0),srcm185004(?X0),srcm109004(?X0),srcm289004(?X0),srcm38004(?X0),srcm53004(?X0),srcm286004(?X0) .
+m265004(?X0) :- srcm176004(?X0),srcm247004(?X0),srcm248004(?X0),srcm215004(?X0),srcm265004(?X0) .
+m162004(?X0) :- srcm245004(?X0),srcm223004(?X0,?X1),srcm4004(?X0),srcm280004(?X0),srcm162004(?X0) .
+m166004(?X0,?X1) :- srcm129004(?X0,?X1),srcm239004(?X0,?X1),srcm132004(?X0),srcm32004(?X0),srcm157004(?X0),srcm169004(?X0),srcm166004(?X0,?X1) .
+m194004(?X0) :- srcm169004(?X0),srcm84004(?X0),srcm110004(?X0),srcm52004(?X0),srcm231004(?X0,?X1),srcm194004(?X0) .
+m226004(?X0) :- srcm8004(?X0),srcm272004(?X0),srcm210004(?X0),srcm204004(?X0),srcm279004(?X0),srcm226004(?X0) .
+m210004(?X0) :- srcm39004(?X0),srcm74004(?X0,?X1),srcm254004(?X0),srcm210004(?X0) .
+m37004(?X0) :- srcm158004(?X0,?X1),srcm143004(?X0,?X1),srcm137004(?X0),srcm37004(?X0) .
+m174004(?X0,?X1) :- srcm182004(?X0),srcm75004(?X0,?X1),srcm78004(?X0,?X1),srcm266004(?X0),srcm275004(?X0),srcm157004(?X0),srcm174004(?X0,?X1) .
+m24004(?X0) :- srcm141004(?X0),srcm207004(?X0),srcm154004(?X0),srcm24004(?X0) .
+m256004(?X0) :- srcm222004(?X0),srcm288004(?X0),srcm30004(?X0),srcm292004(?X0,?X1),srcm256004(?X0) .
+m214004(?X0) :- srcm232004(?X0),srcm167004(?X0,?X1),srcm277004(?X0),srcm191004(?X0),srcm59004(?X0),srcm82004(?X0),srcm214004(?X0) .
+m69004(?X0) :- srcm61004(?X0,?X1),srcm297004(?X0),srcm89004(?X0),srcm266004(?X0),srcm237004(?X0),srcm69004(?X0) .
+m12004(?X0) :- srcm106004(?X0,?X1),srcm2004(?X0),srcm67004(?X0),srcm275004(?X0),srcm288004(?X0),srcm248004(?X0),srcm12004(?X0) .
+m198004(?X0) :- srcm49004(?X0,?X1),srcm30004(?X0),srcm227004(?X0),srcm166004(?X0,?X1),srcm95004(?X0),srcm298004(?X0,?X1),srcm198004(?X0) .
+m30004(?X0) :- srcm15004(?X0,?X1),srcm298004(?X0,?X1),srcm149004(?X0),srcm30004(?X0) .
+m207004(?X0) :- srcm119004(?X0),srcm73004(?X0),srcm291004(?X0),srcm108004(?X0),srcm180004(?X0),srcm207004(?X0) .
+m58004(?X0,?X1) :- srcm207004(?X0),srcm262004(?X0),srcm62004(?X0,?X1),srcm255004(?X0),srcm42004(?X0),srcm58004(?X0,?X1) .
+m195004(?X0) :- srcm256004(?X0),srcm63004(?X0),srcm275004(?X0),srcm72004(?X0),srcm195004(?X0) .
+m22004(?X0) :- srcm232004(?X0),srcm293004(?X0),srcm105004(?X0),srcm223004(?X0,?X1),srcm137004(?X0),srcm22004(?X0) .
+m45004(?X0) :- srcm293004(?X0),srcm208004(?X0,?X1),srcm289004(?X0),srcm248004(?X0),srcm45004(?X0) .
+m154004(?X0) :- srcm133004(?X0),srcm169004(?X0),srcm42004(?X0),srcm154004(?X0) .
+m99004(?X0) :- srcm255004(?X0),srcm294004(?X0,?X1),srcm189004(?X0),srcm99004(?X0) .
+m62004(?X0,?X1) :- srcm212004(?X0),srcm259004(?X0,?X1),srcm15004(?X0,?X1),srcm286004(?X0),srcm246004(?X0),srcm278004(?X0),srcm62004(?X0,?X1) .
+m23004(?X0) :- srcm171004(?X0),srcm206004(?X0,?X1),srcm124004(?X0,?X1),srcm23004(?X0) .
+m242004(?X0) :- srcm191004(?X0),srcm254004(?X0),srcm48004(?X0),srcm129004(?X0,?X1),srcm247004(?X0),srcm242004(?X0) .
+m101004(?X0,?X1) :- srcm161004(?X0),srcm267004(?X0,?X1),srcm105004(?X0),srcm184004(?X0,?X1),srcm118004(?X0),srcm101004(?X0,?X1) .
+m111004(?X0,?X1) :- srcm148004(?X0),srcm179004(?X0,?X1),srcm157004(?X0),srcm243004(?X0),srcm111004(?X0,?X1) .
+m196004(?X0) :- srcm154004(?X0),srcm288004(?X0),srcm207004(?X0),srcm161004(?X0),srcm135004(?X0),srcm196004(?X0) .
+m177004(?X0) :- srcm153004(?X0),srcm234004(?X0),srcm17004(?X0),srcm177004(?X0) .
+m117004(?X0,?X1) :- srcm268004(?X0,?X1),srcm45004(?X0),srcm148004(?X0),srcm117004(?X0,?X1) .
+m50004(?X0) :- srcm24004(?X0),srcm147004(?X0),srcm296004(?X0,?X1),srcm50004(?X0) .
+m251004(?X0) :- srcm271004(?X0),srcm153004(?X0),srcm262004(?X0),srcm251004(?X0) .
+m275004(?X0) :- srcm63004(?X0),srcm238004(?X0),srcm160004(?X0),srcm101004(?X0,?X1),srcm108004(?X0),srcm77004(?X0),srcm275004(?X0) .
+m142004(?X0) :- srcm211004(?X0),srcm228004(?X0),srcm43004(?X0),srcm142004(?X0) .
+m205004(?X0,?X1) :- srcm77004(?X0),srcm273004(?X0,?X1),srcm261004(?X0,?X1),srcm118004(?X0),srcm205004(?X0,?X1) .
+m255004(?X0) :- srcm30004(?X0),srcm114004(?X0),srcm286004(?X0),srcm147004(?X0),srcm11004(?X0,?X1),srcm255004(?X0) .
+m60004(?X0,?X1) :- srcm215004(?X0),srcm10004(?X0),srcm178004(?X0,?X1),srcm220004(?X0,?X1),srcm60004(?X0,?X1) .
+m42004(?X0) :- srcm229004(?X0,?X1),srcm155004(?X0,?X1),srcm134004(?X0,?X1),srcm93004(?X0),srcm272004(?X0),srcm12004(?X0),srcm42004(?X0) .
+m253004(?X0) :- srcm156004(?X0),srcm118004(?X0),srcm61004(?X0,?X1),srcm219004(?X0),srcm253004(?X0) .
+m245004(?X0) :- srcm38004(?X0),srcm45004(?X0),srcm62004(?X0,?X1),srcm235004(?X0),srcm176004(?X0),srcm22004(?X0),srcm245004(?X0) .
+m17004(?X0) :- srcm231004(?X0,?X1),srcm34004(?X0),srcm252004(?X0,?X1),srcm95004(?X0),srcm39004(?X0),srcm17004(?X0) .
+m264004(?X0) :- srcm83004(?X0,?X1),srcm150004(?X0),srcm210004(?X0),srcm129004(?X0,?X1),srcm53004(?X0),srcm132004(?X0),srcm264004(?X0) .
+m241004(?X0) :- srcm237004(?X0),srcm15004(?X0,?X1),srcm32004(?X0),srcm241004(?X0) .
+m109004(?X0) :- srcm125004(?X0,?X1),srcm42004(?X0),srcm256004(?X0),srcm220004(?X0,?X1),srcm109004(?X0) .
+m25004(?X0) :- srcm9004(?X0,?X1),srcm147004(?X0),srcm44004(?X0),srcm292004(?X0,?X1),srcm25004(?X0) .
+m191004(?X0) :- srcm25004(?X0),srcm240004(?X0),srcm84004(?X0),srcm227004(?X0),srcm9004(?X0,?X1),srcm38004(?X0),srcm191004(?X0) .
+m206004(?X0,?X1) :- srcm33004(?X0),srcm38004(?X0),srcm234004(?X0),srcm206004(?X0,?X1) .
+m172004(?X0) :- srcm216004(?X0,?X1),srcm90004(?X0),srcm144004(?X0),srcm172004(?X0) .
+m8004(?X0) :- srcm72004(?X0),srcm113004(?X0),srcm75004(?X0,?X1),srcm84004(?X0),srcm8004(?X0) .
+m21004(?X0) :- srcm83004(?X0,?X1),srcm263004(?X0),srcm190004(?X0),srcm137004(?X0),srcm165004(?X0),srcm21004(?X0) .
+m171004(?X0) :- srcm123004(?X0),srcm262004(?X0),srcm248004(?X0),srcm233004(?X0),srcm135004(?X0),srcm171004(?X0) .
+m271004(?X0) :- srcm64004(?X0),srcm43004(?X0),srcm295004(?X0),srcm269004(?X0),srcm249004(?X0,?X1),srcm271004(?X0) .
+m237004(?X0) :- srcm156004(?X0),srcm236004(?X0),srcm83004(?X0,?X1),srcm188004(?X0),srcm237004(?X0) .
+m152004(?X0,?X1) :- srcm101004(?X0,?X1),srcm153004(?X0),srcm45004(?X0),srcm195004(?X0),srcm71004(?X1),srcm152004(?X0,?X1) .
+m59004(?X0) :- srcm186004(?X0),srcm1004(?X0),srcm11004(?X0,?X1),srcm53004(?X0),srcm131004(?X0,?X1),srcm59004(?X0) .
+m27004(?X0) :- srcm121004(?X0),srcm65004(?X0),srcm28004(?X0,?X1),srcm27004(?X0) .
+m222004(?X0) :- srcm178004(?X0,?X1),srcm40004(?X0),srcm156004(?X0),srcm95004(?X0),srcm222004(?X0) .
+m31004(?X0) :- srcm171004(?X0),srcm19004(?X0),srcm277004(?X0),srcm31004(?X0) .
+m92004(?X0) :- srcm281004(?X0),srcm47004(?X0),srcm156004(?X0),srcm92004(?X0) .
+m124004(?X0,?X1) :- srcm47004(?X0),srcm161004(?X0),srcm173004(?X0),srcm200004(?X0),srcm117004(?X0,?X1),srcm18004(?X0),srcm124004(?X0,?X1) .
+m294004(?X0,?X1) :- srcm171004(?X0),srcm45004(?X0),srcm252004(?X0,?X1),srcm148004(?X0),srcm294004(?X0,?X1) .
+m150004(?X0) :- srcm275004(?X0),srcm282004(?X0),srcm10004(?X0),srcm81004(?X0),srcm150004(?X0) .
+m7004(?X0) :- srcm117004(?X0,?X1),srcm69004(?X0),srcm286004(?X0),srcm119004(?X0),srcm7004(?X0) .
+m83004(?X0,?X1) :- srcm276004(?X0),srcm86004(?X0,?X1),srcm114004(?X0),srcm93004(?X0),srcm15004(?X0,?X1),srcm72004(?X0),srcm83004(?X0,?X1) .
+m274004(?X0) :- srcm72004(?X0),srcm275004(?X0),srcm76004(?X0),srcm192004(?X0,?X1),srcm274004(?X0) .
+m94004(?X0) :- srcm135004(?X0),srcm165004(?X0),srcm35004(?X0),srcm271004(?X0),srcm144004(?X0),srcm94004(?X0) .
+m26004(?X0) :- srcm137004(?X0),srcm96004(?X0),srcm27004(?X0),srcm26004(?X0) .
+m34004(?X0) :- srcm3004(?X0),srcm275004(?X0),srcm60004(?X0,?X1),srcm131004(?X0,?X1),srcm97004(?X0),srcm285004(?X0),srcm34004(?X0) .
+m181004(?X0) :- srcm199004(?X0,?X1),srcm84004(?X0),srcm215004(?X0),srcm181004(?X0) .
+m123004(?X0) :- srcm39004(?X0),srcm191004(?X0),srcm272004(?X0),srcm126004(?X0),srcm123004(?X0) .
+m169004(?X0) :- srcm52004(?X0),srcm289004(?X0),srcm122004(?X0),srcm169004(?X0) .
+m53004(?X0) :- srcm242004(?X0),srcm72004(?X0),srcm168004(?X0),srcm53004(?X0) .
+m199004(?X0,?X1) :- srcm106004(?X0,?X1),srcm147004(?X0),srcm118004(?X0),srcm32004(?X0),srcm271004(?X0),srcm141004(?X0),srcm199004(?X0,?X1) .
+m108004(?X0) :- srcm49004(?X0,?X1),srcm33004(?X0),srcm125004(?X0,?X1),srcm190004(?X0),srcm223004(?X0,?X1),srcm196004(?X0),srcm108004(?X0) .
+m63004(?X0) :- srcm204004(?X0),srcm286004(?X0),srcm257004(?X0),srcm56004(?X0),srcm123004(?X0),srcm63004(?X0) .
+m232004(?X0) :- srcm297004(?X0),srcm44004(?X0),srcm236004(?X0),srcm232004(?X0) .
+m157004(?X0) :- srcm138004(?X0),srcm252004(?X0,?X1),srcm292004(?X0,?X1),srcm218004(?X0,?X1),srcm263004(?X0),srcm157004(?X0) .
+m52004(?X0) :- srcm213004(?X0),srcm113004(?X0),srcm125004(?X0,?X1),srcm175004(?X0,?X1),srcm136004(?X0),srcm78004(?X0,?X1),srcm52004(?X0) .
+m116004(?X0) :- srcm224004(?X0),srcm274004(?X0),srcm53004(?X0),srcm37004(?X0),srcm116004(?X0) .
+m100004(?X0) :- srcm243004(?X0),srcm119004(?X0),srcm65004(?X0),srcm104004(?X0),srcm169004(?X0),srcm18004(?X0),srcm100004(?X0) .
+m140004(?X0,?X1) :- srcm133004(?X0),srcm118004(?X0),srcm174004(?X0,?X1),srcm140004(?X0,?X1) .
+m46004(?X0) :- srcm122004(?X0),srcm161004(?X0),srcm189004(?X0),srcm15004(?X0,?X1),srcm272004(?X0),srcm46004(?X0) .
+m40004(?X0) :- srcm64004(?X0),srcm79004(?X0),srcm185004(?X0),srcm56004(?X0),srcm43004(?X0),srcm40004(?X0) .
+m282004(?X0) :- srcm122004(?X0),srcm216004(?X0,?X1),srcm284004(?X0,?X1),srcm273004(?X0,?X1),srcm244004(?X0,?X1),srcm282004(?X0) .
+m170004(?X0) :- srcm282004(?X0),srcm134004(?X0,?X1),srcm9004(?X0,?X1),srcm181004(?X0),srcm171004(?X0),srcm170004(?X0) .
+m167004(?X0,?X1) :- srcm87004(?X0,?X1),srcm112004(?X0),srcm129004(?X0,?X1),srcm6004(?X0),srcm78004(?X0,?X1),srcm158004(?X0,?X1),srcm167004(?X0,?X1) .
+m285004(?X0) :- srcm87004(?X0,?X1),srcm223004(?X0,?X1),srcm91004(?X0,?X1),srcm207004(?X0),srcm285004(?X0) .
+m139004(?X0,?X1) :- srcm115004(?X0),srcm159004(?X0),srcm275004(?X0),srcm272004(?X0),srcm265004(?X0),srcm139004(?X0,?X1) .
+m96004(?X0) :- srcm195004(?X0),srcm276004(?X0),srcm89004(?X0),srcm96004(?X0) .
+m239004(?X0,?X1) :- srcm105004(?X0),srcm287004(?X0),srcm152004(?X0,?X1),srcm239004(?X0,?X1) .
+m64004(?X0) :- srcm277004(?X0),srcm28004(?X0,?X1),srcm161004(?X0),srcm80004(?X0,?X1),srcm243004(?X0),srcm101004(?X0,?X1),srcm64004(?X0) .
+m296004(?X0,?X1) :- srcm218004(?X0,?X1),srcm110004(?X0),srcm282004(?X0),srcm263004(?X0),srcm19004(?X0),srcm9004(?X0,?X1),srcm296004(?X0,?X1) .
+m146004(?X0) :- srcm160004(?X0),srcm36004(?X0,?X1),srcm296004(?X0,?X1),srcm146004(?X0) .
+m163004(?X0) :- srcm79004(?X0),srcm137004(?X0),srcm156004(?X0),srcm121004(?X0),srcm199004(?X0,?X1),srcm162004(?X0),srcm163004(?X0) .
+m268004(?X0,?X1) :- srcm283004(?X0,?X1),srcm281004(?X0),srcm242004(?X0),srcm269004(?X0),srcm83004(?X0,?X1),srcm268004(?X0,?X1) .
+m244004(?X0,?X1) :- srcm138004(?X0),srcm101004(?X0,?X1),srcm100004(?X0),srcm244004(?X0,?X1) .
+m257004(?X0) :- srcm235004(?X0),srcm25004(?X0),srcm183004(?X0),srcm132004(?X0),srcm35004(?X0),srcm138004(?X0),srcm257004(?X0) .
+m144004(?X0) :- srcm198004(?X0),srcm241004(?X0),srcm222004(?X0),srcm204004(?X0),srcm40004(?X0),srcm144004(?X0) .
+m176004(?X0) :- srcm100004(?X0),srcm202004(?X0),srcm4004(?X0),srcm65004(?X0),srcm43004(?X0),srcm97004(?X0),srcm176004(?X0) .
+m36004(?X0,?X1) :- srcm88004(?X0),srcm211004(?X0),srcm9004(?X0,?X1),srcm248004(?X0),srcm290004(?X0,?X1),srcm36004(?X0,?X1) .
+m183004(?X0) :- srcm88004(?X0),srcm297004(?X0),srcm277004(?X0),srcm167004(?X0,?X1),srcm15004(?X0,?X1),srcm183004(?X0) .
+m130004(?X0) :- srcm236004(?X0),srcm271004(?X0),srcm113004(?X0),srcm130004(?X0) .
+m135004(?X0) :- srcm275004(?X0),srcm289004(?X0),srcm78004(?X0,?X1),srcm233004(?X0),srcm1004(?X0),srcm135004(?X0) .
+m47004(?X0) :- srcm274004(?X0),srcm72004(?X0),srcm296004(?X0,?X1),srcm113004(?X0),srcm209004(?X0),srcm47004(?X0) .
+m158004(?X0,?X1) :- srcm188004(?X0),srcm27004(?X0),srcm43004(?X0),srcm291004(?X0),srcm65004(?X0),srcm158004(?X0,?X1) .
+m76004(?X0) :- srcm273004(?X0,?X1),srcm109004(?X0),srcm204004(?X0),srcm102004(?X0,?X1),srcm91004(?X0,?X1),srcm76004(?X0) .
+m44004(?X0) :- srcm157004(?X0),srcm243004(?X0),srcm154004(?X0),srcm46004(?X0),srcm275004(?X0),srcm136004(?X0),srcm44004(?X0) .
+m104004(?X0) :- srcm147004(?X0),srcm54004(?X0),srcm215004(?X0),srcm104004(?X0) .
+m105004(?X0) :- srcm64004(?X0),srcm282004(?X0),srcm1004(?X0),srcm188004(?X0),srcm105004(?X0) .
+m129004(?X0,?X1) :- srcm134004(?X0,?X1),srcm238004(?X0),srcm75004(?X0,?X1),srcm173004(?X0),srcm129004(?X0,?X1) .
+m263004(?X0) :- srcm176004(?X0),srcm162004(?X0),srcm132004(?X0),srcm223004(?X0,?X1),srcm232004(?X0),srcm263004(?X0) .
+m269004(?X0) :- srcm12004(?X0),srcm101004(?X0,?X1),srcm173004(?X0),srcm269004(?X0) .
+m11004(?X0,?X1) :- srcm163004(?X0),srcm134004(?X0,?X1),srcm224004(?X0),srcm37004(?X0),srcm223004(?X0,?X1),srcm58004(?X0,?X1),srcm11004(?X0,?X1) .
+m127004(?X0,?X1) :- srcm222004(?X0),srcm190004(?X0),srcm156004(?X0),srcm110004(?X0),srcm177004(?X0),srcm61004(?X0,?X1),srcm127004(?X0,?X1) .
+m16004(?X0) :- srcm283004(?X0,?X1),srcm248004(?X0),srcm219004(?X0),srcm16004(?X0) .
+m290004(?X0,?X1) :- srcm50004(?X0),srcm221004(?X0,?X1),srcm293004(?X0),srcm290004(?X0,?X1) .
+m186004(?X0) :- srcm284004(?X0,?X1),srcm163004(?X0),srcm113004(?X0),srcm170004(?X0),srcm96004(?X0),srcm186004(?X0) .
+m4004(?X0) :- srcm169004(?X0),srcm298004(?X0,?X1),srcm5004(?X0,?X1),srcm148004(?X0),srcm179004(?X0,?X1),srcm180004(?X0),srcm4004(?X0) .
+m273004(?X0,?X1) :- srcm181004(?X0),srcm23004(?X0),srcm275004(?X0),srcm28004(?X0,?X1),srcm103004(?X0),srcm114004(?X0),srcm273004(?X0,?X1) .
+m178004(?X0,?X1) :- srcm145004(?X0),srcm48004(?X0),srcm154004(?X0),srcm149004(?X0),srcm178004(?X0,?X1) .
+m93004(?X0) :- srcm200004(?X0),srcm227004(?X0),srcm43004(?X0),srcm217004(?X0,?X1),srcm208004(?X0,?X1),srcm93004(?X0) .
+m270004(?X0) :- srcm12004(?X0),srcm118004(?X0),srcm218004(?X0,?X1),srcm150004(?X0),srcm183004(?X0),srcm270004(?X0) .
+m192004(?X0,?X1) :- srcm208004(?X0,?X1),srcm257004(?X0),srcm272004(?X0),srcm134004(?X0,?X1),srcm256004(?X0),srcm192004(?X0,?X1) .
+m98004(?X0) :- srcm266004(?X0),srcm161004(?X0),srcm84004(?X0),srcm294004(?X0,?X1),srcm24004(?X0),srcm98004(?X0) .
+m78004(?X0,?X1) :- srcm219004(?X0),srcm271004(?X0),srcm96004(?X0),srcm110004(?X0),srcm37004(?X0),srcm292004(?X0,?X1),srcm78004(?X0,?X1) .
+m299004(?X0,?X1) :- srcm228004(?X0),srcm210004(?X0),srcm69004(?X0),srcm219004(?X0),srcm25004(?X0),srcm299004(?X0,?X1) .
+m85004(?X0) :- srcm24004(?X0),srcm131004(?X0,?X1),srcm154004(?X0),srcm11004(?X0,?X1),srcm157004(?X0),srcm85004(?X0) .
+m132004(?X0) :- srcm163004(?X0),srcm164004(?X0,?X1),srcm287004(?X0),srcm117004(?X0,?X1),srcm284004(?X0,?X1),srcm80004(?X0,?X1),srcm132004(?X0) .
+m73004(?X0) :- srcm198004(?X0),srcm44004(?X0),srcm133004(?X0),srcm55004(?X0),srcm73004(?X0) .
+m137004(?X0) :- srcm141004(?X0),srcm296004(?X0,?X1),srcm287004(?X0),srcm137004(?X0) .
+m49004(?X0,?X1) :- srcm71004(?X1),srcm54004(?X0),srcm207004(?X0),srcm292004(?X0,?X1),srcm20004(?X0),srcm49004(?X0,?X1) .
+m287004(?X0) :- srcm67004(?X0),srcm257004(?X0),srcm37004(?X0),srcm177004(?X0),srcm126004(?X0),srcm287004(?X0) .
+m233004(?X0) :- srcm185004(?X0),srcm195004(?X0),srcm24004(?X0),srcm84004(?X0),srcm160004(?X0),srcm233004(?X0) .
+m259004(?X0,?X1) :- srcm280004(?X0),srcm133004(?X0),srcm13004(?X0,?X1),srcm182004(?X0),srcm168004(?X0),srcm107004(?X0,?X1),srcm259004(?X0,?X1) .
+m243004(?X0) :- srcm56004(?X0),srcm276004(?X0),srcm246004(?X0),srcm243004(?X0) .
+m114004(?X0) :- srcm173004(?X0),srcm65004(?X0),srcm2004(?X0),srcm233004(?X0),srcm98004(?X0),srcm210004(?X0),srcm114004(?X0) .
+m281004(?X0) :- srcm122004(?X0),srcm241004(?X0),srcm243004(?X0),srcm159004(?X0),srcm42004(?X0),srcm281004(?X0) .
+m20004(?X0) :- srcm208004(?X0,?X1),srcm295004(?X0),srcm83004(?X0,?X1),srcm92004(?X0),srcm59004(?X0),srcm262004(?X0),srcm20004(?X0) .
+m160004(?X0) :- srcm259004(?X0,?X1),srcm152004(?X0,?X1),srcm150004(?X0),srcm282004(?X0),srcm135004(?X0),srcm160004(?X0) .
+m119004(?X0) :- srcm203004(?X0),srcm181004(?X0),srcm226004(?X0),srcm119004(?X0) .
+m231004(?X0,?X1) :- srcm119004(?X0),srcm244004(?X0,?X1),srcm209004(?X0),srcm231004(?X0,?X1) .
+m128004(?X0) :- srcm189004(?X0),srcm148004(?X0),srcm102004(?X0,?X1),srcm167004(?X0,?X1),srcm128004(?X0,?X1) .
+m284004(?X0,?X1) :- srcm55004(?X0),srcm108004(?X0),srcm42004(?X0),srcm85004(?X0),srcm284004(?X0,?X1) .
+m106004(?X0,?X1) :- srcm217004(?X0,?X1),srcm111004(?X0,?X1),srcm193004(?X0,?X1),srcm74004(?X0,?X1),srcm196004(?X0),srcm59004(?X0),srcm106004(?X0,?X1) .
+m216004(?X0,?X1) :- srcm295004(?X0),srcm138004(?X0),srcm24004(?X0),srcm163004(?X0),srcm193004(?X0,?X1),srcm216004(?X0,?X1) .
+m197004(?X0) :- srcm230004(?X0),srcm224004(?X0),srcm121004(?X0),srcm15004(?X0,?X1),srcm197004(?X0) .
+m179004(?X0,?X1) :- srcm53004(?X0),srcm92004(?X0),srcm244004(?X0,?X1),srcm99004(?X0),srcm189004(?X0),srcm292004(?X0,?X1),srcm179004(?X0,?X1) .
+m97004(?X0) :- srcm234004(?X0),srcm289004(?X0),srcm8004(?X0),srcm97004(?X0) .
+m38004(?X0) :- srcm216004(?X0,?X1),srcm282004(?X0),srcm139004(?X0,?X1),srcm45004(?X0),srcm182004(?X0),srcm38004(?X0) .
+m236004(?X0) :- srcm294004(?X0,?X1),srcm276004(?X0),srcm118004(?X0),srcm153004(?X0),srcm213004(?X0),srcm3004(?X0),srcm236004(?X0) .
+m115004(?X0) :- srcm164004(?X0,?X1),srcm5004(?X0,?X1),srcm130004(?X0),srcm77004(?X0),srcm68004(?X0),srcm128004(?X0,?X1),srcm115004(?X0) .
+m204004(?X0) :- srcm89004(?X0),srcm38004(?X0),srcm145004(?X0),srcm116004(?X0),srcm73004(?X0),srcm179004(?X0,?X1),srcm204004(?X0) .
+m278004(?X0) :- srcm41004(?X0),srcm111004(?X0,?X1),srcm124004(?X0,?X1),srcm278004(?X0) .
+m227004(?X0) :- srcm149004(?X0),srcm142004(?X0),srcm122004(?X0),srcm227004(?X0) .
+m187004(?X0) :- srcm190004(?X0),srcm59004(?X0),srcm182004(?X0),srcm1004(?X0),srcm147004(?X0),srcm244004(?X0,?X1),srcm187004(?X0) .
+m289004(?X0) :- srcm272004(?X0),srcm260004(?X0),srcm171004(?X0),srcm111004(?X0,?X1),srcm33004(?X0),srcm289004(?X0) .
+m91004(?X0,?X1) :- srcm18004(?X0),srcm208004(?X0,?X1),srcm265004(?X0),srcm175004(?X0,?X1),srcm229004(?X0,?X1),srcm122004(?X0),srcm91004(?X0,?X1) .
+m122004(?X0) :- srcm217004(?X0,?X1),srcm251004(?X0),srcm44004(?X0),srcm122004(?X0) .
+m262004(?X0) :- srcm215004(?X0),srcm140004(?X0,?X1),srcm116004(?X0),srcm264004(?X0),srcm262004(?X0) .
+m218004(?X0,?X1) :- srcm79004(?X0),srcm125004(?X0,?X1),srcm40004(?X0),srcm173004(?X0),srcm188004(?X0),srcm223004(?X0,?X1),srcm218004(?X0,?X1) .
+m291004(?X0) :- srcm129004(?X0,?X1),srcm22004(?X0),srcm152004(?X0,?X1),srcm291004(?X0) .
+m126004(?X0) :- srcm169004(?X0),srcm96004(?X0),srcm219004(?X0),srcm292004(?X0,?X1),srcm1004(?X0),srcm126004(?X0) .
+m110004(?X0) :- srcm260004(?X0),srcm268004(?X0,?X1),srcm86004(?X0,?X1),srcm182004(?X0),srcm160004(?X0),srcm110004(?X0) .
+m221004(?X0,?X1) :- srcm92004(?X0),srcm286004(?X0),srcm277004(?X0),srcm278004(?X0),srcm114004(?X0),srcm285004(?X0),srcm221004(?X0,?X1) .
+m90004(?X0) :- srcm287004(?X0),srcm142004(?X0),srcm44004(?X0),srcm137004(?X0),srcm124004(?X0,?X1),srcm90004(?X0) .
+m229004(?X0,?X1) :- srcm234004(?X0),srcm204004(?X0),srcm128004(?X0,?X1),srcm231004(?X0,?X1),srcm229004(?X0,?X1) .
+m247004(?X0) :- srcm213004(?X0),srcm271004(?X0),srcm130004(?X0),srcm105004(?X0),srcm247004(?X0) .
+m113004(?X0) :- srcm272004(?X0),srcm110004(?X0),srcm105004(?X0),srcm113004(?X0) .
+m51004(?X0) :- srcm279004(?X0),srcm242004(?X0),srcm168004(?X0),srcm99004(?X0),srcm52004(?X0),srcm51004(?X0) .
+m250004(?X0) :- srcm296004(?X0,?X1),srcm288004(?X0),srcm215004(?X0),srcm76004(?X0),srcm250004(?X0) .
+m217004(?X0,?X1) :- srcm34004(?X0),srcm39004(?X0),srcm162004(?X0),srcm217004(?X0,?X1) .
+m54004(?X0) :- srcm200004(?X0),srcm264004(?X0),srcm267004(?X0,?X1),srcm116004(?X0),srcm115004(?X0),srcm92004(?X0),srcm54004(?X0) .
+m193004(?X0,?X1) :- srcm253004(?X0),srcm168004(?X0),srcm182004(?X0),srcm193004(?X0,?X1) .
+m88004(?X0) :- srcm6004(?X0),srcm277004(?X0),srcm186004(?X0),srcm19004(?X0),srcm88004(?X0) .
+m77004(?X0) :- srcm61004(?X0,?X1),srcm145004(?X0),srcm150004(?X0),srcm77004(?X0) .
+m266004(?X0) :- srcm11004(?X0,?X1),srcm106004(?X0,?X1),srcm31004(?X0),srcm266004(?X0) .
+m14004(?X0) :- srcm147004(?X0),srcm219004(?X0),srcm242004(?X0),srcm195004(?X0),srcm282004(?X0),srcm14004(?X0) .
+m66004(?X0,?X1) :- srcm142004(?X0),srcm282004(?X0),srcm15004(?X0,?X1),srcm66004(?X0,?X1) .
+m125004(?X0,?X1) :- srcm126004(?X0),srcm179004(?X0,?X1),srcm132004(?X0),srcm125004(?X0,?X1) .
+m74004(?X0,?X1) :- srcm50004(?X0),srcm159004(?X0),srcm153004(?X0),srcm246004(?X0),srcm108004(?X0),srcm178004(?X0,?X1),srcm74004(?X0,?X1) .
+m283004(?X0,?X1) :- srcm11004(?X0,?X1),srcm219004(?X0),srcm189004(?X0),srcm44004(?X0),srcm283004(?X0,?X1) .
+m202004(?X0) :- srcm141004(?X0),srcm299004(?X0,?X1),srcm109004(?X0),srcm124004(?X0,?X1),srcm81004(?X0),srcm273004(?X0,?X1),srcm202004(?X0) .
+m164004(?X0,?X1) :- srcm234004(?X0),srcm31004(?X0),srcm240004(?X0),srcm56004(?X0),srcm164004(?X0,?X1) .
+m212004(?X0) :- srcm225004(?X0),srcm290004(?X0,?X1),srcm95004(?X0),srcm212004(?X0) .
+m240004(?X0) :- srcm28004(?X0,?X1),srcm289004(?X0),srcm267004(?X0,?X1),srcm280004(?X0),srcm86004(?X0,?X1),srcm240004(?X0) .
+m249004(?X0,?X1) :- srcm215004(?X0),srcm258004(?X0),srcm299004(?X0,?X1),srcm85004(?X0),srcm219004(?X0),srcm249004(?X0,?X1) .
+m103004(?X0) :- srcm271004(?X0),srcm202004(?X0),srcm71004(?X1),srcm200004(?X0),srcm252004(?X0,?X1),srcm103004(?X0) .
+m238004(?X0) :- srcm154004(?X0),srcm59004(?X0),srcm86004(?X0,?X1),srcm238004(?X0) .
+m131004(?X0,?X1) :- srcm122004(?X0),srcm174004(?X0,?X1),srcm207004(?X0),srcm17004(?X0),srcm185004(?X0),srcm131004(?X0,?X1) .
+m153004(?X0) :- srcm233004(?X0),srcm117004(?X0,?X1),srcm81004(?X0),srcm153004(?X0) .
+m288004(?X0) :- srcm77004(?X0),srcm298004(?X0,?X1),srcm17004(?X0),srcm28004(?X0,?X1),srcm288004(?X0) .
+m200004(?X0) :- srcm37004(?X0),srcm175004(?X0,?X1),srcm257004(?X0),srcm200004(?X0) .
+m19004(?X0) :- srcm168004(?X0),srcm236004(?X0),srcm109004(?X0),srcm130004(?X0),srcm29004(?X0),srcm219004(?X0),srcm19004(?X0) .
+m147004(?X0) :- srcm88004(?X0),srcm40004(?X0),srcm11004(?X0,?X1),srcm147004(?X0) .
+m48004(?X0) :- srcm94004(?X0),srcm88004(?X0),srcm40004(?X0),srcm226004(?X0),srcm187004(?X0),srcm173004(?X0),srcm48004(?X0) .
+m86004(?X0,?X1) :- srcm217004(?X0,?X1),srcm212004(?X0),srcm69004(?X0),srcm34004(?X0),srcm86004(?X0,?X1) .
+m84004(?X0) :- srcm287004(?X0),srcm143004(?X0,?X1),srcm234004(?X0),srcm278004(?X0),srcm291004(?X0),srcm227004(?X0),srcm84004(?X0) .
+m41004(?X0) :- srcm83004(?X0,?X1),srcm117004(?X0,?X1),srcm208004(?X0,?X1),srcm175004(?X0,?X1),srcm41004(?X0) .
+m141004(?X0) :- srcm195004(?X0),srcm228004(?X0),srcm277004(?X0),srcm40004(?X0),srcm141004(?X0) .
+m252004(?X0,?X1) :- srcm99004(?X0),srcm177004(?X0),srcm276004(?X0),srcm250004(?X0),srcm252004(?X0,?X1) .
+m18004(?X0) :- srcm125004(?X0,?X1),srcm19004(?X0),srcm194004(?X0),srcm247004(?X0),srcm276004(?X0),srcm188004(?X0),srcm18004(?X0) .
+m87004(?X0,?X1) :- srcm113004(?X0),srcm126004(?X0),srcm249004(?X0,?X1),srcm42004(?X0),srcm27004(?X0),srcm87004(?X0,?X1) .
+m13004(?X0,?X1) :- srcm132004(?X0),srcm211004(?X0),srcm87004(?X0,?X1),srcm13004(?X0,?X1) .
+m295004(?X0) :- srcm152004(?X0,?X1),srcm160004(?X0),srcm14004(?X0),srcm278004(?X0),srcm88004(?X0),srcm297004(?X0),srcm295004(?X0) .
+m70004(?X0) :- srcm216004(?X0,?X1),srcm127004(?X0,?X1),srcm263004(?X0),srcm193004(?X0,?X1),srcm70004(?X0) .
+m155004(?X0,?X1) :- srcm165004(?X0),srcm198004(?X0),srcm24004(?X0),srcm55004(?X0),srcm11004(?X0,?X1),srcm238004(?X0),srcm155004(?X0,?X1) .
+m223004(?X0,?X1) :- srcm25004(?X0),srcm166004(?X0,?X1),srcm150004(?X0),srcm223004(?X0,?X1) .
+m225004(?X0) :- srcm270004(?X0),srcm215004(?X0),srcm234004(?X0),srcm225004(?X0) .
+m208004(?X0,?X1) :- srcm95004(?X0),srcm172004(?X0),srcm264004(?X0),srcm92004(?X0),srcm151004(?X0),srcm208004(?X0,?X1) .
+m138004(?X0) :- srcm46004(?X0),srcm221004(?X0,?X1),srcm265004(?X0),srcm138004(?X0) .
+m246004(?X0) :- srcm12004(?X0),srcm19004(?X0),srcm181004(?X0),srcm24004(?X0),srcm283004(?X0,?X1),srcm93004(?X0),srcm246004(?X0) .
+m56004(?X0) :- srcm116004(?X0),srcm23004(?X0),srcm165004(?X0),srcm95004(?X0),srcm56004(?X0) .
+m230004(?X0) :- srcm170004(?X0),srcm127004(?X0,?X1),srcm246004(?X0),srcm207004(?X0),srcm181004(?X0),srcm58004(?X0,?X1),srcm230004(?X0) .
+m180004(?X0) :- srcm182004(?X0),srcm296004(?X0,?X1),srcm81004(?X0),srcm83004(?X0,?X1),srcm34004(?X0),srcm180004(?X0) .
+m168004(?X0) :- srcm280004(?X0),srcm139004(?X0,?X1),srcm253004(?X0),srcm168004(?X0) .
+m149004(?X0) :- srcm226004(?X0),srcm288004(?X0),srcm285004(?X0),srcm149004(?X0) .
+m211004(?X0) :- srcm138004(?X0),srcm143004(?X0,?X1),srcm240004(?X0),srcm242004(?X0),srcm211004(?X0) .
+m185004(?X0) :- srcm282004(?X0),srcm125004(?X0,?X1),srcm235004(?X0),srcm189004(?X0),srcm227004(?X0),srcm273004(?X0,?X1),srcm185004(?X0) .
+m120004(?X0) :- srcm213004(?X0),srcm2004(?X0),srcm253004(?X0),srcm42004(?X0),srcm84004(?X0),srcm220004(?X0,?X1),srcm120004(?X0) .
+m118004(?X0) :- srcm263004(?X0),srcm62004(?X0,?X1),srcm270004(?X0),srcm180004(?X0),srcm120004(?X0),srcm37004(?X0),srcm118004(?X0) .
+m161004(?X0) :- srcm290004(?X0,?X1),srcm160004(?X0),srcm77004(?X0),srcm87004(?X0,?X1),srcm204004(?X0),srcm56004(?X0),srcm161004(?X0) .
+m134004(?X0,?X1) :- srcm21004(?X0),srcm1004(?X0),srcm291004(?X0),srcm112004(?X0),srcm134004(?X0,?X1) .
+m189004(?X0) :- srcm33004(?X0),srcm83004(?X0,?X1),srcm244004(?X0,?X1),srcm189004(?X0) .
+m15004(?X0,?X1) :- srcm193004(?X0,?X1),srcm7004(?X0),srcm35004(?X0),srcm15004(?X0,?X1) .
+m248004(?X0) :- srcm212004(?X0),srcm172004(?X0),srcm162004(?X0),srcm287004(?X0),srcm248004(?X0) .
+m151004(?X0) :- srcm61004(?X0,?X1),srcm233004(?X0),srcm116004(?X0),srcm189004(?X0),srcm151004(?X0) .
+m235004(?X0) :- srcm33004(?X0),srcm73004(?X0),srcm135004(?X0),srcm165004(?X0),srcm185004(?X0),srcm235004(?X0) .
+m5004(?X0,?X1) :- srcm41004(?X0),srcm295004(?X0),srcm11004(?X0,?X1),srcm5004(?X0,?X1) .
+m80004(?X0,?X1) :- srcm270004(?X0),srcm129004(?X0,?X1),srcm178004(?X0,?X1),srcm109004(?X0),srcm208004(?X0,?X1),srcm80004(?X0,?X1) .
+m145004(?X0) :- srcm245004(?X0),srcm233004(?X0),srcm127004(?X0,?X1),srcm138004(?X0),srcm145004(?X0) .
+m39004(?X0) :- srcm233004(?X0),srcm108004(?X0),srcm3004(?X0),srcm39004(?X0) .
+m298004(?X0,?X1) :- srcm92004(?X0),srcm248004(?X0),srcm174004(?X0,?X1),srcm298004(?X0,?X1) .
+m224004(?X0) :- srcm38004(?X0),srcm220004(?X0,?X1),srcm142004(?X0),srcm270004(?X0),srcm224004(?X0) .
+m43004(?X0) :- srcm66004(?X0,?X1),srcm75004(?X0,?X1),srcm135004(?X0),srcm53004(?X0),srcm102004(?X0,?X1),srcm43004(?X0) .
+m213004(?X0) :- srcm228004(?X0),srcm172004(?X0),srcm268004(?X0,?X1),srcm174004(?X0,?X1),srcm213004(?X0) .
+m215004(?X0) :- srcm225004(?X0),srcm276004(?X0),srcm123004(?X0),srcm243004(?X0),srcm156004(?X0),srcm215004(?X0) .
+m156004(?X0) :- srcm291004(?X0),srcm133004(?X0),srcm292004(?X0,?X1),srcm70004(?X0),srcm9004(?X0,?X1),srcm156004(?X0) .
+m258004(?X0) :- srcm30004(?X0),srcm16004(?X0),srcm91004(?X0,?X1),srcm283004(?X0,?X1),srcm9004(?X0,?X1),srcm145004(?X0),srcm258004(?X0) .
+m188004(?X0) :- srcm295004(?X0),srcm78004(?X0,?X1),srcm88004(?X0),srcm215004(?X0),srcm101004(?X0,?X1),srcm188004(?X0) .
+m184004(?X0,?X1) :- srcm213004(?X0),srcm63004(?X0),srcm139004(?X0,?X1),srcm49004(?X0,?X1),srcm129004(?X0,?X1),srcm184004(?X0,?X1) .
+m203004(?X0) :- srcm51004(?X0),srcm2004(?X0),srcm157004(?X0),srcm203004(?X0) .
+m182004(?X0) :- srcm90004(?X0),srcm94004(?X0),srcm238004(?X0),srcm182004(?X0) .
+m234004(?X0) :- srcm66004(?X0,?X1),srcm95004(?X0),srcm293004(?X0),srcm234004(?X0) .
+m55004(?X0) :- srcm86004(?X0,?X1),srcm126004(?X0),srcm41004(?X0),srcm252004(?X0,?X1),srcm45004(?X0),srcm55004(?X0) .
+m209004(?X0) :- srcm6004(?X0),srcm59004(?X0),srcm225004(?X0),srcm209004(?X0) .
+m201004(?X0) :- srcm167004(?X0,?X1),srcm240004(?X0),srcm194004(?X0),srcm201004(?X0) .
+m57004(?X0) :- srcm21004(?X0),srcm105004(?X0),srcm12004(?X0),srcm147004(?X0),srcm229004(?X0,?X1),srcm198004(?X0),srcm57004(?X0) .
+m32004(?X0) :- srcm198004(?X0),srcm212004(?X0),srcm18004(?X0),srcm115004(?X0),srcm86004(?X0,?X1),srcm221004(?X0,?X1),srcm32004(?X0) .
+m10004(?X0) :- srcm244004(?X0,?X1),srcm100004(?X0),srcm41004(?X0),srcm147004(?X0),srcm224004(?X0),srcm179004(?X0,?X1),srcm10004(?X0) .
+m1004(?X0) :- srcm153004(?X0),srcm267004(?X0,?X1),srcm228004(?X0),srcm182004(?X0),srcm1004(?X0) .
+m276004(?X0) :- srcm105004(?X0),srcm114004(?X0),srcm115004(?X0),srcm276004(?X0) .
+m79004(?X0) :- srcm177004(?X0),srcm182004(?X0),srcm198004(?X0),srcm79004(?X0) .
+m28004(?X0) :- srcm143004(?X0,?X1),srcm197004(?X0),srcm38004(?X0),srcm8004(?X0),srcm54004(?X0),srcm28004(?X0,?X1) .
+m293004(?X0) :- srcm139004(?X0,?X1),srcm12004(?X0),srcm205004(?X0,?X1),srcm189004(?X0),srcm293004(?X0) .
+m297004(?X0) :- srcm240004(?X0),srcm214004(?X0),srcm87004(?X0,?X1),srcm73004(?X0),srcm11004(?X0,?X1),srcm119004(?X0),srcm297004(?X0) .
+m143004(?X0,?X1) :- srcm283004(?X0,?X1),srcm226004(?X0),srcm114004(?X0),srcm298004(?X0,?X1),srcm218004(?X0,?X1),srcm278004(?X0),srcm143004(?X0,?X1) .
+m61004(?X0,?X1) :- srcm46004(?X0),srcm297004(?X0),srcm118004(?X0),srcm128004(?X0,?X1),srcm116004(?X0),srcm61004(?X0,?X1) .
+m159004(?X0) :- srcm234004(?X0),srcm249004(?X0,?X1),srcm109004(?X0),srcm134004(?X0,?X1),srcm159004(?X0) .
+m3004(?X0) :- srcm27004(?X0),srcm110004(?X0),srcm41004(?X0),srcm229004(?X0,?X1),srcm3004(?X0) .
+m29004(?X0) :- srcm291004(?X0),srcm162004(?X0),srcm192004(?X0,?X1),srcm75004(?X0,?X1),srcm58004(?X0,?X1),srcm234004(?X0),srcm29004(?X0) .
+m81004(?X0) :- srcm111004(?X0,?X1),srcm234004(?X0),srcm215004(?X0),srcm68004(?X0),srcm146004(?X0),srcm225004(?X0),srcm81004(?X0) .
+m112004(?X0) :- srcm227004(?X0),srcm16004(?X0),srcm28004(?X0,?X1),srcm297004(?X0),srcm236004(?X0),srcm112004(?X0) .
+m260004(?X0) :- srcm31004(?X0),srcm172004(?X0),srcm78004(?X0,?X1),srcm234004(?X0),srcm267004(?X0,?X1),srcm104004(?X0),srcm260004(?X0) .
+m173004(?X0) :- srcm210004(?X0),srcm188004(?X0),srcm8004(?X0),srcm173004(?X0) .
+m6004(?X0) :- srcm267004(?X0,?X1),srcm1004(?X0),srcm26004(?X0),srcm200004(?X0),srcm210004(?X0),srcm6004(?X0) .
+m82004(?X0) :- srcm4004(?X0),srcm172004(?X0),srcm95004(?X0),srcm82004(?X0) .
+m71004(?X0) :- srcm97004(?X0),srcm53004(?X0),srcm164004(?X0,?X1),srcm114004(?X0),srcm71004(?X1) .
+m65004(?X0) :- srcm91004(?X0,?X1),srcm80004(?X0,?X1),srcm72004(?X0),srcm65004(?X0) .
+m136004(?X0) :- srcm140004(?X0,?X1),srcm149004(?X0),srcm126004(?X0),srcm236004(?X0),srcm193004(?X0,?X1),srcm69004(?X0),srcm136004(?X0) .
+m228004(?X0) :- srcm252004(?X0,?X1),srcm214004(?X0),srcm96004(?X0),srcm228004(?X0) .
+m75004(?X0,?X1) :- srcm95004(?X0),srcm233004(?X0),srcm4004(?X0),srcm161004(?X0),srcm79004(?X0),srcm100004(?X0),srcm75004(?X0,?X1) .
+m2004(?X0) :- srcm299004(?X0,?X1),srcm38004(?X0),srcm58004(?X0,?X1),srcm95004(?X0),srcm284004(?X0,?X1),srcm118004(?X0),srcm2004(?X0) .
+m272004(?X0) :- srcm20004(?X0),srcm66004(?X0,?X1),srcm51004(?X0),srcm113004(?X0),srcm298004(?X0,?X1),srcm272004(?X0) .
+m121004(?X0) :- srcm130004(?X0),srcm41004(?X0),srcm233004(?X0),srcm46004(?X0),srcm255004(?X0),srcm58004(?X0,?X1),srcm121004(?X0) .
+m190004(?X0) :- srcm164004(?X0,?X1),srcm243004(?X0),srcm195004(?X0),srcm10004(?X0),srcm123004(?X0),srcm85004(?X0),srcm190004(?X0) .
+m102004(?X0,?X1) :- srcm26004(?X0),srcm132004(?X0),srcm14004(?X0),srcm30004(?X0),srcm167004(?X0,?X1),srcm102004(?X0,?X1) .
+m277004(?X0) :- srcm123004(?X0),srcm205004(?X0,?X1),srcm252004(?X0,?X1),srcm26004(?X0),srcm130004(?X0),srcm277004(?X0) .
+m67004(?X0) :- srcm173004(?X0),srcm122004(?X0),srcm205004(?X0,?X1),srcm289004(?X0),srcm176004(?X0),srcm273004(?X0,?X1),srcm67004(?X0) .

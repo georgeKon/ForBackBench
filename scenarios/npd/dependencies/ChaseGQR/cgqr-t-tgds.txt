@@ -1,0 +1,800 @@
+GeochronologicEra(?A) -> ConnectedTemporalRegion(?A) .
+TimeOrdinalEraBoundary(?A) -> Concept(?A) .
+TimeOrdinalReferenceSystem(?A) -> ConceptScheme(?A) .
+AbandonedWell(?A) -> Well(?A) .
+Agent(?A) -> DependentContinuant(?A) .
+AppraisalWell(?A) -> ExplorationWell(?A) .
+AppraisalWellbore(?A) -> Wellbore(?A) .
+Area(?A) -> SpatialObject(?A) .
+AreaFee(?A) -> Continuant(?A) .
+AssociatedGas(?A) -> Gas(?A) .
+Award(?A) -> Continuant(?A) .
+AwardArea(?A) -> asWKT(?A,?EX6), Literal(?EX6) , blockId(?A,?EX5), Literal(?EX5) , quadrantLocation(?A,?EX4), Thing(?EX4) , provinceLocation(?A,?EX3), Thing(?EX3) , npdPageURL(?A,?EX2), Thing(?EX2) , blockLocation(?A,?EX1), Thing(?EX1) , Area(?A) .
+BAA(?A) -> name(?A,?EX13), Literal(?EX13) , idNPD(?A,?EX12), Literal(?EX12) , dateSyncNPD(?A,?EX11), Literal(?EX11) , dateBaaValidFrom(?A,?EX10), Literal(?EX10) , dateApproved(?A,?EX9), Literal(?EX9) , factPageURL(?A,?EX8), Thing(?EX8) , baaOperatorCompany(?A,?EX7), Company(?EX7) , Agent(?A) .
+BAAArea(?A) -> asWKT(?A,?EX22), Literal(?EX22) , polygonNo(?A,?EX21), Literal(?EX21) , isActive(?A,?EX20), Literal(?EX20) , idNPD(?A,?EX19), Literal(?EX19) , dateSyncNPD(?A,?EX18), Literal(?EX18) , dateBaaAreaValidFrom(?A,?EX17), Literal(?EX17) , areaSize(?A,?EX16), Literal(?EX16) , isGeometryOfFeature(?A,?EX15), BAA(?EX15) , country(?A,?EX14), Thing(?EX14) , Area(?A) .
+BAALicensee(?A) -> licenseeInterest(?A,?EX27), Literal(?EX27) , dateSyncNPD(?A,?EX26), Literal(?EX26) , dateBaaLicenseeValidFrom(?A,?EX25), Literal(?EX25) , licenseeForBAA(?A,?EX24), BAA(?EX24) , baaLicensee(?A,?EX23), Company(?EX23) , Licensee(?A) .
+BAATransfer(?A) -> transferredInterest(?A,?EX33), Literal(?EX33) , transferDirection(?A,?EX32), Literal(?EX32) , dateTransferValidFrom(?A,?EX31), Literal(?EX31) , dateSyncNPD(?A,?EX30), Literal(?EX30) , transferredBAA(?A,?EX29), BAA(?EX29) , baaTransferCompany(?A,?EX28), Company(?EX28) , Transfer(?A) .
+Block(?A) -> dateSyncNPD(?A,?EX36), Literal(?EX36) , quadrantLocation(?A,?EX35), Thing(?EX35) , containsWellbore(?A,?EX34), Thing(?EX34) , Area(?A) .
+BlowOut(?A) -> TemporalInstant(?A) .
+BlowoutWellbore(?A) -> Wellbore(?A) .
+ChangeOfCompanyNameTransfer(?A) -> Transfer(?A) .
+CommercialDiscovery(?A) -> Discovery(?A) .
+Company(?A) -> shortName(?A,?EX43), Literal(?EX43) , isFormerLicenceOperator(?A,?EX42), Literal(?EX42) , isFormerLicenceLicensee(?A,?EX41), Literal(?EX41) , isCurrentLicenceOperator(?A,?EX40), Literal(?EX40) , isCurrentLicenceLicensee(?A,?EX39), Literal(?EX39) , idNPD(?A,?EX38), Literal(?EX38) , dateSyncNPD(?A,?EX37), Literal(?EX37) , Agent(?A) .
+CompanyReserve(?A) -> remainingOilEquivalents(?A,?EX58), Literal(?EX58) , remainingOil(?A,?EX57), Literal(?EX57) , remainingNGL(?A,?EX56), Literal(?EX56) , remainingGas(?A,?EX55), Literal(?EX55) , remainingCondensate(?A,?EX54), Literal(?EX54) , recoverableOilEquivalents(?A,?EX53), Literal(?EX53) , recoverableOil(?A,?EX52), Literal(?EX52) , recoverableNGL(?A,?EX51), Literal(?EX51) , recoverableGas(?A,?EX50), Literal(?EX50) , recoverableCondensate(?A,?EX49), Literal(?EX49) , dateSyncNPD(?A,?EX48), Literal(?EX48) , dateResourceEstimate(?A,?EX47), Literal(?EX47) , companyShare(?A,?EX46), Literal(?EX46) , reservesForField(?A,?EX45), Field(?EX45) , reservesForCompany(?A,?EX44), Company(?EX44) , Reserve(?A) .
+CompressedNaturalGas(?A) -> Gas(?A) .
+ConcreteStructureFacility(?A) -> Facility(?A) .
+Condeep3ShaftsFacility(?A) -> Facility(?A) .
+Condeep4ShaftsFacility(?A) -> Facility(?A) .
+CondeepMonoshaftFacility(?A) -> Facility(?A) .
+Condensate(?A) -> Gas(?A) .
+CondensatePipeline(?A) -> Pipeline(?A) .
+ContingentResources(?A) -> MaterialEntity(?A) .
+CrudeOil(?A) -> Oil(?A) .
+DevelopmentWell(?A) -> Well(?A) .
+DevelopmentWellbore(?A) -> wellboreWaterDepth(?A,?EX100), Literal(?EX100) , wellboreType(?A,?EX99), Literal(?EX99) , wellboreTotalDepth(?A,?EX98), Literal(?EX98) , wellborePlotSymbol(?A,?EX97), Literal(?EX97) , wellboreNamePart4(?A,?EX96), Literal(?EX96) , wellboreNamePart3(?A,?EX95), Literal(?EX95) , wellboreNamePart2(?A,?EX94), Literal(?EX94) , wellboreNamePart1(?A,?EX93), Literal(?EX93) , wellboreLicensingActivity(?A,?EX92), Literal(?EX92) , wellboreKellyBushElevation(?A,?EX91), Literal(?EX91) , wellboreEntryYear(?A,?EX90), Literal(?EX90) , wellboreCompletionYear(?A,?EX89), Literal(?EX89) , utmZone(?A,?EX88), Literal(?EX88) , utmNS(?A,?EX87), Literal(?EX87) , utmEW(?A,?EX86), Literal(?EX86) , secondsNS(?A,?EX85), Literal(?EX85) , secondsEW(?A,?EX84), Literal(?EX84) , name(?A,?EX83), Literal(?EX83) , minutesNS(?A,?EX82), Literal(?EX82) , minutesEW(?A,?EX81), Literal(?EX81) , isMultilateral(?A,?EX80), Literal(?EX80) , isDiscoveryWellbore(?A,?EX79), Literal(?EX79) , idNPD(?A,?EX78), Literal(?EX78) , drillPermit(?A,?EX77), Literal(?EX77) , degreesNS(?A,?EX76), Literal(?EX76) , degreesEW(?A,?EX75), Literal(?EX75) , decimalDegreesNS(?A,?EX74), Literal(?EX74) , decimalDegreesEW(?A,?EX73), Literal(?EX73) , dateUpdatedMax(?A,?EX72), Literal(?EX72) , dateUpdated(?A,?EX71), Literal(?EX71) , dateSyncNPD(?A,?EX70), Literal(?EX70) , codeNS(?A,?EX69), Literal(?EX69) , wellboreForDiscovery(?A,?EX68), Discovery(?EX68) , wellOperator(?A,?EX67), Company(?EX67) , reclassedFromWellbore(?A,?EX66), Thing(?EX66) , reclassedFromWellbore(?A,?EX65), Wellbore(?EX65) , mainAreaLocation(?A,?EX64), Thing(?EX64) , factMapURL(?A,?EX63), Thing(?EX63) , drillingOperatorCompany(?A,?EX62), Company(?EX62) , developmentWellboreForLicence(?A,?EX61), ProductionLicence(?EX61) , developmentWellboreForField(?A,?EX60), Field(?EX60) , belongsToWell(?A,?EX59), Thing(?EX59) , Wellbore(?A) .
+Discovery(?A) -> status(?A,?EX109), Literal(?EX109) , name(?A,?EX108), Literal(?EX108) , idNPD(?A,?EX107), Literal(?EX107) , discoveryYear(?A,?EX106), Literal(?EX106) , dateSyncNPD(?A,?EX105), Literal(?EX105) , includedInField(?A,?EX104), Field(?EX104) , factPageURL(?A,?EX103), Thing(?EX103) , factMapURL(?A,?EX102), Thing(?EX102) , discoveryWellbore(?A,?EX101), Wellbore(?EX101) , Continuant(?A) .
+DiscoveryArea(?A) -> asWKT(?A,?EX112), Literal(?EX112) , resourcesIncludedInDiscovery(?A,?EX111), Discovery(?EX111) , isGeometryOfFeature(?A,?EX110), Discovery(?EX110) , Area(?A) .
+DiscoveryReserve(?A) -> reservesResourceClass(?A,?EX122), Literal(?EX122) , recoverableOil(?A,?EX121), Literal(?EX121) , recoverableNGL(?A,?EX120), Literal(?EX120) , recoverableGas(?A,?EX119), Literal(?EX119) , recoverableCondensate(?A,?EX118), Literal(?EX118) , idNPD(?A,?EX117), Literal(?EX117) , dateUpdated(?A,?EX116), Literal(?EX116) , dateSyncNPD(?A,?EX115), Literal(?EX115) , dateResourceEstimate(?A,?EX114), Literal(?EX114) , reservesForDiscovery(?A,?EX113), Discovery(?EX113) , Reserve(?A) .
+DiscoveryWellbore(?A) -> Wellbore(?A) .
+DorisFacility(?A) -> Facility(?A) .
+DryGas(?A) -> Gas(?A) .
+ElectromagneticSurvey(?A) -> Survey(?A) .
+Equipment(?A) -> Object(?A) .
+ExplorationWell(?A) -> Well(?A) .
+ExplorationWellbore(?A) -> wellboreWaterDepth(?A,?EX170), Literal(?EX170) , wellboreType(?A,?EX169), Literal(?EX169) , wellboreTotalDepth(?A,?EX168), Literal(?EX168) , wellborePurpose(?A,?EX167), Literal(?EX167) , wellborePlotSymbol(?A,?EX166), Literal(?EX166) , wellborePlannedPurpose(?A,?EX165), Literal(?EX165) , wellboreNamePart4(?A,?EX164), Literal(?EX164) , wellboreNamePart2(?A,?EX163), Literal(?EX163) , wellboreNamePart1(?A,?EX162), Literal(?EX162) , wellboreLicensingActivity(?A,?EX161), Literal(?EX161) , wellboreKellyBushElevation(?A,?EX160), Literal(?EX160) , wellboreEntryYear(?A,?EX159), Literal(?EX159) , wellboreDrillingDays(?A,?EX158), Literal(?EX158) , wellboreCompletionYear(?A,?EX157), Literal(?EX157) , utmZone(?A,?EX156), Literal(?EX156) , utmNS(?A,?EX155), Literal(?EX155) , utmEW(?A,?EX154), Literal(?EX154) , secondsNS(?A,?EX153), Literal(?EX153) , secondsEW(?A,?EX152), Literal(?EX152) , name(?A,?EX151), Literal(?EX151) , minutesNS(?A,?EX150), Literal(?EX150) , minutesEW(?A,?EX149), Literal(?EX149) , isReentryWellbore(?A,?EX148), Literal(?EX148) , isMultilateral(?A,?EX147), Literal(?EX147) , isDiscoveryWellbore(?A,?EX146), Literal(?EX146) , idNPD(?A,?EX145), Literal(?EX145) , drillPermit(?A,?EX144), Literal(?EX144) , degreesNS(?A,?EX143), Literal(?EX143) , degreesEW(?A,?EX142), Literal(?EX142) , decimalDegreesNS(?A,?EX141), Literal(?EX141) , decimalDegreesEW(?A,?EX140), Literal(?EX140) , dateUpdatedMax(?A,?EX139), Literal(?EX139) , dateUpdated(?A,?EX138), Literal(?EX138) , dateSyncNPD(?A,?EX137), Literal(?EX137) , codeNS(?A,?EX136), Literal(?EX136) , codeEW(?A,?EX135), Literal(?EX135) , wellboreForDiscovery(?A,?EX134), Discovery(?EX134) , wellOperator(?A,?EX133), Company(?EX133) , reclassedFromWellbore(?A,?EX132), Thing(?EX132) , reclassedFromWellbore(?A,?EX131), Wellbore(?EX131) , mainAreaLocation(?A,?EX130), Thing(?EX130) , factPageURL(?A,?EX129), Thing(?EX129) , factMapURL(?A,?EX128), Thing(?EX128) , explorationWellboreForLicence(?A,?EX127), ProductionLicence(?EX127) , explorationWellboreForField(?A,?EX126), Field(?EX126) , drillingOperatorCompany(?A,?EX125), Company(?EX125) , drillingFacility(?A,?EX124), Thing(?EX124) , belongsToWell(?A,?EX123), Thing(?EX123) , Wellbore(?A) .
+FPSOFacility(?A) -> Facility(?A) .
+FSUFacility(?A) -> Facility(?A) .
+Facility(?A) -> Continuant(?A) .
+FacilityPoint(?A) -> asWKT(?A,?EX173), Literal(?EX173) , isGeometryOfFeature(?A,?EX172), FixedFacility(?EX172) , belongsToFacility(?A,?EX171), TUFacility(?EX171) , Point(?A) .
+FeederPipeline(?A) -> Pipeline(?A) .
+Field(?A) -> status(?A,?EX182), Literal(?EX182) , name(?A,?EX181), Literal(?EX181) , idNPD(?A,?EX180), Literal(?EX180) , dateSyncNPD(?A,?EX179), Literal(?EX179) , factPageURL(?A,?EX178), Thing(?EX178) , factMapURL(?A,?EX177), Thing(?EX177) , discoveryWellbore(?A,?EX176), Wellbore(?EX176) , currentFieldOwner(?A,?EX175), ProductionLicence(?EX175) , currentFieldOperator(?A,?EX174), Company(?EX174) , IndependentContinuant(?A) .
+FieldArea(?A) -> asWKT(?A,?EX186), Literal(?EX186) , resourcesIncludedInDiscovery(?A,?EX185), Discovery(?EX185) , isGeometryOfFeature(?A,?EX184), Field(?EX184) , isGeometryOfFeature(?A,?EX183), Discovery(?EX183) , Area(?A) .
+FieldInvestment(?A) -> productionYear(?A,?EX190), Literal(?EX190) , investmentNOK(?A,?EX189), Literal(?EX189) , dateSyncNPD(?A,?EX188), Literal(?EX188) , investmentForField(?A,?EX187), Field(?EX187) , ProcessualEntity(?A) .
+FieldLicensee(?A) -> dateSyncNPD(?A,?EX196), Literal(?EX196) , dateFieldOwnerFrom(?A,?EX195), Literal(?EX195) , dateFieldLicenseeFrom(?A,?EX194), Literal(?EX194) , companyShare(?A,?EX193), Literal(?EX193) , licenseeForField(?A,?EX192), Field(?EX192) , fieldLicensee(?A,?EX191), Company(?EX191) , Licensee(?A) .
+FieldMonthlyProduction(?A) -> productionYear(?A,?EX204), Literal(?EX204) , productionMonth(?A,?EX203), Literal(?EX203) , producedWater(?A,?EX202), Literal(?EX202) , producedOilEquivalents(?A,?EX201), Literal(?EX201) , producedOil(?A,?EX200), Literal(?EX200) , producedNGL(?A,?EX199), Literal(?EX199) , producedGas(?A,?EX198), Literal(?EX198) , producedCondensate(?A,?EX197), Literal(?EX197) , ProcessualEntity(?A) .
+FieldOperator(?A) -> dateSyncNPD(?A,?EX208), Literal(?EX208) , dateFieldOperatorFrom(?A,?EX207), Literal(?EX207) , operatorForField(?A,?EX206), Field(?EX206) , fieldOperator(?A,?EX205), Company(?EX205) , Operator(?A) .
+FieldOwner(?A) -> dateSyncNPD(?A,?EX211), Literal(?EX211) , dateFieldOwnerFrom(?A,?EX210), Literal(?EX210) , ownerForField(?A,?EX209), Field(?EX209) , Owner(?A) .
+FieldReserve(?A) -> remainingOilEquivalents(?A,?EX225), Literal(?EX225) , remainingOil(?A,?EX224), Literal(?EX224) , remainingNGL(?A,?EX223), Literal(?EX223) , remainingGas(?A,?EX222), Literal(?EX222) , remainingCondensate(?A,?EX221), Literal(?EX221) , recoverableOilEquivalents(?A,?EX220), Literal(?EX220) , recoverableOil(?A,?EX219), Literal(?EX219) , recoverableNGL(?A,?EX218), Literal(?EX218) , recoverableGas(?A,?EX217), Literal(?EX217) , recoverableCondensate(?A,?EX216), Literal(?EX216) , idNPD(?A,?EX215), Literal(?EX215) , dateSyncNPD(?A,?EX214), Literal(?EX214) , dateResourceEstimate(?A,?EX213), Literal(?EX213) , reservesForField(?A,?EX212), Field(?EX212) , Reserve(?A) .
+FieldStatus(?A) -> status(?A,?EX229), Literal(?EX229) , dateSyncNPD(?A,?EX228), Literal(?EX228) , dateStatusFrom(?A,?EX227), Literal(?EX227) , statusForField(?A,?EX226), Field(?EX226) , Quality(?A) .
+FieldYearlyProduction(?A) -> productionYear(?A,?EX236), Literal(?EX236) , producedWater(?A,?EX235), Literal(?EX235) , producedOilEquivalents(?A,?EX234), Literal(?EX234) , producedOil(?A,?EX233), Literal(?EX233) , producedNGL(?A,?EX232), Literal(?EX232) , producedGas(?A,?EX231), Literal(?EX231) , producedCondensate(?A,?EX230), Literal(?EX230) , ProcessualEntity(?A) .
+FixedFacility(?A) -> waterDepth(?A,?EX247), Literal(?EX247) , status(?A,?EX246), Literal(?EX246) , name(?A,?EX245), Literal(?EX245) , isSurfaceFacility(?A,?EX244), Literal(?EX244) , idNPD(?A,?EX243), Literal(?EX243) , facilityType(?A,?EX242), Literal(?EX242) , dateSyncNPD(?A,?EX241), Literal(?EX241) , codeNS(?A,?EX240), Literal(?EX240) , codeEW(?A,?EX239), Literal(?EX239) , factPageURL(?A,?EX238), Thing(?EX238) , factMapURL(?A,?EX237), Thing(?EX237) , Facility(?A) .
+Formation(?A) -> LithostratigraphicUnit(?A) .
+Gas(?A) -> Petroleum(?A) .
+GasPipeline(?A) -> Pipeline(?A) .
+GroundSurvey(?A) -> Survey(?A) .
+Group(?A) -> LithostratigraphicUnit(?A) .
+InitialWellbore(?A) -> Wellbore(?A) .
+InjectionWell(?A) -> RecoveryWell(?A) .
+InjectionWellbore(?A) -> Wellbore(?A) .
+JackUp3LegsFacility(?A) -> Facility(?A) .
+JackUp4LegsFacility(?A) -> Facility(?A) .
+Jacket12LegsFacility(?A) -> Facility(?A) .
+Jacket4LegsFacility(?A) -> Facility(?A) .
+Jacket6LegsFacility(?A) -> Facility(?A) .
+Jacket8LegsFacility(?A) -> Facility(?A) .
+JacketTripodFacility(?A) -> Facility(?A) .
+JunkedWellbore(?A) -> Wellbore(?A) .
+Kick(?A) -> Occurrent(?A) .
+KickOffPoint(?A) -> Continuant(?A) .
+LandfallFacility(?A) -> Facility(?A) .
+LicencedAcreage(?A) -> Area(?A) .
+Licensee(?A) -> Agent(?A) .
+LiquefiedNaturalGas(?A) -> Gas(?A) .
+LiquefiedPetroleumGas(?A) -> Gas(?A) .
+LithostratigraphicUnit(?A) -> stratigraphicLevel(?A,?EX252), Literal(?EX252) , idNPD(?A,?EX251), Literal(?EX251) , dateUpdated(?A,?EX250), Literal(?EX250) , dateSyncNPD(?A,?EX249), Literal(?EX249) , geochronologicEra(?A,?EX248), Thing(?EX248) , Site(?A) .
+LoadingSystemFacility(?A) -> Facility(?A) .
+MainArea(?A) -> asWKT(?A,?EX254), Literal(?EX254) , mapNo(?A,?EX253), Literal(?EX253) , Area(?A) .
+Member(?A) -> LithostratigraphicUnit(?A) .
+MergerTakeoverTransfer(?A) -> Transfer(?A) .
+MonotowerFacility(?A) -> Facility(?A) .
+MopustorFacility(?A) -> Facility(?A) .
+MoveableFacility(?A) -> name(?A,?EX261), Literal(?EX261) , idNPD(?A,?EX260), Literal(?EX260) , facilityType(?A,?EX259), Literal(?EX259) , dateSyncNPD(?A,?EX258), Literal(?EX258) , registeredInCountry(?A,?EX257), Thing(?EX257) , factPageURL(?A,?EX256), Thing(?EX256) , currentResponsibleCompany(?A,?EX255), Company(?EX255) , Facility(?A) .
+MultiFieldWellbore(?A) -> Wellbore(?A) .
+MultiWellTemplateFacility(?A) -> Facility(?A) .
+MultibranchWell(?A) -> Well(?A) .
+MultifieldWellbore(?A) -> Wellbore(?A) .
+MultilateralWell(?A) -> Well(?A) .
+MultilateralWellbore(?A) -> Wellbore(?A) .
+MultipurposeWellbore(?A) -> Wellbore(?A) .
+NCSMonthlyProduction(?A) -> productionYear(?A,?EX269), Literal(?EX269) , productionMonth(?A,?EX268), Literal(?EX268) , producedWater(?A,?EX267), Literal(?EX267) , producedOilEquivalents(?A,?EX266), Literal(?EX266) , producedOil(?A,?EX265), Literal(?EX265) , producedNGL(?A,?EX264), Literal(?EX264) , producedGas(?A,?EX263), Literal(?EX263) , producedCondensate(?A,?EX262), Literal(?EX262) , ProcessualEntity(?A) .
+NCSYearlyProduction(?A) -> productionYear(?A,?EX276), Literal(?EX276) , producedWater(?A,?EX275), Literal(?EX275) , producedOilEquivalents(?A,?EX274), Literal(?EX274) , producedOil(?A,?EX273), Literal(?EX273) , producedNGL(?A,?EX272), Literal(?EX272) , producedGas(?A,?EX271), Literal(?EX271) , producedCondensate(?A,?EX270), Literal(?EX270) , ProcessualEntity(?A) .
+NaturalGasLiquid(?A) -> Petroleum(?A) .
+ObservationWell(?A) -> DevelopmentWell(?A) .
+ObservationWellbore(?A) -> Wellbore(?A) .
+Oil(?A) -> Petroleum(?A) .
+OilEquivalents(?A) -> ObjectAggregate(?A) .
+OilGasPipeline(?A) -> Pipeline(?A) .
+OilPipeline(?A) -> Pipeline(?A) .
+OnshoreFacility(?A) -> Facility(?A) .
+Operator(?A) -> Agent(?A) .
+OtherSurvey(?A) -> Survey(?A) .
+Owner(?A) -> Agent(?A) .
+PAWellbore(?A) -> Wellbore(?A) .
+ParcellBAA(?A) -> BAA(?A) .
+Petroleum(?A) -> ObjectAggregate(?A) .
+PetroleumActivity(?A) -> ProcessualEntity(?A) .
+PetroleumDeposit(?A) -> ObjectAggregate(?A) .
+Pipeline(?A) -> idNPD(?A,?EX281), Literal(?EX281) , currentStatus(?A,?EX280), Literal(?EX280) , pipelineToFacility(?A,?EX279), Thing(?EX279) , pipelineOperator(?A,?EX278), Company(?EX278) , pipelineFromFacility(?A,?EX277), Thing(?EX277) , Facility(?A) .
+SeismicSurvey(?A) -> surveyType(?A,?EX287), Literal(?EX287) , name(?A,?EX286), Literal(?EX286) , idNPD(?A,?EX285), Literal(?EX285) , dateSyncNPD(?A,?EX284), Literal(?EX284) , dateSurveyPlannedStart(?A,?EX283), Literal(?EX283) , dateSurveyPlannedCompleted(?A,?EX282), Literal(?EX282) .
+SeismicSurveyCoordinate(?A) -> secondsNS(?A,?EX296), Literal(?EX296) , secondsEW(?A,?EX295), Literal(?EX295) , polygonPointNo(?A,?EX294), Literal(?EX294) , minutesNS(?A,?EX293), Literal(?EX293) , minutesEW(?A,?EX292), Literal(?EX292) , degreesNS(?A,?EX291), Literal(?EX291) , degreesEW(?A,?EX290), Literal(?EX290) , dateSyncNPD(?A,?EX289), Literal(?EX289) , coordinateForSurvey(?A,?EX288), SeismicSurvey(?EX288) , Point(?A) .
+SeismicSurveyProgress(?A) -> dateSurveyProgress(?A,?EX298), Literal(?EX298) , statusForSurvey(?A,?EX297), SeismicSurvey(?EX297) , Occurrent(?A) .
+SemisubConcreteFacility(?A) -> Facility(?A) .
+SemisubSteelFacility(?A) -> Facility(?A) .
+ShallowWell(?A) -> Well(?A) .
+ShallowWellbore(?A) -> wellboreWaterDepth(?A,?EX325), Literal(?EX325) , wellboreTotalDepth(?A,?EX324), Literal(?EX324) , wellboreNamePart4(?A,?EX323), Literal(?EX323) , wellboreNamePart3(?A,?EX322), Literal(?EX322) , wellboreNamePart2(?A,?EX321), Literal(?EX321) , wellboreNamePart1(?A,?EX320), Literal(?EX320) , wellboreEntryYear(?A,?EX319), Literal(?EX319) , wellboreCompletionYear(?A,?EX318), Literal(?EX318) , utmZone(?A,?EX317), Literal(?EX317) , utmNS(?A,?EX316), Literal(?EX316) , utmEW(?A,?EX315), Literal(?EX315) , secondsNS(?A,?EX314), Literal(?EX314) , secondsEW(?A,?EX313), Literal(?EX313) , name(?A,?EX312), Literal(?EX312) , minutesNS(?A,?EX311), Literal(?EX311) , minutesEW(?A,?EX310), Literal(?EX310) , idNPD(?A,?EX309), Literal(?EX309) , drillPermit(?A,?EX308), Literal(?EX308) , degreesNS(?A,?EX307), Literal(?EX307) , degreesEW(?A,?EX306), Literal(?EX306) , decimalDegreesNS(?A,?EX305), Literal(?EX305) , decimalDegreesEW(?A,?EX304), Literal(?EX304) , dateUpdatedMax(?A,?EX303), Literal(?EX303) , dateUpdated(?A,?EX302), Literal(?EX302) , dateSyncNPD(?A,?EX301), Literal(?EX301) , shallowWellboreForLicence(?A,?EX300), ProductionLicence(?EX300) , mainAreaLocation(?A,?EX299), Thing(?EX299) , Wellbore(?A) .
+Sidetrack(?A) -> Continuant(?A) .
+SidetrackWellbore(?A) -> Wellbore(?A) .
+SingleWellTemplateFacility(?A) -> Facility(?A) .
+SiteSurvey(?A) -> Survey(?A) .
+SlidingScaleBAA(?A) -> BAA(?A) .
+SubseaCompletedWell(?A) -> DevelopmentWell(?A) .
+SubseaStructureFacility(?A) -> Facility(?A) .
+Survey(?A) -> Occurrent(?A) .
+SurveyArea(?A) -> asWKT(?A,?EX329), Literal(?EX329) , isTurnAreaIncluded(?A,?EX328), Literal(?EX328) , isMarketAvailable(?A,?EX327), Literal(?EX327) , isGeometryOfFeature(?A,?EX326), SeismicSurvey(?EX326) , Area(?A) .
+SurveyMultilineArea(?A) -> asWKT(?A,?EX337), Literal(?EX337) , sourceType(?A,?EX336), Literal(?EX336) , sensorType(?A,?EX335), Literal(?EX335) , sensorNumbers(?A,?EX334), Literal(?EX334) , sensorLength(?A,?EX333), Literal(?EX333) , lengthPlannedBoatKm(?A,?EX332), Literal(?EX332) , isMarketAvailable(?A,?EX331), Literal(?EX331) , isGeometryOfFeature(?A,?EX330), SeismicSurvey(?EX330) , Area(?A) .
+SuspReenteredLaterWellbore(?A) -> Wellbore(?A) .
+SuspendedWellbore(?A) -> Wellbore(?A) .
+TUFOperator(?A) -> dateTUFOperatorValidFrom(?A,?EX341), Literal(?EX341) , dateSyncNPD(?A,?EX340), Literal(?EX340) , TUFOperatorForLicence(?A,?EX339), TUFacility(?EX339) , TUFOperatorCompany(?A,?EX338), Company(?EX338) , Operator(?A) .
+TUFOwner(?A) -> dateTUFOwnerValidFrom(?A,?EX346), Literal(?EX346) , dateSyncNPD(?A,?EX345), Literal(?EX345) , TUFOwnerShare(?A,?EX344), Literal(?EX344) , TUFOwnerForLicence(?A,?EX343), TUFacility(?EX343) , TUFOwnerCompany(?A,?EX342), Company(?EX342) , Owner(?A) .
+TUFacility(?A) -> dateUpdatedMax(?A,?EX460), Literal(?EX460) , dateLicenceValidTo(?A,?EX459), Literal(?EX459) , dateLicenceValidFrom(?A,?EX458), Literal(?EX458) , name(?A,?EX457), Literal(?EX457) , idNPD(?A,?EX456), Literal(?EX456) , dateSyncNPD(?A,?EX455), Literal(?EX455) , TUFOperatorCompany(?A,?EX454), Company(?EX454) , Facility(?A) , idNPD(?A,?EX348), Literal(?EX348) , dateSyncNPD(?A,?EX347), Literal(?EX347) , Facility(?A) .
+TechnicalDiscovery(?A) -> Discovery(?A) .
+TechnicalSideTrack(?A) -> Sidetrack(?A) .
+TerminationPlan(?A) -> Plan(?A) .
+TerminationPoint(?A) -> Point(?A) .
+TestProductionWell(?A) -> DevelopmentWell(?A) .
+TlpConcreteFacility(?A) -> Facility(?A) .
+TlpSteelFacility(?A) -> Facility(?A) .
+Transfer(?A) -> ProcessualEntity(?A) , Transfer(?A) .
+TransportationPipeline(?A) -> Pipeline(?A) .
+UnitizedBAA(?A) -> BAA(?A) .
+VesselFacility(?A) -> Facility(?A) .
+Well(?A) -> wellType(?A,?EX351), Literal(?EX351) , name(?A,?EX350), string(?EX350) , dateSyncNPD(?A,?EX349), Literal(?EX349) , Continuant(?A) .
+WellHead(?A) -> Continuant(?A) .
+WellTarget(?A) -> Continuant(?A) .
+WellTrack(?A) -> Continuant(?A) .
+Wellbore(?A) -> name(?A,?EX356), string(?EX356) , name(?A,?EX355), Literal(?EX355) , idNPD(?A,?EX354), Literal(?EX354) , dateSyncNPD(?A,?EX353), Literal(?EX353) , belongsToWell(?A,?EX352), Thing(?EX352) , Continuant(?A) .
+WellboreCasingAndLeakoffTest(?A) -> wellboreHoleDepth(?A,?EX361), Literal(?EX361) , dateSyncNPD(?A,?EX360), Literal(?EX360) , casingDepth(?A,?EX359), Literal(?EX359) , LOTMudDensity(?A,?EX358), Literal(?EX358) , LOTForWellbore(?A,?EX357), Wellbore(?EX357) , Continuant(?A) .
+WellboreCoordinate(?A) -> utmZone(?A,?EX375), Literal(?EX375) , utmNS(?A,?EX374), Literal(?EX374) , utmEW(?A,?EX373), Literal(?EX373) , secondsNS(?A,?EX372), Literal(?EX372) , secondsEW(?A,?EX371), Literal(?EX371) , minutesNS(?A,?EX370), Literal(?EX370) , minutesEW(?A,?EX369), Literal(?EX369) , degreesNS(?A,?EX368), Literal(?EX368) , degreesEW(?A,?EX367), Literal(?EX367) , decimalDegreesNS(?A,?EX366), Literal(?EX366) , decimalDegreesEW(?A,?EX365), Literal(?EX365) , dateSyncNPD(?A,?EX364), Literal(?EX364) , mainAreaLocation(?A,?EX363), Thing(?EX363) , coordinateForWellbore(?A,?EX362), Wellbore(?EX362) , Point(?A) .
+WellboreCore(?A) -> isCoreSampleAvailable(?A,?EX379), Literal(?EX379) , dateSyncNPD(?A,?EX378), Literal(?EX378) , coreNo(?A,?EX377), Literal(?EX377) , coreForWellbore(?A,?EX376), Wellbore(?EX376) , Object(?A) .
+WellboreCorePhoto(?A) -> corePhotoTitle(?A,?EX383), Literal(?EX383) , coreNo(?A,?EX382), Literal(?EX382) , corePhotoURL(?A,?EX381), Thing(?EX381) , corePhotoForWellbore(?A,?EX380), Wellbore(?EX380) , Object(?A) .
+WellboreCoreSet(?A) -> coresTotalNo(?A,?EX386), Literal(?EX386) , coresTotalLength(?A,?EX385), Literal(?EX385) , coresForWellbore(?A,?EX384), Thing(?EX384) , ObjectAggregate(?A) .
+WellboreDocument(?A) -> documentType(?A,?EX393), Literal(?EX393) , documentSize(?A,?EX392), Literal(?EX392) , documentName(?A,?EX391), Literal(?EX391) , documentFormat(?A,?EX390), Literal(?EX390) , dateSyncNPD(?A,?EX389), Literal(?EX389) , documentURL(?A,?EX388), Thing(?EX388) , documentForWellbore(?A,?EX387), Wellbore(?EX387) , Continuant(?A) .
+WellboreDrillStemTest(?A) -> dateSyncNPD(?A,?EX407), Literal(?EX407) , DSTTestNo(?A,?EX406), Literal(?EX406) , DSTOilProducedRate(?A,?EX405), Literal(?EX405) , DSTOilDensity(?A,?EX404), Literal(?EX404) , DSTGasProducedRate(?A,?EX403), Literal(?EX403) , DSTGasOilRelation(?A,?EX402), Literal(?EX402) , DSTGasDensity(?A,?EX401), Literal(?EX401) , DSTFinalShutInPressure(?A,?EX400), Literal(?EX400) , DSTFinalFlowPressure(?A,?EX399), Literal(?EX399) , DSTDepthTo(?A,?EX398), Literal(?EX398) , DSTDepthFrom(?A,?EX397), Literal(?EX397) , DSTChokeSize(?A,?EX396), Literal(?EX396) , DSTBottomHolePressure(?A,?EX395), Literal(?EX395) , DSTForWellbore(?A,?EX394), Wellbore(?EX394) , Continuant(?A) .
+WellboreDrillingMudSample(?A) -> mudYieldPoint(?A,?EX413), Literal(?EX413) , mudWeight(?A,?EX412), Literal(?EX412) , mudViscosity(?A,?EX411), Literal(?EX411) , mudMeasuredDepth(?A,?EX410), Literal(?EX410) , dateSyncNPD(?A,?EX409), Literal(?EX409) , mudTestForWellbore(?A,?EX408), Wellbore(?EX408) , Continuant(?A) .
+WellboreOilSample(?A) -> oilSampleTopDepth(?A,?EX417), Literal(?EX417) , oilSampleBottomDepth(?A,?EX416), Literal(?EX416) , dateSyncNPD(?A,?EX415), Literal(?EX415) , oilSampleTestForWellbore(?A,?EX414), Wellbore(?EX414) , Continuant(?A) .
+WellborePoint(?A) -> asWKT(?A,?EX419), Literal(?EX419) , isGeometryOfFeature(?A,?EX418), Wellbore(?EX418) , Point(?A) .
+WellboreStratigraphicCoreSet(?A) -> dateSyncNPD(?A,?EX423), Literal(?EX423) , coresTotalLength(?A,?EX422), Literal(?EX422) , inLithostratigraphicUnit(?A,?EX421), Thing(?EX421) , coreForWellbore(?A,?EX420), Wellbore(?EX420) , WellboreCoreSet(?A) .
+WellboreStratum(?A) -> wellboreStratumTopDepth(?A,?EX428), Literal(?EX428) , wellboreStratumBottomDepth(?A,?EX427), Literal(?EX427) , dateSyncNPD(?A,?EX426), Literal(?EX426) , stratumForWellbore(?A,?EX425), Wellbore(?EX425) , inLithostratigraphicUnit(?A,?EX424), Thing(?EX424) , Continuant(?A) .
+WetGas(?A) -> Gas(?A) .
+WildcatWell(?A) -> ExplorationWell(?A) .
+WildcatWellbore(?A) -> Wellbore(?A) .
+ChangedAwardNotification(?A) -> Notification(?A) .
+DeletedEasementNotification(?A) -> Notification(?A) .
+EasementNotification(?A) -> Notification(?A) .
+NewAwardNotification(?A) -> Notification(?A) .
+Notification(?A) -> Continuant(?A) .
+ProductionLicence(?A) -> name(?A,?EX435), Literal(?EX435) , dateUpdatedMax(?A,?EX434), Literal(?EX434) , dateLicenceValidTo(?A,?EX433), Literal(?EX433) , dateLicenceValidFrom(?A,?EX432), Literal(?EX432) , dateAwarded(?A,?EX431), Literal(?EX431) , dateSyncNPD(?A,?EX430), Literal(?EX430) , licenceOperatorCompany(?A,?EX429), Company(?EX429) , Agent(?A) .
+ProductionLicenceLicensee(?A) -> licenseeInterest(?A,?EX439), Literal(?EX439) , dateSyncNPD(?A,?EX438), Literal(?EX438) , licenceeForLicence(?A,?EX437), ProductionLicence(?EX437) , licenceLicenceeCompany(?A,?EX436), Company(?EX436) , Licensee(?A) .
+ProductionLicenceNotification(?A) -> messageType(?A,?EX444), Literal(?EX444) , messageNo(?A,?EX443), Literal(?EX443) , dateMessageRegistered(?A,?EX442), Literal(?EX442) , dateSyncNPD(?A,?EX441), Literal(?EX441) , messageForLicence(?A,?EX440), ProductionLicence(?EX440) , Continuant(?A) .
+TUFLicensee(?A) -> licenseeInterest(?A,?EX448), Literal(?EX448) , dateSyncNPD(?A,?EX447), Literal(?EX447) , TUFLicenceeForTUF(?A,?EX446), TUFacility(?EX446) , TUFLicenceeCompany(?A,?EX445), Company(?EX445) , Licensee(?A) .
+TUFNotification(?A) -> messageType(?A,?EX453), Literal(?EX453) , messageNo(?A,?EX452), Literal(?EX452) , dateMessageRegistered(?A,?EX451), Literal(?EX451) , dateSyncNPD(?A,?EX450), Literal(?EX450) , messageForTUF(?A,?EX449), TUFacility(?EX449) , Continuant(?A) .
+Continuant(?A) -> Entity(?A) .
+DependentContinuant(?A) -> Continuant(?A) .
+Disposition(?A) -> RealizableEntity(?A) .
+FiatObjectPart(?A) -> MaterialEntity(?A) .
+Function(?A) -> RealizableEntity(?A) .
+GenericallyDependentContinuant(?A) -> DependentContinuant(?A) .
+IndependentContinuant(?A) -> Continuant(?A) .
+MaterialEntity(?A) -> IndependentContinuant(?A) .
+Object(?A) -> MaterialEntity(?A) .
+ObjectAggregate(?A) -> MaterialEntity(?A) .
+ObjectBoundary(?A) -> IndependentContinuant(?A) .
+OneDimensionalRegion(?A) -> SpatialRegion(?A) .
+Quality(?A) -> SpecificallyDependentContinuant(?A) .
+RealizableEntity(?A) -> SpecificallyDependentContinuant(?A) .
+Role(?A) -> RealizableEntity(?A) .
+Site(?A) -> IndependentContinuant(?A) .
+SpatialRegion(?A) -> Continuant(?A) .
+SpecificallyDependentContinuant(?A) -> DependentContinuant(?A) .
+ThreeDimensionalRegion(?A) -> SpatialRegion(?A) .
+TwoDimensionalRegion(?A) -> SpatialRegion(?A) .
+ZeroDimensionalRegion(?A) -> SpatialRegion(?A) .
+ConnectedSpatiotemporalRegion(?A) -> SpatiotemporalRegion(?A) .
+ConnectedTemporalRegion(?A) -> TemporalRegion(?A) .
+FiatProcessPart(?A) -> ProcessualEntity(?A) .
+Occurrent(?A) -> Entity(?A) .
+Process(?A) -> ProcessualEntity(?A) .
+ProcessAggregate(?A) -> ProcessualEntity(?A) .
+ProcessBoundary(?A) -> ProcessualEntity(?A) .
+ProcessualContext(?A) -> ProcessualEntity(?A) .
+ProcessualEntity(?A) -> Occurrent(?A) .
+ScatteredSpatiotemporalRegion(?A) -> SpatiotemporalRegion(?A) .
+ScatteredTemporalRegion(?A) -> TemporalRegion(?A) .
+SpatiotemporalInstant(?A) -> ConnectedSpatiotemporalRegion(?A) .
+SpatiotemporalInterval(?A) -> ConnectedSpatiotemporalRegion(?A) .
+SpatiotemporalRegion(?A) -> Occurrent(?A) .
+TemporalInstant(?A) -> ConnectedTemporalRegion(?A) .
+TemporalInterval(?A) -> ConnectedTemporalRegion(?A) .
+TemporalRegion(?A) -> Occurrent(?A) .
+Feature(?A) -> Entity(?A) .
+Geometry(?A) -> Geometry(?A) , SpatialObject(?A) .
+SpatialObject(?A) -> Continuant(?A) .
+AbstractCurveSegment(?A) -> Geometry(?A) .
+AbstractGeometricPrimitive(?A) -> AbstractGeometry(?A) .
+AbstractGeometry(?A) -> Geometry(?A) .
+AbstractGriddedSurface(?A) -> AbstractParametricCurveSurface(?A) .
+AbstractParametricCurveSurface(?A) -> AbstractSurfacePatch(?A) .
+AbstractSurfacePatch(?A) -> Geometry(?A) .
+Arc(?A) -> ArcString(?A) .
+ArcByBulge(?A) -> ArcStringByBulge(?A) .
+ArcByCenterPoint(?A) -> AbstractCurveSegment(?A) .
+ArcString(?A) -> AbstractCurveSegment(?A) .
+ArcStringByBulge(?A) -> AbstractCurveSegment(?A) .
+BSpline(?A) -> SplineCurve(?A) .
+Bezler(?A) -> BSpline(?A) .
+Circle(?A) -> Arc(?A) .
+CircleByCenterPoint(?A) -> ArcByCenterPoint(?A) .
+Clothoid(?A) -> AbstractCurveSegment(?A) .
+Composite(?A) -> GeometricComplex(?A) .
+CompositeCurve(?A) -> OrientableCurve(?A) , Composite(?A) .
+CompositeSolid(?A) -> Solid(?A) , Composite(?A) .
+CompositeSurface(?A) -> OrientableSurface(?A) , Composite(?A) .
+Cone(?A) -> AbstractGriddedSurface(?A) .
+CubicSpline(?A) -> PolynomialSpline(?A) .
+Curve(?A) -> Geometry(?A) , OrientableCurve(?A) , AbstractGeometricPrimitive(?A) .
+Cylinder(?A) -> AbstractGriddedSurface(?A) .
+Geodesic(?A) -> GeodesicString(?A) .
+GeodesicString(?A) -> AbstractCurveSegment(?A) .
+GeometricComplex(?A) -> AbstractGeometry(?A) .
+LineString(?A) -> Curve(?A) , LineStringSegment(?A) .
+LineStringSegment(?A) -> AbstractCurveSegment(?A) .
+LinearRing(?A) -> LineString(?A) , Ring(?A) .
+MultiCurve(?A) -> GeometryCollection(?A) , MultiGeometry(?A) .
+MultiGeometry(?A) -> AbstractGeometry(?A) .
+MultiPoint(?A) -> GeometryCollection(?A) , MultiGeometry(?A) .
+MultiSolid(?A) -> MultiGeometry(?A) .
+MultiSurface(?A) -> GeometryCollection(?A) , MultiGeometry(?A) .
+OffsetCurve(?A) -> AbstractCurveSegment(?A) .
+OrientableCurve(?A) -> AbstractGeometricPrimitive(?A) .
+OrientableSurface(?A) -> AbstractGeometricPrimitive(?A) .
+Point(?A) -> Geometry(?A) , AbstractGeometricPrimitive(?A) .
+Polygon(?A) -> Surface(?A) , Surface(?A) .
+PolygonPatch(?A) -> AbstractSurfacePatch(?A) .
+PolyhedralSurface(?A) -> Surface(?A) , Surface(?A) .
+PolynomialSpline(?A) -> SplineCurve(?A) .
+Rectangle(?A) -> PolygonPatch(?A) .
+Ring(?A) -> CompositeCurve(?A) .
+Shell(?A) -> CompositeSurface(?A) .
+Solid(?A) -> AbstractGeometricPrimitive(?A) .
+Sphere(?A) -> AbstractGriddedSurface(?A) .
+SplineCurve(?A) -> AbstractCurveSegment(?A) .
+Surface(?A) -> Geometry(?A) , OrientableSurface(?A) , AbstractGeometricPrimitive(?A) .
+Tin(?A) -> TriangulatedSurface(?A) .
+Triangle(?A) -> Polygon(?A) , PolygonPatch(?A) .
+TriangulatedSurface(?A) -> PolyhedralSurface(?A) .
+GeometryCollection(?A) -> Geometry(?A) .
+Line(?A) -> LineString(?A) .
+MultiLineString(?A) -> MultiCurve(?A) .
+MultiPolygon(?A) -> MultiSurface(?A) .
+TIN(?A) -> PolyhedralSurface(?A) .
+OrderedCollection(?A) -> Collection(?A) .
+DSTForWellbore(?A,?B) -> Wellbore(?B) , WellboreDrillStemTest(?A) .
+LOTForWellbore(?A,?B) -> Wellbore(?B) , WellboreCasingAndLeakoffTest(?A) .
+baaLicensee(?A,?B) -> Company(?B) , BAALicensee(?A) .
+baaOperatorCompany(?A,?B) -> Company(?B) , BAA(?A) .
+baaTransferCompany(?A,?B) -> Company(?B) , BAATransfer(?A) .
+belongsToFacility(?A,?B) -> TUFacility(?B) , FacilityPoint(?A) .
+containsWellbore(?A,?B) -> Wellbore(?B) , Block(?A) .
+coordinateForSurvey(?A,?B) -> SeismicSurvey(?B) , SeismicSurveyCoordinate(?A) .
+coordinateForWellbore(?A,?B) -> Wellbore(?B) , WellboreCoordinate(?A) .
+coreForWellbore(?A,?B) -> Wellbore(?B) .
+corePhotoForWellbore(?A,?B) -> Wellbore(?B) , WellboreCorePhoto(?A) .
+corePhotoURL(?A,?B) -> WellboreCorePhoto(?A) .
+coresForWellbore(?A,?B) -> Wellbore(?B) , WellboreCoreSet(?A) .
+currentFieldOperator(?A,?B) -> Company(?B) , Field(?A) .
+currentFieldOwner(?A,?B) -> ProductionLicence(?B) , Field(?A) .
+currentResponsibleCompany(?A,?B) -> Company(?B) , MoveableFacility(?A) .
+developmentWellboreForField(?A,?B) -> wellboreForField(?A,?B) , Field(?B) , DevelopmentWellbore(?A) .
+developmentWellboreForLicence(?A,?B) -> ProductionLicence(?B) , DevelopmentWellbore(?A) .
+discoveryWellbore(?A,?B) -> DiscoveryWellbore(?B) .
+documentForWellbore(?A,?B) -> Wellbore(?B) , WellboreDocument(?A) .
+documentURL(?A,?B) -> WellboreDocument(?A) .
+drillingOperatorCompany(?A,?B) -> Company(?B) .
+explorationWellboreForField(?A,?B) -> wellboreForField(?A,?B) , Field(?B) , ExplorationWellbore(?A) .
+explorationWellboreForLicence(?A,?B) -> ProductionLicence(?B) , ExplorationWellbore(?A) .
+fieldLicensee(?A,?B) -> Company(?B) , FieldLicensee(?A) .
+fieldOperator(?A,?B) -> Company(?B) , FieldOperator(?A) .
+geochronologicEra(?A,?B) -> GeochronologicEra(?B) .
+includedInField(?A,?B) -> Field(?B) , Discovery(?A) .
+investmentForField(?A,?B) -> Field(?B) , FieldInvestment(?A) .
+isGeometryOfFeature(?A,?B) -> hasGeometry(?B,?A) .
+lastOperatorCompany(?A,?B) -> Company(?B) .
+licenceLicensee(?A,?B) -> Company(?B) , ProductionLicenceLicensee(?A) .
+licenceOperatorCompany(?A,?B) -> Company(?B) , ProductionLicence(?A) , Company(?B) , ProductionLicenceOperator(?A) .
+licenceTransferCompany(?A,?B) -> Company(?B) , ProductionLicenceTransfer(?A) .
+licenseeForBAA(?A,?B) -> BAA(?B) , BAALicensee(?A) .
+licenseeForField(?A,?B) -> Field(?B) , FieldLicensee(?A) .
+licenseeForLicence(?A,?B) -> ProductionLicence(?B) , ProductionLicenceLicensee(?A) .
+messageForLicence(?A,?B) -> ProductionLicence(?B) , ProductionLicenceNotification(?A) .
+mudTestForWellbore(?A,?B) -> Wellbore(?B) , WellboreDrillingMudSample(?A) .
+npdPageURL(?A,?B) -> AwardArea(?A) .
+oilSampleTestForWellbore(?A,?B) -> Wellbore(?B) , WellboreOilSample(?A) .
+operatorForField(?A,?B) -> Field(?B) , FieldOperator(?A) .
+operatorForLicence(?A,?B) -> ProductionLicence(?B) , ProductionLicenceOperator(?A) .
+ownerForField(?A,?B) -> Field(?B) , FieldOwner(?A) .
+pipelineFromFacility(?A,?B) -> Pipeline(?A) .
+pipelineOperator(?A,?B) -> Company(?B) , Pipeline(?A) .
+pipelineToFacility(?A,?B) -> Pipeline(?A) .
+pressReleaseURL(?A,?B) -> ExplorationWellbore(?A) .
+productionFacility(?A,?B) -> DevelopmentWellbore(?A) .
+provinceLocation(?A,?B) -> AwardArea(?A) .
+quadrantLocation(?A,?B) -> Quadrant(?B) .
+reclassedFromWellbore(?A,?B) -> Wellbore(?B) .
+registeredInCountry(?A,?B) -> MoveableFacility(?A) .
+reportingCompany(?A,?B) -> Company(?B) , SeismicSurvey(?A) .
+reservesForCompany(?A,?B) -> Company(?B) , CompanyReserve(?A) .
+reservesForDiscovery(?A,?B) -> Discovery(?B) , DiscoveryReserve(?A) .
+reservesForField(?A,?B) -> Field(?B) .
+resourcesIncludedInDiscovery(?A,?B) -> Discovery(?B) .
+shallowWellboreForField(?A,?B) -> wellboreForField(?A,?B) .
+shallowWellboreForLicence(?A,?B) -> ProductionLicence(?B) , ShallowWellbore(?A) .
+statusForField(?A,?B) -> Field(?B) , FieldStatus(?A) .
+statusForLicence(?A,?B) -> ProductionLicence(?B) , ProductionLicenceStatus(?A) .
+statusForSurvey(?A,?B) -> SeismicSurvey(?B) , SeismicSurveyProgress(?A) .
+stratigraphicParent(?A,?B) -> LithostratigraphicUnit(?B) , LithostratigraphicUnit(?A) .
+stratumForWellbore(?A,?B) -> Wellbore(?B) , WellboreStratum(?A) .
+taskForCompany(?A,?B) -> Company(?B) , ProductionLicenceWorkObligation(?A) .
+taskForLicence(?A,?B) -> ProductionLicence(?B) , ProductionLicenceWorkObligation(?A) .
+transferredBAA(?A,?B) -> BAA(?B) , BAATransfer(?A) .
+transferredLicence(?A,?B) -> ProductionLicence(?B) , ProductionLicenceTransfer(?A) .
+wellOperator(?A,?B) -> Company(?B) .
+wellboreAgeHc(?A,?B) -> GeochronologicEra(?B) , Wellbore(?A) .
+wellboreAgeHcLevel1(?A,?B) -> wellboreAgeHc(?A,?B) , ExplorationWellbore(?A) .
+wellboreAgeHcLevel2(?A,?B) -> wellboreAgeHc(?A,?B) , ExplorationWellbore(?A) .
+wellboreAgeHcLevel3(?A,?B) -> wellboreAgeHc(?A,?B) , ExplorationWellbore(?A) .
+wellboreAgeTD(?A,?B) -> ExplorationWellbore(?A) .
+wellboreForDiscovery(?A,?B) -> Discovery(?B) .
+wellboreForField(?A,?B) -> Field(?B) , Wellbore(?A) .
+wellboreFormationHcLevel1(?A,?B) -> wellboreFormationHc(?A,?B) .
+wellboreFormationHcLevel2(?A,?B) -> wellboreFormationHc(?A,?B) .
+wellboreFormationHcLevel3(?A,?B) -> wellboreFormationHc(?A,?B) .
+TUFLicenceeCompany(?A,?B) -> Company(?B) , TUFLicensee(?A) .
+TUFLicenceeForTUF(?A,?B) -> TUFacility(?B) , TUFLicensee(?A) .
+TUFOperatorCompany(?A,?B) -> Company(?B) .
+TUFOperatorForLicence(?A,?B) -> TUFacility(?B) , TUFOperator(?A) .
+TUFOwnerCompany(?A,?B) -> Company(?B) , TUFOwner(?A) .
+TUFOwnerForLicence(?A,?B) -> TUFacility(?B) , TUFOwner(?A) .
+licenceLicenceeCompany(?A,?B) -> Company(?B) , ProductionLicenceLicensee(?A) .
+licenceeForLicence(?A,?B) -> ProductionLicence(?B) , ProductionLicenceLicensee(?A) .
+messageForTUF(?A,?B) -> TUFacility(?B) , TUFNotification(?A) .
+defaultGeometry(?A,?B) -> hasGeometry(?A,?B) , Geometry(?B) , Feature(?A) .
+ehContains(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+ehCoveredBy(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+ehCovers(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+ehDisjoint(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+ehEquals(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+ehInside(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+ehMeet(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+ehOverlap(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+hasGeometry(?A,?B) -> Geometry(?B) , Feature(?A) .
+rcc8dc(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+rcc8ec(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+rcc8eq(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+rcc8ntpp(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+rcc8ntppi(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+rcc8po(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+rcc8tpp(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+rcc8tppi(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+sfContains(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+sfCrosses(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+sfDisjoint(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+sfEquals(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+sfIntersects(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+sfOverlaps(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+sfTouches(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+sfWithin(?A,?B) -> SpatialObject(?B) , SpatialObject(?A) .
+broadMatch(?A,?B) -> broader(?A,?B) , narrowMatch(?B,?A) .
+broader(?A,?B) -> broaderTransitive(?A,?B) , narrower(?B,?A) .
+broaderTransitive(?A,?B) -> semanticRelation(?A,?B) , narrowerTransitive(?B,?A) .
+closeMatch(?A,?B) -> mappingRelation(?A,?B) .
+exactMatch(?A,?B) -> closeMatch(?A,?B) .
+mappingRelation(?A,?B) -> semanticRelation(?A,?B) .
+narrowMatch(?A,?B) -> mappingRelation(?A,?B) .
+narrower(?A,?B) -> narrowerTransitive(?A,?B) .
+narrowerTransitive(?A,?B) -> semanticRelation(?A,?B) .
+related(?A,?B) -> semanticRelation(?A,?B) .
+relatedMatch(?A,?B) -> mappingRelation(?A,?B) .
+semanticRelation(?A,?B) -> Concept(?B) , Concept(?A) .
+DSTBottomHolePressure(?A,?B) -> WellboreDrillStemTest(?A) .
+DSTChokeSize(?A,?B) -> WellboreDrillStemTest(?A) .
+DSTDepthFrom(?A,?B) -> WellboreDrillStemTest(?A) .
+DSTDepthTo(?A,?B) -> WellboreDrillStemTest(?A) .
+DSTFinalFlowPressure(?A,?B) -> WellboreDrillStemTest(?A) .
+DSTFinalShutInPressure(?A,?B) -> WellboreDrillStemTest(?A) .
+DSTGasDensity(?A,?B) -> WellboreDrillStemTest(?A) .
+DSTGasOilRelation(?A,?B) -> WellboreDrillStemTest(?A) .
+DSTGasProducedRate(?A,?B) -> WellboreDrillStemTest(?A) .
+DSTOilDensity(?A,?B) -> WellboreDrillStemTest(?A) .
+DSTOilProducedRate(?A,?B) -> WellboreDrillStemTest(?A) .
+DSTTestNo(?A,?B) -> WellboreDrillStemTest(?A) .
+LOTMudDensity(?A,?B) -> WellboreCasingAndLeakoffTest(?A) .
+TUFOwnerShare(?A,?B) -> TUFOwner(?A) .
+blockId(?A,?B) -> AwardArea(?A) .
+casingDepth(?A,?B) -> WellboreCasingAndLeakoffTest(?A) .
+casingDiameter(?A,?B) -> WellboreCasingAndLeakoffTest(?A) .
+casingType(?A,?B) -> WellboreCasingAndLeakoffTest(?A) .
+companyGroup(?A,?B) -> Company(?A) .
+coreIntervalBottom(?A,?B) -> WellboreCore(?A) .
+coreIntervalTop(?A,?B) -> WellboreCore(?A) .
+corePhotoTitle(?A,?B) -> WellboreCorePhoto(?A) .
+coresTotalNo(?A,?B) -> WellboreCoreSet(?A) .
+dateApproved(?A,?B) -> BAA(?A) .
+dateBaaAreaValidFrom(?A,?B) -> BAAArea(?A) .
+dateBaaAreaValidTo(?A,?B) -> BAAArea(?A) .
+dateBaaLicenseeValidFrom(?A,?B) -> BAALicensee(?A) .
+dateBaaLicenseeValidTo(?A,?B) -> BAALicensee(?A) .
+dateBaaValidFrom(?A,?B) -> BAA(?A) .
+dateBaaValidTo(?A,?B) -> BAA(?A) .
+dateFieldLicenseeFrom(?A,?B) -> FieldLicensee(?A) .
+dateFieldLicenseeTo(?A,?B) -> FieldLicensee(?A) .
+dateFieldOperatorFrom(?A,?B) -> FieldOperator(?A) .
+dateFieldOperatorTo(?A,?B) -> FieldOperator(?A) .
+dateIncludedInField(?A,?B) -> Discovery(?A) .
+dateInitialStatusTo(?A,?B) -> ProductionLicenceStatus(?A) .
+dateLicenceGranted(?A,?B) -> ProductionLicence(?A) .
+dateLicenseeValidFrom(?A,?B) -> ProductionLicenceLicensee(?A) .
+dateLicenseeValidTo(?A,?B) -> ProductionLicenceLicensee(?A) .
+dateMudMeasured(?A,?B) -> WellboreDrillingMudSample(?A) .
+dateOilSampleReceived(?A,?B) -> WellboreOilSample(?A) .
+dateOilSampleTest(?A,?B) -> WellboreOilSample(?A) .
+dateProductionStart(?A,?B) -> FixedFacility(?A) .
+dateStatusFrom(?A,?B) -> FieldStatus(?A) .
+dateStatusTo(?A,?B) -> FieldStatus(?A) .
+dateStatusValidFrom(?A,?B) -> ProductionLicenceStatus(?A) .
+dateStatusValidTo(?A,?B) -> ProductionLicenceStatus(?A) .
+dateSurveyActualCompleted(?A,?B) -> SeismicSurvey(?A) .
+dateSurveyActualStart(?A,?B) -> SeismicSurvey(?A) .
+dateSurveyPlannedCompleted(?A,?B) -> SeismicSurvey(?A) .
+dateSurveyPlannedStart(?A,?B) -> SeismicSurvey(?A) .
+dateSurveyProgress(?A,?B) -> SeismicSurveyProgress(?A) .
+dateTUFOperatorValidFrom(?A,?B) -> TUFOperator(?A) .
+dateTUFOperatorValidTo(?A,?B) -> TUFOperator(?A) .
+dateTUFOwnerValidFrom(?A,?B) -> TUFOwner(?A) .
+dateTUFOwnerValidTo(?A,?B) -> TUFOwner(?A) .
+dateTaskExpiry(?A,?B) -> ProductionLicenceWorkObligation(?A) .
+designLifetime(?A,?B) -> FixedFacility(?A) .
+discoveryYear(?A,?B) -> Discovery(?A) .
+documentFormat(?A,?B) -> WellboreDocument(?A) .
+documentName(?A,?B) -> WellboreDocument(?A) .
+documentSize(?A,?B) -> WellboreDocument(?A) .
+documentType(?A,?B) -> WellboreDocument(?A) .
+hydrocarbonType(?A,?B) -> Discovery(?A) .
+investmentNOK(?A,?B) -> FieldInvestment(?A) .
+isCoreSampleAvailable(?A,?B) -> WellboreCore(?A) .
+isCurrentLicenceLicensee(?A,?B) -> Company(?A) .
+isCurrentLicenceOperator(?A,?B) -> Company(?A) .
+isFormerLicenceLicensee(?A,?B) -> Company(?A) .
+isFormerLicenceOperator(?A,?B) -> Company(?A) .
+isGeotechnicalMeasurement(?A,?B) -> SeismicSurvey(?A) .
+isReentryWellbore(?A,?B) -> ExplorationWellbore(?A) .
+isSamplingPerformed(?A,?B) -> SeismicSurvey(?A) .
+isShallowDrillingPerformed(?A,?B) -> SeismicSurvey(?A) .
+isSurfaceFacility(?A,?B) -> FixedFacility(?A) .
+isTurnAreaIncluded(?A,?B) -> SurveyArea(?A) .
+lengthBoatTotalKm(?A,?B) -> SeismicSurvey(?A) .
+lengthCdpTotalKm(?A,?B) -> SeismicSurvey(?A) .
+licensingActivityName(?A,?B) -> ProductionLicence(?A) .
+mapNo(?A,?B) -> MainArea(?A) .
+mudMeasuredDepth(?A,?B) -> WellboreDrillingMudSample(?A) .
+mudType(?A,?B) -> WellboreDrillingMudSample(?A) .
+mudViscosity(?A,?B) -> WellboreDrillingMudSample(?A) .
+mudWeight(?A,?B) -> WellboreDrillingMudSample(?A) .
+mudYieldPoint(?A,?B) -> WellboreDrillingMudSample(?A) .
+oilSampleBottomDepth(?A,?B) -> WellboreOilSample(?A) .
+oilSampleFluidType(?A,?B) -> WellboreOilSample(?A) .
+oilSampleTestNumber(?A,?B) -> WellboreOilSample(?A) .
+oilSampleTestType(?A,?B) -> WellboreOilSample(?A) .
+oilSampleTopDepth(?A,?B) -> WellboreOilSample(?A) .
+originalAreaSize(?A,?B) -> ProductionLicence(?A) .
+pipelineDimension(?A,?B) -> Pipeline(?A) .
+pipelineMainGrouping(?A,?B) -> Pipeline(?A) .
+pipelineMedium(?A,?B) -> Pipeline(?A) .
+polygonPointNo(?A,?B) -> SeismicSurveyCoordinate(?A) .
+reservesResourceClass(?A,?B) -> DiscoveryReserve(?A) .
+shortName(?A,?B) -> Company(?A) .
+stratigraphicLevel(?A,?B) -> LithostratigraphicUnit(?A) .
+surveySubType(?A,?B) -> SeismicSurvey(?A) .
+surveyType(?A,?B) -> SeismicSurvey(?A) .
+taskID(?A,?B) -> ProductionLicenceWorkObligation(?A) .
+taskType(?A,?B) -> ProductionLicenceWorkObligation(?A) .
+waterDepth(?A,?B) -> FixedFacility(?A) .
+wellType(?A,?B) -> Well(?A) .
+wellboreBottomHoleTemperature(?A,?B) -> ExplorationWellbore(?A) .
+wellboreDrillingDays(?A,?B) -> ExplorationWellbore(?A) .
+wellboreHoleDepth(?A,?B) -> WellboreCasingAndLeakoffTest(?A) .
+wellboreHoleDiameter(?A,?B) -> WellboreCasingAndLeakoffTest(?A) .
+wellboreMaxInclation(?A,?B) -> ExplorationWellbore(?A) .
+wellborePlannedContent(?A,?B) -> DevelopmentWellbore(?A) .
+wellborePurpose(?A,?B) -> ExplorationWellbore(?A) .
+wellboreReentryExplorationActivity(?A,?B) -> ExplorationWellbore(?A) .
+wellboreStratumBottomDepth(?A,?B) -> WellboreStratum(?A) .
+wellboreStratumTopDepth(?A,?B) -> WellboreStratum(?A) .
+wellboreWellType(?A,?B) -> Wellbore(?A) .
+dateAwarded(?A,?B) -> ProductionLicence(?A) .
+name(?A,?B) -> ProductionLicence(?A) .
+asGML(?A,?B) -> Geometry(?A) .
+asWKT(?A,?B) -> Geometry(?A) .
+coordinateDimension(?A,?B) -> Geometry(?A) .
+dimension(?A,?B) -> Geometry(?A) .
+hasSerialization(?A,?B) -> Geometry(?A) .
+isEmpty(?A,?B) -> Geometry(?A) .
+isSimple(?A,?B) -> Geometry(?A) .
+spatialDimension(?A,?B) -> Geometry(?A) .
+reservesForDiscoveryTemp(?A,?B,?C,?D,?E) -> reservesForDiscovery(?D,?E) .
+coreForWellboreTemp(?A,?B,?C,?D,?E) -> coreForWellbore(?D,?E) .
+TransferTemp(?A,?B,?C,?D,?E) -> Transfer(?E) .
+dateFieldLicenseeFromTemp(?A,?B,?C,?D,?E,?F) -> dateFieldLicenseeFrom(?E,?F) .
+documentTypeTemp(?A,?B,?C,?D,?E,?F) -> documentType(?E,?F) .
+transferDirectionTemp(?A,?B,?C,?D,?E,?F) -> transferDirection(?E,?F) .
+TUFNotificationTemp(?A,?B,?C) -> TUFNotification(?C) .
+remainingGasTemp(?A,?B,?C,?D,?E) -> remainingGas(?D,?E) .
+dateFieldOwnerToTemp(?A,?B,?C,?D,?E,?F,?G) -> dateFieldOwnerTo(?F,?G) .
+taskForCompanyTemp(?A,?B,?C,?D,?E) -> taskForCompany(?D,?E) .
+licenseeInterestTemp(?A,?B,?C,?D,?E,?F,?G) -> licenseeInterest(?F,?G) .
+producedNGLTemp(?A,?B,?C,?D,?E,?F) -> producedNGL(?E,?F) .
+ChangeOfCompanyNameTransferTemp(?A,?B,?C,?D,?E) -> ChangeOfCompanyNameTransfer(?E) .
+dateUpdatedTemp(?A,?B,?C,?D,?E) -> dateUpdated(?D,?E) .
+oilSampleTestTypeTemp(?A,?B,?C,?D,?E) -> oilSampleTestType(?D,?E) .
+isStratigraphicalTemp(?A,?B,?C,?D,?E,?F,?G) -> isStratigraphical(?F,?G) .
+reservesForFieldTemp(?A,?B,?C,?D,?E) -> reservesForField(?D,?E) .
+dateBaaLicenseeValidToTemp(?A,?B,?C,?D,?E,?F) -> dateBaaLicenseeValidTo(?E,?F) .
+isActiveTemp(?A,?B,?C,?D,?E,?F,?G) -> isActive(?F,?G) .
+ZValueFromTemp(?A,?B,?C,?D,?E,?F,?G,?H) -> ZValueFrom(?G,?H) .
+TUFLicenseeTemp(?A,?B,?C) -> TUFLicensee(?C) .
+taskTypeTemp(?A,?B,?C,?D,?E) -> taskType(?D,?E) .
+sensorNumbersTemp(?A,?B,?C,?D,?E) -> sensorNumbers(?D,?E) .
+countryTemp(?A,?B,?C,?D,?E,?F,?G) -> country(?F,?G) .
+coreIntervalUOMTemp(?A,?B,?C,?D,?E) -> coreIntervalUOM(?D,?E) .
+isStratigraphicalTemp(?A,?B,?C,?D,?E,?F) -> isStratigraphical(?E,?F) .
+sensorLengthTemp(?A,?B,?C,?D,?E) -> sensorLength(?D,?E) .
+ProductionLicenceOperatorTemp(?A,?B,?C,?D,?E) -> ProductionLicenceOperator(?E) .
+dateLicenseeValidFromTemp(?A,?B,?C,?D,?E,?F) -> dateLicenseeValidFrom(?E,?F) .
+documentFormatTemp(?A,?B,?C,?D,?E,?F) -> documentFormat(?E,?F) .
+mudMeasuredDepthTemp(?A,?B,?C,?D,?E) -> mudMeasuredDepth(?D,?E) .
+blockLocationTemp(?A,?B,?C,?D,?E,?F,?G) -> blockLocation(?F,?G) .
+FieldYearlyProductionTemp(?A,?B,?C) -> FieldYearlyProduction(?C) .
+ProductionLicenceStatusTemp(?A,?B,?C,?D,?E) -> ProductionLicenceStatus(?E) .
+dateTaskExpiryTemp(?A,?B,?C,?D,?E) -> dateTaskExpiry(?D,?E) .
+DSTDepthFromTemp(?A,?B,?C,?D,?E) -> DSTDepthFrom(?D,?E) .
+dateSurveyProgressTemp(?A,?B,?C,?D,?E) -> dateSurveyProgress(?D,?E) .
+oilSampleFluidTypeTemp(?A,?B,?C,?D,?E) -> oilSampleFluidType(?D,?E) .
+baaTransferCompanyTemp(?A,?B,?C,?D,?E,?F,?G) -> baaTransferCompany(?F,?G) .
+mudWeightTemp(?A,?B,?C,?D,?E) -> mudWeight(?D,?E) .
+statusForFieldTemp(?A,?B,?C,?D,?E,?F,?G) -> statusForField(?F,?G) .
+casingDiameterTemp(?A,?B,?C,?D,?E) -> casingDiameter(?D,?E) .
+npdPageURLTemp(?A,?B,?C,?D,?E,?F,?G,?H) -> npdPageURL(?G,?H) .
+FieldStatusTemp(?A,?B,?C,?D,?E) -> FieldStatus(?E) .
+baaLicenseeTemp(?A,?B,?C,?D,?E,?F,?G) -> baaLicensee(?F,?G) .
+TUFLicenceeForTUFTemp(?A,?B,?C,?D,?E) -> TUFLicenceeForTUF(?D,?E) .
+coreIntervalTopTemp(?A,?B,?C,?D,?E,?F) -> coreIntervalTop(?E,?F) .
+productionMonthTemp(?A,?B,?C,?D,?E) -> productionMonth(?D,?E) .
+dateUpdatedTemp(?A,?B,?C,?D,?E,?F) -> dateUpdated(?E,?F) .
+dateSyncNPDTemp(?A,?B,?C,?D,?E,?F,?G) -> dateSyncNPD(?F,?G) .
+licenceOperatorCompanyTemp(?A,?B,?C,?D,?E,?F,?G) -> licenceOperatorCompany(?F,?G) .
+dateOilSampleReceivedTemp(?A,?B,?C,?D,?E) -> dateOilSampleReceived(?D,?E) .
+FieldAreaTemp(?A,?B,?C) -> FieldArea(?C) .
+dateResourceEstimateTemp(?A,?B,?C,?D,?E) -> dateResourceEstimate(?D,?E) .
+mudViscosityTemp(?A,?B,?C,?D,?E) -> mudViscosity(?D,?E) .
+statusForSurveyTemp(?A,?B,?C,?D,?E) -> statusForSurvey(?D,?E) .
+remainingOilTemp(?A,?B,?C,?D,?E) -> remainingOil(?D,?E) .
+dateBaaAreaValidFromTemp(?A,?B,?C,?D,?E) -> dateBaaAreaValidFrom(?D,?E) .
+dateMudMeasuredTemp(?A,?B,?C,?D,?E) -> dateMudMeasured(?D,?E) .
+WellboreOilSampleTemp(?A,?B,?C) -> WellboreOilSample(?C) .
+DSTGasOilRelationTemp(?A,?B,?C,?D,?E) -> DSTGasOilRelation(?D,?E) .
+ZValueFromTemp(?A,?B,?C,?D,?E,?F,?G) -> ZValueFrom(?F,?G) .
+FieldInvestmentTemp(?A,?B,?C) -> FieldInvestment(?C) .
+secondsNSTemp(?A,?B,?C,?D,?E) -> secondsNS(?D,?E) .
+dateUpdatedTemp(?A,?B,?C,?D,?E,?F,?G,?H) -> dateUpdated(?G,?H) .
+blockIdTemp(?A,?B,?C,?D,?E,?F,?G) -> blockId(?F,?G) .
+provinceLocationTemp(?A,?B,?C,?D,?E,?F,?G) -> provinceLocation(?F,?G) .
+recoverableOilTemp(?A,?B,?C,?D,?E) -> recoverableOil(?D,?E) .
+nameTemp(?A,?B,?C,?D,?E) -> name(?D,?E) .
+mudYieldPointTemp(?A,?B,?C,?D,?E) -> mudYieldPoint(?D,?E) .
+coreForWellboreTemp(?A,?B,?C,?D,?E,?F) -> coreForWellbore(?E,?F) .
+producedCondensateTemp(?A,?B,?C,?D,?E,?F) -> producedCondensate(?E,?F) .
+NewAwardNotificationTemp(?A,?B,?C) -> NewAwardNotification(?C) .
+licenceLicenseeTemp(?A,?B,?C,?D,?E,?F,?G) -> licenceLicensee(?F,?G) .
+WellboreStratumTemp(?A,?B,?C,?D,?E) -> WellboreStratum(?E) .
+dateBaaAreaValidToTemp(?A,?B,?C,?D,?E) -> dateBaaAreaValidTo(?D,?E) .
+dateSyncNPDTemp(?A,?B,?C,?D,?E) -> dateSyncNPD(?D,?E) .
+WellboreCoreTemp(?A,?B,?C,?D) -> WellboreCore(?D) .
+TUFOwnerCompanyTemp(?A,?B,?C,?D,?E,?F,?G) -> TUFOwnerCompany(?F,?G) .
+coreIntervalBottomTemp(?A,?B,?C,?D,?E,?F) -> coreIntervalBottom(?E,?F) .
+transferredBAATemp(?A,?B,?C,?D,?E,?F,?G) -> transferredBAA(?F,?G) .
+recoverableGasTemp(?A,?B,?C,?D,?E) -> recoverableGas(?D,?E) .
+dateBaaLicenseeValidFromTemp(?A,?B,?C,?D,?E,?F) -> dateBaaLicenseeValidFrom(?E,?F) .
+dateFieldLicenseeToTemp(?A,?B,?C,?D,?E,?F) -> dateFieldLicenseeTo(?E,?F) .
+dateOperatorValidToTemp(?A,?B,?C,?D,?E,?F) -> dateOperatorValidTo(?E,?F) .
+casingTypeTemp(?A,?B,?C,?D,?E) -> casingType(?D,?E) .
+ProductionLicenceNotificationTemp(?A,?B,?C) -> ProductionLicenceNotification(?C) .
+DSTDepthToTemp(?A,?B,?C,?D,?E) -> DSTDepthTo(?D,?E) .
+CompanyReserveTemp(?A,?B,?C) -> CompanyReserve(?C) .
+messageForLicenceTemp(?A,?B,?C,?D,?E) -> messageForLicence(?D,?E) .
+TUFLicenceeCompanyTemp(?A,?B,?C,?D,?E) -> TUFLicenceeCompany(?D,?E) .
+producedOilEquivalentsTemp(?A,?B,?C,?D,?E) -> producedOilEquivalents(?D,?E) .
+ZValueToTemp(?A,?B,?C,?D,?E,?F,?G,?H) -> ZValueTo(?G,?H) .
+dateLicenceAreaValidFromTemp(?A,?B,?C,?D,?E,?F,?G) -> dateLicenceAreaValidFrom(?F,?G) .
+dateLicenceAreaValidFromTemp(?A,?B,?C,?D,?E,?F) -> dateLicenceAreaValidFrom(?E,?F) .
+transferredLicenceTemp(?A,?B,?C,?D,?E,?F,?G) -> transferredLicence(?F,?G) .
+sourceTypeTemp(?A,?B,?C,?D,?E) -> sourceType(?D,?E) .
+coordinateForSurveyTemp(?A,?B,?C,?D,?E) -> coordinateForSurvey(?D,?E) .
+areaSizeTemp(?A,?B,?C,?D,?E,?F,?G,?H) -> areaSize(?G,?H) .
+WellboreDrillStemTestTemp(?A,?B,?C) -> WellboreDrillStemTest(?C) .
+producedGasTemp(?A,?B,?C,?D,?E,?F) -> producedGas(?E,?F) .
+dateBaaAreaValidFromTemp(?A,?B,?C,?D,?E,?F,?G) -> dateBaaAreaValidFrom(?F,?G) .
+statusTemp(?A,?B,?C,?D,?E) -> status(?D,?E) .
+sensorTypeTemp(?A,?B,?C,?D,?E) -> sensorType(?D,?E) .
+blockLocationTemp(?A,?B,?C,?D,?E,?F,?G,?H) -> blockLocation(?G,?H) .
+dateFieldOperatorFromTemp(?A,?B,?C,?D,?E,?F) -> dateFieldOperatorFrom(?E,?F) .
+WellboreStratigraphicCoreSetTemp(?A,?B,?C) -> WellboreStratigraphicCoreSet(?C) .
+dateFieldOwnerFromTemp(?A,?B,?C,?D,?E,?F) -> dateFieldOwnerFrom(?E,?F) .
+dateSyncNPDTemp(?A,?B,?C,?D,?E,?F) -> dateSyncNPD(?E,?F) .
+statusForLicenceTemp(?A,?B,?C,?D,?E,?F,?G) -> statusForLicence(?F,?G) .
+EasementNotificationTemp(?A,?B,?C) -> EasementNotification(?C) .
+fieldLicenseeTemp(?A,?B,?C,?D,?E,?F,?G) -> fieldLicensee(?F,?G) .
+SurveyAreaTemp(?A,?B,?C) -> SurveyArea(?C) .
+investmentForFieldTemp(?A,?B,?C,?D,?E) -> investmentForField(?D,?E) .
+FieldOperatorTemp(?A,?B,?C,?D,?E) -> FieldOperator(?E) .
+remainingCondensateTemp(?A,?B,?C,?D,?E) -> remainingCondensate(?D,?E) .
+FieldOwnerTemp(?A,?B,?C,?D,?E) -> FieldOwner(?E) .
+WellboreDocumentTemp(?A,?B,?C,?D) -> WellboreDocument(?D) .
+isCoreSampleAvailableTemp(?A,?B,?C,?D,?E) -> isCoreSampleAvailable(?D,?E) .
+lengthPlannedBoatKmTemp(?A,?B,?C,?D,?E) -> lengthPlannedBoatKm(?D,?E) .
+minutesNSTemp(?A,?B,?C,?D,?E) -> minutesNS(?D,?E) .
+wellboreHoleDiameterTemp(?A,?B,?C,?D,?E) -> wellboreHoleDiameter(?D,?E) .
+dateSyncNPDTemp(?A,?B,?C,?D,?E,?F,?G,?H) -> dateSyncNPD(?G,?H) .
+corePhotoForWellboreTemp(?A,?B,?C,?D,?E,?F,?G) -> corePhotoForWellbore(?F,?G) .
+factPageURLTemp(?A,?B,?C,?D,?E,?F,?G) -> factPageURL(?F,?G) .
+lastOperatorCompanyTemp(?A,?B,?C,?D,?E,?F,?G) -> lastOperatorCompany(?F,?G) .
+sourceSizeTemp(?A,?B,?C,?D,?E) -> sourceSize(?D,?E) .
+degreesNSTemp(?A,?B,?C,?D,?E) -> degreesNS(?D,?E) .
+casingDepthTemp(?A,?B,?C,?D,?E) -> casingDepth(?D,?E) .
+resourcesIncludedInDiscoveryTemp(?A,?B,?C,?D,?E) -> resourcesIncludedInDiscovery(?D,?E) .
+recoverableOilEquivalentsTemp(?A,?B,?C,?D,?E) -> recoverableOilEquivalents(?D,?E) .
+statusTemp(?A,?B,?C,?D,?E,?F) -> status(?E,?F) .
+SDFITemp(?A,?B,?C,?D,?E,?F,?G) -> SDFI(?F,?G) .
+dateOilSampleTestTemp(?A,?B,?C,?D,?E) -> dateOilSampleTest(?D,?E) .
+fieldOperatorTemp(?A,?B,?C,?D,?E,?F,?G) -> fieldOperator(?F,?G) .
+companyShareTemp(?A,?B,?C,?D,?E,?F,?G) -> companyShare(?F,?G) .
+ownerForFieldTemp(?A,?B,?C,?D,?E,?F,?G) -> ownerForField(?F,?G) .
+oilSampleTestForWellboreTemp(?A,?B,?C,?D,?E) -> oilSampleTestForWellbore(?D,?E) .
+producedCondensateTemp(?A,?B,?C,?D,?E) -> producedCondensate(?D,?E) .
+TUFOwnerTemp(?A,?B,?C,?D,?E) -> TUFOwner(?E) .
+sourceNumberTemp(?A,?B,?C,?D,?E) -> sourceNumber(?D,?E) .
+areaSize3DKm2Temp(?A,?B,?C,?D,?E) -> areaSize3DKm2(?D,?E) .
+mudTypeTemp(?A,?B,?C,?D,?E) -> mudType(?D,?E) .
+LOTForWellboreTemp(?A,?B,?C,?D,?E) -> LOTForWellbore(?D,?E) .
+producedOilEquivalentsTemp(?A,?B,?C,?D,?E,?F) -> producedOilEquivalents(?E,?F) .
+ProductionLicenceLicenseeTemp(?A,?B,?C) -> ProductionLicenceLicensee(?C) .
+WellboreCasingAndLeakoffTestTemp(?A,?B,?C) -> WellboreCasingAndLeakoffTest(?C) .
+dateBaaAreaValidToTemp(?A,?B,?C,?D,?E,?F,?G) -> dateBaaAreaValidTo(?F,?G) .
+wellboreHoleDepthTemp(?A,?B,?C,?D,?E) -> wellboreHoleDepth(?D,?E) .
+dateTUFOperatorValidToTemp(?A,?B,?C,?D,?E,?F) -> dateTUFOperatorValidTo(?E,?F) .
+licenceeForLicenceTemp(?A,?B,?C,?D,?E) -> licenceeForLicence(?D,?E) .
+dateTUFOwnerValidFromTemp(?A,?B,?C,?D,?E,?F) -> dateTUFOwnerValidFrom(?E,?F) .
+producedOilTemp(?A,?B,?C,?D,?E) -> producedOil(?D,?E) .
+remainingOilEquivalentsTemp(?A,?B,?C,?D,?E) -> remainingOilEquivalents(?D,?E) .
+DeletedEasementNotificationTemp(?A,?B,?C) -> DeletedEasementNotification(?C) .
+dateMessageRegisteredTemp(?A,?B,?C,?D,?E) -> dateMessageRegistered(?D,?E) .
+investmentNOKTemp(?A,?B,?C,?D,?E) -> investmentNOK(?D,?E) .
+productionYearTemp(?A,?B,?C,?D,?E) -> productionYear(?D,?E) .
+oilSampleTopDepthTemp(?A,?B,?C,?D,?E) -> oilSampleTopDepth(?D,?E) .
+containsWellboreTemp(?A,?B,?C,?D,?E) -> containsWellbore(?D,?E) .
+dateTUFOperatorValidFromTemp(?A,?B,?C,?D,?E,?F) -> dateTUFOperatorValidFrom(?E,?F) .
+coreNoTemp(?A,?B,?C,?D,?E,?F) -> coreNo(?E,?F) .
+lengthPlannedCdpKmTemp(?A,?B,?C,?D,?E) -> lengthPlannedCdpKm(?D,?E) .
+producedOilTemp(?A,?B,?C,?D,?E,?F) -> producedOil(?E,?F) .
+licenseeForBAATemp(?A,?B,?C,?D,?E,?F,?G) -> licenseeForBAA(?F,?G) .
+MergerTakeoverTransferTemp(?A,?B,?C,?D,?E) -> MergerTakeoverTransfer(?E) .
+dateLicenseeValidToTemp(?A,?B,?C,?D,?E,?F) -> dateLicenseeValidTo(?E,?F) .
+licenceLicenceeCompanyTemp(?A,?B,?C,?D,?E) -> licenceLicenceeCompany(?D,?E) .
+dateFieldOwnerFromTemp(?A,?B,?C,?D,?E,?F,?G) -> dateFieldOwnerFrom(?F,?G) .
+BAAAreaTemp(?A,?B,?C) -> BAAArea(?C) .
+licenseeForLicenceTemp(?A,?B,?C,?D,?E,?F,?G) -> licenseeForLicence(?F,?G) .
+DSTChokeSizeTemp(?A,?B,?C,?D,?E) -> DSTChokeSize(?D,?E) .
+TUFOperatorForLicenceTemp(?A,?B,?C,?D,?E,?F,?G) -> TUFOperatorForLicence(?F,?G) .
+AwardAreaTemp(?A,?B,?C,?D,?E,?F) -> AwardArea(?F) .
+dateOperatorValidFromTemp(?A,?B,?C,?D,?E,?F) -> dateOperatorValidFrom(?E,?F) .
+oilSampleBottomDepthTemp(?A,?B,?C,?D,?E) -> oilSampleBottomDepth(?D,?E) .
+DSTOilDensityTemp(?A,?B,?C,?D,?E) -> DSTOilDensity(?D,?E) .
+reservesForCompanyTemp(?A,?B,?C,?D,?E) -> reservesForCompany(?D,?E) .
+transferredInterestTemp(?A,?B,?C,?D,?E,?F,?G) -> transferredInterest(?F,?G) .
+dateOperatorValidToTemp(?A,?B,?C,?D,?E,?F,?G) -> dateOperatorValidTo(?F,?G) .
+documentSizeTemp(?A,?B,?C,?D,?E,?F) -> documentSize(?E,?F) .
+TUFOwnerForLicenceTemp(?A,?B,?C,?D,?E,?F,?G) -> TUFOwnerForLicence(?F,?G) .
+corePhotoURLTemp(?A,?B,?C,?D,?E,?F,?G) -> corePhotoURL(?F,?G) .
+wellboreStratumBottomDepthTemp(?A,?B,?C,?D,?E,?F) -> wellboreStratumBottomDepth(?E,?F) .
+DSTForWellboreTemp(?A,?B,?C,?D,?E) -> DSTForWellbore(?D,?E) .
+degreesEWTemp(?A,?B,?C,?D,?E) -> degreesEW(?D,?E) .
+coreNoTemp(?A,?B,?C,?D,?E) -> coreNo(?D,?E) .
+DiscoveryAreaTemp(?A,?B,?C) -> DiscoveryArea(?C) .
+ChangedAwardNotificationTemp(?A,?B,?C) -> ChangedAwardNotification(?C) .
+documentForWellboreTemp(?A,?B,?C,?D,?E,?F) -> documentForWellbore(?E,?F) .
+ProductionLicenceTransferTemp(?A,?B,?C,?D,?E) -> ProductionLicenceTransfer(?E) .
+isGeometryOfFeatureTemp(?A,?B,?C,?D,?E) -> isGeometryOfFeature(?D,?E) .
+stratumForWellboreTemp(?A,?B,?C,?D,?E,?F,?G) -> stratumForWellbore(?F,?G) .
+operatorForFieldTemp(?A,?B,?C,?D,?E,?F,?G) -> operatorForField(?F,?G) .
+TUFOwnerShareTemp(?A,?B,?C,?D,?E,?F,?G) -> TUFOwnerShare(?F,?G) .
+remainingNGLTemp(?A,?B,?C,?D,?E) -> remainingNGL(?D,?E) .
+documentNameTemp(?A,?B,?C,?D,?E) -> documentName(?D,?E) .
+dateStatusFromTemp(?A,?B,?C,?D,?E,?F) -> dateStatusFrom(?E,?F) .
+dateTransferValidFromTemp(?A,?B,?C,?D,?E,?F) -> dateTransferValidFrom(?E,?F) .
+wellboreStratumTopDepthTemp(?A,?B,?C,?D,?E,?F) -> wellboreStratumTopDepth(?E,?F) .
+dateFieldOwnerToTemp(?A,?B,?C,?D,?E,?F) -> dateFieldOwnerTo(?E,?F) .
+ProductionLicenceAreaPerBlockTemp(?A,?B,?C,?D,?E,?F) -> ProductionLicenceAreaPerBlock(?F) .
+dateLicenceAreaValidToTemp(?A,?B,?C,?D,?E,?F) -> dateLicenceAreaValidTo(?E,?F) .
+SeismicSurveyCoordinateTemp(?A,?B,?C) -> SeismicSurveyCoordinate(?C) .
+ProductionLicenceLicenseeTemp(?A,?B,?C,?D,?E) -> ProductionLicenceLicensee(?E) .
+ProductionLicenceAreaTemp(?A,?B,?C,?D,?E) -> ProductionLicenceArea(?E) .
+dependsOnTaskTemp(?A,?B,?C,?D,?E,?F) -> dependsOnTask(?E,?F) .
+producedWaterTemp(?A,?B,?C,?D,?E,?F) -> producedWater(?E,?F) .
+BAATransferTemp(?A,?B,?C,?D,?E) -> BAATransfer(?E) .
+TUFOperatorTemp(?A,?B,?C,?D,?E) -> TUFOperator(?E) .
+LOTMudDensityTemp(?A,?B,?C,?D,?E) -> LOTMudDensity(?D,?E) .
+TUFOperatorCompanyTemp(?A,?B,?C,?D,?E,?F,?G) -> TUFOperatorCompany(?F,?G) .
+secondsEWTemp(?A,?B,?C,?D,?E) -> secondsEW(?D,?E) .
+BAAAreaTemp(?A,?B,?C,?D,?E,?F) -> BAAArea(?F) .
+operatorForLicenceTemp(?A,?B,?C,?D,?E,?F,?G) -> operatorForLicence(?F,?G) .
+recoverableNGLTemp(?A,?B,?C,?D,?E) -> recoverableNGL(?D,?E) .
+dateUpdatedTemp(?A,?B,?C,?D,?E,?F,?G) -> dateUpdated(?F,?G) .
+ProductionLicenceWorkObligationTemp(?A,?B,?C) -> ProductionLicenceWorkObligation(?C) .
+isGeometryOfFeatureTemp(?A,?B,?C,?D,?E,?F,?G) -> isGeometryOfFeature(?F,?G) .
+dateOperatorValidFromTemp(?A,?B,?C,?D,?E,?F,?G) -> dateOperatorValidFrom(?F,?G) .
+ZValueToTemp(?A,?B,?C,?D,?E,?F,?G) -> ZValueTo(?F,?G) .
+lastOperatorCompanyTemp(?A,?B,?C,?D,?E,?F,?G,?H) -> lastOperatorCompany(?G,?H) .
+DSTGasDensityTemp(?A,?B,?C,?D,?E) -> DSTGasDensity(?D,?E) .
+dateStatusValidFromTemp(?A,?B,?C,?D,?E,?F) -> dateStatusValidFrom(?E,?F) .
+licenseeInterestTemp(?A,?B,?C,?D,?E) -> licenseeInterest(?D,?E) .
+taskForLicenceTemp(?A,?B,?C,?D,?E) -> taskForLicence(?D,?E) .
+coresTotalLengthTemp(?A,?B,?C,?D,?E) -> coresTotalLength(?D,?E) .
+minutesEWTemp(?A,?B,?C,?D,?E) -> minutesEW(?D,?E) .
+BAALicenseeTemp(?A,?B,?C,?D,?E) -> BAALicensee(?E) .
+BlockTemp(?A,?B,?C) -> Block(?C) .
+dateTUFOwnerValidToTemp(?A,?B,?C,?D,?E,?F) -> dateTUFOwnerValidTo(?E,?F) .
+messageTypeTemp(?A,?B,?C,?D,?E) -> messageType(?D,?E) .
+inLithostratigraphicUnitTemp(?A,?B,?C,?D,?E,?F) -> inLithostratigraphicUnit(?E,?F) .
+DiscoveryReserveTemp(?A,?B,?C) -> DiscoveryReserve(?C) .
+DSTFinalShutInPressureTemp(?A,?B,?C,?D,?E) -> DSTFinalShutInPressure(?D,?E) .
+recoverableCondensateTemp(?A,?B,?C,?D,?E) -> recoverableCondensate(?D,?E) .
+FieldMonthlyProductionTemp(?A,?B,?C,?D) -> FieldMonthlyProduction(?D) .
+dateLicenceValidToTemp(?A,?B,?C,?D,?E,?F,?G) -> dateLicenceValidTo(?F,?G) .
+dateInitialStatusToTemp(?A,?B,?C,?D,?E,?F,?G) -> dateInitialStatusTo(?F,?G) .
+producedWaterTemp(?A,?B,?C,?D,?E) -> producedWater(?D,?E) .
+WellboreCorePhotoTemp(?A,?B,?C,?D,?E) -> WellboreCorePhoto(?E) .
+companyShareTemp(?A,?B,?C,?D,?E) -> companyShare(?D,?E) .
+corePhotoTitleTemp(?A,?B,?C,?D,?E,?F) -> corePhotoTitle(?E,?F) .
+FieldLicenseeTemp(?A,?B,?C,?D,?E) -> FieldLicensee(?E) .
+DSTGasProducedRateTemp(?A,?B,?C,?D,?E) -> DSTGasProducedRate(?D,?E) .
+dateLicenceAreaValidToTemp(?A,?B,?C,?D,?E,?F,?G) -> dateLicenceAreaValidTo(?F,?G) .
+mudTestForWellboreTemp(?A,?B,?C,?D,?E) -> mudTestForWellbore(?D,?E) .
+dateStatusToTemp(?A,?B,?C,?D,?E,?F) -> dateStatusTo(?E,?F) .
+documentURLTemp(?A,?B,?C,?D,?E,?F) -> documentURL(?E,?F) .
+polygonNoTemp(?A,?B,?C,?D,?E,?F,?G) -> polygonNo(?F,?G) .
+dateFieldOperatorToTemp(?A,?B,?C,?D,?E,?F) -> dateFieldOperatorTo(?E,?F) .
+producedNGLTemp(?A,?B,?C,?D,?E) -> producedNGL(?D,?E) .
+sourcePressureTemp(?A,?B,?C,?D,?E) -> sourcePressure(?D,?E) .
+isGeometryOfFeatureTemp(?A,?B,?C,?D,?E,?F,?G,?H) -> isGeometryOfFeature(?G,?H) .
+WellboreDrillingMudSampleTemp(?A,?B,?C) -> WellboreDrillingMudSample(?C) .
+producedGasTemp(?A,?B,?C,?D,?E) -> producedGas(?D,?E) .
+licenceTransferCompanyTemp(?A,?B,?C,?D,?E,?F,?G) -> licenceTransferCompany(?F,?G) .
+dateStatusValidToTemp(?A,?B,?C,?D,?E,?F) -> dateStatusValidTo(?E,?F) .
+messageForTUFTemp(?A,?B,?C,?D,?E) -> messageForTUF(?D,?E) .
+DSTOilProducedRateTemp(?A,?B,?C,?D,?E) -> DSTOilProducedRate(?D,?E) .
+SeismicSurveyProgressTemp(?A,?B,?C) -> SeismicSurveyProgress(?C) .
+NCSMonthlyProductionTemp(?A,?B,?C) -> NCSMonthlyProduction(?C) .
+oilSampleTestNumberTemp(?A,?B,?C,?D,?E) -> oilSampleTestNumber(?D,?E) .
+DSTBottomHolePressureTemp(?A,?B,?C,?D,?E) -> DSTBottomHolePressure(?D,?E) .
+SDFITransferTemp(?A,?B,?C,?D,?E) -> SDFITransfer(?E) .
+licenseeForFieldTemp(?A,?B,?C,?D,?E,?F,?G) -> licenseeForField(?F,?G) .
+isActiveTemp(?A,?B,?C,?D,?E,?F) -> isActive(?E,?F) .
+DSTFinalFlowPressureTemp(?A,?B,?C,?D,?E) -> DSTFinalFlowPressure(?D,?E) .

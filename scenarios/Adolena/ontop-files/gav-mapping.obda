@@ -1,0 +1,305 @@
+[PrefixDeclaration]
+ns:  http://example.com/example.owl#
+
+[MappingDeclaration] @collection [[
+mappingId ID-1023107732
+target  ns:ns/{c0} a ns:MovementAbility . 
+source  SELECT c0 FROM "src_Hear"
+
+mappingId ID1449430116
+target  ns:ns/{c0} a ns:PhysicalAbility . 
+source  SELECT c0 FROM "src_Device"
+
+mappingId ID-1491631382
+target  ns:ns/{c0} a ns:Stuttering . 
+source  SELECT c0 FROM "src_Wheelchair"
+
+mappingId ID-927023078
+target  ns:ns/{c0} a ns:SpeechDisability . 
+source  SELECT c0 FROM "src_MentalDisability"
+
+mappingId ID-523494501
+target  ns:ns/{c0} a ns:LowerLimbMobility . 
+source  SELECT c0 FROM "src_Hard_of_hearing"
+
+mappingId ID1692370501
+target  ns:ns/{c0} a ns:LimbMobility . 
+source  SELECT c0 FROM "src_Hear"
+
+mappingId ID-2129985249
+target  ns:ns/{c0} a ns:FaceToFaceCommunicationDevice . 
+source  SELECT c0 FROM "src_isAffectedBy"
+
+mappingId ID758449429
+target  ns:ns/{c0} a ns:Communication_Device . 
+source  SELECT c0 FROM "src_Autism"
+
+mappingId ID38170111
+target  ns:ns/{c0} a ns:SpeechAbility . 
+source  SELECT c0 FROM "src_BatteryPowered_Wheelchair"
+
+mappingId ID1471351071
+target  ns:ns/{c0} a ns:WritingDevice . 
+source  SELECT c0 FROM "src_isAffectedBy"
+
+mappingId ID-2105660395
+target  ns:ns/{c0} a ns:Multiple_sclerosis . 
+source  SELECT c0 FROM "src_Deaf"
+
+mappingId ID198307344
+target  ns:ns/{c0} a ns:PhysicalDisability . 
+source  SELECT c0 FROM "src_isAssistedBy"
+
+mappingId ID1648918048
+target  ns:ns/{c0} a ns:Achondroplasia . 
+source  SELECT c0 FROM "src_requiresAbility"
+
+mappingId ID-1256239648
+target  ns:ns/{c0} a ns:BraillePillOrganiser . 
+source  SELECT c0 FROM "src_Foldable_Wheelchair"
+
+mappingId ID-2011846873
+target  ns:ns/{c0} a ns:TactileReading . 
+source  SELECT c0 FROM "src_Quadriplegia"
+
+mappingId ID-1489393669
+target  ns:ns/{c0} a ns:TelephoneAid . 
+source  SELECT c0 FROM "src_Reach"
+
+mappingId ID1812485780
+target  ns:ns/{c0} a ns:ListenDevice . 
+source  SELECT c0 FROM "src_Ability"
+
+mappingId ID926654768
+target  ns:ns/{c0} a ns:SpeechDevice . 
+source  SELECT c0 FROM "src_Reach"
+
+mappingId ID321855029
+target  ns:ns/{c0} a ns:MentalDisability . 
+source  SELECT c0 FROM "src_Osteogensis_Imperfecta"
+
+mappingId ID700751472
+target  ns:ns/{c0} a ns:Disability . 
+source  SELECT c0 FROM "src_HearingDisability"
+
+mappingId ID-330449024
+target  ns:ns/{c0} a ns:BatteryPowered_Wheelchair . 
+source  SELECT c0 FROM "src_TactileReading"
+
+mappingId ID737648543
+target  ns:ns/{c0} a ns:Motorised_Wheelchair . 
+source  SELECT c0 FROM "src_VisualDisability"
+
+mappingId ID-563175477
+target  ns:ns/{c0} a ns:Hear . 
+source  SELECT c0 FROM "src_Kyphosis"
+
+mappingId ID903558405
+target  ns:ns/{c0} a ns:HearingAbility . 
+source  SELECT c0 FROM "src_Disability"
+
+mappingId ID-1569611938
+target  ns:ns/{c0} a ns:Muscular_dystrophy . 
+source  SELECT c0 FROM "src_Dystonia"
+
+mappingId ID-814251746
+target  ns:ns/{c0} a ns:Wheelchair . 
+source  SELECT c0 FROM "src_Cerebral_palsy"
+
+mappingId ID1774515586
+target  ns:ns/{c0} a ns:MobilityDevice . 
+source  SELECT c0 FROM "src_See"
+
+mappingId ID1816347105
+target  ns:ns/{c0} a ns:Paraplegia . 
+source  SELECT c0 FROM "src_Osteogensis_Imperfecta"
+
+mappingId ID1676420096
+target  ns:ns/{c0} ns:affects ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_requiresAbility"
+
+mappingId ID1881483185
+target  ns:ns/{c0} a ns:See . 
+source  SELECT c0 FROM "src_Lightweight_Wheelchair"
+
+mappingId ID1322819238
+target  ns:ns/{c0} a ns:SightAbility . 
+source  SELECT c0 FROM "src_SymbolBoard"
+
+mappingId ID-181265007
+target  ns:ns/{c0} a ns:BrailleAlarmClock . 
+source  SELECT c0 FROM "src_FaceToFaceCommunicationDevice"
+
+mappingId ID581826515
+target  ns:ns/{c0} a ns:Hear_partially . 
+source  SELECT c0 FROM "src_AssistiveDevice"
+
+mappingId ID1530324321
+target  ns:ns/{c0} a ns:AssistiveDevice . 
+source  SELECT c0 FROM "src_PhysicalAbility"
+
+mappingId ID556880153
+target  ns:ns/{c0} a ns:UpperLimbMobility . 
+source  SELECT c0 FROM "src_Disability"
+
+mappingId ID-1831904228
+target  ns:ns/{c0} a ns:SensoryAbility . 
+source  SELECT c0 FROM "src_PhysicalAbility"
+
+mappingId ID931202920
+target  ns:ns/{c0} a ns:Ability . 
+source  SELECT c0 FROM "src_Hear"
+
+mappingId ID117976438
+target  ns:ns/{c0} a ns:LowVision . 
+source  SELECT c0 FROM "src_FaceToFaceCommunicationSoftware"
+
+mappingId ID-1725946762
+target  ns:ns/{c0} a ns:VisualDisability . 
+source  SELECT c0 FROM "src_BrailleWatch"
+
+mappingId ID2046919508
+target  ns:ns/{c0} a ns:Talking_Thermometer . 
+source  SELECT c0 FROM "src_BatteryPowered_Wheelchair"
+
+mappingId ID-1972266192
+target  ns:ns/{c0} a ns:TalkingReading . 
+source  SELECT c0 FROM "src_Multiple_sclerosis"
+
+mappingId ID1840227557
+target  ns:ns/{c0} a ns:ReadingDevice . 
+source  SELECT c0 FROM "src_TelephoneAid"
+
+mappingId ID-1151546504
+target  ns:ns/{c0} a ns:Epilepsy . 
+source  SELECT c0 FROM "src_HearingAbility"
+
+mappingId ID304042606
+target  ns:ns/{c0} a ns:IntellectualDisability . 
+source  SELECT c0 FROM "src_UpperLimbMobility"
+
+mappingId ID-871839353
+target  ns:ns/{c0} a ns:Autism . 
+source  SELECT c0 FROM "src_LimbMobility"
+
+mappingId ID-2130622969
+target  ns:ns/{c0} a ns:Amputation . 
+source  SELECT c0 FROM "src_Deaf"
+
+mappingId ID737312669
+target  ns:ns/{c0} a ns:Device . 
+source  SELECT c0 FROM "src_BrailleWritingDevice"
+
+mappingId ID-1833603371
+target  ns:ns/{c0} a ns:Manual_Wheelchair . 
+source  SELECT c0 FROM "src_Paraplegia"
+
+mappingId ID1731036403
+target  ns:ns/{c0} a ns:BrailleWatch . 
+source  SELECT c0 FROM "src_BrailleWritingDevice"
+
+mappingId ID2028112780
+target  ns:ns/{c0} a ns:Foldable_Wheelchair . 
+source  SELECT c0 FROM "src_SpeechDisability"
+
+mappingId ID1469940486
+target  ns:ns/{c0} a ns:Osteogensis_Imperfecta . 
+source  SELECT c0 FROM "src_ListenDevice"
+
+mappingId ID423201338
+target  ns:ns/{c0} a ns:Hemiplegia . 
+source  SELECT c0 FROM "src_BatteryPowered_Wheelchair"
+
+mappingId ID621922988
+target  ns:ns/{c0} a ns:Quadriplegia . 
+source  SELECT c0 FROM "src_ReadingDevice"
+
+mappingId ID281138862
+target  ns:ns/{c0} a ns:Guillaume_Barre . 
+source  SELECT c0 FROM "src_Achondroplasia"
+
+mappingId ID895769761
+target  ns:ns/{c0} a ns:BrailleWritingDevice . 
+source  SELECT c0 FROM "src_FaceToFaceCommunicationDevice"
+
+mappingId ID1820415471
+target  ns:ns/{c0} a ns:See_partially . 
+source  SELECT c0 FROM "src_Quadriplegia"
+
+mappingId ID1860547935
+target  ns:ns/{c0} a ns:Spina_Bifida . 
+source  SELECT c0 FROM "src_SymbolBoard"
+
+mappingId ID-1470004056
+target  ns:ns/{c0} a ns:TactileAbility . 
+source  SELECT c0 FROM "src_Deaf"
+
+mappingId ID289813129
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_Stuttering"
+
+mappingId ID-94054539
+target  ns:ns/{c0} a ns:LightweightFoldable_Wheelchair . 
+source  SELECT c0 FROM "src_BraillePillOrganiser"
+
+mappingId ID1952610350
+target  ns:ns/{c0} a ns:Lightweight_Wheelchair . 
+source  SELECT c0 FROM "src_Achondroplasia"
+
+mappingId ID1782212457
+target  ns:ns/{c0} a ns:Blind . 
+source  SELECT c0 FROM "src_Quadriplegia"
+
+mappingId ID-1165367636
+target  ns:ns/{c0} a ns:Reach . 
+source  SELECT c0 FROM "src_TactileReading"
+
+mappingId ID1113125459
+target  ns:ns/{c0} a ns:Deaf . 
+source  SELECT c0 FROM "src_Quadriplegia"
+
+mappingId ID1323009531
+target  ns:ns/{c0} a ns:HearingDisability . 
+source  SELECT c0 FROM "src_Scoliosis"
+
+mappingId ID-843016827
+target  ns:ns/{c0} a ns:Deafened . 
+source  SELECT c0 FROM "src_Spina_Bifida"
+
+mappingId ID449829293
+target  ns:ns/{c0} a ns:SymbolBoard . 
+source  SELECT c0 FROM "src_ListenDevice"
+
+mappingId ID2135440169
+target  ns:ns/{c0} a ns:Dystonia . 
+source  SELECT c0 FROM "src_SensoryAbility"
+
+mappingId ID245655782
+target  ns:ns/{c0} a ns:FaceToFaceCommunicationSoftware . 
+source  SELECT c0 FROM "src_isAssistedBy"
+
+mappingId ID-250559125
+target  ns:ns/{c0} a ns:Kyphosis . 
+source  SELECT c0 FROM "src_SpeechAbility"
+
+mappingId ID1354921996
+target  ns:ns/{c0} a ns:Hard_of_hearing . 
+source  SELECT c0 FROM "src_IntellectualDisability"
+
+mappingId ID-121804796
+target  ns:ns/{c0} a ns:Cerebral_palsy . 
+source  SELECT c0 FROM "src_BrailleWritingDevice"
+
+mappingId ID-797045229
+target  ns:ns/{c0} a ns:Poliomyelitis . 
+source  SELECT c0 FROM "src_Epilepsy"
+
+mappingId ID-1153718307
+target  ns:ns/{c0} a ns:Little_or_No_Speech . 
+source  SELECT c0 FROM "src_BrailleWritingDevice"
+
+mappingId ID-127928956
+target  ns:ns/{c0} a ns:Scoliosis . 
+source  SELECT c0 FROM "src_Epilepsy"
+
+]]

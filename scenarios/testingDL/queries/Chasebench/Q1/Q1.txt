@@ -1,1 +1,1 @@
-Q1(?0) <- StockExchangeMember(?0) .
+Q1(?X) <- worksFor(?X,?Y),affiliatedOrganizationOf(?Y,?Z) .

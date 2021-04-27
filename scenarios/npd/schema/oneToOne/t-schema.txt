@@ -1,0 +1,5993 @@
+apaAreaGross {
+  apaMap_no : STRING,
+  apaAreaGeometry_KML_WGS84 : STRING,
+  apaAreaGross_id : STRING 
+}
+
+apaAreaNet {
+  blkId : STRING,
+  blkLabel: STRING,
+  qdrName : STRING,
+  blkName : STRING,
+  prvName : STRING,
+  apaAreaType: STRING,
+  urlNPD: STRING,
+  apaAreaNet_id: STRING
+}
+
+baaArea {
+  baaNpdidBsnsArrArea : STRING,
+  baaNpdidBsnsArrAreaPoly  : STRING,
+  baaName  : STRING,
+  baaKind  : STRING,
+  baaAreaPolyDateValidFrom  : STRING,
+  baaAreaPolyDateValidTo  : STRING,
+  baaAreaPolyActive  : STRING,
+  baaDateApproved  : STRING,
+  baaDateValidFrom  : STRING,
+  baaDateValidTo  : STRING,
+  baaActive  : STRING,
+  baaFactPageUrl  : STRING,
+  baaFactMapUrl  : STRING 
+}
+
+bsns_arr_area {
+  baaName  : STRING,
+  baaKind  : STRING,
+  baaDateApproved  : STRING,
+  baaDateValidFrom  : STRING,
+  baaDateValidTo  : STRING,
+  baaFactPageUrl  : STRING,
+  baaFactMapUrl  : STRING,
+  baaNpdidBsnsArrArea  : STRING,
+  baaDateUpdated  : STRING,
+  baaDateUpdatedMax  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+bsns_arr_area_area_poly_hst {
+  baaName  : STRING,
+  baaAreaPolyDateValidFrom  : STRING,
+  baaAreaPolyDateValidTo  : STRING,
+  baaAreaPolyNationCode2  : STRING,
+  baaAreaPolyBlockName   : STRING,
+  baaAreaPolyNo  : STRING,
+  baaAreaPolyArea  : STRING,
+  baaNpdidBsnsArrArea  : STRING,
+  baaAreaPolyDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+bsns_arr_area_licensee_hst {
+  baaName  : STRING,
+  baaLicenseeDateValidFrom  : STRING,
+  baaLicenseeDateValidTo  : STRING,
+  cmpLongName  : STRING,
+  baaLicenseeInterest  : STRING,
+  baaLicenseeSdfi  : STRING,
+  baaNpdidBsnsArrArea  : STRING,
+  cmpNpdidCompany  : STRING,
+  baaLicenseeDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+bsns_arr_area_operator {
+  baaName  : STRING,
+  cmpLongName  : STRING,
+  baaNpdidBsnsArrArea  : STRING,
+  cmpNpdidCompany  : STRING,
+  baaOperatorDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+bsns_arr_area_transfer_hst {
+  baaName  : STRING,
+  baaTransferDateValidFrom  : STRING,
+  baaTransferDirection  : STRING,
+  baaTransferKind  : STRING,
+  cmpLongName  : STRING,
+  baaTransferredInterest  : STRING,
+  baaTransferSdfi  : STRING,
+  baaNpdidBsnsArrArea  : STRING,
+  cmpNpdidCompany  : STRING,
+  baaTransferDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+company {
+  cmpLongName  : STRING,
+  cmpOrgNumberBrReg  : STRING,
+  cmpGroup  : STRING,
+  cmpShortName  : STRING,
+  cmpNpdidCompany  : STRING,
+  cmpLicenceOperCurrent  : STRING,
+  cmpLicenceOperFormer  : STRING,
+  cmpLicenceLicenseeCurrent  : STRING,
+  cmpLicenceLicenseeFormer  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+company_reserves {
+  cmpLongName  : STRING,
+  fldName  : STRING,
+  cmpRecoverableOil  : STRING,
+  cmpRecoverableGas  : STRING,
+  cmpRecoverableNGL  : STRING,
+  cmpRecoverableCondensate  : STRING,
+  cmpRecoverableOE  : STRING,
+  cmpRemainingOil  : STRING,
+  cmpRemainingGas  : STRING,
+  cmpRemainingNGL  : STRING,
+  cmpRemainingCondensate  : STRING,
+  cmpRemainingOE  : STRING,
+  cmpDateOffResEstDisplay  : STRING,
+  cmpShare  : STRING,
+  fldNpdidField  : STRING,
+  cmpNpdidCompany  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+discovery {
+  dscName  : STRING,
+  cmpLongName  : STRING,
+  dscCurrentActivityStatus  : STRING,
+  dscHcType  : STRING,
+  wlbName  : STRING,
+  nmaName  : STRING,
+  fldName  : STRING,
+  dscDateFromInclInField  : STRING,
+  dscDiscoveryYear  : STRING,
+  dscResInclInDiscoveryName  : STRING,
+  dscOwnerKind  : STRING,
+  dscOwnerName  : STRING,
+  dscNpdidDiscovery  : STRING,
+  fldNpdidField  : STRING,
+  wlbNpdidWellbore  : STRING,
+  dscFactPageUrl  : STRING,
+  dscFactMapUrl  : STRING,
+  dscDateUpdated  : STRING,
+  dscDateUpdatedMax  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+discovery_reserves {
+  dscName  : STRING,
+  dscReservesRC  : STRING,
+  dscRecoverableOil  : STRING,
+  dscRecoverableGas  : STRING,
+  dscRecoverableNGL  : STRING,
+  dscRecoverableCondensate  : STRING,
+  dscDateOffResEstDisplay  : STRING,
+  dscNpdidDiscovery  : STRING,
+  dscReservesDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+dscArea {
+  fldNpdidField  : STRING,
+  fldName  : STRING,
+  dscNpdidDiscovery  : STRING,
+  dscName  : STRING,
+  dscResInclInDiscoveryName  : STRING,
+  dscNpdidResInclInDiscovery  : STRING,
+  dscIncludedInFld  : STRING,
+  dscHcType  : STRING,
+  fldHcType  : STRING,
+  dscCurrentActivityStatus  : STRING,
+  fldCurrentActivityStatus  : STRING,
+  flddscLabel  : STRING,
+  dscFactUrl  : STRING,
+  fldFactUrl  : STRING
+}
+
+facility_fixed {
+  fclName  : STRING,
+  fclPhase  : STRING,
+  fclSurface  : STRING,
+  fclCurrentOperatorName  : STRING,
+  fclKind  : STRING,
+  fclBelongsToName  : STRING,
+  fclBelongsToKind  : STRING,
+  fclBelongsToS  : STRING,
+  fclStartupDate  : STRING,
+  fclGeodeticDatum  : STRING,
+  fclNsDeg  : STRING,
+  fclNsMin  : STRING,
+  fclNsSec  : STRING,
+  fclNsCode  : STRING,
+  fclEwDeg  : STRING,
+  fclEwMin  : STRING,
+  fclEwSec  : STRING,
+  fclEwCode  : STRING,
+  fclWaterDepth  : STRING,
+  fclFunctions  : STRING,
+  fclDesignLifetime  : STRING,
+  fclFactPageUrl  : STRING,
+  fclFactMapUrl  : STRING,
+  fclNpdidFacility  : STRING,
+  fclDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+facility_moveable {
+  fclName  : STRING,
+  fclCurrentRespCompanyName  : STRING,
+  fclKind  : STRING,
+  fclFunctions  : STRING,
+  fclNationName  : STRING,
+  fclFactPageUrl  : STRING,
+  fclNpdidFacility  : STRING,
+  fclNpdidCurrentRespCompany  : STRING,
+  fclDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+fclPoint {
+  fclNpdidFacility  : STRING,
+  fclSurface  : STRING,
+  fclCurrentOperatorName  : STRING,
+  fclName  : STRING,
+  fclKind  : STRING,
+  fclBelongsToName  : STRING,
+  fclBelongsToKind  : STRING,
+  fclBelongsToS  : STRING,
+  fclStartupDate  : STRING,
+  fclWaterDepth  : STRING,
+  fclFunctions  : STRING,
+  fclDesignLifetime  : STRING,
+  fclFactPageUrl  : STRING,
+  fclFactMapUrl  : STRING 
+}
+
+field {
+  fldName  : STRING,
+  cmpLongName  : STRING,
+  fldCurrentActivitySatus  : STRING,
+  wlbName  : STRING,
+  wlbCompletionDate  : STRING,
+  fldOwnerKind  : STRING,
+  fldOwnerName  : STRING,
+  fldNpdidOwner  : STRING,
+  fldNpdidField  : STRING,
+  wlbNpdidWellbore  : STRING,
+  cmpNpdidCompany  : STRING,
+  fldFactPageUrl  : STRING,
+  fldFactMapUrl  : STRING,
+  fldDateUpdated  : STRING,
+  fldDateUpdatedMax  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+field_activity_status_hst {
+  fldName  : STRING,
+  fldStatusFromDate  : STRING,
+  fldStatusToDate  : STRING,
+  fldStatus  : STRING,
+  fldNpdidField  : STRING,
+  fldStatusDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+field_description {
+  fldName  : STRING,
+  fldDescriptionHeading  : STRING,
+  fldDescription : STRING,
+  fldNpdidField  : STRING,
+  fldDescriptionDateUpdated  : STRING 
+}
+
+field_investment_yearly {
+  prfInformationCarrier  : STRING,
+  prfYear  : STRING,
+  prfInvestmentsMillNOK  : STRING,
+  prfNpdidInformationCarrier  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+field_licensee_hst {
+  fldName  : STRING,
+  fldOwnerName  : STRING,
+  fldOwnerKind  : STRING,
+  fldOwnerFrom  : STRING,
+  fldOwnerTo  : STRING,
+  fldLicenseeFrom  : STRING,
+  fldLicenseeTo  : STRING,
+  cmpLongName  : STRING,
+  fldCompanyShare  : STRING,
+  fldSdfiShare  : STRING,
+  fldNpdidField  : STRING,
+  cmpNpdidCompany  : STRING,
+  fldLicenseeDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+field_operator_hst {
+  fldName  : STRING,
+  cmpLongName  : STRING,
+  fldOperatorFrom  : STRING,
+  fldOperatorTo  : STRING,
+  fldNpdidField  : STRING,
+  cmpNpdidCompany  : STRING,
+  fldOperatorDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+field_owner_hst {
+  fldName  : STRING,
+  fldOwnerKind  : STRING,
+  fldOwnerName  : STRING,
+  fldOwnershipFromDate  : STRING,
+  fldOwnershipToDate  : STRING,
+  fldNpdidField  : STRING,
+  fldNpdidOwner  : STRING,
+  fldOwnerDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+field_production_monthly {
+  prfInformationCarrier  : STRING,
+  prfYear  : STRING,
+  prfMonth  : STRING,
+  prfPrdOilNetMillSm3  : STRING,
+  prfPrdGasNetBillSm3  : STRING,
+  prfPrdNGLNetMillSm3  : STRING,
+  prfPrdCondensateNetMillSm3  : STRING,
+  prfPrdOeNetMillSm3  : STRING,
+  prfPrdProducedWaterInFieldMillSm3  : STRING,
+  prfNpdidInformationCarrier  : STRING   
+}
+
+field_production_totalt_NCS_month {
+  prfYear  : STRING,
+  prfMonth  : STRING,
+  prfPrdOilNetMillSm3  : STRING,
+  prfPrdGasNetBillSm3  : STRING,
+  prfPrdNGLNetMillSm3  : STRING,
+  prfPrdCondensateNetMillSm3  : STRING,
+  prfPrdOeNetMillSm3  : STRING,
+  prfPrdProducedWaterInFieldMillSm3  : STRING 
+}
+
+
+field_production_totalt_NCS_year {
+  prfYear  : STRING,
+  prfPrdOilNetMillSm  : STRING,
+  prfPrdGasNetBillSm  : STRING,
+  prfPrdCondensateNetMillSm3  : STRING,
+  prfPrdNGLNetMillSm3  : STRING,
+  prfPrdOeNetMillSm3  : STRING,
+  prfPrdProducedWaterInFieldMillSm3  : STRING 
+}
+
+field_production_yearly {
+  prfInformationCarrier  : STRING,
+  prfYear  : STRING,
+  prfPrdOilNetMillSm3  : STRING,
+  prfPrdGasNetBillSm3  : STRING,
+  prfPrdNGLNetMillSm3  : STRING,
+  prfPrdCondensateNetMillSm3  : STRING,
+  prfPrdOeNetMillSm3  : STRING,
+  prfPrdProducedWaterInFieldMillSm3  : STRING,
+  prfNpdidInformationCarrier  : STRING   
+}
+
+field_reserves {
+  fldName  : STRING,
+  fldRecoverableOil  : STRING,
+  fldRecoverableGas  : STRING,
+  fldRecoverableNGL  : STRING,
+  fldRecoverableCondensate  : STRING,
+  fldRecoverableOE  : STRING,
+  fldRemainingOil  : STRING,
+  fldRemainingGas  : STRING,
+  fldRemainingNGL  : STRING,
+  fldRemainingCondensate  : STRING,
+  fldRemainingOE  : STRING,
+  fldDateOffResEstDisplay  : STRING,
+  fldNpdidField  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+fldArea {
+  fldNpdidField  : STRING,
+  fldName  : STRING,
+  dscNpdidDiscovery  : STRING,
+  dscName  : STRING,
+  dscResInclInDiscoveryName  : STRING,
+  dscNpdidResInclInDiscovery  : STRING,
+  dscIncludedInFld  : STRING,
+  dscHcType  : STRING,
+  fldHcType  : STRING,
+  dscCurrentActivityStatus  : STRING,
+  fldCurrentActivityStatus  : STRING,
+  flddscLabel  : STRING,
+  dscFactUrl  : STRING,
+  fldFactUrl  : STRING
+}
+
+licence {
+  prlName  : STRING,
+  prlLicensingActivityName  : STRING,
+  prlMainArea  : STRING,
+  prlStatus  : STRING,
+  prlDateGranted  : STRING,
+  prlDateValidTo  : STRING,
+  prlOriginalArea  : STRING,
+  prlCurrentArea  : STRING,
+  prlPhaseCurrent  : STRING,
+  prlNpdidLicence  : STRING,
+  prlFactPageUrl  : STRING,
+  prlFactMapUrl  : STRING,
+  prlDateUpdated  : STRING,
+  prlDateUpdatedMax  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+licence_area_poly_hst {
+  prlName  : STRING,
+  prlAreaPolyDateValidFrom  : STRING,
+  prlAreaPolyDateValidTo  : STRING,
+  prlAreaPolyNationCode  : STRING,
+  prlAreaPolyBlockName  : STRING,
+  prlAreaPolyStratigraphical  : STRING,
+  prlAreaPolyPolyNo  : STRING,
+  prlAreaPolyPolyArea  : STRING,
+  prlNpdidLicence  : STRING,
+  prlAreaDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+licence_licensee_hst {
+  prlName  : STRING,
+  prlLicenseeDateValidFrom  : STRING,
+  prlLicenseeDateValidTo  : STRING,
+  cmpLongName  : STRING,
+  prlLicenseeInterest  : STRING,
+  prlLicenseeSdfi  : STRING,
+  prlOperDateValidFrom  : STRING,
+  prlOperDateValidTo  : STRING,
+  prlNpdidLicence  : STRING,
+  cmpNpdidCompany  : STRING,
+  prlLicenseeDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+licence_oper_hst {
+  prlName  : STRING,
+  prlOperDateValidFrom  : STRING,
+  prlOperDateValidTo  : STRING,
+  cmpLongName  : STRING,
+  prlNpdidLicence  : STRING,
+  cmpNpdidCompany  : STRING,
+  prlOperDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+licence_petreg_licence {
+  ptlName  : STRING,
+  ptlDateAwarded  : STRING,
+  ptlDateValidFrom  : STRING,
+  ptlDateValidTo  : STRING,
+  prlNpdidLicence  : STRING,
+  ptlDateUpdated  : STRING,
+  ptlDateUpdatedMax  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+licence_petreg_licence_licencee {
+  ptlName  : STRING,
+  cmpLongName  : STRING,
+  ptlLicenseeInterest  : STRING,
+  prlNpdidLicence  : STRING,
+  cmpNpdidCompany  : STRING,
+  ptlLicenseeDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+licence_petreg_licence_oper {
+  ptlName  : STRING,
+  cmpLongName  : STRING,
+  prlNpdidLicence  : STRING,
+  cmpNpdidCompany  : STRING,
+  ptlOperDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+licence_petreg_message {
+  prlName  : STRING,
+  ptlMessageDocumentNo  : STRING,
+  ptlMessage  : STRING,
+  ptlMessageRegisteredDate  : STRING,
+  ptlMessageKindDesc  : STRING,
+  ptlMessageDateUpdated  : STRING,
+  prlNpdidLicence  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+licence_phase_hst {
+  prlName  : STRING,
+  prlDatePhaseValidFrom  : STRING,
+  prlDatePhaseValidTo  : STRING,
+  prlPhase  : STRING,
+  prlDateGranted  : STRING,
+  prlDateValidTo  : STRING,
+  prlDateInitialPeriodExpires  : STRING,
+  prlActiveStatusIndicator  : STRING,
+  prlNpdidLicence  : STRING,
+  prlPhaseDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+licence_task {
+  prlName  : STRING,
+  prlTaskName  : STRING,
+  prlTaskTypeNo  : STRING,
+  prlTaskTypeEn  : STRING,
+  prlTaskStatusNo  : STRING,
+  prlTaskStatusEn  : STRING,
+  prlTaskExpiryDate  : STRING,
+  wlbName  : STRING,
+  prlDateValidTo  : STRING,
+  prlLicensingActivityName  : STRING,
+  cmpLongName  : STRING,
+  cmpNpdidCompany  : STRING,
+  prlNpdidLicence  : STRING,
+  prlTaskID  : STRING,
+  prlTaskRefID  : STRING,
+  prlTaskDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+licence_transfer_hst {
+  prlName  : STRING,
+  prlTransferDateValidFrom  : STRING,
+  prlTransferDirection  : STRING,
+  prlTransferKind  : STRING,
+  cmpLongName  : STRING,
+  prlTransferredInterest  : STRING,
+  prlTransferSdfi  : STRING,
+  prlNpdidLicence  : STRING,
+  cmpNpdidCompany  : STRING,
+  prlTransferDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+pipLine {
+  pipNpdidPipe  : STRING,
+  pipNpdidFromFacility  : STRING,
+  pipNpdidToFacility  : STRING,
+  pipNpdidOperator  : STRING,
+  pipName  : STRING,
+  pipNameFromFacility  : STRING,
+  pipNameToFacility  : STRING,
+  pipNameCurrentOperator  : STRING,
+  pipCurrentPhase  : STRING,
+  pipMedium  : STRING,
+  pipMainGrouping  : STRING,
+  pipDimension  : STRING      
+}
+
+prlArea {
+  prlName  : STRING,
+  prlActive  : STRING,
+  prlCurrentArea  : STRING,
+  prlDateGranted  : STRING,
+  prlDateValidTo  : STRING,
+  prlAreaPolyDateValidFrom  : STRING,
+  prlAreaPolyDateValidTo  : STRING,
+  prlAreaPolyFromZvalue  : STRING,
+  prlAreaPolyToZvalue  : STRING,
+  prlAreaPolyVertLimEn  : STRING,
+  prlAreaPolyVertLimNo  : STRING,
+  prlStratigraphical  : STRING,
+  prlAreaPolyStratigraphical  : STRING,
+  prlNpdidLicence  : STRING,
+  prlLastOperatorNameShort  : STRING,
+  prlLastOperatorNameLong  : STRING,
+  prlLicensingActivityName  : STRING,
+  prlLastOperatorNpdidCompany  : STRING,
+  prlFactUrl  : STRING,
+  prlArea_id  : STRING 
+}
+
+prlAreaSplitByBlock {
+  prlName  : STRING,
+  prlActive  : STRING,
+  prlCurrentArea  : STRING,
+  prlDateGranted  : STRING,
+  prlDateValidTo  : STRING,
+  prlAreaPolyDateValidFrom  : STRING,
+  prlAreaPolyDateValidTo  : STRING,
+  prlAreaPolyPolyNo  : STRING,
+  prlAreaPolyPolyArea  : STRING,
+  blcName  : STRING,
+  prlAreaPolyFromZvalue  : STRING,
+  prlAreaPolyToZvalue  : STRING,
+  prlAreaPolyVertLimEn  : STRING,
+  prlAreaPolyVertLimNo  : STRING,
+  prlStratigraphical  : STRING,
+  prlLastOperatorNpdidCompany  : STRING,
+  prlLastOperatorNameShort  : STRING,
+  prlLastOperatorNameLong  : STRING,
+  prlLicensingActivityName  : STRING,
+  prlFactUrl  : STRING,
+  prlAreaPolyStratigraphical  : STRING,
+  prlNpdidLicence  : STRING   
+}
+
+seaArea {
+  seaSurveyName  : STRING,
+  seaNpdidSurvey  : STRING,
+  seaFactMapUrl  : STRING,
+  seaFactPageUrl  : STRING,
+  seaStatus  : STRING,
+  seaGeographicalArea  : STRING,
+  seaMarketAvailable  : STRING,
+  seaSurveyTypeMain  : STRING,
+  seaSurveyTypePart  : STRING,
+  seaCompanyReported  : STRING,
+  seaSourceType  : STRING,
+  seaSourceNumber  : STRING,
+  seaSourceSize  : STRING,
+  seaSourcePressure  : STRING,
+  seaSensorType  : STRING,
+  seaSensorNumbers  : STRING,
+  seaSensorLength  : STRING,
+  seaPlanFromDate  : STRING,
+  seaDateStarting  : STRING,
+  seaPlanToDate  : STRING,
+  seaDateFinalized  : STRING,
+  seaPlanCdpKm  : STRING,
+  seaCdpTotalKm  : STRING,
+  seaPlanBoatKm  : STRING,
+  seaBoatTotalKm  : STRING,
+  sea3DKm2  : STRING,
+  seaPolygonKind  : STRING,
+  seaArea_id  : STRING 
+}
+
+seaMultiline {
+  seaSurveyName  : STRING,
+  seaFactMapUrl  : STRING,
+  seaFactPageUrl  : STRING,
+  seaStatus  : STRING,
+  seaMarketAvailable  : STRING,
+  seaSurveyTypeMain  : STRING,
+  seaSurveyTypePart  : STRING,
+  seaCompanyReported  : STRING,
+  seaSourceType  : STRING,
+  seaSourceNumber  : STRING,
+  seaSourceSize  : STRING,
+  seaSourcePressure  : STRING,
+  seaSensorType  : STRING,
+  seaSensorNumbers  : STRING,
+  seaSensorLength  : STRING,
+  seaPlanFromDate  : STRING,
+  seaDateStarting  : STRING,
+  seaPlanToDate  : STRING,
+  seaDateFinalized  : STRING,
+  seaPlanCdpKm  : STRING,
+  seaCdpTotalKm  : STRING,
+  seaPlanBoatKm  : STRING,
+  seaBoatTotalKm  : STRING  
+}
+
+seis_acquisition {
+  seaName  : STRING,
+  seaPlanFromDate  : STRING,
+  seaNpdidSurvey  : STRING,
+  seaStatus  : STRING,
+  seaGeographicalArea  : STRING,
+  seaSurveyTypeMain  : STRING,
+  seaSurveyTypePart  : STRING,
+  seaCompanyReported  : STRING,
+  seaPlanToDate  : STRING,
+  seaDateStarting  : STRING,
+  seaDateFinalized  : STRING,
+  seaCdpTotalKm  : STRING,
+  seaBoatTotalKm  : STRING,
+  sea3DKm2  : STRING,
+  seaSampling  : STRING,
+  seaShallowDrilling  : STRING,
+  seaGeotechnical  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+seis_acquisition_coordinates_inc_turnarea {
+  seaSurveyName  : STRING,
+  seaNpdidSurvey  : STRING,
+  seaPolygonPointNumber  : STRING,
+  seaPolygonNSDeg  : STRING,
+  seaPolygonNSMin  : STRING,
+  seaPolygonNSSec  : STRING,
+  seaPolygonEWDeg  : STRING,
+  seaPolygonEWMin  : STRING,
+  seaPolygonEWSec  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+seis_acquisition_progress {
+  seaProgressDate  : STRING,
+  seaProgressText2 : STRING,
+  seaProgressText : STRING,
+  seaProgressDescription  : STRING,
+  seaNpdidSurvey  : STRING,
+  seis_acquisition_progress_id  : STRING 
+}
+
+strat_litho_wellbore {
+  wlbName  : STRING,
+  lsuTopDepth  : STRING,
+  lsuBottomDepth  : STRING,
+  lsuName  : STRING,
+  lsuLevel  : STRING,
+  lsuNpdidLithoStrat  : STRING,
+  wlbCompletionDate  : STRING,
+  wlbNpdidWellbore  : STRING,
+  lsuWellboreUpdatedDate  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+strat_litho_wellbore_core {
+  wlbName  : STRING,
+  lsuCoreLenght  : STRING,
+  lsuName  : STRING,
+  lsuLevel  : STRING,
+  wlbCompletionDate  : STRING,
+  lsuNpdidLithoStrat  : STRING,
+  wlbNpdidWellbore  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+
+tuf_operator_hst {
+  tufName  : STRING,
+  cmpLongName  : STRING,
+  tufOperDateValidFrom  : STRING,
+  tufOperDateValidTo  : STRING,
+  tufNpdidTuf  : STRING,
+  cmpNpdidCompany  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+tuf_owner_hst {
+  tufName  : STRING,
+  cmpLongName  : STRING,
+  tufOwnerDateValidFrom  : STRING,
+  tufOwnerDateValidTo  : STRING,
+  tufOwnerShare  : STRING,
+  tufNpdidTuf  : STRING,
+  cmpNpdidCompany  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+tuf_petreg_licence {
+  ptlName  : STRING,
+  tufName  : STRING,
+  ptlDateValidFrom  : STRING,
+  ptlDateValidTo  : STRING,
+  tufNpdidTuf  : STRING,
+  ptlDateUpdated  : STRING,
+  ptlDateUpdatedMax  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+tuf_petreg_licence_licencee {
+  ptlName  : STRING,
+  cmpLongName  : STRING,
+  ptlLicenseeInterest  : STRING,
+  tufName  : STRING,
+  tufNpdidTuf  : STRING,
+  cmpNpdidCompany  : STRING,
+  ptlLicenseeDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+
+tuf_petreg_licence_oper {
+  Textbox42  : STRING,
+  Textbox2  : STRING,
+  ptlName  : STRING,
+  cmpLongName  : STRING,
+  tufName  : STRING,
+  tufNpdidTuf  : STRING,
+  cmpNpdidCompany  : STRING,
+  ptlOperDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+tuf_petreg_message {
+  ptlName  : STRING,
+  ptlMessageDocumentNo  : STRING,
+  ptlMessage  : STRING,
+  ptlMessageRegisteredDate  : STRING,
+  ptlMessageKindDesc  : STRING,
+  tufName  : STRING,
+  ptlMessageDateUpdated  : STRING,
+  tufNpdidTuf  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+wellbore_casing_and_lot {
+  wlbName  : STRING,
+  wlbCasingType  : STRING,
+  wlbCasingDiameter  : STRING,
+  wlbCasingDepth  : STRING,
+  wlbHoleDiameter  : STRING,
+  wlbHoleDepth  : STRING,
+  wlbLotMudDencity  : STRING,
+  wlbNpdidWellbore  : STRING,
+  wlbCasingDateUpdated  : STRING,
+  dateSyncNPD  : STRING,
+  wellbore_casing_and_lot_id  : STRING 
+}
+
+wellbore_coordinates {
+  wlbWellboreName  : STRING,
+  wlbDrillingOperator  : STRING,
+  wlbProductionLicence  : STRING,
+  wlbWellType  : STRING,
+  wlbPurposePlanned  : STRING,
+  wlbContent  : STRING,
+  wlbEntryDate  : STRING,
+  wlbCompletionDate  : STRING,
+  wlbField  : STRING,
+  wlbMainArea  : STRING,
+  wlbGeodeticDatum  : STRING,
+  wlbNsDeg  : STRING,
+  wlbNsMin  : STRING,
+  wlbNsSec  : STRING,
+  wlbNsCode  : STRING,
+  wlbEwDeg  : STRING,
+  wlbEwMin  : STRING,
+  wlbEwSec  : STRING,
+  wlbEwCode  : STRING,
+  wlbNsDecDeg  : STRING,
+  wlbEwDesDeg  : STRING,
+  wlbNsUtm  : STRING,
+  wlbEwUtm  : STRING,
+  wlbUtmZone  : STRING,
+  wlbNpdidWellbore  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+wellbore_core {
+  wlbName  : STRING,
+  wlbCoreNumber  : STRING,
+  wlbCoreIntervalTop  : STRING,
+  wlbCoreIntervalBottom  : STRING,
+  wlbCoreIntervalUom  : STRING,
+  wlbTotalCoreLength  : STRING,
+  wlbNumberOfCores  : STRING,
+  wlbCoreSampleAvailable  : STRING,
+  wlbNpdidWellbore  : STRING,
+  wlbCoreDateUpdated  : STRING,
+  dateSyncNPD  : STRING,
+  wellbore_core_id  : STRING 
+}
+
+wellbore_core_photo {
+  wlbName  : STRING,
+  wlbCoreNumber  : STRING,
+  wlbCorePhotoTitle  : STRING,
+  wlbCorePhotoImgUrl  : STRING,
+  wlbNpdidWellbore  : STRING,
+  wlbCorePhotoDateUpdated  : STRING,
+  wellbore_core_photo_id  : STRING 
+}
+
+wellbore_development_all {
+  wlbWellboreName  : STRING,
+  wlbWell  : STRING,
+  wlbDrillingOperator  : STRING,
+  wlbDrillingOperatorGroup  : STRING,
+  wlbProductionLicence  : STRING,
+  wlbPurposePlanned  : STRING,
+  wlbContent  : STRING,
+  wlbWellType  : STRING,
+  wlbEntryDate  : STRING,
+  wlbCompletionDate  : STRING,
+  wlbField  : STRING,
+  wlbDrillPermit  : STRING,
+  wlbDiscovery  : STRING,
+  wlbDiscoveryWellbore  : STRING,
+  wlbKellyBushElevation  : STRING,
+  wlbFinalVerticalDepth  : STRING,
+  wlbTotalDepth  : STRING,
+  wlbWaterDepth  : STRING,
+  wlbMainArea  : STRING,
+  wlbDrillingFacility  : STRING,
+  wlbFacilityTypeDrilling  : STRING,
+  wlbProductionFacility  : STRING,
+  wlbLicensingActivity  : STRING,
+  wlbMultilateral  : STRING,
+  wlbContentPlanned  : STRING,
+  wlbEntryYear  : STRING,
+  wlbCompletionYear  : STRING,
+  wlbReclassFromWellbore  : STRING,
+  wlbPlotSymbol  : STRING,
+  wlbGeodeticDatum  : STRING,
+  wlbNsDeg  : STRING,
+  wlbNsMin  : STRING,
+  wlbNsSec  : STRING,
+  wlbNsCode  : STRING,
+  wlbEwDeg  : STRING,
+  wlbEwMin  : STRING,
+  wlbEwSec  : STRING,
+  wlbEwCode  : STRING,
+  wlbNsDecDeg  : STRING,
+  wlbEwDesDeg  : STRING,
+  wlbNsUtm  : STRING,
+  wlbEwUtm  : STRING,
+  wlbUtmZone  : STRING,
+  wlbNamePart1  : STRING,
+  wlbNamePart2  : STRING,
+  wlbNamePart3  : STRING,
+  wlbNamePart4  : STRING,
+  wlbNamePart5 : STRING,
+  wlbNamePart6 : STRING,
+  wlbFactPageUrl  : STRING,
+  wlbFactMapUrl  : STRING,
+  wlbDiskosWellboreType  : STRING,
+  wlbDiskosWellboreParent  : STRING,
+  wlbNpdidWellbore  : STRING,
+  dscNpdidDiscovery  : STRING,
+  fldNpdidField  : STRING,
+  wlbWdssQcdate  : STRING,
+  prlNpdidProductionLicence  : STRING,
+  fclNpdidFacilityDrilling  : STRING,
+  fclNpdidFacilityProducing  : STRING,
+  wlbNpdidWellboreReclass  : STRING,
+  wlbDiskosWellOperator  : STRING,
+  wlbDateUpdated  : STRING,
+  wlbDateUpdatedMax  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+wellbore_document {
+  wlbName  : STRING,
+  wlbDocumentType  : STRING,
+  wlbDocumentName  : STRING,
+  wlbDocumentUrl  : STRING,
+  wlbDocumentFormat  : STRING,
+  wlbDocumentSize  : STRING,
+  wlbNpdidWellbore  : STRING,
+  wlbDocumentDateUpdated  : STRING,
+  dateSyncNPD  : STRING,
+  wellbore_document_id  : STRING 
+}
+
+wellbore_dst {
+  wlbName  : STRING,
+  wlbDstTestNumber  : STRING,
+  wlbDstFromDepth  : STRING,
+  wlbDstToDepth  : STRING,
+  wlbDstChokeSize  : STRING,
+  wlbDstFinShutInPress  : STRING,
+  wlbDstFinFlowPress  : STRING,
+  wlbDstBottomHolePress  : STRING,
+  wlbDstOilProd  : STRING,
+  wlbDstGasProd  : STRING,
+  wlbDstOilDensity  : STRING,
+  wlbDstGasDensity  : STRING,
+  wlbDstGasOilRelation  : STRING,
+  wlbNpdidWellbore  : STRING,
+  wlbDstDateUpdated  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+wellbore_exploration_all {
+  wlbWellboreName  : STRING,
+  wlbWell  : STRING,
+  wlbDrillingOperator  : STRING,
+  wlbDrillingOperatorGroup  : STRING,
+  wlbProductionLicence  : STRING,
+  wlbPurpose  : STRING,
+  wlbStatus  : STRING,
+  wlbContent  : STRING,
+  wlbWellType  : STRING,
+  wlbEntryDate  : STRING,
+  wlbCompletionDate  : STRING,
+  wlbField  : STRING,
+  wlbDrillPermit  : STRING,
+  wlbDiscovery  : STRING,
+  wlbDiscoveryWellbore  : STRING,
+  wlbBottomHoleTemperature  : STRING,
+  wlbSeismicLocation  : STRING,
+  wlbMaxInclation  : STRING,
+  wlbKellyBushElevation  : STRING,
+  wlbFinalVerticalDepth  : STRING,
+  wlbTotalDepth  : STRING,
+  wlbWaterDepth  : STRING,
+  wlbAgeAtTd  : STRING,
+  wlbFormationAtTd  : STRING,
+  wlbMainArea  : STRING,
+  wlbDrillingFacility  : STRING,
+  wlbFacilityTypeDrilling  : STRING,
+  wlbLicensingActivity  : STRING,
+  wlbMultilateral  : STRING,
+  wlbPurposePlanned  : STRING,
+  wlbEntryYear  : STRING,
+  wlbCompletionYear  : STRING,
+  wlbReclassFromWellbore  : STRING,
+  wlbReentryExplorationActivity  : STRING,
+  wlbPlotSymbol  : STRING,
+  wlbFormationWithHc1  : STRING,
+  wlbAgeWithHc1  : STRING,
+  wlbFormationWithHc2  : STRING,
+  wlbAgeWithHc2  : STRING,
+  wlbFormationWithHc3  : STRING,
+  wlbAgeWithHc3  : STRING,
+  wlbDrillingDays  : STRING,
+  wlbReentry  : STRING,
+  wlbGeodeticDatum  : STRING,
+  wlbNsDeg  : STRING,
+  wlbNsMin  : STRING,
+  wlbNsSec  : STRING,
+  wlbNsCode  : STRING,
+  wlbEwDeg  : STRING,
+  wlbEwMin  : STRING,
+  wlbEwSec  : STRING,
+  wlbEwCode  : STRING,
+  wlbNsDecDeg  : STRING,
+  wlbEwDesDeg  : STRING,
+  wlbNsUtm  : STRING,
+  wlbEwUtm  : STRING,
+  wlbUtmZone  : STRING,
+  wlbNamePart1  : STRING,
+  wlbNamePart2  : STRING,
+  wlbNamePart3  : STRING,
+  wlbNamePart4  : STRING,
+  wlbNamePart5 : STRING,
+  wlbNamePart6 : STRING,
+  wlbPressReleaseUrl  : STRING,
+  wlbFactPageUrl  : STRING,
+  wlbFactMapUrl  : STRING,
+  wlbDiskosWellboreType  : STRING,
+  wlbDiskosWellboreParent  : STRING,
+  wlbWdssQcDate  : STRING,
+  wlbNpdidWellbore  : STRING,
+  dscNpdidDiscovery  : STRING,
+  fldNpdidField  : STRING,
+  fclNpdidFacilityDrilling  : STRING,
+  wlbNpdidWellboreReclass  : STRING,
+  prlNpdidProductionLicence  : STRING,
+  wlbDiskosWellOperator  : STRING,
+  wlbDateUpdated  : STRING,
+  wlbDateUpdatedMax  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+wellbore_formation_top {
+  wlbName  : STRING,
+  lsuTopDepth  : STRING,
+  lsuBottomDepth  : STRING,
+  lsuName  : STRING,
+  lsuLevel  : STRING,
+  lsuNameParent  : STRING,
+  wlbNpdidWellbore  : STRING,
+  lsuNpdidLithoStrat  : STRING,
+  lsuNpdidLithoStratParent  : STRING,
+  lsuWellboreUpdatedDate  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+wellbore_mud {
+  wlbName  : STRING,
+  wlbMD  : STRING,
+  wlbMudWeightAtMD  : STRING,
+  wlbMudViscosityAtMD  : STRING,
+  wlbYieldPointAtMD  : STRING,
+  wlbMudType  : STRING,
+  wlbMudDateMeasured  : STRING,
+  wlbNpdidWellbore  : STRING,
+  wlbMudDateUpdated  : STRING,
+  dateSyncNPD  : STRING,
+  wellbore_mud_id  : STRING 
+}
+
+wellbore_npdid_overview {
+  wlbWellboreName  : STRING,
+  wlbNpdidWellbore  : STRING,
+  wlbWell  : STRING,
+  wlbWellType  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+wellbore_oil_sample {
+  wlbName  : STRING,
+  wlbOilSampleTestType  : STRING,
+  wlbOilSampleTestNumber  : STRING,
+  wlbOilSampleTopDepth  : STRING,
+  wlbOilSampleBottomDepth  : STRING,
+  wlbOilSampleFluidType  : STRING,
+  wlbOilSampleTestDate  : STRING,
+  wlbOilSampledateReceivedDate  : STRING,
+  wlbNpdidWellbore  : STRING,
+  wlbOilSampleDateUpdated  : STRING,
+  dateSyncNPD  : STRING,
+  wellbore_oil_sample_id  : STRING 
+}
+
+wellbore_shallow_all {
+  wlbWellboreName  : STRING,
+  wlbNpdidWellbore  : STRING,
+  wlbWell  : STRING,
+  wlbDrillingOperator  : STRING,
+  wlbProductionLicence  : STRING,
+  wlbDrillingFacility  : STRING,
+  wlbEntryDate  : STRING,
+  wlbCompletionDate  : STRING,
+  wlbDrillPermit  : STRING,
+  wlbTotalDepth  : STRING,
+  wlbWaterDepth  : STRING,
+  wlbMainArea  : STRING,
+  wlbEntryYear  : STRING,
+  wlbCompletionYear  : STRING,
+  wlbSeismicLocation  : STRING,
+  wlbGeodeticDatum  : STRING,
+  wlbNsDeg  : STRING,
+  wlbNsMin  : STRING,
+  wlbNsSec  : STRING,
+  wlbNsCode  : STRING,
+  wlbEwDeg  : STRING,
+  wlbEwMin  : STRING,
+  wlbEwSec  : STRING,
+  wlbEwCode  : STRING,
+  wlbNsDecDeg  : STRING,
+  wlbEwDesDeg  : STRING,
+  wlbNsUtm  : STRING,
+  wlbEwUtm  : STRING,
+  wlbUtmZone  : STRING,
+  wlbNamePart1  : STRING,
+  wlbNamePart2  : STRING,
+  wlbNamePart3  : STRING,
+  wlbNamePart4  : STRING,
+  wlbNamePart5 : STRING,
+  wlbNamePart6 : STRING,
+  wlbDateUpdated  : STRING,
+  wlbDateUpdatedMax  : STRING,
+  dateSyncNPD  : STRING 
+}
+
+wlbPoint {
+  wlbNpdidWellbore  : STRING,
+  wlbWellName  : STRING,
+  wlbWellboreName  : STRING,
+  wlbField  : STRING,
+  wlbProductionLicence  : STRING,
+  wlbWellType  : STRING,
+  wlbDrillingOperator  : STRING,
+  wlbMultilateral  : STRING,
+  wlbDrillingFacility  : STRING,
+  wlbProductionFacility  : STRING,
+  wlbEntryDate  : STRING,
+  wlbCompletionDate  : STRING,
+  wlbContent  : STRING,
+  wlbStatus  : STRING,
+  wlbSymbol  : STRING,
+  wlbPurpose  : STRING,
+  wlbWaterDepth  : STRING,
+  wlbFactPageUrl  : STRING,
+  wlbFactMapUrl  : STRING,
+  wlbDiscoveryWellbore  : STRING 
+}
+
+
+
+
+
+
+
+AppraisalWellbore{
+X1 : STRING
+}
+ 
+ areaSize3DKm2{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ areaSize3DKm2Temp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ areaSizeTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+X6 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ AwardAreaTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING
+}
+ 
+ BAA{
+X1 : STRING
+}
+ 
+ BAAAreaTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING
+}
+ 
+ baaLicenseeTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ BAALicenseeTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING
+}
+ 
+ baaOperatorCompany{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ baaTransferCompanyTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ BAATransferTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING
+}
+ 
+ belongsToFacility{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ belongsToWell{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ blockIdTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ blockLocationTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+X6 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ BlockTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ BlowoutWellbore{
+X1 : STRING
+}
+ 
+ casingDepthTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ casingDiameterTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ casingTypeTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ ChangedAwardNotificationTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ ChangeOfCompanyNameTransferTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING
+}
+ 
+ codeEW{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ codeNS{
+X1 : STRING,
+X2 : STRING
+}
+ 
+
+ 
+ companyGroup{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ CompanyReserveTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ companyShareTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ ConcreteStructureFacility{
+X1 : STRING
+}
+ 
+ Condeep3ShaftsFacility{
+X1 : STRING
+}
+ 
+ Condeep4ShaftsFacility{
+X1 : STRING
+}
+ 
+ CondeepMonoshaftFacility{
+X1 : STRING
+}
+ 
+ CondensatePipeline{
+X1 : STRING
+}
+ 
+ containsWellboreTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ coordinateForSurveyTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ coordinateForWellbore{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ coreForWellboreTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ coreIntervalBottomTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ coreIntervalTopTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ coreIntervalUOMTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ coreNoTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ corePhotoForWellboreTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ corePhotoTitleTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ corePhotoURLTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ coresForWellbore{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ coresTotalLengthTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ coresTotalNo{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ countryTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ currentAreaSize{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ currentFieldOperator{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ currentFieldOwner{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ currentResponsibleCompany{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ currentStatus{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ dateApproved{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ dateAwarded{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ dateBaaAreaValidFromTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateBaaAreaValidToTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateBaaLicenseeValidFromTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateBaaLicenseeValidToTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateBaaValidFrom{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ dateBaaValidTo{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ dateFieldLicenseeFromTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateFieldLicenseeToTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateFieldOperatorFromTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateFieldOperatorToTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateFieldOwnerFromTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateFieldOwnerToTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateIncludedInField{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ dateInitialStatusToTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateLicenceAreaValidFromTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateLicenceAreaValidToTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateLicenceGranted{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ dateLicenceValidFrom{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ dateLicenceValidTo{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ dateLicenceValidToTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateLicenseeValidFromTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateLicenseeValidToTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateMessageRegisteredTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateMudMeasuredTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateOilSampleReceivedTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateOilSampleTestTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateOperatorValidFromTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateOperatorValidToTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateProductionStart{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ dateResourceEstimate{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ dateResourceEstimateTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateStatusFromTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateStatusToTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateStatusValidFromTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateStatusValidToTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateSurveyActualCompleted{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ dateSurveyActualStart{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ dateSurveyPlannedCompleted{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ dateSurveyPlannedStart{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ dateSurveyProgressTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateSyncNPD{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ dateSyncNPDTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+X6 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateTaskExpiryTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateTransferValidFromTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateTUFOperatorValidFromTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateTUFOperatorValidToTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateTUFOwnerValidFromTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateTUFOwnerValidToTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateUpdated{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ dateUpdatedMax{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ dateUpdatedTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+X6 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ dateWDSSQC{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ dateWellboreCompletion{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ dateWellboreEntry{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ decimalDegreesEW{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ decimalDegreesNS{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ degreesEW{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ degreesEWTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ degreesNS{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ degreesNSTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ DeletedEasementNotificationTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ dependsOnTaskTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ designLifetime{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ DevelopmentWellbore{
+X1 : STRING
+}
+ 
+ developmentWellboreForField{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ developmentWellboreForLicence{
+X1 : STRING,
+X2 : STRING
+}
+ 
+
+ DiscoveryAreaTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ DiscoveryReserveTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ discoveryWellbore{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ discoveryYear{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ documentFormatTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ documentForWellboreTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ documentNameTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ documentSizeTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ documentTypeTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ documentURLTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ DorisFacility{
+X1 : STRING
+}
+ 
+ drillingFacility{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ drillingOperatorCompany{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ drillPermit{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ DSTBottomHolePressureTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ DSTChokeSizeTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ DSTDepthFromTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ DSTDepthToTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ DSTFinalFlowPressureTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ DSTFinalShutInPressureTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ DSTForWellboreTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ DSTGasDensityTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ DSTGasOilRelationTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ DSTGasProducedRateTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ DSTOilDensityTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ DSTOilProducedRateTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ DSTTestNo{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ EasementNotificationTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ ElectromagneticSurvey{
+X1 : STRING
+}
+ 
+ ExplorationWellbore{
+X1 : STRING
+}
+ 
+ explorationWellboreForField{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ explorationWellboreForLicence{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ facilityFunction{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ FacilityPoint{
+X1 : STRING
+}
+ 
+ facilityType{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ factMapURL{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ factPageURL{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ factPageURLTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ FeederPipeline{
+X1 : STRING
+}
+ 
+
+ 
+ FieldAreaTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ FieldInvestmentTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ fieldLicenseeTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ FieldMonthlyProductionTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING
+}
+ 
+fieldOperatorTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ FieldOwnerTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING
+}
+ 
+ FieldReserve{
+X1 : STRING
+}
+ 
+ FieldStatusTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING
+}
+ 
+ FieldYearlyProductionTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ FixedFacility{
+X1 : STRING
+}
+ 
+ FPSOFacility{
+X1 : STRING
+}
+ 
+ FSUFacility{
+X1 : STRING
+}
+ 
+ GasPipeline{
+X1 : STRING
+}
+ 
+ geochronologicEra{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ geodeticDatum{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ GroundSurvey{
+X1 : STRING
+}
+ 
+ hydrocarbonType{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ idNPD{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ includedInField{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ InitialWellbore{
+X1 : STRING
+}
+ 
+ InjectionWellbore{
+X1 : STRING
+}
+ 
+ inLithostratigraphicUnit{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ inLithostratigraphicUnitTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ investmentForFieldTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ investmentNOKTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ isActive{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ isActiveTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ isCoreSampleAvailableTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ isCurrentLicenceLicensee{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ isCurrentLicenceOperator{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ isDiscoveryWellbore{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ isFormerLicenceLicensee{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ isFormerLicenceOperator{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ isGeometryOfFeature{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ isGeometryOfFeatureTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+X6 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ isGeotechnicalMeasurement{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ isMarketAvailable{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ isMultilateral{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ isReentryWellbore{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ isSamplingPerformed{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ isShallowDrillingPerformed{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ isStratigraphicalTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ isSurfaceFacility{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ isTurnAreaIncluded{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ Jacket12LegsFacility{
+X1 : STRING
+}
+ 
+ Jacket4LegsFacility{
+X1 : STRING
+}
+ 
+ Jacket6LegsFacility{
+X1 : STRING
+}
+ 
+ Jacket8LegsFacility{
+X1 : STRING
+}
+ 
+ JacketTripodFacility{
+X1 : STRING
+}
+ 
+ JackUp3LegsFacility{
+X1 : STRING
+}
+ 
+ JackUp4LegsFacility{
+X1 : STRING
+}
+ 
+ JunkedWellbore{
+X1 : STRING
+}
+ 
+ LandfallFacility{
+X1 : STRING
+}
+ 
+ lastOperatorCompanyTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+X6 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ lengthBoatTotalKm{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ lengthCdpTotalKm{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ lengthPlannedBoatKm{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ lengthPlannedBoatKmTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ lengthPlannedCdpKm{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ lengthPlannedCdpKmTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ licenceeForLicenceTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ licenceLicenceeCompanyTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ licenceLicenseeTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ licenceOperatorCompany{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ licenceOperatorCompanyTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ licenceTransferCompanyTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ licenseeForBAATemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ licenseeForFieldTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ licenseeForLicenceTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ licenseeInterestTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ licensingActivityName{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ LithostratigraphicUnit{
+X1 : STRING
+}
+ 
+ LoadingSystemFacility{
+X1 : STRING
+}
+ 
+ LOTForWellboreTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ LOTMudDensityTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ MainArea{
+X1 : STRING
+}
+ 
+ mainAreaLocation{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ mapNo{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ member{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ MergerTakeoverTransferTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING
+}
+ 
+ messageForLicenceTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ messageForTUFTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ messageNo{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ messageTypeTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ minutesEW{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ minutesEWTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ minutesNS{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ minutesNSTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ MonotowerFacility{
+X1 : STRING
+}
+ 
+ MopustorFacility{
+X1 : STRING
+}
+ 
+ MoveableFacility{
+X1 : STRING
+}
+ 
+ mudMeasuredDepthTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ mudTestForWellboreTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ mudTypeTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ mudViscosityTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ mudWeightTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ mudYieldPointTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ MultiFieldWellbore{
+X1 : STRING
+}
+ 
+ MultilateralWellbore{
+X1 : STRING
+}
+ 
+ MultiWellTemplateFacility{
+X1 : STRING
+}
+ 
+ name{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ nameTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ NCSMonthlyProductionTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ NCSYearlyProduction{
+X1 : STRING
+}
+ 
+ NewAwardNotificationTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ npdPageURLTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+X6 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ ObservationWellbore{
+X1 : STRING
+}
+ 
+ OilGasPipeline{
+X1 : STRING
+}
+ 
+ OilPipeline{
+X1 : STRING
+}
+ 
+ oilSampleBottomDepthTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ oilSampleFluidTypeTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ oilSampleTestForWellboreTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ oilSampleTestNumberTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ oilSampleTestTypeTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ oilSampleTopDepthTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ OnshoreFacility{
+X1 : STRING
+}
+ 
+ operatorForFieldTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ operatorForLicenceTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ originalAreaSize{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ OtherSurvey{
+X1 : STRING
+}
+ 
+ ownerForFieldTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ ParcellBAA{
+X1 : STRING
+}
+ 
+ PAWellbore{
+X1 : STRING
+}
+ 
+ Pipeline{
+X1 : STRING
+}
+ 
+ pipelineDimension{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ pipelineFromFacility{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ pipelineMainGrouping{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ pipelineMedium{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ pipelineOperator{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ pipelineToFacility{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ polygonNoTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ polygonPointNo{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ pressReleaseURL{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ producedCondensate{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ producedCondensateTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ producedGas{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ producedGasTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ producedNGL{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ producedNGLTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ producedOil{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ producedOilEquivalents{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ producedOilEquivalentsTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ producedOilTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ producedWater{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ producedWaterTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ productionFacility{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ ProductionLicence{
+X1 : STRING
+}
+ 
+ ProductionLicenceAreaPerBlockTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING
+}
+ 
+ ProductionLicenceAreaTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING
+}
+ 
+ ProductionLicenceLicenseeTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING
+}
+ 
+
+ProductionLicenceNotificationTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ ProductionLicenceOperatorTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING
+}
+ 
+ ProductionLicenceStatusTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING
+}
+ 
+ ProductionLicenceTransferTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING
+}
+ 
+ ProductionLicenceWorkObligationTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ productionMonth{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ productionMonthTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ ProductionWellbore{
+X1 : STRING
+}
+
+productionYearTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ provinceLocationTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ Quadrant{
+X1 : STRING
+}
+ 
+ quadrantLocation{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ reclassedFromWellbore{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ ReClassToDevWellbore{
+X1 : STRING
+}
+ 
+ ReClassToTestWellbore{
+X1 : STRING
+}
+ 
+ recoverableCondensate{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ recoverableCondensateTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ recoverableGas{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ recoverableGasTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ recoverableNGL{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ recoverableNGLTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ recoverableOil{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ recoverableOilEquivalents{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ recoverableOilEquivalentsTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ recoverableOilTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ ReEntryWellbore{
+X1 : STRING
+}
+ 
+ registeredInCountry{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ RegularSeismicSurvey{
+X1 : STRING
+}
+ 
+ remainingCondensate{
+X1 : STRING,
+X2 : STRING
+}
+ 
+remainingCondensateTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ remainingGas{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ remainingGasTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ remainingNGL{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ remainingNGLTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ remainingOil{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ remainingOilEquivalents{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ remainingOilEquivalentsTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ remainingOilTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ reportingCompany{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ reservesForCompanyTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ reservesForDiscoveryTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ reservesForField{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ reservesForFieldTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ reservesResourceClass{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ resourcesIncludedInDiscoveryTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ RouteSurvey{
+X1 : STRING
+}
+ 
+ SDFITemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ SDFITransferTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING
+}
+ 
+ SeabedSeismicSurvey{
+X1 : STRING
+}
+ 
+ secondsEW{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ secondsEWTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ secondsNS{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ secondsNSTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ SeismicAreaBAA{
+X1 : STRING
+}
+ 
+ SeismicSurvey{
+X1 : STRING
+}
+ 
+ SeismicSurveyCoordinateTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ SeismicSurveyProgressTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ SemisubConcreteFacility{
+X1 : STRING
+}
+ 
+ SemisubSteelFacility{
+X1 : STRING
+}
+ 
+ sensorLength{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ sensorLengthTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ sensorNumbers{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ sensorNumbersTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ sensorType{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ sensorTypeTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ ShallowWellbore{
+X1 : STRING
+}
+ 
+ shallowWellboreForLicence{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ shortName{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ SidetrackWellbore{
+X1 : STRING
+}
+ 
+ SingleWellTemplateFacility{
+X1 : STRING
+}
+ 
+ SiteSurvey{
+X1 : STRING
+}
+ 
+ SlidingScaleBAA{
+X1 : STRING
+}
+ 
+ sourceNumber{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ sourceNumberTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ sourcePressure{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ sourcePressureTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ sourceSize{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ sourceSizeTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ sourceType{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ sourceTypeTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ status{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ statusForFieldTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ statusForLicenceTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ statusForSurveyTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ statusTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ stratigraphicLevel{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ stratigraphicParent{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ stratumForWellboreTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ SubseaStructureFacility{
+X1 : STRING
+}
+ 
+ SurveyAreaTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ SurveyMultilineArea{
+X1 : STRING
+}
+ 
+ surveySubType{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ surveyType{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ SuspendedWellbore{
+X1 : STRING
+}
+ 
+ SuspReenteredLaterWellbore{
+X1 : STRING
+}
+ 
+ taskForCompanyTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ taskForLicenceTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ taskID{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ taskTypeTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ TlpConcreteFacility{
+X1 : STRING
+}
+ 
+ TlpSteelFacility{
+X1 : STRING
+}
+ 
+ transferDirectionTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ transferredBAATemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ transferredInterestTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ transferredLicenceTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ TransferTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING
+}
+ 
+ TransportationPipeline{
+X1 : STRING
+}
+ 
+ TUFacility{
+X1 : STRING
+}
+ 
+ TUFLicenceeCompanyTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ TUFLicenceeForTUFTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ TUFLicenseeTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ TUFNotificationTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ TUFOperatorCompany{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ TUFOperatorCompanyTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ TUFOperatorForLicenceTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ TUFOperatorTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING
+}
+ 
+ TUFOwnerCompanyTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ TUFOwnerForLicenceTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ TUFOwnerShareTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ TUFOwnerTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING
+}
+ 
+ UnitizedBAA{
+X1 : STRING
+}
+ 
+ utmEW{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ utmNS{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ utmZone{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ VesselFacility{
+X1 : STRING
+}
+ 
+ waterDepth{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ Well{
+X1 : STRING
+}
+ 
+ Wellbore{
+X1 : STRING
+}
+ 
+ wellboreAgeHcLevel1{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreAgeHcLevel2{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreAgeHcLevel3{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreAgeTD{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreBottomHoleTemperature{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ WellboreCasingAndLeakoffTestTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ wellboreCompletionYear{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreContent{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ WellboreCoordinate{
+X1 : STRING
+}
+ 
+ WellboreCorePhotoTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING
+}
+ 
+ WellboreCoreSet{
+X1 : STRING
+}
+ 
+ WellboreCoreTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING
+}
+ 
+ WellboreDocumentTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING
+}
+ 
+ wellboreDrillingDays{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ WellboreDrillingMudSampleTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ WellboreDrillStemTestTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ wellboreEntryYear{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreFinalVerticalDepth{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreForDiscovery{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreFormationHcLevel1{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreFormationHcLevel2{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreFormationHcLevel3{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreFormationTD{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreHoleDepthTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ wellboreHoleDiameterTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ wellboreKellyBushElevation{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreLicensingActivity{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreMaxInclation{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreNamePart1{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreNamePart2{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreNamePart3{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreNamePart4{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreNamePart5{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreNamePart6{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ WellboreOilSampleTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ wellboreParent{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellborePlannedContent{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellborePlannedPurpose{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellborePlotSymbol{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ WellborePoint{
+X1 : STRING
+}
+ 
+ wellborePurpose{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreReentryExplorationActivity{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreSeismicLocation{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ WellboreStratigraphicCoreSetTemp{
+X1 : STRING,
+X2 : STRING,
+Z1 : STRING
+}
+ 
+ wellboreStratumBottomDepthTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ WellboreStratumTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING
+}
+ 
+ wellboreStratumTopDepthTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+ wellboreTotalDepth{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreType{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreWaterDepth{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellboreWellType{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellOperator{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ wellType{
+X1 : STRING,
+X2 : STRING
+}
+ 
+ WildcatWellbore{
+X1 : STRING
+}
+ 
+ ZValueFromTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+X6 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+ 
+productionYear{
+X1 : STRING,
+X2 : STRING
+}
+
+Field{
+X1 : STRING
+}
+
+Company{
+X1 : STRING
+}
+
+ZValueToTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+X5 : STRING,
+X6 : STRING,
+Z1 : STRING,
+Z2 : STRING
+}
+
+FieldOperatorTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING
+}
+
+Discovery{
+X1 : STRING
+}
+
+FieldLicenseeTemp{
+X1 : STRING,
+X2 : STRING,
+X3 : STRING,
+X4 : STRING,
+Z1 : STRING
+}
+
+GeochronologicEra {
+	c0 : STRING
+}
+ConnectedTemporalRegion {
+	c0 : STRING
+}
+TimeOrdinalEraBoundary {
+	c0 : STRING
+}
+Concept {
+	c0 : STRING
+}
+TimeOrdinalReferenceSystem {
+	c0 : STRING
+}
+ConceptScheme {
+	c0 : STRING
+}
+AbandonedWell {
+	c0 : STRING
+}
+
+Agent {
+	c0 : STRING
+}
+DependentContinuant {
+	c0 : STRING
+}
+AppraisalWell {
+	c0 : STRING
+}
+ExplorationWell {
+	c0 : STRING
+}
+
+
+Area {
+	c0 : STRING
+}
+SpatialObject {
+	c0 : STRING
+}
+AreaFee {
+	c0 : STRING
+}
+Continuant {
+	c0 : STRING
+}
+AssociatedGas {
+	c0 : STRING
+}
+Gas {
+	c0 : STRING
+}
+Award {
+	c0 : STRING
+}
+AwardArea {
+	c0 : STRING
+}
+blockLocation {
+	c0 : STRING,
+	c1 : STRING
+}
+Thing {
+	c0 : STRING
+}
+npdPageURL {
+	c0 : STRING,
+	c1 : STRING
+}
+provinceLocation {
+	c0 : STRING,
+	c1 : STRING
+}
+
+blockId {
+	c0 : STRING,
+	c1 : STRING
+}
+Literal {
+	c0 : STRING
+}
+asWKT {
+	c0 : STRING,
+	c1 : STRING
+}
+
+
+BAAArea {
+	c0 : STRING
+}
+country {
+	c0 : STRING,
+	c1 : STRING
+}
+
+areaSize {
+	c0 : STRING,
+	c1 : STRING
+}
+dateBaaAreaValidFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+
+polygonNo {
+	c0 : STRING,
+	c1 : STRING
+}
+BAALicensee {
+	c0 : STRING
+}
+Licensee {
+	c0 : STRING
+}
+baaLicensee {
+	c0 : STRING,
+	c1 : STRING
+}
+licenseeForBAA {
+	c0 : STRING,
+	c1 : STRING
+}
+dateBaaLicenseeValidFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+licenseeInterest {
+	c0 : STRING,
+	c1 : STRING
+}
+BAATransfer {
+	c0 : STRING
+}
+Transfer {
+	c0 : STRING
+}
+baaTransferCompany {
+	c0 : STRING,
+	c1 : STRING
+}
+transferredBAA {
+	c0 : STRING,
+	c1 : STRING
+}
+dateTransferValidFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+transferDirection {
+	c0 : STRING,
+	c1 : STRING
+}
+transferredInterest {
+	c0 : STRING,
+	c1 : STRING
+}
+Block {
+	c0 : STRING
+}
+containsWellbore {
+	c0 : STRING,
+	c1 : STRING
+}
+BlowOut {
+	c0 : STRING
+}
+TemporalInstant {
+	c0 : STRING
+}
+
+ChangeOfCompanyNameTransfer {
+	c0 : STRING
+}
+CommercialDiscovery {
+	c0 : STRING
+}
+
+CompanyReserve {
+	c0 : STRING
+}
+Reserve {
+	c0 : STRING
+}
+reservesForCompany {
+	c0 : STRING,
+	c1 : STRING
+}
+
+
+companyShare {
+	c0 : STRING,
+	c1 : STRING
+}
+
+
+CompressedNaturalGas {
+	c0 : STRING
+}
+
+
+Facility {
+	c0 : STRING
+}
+
+
+
+
+Condensate {
+	c0 : STRING
+}
+
+
+
+
+ContingentResources {
+	c0 : STRING
+}
+MaterialEntity {
+	c0 : STRING
+}
+CrudeOil {
+	c0 : STRING
+}
+Oil {
+	c0 : STRING
+}
+DevelopmentWell {
+	c0 : STRING
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DiscoveryArea {
+	c0 : STRING
+}
+resourcesIncludedInDiscovery {
+	c0 : STRING,
+	c1 : STRING
+}
+DiscoveryReserve {
+	c0 : STRING
+}
+reservesForDiscovery {
+	c0 : STRING,
+	c1 : STRING
+}
+
+DiscoveryWellbore {
+	c0 : STRING
+}
+
+DryGas {
+	c0 : STRING
+}
+
+Survey {
+	c0 : STRING
+}
+Equipment {
+	c0 : STRING
+}
+Object {
+	c0 : STRING
+}
+
+
+Point {
+	c0 : STRING
+}
+
+
+
+
+IndependentContinuant {
+	c0 : STRING
+}
+
+FieldArea {
+	c0 : STRING
+}
+FieldInvestment {
+	c0 : STRING
+}
+ProcessualEntity {
+	c0 : STRING
+}
+investmentForField {
+	c0 : STRING,
+	c1 : STRING
+}
+investmentNOK {
+	c0 : STRING,
+	c1 : STRING
+}
+
+FieldLicensee {
+	c0 : STRING
+}
+fieldLicensee {
+	c0 : STRING,
+	c1 : STRING
+}
+licenseeForField {
+	c0 : STRING,
+	c1 : STRING
+}
+dateFieldLicenseeFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+dateFieldOwnerFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+FieldMonthlyProduction {
+	c0 : STRING
+}
+
+
+
+
+FieldOperator {
+	c0 : STRING
+}
+Operator {
+	c0 : STRING
+}
+fieldOperator {
+	c0 : STRING,
+	c1 : STRING
+}
+operatorForField {
+	c0 : STRING,
+	c1 : STRING
+}
+dateFieldOperatorFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+FieldOwner {
+	c0 : STRING
+}
+Owner {
+	c0 : STRING
+}
+ownerForField {
+	c0 : STRING,
+	c1 : STRING
+}
+
+FieldStatus {
+	c0 : STRING
+}
+Quality {
+	c0 : STRING
+}
+statusForField {
+	c0 : STRING,
+	c1 : STRING
+}
+dateStatusFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+FieldYearlyProduction {
+	c0 : STRING
+}
+
+
+
+Formation {
+	c0 : STRING
+}
+
+Petroleum {
+	c0 : STRING
+}
+
+
+Group {
+	c0 : STRING
+}
+
+InjectionWell {
+	c0 : STRING
+}
+RecoveryWell {
+	c0 : STRING
+}
+
+
+Kick {
+	c0 : STRING
+}
+Occurrent {
+	c0 : STRING
+}
+KickOffPoint {
+	c0 : STRING
+}
+
+LicencedAcreage {
+	c0 : STRING
+}
+LiquefiedNaturalGas {
+	c0 : STRING
+}
+LiquefiedPetroleumGas {
+	c0 : STRING
+}
+Site {
+	c0 : STRING
+}
+
+
+Member {
+	c0 : STRING
+}
+MergerTakeoverTransfer {
+	c0 : STRING
+}
+
+
+MultibranchWell {
+	c0 : STRING
+}
+MultifieldWellbore {
+	c0 : STRING
+}
+MultilateralWell {
+	c0 : STRING
+}
+
+MultipurposeWellbore {
+	c0 : STRING
+}
+NCSMonthlyProduction {
+	c0 : STRING
+}
+
+NaturalGasLiquid {
+	c0 : STRING
+}
+ObservationWell {
+	c0 : STRING
+}
+
+OilEquivalents {
+	c0 : STRING
+}
+ObjectAggregate {
+	c0 : STRING
+}
+
+
+PetroleumActivity {
+	c0 : STRING
+}
+PetroleumDeposit {
+	c0 : STRING
+}
+
+
+
+
+
+Plan {
+	c0 : STRING
+}
+PlanForDevelopmentAndOperationOfPetroleumDeposits {
+	c0 : STRING
+}
+PlanForInstallationAndOperation {
+	c0 : STRING
+}
+Play {
+	c0 : STRING
+}
+
+
+ProductionLicenceArea {
+	c0 : STRING
+}
+lastOperatorCompany {
+	c0 : STRING,
+	c1 : STRING
+}
+ZValueFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+ZValueTo {
+	c0 : STRING,
+	c1 : STRING
+}
+dateLicenceAreaValidFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+isStratigraphical {
+	c0 : STRING,
+	c1 : STRING
+}
+ProductionLicenceAreaPerBlock {
+	c0 : STRING
+}
+ProductionLicenceLicensee {
+	c0 : STRING
+}
+licenceLicensee {
+	c0 : STRING,
+	c1 : STRING
+}
+licenseeForLicence {
+	c0 : STRING,
+	c1 : STRING
+}
+dateLicenseeValidFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+ProductionLicenceOperator {
+	c0 : STRING
+}
+
+operatorForLicence {
+	c0 : STRING,
+	c1 : STRING
+}
+dateOperatorValidFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+ProductionLicenceStatus {
+	c0 : STRING
+}
+statusForLicence {
+	c0 : STRING,
+	c1 : STRING
+}
+dateInitialStatusTo {
+	c0 : STRING,
+	c1 : STRING
+}
+ProductionLicenceTransfer {
+	c0 : STRING
+}
+licenceTransferCompany {
+	c0 : STRING,
+	c1 : STRING
+}
+transferredLicence {
+	c0 : STRING,
+	c1 : STRING
+}
+ProductionLicenceWorkObligation {
+	c0 : STRING
+}
+taskForCompany {
+	c0 : STRING,
+	c1 : STRING
+}
+taskForLicence {
+	c0 : STRING,
+	c1 : STRING
+}
+dateTaskExpiry {
+	c0 : STRING,
+	c1 : STRING
+}
+
+taskType {
+	c0 : STRING,
+	c1 : STRING
+}
+ProductionWell {
+	c0 : STRING
+}
+
+Prospect {
+	c0 : STRING
+}
+
+
+Recovery {
+	c0 : STRING
+}
+Refining {
+	c0 : STRING
+}
+
+
+
+RichGas {
+	c0 : STRING
+}
+Rig {
+	c0 : STRING
+}
+Riser {
+	c0 : STRING
+}
+
+Royalty {
+	c0 : STRING
+}
+SDFITransfer {
+	c0 : STRING
+}
+
+
+
+SeismicSurveyCoordinate {
+	c0 : STRING
+}
+coordinateForSurvey {
+	c0 : STRING,
+	c1 : STRING
+}
+
+SeismicSurveyProgress {
+	c0 : STRING
+}
+statusForSurvey {
+	c0 : STRING,
+	c1 : STRING
+}
+dateSurveyProgress {
+	c0 : STRING,
+	c1 : STRING
+}
+
+ShallowWell {
+	c0 : STRING
+}
+
+
+Sidetrack {
+	c0 : STRING
+}
+
+
+
+SubseaCompletedWell {
+	c0 : STRING
+}
+
+SurveyArea {
+	c0 : STRING
+}
+
+TUFOperator {
+	c0 : STRING
+}
+
+TUFOperatorForLicence {
+	c0 : STRING,
+	c1 : STRING
+}
+dateTUFOperatorValidFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+TUFOwner {
+	c0 : STRING
+}
+TUFOwnerCompany {
+	c0 : STRING,
+	c1 : STRING
+}
+TUFOwnerForLicence {
+	c0 : STRING,
+	c1 : STRING
+}
+TUFOwnerShare {
+	c0 : STRING,
+	c1 : STRING
+}
+dateTUFOwnerValidFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+TechnicalDiscovery {
+	c0 : STRING
+}
+TechnicalSideTrack {
+	c0 : STRING
+}
+TerminationPlan {
+	c0 : STRING
+}
+TerminationPoint {
+	c0 : STRING
+}
+TestProductionWell {
+	c0 : STRING
+}
+
+string {
+	c0 : STRING
+}
+
+WellHead {
+	c0 : STRING
+}
+WellTarget {
+	c0 : STRING
+}
+WellTrack {
+	c0 : STRING
+}
+WellboreCasingAndLeakoffTest {
+	c0 : STRING
+}
+LOTForWellbore {
+	c0 : STRING,
+	c1 : STRING
+}
+LOTMudDensity {
+	c0 : STRING,
+	c1 : STRING
+}
+casingDepth {
+	c0 : STRING,
+	c1 : STRING
+}
+wellboreHoleDepth {
+	c0 : STRING,
+	c1 : STRING
+}
+
+
+WellboreCore {
+	c0 : STRING
+}
+coreForWellbore {
+	c0 : STRING,
+	c1 : STRING
+}
+coreNo {
+	c0 : STRING,
+	c1 : STRING
+}
+isCoreSampleAvailable {
+	c0 : STRING,
+	c1 : STRING
+}
+WellboreCorePhoto {
+	c0 : STRING
+}
+corePhotoForWellbore {
+	c0 : STRING,
+	c1 : STRING
+}
+corePhotoURL {
+	c0 : STRING,
+	c1 : STRING
+}
+corePhotoTitle {
+	c0 : STRING,
+	c1 : STRING
+}
+
+coresTotalLength {
+	c0 : STRING,
+	c1 : STRING
+}
+
+WellboreDocument {
+	c0 : STRING
+}
+documentForWellbore {
+	c0 : STRING,
+	c1 : STRING
+}
+documentURL {
+	c0 : STRING,
+	c1 : STRING
+}
+documentFormat {
+	c0 : STRING,
+	c1 : STRING
+}
+documentName {
+	c0 : STRING,
+	c1 : STRING
+}
+documentSize {
+	c0 : STRING,
+	c1 : STRING
+}
+documentType {
+	c0 : STRING,
+	c1 : STRING
+}
+WellboreDrillStemTest {
+	c0 : STRING
+}
+DSTForWellbore {
+	c0 : STRING,
+	c1 : STRING
+}
+DSTBottomHolePressure {
+	c0 : STRING,
+	c1 : STRING
+}
+DSTChokeSize {
+	c0 : STRING,
+	c1 : STRING
+}
+DSTDepthFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+DSTDepthTo {
+	c0 : STRING,
+	c1 : STRING
+}
+DSTFinalFlowPressure {
+	c0 : STRING,
+	c1 : STRING
+}
+DSTFinalShutInPressure {
+	c0 : STRING,
+	c1 : STRING
+}
+DSTGasDensity {
+	c0 : STRING,
+	c1 : STRING
+}
+DSTGasOilRelation {
+	c0 : STRING,
+	c1 : STRING
+}
+DSTGasProducedRate {
+	c0 : STRING,
+	c1 : STRING
+}
+DSTOilDensity {
+	c0 : STRING,
+	c1 : STRING
+}
+DSTOilProducedRate {
+	c0 : STRING,
+	c1 : STRING
+}
+
+WellboreDrillingMudSample {
+	c0 : STRING
+}
+mudTestForWellbore {
+	c0 : STRING,
+	c1 : STRING
+}
+mudMeasuredDepth {
+	c0 : STRING,
+	c1 : STRING
+}
+mudViscosity {
+	c0 : STRING,
+	c1 : STRING
+}
+mudWeight {
+	c0 : STRING,
+	c1 : STRING
+}
+mudYieldPoint {
+	c0 : STRING,
+	c1 : STRING
+}
+WellboreOilSample {
+	c0 : STRING
+}
+oilSampleTestForWellbore {
+	c0 : STRING,
+	c1 : STRING
+}
+oilSampleBottomDepth {
+	c0 : STRING,
+	c1 : STRING
+}
+oilSampleTopDepth {
+	c0 : STRING,
+	c1 : STRING
+}
+
+WellboreStratigraphicCoreSet {
+	c0 : STRING
+}
+
+WellboreStratum {
+	c0 : STRING
+}
+stratumForWellbore {
+	c0 : STRING,
+	c1 : STRING
+}
+wellboreStratumBottomDepth {
+	c0 : STRING,
+	c1 : STRING
+}
+wellboreStratumTopDepth {
+	c0 : STRING,
+	c1 : STRING
+}
+WetGas {
+	c0 : STRING
+}
+WildcatWell {
+	c0 : STRING
+}
+
+ChangedAwardNotification {
+	c0 : STRING
+}
+Notification {
+	c0 : STRING
+}
+DeletedEasementNotification {
+	c0 : STRING
+}
+EasementNotification {
+	c0 : STRING
+}
+NewAwardNotification {
+	c0 : STRING
+}
+
+
+licenceLicenceeCompany {
+	c0 : STRING,
+	c1 : STRING
+}
+licenceeForLicence {
+	c0 : STRING,
+	c1 : STRING
+}
+ProductionLicenceNotification {
+	c0 : STRING
+}
+messageForLicence {
+	c0 : STRING,
+	c1 : STRING
+}
+dateMessageRegistered {
+	c0 : STRING,
+	c1 : STRING
+}
+
+messageType {
+	c0 : STRING,
+	c1 : STRING
+}
+TUFLicensee {
+	c0 : STRING
+}
+TUFLicenceeCompany {
+	c0 : STRING,
+	c1 : STRING
+}
+TUFLicenceeForTUF {
+	c0 : STRING,
+	c1 : STRING
+}
+TUFNotification {
+	c0 : STRING
+}
+messageForTUF {
+	c0 : STRING,
+	c1 : STRING
+}
+Entity {
+	c0 : STRING
+}
+Disposition {
+	c0 : STRING
+}
+RealizableEntity {
+	c0 : STRING
+}
+FiatObjectPart {
+	c0 : STRING
+}
+Function {
+	c0 : STRING
+}
+GenericallyDependentContinuant {
+	c0 : STRING
+}
+ObjectBoundary {
+	c0 : STRING
+}
+OneDimensionalRegion {
+	c0 : STRING
+}
+SpatialRegion {
+	c0 : STRING
+}
+SpecificallyDependentContinuant {
+	c0 : STRING
+}
+Role {
+	c0 : STRING
+}
+ThreeDimensionalRegion {
+	c0 : STRING
+}
+TwoDimensionalRegion {
+	c0 : STRING
+}
+ZeroDimensionalRegion {
+	c0 : STRING
+}
+ConnectedSpatiotemporalRegion {
+	c0 : STRING
+}
+SpatiotemporalRegion {
+	c0 : STRING
+}
+TemporalRegion {
+	c0 : STRING
+}
+FiatProcessPart {
+	c0 : STRING
+}
+Process {
+	c0 : STRING
+}
+ProcessAggregate {
+	c0 : STRING
+}
+ProcessBoundary {
+	c0 : STRING
+}
+ProcessualContext {
+	c0 : STRING
+}
+ScatteredSpatiotemporalRegion {
+	c0 : STRING
+}
+ScatteredTemporalRegion {
+	c0 : STRING
+}
+SpatiotemporalInstant {
+	c0 : STRING
+}
+SpatiotemporalInterval {
+	c0 : STRING
+}
+TemporalInterval {
+	c0 : STRING
+}
+Feature {
+	c0 : STRING
+}
+Geometry {
+	c0 : STRING
+}
+AbstractCurveSegment {
+	c0 : STRING
+}
+AbstractGeometricPrimitive {
+	c0 : STRING
+}
+AbstractGeometry {
+	c0 : STRING
+}
+AbstractGriddedSurface {
+	c0 : STRING
+}
+AbstractParametricCurveSurface {
+	c0 : STRING
+}
+AbstractSurfacePatch {
+	c0 : STRING
+}
+Arc {
+	c0 : STRING
+}
+ArcString {
+	c0 : STRING
+}
+ArcByBulge {
+	c0 : STRING
+}
+ArcStringByBulge {
+	c0 : STRING
+}
+ArcByCenterPoint {
+	c0 : STRING
+}
+BSpline {
+	c0 : STRING
+}
+SplineCurve {
+	c0 : STRING
+}
+Bezler {
+	c0 : STRING
+}
+Circle {
+	c0 : STRING
+}
+CircleByCenterPoint {
+	c0 : STRING
+}
+Clothoid {
+	c0 : STRING
+}
+Composite {
+	c0 : STRING
+}
+GeometricComplex {
+	c0 : STRING
+}
+CompositeCurve {
+	c0 : STRING
+}
+OrientableCurve {
+	c0 : STRING
+}
+CompositeSolid {
+	c0 : STRING
+}
+Solid {
+	c0 : STRING
+}
+CompositeSurface {
+	c0 : STRING
+}
+OrientableSurface {
+	c0 : STRING
+}
+Cone {
+	c0 : STRING
+}
+CubicSpline {
+	c0 : STRING
+}
+PolynomialSpline {
+	c0 : STRING
+}
+Curve {
+	c0 : STRING
+}
+Cylinder {
+	c0 : STRING
+}
+Geodesic {
+	c0 : STRING
+}
+GeodesicString {
+	c0 : STRING
+}
+LineString {
+	c0 : STRING
+}
+LineStringSegment {
+	c0 : STRING
+}
+LinearRing {
+	c0 : STRING
+}
+Ring {
+	c0 : STRING
+}
+MultiCurve {
+	c0 : STRING
+}
+MultiGeometry {
+	c0 : STRING
+}
+MultiPoint {
+	c0 : STRING
+}
+MultiSolid {
+	c0 : STRING
+}
+MultiSurface {
+	c0 : STRING
+}
+OffsetCurve {
+	c0 : STRING
+}
+Polygon {
+	c0 : STRING
+}
+Surface {
+	c0 : STRING
+}
+PolygonPatch {
+	c0 : STRING
+}
+PolyhedralSurface {
+	c0 : STRING
+}
+Rectangle {
+	c0 : STRING
+}
+Shell {
+	c0 : STRING
+}
+Sphere {
+	c0 : STRING
+}
+Tin {
+	c0 : STRING
+}
+TriangulatedSurface {
+	c0 : STRING
+}
+Triangle {
+	c0 : STRING
+}
+GeometryCollection {
+	c0 : STRING
+}
+Line {
+	c0 : STRING
+}
+MultiLineString {
+	c0 : STRING
+}
+MultiPolygon {
+	c0 : STRING
+}
+TIN {
+	c0 : STRING
+}
+OrderedCollection {
+	c0 : STRING
+}
+Collection {
+	c0 : STRING
+}
+wellboreForField {
+	c0 : STRING,
+	c1 : STRING
+}
+hasGeometry {
+	c0 : STRING,
+	c1 : STRING
+}
+
+shallowWellboreForField {
+	c0 : STRING,
+	c1 : STRING
+}
+wellboreAgeHc {
+	c0 : STRING,
+	c1 : STRING
+}
+
+
+wellboreFormationHc {
+	c0 : STRING,
+	c1 : STRING
+}
+
+defaultGeometry {
+	c0 : STRING,
+	c1 : STRING
+}
+ehContains {
+	c0 : STRING,
+	c1 : STRING
+}
+ehCoveredBy {
+	c0 : STRING,
+	c1 : STRING
+}
+ehCovers {
+	c0 : STRING,
+	c1 : STRING
+}
+ehDisjoint {
+	c0 : STRING,
+	c1 : STRING
+}
+ehEquals {
+	c0 : STRING,
+	c1 : STRING
+}
+ehInside {
+	c0 : STRING,
+	c1 : STRING
+}
+ehMeet {
+	c0 : STRING,
+	c1 : STRING
+}
+ehOverlap {
+	c0 : STRING,
+	c1 : STRING
+}
+rcc8dc {
+	c0 : STRING,
+	c1 : STRING
+}
+rcc8ec {
+	c0 : STRING,
+	c1 : STRING
+}
+rcc8eq {
+	c0 : STRING,
+	c1 : STRING
+}
+rcc8ntpp {
+	c0 : STRING,
+	c1 : STRING
+}
+rcc8ntppi {
+	c0 : STRING,
+	c1 : STRING
+}
+rcc8po {
+	c0 : STRING,
+	c1 : STRING
+}
+rcc8tpp {
+	c0 : STRING,
+	c1 : STRING
+}
+rcc8tppi {
+	c0 : STRING,
+	c1 : STRING
+}
+sfContains {
+	c0 : STRING,
+	c1 : STRING
+}
+sfCrosses {
+	c0 : STRING,
+	c1 : STRING
+}
+sfDisjoint {
+	c0 : STRING,
+	c1 : STRING
+}
+sfEquals {
+	c0 : STRING,
+	c1 : STRING
+}
+sfIntersects {
+	c0 : STRING,
+	c1 : STRING
+}
+sfOverlaps {
+	c0 : STRING,
+	c1 : STRING
+}
+sfTouches {
+	c0 : STRING,
+	c1 : STRING
+}
+sfWithin {
+	c0 : STRING,
+	c1 : STRING
+}
+broadMatch {
+	c0 : STRING,
+	c1 : STRING
+}
+narrowMatch {
+	c0 : STRING,
+	c1 : STRING
+}
+broader {
+	c0 : STRING,
+	c1 : STRING
+}
+narrower {
+	c0 : STRING,
+	c1 : STRING
+}
+broaderTransitive {
+	c0 : STRING,
+	c1 : STRING
+}
+narrowerTransitive {
+	c0 : STRING,
+	c1 : STRING
+}
+semanticRelation {
+	c0 : STRING,
+	c1 : STRING
+}
+closeMatch {
+	c0 : STRING,
+	c1 : STRING
+}
+mappingRelation {
+	c0 : STRING,
+	c1 : STRING
+}
+exactMatch {
+	c0 : STRING,
+	c1 : STRING
+}
+related {
+	c0 : STRING,
+	c1 : STRING
+}
+relatedMatch {
+	c0 : STRING,
+	c1 : STRING
+}
+casingDiameter {
+	c0 : STRING,
+	c1 : STRING
+}
+casingType {
+	c0 : STRING,
+	c1 : STRING
+}
+
+coreIntervalBottom {
+	c0 : STRING,
+	c1 : STRING
+}
+coreIntervalTop {
+	c0 : STRING,
+	c1 : STRING
+}
+dateBaaAreaValidTo {
+	c0 : STRING,
+	c1 : STRING
+}
+dateBaaLicenseeValidTo {
+	c0 : STRING,
+	c1 : STRING
+}
+
+dateFieldLicenseeTo {
+	c0 : STRING,
+	c1 : STRING
+}
+dateFieldOperatorTo {
+	c0 : STRING,
+	c1 : STRING
+}
+
+dateLicenseeValidTo {
+	c0 : STRING,
+	c1 : STRING
+}
+dateMudMeasured {
+	c0 : STRING,
+	c1 : STRING
+}
+dateOilSampleReceived {
+	c0 : STRING,
+	c1 : STRING
+}
+dateOilSampleTest {
+	c0 : STRING,
+	c1 : STRING
+}
+
+dateStatusTo {
+	c0 : STRING,
+	c1 : STRING
+}
+dateStatusValidFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+dateStatusValidTo {
+	c0 : STRING,
+	c1 : STRING
+}
+
+
+dateTUFOperatorValidTo {
+	c0 : STRING,
+	c1 : STRING
+}
+dateTUFOwnerValidTo {
+	c0 : STRING,
+	c1 : STRING
+}
+
+
+mudType {
+	c0 : STRING,
+	c1 : STRING
+}
+oilSampleFluidType {
+	c0 : STRING,
+	c1 : STRING
+}
+oilSampleTestNumber {
+	c0 : STRING,
+	c1 : STRING
+}
+oilSampleTestType {
+	c0 : STRING,
+	c1 : STRING
+}
+
+wellboreHoleDiameter {
+	c0 : STRING,
+	c1 : STRING
+}
+
+asGML {
+	c0 : STRING,
+	c1 : STRING
+}
+coordinateDimension {
+	c0 : STRING,
+	c1 : STRING
+}
+dimension {
+	c0 : STRING,
+	c1 : STRING
+}
+hasSerialization {
+	c0 : STRING,
+	c1 : STRING
+}
+isEmpty {
+	c0 : STRING,
+	c1 : STRING
+}
+isSimple {
+	c0 : STRING,
+	c1 : STRING
+}
+spatialDimension {
+	c0 : STRING,
+	c1 : STRING
+}
+
+dateFieldOwnerTo{
+	c0 : STRING,
+	c1 : STRING
+}
+
+coreIntervalUOM{
+c0 : STRING,
+	c1 : STRING
+}
+
+dateOperatorValidTo{
+c0 : STRING,
+	c1 : STRING
+}
+
+SDFI{
+c0 : STRING,
+	c1 : STRING
+}
+
+dateLicenceAreaValidTo{
+c0 : STRING,
+	c1 : STRING
+}
+
+dependsOnTask{
+c0 : STRING,
+	c1 : STRING
+}

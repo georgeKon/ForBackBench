@@ -4,7 +4,6 @@ v0{
 
 v1{
 	c0 : STRING,
-	c1 : STRING,
 }
 
 v2{
@@ -12,6 +11,23 @@ v2{
 }
 
 v3{
+	c0 : STRING,
+}
+
+v4{
+	c0 : STRING,
+}
+
+v5{
+	c0 : STRING,
+}
+
+v6{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+v7{
 	c0 : STRING,
 	c1 : STRING,
 }

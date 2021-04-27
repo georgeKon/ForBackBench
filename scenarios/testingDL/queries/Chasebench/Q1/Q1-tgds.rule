@@ -1,56 +1,97 @@
-src_Acquisition(?X) -> Transaction(?X), Thing(?X), isExecutedFor(?X,?0A1), Investor(?0A1), Person(?0A1), Thing(?0A1), hasAddress(?0A1,?0A2), Address(?0A2), Thing(?0A2), inverseofhasAddress(?0A2,?0A3), Person(?0A3), Thing(?0A3), hasAddress(?0A3,?0A4), Thing(?0A4), hasAddress(?0A3,?0A2), Thing(?0A3), Thing(?0A2), Thing(?0A1), isExecutedBy(?X,?0A5), StockExchangeMember(?0A5), Person(?0A5), Thing(?0A5), hasAddress(?0A5,?0A6), Address(?0A6), Thing(?0A6), inverseofhasAddress(?0A6,?0A7), Person(?0A7), Thing(?0A7), hasAddress(?0A7,?0A8), Thing(?0A8), hasAddress(?0A7,?0A6), Thing(?0A7), Thing(?0A6), Thing(?0A5), involvesInstrument(?X,?0A9), FinantialInstrument(?0A9), Thing(?0A9) .
-src_Address(?X) -> Thing(?X), inverseofhasAddress(?X,?1A1), Person(?1A1), Thing(?1A1), hasAddress(?1A1,?1A2), Address(?1A2), Thing(?1A2), inverseofhasAddress(?1A2,?1A3), Person(?1A3), hasAddress(?1A3,?1A2), Thing(?1A3), Thing(?1A2), hasAddress(?1A1,?X), Thing(?1A1) .
-src_Company(?X) -> LegalPerson(?X), Person(?X), Thing(?X), hasAddress(?X,?2A1), Address(?2A1), Thing(?2A1), inverseofhasAddress(?2A1,?2A2), Person(?2A2), Thing(?2A2), hasAddress(?2A2,?2A3), Address(?2A3), Thing(?2A3), hasAddress(?2A2,?2A1), Thing(?2A2), Thing(?2A1) .
-src_Dealer(?X) -> StockBroker(?X), StockExchangeMember(?X), Person(?X), Thing(?X), hasAddress(?X,?3A1), Address(?3A1), Thing(?3A1), inverseofhasAddress(?3A1,?3A2), Person(?3A2), Thing(?3A2), hasAddress(?3A2,?3A3), Address(?3A3), Thing(?3A3), hasAddress(?3A2,?3A1), Thing(?3A2), Thing(?3A1), tradesOnBehalfOf(?X,?3A4), Thing(?3A4) .
-src_Investor(?X) -> Person(?X), Thing(?X), hasAddress(?X,?4A1), Address(?4A1), Thing(?4A1), inverseofhasAddress(?4A1,?4A2), Person(?4A2), Thing(?4A2), hasAddress(?4A2,?4A3), Address(?4A3), Thing(?4A3), hasAddress(?4A2,?4A1), Thing(?4A2), Thing(?4A1) .
-src_LegalPerson(?X) -> Person(?X), Thing(?X), hasAddress(?X,?5A1), Address(?5A1), Thing(?5A1), inverseofhasAddress(?5A1,?5A2), Person(?5A2), Thing(?5A2), hasAddress(?5A2,?5A3), Address(?5A3), Thing(?5A3), hasAddress(?5A2,?5A1), Thing(?5A2), Thing(?5A1) .
-src_Offer(?X) -> Transaction(?X), Thing(?X), isExecutedFor(?X,?6A1), Investor(?6A1), Person(?6A1), Thing(?6A1), hasAddress(?6A1,?6A2), Address(?6A2), Thing(?6A2), inverseofhasAddress(?6A2,?6A3), Person(?6A3), Thing(?6A3), hasAddress(?6A3,?6A4), Thing(?6A4), hasAddress(?6A3,?6A2), Thing(?6A3), Thing(?6A2), Thing(?6A1), isExecutedBy(?X,?6A5), StockExchangeMember(?6A5), Person(?6A5), Thing(?6A5), hasAddress(?6A5,?6A6), Address(?6A6), Thing(?6A6), inverseofhasAddress(?6A6,?6A7), Person(?6A7), Thing(?6A7), hasAddress(?6A7,?6A8), Thing(?6A8), hasAddress(?6A7,?6A6), Thing(?6A7), Thing(?6A6), Thing(?6A5), involvesInstrument(?X,?6A9), FinantialInstrument(?6A9), Thing(?6A9) .
-src_Person(?X) -> Thing(?X), hasAddress(?X,?7A1), Address(?7A1), Thing(?7A1), inverseofhasAddress(?7A1,?7A2), Person(?7A2), Thing(?7A2), hasAddress(?7A2,?7A3), Address(?7A3), Thing(?7A3), hasAddress(?7A2,?7A1), Thing(?7A2), Thing(?7A1) .
-src_PhysicalPerson(?X) -> Person(?X), Thing(?X), hasAddress(?X,?8A1), Address(?8A1), Thing(?8A1), inverseofhasAddress(?8A1,?8A2), Person(?8A2), Thing(?8A2), hasAddress(?8A2,?8A3), Address(?8A3), Thing(?8A3), hasAddress(?8A2,?8A1), Thing(?8A2), Thing(?8A1), LegalPerson(?X) .
-src_Stock(?X) -> FinantialInstrument(?X), isListedIn(?X,?9A1), StockExchangeList(?9A1), listsStock(?9A1,?X), Thing(?9A1), belongsToCompany(?X,?9A2), Company(?9A2), LegalPerson(?9A2), Person(?9A2), Thing(?9A2), hasAddress(?9A2,?9A3), Address(?9A3), Thing(?9A3), inverseofhasAddress(?9A3,?9A4), Person(?9A4), Thing(?9A4), hasAddress(?9A4,?9A5), Thing(?9A5), hasAddress(?9A4,?9A3), Thing(?9A4), Thing(?9A3), hasStock(?9A2,?X), Thing(?9A2) .
-src_StockBroker(?X) -> StockExchangeMember(?X), Person(?X), Thing(?X), hasAddress(?X,?10A1), Address(?10A1), Thing(?10A1), inverseofhasAddress(?10A1,?10A2), Person(?10A2), Thing(?10A2), hasAddress(?10A2,?10A3), Address(?10A3), Thing(?10A3), hasAddress(?10A2,?10A1), Thing(?10A2), Thing(?10A1), tradesOnBehalfOf(?X,?10A4), Thing(?10A4) .
-src_StockExchangeMember(?X) -> Person(?X), Thing(?X), hasAddress(?X,?11A1), Address(?11A1), Thing(?11A1), inverseofhasAddress(?11A1,?11A2), Person(?11A2), Thing(?11A2), hasAddress(?11A2,?11A3), Address(?11A3), Thing(?11A3), hasAddress(?11A2,?11A1), Thing(?11A2), Thing(?11A1) .
-src_StockTrader(?X) -> StockBroker(?X), StockExchangeMember(?X), Person(?X), Thing(?X), hasAddress(?X,?12A1), Address(?12A1), Thing(?12A1), inverseofhasAddress(?12A1,?12A2), Person(?12A2), Thing(?12A2), hasAddress(?12A2,?12A3), Address(?12A3), Thing(?12A3), hasAddress(?12A2,?12A1), Thing(?12A2), Thing(?12A1), tradesOnBehalfOf(?X,?12A4), Thing(?12A4) .
-src_Trader(?X) -> StockBroker(?X), StockExchangeMember(?X), Person(?X), Thing(?X), hasAddress(?X,?13A1), Address(?13A1), Thing(?13A1), inverseofhasAddress(?13A1,?13A2), Person(?13A2), Thing(?13A2), hasAddress(?13A2,?13A3), Address(?13A3), Thing(?13A3), hasAddress(?13A2,?13A1), Thing(?13A2), Thing(?13A1), tradesOnBehalfOf(?X,?13A4), Thing(?13A4) .
-src_Transaction(?X) -> Thing(?X), isExecutedFor(?X,?14A1), Investor(?14A1), Person(?14A1), Thing(?14A1), hasAddress(?14A1,?14A2), Address(?14A2), Thing(?14A2), inverseofhasAddress(?14A2,?14A3), Person(?14A3), Thing(?14A3), hasAddress(?14A3,?14A4), Thing(?14A4), hasAddress(?14A3,?14A2), Thing(?14A3), Thing(?14A2), Thing(?14A1), isExecutedBy(?X,?14A5), StockExchangeMember(?14A5), Person(?14A5), Thing(?14A5), hasAddress(?14A5,?14A6), Address(?14A6), Thing(?14A6), inverseofhasAddress(?14A6,?14A7), Person(?14A7), Thing(?14A7), hasAddress(?14A7,?14A8), Thing(?14A8), hasAddress(?14A7,?14A6), Thing(?14A7), Thing(?14A6), Thing(?14A5), involvesInstrument(?X,?14A9), FinantialInstrument(?14A9), Thing(?14A9) .
-src_belongsToCompany(?X,?X1) -> Stock(?X), FinantialInstrument(?X), isListedIn(?X,?15A1), StockExchangeList(?15A1), listsStock(?15A1,?X), Thing(?15A1), belongsToCompany(?X,?15A2), Company(?15A2), LegalPerson(?15A2), Person(?15A2), Thing(?15A2), hasAddress(?15A2,?15A3), Address(?15A3), Thing(?15A3), inverseofhasAddress(?15A3,?15A4), Person(?15A4), Thing(?15A4), hasAddress(?15A4,?15A5), Thing(?15A5), hasAddress(?15A4,?15A3), Thing(?15A4), Thing(?15A3), hasStock(?15A2,?X), Thing(?15A2), Company(?X1), LegalPerson(?X1), Person(?X1), Thing(?X1), hasAddress(?X1,?15A6), Address(?15A6), Thing(?15A6), inverseofhasAddress(?15A6,?15A7), Person(?15A7), Thing(?15A7), hasAddress(?15A7,?15A8), Address(?15A8), Thing(?15A8), hasAddress(?15A7,?15A6), Thing(?15A7), Thing(?15A6), hasStock(?X1,?X) .
-src_hasAddress(?X,?X1) -> Person(?X), Thing(?X), hasAddress(?X,?16A1), Address(?16A1), Thing(?16A1), inverseofhasAddress(?16A1,?16A2), Person(?16A2), Thing(?16A2), hasAddress(?16A2,?16A3), Address(?16A3), Thing(?16A3), hasAddress(?16A2,?16A1), Thing(?16A2), Thing(?16A1), Address(?X1), Thing(?X1), inverseofhasAddress(?X1,?16A4), Person(?16A4), Thing(?16A4), hasAddress(?16A4,?16A5), Address(?16A5), Thing(?16A5), inverseofhasAddress(?16A5,?16A6), Person(?16A6), hasAddress(?16A6,?16A5), Thing(?16A6), Thing(?16A5), hasAddress(?16A4,?X1), Thing(?16A4) .
-src_hasStock(?X,?X1) -> Company(?X), LegalPerson(?X), Person(?X), Thing(?X), hasAddress(?X,?17A1), Address(?17A1), Thing(?17A1), inverseofhasAddress(?17A1,?17A2), Person(?17A2), Thing(?17A2), hasAddress(?17A2,?17A3), Address(?17A3), Thing(?17A3), hasAddress(?17A2,?17A1), Thing(?17A2), Thing(?17A1), Stock(?X1), FinantialInstrument(?X1), isListedIn(?X1,?17A4), StockExchangeList(?17A4), listsStock(?17A4,?X1), Thing(?17A4), belongsToCompany(?X1,?17A5), Company(?17A5), LegalPerson(?17A5), Person(?17A5), Thing(?17A5), hasAddress(?17A5,?17A6), Address(?17A6), Thing(?17A6), inverseofhasAddress(?17A6,?17A7), Person(?17A7), Thing(?17A7), hasAddress(?17A7,?17A8), Thing(?17A8), hasAddress(?17A7,?17A6), Thing(?17A7), Thing(?17A6), hasStock(?17A5,?X1), Thing(?17A5) .
-src_inverseofhasAddress(?X,?X1) -> Address(?X), Thing(?X), inverseofhasAddress(?X,?18A1), Person(?18A1), Thing(?18A1), hasAddress(?18A1,?18A2), Address(?18A2), Thing(?18A2), inverseofhasAddress(?18A2,?18A3), Person(?18A3), hasAddress(?18A3,?18A2), Thing(?18A3), Thing(?18A2), hasAddress(?18A1,?X), Thing(?18A1), Person(?X1), Thing(?X1), hasAddress(?X1,?18A4), Address(?18A4), Thing(?18A4), inverseofhasAddress(?18A4,?18A5), Person(?18A5), Thing(?18A5), hasAddress(?18A5,?18A6), Address(?18A6), Thing(?18A6), hasAddress(?18A5,?18A4), Thing(?18A5), Thing(?18A4), hasAddress(?X1,?X) .
-src_involvesInstrument(?X,?X1) -> Transaction(?X), Thing(?X), isExecutedFor(?X,?19A1), Investor(?19A1), Person(?19A1), Thing(?19A1), hasAddress(?19A1,?19A2), Address(?19A2), Thing(?19A2), inverseofhasAddress(?19A2,?19A3), Person(?19A3), Thing(?19A3), hasAddress(?19A3,?19A4), Thing(?19A4), hasAddress(?19A3,?19A2), Thing(?19A3), Thing(?19A2), Thing(?19A1), isExecutedBy(?X,?19A5), StockExchangeMember(?19A5), Person(?19A5), Thing(?19A5), hasAddress(?19A5,?19A6), Address(?19A6), Thing(?19A6), inverseofhasAddress(?19A6,?19A7), Person(?19A7), Thing(?19A7), hasAddress(?19A7,?19A8), Thing(?19A8), hasAddress(?19A7,?19A6), Thing(?19A7), Thing(?19A6), Thing(?19A5), involvesInstrument(?X,?19A9), FinantialInstrument(?19A9), Thing(?19A9), FinantialInstrument(?X1) .
-src_isExecutedBy(?X,?X1) -> Transaction(?X), Thing(?X), isExecutedFor(?X,?20A1), Investor(?20A1), Person(?20A1), Thing(?20A1), hasAddress(?20A1,?20A2), Address(?20A2), Thing(?20A2), inverseofhasAddress(?20A2,?20A3), Person(?20A3), Thing(?20A3), hasAddress(?20A3,?20A4), Thing(?20A4), hasAddress(?20A3,?20A2), Thing(?20A3), Thing(?20A2), Thing(?20A1), isExecutedBy(?X,?20A5), StockExchangeMember(?20A5), Person(?20A5), Thing(?20A5), hasAddress(?20A5,?20A6), Address(?20A6), Thing(?20A6), inverseofhasAddress(?20A6,?20A7), Person(?20A7), Thing(?20A7), hasAddress(?20A7,?20A8), Thing(?20A8), hasAddress(?20A7,?20A6), Thing(?20A7), Thing(?20A6), Thing(?20A5), involvesInstrument(?X,?20A9), FinantialInstrument(?20A9), Thing(?20A9), StockExchangeMember(?X1), Person(?X1), Thing(?X1), hasAddress(?X1,?20A10), Address(?20A10), Thing(?20A10), inverseofhasAddress(?20A10,?20A11), Person(?20A11), Thing(?20A11), hasAddress(?20A11,?20A12), Address(?20A12), Thing(?20A12), hasAddress(?20A11,?20A10), Thing(?20A11), Thing(?20A10) .
-src_isExecutedFor(?X,?X1) -> Transaction(?X), Thing(?X), isExecutedFor(?X,?21A1), Investor(?21A1), Person(?21A1), Thing(?21A1), hasAddress(?21A1,?21A2), Address(?21A2), Thing(?21A2), inverseofhasAddress(?21A2,?21A3), Person(?21A3), Thing(?21A3), hasAddress(?21A3,?21A4), Thing(?21A4), hasAddress(?21A3,?21A2), Thing(?21A3), Thing(?21A2), Thing(?21A1), isExecutedBy(?X,?21A5), StockExchangeMember(?21A5), Person(?21A5), Thing(?21A5), hasAddress(?21A5,?21A6), Address(?21A6), Thing(?21A6), inverseofhasAddress(?21A6,?21A7), Person(?21A7), Thing(?21A7), hasAddress(?21A7,?21A8), Thing(?21A8), hasAddress(?21A7,?21A6), Thing(?21A7), Thing(?21A6), Thing(?21A5), involvesInstrument(?X,?21A9), FinantialInstrument(?21A9), Thing(?21A9), Investor(?X1), Person(?X1), Thing(?X1), hasAddress(?X1,?21A10), Address(?21A10), Thing(?21A10), inverseofhasAddress(?21A10,?21A11), Person(?21A11), Thing(?21A11), hasAddress(?21A11,?21A12), Address(?21A12), Thing(?21A12), hasAddress(?21A11,?21A10), Thing(?21A11), Thing(?21A10) .
-src_isListedIn(?X,?X1) -> Stock(?X), FinantialInstrument(?X), isListedIn(?X,?22A1), StockExchangeList(?22A1), listsStock(?22A1,?X), Thing(?22A1), belongsToCompany(?X,?22A2), Company(?22A2), LegalPerson(?22A2), Person(?22A2), Thing(?22A2), hasAddress(?22A2,?22A3), Address(?22A3), Thing(?22A3), inverseofhasAddress(?22A3,?22A4), Person(?22A4), Thing(?22A4), hasAddress(?22A4,?22A5), Thing(?22A5), hasAddress(?22A4,?22A3), Thing(?22A4), Thing(?22A3), hasStock(?22A2,?X), Thing(?22A2), StockExchangeList(?X1), listsStock(?X1,?X) .
-src_isTradedIn(?X,?X1) -> Transaction(?X1), Thing(?X1), isExecutedFor(?X1,?23A1), Investor(?23A1), Person(?23A1), Thing(?23A1), hasAddress(?23A1,?23A2), Address(?23A2), Thing(?23A2), inverseofhasAddress(?23A2,?23A3), Person(?23A3), Thing(?23A3), hasAddress(?23A3,?23A4), Thing(?23A4), hasAddress(?23A3,?23A2), Thing(?23A3), Thing(?23A2), Thing(?23A1), isExecutedBy(?X1,?23A5), StockExchangeMember(?23A5), Person(?23A5), Thing(?23A5), hasAddress(?23A5,?23A6), Address(?23A6), Thing(?23A6), inverseofhasAddress(?23A6,?23A7), Person(?23A7), Thing(?23A7), hasAddress(?23A7,?23A8), Thing(?23A8), hasAddress(?23A7,?23A6), Thing(?23A7), Thing(?23A6), Thing(?23A5), involvesInstrument(?X1,?23A9), FinantialInstrument(?23A9), Thing(?23A9), involvesInstrument(?X1,?X), FinantialInstrument(?X) .
-src_listsStock(?X,?X1) -> Stock(?X1), FinantialInstrument(?X1), isListedIn(?X1,?24A1), StockExchangeList(?24A1), listsStock(?24A1,?X1), Thing(?24A1), belongsToCompany(?X1,?24A2), Company(?24A2), LegalPerson(?24A2), Person(?24A2), Thing(?24A2), hasAddress(?24A2,?24A3), Address(?24A3), Thing(?24A3), inverseofhasAddress(?24A3,?24A4), Person(?24A4), Thing(?24A4), hasAddress(?24A4,?24A5), Thing(?24A5), hasAddress(?24A4,?24A3), Thing(?24A4), Thing(?24A3), hasStock(?24A2,?X1), Thing(?24A2) .
-src_usesBroker(?Y,?X) -> tradesOnBehalfOf(?X,?Y) .
-src_Acquisition(?X) -> Acquisition(?X) .
-src_Transaction(?X) -> Transaction(?X) .
-src_Address(?X) -> Address(?X) .
-src_Thing(?X) -> Thing(?X) .
-src_inverseofhasAddress(?X,?Y) -> inverseofhasAddress(?X,?Y) .
-src_Company(?X) -> Company(?X) .
-src_LegalPerson(?X) -> LegalPerson(?X) .
-src_Dealer(?X) -> Dealer(?X) .
-src_StockBroker(?X) -> StockBroker(?X) .
-src_Investor(?X) -> Investor(?X) .
-src_Person(?X) -> Person(?X) .
-src_Offer(?X) -> Offer(?X) .
-src_hasAddress(?X,?Y) -> hasAddress(?X,?Y) .
-src_PhysicalPerson(?X) -> PhysicalPerson(?X) .
-src_Stock(?X) -> Stock(?X) .
-src_FinantialInstrument(?X) -> FinantialInstrument(?X) .
-src_isListedIn(?X,?Y) -> isListedIn(?X,?Y) .
-src_belongsToCompany(?X,?Y) -> belongsToCompany(?X,?Y) .
-src_StockExchangeMember(?X) -> StockExchangeMember(?X) .
-src_tradesOnBehalfOf(?X,?Y) -> tradesOnBehalfOf(?X,?Y) .
-src_StockTrader(?X) -> StockTrader(?X) .
-src_Trader(?X) -> Trader(?X) .
-src_isExecutedFor(?X,?Y) -> isExecutedFor(?X,?Y) .
-src_isExecutedBy(?X,?Y) -> isExecutedBy(?X,?Y) .
-src_involvesInstrument(?X,?Y) -> involvesInstrument(?X,?Y) .
-src_hasStock(?X,?Y) -> hasStock(?X,?Y) .
-src_StockExchangeList(?X) -> StockExchangeList(?X) .
-src_listsStock(?X,?Y) -> listsStock(?X,?Y) .
-src_isTradedIn(?X,?Y) -> isTradedIn(?X,?Y) .
-src_usesBroker(?X,?Y) -> usesBroker(?X,?Y) .
+src_AdministrativeStaff(?X) -> Employee(?X), Person(?X), worksFor(?X,?0A1), memberOf(?X,?0A1), member(?0A1,?X), Organization(?0A1), Organization(?0A1) .
+src_advisor(?X,?X1) -> Person(?X), Professor(?X1), Faculty(?X1), Employee(?X1), Person(?X1), worksFor(?X1,?1A1), memberOf(?X1,?1A1), member(?1A1,?X1), Organization(?1A1), Organization(?1A1) .
+src_affiliatedOrganizationOf(?X,?X1) -> Organization(?X), Organization(?X1) .
+src_affiliateOf(?X,?X1) -> Organization(?X), Person(?X1) .
+src_age(?X,?X1) -> Person(?X) .
+src_Article(?X) -> Publication(?X) .
+src_AssistantProfessor(?X) -> Professor(?X), Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?6A1), memberOf(?X,?6A1), member(?6A1,?X), Organization(?6A1), Organization(?6A1) .
+src_AssociateProfessor(?X) -> Professor(?X), Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?7A1), memberOf(?X,?7A1), member(?7A1,?X), Organization(?7A1), Organization(?7A1) .
+src_Book(?X) -> Publication(?X) .
+src_Chair(?X) -> headOf(?X,?9A1), worksFor(?X,?9A1), memberOf(?X,?9A1), member(?9A1,?X), Organization(?9A1), Person(?X), Department(?9A1), Professor(?X), Faculty(?X), Employee(?X), worksFor(?X,?9A2), memberOf(?X,?9A2), member(?9A2,?X), Organization(?9A2), Organization(?9A2) .
+src_ClericalStaff(?X) -> AdministrativeStaff(?X), Employee(?X), Person(?X), worksFor(?X,?10A1), memberOf(?X,?10A1), member(?10A1,?X), Organization(?10A1), Organization(?10A1) .
+src_College(?X) -> Organization(?X) .
+src_ConferencePaper(?X) -> Article(?X), Publication(?X) .
+src_Course(?X) -> Work(?X) .
+src_Dean(?X) -> headOf(?X,?14A1), worksFor(?X,?14A1), memberOf(?X,?14A1), member(?14A1,?X), Organization(?14A1), Person(?X), College(?14A1), Professor(?X), Faculty(?X), Employee(?X), worksFor(?X,?14A2), memberOf(?X,?14A2), member(?14A2,?X), Organization(?14A2), Organization(?14A2) .
+src_degreeFrom(?X,?X1) -> Person(?X), University(?X1), Organization(?X1), hasAlumnus(?X1,?X) .
+src_Department(?X) -> Organization(?X) .
+src_Director(?X) -> headOf(?X,?17A1), worksFor(?X,?17A1), memberOf(?X,?17A1), member(?17A1,?X), Organization(?17A1), Person(?X), Program(?17A1) .
+src_doctoralDegreeFrom(?X,?X1) -> Person(?X), University(?X1), Organization(?X1), degreeFrom(?X,?X1), hasAlumnus(?X1,?X) .
+src_emailAddress(?X,?X1) -> Person(?X) .
+src_Employee(?X) -> Person(?X), worksFor(?X,?20A1), memberOf(?X,?20A1), member(?20A1,?X), Organization(?20A1), Organization(?20A1) .
+src_Faculty(?X) -> Employee(?X), Person(?X), worksFor(?X,?21A1), memberOf(?X,?21A1), member(?21A1,?X), Organization(?21A1), Organization(?21A1) .
+src_FullProfessor(?X) -> Professor(?X), Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?22A1), memberOf(?X,?22A1), member(?22A1,?X), Organization(?22A1), Organization(?22A1) .
+src_GraduateCourse(?X) -> Course(?X), Work(?X) .
+src_GraduateStudent(?X) -> Person(?X), takesCourse(?X,?24A1), GraduateCourse(?24A1), Course(?24A1), Work(?24A1) .
+src_hasAlumnus(?X,?X1) -> Person(?X1), University(?X), Organization(?X), degreeFrom(?X1,?X) .
+src_headOf(?X,?Y) -> worksFor(?X,?Y), memberOf(?X,?Y), member(?Y,?X), Organization(?Y), Person(?X) .
+src_Institute(?X) -> Organization(?X) .
+src_JournalArticle(?X) -> Article(?X), Publication(?X) .
+src_Lecturer(?X) -> Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?29A1), memberOf(?X,?29A1), member(?29A1,?X), Organization(?29A1), Organization(?29A1) .
+src_listedCourse(?X,?X1) -> Course(?X1), Work(?X1), Schedule(?X) .
+src_Manual(?X) -> Publication(?X) .
+src_mastersDegreeFrom(?X,?X1) -> Person(?X), University(?X1), Organization(?X1), degreeFrom(?X,?X1), hasAlumnus(?X1,?X) .
+src_member(?X,?X1) -> Organization(?X), Person(?X1), memberOf(?X1,?X) .
+src_memberOf(?Y,?X) -> member(?X,?Y), Organization(?X), Person(?Y) .
+src_orgPublication(?X,?X1) -> Organization(?X), Publication(?X1) .
+src_PostDoc(?X) -> Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?36A1), memberOf(?X,?36A1), member(?36A1,?X), Organization(?36A1), Organization(?36A1) .
+src_Professor(?X) -> Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?37A1), memberOf(?X,?37A1), member(?37A1,?X), Organization(?37A1), Organization(?37A1) .
+src_Program(?X) -> Organization(?X) .
+src_publicationAuthor(?X,?X1) -> Person(?X1), Publication(?X) .
+src_publicationDate(?X,?X1) -> Publication(?X) .
+src_publicationResearch(?X,?X1) -> Publication(?X), Research(?X1), Work(?X1) .
+src_Research(?X) -> Work(?X) .
+src_ResearchAssistant(?X) -> Person(?X), worksFor(?X,?43A1), memberOf(?X,?43A1), member(?43A1,?X), Organization(?43A1), ResearchGroup(?43A1) .
+src_ResearchGroup(?X) -> Organization(?X) .
+src_researchProject(?X,?X1) -> Research(?X1), Work(?X1), ResearchGroup(?X), Organization(?X) .
+src_Software(?X) -> Publication(?X) .
+src_softwareDocumentation(?X,?X1) -> Publication(?X1), Software(?X), Publication(?X) .
+src_softwareVersion(?X,?X1) -> Software(?X), Publication(?X) .
+src_Specification(?X) -> Publication(?X) .
+src_Student(?X) -> Person(?X), takesCourse(?X,?50A1), Course(?50A1), Work(?50A1) .
+src_subOrganizationOf(?X,?X1) -> Organization(?X), Organization(?X1) .
+src_SystemsStaff(?X) -> AdministrativeStaff(?X), Employee(?X), Person(?X), worksFor(?X,?52A1), memberOf(?X,?52A1), member(?52A1,?X), Organization(?52A1), Organization(?52A1) .
+src_teacherOf(?X,?X1) -> Course(?X1), Work(?X1), Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?53A1), memberOf(?X,?53A1), member(?53A1,?X), Organization(?53A1), Organization(?53A1) .
+src_TeachingAssistant(?X) -> Person(?X), teachingAssistantOf(?X,?54A1), Course(?54A1), Work(?54A1), Course(?54A1) .
+src_teachingAssistantOf(?X,?X1) -> Course(?X1), Work(?X1), TeachingAssistant(?X), Person(?X), teachingAssistantOf(?X,?55A1), Course(?55A1), Work(?55A1), Course(?55A1) .
+src_TechnicalReport(?X) -> Article(?X), Publication(?X) .
+src_telephone(?X,?X1) -> Person(?X) .
+src_tenured(?X,?X1) -> Professor(?X), Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?58A1), memberOf(?X,?58A1), member(?58A1,?X), Organization(?58A1), Organization(?58A1) .
+src_title(?X,?X1) -> Person(?X) .
+src_undergraduateDegreeFrom(?X,?X1) -> Person(?X), University(?X1), Organization(?X1), degreeFrom(?X,?X1), hasAlumnus(?X1,?X) .
+src_UndergraduateStudent(?X) -> Student(?X), Person(?X), takesCourse(?X,?61A1), Course(?61A1), Work(?61A1) .
+src_University(?X) -> Organization(?X) .
+src_UnofficialPublication(?X) -> Publication(?X) .
+src_VisitingProfessor(?X) -> Professor(?X), Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?64A1), memberOf(?X,?64A1), member(?64A1,?X), Organization(?64A1), Organization(?64A1) .
+src_worksFor(?X,?Y) -> memberOf(?X,?Y), member(?Y,?X), Organization(?Y), Person(?X) .
+src_advisor(?X,?Y) -> advisor(?X,?Y) .
+src_affiliatedOrganizationOf(?X,?Y) -> affiliatedOrganizationOf(?X,?Y) .
+src_AssistantProfessor(?X) -> AssistantProfessor(?X) .
+src_AssociateProfessor(?X) -> AssociateProfessor(?X) .
+src_Course(?X) -> Course(?X) .
+src_Department(?X) -> Department(?X) .
+src_doctoralDegreeFrom(?X,?Y) -> doctoralDegreeFrom(?X,?Y) .
+src_emailAddress(?X,?Y) -> emailAddress(?X,?Y) .
+src_FullProfessor(?X) -> FullProfessor(?X) .
+src_GraduateCourse(?X) -> GraduateCourse(?X) .
+src_GraduateStudent(?X) -> GraduateStudent(?X) .
+src_headOf(?X,?Y) -> headOf(?X,?Y) .
+src_Lecturer(?X) -> Lecturer(?X) .
+src_mastersDegreeFrom(?X,?Y) -> mastersDegreeFrom(?X,?Y) .
+src_memberOf(?X,?Y) -> memberOf(?X,?Y) .
+src_name(?X,?Y) -> name(?X,?Y) .
+src_Publication(?X) -> Publication(?X) .
+src_publicationAuthor(?X,?Y) -> publicationAuthor(?X,?Y) .
+src_ResearchAssistant(?X) -> ResearchAssistant(?X) .
+src_ResearchGroup(?X) -> ResearchGroup(?X) .
+src_researchInterest(?X,?Y) -> researchInterest(?X,?Y) .
+src_subOrganizationOf(?X,?Y) -> subOrganizationOf(?X,?Y) .
+src_takesCourse(?X,?Y) -> takesCourse(?X,?Y) .
+src_teacherOf(?X,?Y) -> teacherOf(?X,?Y) .
+src_TeachingAssistant(?X) -> TeachingAssistant(?X) .
+src_teachingAssistantOf(?X,?Y) -> teachingAssistantOf(?X,?Y) .
+src_telephone(?X,?Y) -> telephone(?X,?Y) .
+src_undergraduateDegreeFrom(?X,?Y) -> undergraduateDegreeFrom(?X,?Y) .
+src_UndergraduateStudent(?X) -> UndergraduateStudent(?X) .
+src_University(?X) -> University(?X) .
+src_worksFor(?X,?Y) -> worksFor(?X,?Y) .

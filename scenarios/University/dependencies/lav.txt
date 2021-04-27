@@ -1,4 +1,8 @@
-src_advisor(?X0,?X1) -> src_advisor(?X1,?Y0) , src_affiliatedOrganizationOf(?X2,?Y0) , src_AssistantProfessor(?X0) , src_AssociateProfessor(?X0) , src_Course(?X0) , src_Department(?X0) , src_doctoralDegreeFrom(?X7,?Y7) , src_emailAddress(?X8,?Y8) .
-src_FullProfessor(?X2,?Y0) -> src_FullProfessor(?X0) , src_GraduateCourse(?X2) , src_GraduateStudent(?X3) , src_headOf(?X4,?Y0) , src_Lecturer(?X5) , src_mastersDegreeFrom(?X0,?Y0) , src_memberOf(?X0,?Y0) , src_name(?X0,?Y8) , src_Publication(?X0) .
-src_publicationAuthor(?X0,?X6) -> src_publicationAuthor(?X0,?Y1) , src_ResearchAssistant(?X0) , src_ResearchGroup(?X0) , src_researchInterest(?X4,?Y0) , src_subOrganizationOf(?X0,?Y0) , src_takesCourse(?X6,?Y0) , src_teacherOf(?X0,?Y7) , src_TeachingAssistant(?X8) , src_teachingAssistantOf(?X0,?Y0) , src_telephone(?X10,?Y0) .
-src_undergraduateDegreeFrom(?X0) -> src_undergraduateDegreeFrom(?X0,?Y1) , src_UndergraduateStudent(?X2) , src_University(?X0) , src_worksFor(?X4,?Y4) .
+src_AdministrativeStaff(?X5) -> src_AdministrativeStaff(?X0) , src_Employee(?X2) , src_AssistantProfessor(?X0) , src_Professor(?X0) , src_AssociateProfessor(?X5) , src_BachelorExam(?X0) , src_Exam(?X7) , src_Career(?X8) , src_Work(?X0) , src_Chair(?X0) .
+src_ClericalStaff(?X2) -> src_ClericalStaff(?X0) , src_College(?X2) , src_Organization(?X0) , src_Course(?X0) , src_Dean(?X0) .
+src_headOf(?X3) -> src_headOf(?X1,?Y0) , src_Degree(?X2) , src_Director(?X3) , src_Person(?X4) , src_Program(?X5) .
+src_worksFor(?X0,?X8) -> src_worksFor(?X1,?Y0) , src_ExDean(?X2) , src_ExamRecord(?X3) , src_Faculty(?X0) , src_FacultyStaff(?X0) , src_FullProfessor(?X6) , src_GraduateCourse(?X7) , src_GraduateStudent(?X8) .
+src_takesCourse(?X0) -> src_takesCourse(?X1,?Y1) , src_Lecturer(?X0) , src_PostDoc(?X3) , src_ResearchAssistant(?X4) , src_Student(?X0) .
+src_SystemsStaff(?X7,?X8,?Y5) -> src_SystemsStaff(?X0) , src_UndergraduateStudent(?X0) , src_University(?X3) , src_VisitingProfessor(?X4) , src_advisor(?X0,?Y5) , src_affiliateOf(?X0,?Y6) , src_affiliatedOrganizationOf(?X7,?Y7) , src_degreeFrom(?X8,?Y0) , src_hasAlumnus(?X0,?Y9) , src_doctoralDegreeFrom(?X10,?Y0) .
+src_hasExamRecord(?X0,?X6,?Y1) -> src_hasExamRecord(?X1,?Y1) , src_hasFaculty(?X0,?Y0) , src_isPartOfUniversity(?X3,?Y0) , src_mastersDegreeFrom(?X4,?Y4) , src_member(?X0,?Y5) , src_memberOf(?X6,?Y0) , src_orgPublication(?X0,?Y0) , src_publicationAuthor(?X8,?Y8) , src_teacherOf(?X9,?Y0) .
+src_teachingAssistantOf(?Y0) -> src_teachingAssistantOf(?X0,?Y0) , src_tenured(?X2,?Y2) , src_undergraduateDegreeFrom(?X3,?Y0) .

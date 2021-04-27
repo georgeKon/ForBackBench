@@ -1,1 +1,1 @@
-Q4(?0,?1,?2) <- Person(?0),hasStock(?0,?1),Stock(?1),isListedIn(?1,?2),StockExchangeList(?2) .
+Q4(?0,?1) <- Person(?0),worksFor(?0,?1),Organization(?1) .

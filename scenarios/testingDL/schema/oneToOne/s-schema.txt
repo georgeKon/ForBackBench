@@ -1,102 +1,186 @@
-src_Acquisition {
+src_AdministrativeStaff {
 	c0 : STRING
 }
-src_Transaction {
+src_Employee {
 	c0 : STRING
 }
-src_Address {
+src_AssistantProfessor {
 	c0 : STRING
 }
-src_Thing {
+src_Professor {
 	c0 : STRING
 }
-src_inverseofhasAddress {
+src_AssociateProfessor {
+	c0 : STRING
+}
+src_BachelorExam {
+	c0 : STRING
+}
+src_Exam {
+	c0 : STRING
+}
+src_Career {
+	c0 : STRING
+}
+src_Work {
+	c0 : STRING
+}
+src_Chair {
+	c0 : STRING
+}
+src_ClericalStaff {
+	c0 : STRING
+}
+src_College {
+	c0 : STRING
+}
+src_Organization {
+	c0 : STRING
+}
+src_Course {
+	c0 : STRING
+}
+src_Dean {
+	c0 : STRING
+}
+src_headOf {
 	c0 : STRING,
 	c1 : STRING
 }
-src_Company {
+src_Degree {
 	c0 : STRING
 }
-src_LegalPerson {
-	c0 : STRING
-}
-src_Dealer {
-	c0 : STRING
-}
-src_StockBroker {
-	c0 : STRING
-}
-src_Investor {
+src_Director {
 	c0 : STRING
 }
 src_Person {
 	c0 : STRING
 }
-src_Offer {
+src_Program {
 	c0 : STRING
 }
-src_hasAddress {
+src_worksFor {
 	c0 : STRING,
 	c1 : STRING
 }
-src_PhysicalPerson {
+src_ExDean {
 	c0 : STRING
 }
-src_Stock {
+src_ExamRecord {
 	c0 : STRING
 }
-src_FinantialInstrument {
+src_Faculty {
 	c0 : STRING
 }
-src_isListedIn {
-	c0 : STRING,
-	c1 : STRING
-}
-src_belongsToCompany {
-	c0 : STRING,
-	c1 : STRING
-}
-src_StockExchangeMember {
+src_FacultyStaff {
 	c0 : STRING
 }
-src_tradesOnBehalfOf {
-	c0 : STRING,
-	c1 : STRING
-}
-src_StockTrader {
+src_FullProfessor {
 	c0 : STRING
 }
-src_Trader {
+src_GraduateCourse {
 	c0 : STRING
 }
-src_isExecutedFor {
-	c0 : STRING,
-	c1 : STRING
-}
-src_isExecutedBy {
-	c0 : STRING,
-	c1 : STRING
-}
-src_involvesInstrument {
-	c0 : STRING,
-	c1 : STRING
-}
-src_hasStock {
-	c0 : STRING,
-	c1 : STRING
-}
-src_StockExchangeList {
+src_GraduateStudent {
 	c0 : STRING
 }
-src_listsStock {
+src_takesCourse {
 	c0 : STRING,
 	c1 : STRING
 }
-src_isTradedIn {
+src_Lecturer {
+	c0 : STRING
+}
+src_PostDoc {
+	c0 : STRING
+}
+src_ResearchAssistant {
+	c0 : STRING
+}
+src_Student {
+	c0 : STRING
+}
+src_SystemsStaff {
+	c0 : STRING
+}
+src_UndergraduateStudent {
+	c0 : STRING
+}
+src_University {
+	c0 : STRING
+}
+src_VisitingProfessor {
+	c0 : STRING
+}
+src_advisor {
 	c0 : STRING,
 	c1 : STRING
 }
-src_usesBroker {
+src_affiliateOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_affiliatedOrganizationOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_degreeFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasAlumnus {
+	c0 : STRING,
+	c1 : STRING
+}
+src_doctoralDegreeFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasExamRecord {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasFaculty {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isPartOfUniversity {
+	c0 : STRING,
+	c1 : STRING
+}
+src_mastersDegreeFrom {
+	c0 : STRING,
+	c1 : STRING
+}
+src_member {
+	c0 : STRING,
+	c1 : STRING
+}
+src_memberOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_orgPublication {
+	c0 : STRING,
+	c1 : STRING
+}
+src_publicationAuthor {
+	c0 : STRING,
+	c1 : STRING
+}
+src_teacherOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_teachingAssistantOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_tenured {
+	c0 : STRING,
+	c1 : STRING
+}
+src_undergraduateDegreeFrom {
 	c0 : STRING,
 	c1 : STRING
 }

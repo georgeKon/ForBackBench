@@ -1,348 +1,346 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@source srcTactileAbility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_TactileAbility.csv") .
-@source srcOsteogensisImperfecta[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Osteogensis_Imperfecta.csv") .
-@source HearingDisability[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_HearingDisability.csv") .
-@source srcPhysicalDisability[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_PhysicalDisability.csv") .
-@source Ability[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Ability.csv") .
-@source srcKyphosis[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Kyphosis.csv") .
-@source srcWheelchair[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Wheelchair.csv") .
-@source Autism[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Autism.csv") .
-@source srcSpinaBifida[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Spina_Bifida.csv") .
-@source srcMobilityDevice[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_MobilityDevice.csv") .
-@source srcSpeechDisability[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_SpeechDisability.csv") .
-@source srcGuillaumeBarre[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Guillaume_Barre.csv") .
-@source srcMovementAbility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_MovementAbility.csv") .
-@source srcAbility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Ability.csv") .
-@source LightweightFoldableWheelchair[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_LightweightFoldable_Wheelchair.csv") .
-@source srcHardofhearing[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Hard_of_hearing.csv") .
-@source srcListenDevice[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_ListenDevice.csv") .
-@source srcLowerLimbMobility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_LowerLimbMobility.csv") .
-@source ListenDevice[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_ListenDevice.csv") .
-@source srcSymbolBoard[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_SymbolBoard.csv") .
-@source srcHearingDisability[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_HearingDisability.csv") .
-@source FaceToFaceCommunicationDevice[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_FaceToFaceCommunicationDevice.csv") .
-@source srcFaceToFaceCommunicationSoftware[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_FaceToFaceCommunicationSoftware.csv") .
-@source srcaffects[2] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_affects.csv") .
-@source FoldableWheelchair[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Foldable_Wheelchair.csv") .
-@source srcSeepartially[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_See_partially.csv") .
-@source srcVisualDisability[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_VisualDisability.csv") .
-@source SpeechAbility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_SpeechAbility.csv") .
-@source Blind[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Blind.csv") .
-@source isAffectedBy[2] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_isAffectedBy.csv") .
-@source BrailleAlarmClock[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_BrailleAlarmClock.csv") .
-@source srcisAffectedBy[2] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_isAffectedBy.csv") .
-@source PhysicalDisability[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_PhysicalDisability.csv") .
-@source srcAssistiveDevice[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_AssistiveDevice.csv") .
-@source Kyphosis[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Kyphosis.csv") .
-@source srcrequiresAbility[2] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_requiresAbility.csv") .
-@source srcLimbMobility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_LimbMobility.csv") .
-@source srcHearpartially[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Hear_partially.csv") .
-@source MentalDisability[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_MentalDisability.csv") .
-@source Hear[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Hear.csv") .
-@source srcMultiplesclerosis[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Multiple_sclerosis.csv") .
-@source HearingAbility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_HearingAbility.csv") .
-@source LimbMobility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_LimbMobility.csv") .
-@source Dystonia[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Dystonia.csv") .
-@source Stuttering[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Stuttering.csv") .
-@source srcLittleorNoSpeech[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Little_or_No_Speech.csv") .
-@source IntellectualDisability[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_IntellectualDisability.csv") .
-@source Achondroplasia[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Achondroplasia.csv") .
-@source Hemiplegia[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Hemiplegia.csv") .
-@source TactileReading[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_TactileReading.csv") .
-@source srcPoliomyelitis[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Poliomyelitis.csv") .
-@source srcDystonia[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Dystonia.csv") .
-@source OsteogensisImperfecta[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Osteogensis_Imperfecta.csv") .
-@source srcUpperLimbMobility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_UpperLimbMobility.csv") .
-@source srcMentalDisability[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_MentalDisability.csv") .
-@source BrailleWritingDevice[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_BrailleWritingDevice.csv") .
-@source srcDeafened[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Deafened.csv") .
-@source srcWritingDevice[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_WritingDevice.csv") .
-@source srcSpeechAbility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_SpeechAbility.csv") .
-@source MobilityDevice[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_MobilityDevice.csv") .
-@source srcManualWheelchair[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Manual_Wheelchair.csv") .
-@source srcBatteryPoweredWheelchair[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_BatteryPowered_Wheelchair.csv") .
-@source BatteryPoweredWheelchair[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_BatteryPowered_Wheelchair.csv") .
-@source Cerebralpalsy[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Cerebral_palsy.csv") .
-@source Amputation[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Amputation.csv") .
-@source Seepartially[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_See_partially.csv") .
-@source SpeechDisability[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_SpeechDisability.csv") .
-@source AssistiveDevice[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_AssistiveDevice.csv") .
-@source UpperLimbMobility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_UpperLimbMobility.csv") .
-@source srcLowVision[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_LowVision.csv") .
-@source srcParaplegia[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Paraplegia.csv") .
-@source LowerLimbMobility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_LowerLimbMobility.csv") .
-@source srcBlind[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Blind.csv") .
-@source Scoliosis[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Scoliosis.csv") .
-@source srcSensoryAbility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_SensoryAbility.csv") .
-@source srcAmputation[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Amputation.csv") .
-@source srcassistsWith[2] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_assistsWith.csv") .
-@source srcFoldableWheelchair[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Foldable_Wheelchair.csv") .
-@source srcCerebralpalsy[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Cerebral_palsy.csv") .
-@source TelephoneAid[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_TelephoneAid.csv") .
-@source Wheelchair[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Wheelchair.csv") .
-@source srcLightweightWheelchair[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Lightweight_Wheelchair.csv") .
-@source srcMusculardystrophy[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Muscular_dystrophy.csv") .
-@source srcHearingAbility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_HearingAbility.csv") .
-@source GuillaumeBarre[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Guillaume_Barre.csv") .
-@source isAssistedBy[2] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_isAssistedBy.csv") .
-@source Poliomyelitis[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Poliomyelitis.csv") .
-@source srcCommunicationDevice[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Communication_Device.csv") .
-@source BraillePillOrganiser[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_BraillePillOrganiser.csv") .
-@source srcBrailleWatch[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_BrailleWatch.csv") .
-@source srcScoliosis[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Scoliosis.csv") .
-@source srcReach[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Reach.csv") .
-@source srcDevice[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Device.csv") .
-@source Deafened[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Deafened.csv") .
-@source srcTelephoneAid[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_TelephoneAid.csv") .
-@source Multiplesclerosis[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Multiple_sclerosis.csv") .
-@source srcReadingDevice[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_ReadingDevice.csv") .
-@source FaceToFaceCommunicationSoftware[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_FaceToFaceCommunicationSoftware.csv") .
-@source srcThing[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Thing.csv") .
-@source srcDeaf[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Deaf.csv") .
-@source srcLightweightFoldableWheelchair[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_LightweightFoldable_Wheelchair.csv") .
-@source LightweightWheelchair[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Lightweight_Wheelchair.csv") .
-@source MotorisedWheelchair[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Motorised_Wheelchair.csv") .
-@source srcisAssistedBy[2] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_isAssistedBy.csv") .
-@source srcTalkingReading[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_TalkingReading.csv") .
-@source srcTalkingThermometer[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Talking_Thermometer.csv") .
-@source srcStuttering[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Stuttering.csv") .
-@source WritingDevice[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_WritingDevice.csv") .
-@source BrailleWatch[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_BrailleWatch.csv") .
-@source Epilepsy[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Epilepsy.csv") .
-@source PhysicalAbility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_PhysicalAbility.csv") .
-@source Musculardystrophy[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Muscular_dystrophy.csv") .
-@source VisualDisability[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_VisualDisability.csv") .
-@source Disability[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Disability.csv") .
-@source Hardofhearing[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Hard_of_hearing.csv") .
-@source srcHemiplegia[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Hemiplegia.csv") .
-@source SymbolBoard[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_SymbolBoard.csv") .
-@source Reach[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Reach.csv") .
-@source assistsWith[2] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_assistsWith.csv") .
-@source Quadriplegia[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Quadriplegia.csv") .
-@source SpinaBifida[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Spina_Bifida.csv") .
-@source TalkingReading[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_TalkingReading.csv") .
-@source CommunicationDevice[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Communication_Device.csv") .
-@source SpeechDevice[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_SpeechDevice.csv") .
-@source srcBrailleAlarmClock[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_BrailleAlarmClock.csv") .
-@source srcIntellectualDisability[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_IntellectualDisability.csv") .
-@source srcFaceToFaceCommunicationDevice[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_FaceToFaceCommunicationDevice.csv") .
-@source affects[2] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_affects.csv") .
-@source srcQuadriplegia[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Quadriplegia.csv") .
-@source Paraplegia[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Paraplegia.csv") .
-@source srcEpilepsy[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Epilepsy.csv") .
-@source SensoryAbility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_SensoryAbility.csv") .
-@source srcSee[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_See.csv") .
-@source LowVision[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_LowVision.csv") .
-@source ReadingDevice[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_ReadingDevice.csv") .
-@source Deaf[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Deaf.csv") .
-@source MovementAbility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_MovementAbility.csv") .
-@source srcSpeechDevice[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_SpeechDevice.csv") .
-@source srcMotorisedWheelchair[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Motorised_Wheelchair.csv") .
-@source srcDisability[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Disability.csv") .
-@source requiresAbility[2] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_requiresAbility.csv") .
-@source TalkingThermometer[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Talking_Thermometer.csv") .
-@source srcAchondroplasia[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Achondroplasia.csv") .
-@source Hearpartially[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Hear_partially.csv") .
-@source Thing[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Thing.csv") .
-@source srcBrailleWritingDevice[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_BrailleWritingDevice.csv") .
-@source Device[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Device.csv") .
-@source TactileAbility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_TactileAbility.csv") .
-@source See[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_See.csv") .
-@source srcHear[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Hear.csv") .
-@source srcSightAbility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_SightAbility.csv") .
-@source srcPhysicalAbility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_PhysicalAbility.csv") .
-@source srcTactileReading[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_TactileReading.csv") .
-@source srcAutism[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Autism.csv") .
-@source ManualWheelchair[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Manual_Wheelchair.csv") .
-@source LittleorNoSpeech[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_Little_or_No_Speech.csv") .
-@source srcBraillePillOrganiser[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_BraillePillOrganiser.csv") .
-@source SightAbility[1] : load-csv("/Users/afnanalhazmi/eclipse-workspace/obdabenchmark-handover.zip_expanded/obdabenchmark-handover/scenarios/Adolena/data/small/src_SightAbility.csv") .
-LowerLimbMobility(?X) :- srcLowerLimbMobility(?X)  .
-MobilityDevice(?X) :- srcMobilityDevice(?X)  .
-affects(?X,?Y) :- srcaffects(?X,?Y)  .
-Thing(?X) :- srcThing(?X)  .
-SpeechDevice(?X) :- srcSpeechDevice(?X)  .
-FoldableWheelchair(?X) :- srcFoldableWheelchair(?X)  .
-CommunicationDevice(?X) :- srcCommunicationDevice(?X)  .
-Hemiplegia(?X) :- srcHemiplegia(?X)  .
-SpeechDisability(?X) :- srcSpeechDisability(?X)  .
-MentalDisability(?X) :- srcMentalDisability(?X)  .
-AssistiveDevice(?X) :- srcAssistiveDevice(?X)  .
-Blind(?X) :- srcBlind(?X)  .
-Disability(?X) :- srcDisability(?X)  .
-PhysicalAbility(?X) :- srcPhysicalAbility(?X)  .
-GuillaumeBarre(?X) :- srcGuillaumeBarre(?X)  .
-Cerebralpalsy(?X) :- srcCerebralpalsy(?X)  .
-requiresAbility(?X,?Y) :- srcrequiresAbility(?X,?Y)  .
-Epilepsy(?X) :- srcEpilepsy(?X)  .
-SpinaBifida(?X) :- srcSpinaBifida(?X)  .
-Deaf(?X) :- srcDeaf(?X)  .
-BrailleWatch(?X) :- srcBrailleWatch(?X)  .
-Seepartially(?X) :- srcSeepartially(?X)  .
-Multiplesclerosis(?X) :- srcMultiplesclerosis(?X)  .
-SpeechAbility(?X) :- srcSpeechAbility(?X)  .
-isAssistedBy(?X,?Y) :- srcisAssistedBy(?X,?Y)  .
-isAffectedBy(?X,?Y) :- srcisAffectedBy(?X,?Y)  .
-Hearpartially(?X) :- srcHearpartially(?X)  .
-SensoryAbility(?X) :- srcSensoryAbility(?X)  .
-LimbMobility(?X) :- srcLimbMobility(?X)  .
-TactileAbility(?X) :- srcTactileAbility(?X)  .
-assistsWith(?X,?Y) :- srcassistsWith(?X,?Y)  .
-FaceToFaceCommunicationSoftware(?X) :- srcFaceToFaceCommunicationSoftware(?X)  .
-ListenDevice(?X) :- srcListenDevice(?X)  .
-MovementAbility(?X) :- srcMovementAbility(?X)  .
-BatteryPoweredWheelchair(?X) :- srcBatteryPoweredWheelchair(?X)  .
-SightAbility(?X) :- srcSightAbility(?X)  .
-OsteogensisImperfecta(?X) :- srcOsteogensisImperfecta(?X)  .
-LittleorNoSpeech(?X) :- srcLittleorNoSpeech(?X)  .
-ManualWheelchair(?X) :- srcManualWheelchair(?X)  .
-Stuttering(?X) :- srcStuttering(?X)  .
-See(?X) :- srcSee(?X)  .
-Autism(?X) :- srcAutism(?X)  .
-PhysicalDisability(?X) :- srcPhysicalDisability(?X)  .
-MotorisedWheelchair(?X) :- srcMotorisedWheelchair(?X)  .
-IntellectualDisability(?X) :- srcIntellectualDisability(?X)  .
-Achondroplasia(?X) :- srcAchondroplasia(?X)  .
-Hear(?X) :- srcHear(?X)  .
-Paraplegia(?X) :- srcParaplegia(?X)  .
-FaceToFaceCommunicationDevice(?X) :- srcFaceToFaceCommunicationDevice(?X)  .
-LightweightWheelchair(?X) :- srcLightweightWheelchair(?X)  .
-Hardofhearing(?X) :- srcHardofhearing(?X)  .
-ReadingDevice(?X) :- srcReadingDevice(?X)  .
-Device(?X) :- srcDevice(?X)  .
-HearingDisability(?X) :- srcHearingDisability(?X)  .
-UpperLimbMobility(?X) :- srcUpperLimbMobility(?X)  .
-BrailleWritingDevice(?X) :- srcBrailleWritingDevice(?X)  .
-Dystonia(?X) :- srcDystonia(?X)  .
-BraillePillOrganiser(?X) :- srcBraillePillOrganiser(?X)  .
-BrailleAlarmClock(?X) :- srcBrailleAlarmClock(?X)  .
-TelephoneAid(?X) :- srcTelephoneAid(?X)  .
-VisualDisability(?X) :- srcVisualDisability(?X)  .
-Wheelchair(?X) :- srcWheelchair(?X)  .
-Reach(?X) :- srcReach(?X)  .
-LowVision(?X) :- srcLowVision(?X)  .
-TalkingThermometer(?X) :- srcTalkingThermometer(?X)  .
-Kyphosis(?X) :- srcKyphosis(?X)  .
-Quadriplegia(?X) :- srcQuadriplegia(?X)  .
-TalkingReading(?X) :- srcTalkingReading(?X)  .
-Ability(?X) :- srcAbility(?X)  .
-LightweightFoldableWheelchair(?X) :- srcLightweightFoldableWheelchair(?X)  .
-Scoliosis(?X) :- srcScoliosis(?X)  .
-WritingDevice(?X) :- srcWritingDevice(?X)  .
-Musculardystrophy(?X) :- srcMusculardystrophy(?X)  .
-Deafened(?X) :- srcDeafened(?X)  .
-Poliomyelitis(?X) :- srcPoliomyelitis(?X)  .
-TactileReading(?X) :- srcTactileReading(?X)  .
-HearingAbility(?X) :- srcHearingAbility(?X)  .
-SymbolBoard(?X) :- srcSymbolBoard(?X)  .
-Amputation(?X) :- srcAmputation(?X)  .
-MobilityDevice(?X) :- Wheelchair(?X)  .
-affects(?X,!Y),SpeechAbility(!Y) :- LittleorNoSpeech(?X)  .
-isAffectedBy(?X,!Y),Disability(!Y) :- Ability(?X)  .
-assistsWith(?X,!Y),HearingAbility(!Y) :- ListenDevice(?X)  .
-affects(?X,?Y) :- isAffectedBy(?Y,?X)  .
-PhysicalDisability(?X) :- Kyphosis(?X)  .
-SpeechDisability(?X) :- LittleorNoSpeech(?X)  .
-SpeechDevice(?X) :- TelephoneAid(?X)  .
-PhysicalDisability(?X) :- Cerebralpalsy(?X)  .
-SensoryAbility(?X) :- TactileAbility(?X)  .
-CommunicationDevice(?X) :- SpeechDevice(?X)  .
-HearingDisability(?X) :- Deaf(?X)  .
-SpeechDisability(?X) :- Stuttering(?X)  .
-SensoryAbility(?X) :- HearingAbility(?X)  .
-VisualDisability(?X) :- LowVision(?X)  .
-PhysicalDisability(?X) :- Scoliosis(?X)  .
-Ability(?X) :- PhysicalAbility(?X)  .
-assistsWith(?X,!Y),SightAbility(!Y) :- TactileReading(?X)  .
-Wheelchair(?X) :- ManualWheelchair(?X)  .
-SensoryAbility(?X) :- SightAbility(?X)  .
-AssistiveDevice(?X) :- MobilityDevice(?X)  .
-assistsWith(?X,!Y),Ability(!Y) :- AssistiveDevice(?X)  .
-Thing(?X) :- Disability(?X)  .
-TalkingReading(?X) :- TalkingThermometer(?X)  .
-assistsWith(?X,!Y),SightAbility(!Y) :- TalkingReading(?X)  .
-Device(?X) :- AssistiveDevice(?X)  .
-assistsWith(?X,!Y),SpeechAbility(!Y) :- FaceToFaceCommunicationDevice(?X)  .
-MotorisedWheelchair(?X) :- BatteryPoweredWheelchair(?X)  .
-Disability(?X) :- VisualDisability(?X)  .
-PhysicalDisability(?X) :- Dystonia(?X)  .
-Disability(?X) :- PhysicalDisability(?X)  .
-MovementAbility(?X) :- Reach(?X)  .
-HearingDisability(?X) :- Hardofhearing(?X)  .
-AssistiveDevice(?X) :- CommunicationDevice(?X)  .
-TactileReading(?X) :- BrailleAlarmClock(?X)  .
-Disability(?X) :- MentalDisability(?X)  .
-affects(?X,!Y),PhysicalAbility(!Y) :- PhysicalDisability(?X)  .
-PhysicalDisability(?X) :- Hemiplegia(?X)  .
-HearingAbility(?X) :- Hear(?X)  .
-assistsWith(?X,!Y),MovementAbility(!Y) :- MobilityDevice(?X)  .
-affects(?X,!Y),SpeechAbility(!Y) :- Deaf(?X)  .
-CommunicationDevice(?X) :- WritingDevice(?X)  .
-ManualWheelchair(?X) :- FoldableWheelchair(?X)  .
-PhysicalDisability(?X) :- Amputation(?X)  .
-PhysicalDisability(?X) :- Musculardystrophy(?X)  .
-LimbMobility(?X) :- LowerLimbMobility(?X)  .
-MentalDisability(?X) :- IntellectualDisability(?X)  .
-requiresAbility(?X,!Y),HearingAbility(!Y) :- TalkingReading(?X)  .
-CommunicationDevice(?X) :- FaceToFaceCommunicationDevice(?X)  .
-SightAbility(?X) :- See(?X)  .
-affects(?X,!Y),LowerLimbMobility(!Y) :- Quadriplegia(?X)  .
-Ability(?X) :- SpeechAbility(?X)  .
-WritingDevice(?X) :- BrailleWritingDevice(?X)  .
-ListenDevice(?X) :- TelephoneAid(?X)  .
-TactileReading(?X) :- BrailleWatch(?X)  .
-isAssistedBy(?X,!Y),Device(!Y) :- Ability(?X)  .
-requiresAbility(?X,!Y),UpperLimbMobility(!Y) :- ManualWheelchair(?X)  .
-Wheelchair(?X) :- MotorisedWheelchair(?X)  .
-assistsWith(?X,!Y),SightAbility(!Y) :- BrailleWritingDevice(?X)  .
-FaceToFaceCommunicationDevice(?X) :- FaceToFaceCommunicationSoftware(?X)  .
-assistsWith(?X,!Y),LowerLimbMobility(!Y) :- MotorisedWheelchair(?X)  .
-HearingDisability(?X) :- Deafened(?X)  .
-LimbMobility(?X) :- UpperLimbMobility(?X)  .
-PhysicalDisability(?X) :- Paraplegia(?X)  .
-requiresAbility(?X,!Y),TactileAbility(!Y) :- TactileReading(?X)  .
-HearingAbility(?X) :- Hearpartially(?X)  .
-ReadingDevice(?X) :- TactileReading(?X)  .
-assistsWith(?X,!Y),LimbMobility(!Y) :- Wheelchair(?X)  .
-PhysicalDisability(?X) :- SpinaBifida(?X)  .
-MentalDisability(?X) :- Epilepsy(?X)  .
-CommunicationDevice(?X) :- ListenDevice(?X)  .
-Disability(?X) :- SpeechDisability(?X)  .
-PhysicalAbility(?X) :- MovementAbility(?X)  .
-assistsWith(?X,!Y),UpperLimbMobility(!Y) :- MotorisedWheelchair(?X)  .
-Thing(?X) :- Ability(?X)  .
-PhysicalDisability(?X) :- Multiplesclerosis(?X)  .
-ReadingDevice(?X) :- TalkingReading(?X)  .
-PhysicalDisability(?X) :- Achondroplasia(?X)  .
-TactileReading(?X) :- BraillePillOrganiser(?X)  .
-VisualDisability(?X) :- Blind(?X)  .
-LightweightWheelchair(?X) :- LightweightFoldableWheelchair(?X)  .
-Disability(?X) :- HearingDisability(?X)  .
-assistsWith(?X,!Y),SightAbility(!Y) :- ReadingDevice(?X)  .
-MentalDisability(?X) :- Autism(?X)  .
-assistsWith(?X,!Y),SpeechAbility(!Y) :- SpeechDevice(?X)  .
-FoldableWheelchair(?X) :- LightweightFoldableWheelchair(?X)  .
-MovementAbility(?X) :- LimbMobility(?X)  .
-PhysicalDisability(?X) :- OsteogensisImperfecta(?X)  .
-assistsWith(?X,?Y) :- isAssistedBy(?Y,?X)  .
-PhysicalDisability(?X) :- Poliomyelitis(?X)  .
-isAssistedBy(?X,?Y) :- assistsWith(?Y,?X)  .
-affects(?X,!Y),UpperLimbMobility(!Y) :- Quadriplegia(?X)  .
-SightAbility(?X) :- Seepartially(?X)  .
-affects(?X,!Y),Ability(!Y) :- Disability(?X)  .
-PhysicalDisability(?X) :- Quadriplegia(?X)  .
-affects(?X,!Y),HearingAbility(!Y) :- HearingDisability(?X)  .
-affects(?X,!Y),LowerLimbMobility(!Y) :- Paraplegia(?X)  .
-ManualWheelchair(?X) :- LightweightWheelchair(?X)  .
-PhysicalDisability(?X) :- GuillaumeBarre(?X)  .
-Ability(?X) :- SensoryAbility(?X)  .
-assistsWith(?X,!Y),LowerLimbMobility(!Y) :- ManualWheelchair(?X)  .
-CommunicationDevice(?X) :- ReadingDevice(?X)  .
-FaceToFaceCommunicationDevice(?X) :- SymbolBoard(?X)  .
-isAffectedBy(?X,?Y) :- affects(?Y,?X)  .
-Q1(?X) :- Device(?X),assistsWith(?X,?Y),BrailleWatch(?X),TactileAbility(?X),LightweightFoldableWheelchair(?X),isAffectedBy(?X,?Y)  .
-
+@source TalkingThermometer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Talking_Thermometer.csv") .
+@source IntellectualDisability[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_IntellectualDisability.csv") .
+@source Paraplegia[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Paraplegia.csv") .
+@source HearingAbility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_HearingAbility.csv") .
+@source Quadriplegia[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Quadriplegia.csv") .
+@source srcPoliomyelitis[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Poliomyelitis.csv") .
+@source CommunicationDevice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Communication_Device.csv") .
+@source Ability[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Ability.csv") .
+@source FaceToFaceCommunicationSoftware[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_FaceToFaceCommunicationSoftware.csv") .
+@source TactileReading[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_TactileReading.csv") .
+@source srcPhysicalDisability[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_PhysicalDisability.csv") .
+@source UpperLimbMobility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_UpperLimbMobility.csv") .
+@source srcTalkingThermometer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Talking_Thermometer.csv") .
+@source srcReach[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Reach.csv") .
+@source Hemiplegia[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Hemiplegia.csv") .
+@source srcTactileAbility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_TactileAbility.csv") .
+@source srcBraillePillOrganiser[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_BraillePillOrganiser.csv") .
+@source Device[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Device.csv") .
+@source Hearpartially[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Hear_partially.csv") .
+@source srcHemiplegia[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Hemiplegia.csv") .
+@source Seepartially[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_See_partially.csv") .
+@source srcAssistiveDevice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_AssistiveDevice.csv") .
+@source srcGuillaumeBarre[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Guillaume_Barre.csv") .
+@source srcSensoryAbility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_SensoryAbility.csv") .
+@source isAssistedBy[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_isAssistedBy.csv") .
+@source srcMobilityDevice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_MobilityDevice.csv") .
+@source srcMovementAbility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_MovementAbility.csv") .
+@source requiresAbility[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_requiresAbility.csv") .
+@source Poliomyelitis[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Poliomyelitis.csv") .
+@source LowerLimbMobility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_LowerLimbMobility.csv") .
+@source srcCerebralpalsy[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Cerebral_palsy.csv") .
+@source srcisAffectedBy[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_isAffectedBy.csv") .
+@source Autism[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Autism.csv") .
+@source srcTalkingReading[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_TalkingReading.csv") .
+@source SightAbility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_SightAbility.csv") .
+@source Deaf[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Deaf.csv") .
+@source srcMultiplesclerosis[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Multiple_sclerosis.csv") .
+@source srcDeafened[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Deafened.csv") .
+@source srcManualWheelchair[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Manual_Wheelchair.csv") .
+@source Multiplesclerosis[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Multiple_sclerosis.csv") .
+@source TalkingReading[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_TalkingReading.csv") .
+@source See[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_See.csv") .
+@source HearingDisability[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_HearingDisability.csv") .
+@source Amputation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Amputation.csv") .
+@source srcrequiresAbility[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_requiresAbility.csv") .
+@source SymbolBoard[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_SymbolBoard.csv") .
+@source srcBrailleWritingDevice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_BrailleWritingDevice.csv") .
+@source isAffectedBy[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_isAffectedBy.csv") .
+@source srcHear[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Hear.csv") .
+@source srcSpeechDisability[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_SpeechDisability.csv") .
+@source SpeechDisability[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_SpeechDisability.csv") .
+@source srcQuadriplegia[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Quadriplegia.csv") .
+@source srcFoldableWheelchair[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Foldable_Wheelchair.csv") .
+@source srcReadingDevice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_ReadingDevice.csv") .
+@source srcSpeechAbility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_SpeechAbility.csv") .
+@source srcBatteryPoweredWheelchair[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_BatteryPowered_Wheelchair.csv") .
+@source srcAbility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Ability.csv") .
+@source srcLightweightFoldableWheelchair[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_LightweightFoldable_Wheelchair.csv") .
+@source LimbMobility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_LimbMobility.csv") .
+@source srcisAssistedBy[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_isAssistedBy.csv") .
+@source Wheelchair[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Wheelchair.csv") .
+@source srcLowerLimbMobility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_LowerLimbMobility.csv") .
+@source srcSpinaBifida[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Spina_Bifida.csv") .
+@source srcassistsWith[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_assistsWith.csv") .
+@source FoldableWheelchair[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Foldable_Wheelchair.csv") .
+@source srcBrailleWatch[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_BrailleWatch.csv") .
+@source srcaffects[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_affects.csv") .
+@source SpinaBifida[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Spina_Bifida.csv") .
+@source srcCommunicationDevice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Communication_Device.csv") .
+@source srcHearpartially[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Hear_partially.csv") .
+@source srcHearingAbility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_HearingAbility.csv") .
+@source LightweightFoldableWheelchair[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_LightweightFoldable_Wheelchair.csv") .
+@source Cerebralpalsy[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Cerebral_palsy.csv") .
+@source srcTelephoneAid[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_TelephoneAid.csv") .
+@source srcThing[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Thing.csv") .
+@source srcOsteogensisImperfecta[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Osteogensis_Imperfecta.csv") .
+@source Stuttering[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Stuttering.csv") .
+@source srcSpeechDevice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_SpeechDevice.csv") .
+@source srcAutism[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Autism.csv") .
+@source Epilepsy[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Epilepsy.csv") .
+@source srcDisability[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Disability.csv") .
+@source BrailleWritingDevice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_BrailleWritingDevice.csv") .
+@source Deafened[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Deafened.csv") .
+@source srcFaceToFaceCommunicationSoftware[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_FaceToFaceCommunicationSoftware.csv") .
+@source Kyphosis[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Kyphosis.csv") .
+@source LittleorNoSpeech[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Little_or_No_Speech.csv") .
+@source FaceToFaceCommunicationDevice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_FaceToFaceCommunicationDevice.csv") .
+@source TactileAbility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_TactileAbility.csv") .
+@source Reach[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Reach.csv") .
+@source srcAmputation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Amputation.csv") .
+@source ListenDevice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_ListenDevice.csv") .
+@source srcSee[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_See.csv") .
+@source srcUpperLimbMobility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_UpperLimbMobility.csv") .
+@source Scoliosis[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Scoliosis.csv") .
+@source OsteogensisImperfecta[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Osteogensis_Imperfecta.csv") .
+@source srcFaceToFaceCommunicationDevice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_FaceToFaceCommunicationDevice.csv") .
+@source SpeechDevice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_SpeechDevice.csv") .
+@source srcPhysicalAbility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_PhysicalAbility.csv") .
+@source srcTactileReading[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_TactileReading.csv") .
+@source LowVision[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_LowVision.csv") .
+@source BrailleWatch[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_BrailleWatch.csv") .
+@source srcWritingDevice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_WritingDevice.csv") .
+@source SensoryAbility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_SensoryAbility.csv") .
+@source WritingDevice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_WritingDevice.csv") .
+@source PhysicalDisability[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_PhysicalDisability.csv") .
+@source srcLittleorNoSpeech[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Little_or_No_Speech.csv") .
+@source GuillaumeBarre[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Guillaume_Barre.csv") .
+@source srcListenDevice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_ListenDevice.csv") .
+@source srcDeaf[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Deaf.csv") .
+@source MobilityDevice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_MobilityDevice.csv") .
+@source LightweightWheelchair[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Lightweight_Wheelchair.csv") .
+@source TelephoneAid[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_TelephoneAid.csv") .
+@source affects[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_affects.csv") .
+@source srcLimbMobility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_LimbMobility.csv") .
+@source MotorisedWheelchair[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Motorised_Wheelchair.csv") .
+@source assistsWith[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_assistsWith.csv") .
+@source srcDevice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Device.csv") .
+@source srcBrailleAlarmClock[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_BrailleAlarmClock.csv") .
+@source srcKyphosis[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Kyphosis.csv") .
+@source srcMentalDisability[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_MentalDisability.csv") .
+@source srcEpilepsy[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Epilepsy.csv") .
+@source Disability[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Disability.csv") .
+@source srcWheelchair[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Wheelchair.csv") .
+@source srcDystonia[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Dystonia.csv") .
+@source VisualDisability[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_VisualDisability.csv") .
+@source srcParaplegia[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Paraplegia.csv") .
+@source Achondroplasia[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Achondroplasia.csv") .
+@source BatteryPoweredWheelchair[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_BatteryPowered_Wheelchair.csv") .
+@source srcStuttering[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Stuttering.csv") .
+@source srcHardofhearing[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Hard_of_hearing.csv") .
+@source Hardofhearing[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Hard_of_hearing.csv") .
+@source srcIntellectualDisability[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_IntellectualDisability.csv") .
+@source srcScoliosis[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Scoliosis.csv") .
+@source srcLightweightWheelchair[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Lightweight_Wheelchair.csv") .
+@source srcMotorisedWheelchair[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Motorised_Wheelchair.csv") .
+@source srcVisualDisability[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_VisualDisability.csv") .
+@source MovementAbility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_MovementAbility.csv") .
+@source srcSeepartially[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_See_partially.csv") .
+@source Hear[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Hear.csv") .
+@source srcSightAbility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_SightAbility.csv") .
+@source srcAchondroplasia[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Achondroplasia.csv") .
+@source srcSymbolBoard[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_SymbolBoard.csv") .
+@source BraillePillOrganiser[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_BraillePillOrganiser.csv") .
+@source srcLowVision[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_LowVision.csv") .
+@source Blind[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Blind.csv") .
+@source Dystonia[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Dystonia.csv") .
+@source ManualWheelchair[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Manual_Wheelchair.csv") .
+@source srcBlind[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Blind.csv") .
+@source srcHearingDisability[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_HearingDisability.csv") .
+@source SpeechAbility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_SpeechAbility.csv") .
+@source Thing[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Thing.csv") .
+@source srcMusculardystrophy[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Muscular_dystrophy.csv") .
+@source Musculardystrophy[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_Muscular_dystrophy.csv") .
+@source MentalDisability[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_MentalDisability.csv") .
+@source BrailleAlarmClock[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_BrailleAlarmClock.csv") .
+@source AssistiveDevice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_AssistiveDevice.csv") .
+@source ReadingDevice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_ReadingDevice.csv") .
+@source PhysicalAbility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/oneToOne/small/src_PhysicalAbility.csv") .
+Quadriplegia(?X) :- srcQuadriplegia(?X) .
+AssistiveDevice(?X) :- srcAssistiveDevice(?X) .
+BrailleWritingDevice(?X) :- srcBrailleWritingDevice(?X) .
+SymbolBoard(?X) :- srcSymbolBoard(?X) .
+Hardofhearing(?X) :- srcHardofhearing(?X) .
+isAffectedBy(?X,?Y) :- srcisAffectedBy(?X,?Y) .
+OsteogensisImperfecta(?X) :- srcOsteogensisImperfecta(?X) .
+TactileReading(?X) :- srcTactileReading(?X) .
+BatteryPoweredWheelchair(?X) :- srcBatteryPoweredWheelchair(?X) .
+CommunicationDevice(?X) :- srcCommunicationDevice(?X) .
+Poliomyelitis(?X) :- srcPoliomyelitis(?X) .
+Wheelchair(?X) :- srcWheelchair(?X) .
+Ability(?X) :- srcAbility(?X) .
+SpeechDisability(?X) :- srcSpeechDisability(?X) .
+LightweightWheelchair(?X) :- srcLightweightWheelchair(?X) .
+BrailleAlarmClock(?X) :- srcBrailleAlarmClock(?X) .
+SensoryAbility(?X) :- srcSensoryAbility(?X) .
+See(?X) :- srcSee(?X) .
+PhysicalAbility(?X) :- srcPhysicalAbility(?X) .
+Disability(?X) :- srcDisability(?X) .
+Hearpartially(?X) :- srcHearpartially(?X) .
+ManualWheelchair(?X) :- srcManualWheelchair(?X) .
+VisualDisability(?X) :- srcVisualDisability(?X) .
+TalkingThermometer(?X) :- srcTalkingThermometer(?X) .
+SightAbility(?X) :- srcSightAbility(?X) .
+BrailleWatch(?X) :- srcBrailleWatch(?X) .
+isAssistedBy(?X,?Y) :- srcisAssistedBy(?X,?Y) .
+Blind(?X) :- srcBlind(?X) .
+LightweightFoldableWheelchair(?X) :- srcLightweightFoldableWheelchair(?X) .
+TalkingReading(?X) :- srcTalkingReading(?X) .
+Amputation(?X) :- srcAmputation(?X) .
+IntellectualDisability(?X) :- srcIntellectualDisability(?X) .
+Dystonia(?X) :- srcDystonia(?X) .
+affects(?X,?Y) :- srcaffects(?X,?Y) .
+Hear(?X) :- srcHear(?X) .
+Musculardystrophy(?X) :- srcMusculardystrophy(?X) .
+Autism(?X) :- srcAutism(?X) .
+Seepartially(?X) :- srcSeepartially(?X) .
+LimbMobility(?X) :- srcLimbMobility(?X) .
+FoldableWheelchair(?X) :- srcFoldableWheelchair(?X) .
+ReadingDevice(?X) :- srcReadingDevice(?X) .
+Deafened(?X) :- srcDeafened(?X) .
+MentalDisability(?X) :- srcMentalDisability(?X) .
+Hemiplegia(?X) :- srcHemiplegia(?X) .
+Deaf(?X) :- srcDeaf(?X) .
+UpperLimbMobility(?X) :- srcUpperLimbMobility(?X) .
+LowVision(?X) :- srcLowVision(?X) .
+SpeechAbility(?X) :- srcSpeechAbility(?X) .
+PhysicalDisability(?X) :- srcPhysicalDisability(?X) .
+ListenDevice(?X) :- srcListenDevice(?X) .
+HearingAbility(?X) :- srcHearingAbility(?X) .
+Kyphosis(?X) :- srcKyphosis(?X) .
+requiresAbility(?X,?Y) :- srcrequiresAbility(?X,?Y) .
+FaceToFaceCommunicationSoftware(?X) :- srcFaceToFaceCommunicationSoftware(?X) .
+WritingDevice(?X) :- srcWritingDevice(?X) .
+Achondroplasia(?X) :- srcAchondroplasia(?X) .
+MotorisedWheelchair(?X) :- srcMotorisedWheelchair(?X) .
+Multiplesclerosis(?X) :- srcMultiplesclerosis(?X) .
+MovementAbility(?X) :- srcMovementAbility(?X) .
+Reach(?X) :- srcReach(?X) .
+Cerebralpalsy(?X) :- srcCerebralpalsy(?X) .
+assistsWith(?X,?Y) :- srcassistsWith(?X,?Y) .
+LittleorNoSpeech(?X) :- srcLittleorNoSpeech(?X) .
+Device(?X) :- srcDevice(?X) .
+GuillaumeBarre(?X) :- srcGuillaumeBarre(?X) .
+SpeechDevice(?X) :- srcSpeechDevice(?X) .
+Epilepsy(?X) :- srcEpilepsy(?X) .
+BraillePillOrganiser(?X) :- srcBraillePillOrganiser(?X) .
+TelephoneAid(?X) :- srcTelephoneAid(?X) .
+LowerLimbMobility(?X) :- srcLowerLimbMobility(?X) .
+SpinaBifida(?X) :- srcSpinaBifida(?X) .
+TactileAbility(?X) :- srcTactileAbility(?X) .
+Scoliosis(?X) :- srcScoliosis(?X) .
+MobilityDevice(?X) :- srcMobilityDevice(?X) .
+Thing(?X) :- srcThing(?X) .
+Paraplegia(?X) :- srcParaplegia(?X) .
+HearingDisability(?X) :- srcHearingDisability(?X) .
+Stuttering(?X) :- srcStuttering(?X) .
+FaceToFaceCommunicationDevice(?X) :- srcFaceToFaceCommunicationDevice(?X) .
+LimbMobility(?X) :- LowerLimbMobility(?X) .
+assistsWith(?X,!Y),MovementAbility(!Y) :- MobilityDevice(?X) .
+SpeechDisability(?X) :- LittleorNoSpeech(?X) .
+Wheelchair(?X) :- MotorisedWheelchair(?X) .
+TactileReading(?X) :- BrailleWatch(?X) .
+ManualWheelchair(?X) :- FoldableWheelchair(?X) .
+WritingDevice(?X) :- BrailleWritingDevice(?X) .
+SpeechDevice(?X) :- TelephoneAid(?X) .
+CommunicationDevice(?X) :- WritingDevice(?X) .
+PhysicalDisability(?X) :- OsteogensisImperfecta(?X) .
+PhysicalDisability(?X) :- Poliomyelitis(?X) .
+PhysicalDisability(?X) :- Amputation(?X) .
+PhysicalDisability(?X) :- Hemiplegia(?X) .
+affects(?X,?Y) :- isAffectedBy(?Y,?X) .
+isAssistedBy(?X,?Y) :- assistsWith(?Y,?X) .
+HearingAbility(?X) :- Hearpartially(?X) .
+HearingDisability(?X) :- Hardofhearing(?X) .
+MotorisedWheelchair(?X) :- BatteryPoweredWheelchair(?X) .
+AssistiveDevice(?X) :- MobilityDevice(?X) .
+Device(?X) :- AssistiveDevice(?X) .
+Disability(?X) :- MentalDisability(?X) .
+Disability(?X) :- HearingDisability(?X) .
+Thing(?X) :- Disability(?X) .
+PhysicalDisability(?X) :- Musculardystrophy(?X) .
+isAssistedBy(?X,!Y),Device(!Y) :- Ability(?X) .
+requiresAbility(?X,!Y),TactileAbility(!Y) :- TactileReading(?X) .
+FoldableWheelchair(?X) :- LightweightFoldableWheelchair(?X) .
+CommunicationDevice(?X) :- SpeechDevice(?X) .
+affects(?X,!Y),SpeechAbility(!Y) :- Deaf(?X) .
+PhysicalDisability(?X) :- Multiplesclerosis(?X) .
+AssistiveDevice(?X) :- CommunicationDevice(?X) .
+PhysicalDisability(?X) :- Dystonia(?X) .
+PhysicalDisability(?X) :- GuillaumeBarre(?X) .
+isAffectedBy(?X,!Y),Disability(!Y) :- Ability(?X) .
+VisualDisability(?X) :- Blind(?X) .
+FaceToFaceCommunicationDevice(?X) :- SymbolBoard(?X) .
+affects(?X,!Y),LowerLimbMobility(!Y) :- Quadriplegia(?X) .
+assistsWith(?X,!Y),Ability(!Y) :- AssistiveDevice(?X) .
+PhysicalDisability(?X) :- Quadriplegia(?X) .
+ReadingDevice(?X) :- TalkingReading(?X) .
+affects(?X,!Y),PhysicalAbility(!Y) :- PhysicalDisability(?X) .
+assistsWith(?X,!Y),LowerLimbMobility(!Y) :- MotorisedWheelchair(?X) .
+assistsWith(?X,!Y),SightAbility(!Y) :- BrailleWritingDevice(?X) .
+requiresAbility(?X,!Y),HearingAbility(!Y) :- TalkingReading(?X) .
+ListenDevice(?X) :- TelephoneAid(?X) .
+MentalDisability(?X) :- Autism(?X) .
+affects(?X,!Y),UpperLimbMobility(!Y) :- Quadriplegia(?X) .
+MobilityDevice(?X) :- Wheelchair(?X) .
+requiresAbility(?X,!Y),UpperLimbMobility(!Y) :- ManualWheelchair(?X) .
+LimbMobility(?X) :- UpperLimbMobility(?X) .
+affects(?X,!Y),LowerLimbMobility(!Y) :- Paraplegia(?X) .
+assistsWith(?X,!Y),SightAbility(!Y) :- TactileReading(?X) .
+LightweightWheelchair(?X) :- LightweightFoldableWheelchair(?X) .
+assistsWith(?X,!Y),SightAbility(!Y) :- ReadingDevice(?X) .
+Ability(?X) :- PhysicalAbility(?X) .
+VisualDisability(?X) :- LowVision(?X) .
+SensoryAbility(?X) :- TactileAbility(?X) .
+assistsWith(?X,!Y),SpeechAbility(!Y) :- SpeechDevice(?X) .
+TactileReading(?X) :- BrailleAlarmClock(?X) .
+assistsWith(?X,!Y),SpeechAbility(!Y) :- FaceToFaceCommunicationDevice(?X) .
+PhysicalDisability(?X) :- Cerebralpalsy(?X) .
+Disability(?X) :- SpeechDisability(?X) .
+TalkingReading(?X) :- TalkingThermometer(?X) .
+assistsWith(?X,!Y),UpperLimbMobility(!Y) :- MotorisedWheelchair(?X) .
+PhysicalDisability(?X) :- Paraplegia(?X) .
+Disability(?X) :- PhysicalDisability(?X) .
+assistsWith(?X,!Y),LimbMobility(!Y) :- Wheelchair(?X) .
+CommunicationDevice(?X) :- FaceToFaceCommunicationDevice(?X) .
+PhysicalDisability(?X) :- SpinaBifida(?X) .
+Thing(?X) :- Ability(?X) .
+Ability(?X) :- SpeechAbility(?X) .
+HearingDisability(?X) :- Deafened(?X) .
+PhysicalDisability(?X) :- Scoliosis(?X) .
+ManualWheelchair(?X) :- LightweightWheelchair(?X) .
+CommunicationDevice(?X) :- ReadingDevice(?X) .
+MovementAbility(?X) :- LimbMobility(?X) .
+assistsWith(?X,!Y),LowerLimbMobility(!Y) :- ManualWheelchair(?X) .
+PhysicalDisability(?X) :- Kyphosis(?X) .
+PhysicalDisability(?X) :- Achondroplasia(?X) .
+FaceToFaceCommunicationDevice(?X) :- FaceToFaceCommunicationSoftware(?X) .
+TactileReading(?X) :- BraillePillOrganiser(?X) .
+affects(?X,!Y),SpeechAbility(!Y) :- LittleorNoSpeech(?X) .
+MentalDisability(?X) :- Epilepsy(?X) .
+Ability(?X) :- SensoryAbility(?X) .
+isAffectedBy(?X,?Y) :- affects(?Y,?X) .
+HearingDisability(?X) :- Deaf(?X) .
+PhysicalAbility(?X) :- MovementAbility(?X) .
+SensoryAbility(?X) :- SightAbility(?X) .
+ReadingDevice(?X) :- TactileReading(?X) .
+CommunicationDevice(?X) :- ListenDevice(?X) .
+Wheelchair(?X) :- ManualWheelchair(?X) .
+assistsWith(?X,!Y),HearingAbility(!Y) :- ListenDevice(?X) .
+MovementAbility(?X) :- Reach(?X) .
+Disability(?X) :- VisualDisability(?X) .
+affects(?X,!Y),HearingAbility(!Y) :- HearingDisability(?X) .
+assistsWith(?X,?Y) :- isAssistedBy(?Y,?X) .
+MentalDisability(?X) :- IntellectualDisability(?X) .
+assistsWith(?X,!Y),SightAbility(!Y) :- TalkingReading(?X) .
+HearingAbility(?X) :- Hear(?X) .
+SightAbility(?X) :- Seepartially(?X) .
+SensoryAbility(?X) :- HearingAbility(?X) .
+SpeechDisability(?X) :- Stuttering(?X) .
+SightAbility(?X) :- See(?X) .
+Q1(?X) :- Device(?X),assistsWith(?X,?Y) .
 Q2(?X) :- Device(?X),assistsWith(?X,?Y),UpperLimbMobility(?Y) .
-
-Q3(?X) :- Device(?X),assistsWith(?X,?Y),Hear(?Y),affects(?Z,?Y),Autism(?Z) .
-
+Q3(?X) :- Device(?X),assistsWith(?X,?Y),Hear(?Y),affects(?X1,?Y),Autism(?X1) .
+Q4(?X) :- Device(?X),assistsWith(?X,?Y),PhysicalAbility(?Y) .
+Q5(?X) :- Device(?X),assistsWith(?X,?Y),PhysicalAbility(?Y),affects(?X1,?Y),Quadriplegia(?X1) .

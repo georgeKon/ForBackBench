@@ -1,0 +1,209 @@
+[PrefixDeclaration]
+ns:  http://example.com/example.owl#
+
+[MappingDeclaration] @collection [[
+mappingId ID-733309221
+target  ns:ns/{c0} a ns:AdministrativeStaff . 
+source  SELECT c0 FROM "src_ConferencePaper"
+
+mappingId ID1648172545
+target  ns:ns/{c0} ns:affiliatedOrganizationOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_listedCourse"
+
+mappingId ID-1977690596
+target  ns:ns/{c0} ns:affiliateOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_publicationDate"
+
+mappingId ID-1490765511
+target  ns:ns/{c0} a ns:Article . 
+source  SELECT c0 FROM "src_Professor"
+
+mappingId ID1862382175
+target  ns:ns/{c0} a ns:AssistantProfessor . 
+source  SELECT c0 FROM "src_age"
+
+mappingId ID1854855524
+target  ns:ns/{c0} a ns:AssociateProfessor . 
+source  SELECT c0 FROM "src_subOrganizationOf"
+
+mappingId ID1279879852
+target  ns:ns/{c0} a ns:Book . 
+source  SELECT c0 FROM "src_AssistantProfessor"
+
+mappingId ID343305007
+target  ns:ns/{c0} a ns:Chair . 
+source  SELECT c0 FROM "src_subOrganizationOf"
+
+mappingId ID1150394968
+target  ns:ns/{c0} a ns:ClericalStaff . 
+source  SELECT c0 FROM "src_teachingAssistantOf"
+
+mappingId ID431356731
+target  ns:ns/{c0} a ns:College . 
+source  SELECT c0 FROM "src_AssociateProfessor"
+
+mappingId ID-328429173
+target  ns:ns/{c0} a ns:ConferencePaper . 
+source  SELECT c0 FROM "src_Program"
+
+mappingId ID835166211
+target  ns:ns/{c0} a ns:Course . 
+source  SELECT c0 FROM "src_AdministrativeStaff"
+
+mappingId ID-1699658869
+target  ns:ns/{c0} a ns:Dean . 
+source  SELECT c0 FROM "src_teacherOf"
+
+mappingId ID615195900
+target  ns:ns/{c0} ns:degreeFrom ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_listedCourse"
+
+mappingId ID-2028076241
+target  ns:ns/{c0} a ns:Department . 
+source  SELECT c0 FROM "src_Course"
+
+mappingId ID1206432542
+target  ns:ns/{c0} a ns:Director . 
+source  SELECT c0 FROM "src_Research"
+
+mappingId ID-156282849
+target  ns:ns/{c0} a ns:Employee . 
+source  SELECT c0 FROM "src_Dean"
+
+mappingId ID1594458227
+target  ns:ns/{c0} a ns:Faculty . 
+source  SELECT c0 FROM "src_Chair"
+
+mappingId ID1455102935
+target  ns:ns/{c0} a ns:FullProfessor . 
+source  SELECT c0 FROM "src_Employee"
+
+mappingId ID178208611
+target  ns:ns/{c0} a ns:GraduateCourse . 
+source  SELECT c0 FROM "src_undergraduateDegreeFrom"
+
+mappingId ID-356865152
+target  ns:ns/{c0} a ns:GraduateStudent . 
+source  SELECT c0 FROM "src_takesCourse"
+
+mappingId ID-1321867306
+target  ns:ns/{c0} a ns:Institute . 
+source  SELECT c0 FROM "src_undergraduateDegreeFrom"
+
+mappingId ID2122769430
+target  ns:ns/{c0} a ns:JournalArticle . 
+source  SELECT c0 FROM "src_teacherOf"
+
+mappingId ID1640388447
+target  ns:ns/{c0} a ns:Lecturer . 
+source  SELECT c0 FROM "src_emailAddress"
+
+mappingId ID-1828124539
+target  ns:ns/{c0} a ns:Manual . 
+source  SELECT c0 FROM "src_ResearchGroup"
+
+mappingId ID-2142766314
+target  ns:ns/{c0} ns:memberOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_worksFor"
+
+mappingId ID2139200914
+target  ns:ns/{c0} a ns:Organization . 
+source  SELECT c0 FROM "src_UndergraduateStudent"
+
+mappingId ID-1908568897
+target  ns:ns/{c0} a ns:Person . 
+source  SELECT c0 FROM "src_Specification"
+
+mappingId ID-2025894444
+target  ns:ns/{c0} a ns:PostDoc . 
+source  SELECT c0 FROM "src_Program"
+
+mappingId ID-2049001865
+target  ns:ns/{c0} a ns:Professor . 
+source  SELECT c0 FROM "src_member"
+
+mappingId ID1168496649
+target  ns:ns/{c0} a ns:Program . 
+source  SELECT c0 FROM "src_TeachingAssistant"
+
+mappingId ID-2055439614
+target  ns:ns/{c0} a ns:Publication . 
+source  SELECT c0 FROM "src_publicationAuthor"
+
+mappingId ID1557224581
+target  ns:ns/{c0} ns:publicationResearch ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_affiliatedOrganizationOf"
+
+mappingId ID-1232118174
+target  ns:ns/{c0} a ns:Research . 
+source  SELECT c0 FROM "src_Student"
+
+mappingId ID745755285
+target  ns:ns/{c0} a ns:ResearchAssistant . 
+source  SELECT c0 FROM "src_TechnicalReport"
+
+mappingId ID1237829999
+target  ns:ns/{c0} a ns:ResearchGroup . 
+source  SELECT c0 FROM "src_TechnicalReport"
+
+mappingId ID977607941
+target  ns:ns/{c0} a ns:Schedule . 
+source  SELECT c0 FROM "src_softwareDocumentation"
+
+mappingId ID-852044679
+target  ns:ns/{c0} a ns:Software . 
+source  SELECT c0 FROM "src_emailAddress"
+
+mappingId ID695217456
+target  ns:ns/{c0} a ns:Specification . 
+source  SELECT c0 FROM "src_Person"
+
+mappingId ID861919304
+target  ns:ns/{c0} a ns:Student . 
+source  SELECT c0 FROM "src_takesCourse"
+
+mappingId ID-1281427908
+target  ns:ns/{c0} a ns:SystemsStaff . 
+source  SELECT c0 FROM "src_advisor"
+
+mappingId ID-1520260628
+target  ns:ns/{c0} a ns:TeachingAssistant . 
+source  SELECT c0 FROM "src_teacherOf"
+
+mappingId ID1858940537
+target  ns:ns/{c0} ns:teachingAssistantOf ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_headOf"
+
+mappingId ID265325886
+target  ns:ns/{c0} a ns:TechnicalReport . 
+source  SELECT c0 FROM "src_UndergraduateStudent"
+
+mappingId ID-470019342
+target  ns:ns/{c0} ns:title ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_teachingAssistantOf"
+
+mappingId ID1820885770
+target  ns:ns/{c0} a ns:UndergraduateStudent . 
+source  SELECT c0 FROM "src_Work"
+
+mappingId ID1206002103
+target  ns:ns/{c0} a ns:University . 
+source  SELECT c0 FROM "src_Dean"
+
+mappingId ID-485690584
+target  ns:ns/{c0} a ns:UnofficialPublication . 
+source  SELECT c0 FROM "src_Schedule"
+
+mappingId ID-910091922
+target  ns:ns/{c0} a ns:VisitingProfessor . 
+source  SELECT c0 FROM "src_Student"
+
+mappingId ID1578606618
+target  ns:ns/{c0} a ns:Work . 
+source  SELECT c0 FROM "src_College"
+
+mappingId ID-385642210
+target  ns:ns/{c0} ns:worksFor ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_member"
+
+]]

@@ -1,0 +1,381 @@
+[PrefixDeclaration]
+ns:  http://example.com/example.owl#
+
+[MappingDeclaration] @collection [[
+mappingId ID-766095613
+target  ns:ns/{c0} a ns:Acquisition . 
+source  SELECT c0 FROM "src_PhysicalPerson"
+
+mappingId ID-1265301886
+target  ns:ns/{c0} a ns:Transaction . 
+source  SELECT c0 FROM "src_PhysicalPerson"
+
+mappingId ID-2140971335
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_PhysicalPerson"
+
+mappingId ID1717095980
+target  ns:ns/{c0} a ns:Transaction . 
+source  SELECT c0 FROM "src_StockExchangeMember"
+
+mappingId ID-2060540198
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_StockExchangeMember"
+
+mappingId ID1262556954
+target  ns:ns/{c0} a ns:Address . 
+source  SELECT c0 FROM "src_Investor"
+
+mappingId ID888890905
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_Investor"
+
+mappingId ID1317745601
+target  ns:ns/{c0} a ns:Address . 
+source  SELECT c0 FROM "src_Person"
+
+mappingId ID1654440235
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_Person"
+
+mappingId ID-1462417345
+target  ns:ns/{c0} a ns:Company . 
+source  SELECT c0 FROM "src_Investor"
+
+mappingId ID2112669299
+target  ns:ns/{c0} a ns:LegalPerson . 
+source  SELECT c0 FROM "src_Investor"
+
+mappingId ID-67407209
+target  ns:ns/{c0} a ns:Person . 
+source  SELECT c0 FROM "src_Investor"
+
+mappingId ID2046668304
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_Investor"
+
+mappingId ID-1830040002
+target  ns:ns/{c0} a ns:LegalPerson . 
+source  SELECT c0 FROM "src_Address"
+
+mappingId ID-1117149259
+target  ns:ns/{c0} a ns:Person . 
+source  SELECT c0 FROM "src_Address"
+
+mappingId ID1730899007
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_Address"
+
+mappingId ID-367744530
+target  ns:ns/{c0} a ns:Dealer . 
+source  SELECT c0 FROM "src_StockBroker"
+
+mappingId ID-1587712387
+target  ns:ns/{c0} a ns:StockBroker . 
+source  SELECT c0 FROM "src_StockBroker"
+
+mappingId ID1964982980
+target  ns:ns/{c0} a ns:StockExchangeMember . 
+source  SELECT c0 FROM "src_StockBroker"
+
+mappingId ID837397454
+target  ns:ns/{c0} a ns:Person . 
+source  SELECT c0 FROM "src_StockBroker"
+
+mappingId ID-1570738215
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_StockBroker"
+
+mappingId ID-473207786
+target  ns:ns/{c0} a ns:StockBroker . 
+source  SELECT c0 FROM "src_Transaction"
+
+mappingId ID485266555
+target  ns:ns/{c0} a ns:StockExchangeMember . 
+source  SELECT c0 FROM "src_Transaction"
+
+mappingId ID-1214171512
+target  ns:ns/{c0} a ns:Person . 
+source  SELECT c0 FROM "src_Transaction"
+
+mappingId ID-2004300233
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_Transaction"
+
+mappingId ID-2080167511
+target  ns:ns/{c0} a ns:Investor . 
+source  SELECT c0 FROM "src_Company"
+
+mappingId ID-769475341
+target  ns:ns/{c0} a ns:Person . 
+source  SELECT c0 FROM "src_Company"
+
+mappingId ID1275671514
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_Company"
+
+mappingId ID1727947171
+target  ns:ns/{c0} a ns:Person . 
+source  SELECT c0 FROM "src_StockBroker"
+
+mappingId ID-468085651
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_StockBroker"
+
+mappingId ID-640315644
+target  ns:ns/{c0} a ns:Offer . 
+source  SELECT c0 FROM "src_isExecutedBy"
+
+mappingId ID-569204595
+target  ns:ns/{c0} a ns:Transaction . 
+source  SELECT c0 FROM "src_isExecutedBy"
+
+mappingId ID656448019
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_isExecutedBy"
+
+mappingId ID2120854664
+target  ns:ns/{c0} a ns:Person . 
+source  SELECT c0 FROM "src_Trader"
+
+mappingId ID874976268
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_Trader"
+
+mappingId ID-132021959
+target  ns:ns/{c0} a ns:PhysicalPerson . 
+source  SELECT c0 FROM "src_Person"
+
+mappingId ID1742499388
+target  ns:ns/{c0} a ns:Person . 
+source  SELECT c0 FROM "src_Person"
+
+mappingId ID-1266499935
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_Person"
+
+mappingId ID736167918
+target  ns:ns/{c0} a ns:LegalPerson . 
+source  SELECT c0 FROM "src_Person"
+
+mappingId ID-1786624009
+target  ns:ns/{c0} a ns:Stock . 
+source  SELECT c0 FROM "src_StockTrader"
+
+mappingId ID-1275567820
+target  ns:ns/{c0} a ns:FinantialInstrument . 
+source  SELECT c0 FROM "src_StockTrader"
+
+mappingId ID-1513610574
+target  ns:ns/{c0} a ns:FinantialInstrument . 
+source  SELECT c0 FROM "src_listsStock"
+
+mappingId ID22778205
+target  ns:ns/{c0} a ns:Stock . 
+source  SELECT c0 FROM "src_PhysicalPerson"
+
+mappingId ID115564890
+target  ns:ns/{c0} a ns:FinantialInstrument . 
+source  SELECT c0 FROM "src_PhysicalPerson"
+
+mappingId ID-2023178663
+target  ns:ns/{c0} a ns:Stock . 
+source  SELECT c0 FROM "src_Person"
+
+mappingId ID273519650
+target  ns:ns/{c0} a ns:FinantialInstrument . 
+source  SELECT c0 FROM "src_Person"
+
+mappingId ID702593626
+target  ns:ns/{c0} a ns:StockExchangeMember . 
+source  SELECT c0 FROM "src_StockExchangeList"
+
+mappingId ID-542761826
+target  ns:ns/{c0} a ns:Person . 
+source  SELECT c0 FROM "src_StockExchangeList"
+
+mappingId ID860958577
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_StockExchangeList"
+
+mappingId ID1939371794
+target  ns:ns/{c0} a ns:StockTrader . 
+source  SELECT c0 FROM "src_StockBroker"
+
+mappingId ID-2119144198
+target  ns:ns/{c0} a ns:StockBroker . 
+source  SELECT c0 FROM "src_StockBroker"
+
+mappingId ID-749116638
+target  ns:ns/{c0} a ns:StockExchangeMember . 
+source  SELECT c0 FROM "src_StockBroker"
+
+mappingId ID587665682
+target  ns:ns/{c0} a ns:Person . 
+source  SELECT c0 FROM "src_StockBroker"
+
+mappingId ID245341942
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_StockBroker"
+
+mappingId ID-1497302931
+target  ns:ns/{c0} a ns:Trader . 
+source  SELECT c0 FROM "src_isTradedIn"
+
+mappingId ID1759769363
+target  ns:ns/{c0} a ns:StockBroker . 
+source  SELECT c0 FROM "src_isTradedIn"
+
+mappingId ID1270491460
+target  ns:ns/{c0} a ns:StockExchangeMember . 
+source  SELECT c0 FROM "src_isTradedIn"
+
+mappingId ID-1779930520
+target  ns:ns/{c0} a ns:Person . 
+source  SELECT c0 FROM "src_isTradedIn"
+
+mappingId ID697590331
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_isTradedIn"
+
+mappingId ID1326125418
+target  ns:ns/{c0} ns:isExecutedFor ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasAddress"
+
+mappingId ID-761289628
+target  ns:ns/{c0} a ns:Transaction . 
+source  SELECT c0 FROM "src_hasAddress"
+
+mappingId ID1832470584
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_hasAddress"
+
+mappingId ID-2009397297
+target  ns:ns/{c1} a ns:Investor . 
+source  SELECT c1 FROM "src_hasAddress"
+
+mappingId ID-144840937
+target  ns:ns/{c1} a ns:Person . 
+source  SELECT c1 FROM "src_hasAddress"
+
+mappingId ID2094365770
+target  ns:ns/{c1} a ns:Thing . 
+source  SELECT c1 FROM "src_hasAddress"
+
+mappingId ID-414778937
+target  ns:ns/{c0} ns:isExecutedBy ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_usesBroker"
+
+mappingId ID-232762311
+target  ns:ns/{c0} a ns:Transaction . 
+source  SELECT c0 FROM "src_usesBroker"
+
+mappingId ID1750924670
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_usesBroker"
+
+mappingId ID-151867986
+target  ns:ns/{c1} a ns:StockExchangeMember . 
+source  SELECT c1 FROM "src_usesBroker"
+
+mappingId ID1044588180
+target  ns:ns/{c1} a ns:Person . 
+source  SELECT c1 FROM "src_usesBroker"
+
+mappingId ID-1715040721
+target  ns:ns/{c1} a ns:Thing . 
+source  SELECT c1 FROM "src_usesBroker"
+
+mappingId ID691572258
+target  ns:ns/{c0} ns:involvesInstrument ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_tradesOnBehalfOf"
+
+mappingId ID-1030037561
+target  ns:ns/{c0} a ns:Transaction . 
+source  SELECT c0 FROM "src_tradesOnBehalfOf"
+
+mappingId ID663229719
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_tradesOnBehalfOf"
+
+mappingId ID409141844
+target  ns:ns/{c1} a ns:FinantialInstrument . 
+source  SELECT c1 FROM "src_tradesOnBehalfOf"
+
+mappingId ID-403203681
+target  ns:ns/{c0} ns:hasStock ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_usesBroker"
+
+mappingId ID-726506956
+target  ns:ns/{c0} a ns:Company . 
+source  SELECT c0 FROM "src_usesBroker"
+
+mappingId ID-1408852787
+target  ns:ns/{c0} a ns:LegalPerson . 
+source  SELECT c0 FROM "src_usesBroker"
+
+mappingId ID-560198212
+target  ns:ns/{c0} a ns:Person . 
+source  SELECT c0 FROM "src_usesBroker"
+
+mappingId ID1636104669
+target  ns:ns/{c0} a ns:Thing . 
+source  SELECT c0 FROM "src_usesBroker"
+
+mappingId ID20555039
+target  ns:ns/{c1} a ns:Stock . 
+source  SELECT c1 FROM "src_usesBroker"
+
+mappingId ID1004053908
+target  ns:ns/{c1} a ns:FinantialInstrument . 
+source  SELECT c1 FROM "src_usesBroker"
+
+mappingId ID1639894191
+target  ns:ns/{c1} ns:belongsToCompany ns:ns/{c0} . 
+source  SELECT c1, c0 FROM "src_usesBroker"
+
+mappingId ID-247536766
+target  ns:ns/{c0} a ns:StockExchangeList . 
+source  SELECT c0 FROM "src_PhysicalPerson"
+
+mappingId ID-123367521
+target  ns:ns/{c0} ns:listsStock ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasStock"
+
+mappingId ID1185663032
+target  ns:ns/{c1} a ns:Stock . 
+source  SELECT c1 FROM "src_hasStock"
+
+mappingId ID769290669
+target  ns:ns/{c1} a ns:FinantialInstrument . 
+source  SELECT c1 FROM "src_hasStock"
+
+mappingId ID-2038920536
+target  ns:ns/{c1} ns:isListedIn ns:ns/{c0} . 
+source  SELECT c1, c0 FROM "src_hasStock"
+
+mappingId ID939284574
+target  ns:ns/{c0} a ns:StockExchangeList . 
+source  SELECT c0 FROM "src_hasStock"
+
+mappingId ID1373430861
+target  ns:ns/{c0} ns:isTradedIn ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "src_hasStock"
+
+mappingId ID260802738
+target  ns:ns/{c1} a ns:Transaction . 
+source  SELECT c1 FROM "src_hasStock"
+
+mappingId ID153411280
+target  ns:ns/{c1} a ns:Thing . 
+source  SELECT c1 FROM "src_hasStock"
+
+mappingId ID659866747
+target  ns:ns/{c1} ns:involvesInstrument ns:ns/{c0} . 
+source  SELECT c1, c0 FROM "src_hasStock"
+
+mappingId ID-111755458
+target  ns:ns/{c0} a ns:FinantialInstrument . 
+source  SELECT c0 FROM "src_hasStock"
+
+]]

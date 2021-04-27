@@ -4,16 +4,15 @@ v0{
 
 v1{
 	c0 : STRING,
+	c1 : STRING,
 }
 
 v2{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING,
 }
 
 v3{
 	c0 : STRING,
-	c1 : STRING,
 }
 

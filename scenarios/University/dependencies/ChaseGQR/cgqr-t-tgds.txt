@@ -1,73 +1,51 @@
 AdministrativeStaff(?A) -> Employee(?A) .
-advisor(?A,?B) -> Professor(?B) , Person(?A) .
-affiliatedOrganizationOf(?A,?B) -> Organization(?B) , Organization(?A) .
-affiliateOf(?A,?B) -> Person(?B) , Organization(?A) .
-age(?A,?B) -> Person(?A) .
-Article(?A) -> Publication(?A) .
 AssistantProfessor(?A) -> Professor(?A) .
 AssociateProfessor(?A) -> Professor(?A) .
-Book(?A) -> Publication(?A) .
-Chair(?A) -> Professor(?A) , Person(?A) , headOf(?A,?EX1), Department(?EX1) .
+BachelorExam(?A) -> Exam(?A) .
+Career(?A) -> Work(?A) .
+Chair(?A) -> Professor(?A) .
 ClericalStaff(?A) -> AdministrativeStaff(?A) .
 College(?A) -> Organization(?A) .
-ConferencePaper(?A) -> Article(?A) .
 Course(?A) -> Work(?A) .
-Dean(?A) -> Professor(?A) , headOf(?A,?EX2), College(?EX2) .
-degreeFrom(?A,?B) -> hasAlumnus(?B,?A) , University(?B) , Person(?A) .
-Department(?A) -> Organization(?A) .
-Director(?A) -> Person(?A) , headOf(?A,?EX3), Program(?EX3) .
-doctoralDegreeFrom(?A,?B) -> degreeFrom(?A,?B) , University(?B) , Person(?A) .
-emailAddress(?A,?B) -> Person(?A) .
-Employee(?A) -> worksFor(?A,?EX4), Organization(?EX4) , Person(?A) .
-Faculty(?A) -> Employee(?A) .
+Dean(?A) -> headOf(?A,?EX1), College(?EX1) , Professor(?A) .
+Degree(?A) -> Work(?A) .
+Director(?A) -> headOf(?A,?EX2), Program(?EX2) , Person(?A) .
+Employee(?A) -> worksFor(?A,?EX3), Organization(?EX3) , Person(?A) .
+ExDean(?A) -> Professor(?A) .
+Exam(?A) -> Work(?A) .
+ExamRecord(?A) -> Work(?A) .
+Faculty(?A) -> Organization(?A) .
+FacultyStaff(?A) -> Employee(?A) .
 FullProfessor(?A) -> Professor(?A) .
 GraduateCourse(?A) -> Course(?A) .
-GraduateStudent(?A) -> takesCourse(?A,?EX5), GraduateCourse(?EX5) , Person(?A) .
-hasAlumnus(?A,?B) -> degreeFrom(?B,?A) , University(?A) , Person(?B) .
-headOf(?A,?B), College(?B) -> Dean(?A) .
+GraduateStudent(?A) -> takesCourse(?A,?EX4), GraduateCourse(?EX4) , Person(?A) .
+Lecturer(?A) -> FacultyStaff(?A) .
+PostDoc(?A) -> FacultyStaff(?A) .
+Professor(?A) -> FacultyStaff(?A) .
+Program(?A) -> Organization(?A) .
+ResearchAssistant(?A) -> Student(?A) .
+Student(?A) -> takesCourse(?A,?EX5), Course(?EX5) , Person(?A) .
+SystemsStaff(?A) -> AdministrativeStaff(?A) .
+UndergraduateStudent(?A) -> Student(?A) .
+University(?A) -> Organization(?A) .
+VisitingProfessor(?A) -> Professor(?A) .
+advisor(?A,?B) -> Professor(?B) , Person(?A) .
+affiliateOf(?A,?B) -> Person(?B) , Organization(?A) .
+affiliatedOrganizationOf(?A,?B) -> Organization(?B) , Organization(?A) .
+degreeFrom(?A,?B) -> hasAlumnus(?B,?A) , University(?B) , Person(?A) .
+hasAlumnus(?A,?B) -> Person(?B) , University(?A) , degreeFrom(?B,?A) .
+doctoralDegreeFrom(?A,?B) -> degreeFrom(?A,?B) , University(?B) , Person(?A) .
+hasExamRecord(?A,?B) -> ExamRecord(?B) , Student(?A) .
+hasFaculty(?A,?B) -> isPartOfUniversity(?B,?A) , Faculty(?B) , University(?A) .
+isPartOfUniversity(?A,?B) -> University(?B) , Faculty(?A) , hasFaculty(?B,?A) .
 headOf(?A,?B) -> worksFor(?A,?B) .
-Institute(?A) -> Organization(?A) .
-JournalArticle(?A) -> Article(?A) .
-Lecturer(?A) -> Faculty(?A) .
-listedCourse(?A,?B) -> Schedule(?A) , Course(?B) .
-Manual(?A) -> Publication(?A) .
 mastersDegreeFrom(?A,?B) -> degreeFrom(?A,?B) , University(?B) , Person(?A) .
 member(?A,?B) -> memberOf(?B,?A) , Person(?B) , Organization(?A) .
 memberOf(?A,?B) -> member(?B,?A) .
-orgPublication(?A,?B) -> Publication(?B) , Organization(?A) .
-Person(?A), headOf(?A,?B), Department(?B) -> Chair(?A) .
-Person(?A), headOf(?A,?B), Program(?B) -> Director(?A) .
-Person(?A), takesCourse(?A,?B), Course(?B) -> Student(?A) .
-Person(?A), teachingAssistantOf(?A,?B), Course(?B) -> TeachingAssistant(?A) .
-Person(?A), worksFor(?A,?B), Organization(?B) -> Employee(?A) .
-PostDoc(?A) -> Faculty(?A) .
-Professor(?A) -> Faculty(?A) .
-Program(?A) -> Organization(?A) .
-publicationAuthor(?A,?B) -> Publication(?A) , Person(?B) .
-publicationDate(?A,?B) -> Publication(?A) .
-publicationResearch(?A,?B) -> Research(?B) , Publication(?A) .
-Research(?A) -> Work(?A) .
-ResearchAssistant(?A) -> worksFor(?A,?EX6), ResearchGroup(?EX6) , Person(?A) .
-ResearchGroup(?A) -> Organization(?A) .
-researchProject(?A,?B) -> ResearchGroup(?A) , Research(?B) .
-Software(?A) -> Publication(?A) .
-softwareDocumentation(?A,?B) -> Software(?A) , Publication(?B) .
-softwareVersion(?A,?B) -> Software(?A) .
-Specification(?A) -> Publication(?A) .
-Student(?A) -> takesCourse(?A,?EX7), Course(?EX7) , Person(?A) .
-subOrganizationOf(?A,?B) -> Organization(?B) , Organization(?A) .
-subOrganizationOf(?A,?B), subOrganizationOf(?B,?C) -> subOrganizationOf(?A,?C) .
-SystemsStaff(?A) -> AdministrativeStaff(?A) .
-teacherOf(?A,?B) -> Faculty(?A) , Course(?B) .
-TeachingAssistant(?A) -> teachingAssistantOf(?A,?EX8), Course(?EX8) , Person(?A) .
-teachingAssistantOf(?A,?B) -> TeachingAssistant(?A) , Course(?B) .
-TechnicalReport(?A) -> Article(?A) .
-telephone(?A,?B) -> Person(?A) .
+orgPublication(?A,?B) -> Organization(?A) .
+publicationAuthor(?A,?B) -> Person(?B) .
+teacherOf(?A,?B) -> Course(?B) , FacultyStaff(?A) .
+teachingAssistantOf(?A,?B) -> Course(?B) .
 tenured(?A,?B) -> Professor(?A) .
-title(?A,?B) -> Person(?A) .
 undergraduateDegreeFrom(?A,?B) -> degreeFrom(?A,?B) , University(?B) , Person(?A) .
-UndergraduateStudent(?A) -> Student(?A) .
-University(?A) -> Organization(?A) .
-UnofficialPublication(?A) -> Publication(?A) .
-VisitingProfessor(?A) -> Professor(?A) .
 worksFor(?A,?B) -> memberOf(?A,?B) .

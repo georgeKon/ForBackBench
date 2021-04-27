@@ -1,0 +1,2033 @@
+[PrefixDeclaration]
+ns:  http://example.com/example.owl#
+
+[MappingDeclaration] @collection [[
+mappingId ID-879993346
+target  ns:ns/{c0} a ns:m256004 . 
+source  SELECT c0 FROM "v539"
+
+mappingId ID794524110
+target  ns:ns/{c1} a ns:m67004 . 
+source  SELECT c1 FROM "v216"
+
+mappingId ID-335318509
+target  ns:ns/{c2} a ns:m161004 . 
+source  SELECT c2 FROM "v535"
+
+mappingId ID-1516283845
+target  ns:ns/{c0} a ns:m57004 . 
+source  SELECT c0 FROM "v624"
+
+mappingId ID1371141432
+target  ns:ns/{c1} a ns:m65004 . 
+source  SELECT c1 FROM "v741"
+
+mappingId ID1978075677
+target  ns:ns/{c0} ns:m249004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v240"
+
+mappingId ID-1698465425
+target  ns:ns/{c0} a ns:m188004 . 
+source  SELECT c0 FROM "v77"
+
+mappingId ID1382435349
+target  ns:ns/{c1} a ns:m147004 . 
+source  SELECT c1 FROM "v774"
+
+mappingId ID457132997
+target  ns:ns/{c0} a ns:m287004 . 
+source  SELECT c0 FROM "v699"
+
+mappingId ID822261192
+target  ns:ns/{c0} ns:m99004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v973"
+
+mappingId ID-325546211
+target  ns:ns/{c0} ns:m254004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v793"
+
+mappingId ID-204108166
+target  ns:ns/{c1} a ns:m24004 . 
+source  SELECT c1 FROM "v968"
+
+mappingId ID-1856450499
+target  ns:ns/{c1} a ns:m79004 . 
+source  SELECT c1 FROM "v850"
+
+mappingId ID28698406
+target  ns:ns/{c2} a ns:m108004 . 
+source  SELECT c2 FROM "v574"
+
+mappingId ID-1272216031
+target  ns:ns/{c0} ns:m119004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v761"
+
+mappingId ID-1721852698
+target  ns:ns/{c1} ns:m239004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v761"
+
+mappingId ID-1601392736
+target  ns:ns/{c2} ns:m266004 ns:ns/{c3} . 
+source  SELECT c2, c3 FROM "v761"
+
+mappingId ID574683031
+target  ns:ns/{c0} a ns:m94004 . 
+source  SELECT c0 FROM "v242"
+
+mappingId ID-903067667
+target  ns:ns/{c0} a ns:m297004 . 
+source  SELECT c0 FROM "v727"
+
+mappingId ID-2003086303
+target  ns:ns/{c0} ns:m30004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v673"
+
+mappingId ID1279372663
+target  ns:ns/{c1} ns:m148004 ns:ns/{c3} . 
+source  SELECT c1, c3 FROM "v673"
+
+mappingId ID1018662613
+target  ns:ns/{c0} ns:m159004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v873"
+
+mappingId ID-668867797
+target  ns:ns/{c0} a ns:m1004 . 
+source  SELECT c0 FROM "v462"
+
+mappingId ID433609649
+target  ns:ns/{c0} a ns:m251004 . 
+source  SELECT c0 FROM "v81"
+
+mappingId ID1479072312
+target  ns:ns/{c0} a ns:m77004 . 
+source  SELECT c0 FROM "v873"
+
+mappingId ID1662067599
+target  ns:ns/{c2} a ns:m104004 . 
+source  SELECT c2 FROM "v264"
+
+mappingId ID-1419361607
+target  ns:ns/{c0} a ns:m12004 . 
+source  SELECT c0 FROM "v859"
+
+mappingId ID1667213455
+target  ns:ns/{c0} ns:m241004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v985"
+
+mappingId ID-1742615570
+target  ns:ns/{c1} a ns:m227004 . 
+source  SELECT c1 FROM "v50"
+
+mappingId ID-1922535112
+target  ns:ns/{c0} a ns:m169004 . 
+source  SELECT c0 FROM "v781"
+
+mappingId ID1903677684
+target  ns:ns/{c2} a ns:m39004 . 
+source  SELECT c2 FROM "v781"
+
+mappingId ID-1147528930
+target  ns:ns/{c0} ns:m236004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v864"
+
+mappingId ID-409518823
+target  ns:ns/{c1} ns:m136004 ns:ns/{c3} . 
+source  SELECT c1, c3 FROM "v864"
+
+mappingId ID1432090395
+target  ns:ns/{c0} a ns:m282004 . 
+source  SELECT c0 FROM "v460"
+
+mappingId ID-1330934983
+target  ns:ns/{c1} a ns:m251004 . 
+source  SELECT c1 FROM "v460"
+
+mappingId ID270163032
+target  ns:ns/{c0} ns:m249004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v242"
+
+mappingId ID1087124946
+target  ns:ns/{c0} a ns:m191004 . 
+source  SELECT c0 FROM "v389"
+
+mappingId ID1510921394
+target  ns:ns/{c0} a ns:m90004 . 
+source  SELECT c0 FROM "v950"
+
+mappingId ID-1745991255
+target  ns:ns/{c1} a ns:m120004 . 
+source  SELECT c1 FROM "v950"
+
+mappingId ID-1575839670
+target  ns:ns/{c0} a ns:m172004 . 
+source  SELECT c0 FROM "v622"
+
+mappingId ID-1183833293
+target  ns:ns/{c0} a ns:m63004 . 
+source  SELECT c0 FROM "v733"
+
+mappingId ID543856440
+target  ns:ns/{c2} ns:m55004 ns:ns/{c3} . 
+source  SELECT c2, c3 FROM "v733"
+
+mappingId ID1978416939
+target  ns:ns/{c3} a ns:m65004 . 
+source  SELECT c3 FROM "v733"
+
+mappingId ID-1160150078
+target  ns:ns/{c0} ns:m192004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v336"
+
+mappingId ID-1101889291
+target  ns:ns/{c0} a ns:m120004 . 
+source  SELECT c0 FROM "v700"
+
+mappingId ID-2076717955
+target  ns:ns/{c0} ns:m277004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v120"
+
+mappingId ID669119926
+target  ns:ns/{c0} a ns:m227004 . 
+source  SELECT c0 FROM "v327"
+
+mappingId ID607840069
+target  ns:ns/{c0} ns:m242004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v676"
+
+mappingId ID443873625
+target  ns:ns/{c1} ns:m14004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v761"
+
+mappingId ID564948728
+target  ns:ns/{c2} a ns:m133004 . 
+source  SELECT c2 FROM "v761"
+
+mappingId ID-87405872
+target  ns:ns/{c0} ns:m34004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v631"
+
+mappingId ID-1684358842
+target  ns:ns/{c0} a ns:m1004 . 
+source  SELECT c0 FROM "v281"
+
+mappingId ID-1606082740
+target  ns:ns/{c1} a ns:m227004 . 
+source  SELECT c1 FROM "v774"
+
+mappingId ID292323106
+target  ns:ns/{c0} ns:m217004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v950"
+
+mappingId ID1926312017
+target  ns:ns/{c0} a ns:m256004 . 
+source  SELECT c0 FROM "v633"
+
+mappingId ID-2085533291
+target  ns:ns/{c0} ns:m146004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v241"
+
+mappingId ID-1934285115
+target  ns:ns/{c0} ns:m293004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v120"
+
+mappingId ID65691137
+target  ns:ns/{c1} a ns:m204004 . 
+source  SELECT c1 FROM "v120"
+
+mappingId ID1563112812
+target  ns:ns/{c0} ns:m146004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v90"
+
+mappingId ID-367382507
+target  ns:ns/{c1} a ns:m44004 . 
+source  SELECT c1 FROM "v90"
+
+mappingId ID1971142513
+target  ns:ns/{c0} a ns:m213004 . 
+source  SELECT c0 FROM "v972"
+
+mappingId ID836353282
+target  ns:ns/{c0} a ns:m197004 . 
+source  SELECT c0 FROM "v5"
+
+mappingId ID1676549103
+target  ns:ns/{c0} ns:m85004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v240"
+
+mappingId ID-1554582862
+target  ns:ns/{c0} a ns:m156004 . 
+source  SELECT c0 FROM "v213"
+
+mappingId ID742749586
+target  ns:ns/{c2} a ns:m280004 . 
+source  SELECT c2 FROM "v213"
+
+mappingId ID-1086245108
+target  ns:ns/{c0} a ns:m168004 . 
+source  SELECT c0 FROM "v978"
+
+mappingId ID-2105082423
+target  ns:ns/{c0} a ns:m279004 . 
+source  SELECT c0 FROM "v759"
+
+mappingId ID344037009
+target  ns:ns/{c0} ns:m136004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v327"
+
+mappingId ID34749732
+target  ns:ns/{c0} a ns:m188004 . 
+source  SELECT c0 FROM "v777"
+
+mappingId ID1927538385
+target  ns:ns/{c0} a ns:m33004 . 
+source  SELECT c0 FROM "v736"
+
+mappingId ID1747896013
+target  ns:ns/{c1} ns:m40004 ns:ns/{c3} . 
+source  SELECT c1, c3 FROM "v736"
+
+mappingId ID-50687864
+target  ns:ns/{c0} ns:m264004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v859"
+
+mappingId ID793512769
+target  ns:ns/{c0} a ns:m289004 . 
+source  SELECT c0 FROM "v668"
+
+mappingId ID-176320922
+target  ns:ns/{c0} ns:m243004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v212"
+
+mappingId ID1149634228
+target  ns:ns/{c2} a ns:m227004 . 
+source  SELECT c2 FROM "v212"
+
+mappingId ID-1491023665
+target  ns:ns/{c0} a ns:m255004 . 
+source  SELECT c0 FROM "v909"
+
+mappingId ID1734123973
+target  ns:ns/{c0} ns:m121004 ns:ns/{c3} . 
+source  SELECT c0, c3 FROM "v748"
+
+mappingId ID-253680619
+target  ns:ns/{c3} a ns:m279004 . 
+source  SELECT c3 FROM "v748"
+
+mappingId ID630021992
+target  ns:ns/{c0} ns:m101004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v111"
+
+mappingId ID-1126586888
+target  ns:ns/{c1} a ns:m172004 . 
+source  SELECT c1 FROM "v111"
+
+mappingId ID1097003317
+target  ns:ns/{c0} a ns:m45004 . 
+source  SELECT c0 FROM "v927"
+
+mappingId ID934467698
+target  ns:ns/{c0} a ns:m253004 . 
+source  SELECT c0 FROM "v524"
+
+mappingId ID-171961473
+target  ns:ns/{c1} ns:m270004 ns:ns/{c3} . 
+source  SELECT c1, c3 FROM "v611"
+
+mappingId ID781865756
+target  ns:ns/{c2} a ns:m258004 . 
+source  SELECT c2 FROM "v990"
+
+mappingId ID-1138182948
+target  ns:ns/{c0} a ns:m51004 . 
+source  SELECT c0 FROM "v12"
+
+mappingId ID-931927637
+target  ns:ns/{c0} a ns:m225004 . 
+source  SELECT c0 FROM "v947"
+
+mappingId ID292190469
+target  ns:ns/{c2} ns:m288004 ns:ns/{c3} . 
+source  SELECT c2, c3 FROM "v192"
+
+mappingId ID956478806
+target  ns:ns/{c0} ns:m265004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v676"
+
+mappingId ID-1198314185
+target  ns:ns/{c2} a ns:m27004 . 
+source  SELECT c2 FROM "v676"
+
+mappingId ID-1020798940
+target  ns:ns/{c0} a ns:m56004 . 
+source  SELECT c0 FROM "v780"
+
+mappingId ID464409726
+target  ns:ns/{c0} ns:m242004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v214"
+
+mappingId ID1630389365
+target  ns:ns/{c1} a ns:m169004 . 
+source  SELECT c1 FROM "v214"
+
+mappingId ID1970969746
+target  ns:ns/{c0} ns:m73004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v950"
+
+mappingId ID-583020477
+target  ns:ns/{c0} a ns:m108004 . 
+source  SELECT c0 FROM "v814"
+
+mappingId ID1111711786
+target  ns:ns/{c0} a ns:m108004 . 
+source  SELECT c0 FROM "v215"
+
+mappingId ID-236832020
+target  ns:ns/{c0} ns:m11004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v986"
+
+mappingId ID1751804402
+target  ns:ns/{c0} a ns:m12004 . 
+source  SELECT c0 FROM "v654"
+
+mappingId ID754081159
+target  ns:ns/{c0} ns:m159004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v153"
+
+mappingId ID186811274
+target  ns:ns/{c0} ns:m220004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v90"
+
+mappingId ID118083853
+target  ns:ns/{c0} a ns:m253004 . 
+source  SELECT c0 FROM "v636"
+
+mappingId ID-360313291
+target  ns:ns/{c0} ns:m17004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v467"
+
+mappingId ID1223867103
+target  ns:ns/{c0} ns:m119004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v625"
+
+mappingId ID1831763747
+target  ns:ns/{c0} a ns:m149004 . 
+source  SELECT c0 FROM "v603"
+
+mappingId ID-393971850
+target  ns:ns/{c0} ns:m296004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v964"
+
+mappingId ID636301176
+target  ns:ns/{c1} ns:m242004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v964"
+
+mappingId ID1155290169
+target  ns:ns/{c0} a ns:m48004 . 
+source  SELECT c0 FROM "v519"
+
+mappingId ID-1395322751
+target  ns:ns/{c0} ns:m240004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v621"
+
+mappingId ID1825588427
+target  ns:ns/{c0} a ns:m198004 . 
+source  SELECT c0 FROM "v869"
+
+mappingId ID817598136
+target  ns:ns/{c0} ns:m25004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v249"
+
+mappingId ID1792822616
+target  ns:ns/{c0} a ns:m238004 . 
+source  SELECT c0 FROM "v307"
+
+mappingId ID-607137154
+target  ns:ns/{c0} a ns:m63004 . 
+source  SELECT c0 FROM "v324"
+
+mappingId ID1582697125
+target  ns:ns/{c1} a ns:m255004 . 
+source  SELECT c1 FROM "v987"
+
+mappingId ID-446190661
+target  ns:ns/{c0} a ns:m285004 . 
+source  SELECT c0 FROM "v566"
+
+mappingId ID829170154
+target  ns:ns/{c1} a ns:m88004 . 
+source  SELECT c1 FROM "v566"
+
+mappingId ID266100163
+target  ns:ns/{c0} a ns:m289004 . 
+source  SELECT c0 FROM "v155"
+
+mappingId ID-1498036791
+target  ns:ns/{c1} a ns:m161004 . 
+source  SELECT c1 FROM "v861"
+
+mappingId ID-2029173968
+target  ns:ns/{c0} a ns:m287004 . 
+source  SELECT c0 FROM "v183"
+
+mappingId ID-1651658023
+target  ns:ns/{c0} ns:m19004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v234"
+
+mappingId ID1270312335
+target  ns:ns/{c2} a ns:m7004 . 
+source  SELECT c2 FROM "v117"
+
+mappingId ID23944604
+target  ns:ns/{c2} a ns:m289004 . 
+source  SELECT c2 FROM "v410"
+
+mappingId ID-1184953579
+target  ns:ns/{c1} ns:m18004 ns:ns/{c3} . 
+source  SELECT c1, c3 FROM "v303"
+
+mappingId ID1747604705
+target  ns:ns/{c1} a ns:m94004 . 
+source  SELECT c1 FROM "v10"
+
+mappingId ID-1742795593
+target  ns:ns/{c0} a ns:m79004 . 
+source  SELECT c0 FROM "v68"
+
+mappingId ID-1914214698
+target  ns:ns/{c0} ns:m61004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v796"
+
+mappingId ID-1983033000
+target  ns:ns/{c1} a ns:m33004 . 
+source  SELECT c1 FROM "v796"
+
+mappingId ID222016610
+target  ns:ns/{c3} a ns:m228004 . 
+source  SELECT c3 FROM "v796"
+
+mappingId ID341577453
+target  ns:ns/{c0} a ns:m172004 . 
+source  SELECT c0 FROM "v517"
+
+mappingId ID531029366
+target  ns:ns/{c1} ns:m84004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v517"
+
+mappingId ID-534421311
+target  ns:ns/{c0} ns:m281004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v352"
+
+mappingId ID-1367432586
+target  ns:ns/{c2} ns:m58004 ns:ns/{c3} . 
+source  SELECT c2, c3 FROM "v352"
+
+mappingId ID-2028774844
+target  ns:ns/{c3} a ns:m198004 . 
+source  SELECT c3 FROM "v352"
+
+mappingId ID757074421
+target  ns:ns/{c1} ns:m106004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v221"
+
+mappingId ID1925697550
+target  ns:ns/{c0} ns:m210004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v640"
+
+mappingId ID115154758
+target  ns:ns/{c1} a ns:m280004 . 
+source  SELECT c1 FROM "v640"
+
+mappingId ID-1524382477
+target  ns:ns/{c0} ns:m261004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v620"
+
+mappingId ID-1172437570
+target  ns:ns/{c1} a ns:m151004 . 
+source  SELECT c1 FROM "v620"
+
+mappingId ID2077368159
+target  ns:ns/{c0} ns:m84004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v16"
+
+mappingId ID-1061276263
+target  ns:ns/{c1} a ns:m212004 . 
+source  SELECT c1 FROM "v890"
+
+mappingId ID1432193880
+target  ns:ns/{c0} a ns:m272004 . 
+source  SELECT c0 FROM "v318"
+
+mappingId ID1150784220
+target  ns:ns/{c0} a ns:m23004 . 
+source  SELECT c0 FROM "v501"
+
+mappingId ID-1149614124
+target  ns:ns/{c2} a ns:m65004 . 
+source  SELECT c2 FROM "v412"
+
+mappingId ID1564441517
+target  ns:ns/{c0} ns:m299004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v727"
+
+mappingId ID1764532800
+target  ns:ns/{c0} a ns:m169004 . 
+source  SELECT c0 FROM "v882"
+
+mappingId ID969751284
+target  ns:ns/{c0} ns:m211004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v140"
+
+mappingId ID-2036260492
+target  ns:ns/{c1} ns:m273004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v221"
+
+mappingId ID-1773843126
+target  ns:ns/{c0} a ns:m204004 . 
+source  SELECT c0 FROM "v544"
+
+mappingId ID-736138907
+target  ns:ns/{c0} a ns:m115004 . 
+source  SELECT c0 FROM "v873"
+
+mappingId ID-1464473226
+target  ns:ns/{c1} a ns:m258004 . 
+source  SELECT c1 FROM "v873"
+
+mappingId ID-1853177008
+target  ns:ns/{c0} a ns:m190004 . 
+source  SELECT c0 FROM "v733"
+
+mappingId ID780931859
+target  ns:ns/{c2} ns:m268004 ns:ns/{c3} . 
+source  SELECT c2, c3 FROM "v733"
+
+mappingId ID1657242167
+target  ns:ns/{c3} a ns:m145004 . 
+source  SELECT c3 FROM "v733"
+
+mappingId ID358511887
+target  ns:ns/{c2} ns:m55004 ns:ns/{c3} . 
+source  SELECT c2, c3 FROM "v790"
+
+mappingId ID335167975
+target  ns:ns/{c3} a ns:m41004 . 
+source  SELECT c3 FROM "v790"
+
+mappingId ID2058758942
+target  ns:ns/{c0} ns:m248004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v51"
+
+mappingId ID1426771679
+target  ns:ns/{c0} ns:m246004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v142"
+
+mappingId ID-2110534559
+target  ns:ns/{c1} ns:m265004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v142"
+
+mappingId ID-1344245812
+target  ns:ns/{c2} a ns:m287004 . 
+source  SELECT c2 FROM "v142"
+
+mappingId ID1777813191
+target  ns:ns/{c0} a ns:m149004 . 
+source  SELECT c0 FROM "v943"
+
+mappingId ID1557585280
+target  ns:ns/{c0} a ns:m50004 . 
+source  SELECT c0 FROM "v546"
+
+mappingId ID-277431818
+target  ns:ns/{c1} ns:m8004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v199"
+
+mappingId ID-190610299
+target  ns:ns/{c2} a ns:m157004 . 
+source  SELECT c2 FROM "v199"
+
+mappingId ID1572295105
+target  ns:ns/{c0} ns:m10004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v700"
+
+mappingId ID680084415
+target  ns:ns/{c0} a ns:m82004 . 
+source  SELECT c0 FROM "v423"
+
+mappingId ID-510430351
+target  ns:ns/{c0} a ns:m250004 . 
+source  SELECT c0 FROM "v41"
+
+mappingId ID1493159350
+target  ns:ns/{c1} ns:m8004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v41"
+
+mappingId ID-225167763
+target  ns:ns/{c0} a ns:m204004 . 
+source  SELECT c0 FROM "v958"
+
+mappingId ID1686351493
+target  ns:ns/{c1} ns:m121004 ns:ns/{c3} . 
+source  SELECT c1, c3 FROM "v512"
+
+mappingId ID-1811519482
+target  ns:ns/{c0} a ns:m141004 . 
+source  SELECT c0 FROM "v184"
+
+mappingId ID1658834559
+target  ns:ns/{c1} a ns:m44004 . 
+source  SELECT c1 FROM "v610"
+
+mappingId ID-875883666
+target  ns:ns/{c0} a ns:m149004 . 
+source  SELECT c0 FROM "v209"
+
+mappingId ID-1718965757
+target  ns:ns/{c0} ns:m260004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v839"
+
+mappingId ID-1424293333
+target  ns:ns/{c1} ns:m96004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v839"
+
+mappingId ID1636593953
+target  ns:ns/{c0} a ns:m27004 . 
+source  SELECT c0 FROM "v726"
+
+mappingId ID562476669
+target  ns:ns/{c0} a ns:m213004 . 
+source  SELECT c0 FROM "v543"
+
+mappingId ID1509582326
+target  ns:ns/{c0} a ns:m151004 . 
+source  SELECT c0 FROM "v914"
+
+mappingId ID-1033351025
+target  ns:ns/{c0} ns:m171004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v249"
+
+mappingId ID1903963879
+target  ns:ns/{c0} a ns:m207004 . 
+source  SELECT c0 FROM "v685"
+
+mappingId ID-65376135
+target  ns:ns/{c0} ns:m55004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v6"
+
+mappingId ID785185323
+target  ns:ns/{c0} a ns:m93004 . 
+source  SELECT c0 FROM "v261"
+
+mappingId ID-1682257333
+target  ns:ns/{c0} a ns:m285004 . 
+source  SELECT c0 FROM "v33"
+
+mappingId ID1947357763
+target  ns:ns/{c1} a ns:m45004 . 
+source  SELECT c1 FROM "v381"
+
+mappingId ID-1223846207
+target  ns:ns/{c0} a ns:m289004 . 
+source  SELECT c0 FROM "v702"
+
+mappingId ID-886968507
+target  ns:ns/{c0} a ns:m41004 . 
+source  SELECT c0 FROM "v547"
+
+mappingId ID-514219433
+target  ns:ns/{c3} a ns:m110004 . 
+source  SELECT c3 FROM "v547"
+
+mappingId ID-1760708810
+target  ns:ns/{c1} a ns:m110004 . 
+source  SELECT c1 FROM "v741"
+
+mappingId ID1078805958
+target  ns:ns/{c0} a ns:m238004 . 
+source  SELECT c0 FROM "v274"
+
+mappingId ID1638862782
+target  ns:ns/{c0} ns:m246004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v445"
+
+mappingId ID176774718
+target  ns:ns/{c1} ns:m249004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v445"
+
+mappingId ID-109531659
+target  ns:ns/{c2} a ns:m110004 . 
+source  SELECT c2 FROM "v445"
+
+mappingId ID-14731045
+target  ns:ns/{c0} a ns:m24004 . 
+source  SELECT c0 FROM "v784"
+
+mappingId ID-142686933
+target  ns:ns/{c0} a ns:m151004 . 
+source  SELECT c0 FROM "v986"
+
+mappingId ID-1860918251
+target  ns:ns/{c0} a ns:m77004 . 
+source  SELECT c0 FROM "v167"
+
+mappingId ID-723393591
+target  ns:ns/{c0} a ns:m280004 . 
+source  SELECT c0 FROM "v956"
+
+mappingId ID-322319537
+target  ns:ns/{c0} a ns:m81004 . 
+source  SELECT c0 FROM "v766"
+
+mappingId ID719357379
+target  ns:ns/{c1} a ns:m287004 . 
+source  SELECT c1 FROM "v988"
+
+mappingId ID364868521
+target  ns:ns/{c1} ns:m59004 ns:ns/{c3} . 
+source  SELECT c1, c3 FROM "v890"
+
+mappingId ID1539339830
+target  ns:ns/{c2} ns:m293004 ns:ns/{c3} . 
+source  SELECT c2, c3 FROM "v287"
+
+mappingId ID194148028
+target  ns:ns/{c1} ns:m268004 ns:ns/{c3} . 
+source  SELECT c1, c3 FROM "v888"
+
+mappingId ID-793504223
+target  ns:ns/{c3} a ns:m90004 . 
+source  SELECT c3 FROM "v888"
+
+mappingId ID-1894236425
+target  ns:ns/{c0} a ns:m81004 . 
+source  SELECT c0 FROM "v882"
+
+mappingId ID-1486646177
+target  ns:ns/{c0} a ns:m56004 . 
+source  SELECT c0 FROM "v351"
+
+mappingId ID-2131402079
+target  ns:ns/{c0} a ns:m23004 . 
+source  SELECT c0 FROM "v145"
+
+mappingId ID-1115643063
+target  ns:ns/{c1} a ns:m271004 . 
+source  SELECT c1 FROM "v201"
+
+mappingId ID492672480
+target  ns:ns/{c1} a ns:m23004 . 
+source  SELECT c1 FROM "v988"
+
+mappingId ID-1427090776
+target  ns:ns/{c0} ns:m91004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v276"
+
+mappingId ID1796069678
+target  ns:ns/{c0} a ns:m168004 . 
+source  SELECT c0 FROM "v483"
+
+mappingId ID123009256
+target  ns:ns/{c0} ns:m107004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v543"
+
+mappingId ID-2040112867
+target  ns:ns/{c0} ns:m203004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v237"
+
+mappingId ID603362461
+target  ns:ns/{c2} a ns:m65004 . 
+source  SELECT c2 FROM "v237"
+
+mappingId ID1884337503
+target  ns:ns/{c0} ns:m13004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v854"
+
+mappingId ID-1988208673
+target  ns:ns/{c0} ns:m267004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v166"
+
+mappingId ID-924473233
+target  ns:ns/{c1} ns:m208004 ns:ns/{c3} . 
+source  SELECT c1, c3 FROM "v166"
+
+mappingId ID105918738
+target  ns:ns/{c3} a ns:m191004 . 
+source  SELECT c3 FROM "v166"
+
+mappingId ID-1321787828
+target  ns:ns/{c0} a ns:m79004 . 
+source  SELECT c0 FROM "v715"
+
+mappingId ID-1208504062
+target  ns:ns/{c0} a ns:m157004 . 
+source  SELECT c0 FROM "v122"
+
+mappingId ID910360603
+target  ns:ns/{c0} a ns:m112004 . 
+source  SELECT c0 FROM "v447"
+
+mappingId ID1720431754
+target  ns:ns/{c1} a ns:m112004 . 
+source  SELECT c1 FROM "v447"
+
+mappingId ID1854481342
+target  ns:ns/{c2} a ns:m108004 . 
+source  SELECT c2 FROM "v148"
+
+mappingId ID642467868
+target  ns:ns/{c0} ns:m2004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v566"
+
+mappingId ID1490172309
+target  ns:ns/{c0} ns:m22004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v343"
+
+mappingId ID-1906940452
+target  ns:ns/{c1} ns:m194004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v343"
+
+mappingId ID2044530693
+target  ns:ns/{c2} a ns:m7004 . 
+source  SELECT c2 FROM "v343"
+
+mappingId ID415040310
+target  ns:ns/{c1} a ns:m156004 . 
+source  SELECT c1 FROM "v690"
+
+mappingId ID-792829061
+target  ns:ns/{c0} a ns:m250004 . 
+source  SELECT c0 FROM "v116"
+
+mappingId ID-1217433325
+target  ns:ns/{c1} a ns:m4004 . 
+source  SELECT c1 FROM "v116"
+
+mappingId ID-1982233848
+target  ns:ns/{c0} a ns:m88004 . 
+source  SELECT c0 FROM "v933"
+
+mappingId ID389278232
+target  ns:ns/{c2} a ns:m168004 . 
+source  SELECT c2 FROM "v933"
+
+mappingId ID-1347050300
+target  ns:ns/{c0} a ns:m88004 . 
+source  SELECT c0 FROM "v438"
+
+mappingId ID233331862
+target  ns:ns/{c1} a ns:m272004 . 
+source  SELECT c1 FROM "v635"
+
+mappingId ID1310042780
+target  ns:ns/{c0} ns:m232004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v625"
+
+mappingId ID-1682073072
+target  ns:ns/{c2} a ns:m207004 . 
+source  SELECT c2 FROM "v625"
+
+mappingId ID-1852596423
+target  ns:ns/{c0} a ns:m12004 . 
+source  SELECT c0 FROM "v616"
+
+mappingId ID-1609225080
+target  ns:ns/{c2} a ns:m56004 . 
+source  SELECT c2 FROM "v616"
+
+mappingId ID-1336660967
+target  ns:ns/{c0} ns:m178004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v2"
+
+mappingId ID1928245745
+target  ns:ns/{c0} a ns:m33004 . 
+source  SELECT c0 FROM "v211"
+
+mappingId ID1378551075
+target  ns:ns/{c1} a ns:m51004 . 
+source  SELECT c1 FROM "v765"
+
+mappingId ID-70199183
+target  ns:ns/{c0} a ns:m138004 . 
+source  SELECT c0 FROM "v746"
+
+mappingId ID-141913302
+target  ns:ns/{c1} a ns:m52004 . 
+source  SELECT c1 FROM "v594"
+
+mappingId ID1460632158
+target  ns:ns/{c0} a ns:m48004 . 
+source  SELECT c0 FROM "v684"
+
+mappingId ID1428575813
+target  ns:ns/{c2} a ns:m169004 . 
+source  SELECT c2 FROM "v684"
+
+mappingId ID2078340893
+target  ns:ns/{c0} ns:m99004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v953"
+
+mappingId ID1978685925
+target  ns:ns/{c2} a ns:m253004 . 
+source  SELECT c2 FROM "v465"
+
+mappingId ID1479822920
+target  ns:ns/{c0} ns:m8004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v358"
+
+mappingId ID-1744635892
+target  ns:ns/{c1} a ns:m251004 . 
+source  SELECT c1 FROM "v358"
+
+mappingId ID-275921724
+target  ns:ns/{c0} ns:m205004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v480"
+
+mappingId ID1533926939
+target  ns:ns/{c0} ns:m211004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v366"
+
+mappingId ID659916724
+target  ns:ns/{c3} a ns:m76004 . 
+source  SELECT c3 FROM "v17"
+
+mappingId ID1722359044
+target  ns:ns/{c0} ns:m236004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v953"
+
+mappingId ID-265164950
+target  ns:ns/{c0} ns:m134004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v5"
+
+mappingId ID309647344
+target  ns:ns/{c1} a ns:m1004 . 
+source  SELECT c1 FROM "v765"
+
+mappingId ID-1049430847
+target  ns:ns/{c0} a ns:m282004 . 
+source  SELECT c0 FROM "v230"
+
+mappingId ID1817587598
+target  ns:ns/{c1} a ns:m285004 . 
+source  SELECT c1 FROM "v22"
+
+mappingId ID651662728
+target  ns:ns/{c0} ns:m29004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v14"
+
+mappingId ID-338614867
+target  ns:ns/{c2} a ns:m157004 . 
+source  SELECT c2 FROM "v14"
+
+mappingId ID-301262615
+target  ns:ns/{c0} a ns:m115004 . 
+source  SELECT c0 FROM "v356"
+
+mappingId ID-743001136
+target  ns:ns/{c0} a ns:m110004 . 
+source  SELECT c0 FROM "v716"
+
+mappingId ID489620204
+target  ns:ns/{c0} a ns:m97004 . 
+source  SELECT c0 FROM "v345"
+
+mappingId ID-1751514924
+target  ns:ns/{c0} a ns:m64004 . 
+source  SELECT c0 FROM "v700"
+
+mappingId ID-1175535994
+target  ns:ns/{c0} a ns:m287004 . 
+source  SELECT c0 FROM "v276"
+
+mappingId ID1164432620
+target  ns:ns/{c0} ns:m173004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v153"
+
+mappingId ID1132738525
+target  ns:ns/{c2} a ns:m188004 . 
+source  SELECT c2 FROM "v813"
+
+mappingId ID458813556
+target  ns:ns/{c0} ns:m42004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v181"
+
+mappingId ID-2130862952
+target  ns:ns/{c3} a ns:m227004 . 
+source  SELECT c3 FROM "v181"
+
+mappingId ID1390940531
+target  ns:ns/{c0} a ns:m120004 . 
+source  SELECT c0 FROM "v732"
+
+mappingId ID1192801922
+target  ns:ns/{c0} a ns:m23004 . 
+source  SELECT c0 FROM "v860"
+
+mappingId ID1358761151
+target  ns:ns/{c1} a ns:m31004 . 
+source  SELECT c1 FROM "v860"
+
+mappingId ID786502853
+target  ns:ns/{c0} a ns:m251004 . 
+source  SELECT c0 FROM "v564"
+
+mappingId ID1887550235
+target  ns:ns/{c1} a ns:m156004 . 
+source  SELECT c1 FROM "v564"
+
+mappingId ID-72904061
+target  ns:ns/{c0} a ns:m4004 . 
+source  SELECT c0 FROM "v955"
+
+mappingId ID75917273
+target  ns:ns/{c2} a ns:m145004 . 
+source  SELECT c2 FROM "v699"
+
+mappingId ID1554402720
+target  ns:ns/{c1} a ns:m274004 . 
+source  SELECT c1 FROM "v355"
+
+mappingId ID842087856
+target  ns:ns/{c0} a ns:m212004 . 
+source  SELECT c0 FROM "v40"
+
+mappingId ID773906160
+target  ns:ns/{c0} a ns:m271004 . 
+source  SELECT c0 FROM "v232"
+
+mappingId ID415150066
+target  ns:ns/{c0} a ns:m65004 . 
+source  SELECT c0 FROM "v88"
+
+mappingId ID-1754714835
+target  ns:ns/{c3} a ns:m157004 . 
+source  SELECT c3 FROM "v88"
+
+mappingId ID1765040456
+target  ns:ns/{c0} a ns:m274004 . 
+source  SELECT c0 FROM "v144"
+
+mappingId ID269719138
+target  ns:ns/{c1} a ns:m56004 . 
+source  SELECT c1 FROM "v144"
+
+mappingId ID-1559142762
+target  ns:ns/{c0} a ns:m145004 . 
+source  SELECT c0 FROM "v911"
+
+mappingId ID-279578715
+target  ns:ns/{c0} ns:m292004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v80"
+
+mappingId ID-787547206
+target  ns:ns/{c0} a ns:m44004 . 
+source  SELECT c0 FROM "v169"
+
+mappingId ID1225482591
+target  ns:ns/{c0} a ns:m63004 . 
+source  SELECT c0 FROM "v250"
+
+mappingId ID753338691
+target  ns:ns/{c0} ns:m237004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v563"
+
+mappingId ID1985975925
+target  ns:ns/{c0} ns:m3004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v727"
+
+mappingId ID-1230715568
+target  ns:ns/{c2} a ns:m7004 . 
+source  SELECT c2 FROM "v969"
+
+mappingId ID2140790530
+target  ns:ns/{c0} ns:m182004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v640"
+
+mappingId ID-1827887301
+target  ns:ns/{c0} a ns:m50004 . 
+source  SELECT c0 FROM "v450"
+
+mappingId ID1600441228
+target  ns:ns/{c1} ns:m178004 ns:ns/{c3} . 
+source  SELECT c1, c3 FROM "v50"
+
+mappingId ID-506510149
+target  ns:ns/{c0} a ns:m161004 . 
+source  SELECT c0 FROM "v714"
+
+mappingId ID-1659284517
+target  ns:ns/{c0} a ns:m133004 . 
+source  SELECT c0 FROM "v550"
+
+mappingId ID-1159143268
+target  ns:ns/{c0} ns:m243004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v760"
+
+mappingId ID1230951638
+target  ns:ns/{c0} ns:m70004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v9"
+
+mappingId ID-1261304249
+target  ns:ns/{c0} a ns:m280004 . 
+source  SELECT c0 FROM "v668"
+
+mappingId ID-1750015213
+target  ns:ns/{c0} a ns:m227004 . 
+source  SELECT c0 FROM "v622"
+
+mappingId ID1187953325
+target  ns:ns/{c2} a ns:m54004 . 
+source  SELECT c2 FROM "v194"
+
+mappingId ID47727619
+target  ns:ns/{c2} a ns:m12004 . 
+source  SELECT c2 FROM "v825"
+
+mappingId ID209621583
+target  ns:ns/{c1} a ns:m138004 . 
+source  SELECT c1 FROM "v577"
+
+mappingId ID-67062316
+target  ns:ns/{c0} ns:m294004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v566"
+
+mappingId ID-404867719
+target  ns:ns/{c2} ns:m247004 ns:ns/{c3} . 
+source  SELECT c2, c3 FROM "v148"
+
+mappingId ID-795668852
+target  ns:ns/{c0} ns:m278004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v466"
+
+mappingId ID-1023617294
+target  ns:ns/{c2} a ns:m180004 . 
+source  SELECT c2 FROM "v466"
+
+mappingId ID895399143
+target  ns:ns/{c2} a ns:m63004 . 
+source  SELECT c2 FROM "v821"
+
+mappingId ID165195426
+target  ns:ns/{c1} a ns:m115004 . 
+source  SELECT c1 FROM "v892"
+
+mappingId ID1529944566
+target  ns:ns/{c0} a ns:m113004 . 
+source  SELECT c0 FROM "v477"
+
+mappingId ID-1790707450
+target  ns:ns/{c2} a ns:m52004 . 
+source  SELECT c2 FROM "v338"
+
+mappingId ID116570270
+target  ns:ns/{c0} a ns:m90004 . 
+source  SELECT c0 FROM "v642"
+
+mappingId ID-1789387410
+target  ns:ns/{c1} a ns:m212004 . 
+source  SELECT c1 FROM "v642"
+
+mappingId ID-1155348392
+target  ns:ns/{c0} ns:m201004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v564"
+
+mappingId ID-1952792500
+target  ns:ns/{c0} ns:m17004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v116"
+
+mappingId ID1133204211
+target  ns:ns/{c1} a ns:m39004 . 
+source  SELECT c1 FROM "v116"
+
+mappingId ID-197821403
+target  ns:ns/{c3} a ns:m156004 . 
+source  SELECT c3 FROM "v116"
+
+mappingId ID1280526619
+target  ns:ns/{c0} ns:m124004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v460"
+
+mappingId ID1463161573
+target  ns:ns/{c0} ns:m2004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v915"
+
+mappingId ID1945278449
+target  ns:ns/{c0} ns:m177004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v611"
+
+mappingId ID-2082737505
+target  ns:ns/{c1} a ns:m149004 . 
+source  SELECT c1 FROM "v611"
+
+mappingId ID-1404915199
+target  ns:ns/{c1} a ns:m112004 . 
+source  SELECT c1 FROM "v987"
+
+mappingId ID2105488389
+target  ns:ns/{c0} a ns:m198004 . 
+source  SELECT c0 FROM "v474"
+
+mappingId ID1176275026
+target  ns:ns/{c0} a ns:m12004 . 
+source  SELECT c0 FROM "v595"
+
+mappingId ID655070744
+target  ns:ns/{c1} a ns:m64004 . 
+source  SELECT c1 FROM "v548"
+
+mappingId ID1908024424
+target  ns:ns/{c2} a ns:m23004 . 
+source  SELECT c2 FROM "v821"
+
+mappingId ID-1141720603
+target  ns:ns/{c0} a ns:m235004 . 
+source  SELECT c0 FROM "v97"
+
+mappingId ID-1191247255
+target  ns:ns/{c0} ns:m139004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v320"
+
+mappingId ID-1117269434
+target  ns:ns/{c0} a ns:m43004 . 
+source  SELECT c0 FROM "v57"
+
+mappingId ID1028031182
+target  ns:ns/{c0} a ns:m93004 . 
+source  SELECT c0 FROM "v991"
+
+mappingId ID421818110
+target  ns:ns/{c0} a ns:m48004 . 
+source  SELECT c0 FROM "v950"
+
+mappingId ID-1954718398
+target  ns:ns/{c1} a ns:m197004 . 
+source  SELECT c1 FROM "v950"
+
+mappingId ID1213910957
+target  ns:ns/{c0} ns:m66004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v764"
+
+mappingId ID-378897769
+target  ns:ns/{c0} ns:m296004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v733"
+
+mappingId ID1468240499
+target  ns:ns/{c2} a ns:m27004 . 
+source  SELECT c2 FROM "v733"
+
+mappingId ID1859129862
+target  ns:ns/{c0} ns:m53004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v370"
+
+mappingId ID1670933297
+target  ns:ns/{c1} a ns:m79004 . 
+source  SELECT c1 FROM "v370"
+
+mappingId ID423683598
+target  ns:ns/{c2} a ns:m44004 . 
+source  SELECT c2 FROM "v858"
+
+mappingId ID1748904910
+target  ns:ns/{c1} ns:m185004 ns:ns/{c3} . 
+source  SELECT c1, c3 FROM "v888"
+
+mappingId ID1886590884
+target  ns:ns/{c0} a ns:m180004 . 
+source  SELECT c0 FROM "v500"
+
+mappingId ID958436077
+target  ns:ns/{c1} a ns:m57004 . 
+source  SELECT c1 FROM "v918"
+
+mappingId ID-1470838103
+target  ns:ns/{c0} ns:m265004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v992"
+
+mappingId ID2002347503
+target  ns:ns/{c0} ns:m140004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v953"
+
+mappingId ID1932252334
+target  ns:ns/{c0} a ns:m76004 . 
+source  SELECT c0 FROM "v279"
+
+mappingId ID373955650
+target  ns:ns/{c0} ns:m220004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v32"
+
+mappingId ID-1895532656
+target  ns:ns/{c1} a ns:m274004 . 
+source  SELECT c1 FROM "v226"
+
+mappingId ID-788519616
+target  ns:ns/{c2} a ns:m51004 . 
+source  SELECT c2 FROM "v341"
+
+mappingId ID-60699776
+target  ns:ns/{c0} ns:m109004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v542"
+
+mappingId ID1851549489
+target  ns:ns/{c0} a ns:m23004 . 
+source  SELECT c0 FROM "v650"
+
+mappingId ID1880721504
+target  ns:ns/{c0} a ns:m253004 . 
+source  SELECT c0 FROM "v464"
+
+mappingId ID1114131757
+target  ns:ns/{c0} a ns:m272004 . 
+source  SELECT c0 FROM "v947"
+
+mappingId ID286483622
+target  ns:ns/{c2} a ns:m279004 . 
+source  SELECT c2 FROM "v907"
+
+mappingId ID684679917
+target  ns:ns/{c2} ns:m262004 ns:ns/{c3} . 
+source  SELECT c2, c3 FROM "v773"
+
+mappingId ID-23605205
+target  ns:ns/{c2} a ns:m197004 . 
+source  SELECT c2 FROM "v213"
+
+mappingId ID2042783955
+target  ns:ns/{c0} a ns:m104004 . 
+source  SELECT c0 FROM "v212"
+
+mappingId ID-27100289
+target  ns:ns/{c2} a ns:m90004 . 
+source  SELECT c2 FROM "v212"
+
+mappingId ID716097451
+target  ns:ns/{c0} a ns:m110004 . 
+source  SELECT c0 FROM "v675"
+
+mappingId ID-899583805
+target  ns:ns/{c1} ns:m236004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v221"
+
+mappingId ID-5330185
+target  ns:ns/{c0} a ns:m67004 . 
+source  SELECT c0 FROM "v945"
+
+mappingId ID994742557
+target  ns:ns/{c0} ns:m140004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v608"
+
+mappingId ID-988374595
+target  ns:ns/{c0} a ns:m250004 . 
+source  SELECT c0 FROM "v919"
+
+mappingId ID1466868279
+target  ns:ns/{c2} a ns:m213004 . 
+source  SELECT c2 FROM "v643"
+
+mappingId ID-1662158535
+target  ns:ns/{c0} a ns:m94004 . 
+source  SELECT c0 FROM "v869"
+
+mappingId ID-1110652561
+target  ns:ns/{c0} a ns:m43004 . 
+source  SELECT c0 FROM "v304"
+
+mappingId ID327961054
+target  ns:ns/{c1} a ns:m43004 . 
+source  SELECT c1 FROM "v304"
+
+mappingId ID37482142
+target  ns:ns/{c0} a ns:m108004 . 
+source  SELECT c0 FROM "v316"
+
+mappingId ID-1213139320
+target  ns:ns/{c0} a ns:m50004 . 
+source  SELECT c0 FROM "v188"
+
+mappingId ID872158882
+target  ns:ns/{c0} ns:m252004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v334"
+
+mappingId ID-312932657
+target  ns:ns/{c1} a ns:m94004 . 
+source  SELECT c1 FROM "v334"
+
+mappingId ID1962534418
+target  ns:ns/{c0} a ns:m145004 . 
+source  SELECT c0 FROM "v862"
+
+mappingId ID-2141699880
+target  ns:ns/{c0} a ns:m297004 . 
+source  SELECT c0 FROM "v647"
+
+mappingId ID1125529283
+target  ns:ns/{c0} ns:m49004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v380"
+
+mappingId ID1111430178
+target  ns:ns/{c0} ns:m176004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v41"
+
+mappingId ID-264925441
+target  ns:ns/{c1} a ns:m289004 . 
+source  SELECT c1 FROM "v41"
+
+mappingId ID-1397467630
+target  ns:ns/{c0} a ns:m79004 . 
+source  SELECT c0 FROM "v94"
+
+mappingId ID-763598936
+target  ns:ns/{c0} a ns:m258004 . 
+source  SELECT c0 FROM "v331"
+
+mappingId ID103627349
+target  ns:ns/{c1} a ns:m37004 . 
+source  SELECT c1 FROM "v812"
+
+mappingId ID-2023680355
+target  ns:ns/{c0} a ns:m272004 . 
+source  SELECT c0 FROM "v762"
+
+mappingId ID1048695884
+target  ns:ns/{c1} ns:m32004 ns:ns/{c3} . 
+source  SELECT c1, c3 FROM "v762"
+
+mappingId ID942208272
+target  ns:ns/{c0} a ns:m51004 . 
+source  SELECT c0 FROM "v985"
+
+mappingId ID-30366687
+target  ns:ns/{c1} a ns:m172004 . 
+source  SELECT c1 FROM "v985"
+
+mappingId ID-1843886662
+target  ns:ns/{c2} a ns:m39004 . 
+source  SELECT c2 FROM "v821"
+
+mappingId ID348260665
+target  ns:ns/{c0} a ns:m151004 . 
+source  SELECT c0 FROM "v957"
+
+mappingId ID-160627447
+target  ns:ns/{c0} a ns:m168004 . 
+source  SELECT c0 FROM "v539"
+
+mappingId ID873905428
+target  ns:ns/{c0} a ns:m282004 . 
+source  SELECT c0 FROM "v328"
+
+mappingId ID-562659907
+target  ns:ns/{c0} a ns:m94004 . 
+source  SELECT c0 FROM "v669"
+
+mappingId ID860947683
+target  ns:ns/{c0} a ns:m238004 . 
+source  SELECT c0 FROM "v20"
+
+mappingId ID1637107346
+target  ns:ns/{c0} a ns:m289004 . 
+source  SELECT c0 FROM "v433"
+
+mappingId ID-1019878051
+target  ns:ns/{c0} ns:m6004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v200"
+
+mappingId ID-745979418
+target  ns:ns/{c0} ns:m8004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v966"
+
+mappingId ID398304151
+target  ns:ns/{c0} a ns:m147004 . 
+source  SELECT c0 FROM "v617"
+
+mappingId ID-1648204160
+target  ns:ns/{c2} a ns:m280004 . 
+source  SELECT c2 FROM "v617"
+
+mappingId ID1626148582
+target  ns:ns/{c0} ns:m83004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v634"
+
+mappingId ID1563988186
+target  ns:ns/{c1} a ns:m198004 . 
+source  SELECT c1 FROM "v634"
+
+mappingId ID-1455176929
+target  ns:ns/{c0} ns:m46004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v569"
+
+mappingId ID-1137152347
+target  ns:ns/{c2} a ns:m280004 . 
+source  SELECT c2 FROM "v432"
+
+mappingId ID332896168
+target  ns:ns/{c0} ns:m226004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v736"
+
+mappingId ID-1594813858
+target  ns:ns/{c1} ns:m102004 ns:ns/{c3} . 
+source  SELECT c1, c3 FROM "v736"
+
+mappingId ID1394087734
+target  ns:ns/{c2} a ns:m65004 . 
+source  SELECT c2 FROM "v132"
+
+mappingId ID-2123467987
+target  ns:ns/{c0} ns:m6004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v761"
+
+mappingId ID783545657
+target  ns:ns/{c1} ns:m127004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v761"
+
+mappingId ID-1804444318
+target  ns:ns/{c2} ns:m245004 ns:ns/{c3} . 
+source  SELECT c2, c3 FROM "v761"
+
+mappingId ID1463308600
+target  ns:ns/{c0} ns:m116004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v522"
+
+mappingId ID1565536843
+target  ns:ns/{c0} ns:m195004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v761"
+
+mappingId ID-590281303
+target  ns:ns/{c1} a ns:m76004 . 
+source  SELECT c1 FROM "v761"
+
+mappingId ID1516821057
+target  ns:ns/{c2} ns:m74004 ns:ns/{c3} . 
+source  SELECT c2, c3 FROM "v761"
+
+mappingId ID199855897
+target  ns:ns/{c0} a ns:m228004 . 
+source  SELECT c0 FROM "v154"
+
+mappingId ID313625109
+target  ns:ns/{c1} a ns:m287004 . 
+source  SELECT c1 FROM "v154"
+
+mappingId ID1992235407
+target  ns:ns/{c0} a ns:m279004 . 
+source  SELECT c0 FROM "v654"
+
+mappingId ID55379271
+target  ns:ns/{c0} ns:m284004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v620"
+
+mappingId ID1513768343
+target  ns:ns/{c1} ns:m153004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v644"
+
+mappingId ID1291446445
+target  ns:ns/{c0} ns:m249004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v276"
+
+mappingId ID-599848098
+target  ns:ns/{c1} a ns:m188004 . 
+source  SELECT c1 FROM "v276"
+
+mappingId ID9819507
+target  ns:ns/{c0} ns:m216004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v797"
+
+mappingId ID-948168269
+target  ns:ns/{c1} a ns:m35004 . 
+source  SELECT c1 FROM "v797"
+
+mappingId ID827595424
+target  ns:ns/{c0} ns:m15004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v214"
+
+mappingId ID893057020
+target  ns:ns/{c0} a ns:m274004 . 
+source  SELECT c0 FROM "v680"
+
+mappingId ID1155812221
+target  ns:ns/{c0} a ns:m258004 . 
+source  SELECT c0 FROM "v23"
+
+mappingId ID-1711448740
+target  ns:ns/{c0} a ns:m27004 . 
+source  SELECT c0 FROM "v214"
+
+mappingId ID-1247667310
+target  ns:ns/{c0} ns:m230004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v356"
+
+mappingId ID-1808175979
+target  ns:ns/{c0} a ns:m191004 . 
+source  SELECT c0 FROM "v939"
+
+mappingId ID27946266
+target  ns:ns/{c0} ns:m2004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v49"
+
+mappingId ID965813101
+target  ns:ns/{c0} a ns:m27004 . 
+source  SELECT c0 FROM "v791"
+
+mappingId ID-112538343
+target  ns:ns/{c2} ns:m262004 ns:ns/{c3} . 
+source  SELECT c2, c3 FROM "v148"
+
+mappingId ID-361423445
+target  ns:ns/{c0} ns:m290004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v65"
+
+mappingId ID36712573
+target  ns:ns/{c0} a ns:m24004 . 
+source  SELECT c0 FROM "v298"
+
+mappingId ID-235921702
+target  ns:ns/{c0} a ns:m202004 . 
+source  SELECT c0 FROM "v316"
+
+mappingId ID-319703063
+target  ns:ns/{c2} a ns:m81004 . 
+source  SELECT c2 FROM "v754"
+
+mappingId ID-841974927
+target  ns:ns/{c0} ns:m3004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v580"
+
+mappingId ID1627200545
+target  ns:ns/{c0} ns:m53004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v440"
+
+mappingId ID1458290981
+target  ns:ns/{c1} a ns:m79004 . 
+source  SELECT c1 FROM "v440"
+
+mappingId ID-1803076814
+target  ns:ns/{c0} a ns:m37004 . 
+source  SELECT c0 FROM "v622"
+
+mappingId ID-1937918119
+target  ns:ns/{c1} ns:m164004 ns:ns/{c3} . 
+source  SELECT c1, c3 FROM "v512"
+
+mappingId ID1473617605
+target  ns:ns/{c0} a ns:m104004 . 
+source  SELECT c0 FROM "v665"
+
+mappingId ID202394646
+target  ns:ns/{c2} ns:m231004 ns:ns/{c3} . 
+source  SELECT c2, c3 FROM "v192"
+
+mappingId ID220319301
+target  ns:ns/{c0} a ns:m93004 . 
+source  SELECT c0 FROM "v246"
+
+mappingId ID-1767305493
+target  ns:ns/{c0} a ns:m33004 . 
+source  SELECT c0 FROM "v309"
+
+mappingId ID266822584
+target  ns:ns/{c0} a ns:m234004 . 
+source  SELECT c0 FROM "v941"
+
+mappingId ID-504771926
+target  ns:ns/{c1} a ns:m255004 . 
+source  SELECT c1 FROM "v651"
+
+mappingId ID334968957
+target  ns:ns/{c0} a ns:m191004 . 
+source  SELECT c0 FROM "v115"
+
+mappingId ID486305752
+target  ns:ns/{c1} ns:m126004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v115"
+
+mappingId ID-5232810
+target  ns:ns/{c2} a ns:m272004 . 
+source  SELECT c2 FROM "v115"
+
+mappingId ID-1779751605
+target  ns:ns/{c0} a ns:m190004 . 
+source  SELECT c0 FROM "v154"
+
+mappingId ID265741148
+target  ns:ns/{c1} a ns:m213004 . 
+source  SELECT c1 FROM "v154"
+
+mappingId ID-256849585
+target  ns:ns/{c1} a ns:m77004 . 
+source  SELECT c1 FROM "v774"
+
+mappingId ID-1294020654
+target  ns:ns/{c0} ns:m252004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v884"
+
+mappingId ID-164248255
+target  ns:ns/{c1} a ns:m180004 . 
+source  SELECT c1 FROM "v884"
+
+mappingId ID-252400908
+target  ns:ns/{c0} ns:m130004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v880"
+
+mappingId ID-665674098
+target  ns:ns/{c0} a ns:m23004 . 
+source  SELECT c0 FROM "v342"
+
+mappingId ID-165229003
+target  ns:ns/{c0} a ns:m45004 . 
+source  SELECT c0 FROM "v524"
+
+mappingId ID1534294888
+target  ns:ns/{c0} ns:m299004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v445"
+
+mappingId ID-1645883256
+target  ns:ns/{c1} ns:m140004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v445"
+
+mappingId ID547663547
+target  ns:ns/{c0} a ns:m191004 . 
+source  SELECT c0 FROM "v83"
+
+mappingId ID-1174795355
+target  ns:ns/{c0} a ns:m39004 . 
+source  SELECT c0 FROM "v97"
+
+mappingId ID-270819805
+target  ns:ns/{c0} a ns:m65004 . 
+source  SELECT c0 FROM "v247"
+
+mappingId ID-22547598
+target  ns:ns/{c0} a ns:m271004 . 
+source  SELECT c0 FROM "v620"
+
+mappingId ID-1134246413
+target  ns:ns/{c0} a ns:m79004 . 
+source  SELECT c0 FROM "v561"
+
+mappingId ID-2086803734
+target  ns:ns/{c0} a ns:m145004 . 
+source  SELECT c0 FROM "v133"
+
+mappingId ID-560491888
+target  ns:ns/{c1} ns:m70004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v131"
+
+mappingId ID295973958
+target  ns:ns/{c0} a ns:m156004 . 
+source  SELECT c0 FROM "v183"
+
+mappingId ID-1520170077
+target  ns:ns/{c1} ns:m174004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v568"
+
+mappingId ID-1470888402
+target  ns:ns/{c0} ns:m229004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v884"
+
+mappingId ID-1991625476
+target  ns:ns/{c0} a ns:m76004 . 
+source  SELECT c0 FROM "v897"
+
+mappingId ID1092544055
+target  ns:ns/{c3} a ns:m147004 . 
+source  SELECT c3 FROM "v897"
+
+mappingId ID-693804521
+target  ns:ns/{c0} a ns:m271004 . 
+source  SELECT c0 FROM "v546"
+
+mappingId ID-1969749756
+target  ns:ns/{c0} a ns:m65004 . 
+source  SELECT c0 FROM "v320"
+
+mappingId ID901829785
+target  ns:ns/{c0} ns:m17004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v563"
+
+mappingId ID2074505913
+target  ns:ns/{c0} a ns:m253004 . 
+source  SELECT c0 FROM "v939"
+
+mappingId ID1732881232
+target  ns:ns/{c0} ns:m242004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v60"
+
+mappingId ID-1577113941
+target  ns:ns/{c0} a ns:m33004 . 
+source  SELECT c0 FROM "v190"
+
+mappingId ID856405614
+target  ns:ns/{c1} a ns:m149004 . 
+source  SELECT c1 FROM "v190"
+
+mappingId ID1444565863
+target  ns:ns/{c0} ns:m66004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v244"
+
+mappingId ID1648035609
+target  ns:ns/{c1} a ns:m145004 . 
+source  SELECT c1 FROM "v244"
+
+mappingId ID-1151867758
+target  ns:ns/{c0} ns:m18004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v356"
+
+mappingId ID1453806478
+target  ns:ns/{c0} ns:m105004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v820"
+
+mappingId ID-737327577
+target  ns:ns/{c1} a ns:m145004 . 
+source  SELECT c1 FROM "v820"
+
+mappingId ID-1677369764
+target  ns:ns/{c0} a ns:m4004 . 
+source  SELECT c0 FROM "v650"
+
+mappingId ID-595947234
+target  ns:ns/{c0} a ns:m108004 . 
+source  SELECT c0 FROM "v447"
+
+mappingId ID2000602764
+target  ns:ns/{c0} a ns:m64004 . 
+source  SELECT c0 FROM "v789"
+
+mappingId ID-640409716
+target  ns:ns/{c0} a ns:m90004 . 
+source  SELECT c0 FROM "v657"
+
+mappingId ID1079758769
+target  ns:ns/{c0} a ns:m207004 . 
+source  SELECT c0 FROM "v425"
+
+mappingId ID-703226197
+target  ns:ns/{c1} ns:m96004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v425"
+
+mappingId ID1982012461
+target  ns:ns/{c0} ns:m222004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v520"
+
+mappingId ID-456859781
+target  ns:ns/{c1} a ns:m94004 . 
+source  SELECT c1 FROM "v674"
+
+mappingId ID816828727
+target  ns:ns/{c0} ns:m273004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v915"
+
+mappingId ID1507556049
+target  ns:ns/{c2} a ns:m138004 . 
+source  SELECT c2 FROM "v915"
+
+mappingId ID-1306887329
+target  ns:ns/{c0} a ns:m24004 . 
+source  SELECT c0 FROM "v846"
+
+mappingId ID2017455120
+target  ns:ns/{c2} a ns:m133004 . 
+source  SELECT c2 FROM "v846"
+
+mappingId ID-1103619161
+target  ns:ns/{c0} ns:m275004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v839"
+
+mappingId ID1964547560
+target  ns:ns/{c1} a ns:m227004 . 
+source  SELECT c1 FROM "v839"
+
+mappingId ID-790275990
+target  ns:ns/{c2} a ns:m93004 . 
+source  SELECT c2 FROM "v839"
+
+mappingId ID-480799038
+target  ns:ns/{c0} ns:m92004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v953"
+
+mappingId ID1225962149
+target  ns:ns/{c0} a ns:m207004 . 
+source  SELECT c0 FROM "v261"
+
+mappingId ID1797033677
+target  ns:ns/{c0} a ns:m285004 . 
+source  SELECT c0 FROM "v318"
+
+mappingId ID-2012797083
+target  ns:ns/{c0} a ns:m52004 . 
+source  SELECT c0 FROM "v536"
+
+mappingId ID696799172
+target  ns:ns/{c0} ns:m19004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v16"
+
+mappingId ID-317809063
+target  ns:ns/{c0} ns:m130004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v198"
+
+mappingId ID-263659803
+target  ns:ns/{c0} ns:m257004 ns:ns/{c2} . 
+source  SELECT c0, c2 FROM "v938"
+
+mappingId ID71516650
+target  ns:ns/{c0} a ns:m41004 . 
+source  SELECT c0 FROM "v984"
+
+mappingId ID590752686
+target  ns:ns/{c0} a ns:m120004 . 
+source  SELECT c0 FROM "v896"
+
+mappingId ID-2007029186
+target  ns:ns/{c0} ns:m178004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v7"
+
+mappingId ID-767204767
+target  ns:ns/{c0} a ns:m76004 . 
+source  SELECT c0 FROM "v836"
+
+mappingId ID1226175501
+target  ns:ns/{c2} a ns:m271004 . 
+source  SELECT c2 FROM "v902"
+
+mappingId ID1858772828
+target  ns:ns/{c0} ns:m186004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v425"
+
+mappingId ID172211513
+target  ns:ns/{c1} ns:m183004 ns:ns/{c2} . 
+source  SELECT c1, c2 FROM "v425"
+
+mappingId ID-871814973
+target  ns:ns/{c2} a ns:m297004 . 
+source  SELECT c2 FROM "v425"
+
+mappingId ID427615369
+target  ns:ns/{c0} a ns:m297004 . 
+source  SELECT c0 FROM "v272"
+
+mappingId ID-1013475818
+target  ns:ns/{c0} a ns:m188004 . 
+source  SELECT c0 FROM "v460"
+
+mappingId ID1691131629
+target  ns:ns/{c0} ns:m239004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v140"
+
+mappingId ID22804897
+target  ns:ns/{c2} a ns:m141004 . 
+source  SELECT c2 FROM "v872"
+
+mappingId ID-522105796
+target  ns:ns/{c0} ns:m129004 ns:ns/{c1} . 
+source  SELECT c0, c1 FROM "v759"
+
+mappingId ID1112753649
+target  ns:ns/{c0} a ns:m272004 . 
+source  SELECT c0 FROM "v259"
+
+mappingId ID-1768538547
+target  ns:ns/{c1} a ns:m197004 . 
+source  SELECT c1 FROM "v929"
+
+mappingId ID-848537175
+target  ns:ns/{c2} a ns:m228004 . 
+source  SELECT c2 FROM "v929"
+
+]]

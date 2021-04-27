@@ -1,0 +1,622 @@
+src_Abbey {
+	c0 : STRING
+}
+src_Building {
+	c0 : STRING
+}
+src_Abstract-Notion {
+	c0 : STRING
+}
+src_Flavour {
+	c0 : STRING
+}
+src_Actor {
+	c0 : STRING
+}
+src_Entertainer {
+	c0 : STRING
+}
+src_Animal {
+	c0 : STRING
+}
+src_Natural-Object {
+	c0 : STRING
+}
+src_Architect {
+	c0 : STRING
+}
+src_Creator {
+	c0 : STRING
+}
+src_Armament {
+	c0 : STRING
+}
+src_Artefact {
+	c0 : STRING
+}
+src_Art-Form {
+	c0 : STRING
+}
+src_Object {
+	c0 : STRING
+}
+src_Artist {
+	c0 : STRING
+}
+src_Artistic-Movement {
+	c0 : STRING
+}
+src_Movement {
+	c0 : STRING
+}
+src_Artistic-Style {
+	c0 : STRING
+}
+src_Astronaut {
+	c0 : STRING
+}
+src_Discoverer {
+	c0 : STRING
+}
+src_Author {
+	c0 : STRING
+}
+src_Badge {
+	c0 : STRING
+}
+src_Conceptual-Object {
+	c0 : STRING
+}
+src_Battle {
+	c0 : STRING
+}
+src_Event {
+	c0 : STRING
+}
+src_Board {
+	c0 : STRING
+}
+src_Management-Organisation {
+	c0 : STRING
+}
+src_Book {
+	c0 : STRING
+}
+src_Writing {
+	c0 : STRING
+}
+src_Business-Leader {
+	c0 : STRING
+}
+src_Magnate {
+	c0 : STRING
+}
+src_Category {
+	c0 : STRING
+}
+src_VicodiOI {
+	c0 : STRING
+}
+src_Cathedral {
+	c0 : STRING
+}
+src_Church {
+	c0 : STRING
+}
+src_Church-Reformer {
+	c0 : STRING
+}
+src_Religious-Leader {
+	c0 : STRING
+}
+src_City {
+	c0 : STRING
+}
+src_Settlement {
+	c0 : STRING
+}
+src_Cleric {
+	c0 : STRING
+}
+src_Person-Role {
+	c0 : STRING
+}
+src_Clerical-Leader {
+	c0 : STRING
+}
+src_Leader {
+	c0 : STRING
+}
+src_Clothing {
+	c0 : STRING
+}
+src_Commodity {
+	c0 : STRING
+}
+src_Composer {
+	c0 : STRING
+}
+src_Conductor {
+	c0 : STRING
+}
+src_Country {
+	c0 : STRING
+}
+src_Location {
+	c0 : STRING
+}
+src_Crime {
+	c0 : STRING
+}
+src_Criminal {
+	c0 : STRING
+}
+src_Cultural-Agreement {
+	c0 : STRING
+}
+src_Cultural-Organisation {
+	c0 : STRING
+}
+src_Organisation {
+	c0 : STRING
+}
+src_Dancer {
+	c0 : STRING
+}
+src_Diplomat {
+	c0 : STRING
+}
+src_Functionary {
+	c0 : STRING
+}
+src_Disaster {
+	c0 : STRING
+}
+src_Disease {
+	c0 : STRING
+}
+src_Dramaturge {
+	c0 : STRING
+}
+src_Dynasty {
+	c0 : STRING
+}
+src_Social-Group {
+	c0 : STRING
+}
+src_Ecclesiarch {
+	c0 : STRING
+}
+src_Economic-Enterprise {
+	c0 : STRING
+}
+src_Economic-Organisation {
+	c0 : STRING
+}
+src_Economic-Process {
+	c0 : STRING
+}
+src_Economic-Symbol {
+	c0 : STRING
+}
+src_Symbol {
+	c0 : STRING
+}
+src_Economist {
+	c0 : STRING
+}
+src_Scientist {
+	c0 : STRING
+}
+src_Educational-Organisation {
+	c0 : STRING
+}
+src_Election {
+	c0 : STRING
+}
+src_Emperor {
+	c0 : STRING
+}
+src_Head-of-State {
+	c0 : STRING
+}
+src_Engineer {
+	c0 : STRING
+}
+src_Environment {
+	c0 : STRING
+}
+src_Ethnic-Group {
+	c0 : STRING
+}
+src_Fictional-Event {
+	c0 : STRING
+}
+src_Fictional-Person {
+	c0 : STRING
+}
+src_Individual {
+	c0 : STRING
+}
+src_Field-of-Knowledge {
+	c0 : STRING
+}
+src_Intellectual-Construct {
+	c0 : STRING
+}
+src_Film-Maker {
+	c0 : STRING
+}
+src_Time-Dependent {
+	c0 : STRING
+}
+src_Food {
+	c0 : STRING
+}
+src_Foreign-Minister {
+	c0 : STRING
+}
+src_Minister {
+	c0 : STRING
+}
+src_FuzzyTemporalInterval {
+	c0 : STRING
+}
+src_Time {
+	c0 : STRING
+}
+src_Geographer {
+	c0 : STRING
+}
+src_Geographical-Discovery {
+	c0 : STRING
+}
+src_Geographical-Feature {
+	c0 : STRING
+}
+src_Geographical-Region {
+	c0 : STRING
+}
+src_Governmental-Organisation {
+	c0 : STRING
+}
+src_Political-Organisation {
+	c0 : STRING
+}
+src_Head-of-Government {
+	c0 : STRING
+}
+src_Secular-Leader {
+	c0 : STRING
+}
+src_Idea {
+	c0 : STRING
+}
+src_Ideology {
+	c0 : STRING
+}
+src_Illness {
+	c0 : STRING
+}
+src_Life-Event {
+	c0 : STRING
+}
+src_Intellectual-Movement {
+	c0 : STRING
+}
+src_International-Alliance {
+	c0 : STRING
+}
+src_International-Organisation {
+	c0 : STRING
+}
+src_Intra-State-Group {
+	c0 : STRING
+}
+src_Inventor {
+	c0 : STRING
+}
+src_Journal {
+	c0 : STRING
+}
+src_Journalist {
+	c0 : STRING
+}
+src_Jurist {
+	c0 : STRING
+}
+src_King {
+	c0 : STRING
+}
+src_Landmark {
+	c0 : STRING
+}
+src_Language {
+	c0 : STRING
+}
+src_League {
+	c0 : STRING
+}
+src_Legislation {
+	c0 : STRING
+}
+src_Liturgical-Object {
+	c0 : STRING
+}
+src_Location-Part-Relation {
+	c0 : STRING
+}
+src_Time-Dependent-Relation {
+	c0 : STRING
+}
+src_Masonic-Lodge {
+	c0 : STRING
+}
+src_Measurable-Trend {
+	c0 : STRING
+}
+src_Meeting {
+	c0 : STRING
+}
+src_Military-Organisation {
+	c0 : STRING
+}
+src_Military-Person {
+	c0 : STRING
+}
+src_Military-Unit {
+	c0 : STRING
+}
+src_Monastery {
+	c0 : STRING
+}
+src_Musician {
+	c0 : STRING
+}
+src_National-Symbol {
+	c0 : STRING
+}
+src_Newspaper {
+	c0 : STRING
+}
+src_Non-Military-Conflict {
+	c0 : STRING
+}
+src_Other-Religious-Leader {
+	c0 : STRING
+}
+src_Other-Religious-Person {
+	c0 : STRING
+}
+src_Painter {
+	c0 : STRING
+}
+src_Painting {
+	c0 : STRING
+}
+src_Work-of-Art {
+	c0 : STRING
+}
+src_Pamphlet {
+	c0 : STRING
+}
+src_Party {
+	c0 : STRING
+}
+src_Pastime {
+	c0 : STRING
+}
+src_Period {
+	c0 : STRING
+}
+src_Period-in-Office {
+	c0 : STRING
+}
+src_Person {
+	c0 : STRING
+}
+src_Role {
+	c0 : STRING
+}
+src_Philanthropist {
+	c0 : STRING
+}
+src_Philosopher {
+	c0 : STRING
+}
+src_Physician {
+	c0 : STRING
+}
+src_Piece-of-Music {
+	c0 : STRING
+}
+src_Political-Region {
+	c0 : STRING
+}
+src_Political-Symbol {
+	c0 : STRING
+}
+src_Politician {
+	c0 : STRING
+}
+src_Pollution {
+	c0 : STRING
+}
+src_Pope {
+	c0 : STRING
+}
+src_Population-Movement {
+	c0 : STRING
+}
+src_Prince {
+	c0 : STRING
+}
+src_Professor {
+	c0 : STRING
+}
+src_Psychologist {
+	c0 : STRING
+}
+src_Public-Oration {
+	c0 : STRING
+}
+src_Publisher {
+	c0 : STRING
+}
+src_Queen {
+	c0 : STRING
+}
+src_Relic {
+	c0 : STRING
+}
+src_Religious-Community {
+	c0 : STRING
+}
+src_Religious-Organisation {
+	c0 : STRING
+}
+src_Religious-Ideology {
+	c0 : STRING
+}
+src_Religious-Movement {
+	c0 : STRING
+}
+src_Religious-Order {
+	c0 : STRING
+}
+src_Religious-Practice {
+	c0 : STRING
+}
+src_Religious-Symbol {
+	c0 : STRING
+}
+src_Representative-Institution {
+	c0 : STRING
+}
+src_Ritual {
+	c0 : STRING
+}
+src_Saint {
+	c0 : STRING
+}
+src_Scandal {
+	c0 : STRING
+}
+src_Scientific-Instrument {
+	c0 : STRING
+}
+src_Sculptor {
+	c0 : STRING
+}
+src_Sculpture {
+	c0 : STRING
+}
+src_Secular-Ideology {
+	c0 : STRING
+}
+src_Secular-Movement {
+	c0 : STRING
+}
+src_Ship {
+	c0 : STRING
+}
+src_Vehicle {
+	c0 : STRING
+}
+src_Social-Stratum {
+	c0 : STRING
+}
+src_Sportsman {
+	c0 : STRING
+}
+src_Stereotype-Group {
+	c0 : STRING
+}
+src_Structure {
+	c0 : STRING
+}
+src_Sultan {
+	c0 : STRING
+}
+src_Technical-Scientific-Advance {
+	c0 : STRING
+}
+src_TemporalInterval {
+	c0 : STRING
+}
+src_Theologian {
+	c0 : STRING
+}
+src_Trade-Association {
+	c0 : STRING
+}
+src_Trades-Union {
+	c0 : STRING
+}
+src_Trades-Unionist {
+	c0 : STRING
+}
+src_Train {
+	c0 : STRING
+}
+src_Treaty {
+	c0 : STRING
+}
+src_Trial {
+	c0 : STRING
+}
+src_University {
+	c0 : STRING
+}
+src_Uprising {
+	c0 : STRING
+}
+src_Village {
+	c0 : STRING
+}
+src_War {
+	c0 : STRING
+}
+src_Water {
+	c0 : STRING
+}
+src_exists {
+	c0 : STRING,
+	c1 : STRING
+}
+src_related {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasCategory {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasLocationContainerMember {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasRelationMember {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasLocationPartMember {
+	c0 : STRING,
+	c1 : STRING
+}
+src_hasRole {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isLocationContainerMemberOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isRelationMemberOf {
+	c0 : STRING,
+	c1 : STRING
+}
+src_isLocationPartMemberOf {
+	c0 : STRING,
+	c1 : STRING
+}

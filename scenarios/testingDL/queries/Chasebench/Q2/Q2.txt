@@ -1,1 +1,1 @@
-Q2(?0,?1) <- Person(?0),hasStock(?0,?1),Stock(?1) .
+Q2(?X,?Y) <- Person(?X),teacherOf(?X,?Y),Course(?Y) .

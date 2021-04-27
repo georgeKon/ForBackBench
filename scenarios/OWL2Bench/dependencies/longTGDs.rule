@@ -1,0 +1,227 @@
+src_Publication(?X) -> Publication(?X) .
+src_OperationsManagement(?X) -> Management(?X) , OperationsManagement(?X) , CollegeDiscipline(?X) .
+src_Astronomy(?X) -> Astronomy(?X) , CollegeDiscipline(?X) , Science(?X) .
+src_Geosciences(?X) -> Geosciences(?X) , CollegeDiscipline(?X) , Science(?X) .
+src_isHeadOf(?X,?Y) -> hasWork(?X, ?n1) , worksFor(?X, ?Y) , Employee(?X) , isMemberOf(?X, ?Y) , isFacultyOf(?X, ?Y) , teachesCourse(?X, ?n2) , isFullProfessorOf(?X, ?Y) , isHeadOf(?X, ?Y) , Faculty(?X) , Person(?X) , Organization(?Y) , isProfessorOf(?X, ?Y) , Work(?n3) , Course(?n4) .
+src_hasLecturer(?X,?Y) -> hasWork(?Y, ?n5) , worksFor(?Y, ?X) , Employee(?Y) , isMemberOf(?Y, ?X) , hasLecturer(?X, ?Y) , hasMember(?X, ?Y) , isFacultyOf(?Y, ?X) , teachesCourse(?Y, ?n6) , hasFaculty(?X, ?Y) , Faculty(?Y) , Lecturer(?Y) , hasEmployee(?X, ?Y) , isLecturerOf(?Y, ?X) , Person(?Y) , Organization(?X) , Department(?X) , Work(?n7) , Course(?n8) .
+src_isTaughtBy(?X,?Y) -> hasWork(?Y, ?X) , worksFor(?Y, ?n9) , Employee(?Y) , isMemberOf(?Y, ?n10) , teachesCourse(?Y, ?X) , isTaughtBy(?X, ?Y) , Faculty(?Y) , Person(?Y) , Organization(?n11) , Work(?X) , Course(?X) .
+src_hasEmployee(?X,?Y) -> worksFor(?Y, ?X) , Employee(?Y) , isMemberOf(?Y, ?X) , hasMember(?X, ?Y) , hasEmployee(?X, ?Y) , Person(?Y) , Organization(?X) .
+src_ProjectManagement(?X) -> Management(?X) , ProjectManagement(?X) , CollegeDiscipline(?X) .
+src_MarketingManagement(?X) -> Management(?X) , MarketingManagement(?X) , CollegeDiscipline(?X) .
+src_isDeanOf(?X,?Y) -> Person(?X) , Organization(?Y) , isDeanOf(?X, ?Y) .
+src_hasMajor(?X,?Y) -> hasMajor(?X, ?Y) , Person(?X) .
+src_PerformingArts(?X) -> PerformingArts(?X) , FineArts(?X) , CollegeDiscipline(?X) .
+src_hasFaculty(?X,?Y) -> hasWork(?Y, ?n12) , worksFor(?Y, ?X) , Employee(?Y) , isMemberOf(?Y, ?X) , hasMember(?X, ?Y) , isFacultyOf(?Y, ?X) , teachesCourse(?Y, ?n13) , hasFaculty(?X, ?Y) , Faculty(?Y) , hasEmployee(?X, ?Y) , Person(?Y) , Organization(?X) , Department(?X) , Work(?n14) , Course(?n15) .
+src_hasWork(?X,?Y) -> hasWork(?X, ?Y) , worksFor(?X, ?n16) , Employee(?X) , isMemberOf(?X, ?n17) , Person(?X) , Organization(?n18) , Work(?Y) .
+src_hasTelephone(?X,?Y) -> hasTelephone(?X, ?Y) , Person(?X) .
+src_isResearchGroupOf(?X,?Y) -> ResearchGroup(?X) , isResearchGroupOf(?X, ?Y) , isSubOrganizationOf(?X, ?Y) , University(?Y) , Organization(?Y) , Organization(?X) , isPartOf(?X, ?Y) .
+src_ElectiveCourse(?X) -> ElectiveCourse(?X) , Course(?X) .
+src_College(?X) -> College(?X) , Organization(?X) .
+src_Travelling(?X) -> Interest(?X) , Travelling(?X) .
+src_UnofficialPublication(?X) -> Publication(?X) , UnofficialPublication(?X) .
+src_isAffiliatedOrganizationOf(?X,?Y) -> isAffiliatedOrganizationOf(?X, ?Y) , Organization(?X) , Organization(?Y) .
+src_Mathematics(?X) -> Mathematics(?X) , CollegeDiscipline(?X) , Science(?X) .
+src_hasAge(?X,?Y) -> hasAge(?X, ?Y) , Person(?X) .
+src_AsianArts(?X) -> AsianArts(?X) , FineArts(?X) , CollegeDiscipline(?X) .
+src_Book(?X) -> Publication(?X) , Book(?X) .
+src_MedievalArts(?X) -> FineArts(?X) , CollegeDiscipline(?X) , MedievalArts(?X) .
+src_isCrazyAbout(?X,?Y) -> isCrazyAbout(?X, ?Y) , Interest(?Y) , loves(?X, ?Y) , likes(?X, ?Y) , Person(?X) .
+src_TeachingCourse(?X) -> TeachingCourse(?X) , Work(?X) , Course(?X) .
+src_Linguistics(?X) -> Linguistics(?X) , HumanitiesAndSocial(?X) , CollegeDiscipline(?X) .
+src_hasAssistantProfessor(?X,?Y) -> hasWork(?Y, ?n19) , worksFor(?Y, ?X) , Employee(?Y) , hasProfessor(?X, ?Y) , isMemberOf(?Y, ?X) , Professor(?Y) , hasMember(?X, ?Y) , hasAssistantProfessor(?X, ?Y) , isFacultyOf(?Y, ?X) , teachesCourse(?Y, ?n20) , hasFaculty(?X, ?Y) , isAssistantProfessorOf(?Y, ?X) , Faculty(?Y) , hasEmployee(?X, ?Y) , Person(?Y) , Organization(?X) , isProfessorOf(?Y, ?X) , Department(?X) , Work(?n21) , AssistantProfessor(?Y) , Course(?n22) .
+src_hasCommitteeMembers(?X,?Y) -> isMemberOf(?Y, ?X) , hasMember(?X, ?Y) , EvaluationCommittee(?X) , Person(?Y) , Organization(?X) , hasCommitteeMembers(?X, ?Y) .
+src_isProfessorOf(?X,?Y) -> hasWork(?X, ?n23) , worksFor(?X, ?Y) , Employee(?X) , isMemberOf(?X, ?Y) , isFacultyOf(?X, ?Y) , teachesCourse(?X, ?n24) , Faculty(?X) , Person(?X) , Organization(?Y) , isProfessorOf(?X, ?Y) , Work(?n25) , Course(?n26) .
+src_enrollFor(?X,?Y) -> enrollFor(?X, ?Y) .
+src_TeachingAssistant(?X) -> TeachingAssistant(?X) , isTeachingAssistantOf(?X, ?n27) , Course(?n28) .
+src_isStudentOf(?X,?Y) -> isStudentOf(?X, ?Y) , isStudentOf(?X, ?n29) , Student(?X) , isMemberOf(?X, ?Y) , isMemberOf(?X, ?n30) , enrollIn(?X, ?n31) , Person(?X) , Organization(?Y) , Organization(?n32) , Department(?n33) .
+src_CoEdCollege(?X) -> CoEdCollege(?X) , College(?X) , Organization(?X) .
+src_RiskManagement(?X) -> RiskManagement(?X) , Management(?X) , CollegeDiscipline(?X) .
+src_hasResearchAssistant(?X,?Y) -> worksFor(?Y, ?X) , Employee(?Y) , isMemberOf(?Y, ?X) , hasMember(?X, ?Y) , ResearchGroup(?X) , ResearchAssistant(?Y) , hasEmployee(?X, ?Y) , isResearchAssistantOf(?Y, ?X) , hasResearchAssistant(?X, ?Y) , Person(?Y) , Organization(?X) .
+src_enrollIn(?X,?Y) -> isStudentOf(?X, ?Y) , Student(?X) , isMemberOf(?X, ?Y) , enrollIn(?X, ?Y) , Person(?X) , Organization(?Y) , Department(?Y) .
+src_English(?X) -> HumanitiesAndSocial(?X) , English(?X) , CollegeDiscipline(?X) .
+src_PeopleWithHobby(?X) -> Interest(?n34) , likes(?X, ?n35) , Person(?X) , PeopleWithHobby(?X) .
+src_hasPostDoc(?X,?Y) -> isPostDocOf(?Y, ?X) , hasWork(?Y, ?n36) , worksFor(?Y, ?X) , Employee(?Y) , PostDoc(?Y) , isMemberOf(?Y, ?X) , hasMember(?X, ?Y) , isFacultyOf(?Y, ?X) , teachesCourse(?Y, ?n37) , hasFaculty(?X, ?Y) , Faculty(?Y) , hasEmployee(?X, ?Y) , Person(?Y) , Organization(?X) , hasPostDoc(?X, ?Y) , Department(?X) , Work(?n38) , Course(?n39) .
+src_Music(?X) -> Interest(?X) , Music(?X) .
+src_Chemistry(?X) -> Chemistry(?X) , CollegeDiscipline(?X) , Science(?X) .
+src_Humanities(?X) -> Humanities(?X) , HumanitiesAndSocial(?X) , CollegeDiscipline(?X) .
+src_hasCollaborationWith(?X,?Y) -> hasCollaborationWith(?X, ?Y) , Person(?Y) , Person(?X) .
+src_FootBall(?X) -> FootBall(?X) , Interest(?X) , Sports(?X) .
+src_PhDStudent(?X) -> PhDProgram(?n40) , Program(?n41) , PhDStudent(?X) , enrollFor(?X, ?n42) .
+src_SportsFan(?X) -> isCrazyAbout(?X, ?n43) , Interest(?n44) , SportsFan(?X) , Sports(?n45) , loves(?X, ?n46) , likes(?X, ?n47) , Person(?X) .
+src_hasResearchProject(?X,?Y) -> hasWork(?X, ?Y) , worksFor(?X, ?n48) , Employee(?X) , isMemberOf(?X, ?n49) , ResearchProject(?Y) , ResearchGroup(?X) , hasResearchProject(?X, ?Y) , Person(?X) , Organization(?X) , Organization(?n50) , Work(?Y) .
+src_FullProfessor(?X) -> hasWork(?X, ?n51) , worksFor(?X, ?n52) , Employee(?X) , isMemberOf(?X, ?n53) , Professor(?X) , teachesCourse(?X, ?n54) , Faculty(?X) , FullProfessor(?X) , Person(?X) , Organization(?n55) , Work(?n56) , Course(?n57) .
+src_hasAuthor(?X,?Y) -> Publication(?X) , hasAuthor(?X, ?Y) , Person(?Y) .
+src_isAdvisedBy(?X,?Y) -> hasWork(?Y, ?n58) , worksFor(?Y, ?n59) , Employee(?Y) , isMemberOf(?Y, ?n60) , Professor(?Y) , teachesCourse(?Y, ?n61) , Faculty(?Y) , isAdvisedBy(?X, ?Y) , Person(?X) , Person(?Y) , Organization(?n62) , Work(?n63) , Course(?n64) .
+src_hasCollege(?X,?Y) -> isCollegeOf(?Y, ?X) , hasSubOrganization(?X, ?Y) , isSubOrganizationOf(?Y, ?X) , University(?X) , College(?Y) , hasCollege(?X, ?Y) , Organization(?Y) , Organization(?X) , hasPart(?X, ?Y) , isPartOf(?Y, ?X) .
+src_isSubOrganizationOf(?X,?Y) -> isSubOrganizationOf(?X, ?Y) , Organization(?Y) , Organization(?X) , isPartOf(?X, ?Y) .
+src_MaterialsScience(?X) -> MaterialsScience(?X) , CollegeDiscipline(?X) , Science(?X) .
+src_hasOtherStaff(?X,?Y) -> worksFor(?Y, ?X) , Employee(?Y) , isMemberOf(?Y, ?X) , hasMember(?X, ?Y) , OtherStaff(?Y) , hasOtherStaff(?X, ?Y) , hasEmployee(?X, ?Y) , SupportingStaff(?Y) , hasSupportingStaff(?X, ?Y) , Person(?Y) , Organization(?X) , Department(?X) .
+src_TheatreAndDance(?X) -> TheatreAndDance(?X) , FineArts(?X) , CollegeDiscipline(?X) .
+src_hasPGProgram(?X,?Y) -> hasPGProgram(?X, ?Y) , PGProgram(?Y) , Program(?Y) , Organization(?X) , Department(?X) , hasProgram(?X, ?Y) .
+src_isPostDocOf(?X,?Y) -> isPostDocOf(?X, ?Y) , hasWork(?X, ?n65) , worksFor(?X, ?Y) , Employee(?X) , isMemberOf(?X, ?Y) , isFacultyOf(?X, ?Y) , teachesCourse(?X, ?n66) , Faculty(?X) , Person(?X) , Organization(?Y) , Work(?n67) , Course(?n68) .
+src_hasClericalStaff(?X,?Y) -> worksFor(?Y, ?X) , Employee(?Y) , isMemberOf(?Y, ?X) , hasMember(?X, ?Y) , ClericalStaff(?Y) , hasEmployee(?X, ?Y) , SupportingStaff(?Y) , hasSupportingStaff(?X, ?Y) , Person(?Y) , Organization(?X) , hasClericalStaff(?X, ?Y) , Department(?X) .
+src_BasketBallFan(?X) -> isCrazyAbout(?X, ?n69) , Interest(?n70) , BasketBall(?n71) , Sports(?n72) , loves(?X, ?n73) , likes(?X, ?n74) , Person(?X) , BasketBallFan(?X) .
+src_Tennis(?X) -> Tennis(?X) , Interest(?X) , Sports(?X) .
+src_PetroleumlEngineering(?X) -> Engineering(?X) , PetroleumlEngineering(?X) , CollegeDiscipline(?X) .
+src_publicationResearch(?X,?Y) -> publicationResearch(?X, ?Y) , Publication(?X) .
+src_History(?X) -> HumanitiesAndSocial(?X) , History(?X) , CollegeDiscipline(?X) .
+src_hasDoctoralDegreeFrom(?X,?Y) -> hasDoctoralDegreeFrom(?X, ?Y) , University(?Y) , Person(?X) , Organization(?Y) , hasDegreeFrom(?X, ?Y) .
+src_FineArts(?X) -> FineArts(?X) , CollegeDiscipline(?X) .
+src_ResearchAssistant(?X) -> worksFor(?X, ?n75) , Employee(?X) , isMemberOf(?X, ?n76) , ResearchAssistant(?X) , Person(?X) , Organization(?n77) .
+src_AssistantProfessor(?X) -> hasWork(?X, ?n78) , worksFor(?X, ?n79) , Employee(?X) , isMemberOf(?X, ?n80) , Professor(?X) , teachesCourse(?X, ?n81) , Faculty(?X) , Person(?X) , Organization(?n82) , Work(?n83) , AssistantProfessor(?X) , Course(?n84) .
+src_ModernLanguages(?X) -> HumanitiesAndSocial(?X) , CollegeDiscipline(?X) , ModernLanguages(?X) .
+src_isFullProfessorOf(?X,?Y) -> hasWork(?X, ?n85) , worksFor(?X, ?Y) , Employee(?X) , isMemberOf(?X, ?Y) , isFacultyOf(?X, ?Y) , teachesCourse(?X, ?n86) , isFullProfessorOf(?X, ?Y) , Faculty(?X) , Person(?X) , Organization(?Y) , isProfessorOf(?X, ?Y) , Work(?n87) , Course(?n88) .
+src_Lecturer(?X) -> hasWork(?X, ?n89) , worksFor(?X, ?n90) , Employee(?X) , isMemberOf(?X, ?n91) , teachesCourse(?X, ?n92) , Faculty(?X) , Lecturer(?X) , Person(?X) , Organization(?n93) , Work(?n94) , Course(?n95) .
+src_WomanCollege(?X) -> WomanCollege(?X) , College(?X) , Organization(?X) .
+src_hasProfessor(?X,?Y) -> hasWork(?Y, ?n96) , worksFor(?Y, ?X) , Employee(?Y) , hasProfessor(?X, ?Y) , isMemberOf(?Y, ?X) , Professor(?Y) , hasMember(?X, ?Y) , isFacultyOf(?Y, ?X) , teachesCourse(?Y, ?n97) , hasFaculty(?X, ?Y) , Faculty(?Y) , hasEmployee(?X, ?Y) , Person(?Y) , Organization(?X) , isProfessorOf(?Y, ?X) , Department(?X) , Work(?n98) , Course(?n99) .
+src_hasVisitingProfessor(?X,?Y) -> hasWork(?Y, ?n100) , worksFor(?Y, ?X) , Employee(?Y) , hasProfessor(?X, ?Y) , isMemberOf(?Y, ?X) , hasVisitingProfessor(?X, ?Y) , Professor(?Y) , hasMember(?X, ?Y) , isFacultyOf(?Y, ?X) , teachesCourse(?Y, ?n101) , hasFaculty(?X, ?Y) , VisitingProfessor(?Y) , Faculty(?Y) , hasEmployee(?X, ?Y) , isVisitingProfessorOf(?Y, ?X) , Person(?Y) , Organization(?X) , isProfessorOf(?Y, ?X) , Department(?X) , Work(?n102) , Course(?n103) .
+src_Interest(?X) -> Interest(?X) .
+src_isDepartmentOf(?X,?Y) -> isSubOrganizationOf(?X, ?Y) , College(?Y) , Organization(?X) , Organization(?Y) , isPartOf(?X, ?Y) , Department(?X) , isDepartmentOf(?X, ?Y) .
+src_tenured(?X,?Y) -> hasWork(?X, ?n104) , worksFor(?X, ?n105) , Employee(?X) , isMemberOf(?X, ?n106) , Professor(?X) , tenured(?X, ?Y) , teachesCourse(?X, ?n107) , Faculty(?X) , Person(?X) , Organization(?n108) , Work(?n109) , Course(?n110) .
+src_Person(?X) -> Person(?X) .
+src_ResearchProject(?X) -> ResearchProject(?X) , Work(?X) .
+src_CollegeDiscipline(?X) -> CollegeDiscipline(?X) .
+src_HumanitiesAndSocial(?X) -> HumanitiesAndSocial(?X) , CollegeDiscipline(?X) .
+src_Faculty(?X) -> hasWork(?X, ?n111) , worksFor(?X, ?n112) , Employee(?X) , isMemberOf(?X, ?n113) , teachesCourse(?X, ?n114) , Faculty(?X) , Person(?X) , Organization(?n115) , Work(?n116) , Course(?n117) .
+src_hasResearchGroup(?X,?Y) -> ResearchGroup(?Y) , hasSubOrganization(?X, ?Y) , isResearchGroupOf(?Y, ?X) , isSubOrganizationOf(?Y, ?X) , University(?X) , Organization(?X) , Organization(?Y) , hasPart(?X, ?Y) , isPartOf(?Y, ?X) , hasResearchGroup(?X, ?Y) .
+src_UGCourse(?X) -> UGCourse(?X) , Course(?X) .
+src_ScienceStudent(?X) -> hasMajor(?X, ?n118) , ScienceStudent(?X) , Person(?X) , CollegeDiscipline(?n119) , Science(?n120) .
+src_BiomedicalEngineering(?X) -> BiomedicalEngineering(?X) , Engineering(?X) , CollegeDiscipline(?X) .
+src_hasUndergraduateDegreeFrom(?X,?Y) -> hasUndergraduateDegreeFrom(?X, ?Y) , University(?Y) , Person(?X) , Organization(?Y) , hasDegreeFrom(?X, ?Y) .
+src_ClericalStaff(?X) -> ClericalStaff(?X) , SupportingStaff(?X) .
+src_isSupportingStaffOf(?X,?Y) -> worksFor(?X, ?Y) , Employee(?X) , isMemberOf(?X, ?Y) , isSupportingStaffOf(?X, ?Y) , Person(?X) , Organization(?Y) .
+src_Anthropology(?X) -> Anthropology(?X) , HumanitiesAndSocial(?X) , CollegeDiscipline(?X) .
+src_Badminton(?X) -> Interest(?X) , Sports(?X) , Badminton(?X) .
+src_Chair(?X) -> hasWork(?X, ?n121) , worksFor(?X, ?n122) , Employee(?X) , isMemberOf(?X, ?n123) , Professor(?X) , isFacultyOf(?X, ?n124) , Chair(?X) , teachesCourse(?X, ?n125) , isFullProfessorOf(?X, ?n126) , isHeadOf(?X, ?n127) , Faculty(?X) , FullProfessor(?X) , Person(?X) , Organization(?n128) , isProfessorOf(?X, ?n129) , Department(?n130) , Work(?n131) , Course(?n132) .
+src_Management(?X) -> Management(?X) , CollegeDiscipline(?X) .
+src_evaluatedBy(?X,?Y) -> evaluatedBy(?X, ?Y) , EvaluationCommittee(?Y) , evaluates(?Y, ?X) , Person(?X) .
+src_loves(?X,?Y) -> Interest(?Y) , loves(?X, ?Y) , likes(?X, ?Y) , Person(?X) .
+src_hasFullProfessor(?X,?Y) -> hasWork(?Y, ?n133) , worksFor(?Y, ?X) , Employee(?Y) , hasProfessor(?X, ?Y) , isMemberOf(?Y, ?X) , Professor(?Y) , hasMember(?X, ?Y) , isFacultyOf(?Y, ?X) , teachesCourse(?Y, ?n134) , hasFaculty(?X, ?Y) , hasFullProfessor(?X, ?Y) , isFullProfessorOf(?Y, ?X) , Faculty(?Y) , hasEmployee(?X, ?Y) , FullProfessor(?Y) , Person(?Y) , Organization(?X) , isProfessorOf(?Y, ?X) , Department(?X) , Work(?n135) , Course(?n136) .
+src_PublicRelationsManagement(?X) -> Management(?X) , PublicRelationsManagement(?X) , CollegeDiscipline(?X) .
+src_hasStudent(?X,?Y) -> isStudentOf(?Y, ?X) , isStudentOf(?Y, ?n137) , Student(?Y) , isMemberOf(?Y, ?X) , isMemberOf(?Y, ?n138) , hasMember(?X, ?Y) , enrollIn(?Y, ?n139) , Person(?Y) , hasStudent(?X, ?Y) , Organization(?X) , Organization(?n140) , Department(?n141) .
+src_isClericalStaffOf(?X,?Y) -> worksFor(?X, ?Y) , Employee(?X) , isMemberOf(?X, ?Y) , isSupportingStaffOf(?X, ?Y) , isClericalStaffOf(?X, ?Y) , Person(?X) , Organization(?Y) .
+src_ModernArts(?X) -> ModernArts(?X) , FineArts(?X) , CollegeDiscipline(?X) .
+src_Engineering(?X) -> Engineering(?X) , CollegeDiscipline(?X) .
+src_Architecture(?X) -> Architecture(?X) , FineArts(?X) , CollegeDiscipline(?X) .
+src_hasDean(?X,?Y) -> Person(?Y) , Organization(?X) , isDeanOf(?Y, ?X) , hasDean(?X, ?Y) .
+src_dislikes(?X,?Y) -> Interest(?Y) , Person(?X) , dislikes(?X, ?Y) .
+src_isAssociateProfessorOf(?X,?Y) -> hasWork(?X, ?n142) , worksFor(?X, ?Y) , Employee(?X) , isMemberOf(?X, ?Y) , isFacultyOf(?X, ?Y) , teachesCourse(?X, ?n143) , isAssociateProfessorOf(?X, ?Y) , Faculty(?X) , Person(?X) , Organization(?Y) , isProfessorOf(?X, ?Y) , Work(?n144) , Course(?n145) .
+src_isLecturerOf(?X,?Y) -> hasWork(?X, ?n146) , worksFor(?X, ?Y) , Employee(?X) , isMemberOf(?X, ?Y) , isFacultyOf(?X, ?Y) , teachesCourse(?X, ?n147) , Faculty(?X) , isLecturerOf(?X, ?Y) , Person(?X) , Organization(?Y) , Work(?n148) , Course(?n149) .
+src_evaluates(?X,?Y) -> EvaluationCommittee(?X) , evaluates(?X, ?Y) , Person(?Y) .
+src_hasSupportingStaff(?X,?Y) -> worksFor(?Y, ?X) , Employee(?Y) , isMemberOf(?Y, ?X) , hasMember(?X, ?Y) , hasEmployee(?X, ?Y) , SupportingStaff(?Y) , hasSupportingStaff(?X, ?Y) , Person(?Y) , Organization(?X) , Department(?X) .
+src_Painting(?X) -> Painting(?X) , Interest(?X) .
+src_ConferencePaper(?X) -> Publication(?X) , ConferencePaper(?X) , Article(?X) .
+src_Professor(?X) -> hasWork(?X, ?n150) , worksFor(?X, ?n151) , Employee(?X) , isMemberOf(?X, ?n152) , Professor(?X) , teachesCourse(?X, ?n153) , Faculty(?X) , Person(?X) , Organization(?n154) , Work(?n155) , Course(?n156) .
+src_hasPhDProgram(?X,?Y) -> hasPhDProgram(?X, ?Y) , PhDProgram(?Y) , Program(?Y) , Organization(?X) , Department(?X) , hasProgram(?X, ?Y) .
+src_hasDepartment(?X,?Y) -> hasSubOrganization(?X, ?Y) , isSubOrganizationOf(?Y, ?X) , College(?X) , Organization(?X) , Organization(?Y) , hasPart(?X, ?Y) , isPartOf(?Y, ?X) , hasDepartment(?X, ?Y) , Department(?Y) , isDepartmentOf(?Y, ?X) .
+src_ChemicalEngineering(?X) -> Engineering(?X) , ChemicalEngineering(?X) , CollegeDiscipline(?X) .
+src_Drama(?X) -> Drama(?X) , FineArts(?X) , CollegeDiscipline(?X) .
+src_Employee(?X) -> worksFor(?X, ?n157) , Employee(?X) , isMemberOf(?X, ?n158) , Person(?X) , Organization(?n159) .
+src_hasHead(?X,?Y) -> hasWork(?Y, ?n160) , worksFor(?Y, ?X) , Employee(?Y) , hasProfessor(?X, ?Y) , isMemberOf(?Y, ?X) , Professor(?Y) , hasMember(?X, ?Y) , isFacultyOf(?Y, ?X) , teachesCourse(?Y, ?n161) , hasFaculty(?X, ?Y) , hasFullProfessor(?X, ?Y) , isFullProfessorOf(?Y, ?X) , isHeadOf(?Y, ?X) , Faculty(?Y) , hasEmployee(?X, ?Y) , FullProfessor(?Y) , Person(?Y) , hasHead(?X, ?Y) , Organization(?X) , isProfessorOf(?Y, ?X) , Department(?X) , Work(?n162) , Course(?n163) .
+src_hasStudentEvaluationCommittee(?X,?Y) -> StudentEvaluationCommittee(?Y) , hasEvaluationCommittee(?X, ?Y) , EvaluationCommittee(?Y) , Organization(?X) , hasStudentEvaluationCommittee(?X, ?Y) .
+src_ComputerScience(?X) -> CollegeDiscipline(?X) , Science(?X) , ComputerScience(?X) .
+src_UGProgram(?X) -> Program(?X) , UGProgram(?X) .
+src_hasCollegeDiscipline(?X,?Y) -> College(?X) , Organization(?X) , CollegeDiscipline(?Y) , hasCollegeDiscipline(?X, ?Y) .
+src_OtherStaff(?X) -> OtherStaff(?X) , SupportingStaff(?X) .
+src_MusicsClass(?X) -> MusicsClass(?X) , FineArts(?X) , CollegeDiscipline(?X) .
+src_SystemStaff(?X) -> SystemStaff(?X) , SupportingStaff(?X) .
+src_FinancialAndAccountingManagement(?X) -> Management(?X) , CollegeDiscipline(?X) , FinancialAndAccountingManagement(?X) .
+src_isWomenCollegeOf(?X,?Y) -> isCollegeOf(?X, ?Y) , isWomenCollegeOf(?X, ?Y) , isSubOrganizationOf(?X, ?Y) , University(?Y) , College(?X) , Organization(?Y) , Organization(?X) , isPartOf(?X, ?Y) .
+src_SportsLover(?X) -> SportsLover(?X) , Interest(?n164) , Sports(?n165) , loves(?X, ?n166) , likes(?X, ?n167) , Person(?X) .
+src_hasPart(?X,?Y) -> Organization(?X) , Organization(?Y) , hasPart(?X, ?Y) , isPartOf(?Y, ?X) .
+src_hasWomenCollege(?X,?Y) -> isCollegeOf(?Y, ?X) , hasSubOrganization(?X, ?Y) , isSubOrganizationOf(?Y, ?X) , hasWomenCollege(?X, ?Y) , University(?X) , College(?Y) , hasCollege(?X, ?Y) , Organization(?Y) , Organization(?X) , hasPart(?X, ?Y) , isPartOf(?Y, ?X) .
+src_SalesManagement(?X) -> Management(?X) , SalesManagement(?X) , CollegeDiscipline(?X) .
+src_BasketBallLover(?X) -> BasketBallLover(?X) , Interest(?n168) , BasketBall(?n169) , Sports(?n170) , loves(?X, ?n171) , likes(?X, ?n172) , Person(?X) .
+src_MarineScience(?X) -> MarineScience(?X) , CollegeDiscipline(?X) , Science(?X) .
+src_isCollegeOf(?X,?Y) -> isCollegeOf(?X, ?Y) , isSubOrganizationOf(?X, ?Y) , University(?Y) , College(?X) , Organization(?Y) , Organization(?X) , isPartOf(?X, ?Y) .
+src_hasSystemStaff(?X,?Y) -> worksFor(?Y, ?X) , Employee(?Y) , isMemberOf(?Y, ?X) , hasMember(?X, ?Y) , SystemStaff(?Y) , hasEmployee(?X, ?Y) , SupportingStaff(?Y) , hasSupportingStaff(?X, ?Y) , Person(?Y) , Organization(?X) , Department(?X) , hasSystemStaff(?X, ?Y) .
+src_Institute(?X) -> Institute(?X) , Organization(?X) .
+src_SupportingStaff(?X) -> SupportingStaff(?X) .
+src_Course(?X) -> Course(?X) .
+src_LatinArts(?X) -> LatinArts(?X) , FineArts(?X) , CollegeDiscipline(?X) .
+src_hasDegreeFrom(?X,?Y) -> University(?Y) , Person(?X) , Organization(?Y) , hasDegreeFrom(?X, ?Y) .
+src_hasThesisEvaluationCommittee(?X,?Y) -> StudentEvaluationCommittee(?Y) , hasEvaluationCommittee(?X, ?Y) , hasThesisEvaluationCommittee(?X, ?Y) , ThesisEvaluationCommittee(?Y) , EvaluationCommittee(?Y) , Organization(?X) , hasStudentEvaluationCommittee(?X, ?Y) .
+src_University(?X) -> University(?X) , Organization(?X) .
+src_ComputerEngineering(?X) -> Engineering(?X) , ComputerEngineering(?X) , CollegeDiscipline(?X) .
+src_BasketBall(?X) -> Interest(?X) , BasketBall(?X) , Sports(?X) .
+src_hasEmployeeEvaluationCommittee(?X,?Y) -> hasEvaluationCommittee(?X, ?Y) , hasEmployeeEvaluationCommittee(?X, ?Y) , EvaluationCommittee(?Y) , Organization(?X) , EmployeeEvaluationCommittee(?Y) .
+src_UGStudent(?X) -> UGStudent(?X) , Program(?n173) , UGProgram(?n174) , enrollFor(?X, ?n175) .
+src_hasMember(?X,?Y) -> isMemberOf(?Y, ?X) , hasMember(?X, ?Y) , Person(?Y) , Organization(?X) .
+src_SupplyChainManagement(?X) -> Management(?X) , SupplyChainManagement(?X) , CollegeDiscipline(?X) .
+src_StudentEvaluationCommittee(?X) -> StudentEvaluationCommittee(?X) , EvaluationCommittee(?X) .
+src_NonScience(?X) -> NonScience(?X) , CollegeDiscipline(?X) .
+src_EmployeeEvaluationCommittee(?X) -> EvaluationCommittee(?X) , EmployeeEvaluationCommittee(?X) .
+src_isSystemStaffOf(?X,?Y) -> worksFor(?X, ?Y) , Employee(?X) , isMemberOf(?X, ?Y) , isSupportingStaffOf(?X, ?Y) , isSystemStaffOf(?X, ?Y) , Person(?X) , Organization(?Y) .
+src_Work(?X) -> Work(?X) .
+src_isVisitingProfessorOf(?X,?Y) -> hasWork(?X, ?n176) , worksFor(?X, ?Y) , Employee(?X) , isMemberOf(?X, ?Y) , isFacultyOf(?X, ?Y) , teachesCourse(?X, ?n177) , Faculty(?X) , isVisitingProfessorOf(?X, ?Y) , Person(?X) , Organization(?Y) , isProfessorOf(?X, ?Y) , Work(?n178) , Course(?n179) .
+src_offerCourse(?X,?Y) -> offerCourse(?X, ?Y) , Organization(?X) , Department(?X) , Course(?Y) .
+src_hasMasterDegreeFrom(?X,?Y) -> University(?Y) , Person(?X) , Organization(?Y) , hasMasterDegreeFrom(?X, ?Y) , hasDegreeFrom(?X, ?Y) .
+src_HumanResourceManagement(?X) -> Management(?X) , HumanResourceManagement(?X) , CollegeDiscipline(?X) .
+src_Economics(?X) -> Economics(?X) , HumanitiesAndSocial(?X) , CollegeDiscipline(?X) .
+src_isFacultyOf(?X,?Y) -> hasWork(?X, ?n180) , worksFor(?X, ?Y) , Employee(?X) , isMemberOf(?X, ?Y) , isFacultyOf(?X, ?Y) , teachesCourse(?X, ?n181) , Faculty(?X) , Person(?X) , Organization(?Y) , Work(?n182) , Course(?n183) .
+src_MechanicalEngineering(?X) -> Engineering(?X) , MechanicalEngineering(?X) , CollegeDiscipline(?X) .
+src_Program(?X) -> Program(?X) .
+src_hasFirstName(?X,?Y) -> hasFirstName(?X, ?Y) , Person(?X) .
+src_ResearchGroup(?X) -> ResearchGroup(?X) , Organization(?X) .
+src_VisitingProfessor(?X) -> hasWork(?X, ?n184) , worksFor(?X, ?n185) , Employee(?X) , isMemberOf(?X, ?n186) , Professor(?X) , teachesCourse(?X, ?n187) , VisitingProfessor(?X) , Faculty(?X) , Person(?X) , Organization(?n188) , Work(?n189) , Course(?n190) .
+src_isAssistantProfessorOf(?X,?Y) -> hasWork(?X, ?n191) , worksFor(?X, ?Y) , Employee(?X) , isMemberOf(?X, ?Y) , isFacultyOf(?X, ?Y) , teachesCourse(?X, ?n192) , isAssistantProfessorOf(?X, ?Y) , Faculty(?X) , Person(?X) , Organization(?Y) , isProfessorOf(?X, ?Y) , Work(?n193) , Course(?n194) .
+src_JournalArticle(?X) -> Publication(?X) , Article(?X) , JournalArticle(?X) .
+src_Science(?X) -> CollegeDiscipline(?X) , Science(?X) .
+src_Religions(?X) -> Religions(?X) , HumanitiesAndSocial(?X) , CollegeDiscipline(?X) .
+src_AeronauticalEngineering(?X) -> Engineering(?X) , AeronauticalEngineering(?X) , CollegeDiscipline(?X) .
+src_hasTitle(?X,?Y) -> hasTitle(?X, ?Y) , Person(?X) .
+src_Statistics(?X) -> Statistics(?X) , CollegeDiscipline(?X) , Science(?X) .
+src_isOtherStaffOf(?X,?Y) -> worksFor(?X, ?Y) , Employee(?X) , isMemberOf(?X, ?Y) , isSupportingStaffOf(?X, ?Y) , isOtherStaffOf(?X, ?Y) , Person(?X) , Organization(?Y) .
+src_Psychology(?X) -> HumanitiesAndSocial(?X) , Psychology(?X) , CollegeDiscipline(?X) .
+src_Philosophy(?X) -> Philosophy(?X) , HumanitiesAndSocial(?X) , CollegeDiscipline(?X) .
+src_DesignManagement(?X) -> Management(?X) , DesignManagement(?X) , CollegeDiscipline(?X) .
+src_Article(?X) -> Publication(?X) , Article(?X) .
+src_hasAlumnus(?X,?Y) -> hasAlumnus(?X, ?Y) , University(?X) , Person(?Y) , Organization(?X) , hasDegreeFrom(?Y, ?X) .
+src_EvaluationCommittee(?X) -> EvaluationCommittee(?X) .
+src_isPartOf(?X,?Y) -> Organization(?X) , Organization(?Y) , isPartOf(?X, ?Y) .
+src_MediaArtsAndSciences(?X) -> FineArts(?X) , CollegeDiscipline(?X) , MediaArtsAndSciences(?X) .
+src_takesCourse(?X,?Y) -> isStudentOf(?X, ?n195) , Student(?X) , isMemberOf(?X, ?n196) , enrollIn(?X, ?n197) , takesCourse(?X, ?Y) , Person(?X) , Organization(?n198) , Department(?n199) , Course(?Y) .
+src_ThesisEvaluationCommittee(?X) -> StudentEvaluationCommittee(?X) , ThesisEvaluationCommittee(?X) , EvaluationCommittee(?X) .
+src_Software(?X) -> Publication(?X) , Software(?X) .
+src_isTeachingAssistantOf(?X,?Y) -> TeachingAssistant(?X) , isTeachingAssistantOf(?X, ?Y) , Course(?Y) .
+src_orgPublication(?X,?Y) -> Publication(?Y) , orgPublication(?X, ?Y) , Organization(?X) .
+src_hasUGProgram(?X,?Y) -> hasUGProgram(?X, ?Y) , Program(?Y) , UGProgram(?Y) , Organization(?X) , Department(?X) , hasProgram(?X, ?Y) .
+src_hasAdvisor(?X,?Y) -> hasWork(?Y, ?n200) , worksFor(?Y, ?n201) , Employee(?Y) , isMemberOf(?Y, ?n202) , Professor(?Y) , teachesCourse(?Y, ?n203) , hasAdvisor(?X, ?Y) , Faculty(?Y) , isAdvisedBy(?X, ?Y) , Person(?X) , Person(?Y) , Organization(?n204) , Work(?n205) , Course(?n206) .
+src_PGProgram(?X) -> PGProgram(?X) , Program(?X) .
+src_Department(?X) -> Organization(?X) , Department(?X) .
+src_Organization(?X) -> Organization(?X) .
+src_Director(?X) -> hasWork(?X, ?n207) , worksFor(?X, ?n208) , Employee(?X) , isMemberOf(?X, ?n209) , Professor(?X) , isFacultyOf(?X, ?n210) , teachesCourse(?X, ?n211) , isFullProfessorOf(?X, ?n212) , isHeadOf(?X, ?n213) , Program(?n214) , Faculty(?X) , Director(?X) , FullProfessor(?X) , Person(?X) , Organization(?n215) , isProfessorOf(?X, ?n216) , Work(?n217) , Course(?n218) .
+src_worksFor(?X,?Y) -> worksFor(?X, ?Y) , Employee(?X) , isMemberOf(?X, ?Y) , Person(?X) , Organization(?Y) .
+src_Sports(?X) -> Interest(?X) , Sports(?X) .
+src_isMemberOf(?X,?Y) -> isMemberOf(?X, ?Y) , Person(?X) , Organization(?Y) .
+src_Game(?X) -> Game(?X) , Interest(?X) .
+src_teachesCourse(?X,?Y) -> hasWork(?X, ?Y) , worksFor(?X, ?n219) , Employee(?X) , isMemberOf(?X, ?n220) , teachesCourse(?X, ?Y) , Faculty(?X) , Person(?X) , Organization(?n221) , Work(?Y) , Course(?Y) .
+src_TechnicalReport(?X) -> Publication(?X) , TechnicalReport(?X) , Article(?X) .
+src_Cricket(?X) -> Cricket(?X) , Interest(?X) , Sports(?X) .
+src_Movie(?X) -> Interest(?X) , Movie(?X) .
+src_hasEvaluationCommittee(?X,?Y) -> hasEvaluationCommittee(?X, ?Y) , EvaluationCommittee(?Y) , Organization(?X) .
+src_AssociateProfessor(?X) -> hasWork(?X, ?n222) , worksFor(?X, ?n223) , AssociateProfessor(?X) , Employee(?X) , isMemberOf(?X, ?n224) , Professor(?X) , teachesCourse(?X, ?n225) , Faculty(?X) , Person(?X) , Organization(?n226) , Work(?n227) , Course(?n228) .
+src_hasAssociateProfessor(?X,?Y) -> hasWork(?Y, ?n229) , worksFor(?Y, ?X) , AssociateProfessor(?Y) , Employee(?Y) , hasProfessor(?X, ?Y) , isMemberOf(?Y, ?X) , Professor(?Y) , hasMember(?X, ?Y) , isFacultyOf(?Y, ?X) , teachesCourse(?Y, ?n230) , hasFaculty(?X, ?Y) , isAssociateProfessorOf(?Y, ?X) , Faculty(?Y) , hasEmployee(?X, ?Y) , hasAssociateProfessor(?X, ?Y) , Person(?Y) , Organization(?X) , isProfessorOf(?Y, ?X) , Department(?X) , Work(?n231) , Course(?n232) .
+src_CivilEngineering(?X) -> Engineering(?X) , CivilEngineering(?X) , CollegeDiscipline(?X) .
+src_Specification(?X) -> Specification(?X) , Publication(?X) .
+src_Swimming(?X) -> Interest(?X) , Sports(?X) , Swimming(?X) .
+src_Manual(?X) -> Publication(?X) , Manual(?X) .
+src_PostDoc(?X) -> hasWork(?X, ?n233) , worksFor(?X, ?n234) , Employee(?X) , PostDoc(?X) , isMemberOf(?X, ?n235) , teachesCourse(?X, ?n236) , Faculty(?X) , Person(?X) , Organization(?n237) , Work(?n238) , Course(?n239) .
+src_hasSubOrganization(?X,?Y) -> hasSubOrganization(?X, ?Y) , isSubOrganizationOf(?Y, ?X) , Organization(?X) , Organization(?Y) , hasPart(?X, ?Y) , isPartOf(?Y, ?X) .
+src_Biology(?X) -> Biology(?X) , CollegeDiscipline(?X) , Science(?X) .
+src_Dean(?X) -> hasWork(?X, ?n240) , worksFor(?X, ?n241) , Dean(?X) , Employee(?X) , isMemberOf(?X, ?n242) , Professor(?X) , isFacultyOf(?X, ?n243) , teachesCourse(?X, ?n244) , isFullProfessorOf(?X, ?n245) , isHeadOf(?X, ?n246) , Faculty(?X) , FullProfessor(?X) , College(?n247) , Person(?X) , Organization(?n248) , isProfessorOf(?X, ?n249) , Work(?n250) , Course(?n251) .
+src_Physics(?X) -> Physics(?X) , CollegeDiscipline(?X) , Science(?X) .
+src_ElectricalEngineering(?X) -> Engineering(?X) , ElectricalEngineering(?X) , CollegeDiscipline(?X) .
+src_hasLastName(?X,?Y) -> Person(?X) , hasLastName(?X, ?Y) .
+src_NonScienceStudent(?X) -> isStudentOf(?X, ?n252) , Student(?X) , isMemberOf(?X, ?n253) , hasMajor(?X, ?n254) , enrollIn(?X, ?n255) , NonScience(?n256) , Person(?X) , Organization(?n257) , NonScienceStudent(?X) , CollegeDiscipline(?n258) , Department(?n259) .
+src_PGStudent(?X) -> PGProgram(?n260) , Program(?n261) , enrollFor(?X, ?n262) , PGStudent(?X) .
+src_isResearchAssistantOf(?X,?Y) -> worksFor(?X, ?Y) , Employee(?X) , isMemberOf(?X, ?Y) , isResearchAssistantOf(?X, ?Y) , Person(?X) , Organization(?Y) .
+src_MaterialScienceEngineering(?X) -> Engineering(?X) , MaterialScienceEngineering(?X) , CollegeDiscipline(?X) .
+src_School(?X) -> College(?X) , Organization(?X) , School(?X) .
+src_IndustryEngineering(?X) -> IndustryEngineering(?X) , Engineering(?X) , CollegeDiscipline(?X) .
+src_Student(?X) -> isStudentOf(?X, ?n263) , Student(?X) , isMemberOf(?X, ?n264) , enrollIn(?X, ?n265) , Person(?X) , Organization(?n266) , Department(?n267) .
+src_Reading(?X) -> Reading(?X) , Interest(?X) .
+src_hasProgram(?X,?Y) -> Program(?Y) , Organization(?X) , Department(?X) , hasProgram(?X, ?Y) .
+src_likes(?X,?Y) -> Interest(?Y) , likes(?X, ?Y) , Person(?X) .
+src_PhDProgram(?X) -> PhDProgram(?X) , Program(?X) .
+src_hasEmailAddress(?X,?Y) -> hasEmailAddress(?X, ?Y) , Person(?X) .

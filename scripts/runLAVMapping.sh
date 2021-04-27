@@ -2,7 +2,7 @@
 
 # query.sh runs a test on one query of a scenario
 NUM_TESTS=1
-SCENARIOS=("scenarios/GQRDeep" )
+SCENARIOS=("scenarios/Vicodi" )
 SIZES=("medium")
 
 for BASE_DIR in "${SCENARIOS[@]}"; do
@@ -13,8 +13,8 @@ for BASE_DIR in "${SCENARIOS[@]}"; do
     export PGPASSWORD
     psql -h $PGHOST -p $PGPORT -U $PGUSER -c "DROP DATABASE IF EXISTS \"${PGDATABASE}\";"
     psql -h $PGHOST -p $PGPORT -U $PGUSER -c "CREATE DATABASE \"${PGDATABASE}\";"
-    psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -f ../$BASE_DIR/schema/oneToOne/s-schema.sql
-    for file in ../$BASE_DIR/data/oneToOne/$SIZE/*.csv; do
+    psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -f ../$BASE_DIR/schema/LAV/s-schema.sql
+    for file in ../$BASE_DIR/data/LAV/$SIZE/*.csv; do
     TABLE=$(basename "$file" .csv)
     cat $file | psql -c "COPY \"$TABLE\" from stdin CSV DELIMITER ','" -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE
     done
