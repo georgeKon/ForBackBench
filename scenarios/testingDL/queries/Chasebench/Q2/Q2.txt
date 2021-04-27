@@ -1,1 +1,0 @@
-Q2(?X,?Y) <- Person(?X),teacherOf(?X,?Y),Course(?Y) .
