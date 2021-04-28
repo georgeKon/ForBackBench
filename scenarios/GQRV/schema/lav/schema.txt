@@ -1,109 +1,111 @@
-v0{
+src_Abbey{
 	c0 : STRING,
 }
 
-v1{
+src_Entertainer{
 	c0 : STRING,
 }
 
-v2{
-	c0 : STRING,
-}
-
-v3{
-	c0 : STRING,
-}
-
-v4{
-	c0 : STRING,
-}
-
-v5{
-	c0 : STRING,
-}
-
-v6{
-	c0 : STRING,
-}
-
-v7{
-	c0 : STRING,
-}
-
-v8{
-	c0 : STRING,
-}
-
-v9{
-	c0 : STRING,
-}
-
-v10{
-	c0 : STRING,
-}
-
-v11{
-	c0 : STRING,
-}
-
-v12{
-	c0 : STRING,
-}
-
-v13{
-	c0 : STRING,
-}
-
-v14{
-	c0 : STRING,
-}
-
-v15{
-	c0 : STRING,
-}
-
-v16{
-	c0 : STRING,
-}
-
-v17{
-	c0 : STRING,
-}
-
-v18{
-	c0 : STRING,
-}
-
-v19{
-	c0 : STRING,
-}
-
-v20{
-	c0 : STRING,
-}
-
-v21{
-	c0 : STRING,
-}
-
-v22{
-	c0 : STRING,
-}
-
-v23{
-	c0 : STRING,
-}
-
-v24{
+src_Artefact{
 	c0 : STRING,
 	c1 : STRING,
 }
 
-v25{
+src_Badge{
 	c0 : STRING,
 }
 
-v26{
+src_Magnate{
+	c0 : STRING,
+}
+
+src_Church-Reformer{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_Composer{
+	c0 : STRING,
+}
+
+src_Cultural-Organisation{
+	c0 : STRING,
+}
+
+src_Dramaturge{
+	c0 : STRING,
+}
+
+src_Economist{
+	c0 : STRING,
+}
+
+src_Environment{
+	c0 : STRING,
+}
+
+src_Intellectual-Construct{
+	c0 : STRING,
+}
+
+src_Geographical-Feature{
+	c0 : STRING,
+}
+
+src_Idea{
+	c0 : STRING,
+}
+
+src_Inventor{
+	c0 : STRING,
+}
+
+src_Location-Part-Relation{
+	c0 : STRING,
+}
+
+src_Monastery{
+	c0 : STRING,
+}
+
+src_Work-of-Art{
+	c0 : STRING,
+}
+
+src_Person{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_Politician{
+	c0 : STRING,
+}
+
+src_Publisher{
+	c0 : STRING,
+}
+
+src_Religious-Order{
+	c0 : STRING,
+}
+
+src_Secular-Ideology{
+	c0 : STRING,
+}
+
+src_Stereotype-Group{
+	c0 : STRING,
+}
+
+src_Trades-Union{
+	c0 : STRING,
+}
+
+src_University{
+	c0 : STRING,
+}
+
+src_related{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,

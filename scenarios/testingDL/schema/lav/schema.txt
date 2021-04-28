@@ -1,17 +1,18 @@
-v0{
-	c0 : STRING,
-}
-
-v1{
+src_Acquisition{
 	c0 : STRING,
 	c1 : STRING,
 }
 
-v2{
+src_Person{
 	c0 : STRING,
 }
 
-v3{
+src_FinantialInstrument{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_Trader{
 	c0 : STRING,
 	c1 : STRING,
 }

@@ -1,19 +1,19 @@
-v0{
+src_Acquisition{
 	c0 : STRING,
 }
 
-v1{
+src_StockBroker{
 	c0 : STRING,
 }
 
-v2{
+src_Stock{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_isExecutedBy{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-}
-
-v3{
-	c0 : STRING,
-	c1 : STRING,
 }
 
