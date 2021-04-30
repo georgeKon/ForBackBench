@@ -1,0 +1,116 @@
+src_Abbey{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_Armament{
+	c0 : STRING,
+}
+
+src_Author{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_Business-Leader{
+	c0 : STRING,
+}
+
+src_Settlement{
+	c0 : STRING,
+}
+
+src_Country{
+	c0 : STRING,
+}
+
+src_Cultural-Organisation{
+	c0 : STRING,
+}
+
+src_Social-Group{
+	c0 : STRING,
+}
+
+src_Symbol{
+	c0 : STRING,
+}
+
+src_Head-of-State{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_Intellectual-Construct{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_Geographer{
+	c0 : STRING,
+}
+
+src_Secular-Leader{
+	c0 : STRING,
+}
+
+src_International-Organisation{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_Language{
+	c0 : STRING,
+}
+
+src_Measurable-Trend{
+	c0 : STRING,
+}
+
+src_Newspaper{
+	c0 : STRING,
+}
+
+src_Work-of-Art{
+	c0 : STRING,
+}
+
+src_Person{
+	c0 : STRING,
+}
+
+src_Political-Symbol{
+	c0 : STRING,
+}
+
+src_Publisher{
+	c0 : STRING,
+}
+
+src_Religious-Movement{
+	c0 : STRING,
+}
+
+src_Scientific-Instrument{
+	c0 : STRING,
+}
+
+src_Structure{
+	c0 : STRING,
+}
+
+src_Trade-Association{
+	c0 : STRING,
+}
+
+src_University{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+}
+
+src_hasLocationPartMember{
+	c0 : STRING,
+	c1 : STRING,
+}
+

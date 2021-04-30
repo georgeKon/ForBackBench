@@ -1,0 +1,47 @@
+src_MovementAbility{
+	c0 : STRING,
+}
+
+src_LimbMobility{
+	c0 : STRING,
+}
+
+src_PhysicalDisability{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_Disability{
+	c0 : STRING,
+}
+
+src_MobilityDevice{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_UpperLimbMobility{
+	c0 : STRING,
+}
+
+src_ReadingDevice{
+	c0 : STRING,
+}
+
+src_Foldable_Wheelchair{
+	c0 : STRING,
+}
+
+src_Spina_Bifida{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_LightweightFoldable_Wheelchair{
+	c0 : STRING,
+}
+
+src_Dystonia{
+	c0 : STRING,
+}
+

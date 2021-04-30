@@ -1,0 +1,24 @@
+src_advisor{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_Department{
+	c0 : STRING,
+}
+
+src_GraduateStudent{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_researchInterest{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+}
+
+src_undergraduateDegreeFrom{
+	c0 : STRING,
+}
+

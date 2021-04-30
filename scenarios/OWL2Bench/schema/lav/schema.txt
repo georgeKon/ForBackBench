@@ -1,0 +1,147 @@
+src_AeronauticalEngineering{
+	c0 : STRING,
+}
+
+src_Publication{
+	c0 : STRING,
+}
+
+src_Science{
+	c0 : STRING,
+}
+
+src_BasketBallLover{
+	c0 : STRING,
+}
+
+src_FullProfessor{
+	c0 : STRING,
+}
+
+src_SupportingStaff{
+	c0 : STRING,
+}
+
+src_ConferencePaper{
+	c0 : STRING,
+}
+
+src_Economics{
+	c0 : STRING,
+}
+
+src_EmployeeEvaluationCommittee{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_Geosciences{
+	c0 : STRING,
+}
+
+src_Institute{
+	c0 : STRING,
+}
+
+src_Mathematics{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_NonScience{
+	c0 : STRING,
+}
+
+src_PGStudent{
+	c0 : STRING,
+}
+
+src_PerformingArts{
+	c0 : STRING,
+}
+
+src_Psychology{
+	c0 : STRING,
+}
+
+src_Work{
+	c0 : STRING,
+}
+
+src_SportsLover{
+	c0 : STRING,
+}
+
+src_SystemStaff{
+	c0 : STRING,
+}
+
+src_ThesisEvaluationCommittee{
+	c0 : STRING,
+}
+
+src_VisitingProfessor{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_hasAlumnus{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_hasAssociateProfessor{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+}
+
+src_hasSubOrganization{
+	c0 : STRING,
+}
+
+src_hasDoctoralDegreeFrom{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+}
+
+src_hasLecturer{
+	c0 : STRING,
+}
+
+src_hasProgram{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+}
+
+src_isProfessorOf{
+	c0 : STRING,
+}
+
+src_hasStudent{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+}
+
+src_isVisitingProfessorOf{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+}
+
+src_isWomenCollegeOf{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_hasAge{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+}
+

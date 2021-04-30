@@ -1,0 +1,19 @@
+src_Acquisition{
+	c0 : STRING,
+}
+
+src_StockBroker{
+	c0 : STRING,
+}
+
+src_Stock{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_isExecutedBy{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+}
+

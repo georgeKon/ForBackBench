@@ -1,0 +1,19 @@
+src_Acquisition{
+	c0 : STRING,
+}
+
+src_Dealer{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_FinantialInstrument{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_isExecutedFor{
+	c0 : STRING,
+	c1 : STRING,
+}
+
