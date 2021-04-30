@@ -61,10 +61,10 @@ fi
 
 # TODO: confirm this is the correct place to be creating GAV/LAV mappings
 if [[ $4 = "GAV" ]]; then
-  java -jar utilityTools/CreateLAVandGAV.jar --create GAV
+  java -jar utilityTools/CreateLAVandGAV.jar create GAV
 fi
 if [[ $4 = "LAV" ]]; then
-  java -jar utilityTools/CreateLAVandGAV.jar --create LAV
+  java -jar utilityTools/CreateLAVandGAV.jar create LAV
 fi
 # if [[ $4 = "BOTH" ]]; then
 #   java -jar utilityTools/CreateLAVandGAV.jar
