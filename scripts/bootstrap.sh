@@ -76,6 +76,18 @@ then
 fi
 
 
+# TODO: confirm this is the correct place to be creating GAV/LAV mappings
+# if [[ $4 = "GAV" ]]; then
+#   java -jar utilityTools/CreateLAVandGAV.jar create GAV
+# fi
+# if [[ $4 = "LAV" ]]; then
+#   java -jar utilityTools/CreateLAVandGAV.jar create LAV
+# fi
+# if [[ $4 = "BOTH" ]]; then
+#   java -jar utilityTools/CreateLAVandGAV.jar
+# fi
+
+
 mkdir -p $BASE_DIR/ontop-files
 java -jar utilityTools/ontopMappingGenerator-1.09.jar -st-tgds $BASE_DIR/dependencies/oneToOne-st-tgds.txt -out $BASE_DIR/ontop-files/mapping.obda
 java -jar utilityTools/ontopMappingGenerator-1.09.jar -st-tgds $BASE_DIR/dependencies/gav.txt -out $BASE_DIR/ontop-files/gav-mapping.obda
@@ -90,8 +102,6 @@ mkdir -p $BASE_DIR/rulewerkfiles/GAV
 mkdir -p $BASE_DIR/rulewerkfiles/LAV
 mkdir -p $BASE_DIR/rulewerkfiles/oneToOne
 
-cp $BASE_DIR/dependencies/oneToOne-t-tgds.txt $BASE_DIR/dependencies/gav-t-tgds.txt
-cp $BASE_DIR/dependencies/oneToOne-t-tgds.txt $BASE_DIR/dependencies/lav-t-tgds.txt
 
 for size in ${SIZES[*]}; do
    mkdir -p $BASE_DIR/rulewerkfiles/oneToOne/$size
@@ -100,10 +110,10 @@ done
 
 for size in ${SIZES[*]}; do
    mkdir -p $BASE_DIR/rulewerkfiles/GAV/$size
-   java -jar utilityTools/TGDsToRlsConverter.jar -st-tgds "$BASE_DIR/dependencies/gav.txt" -t-tgds "$BASE_DIR/dependencies/gav-t-tgds.txt" -out "$BASE_DIR/rulewerkfiles/GAV/$size" -data "$BASE_DIR/data/GAV/$size"
+   java -jar utilityTools/TGDsToRlsConverter.jar -st-tgds "$BASE_DIR/dependencies/gav.txt" -t-tgds "$BASE_DIR/dependencies/oneToOne-t-tgds.txt" -out "$BASE_DIR/rulewerkfiles/GAV/$size" -data "$BASE_DIR/data/GAV/$size"
 done
 
 for size in ${SIZES[*]}; do
    mkdir -p $BASE_DIR/rulewerkfiles/LAV/$size
-   java -jar utilityTools/TGDsToRlsConverter.jar -st-tgds "$BASE_DIR/dependencies/lav.txt" -t-tgds "$BASE_DIR/dependencies/lav-t-tgds.txt" -out "$BASE_DIR/rulewerkfiles/LAV/$size" -data "$BASE_DIR/data/LAV/$size"
+   java -jar utilityTools/TGDsToRlsConverter.jar -st-tgds "$BASE_DIR/dependencies/lav.txt" -t-tgds "$BASE_DIR/dependencies/oneToOne-t-tgds.txt" -out "$BASE_DIR/rulewerkfiles/LAV/$size" -data "$BASE_DIR/data/LAV/$size"
 done
