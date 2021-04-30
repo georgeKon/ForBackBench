@@ -16,7 +16,7 @@ def drawGraph(folder,query,subplots):
     plt.grid(which='minor',axis='x',linestyle=':',linewidth=0.4)
     files = os.listdir(folder+'/'+query)
     load=[0.0]*len(files)
-    block=[0.0]*len(files)
+    preprocess=[0.0]*len(files)
     chase=[0.0]*len(files)
     execute=[0.0]*len(files)
     total=[0.0]*len(files)
@@ -42,25 +42,25 @@ def drawGraph(folder,query,subplots):
                     except:
                         print("Errors in loading times in " + folder+'/'+query+'/'+fileName)
 
-            if 'block' in file:
+            if 'preprocess' in file:
                 try:
-                    if(file['block'].min() != -1):
-                      	block[index]=file['block'].mean()/1000000
+                    if(file['preprocess'].min() != -1):
+                      	preprocess[index]=file['preprocess'].mean()/1000000
                 except:
-                    print("Errors in block times in " + folder+'/'+query+'/'+fileName)
+                    print("Errors in preprocess times in " + folder+'/'+query+'/'+fileName)
             if 'chase' in file:
                 if (fileName == 'rdfox.csv' or fileName == 'rdfoxLong.csv'):
                     try:
                         if(file['chase'].min() != -1):
                         	chase[index]=file['chase'].mean()
                     except:
-                        print("Errors in block times in " + folder+'/'+query+'/'+fileName)        
+                        print("Errors in preprocess times in " + folder+'/'+query+'/'+fileName)        
                 else:
                     try:
                         if(file['chase'].min() != -1):
                             chase[index]=file['chase'].mean()/1000000
                     except:
-                        print("Errors in block times in " + folder+'/'+query+'/'+fileName)       
+                        print("Errors in preprocess times in " + folder+'/'+query+'/'+fileName)       
             if 'execute' in file:
                 if (fileName == 'rdfox.csv' or fileName == 'rdfoxLong.csv'):
                     try:
@@ -105,30 +105,30 @@ def drawGraph(folder,query,subplots):
             print(folder+'/'+query)
     print(folder+'/'+query)
     print('loading', load)
-    print('blocks',block)
+    print('preprocesss',preprocess)
     print('chase',chase)
     print('execute',execute)
     print('rewrite',rewrite)
     print('convert',convert)
     print('gqr',gqr)
 
-    size=np.arange(len(block))
+    size=np.arange(len(preprocess))
     width = 0.35
 
     loads=plt.barh(size,load,width)
-    blocks=plt.barh(size,block,width,left=load)
-    chases=plt.barh(size,chase,width,left=np.array(load)+np.array(block))
-    rewrites=plt.barh(size, rewrite, width,left=np.array(load)+np.array(block)+np.array(chase))
-    gqrs=plt.barh(size,gqr,width,left=np.array(load)+np.array(block)+np.array(chase)+np.array(rewrite))
-    converts=plt.barh(size,convert , width,left=np.array(load)+np.array(block)+np.array(chase)+np.array(rewrite)+np.array(gqr))
-    executes=plt.barh(size,execute,width,left=np.array(load)+np.array(block)+np.array(chase)+np.array(rewrite)+np.array(convert)+np.array(gqr))
+    preprocesss=plt.barh(size,preprocess,width,left=load)
+    chases=plt.barh(size,chase,width,left=np.array(load)+np.array(preprocess))
+    rewrites=plt.barh(size, rewrite, width,left=np.array(load)+np.array(preprocess)+np.array(chase))
+    gqrs=plt.barh(size,gqr,width,left=np.array(load)+np.array(preprocess)+np.array(chase)+np.array(rewrite))
+    converts=plt.barh(size,convert , width,left=np.array(load)+np.array(preprocess)+np.array(chase)+np.array(rewrite)+np.array(gqr))
+    executes=plt.barh(size,execute,width,left=np.array(load)+np.array(preprocess)+np.array(chase)+np.array(rewrite)+np.array(convert)+np.array(gqr))
     plt.title(query)
     files = [f.replace('chasestepper.csv', 'BCA.csv') for f in files]
     ticks = map(lambda x: x.split('.')[0].capitalize(),files)
     plt.yticks(size,ticks)
     if subplots % 10 == 1:
-          plt.legend((loads[0],rewrites[0],gqrs[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','GQR','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
-#     	  plt.legend((loads[0],rewrites[0],gqrs[0],blocks[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','GQR','Block','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
+    	  plt.legend((loads[0],rewrites[0],preprocesss[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Preprocess','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
+#         plt.legend((loads[0],rewrites[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
 #         plt.legend((loads[0],rewrites[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
 
 if len(sys.argv) > 1:

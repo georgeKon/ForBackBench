@@ -2,780 +2,820 @@
 ns:  http://example.com/example.owl#
 
 [MappingDeclaration] @collection [[
-mappingId ID-1444027492
-target  ns:ns/{c0} a ns:Abbey . 
-source  SELECT c0 FROM "src_Person"
-
-mappingId ID732520638
-target  ns:ns/{c0} a ns:Building . 
-source  SELECT c0 FROM "src_Geographical-Feature"
-
-mappingId ID1978808909
-target  ns:ns/{c0} a ns:Abstract-Notion . 
-source  SELECT c0 FROM "src_Philanthropist"
-
-mappingId ID-1771735378
-target  ns:ns/{c0} a ns:Flavour . 
-source  SELECT c0 FROM "src_Geographical-Region"
-
-mappingId ID1605736071
-target  ns:ns/{c0} a ns:Actor . 
-source  SELECT c0 FROM "src_Film-Maker"
-
-mappingId ID1607505435
-target  ns:ns/{c0} a ns:Entertainer . 
-source  SELECT c0 FROM "src_Board"
-
-mappingId ID841669351
-target  ns:ns/{c0} a ns:Animal . 
-source  SELECT c0 FROM "src_Religious-Ideology"
-
-mappingId ID-1136597131
-target  ns:ns/{c0} a ns:Natural-Object . 
-source  SELECT c0 FROM "src_Clerical-Leader"
-
-mappingId ID-642239966
-target  ns:ns/{c0} a ns:Architect . 
-source  SELECT c0 FROM "src_Meeting"
-
-mappingId ID465487745
-target  ns:ns/{c0} a ns:Creator . 
-source  SELECT c0 FROM "src_Organisation"
-
-mappingId ID135853859
-target  ns:ns/{c0} a ns:Armament . 
-source  SELECT c0 FROM "src_Physician"
-
-mappingId ID-1966415888
-target  ns:ns/{c0} a ns:Artefact . 
-source  SELECT c0 FROM "src_Author"
-
-mappingId ID-1975333436
-target  ns:ns/{c0} a ns:Art-Form . 
-source  SELECT c0 FROM "src_Non-Military-Conflict"
-
-mappingId ID-1437584323
-target  ns:ns/{c0} a ns:Object . 
-source  SELECT c0 FROM "src_Fictional-Person"
-
-mappingId ID56631609
-target  ns:ns/{c0} a ns:Artist . 
-source  SELECT c0 FROM "src_Abstract-Notion"
-
-mappingId ID-1400379604
-target  ns:ns/{c0} a ns:Artistic-Movement . 
-source  SELECT c0 FROM "src_Ritual"
-
-mappingId ID-1201006485
-target  ns:ns/{c0} a ns:Movement . 
-source  SELECT c0 FROM "src_Pollution"
-
-mappingId ID-577218656
-target  ns:ns/{c0} a ns:Artistic-Style . 
-source  SELECT c0 FROM "src_Ecclesiarch"
-
-mappingId ID-408584744
-target  ns:ns/{c0} a ns:Astronaut . 
-source  SELECT c0 FROM "src_Economic-Symbol"
-
-mappingId ID2144614309
-target  ns:ns/{c0} a ns:Discoverer . 
-source  SELECT c0 FROM "src_Geographical-Region"
-
-mappingId ID-1869060180
-target  ns:ns/{c0} a ns:Author . 
-source  SELECT c0 FROM "src_Person"
-
-mappingId ID498958049
-target  ns:ns/{c0} a ns:Badge . 
-source  SELECT c0 FROM "src_Piece-of-Music"
-
-mappingId ID-1293324746
-target  ns:ns/{c0} a ns:Conceptual-Object . 
-source  SELECT c0 FROM "src_Battle"
-
-mappingId ID1213145543
-target  ns:ns/{c0} a ns:Battle . 
-source  SELECT c0 FROM "src_Saint"
-
-mappingId ID-210157084
-target  ns:ns/{c0} a ns:Event . 
-source  SELECT c0 FROM "src_Musician"
-
-mappingId ID-1587717823
-target  ns:ns/{c0} a ns:Board . 
-source  SELECT c0 FROM "src_hasCategory"
-
-mappingId ID319375207
-target  ns:ns/{c0} a ns:Management-Organisation . 
-source  SELECT c0 FROM "src_Building"
-
-mappingId ID-1690594639
-target  ns:ns/{c0} a ns:Book . 
-source  SELECT c0 FROM "src_Clerical-Leader"
-
-mappingId ID-1999185997
-target  ns:ns/{c0} a ns:Writing . 
-source  SELECT c0 FROM "src_Fictional-Event"
-
-mappingId ID-1579408
-target  ns:ns/{c0} a ns:Business-Leader . 
-source  SELECT c0 FROM "src_Pastime"
-
-mappingId ID-455824654
-target  ns:ns/{c0} a ns:Magnate . 
-source  SELECT c0 FROM "src_Social-Group"
-
-mappingId ID-1449409733
-target  ns:ns/{c0} a ns:Category . 
-source  SELECT c0 FROM "src_Language"
-
-mappingId ID-61792085
-target  ns:ns/{c0} a ns:VicodiOI . 
-source  SELECT c0 FROM "src_Symbol"
-
-mappingId ID491808559
-target  ns:ns/{c0} a ns:Cathedral . 
-source  SELECT c0 FROM "src_Physician"
-
-mappingId ID-1782098783
-target  ns:ns/{c0} a ns:Church . 
-source  SELECT c0 FROM "src_Event"
-
-mappingId ID1655329594
-target  ns:ns/{c0} a ns:Church-Reformer . 
-source  SELECT c0 FROM "src_Physician"
-
-mappingId ID-1810002109
-target  ns:ns/{c0} a ns:Religious-Leader . 
-source  SELECT c0 FROM "src_Diplomat"
-
-mappingId ID306852918
-target  ns:ns/{c0} a ns:City . 
-source  SELECT c0 FROM "src_Social-Group"
-
-mappingId ID-2127466087
-target  ns:ns/{c0} a ns:Settlement . 
-source  SELECT c0 FROM "src_Political-Symbol"
-
-mappingId ID-88910590
-target  ns:ns/{c0} a ns:Cleric . 
-source  SELECT c0 FROM "src_Board"
-
-mappingId ID-1317433327
-target  ns:ns/{c0} a ns:Person-Role . 
-source  SELECT c0 FROM "src_Religious-Leader"
-
-mappingId ID390176599
-target  ns:ns/{c0} a ns:Clerical-Leader . 
-source  SELECT c0 FROM "src_Social-Stratum"
-
-mappingId ID1537594537
-target  ns:ns/{c0} a ns:Leader . 
-source  SELECT c0 FROM "src_Disease"
-
-mappingId ID-1049359060
-target  ns:ns/{c0} a ns:Clothing . 
-source  SELECT c0 FROM "src_Diplomat"
-
-mappingId ID-563525576
-target  ns:ns/{c0} a ns:Commodity . 
-source  SELECT c0 FROM "src_VicodiOI"
-
-mappingId ID-392215838
-target  ns:ns/{c0} a ns:Composer . 
-source  SELECT c0 FROM "src_Artistic-Style"
-
-mappingId ID1160158182
-target  ns:ns/{c0} a ns:Conductor . 
-source  SELECT c0 FROM "src_Journalist"
-
-mappingId ID-128947560
-target  ns:ns/{c0} a ns:Country . 
-source  SELECT c0 FROM "src_Foreign-Minister"
-
-mappingId ID671041310
-target  ns:ns/{c0} a ns:Location . 
-source  SELECT c0 FROM "src_Queen"
-
-mappingId ID-1964612789
-target  ns:ns/{c0} a ns:Crime . 
-source  SELECT c0 FROM "src_Food"
-
-mappingId ID-788653193
-target  ns:ns/{c0} a ns:Criminal . 
-source  SELECT c0 FROM "src_Sportsman"
-
-mappingId ID1612282549
-target  ns:ns/{c0} a ns:Cultural-Agreement . 
-source  SELECT c0 FROM "src_Magnate"
-
-mappingId ID-285139102
-target  ns:ns/{c0} a ns:Cultural-Organisation . 
-source  SELECT c0 FROM "src_Intellectual-Construct"
-
-mappingId ID-1692055798
-target  ns:ns/{c0} a ns:Organisation . 
-source  SELECT c0 FROM "src_Pollution"
-
-mappingId ID-222617172
-target  ns:ns/{c0} a ns:Dancer . 
-source  SELECT c0 FROM "src_Other-Religious-Person"
-
-mappingId ID-535798273
-target  ns:ns/{c0} a ns:Diplomat . 
-source  SELECT c0 FROM "src_Head-of-Government"
-
-mappingId ID-1920460019
-target  ns:ns/{c0} a ns:Functionary . 
-source  SELECT c0 FROM "src_Measurable-Trend"
-
-mappingId ID1849206978
-target  ns:ns/{c0} a ns:Disaster . 
-source  SELECT c0 FROM "src_isRelationMemberOf"
-
-mappingId ID1470425173
-target  ns:ns/{c0} a ns:Disease . 
-source  SELECT c0 FROM "src_Dramaturge"
-
-mappingId ID411402441
-target  ns:ns/{c0} a ns:Dramaturge . 
-source  SELECT c0 FROM "src_Natural-Object"
-
-mappingId ID511475462
-target  ns:ns/{c0} a ns:Dynasty . 
-source  SELECT c0 FROM "src_Economic-Process"
-
-mappingId ID-2049857627
-target  ns:ns/{c0} a ns:Social-Group . 
-source  SELECT c0 FROM "src_related"
-
-mappingId ID-462665903
-target  ns:ns/{c0} a ns:Ecclesiarch . 
-source  SELECT c0 FROM "src_Village"
-
-mappingId ID321657916
-target  ns:ns/{c0} a ns:Economic-Enterprise . 
-source  SELECT c0 FROM "src_Board"
-
-mappingId ID-21163573
-target  ns:ns/{c0} a ns:Economic-Organisation . 
-source  SELECT c0 FROM "src_Church"
-
-mappingId ID1463802390
-target  ns:ns/{c0} a ns:Economic-Process . 
-source  SELECT c0 FROM "src_Geographer"
-
-mappingId ID1294269540
-target  ns:ns/{c0} a ns:Economic-Symbol . 
-source  SELECT c0 FROM "src_hasRelationMember"
-
-mappingId ID-29998177
-target  ns:ns/{c0} a ns:Symbol . 
-source  SELECT c0 FROM "src_King"
-
-mappingId ID-559163042
-target  ns:ns/{c0} a ns:Economist . 
-source  SELECT c0 FROM "src_Symbol"
-
-mappingId ID-336107889
-target  ns:ns/{c0} a ns:Scientist . 
-source  SELECT c0 FROM "src_Uprising"
-
-mappingId ID-1830085554
-target  ns:ns/{c0} a ns:Educational-Organisation . 
-source  SELECT c0 FROM "src_University"
-
-mappingId ID-439483944
-target  ns:ns/{c0} a ns:Election . 
-source  SELECT c0 FROM "src_Secular-Movement"
-
-mappingId ID955532412
-target  ns:ns/{c0} a ns:Emperor . 
-source  SELECT c0 FROM "src_Criminal"
-
-mappingId ID-1864022332
-target  ns:ns/{c0} a ns:Head-of-State . 
-source  SELECT c0 FROM "src_Religious-Movement"
-
-mappingId ID2084962584
-target  ns:ns/{c0} a ns:Engineer . 
-source  SELECT c0 FROM "src_Election"
-
-mappingId ID1707363121
-target  ns:ns/{c0} a ns:Environment . 
-source  SELECT c0 FROM "src_Ship"
-
-mappingId ID-1166572
-target  ns:ns/{c0} a ns:Ethnic-Group . 
-source  SELECT c0 FROM "src_Sultan"
-
-mappingId ID102897928
-target  ns:ns/{c0} a ns:Fictional-Event . 
-source  SELECT c0 FROM "src_Category"
-
-mappingId ID1285245360
-target  ns:ns/{c0} a ns:Fictional-Person . 
-source  SELECT c0 FROM "src_Disaster"
-
-mappingId ID194430815
-target  ns:ns/{c0} a ns:Individual . 
-source  SELECT c0 FROM "src_isRelationMemberOf"
-
-mappingId ID1095012855
-target  ns:ns/{c0} a ns:Field-of-Knowledge . 
-source  SELECT c0 FROM "src_Population-Movement"
-
-mappingId ID2125865968
-target  ns:ns/{c0} a ns:Intellectual-Construct . 
-source  SELECT c0 FROM "src_Time-Dependent-Relation"
-
-mappingId ID1494859448
-target  ns:ns/{c0} a ns:Film-Maker . 
-source  SELECT c0 FROM "src_Geographical-Feature"
-
-mappingId ID-1820739648
-target  ns:ns/{c0} a ns:Time-Dependent . 
-source  SELECT c0 FROM "src_Liturgical-Object"
-
-mappingId ID1186823627
-target  ns:ns/{c0} a ns:Food . 
-source  SELECT c0 FROM "src_related"
-
-mappingId ID908554293
-target  ns:ns/{c0} a ns:Foreign-Minister . 
-source  SELECT c0 FROM "src_hasRole"
-
-mappingId ID-139644774
-target  ns:ns/{c0} a ns:Minister . 
-source  SELECT c0 FROM "src_Sportsman"
-
-mappingId ID-769425948
-target  ns:ns/{c0} a ns:FuzzyTemporalInterval . 
-source  SELECT c0 FROM "src_Person-Role"
-
-mappingId ID1986863429
-target  ns:ns/{c0} a ns:Time . 
-source  SELECT c0 FROM "src_Fictional-Person"
-
-mappingId ID-1984619298
-target  ns:ns/{c0} a ns:Geographer . 
-source  SELECT c0 FROM "src_Representative-Institution"
-
-mappingId ID1409917663
-target  ns:ns/{c0} a ns:Geographical-Discovery . 
-source  SELECT c0 FROM "src_Philosopher"
-
-mappingId ID1022068303
-target  ns:ns/{c0} a ns:Geographical-Feature . 
-source  SELECT c0 FROM "src_Author"
-
-mappingId ID1937490582
-target  ns:ns/{c0} a ns:Geographical-Region . 
-source  SELECT c0 FROM "src_Military-Person"
-
-mappingId ID-609136226
-target  ns:ns/{c0} a ns:Governmental-Organisation . 
-source  SELECT c0 FROM "src_Organisation"
-
-mappingId ID955078849
-target  ns:ns/{c0} a ns:Political-Organisation . 
-source  SELECT c0 FROM "src_Educational-Organisation"
-
-mappingId ID-492397701
-target  ns:ns/{c0} a ns:Head-of-Government . 
-source  SELECT c0 FROM "src_Uprising"
-
-mappingId ID104510501
-target  ns:ns/{c0} a ns:Secular-Leader . 
-source  SELECT c0 FROM "src_Water"
-
-mappingId ID849179514
-target  ns:ns/{c0} a ns:Idea . 
-source  SELECT c0 FROM "src_Trade-Association"
-
-mappingId ID-442591490
-target  ns:ns/{c0} a ns:Ideology . 
-source  SELECT c0 FROM "src_Pope"
-
-mappingId ID-708385501
-target  ns:ns/{c0} a ns:Illness . 
-source  SELECT c0 FROM "src_Jurist"
-
-mappingId ID1439374463
-target  ns:ns/{c0} a ns:Life-Event . 
-source  SELECT c0 FROM "src_Commodity"
-
-mappingId ID-1983742034
-target  ns:ns/{c0} a ns:Intellectual-Movement . 
-source  SELECT c0 FROM "src_Creator"
-
-mappingId ID-1029493010
-target  ns:ns/{c0} a ns:International-Alliance . 
-source  SELECT c0 FROM "src_Sportsman"
-
-mappingId ID-1813637186
-target  ns:ns/{c0} a ns:International-Organisation . 
-source  SELECT c0 FROM "src_Criminal"
-
-mappingId ID1783941515
-target  ns:ns/{c0} a ns:Intra-State-Group . 
-source  SELECT c0 FROM "src_Professor"
-
-mappingId ID1345958097
-target  ns:ns/{c0} a ns:Inventor . 
-source  SELECT c0 FROM "src_War"
-
-mappingId ID-1308809513
-target  ns:ns/{c0} a ns:Journal . 
-source  SELECT c0 FROM "src_Uprising"
-
-mappingId ID-1270572983
-target  ns:ns/{c0} a ns:Journalist . 
-source  SELECT c0 FROM "src_Pamphlet"
-
-mappingId ID-1543863550
-target  ns:ns/{c0} a ns:Jurist . 
-source  SELECT c0 FROM "src_Philosopher"
-
-mappingId ID737661495
-target  ns:ns/{c0} a ns:King . 
-source  SELECT c0 FROM "src_Writing"
-
-mappingId ID-535227520
-target  ns:ns/{c0} a ns:Landmark . 
-source  SELECT c0 FROM "src_isLocationPartMemberOf"
-
-mappingId ID-298805175
-target  ns:ns/{c0} a ns:Language . 
-source  SELECT c0 FROM "src_Relic"
-
-mappingId ID1671204893
-target  ns:ns/{c0} a ns:League . 
-source  SELECT c0 FROM "src_Military-Person"
-
-mappingId ID-223353450
-target  ns:ns/{c0} a ns:Legislation . 
-source  SELECT c0 FROM "src_Time-Dependent"
-
-mappingId ID1213200131
-target  ns:ns/{c0} a ns:Liturgical-Object . 
-source  SELECT c0 FROM "src_Religious-Practice"
-
-mappingId ID1978953232
-target  ns:ns/{c0} a ns:Location-Part-Relation . 
-source  SELECT c0 FROM "src_Cultural-Agreement"
-
-mappingId ID374432911
-target  ns:ns/{c0} a ns:Time-Dependent-Relation . 
-source  SELECT c0 FROM "src_Idea"
-
-mappingId ID8912619
-target  ns:ns/{c0} a ns:Masonic-Lodge . 
-source  SELECT c0 FROM "src_Pollution"
-
-mappingId ID-1951942425
-target  ns:ns/{c0} a ns:Measurable-Trend . 
-source  SELECT c0 FROM "src_Commodity"
-
-mappingId ID1662758206
-target  ns:ns/{c0} a ns:Meeting . 
-source  SELECT c0 FROM "src_Party"
-
-mappingId ID-427317067
-target  ns:ns/{c0} a ns:Military-Organisation . 
-source  SELECT c0 FROM "src_Pollution"
-
-mappingId ID-555386210
-target  ns:ns/{c0} a ns:Military-Person . 
-source  SELECT c0 FROM "src_Individual"
-
-mappingId ID-1885697170
-target  ns:ns/{c0} a ns:Military-Unit . 
-source  SELECT c0 FROM "src_Language"
-
-mappingId ID-1311587446
-target  ns:ns/{c0} a ns:Monastery . 
-source  SELECT c0 FROM "src_Art-Form"
-
-mappingId ID-1253830389
-target  ns:ns/{c0} a ns:Musician . 
-source  SELECT c0 FROM "src_Crime"
-
-mappingId ID709095908
-target  ns:ns/{c0} a ns:National-Symbol . 
-source  SELECT c0 FROM "src_Artist"
-
-mappingId ID2120143402
-target  ns:ns/{c0} a ns:Newspaper . 
-source  SELECT c0 FROM "src_Business-Leader"
-
-mappingId ID-484631102
-target  ns:ns/{c0} a ns:Non-Military-Conflict . 
-source  SELECT c0 FROM "src_Sportsman"
-
-mappingId ID-1910458142
-target  ns:ns/{c0} a ns:Other-Religious-Leader . 
-source  SELECT c0 FROM "src_King"
-
-mappingId ID391942500
-target  ns:ns/{c0} a ns:Other-Religious-Person . 
-source  SELECT c0 FROM "src_Magnate"
-
-mappingId ID-408003114
-target  ns:ns/{c0} a ns:Painter . 
-source  SELECT c0 FROM "src_Creator"
-
-mappingId ID-254142192
-target  ns:ns/{c0} a ns:Painting . 
-source  SELECT c0 FROM "src_Dancer"
-
-mappingId ID1624962127
-target  ns:ns/{c0} a ns:Work-of-Art . 
-source  SELECT c0 FROM "src_Minister"
-
-mappingId ID68793884
-target  ns:ns/{c0} a ns:Pamphlet . 
-source  SELECT c0 FROM "src_Dancer"
-
-mappingId ID-1314582174
-target  ns:ns/{c0} a ns:Party . 
-source  SELECT c0 FROM "src_King"
-
-mappingId ID1800488062
-target  ns:ns/{c0} a ns:Pastime . 
-source  SELECT c0 FROM "src_City"
-
-mappingId ID1989660006
-target  ns:ns/{c0} a ns:Period . 
-source  SELECT c0 FROM "src_Board"
-
-mappingId ID1915548806
-target  ns:ns/{c0} a ns:Period-in-Office . 
-source  SELECT c0 FROM "src_Economist"
-
-mappingId ID1648116815
-target  ns:ns/{c0} a ns:Person . 
-source  SELECT c0 FROM "src_Inventor"
-
-mappingId ID444774075
-target  ns:ns/{c0} a ns:Role . 
-source  SELECT c0 FROM "src_Scientific-Instrument"
-
-mappingId ID1456906408
-target  ns:ns/{c0} a ns:Philanthropist . 
-source  SELECT c0 FROM "src_Intra-State-Group"
-
-mappingId ID1306258934
-target  ns:ns/{c0} a ns:Philosopher . 
-source  SELECT c0 FROM "src_Conductor"
-
-mappingId ID-1133939139
-target  ns:ns/{c0} a ns:Physician . 
-source  SELECT c0 FROM "src_Vehicle"
-
-mappingId ID1577090079
-target  ns:ns/{c0} a ns:Piece-of-Music . 
-source  SELECT c0 FROM "src_Disease"
-
-mappingId ID-745763655
-target  ns:ns/{c0} a ns:Political-Region . 
-source  SELECT c0 FROM "src_Dramaturge"
-
-mappingId ID-839215035
-target  ns:ns/{c0} a ns:Political-Symbol . 
-source  SELECT c0 FROM "src_Religious-Order"
-
-mappingId ID1027352513
-target  ns:ns/{c0} a ns:Politician . 
-source  SELECT c0 FROM "src_Board"
-
-mappingId ID-18718484
-target  ns:ns/{c0} a ns:Pollution . 
-source  SELECT c0 FROM "src_Geographical-Region"
-
-mappingId ID-463820459
-target  ns:ns/{c0} a ns:Pope . 
-source  SELECT c0 FROM "src_Conductor"
-
-mappingId ID-1068508236
-target  ns:ns/{c0} a ns:Population-Movement . 
-source  SELECT c0 FROM "src_Clothing"
-
-mappingId ID1321200764
-target  ns:ns/{c0} a ns:Prince . 
-source  SELECT c0 FROM "src_Pollution"
-
-mappingId ID-122315818
-target  ns:ns/{c0} a ns:Professor . 
-source  SELECT c0 FROM "src_Time"
-
-mappingId ID830224773
-target  ns:ns/{c0} a ns:Psychologist . 
-source  SELECT c0 FROM "src_Discoverer"
-
-mappingId ID302754569
-target  ns:ns/{c0} a ns:Public-Oration . 
-source  SELECT c0 FROM "src_Landmark"
-
-mappingId ID-182121880
-target  ns:ns/{c0} a ns:Publisher . 
-source  SELECT c0 FROM "src_Sultan"
-
-mappingId ID1818107076
-target  ns:ns/{c0} a ns:Queen . 
-source  SELECT c0 FROM "src_Other-Religious-Leader"
-
-mappingId ID2133413133
-target  ns:ns/{c0} a ns:Relic . 
-source  SELECT c0 FROM "src_Organisation"
-
-mappingId ID-1799095810
-target  ns:ns/{c0} a ns:Religious-Community . 
-source  SELECT c0 FROM "src_Other-Religious-Leader"
-
-mappingId ID-805094795
-target  ns:ns/{c0} a ns:Religious-Organisation . 
-source  SELECT c0 FROM "src_Entertainer"
-
-mappingId ID49775576
-target  ns:ns/{c0} a ns:Religious-Ideology . 
-source  SELECT c0 FROM "src_Party"
-
-mappingId ID352159016
-target  ns:ns/{c0} a ns:Religious-Movement . 
-source  SELECT c0 FROM "src_Diplomat"
-
-mappingId ID-941607461
-target  ns:ns/{c0} a ns:Religious-Order . 
-source  SELECT c0 FROM "src_Dancer"
-
-mappingId ID-626041260
-target  ns:ns/{c0} a ns:Religious-Practice . 
-source  SELECT c0 FROM "src_Non-Military-Conflict"
-
-mappingId ID1260389549
-target  ns:ns/{c0} a ns:Religious-Symbol . 
-source  SELECT c0 FROM "src_King"
-
-mappingId ID968487030
-target  ns:ns/{c0} a ns:Representative-Institution . 
-source  SELECT c0 FROM "src_Person-Role"
-
-mappingId ID313599073
-target  ns:ns/{c0} a ns:Ritual . 
-source  SELECT c0 FROM "src_Symbol"
-
-mappingId ID-858374255
-target  ns:ns/{c0} a ns:Saint . 
-source  SELECT c0 FROM "src_Art-Form"
-
-mappingId ID1626847711
-target  ns:ns/{c0} a ns:Scandal . 
-source  SELECT c0 FROM "src_King"
-
-mappingId ID-1783352779
-target  ns:ns/{c0} a ns:Scientific-Instrument . 
-source  SELECT c0 FROM "src_Discoverer"
-
-mappingId ID-957526806
-target  ns:ns/{c0} a ns:Sculptor . 
-source  SELECT c0 FROM "src_Entertainer"
-
-mappingId ID354135015
-target  ns:ns/{c0} a ns:Sculpture . 
-source  SELECT c0 FROM "src_hasRelationMember"
-
-mappingId ID-1933366065
-target  ns:ns/{c0} a ns:Secular-Ideology . 
-source  SELECT c0 FROM "src_Object"
-
-mappingId ID-457938769
-target  ns:ns/{c0} a ns:Secular-Movement . 
-source  SELECT c0 FROM "src_Meeting"
-
-mappingId ID1143492557
-target  ns:ns/{c0} a ns:Ship . 
-source  SELECT c0 FROM "src_Artefact"
-
-mappingId ID1939768015
-target  ns:ns/{c0} a ns:Vehicle . 
-source  SELECT c0 FROM "src_Head-of-State"
-
-mappingId ID-1916267097
-target  ns:ns/{c0} a ns:Social-Stratum . 
-source  SELECT c0 FROM "src_Creator"
-
-mappingId ID-1507424525
-target  ns:ns/{c0} a ns:Sportsman . 
-source  SELECT c0 FROM "src_Time-Dependent-Relation"
-
-mappingId ID492687367
-target  ns:ns/{c0} a ns:Stereotype-Group . 
-source  SELECT c0 FROM "src_Intra-State-Group"
-
-mappingId ID1597474906
-target  ns:ns/{c0} a ns:Structure . 
-source  SELECT c0 FROM "src_Prince"
-
-mappingId ID1525127067
-target  ns:ns/{c0} a ns:Sultan . 
-source  SELECT c0 FROM "src_University"
-
-mappingId ID932910535
-target  ns:ns/{c0} a ns:Technical-Scientific-Advance . 
-source  SELECT c0 FROM "src_Educational-Organisation"
-
-mappingId ID-2012294377
-target  ns:ns/{c0} a ns:TemporalInterval . 
-source  SELECT c0 FROM "src_Geographical-Discovery"
-
-mappingId ID-682487488
-target  ns:ns/{c0} a ns:Theologian . 
-source  SELECT c0 FROM "src_Election"
-
-mappingId ID552172914
-target  ns:ns/{c0} a ns:Trade-Association . 
-source  SELECT c0 FROM "src_Commodity"
-
-mappingId ID-186740772
-target  ns:ns/{c0} a ns:Trades-Union . 
-source  SELECT c0 FROM "src_International-Organisation"
-
-mappingId ID452639528
-target  ns:ns/{c0} a ns:Trades-Unionist . 
-source  SELECT c0 FROM "src_Stereotype-Group"
-
-mappingId ID-1701127113
-target  ns:ns/{c0} a ns:Train . 
-source  SELECT c0 FROM "src_Dancer"
-
-mappingId ID-744474044
-target  ns:ns/{c0} a ns:Treaty . 
-source  SELECT c0 FROM "src_Period-in-Office"
-
-mappingId ID162385219
-target  ns:ns/{c0} a ns:Trial . 
-source  SELECT c0 FROM "src_Abbey"
-
-mappingId ID-680837259
-target  ns:ns/{c0} a ns:University . 
-source  SELECT c0 FROM "src_Geographical-Region"
-
-mappingId ID296922249
-target  ns:ns/{c0} a ns:Uprising . 
-source  SELECT c0 FROM "src_Time-Dependent-Relation"
-
-mappingId ID1799729797
-target  ns:ns/{c0} a ns:Village . 
-source  SELECT c0 FROM "src_Church"
-
-mappingId ID-1233047009
-target  ns:ns/{c0} a ns:War . 
-source  SELECT c0 FROM "src_Composer"
-
-mappingId ID631047912
-target  ns:ns/{c0} a ns:Water . 
-source  SELECT c0 FROM "src_Intra-State-Group"
+mappingId ID279982302
+target  ns:ns/{var0} a ns:Abbey . 
+source  SELECT A."c0" as var0 FROM  "src_Person" as A, "src_Clothing" as B, "src_Cultural-Organisation" as C, "src_Scientist" as D, "src_Building" as E, "src_Individual" as F, "src_Abbey" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID1671997007
+target  ns:ns/{var0} a ns:Building . 
+source  SELECT A."c0" as var0 FROM  "src_Geographical-Feature" as A, "src_Water" as B, "src_Symbol" as C, "src_Building" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-1810755827
+target  ns:ns/{var0} a ns:Abstract-Notion . 
+source  SELECT A."c0" as var0 FROM  "src_Philanthropist" as A, "src_Political-Region" as B, "src_Legislation" as C, "src_Religious-Community" as D, "src_Abstract-Notion" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-1678577102
+target  ns:ns/{var0} a ns:Flavour . 
+source  SELECT A."c0" as var0 FROM  "src_Geographical-Region" as A, "src_Board" as B, "src_Life-Event" as C, "src_Flavour" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-655628315
+target  ns:ns/{var0} a ns:Actor . 
+source  SELECT A."c0" as var0 FROM  "src_Film-Maker" as A, "src_Organisation" as B, "src_Intellectual-Movement" as C, "src_Time" as D, "src_Category" as E, "src_Landmark" as F, "src_Actor" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID190670091
+target  ns:ns/{var0} a ns:Entertainer . 
+source  SELECT A."c0" as var0 FROM  "src_Board" as A, "src_Governmental-Organisation" as B, "src_War" as C, "src_Election" as D, "src_Building" as E, "src_Entertainer" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-102747958
+target  ns:ns/{var0} a ns:Animal . 
+source  SELECT A."c0" as var0 FROM  "src_Religious-Ideology" as A, "src_Religious-Order" as B, "src_Location" as C, "src_Cathedral" as D, "src_Intellectual-Movement" as E, "src_Food" as F, "src_Animal" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-1225390109
+target  ns:ns/{var0} a ns:Natural-Object . 
+source  SELECT A."c0" as var0 FROM  "src_Clerical-Leader" as A, "src_Clothing" as B, "src_Religious-Order" as C, "src_Film-Maker" as D, "src_Sportsman" as E, "src_Natural-Object" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-621451427
+target  ns:ns/{var0} a ns:Architect . 
+source  SELECT A."c0" as var0 FROM  "src_Meeting" as A, "src_Flavour" as B, "src_Cathedral" as C, "src_Architect" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-1805745120
+target  ns:ns/{var0} a ns:Creator . 
+source  SELECT A."c0" as var0 FROM  "src_Organisation" as A, "src_Symbol" as B, "src_Period-in-Office" as C, "src_Creator" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID1992904123
+target  ns:ns/{var0} a ns:Armament . 
+source  SELECT A."c0" as var0 FROM  "src_Physician" as A, "src_Vehicle" as B, "src_Clerical-Leader" as C, "src_Pamphlet" as D, "src_Musician" as E, "src_Journalist" as F, "src_Armament" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID1765314036
+target  ns:ns/{var0} a ns:Artefact . 
+source  SELECT A."c0" as var0 FROM  "src_Author" as A, "src_Writing" as B, "src_exists" as C, "src_Food" as D, "src_TemporalInterval" as E, "src_Illness" as F, "src_Artefact" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID686494316
+target  ns:ns/{var0} a ns:Art-Form . 
+source  SELECT A."c0" as var0 FROM  "src_Non-Military-Conflict" as A, "src_Geographical-Region" as B, "src_Dramaturge" as C, "src_Measurable-Trend" as D, "src_Religious-Movement" as E, "src_Clerical-Leader" as F, "src_Art-Form" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID823242531
+target  ns:ns/{var0} a ns:Object . 
+source  SELECT A."c0" as var0 FROM  "src_Fictional-Person" as A, "src_Discoverer" as B, "src_Cultural-Agreement" as C, "src_Military-Person" as D, "src_Object" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID683740653
+target  ns:ns/{var0} a ns:Artist . 
+source  SELECT A."c0" as var0 FROM  "src_Abstract-Notion" as A, "src_Politician" as B, "src_Monastery" as C, "src_Religious-Order" as D, "src_Relic" as E, "src_Artist" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID774978028
+target  ns:ns/{var0} a ns:Artistic-Movement . 
+source  SELECT A."c0" as var0 FROM  "src_Ritual" as A, "src_Person-Role" as B, "src_Magnate" as C, "src_Artistic-Movement" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID250009079
+target  ns:ns/{var0} a ns:Movement . 
+source  SELECT A."c0" as var0 FROM  "src_Pollution" as A, "src_TemporalInterval" as B, "src_Cleric" as C, "src_Measurable-Trend" as D, "src_Religious-Leader" as E, "src_Movement" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-124115671
+target  ns:ns/{var0} a ns:Artistic-Style . 
+source  SELECT A."c0" as var0 FROM  "src_Ecclesiarch" as A, "src_Queen" as B, "src_Religious-Movement" as C, "src_hasLocationPartMember" as D, "src_Psychologist" as E, "src_Astronaut" as F, "src_Artistic-Style" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID899679989
+target  ns:ns/{var0} a ns:Astronaut . 
+source  SELECT A."c0" as var0 FROM  "src_Economic-Symbol" as A, "src_Theologian" as B, "src_Time" as C, "src_Economist" as D, "src_Astronaut" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-330084906
+target  ns:ns/{var0} a ns:Discoverer . 
+source  SELECT A."c0" as var0 FROM  "src_Geographical-Region" as A, "src_Pastime" as B, "src_International-Organisation" as C, "src_Political-Organisation" as D, "src_Discoverer" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-414753211
+target  ns:ns/{var0} a ns:Author . 
+source  SELECT A."c0" as var0 FROM  "src_Person" as A, "src_Landmark" as B, "src_War" as C, "src_Author" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-1150949472
+target  ns:ns/{var0} a ns:Badge . 
+source  SELECT A."c0" as var0 FROM  "src_Piece-of-Music" as A, "src_Clothing" as B, "src_Technical-Scientific-Advance" as C, "src_Badge" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID650322997
+target  ns:ns/{var0} a ns:Conceptual-Object . 
+source  SELECT A."c0" as var0 FROM  "src_Battle" as A, "src_Pope" as B, "src_Functionary" as C, "src_Conceptual-Object" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID1179325748
+target  ns:ns/{var0} a ns:Battle . 
+source  SELECT A."c0" as var0 FROM  "src_Saint" as A, "src_Movement" as B, "src_Philanthropist" as C, "src_Battle" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-760970526
+target  ns:ns/{var0} a ns:Event . 
+source  SELECT A."c0" as var0 FROM  "src_Musician" as A, "src_Party" as B, "src_Pastime" as C, "src_Train" as D, "src_Event" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID492733020
+target  ns:ns/{var0} a ns:Board . 
+source  SELECT A."c0" as var0 FROM  "src_hasCategory" as A, "src_Structure" as B, "src_King" as C, "src_Church" as D, "src_Ritual" as E, "src_Board" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-1375547555
+target  ns:ns/{var0} a ns:Management-Organisation . 
+source  SELECT A."c0" as var0 FROM  "src_Building" as A, "src_Pamphlet" as B, "src_Individual" as C, "src_Actor" as D, "src_Architect" as E, "src_International-Alliance" as F, "src_Management-Organisation" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID1481686323
+target  ns:ns/{var0} a ns:Book . 
+source  SELECT A."c0" as var0 FROM  "src_Clerical-Leader" as A, "src_hasLocationContainerMember" as B, "src_isLocationContainerMemberOf" as C, "src_Book" as D WHERE , B."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID709102789
+target  ns:ns/{var0} a ns:Writing . 
+source  SELECT A."c0" as var0 FROM  "src_Fictional-Event" as A, "src_International-Organisation" as B, "src_Pastime" as C, "src_Writing" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID483770608
+target  ns:ns/{var0} a ns:Business-Leader . 
+source  SELECT A."c0" as var0 FROM  "src_Pastime" as A, "src_Category" as B, "src_Painting" as C, "src_hasCategory" as D, "src_Business-Leader" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-992633548
+target  ns:ns/{var0} a ns:Magnate . 
+source  SELECT A."c0" as var0 FROM  "src_Social-Group" as A, "src_Trial" as B, "src_Trades-Unionist" as C, "src_Musician" as D, "src_Artistic-Movement" as E, "src_hasCategory" as F, "src_Magnate" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID1574173727
+target  ns:ns/{var0} a ns:Category . 
+source  SELECT A."c0" as var0 FROM  "src_Language" as A, "src_Religious-Ideology" as B, "src_Prince" as C, "src_Intellectual-Movement" as D, "src_Structure" as E, "src_Category" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID965884596
+target  ns:ns/{var0} a ns:VicodiOI . 
+source  SELECT A."c0" as var0 FROM  "src_Symbol" as A, "src_Trade-Association" as B, "src_Composer" as C, "src_Politician" as D, "src_Board" as E, "src_Educational-Organisation" as F, "src_VicodiOI" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID368567615
+target  ns:ns/{var0} a ns:Cathedral . 
+source  SELECT A."c0" as var0 FROM  "src_Physician" as A, "src_Political-Organisation" as B, "src_Economic-Organisation" as C, "src_Cathedral" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID1768587928
+target  ns:ns/{var0} a ns:Church . 
+source  SELECT A."c0" as var0 FROM  "src_Event" as A, "src_Symbol" as B, "src_Diplomat" as C, "src_Cathedral" as D, "src_Church" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID418790424
+target  ns:ns/{var0} a ns:Church-Reformer . 
+source  SELECT A."c0" as var0 FROM  "src_Physician" as A, "src_Trades-Union" as B, "src_Organisation" as C, "src_Engineer" as D, "src_Church-Reformer" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-2056017945
+target  ns:ns/{var0} a ns:Religious-Leader . 
+source  SELECT A."c0" as var0 FROM  "src_Diplomat" as A, "src_Film-Maker" as B, "src_Food" as C, "src_Dynasty" as D, "src_Author" as E, "src_Religious-Leader" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-1928187054
+target  ns:ns/{var0} a ns:City . 
+source  SELECT A."c0" as var0 FROM  "src_Social-Group" as A, "src_Legislation" as B, "src_Masonic-Lodge" as C, "src_Cultural-Organisation" as D, "src_Settlement" as E, "src_Psychologist" as F, "src_City" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-540879421
+target  ns:ns/{var0} a ns:Settlement . 
+source  SELECT A."c0" as var0 FROM  "src_Political-Symbol" as A, "src_City" as B, "src_Location-Part-Relation" as C, "src_Period-in-Office" as D, "src_isLocationContainerMemberOf" as E, "src_Settlement" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID175127814
+target  ns:ns/{var0} a ns:Cleric . 
+source  SELECT A."c0" as var0 FROM  "src_Board" as A, "src_Theologian" as B, "src_Settlement" as C, "src_Cleric" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-847480597
+target  ns:ns/{var0} a ns:Person-Role . 
+source  SELECT A."c0" as var0 FROM  "src_Religious-Leader" as A, "src_hasLocationContainerMember" as B, "src_Criminal" as C, "src_Person-Role" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID1603659370
+target  ns:ns/{var0} a ns:Clerical-Leader . 
+source  SELECT A."c0" as var0 FROM  "src_Social-Stratum" as A, "src_Individual" as B, "src_Sportsman" as C, "src_Food" as D, "src_Economist" as E, "src_Clerical-Leader" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID2123669455
+target  ns:ns/{var0} a ns:Leader . 
+source  SELECT A."c0" as var0 FROM  "src_Disease" as A, "src_Treaty" as B, "src_isLocationPartMemberOf" as C, "src_Pope" as D, "src_Economic-Process" as E, "src_Location" as F, "src_Leader" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-1596235318
+target  ns:ns/{var0} a ns:Clothing . 
+source  SELECT A."c0" as var0 FROM  "src_Diplomat" as A, "src_Saint" as B, "src_Magnate" as C, "src_Social-Stratum" as D, "src_Intellectual-Movement" as E, "src_Clothing" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID1299378889
+target  ns:ns/{var0} a ns:Commodity . 
+source  SELECT A."c0" as var0 FROM  "src_VicodiOI" as A, "src_Economic-Enterprise" as B, "src_isLocationPartMemberOf" as C, "src_Commodity" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-1985158311
+target  ns:ns/{var0} a ns:Composer . 
+source  SELECT A."c0" as var0 FROM  "src_Artistic-Style" as A, "src_Artistic-Movement" as B, "src_Population-Movement" as C, "src_Composer" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-1522400645
+target  ns:ns/{var0} a ns:Conductor . 
+source  SELECT A."c0" as var0 FROM  "src_Journalist" as A, "src_Functionary" as B, "src_Structure" as C, "src_Conductor" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID19274933
+target  ns:ns/{var0} a ns:Country . 
+source  SELECT A."c0" as var0 FROM  "src_Foreign-Minister" as A, "src_hasLocationPartMember" as B, "src_Religious-Community" as C, "src_Pastime" as D, "src_Disease" as E, "src_Country" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID1128390759
+target  ns:ns/{var0} a ns:Location . 
+source  SELECT A."c0" as var0 FROM  "src_Queen" as A, "src_Measurable-Trend" as B, "src_Business-Leader" as C, "src_Social-Group" as D, "src_Location" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID632732685
+target  ns:ns/{var0} a ns:Crime . 
+source  SELECT A."c0" as var0 FROM  "src_Food" as A, "src_Criminal" as B, "src_Masonic-Lodge" as C, "src_Inventor" as D, "src_Crime" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID2042279471
+target  ns:ns/{var0} a ns:Criminal . 
+source  SELECT A."c0" as var0 FROM  "src_Sportsman" as A, "src_International-Alliance" as B, "src_Prince" as C, "src_Life-Event" as D, "src_Criminal" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID444477245
+target  ns:ns/{var0} a ns:Cultural-Agreement . 
+source  SELECT A."c0" as var0 FROM  "src_Magnate" as A, "src_Treaty" as B, "src_City" as C, "src_Dramaturge" as D, "src_Board" as E, "src_Professor" as F, "src_Cultural-Agreement" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-1327404499
+target  ns:ns/{var0} a ns:Cultural-Organisation . 
+source  SELECT A."c0" as var0 FROM  "src_Intellectual-Construct" as A, "src_Pamphlet" as B, "src_Piece-of-Music" as C, "src_University" as D, "src_Cultural-Organisation" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID827971693
+target  ns:ns/{var0} a ns:Organisation . 
+source  SELECT A."c0" as var0 FROM  "src_Pollution" as A, "src_Painting" as B, "src_Artistic-Style" as C, "src_Queen" as D, "src_Settlement" as E, "src_hasRelationMember" as F, "src_Organisation" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-1226251203
+target  ns:ns/{var0} a ns:Dancer . 
+source  SELECT A."c0" as var0 FROM  "src_Other-Religious-Person" as A, "src_Battle" as B, "src_Musician" as C, "src_Food" as D, "src_Dancer" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-2056081171
+target  ns:ns/{var0} a ns:Diplomat . 
+source  SELECT A."c0" as var0 FROM  "src_Head-of-Government" as A, "src_International-Organisation" as B, "src_Time" as C, "src_Emperor" as D, "src_Diplomat" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-251444245
+target  ns:ns/{var0} a ns:Functionary . 
+source  SELECT A."c0" as var0 FROM  "src_Measurable-Trend" as A, "src_Field-of-Knowledge" as B, "src_Governmental-Organisation" as C, "src_Religious-Ideology" as D, "src_Functionary" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-1841440665
+target  ns:ns/{var0} a ns:Disaster . 
+source  SELECT A."c0" as var0 FROM  "src_isRelationMemberOf" as A, "src_Military-Organisation" as B, "src_Fictional-Person" as C, "src_Disaster" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-426057367
+target  ns:ns/{var0} a ns:Disease . 
+source  SELECT A."c0" as var0 FROM  "src_Dramaturge" as A, "src_Armament" as B, "src_Party" as C, "src_Other-Religious-Person" as D, "src_Disease" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-1816456803
+target  ns:ns/{var0} a ns:Dramaturge . 
+source  SELECT A."c0" as var0 FROM  "src_Natural-Object" as A, "src_Diplomat" as B, "src_Time-Dependent-Relation" as C, "src_Time" as D, "src_Dramaturge" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID1522095353
+target  ns:ns/{var0} a ns:Dynasty . 
+source  SELECT A."c0" as var0 FROM  "src_Economic-Process" as A, "src_Trades-Union" as B, "src_Artefact" as C, "src_Dynasty" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-1203666103
+target  ns:ns/{var0} a ns:Social-Group . 
+source  SELECT A."c0" as var0 FROM  "src_related" as A, "src_Engineer" as B, "src_Commodity" as C, "src_Dancer" as D, "src_FuzzyTemporalInterval" as E, "src_Social-Group" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID1626311851
+target  ns:ns/{var0} a ns:Ecclesiarch . 
+source  SELECT A."c0" as var0 FROM  "src_Village" as A, "src_Political-Organisation" as B, "src_Psychologist" as C, "src_Book" as D, "src_Time-Dependent-Relation" as E, "src_Scientific-Instrument" as F, "src_Ecclesiarch" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-1020294429
+target  ns:ns/{var0} a ns:Economic-Enterprise . 
+source  SELECT A."c0" as var0 FROM  "src_Board" as A, "src_Conceptual-Object" as B, "src_Politician" as C, "src_Trade-Association" as D, "src_Trial" as E, "src_Economic-Enterprise" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-1709424993
+target  ns:ns/{var0} a ns:Economic-Organisation . 
+source  SELECT A."c0" as var0 FROM  "src_Church" as A, "src_Role" as B, "src_Scientist" as C, "src_Economic-Enterprise" as D, "src_Economic-Organisation" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-1789929392
+target  ns:ns/{var0} a ns:Economic-Process . 
+source  SELECT A."c0" as var0 FROM  "src_Geographer" as A, "src_Board" as B, "src_Symbol" as C, "src_Idea" as D, "src_Economic-Process" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-547137998
+target  ns:ns/{var0} a ns:Economic-Symbol . 
+source  SELECT A."c0" as var0 FROM  "src_hasRelationMember" as A, "src_Journal" as B, "src_Artistic-Style" as C, "src_Sculptor" as D, "src_Political-Symbol" as E, "src_Economic-Symbol" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-28134199
+target  ns:ns/{var0} a ns:Symbol . 
+source  SELECT A."c0" as var0 FROM  "src_King" as A, "src_Settlement" as B, "src_League" as C, "src_Ethnic-Group" as D, "src_Symbol" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-194419529
+target  ns:ns/{var0} a ns:Economist . 
+source  SELECT A."c0" as var0 FROM  "src_Symbol" as A, "src_Ecclesiarch" as B, "src_Religious-Organisation" as C, "src_Meeting" as D, "src_Social-Group" as E, "src_Economist" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-920841090
+target  ns:ns/{var0} a ns:Scientist . 
+source  SELECT A."c0" as var0 FROM  "src_Uprising" as A, "src_Artefact" as B, "src_Economist" as C, "src_hasLocationContainerMember" as D, "src_Pope" as E, "src_Head-of-State" as F, "src_Scientist" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID653800108
+target  ns:ns/{var0} a ns:Educational-Organisation . 
+source  SELECT A."c0" as var0 FROM  "src_University" as A, "src_Physician" as B, "src_Period" as C, "src_Disease" as D, "src_Religious-Organisation" as E, "src_Military-Unit" as F, "src_Educational-Organisation" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID781398463
+target  ns:ns/{var0} a ns:Election . 
+source  SELECT A."c0" as var0 FROM  "src_Secular-Movement" as A, "src_Economic-Process" as B, "src_Water" as C, "src_Saint" as D, "src_Disaster" as E, "src_League" as F, "src_Election" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-1419354991
+target  ns:ns/{var0} a ns:Emperor . 
+source  SELECT A."c0" as var0 FROM  "src_Criminal" as A, "src_Location" as B, "src_Ship" as C, "src_Trial" as D, "src_Religious-Leader" as E, "src_Field-of-Knowledge" as F, "src_Emperor" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID978174384
+target  ns:ns/{var0} a ns:Head-of-State . 
+source  SELECT A."c0" as var0 FROM  "src_Religious-Movement" as A, "src_Measurable-Trend" as B, "src_Abstract-Notion" as C, "src_Magnate" as D, "src_Head-of-State" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-1814888764
+target  ns:ns/{var0} a ns:Engineer . 
+source  SELECT A."c0" as var0 FROM  "src_Election" as A, "src_Sportsman" as B, "src_Sculpture" as C, "src_Engineer" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID1265083859
+target  ns:ns/{var0} a ns:Environment . 
+source  SELECT A."c0" as var0 FROM  "src_Ship" as A, "src_Settlement" as B, "src_Emperor" as C, "src_Philosopher" as D, "src_Other-Religious-Leader" as E, "src_Environment" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-2007898602
+target  ns:ns/{var0} a ns:Ethnic-Group . 
+source  SELECT A."c0" as var0 FROM  "src_Sultan" as A, "src_Philanthropist" as B, "src_Artistic-Style" as C, "src_Village" as D, "src_Field-of-Knowledge" as E, "src_Ethnic-Group" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-1541987601
+target  ns:ns/{var0} a ns:Fictional-Event . 
+source  SELECT A."c0" as var0 FROM  "src_Category" as A, "src_hasLocationPartMember" as B, "src_Philosopher" as C, "src_Religious-Community" as D, "src_Period" as E, "src_Stereotype-Group" as F, "src_Fictional-Event" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID1028462316
+target  ns:ns/{var0} a ns:Fictional-Person . 
+source  SELECT A."c0" as var0 FROM  "src_Disaster" as A, "src_National-Symbol" as B, "src_hasLocationPartMember" as C, "src_Fictional-Person" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID1691774239
+target  ns:ns/{var0} a ns:Individual . 
+source  SELECT A."c0" as var0 FROM  "src_isRelationMemberOf" as A, "src_related" as B, "src_Actor" as C, "src_Individual" as D WHERE , A."c1" = B."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID277402415
+target  ns:ns/{var0} a ns:Field-of-Knowledge . 
+source  SELECT A."c0" as var0 FROM  "src_Population-Movement" as A, "src_Conductor" as B, "src_Location-Part-Relation" as C, "src_Religious-Movement" as D, "src_Ship" as E, "src_Film-Maker" as F, "src_Field-of-Knowledge" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID814322181
+target  ns:ns/{var0} a ns:Intellectual-Construct . 
+source  SELECT A."c0" as var0 FROM  "src_Time-Dependent-Relation" as A, "src_Journalist" as B, "src_Dancer" as C, "src_isLocationContainerMemberOf" as D, "src_Intellectual-Construct" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID337717084
+target  ns:ns/{var0} a ns:Film-Maker . 
+source  SELECT A."c0" as var0 FROM  "src_Geographical-Feature" as A, "src_Intellectual-Construct" as B, "src_Scandal" as C, "src_Film-Maker" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-81934975
+target  ns:ns/{var0} a ns:Time-Dependent . 
+source  SELECT A."c0" as var0 FROM  "src_Liturgical-Object" as A, "src_Geographical-Feature" as B, "src_hasCategory" as C, "src_Publisher" as D, "src_Painter" as E, "src_Sculpture" as F, "src_Time-Dependent" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID2005369191
+target  ns:ns/{var0} a ns:Food . 
+source  SELECT A."c0" as var0 FROM  "src_related" as A, "src_Movement" as B, "src_Sculptor" as C, "src_Trial" as D, "src_Entertainer" as E, "src_Pope" as F, "src_Food" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID833266259
+target  ns:ns/{var0} a ns:Foreign-Minister . 
+source  SELECT A."c0" as var0 FROM  "src_hasRole" as A, "src_Environment" as B, "src_Intellectual-Movement" as C, "src_Business-Leader" as D, "src_Country" as E, "src_Foreign-Minister" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID558266457
+target  ns:ns/{var0} a ns:Minister . 
+source  SELECT A."c0" as var0 FROM  "src_Sportsman" as A, "src_Art-Form" as B, "src_Artefact" as C, "src_Piece-of-Music" as D, "src_Intra-State-Group" as E, "src_Criminal" as F, "src_Minister" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID256401297
+target  ns:ns/{var0} a ns:FuzzyTemporalInterval . 
+source  SELECT A."c0" as var0 FROM  "src_Person-Role" as A, "src_Trade-Association" as B, "src_Intellectual-Construct" as C, "src_Other-Religious-Person" as D, "src_Time-Dependent-Relation" as E, "src_FuzzyTemporalInterval" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID1633077710
+target  ns:ns/{var0} a ns:Time . 
+source  SELECT A."c0" as var0 FROM  "src_Fictional-Person" as A, "src_Ethnic-Group" as B, "src_Badge" as C, "src_Film-Maker" as D, "src_Vehicle" as E, "src_Time" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-1483858718
+target  ns:ns/{var0} a ns:Geographer . 
+source  SELECT A."c0" as var0 FROM  "src_Representative-Institution" as A, "src_Object" as B, "src_War" as C, "src_Intellectual-Construct" as D, "src_Other-Religious-Person" as E, "src_Journalist" as F, "src_Geographer" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-880919878
+target  ns:ns/{var0} a ns:Geographical-Discovery . 
+source  SELECT A."c0" as var0 FROM  "src_Philosopher" as A, "src_Religious-Order" as B, "src_Religious-Ideology" as C, "src_Other-Religious-Person" as D, "src_Military-Unit" as E, "src_Geographical-Discovery" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-1262122289
+target  ns:ns/{var0} a ns:Geographical-Feature . 
+source  SELECT A."c0" as var0 FROM  "src_Author" as A, "src_Category" as B, "src_Philosopher" as C, "src_Queen" as D, "src_Military-Unit" as E, "src_Geographical-Feature" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID1878887200
+target  ns:ns/{var0} a ns:Geographical-Region . 
+source  SELECT A."c0" as var0 FROM  "src_Military-Person" as A, "src_Movement" as B, "src_Cleric" as C, "src_Commodity" as D, "src_Legislation" as E, "src_Professor" as F, "src_Geographical-Region" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID217721271
+target  ns:ns/{var0} a ns:Governmental-Organisation . 
+source  SELECT A."c0" as var0 FROM  "src_Organisation" as A, "src_Life-Event" as B, "src_Political-Symbol" as C, "src_Ideology" as D, "src_Sportsman" as E, "src_Governmental-Organisation" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID1741330599
+target  ns:ns/{var0} a ns:Political-Organisation . 
+source  SELECT A."c0" as var0 FROM  "src_Educational-Organisation" as A, "src_Painter" as B, "src_Location-Part-Relation" as C, "src_Political-Organisation" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-103059172
+target  ns:ns/{var0} a ns:Head-of-Government . 
+source  SELECT A."c0" as var0 FROM  "src_Uprising" as A, "src_Time" as B, "src_Newspaper" as C, "src_Musician" as D, "src_Non-Military-Conflict" as E, "src_Pastime" as F, "src_Head-of-Government" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID1149121063
+target  ns:ns/{var0} a ns:Secular-Leader . 
+source  SELECT A."c0" as var0 FROM  "src_Water" as A, "src_Liturgical-Object" as B, "src_Piece-of-Music" as C, "src_isLocationPartMemberOf" as D, "src_Cultural-Agreement" as E, "src_Environment" as F, "src_Secular-Leader" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID1325674
+target  ns:ns/{var0} a ns:Idea . 
+source  SELECT A."c0" as var0 FROM  "src_Trade-Association" as A, "src_Architect" as B, "src_exists" as C, "src_International-Organisation" as D, "src_FuzzyTemporalInterval" as E, "src_Idea" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-29389148
+target  ns:ns/{var0} a ns:Ideology . 
+source  SELECT A."c0" as var0 FROM  "src_Pope" as A, "src_Settlement" as B, "src_Vehicle" as C, "src_Religious-Leader" as D, "src_Management-Organisation" as E, "src_Ideology" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-549644949
+target  ns:ns/{var0} a ns:Illness . 
+source  SELECT A."c0" as var0 FROM  "src_Jurist" as A, "src_Clerical-Leader" as B, "src_Party" as C, "src_Painting" as D, "src_Conductor" as E, "src_Illness" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-1837505443
+target  ns:ns/{var0} a ns:Life-Event . 
+source  SELECT A."c0" as var0 FROM  "src_Commodity" as A, "src_Piece-of-Music" as B, "src_Disaster" as C, "src_Life-Event" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-1101428231
+target  ns:ns/{var0} a ns:Intellectual-Movement . 
+source  SELECT A."c0" as var0 FROM  "src_Creator" as A, "src_Conductor" as B, "src_Saint" as C, "src_Intellectual-Movement" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID85577933
+target  ns:ns/{var0} a ns:International-Alliance . 
+source  SELECT A."c0" as var0 FROM  "src_Sportsman" as A, "src_Creator" as B, "src_Pastime" as C, "src_Public-Oration" as D, "src_International-Alliance" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-445314632
+target  ns:ns/{var0} a ns:International-Organisation . 
+source  SELECT A."c0" as var0 FROM  "src_Criminal" as A, "src_isLocationPartMemberOf" as B, "src_Food" as C, "src_Leader" as D, "src_International-Organisation" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-1962331948
+target  ns:ns/{var0} a ns:Intra-State-Group . 
+source  SELECT A."c0" as var0 FROM  "src_Professor" as A, "src_Ideology" as B, "src_Crime" as C, "src_Foreign-Minister" as D, "src_Commodity" as E, "src_Ethnic-Group" as F, "src_Intra-State-Group" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID469714393
+target  ns:ns/{var0} a ns:Inventor . 
+source  SELECT A."c0" as var0 FROM  "src_War" as A, "src_Time-Dependent" as B, "src_Writing" as C, "src_Inventor" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID1342718051
+target  ns:ns/{var0} a ns:Journal . 
+source  SELECT A."c0" as var0 FROM  "src_Uprising" as A, "src_Role" as B, "src_Trades-Union" as C, "src_Disease" as D, "src_Philosopher" as E, "src_Journal" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-1133440968
+target  ns:ns/{var0} a ns:Journalist . 
+source  SELECT A."c0" as var0 FROM  "src_Pamphlet" as A, "src_Other-Religious-Person" as B, "src_Writing" as C, "src_Journalist" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-1040946342
+target  ns:ns/{var0} a ns:Jurist . 
+source  SELECT A."c0" as var0 FROM  "src_Philosopher" as A, "src_Queen" as B, "src_Population-Movement" as C, "src_Actor" as D, "src_Economic-Symbol" as E, "src_Jurist" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-66866098
+target  ns:ns/{var0} a ns:King . 
+source  SELECT A."c0" as var0 FROM  "src_Writing" as A, "src_Category" as B, "src_Stereotype-Group" as C, "src_King" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-984042106
+target  ns:ns/{var0} a ns:Landmark . 
+source  SELECT A."c0" as var0 FROM  "src_isLocationPartMemberOf" as A, "src_Illness" as B, "src_Representative-Institution" as C, "src_Magnate" as D, "src_Landmark" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-1651893295
+target  ns:ns/{var0} a ns:Language . 
+source  SELECT A."c0" as var0 FROM  "src_Relic" as A, "src_Religious-Ideology" as B, "src_TemporalInterval" as C, "src_Representative-Institution" as D, "src_Language" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-1233906217
+target  ns:ns/{var0} a ns:League . 
+source  SELECT A."c0" as var0 FROM  "src_Military-Person" as A, "src_Painting" as B, "src_Non-Military-Conflict" as C, "src_Dancer" as D, "src_Economist" as E, "src_hasCategory" as F, "src_League" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID1224403964
+target  ns:ns/{var0} a ns:Legislation . 
+source  SELECT A."c0" as var0 FROM  "src_Time-Dependent" as A, "src_Geographical-Discovery" as B, "src_Writing" as C, "src_Cathedral" as D, "src_Publisher" as E, "src_Legislation" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-830398141
+target  ns:ns/{var0} a ns:Liturgical-Object . 
+source  SELECT A."c0" as var0 FROM  "src_Religious-Practice" as A, "src_Painter" as B, "src_Trade-Association" as C, "src_Pollution" as D, "src_Flavour" as E, "src_Trial" as F, "src_Liturgical-Object" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID1042768844
+target  ns:ns/{var0} a ns:Location-Part-Relation . 
+source  SELECT A."c0" as var0 FROM  "src_Cultural-Agreement" as A, "src_isLocationContainerMemberOf" as B, "src_Life-Event" as C, "src_Country" as D, "src_Water" as E, "src_Location-Part-Relation" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-398197766
+target  ns:ns/{var0} a ns:Time-Dependent-Relation . 
+source  SELECT A."c0" as var0 FROM  "src_Idea" as A, "src_Train" as B, "src_Trades-Unionist" as C, "src_Time-Dependent-Relation" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-868814660
+target  ns:ns/{var0} a ns:Masonic-Lodge . 
+source  SELECT A."c0" as var0 FROM  "src_Pollution" as A, "src_Composer" as B, "src_Sculpture" as C, "src_Work-of-Art" as D, "src_Masonic-Lodge" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID1770671057
+target  ns:ns/{var0} a ns:Measurable-Trend . 
+source  SELECT A."c0" as var0 FROM  "src_Commodity" as A, "src_Artefact" as B, "src_Dynasty" as C, "src_Pope" as D, "src_Measurable-Trend" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID2144501448
+target  ns:ns/{var0} a ns:Meeting . 
+source  SELECT A."c0" as var0 FROM  "src_Party" as A, "src_Intra-State-Group" as B, "src_Building" as C, "src_Meeting" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID1364845844
+target  ns:ns/{var0} a ns:Military-Organisation . 
+source  SELECT A."c0" as var0 FROM  "src_Pollution" as A, "src_Idea" as B, "src_Time-Dependent" as C, "src_Military-Organisation" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-627816013
+target  ns:ns/{var0} a ns:Military-Person . 
+source  SELECT A."c0" as var0 FROM  "src_Individual" as A, "src_Relic" as B, "src_hasLocationPartMember" as C, "src_Symbol" as D, "src_Geographical-Discovery" as E, "src_Trades-Unionist" as F, "src_Military-Person" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID1030861592
+target  ns:ns/{var0} a ns:Military-Unit . 
+source  SELECT A."c0" as var0 FROM  "src_Language" as A, "src_Public-Oration" as B, "src_Business-Leader" as C, "src_Military-Unit" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-1518487311
+target  ns:ns/{var0} a ns:Monastery . 
+source  SELECT A."c0" as var0 FROM  "src_Art-Form" as A, "src_Abbey" as B, "src_Head-of-Government" as C, "src_Clerical-Leader" as D, "src_Physician" as E, "src_Dramaturge" as F, "src_Monastery" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-700776381
+target  ns:ns/{var0} a ns:Musician . 
+source  SELECT A."c0" as var0 FROM  "src_Crime" as A, "src_Pope" as B, "src_War" as C, "src_Economist" as D, "src_Individual" as E, "src_Governmental-Organisation" as F, "src_Musician" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-785292127
+target  ns:ns/{var0} a ns:National-Symbol . 
+source  SELECT A."c0" as var0 FROM  "src_Artist" as A, "src_Fictional-Person" as B, "src_Painting" as C, "src_Film-Maker" as D, "src_Intra-State-Group" as E, "src_Time-Dependent-Relation" as F, "src_National-Symbol" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-521384590
+target  ns:ns/{var0} a ns:Newspaper . 
+source  SELECT A."c0" as var0 FROM  "src_Business-Leader" as A, "src_Sultan" as B, "src_King" as C, "src_Dramaturge" as D, "src_Individual" as E, "src_Dynasty" as F, "src_Newspaper" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-199419534
+target  ns:ns/{var0} a ns:Non-Military-Conflict . 
+source  SELECT A."c0" as var0 FROM  "src_Sportsman" as A, "src_Creator" as B, "src_Building" as C, "src_Journalist" as D, "src_Non-Military-Conflict" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-1057394989
+target  ns:ns/{var0} a ns:Other-Religious-Leader . 
+source  SELECT A."c0" as var0 FROM  "src_King" as A, "src_Legislation" as B, "src_Book" as C, "src_Natural-Object" as D, "src_Other-Religious-Leader" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-1981261194
+target  ns:ns/{var0} a ns:Other-Religious-Person . 
+source  SELECT A."c0" as var0 FROM  "src_Magnate" as A, "src_Religious-Community" as B, "src_isRelationMemberOf" as C, "src_Leader" as D, "src_Other-Religious-Person" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID1766601908
+target  ns:ns/{var0} a ns:Painter . 
+source  SELECT A."c0" as var0 FROM  "src_Creator" as A, "src_Time-Dependent-Relation" as B, "src_Composer" as C, "src_Journalist" as D, "src_Scandal" as E, "src_Painter" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID29739815
+target  ns:ns/{var0} a ns:Painting . 
+source  SELECT A."c0" as var0 FROM  "src_Dancer" as A, "src_Queen" as B, "src_Art-Form" as C, "src_Business-Leader" as D, "src_Head-of-Government" as E, "src_Structure" as F, "src_Painting" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID1200984288
+target  ns:ns/{var0} a ns:Work-of-Art . 
+source  SELECT A."c0" as var0 FROM  "src_Minister" as A, "src_War" as B, "src_Pastime" as C, "src_hasRole" as D, "src_Religious-Leader" as E, "src_Work-of-Art" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-590878422
+target  ns:ns/{var0} a ns:Pamphlet . 
+source  SELECT A."c0" as var0 FROM  "src_Dancer" as A, "src_Geographical-Discovery" as B, "src_Economic-Organisation" as C, "src_Pamphlet" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID1659338095
+target  ns:ns/{var0} a ns:Party . 
+source  SELECT A."c0" as var0 FROM  "src_King" as A, "src_Ship" as B, "src_Economist" as C, "src_Object" as D, "src_Party" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID1234099351
+target  ns:ns/{var0} a ns:Pastime . 
+source  SELECT A."c0" as var0 FROM  "src_City" as A, "src_Movement" as B, "src_Clerical-Leader" as C, "src_Illness" as D, "src_Geographical-Discovery" as E, "src_Theologian" as F, "src_Pastime" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-65734593
+target  ns:ns/{var0} a ns:Period . 
+source  SELECT A."c0" as var0 FROM  "src_Board" as A, "src_Cultural-Organisation" as B, "src_Technical-Scientific-Advance" as C, "src_Newspaper" as D, "src_Period" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-1706969395
+target  ns:ns/{var0} a ns:Period-in-Office . 
+source  SELECT A."c0" as var0 FROM  "src_Economist" as A, "src_Political-Symbol" as B, "src_Functionary" as C, "src_Criminal" as D, "src_Painter" as E, "src_Period-in-Office" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID360627826
+target  ns:ns/{var0} a ns:Person . 
+source  SELECT A."c0" as var0 FROM  "src_Inventor" as A, "src_Public-Oration" as B, "src_Battle" as C, "src_Person" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-827749599
+target  ns:ns/{var0} a ns:Role . 
+source  SELECT A."c0" as var0 FROM  "src_Scientific-Instrument" as A, "src_Military-Organisation" as B, "src_Party" as C, "src_Time-Dependent" as D, "src_Management-Organisation" as E, "src_Role" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID2103125406
+target  ns:ns/{var0} a ns:Philanthropist . 
+source  SELECT A."c0" as var0 FROM  "src_Intra-State-Group" as A, "src_Vehicle" as B, "src_Management-Organisation" as C, "src_King" as D, "src_Philanthropist" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID647049693
+target  ns:ns/{var0} a ns:Philosopher . 
+source  SELECT A."c0" as var0 FROM  "src_Conductor" as A, "src_Person" as B, "src_Legislation" as C, "src_National-Symbol" as D, "src_Philosopher" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-1039790957
+target  ns:ns/{var0} a ns:Physician . 
+source  SELECT A."c0" as var0 FROM  "src_Vehicle" as A, "src_Illness" as B, "src_Location-Part-Relation" as C, "src_Physician" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID232164724
+target  ns:ns/{var0} a ns:Piece-of-Music . 
+source  SELECT A."c0" as var0 FROM  "src_Disease" as A, "src_City" as B, "src_Relic" as C, "src_Prince" as D, "src_Treaty" as E, "src_Landmark" as F, "src_Piece-of-Music" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-504466455
+target  ns:ns/{var0} a ns:Political-Region . 
+source  SELECT A."c0" as var0 FROM  "src_Dramaturge" as A, "src_Technical-Scientific-Advance" as B, "src_Prince" as C, "src_hasRelationMember" as D, "src_Psychologist" as E, "src_Book" as F, "src_Political-Region" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-1824546089
+target  ns:ns/{var0} a ns:Political-Symbol . 
+source  SELECT A."c0" as var0 FROM  "src_Religious-Order" as A, "src_Conceptual-Object" as B, "src_Other-Religious-Leader" as C, "src_Life-Event" as D, "src_Political-Symbol" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-1273270610
+target  ns:ns/{var0} a ns:Politician . 
+source  SELECT A."c0" as var0 FROM  "src_Board" as A, "src_Trades-Union" as B, "src_Badge" as C, "src_Politician" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID1153503556
+target  ns:ns/{var0} a ns:Pollution . 
+source  SELECT A."c0" as var0 FROM  "src_Geographical-Region" as A, "src_University" as B, "src_FuzzyTemporalInterval" as C, "src_Intellectual-Movement" as D, "src_Saint" as E, "src_Ecclesiarch" as F, "src_Pollution" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-745155089
+target  ns:ns/{var0} a ns:Pope . 
+source  SELECT A."c0" as var0 FROM  "src_Conductor" as A, "src_Saint" as B, "src_Head-of-State" as C, "src_Artefact" as D, "src_Intellectual-Movement" as E, "src_Conceptual-Object" as F, "src_Pope" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID618611472
+target  ns:ns/{var0} a ns:Population-Movement . 
+source  SELECT A."c0" as var0 FROM  "src_Clothing" as A, "src_Dynasty" as B, "src_Trades-Union" as C, "src_Animal" as D, "src_Category" as E, "src_Writing" as F, "src_Population-Movement" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID748817902
+target  ns:ns/{var0} a ns:Prince . 
+source  SELECT A."c0" as var0 FROM  "src_Pollution" as A, "src_Period-in-Office" as B, "src_hasRelationMember" as C, "src_Prince" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID975134777
+target  ns:ns/{var0} a ns:Professor . 
+source  SELECT A."c0" as var0 FROM  "src_Time" as A, "src_Role" as B, "src_Work-of-Art" as C, "src_Piece-of-Music" as D, "src_Social-Group" as E, "src_Professor" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-1033745851
+target  ns:ns/{var0} a ns:Psychologist . 
+source  SELECT A."c0" as var0 FROM  "src_Discoverer" as A, "src_Cleric" as B, "src_Piece-of-Music" as C, "src_Fictional-Person" as D, "src_Monastery" as E, "src_Psychologist" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID442526916
+target  ns:ns/{var0} a ns:Public-Oration . 
+source  SELECT A."c0" as var0 FROM  "src_Landmark" as A, "src_Object" as B, "src_International-Alliance" as C, "src_Dancer" as D, "src_Public-Oration" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID1957275210
+target  ns:ns/{var0} a ns:Publisher . 
+source  SELECT A."c0" as var0 FROM  "src_Sultan" as A, "src_Pope" as B, "src_Technical-Scientific-Advance" as C, "src_Time" as D, "src_Party" as E, "src_Secular-Movement" as F, "src_Publisher" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID1795448875
+target  ns:ns/{var0} a ns:Queen . 
+source  SELECT A."c0" as var0 FROM  "src_Other-Religious-Leader" as A, "src_National-Symbol" as B, "src_Magnate" as C, "src_Prince" as D, "src_Animal" as E, "src_Landmark" as F, "src_Queen" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-1316935318
+target  ns:ns/{var0} a ns:Relic . 
+source  SELECT A."c0" as var0 FROM  "src_Organisation" as A, "src_Liturgical-Object" as B, "src_Water" as C, "src_Battle" as D, "src_Relic" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID369178735
+target  ns:ns/{var0} a ns:Religious-Community . 
+source  SELECT A."c0" as var0 FROM  "src_Other-Religious-Leader" as A, "src_VicodiOI" as B, "src_Cathedral" as C, "src_Dramaturge" as D, "src_Religious-Community" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-1271006382
+target  ns:ns/{var0} a ns:Religious-Organisation . 
+source  SELECT A."c0" as var0 FROM  "src_Entertainer" as A, "src_Location-Part-Relation" as B, "src_Natural-Object" as C, "src_Role" as D, "src_Scientific-Instrument" as E, "src_Badge" as F, "src_Religious-Organisation" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-2134089076
+target  ns:ns/{var0} a ns:Religious-Ideology . 
+source  SELECT A."c0" as var0 FROM  "src_Party" as A, "src_Animal" as B, "src_Secular-Movement" as C, "src_Foreign-Minister" as D, "src_Dancer" as E, "src_Scandal" as F, "src_Religious-Ideology" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID107131435
+target  ns:ns/{var0} a ns:Religious-Movement . 
+source  SELECT A."c0" as var0 FROM  "src_Diplomat" as A, "src_hasRole" as B, "src_Dancer" as C, "src_Religious-Movement" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID386472795
+target  ns:ns/{var0} a ns:Religious-Order . 
+source  SELECT A."c0" as var0 FROM  "src_Dancer" as A, "src_Vehicle" as B, "src_Non-Military-Conflict" as C, "src_hasCategory" as D, "src_VicodiOI" as E, "src_Engineer" as F, "src_Religious-Order" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID1613911339
+target  ns:ns/{var0} a ns:Religious-Practice . 
+source  SELECT A."c0" as var0 FROM  "src_Non-Military-Conflict" as A, "src_Idea" as B, "src_Relic" as C, "src_Flavour" as D, "src_Religious-Practice" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-1698498779
+target  ns:ns/{var0} a ns:Religious-Symbol . 
+source  SELECT A."c0" as var0 FROM  "src_King" as A, "src_Time-Dependent" as B, "src_Composer" as C, "src_Religious-Symbol" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID898791496
+target  ns:ns/{var0} a ns:Representative-Institution . 
+source  SELECT A."c0" as var0 FROM  "src_Person-Role" as A, "src_Political-Symbol" as B, "src_Author" as C, "src_Sportsman" as D, "src_Jurist" as E, "src_Representative-Institution" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-1131979910
+target  ns:ns/{var0} a ns:Ritual . 
+source  SELECT A."c0" as var0 FROM  "src_Symbol" as A, "src_related" as B, "src_Pope" as C, "src_Ritual" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID1622755800
+target  ns:ns/{var0} a ns:Saint . 
+source  SELECT A."c0" as var0 FROM  "src_Art-Form" as A, "src_Landmark" as B, "src_Painter" as C, "src_hasRelationMember" as D, "src_Technical-Scientific-Advance" as E, "src_Saint" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-1639533051
+target  ns:ns/{var0} a ns:Scandal . 
+source  SELECT A."c0" as var0 FROM  "src_King" as A, "src_Journal" as B, "src_Disaster" as C, "src_Physician" as D, "src_Scandal" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-833250984
+target  ns:ns/{var0} a ns:Scientific-Instrument . 
+source  SELECT A."c0" as var0 FROM  "src_Discoverer" as A, "src_Monastery" as B, "src_League" as C, "src_Scientific-Instrument" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-714838923
+target  ns:ns/{var0} a ns:Sculptor . 
+source  SELECT A."c0" as var0 FROM  "src_Entertainer" as A, "src_Flavour" as B, "src_Journal" as C, "src_Church" as D, "src_Religious-Symbol" as E, "src_Sculptor" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID685332154
+target  ns:ns/{var0} a ns:Sculpture . 
+source  SELECT A."c0" as var0 FROM  "src_hasRelationMember" as A, "src_Masonic-Lodge" as B, "src_Pollution" as C, "src_Sculpture" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-217369419
+target  ns:ns/{var0} a ns:Secular-Ideology . 
+source  SELECT A."c0" as var0 FROM  "src_Object" as A, "src_Publisher" as B, "src_Art-Form" as C, "src_Governmental-Organisation" as D, "src_Leader" as E, "src_Secular-Ideology" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID150789097
+target  ns:ns/{var0} a ns:Secular-Movement . 
+source  SELECT A."c0" as var0 FROM  "src_Meeting" as A, "src_Artistic-Style" as B, "src_Ecclesiarch" as C, "src_isLocationPartMemberOf" as D, "src_Secular-Movement" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-1367111164
+target  ns:ns/{var0} a ns:Ship . 
+source  SELECT A."c0" as var0 FROM  "src_Artefact" as A, "src_Ideology" as B, "src_Natural-Object" as C, "src_Ship" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID1221791321
+target  ns:ns/{var0} a ns:Vehicle . 
+source  SELECT A."c0" as var0 FROM  "src_Head-of-State" as A, "src_Prince" as B, "src_Geographer" as C, "src_Vehicle" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-832005456
+target  ns:ns/{var0} a ns:Social-Stratum . 
+source  SELECT A."c0" as var0 FROM  "src_Creator" as A, "src_Intra-State-Group" as B, "src_Fictional-Event" as C, "src_Social-Stratum" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-904454933
+target  ns:ns/{var0} a ns:Sportsman . 
+source  SELECT A."c0" as var0 FROM  "src_Time-Dependent-Relation" as A, "src_Trades-Unionist" as B, "src_Monastery" as C, "src_Category" as D, "src_TemporalInterval" as E, "src_Sportsman" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID1303585664
+target  ns:ns/{var0} a ns:Stereotype-Group . 
+source  SELECT A."c0" as var0 FROM  "src_Intra-State-Group" as A, "src_Religious-Symbol" as B, "src_Water" as C, "src_Illness" as D, "src_Stereotype-Group" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID194371172
+target  ns:ns/{var0} a ns:Structure . 
+source  SELECT A."c0" as var0 FROM  "src_Prince" as A, "src_Geographical-Feature" as B, "src_FuzzyTemporalInterval" as C, "src_Event" as D, "src_Architect" as E, "src_Structure" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID732662033
+target  ns:ns/{var0} a ns:Sultan . 
+source  SELECT A."c0" as var0 FROM  "src_University" as A, "src_Monastery" as B, "src_Newspaper" as C, "src_Non-Military-Conflict" as D, "src_National-Symbol" as E, "src_Sultan" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-661475507
+target  ns:ns/{var0} a ns:Technical-Scientific-Advance . 
+source  SELECT A."c0" as var0 FROM  "src_Educational-Organisation" as A, "src_Film-Maker" as B, "src_Secular-Leader" as C, "src_Technical-Scientific-Advance" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-587207499
+target  ns:ns/{var0} a ns:TemporalInterval . 
+source  SELECT A."c0" as var0 FROM  "src_Geographical-Discovery" as A, "src_International-Organisation" as B, "src_Time" as C, "src_Economic-Organisation" as D, "src_TemporalInterval" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID632074742
+target  ns:ns/{var0} a ns:Theologian . 
+source  SELECT A."c0" as var0 FROM  "src_Election" as A, "src_Psychologist" as B, "src_VicodiOI" as C, "src_Leader" as D, "src_Theologian" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID1867467150
+target  ns:ns/{var0} a ns:Trade-Association . 
+source  SELECT A."c0" as var0 FROM  "src_Commodity" as A, "src_Sportsman" as B, "src_Publisher" as C, "src_Trade-Association" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-2069720600
+target  ns:ns/{var0} a ns:Trades-Union . 
+source  SELECT A."c0" as var0 FROM  "src_International-Organisation" as A, "src_Economic-Organisation" as B, "src_Party" as C, "src_Location-Part-Relation" as D, "src_War" as E, "src_Non-Military-Conflict" as F, "src_Trades-Union" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID250062844
+target  ns:ns/{var0} a ns:Trades-Unionist . 
+source  SELECT A."c0" as var0 FROM  "src_Stereotype-Group" as A, "src_Technical-Scientific-Advance" as B, "src_Building" as C, "src_Clothing" as D, "src_Artistic-Movement" as E, "src_Head-of-State" as F, "src_Trades-Unionist" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-1562643430
+target  ns:ns/{var0} a ns:Train . 
+source  SELECT A."c0" as var0 FROM  "src_Dancer" as A, "src_related" as B, "src_hasLocationContainerMember" as C, "src_Jurist" as D, "src_Military-Person" as E, "src_Train" as F WHERE , B."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID1396144292
+target  ns:ns/{var0} a ns:Treaty . 
+source  SELECT A."c0" as var0 FROM  "src_Period-in-Office" as A, "src_Social-Stratum" as B, "src_Food" as C, "src_Category" as D, "src_Treaty" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID187080604
+target  ns:ns/{var0} a ns:Trial . 
+source  SELECT A."c0" as var0 FROM  "src_Abbey" as A, "src_Political-Organisation" as B, "src_Other-Religious-Leader" as C, "src_Ideology" as D, "src_Flavour" as E, "src_hasRole" as F, "src_Trial" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-1507459703
+target  ns:ns/{var0} a ns:University . 
+source  SELECT A."c0" as var0 FROM  "src_Geographical-Region" as A, "src_VicodiOI" as B, "src_isLocationContainerMemberOf" as C, "src_Religious-Organisation" as D, "src_University" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID457094801
+target  ns:ns/{var0} a ns:Uprising . 
+source  SELECT A."c0" as var0 FROM  "src_Time-Dependent-Relation" as A, "src_Geographical-Feature" as B, "src_Individual" as C, "src_Fictional-Event" as D, "src_Composer" as E, "src_Village" as F, "src_Uprising" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID1771937556
+target  ns:ns/{var0} a ns:Village . 
+source  SELECT A."c0" as var0 FROM  "src_Church" as A, "src_Theologian" as B, "src_Economist" as C, "src_Religious-Community" as D, "src_Individual" as E, "src_Ship" as F, "src_Village" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-610001480
+target  ns:ns/{var0} a ns:War . 
+source  SELECT A."c0" as var0 FROM  "src_Composer" as A, "src_International-Organisation" as B, "src_Art-Form" as C, "src_Clothing" as D, "src_Philosopher" as E, "src_Cathedral" as F, "src_War" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-1935215615
+target  ns:ns/{var0} a ns:Water . 
+source  SELECT A."c0" as var0 FROM  "src_Intra-State-Group" as A, "src_Dancer" as B, "src_Population-Movement" as C, "src_Water" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-783744814
+target  ns:ns/{var0} ns:exists ns:ns/{var1} . 
+source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_Individual" as A, "src_Monastery" as B, "src_Clerical-Leader" as C, "src_exists" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID1186623117
+target  ns:ns/{var0} ns:related ns:ns/{var1} . 
+source  SELECT A."c0" as var0, G."c1" as var1 FROM  "src_Ecclesiarch" as A, "src_Other-Religious-Person" as B, "src_Meeting" as C, "src_Political-Region" as D, "src_Structure" as E, "src_Pamphlet" as F, "src_related" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID1875791007
+target  ns:ns/{var0} ns:hasCategory ns:ns/{var1} . 
+source  SELECT A."c0" as var0, F."c1" as var1 FROM  "src_Artistic-Style" as A, "src_Ideology" as B, "src_Secular-Movement" as C, "src_Management-Organisation" as D, "src_Minister" as E, "src_hasCategory" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-640688560
+target  ns:ns/{var0} ns:hasLocationContainerMember ns:ns/{var1} . 
+source  SELECT A."c0" as var0, F."c1" as var1 FROM  "src_Battle" as A, "src_Philosopher" as B, "src_Cathedral" as C, "src_Location-Part-Relation" as D, "src_Settlement" as E, "src_hasLocationContainerMember" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-68056239
+target  ns:ns/{var0} ns:hasRelationMember ns:ns/{var1} . 
+source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_Artistic-Movement" as A, "src_Trades-Union" as B, "src_Movement" as C, "src_hasRelationMember" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID762942890
+target  ns:ns/{var0} ns:hasLocationPartMember ns:ns/{var1} . 
+source  SELECT A."c0" as var0, E."c1" as var1 FROM  "src_Structure" as A, "src_Building" as B, "src_Publisher" as C, "src_Ethnic-Group" as D, "src_hasLocationPartMember" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID1635049127
+target  ns:ns/{var0} ns:hasRole ns:ns/{var1} . 
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_Diplomat" as A, "src_Cathedral" as B, "src_hasCategory" as C, "src_Cultural-Organisation" as D, "src_Creator" as E, "src_Church" as F, "src_hasRole" as G WHERE , C."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID-1173826888
+target  ns:ns/{var0} ns:isLocationContainerMemberOf ns:ns/{var1} . 
+source  SELECT A."c0" as var0, E."c1" as var1 FROM  "src_Train" as A, "src_Legislation" as B, "src_Illness" as C, "src_Professor" as D, "src_isLocationContainerMemberOf" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-73045244
+target  ns:ns/{var0} ns:isRelationMemberOf ns:ns/{var1} . 
+source  SELECT A."c0" as var0, G."c1" as var1 FROM  "src_Minister" as A, "src_National-Symbol" as B, "src_Location" as C, "src_Artefact" as D, "src_Book" as E, "src_Military-Organisation" as F, "src_isRelationMemberOf" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID486694686
+target  ns:ns/{var0} ns:isLocationPartMemberOf ns:ns/{var1} . 
+source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_Emperor" as A, "src_Professor" as B, "src_Journal" as C, "src_isLocationPartMemberOf" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
 ]]

@@ -19,9 +19,8 @@ for BASE_DIR in "${SCENARIOS[@]}"; do
     cat $file | psql -c "COPY \"$TABLE\" from stdin CSV DELIMITER ','" -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE
     done
     # then we run all 5 queriesd
-    for ((i=1;i<=1;++i)); do
+    for ((i=1;i<=5;++i)); do
       ./queryLAVMapping.sh $BASE_DIR $i $SIZE
     done
   done
 done
-

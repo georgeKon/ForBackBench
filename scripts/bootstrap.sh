@@ -6,6 +6,8 @@ GAVorLAV=$4
 
 mkdir -p $BASE_DIR/data/GAV
 mkdir -p $BASE_DIR/data/LAV
+mkdir -p $BASE_DIR/data/oneToOne
+
 
 mkdir -p $BASE_DIR/schema/GAV
 mkdir -p $BASE_DIR/schema/LAV
@@ -20,11 +22,16 @@ then
   
   java -jar utilityTools/modifyChaseBench-1.08.jar -st-tgds $BASE_DIR/dependencies/oneToOne-st-tgds.txt -t-tgds $BASE_DIR/dependencies/oneToOne-t-tgds.txt -q $BASE_DIR/queries
   java -jar utilityTools/schemaGenerator-1.08.jar -st-tgds $BASE_DIR/dependencies/oneToOne-st-tgds.txt -t-tgds $BASE_DIR/dependencies/oneToOne-t-tgds.txt -s-schema $BASE_DIR/schema/oneToOne/s-schema.txt -t-schema $BASE_DIR/schema/oneToOne/t-schema.txt
-  
+  	
+  cp -r $BASE_DIR/schema/oneToOne/. $BASE_DIR/schema/GAV
+
   #  create GAV and LAV Schema
 	java -jar utilityTools/CreateLAVandGAV.jar
-	mv -T $BASE_DIR/schema/lav $BASE_DIR/schema/LAV
-
+	mv -T $BASE_DIR/schema/lav/schema.txt $BASE_DIR/schema/LAV/s-schema.txt
+  	rm -r $BASE_DIR/schema/lav
+ 	cp $BASE_DIR/schema/oneToOne/t-schema.txt $BASE_DIR/schema/LAV/t-schema.txt
+    cp $BASE_DIR/schema/oneToOne/t-schema.sql $BASE_DIR/schema/LAV/t-schema.sql
+ 
 	
 	if [[ $3 = "data" ]]; then
     for size in ${SIZES[*]}; do
@@ -43,7 +50,8 @@ then
     # change the name of st-tgds.txt files that created by node js 
 	mv $BASE_DIR/dependencies/t-tgds.txt $BASE_DIR/dependencies/oneToOne-t-tgds.txt
 	mv $BASE_DIR/dependencies/st-tgds.txt $BASE_DIR/dependencies/oneToOne-st-tgds.txt
-
+	
+	
 	mv $BASE_DIR/schema/s-schema.txt $BASE_DIR/schema/oneToOne/s-schema.txt
 	mv $BASE_DIR/schema/s-schema.sql $BASE_DIR/schema/oneToOne/s-schema.sql
 	mv $BASE_DIR/schema/t-schema.txt $BASE_DIR/schema/oneToOne/t-schema.txt
@@ -54,8 +62,10 @@ then
   # java -jar utilityTools/schemaGenerator-1.08.jar -st-tgds $BASE_DIR/dependencies/oneToOne-st-tgds.txt -t-tgds $BASE_DIR/dependencies/oneToOne-t-tgds.txt -s-schema $BASE_DIR/schema/oneToOne/s-schema.txt -t-schema $BASE_DIR/schema/oneToOne/t-schema.txt
   # TODO: create GAV and LAV Schema
   java -jar utilityTools/CreateLAVandGAV.jar
-  mv -T $BASE_DIR/schema/lav $BASE_DIR/schema/LAV
-
+  mv -T $BASE_DIR/schema/lav/schema.txt $BASE_DIR/schema/LAV/s-schema.txt
+  rm -r $BASE_DIR/schema/lav
+  cp $BASE_DIR/schema/oneToOne/t-schema.txt $BASE_DIR/schema/LAV/t-schema.txt
+  cp $BASE_DIR/schema/oneToOne/t-schema.sql $BASE_DIR/schema/LAV/t-schema.sql
  
   if [[ $3 = "data" ]]; then
     for size in ${SIZES[*]}; do
@@ -67,9 +77,8 @@ fi
 
 
 mkdir -p $BASE_DIR/ontop-files
-java -jar utilityTools/ontopMappingGenerator-1.08.jar -st-tgds $BASE_DIR/dependencies/oneToOne-st-tgds.txt -owl $BASE_DIR/owl/ontology.owl -out $BASE_DIR/ontop-files/mapping.obda
-java -jar utilityTools/ontopMappingGenerator-1.08.jar -st-tgds $BASE_DIR/dependencies/gav.txt -owl $BASE_DIR/owl/ontology.owl -out $BASE_DIR/ontop-files/gav-mapping.obda
-java -jar utilityTools/ontopMappingGenerator-1.08.jar -st-tgds $BASE_DIR/dependencies/lav.txt -owl $BASE_DIR/owl/ontology.owl -out $BASE_DIR/ontop-files/lav-mapping.obda
+java -jar utilityTools/ontopMappingGenerator-1.09.jar -st-tgds $BASE_DIR/dependencies/oneToOne-st-tgds.txt -out $BASE_DIR/ontop-files/mapping.obda
+java -jar utilityTools/ontopMappingGenerator-1.09.jar -st-tgds $BASE_DIR/dependencies/gav.txt -out $BASE_DIR/ontop-files/gav-mapping.obda
 
 mkdir -p $BASE_DIR/CGQRFiles
 # TODO: create t-tgd.txt and st-tgd.txt from jar file (that Tom has) and place it inside CGQRFiles
@@ -81,8 +90,8 @@ mkdir -p $BASE_DIR/rulewerkfiles/GAV
 mkdir -p $BASE_DIR/rulewerkfiles/LAV
 mkdir -p $BASE_DIR/rulewerkfiles/oneToOne
 
-touch $BASE_DIR/dependencies/gav-t-tgds.txt
-touch $BASE_DIR/dependencies/lav-t-tgds.txt
+cp $BASE_DIR/dependencies/oneToOne-t-tgds.txt $BASE_DIR/dependencies/gav-t-tgds.txt
+cp $BASE_DIR/dependencies/oneToOne-t-tgds.txt $BASE_DIR/dependencies/lav-t-tgds.txt
 
 for size in ${SIZES[*]}; do
    mkdir -p $BASE_DIR/rulewerkfiles/oneToOne/$size

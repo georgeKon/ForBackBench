@@ -2,368 +2,1056 @@
 ns:  http://example.com/example.owl#
 
 [MappingDeclaration] @collection [[
-mappingId ID-564850432
-target  ns:ns/{c1} a ns:m190004 . 
-source  SELECT c1 FROM "src_m246004"
-
-mappingId ID1293325728
-target  ns:ns/{c0} a ns:m212004 . 
-source  SELECT c0 FROM "src_m79004"
-
-mappingId ID1216661485
-target  ns:ns/{c0} a ns:m287004 . 
-source  SELECT c0 FROM "src_m51004"
-
-mappingId ID-2078896433
-target  ns:ns/{c0} a ns:m132004 . 
-source  SELECT c0 FROM "src_m190004"
-
-mappingId ID-1609438109
-target  ns:ns/{c0} a ns:m25004 . 
-source  SELECT c0 FROM "src_m50004"
-
-mappingId ID1857223225
-target  ns:ns/{c0} ns:m241004 ns:ns/{c1} . 
-source  SELECT c0, c1 FROM "src_m111004"
-
-mappingId ID1921350232
-target  ns:ns/{c0} a ns:m114004 . 
-source  SELECT c0 FROM "src_m71004"
-
-mappingId ID518895680
-target  ns:ns/{c1} a ns:m108004 . 
-source  SELECT c1 FROM "src_m176004"
-
-mappingId ID-1313222048
-target  ns:ns/{c0} a ns:m72004 . 
-source  SELECT c0 FROM "src_m267004"
-
-mappingId ID1559648307
-target  ns:ns/{c1} a ns:m173004 . 
-source  SELECT c1 FROM "src_m153004"
-
-mappingId ID1260345742
-target  ns:ns/{c0} a ns:m149004 . 
-source  SELECT c0 FROM "src_m190004"
-
-mappingId ID-1994006277
-target  ns:ns/{c0} ns:m84004 ns:ns/{c1} . 
-source  SELECT c0, c1 FROM "src_m30004"
-
-mappingId ID-195253970
-target  ns:ns/{c0} a ns:m90004 . 
-source  SELECT c0 FROM "src_m209004"
-
-mappingId ID984023709
-target  ns:ns/{c0} ns:m218004 ns:ns/{c1} . 
-source  SELECT c0, c1 FROM "src_m288004"
-
-mappingId ID-1770288178
-target  ns:ns/{c0} a ns:m172004 . 
-source  SELECT c0 FROM "src_m213004"
-
-mappingId ID1842169288
-target  ns:ns/{c1} a ns:m119004 . 
-source  SELECT c1 FROM "src_m11004"
-
-mappingId ID-1875179726
-target  ns:ns/{c0} a ns:m42004 . 
-source  SELECT c0 FROM "src_m13004"
-
-mappingId ID-2097200121
-target  ns:ns/{c0} a ns:m50004 . 
-source  SELECT c0 FROM "src_m239004"
-
-mappingId ID-143319255
-target  ns:ns/{c0} a ns:m47004 . 
-source  SELECT c0 FROM "src_m112004"
-
-mappingId ID656771665
-target  ns:ns/{c1} a ns:m150004 . 
-source  SELECT c1 FROM "src_m124004"
-
-mappingId ID607380317
-target  ns:ns/{c1} a ns:m89004 . 
-source  SELECT c1 FROM "src_m229004"
-
-mappingId ID470503695
-target  ns:ns/{c0} a ns:m133004 . 
-source  SELECT c0 FROM "src_m31004"
-
-mappingId ID570051210
-target  ns:ns/{c0} a ns:m297004 . 
-source  SELECT c0 FROM "src_m299004"
-
-mappingId ID-98172976
-target  ns:ns/{c0} ns:m73004 ns:ns/{c1} . 
-source  SELECT c0, c1 FROM "src_m263004"
-
-mappingId ID1840408529
-target  ns:ns/{c1} a ns:m96004 . 
-source  SELECT c1 FROM "src_m127004"
-
-mappingId ID-379891653
-target  ns:ns/{c0} a ns:m29004 . 
-source  SELECT c0 FROM "src_m230004"
-
-mappingId ID1397897975
-target  ns:ns/{c0} ns:m18004 ns:ns/{c1} . 
-source  SELECT c0, c1 FROM "src_m244004"
-
-mappingId ID894378762
-target  ns:ns/{c0} a ns:m213004 . 
-source  SELECT c0 FROM "src_m228004"
-
-mappingId ID550750922
-target  ns:ns/{c0} a ns:m24004 . 
-source  SELECT c0 FROM "src_m294004"
-
-mappingId ID2133691146
-target  ns:ns/{c1} a ns:m41004 . 
-source  SELECT c1 FROM "src_m217004"
-
-mappingId ID429650197
-target  ns:ns/{c0} a ns:m109004 . 
-source  SELECT c0 FROM "src_m18004"
-
-mappingId ID-899447429
-target  ns:ns/{c0} a ns:m214004 . 
-source  SELECT c0 FROM "src_m291004"
-
-mappingId ID-1852354117
-target  ns:ns/{c0} a ns:m17004 . 
-source  SELECT c0 FROM "src_m121004"
-
-mappingId ID1809980485
-target  ns:ns/{c1} a ns:m253004 . 
-source  SELECT c1 FROM "src_m242004"
-
-mappingId ID371127025
-target  ns:ns/{c0} a ns:m46004 . 
-source  SELECT c0 FROM "src_m208004"
-
-mappingId ID1663669714
-target  ns:ns/{c0} ns:m148004 ns:ns/{c1} . 
-source  SELECT c0, c1 FROM "src_m128004"
-
-mappingId ID124314295
-target  ns:ns/{c1} a ns:m137004 . 
-source  SELECT c1 FROM "src_m148004"
-
-mappingId ID147500954
-target  ns:ns/{c0} a ns:m79004 . 
-source  SELECT c0 FROM "src_m262004"
-
-mappingId ID-2142317059
-target  ns:ns/{c0} a ns:m12004 . 
-source  SELECT c0 FROM "src_m22004"
-
-mappingId ID194837407
-target  ns:ns/{c0} ns:m231004 ns:ns/{c1} . 
-source  SELECT c0, c1 FROM "src_m295004"
-
-mappingId ID779667474
-target  ns:ns/{c0} a ns:m68004 . 
-source  SELECT c0 FROM "src_m21004"
-
-mappingId ID696133226
-target  ns:ns/{c1} a ns:m154004 . 
-source  SELECT c1 FROM "src_m217004"
-
-mappingId ID-1108417192
-target  ns:ns/{c0} a ns:m225004 . 
-source  SELECT c0 FROM "src_m87004"
-
-mappingId ID1059945034
-target  ns:ns/{c0} ns:m100004 ns:ns/{c1} . 
-source  SELECT c0, c1 FROM "src_m160004"
-
-mappingId ID207194696
-target  ns:ns/{c0} a ns:m255004 . 
-source  SELECT c0 FROM "src_m268004"
-
-mappingId ID-1425984031
-target  ns:ns/{c0} a ns:m92004 . 
-source  SELECT c0 FROM "src_m110004"
-
-mappingId ID-405575599
-target  ns:ns/{c1} a ns:m169004 . 
-source  SELECT c1 FROM "src_m66004"
-
-mappingId ID-1911255226
-target  ns:ns/{c1} a ns:m170004 . 
-source  SELECT c1 FROM "src_m91004"
-
-mappingId ID1099367452
-target  ns:ns/{c0} a ns:m203004 . 
-source  SELECT c0 FROM "src_m156004"
-
-mappingId ID2140295751
-target  ns:ns/{c0} a ns:m238004 . 
-source  SELECT c0 FROM "src_m256004"
-
-mappingId ID-829272787
-target  ns:ns/{c0} a ns:m141004 . 
-source  SELECT c0 FROM "src_m70004"
-
-mappingId ID-1163247737
-target  ns:ns/{c0} a ns:m250004 . 
-source  SELECT c0 FROM "src_m83004"
-
-mappingId ID-1240984316
-target  ns:ns/{c0} ns:m261004 ns:ns/{c1} . 
-source  SELECT c0, c1 FROM "src_m295004"
-
-mappingId ID-1577550955
-target  ns:ns/{c0} ns:m237004 ns:ns/{c1} . 
-source  SELECT c0, c1 FROM "src_m128004"
-
-mappingId ID1330461736
-target  ns:ns/{c0} a ns:m98004 . 
-source  SELECT c0 FROM "src_m220004"
-
-mappingId ID1614071857
-target  ns:ns/{c1} a ns:m69004 . 
-source  SELECT c1 FROM "src_m140004"
-
-mappingId ID915314116
-target  ns:ns/{c0} a ns:m27004 . 
-source  SELECT c0 FROM "src_m239004"
-
-mappingId ID1897512779
-target  ns:ns/{c0} ns:m111004 ns:ns/{c1} . 
-source  SELECT c0, c1 FROM "src_m18004"
-
-mappingId ID316364473
-target  ns:ns/{c0} ns:m181004 ns:ns/{c1} . 
-source  SELECT c0, c1 FROM "src_m263004"
-
-mappingId ID607528593
-target  ns:ns/{c1} a ns:m215004 . 
-source  SELECT c1 FROM "src_m2004"
-
-mappingId ID126841688
-target  ns:ns/{c0} a ns:m280004 . 
-source  SELECT c0 FROM "src_m199004"
-
-mappingId ID2073527168
-target  ns:ns/{c0} a ns:m4004 . 
-source  SELECT c0 FROM "src_m238004"
-
-mappingId ID960046874
-target  ns:ns/{c0} a ns:m277004 . 
-source  SELECT c0 FROM "src_m144004"
-
-mappingId ID-1946834096
-target  ns:ns/{c1} a ns:m116004 . 
-source  SELECT c1 FROM "src_m13004"
-
-mappingId ID923210774
-target  ns:ns/{c0} a ns:m204004 . 
-source  SELECT c0 FROM "src_m280004"
-
-mappingId ID947646266
-target  ns:ns/{c1} a ns:m22004 . 
-source  SELECT c1 FROM "src_m66004"
-
-mappingId ID-863403001
-target  ns:ns/{c0} a ns:m113004 . 
-source  SELECT c0 FROM "src_m96004"
-
-mappingId ID-1322054427
-target  ns:ns/{c0} a ns:m82004 . 
-source  SELECT c0 FROM "src_m162004"
-
-mappingId ID171731732
-target  ns:ns/{c1} a ns:m76004 . 
-source  SELECT c1 FROM "src_m242004"
-
-mappingId ID-1629158401
-target  ns:ns/{c0} a ns:m53004 . 
-source  SELECT c0 FROM "src_m145004"
-
-mappingId ID-94737211
-target  ns:ns/{c0} ns:m38004 ns:ns/{c1} . 
-source  SELECT c0, c1 FROM "src_m294004"
-
-mappingId ID-841765557
-target  ns:ns/{c0} ns:m283004 ns:ns/{c1} . 
-source  SELECT c0, c1 FROM "src_m208004"
-
-mappingId ID2098683334
-target  ns:ns/{c0} a ns:m151004 . 
-source  SELECT c0 FROM "src_m253004"
-
-mappingId ID-397460309
-target  ns:ns/{c1} a ns:m44004 . 
-source  SELECT c1 FROM "src_m292004"
-
-mappingId ID462233957
-target  ns:ns/{c0} a ns:m197004 . 
-source  SELECT c0 FROM "src_m97004"
-
-mappingId ID1982990068
-target  ns:ns/{c0} a ns:m222004 . 
-source  SELECT c0 FROM "src_m47004"
-
-mappingId ID2059755500
-target  ns:ns/{c0} a ns:m10004 . 
-source  SELECT c0 FROM "src_m62004"
-
-mappingId ID15385988
-target  ns:ns/{c0} a ns:m162004 . 
-source  SELECT c0 FROM "src_m8004"
-
-mappingId ID594606921
-target  ns:ns/{c0} ns:m139004 ns:ns/{c1} . 
-source  SELECT c0, c1 FROM "src_m242004"
-
-mappingId ID398619900
-target  ns:ns/{c0} a ns:m156004 . 
-source  SELECT c0 FROM "src_m70004"
-
-mappingId ID2108778922
-target  ns:ns/{c0} ns:m124004 ns:ns/{c1} . 
-source  SELECT c0, c1 FROM "src_m131004"
-
-mappingId ID-1937530485
-target  ns:ns/{c0} a ns:m163004 . 
-source  SELECT c0 FROM "src_m121004"
-
-mappingId ID-1986737689
-target  ns:ns/{c0} a ns:m157004 . 
-source  SELECT c0 FROM "src_m186004"
-
-mappingId ID490719906
-target  ns:ns/{c1} a ns:m289004 . 
-source  SELECT c1 FROM "src_m128004"
-
-mappingId ID1031973880
-target  ns:ns/{c0} a ns:m94004 . 
-source  SELECT c0 FROM "src_m41004"
-
-mappingId ID-701083372
-target  ns:ns/{c0} a ns:m65004 . 
-source  SELECT c0 FROM "src_m132004"
-
-mappingId ID-1882540083
-target  ns:ns/{c0} ns:m205004 ns:ns/{c1} . 
-source  SELECT c0, c1 FROM "src_m73004"
-
-mappingId ID-708481549
-target  ns:ns/{c0} a ns:m228004 . 
-source  SELECT c0 FROM "src_m253004"
-
-mappingId ID1059563324
-target  ns:ns/{c1} a ns:m191004 . 
-source  SELECT c1 FROM "src_m15004"
-
-mappingId ID850382233
-target  ns:ns/{c0} a ns:m37004 . 
-source  SELECT c0 FROM "src_m7004"
-
-mappingId ID-1827210268
-target  ns:ns/{c0} a ns:m200004 . 
-source  SELECT c0 FROM "src_m65004"
+mappingId ID-1118337791
+target  ns:ns/{var0} ns:m270004 ns:ns/{var1} . 
+source  SELECT E."c0" as var0, A."c0" as var1 FROM  "src_m144004" as A, "src_m163004" as B, "src_m212004" as C, "src_m147004" as D, "src_m199004" as E, "src_m270004" as F WHERE , A."c0" = B."c0" AND B."c0" = E."c1" AND E."c1" = F."c1" AND A."c1" = C."c0" AND C."c0" = D."c0" AND E."c0" = F."c0";
+
+mappingId ID-3010550
+target  ns:ns/{var0} a ns:m161004 . 
+source  SELECT B."c1" as var0 FROM  "src_m119004" as A, "src_m205004" as B, "src_m222004" as C, "src_m231004" as D, "src_m161004" as E WHERE , B."c0" = D."c0" AND B."c1" = C."c0" AND C."c0" = D."c1" AND D."c1" = E."c0";
+
+mappingId ID-1287003575
+target  ns:ns/{var0} ns:m184004 ns:ns/{var1} . 
+source  SELECT D."c0" as var0, A."c0" as var1 FROM  "src_m78004" as A, "src_m237004" as B, "src_m286004" as C, "src_m184004" as D WHERE , A."c0" = B."c0" AND B."c0" = D."c1" AND A."c1" = B."c1" AND B."c1" = C."c0";
+
+mappingId ID774872596
+target  ns:ns/{var0} a ns:m190004 . 
+source  SELECT A."c1" as var0 FROM  "src_m246004" as A, "src_m16004" as B, "src_m23004" as C, "src_m75004" as D, "src_m200004" as E, "src_m40004" as F, "src_m190004" as G WHERE , A."c0" = D."c1" AND D."c1" = F."c0" AND A."c1" = C."c0" AND C."c0" = E."c0" AND E."c0" = F."c1" AND F."c1" = G."c0" AND B."c0" = D."c0";
+
+mappingId ID-955342145
+target  ns:ns/{var0} ns:m178004 ns:ns/{var1} . 
+source  SELECT C."c0" as var0, B."c0" as var1 FROM  "src_m255004" as A, "src_m82004" as B, "src_m144004" as C, "src_m178004" as D WHERE , C."c0" = D."c0" AND B."c0" = C."c1" AND C."c1" = D."c1";
+
+mappingId ID451600215
+target  ns:ns/{var0} a ns:m103004 . 
+source  SELECT D."c0" as var0 FROM  "src_m110004" as A, "src_m218004" as B, "src_m291004" as C, "src_m103004" as D WHERE , A."c0" = B."c0" AND B."c1" = C."c0";
+
+mappingId ID-979763688
+target  ns:ns/{var0} a ns:m235004 . 
+source  SELECT B."c1" as var0 FROM  "src_m133004" as A, "src_m263004" as B, "src_m155004" as C, "src_m166004" as D, "src_m92004" as E, "src_m204004" as F, "src_m235004" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c0" AND B."c1" = G."c0" AND C."c0" = D."c0" AND D."c0" = F."c0";
+
+mappingId ID-1652447142
+target  ns:ns/{var0} a ns:m212004 . 
+source  SELECT A."c0" as var0 FROM  "src_m79004" as A, "src_m261004" as B, "src_m108004" as C, "src_m91004" as D, "src_m212004" as E WHERE , B."c0" = D."c1" AND A."c0" = B."c1" AND B."c1" = C."c0" AND C."c0" = E."c0";
+
+mappingId ID970724056
+target  ns:ns/{var0} a ns:m48004 . 
+source  SELECT C."c0" as var0 FROM  "src_m133004" as A, "src_m34004" as B, "src_m215004" as C, "src_m93004" as D, "src_m220004" as E, "src_m48004" as F WHERE , A."c0" = B."c0" AND B."c0" = E."c1" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID1858720497
+target  ns:ns/{var0} a ns:m287004 . 
+source  SELECT A."c0" as var0 FROM  "src_m51004" as A, "src_m135004" as B, "src_m296004" as C, "src_m164004" as D, "src_m6004" as E, "src_m287004" as F WHERE , C."c0" = E."c0" AND B."c0" = D."c1" AND A."c0" = B."c1" AND B."c1" = F."c0" AND C."c1" = D."c0";
+
+mappingId ID567161577
+target  ns:ns/{var0} ns:m155004 ns:ns/{var1} . 
+source  SELECT B."c0" as var0, A."c0" as var1 FROM  "src_m231004" as A, "src_m61004" as B, "src_m84004" as C, "src_m234004" as D, "src_m156004" as E, "src_m155004" as F WHERE , A."c0" = B."c1" AND B."c1" = C."c0" AND C."c0" = F."c1" AND A."c1" = C."c1" AND C."c1" = D."c0" AND D."c0" = E."c0" AND B."c0" = F."c0";
+
+mappingId ID961932848
+target  ns:ns/{var0} a ns:m132004 . 
+source  SELECT A."c0" as var0 FROM  "src_m190004" as A, "src_m220004" as B, "src_m170004" as C, "src_m132004" as D WHERE , B."c1" = C."c0" AND A."c0" = D."c0";
+
+mappingId ID433146280
+target  ns:ns/{var0} ns:m264004 ns:ns/{var1} . 
+source  SELECT B."c0" as var0, A."c0" as var1 FROM  "src_m99004" as A, "src_m116004" as B, "src_m288004" as C, "src_m264004" as D WHERE , B."c0" = C."c0" AND C."c0" = D."c0" AND A."c0" = C."c1" AND C."c1" = D."c1";
+
+mappingId ID-719527121
+target  ns:ns/{var0} a ns:m25004 . 
+source  SELECT A."c0" as var0 FROM  "src_m50004" as A, "src_m178004" as B, "src_m263004" as C, "src_m25004" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND B."c1" = C."c1";
+
+mappingId ID170804470
+target  ns:ns/{var0} ns:m241004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_m111004" as A, "src_m169004" as B, "src_m142004" as C, "src_m239004" as D, "src_m270004" as E, "src_m241004" as F WHERE , A."c0" = D."c0" AND D."c0" = E."c1" AND E."c1" = F."c0" AND A."c1" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c1" AND D."c1" = F."c1";
+
+mappingId ID-1584910970
+target  ns:ns/{var0} ns:m83004 ns:ns/{var1} . 
+source  SELECT B."c0" as var0, A."c0" as var1 FROM  "src_m139004" as A, "src_m138004" as B, "src_m8004" as C, "src_m258004" as D, "src_m282004" as E, "src_m83004" as F WHERE , A."c0" = F."c1" AND A."c1" = C."c0" AND C."c0" = D."c0" AND B."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-1954047487
+target  ns:ns/{var0} a ns:m114004 . 
+source  SELECT A."c0" as var0 FROM  "src_m71004" as A, "src_m13004" as B, "src_m70004" as C, "src_m198004" as D, "src_m114004" as E WHERE , A."c0" = B."c1" AND B."c1" = E."c0" AND C."c0" = D."c0";
+
+mappingId ID-759569235
+target  ns:ns/{var0} a ns:m77004 . 
+source  SELECT B."c0" as var0 FROM  "src_m162004" as A, "src_m33004" as B, "src_m79004" as C, "src_m184004" as D, "src_m172004" as E, "src_m77004" as F WHERE , A."c0" = C."c0" AND C."c0" = E."c0" AND B."c0" = D."c0" AND D."c0" = F."c0";
+
+mappingId ID-1390092314
+target  ns:ns/{var0} ns:m166004 ns:ns/{var1} . 
+source  SELECT B."c1" as var0, A."c0" as var1 FROM  "src_m38004" as A, "src_m11004" as B, "src_m13004" as C, "src_m166004" as D WHERE , A."c0" = C."c1" AND C."c1" = D."c1" AND B."c1" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID926956446
+target  ns:ns/{var0} a ns:m275004 . 
+source  SELECT C."c0" as var0 FROM  "src_m188004" as A, "src_m24004" as B, "src_m224004" as C, "src_m275004" as D WHERE , A."c0" = B."c0" AND C."c0" = D."c0";
+
+mappingId ID-1284809375
+target  ns:ns/{var0} a ns:m120004 . 
+source  SELECT D."c0" as var0 FROM  "src_m57004" as A, "src_m2004" as B, "src_m81004" as C, "src_m120004" as D WHERE , A."c0" = C."c0";
+
+mappingId ID1487756914
+target  ns:ns/{var0} a ns:m108004 . 
+source  SELECT A."c1" as var0 FROM  "src_m176004" as A, "src_m3004" as B, "src_m103004" as C, "src_m172004" as D, "src_m108004" as E WHERE , A."c1" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID1311054875
+target  ns:ns/{var0} a ns:m31004 . 
+source  SELECT B."c0" as var0 FROM  "src_m195004" as A, "src_m40004" as B, "src_m24004" as C, "src_m270004" as D, "src_m31004" as E WHERE , B."c0" = C."c0" AND C."c0" = D."c1" AND D."c1" = E."c0" AND A."c1" = D."c0";
+
+mappingId ID2112176590
+target  ns:ns/{var0} ns:m217004 ns:ns/{var1} . 
+source  SELECT E."c0" as var0, A."c0" as var1 FROM  "src_m8004" as A, "src_m180004" as B, "src_m108004" as C, "src_m37004" as D, "src_m217004" as E WHERE , A."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c1";
+
+mappingId ID-2104169630
+target  ns:ns/{var0} ns:m14004 ns:ns/{var1} . 
+source  SELECT D."c0" as var0, A."c0" as var1 FROM  "src_m132004" as A, "src_m94004" as B, "src_m255004" as C, "src_m14004" as D WHERE , A."c0" = B."c0" AND B."c0" = D."c1";
+
+mappingId ID-1579278763
+target  ns:ns/{var0} a ns:m6004 . 
+source  SELECT E."c0" as var0 FROM  "src_m90004" as A, "src_m220004" as B, "src_m45004" as C, "src_m153004" as D, "src_m6004" as E WHERE , B."c1" = D."c0" AND A."c0" = B."c0" AND C."c0" = D."c1";
+
+mappingId ID533890375
+target  ns:ns/{var0} a ns:m258004 . 
+source  SELECT B."c0" as var0 FROM  "src_m116004" as A, "src_m156004" as B, "src_m42004" as C, "src_m258004" as D WHERE , B."c0" = D."c0";
+
+mappingId ID1551991427
+target  ns:ns/{var0} a ns:m72004 . 
+source  SELECT A."c0" as var0 FROM  "src_m267004" as A, "src_m288004" as B, "src_m185004" as C, "src_m72004" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = B."c1";
+
+mappingId ID1224021110
+target  ns:ns/{var0} a ns:m282004 . 
+source  SELECT D."c1" as var0 FROM  "src_m213004" as A, "src_m115004" as B, "src_m297004" as C, "src_m59004" as D, "src_m8004" as E, "src_m282004" as F WHERE , C."c0" = D."c0" AND A."c0" = B."c0" AND B."c0" = E."c0" AND D."c1" = F."c0";
+
+mappingId ID-1674891364
+target  ns:ns/{var0} ns:m66004 ns:ns/{var1} . 
+source  SELECT D."c0" as var0, A."c0" as var1 FROM  "src_m7004" as A, "src_m70004" as B, "src_m56004" as C, "src_m233004" as D, "src_m178004" as E, "src_m206004" as F, "src_m66004" as G WHERE , D."c0" = E."c0" AND E."c0" = F."c1" AND F."c1" = G."c0" AND A."c0" = B."c0" AND B."c0" = E."c1" AND E."c1" = G."c1" AND C."c0" = F."c0";
+
+mappingId ID-2004191675
+target  ns:ns/{var0} a ns:m173004 . 
+source  SELECT A."c1" as var0 FROM  "src_m153004" as A, "src_m105004" as B, "src_m279004" as C, "src_m7004" as D, "src_m22004" as E, "src_m27004" as F, "src_m173004" as G WHERE , A."c0" = B."c0" AND B."c0" = F."c0" AND A."c1" = B."c1" AND B."c1" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = G."c0";
+
+mappingId ID875489929
+target  ns:ns/{var0} a ns:m149004 . 
+source  SELECT A."c0" as var0 FROM  "src_m190004" as A, "src_m199004" as B, "src_m298004" as C, "src_m166004" as D, "src_m281004" as E, "src_m149004" as F WHERE , B."c1" = D."c1" AND A."c0" = E."c0" AND E."c0" = F."c0" AND B."c0" = C."c1" AND C."c1" = D."c0";
+
+mappingId ID-1363012654
+target  ns:ns/{var0} ns:m223004 ns:ns/{var1} . 
+source  SELECT D."c1" as var0, A."c0" as var1 FROM  "src_m258004" as A, "src_m234004" as B, "src_m52004" as C, "src_m125004" as D, "src_m279004" as E, "src_m223004" as F WHERE , D."c1" = F."c0" AND A."c0" = B."c0" AND B."c0" = E."c0" AND E."c0" = F."c1" AND C."c0" = D."c0";
+
+mappingId ID-1574955035
+target  ns:ns/{var0} a ns:m20004 . 
+source  SELECT B."c0" as var0 FROM  "src_m168004" as A, "src_m31004" as B, "src_m204004" as C, "src_m241004" as D, "src_m105004" as E, "src_m20004" as F WHERE , B."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c0" = C."c0" AND D."c1" = E."c1";
+
+mappingId ID-49881562
+target  ns:ns/{var0} ns:m206004 ns:ns/{var1} . 
+source  SELECT C."c0" as var0, A."c0" as var1 FROM  "src_m120004" as A, "src_m7004" as B, "src_m42004" as C, "src_m200004" as D, "src_m18004" as E, "src_m206004" as F WHERE , A."c0" = E."c0" AND E."c0" = F."c1" AND B."c0" = D."c0" AND D."c0" = E."c1" AND C."c0" = F."c0";
+
+mappingId ID988082824
+target  ns:ns/{var0} ns:m55004 ns:ns/{var1} . 
+source  SELECT B."c1" as var0, A."c0" as var1 FROM  "src_m262004" as A, "src_m75004" as B, "src_m81004" as C, "src_m55004" as D WHERE , B."c1" = D."c0" AND A."c0" = C."c0" AND C."c0" = D."c1";
+
+mappingId ID-1267913558
+target  ns:ns/{var0} a ns:m138004 . 
+source  SELECT B."c0" as var0 FROM  "src_m50004" as A, "src_m255004" as B, "src_m203004" as C, "src_m54004" as D, "src_m115004" as E, "src_m138004" as F WHERE , B."c0" = D."c0" AND D."c0" = F."c0" AND C."c0" = E."c0";
+
+mappingId ID632651337
+target  ns:ns/{var0} ns:m84004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_m30004" as A, "src_m22004" as B, "src_m173004" as C, "src_m53004" as D, "src_m84004" as E WHERE , A."c0" = E."c0" AND A."c1" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c1";
+
+mappingId ID398443145
+target  ns:ns/{var0} a ns:m1004 . 
+source  SELECT G."c0" as var0 FROM  "src_m186004" as A, "src_m142004" as B, "src_m41004" as C, "src_m155004" as D, "src_m251004" as E, "src_m214004" as F, "src_m1004" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID142906577
+target  ns:ns/{var0} ns:m78004 ns:ns/{var1} . 
+source  SELECT C."c1" as var0, B."c0" as var1 FROM  "src_m48004" as A, "src_m22004" as B, "src_m259004" as C, "src_m181004" as D, "src_m242004" as E, "src_m78004" as F WHERE , C."c1" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c0" = C."c0" AND B."c0" = D."c1" AND D."c1" = E."c1" AND E."c1" = F."c1";
+
+mappingId ID137914015
+target  ns:ns/{var0} ns:m144004 ns:ns/{var1} . 
+source  SELECT B."c0" as var0, A."c0" as var1 FROM  "src_m122004" as A, "src_m185004" as B, "src_m5004" as C, "src_m144004" as D WHERE , B."c0" = D."c0" AND A."c0" = D."c1";
+
+mappingId ID-78470979
+target  ns:ns/{var0} a ns:m90004 . 
+source  SELECT A."c0" as var0 FROM  "src_m209004" as A, "src_m93004" as B, "src_m180004" as C, "src_m286004" as D, "src_m90004" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = E."c0";
+
+mappingId ID-936242385
+target  ns:ns/{var0} ns:m230004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, C."c0" as var1 FROM  "src_m110004" as A, "src_m1004" as B, "src_m287004" as C, "src_m90004" as D, "src_m160004" as E, "src_m96004" as F, "src_m230004" as G WHERE , A."c0" = E."c0" AND E."c0" = G."c0" AND C."c0" = E."c1" AND E."c1" = F."c0" AND F."c0" = G."c1";
+
+mappingId ID-1098425510
+target  ns:ns/{var0} ns:m36004 ns:ns/{var1} . 
+source  SELECT D."c0" as var0, A."c0" as var1 FROM  "src_m139004" as A, "src_m88004" as B, "src_m145004" as C, "src_m36004" as D WHERE , A."c0" = D."c1" AND A."c1" = B."c0" AND B."c0" = C."c0";
+
+mappingId ID-1777918603
+target  ns:ns/{var0} ns:m218004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_m288004" as A, "src_m148004" as B, "src_m195004" as C, "src_m169004" as D, "src_m142004" as E, "src_m280004" as F, "src_m218004" as G WHERE , A."c0" = B."c0" AND B."c0" = G."c0" AND A."c1" = B."c1" AND B."c1" = D."c0" AND D."c0" = E."c0" AND E."c0" = G."c1" AND C."c1" = F."c0";
+
+mappingId ID-2002371652
+target  ns:ns/{var0} ns:m13004 ns:ns/{var1} . 
+source  SELECT D."c0" as var0, B."c0" as var1 FROM  "src_m126004" as A, "src_m39004" as B, "src_m81004" as C, "src_m52004" as D, "src_m176004" as E, "src_m13004" as F WHERE , B."c0" = E."c0" AND E."c0" = F."c1" AND A."c0" = C."c0" AND C."c0" = E."c1" AND D."c0" = F."c0";
+
+mappingId ID-393764147
+target  ns:ns/{var0} ns:m125004 ns:ns/{var1} . 
+source  SELECT B."c0" as var0, B."c1" as var1 FROM  "src_m67004" as A, "src_m166004" as B, "src_m163004" as C, "src_m125004" as D WHERE , B."c1" = C."c0" AND C."c0" = D."c1" AND B."c0" = D."c0";
+
+mappingId ID-444413433
+target  ns:ns/{var0} a ns:m257004 . 
+source  SELECT B."c0" as var0 FROM  "src_m25004" as A, "src_m186004" as B, "src_m146004" as C, "src_m257004" as D WHERE , A."c0" = C."c0" AND B."c0" = D."c0";
+
+mappingId ID-663005175
+target  ns:ns/{var0} a ns:m172004 . 
+source  SELECT A."c0" as var0 FROM  "src_m213004" as A, "src_m156004" as B, "src_m261004" as C, "src_m259004" as D, "src_m172004" as E WHERE , C."c0" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c1" AND C."c1" = E."c0";
+
+mappingId ID1798555682
+target  ns:ns/{var0} ns:m299004 ns:ns/{var1} . 
+source  SELECT D."c0" as var0, D."c1" as var1 FROM  "src_m292004" as A, "src_m73004" as B, "src_m146004" as C, "src_m299004" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND A."c1" = B."c1";
+
+mappingId ID-746235612
+target  ns:ns/{var0} ns:m167004 ns:ns/{var1} . 
+source  SELECT C."c0" as var0, A."c0" as var1 FROM  "src_m66004" as A, "src_m248004" as B, "src_m33004" as C, "src_m218004" as D, "src_m37004" as E, "src_m167004" as F WHERE , A."c0" = D."c0" AND D."c0" = F."c1" AND A."c1" = B."c0" AND B."c0" = D."c1" AND D."c1" = E."c0" AND C."c0" = F."c0";
+
+mappingId ID-956192469
+target  ns:ns/{var0} a ns:m119004 . 
+source  SELECT A."c1" as var0 FROM  "src_m11004" as A, "src_m75004" as B, "src_m15004" as C, "src_m18004" as D, "src_m287004" as E, "src_m119004" as F WHERE , B."c1" = C."c0" AND C."c0" = D."c0" AND A."c1" = B."c0" AND B."c0" = F."c0" AND C."c1" = D."c1" AND D."c1" = E."c0";
+
+mappingId ID2099059329
+target  ns:ns/{var0} ns:m61004 ns:ns/{var1} . 
+source  SELECT D."c1" as var0, A."c0" as var1 FROM  "src_m92004" as A, "src_m76004" as B, "src_m50004" as C, "src_m5004" as D, "src_m181004" as E, "src_m261004" as F, "src_m61004" as G WHERE , A."c0" = C."c0" AND C."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c1" AND B."c0" = E."c1" AND E."c1" = F."c1" AND D."c1" = G."c0";
+
+mappingId ID-1864617125
+target  ns:ns/{var0} a ns:m42004 . 
+source  SELECT A."c0" as var0 FROM  "src_m13004" as A, "src_m256004" as B, "src_m135004" as C, "src_m234004" as D, "src_m42004" as E WHERE , A."c1" = C."c0" AND A."c0" = E."c0" AND B."c0" = C."c1" AND C."c1" = D."c0";
+
+mappingId ID-1520307634
+target  ns:ns/{var0} a ns:m224004 . 
+source  SELECT D."c0" as var0 FROM  "src_m239004" as A, "src_m45004" as B, "src_m230004" as C, "src_m224004" as D WHERE , A."c0" = C."c0" AND A."c1" = B."c0" AND B."c0" = C."c1";
+
+mappingId ID843641933
+target  ns:ns/{var0} ns:m294004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_m72004" as A, "src_m205004" as B, "src_m82004" as C, "src_m294004" as D WHERE , A."c0" = B."c0" AND B."c0" = D."c0" AND B."c1" = C."c0" AND C."c0" = D."c1";
+
+mappingId ID795355077
+target  ns:ns/{var0} ns:m246004 ns:ns/{var1} . 
+source  SELECT E."c1" as var0, B."c0" as var1 FROM  "src_m77004" as A, "src_m37004" as B, "src_m115004" as C, "src_m79004" as D, "src_m58004" as E, "src_m246004" as F WHERE , E."c1" = F."c0" AND A."c0" = E."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = F."c1";
+
+mappingId ID-143166020
+target  ns:ns/{var0} ns:m288004 ns:ns/{var1} . 
+source  SELECT A."c1" as var0, B."c0" as var1 FROM  "src_m184004" as A, "src_m234004" as B, "src_m53004" as C, "src_m261004" as D, "src_m288004" as E WHERE , A."c1" = D."c0" AND D."c0" = E."c0" AND B."c0" = C."c0" AND C."c0" = D."c1" AND D."c1" = E."c1";
+
+mappingId ID695787355
+target  ns:ns/{var0} ns:m252004 ns:ns/{var1} . 
+source  SELECT B."c0" as var0, C."c0" as var1 FROM  "src_m54004" as A, "src_m31004" as B, "src_m222004" as C, "src_m66004" as D, "src_m210004" as E, "src_m252004" as F WHERE , B."c0" = D."c0" AND D."c0" = F."c0" AND C."c0" = D."c1" AND D."c1" = E."c0" AND E."c0" = F."c1";
+
+mappingId ID-944344786
+target  ns:ns/{var0} a ns:m50004 . 
+source  SELECT A."c0" as var0 FROM  "src_m239004" as A, "src_m32004" as B, "src_m278004" as C, "src_m291004" as D, "src_m222004" as E, "src_m50004" as F WHERE , A."c0" = B."c0" AND B."c0" = F."c0" AND A."c1" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID1534060077
+target  ns:ns/{var0} ns:m102004 ns:ns/{var1} . 
+source  SELECT C."c0" as var0, E."c0" as var1 FROM  "src_m210004" as A, "src_m96004" as B, "src_m180004" as C, "src_m149004" as D, "src_m261004" as E, "src_m29004" as F, "src_m102004" as G WHERE , E."c0" = F."c0" AND F."c0" = G."c1" AND A."c0" = B."c0" AND B."c0" = D."c0" AND D."c0" = E."c1" AND C."c0" = G."c0";
+
+mappingId ID-1173968080
+target  ns:ns/{var0} a ns:m47004 . 
+source  SELECT A."c0" as var0 FROM  "src_m112004" as A, "src_m210004" as B, "src_m137004" as C, "src_m222004" as D, "src_m169004" as E, "src_m47004" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID1777474588
+target  ns:ns/{var0} a ns:m150004 . 
+source  SELECT A."c1" as var0 FROM  "src_m124004" as A, "src_m174004" as B, "src_m139004" as C, "src_m150004" as D WHERE , A."c1" = B."c1" AND B."c1" = C."c0" AND C."c0" = D."c0" AND A."c0" = B."c0";
+
+mappingId ID-456969462
+target  ns:ns/{var0} a ns:m89004 . 
+source  SELECT A."c1" as var0 FROM  "src_m229004" as A, "src_m280004" as B, "src_m16004" as C, "src_m157004" as D, "src_m181004" as E, "src_m13004" as F, "src_m89004" as G WHERE , A."c1" = E."c0" AND E."c0" = F."c1" AND F."c1" = G."c0" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = F."c0" AND D."c0" = E."c1";
+
+mappingId ID-409969798
+target  ns:ns/{var0} ns:m263004 ns:ns/{var1} . 
+source  SELECT D."c0" as var0, A."c0" as var1 FROM  "src_m43004" as A, "src_m298004" as B, "src_m225004" as C, "src_m105004" as D, "src_m263004" as E WHERE , D."c0" = E."c0" AND A."c0" = D."c1" AND D."c1" = E."c1" AND B."c1" = C."c0";
+
+mappingId ID6066710
+target  ns:ns/{var0} a ns:m133004 . 
+source  SELECT A."c0" as var0 FROM  "src_m31004" as A, "src_m285004" as B, "src_m156004" as C, "src_m190004" as D, "src_m206004" as E, "src_m205004" as F, "src_m133004" as G WHERE , A."c0" = E."c1" AND E."c1" = F."c0" AND F."c0" = G."c0" AND B."c0" = E."c0" AND C."c0" = D."c0" AND D."c0" = F."c1";
+
+mappingId ID-827257282
+target  ns:ns/{var0} ns:m229004 ns:ns/{var1} . 
+source  SELECT C."c0" as var0, B."c0" as var1 FROM  "src_m297004" as A, "src_m217004" as B, "src_m270004" as C, "src_m9004" as D, "src_m1004" as E, "src_m229004" as F WHERE , A."c0" = E."c0" AND B."c0" = C."c1" AND C."c1" = D."c1" AND D."c1" = F."c1" AND C."c0" = D."c0" AND D."c0" = F."c0";
+
+mappingId ID1788120606
+target  ns:ns/{var0} a ns:m188004 . 
+source  SELECT E."c0" as var0 FROM  "src_m54004" as A, "src_m297004" as B, "src_m119004" as C, "src_m77004" as D, "src_m188004" as E WHERE , A."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-258051062
+target  ns:ns/{var0} a ns:m297004 . 
+source  SELECT A."c0" as var0 FROM  "src_m299004" as A, "src_m121004" as B, "src_m85004" as C, "src_m297004" as D WHERE , A."c0" = D."c0" AND B."c1" = C."c0";
+
+mappingId ID999593066
+target  ns:ns/{var0} a ns:m142004 . 
+source  SELECT B."c0" as var0 FROM  "src_m133004" as A, "src_m156004" as B, "src_m260004" as C, "src_m70004" as D, "src_m250004" as E, "src_m57004" as F, "src_m142004" as G WHERE , A."c0" = C."c0" AND B."c0" = C."c1" AND C."c1" = D."c0" AND D."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID1936310681
+target  ns:ns/{var0} ns:m30004 ns:ns/{var1} . 
+source  SELECT C."c0" as var0, A."c0" as var1 FROM  "src_m258004" as A, "src_m7004" as B, "src_m62004" as C, "src_m172004" as D, "src_m30004" as E WHERE , C."c0" = E."c0" AND A."c0" = B."c0" AND B."c0" = C."c1" AND C."c1" = D."c0" AND D."c0" = E."c1";
+
+mappingId ID-290832534
+target  ns:ns/{var0} a ns:m7004 . 
+source  SELECT D."c0" as var0 FROM  "src_m64004" as A, "src_m116004" as B, "src_m54004" as C, "src_m235004" as D, "src_m17004" as E, "src_m34004" as F, "src_m7004" as G WHERE , A."c0" = B."c0" AND B."c0" = E."c0" AND E."c0" = F."c0" AND D."c0" = G."c0";
+
+mappingId ID-1669789369
+target  ns:ns/{var0} ns:m259004 ns:ns/{var1} . 
+source  SELECT G."c0" as var0, G."c1" as var1 FROM  "src_m286004" as A, "src_m191004" as B, "src_m112004" as C, "src_m145004" as D, "src_m281004" as E, "src_m96004" as F, "src_m259004" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-1534148830
+target  ns:ns/{var0} ns:m73004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_m263004" as A, "src_m270004" as B, "src_m140004" as C, "src_m291004" as D, "src_m73004" as E WHERE , A."c0" = B."c1" AND B."c1" = C."c1" AND C."c1" = E."c0" AND A."c1" = D."c0" AND D."c0" = E."c1" AND B."c0" = C."c0";
+
+mappingId ID719132106
+target  ns:ns/{var0} a ns:m67004 . 
+source  SELECT B."c1" as var0 FROM  "src_m16004" as A, "src_m284004" as B, "src_m6004" as C, "src_m56004" as D, "src_m9004" as E, "src_m67004" as F WHERE , B."c0" = E."c1" AND A."c0" = D."c0" AND D."c0" = E."c0" AND B."c1" = F."c0";
+
+mappingId ID-1998533448
+target  ns:ns/{var0} ns:m127004 ns:ns/{var1} . 
+source  SELECT A."c1" as var0, B."c0" as var1 FROM  "src_m117004" as A, "src_m51004" as B, "src_m179004" as C, "src_m127004" as D WHERE , A."c1" = C."c1" AND C."c1" = D."c0" AND A."c0" = C."c0" AND B."c0" = D."c1";
+
+mappingId ID-285254816
+target  ns:ns/{var0} a ns:m96004 . 
+source  SELECT A."c1" as var0 FROM  "src_m127004" as A, "src_m167004" as B, "src_m80004" as C, "src_m174004" as D, "src_m96004" as E WHERE , A."c0" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1" AND A."c1" = E."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-1540797478
+target  ns:ns/{var0} a ns:m29004 . 
+source  SELECT A."c0" as var0 FROM  "src_m230004" as A, "src_m233004" as B, "src_m100004" as C, "src_m223004" as D, "src_m279004" as E, "src_m80004" as F, "src_m29004" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = F."c1" AND F."c1" = G."c0" AND A."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c0";
+
+mappingId ID-1406029570
+target  ns:ns/{var0} ns:m260004 ns:ns/{var1} . 
+source  SELECT A."c1" as var0, B."c0" as var1 FROM  "src_m58004" as A, "src_m286004" as B, "src_m180004" as C, "src_m71004" as D, "src_m260004" as E WHERE , A."c1" = D."c0" AND D."c0" = E."c0" AND A."c0" = C."c0" AND B."c0" = E."c1";
+
+mappingId ID-1075093284
+target  ns:ns/{var0} a ns:m207004 . 
+source  SELECT B."c0" as var0 FROM  "src_m280004" as A, "src_m81004" as B, "src_m38004" as C, "src_m207004" as D WHERE , B."c0" = C."c1" AND C."c1" = D."c0";
+
+mappingId ID-58133956
+target  ns:ns/{var0} a ns:m35004 . 
+source  SELECT C."c0" as var0 FROM  "src_m281004" as A, "src_m160004" as B, "src_m75004" as C, "src_m35004" as D WHERE , B."c0" = C."c1" AND A."c0" = B."c1" AND C."c0" = D."c0";
+
+mappingId ID-44654414
+target  ns:ns/{var0} a ns:m271004 . 
+source  SELECT B."c0" as var0 FROM  "src_m251004" as A, "src_m202004" as B, "src_m188004" as C, "src_m87004" as D, "src_m92004" as E, "src_m271004" as F WHERE , C."c0" = D."c1" AND D."c1" = E."c0" AND B."c0" = D."c0" AND D."c0" = F."c0";
+
+mappingId ID-530002927
+target  ns:ns/{var0} a ns:m56004 . 
+source  SELECT E."c0" as var0 FROM  "src_m278004" as A, "src_m212004" as B, "src_m261004" as C, "src_m292004" as D, "src_m282004" as E, "src_m56004" as F WHERE , C."c0" = D."c0" AND A."c0" = B."c0" AND B."c0" = C."c1" AND C."c1" = D."c1" AND E."c0" = F."c0";
+
+mappingId ID-304568260
+target  ns:ns/{var0} ns:m292004 ns:ns/{var1} . 
+source  SELECT C."c1" as var0, B."c0" as var1 FROM  "src_m21004" as A, "src_m44004" as B, "src_m152004" as C, "src_m292004" as D WHERE , C."c1" = D."c0" AND A."c0" = C."c0" AND B."c0" = D."c1";
+
+mappingId ID-700048982
+target  ns:ns/{var0} a ns:m183004 . 
+source  SELECT C."c0" as var0 FROM  "src_m233004" as A, "src_m31004" as B, "src_m258004" as C, "src_m183004" as D WHERE , A."c0" = B."c0" AND C."c0" = D."c0";
+
+mappingId ID-1179063689
+target  ns:ns/{var0} ns:m18004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_m244004" as A, "src_m47004" as B, "src_m113004" as C, "src_m180004" as D, "src_m178004" as E, "src_m18004" as F WHERE , A."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = B."c0" AND B."c0" = C."c0" AND C."c0" = E."c1" AND E."c1" = F."c1";
+
+mappingId ID-1102369833
+target  ns:ns/{var0} a ns:m104004 . 
+source  SELECT B."c1" as var0 FROM  "src_m215004" as A, "src_m260004" as B, "src_m261004" as C, "src_m225004" as D, "src_m104004" as E WHERE , B."c0" = C."c0" AND A."c0" = D."c0" AND B."c1" = C."c1" AND C."c1" = E."c0";
+
+mappingId ID2104127890
+target  ns:ns/{var0} a ns:m213004 . 
+source  SELECT A."c0" as var0 FROM  "src_m228004" as A, "src_m215004" as B, "src_m23004" as C, "src_m186004" as D, "src_m38004" as E, "src_m284004" as F, "src_m213004" as G WHERE , E."c0" = F."c0" AND A."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c1" AND E."c1" = F."c1" AND F."c1" = G."c0";
+
+mappingId ID-1884328740
+target  ns:ns/{var0} a ns:m286004 . 
+source  SELECT B."c0" as var0 FROM  "src_m216004" as A, "src_m94004" as B, "src_m270004" as C, "src_m131004" as D, "src_m183004" as E, "src_m286004" as F WHERE , A."c1" = C."c1" AND C."c1" = D."c1" AND A."c0" = C."c0" AND C."c0" = D."c0" AND B."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-665144064
+target  ns:ns/{var0} ns:m2004 ns:ns/{var1} . 
+source  SELECT F."c0" as var0, C."c0" as var1 FROM  "src_m115004" as A, "src_m231004" as B, "src_m138004" as C, "src_m289004" as D, "src_m162004" as E, "src_m2004" as F WHERE , A."c0" = B."c1" AND B."c1" = D."c0" AND D."c0" = E."c0" AND C."c0" = F."c1";
+
+mappingId ID-1139024968
+target  ns:ns/{var0} a ns:m202004 . 
+source  SELECT C."c0" as var0 FROM  "src_m222004" as A, "src_m258004" as B, "src_m61004" as C, "src_m202004" as D WHERE , A."c0" = B."c0" AND C."c0" = D."c0";
+
+mappingId ID1061164784
+target  ns:ns/{var0} ns:m131004 ns:ns/{var1} . 
+source  SELECT C."c0" as var0, B."c0" as var1 FROM  "src_m47004" as A, "src_m264004" as B, "src_m166004" as C, "src_m172004" as D, "src_m112004" as E, "src_m131004" as F WHERE , B."c0" = C."c1" AND C."c1" = F."c1" AND A."c0" = B."c1" AND B."c1" = D."c0" AND D."c0" = E."c0" AND C."c0" = F."c0";
+
+mappingId ID-476175083
+target  ns:ns/{var0} ns:m62004 ns:ns/{var1} . 
+source  SELECT C."c0" as var0, C."c1" as var1 FROM  "src_m98004" as A, "src_m299004" as B, "src_m292004" as C, "src_m139004" as D, "src_m120004" as E, "src_m62004" as F WHERE , C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c0" = B."c1" AND C."c1" = D."c1" AND D."c1" = F."c1";
+
+mappingId ID363734490
+target  ns:ns/{var0} a ns:m265004 . 
+source  SELECT C."c0" as var0 FROM  "src_m260004" as A, "src_m53004" as B, "src_m140004" as C, "src_m117004" as D, "src_m265004" as E WHERE , A."c0" = C."c1" AND C."c1" = D."c1" AND A."c1" = B."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-1927053951
+target  ns:ns/{var0} a ns:m248004 . 
+source  SELECT C."c0" as var0 FROM  "src_m83004" as A, "src_m184004" as B, "src_m156004" as C, "src_m157004" as D, "src_m205004" as E, "src_m296004" as F, "src_m248004" as G WHERE , A."c1" = B."c1" AND B."c1" = E."c0" AND A."c0" = B."c0" AND B."c0" = F."c1" AND C."c0" = D."c0" AND D."c0" = E."c1" AND E."c1" = G."c0";
+
+mappingId ID-1219497212
+target  ns:ns/{var0} a ns:m110004 . 
+source  SELECT B."c0" as var0 FROM  "src_m93004" as A, "src_m153004" as B, "src_m85004" as C, "src_m112004" as D, "src_m49004" as E, "src_m222004" as F, "src_m110004" as G WHERE , B."c0" = E."c0" AND E."c0" = G."c0" AND B."c1" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c1" AND E."c1" = F."c0";
+
+mappingId ID1661869985
+target  ns:ns/{var0} a ns:m24004 . 
+source  SELECT A."c0" as var0 FROM  "src_m294004" as A, "src_m23004" as B, "src_m151004" as C, "src_m11004" as D, "src_m89004" as E, "src_m24004" as F WHERE , A."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = B."c0" AND B."c0" = C."c0";
+
+mappingId ID980598055
+target  ns:ns/{var0} a ns:m41004 . 
+source  SELECT A."c1" as var0 FROM  "src_m217004" as A, "src_m10004" as B, "src_m235004" as C, "src_m204004" as D, "src_m63004" as E, "src_m15004" as F, "src_m41004" as G WHERE , A."c0" = B."c0" AND B."c0" = F."c0" AND A."c1" = C."c0" AND C."c0" = F."c1" AND F."c1" = G."c0" AND D."c0" = E."c0";
+
+mappingId ID-1358937479
+target  ns:ns/{var0} ns:m220004 ns:ns/{var1} . 
+source  SELECT E."c0" as var0, A."c0" as var1 FROM  "src_m84004" as A, "src_m37004" as B, "src_m217004" as C, "src_m127004" as D, "src_m75004" as E, "src_m220004" as F WHERE , A."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c1" AND E."c1" = F."c1" AND A."c1" = B."c0" AND B."c0" = C."c1" AND C."c1" = D."c1" AND E."c0" = F."c0";
+
+mappingId ID405563037
+target  ns:ns/{var0} ns:m80004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, B."c0" as var1 FROM  "src_m54004" as A, "src_m101004" as B, "src_m252004" as C, "src_m261004" as D, "src_m31004" as E, "src_m80004" as F WHERE , B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c1" AND A."c0" = F."c0" AND B."c1" = C."c1" AND C."c1" = D."c1";
+
+mappingId ID36032262
+target  ns:ns/{var0} a ns:m109004 . 
+source  SELECT A."c0" as var0 FROM  "src_m18004" as A, "src_m282004" as B, "src_m31004" as C, "src_m49004" as D, "src_m59004" as E, "src_m209004" as F, "src_m109004" as G WHERE , A."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = G."c0" AND A."c1" = D."c1" AND B."c0" = E."c1" AND E."c1" = F."c0";
+
+mappingId ID-1094991678
+target  ns:ns/{var0} a ns:m182004 . 
+source  SELECT B."c1" as var0 FROM  "src_m87004" as A, "src_m176004" as B, "src_m280004" as C, "src_m182004" as D WHERE , A."c1" = B."c0" AND A."c0" = C."c0" AND B."c1" = D."c0";
+
+mappingId ID-1798053453
+target  ns:ns/{var0} a ns:m214004 . 
+source  SELECT A."c0" as var0 FROM  "src_m291004" as A, "src_m46004" as B, "src_m231004" as C, "src_m214004" as D WHERE , A."c0" = C."c1" AND C."c1" = D."c0";
+
+mappingId ID-564841875
+target  ns:ns/{var0} a ns:m51004 . 
+source  SELECT D."c0" as var0 FROM  "src_m2004" as A, "src_m229004" as B, "src_m280004" as C, "src_m132004" as D, "src_m63004" as E, "src_m42004" as F, "src_m51004" as G WHERE , A."c1" = B."c0" AND B."c0" = C."c0" AND C."c0" = E."c0" AND E."c0" = F."c0" AND D."c0" = G."c0";
+
+mappingId ID154110840
+target  ns:ns/{var0} a ns:m17004 . 
+source  SELECT A."c0" as var0 FROM  "src_m121004" as A, "src_m55004" as B, "src_m185004" as C, "src_m70004" as D, "src_m118004" as E, "src_m295004" as F, "src_m17004" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = B."c1" AND B."c1" = D."c0" AND D."c0" = E."c1" AND E."c1" = F."c1";
+
+mappingId ID625980839
+target  ns:ns/{var0} a ns:m253004 . 
+source  SELECT A."c1" as var0 FROM  "src_m242004" as A, "src_m231004" as B, "src_m125004" as C, "src_m186004" as D, "src_m253004" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c1" AND A."c1" = B."c1" AND B."c1" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-165011550
+target  ns:ns/{var0} ns:m121004 ns:ns/{var1} . 
+source  SELECT C."c0" as var0, B."c0" as var1 FROM  "src_m90004" as A, "src_m172004" as B, "src_m15004" as C, "src_m246004" as D, "src_m121004" as E WHERE , C."c0" = D."c0" AND D."c0" = E."c0" AND B."c0" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1";
+
+mappingId ID-627169008
+target  ns:ns/{var0} ns:m199004 ns:ns/{var1} . 
+source  SELECT C."c0" as var0, A."c0" as var1 FROM  "src_m292004" as A, "src_m110004" as B, "src_m63004" as C, "src_m182004" as D, "src_m118004" as E, "src_m199004" as F WHERE , A."c0" = B."c0" AND B."c0" = E."c0" AND E."c0" = F."c1" AND A."c1" = D."c0" AND D."c0" = E."c1" AND C."c0" = F."c0";
+
+mappingId ID1509095057
+target  ns:ns/{var0} a ns:m281004 . 
+source  SELECT B."c1" as var0 FROM  "src_m48004" as A, "src_m230004" as B, "src_m135004" as C, "src_m253004" as D, "src_m280004" as E, "src_m97004" as F, "src_m281004" as G WHERE , B."c0" = C."c0" AND C."c0" = F."c0" AND A."c0" = E."c0" AND B."c1" = C."c1" AND C."c1" = D."c0" AND D."c0" = G."c0";
+
+mappingId ID-734295150
+target  ns:ns/{var0} a ns:m46004 . 
+source  SELECT A."c0" as var0 FROM  "src_m208004" as A, "src_m133004" as B, "src_m59004" as C, "src_m146004" as D, "src_m68004" as E, "src_m23004" as F, "src_m46004" as G WHERE , A."c1" = B."c0" AND B."c0" = D."c0" AND A."c0" = C."c1" AND C."c1" = E."c0" AND E."c0" = G."c0";
+
+mappingId ID-1308116238
+target  ns:ns/{var0} ns:m176004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, B."c0" as var1 FROM  "src_m163004" as A, "src_m161004" as B, "src_m33004" as C, "src_m176004" as D WHERE , A."c0" = D."c0" AND B."c0" = D."c1";
+
+mappingId ID1941994828
+target  ns:ns/{var0} ns:m148004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_m128004" as A, "src_m89004" as B, "src_m154004" as C, "src_m235004" as D, "src_m63004" as E, "src_m148004" as F WHERE , A."c0" = B."c0" AND B."c0" = F."c0" AND A."c1" = C."c0" AND C."c0" = D."c0" AND D."c0" = F."c1";
+
+mappingId ID93611585
+target  ns:ns/{var0} a ns:m115004 . 
+source  SELECT C."c1" as var0 FROM  "src_m220004" as A, "src_m138004" as B, "src_m30004" as C, "src_m54004" as D, "src_m115004" as E WHERE , A."c1" = C."c0" AND A."c0" = B."c0" AND B."c0" = D."c0" AND C."c1" = E."c0";
+
+mappingId ID-805675291
+target  ns:ns/{var0} a ns:m23004 . 
+source  SELECT B."c0" as var0 FROM  "src_m185004" as A, "src_m85004" as B, "src_m151004" as C, "src_m23004" as D WHERE , B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-1388653931
+target  ns:ns/{var0} a ns:m137004 . 
+source  SELECT A."c1" as var0 FROM  "src_m148004" as A, "src_m92004" as B, "src_m104004" as C, "src_m154004" as D, "src_m83004" as E, "src_m137004" as F WHERE , A."c0" = B."c0" AND B."c0" = E."c1" AND A."c1" = C."c0" AND C."c0" = D."c0" AND D."c0" = F."c0";
+
+mappingId ID-54775654
+target  ns:ns/{var0} ns:m160004 ns:ns/{var1} . 
+source  SELECT E."c0" as var0, A."c0" as var1 FROM  "src_m173004" as A, "src_m145004" as B, "src_m200004" as C, "src_m103004" as D, "src_m160004" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = E."c1";
+
+mappingId ID-150238462
+target  ns:ns/{var0} a ns:m79004 . 
+source  SELECT A."c0" as var0 FROM  "src_m262004" as A, "src_m122004" as B, "src_m229004" as C, "src_m146004" as D, "src_m261004" as E, "src_m284004" as F, "src_m79004" as G WHERE , C."c1" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c0" = B."c0" AND B."c0" = E."c1" AND E."c1" = F."c1" AND F."c1" = G."c0";
+
+mappingId ID960296142
+target  ns:ns/{var0} a ns:m85004 . 
+source  SELECT B."c0" as var0 FROM  "src_m216004" as A, "src_m222004" as B, "src_m162004" as C, "src_m85004" as D WHERE , B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID1124276507
+target  ns:ns/{var0} ns:m298004 ns:ns/{var1} . 
+source  SELECT D."c0" as var0, D."c1" as var1 FROM  "src_m30004" as A, "src_m274004" as B, "src_m79004" as C, "src_m298004" as D WHERE , A."c1" = B."c0" AND B."c0" = C."c0";
+
+mappingId ID-201103899
+target  ns:ns/{var0} a ns:m12004 . 
+source  SELECT A."c0" as var0 FROM  "src_m22004" as A, "src_m168004" as B, "src_m260004" as C, "src_m241004" as D, "src_m12004" as E WHERE , C."c0" = D."c0" AND A."c0" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c0";
+
+mappingId ID161596752
+target  ns:ns/{var0} ns:m231004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_m295004" as A, "src_m40004" as B, "src_m75004" as C, "src_m231004" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c1" AND C."c1" = D."c0" AND A."c1" = B."c1" AND B."c1" = D."c1";
+
+mappingId ID-1066773080
+target  ns:ns/{var0} a ns:m126004 . 
+source  SELECT C."c1" as var0 FROM  "src_m282004" as A, "src_m124004" as B, "src_m260004" as C, "src_m59004" as D, "src_m290004" as E, "src_m126004" as F WHERE , B."c1" = C."c0" AND C."c0" = E."c1" AND A."c0" = B."c0" AND B."c0" = D."c1" AND D."c1" = E."c0" AND C."c1" = F."c0";
+
+mappingId ID163146054
+target  ns:ns/{var0} a ns:m8004 . 
+source  SELECT F."c0" as var0 FROM  "src_m97004" as A, "src_m259004" as B, "src_m60004" as C, "src_m48004" as D, "src_m63004" as E, "src_m248004" as F, "src_m8004" as G WHERE , A."c0" = B."c1" AND B."c1" = C."c1" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND F."c0" = G."c0";
+
+mappingId ID-1631478639
+target  ns:ns/{var0} ns:m74004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, C."c0" as var1 FROM  "src_m54004" as A, "src_m93004" as B, "src_m288004" as C, "src_m74004" as D WHERE , C."c0" = D."c1" AND A."c0" = B."c0" AND B."c0" = D."c0";
+
+mappingId ID83615320
+target  ns:ns/{var0} ns:m91004 ns:ns/{var1} . 
+source  SELECT B."c0" as var0, A."c0" as var1 FROM  "src_m24004" as A, "src_m229004" as B, "src_m162004" as C, "src_m91004" as D WHERE , A."c0" = B."c1" AND B."c1" = D."c1" AND B."c0" = D."c0";
+
+mappingId ID262482338
+target  ns:ns/{var0} a ns:m68004 . 
+source  SELECT A."c0" as var0 FROM  "src_m21004" as A, "src_m38004" as B, "src_m97004" as C, "src_m290004" as D, "src_m68004" as E WHERE , B."c0" = C."c0" AND C."c0" = D."c1" AND A."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID1736675293
+target  ns:ns/{var0} a ns:m154004 . 
+source  SELECT A."c1" as var0 FROM  "src_m217004" as A, "src_m233004" as B, "src_m172004" as C, "src_m107004" as D, "src_m135004" as E, "src_m154004" as F WHERE , A."c0" = B."c0" AND B."c0" = D."c1" AND D."c1" = E."c0" AND A."c1" = C."c0" AND C."c0" = E."c1" AND E."c1" = F."c0";
+
+mappingId ID-936568898
+target  ns:ns/{var0} ns:m242004 ns:ns/{var1} . 
+source  SELECT C."c1" as var0, A."c0" as var1 FROM  "src_m147004" as A, "src_m57004" as B, "src_m131004" as C, "src_m27004" as D, "src_m120004" as E, "src_m242004" as F WHERE , C."c1" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c0" = B."c0" AND B."c0" = F."c1";
+
+mappingId ID1614419951
+target  ns:ns/{var0} a ns:m225004 . 
+source  SELECT A."c0" as var0 FROM  "src_m87004" as A, "src_m137004" as B, "src_m48004" as C, "src_m225004" as D WHERE , A."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-88622178
+target  ns:ns/{var0} ns:m208004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_m68004" as A, "src_m23004" as B, "src_m16004" as C, "src_m216004" as D, "src_m208004" as E WHERE , D."c1" = E."c1" AND A."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID1721392832
+target  ns:ns/{var0} a ns:m57004 . 
+source  SELECT C."c1" as var0 FROM  "src_m225004" as A, "src_m31004" as B, "src_m231004" as C, "src_m29004" as D, "src_m111004" as E, "src_m112004" as F, "src_m57004" as G WHERE , B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND C."c1" = E."c1" AND E."c1" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID116454861
+target  ns:ns/{var0} a ns:m34004 . 
+source  SELECT B."c0" as var0 FROM  "src_m285004" as A, "src_m217004" as B, "src_m5004" as C, "src_m98004" as D, "src_m10004" as E, "src_m34004" as F WHERE , B."c0" = E."c0" AND E."c0" = F."c0" AND A."c0" = C."c1" AND C."c1" = D."c0";
+
+mappingId ID1190447045
+target  ns:ns/{var0} ns:m11004 ns:ns/{var1} . 
+source  SELECT D."c0" as var0, D."c1" as var1 FROM  "src_m32004" as A, "src_m185004" as B, "src_m132004" as C, "src_m11004" as D WHERE , A."c0" = B."c0";
+
+mappingId ID-1107114405
+target  ns:ns/{var0} ns:m100004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_m160004" as A, "src_m10004" as B, "src_m241004" as C, "src_m265004" as D, "src_m100004" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = E."c0" AND A."c1" = C."c1" AND C."c1" = E."c1";
+
+mappingId ID1651858748
+target  ns:ns/{var0} a ns:m123004 . 
+source  SELECT B."c0" as var0 FROM  "src_m261004" as A, "src_m102004" as B, "src_m148004" as C, "src_m123004" as D WHERE , A."c0" = B."c1" AND B."c1" = C."c0" AND A."c1" = C."c1" AND B."c0" = D."c0";
+
+mappingId ID513981474
+target  ns:ns/{var0} a ns:m255004 . 
+source  SELECT A."c0" as var0 FROM  "src_m268004" as A, "src_m20004" as B, "src_m210004" as C, "src_m255004" as D WHERE , A."c1" = B."c0" AND A."c0" = D."c0";
+
+mappingId ID-2071268902
+target  ns:ns/{var0} a ns:m146004 . 
+source  SELECT B."c1" as var0 FROM  "src_m255004" as A, "src_m129004" as B, "src_m216004" as C, "src_m146004" as D WHERE , B."c1" = C."c1" AND C."c1" = D."c0" AND A."c0" = B."c0" AND B."c0" = C."c0";
+
+mappingId ID-928419883
+target  ns:ns/{var0} a ns:m278004 . 
+source  SELECT B."c1" as var0 FROM  "src_m170004" as A, "src_m261004" as B, "src_m227004" as C, "src_m278004" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND B."c1" = D."c0";
+
+mappingId ID412133792
+target  ns:ns/{var0} a ns:m92004 . 
+source  SELECT A."c0" as var0 FROM  "src_m110004" as A, "src_m132004" as B, "src_m109004" as C, "src_m153004" as D, "src_m29004" as E, "src_m118004" as F, "src_m92004" as G WHERE , A."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND B."c0" = D."c1" AND D."c1" = F."c1";
+
+mappingId ID958290731
+target  ns:ns/{var0} a ns:m169004 . 
+source  SELECT A."c1" as var0 FROM  "src_m66004" as A, "src_m52004" as B, "src_m287004" as C, "src_m12004" as D, "src_m157004" as E, "src_m181004" as F, "src_m169004" as G WHERE , A."c0" = F."c0" AND A."c1" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c1" AND F."c1" = G."c0";
+
+mappingId ID-946104784
+target  ns:ns/{var0} a ns:m170004 . 
+source  SELECT A."c1" as var0 FROM  "src_m91004" as A, "src_m176004" as B, "src_m104004" as C, "src_m170004" as D WHERE , A."c1" = B."c0" AND B."c0" = D."c0" AND B."c1" = C."c0";
+
+mappingId ID754390763
+target  ns:ns/{var0} ns:m40004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, B."c0" as var1 FROM  "src_m116004" as A, "src_m251004" as B, "src_m270004" as C, "src_m89004" as D, "src_m40004" as E WHERE , A."c0" = C."c1" AND C."c1" = D."c0" AND D."c0" = E."c0" AND B."c0" = E."c1";
+
+mappingId ID-977870832
+target  ns:ns/{var0} a ns:m3004 . 
+source  SELECT E."c0" as var0 FROM  "src_m58004" as A, "src_m120004" as B, "src_m284004" as C, "src_m258004" as D, "src_m3004" as E WHERE , A."c1" = B."c0" AND B."c0" = C."c0" AND C."c1" = D."c0";
+
+mappingId ID1741680289
+target  ns:ns/{var0} a ns:m203004 . 
+source  SELECT A."c0" as var0 FROM  "src_m156004" as A, "src_m169004" as B, "src_m112004" as C, "src_m287004" as D, "src_m174004" as E, "src_m97004" as F, "src_m203004" as G WHERE , E."c1" = F."c0" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = G."c0";
+
+mappingId ID668575169
+target  ns:ns/{var0} ns:m117004 ns:ns/{var1} . 
+source  SELECT B."c0" as var0, B."c1" as var1 FROM  "src_m149004" as A, "src_m184004" as B, "src_m94004" as C, "src_m10004" as D, "src_m198004" as E, "src_m117004" as F WHERE , B."c1" = D."c0" AND D."c0" = F."c1" AND A."c0" = C."c0" AND C."c0" = E."c0" AND B."c0" = F."c0";
+
+mappingId ID1923209026
+target  ns:ns/{var0} a ns:m63004 . 
+source  SELECT B."c0" as var0 FROM  "src_m121004" as A, "src_m265004" as B, "src_m290004" as C, "src_m63004" as D WHERE , A."c0" = C."c1" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-1123935592
+target  ns:ns/{var0} ns:m244004 ns:ns/{var1} . 
+source  SELECT C."c0" as var0, A."c0" as var1 FROM  "src_m44004" as A, "src_m182004" as B, "src_m50004" as C, "src_m109004" as D, "src_m186004" as E, "src_m244004" as F WHERE , C."c0" = D."c0" AND D."c0" = F."c0" AND A."c0" = B."c0" AND B."c0" = E."c0" AND E."c0" = F."c1";
+
+mappingId ID1067630094
+target  ns:ns/{var0} ns:m135004 ns:ns/{var1} . 
+source  SELECT A."c1" as var0, B."c0" as var1 FROM  "src_m273004" as A, "src_m4004" as B, "src_m84004" as C, "src_m82004" as D, "src_m135004" as E WHERE , A."c1" = C."c0" AND C."c0" = E."c0" AND B."c0" = C."c1" AND C."c1" = D."c0" AND D."c0" = E."c1";
+
+mappingId ID922079923
+target  ns:ns/{var0} ns:m296004 ns:ns/{var1} . 
+source  SELECT D."c0" as var0, D."c1" as var1 FROM  "src_m135004" as A, "src_m169004" as B, "src_m4004" as C, "src_m296004" as D WHERE , A."c1" = B."c0" AND B."c0" = C."c0";
+
+mappingId ID-480843927
+target  ns:ns/{var0} a ns:m238004 . 
+source  SELECT A."c0" as var0 FROM  "src_m256004" as A, "src_m139004" as B, "src_m115004" as C, "src_m282004" as D, "src_m197004" as E, "src_m109004" as F, "src_m238004" as G WHERE , B."c0" = E."c0" AND E."c0" = F."c0" AND A."c0" = B."c1" AND B."c1" = C."c0" AND C."c0" = G."c0";
+
+mappingId ID493117060
+target  ns:ns/{var0} a ns:m52004 . 
+source  SELECT D."c0" as var0 FROM  "src_m278004" as A, "src_m150004" as B, "src_m108004" as C, "src_m46004" as D, "src_m52004" as E WHERE , A."c0" = C."c0" AND D."c0" = E."c0";
+
+mappingId ID1472283022
+target  ns:ns/{var0} a ns:m39004 . 
+source  SELECT C."c0" as var0 FROM  "src_m195004" as A, "src_m203004" as B, "src_m100004" as C, "src_m291004" as D, "src_m39004" as E WHERE , C."c0" = E."c0" AND B."c0" = C."c1" AND C."c1" = D."c0";
+
+mappingId ID-648499255
+target  ns:ns/{var0} a ns:m141004 . 
+source  SELECT A."c0" as var0 FROM  "src_m70004" as A, "src_m216004" as B, "src_m244004" as C, "src_m141004" as D WHERE , B."c1" = C."c0" AND A."c0" = C."c1" AND C."c1" = D."c0";
+
+mappingId ID-1590938307
+target  ns:ns/{var0} a ns:m250004 . 
+source  SELECT A."c0" as var0 FROM  "src_m83004" as A, "src_m79004" as B, "src_m112004" as C, "src_m250004" as D WHERE , A."c0" = D."c0" AND B."c0" = C."c0";
+
+mappingId ID1454967534
+target  ns:ns/{var0} a ns:m45004 . 
+source  SELECT B."c0" as var0 FROM  "src_m133004" as A, "src_m154004" as B, "src_m124004" as C, "src_m238004" as D, "src_m207004" as E, "src_m30004" as F, "src_m45004" as G WHERE , A."c0" = C."c1" AND C."c1" = F."c0" AND B."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c1" AND F."c1" = G."c0";
+
+mappingId ID-473288999
+target  ns:ns/{var0} a ns:m198004 . 
+source  SELECT B."c0" as var0 FROM  "src_m54004" as A, "src_m200004" as B, "src_m212004" as C, "src_m198004" as D WHERE , B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID270193436
+target  ns:ns/{var0} a ns:m97004 . 
+source  SELECT D."c0" as var0 FROM  "src_m67004" as A, "src_m251004" as B, "src_m282004" as C, "src_m97004" as D WHERE , A."c0" = B."c0";
+
+mappingId ID-1436228465
+target  ns:ns/{var0} ns:m152004 ns:ns/{var1} . 
+source  SELECT C."c0" as var0, C."c1" as var1 FROM  "src_m190004" as A, "src_m7004" as B, "src_m107004" as C, "src_m84004" as D, "src_m253004" as E, "src_m35004" as F, "src_m152004" as G WHERE , C."c1" = D."c0" AND D."c0" = G."c1" AND A."c0" = B."c0" AND B."c0" = D."c1" AND D."c1" = E."c0" AND C."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID1164319895
+target  ns:ns/{var0} ns:m128004 ns:ns/{var1} . 
+source  SELECT C."c1" as var0, A."c0" as var1 FROM  "src_m113004" as A, "src_m145004" as B, "src_m174004" as C, "src_m299004" as D, "src_m29004" as E, "src_m128004" as F WHERE , C."c1" = E."c0" AND E."c0" = F."c0" AND A."c0" = B."c0" AND B."c0" = F."c1" AND C."c0" = D."c1";
+
+mappingId ID-1176841600
+target  ns:ns/{var0} ns:m261004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_m295004" as A, "src_m222004" as B, "src_m11004" as C, "src_m84004" as D, "src_m261004" as E WHERE , A."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = B."c0" AND B."c0" = D."c1" AND D."c1" = E."c1";
+
+mappingId ID441446411
+target  ns:ns/{var0} a ns:m186004 . 
+source  SELECT B."c0" as var0 FROM  "src_m16004" as A, "src_m214004" as B, "src_m265004" as C, "src_m272004" as D, "src_m223004" as E, "src_m186004" as F WHERE , D."c0" = E."c0" AND A."c0" = C."c0" AND B."c0" = E."c1" AND E."c1" = F."c0";
+
+mappingId ID78418947
+target  ns:ns/{var0} a ns:m291004 . 
+source  SELECT B."c0" as var0 FROM  "src_m36004" as A, "src_m213004" as B, "src_m98004" as C, "src_m273004" as D, "src_m297004" as E, "src_m162004" as F, "src_m291004" as G WHERE , A."c1" = D."c1" AND A."c0" = C."c0" AND C."c0" = D."c0" AND B."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID346905338
+target  ns:ns/{var0} ns:m237004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_m128004" as A, "src_m283004" as B, "src_m144004" as C, "src_m237004" as D WHERE , A."c0" = B."c1" AND B."c1" = C."c0" AND C."c0" = D."c0" AND A."c1" = C."c1" AND C."c1" = D."c1";
+
+mappingId ID-2079377034
+target  ns:ns/{var0} ns:m105004 ns:ns/{var1} . 
+source  SELECT B."c0" as var0, A."c0" as var1 FROM  "src_m141004" as A, "src_m277004" as B, "src_m145004" as C, "src_m255004" as D, "src_m6004" as E, "src_m33004" as F, "src_m105004" as G WHERE , B."c0" = G."c0" AND A."c0" = C."c0" AND C."c0" = G."c1" AND D."c0" = F."c0";
+
+mappingId ID1804934256
+target  ns:ns/{var0} a ns:m272004 . 
+source  SELECT D."c1" as var0 FROM  "src_m48004" as A, "src_m79004" as B, "src_m47004" as C, "src_m83004" as D, "src_m263004" as E, "src_m272004" as F WHERE , D."c1" = E."c0" AND E."c0" = F."c0" AND A."c0" = D."c0" AND B."c0" = C."c0" AND C."c0" = E."c1";
+
+mappingId ID1841794106
+target  ns:ns/{var0} a ns:m210004 . 
+source  SELECT B."c0" as var0 FROM  "src_m179004" as A, "src_m115004" as B, "src_m284004" as C, "src_m55004" as D, "src_m88004" as E, "src_m210004" as F WHERE , A."c1" = C."c0" AND C."c0" = D."c0" AND B."c0" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID1899676318
+target  ns:ns/{var0} ns:m9004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, B."c0" as var1 FROM  "src_m48004" as A, "src_m239004" as B, "src_m274004" as C, "src_m112004" as D, "src_m32004" as E, "src_m9004" as F WHERE , B."c0" = E."c0" AND E."c0" = F."c1" AND A."c0" = F."c0" AND B."c1" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID404549329
+target  ns:ns/{var0} a ns:m98004 . 
+source  SELECT A."c0" as var0 FROM  "src_m220004" as A, "src_m209004" as B, "src_m195004" as C, "src_m216004" as D, "src_m98004" as E WHERE , A."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c1" AND C."c1" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-400444140
+target  ns:ns/{var0} ns:m153004 ns:ns/{var1} . 
+source  SELECT D."c0" as var0, D."c1" as var1 FROM  "src_m204004" as A, "src_m11004" as B, "src_m6004" as C, "src_m153004" as D WHERE , B."c0" = C."c0" AND A."c0" = B."c1";
+
+mappingId ID1324629299
+target  ns:ns/{var0} a ns:m285004 . 
+source  SELECT E."c0" as var0 FROM  "src_m144004" as A, "src_m154004" as B, "src_m145004" as C, "src_m210004" as D, "src_m282004" as E, "src_m75004" as F, "src_m285004" as G WHERE , A."c0" = F."c1" AND A."c1" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+
+mappingId ID276742315
+target  ns:ns/{var0} a ns:m69004 . 
+source  SELECT A."c1" as var0 FROM  "src_m140004" as A, "src_m10004" as B, "src_m208004" as C, "src_m110004" as D, "src_m272004" as E, "src_m6004" as F, "src_m69004" as G WHERE , A."c1" = B."c0" AND B."c0" = C."c1" AND C."c1" = D."c0" AND D."c0" = E."c0" AND E."c0" = G."c0" AND A."c0" = C."c0";
+
+mappingId ID1857376722
+target  ns:ns/{var0} a ns:m27004 . 
+source  SELECT A."c0" as var0 FROM  "src_m239004" as A, "src_m16004" as B, "src_m155004" as C, "src_m61004" as D, "src_m52004" as E, "src_m27004" as F WHERE , A."c0" = C."c1" AND C."c1" = D."c1" AND D."c1" = F."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID1453167972
+target  ns:ns/{var0} a ns:m209004 . 
+source  SELECT C."c0" as var0 FROM  "src_m110004" as A, "src_m163004" as B, "src_m180004" as C, "src_m149004" as D, "src_m209004" as E WHERE , A."c0" = B."c0" AND C."c0" = E."c0";
+
+mappingId ID488418798
+target  ns:ns/{var0} ns:m111004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_m18004" as A, "src_m298004" as B, "src_m80004" as C, "src_m111004" as D WHERE , A."c0" = C."c1" AND C."c1" = D."c0" AND A."c1" = D."c1" AND B."c1" = C."c0";
+
+mappingId ID859313088
+target  ns:ns/{var0} a ns:m33004 . 
+source  SELECT B."c0" as var0 FROM  "src_m49004" as A, "src_m102004" as B, "src_m2004" as C, "src_m267004" as D, "src_m256004" as E, "src_m33004" as F WHERE , A."c0" = B."c1" AND B."c1" = D."c0" AND A."c1" = D."c1" AND D."c1" = E."c0" AND B."c0" = C."c1" AND C."c1" = F."c0";
+
+mappingId ID866699298
+target  ns:ns/{var0} ns:m58004 ns:ns/{var1} . 
+source  SELECT B."c0" as var0, A."c0" as var1 FROM  "src_m17004" as A, "src_m35004" as B, "src_m36004" as C, "src_m178004" as D, "src_m231004" as E, "src_m58004" as F WHERE , A."c0" = C."c1" AND C."c1" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c1" AND B."c0" = C."c0" AND C."c0" = F."c0" AND D."c1" = E."c1";
+
+mappingId ID-1393125788
+target  ns:ns/{var0} a ns:m81004 . 
+source  SELECT B."c0" as var0 FROM  "src_m35004" as A, "src_m70004" as B, "src_m114004" as C, "src_m81004" as D WHERE , B."c0" = D."c0";
+
+mappingId ID-2135113134
+target  ns:ns/{var0} ns:m164004 ns:ns/{var1} . 
+source  SELECT D."c0" as var0, B."c0" as var1 FROM  "src_m104004" as A, "src_m205004" as B, "src_m10004" as C, "src_m282004" as D, "src_m51004" as E, "src_m137004" as F, "src_m164004" as G WHERE , B."c0" = C."c0" AND C."c0" = G."c1" AND A."c0" = B."c1" AND B."c1" = E."c0" AND E."c0" = F."c0" AND D."c0" = G."c0";
+
+mappingId ID-1418041853
+target  ns:ns/{var0} ns:m181004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_m263004" as A, "src_m7004" as B, "src_m47004" as C, "src_m117004" as D, "src_m181004" as E WHERE , A."c0" = D."c1" AND D."c1" = E."c0" AND A."c1" = B."c0" AND B."c0" = C."c0" AND C."c0" = E."c1";
+
+mappingId ID-1483452322
+target  ns:ns/{var0} ns:m75004 ns:ns/{var1} . 
+source  SELECT B."c0" as var0, C."c0" as var1 FROM  "src_m169004" as A, "src_m282004" as B, "src_m49004" as C, "src_m94004" as D, "src_m153004" as E, "src_m59004" as F, "src_m75004" as G WHERE , C."c0" = E."c0" AND E."c0" = G."c1" AND A."c0" = C."c1" AND C."c1" = D."c0" AND D."c0" = E."c1" AND B."c0" = F."c1" AND F."c1" = G."c0";
+
+mappingId ID-1566930717
+target  ns:ns/{var0} a ns:m122004 . 
+source  SELECT B."c0" as var0 FROM  "src_m2004" as A, "src_m186004" as B, "src_m154004" as C, "src_m151004" as D, "src_m122004" as E WHERE , B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID1867283280
+target  ns:ns/{var0} a ns:m16004 . 
+source  SELECT E."c0" as var0 FROM  "src_m241004" as A, "src_m85004" as B, "src_m274004" as C, "src_m291004" as D, "src_m16004" as E WHERE , A."c1" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID2109469816
+target  ns:ns/{var0} a ns:m215004 . 
+source  SELECT A."c1" as var0 FROM  "src_m2004" as A, "src_m297004" as B, "src_m251004" as C, "src_m126004" as D, "src_m88004" as E, "src_m215004" as F WHERE , A."c0" = B."c0" AND A."c1" = F."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-1871234859
+target  ns:ns/{var0} a ns:m280004 . 
+source  SELECT A."c0" as var0 FROM  "src_m199004" as A, "src_m40004" as B, "src_m133004" as C, "src_m280004" as D WHERE , A."c1" = B."c0" AND B."c0" = C."c0" AND A."c0" = D."c0";
+
+mappingId ID387587823
+target  ns:ns/{var0} a ns:m70004 . 
+source  SELECT B."c1" as var0 FROM  "src_m75004" as A, "src_m242004" as B, "src_m160004" as C, "src_m271004" as D, "src_m203004" as E, "src_m70004" as F WHERE , A."c1" = B."c0" AND B."c0" = C."c0" AND A."c0" = D."c0" AND B."c1" = C."c1" AND C."c1" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID189502791
+target  ns:ns/{var0} a ns:m4004 . 
+source  SELECT A."c0" as var0 FROM  "src_m238004" as A, "src_m129004" as B, "src_m39004" as C, "src_m239004" as D, "src_m100004" as E, "src_m4004" as F WHERE , B."c1" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c0" = D."c1" AND D."c1" = E."c1" AND E."c1" = F."c0";
+
+mappingId ID1917179798
+target  ns:ns/{var0} a ns:m277004 . 
+source  SELECT A."c0" as var0 FROM  "src_m144004" as A, "src_m285004" as B, "src_m17004" as C, "src_m123004" as D, "src_m121004" as E, "src_m277004" as F WHERE , A."c0" = C."c0" AND C."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = E."c1" AND B."c0" = D."c0";
+
+mappingId ID1210515088
+target  ns:ns/{var0} a ns:m147004 . 
+source  SELECT B."c0" as var0 FROM  "src_m185004" as A, "src_m190004" as B, "src_m267004" as C, "src_m280004" as D, "src_m147004" as E WHERE , A."c0" = C."c0" AND B."c0" = C."c1" AND C."c1" = E."c0";
+
+mappingId ID1670150283
+target  ns:ns/{var0} ns:m175004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, E."c1" as var1 FROM  "src_m52004" as A, "src_m214004" as B, "src_m43004" as C, "src_m122004" as D, "src_m175004" as E WHERE , A."c0" = E."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-1979832151
+target  ns:ns/{var0} a ns:m64004 . 
+source  SELECT B."c0" as var0 FROM  "src_m204004" as A, "src_m135004" as B, "src_m93004" as C, "src_m64004" as D WHERE , B."c0" = D."c0" AND A."c0" = C."c0";
+
+mappingId ID-1375223529
+target  ns:ns/{var0} a ns:m116004 . 
+source  SELECT A."c1" as var0 FROM  "src_m13004" as A, "src_m14004" as B, "src_m224004" as C, "src_m127004" as D, "src_m116004" as E WHERE , A."c1" = B."c0" AND B."c0" = D."c0" AND D."c0" = E."c0" AND A."c0" = C."c0" AND B."c1" = D."c1";
+
+mappingId ID-495740782
+target  ns:ns/{var0} a ns:m204004 . 
+source  SELECT A."c0" as var0 FROM  "src_m280004" as A, "src_m252004" as B, "src_m85004" as C, "src_m204004" as D WHERE , A."c0" = D."c0" AND B."c1" = C."c0";
+
+mappingId ID-1907210337
+target  ns:ns/{var0} a ns:m22004 . 
+source  SELECT A."c1" as var0 FROM  "src_m66004" as A, "src_m15004" as B, "src_m59004" as C, "src_m141004" as D, "src_m22004" as E WHERE , A."c0" = B."c0" AND A."c1" = B."c1" AND B."c1" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID1287663839
+target  ns:ns/{var0} a ns:m113004 . 
+source  SELECT A."c0" as var0 FROM  "src_m96004" as A, "src_m24004" as B, "src_m155004" as C, "src_m233004" as D, "src_m272004" as E, "src_m176004" as F, "src_m113004" as G WHERE , B."c0" = C."c1" AND C."c1" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c0" = F."c1" AND F."c1" = G."c0";
+
+mappingId ID-1735834865
+target  ns:ns/{var0} a ns:m82004 . 
+source  SELECT A."c0" as var0 FROM  "src_m162004" as A, "src_m102004" as B, "src_m27004" as C, "src_m82004" as D WHERE , B."c1" = C."c0" AND A."c0" = D."c0";
+
+mappingId ID-1188121760
+target  ns:ns/{var0} ns:m268004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, B."c0" as var1 FROM  "src_m282004" as A, "src_m170004" as B, "src_m109004" as C, "src_m36004" as D, "src_m161004" as E, "src_m268004" as F WHERE , B."c0" = C."c0" AND C."c0" = D."c1" AND D."c1" = F."c1" AND A."c0" = D."c0" AND D."c0" = F."c0";
+
+mappingId ID-1085096145
+target  ns:ns/{var0} ns:m15004 ns:ns/{var1} . 
+source  SELECT C."c1" as var0, A."c0" as var1 FROM  "src_m41004" as A, "src_m161004" as B, "src_m83004" as C, "src_m113004" as D, "src_m164004" as E, "src_m17004" as F, "src_m15004" as G WHERE , C."c1" = E."c1" AND E."c1" = F."c0" AND F."c0" = G."c0" AND A."c0" = B."c0" AND B."c0" = D."c0" AND D."c0" = G."c1" AND C."c0" = E."c0";
+
+mappingId ID-1177543318
+target  ns:ns/{var0} a ns:m251004 . 
+source  SELECT D."c0" as var0 FROM  "src_m150004" as A, "src_m59004" as B, "src_m83004" as C, "src_m251004" as D WHERE , A."c0" = C."c1" AND B."c1" = C."c0";
+
+mappingId ID767554624
+target  ns:ns/{var0} a ns:m180004 . 
+source  SELECT F."c0" as var0 FROM  "src_m277004" as A, "src_m156004" as B, "src_m85004" as C, "src_m100004" as D, "src_m186004" as E, "src_m180004" as F WHERE , A."c0" = D."c0" AND B."c0" = C."c0" AND C."c0" = D."c1" AND D."c1" = E."c0";
+
+mappingId ID-26435389
+target  ns:ns/{var0} a ns:m76004 . 
+source  SELECT A."c1" as var0 FROM  "src_m242004" as A, "src_m154004" as B, "src_m61004" as C, "src_m5004" as D, "src_m76004" as E WHERE , A."c0" = C."c1" AND A."c1" = B."c0" AND B."c0" = E."c0" AND C."c0" = D."c1";
+
+mappingId ID-574897713
+target  ns:ns/{var0} a ns:m53004 . 
+source  SELECT A."c0" as var0 FROM  "src_m145004" as A, "src_m125004" as B, "src_m242004" as C, "src_m119004" as D, "src_m162004" as E, "src_m1004" as F, "src_m53004" as G WHERE , B."c1" = C."c0" AND A."c0" = C."c1" AND C."c1" = E."c0" AND E."c0" = G."c0" AND B."c0" = D."c0";
+
+mappingId ID2077151562
+target  ns:ns/{var0} a ns:m274004 . 
+source  SELECT B."c0" as var0 FROM  "src_m265004" as A, "src_m65004" as B, "src_m4004" as C, "src_m213004" as D, "src_m109004" as E, "src_m274004" as F WHERE , B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = F."c0";
+
+mappingId ID791872940
+target  ns:ns/{var0} ns:m239004 ns:ns/{var1} . 
+source  SELECT B."c1" as var0, C."c1" as var1 FROM  "src_m90004" as A, "src_m220004" as B, "src_m15004" as C, "src_m202004" as D, "src_m239004" as E WHERE , B."c1" = C."c0" AND C."c0" = E."c0" AND A."c0" = B."c0" AND B."c0" = D."c0" AND C."c1" = E."c1";
+
+mappingId ID-578945077
+target  ns:ns/{var0} ns:m107004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, B."c0" as var1 FROM  "src_m280004" as A, "src_m153004" as B, "src_m67004" as C, "src_m275004" as D, "src_m100004" as E, "src_m190004" as F, "src_m107004" as G WHERE , B."c0" = E."c0" AND E."c0" = G."c1" AND A."c0" = D."c0" AND D."c0" = G."c0" AND B."c1" = C."c0" AND C."c0" = E."c1" AND E."c1" = F."c0";
+
+mappingId ID1123156822
+target  ns:ns/{var0} ns:m38004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_m294004" as A, "src_m123004" as B, "src_m197004" as C, "src_m38004" as D WHERE , A."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = D."c1";
+
+mappingId ID-1707756382
+target  ns:ns/{var0} ns:m216004 ns:ns/{var1} . 
+source  SELECT B."c0" as var0, A."c0" as var1 FROM  "src_m18004" as A, "src_m273004" as B, "src_m256004" as C, "src_m74004" as D, "src_m216004" as E WHERE , A."c0" = B."c1" AND B."c1" = D."c1" AND D."c1" = E."c1" AND A."c1" = C."c0" AND B."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID491396458
+target  ns:ns/{var0} ns:m283004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_m208004" as A, "src_m83004" as B, "src_m146004" as C, "src_m283004" as D WHERE , A."c1" = B."c1" AND B."c1" = C."c0" AND C."c0" = D."c1" AND A."c0" = B."c0" AND B."c0" = D."c0";
+
+mappingId ID227369239
+target  ns:ns/{var0} a ns:m151004 . 
+source  SELECT A."c0" as var0 FROM  "src_m253004" as A, "src_m272004" as B, "src_m259004" as C, "src_m151004" as D WHERE , B."c0" = C."c1" AND A."c0" = D."c0";
+
+mappingId ID804590033
+target  ns:ns/{var0} a ns:m44004 . 
+source  SELECT A."c1" as var0 FROM  "src_m292004" as A, "src_m92004" as B, "src_m173004" as C, "src_m115004" as D, "src_m251004" as E, "src_m44004" as F WHERE , A."c0" = B."c0" AND A."c1" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID770292892
+target  ns:ns/{var0} a ns:m197004 . 
+source  SELECT A."c0" as var0 FROM  "src_m97004" as A, "src_m296004" as B, "src_m13004" as C, "src_m61004" as D, "src_m205004" as E, "src_m52004" as F, "src_m197004" as G WHERE , A."c0" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c0" AND E."c0" = G."c0" AND B."c1" = C."c0" AND C."c0" = D."c0" AND D."c0" = F."c0";
+
+mappingId ID825133757
+target  ns:ns/{var0} ns:m174004 ns:ns/{var1} . 
+source  SELECT B."c0" as var0, D."c1" as var1 FROM  "src_m22004" as A, "src_m225004" as B, "src_m44004" as C, "src_m174004" as D WHERE , A."c0" = C."c0" AND B."c0" = D."c0";
+
+mappingId ID-440636588
+target  ns:ns/{var0} a ns:m222004 . 
+source  SELECT A."c0" as var0 FROM  "src_m47004" as A, "src_m231004" as B, "src_m275004" as C, "src_m183004" as D, "src_m235004" as E, "src_m222004" as F WHERE , A."c0" = B."c1" AND B."c1" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-1371113030
+target  ns:ns/{var0} a ns:m21004 . 
+source  SELECT D."c0" as var0 FROM  "src_m27004" as A, "src_m57004" as B, "src_m10004" as C, "src_m60004" as D, "src_m215004" as E, "src_m121004" as F, "src_m21004" as G WHERE , A."c0" = C."c0" AND C."c0" = D."c1" AND D."c1" = F."c0" AND B."c0" = F."c1" AND D."c0" = E."c0" AND E."c0" = G."c0";
+
+mappingId ID1176276362
+target  ns:ns/{var0} a ns:m10004 . 
+source  SELECT A."c0" as var0 FROM  "src_m62004" as A, "src_m244004" as B, "src_m210004" as C, "src_m10004" as D WHERE , A."c0" = B."c0" AND B."c0" = D."c0" AND A."c1" = B."c1" AND B."c1" = C."c0";
+
+mappingId ID-964483230
+target  ns:ns/{var0} a ns:m162004 . 
+source  SELECT A."c0" as var0 FROM  "src_m8004" as A, "src_m140004" as B, "src_m64004" as C, "src_m162004" as D WHERE , B."c1" = C."c0" AND A."c0" = D."c0";
+
+mappingId ID642794498
+target  ns:ns/{var0} ns:m139004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_m242004" as A, "src_m215004" as B, "src_m80004" as C, "src_m139004" as D WHERE , A."c0" = C."c1" AND C."c1" = D."c0" AND A."c1" = D."c1" AND B."c0" = C."c0";
+
+mappingId ID-1432192662
+target  ns:ns/{var0} ns:m87004 ns:ns/{var1} . 
+source  SELECT B."c0" as var0, A."c0" as var1 FROM  "src_m116004" as A, "src_m93004" as B, "src_m125004" as C, "src_m217004" as D, "src_m87004" as E WHERE , A."c0" = C."c1" AND C."c1" = D."c0" AND D."c0" = E."c1" AND B."c0" = C."c0" AND C."c0" = E."c0";
+
+mappingId ID1092295501
+target  ns:ns/{var0} a ns:m156004 . 
+source  SELECT A."c0" as var0 FROM  "src_m70004" as A, "src_m237004" as B, "src_m242004" as C, "src_m265004" as D, "src_m131004" as E, "src_m156004" as F WHERE , B."c0" = C."c0" AND C."c0" = E."c1" AND A."c0" = B."c1" AND B."c1" = C."c1" AND C."c1" = F."c0" AND D."c0" = E."c0";
+
+mappingId ID1671985704
+target  ns:ns/{var0} a ns:m234004 . 
+source  SELECT B."c0" as var0 FROM  "src_m13004" as A, "src_m253004" as B, "src_m296004" as C, "src_m103004" as D, "src_m234004" as E WHERE , A."c0" = C."c1" AND C."c1" = D."c0" AND B."c0" = E."c0";
+
+mappingId ID-315277186
+target  ns:ns/{var0} ns:m124004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_m131004" as A, "src_m72004" as B, "src_m258004" as C, "src_m145004" as D, "src_m218004" as E, "src_m36004" as F, "src_m124004" as G WHERE , A."c1" = B."c0" AND B."c0" = E."c0" AND E."c0" = F."c1" AND F."c1" = G."c1" AND A."c0" = F."c0" AND F."c0" = G."c0" AND C."c0" = D."c0" AND D."c0" = E."c1";
+
+mappingId ID164362187
+target  ns:ns/{var0} a ns:m145004 . 
+source  SELECT C."c0" as var0 FROM  "src_m17004" as A, "src_m68004" as B, "src_m51004" as C, "src_m81004" as D, "src_m18004" as E, "src_m145004" as F WHERE , A."c0" = E."c0" AND C."c0" = D."c0" AND D."c0" = E."c1" AND E."c1" = F."c0";
+
+mappingId ID1824222202
+target  ns:ns/{var0} ns:m49004 ns:ns/{var1} . 
+source  SELECT C."c0" as var0, A."c0" as var1 FROM  "src_m108004" as A, "src_m132004" as B, "src_m121004" as C, "src_m147004" as D, "src_m15004" as E, "src_m83004" as F, "src_m49004" as G WHERE , C."c0" = E."c0" AND E."c0" = F."c1" AND F."c1" = G."c0" AND A."c0" = B."c0" AND B."c0" = C."c1" AND C."c1" = D."c0" AND D."c0" = E."c1" AND E."c1" = G."c1";
+
+mappingId ID1283976902
+target  ns:ns/{var0} a ns:m93004 . 
+source  SELECT B."c0" as var0 FROM  "src_m198004" as A, "src_m250004" as B, "src_m280004" as C, "src_m93004" as D WHERE , B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID438182716
+target  ns:ns/{var0} a ns:m279004 . 
+source  SELECT C."c0" as var0 FROM  "src_m255004" as A, "src_m268004" as B, "src_m12004" as C, "src_m279004" as D WHERE , A."c0" = B."c0" AND C."c0" = D."c0";
+
+mappingId ID-845893039
+target  ns:ns/{var0} ns:m118004 ns:ns/{var1} . 
+source  SELECT C."c0" as var0, A."c0" as var1 FROM  "src_m141004" as A, "src_m54004" as B, "src_m139004" as C, "src_m272004" as D, "src_m87004" as E, "src_m118004" as F WHERE , C."c0" = D."c0" AND D."c0" = E."c1" AND E."c1" = F."c0" AND A."c0" = C."c1" AND C."c1" = F."c1" AND B."c0" = E."c0";
+
+mappingId ID420569274
+target  ns:ns/{var0} a ns:m227004 . 
+source  SELECT C."c1" as var0 FROM  "src_m4004" as A, "src_m112004" as B, "src_m61004" as C, "src_m255004" as D, "src_m227004" as E WHERE , C."c1" = E."c0" AND A."c0" = B."c0" AND C."c0" = D."c0";
+
+mappingId ID-801491224
+target  ns:ns/{var0} ns:m240004 ns:ns/{var1} . 
+source  SELECT D."c0" as var0, A."c0" as var1 FROM  "src_m238004" as A, "src_m275004" as B, "src_m149004" as C, "src_m240004" as D WHERE , A."c0" = C."c0" AND C."c0" = D."c1";
+
+mappingId ID-1341953709
+target  ns:ns/{var0} ns:m134004 ns:ns/{var1} . 
+source  SELECT C."c1" as var0, A."c0" as var1 FROM  "src_m157004" as A, "src_m256004" as B, "src_m9004" as C, "src_m248004" as D, "src_m4004" as E, "src_m134004" as F WHERE , C."c1" = F."c0" AND A."c0" = B."c0" AND B."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c1";
+
+mappingId ID-446310870
+target  ns:ns/{var0} ns:m59004 ns:ns/{var1} . 
+source  SELECT E."c0" as var0, B."c0" as var1 FROM  "src_m291004" as A, "src_m229004" as B, "src_m38004" as C, "src_m170004" as D, "src_m59004" as E WHERE , B."c1" = C."c0" AND C."c0" = D."c0" AND A."c0" = C."c1" AND B."c0" = E."c1";
+
+mappingId ID1881975025
+target  ns:ns/{var0} a ns:m163004 . 
+source  SELECT A."c0" as var0 FROM  "src_m121004" as A, "src_m172004" as B, "src_m240004" as C, "src_m290004" as D, "src_m257004" as E, "src_m163004" as F WHERE , A."c0" = C."c0" AND C."c0" = D."c1" AND D."c1" = F."c0" AND A."c1" = B."c0" AND B."c0" = C."c1" AND C."c1" = E."c0";
+
+mappingId ID713697419
+target  ns:ns/{var0} ns:m295004 ns:ns/{var1} . 
+source  SELECT B."c1" as var0, A."c0" as var1 FROM  "src_m43004" as A, "src_m13004" as B, "src_m238004" as C, "src_m295004" as D WHERE , B."c1" = D."c0" AND A."c0" = C."c0" AND C."c0" = D."c1";
+
+mappingId ID990604350
+target  ns:ns/{var0} a ns:m157004 . 
+source  SELECT A."c0" as var0 FROM  "src_m186004" as A, "src_m119004" as B, "src_m69004" as C, "src_m99004" as D, "src_m179004" as E, "src_m2004" as F, "src_m157004" as G WHERE , C."c0" = E."c1" AND A."c0" = D."c0" AND D."c0" = G."c0" AND B."c0" = E."c0" AND E."c0" = F."c1";
+
+mappingId ID958167219
+target  ns:ns/{var0} a ns:m289004 . 
+source  SELECT A."c1" as var0 FROM  "src_m128004" as A, "src_m282004" as B, "src_m48004" as C, "src_m75004" as D, "src_m18004" as E, "src_m289004" as F WHERE , A."c0" = D."c1" AND D."c1" = E."c0" AND A."c1" = E."c1" AND E."c1" = F."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID-853523551
+target  ns:ns/{var0} a ns:m88004 . 
+source  SELECT B."c0" as var0 FROM  "src_m20004" as A, "src_m65004" as B, "src_m169004" as C, "src_m88004" as D WHERE , B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID1352052106
+target  ns:ns/{var0} ns:m140004 ns:ns/{var1} . 
+source  SELECT C."c0" as var0, A."c0" as var1 FROM  "src_m39004" as A, "src_m69004" as B, "src_m179004" as C, "src_m116004" as D, "src_m140004" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c1" AND C."c1" = D."c0" AND D."c0" = E."c1" AND C."c0" = E."c0";
+
+mappingId ID-1557373984
+target  ns:ns/{var0} a ns:m32004 . 
+source  SELECT B."c1" as var0 FROM  "src_m285004" as A, "src_m83004" as B, "src_m105004" as C, "src_m2004" as D, "src_m49004" as E, "src_m161004" as F, "src_m32004" as G WHERE , B."c1" = C."c0" AND C."c0" = E."c0" AND E."c0" = G."c0" AND A."c0" = B."c0" AND B."c0" = D."c1" AND C."c1" = E."c1" AND E."c1" = F."c0";
+
+mappingId ID-766467282
+target  ns:ns/{var0} ns:m101004 ns:ns/{var1} . 
+source  SELECT D."c0" as var0, A."c0" as var1 FROM  "src_m200004" as A, "src_m82004" as B, "src_m212004" as C, "src_m101004" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c1";
+
+mappingId ID95826704
+target  ns:ns/{var0} a ns:m233004 . 
+source  SELECT C."c1" as var0 FROM  "src_m12004" as A, "src_m257004" as B, "src_m167004" as C, "src_m292004" as D, "src_m112004" as E, "src_m160004" as F, "src_m233004" as G WHERE , C."c1" = D."c0" AND D."c0" = F."c0" AND F."c0" = G."c0" AND A."c0" = B."c0" AND B."c0" = D."c1" AND D."c1" = E."c0" AND E."c0" = F."c1";
+
+mappingId ID-1729390473
+target  ns:ns/{var0} a ns:m71004 . 
+source  SELECT C."c0" as var0 FROM  "src_m195004" as A, "src_m137004" as B, "src_m148004" as C, "src_m72004" as D, "src_m162004" as E, "src_m71004" as F WHERE , C."c0" = D."c0" AND D."c0" = F."c0" AND B."c0" = C."c1" AND C."c1" = E."c0";
+
+mappingId ID426071240
+target  ns:ns/{var0} ns:m5004 ns:ns/{var1} . 
+source  SELECT G."c0" as var0, B."c0" as var1 FROM  "src_m172004" as A, "src_m175004" as B, "src_m39004" as C, "src_m153004" as D, "src_m228004" as E, "src_m156004" as F, "src_m5004" as G WHERE , B."c1" = C."c0" AND C."c0" = D."c0" AND A."c0" = D."c1" AND D."c1" = E."c0" AND E."c0" = F."c0" AND B."c0" = G."c1";
+
+mappingId ID-1504385614
+target  ns:ns/{var0} ns:m129004 ns:ns/{var1} . 
+source  SELECT B."c0" as var0, A."c0" as var1 FROM  "src_m84004" as A, "src_m290004" as B, "src_m80004" as C, "src_m72004" as D, "src_m277004" as E, "src_m129004" as F WHERE , A."c0" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c1" AND B."c0" = C."c0" AND C."c0" = F."c0";
+
+mappingId ID456672937
+target  ns:ns/{var0} a ns:m94004 . 
+source  SELECT A."c0" as var0 FROM  "src_m41004" as A, "src_m125004" as B, "src_m32004" as C, "src_m94004" as D WHERE , B."c1" = C."c0" AND A."c0" = D."c0";
+
+mappingId ID1016230574
+target  ns:ns/{var0} a ns:m65004 . 
+source  SELECT A."c0" as var0 FROM  "src_m132004" as A, "src_m129004" as B, "src_m133004" as C, "src_m182004" as D, "src_m104004" as E, "src_m65004" as F WHERE , B."c1" = C."c0" AND A."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID2004620982
+target  ns:ns/{var0} a ns:m262004 . 
+source  SELECT B."c1" as var0 FROM  "src_m297004" as A, "src_m294004" as B, "src_m161004" as C, "src_m289004" as D, "src_m100004" as E, "src_m170004" as F, "src_m262004" as G WHERE , B."c0" = E."c0" AND E."c0" = F."c0" AND B."c1" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c1" AND E."c1" = G."c0";
+
+mappingId ID-2052610718
+target  ns:ns/{var0} ns:m205004 ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_m73004" as A, "src_m15004" as B, "src_m197004" as C, "src_m205004" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = B."c1" AND B."c1" = D."c1";
+
+mappingId ID702619423
+target  ns:ns/{var0} a ns:m228004 . 
+source  SELECT A."c0" as var0 FROM  "src_m253004" as A, "src_m3004" as B, "src_m265004" as C, "src_m153004" as D, "src_m56004" as E, "src_m91004" as F, "src_m228004" as G WHERE , D."c0" = F."c1" AND A."c0" = D."c1" AND D."c1" = G."c0" AND C."c0" = E."c0" AND E."c0" = F."c0";
+
+mappingId ID-585525337
+target  ns:ns/{var0} a ns:m185004 . 
+source  SELECT C."c0" as var0 FROM  "src_m3004" as A, "src_m42004" as B, "src_m160004" as C, "src_m185004" as D WHERE , C."c0" = D."c0";
+
+mappingId ID-1123999906
+target  ns:ns/{var0} a ns:m112004 . 
+source  SELECT B."c0" as var0 FROM  "src_m60004" as A, "src_m154004" as B, "src_m202004" as C, "src_m12004" as D, "src_m112004" as E WHERE , A."c0" = C."c0" AND B."c0" = D."c0" AND D."c0" = E."c0";
+
+mappingId ID-1418815007
+target  ns:ns/{var0} ns:m267004 ns:ns/{var1} . 
+source  SELECT C."c1" as var0, E."c1" as var1 FROM  "src_m103004" as A, "src_m5004" as B, "src_m229004" as C, "src_m120004" as D, "src_m267004" as E WHERE , C."c1" = D."c0" AND D."c0" = E."c0" AND A."c0" = B."c1" AND B."c1" = C."c0";
+
+mappingId ID-1307127592
+target  ns:ns/{var0} ns:m60004 ns:ns/{var1} . 
+source  SELECT E."c0" as var0, B."c0" as var1 FROM  "src_m112004" as A, "src_m227004" as B, "src_m233004" as C, "src_m228004" as D, "src_m60004" as E WHERE , B."c0" = C."c0" AND C."c0" = E."c1" AND A."c0" = D."c0";
+
+mappingId ID-861851252
+target  ns:ns/{var0} a ns:m191004 . 
+source  SELECT A."c1" as var0 FROM  "src_m15004" as A, "src_m89004" as B, "src_m150004" as C, "src_m14004" as D, "src_m191004" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = D."c1" AND D."c1" = E."c0";
+
+mappingId ID-1741410965
+target  ns:ns/{var0} ns:m179004 ns:ns/{var1} . 
+source  SELECT D."c0" as var0, B."c0" as var1 FROM  "src_m173004" as A, "src_m205004" as B, "src_m241004" as C, "src_m60004" as D, "src_m248004" as E, "src_m179004" as F WHERE , B."c0" = C."c0" AND C."c0" = D."c1" AND D."c1" = F."c1" AND A."c0" = B."c1" AND B."c1" = C."c1" AND C."c1" = E."c0" AND D."c0" = F."c0";
+
+mappingId ID-1809306107
+target  ns:ns/{var0} a ns:m37004 . 
+source  SELECT A."c0" as var0 FROM  "src_m7004" as A, "src_m90004" as B, "src_m145004" as C, "src_m70004" as D, "src_m280004" as E, "src_m43004" as F, "src_m37004" as G WHERE , A."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = F."c0" AND F."c0" = G."c0" AND B."c0" = E."c0";
+
+mappingId ID-1664956280
+target  ns:ns/{var0} ns:m290004 ns:ns/{var1} . 
+source  SELECT D."c0" as var0, B."c0" as var1 FROM  "src_m212004" as A, "src_m84004" as B, "src_m161004" as C, "src_m74004" as D, "src_m290004" as E WHERE , B."c0" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c1" AND B."c1" = C."c0" AND D."c0" = E."c0";
+
+mappingId ID-572331253
+target  ns:ns/{var0} a ns:m54004 . 
+source  SELECT C."c0" as var0 FROM  "src_m161004" as A, "src_m182004" as B, "src_m220004" as C, "src_m54004" as D WHERE , A."c0" = B."c0" AND C."c0" = D."c0";
+
+mappingId ID-1434488890
+target  ns:ns/{var0} ns:m273004 ns:ns/{var1} . 
+source  SELECT B."c0" as var0, D."c1" as var1 FROM  "src_m37004" as A, "src_m271004" as B, "src_m54004" as C, "src_m273004" as D WHERE , B."c0" = C."c0" AND C."c0" = D."c0";
+
+mappingId ID1564850122
+target  ns:ns/{var0} a ns:m256004 . 
+source  SELECT B."c0" as var0 FROM  "src_m103004" as A, "src_m137004" as B, "src_m151004" as C, "src_m14004" as D, "src_m256004" as E WHERE , B."c0" = C."c0" AND C."c0" = D."c1" AND D."c1" = E."c0";
+
+mappingId ID-1422862821
+target  ns:ns/{var0} ns:m284004 ns:ns/{var1} . 
+source  SELECT A."c1" as var0, B."c0" as var1 FROM  "src_m152004" as A, "src_m22004" as B, "src_m60004" as C, "src_m240004" as D, "src_m199004" as E, "src_m54004" as F, "src_m284004" as G WHERE , A."c1" = C."c1" AND C."c1" = D."c0" AND D."c0" = E."c1" AND E."c1" = G."c0" AND A."c0" = C."c0" AND C."c0" = E."c0" AND E."c0" = F."c0" AND B."c0" = D."c1" AND D."c1" = G."c1";
+
+mappingId ID740452972
+target  ns:ns/{var0} a ns:m168004 . 
+source  SELECT F."c0" as var0 FROM  "src_m227004" as A, "src_m154004" as B, "src_m218004" as C, "src_m197004" as D, "src_m128004" as E, "src_m168004" as F WHERE , A."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND B."c0" = C."c1" AND C."c1" = E."c1";
+
+mappingId ID-2032147177
+target  ns:ns/{var0} a ns:m99004 . 
+source  SELECT B."c0" as var0 FROM  "src_m164004" as A, "src_m191004" as B, "src_m56004" as C, "src_m99004" as D WHERE , A."c0" = C."c0" AND B."c0" = D."c0";
+
+mappingId ID1662827400
+target  ns:ns/{var0} a ns:m200004 . 
+source  SELECT A."c0" as var0 FROM  "src_m65004" as A, "src_m6004" as B, "src_m38004" as C, "src_m85004" as D, "src_m233004" as E, "src_m200004" as F WHERE , C."c0" = E."c0" AND A."c0" = C."c1" AND C."c1" = D."c0" AND D."c0" = F."c0";
+
+mappingId ID-2061925929
+target  ns:ns/{var0} a ns:m43004 . 
+source  SELECT B."c1" as var0 FROM  "src_m255004" as A, "src_m267004" as B, "src_m67004" as C, "src_m275004" as D, "src_m43004" as E WHERE , A."c0" = D."c0" AND B."c1" = C."c0" AND C."c0" = E."c0";
+
+mappingId ID323086821
+target  ns:ns/{var0} ns:m195004 ns:ns/{var1} . 
+source  SELECT D."c0" as var0, B."c0" as var1 FROM  "src_m65004" as A, "src_m63004" as B, "src_m169004" as C, "src_m195004" as D WHERE , A."c0" = C."c0" AND B."c0" = D."c1";
 
 ]]

@@ -2,7 +2,7 @@
 
 # query.sh runs a test on one query of a scenario
 NUM_TESTS=1
-SCENARIOS=("scenarios/StockExchange")
+SCENARIOS=("scenarios/Deep100")
 SIZES=("medium")
 
 for BASE_DIR in "${SCENARIOS[@]}"; do

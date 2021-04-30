@@ -1,0 +1,378 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@source srctouchvh21nl0ce0[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_touchvh21nl0ce0.csv") .
+@source srcworkvnm30nl0ce2[4] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_workvnm30nl0ce2.csv") .
+@source srcchurchvnm10nl0ce0[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_churchvnm10nl0ce0.csv") .
+@source srcseaad21nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_seaad21nl0ce0.csv") .
+@source srcawakevnm7nl0ce0[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_awakevnm7nl0ce0.csv") .
+@source srcdievnm37nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_dievnm37nl0ce1.csv") .
+@source srcorangevh41nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_orangevh41nl0ce1.csv") .
+@source srccarryvnm57nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_carryvnm57nl0ce2.csv") .
+@source srcbandvi36nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_bandvi36nl0ce1.csv") .
+@source srcreportvnm38nl0ce2[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_reportvnm38nl0ce2.csv") .
+@source srcattorneyvh34nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_attorneyvh34nl0ce1.csv") .
+@source srcpainvi5nl0ce0[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_painvi5nl0ce0.csv") .
+@source srclearnvh56nl0ce0[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_learnvh56nl0ce0.csv") .
+@source srcagreementvh35nl0ce1[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_agreementvh35nl0ce1.csv") .
+@source srcpeacevi40nl0ce0[4] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_peacevi40nl0ce0.csv") .
+@source srcfertilevnm57nl0ce1[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_fertilevnm57nl0ce1.csv") .
+@source srcamountvnm18nl0ce1[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_amountvnm18nl0ce1.csv") .
+@source srcdelicatevi26nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_delicatevi26nl0ce1.csv") .
+@source srcstraightvi5nl0ce1[5] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_straightvi5nl0ce1.csv") .
+@source srcseparatevi41nl0ce1[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_separatevi41nl0ce1.csv") .
+@source srcrelationvnm53nl0ce0[4] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_relationvnm53nl0ce0.csv") .
+@source srcplayvnm11nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_playvnm11nl0ce2.csv") .
+@source srcconfirmvh21nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_confirmvh21nl0ce1.csv") .
+@source srcshoevi17nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_shoevi17nl0ce1.csv") .
+@source srcprovevi3nl0ce1[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_provevi3nl0ce1.csv") .
+@source srcdelivervi28nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_delivervi28nl0ce1.csv") .
+@source srcregretvi54nl0ce1[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_regretvi54nl0ce1.csv") .
+@source srccollectionvnm2nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_collectionvnm2nl0ce1.csv") .
+@source srcfallvnm60nl0ce0[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_fallvnm60nl0ce0.csv") .
+@source srclevelvh18nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_levelvh18nl0ce0.csv") .
+@source srcdoorvh3nl0ce0[4] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_doorvh3nl0ce0.csv") .
+@source srcanswervh59nl0ce0[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_answervh59nl0ce0.csv") .
+@source srctwistvh64nl0ce1[4] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_twistvh64nl0ce1.csv") .
+@source srcnationvi27nl0ce0[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_nationvi27nl0ce0.csv") .
+@source srcauthorityvnm24nl0ce2[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_authorityvnm24nl0ce2.csv") .
+@source srcloosevnm13nl0ce2[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_loosevnm13nl0ce2.csv") .
+@source srcshadevh45nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_shadevh45nl0ce1.csv") .
+@source srccolorvnm30nl0ce1[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_colorvnm30nl0ce1.csv") .
+@source srcofficevnm46nl0ce2[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_officevnm46nl0ce2.csv") .
+@source srcbloodvnm54nl0ce1[5] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_bloodvnm54nl0ce1.csv") .
+@source srchammervnm7nl0ce2[4] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_hammervnm7nl0ce2.csv") .
+@source srcplacevh40nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_placevh40nl0ce1.csv") .
+@source srcexpressvnm26nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_expressvnm26nl0ce2.csv") .
+@source srcreturnvnm28nl0ce2[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_returnvnm28nl0ce2.csv") .
+@source srcshutvi37nl0ce0[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_shutvi37nl0ce0.csv") .
+@source srcglovevh36nl0ce0[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_glovevh36nl0ce0.csv") .
+@source srcskinvnm14nl0ce0[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_skinvnm14nl0ce0.csv") .
+@source srcbluevnm22nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_bluevnm22nl0ce2.csv") .
+@source srcachievevh48nl0ce1[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_achievevh48nl0ce1.csv") .
+@source srcweathervnm31nl0ce2[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_weathervnm31nl0ce2.csv") .
+@source srcendvnm21nl0ce1[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Ontology-256/data/LAV/large/src_endvnm21nl0ce1.csv") .
+separatevi41nl0ce1(?X0,!X1),bluevh1nl0ce0(!X0b1dc3a8e5a3a4d2bb022e454ed05443f,!X1),kindvi3nl0ce0(?X093c9c9793cb246c8b1ca879470e70dd0,!X1),enginevnm12nl0ce2(?X0,?X1eed01fe2de6e4e9b97185e8e17ef5927),affordvh16nl0ce0(?X0,!X1),developvi36nl0ce0(!X0e43f3790797c4395a9681b5c6ad4418e,!X157c02cea1331476f8e5256571340442c),requirevh10nl0ce1(?X0,!X122ea82cf101a4362a3bd0474a3c6d14b),movevnm37nl0ce0(?X0,!X1),differentvi1nl0ce0(?X0,!X1),havevh27nl0ce0(!X0bb4237c9dbda4d2b882b1609fcb64460,!X1876b72c01b874e19b6e46b3cda0a34f1) :- srcseparatevi41nl0ce1(?X0,?X093c9c9793cb246c8b1ca879470e70dd0,?X1eed01fe2de6e4e9b97185e8e17ef5927) .
+shadevh45nl0ce1(!X02b2692073af24ea9a4233828abe1e6f5,!X1),involvevi4nl0ce0(!X0,?X1863d6b1185bc4003becded17429edc6c),fallvh47nl0ce1(!X0,!X1),fictionvh9nl0ce1(!X00590b78342a948b0a09aff2ed155dc38,!X1c1cff3f3391e45f69ea57bd98d6224f3),shakevnm23nl0ce1(!X0,!X1d2690a4992764638aa62aecff351ce29),delicatevi38nl0ce1(!X0,?X19cf7f6fc19d84bf4874acb7bbf223d7e),yellowvnm33nl0ce2(!X0,!X1),involvevnm21nl0ce2(!X052448d153cfa480f9e2f256ab50a6b64,!X1),snakevi8nl0ce1(!X0,!X1) :- srcshadevh45nl0ce1(?X1863d6b1185bc4003becded17429edc6c,?X19cf7f6fc19d84bf4874acb7bbf223d7e) .
+bandvi36nl0ce1(!X05ba2aef24e4d47a5a6bcb080907babf7,?X1788293e7e78e485e902eea0d574eb155),cushionvnm62nl0ce0(!X0ee10a3014d0d4eb8a57b997e963f7070,!X1ef7a091cde9d48038e34d922a7f4481a),examinevnm20nl0ce2(!X0,?X1),mouthvnm44nl0ce0(!X093f45f9473ef476b89e8f735bae83255,?X1),animalvh6nl0ce0(!X0b43d4ca61fdd45868117c69759b707e9,?X1) :- srcbandvi36nl0ce1(?X1,?X1788293e7e78e485e902eea0d574eb155) .
+seaad21nl0ce0(!X0666bcbd62e614e1f9c99608cb7464c5a,!X134ff9526b2bd44b89bfa53081adfaca6),clothvh46nl0ce0(!X0c6bf64fe9eed4f2ba4bb977833203b62,?X116cb5af78fc9427e8d11f082f64d1d99),roomvnm9nl0ce2(!X072d4a082ce7d4c35b19de8c6fee7af90,!X1),usevnm64nl0ce0(!X07cd0e55baf5a407baf61d221cee40227,?X17dda99a39e754bbcae30601f6d4d9be6),handlevnm2nl0ce2(!X0,!X1),helpvi35nl0ce1(!X0,!X1),parallelvnm2nl0ce0(!X0,!X1) :- srcseaad21nl0ce0(?X116cb5af78fc9427e8d11f082f64d1d99,?X17dda99a39e754bbcae30601f6d4d9be6) .
+answervh59nl0ce0(!X0,!X1),cookvi21nl0ce1(!X1,?X26a9a60a19e2e4ab39d82f257d3d59702),risevnm28nl0ce0(!X0ada7646b703f4716bfa31ecbfc6fcba9,!X17416d6aba35c4751890e8f68f2fc34d3),versevh33nl0ce0(!X0c3cbbfb04223416ebe6a2cfacfb847d5,!X1),firstvnm11nl0ce1(!X0,!X1),peacevi34nl0ce1(!X0,!X1) :- srcanswervh59nl0ce0(?X26a9a60a19e2e4ab39d82f257d3d59702) .
+delivervi28nl0ce1(?X0,!X1),mentionvi4nl0ce1(?X0db788a237a10447d93d8519d5bb08df5,!X1),knowvh15nl0ce1(!X0bf655d3ec375430c9fb6c7834d8fc5d3,!X156a7c3c1027640b4a1ca6785f5d48f3a),approvalvi37nl0ce1(!X01bc073d5a7cb4959921af65b2f30760d,!X1d338cb1690d64bb18386cf691936a434),recordvnm23nl0ce2(?X0,!X16b3fc3044f8141a2bc5ced292b296588),simplevnm23nl0ce0(?X0,!X1),advertisementvi14nl0ce0(!X07f75fadbe8a94ffcad7e3e265e7180f0,!X1) :- srcdelivervi28nl0ce1(?X0,?X0db788a237a10447d93d8519d5bb08df5) .
+amountvnm18nl0ce1(!X0c023548c9eec486aaea758c29b1534fa,!X1),minevh32nl0ce1(!X2,!X1f025b50bb0c24c4087f998f93f8845f3),chemicalvh38nl0ce1(!X0,?X1f4ec687908f9431ca2929b46abb2c90c),believevnm14nl0ce1(!X0,!X163002351936c4b10b11cb21f9ad37653),containvnm38nl0ce0(?X065d8c7623e134d428b9ba51a6e36819d,!X1778151899ad74569bdf78a77b653a0d2),chalkvi19nl0ce0(!X098432149fcda4fe58ba486c4615b4ad0,?X153831811616a4a66a319fe03763eec9d) :- srcamountvnm18nl0ce1(?X065d8c7623e134d428b9ba51a6e36819d,?X153831811616a4a66a319fe03763eec9d,?X1f4ec687908f9431ca2929b46abb2c90c) .
+colorvnm30nl0ce1(?X04344bf3715aa47d99029677fd54177a8,!X1eec7fa8db2364624a4413a6831df71f2),wayvnm39nl0ce1(!X0,!X163342900db6741c285dd61e3b853d5a6),waitvnm13nl0ce1(!X0,!X1),offervnm57nl0ce0(!X0,!X1e242d7e6f31041669991f636d58fd4f6),restvnm1nl0ce0(!X0ba9f18aebe354621b0cd4832863cff5e,!X17d51dc1b365545f697cd08e8d71a623f),happenvh45nl0ce0(?X0c525151f82b74abd8197e63387b95546,?X1ba4e361c96ae48a89bc286bceabf5865),errorvi56nl0ce0(!X0,!X1) :- srccolorvnm30nl0ce1(?X04344bf3715aa47d99029677fd54177a8,?X0c525151f82b74abd8197e63387b95546,?X1ba4e361c96ae48a89bc286bceabf5865) .
+reportvnm38nl0ce2(!X0,!X15e198f3d80d64adcb8d4a46a579957dc),industryvi52nl0ce1(!X0,!X178c68b253c424c1aab15b48c62f0eadc),longvi10nl0ce1(?X047884445d6ac4d16b44667b6389d3a78,!X1),touchvi41nl0ce0(!X0,!X1),probablevh5nl0ce1(?X05e713c611b8a418f9327de7665b1a4a6,!X1),digestionvnm10nl0ce2(!X0f582ddbf63054847835ed923c7b987a3,!X1),holdvnm50nl0ce1(!X0,!X1),consciousvnm13nl0ce0(!X027250df3974c44739547a202f832a4f7,?X1affc148a0e414a368e14ca4a0748fb13),beautifulvh11nl0ce0(!X0,!X190f4e9ba1a9143dc91dc731ad4dfad4a),protestad56nl0ce0(!X0c57e516c3066442799074a77264b9623,!X1) :- srcreportvnm38nl0ce2(?X047884445d6ac4d16b44667b6389d3a78,?X05e713c611b8a418f9327de7665b1a4a6,?X1affc148a0e414a368e14ca4a0748fb13) .
+authorityvnm24nl0ce2(!X0,!X15da1c540f9bb432681f71a44748be75a),foundvh44nl0ce1(?X078ac738d85eb421fa7399d070af6d578,!X1276dbc08941349db85ad3b051535c4e7),ovenvi6nl0ce0(!X0,!X1ee6612d58b4b47b8963ef3a53e2a74fb),raisevnm17nl0ce1(!X000b1c68ff332497bba79fe18604c99c7,!X13301795986fa4d2d95537a89f0dd9e76),bedvi22nl0ce0(!X0,?X125e48ba218f84d2d934378b3c0ae9c10),swimvi54nl0ce0(!X0,?X16557637096bd4971b78a2f5686713817),musicvnm53nl0ce2(!X0,!X1),actvh17nl0ce1(!X0,!X1),angryvnm39nl0ce2(!X0,!X10e56f6ee57ea4ea2bd180cb331536e7f) :- srcauthorityvnm24nl0ce2(?X078ac738d85eb421fa7399d070af6d578,?X125e48ba218f84d2d934378b3c0ae9c10,?X16557637096bd4971b78a2f5686713817) .
+doorvh3nl0ce0(!X04d6585d41ced4df58e5f0857c477b7b8,!X1),jumpvh36nl0ce1(?X0e89d2941be944674b6ced157b718b282,!X18f183439968549acabaf6e61f361f6bd),clearvh48nl0ce0(!X0d1bd7d57d25d430d8d63d389a301e6dd,?X11c3cddd5d6e94cd2b8c93c6cf5ca9f4d),platevi30nl0ce0(?X0af2ccb4f2abd47a5a6809229d3016282,?X14a53200dfa114e53b28eedce03675eca),tightvi49nl0ce1(!X0048d21d9610f44329d36455d3519f522,!X1),concernvh23nl0ce0(!X08bbc63d682764d4a8f98e4557215de04,!X13f0740938cd948c093e50f714b59f74d),flyvh39nl0ce0(!X0828f9166ba0b45bb8debe0e37e27a31e,!X10999908ed32b47a18f03245c5d14e15f),factvi48nl0ce0(!X09111edf99a284f73bd8cd77bce20488d,!X1) :- srcdoorvh3nl0ce0(?X0af2ccb4f2abd47a5a6809229d3016282,?X0e89d2941be944674b6ced157b718b282,?X11c3cddd5d6e94cd2b8c93c6cf5ca9f4d,?X14a53200dfa114e53b28eedce03675eca) .
+fertilevnm57nl0ce1(!X0,!X1fe625291358a473ba2b8acebad9376f6),ovenvnm18nl0ce0(!X0,!X188d54c2d33fd4608a1ecdca4cd681651),linevh53nl0ce0(?X0fa1bbeb0f3a24902aa1e87384439fd8b,?X1),accountvh9nl0ce0(!X0,!X14240c47a13034f3ca6741e3b9821ca14),whistlead49nl0ce0(!X0,?X190932ae8045f4587a5dc953dcb13acd6),watchvh11nl0ce1(!X0fe25b1f417434ab28651ebbd29934990,?X1),babyvnm17nl0ce2(!X0,?X1),encouragevi64nl0ce1(!X0f66bba0813a7448b9f3c07fc155dced0,!X116ab26ed5f0e4507b2996e0f01f2c6cb) :- srcfertilevnm57nl0ce1(?X0fa1bbeb0f3a24902aa1e87384439fd8b,?X1,?X190932ae8045f4587a5dc953dcb13acd6) .
+straightvi5nl0ce1(?X06fa54ed256d747cdacbb9210f560e1b5,?X1f1d3700671394da3a033bfe14b9c5d8c),imaginevi28nl0ce0(!X0,!X1c6218dd1869b401a81857e937cbb7895),facevh28nl0ce0(!X08a0d91a4e26241cea807a412b046307e,!X1),complainvi8nl0ce0(!X0c285263b5e8e42c99f2ac3f504c3511f,!X1f16bf4694a7c4b50ad1d9d7fd5a50487),avoidvnm18nl0ce2(!X0f43d14a6fe3740a9ac8317ec3d223959,!X1),wavevh20nl0ce1(!X0,?X143060b521185462fa5f418bd3425c2d2),systemvh24nl0ce0(!X077ccc651f99049bc9ac6b4adb757e830,!X1967176235dac4f5d98a3b9b19cc01b34),replyvh30nl0ce1(!X0bc9a27f7aa624828afb18fa7abd5a3b8,!X1),inventionvh26nl0ce0(!X0d87209e0dcaf4b5893e2f6d0057df010,?X19451d1b9e83f45b6adc731dccae314d0),ringvnm40nl0ce0(?X0b5456da5ee9b4534bf92a6ede32cb2bc,!X17ae3912073d345afbffc4ccba75c8620) :- srcstraightvi5nl0ce1(?X06fa54ed256d747cdacbb9210f560e1b5,?X0b5456da5ee9b4534bf92a6ede32cb2bc,?X143060b521185462fa5f418bd3425c2d2,?X19451d1b9e83f45b6adc731dccae314d0,?X1f1d3700671394da3a033bfe14b9c5d8c) .
+touchvh21nl0ce0(!X07fd815755fb747eb9cb3b15275efa9c7,!X1768f73c472e34eb89d7a84958c47a42f),couldvnm62nl0ce2(!X0,!X1),mindvh22nl0ce1(!X0649b9d40e9e340abad854174fc373649,!X1),liftvi30nl0ce1(?X0444ecf7391b24d89b531542d082e230c,!X1),concernvnm63nl0ce1(!X007395527ecce4b8fba5ae9a62a350213,?X1686c9719bb514d35a9cee6d1b61a5e1a),comevi10nl0ce0(!X0,!X1021e827f2374433da64da6cf8f2bf929),liquidvnm58nl0ce0(!X0,!X1),stickvh61nl0ce1(!X0,!X1e6a9729ac56a4b1f9a14287dffd9b93a),stonevh7nl0ce0(?X051e161af9d974f0285f4103475b0d849,!X19c2ef0f97fde4b8e8f39c45c21ce2919),givevi6nl0ce1(!X04081c234b4df4034989d54831f8b18b6,!X1) :- srctouchvh21nl0ce0(?X0444ecf7391b24d89b531542d082e230c,?X051e161af9d974f0285f4103475b0d849,?X1686c9719bb514d35a9cee6d1b61a5e1a) .
+endvnm21nl0ce1(?X0,!X1),openvh33nl0ce1(?X0,!X18e9dce24920642b9bcb04fae2250932a),lightvi52nl0ce0(?X0,!X1),discovervi29nl0ce0(?X0,!X1),languagevh49nl0ce0(?X0e2c193cd282947fd96e78bfef4908399,!X1),femalevi60nl0ce0(?X0,!X1e405cf10c60f45508957d31aaf5563e6),mattervnm19nl0ce2(?X0,!X1d265ad60beb747528cd7ff4afff962f5),degreevi9nl0ce0(?X0,!X1),adjustmentvnm14nl0ce2(!X0c8726414d4f242c5951f78b5517eab4c,!X1),arguevnm6nl0ce0(?X0,!X127ec103b5558468996dae4dd4363487a) :- srcendvnm21nl0ce1(?X0,?X0e2c193cd282947fd96e78bfef4908399) .
+delicatevi26nl0ce1(!X0,!X19cac8b1aba454c9ca3a97fc051d78bec),gardenvnm45nl0ce0(?X038498bdefcef4ceb97bb3c4b63f51247,!X1475375b756e549be804dde044a31551b),greyvnm64nl0ce1(!X0e70bed062ffc47298d66aeed242b4976,!X1),authorityvnm26nl0ce1(!X0,?X11c95a07e675940f5b3af0bcff1bf6c4a),bottlevnm37nl0ce2(!X0,!X1),summervnm6nl0ce2(!X0517fdf5dfd604df39d3e940db9ad5d79,!X1) :- srcdelicatevi26nl0ce1(?X038498bdefcef4ceb97bb3c4b63f51247,?X11c95a07e675940f5b3af0bcff1bf6c4a) .
+painvi5nl0ce0(?X0,!X1),presentvnm15nl0ce0(!X0d35bc38185d043c59423abd09e19e475,!X145bd5904129145fe80be1b19f324a51a),expansionvnm1nl0ce2(?X0,!X12032f72f923c41779b1eb98f98c1e78c),existvnm42nl0ce1(?X0,!X1),solidvh47nl0ce0(?X0b652c59bb84946bb9f732402fb16452b,!X1),papervh22nl0ce0(!X0856065b0a4e043f48bf467a2dfec9ba8,?X187bbfb8c47ac41c0a9cda80172a28ba3),countvnm31nl0ce1(!X0f29d13e6d9a048bea7d21b1dcdbb7ab8,!X119bb283292084142bcfe359ffb84f638),dayvh43nl0ce1(!X0ccd61b2e54d643c58aae8236b8a5bcfb,!X156be00698e994656a04225f539fbddcb) :- srcpainvi5nl0ce0(?X0,?X0b652c59bb84946bb9f732402fb16452b,?X187bbfb8c47ac41c0a9cda80172a28ba3) .
+dievnm37nl0ce1(!X0,!X1),sleepvnm12nl0ce0(!X0,?X138f072c99d3e4d2ca5a45ea7b70a0153),movevnm53nl0ce1(!X097219585ba074fa3b8df72eff7e8156e,!X1),bodyvh43nl0ce0(!X0,!X13ddb8c4a08e9494cb8088328ab36de69),substancevi59nl0ce0(!X0,!X1),historyvnm25nl0ce1(?X00ee2fafde6804856a8bc30630fe880c3,!X1),protestvh30nl0ce0(!X0317b2f38055541c38d8ed36481e6afeb,!X1d9aee20da3194f20917462faaebd5f4b),edgevi29nl0ce1(!X0,!X1),watchvh53nl0ce1(!X0,!X1),tryvh12nl0ce0(!X07621a69a51ec40779fb9e7d4a8df954e,!X1) :- srcdievnm37nl0ce1(?X00ee2fafde6804856a8bc30630fe880c3,?X138f072c99d3e4d2ca5a45ea7b70a0153) .
+confirmvh21nl0ce1(!X0f6c6a075d645468cbe95803a3d18ca40,!X1),materialvh31nl0ce0(!X0,!X1),punishmentvnm24nl0ce1(!X0217a70c51b0c4a3aa9f366ac63559a53,!X11b187d09bc3048f9bb41b1d8470bc68a),yellowvi11nl0ce1(!X079b9dcd527cf4bafa62e5034b2660c97,?X1df4697217ef0416a9f42b4c616c8c77b),industryvnm44nl0ce1(!X0a5ba50147ab34489b9d3f85e59621e01,!X1),tinvnm16nl0ce0(?X0c0e19c4cf6ce48aab01f468c37ac5852,!X1) :- srcconfirmvh21nl0ce1(?X0c0e19c4cf6ce48aab01f468c37ac5852,?X1df4697217ef0416a9f42b4c616c8c77b) .
+workvnm30nl0ce2(?X0,!X1312b6277b8f9433386761acf92400c9f),grassvnm46nl0ce0(!X0c6bfe28a5ff0455e92942ba727cd6dc5,!X17ac65c6ae0be452cb5a222496910a0f0),seemvh35nl0ce0(!X0bbc64aba884c4cc4804b28c462311ece,!X1f60c65357e3e43988eb091ccb9af5c18),skinvi24nl0ce1(?X0,!X11450293cf3c04510b9846d7bd820d2c4),comparevi46nl0ce1(?X0,?X1a067be26754c4d8c9582f8da97afebe4),painvnm4nl0ce1(?X0,!X18bde75d93be14fc6b7c13ef4283dbfa5),expertvi31nl0ce0(?X0ce7060737d54491b88f14a5c2b7c04ce,!X1),contributevnm45nl0ce1(?X0,!X185756393a24941fd977c9ef2e6880854),replyvh10nl0ce0(!X062d5ca95a1b847ea841cd3bd6d147f07,?X1c9856582629f4c8fb98c06153962b86d),whitevi23nl0ce1(!X0a5f7976d3bb24f31b6c819e0fadcd957,!X183ab6c728ada4905b8b9e81c5eaf068c) :- srcworkvnm30nl0ce2(?X0,?X0ce7060737d54491b88f14a5c2b7c04ce,?X1a067be26754c4d8c9582f8da97afebe4,?X1c9856582629f4c8fb98c06153962b86d) .
+loosevnm13nl0ce2(!X0,?X1),fishvi49nl0ce0(!X01aa39e96cd4f4cd6b74f3e1437cff4b1,!X1430c876cd96e45989f234542b5999665),twistvi56nl0ce1(!X00491f758337a4b2da9873f9133b544a9,?X11b33bf67dbe449f5b876165a0308229e),churchvnm7nl0ce1(!X0f5182164977b4cc49a8687c92107557b,!X1eb64cd5e93254da9966cd805e64b03ef),placevnm1nl0ce1(?X07a604a7753b64bb69490407ed24611ec,?X1),usevh2nl0ce1(!X000ef7b00b9c945dfbbf2ac0af01bd363,?X1),collarvnm63nl0ce0(!X045139f5971894b51800418b631c6edc6,?X1) :- srcloosevnm13nl0ce2(?X07a604a7753b64bb69490407ed24611ec,?X1,?X11b33bf67dbe449f5b876165a0308229e) .
+churchvnm10nl0ce0(!X0224876cc823e42b78f08dcea6ab4207c,!X1d5bce3b8d6404220877f35b733553cd6),containvh15nl0ce0(!X082a5961e66b7460bb38efdac5f48a8a5,?X183aec00ccc60488aa80d22ab8a22c6e8),basevh62nl0ce1(!X001573fb99eb44ecd976b34f14834c46e,!X14bfb5fa9adff47d9beffd33818513b8d),cutvh39nl0ce1(?X0bdcedba6e3b34ba6a87e81ecacb2765d,!X1),agenciesvh20nl0ce0(!X0,?X1208b1cede2b748d89a12d7dfad9aa50b),eatad8nl0ce0(!X0,!X12499d06656944b668297e0e6a258109a),waxad60nl0ce0(!X0487f6e5a9be044878551dc7d582ca5ba,!X1),steelad42nl0ce0(!X0,!X1d1eea8a50143433db320c976298ebbac) :- srcchurchvnm10nl0ce0(?X0bdcedba6e3b34ba6a87e81ecacb2765d,?X1208b1cede2b748d89a12d7dfad9aa50b,?X183aec00ccc60488aa80d22ab8a22c6e8) .
+shutvi37nl0ce0(!X0336ce73c154c4738b07a3d4616018972,!X1),degreevh28nl0ce1(!X0,!X1),flyvh64nl0ce0(!X0,?X119a14f7511c64efd985c440358e15ce5),effectvi47nl0ce0(!X0,!X1),stitchvnm19nl0ce1(!X0,!X14f7ae97371074280a261005438d9702e) :- srcshutvi37nl0ce0(?X119a14f7511c64efd985c440358e15ce5) .
+learnvh56nl0ce0(!X0,?X1e26be2e9a005446ca4bd17e484daabb4),playvh59nl0ce1(!X05c3842842a7d453eb9b48be421b8526e,!X1),armvnm49nl0ce1(?X08e63c2f36102446f83b21308531512af,!X1aa4813710ce64f238b4dde2933779b35),processvnm49nl0ce2(!X0,!X1),jellyvi60nl0ce1(!X0066569853dd748af8c7290ef8044b71c,!X1b466f4d04a384f2ca68335ed910c0fac),dependentvnm5nl0ce1(!X02a92fdf9228b4050b1581548ab46c52f,!X1),weightvh60nl0ce0(!X09bc0778ebb2342e08405164f2f296531,!X1),arrangevh19nl0ce0(!X031405ed2eeab446d98ef3f7d0153e602,!X1),movevh40nl0ce0(!X0,!X1b33342d2af624ef488f886f0e99122ba),sunvh42nl0ce0(!X0,?X1ef04f61ae98c4ba3ad8b5d929d655711) :- srclearnvh56nl0ce0(?X08e63c2f36102446f83b21308531512af,?X1e26be2e9a005446ca4bd17e484daabb4,?X1ef04f61ae98c4ba3ad8b5d929d655711) .
+nationvi27nl0ce0(!X0,!X1),recordvh5nl0ce0(!X0,!X1),electricvi25nl0ce0(!X0,?X171061ba1285847d8a962fe44ca5c2e3b),chargevh3nl0ce1(!X032048095e51642c9a8224349117eefd2,!X1ed88310f7896471b85d28f0066268543),attackvnm19nl0ce0(!X0,?X13d19dbad19b34dd0a4513f09a3154d7a),shamevnm29nl0ce0(!X0,!X1),latevnm6nl0ce1(!X0,!X1),sistervnm15nl0ce1(!X01bb572bbe4b54f17a82dbb30ba2cbe39,!X1),separatevh27nl0ce1(!X0f64a8deb7c8942cab3b3fc49e1647394,?X1061ac699279d4f7aa8f2c400c0deef3f),lookvi13nl0ce1(!X0b758d3a2d8d54453aa9cb8a759002147,!X1) :- srcnationvi27nl0ce0(?X1061ac699279d4f7aa8f2c400c0deef3f,?X13d19dbad19b34dd0a4513f09a3154d7a,?X171061ba1285847d8a962fe44ca5c2e3b) .
+placevh40nl0ce1(!X01b803cc21a0444d6a92f085ebffbbb72,!X1),managervnm49nl0ce0(!X0,!X1),feeblevi33nl0ce0(!X0,!X1),voicevnm48nl0ce0(?X0d5468d3618344e12aa84b53b6b74d514,!X13bc37be8933644cfb6cdda34c3ad53b5),illvi32nl0ce1(!X0,!X1),groupvnm44nl0ce2(?X0f4d5b8baddbe46e385d92055be6fe8e4,!X199671daf4e4e4a8ba1e675f8a7418f22) :- srcplacevh40nl0ce1(?X0d5468d3618344e12aa84b53b6b74d514,?X0f4d5b8baddbe46e385d92055be6fe8e4) .
+weathervnm31nl0ce2(!X034fa07d72e5740729de8066c939539a8,?X1ef1256fe37eb43f5a3d7dc10767f1b06),threadvi13nl0ce0(!X03fb27b8008a140a2832dcd3b4e06b902,?X1),goldvnm40nl0ce2(!X0,!X1ce6781927ae24366b87d2c22a2d4626f),thumbvh29nl0ce0(!X0,?X1),reasonad18nl0ce0(!X08f02fdf1487e4fe5991c6711bee756d6,?X1),machinevnm24nl0ce0(!X05e22561ac2c44fc3a7efb2e0c44e6f03,!X1de563cfd22ff438da812024606453270) :- srcweathervnm31nl0ce2(?X1,?X1ef1256fe37eb43f5a3d7dc10767f1b06) .
+officevnm46nl0ce2(!X06e8afd9f4b544caa8a7bcba5b9616dc2,!X1),complexvh12nl0ce1(!X0bd56a9426d344be4bfe17ca99a795000,!X1114f2041eda649838eb019a2ebe2ce76),forgivevi9nl0ce1(!X02d83c037aa024100a59e9b53dbfde302,!X1),experiencevnm40nl0ce1(!X0a3f7c8849994431c88cdac4ca9bec785,?X133ff9aa4b2034d1393e09c3941e375c1),hatevh6nl0ce1(!X090b96c8b6d0c44e18f525e9f3a0f17d2,!X1),regretvnm30nl0ce0(?X004cd61a118134cacac7cc82f467e6289,!X1),greyvi61nl0ce1(!X0,!X1),neckvi64nl0ce0(?X0cfcf1bde2d83458cba4a668f99497b34,!X19605a4486e10478b9c2b28cb676936e3) :- srcofficevnm46nl0ce2(?X004cd61a118134cacac7cc82f467e6289,?X0cfcf1bde2d83458cba4a668f99497b34,?X133ff9aa4b2034d1393e09c3941e375c1) .
+skinvnm14nl0ce0(!X0,?X1622b7e32e5254f10b647d9485e5a7fc9),remainvnm20nl0ce1(!X0,!X1ccf0c71b633942d0abc8a21662077bab),fathervh14nl0ce1(!X0,?X1),trayvh44nl0ce0(!X0,?X109badf1f1cf64e22ac5cf6fe4f6a8a2f),breathvnm38nl0ce1(!X06cba60b415b1436199fe5f452f094e76,!X1894a7528bf37497fb6930d2236b3039e),testvh32nl0ce0(!X0,!X15e180ad4f2334da5a37ac382dd1e9f5c),providevi12nl0ce0(!X037cc3fbf2e524cda8abf72386c093f78,!X11ca4b27f68ae4da1be56f82ca2a51787),cowvh31nl0ce1(!X0,!X10e83c0425c314279826b7c2a72cecbdc) :- srcskinvnm14nl0ce0(?X1,?X109badf1f1cf64e22ac5cf6fe4f6a8a2f,?X1622b7e32e5254f10b647d9485e5a7fc9) .
+twistvh64nl0ce1(?X0cd5163d2c8a440dda812f4ac204be34d,!X1d669739662c54f94b47076e9437909bd),flowervnm48nl0ce1(!X067040e69604d4ce5b45ea6bf57fa2a31,!X19745dedbcbac4c5a981d13a09e547013),smellvh62nl0ce0(!X0,!X1),summervnm39nl0ce0(?X026deb2aacd5e4ae48ff59cee6604cf1f,!X1),gunvi63nl0ce1(!X0,!X1),branchvnm22nl0ce1(!X0,!X1f51c3144d481471cb0d2033f5ba586e0),secretvi12nl0ce1(!X0,?X102c8b86fd5854b3e8f3fed0a3b110598),dustvi25nl0ce1(!X0739f6e8a38334553ac44e60dd46f0284,!X180538a80db1f4e1c8db25ab582eb2896),farmvnm3nl0ce0(!X0,!X1474dd3574d474067b03d3b9bde090383),crossvh17nl0ce0(!X09f1623ef80914d8a97832f25ebb4d642,?X1d9efcc5ac4ea4f279ba025fb7ed9e691) :- srctwistvh64nl0ce1(?X026deb2aacd5e4ae48ff59cee6604cf1f,?X0cd5163d2c8a440dda812f4ac204be34d,?X102c8b86fd5854b3e8f3fed0a3b110598,?X1d9efcc5ac4ea4f279ba025fb7ed9e691) .
+regretvi54nl0ce1(!X0,!X1ff89f94860f84577ad66aec7d77db755),pagevh60nl0ce1(!X2,?X12c1be3da8b3c40f383e8cd5d6187ee5c),wetvh13nl0ce0(!X0,!X117616670ede24c0f9e21f7284fd589af),restvh34nl0ce0(!X04e89dc34b7e44f87b40b60b6e81cf43e,!X1),sizevnm17nl0ce0(!X0,!X1),brushvh19nl0ce1(!X0,!X1),cardvnm52nl0ce2(!X0,!X1bfdf5e4bd6ba48739d5ff1b0ea14e9f3),smokevi14nl0ce1(?X06f496a509aca482893dbcf38ab0e3b41,!X12730424332144171b24bba5594f68ed9),meanvi59nl0ce1(?X09dadbd49d8b24b17b5d02a6423032dfa,!X1e95b49616996421e9a1edc12715e6f6d) :- srcregretvi54nl0ce1(?X06f496a509aca482893dbcf38ab0e3b41,?X09dadbd49d8b24b17b5d02a6423032dfa,?X12c1be3da8b3c40f383e8cd5d6187ee5c) .
+provevi3nl0ce1(?X0bcdeb09197d44363aa80b3781926c132,!X1e2e8f1a500d14244ad62dab16c9da1e0),commonvnm60nl0ce1(?X0,!X129c57afac03e4f858c67427b203943ad),letvh37nl0ce0(?X0b71f08651f5048a9838de184ae0509a7,!X1),familyvnm20nl0ce0(!X06a46d4cd232341309643c5db153e7901,!X14f3745f0a24f4dfb81db669a11e961d9),comparevnm11nl0ce0(?X0,!X1c869baf03477442680ea05f50c1e529c),soundvi47nl0ce1(!X074bf199ff3f24be5b1d5ed937eb7ff04,!X1) :- srcprovevi3nl0ce1(?X0,?X0b71f08651f5048a9838de184ae0509a7,?X0bcdeb09197d44363aa80b3781926c132) .
+hammervnm7nl0ce2(?X072bdc5edc7f14900869f2f57aab5e4f8,!X1fd8fc5d98e0d407c95f5525b054197d5),avoidvi61nl0ce0(!X08698f056232546fd8538040a2009e314,!X1),softvnm29nl0ce1(!X084bc0c11ea944e0c92f837b7012bc95c,!X1ef063dc403f54d44b5714a5a7b5e5f62),countvh4nl0ce1(!X05e7a3a2fdbc2466bbbff33bc640b84d3,!X13b9d9aa1f17047238389a2d8bc0d49b0),seavnm5nl0ce2(?X0,!X1),nightvh38nl0ce0(?X0,?X149f9065c2ad24783be5f114f8446c5c4),respectvh37nl0ce1(!X0e3cf243af0744b77969b94bc1424ddb7,!X1),obtainvi48nl0ce1(?X0d111280776944ed1aac22c733337ac3d,!X13dadc88d263541e0833508725050e17c),reflectvh16nl0ce1(?X0,!X1),diseasevi45nl0ce1(!X03b7e6cc6f85e409c9ae3faf891c76fb3,!X1) :- srchammervnm7nl0ce2(?X0,?X072bdc5edc7f14900869f2f57aab5e4f8,?X0d111280776944ed1aac22c733337ac3d,?X149f9065c2ad24783be5f114f8446c5c4) .
+fallvnm60nl0ce0(?X0,?X14fa1a77df6474a538751888706d77701),hidevi17nl0ce0(?X0,!X1aacc6f7a22064015b9535a6f6f0c5fa5),protestvi35nl0ce0(?X0,!X1c460b0b5dc114bd286774da6aebde11f),ringvnm9nl0ce0(?X0,!X114f16ddf350e4e54ae8d5e15a0786803),forgivevnm33nl0ce1(!X01587f248449142b6bdf5ac7207dd67a4,!X1),acceptvnm4nl0ce2(?X0,!X1),delivervh51nl0ce0(?X0e8880df907384e198fbfa1b6b4f83598,!X1),politicalvnm3nl0ce1(!X07e36e43a8d2c4caebb759b59eaf57997,!X199e4e64aff6d46ca96fa6fdcc7999113) :- srcfallvnm60nl0ce0(?X0,?X0e8880df907384e198fbfa1b6b4f83598,?X14fa1a77df6474a538751888706d77701) .
+collectionvnm2nl0ce1(?X0,!X15c3d167fcc5d40a9996c917a28ac0274),needvi27nl0ce1(!X0e63e598ace2346c788e1a36fd8db8f77,!X19dd3fc876dd54c209d5863bcbe504168),involvevi16nl0ce0(!X057b36b75bb824184a60f6d11e456081d,!X1),smilevi19nl0ce1(?X01ddc9e7486184b799c82a9505d31e058,!X1),businessvi11nl0ce0(!X090f0c84fc63343e7bf5d197f1fc0a9ea,!X1),bandvi18nl0ce1(?X0,!X1) :- srccollectionvnm2nl0ce1(?X0,?X01ddc9e7486184b799c82a9505d31e058) .
+attorneyvh34nl0ce1(?X0,!X1),knockvh58nl0ce1(!X000f50d99b9d646d3af531ef220a40d64,?X12fd6da695f0345af9fc20997427cbc00),usevi23nl0ce0(!X02e4fb87b88964478b4b876369f2a4a4d,!X1),societyvi1nl0ce1(!X08598ed3310b2498fa19da161f7becb3b,!X1),involvevh2nl0ce0(?X0,!X1),copyad36nl0ce0(?X0,!X1),examplevh23nl0ce1(!X08b8cc93abb9f4499bfade5ecb24d5aca,!X1) :- srcattorneyvh34nl0ce1(?X0,?X12fd6da695f0345af9fc20997427cbc00) .
+relationvnm53nl0ce0(!X093522d29aaaa4180959d9262f2693015,!X10290c65bd84d4acdad0f0c056a17c048),loosevnm58nl0ce1(!X0415cffd46fb54ddc97ac011d97764f13,?X103a7d59578a44fc9a8719a9834ccff2a),usead61nl0ce0(!X07f9e1a751d76491bb71116e5a38a5768,!X1),mealvh46nl0ce1(!X02008216ea1e34f4f87fe85e3ebff7941,!X1),selectionvnm29nl0ce2(?X0ca946e099b6046db8654374481064d51,!X1a28337db938a4df99b263f8fb73b7408),presentvh18nl0ce1(?X0e0e09f90e04345ef9db337eea3afa2dc,!X1263536dcb3ba4ad4b153553f5e068f03),secondvnm16nl0ce2(!X0,!X1b331512f6c9b4022b2a861fcb975111b),shutvnm28nl0ce1(?X0ba3550df24df47449d111b7e71af4c0c,!X1ad7f65d55be7436f9729381284151277) :- srcrelationvnm53nl0ce0(?X0ba3550df24df47449d111b7e71af4c0c,?X0ca946e099b6046db8654374481064d51,?X0e0e09f90e04345ef9db337eea3afa2dc,?X103a7d59578a44fc9a8719a9834ccff2a) .
+bloodvnm54nl0ce1(!X002c2ab89d6374ab6bc10d2a05b1883bf,?X1bae681c3ef6a4213bc0c03440c234959),stitchvnm32nl0ce0(?X015e53ec564cb48bba8ec4eed62a558a6,!X12de877c95b0e422bb64e84fecc862112),roundvh51nl0ce1(!X2,!X15fe67e18473a4ed7a7ee597dae2f6960),beevi16nl0ce1(?X0,!X1a802603bdd3d4a44a67bcb9ed955dc91),leathervnm27nl0ce2(!X0d3d4b7ed2b184621aead50bed7380b4c,!X1f171527c2f914c37bc6e1c61dc1401e5),usevh26nl0ce1(?X0,!X122939b6fcb9e49378846e35a3b0804b2),connectionvh42nl0ce1(!X01a0c0e5188d84e35b11075b8df796e6e,!X1047da690e76c4432ad70aeb935ecca68),jumpvnm8nl0ce2(?X0bafa7620d7d3401abd1d4ee472f8b5b6,?X1),sortvi31nl0ce1(!X0de49b12fff8c4b6683b4371b23b36ebc,!X17705649dfba64ed591c396e6eec7e153),clockad7nl0ce0(!X0f8097a897d7547fbb894acc3b6445069,!X1586fa81a26f64c0e909f6f7cb0385af8) :- srcbloodvnm54nl0ce1(?X0,?X015e53ec564cb48bba8ec4eed62a558a6,?X0bafa7620d7d3401abd1d4ee472f8b5b6,?X1,?X1bae681c3ef6a4213bc0c03440c234959) .
+expressvnm26nl0ce2(!X0,!X1),collarvi33nl0ce1(?X01bf83055d9ed4b389eeec5da7703c7af,!X1),touchvh8nl0ce0(!X0,!X1),canvasvnm31nl0ce0(!X0c972b337aaeb485aafb21c4fd95e72f5,?X16cc6403f2f2d45458256440717dec0d1),trickvnm8nl0ce0(!X028de25707fc6412d9d8f298f34274537,!X1),privatevnm54nl0ce0(!X07c5fff9b382a49f29c68cf901f9cb419,!X1874950c0eeb740229e9026078952318d),voicevnm9nl0ce1(!X0,!X18ad3b7ea3b3542edb51954653a94d627),screwvi21nl0ce0(!X0),loosevh56nl0ce1(!X0,!X1) :- srcexpressvnm26nl0ce2(?X01bf83055d9ed4b389eeec5da7703c7af,?X16cc6403f2f2d45458256440717dec0d1) .
+shoevi17nl0ce1(!X0,!X1),pointvnm10nl0ce1(!X0,?X12b9d46c7825848f9bce5e10d35e80a92),flyvi7nl0ce0(!X0,!X1),snowvnm52nl0ce0(!X0ebf6e854d53a48dc9be324d25e72a282,!X1),describevh1nl0ce1(?X0f29d9034aa814e11b5abf96cd9da87fc,!X1),settlevh8nl0ce1(!X03a412f2bc5974fbca681641b3f41598e,!X180245603ce2b43cebbbcdba2616a577c),societyvi22nl0ce1(!X05401e68884864aa6a256dcedbcec4d76,!X1),truevnm47nl0ce2(!X0,!X1),buttervnm15nl0ce2(!X0d2ac71de64674185aded0b813f98ecb5,!X1),nationvh58nl0ce0(!X0,!X1) :- srcshoevi17nl0ce1(?X0f29d9034aa814e11b5abf96cd9da87fc,?X12b9d46c7825848f9bce5e10d35e80a92) .
+achievevh48nl0ce1(!X04418193fecb444dcb1989a5e11f5dc85,?X104b909db0a734305a1fb2c0ce3690db7),knotvnm33nl0ce0(!X07553a5e36dcf405f9a1f17731a0fc9e9,?X169efd92afcbe48108e47f804eea70f02),archvi46nl0ce0(!X0,!X1),knotvnm27nl0ce1(!X0,!X1),latevi7nl0ce1(!X019bacae0f0c0484789459d614eb2a10a,!X1),ovenvh25nl0ce1(?X0a78106b18bf54a5dbb74b1caadfaabad,!X160faba142e934383836c0b02bfce3283),coatvh14nl0ce0(!X0,!X1ce3ca1707ff84fa6b94a2c03e51a466b),brickvnm50nl0ce0(!X00ebb7d26f24a4cf0a29be89717747a32,!X1) :- srcachievevh48nl0ce1(?X0a78106b18bf54a5dbb74b1caadfaabad,?X104b909db0a734305a1fb2c0ce3690db7,?X169efd92afcbe48108e47f804eea70f02) .
+returnvnm28nl0ce2(!X0,!X1),climbvi32nl0ce0(?X0a151538143a3479d93fc8e594cc45a4e,!X162b1d118923e4f368ac0203773009c54),measurevnm12nl0ce1(!X0f168c1e13c244a8ca7fe8405e694c1ab,?X1f42761925e934dfd82bfcb438f74a947),pointvi18nl0ce0(!X0,!X157071e24b33541328f67c0903ea01939),ownvnm47nl0ce0(!X050c58671f7dc407fbd64b50b66c9ffc0,?X11c5de31eabf84a478c532a5adebff92c),lockvnm54nl0ce2(!X0cf50c6dbb2714adeb6af07ed54f33b47,!X1),readingad32nl0ce0(!X0da557ea05e644080b5b75b13d0abe76d,!X1) :- srcreturnvnm28nl0ce2(?X0a151538143a3479d93fc8e594cc45a4e,?X11c5de31eabf84a478c532a5adebff92c,?X1f42761925e934dfd82bfcb438f74a947) .
+levelvh18nl0ce0(?X045b802b2dba84fe2a8bac198e16536f0,!X1),sockvnm26nl0ce0(!X0646cd88077b34fddb514e148faf99605,!X1),curvevi58nl0ce0m(!X0,!X1),fertilevh7nl0ce1(!X071e4e7523e804dae91e7dad61fbc231f,!X1cc536e7f3b0a477d950341e31855b867),deepad16nl0ce0(!X06a4193cd43694691a5ba071689a413d1,?X12f3991329afe4bea93d4fdf829a43abc) :- srclevelvh18nl0ce0(?X045b802b2dba84fe2a8bac198e16536f0,?X12f3991329afe4bea93d4fdf829a43abc) .
+carryvnm57nl0ce2(!X030fa638748934a3881f6e477a3a23cf9,?X1),narrowvi45nl0ce0(?X061d71d8111734d93a42a7388329ba9a9,!X118e8831571e545119750ec830ab05dda),darkvnm27nl0ce0(!X09eef59cd02464c9c946abaa2894155de,?X1),sensevnm42nl0ce0(!X0c1a0d2de88ad48bab56f055f4625d448,?X1),fallvh29nl0ce1(!X036fd5c11834b4e3b904ccb7bc4408621,?X1),mistvnm25nl0ce2(!X0,?X1),smokevnm52nl0ce1(!X032219eecccf34031b65af83deb872d86,?X1),girlvh57nl0ce0(!X0,?X1) :- srccarryvnm57nl0ce2(?X061d71d8111734d93a42a7388329ba9a9,?X1) .
+agreementvh35nl0ce1(?X2db4ee8903e4d4ab8acfd15a0c6001e99,!X1),yellowvnm45nl0ce2(!X0dc7a5f0b43b5416b9cfa895b101df514,!X1f104e515a5e84938aaca795abd03ceee),knowledgevi38nl0ce0(!X0,?X189429138c2a84afe9e446e731c1d8bb3),providevi26nl0ce0(!X0,!X1),languagevnm3nl0ce2(!X0,?X19e473d1e44624bddbf9501d7c55b423c),bootvnm5nl0ce0(!X08e5e6d637caa4899b11848ef54b480fe,!X19f9ec709b7954106b738cb233c3c4c25),indicatevi40nl0ce1(!X03d7e80fc994447e3bc7dca986da05968,!X1),blowvi2nl0ce1(!X0371dd2fb3d3c479db0da4e3401afc771,!X1833566119d9f4ca78d037af8d6927cbb) :- srcagreementvh35nl0ce1(?X189429138c2a84afe9e446e731c1d8bb3,?X19e473d1e44624bddbf9501d7c55b423c,?X2db4ee8903e4d4ab8acfd15a0c6001e99) .
+playvnm11nl0ce2(!X0,!X1d0cac68a126a410986e58d240214d6b0),layvnm58nl0ce2(?X0293e5ab3c10c4d99b5198cc779960d1a,?X1),greenvnm8nl0ce1(!X038c9babe7403476faf2a0b8377aba773,?X1),hidevi20nl0ce1(!X0,?X1),workvnm50nl0ce2(!X012daaae40f414fe1b459634ba3797fae,!X18bf705db962f4d5b90a8403de43a1c24) :- srcplayvnm11nl0ce2(?X0293e5ab3c10c4d99b5198cc779960d1a,?X1) .
+awakevnm7nl0ce0(!X0920c4685631f43718f122372d62e266d,?X1),poisonvnm46nl0ce1(!X0662311fd3c9241b8bac500bd9fe1d6b0,?X1),warvnm25nl0ce0(!X0,?X1),mustvnm48nl0ce2(!X0,?X1),havevi24nl0ce0(!X0,!X187e6783024544387a17126bd1d0d3512) :- srcawakevnm7nl0ce0(?X1) .
+orangevh41nl0ce1(?X0,!X118d9b25b10ef411eb77e6857208bf5ba),relatevnm42nl0ce2(?X0,!X1),sciencevnm63nl0ce2(?X0,!X1),joinvi34nl0ce0(!X08294a072fbf1487ea522286ee1a25852,!X1),safevnm60nl0ce2(?X0,!X132ea7b0a3d204758b793f887c3e10fbf),intendvnm47nl0ce1(?X0,!X1b29f9d6472be4f2e85af68b167010788),sidevh41nl0ce0(?X0f4a5da6fc2cc43e3b7a73d2400c20b2c,!X1),readingvnm16nl0ce1(?X0,!X1f6074e2db21a4439b44612792a643945),facevh25nl0ce0(?X0,!X1b1818673011e4b40b6eb5c3fab48f0a2) :- srcorangevh41nl0ce1(?X0,?X0f4a5da6fc2cc43e3b7a73d2400c20b2c) .
+bluevnm22nl0ce2(!X0,?X1),horsevnm64nl0ce2(!X0,!X1ea18651d017d459492b8147fe73fe651),jewelvi15nl0ce0(!X0b5bdfdec90734ef1add274bad8cf45b3,?X1),moonvnm32nl0ce2(!X0,?X1),wouldvi63nl0ce0(!X0,?X1),approvalvi2nl0ce0(!X0,?X1a9131cd7d4c9441f86af055adafdac55),bucketvh49nl0ce1(!X0,!X157d8b3dcc5694770957af1cb9887e16b),leftvnm22nl0ce0(!X0,?X1),playvi58nl0ce1(!X08f77cfb0b4ec46b7b36f9ecd28ec824c,?X1) :- srcbluevnm22nl0ce2(?X1,?X1a9131cd7d4c9441f86af055adafdac55) .
+peacevi40nl0ce0(!X0,!X1),bellvnm62nl0ce1(!X0c53336851897436f9f01c0e604ca0a37,!X17c001678db944559941604dec2c52c66),violentvi20nl0ce0(!X0,!X137a7e5023a444b5db54253b7e69c2a43),damagead33nl0ce0(!X0,?X1ba198c5e74684812aa41070eac0ec83c),completevh4nl0ce0(?X085a55feb05224958a928fadd66349ec6,!X1),goldvnm4nl0ce0(?X0c6c2a01c71e445489eeb5fc5cae36720,!X1),discussvnm32nl0ce1(!X0c8a0140776fb48a89c21707506071af9,?X176a2a80856ab4b6999e20bd1a60b5516),bluevh61nl0ce0(!X0813b1d98dff347ee83f42a2824a91bea,!X1),paintvh24nl0ce1(!X0e8db72ce27cf44adb5e811ac9d6d6498,!X1d92a17e6c3894a4f91e371f4c236c7e3),cartvh57nl0ce1(!X0,!X1d3d223a224b145baa82bb85b4ae00dc0) :- srcpeacevi40nl0ce0(?X085a55feb05224958a928fadd66349ec6,?X0c6c2a01c71e445489eeb5fc5cae36720,?X176a2a80856ab4b6999e20bd1a60b5516,?X1ba198c5e74684812aa41070eac0ec83c) .
+glovevh36nl0ce0(!X03dd86975e44f45ae95e95b1db0ad85fb,!X1),changevi15nl0ce1(!X08e36f401c9d24f74ade22fd8037efc0c,!X1),languagevnm21nl0ce0(!X08e55d3a3d84c479a98f920dac844f32a,?X1fab99a2878264208b926b87412f1a51b),killad38nl0ce0(!X0,!X12bbd63f87d7f47b4b2c34f1e603ee56b),backvh13nl0ce1(?X0cb66ada0adba4b0e98d5a38922748957,!X1) :- srcglovevh36nl0ce0(?X0cb66ada0adba4b0e98d5a38922748957,?X1fab99a2878264208b926b87412f1a51b) .
+beevi16nl0ce1(?X0,?X1) :- kindvi3nl0ce0(?X0,?X1) .
+skinvnm14nl0ce0(?X0,?X1) :- adjustmentvnm14nl0ce2(?X0,?X1) .
+ovenvi6nl0ce0(?X0,?X1) :- givevi6nl0ce1(?X0,?X1) .
+contributevnm45nl0ce1(?X0,?X1) :- yellowvnm45nl0ce2(?X0,?X1) .
+jewelvi15nl0ce0(?X0,?X1) :- minevh32nl0ce1(?X0,?X1) .
+knotvnm33nl0ce0(?X0,?X1) :- yellowvnm33nl0ce2(?X0,?X1) .
+doorvh3nl0ce0(?X0,?X1) :- chargevh3nl0ce1(?X0,?X1) .
+bodyvh43nl0ce0(?X0,?X1) :- dayvh43nl0ce1(?X0,?X1) .
+approvalvi2nl0ce0(?X0,?X1) :- blowvi2nl0ce1(?X0,?X1) .
+affordvh16nl0ce0(?X0,?X1) :- reflectvh16nl0ce1(?X0,?X1) .
+eatad8nl0ce0(?X0,?X1) :- deepad16nl0ce0(?X0,?X1) .
+agenciesvh20nl0ce0(?X0,?X1) :- wavevh20nl0ce1(?X0,?X1) .
+containvh15nl0ce0(?X0,?X1) :- knowvh15nl0ce1(?X0,?X1) .
+stitchvnm32nl0ce0(?X0,?X1) :- moonvnm32nl0ce2(?X0,?X1) .
+kindvi3nl0ce0(?X0,?X1) :- provevi3nl0ce1(?X0,?X1) .
+holdvnm50nl0ce1(?X0,?X1) :- workvnm50nl0ce2(?X0,?X1) .
+systemvh24nl0ce0(?X0,?X1) :- paintvh24nl0ce1(?X0,?X1) .
+feeblevi33nl0ce0(?X0,?X1) :- collarvi33nl0ce1(?X0,?X1) .
+summervnm39nl0ce0(?X0,?X1) :- angryvnm39nl0ce2(?X0,?X1) .
+recordvh5nl0ce0(?X0,?X1) :- probablevh5nl0ce1(?X0,?X1) .
+happenvh45nl0ce0(?X0,?X1) :- shadevh45nl0ce1(?X0,?X1) .
+violentvi20nl0ce0(?X0,?X1) :- hidevi20nl0ce1(?X0,?X1) .
+shadevh45nl0ce1(?X0,?X1) :- waxad60nl0ce0(?X0,?X1) .
+substancevi59nl0ce0(?X0,?X1) :- meanvi59nl0ce1(?X0,?X1) .
+movevnm37nl0ce0(?X0,?X1) :- bottlevnm37nl0ce2(?X0,?X1) .
+sistervnm15nl0ce1(?X0,?X1) :- buttervnm15nl0ce2(?X0,?X1) .
+societyvi22nl0ce1(?X0,?X1) :- examinevnm20nl0ce2(?X0,?X1) .
+consciousvnm13nl0ce0(?X0,?X1) :- loosevnm13nl0ce2(?X0,?X1) .
+believevnm14nl0ce1(?X0,?X1) :- adjustmentvnm14nl0ce2(?X0,?X1) .
+shutvi37nl0ce0(?X0,?X1) :- approvalvi37nl0ce1(?X0,?X1) .
+versevh33nl0ce0(?X0,?X1) :- openvh33nl0ce1(?X0,?X1) .
+delicatevi26nl0ce1(?X0,?X1) :- stonevh7nl0ce0(?X0,?X1) .
+smellvh62nl0ce0(?X0,?X1) :- basevh62nl0ce1(?X0,?X1) .
+bloodvnm54nl0ce1(?X0,?X1) :- lockvnm54nl0ce2(?X0,?X1) .
+completevh4nl0ce0(?X0,?X1) :- weathervnm31nl0ce2(?X0,?X1) .
+bluevh1nl0ce0(?X0,?X1) :- describevh1nl0ce1(?X0,?X1) .
+ownvnm47nl0ce0(?X0,?X1) :- stonevh7nl0ce0(?X0,?X1) .
+farmvnm3nl0ce0(?X0,?X1) :- languagevnm3nl0ce2(?X0,?X1) .
+knowvh15nl0ce1(?X0,?X1) :- usead61nl0ce0(?X0,?X1) .
+readingvnm16nl0ce1(?X0,?X1) :- secondvnm16nl0ce2(?X0,?X1) .
+touchvh8nl0ce0(?X0,?X1) :- settlevh8nl0ce1(?X0,?X1) .
+softvnm29nl0ce1(?X0,?X1) :- selectionvnm29nl0ce2(?X0,?X1) .
+accountvh9nl0ce0(?X0,?X1) :- fictionvh9nl0ce1(?X0,?X1) .
+firstvnm11nl0ce1(?X0,?X1) :- playvnm11nl0ce2(?X0,?X1) .
+stonevh7nl0ce0(?X0,?X1) :- fertilevh7nl0ce1(?X0,?X1) .
+regretvnm30nl0ce0(?X0,?X1) :- workvnm30nl0ce2(?X0,?X1) .
+offervnm57nl0ce0(?X0,?X1) :- carryvnm57nl0ce2(?X0,?X1) .
+languagevnm21nl0ce0(?X0,?X1) :- involvevnm21nl0ce2(?X0,?X1) .
+pointvnm10nl0ce1(?X0,?X1) :- digestionvnm10nl0ce2(?X0,?X1) .
+machinevnm24nl0ce0(?X0,?X1) :- authorityvnm24nl0ce2(?X0,?X1) .
+parallelvnm2nl0ce0(?X0,?X1) :- handlevnm2nl0ce2(?X0,?X1) .
+discovervi29nl0ce0(?X0,?X1) :- edgevi29nl0ce1(?X0,?X1) .
+protestvh30nl0ce0(?X0,?X1) :- replyvh30nl0ce1(?X0,?X1) .
+ovenvnm18nl0ce0(?X0,?X1) :- sizevnm17nl0ce0(?X0,?X1) .
+placevnm1nl0ce1(?X0,?X1) :- expansionvnm1nl0ce2(?X0,?X1) .
+churchvnm10nl0ce0(?X0,?X1) :- digestionvnm10nl0ce2(?X0,?X1) .
+comparevnm11nl0ce0(?X0,?X1) :- playvnm11nl0ce2(?X0,?X1) .
+greyvnm64nl0ce1(?X0,?X1) :- horsevnm64nl0ce2(?X0,?X1) .
+movevh40nl0ce0(?X0,?X1) :- placevh40nl0ce1(?X0,?X1) .
+narrowvi45nl0ce0(?X0,?X1) :- societyvi22nl0ce1(?X0,?X1) .
+tryvh12nl0ce0(?X0,?X1) :- complexvh12nl0ce1(?X0,?X1) .
+delicatevi38nl0ce1(?X0,?X1) :- mistvnm25nl0ce2(?X0,?X1) .
+wayvnm39nl0ce1(?X0,?X1) :- angryvnm39nl0ce2(?X0,?X1) .
+degreevi9nl0ce0(?X0,?X1) :- forgivevi9nl0ce1(?X0,?X1) .
+archvi46nl0ce0(?X0,?X1) :- comparevi46nl0ce1(?X0,?X1) .
+movevnm53nl0ce1(?X0,?X1) :- musicvnm53nl0ce2(?X0,?X1) .
+curvevi58nl0ce0m(?X0,?X1) :- playvi58nl0ce1(?X0,?X1) .
+ringvnm9nl0ce0(?X0,?X1) :- roomvnm9nl0ce2(?X0,?X1) .
+lightvi52nl0ce0(?X0,?X1) :- industryvi52nl0ce1(?X0,?X1) .
+raisevnm17nl0ce1(?X0,?X1) :- babyvnm17nl0ce2(?X0,?X1) .
+placevnm1nl0ce1(?X0,?X1) :- knowvh15nl0ce1(?X0,?X1) .
+movevnm37nl0ce0(?X0,?X1) :- businessvi11nl0ce0(?X0,?X1) .
+effectvi47nl0ce0(?X0,?X1) :- soundvi47nl0ce1(?X0,?X1) .
+flyvh64nl0ce0(?X0,?X1) :- twistvh64nl0ce1(?X0,?X1) .
+managervnm49nl0ce0(?X0,?X1) :- processvnm49nl0ce2(?X0,?X1) .
+fishvi49nl0ce0(?X0,?X1) :- tightvi49nl0ce1(?X0,?X1) .
+involvevi4nl0ce0(?X0,?X1) :- mentionvi4nl0ce1(?X0,?X1) .
+indicatevi40nl0ce1(?X0,?X1) :- chargevh3nl0ce1(?X0,?X1) .
+inventionvh26nl0ce0(?X0,?X1) :- feeblevi33nl0ce0(?X0,?X1) .
+yellowvi11nl0ce1(?X0,?X1) :- kindvi3nl0ce0(?X0,?X1) .
+discussvnm32nl0ce1(?X0,?X1) :- paintvh24nl0ce1(?X0,?X1) .
+bluevh61nl0ce0(?X0,?X1) :- stickvh61nl0ce1(?X0,?X1) .
+pointvi18nl0ce0(?X0,?X1) :- bandvi18nl0ce1(?X0,?X1) .
+churchvnm7nl0ce1(?X0,?X1) :- hammervnm7nl0ce2(?X0,?X1) .
+discussvnm32nl0ce1(?X0,?X1) :- moonvnm32nl0ce2(?X0,?X1) .
+restvh34nl0ce0(?X0,?X1) :- attorneyvh34nl0ce1(?X0,?X1) .
+presentvnm15nl0ce0(?X0,?X1) :- buttervnm15nl0ce2(?X0,?X1) .
+industryvnm44nl0ce1(?X0,?X1) :- groupvnm44nl0ce2(?X0,?X1) .
+bedvi22nl0ce0(?X0,?X1) :- societyvi22nl0ce1(?X0,?X1) .
+simplevnm23nl0ce0(?X0,?X1) :- recordvnm23nl0ce2(?X0,?X1) .
+tinvnm16nl0ce0(?X0,?X1) :- simplevnm23nl0ce0(?X0,?X1) .
+wouldvi63nl0ce0(?X0,?X1) :- gunvi63nl0ce1(?X0,?X1) .
+waitvnm13nl0ce1(?X0,?X1) :- loosevnm13nl0ce2(?X0,?X1) .
+familyvnm20nl0ce0(?X0,?X1) :- examinevnm20nl0ce2(?X0,?X1) .
+factvi48nl0ce0(?X0,?X1) :- obtainvi48nl0ce1(?X0,?X1) .
+flowervnm48nl0ce1(?X0,?X1) :- mustvnm48nl0ce2(?X0,?X1) .
+industryvnm44nl0ce1(?X0,?X1) :- mouthvnm44nl0ce0(?X0,?X1) .
+forgivevnm33nl0ce1(?X0,?X1) :- yellowvnm33nl0ce2(?X0,?X1) .
+joinvi34nl0ce0(?X0,?X1) :- peacevi34nl0ce1(?X0,?X1) .
+concernvnm63nl0ce1(?X0,?X1) :- sciencevnm63nl0ce2(?X0,?X1) .
+voicevnm48nl0ce0(?X0,?X1) :- mustvnm48nl0ce2(?X0,?X1) .
+stitchvnm19nl0ce1(?X0,?X1) :- mattervnm19nl0ce2(?X0,?X1) .
+businessvi11nl0ce0(?X0,?X1) :- shadevh45nl0ce1(?X0,?X1) .
+clearvh48nl0ce0(?X0,?X1) :- achievevh48nl0ce1(?X0,?X1) .
+advertisementvi14nl0ce0(?X0,?X1) :- smokevi14nl0ce1(?X0,?X1) .
+tinvnm16nl0ce0(?X0,?X1) :- secondvnm16nl0ce2(?X0,?X1) .
+readingad32nl0ce0(?X0,?X1) :- reasonad18nl0ce0(?X0,?X1) .
+touchvh21nl0ce0(?X0,?X1) :- confirmvh21nl0ce1(?X0,?X1) .
+politicalvnm3nl0ce1(?X0,?X1) :- languagevnm3nl0ce2(?X0,?X1) .
+beautifulvh11nl0ce0(?X0,?X1) :- watchvh11nl0ce1(?X0,?X1) .
+solidvh47nl0ce0(?X0,?X1) :- fallvh47nl0ce1(?X0,?X1) .
+smokevnm52nl0ce1(?X0,?X1) :- cardvnm52nl0ce2(?X0,?X1) .
+brickvnm50nl0ce0(?X0,?X1) :- workvnm50nl0ce2(?X0,?X1) .
+knotvnm33nl0ce0(?X0,?X1) :- businessvi11nl0ce0(?X0,?X1) .
+colorvnm30nl0ce1(?X0,?X1) :- workvnm30nl0ce2(?X0,?X1) .
+shamevnm29nl0ce0(?X0,?X1) :- selectionvnm29nl0ce2(?X0,?X1) .
+ringvnm40nl0ce0(?X0,?X1) :- goldvnm40nl0ce2(?X0,?X1) .
+leftvnm22nl0ce0(?X0,?X1) :- bluevnm22nl0ce2(?X0,?X1) .
+seaad21nl0ce0(?X0,?X1) :- clockad7nl0ce0(?X0,?X1) .
+involvevi16nl0ce0(?X0,?X1) :- beevi16nl0ce1(?X0,?X1) .
+narrowvi45nl0ce0(?X0,?X1) :- diseasevi45nl0ce1(?X0,?X1) .
+skinvi24nl0ce1(?X0,?X1) :- beevi16nl0ce1(?X0,?X1) .
+restvnm1nl0ce0(?X0,?X1) :- expansionvnm1nl0ce2(?X0,?X1) .
+electricvi25nl0ce0(?X0,?X1) :- dustvi25nl0ce1(?X0,?X1) .
+havevi24nl0ce0(?X0,?X1) :- skinvi24nl0ce1(?X0,?X1) .
+peacevi40nl0ce0(?X0,?X1) :- latevi7nl0ce1(?X0,?X1) .
+letvh37nl0ce0(?X0,?X1) :- respectvh37nl0ce1(?X0,?X1) .
+climbvi32nl0ce0(?X0,?X1) :- illvi32nl0ce1(?X0,?X1) .
+languagevh49nl0ce0(?X0,?X1) :- copyad36nl0ce0(?X0,?X1) .
+protestad56nl0ce0(?X0,?X1) :- letvh37nl0ce0(?X0,?X1) .
+trickvnm8nl0ce0(?X0,?X1) :- jumpvnm8nl0ce2(?X0,?X1) .
+secondvnm16nl0ce2(?X0,?X1) :- climbvi32nl0ce0(?X0,?X1) .
+gardenvnm45nl0ce0(?X0,?X1) :- yellowvnm45nl0ce2(?X0,?X1) .
+goldvnm4nl0ce0(?X0,?X1) :- acceptvnm4nl0ce2(?X0,?X1) .
+sockvnm26nl0ce0(?X0,?X1) :- expressvnm26nl0ce2(?X0,?X1) .
+hidevi17nl0ce0(?X0,?X1) :- shoevi17nl0ce1(?X0,?X1) .
+touchvi41nl0ce0(?X0,?X1) :- separatevi41nl0ce1(?X0,?X1) .
+languagevh49nl0ce0(?X0,?X1) :- bucketvh49nl0ce1(?X0,?X1) .
+accountvh9nl0ce0(?X0,?X1) :- mouthvnm44nl0ce0(?X0,?X1) .
+amountvnm18nl0ce1(?X0,?X1) :- avoidvnm18nl0ce2(?X0,?X1) .
+collarvnm63nl0ce0(?X0,?X1) :- sciencevnm63nl0ce2(?X0,?X1) .
+grassvnm46nl0ce0(?X0,?X1) :- officevnm46nl0ce2(?X0,?X1) .
+sleepvnm12nl0ce0(?X0,?X1) :- fertilevh7nl0ce1(?X0,?X1) .
+existvnm42nl0ce1(?X0,?X1) :- relatevnm42nl0ce2(?X0,?X1) .
+avoidvi61nl0ce0(?X0,?X1) :- greyvi61nl0ce1(?X0,?X1) .
+measurevnm12nl0ce1(?X0,?X1) :- enginevnm12nl0ce2(?X0,?X1) .
+levelvh18nl0ce0(?X0,?X1) :- presentvh18nl0ce1(?X0,?X1) .
+femalevi60nl0ce0(?X0,?X1) :- jellyvi60nl0ce1(?X0,?X1) .
+providevi12nl0ce0(?X0,?X1) :- secretvi12nl0ce1(?X0,?X1) .
+separatevi41nl0ce1(?X0,?X1) :- usevi23nl0ce0(?X0,?X1) .
+endvnm21nl0ce1(?X0,?X1) :- involvevnm21nl0ce2(?X0,?X1) .
+seemvh35nl0ce0(!X0,?X1) :- agreementvh35nl0ce1(?X2,?X1) .
+developvi36nl0ce0(?X0,?X1) :- bandvi36nl0ce1(?X0,?X1) .
+differentvi1nl0ce0(?X0,?X1) :- societyvi1nl0ce1(?X0,?X1) .
+warvnm25nl0ce0(?X0,?X1) :- mistvnm25nl0ce2(?X0,?X1) .
+crossvh17nl0ce0(?X0,?X1) :- actvh17nl0ce1(?X0,?X1) .
+threadvi13nl0ce0(?X0,?X1) :- lookvi13nl0ce1(?X0,?X1) .
+screwvi21nl0ce0(!X0) :- cookvi21nl0ce1(?X1,?X2) .
+protestvi35nl0ce0(?X0,?X1) :- helpvi35nl0ce1(?X0,?X1) .
+foundvh44nl0ce1(?X0,?X1) :- killad38nl0ce0(?X0,?X1) .
+relationvnm53nl0ce0(?X0,?X1) :- musicvnm53nl0ce2(?X0,?X1) .
+fertilevnm57nl0ce1(?X0,?X1) :- carryvnm57nl0ce2(?X0,?X1) .
+replyvh10nl0ce0(?X0,?X1) :- requirevh10nl0ce1(?X0,?X1) .
+sensevnm42nl0ce0(?X0,?X1) :- relatevnm42nl0ce2(?X0,?X1) .
+coatvh14nl0ce0(?X0,?X1) :- fathervh14nl0ce1(?X0,?X1) .
+latevnm6nl0ce1(?X0,?X1) :- summervnm6nl0ce2(?X0,?X1) .
+firstvnm11nl0ce1(?X0,?X1) :- parallelvnm2nl0ce0(?X0,?X1) .
+facevh25nl0ce0(?X0,?X1) :- ovenvh25nl0ce1(?X0,?X1) .
+containvnm38nl0ce0(?X0,?X1) :- reportvnm38nl0ce2(?X0,?X1) .
+dievnm37nl0ce1(?X0,?X1) :- bottlevnm37nl0ce2(?X0,?X1) .
+consciousvnm13nl0ce0(?X0,?X1) :- hatevh6nl0ce1(?X0,?X1) .
+neckvi64nl0ce0(?X0,?X1) :- encouragevi64nl0ce1(?X0,?X1) .
+fallvnm60nl0ce0(?X0,?X1) :- safevnm60nl0ce2(?X0,?X1) .
+ownvnm47nl0ce0(?X0,?X1) :- truevnm47nl0ce2(?X0,?X1) .
+errorvi56nl0ce0(?X0,?X1) :- twistvi56nl0ce1(?X0,?X1) .
+inventionvh26nl0ce0(?X0,?X1) :- usevh26nl0ce1(?X0,?X1) .
+arguevnm6nl0ce0(?X0,?X1) :- summervnm6nl0ce2(?X0,?X1) .
+greenvnm8nl0ce1(?X0,?X1) :- jumpvnm8nl0ce2(?X0,?X1) .
+comevi10nl0ce0(?X0,?X1) :- longvi10nl0ce1(?X0,?X1) .
+knotvnm27nl0ce1(?X0,?X1) :- leathervnm27nl0ce2(?X0,?X1) .
+sizevnm17nl0ce0(?X0,?X1) :- babyvnm17nl0ce2(?X0,?X1) .
+experiencevnm40nl0ce1(?X0,?X1) :- goldvnm40nl0ce2(?X0,?X1) .
+delivervi28nl0ce1(?X0,?X1) :- weathervnm31nl0ce2(?X0,?X1) .
+shutvnm28nl0ce1(?X0,?X1) :- returnvnm28nl0ce2(?X0,?X1) .
+painvnm4nl0ce1(?X0,?X1) :- acceptvnm4nl0ce2(?X0,?X1) .
+authorityvnm26nl0ce1(?X0,?X1) :- privatevnm54nl0ce0(?X0,?X1) .
+concernvh23nl0ce0(?X0,?X1) :- examplevh23nl0ce1(?X0,?X1) .
+breathvnm38nl0ce1(?X0,?X1) :- reportvnm38nl0ce2(?X0,?X1) .
+flyvh64nl0ce0(?X0,?X1) :- shakevnm23nl0ce1(?X0,?X1) .
+completevh4nl0ce0(?X0,?X1) :- countvh4nl0ce1(?X0,?X1) .
+facevh28nl0ce0(?X0,?X1) :- degreevh28nl0ce1(?X0,?X1) .
+bluevh1nl0ce0(?X0,?X1) :- bluevnm22nl0ce2(?X0,?X1) .
+jewelvi15nl0ce0(?X0,?X1) :- changevi15nl0ce1(?X0,?X1) .
+recordvnm23nl0ce2(?X0,?X1) :- leathervnm27nl0ce2(?X0,?X1) .
+liquidvnm58nl0ce0(?X0,?X1) :- layvnm58nl0ce2(?X0,?X1) .
+darkvnm27nl0ce0(?X0,?X1) :- leathervnm27nl0ce2(?X0,?X1) .
+nationvi27nl0ce0(?X0,?X1) :- needvi27nl0ce1(?X0,?X1) .
+authorityvnm26nl0ce1(?X0,?X1) :- expressvnm26nl0ce2(?X0,?X1) .
+flyvh39nl0ce0(?X0,?X1) :- cutvh39nl0ce1(?X0,?X1) .
+sunvh42nl0ce0(?X0,?X1) :- connectionvh42nl0ce1(?X0,?X1) .
+whistlead49nl0ce0(?X0,?X1) :- damagead33nl0ce0(?X0,?X1) .
+complainvi8nl0ce0(?X0,?X1) :- snakevi8nl0ce1(?X0,?X1) .
+nightvh38nl0ce0(?X0,?X1) :- chemicalvh38nl0ce1(?X0,?X1) .
+peacevi40nl0ce0(?X0,?X1) :- indicatevi40nl0ce1(?X0,?X1) .
+touchvi41nl0ce0(?X0,?X1) :- basevh62nl0ce1(?X0,?X1) .
+papervh22nl0ce0(?X0,?X1) :- mindvh22nl0ce1(?X0,?X1) .
+bluevh1nl0ce0(?X0,?X1) :- moonvnm32nl0ce2(?X0,?X1) .
+punishmentvnm24nl0ce1(?X0,?X1) :- moonvnm32nl0ce2(?X0,?X1) .
+animalvh6nl0ce0(?X0,?X1) :- hatevh6nl0ce1(?X0,?X1) .
+shakevnm23nl0ce1(?X0,?X1) :- recordvnm23nl0ce2(?X0,?X1) .
+usevi23nl0ce0(?X0,?X1) :- whitevi23nl0ce1(?X0,?X1) .
+countvnm31nl0ce1(?X0,?X1) :- weathervnm31nl0ce2(?X0,?X1) .
+nationvh58nl0ce0(?X0,?X1) :- knockvh58nl0ce1(?X0,?X1) .
+wetvh13nl0ce0(?X0,?X1) :- backvh13nl0ce1(?X0,?X1) .
+attackvnm19nl0ce0(?X0,?X1) :- mattervnm19nl0ce2(?X0,?X1) .
+thumbvh29nl0ce0(?X0,?X1) :- fallvh29nl0ce1(?X0,?X1) .
+ovenvnm18nl0ce0(?X0,?X1) :- avoidvnm18nl0ce2(?X0,?X1) .
+collectionvnm2nl0ce1(?X0,?X1) :- handlevnm2nl0ce2(?X0,?X1) .
+voicevnm9nl0ce1(?X0,?X1) :- roomvnm9nl0ce2(?X0,?X1) .
+snowvnm52nl0ce0(?X0,?X1) :- cardvnm52nl0ce2(?X0,?X1) .
+mouthvnm44nl0ce0(?X0,?X1) :- groupvnm44nl0ce2(?X0,?X1) .
+intendvnm47nl0ce1(?X0,?X1) :- truevnm47nl0ce2(?X0,?X1) .
+deepad16nl0ce0(?X0,?X1) :- forgivevnm33nl0ce1(?X0,?X1) .
+remainvnm20nl0ce1(?X0,?X1) :- examinevnm20nl0ce2(?X0,?X1) .
+providevi26nl0ce0(?X0,?X1) :- delicatevi26nl0ce1(?X0,?X1) .
+testvh32nl0ce0(!X0,?X1) :- minevh32nl0ce1(?X2,?X1) .
+canvasvnm31nl0ce0(?X0,?X1) :- weathervnm31nl0ce2(?X0,?X1) .
+sleepvnm12nl0ce0(?X0,?X1) :- enginevnm12nl0ce2(?X0,?X1) .
+sensevnm42nl0ce0(?X0,?X1) :- parallelvnm2nl0ce0(?X0,?X1) .
+linevh53nl0ce0(?X0,?X1) :- watchvh53nl0ce1(?X0,?X1) .
+involvevh2nl0ce0(?X0,?X1) :- usevh2nl0ce1(?X0,?X1) .
+bootvnm5nl0ce0(?X0,?X1) :- seavnm5nl0ce2(?X0,?X1) .
+flyvi7nl0ce0(?X0,?X1) :- latevi7nl0ce1(?X0,?X1) .
+ovenvi6nl0ce0(?X0,?X1) :- greyvnm64nl0ce1(?X0,?X1) .
+clothvh46nl0ce0(?X0,?X1) :- mealvh46nl0ce1(?X0,?X1) .
+materialvh31nl0ce0(?X0,?X1) :- cowvh31nl0ce1(?X0,?X1) .
+businessvi11nl0ce0(?X0,?X1) :- yellowvi11nl0ce1(?X0,?X1) .
+havevh27nl0ce0(?X0,?X1) :- separatevh27nl0ce1(?X0,?X1) .
+imaginevi28nl0ce0(?X0,?X1) :- delivervi28nl0ce1(?X0,?X1) .
+painvi5nl0ce0(?X0,?X1) :- straightvi5nl0ce1(?X0,?X1) .
+dependentvnm5nl0ce1(?X0,?X1) :- seavnm5nl0ce2(?X0,?X1) .
+delivervh51nl0ce0(!X0,?X1) :- roundvh51nl0ce1(?X2,?X1) .
+trayvh44nl0ce0(?X0,?X1) :- foundvh44nl0ce1(?X0,?X1) .
+answervh59nl0ce0(?X0,?X1) :- playvh59nl0ce1(?X0,?X1) .
+bellvnm62nl0ce1(?X0,?X1) :- couldvnm62nl0ce2(?X0,?X1) .
+expertvi31nl0ce0(?X0,?X1) :- sortvi31nl0ce1(?X0,?X1) .
+usevnm64nl0ce0(?X0,?X1) :- horsevnm64nl0ce2(?X0,?X1) .
+poisonvnm46nl0ce1(?X0,?X1) :- officevnm46nl0ce2(?X0,?X1) .
+painvnm4nl0ce1(?X0,?X1) :- mistvnm25nl0ce2(?X0,?X1) .
+punishmentvnm24nl0ce1(?X0,?X1) :- authorityvnm24nl0ce2(?X0,?X1) .
+forgivevi9nl0ce1(?X0,?X1) :- steelad42nl0ce0(?X0,?X1) .
+risevnm28nl0ce0(?X0,?X1) :- returnvnm28nl0ce2(?X0,?X1) .
+historyvnm25nl0ce1(?X0,?X1) :- mistvnm25nl0ce2(?X0,?X1) .
+loosevnm58nl0ce1(?X0,?X1) :- layvnm58nl0ce2(?X0,?X1) .
+branchvnm22nl0ce1(?X0,?X1) :- bluevnm22nl0ce2(?X0,?X1) .
+softvnm29nl0ce1(?X0,?X1) :- feeblevi33nl0ce0(?X0,?X1) .
+commonvnm60nl0ce1(?X0,?X1) :- safevnm60nl0ce2(?X0,?X1) .
+readingvnm16nl0ce1(?X0,?X1) :- leathervnm27nl0ce2(?X0,?X1) .
+armvnm49nl0ce1(?X0,?X1) :- processvnm49nl0ce2(?X0,?X1) .
+arrangevh19nl0ce0(?X0,?X1) :- brushvh19nl0ce1(?X0,?X1) .
+platevi30nl0ce0(?X0,?X1) :- liftvi30nl0ce1(?X0,?X1) .
+swimvi54nl0ce0(?X0,?X1) :- regretvi54nl0ce1(?X0,?X1) .
+learnvh56nl0ce0(?X0,?X1) :- loosevh56nl0ce1(?X0,?X1) .
+sidevh41nl0ce0(?X0,?X1) :- orangevh41nl0ce1(?X0,?X1) .
+privatevnm54nl0ce0(?X0,?X1) :- lockvnm54nl0ce2(?X0,?X1) .
+farmvnm3nl0ce0(?X0,?X1) :- examinevnm20nl0ce2(?X0,?X1) .
+knowledgevi38nl0ce0(?X0,?X1) :- delicatevi38nl0ce1(?X0,?X1) .
+endvnm21nl0ce1(?X0,?X1) :- chemicalvh38nl0ce1(?X0,?X1) .
+delivervi28nl0ce1(?X0,?X1) :- simplevnm23nl0ce0(?X0,?X1) .
+awakevnm7nl0ce0(?X0,?X1) :- hammervnm7nl0ce2(?X0,?X1) .
+girlvh57nl0ce0(?X0,?X1) :- cartvh57nl0ce1(?X0,?X1) .
+cushionvnm62nl0ce0(?X0,?X1) :- couldvnm62nl0ce2(?X0,?X1) .
+weightvh60nl0ce0(!X0,?X1) :- pagevh60nl0ce1(?X2,?X1) .
+glovevh36nl0ce0(?X0,?X1) :- jumpvh36nl0ce1(?X0,?X1) .
+chalkvi19nl0ce0(?X0,?X1) :- smilevi19nl0ce1(?X0,?X1) .

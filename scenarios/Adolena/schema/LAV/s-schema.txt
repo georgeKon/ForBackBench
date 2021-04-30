@@ -1,45 +1,46 @@
-v0{
-	c0 : STRING,
-	c1 : STRING
+src_Disability {
+    c0 : STRING
 }
 
-v1{
-	c0 : STRING
+src_Dystonia {
+    c0 : STRING
 }
 
-v2{
-	c0 : STRING
+src_Foldable_Wheelchair {
+    c0 : STRING
 }
 
-v3{
-	c0 : STRING
+src_LightweightFoldable_Wheelchair {
+    c0 : STRING
 }
 
-v4{
-	c0 : STRING
+src_LimbMobility {
+    c0 : STRING
 }
 
-v5{
-	c0 : STRING
+src_MobilityDevice {
+    c0 : STRING,
+    c1 : STRING
 }
 
-v6{
-	c0 : STRING
+src_MovementAbility {
+    c0 : STRING
 }
 
-v7{
-	c0 : STRING
+src_PhysicalDisability {
+    c0 : STRING,
+    c1 : STRING
 }
 
-v8{
-	c0 : STRING
+src_ReadingDevice {
+    c0 : STRING
 }
 
-v9{
-	c0 : STRING
+src_Spina_Bifida {
+    c0 : STRING,
+    c1 : STRING
 }
 
-v10{
-	c0 : STRING
+src_UpperLimbMobility {
+    c0 : STRING
 }
-
