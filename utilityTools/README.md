@@ -1,9 +1,5 @@
 # Utility Tools
-This README describes the package of converter tools and other helper functions developed to assist the cross-approach comparison model by converting between formats such as ChaseBench and OWL2. These tools are used by the ForBackBench 
-```
-scripts/
-```
- to run, but can also be used as standalone tools in other projects if desired.
+This README describes the package of converter tools and other helper functions developed to assist the cross-approach comparison model by converting between formats such as ChaseBench and OWL2. These tools are used by the ForBackBench `scripts/` to run, but can also be used as standalone tools in other projects if desired.
 
 
 ## CreateCGQRTTGDs.jar
@@ -52,8 +48,8 @@ java -jar CreateLAVandGAV.jar --create [**lav**|**gav**|**both**] --scenario [*s
 
 
 ```
---create       [lav|gav|both]    | flag determining whether GAV, LAV, or both types of output are created. Defaults to both.
---scenario     [dir ...]   		 | A list of scenario directories to act on. Scenario folders must conform to the project spec. Defaults to looping through the scenario/ directory
+--create		[lav|gav|both]		| flag determining whether GAV, LAV, or both types of output are created. Defaults to both.
+--scenario		[dir ...]			| A list of scenario directories to act on. Scenario folders must conform to the project spec. Defaults to looping through the scenario/ directory
 ```
 
 
@@ -114,12 +110,10 @@ S1(X, A) -> P1(X), P2(A),  P3(X, Y)
 
 java -jar CreateLAVandGAV.jar --schema [*schema file*] --query [*query file*] ... [*query file*] --output <*output dir*>
 
-
-
 ```
---schema       [file]        | a file containing a schema
--query        [file ...]     | one or more query files (in e.g. ChaseBench format)
--output       <folder>       | the folder that will contain the generated output
+--schema		[file]			| a file containing a schema
+--query			[file ...]		| one or more query files (in e.g. ChaseBench format)
+--output 		<folder>		| the folder that will contain the generated output
 ```
 
 
@@ -148,7 +142,7 @@ java -jar GenerateDataFromTGD.jar --tgd <*tgd file*> --output <*output dir*> --r
 
 
 ```
---tgd 			 <file>		 | file containing a TGD mapping (GAV or LAV)
+--tgd 			 <file>		| file containing a TGD mapping (GAV or LAV)
 --output 		<dir>		| directory to store the output
 --rows 			[int] 		| number of rows to generate, default 100]
 --distinguished [int] 		| number of distinguished variables, default 5]
@@ -169,9 +163,7 @@ This is an extension of the DataExchangeGenerator project, used to populate a da
 
 ### SYNOPSIS
 
-```
 java -jar modifyChaseBench-1.08.jar 
-```
 
 ```
 -st-tgds       <file>   | the file containing the source-to-target TGDs
