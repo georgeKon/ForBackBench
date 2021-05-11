@@ -1,79 +1,79 @@
-src_Quadriplegia(?X) , src_isAssistedBy(?X,?Y) , src_Hard_of_hearing(?X) , src_HearingDisability(?X) , src_assistsWith(?X,?Y) , src_MovementAbility(?X) -> MovementAbility(?X) .
-src_Wheelchair(?X) , src_UpperLimbMobility(?X) , src_HearingAbility(?X) , src_SymbolBoard(?X) , src_AssistiveDevice(?X) , src_FaceToFaceCommunicationDevice(?X) , src_PhysicalAbility(?X) -> PhysicalAbility(?X) .
-src_SymbolBoard(?X) , src_Thing(?X) , src_SightAbility(?X) , src_Kyphosis(?X) , src_isAffectedBy(?X,?Y) , src_Talking_Thermometer(?X) , src_Stuttering(?X) -> Stuttering(?X) .
-src_Dystonia(?X) , src_WritingDevice(?X) , src_SpeechAbility(?X) , src_SpeechDisability(?X) -> SpeechDisability(?X) .
-src_BrailleAlarmClock(?X) , src_Disability(?X) , src_PhysicalAbility(?X) , src_BatteryPowered_Wheelchair(?X) , src_LowerLimbMobility(?X) -> LowerLimbMobility(?X) .
-src_SpeechDisability(?X) , src_Osteogensis_Imperfecta(?X) , src_TactileAbility(?X) , src_Achondroplasia(?X) , src_BraillePillOrganiser(?X) , src_LimbMobility(?X) -> LimbMobility(?X) .
-src_Deafened(?X) , src_See(?X) , src_Epilepsy(?X) , src_Hemiplegia(?X) , src_UpperLimbMobility(?X) , src_FaceToFaceCommunicationDevice(?X) -> FaceToFaceCommunicationDevice(?X) .
-src_Muscular_dystrophy(?X) , src_TactileAbility(?X) , src_BrailleAlarmClock(?X) , src_Communication_Device(?X) -> Communication_Device(?X) .
-src_Foldable_Wheelchair(?X) , src_Epilepsy(?X) , src_Manual_Wheelchair(?X) , src_Amputation(?X) , src_SensoryAbility(?X) , src_assistsWith(?X,?Y) -> assistsWith(?X,?Y) .
-src_AssistiveDevice(?X) , src_Little_or_No_Speech(?X) , src_Multiple_sclerosis(?X) , src_SpeechAbility(?X) -> SpeechAbility(?X) .
-src_Osteogensis_Imperfecta(?X) , src_See_partially(?X) , src_Disability(?X) , src_Motorised_Wheelchair(?X) , src_FaceToFaceCommunicationSoftware(?X) , src_LowVision(?X) , src_WritingDevice(?X) -> WritingDevice(?X) .
-src_Guillaume_Barre(?X) , src_Manual_Wheelchair(?X) , src_BatteryPowered_Wheelchair(?X) , src_Multiple_sclerosis(?X) -> Multiple_sclerosis(?X) .
-src_isAssistedBy(?X,?Y) , src_FaceToFaceCommunicationSoftware(?X) , src_See(?X) , src_LightweightFoldable_Wheelchair(?X) , src_Poliomyelitis(?X) , src_PhysicalDisability(?X) -> PhysicalDisability(?X) .
-src_requiresAbility(?X,?Y) , src_BrailleWatch(?X) , src_SensoryAbility(?X) , src_Achondroplasia(?X) -> Achondroplasia(?X) .
-src_SymbolBoard(?X) , src_ListenDevice(?X) , src_VisualDisability(?X) , src_BraillePillOrganiser(?X) -> BraillePillOrganiser(?X) .
-src_SensoryAbility(?X) , src_BraillePillOrganiser(?X) , src_Multiple_sclerosis(?X) , src_Achondroplasia(?X) , src_WritingDevice(?X) , src_Dystonia(?X) , src_TactileReading(?X) -> TactileReading(?X) .
-src_Muscular_dystrophy(?X) , src_SpeechAbility(?X) , src_Hard_of_hearing(?X) , src_VisualDisability(?X) , src_TelephoneAid(?X) -> TelephoneAid(?X) .
-src_VisualDisability(?X) , src_FaceToFaceCommunicationDevice(?X) , src_FaceToFaceCommunicationSoftware(?X) , src_ListenDevice(?X) -> ListenDevice(?X) .
-src_assistsWith(?X,?Y) , src_Quadriplegia(?X) , src_HearingDisability(?X) , src_LightweightFoldable_Wheelchair(?X) , src_Communication_Device(?X) , src_Device(?X) , src_SpeechDevice(?X) -> SpeechDevice(?X) .
-src_LimbMobility(?X) , src_Hear(?X) , src_Wheelchair(?X) , src_LowerLimbMobility(?X) , src_HearingAbility(?X) , src_Osteogensis_Imperfecta(?X) , src_MentalDisability(?X) -> MentalDisability(?X) .
-src_Motorised_Wheelchair(?X) , src_Reach(?X) , src_Deafened(?X) , src_Disability(?X) -> Disability(?X) .
-src_ReadingDevice(?X) , src_SymbolBoard(?X) , src_BrailleWatch(?X) , src_SpeechAbility(?X) , src_BatteryPowered_Wheelchair(?X) -> BatteryPowered_Wheelchair(?X) .
-src_TactileAbility(?X) , src_ListenDevice(?X) , src_Device(?X) , src_isAssistedBy(?X,?Y) , src_TactileReading(?X) , src_Motorised_Wheelchair(?X) -> Motorised_Wheelchair(?X) .
-src_Hard_of_hearing(?X) , src_Dystonia(?X) , src_VisualDisability(?X) , src_Device(?X) , src_BrailleWatch(?X) , src_TelephoneAid(?X) , src_Hear(?X) -> Hear(?X) .
-src_Disability(?X) , src_SensoryAbility(?X) , src_Deafened(?X) , src_BrailleAlarmClock(?X) , src_SpeechDisability(?X) , src_Multiple_sclerosis(?X) , src_HearingAbility(?X) -> HearingAbility(?X) .
-src_isAssistedBy(?X,?Y) , src_Dystonia(?X) , src_TactileReading(?X) , src_Amputation(?X) , src_IntellectualDisability(?X) , src_Muscular_dystrophy(?X) -> Muscular_dystrophy(?X) .
-src_HearingAbility(?X) , src_Epilepsy(?X) , src_Multiple_sclerosis(?X) , src_isAffectedBy(?X,?Y) , src_BrailleWatch(?X) , src_WritingDevice(?X) , src_Wheelchair(?X) -> Wheelchair(?X) .
-src_BrailleWatch(?X) , src_VisualDisability(?X) , src_IntellectualDisability(?X) , src_SensoryAbility(?X) , src_MobilityDevice(?X) -> MobilityDevice(?X) .
-src_Lightweight_Wheelchair(?X) , src_Thing(?X) , src_TelephoneAid(?X) , src_TalkingReading(?X) , src_Paraplegia(?X) -> Paraplegia(?X) .
-src_Quadriplegia(?X) , src_MobilityDevice(?X) , src_isAssistedBy(?X,?Y) , src_Motorised_Wheelchair(?X) , src_Device(?X) , src_affects(?X,?Y) -> affects(?X,?Y) .
-src_Multiple_sclerosis(?X) , src_See_partially(?X) , src_MobilityDevice(?X) , src_Quadriplegia(?X) , src_UpperLimbMobility(?X) , src_TactileAbility(?X) , src_See(?X) -> See(?X) .
-src_LimbMobility(?X) , src_Disability(?X) , src_LightweightFoldable_Wheelchair(?X) , src_isAffectedBy(?X,?Y) , src_PhysicalAbility(?X) , src_SightAbility(?X) -> SightAbility(?X) .
-src_Deaf(?X) , src_Talking_Thermometer(?X) , src_UpperLimbMobility(?X) , src_BrailleAlarmClock(?X) -> BrailleAlarmClock(?X) .
-src_Hear(?X) , src_ListenDevice(?X) , src_AssistiveDevice(?X) , src_IntellectualDisability(?X) , src_Hear_partially(?X) -> Hear_partially(?X) .
-src_BrailleWatch(?X) , src_MentalDisability(?X) , src_LowerLimbMobility(?X) , src_Kyphosis(?X) , src_VisualDisability(?X) , src_PhysicalAbility(?X) , src_AssistiveDevice(?X) -> AssistiveDevice(?X) .
-src_Hemiplegia(?X) , src_Multiple_sclerosis(?X) , src_Communication_Device(?X) , src_SymbolBoard(?X) , src_Paraplegia(?X) , src_Osteogensis_Imperfecta(?X) , src_UpperLimbMobility(?X) -> UpperLimbMobility(?X) .
-src_See(?X) , src_Hear_partially(?X) , src_LowerLimbMobility(?X) , src_SensoryAbility(?X) -> SensoryAbility(?X) .
-src_assistsWith(?X,?Y) , src_Foldable_Wheelchair(?X) , src_UpperLimbMobility(?X) , src_Ability(?X) -> Ability(?X) .
-src_LimbMobility(?X) , src_TelephoneAid(?X) , src_Autism(?X) , src_IntellectualDisability(?X) , src_Achondroplasia(?X) , src_Deafened(?X) , src_LowVision(?X) -> LowVision(?X) .
-src_AssistiveDevice(?X) , src_affects(?X,?Y) , src_Paraplegia(?X) , src_isAssistedBy(?X,?Y) , src_WritingDevice(?X) , src_HearingDisability(?X) , src_VisualDisability(?X) -> VisualDisability(?X) .
-src_IntellectualDisability(?X) , src_Motorised_Wheelchair(?X) , src_Hard_of_hearing(?X) , src_HearingDisability(?X) , src_Dystonia(?X) , src_Talking_Thermometer(?X) -> Talking_Thermometer(?X) .
-src_Autism(?X) , src_PhysicalAbility(?X) , src_Ability(?X) , src_Lightweight_Wheelchair(?X) , src_Spina_Bifida(?X) , src_Deafened(?X) , src_TalkingReading(?X) -> TalkingReading(?X) .
-src_TelephoneAid(?X) , src_isAffectedBy(?X,?Y) , src_Lightweight_Wheelchair(?X) , src_MovementAbility(?X) , src_ReadingDevice(?X) -> ReadingDevice(?X) .
-src_HearingDisability(?X) , src_Deaf(?X) , src_Autism(?X) , src_requiresAbility(?X,?Y) -> requiresAbility(?X,?Y) .
-src_MentalDisability(?X) , src_WritingDevice(?X) , src_Hear_partially(?X) , src_FaceToFaceCommunicationDevice(?X) , src_Epilepsy(?X) -> Epilepsy(?X) .
-src_See(?X) , src_Scoliosis(?X) , src_SpeechDisability(?X) , src_Poliomyelitis(?X) , src_IntellectualDisability(?X) -> IntellectualDisability(?X) .
-src_BrailleWatch(?X) , src_Deaf(?X) , src_LowVision(?X) , src_SpeechDevice(?X) , src_PhysicalAbility(?X) , src_Autism(?X) -> Autism(?X) .
-src_Ability(?X) , src_PhysicalDisability(?X) , src_BrailleWritingDevice(?X) , src_Little_or_No_Speech(?X) , src_Autism(?X) , src_Amputation(?X) -> Amputation(?X) .
-src_IntellectualDisability(?X) , src_Hear(?X) , src_affects(?X,?Y) , src_Wheelchair(?X) , src_Device(?X) -> Device(?X) .
-src_BrailleWatch(?X) , src_BrailleWritingDevice(?X) , src_Multiple_sclerosis(?X) , src_Manual_Wheelchair(?X) -> Manual_Wheelchair(?X) .
-src_Epilepsy(?X) , src_isAffectedBy(?X,?Y) , src_SpeechDisability(?X) , src_Lightweight_Wheelchair(?X) , src_BrailleWatch(?X) -> BrailleWatch(?X) .
-src_HearingDisability(?X) , src_LowVision(?X) , src_Deaf(?X) , src_Little_or_No_Speech(?X) , src_Foldable_Wheelchair(?X) -> Foldable_Wheelchair(?X) .
-src_Reach(?X) , src_SpeechDevice(?X) , src_See(?X) , src_LowVision(?X) , src_Osteogensis_Imperfecta(?X) -> Osteogensis_Imperfecta(?X) .
-src_Little_or_No_Speech(?X) , src_ListenDevice(?X) , src_LowerLimbMobility(?X) , src_Hemiplegia(?X) -> Hemiplegia(?X) .
-src_Manual_Wheelchair(?X) , src_Cerebral_palsy(?X) , src_Ability(?X) , src_Quadriplegia(?X) -> Quadriplegia(?X) .
-src_HearingAbility(?X) , src_Motorised_Wheelchair(?X) , src_Talking_Thermometer(?X) , src_HearingDisability(?X) , src_Lightweight_Wheelchair(?X) , src_Guillaume_Barre(?X) -> Guillaume_Barre(?X) .
-src_Communication_Device(?X) , src_PhysicalAbility(?X) , src_Scoliosis(?X) , src_Autism(?X) , src_Little_or_No_Speech(?X) , src_BrailleAlarmClock(?X) , src_BrailleWritingDevice(?X) -> BrailleWritingDevice(?X) .
-src_PhysicalDisability(?X) , src_ReadingDevice(?X) , src_SymbolBoard(?X) , src_assistsWith(?X,?Y) , src_Epilepsy(?X) , src_BatteryPowered_Wheelchair(?X) , src_See_partially(?X) -> See_partially(?X) .
-src_Motorised_Wheelchair(?X) , src_Deaf(?X) , src_assistsWith(?X,?Y) , src_Spina_Bifida(?X) -> Spina_Bifida(?X) .
-src_Deaf(?X) , src_MovementAbility(?X) , src_Amputation(?X) , src_TactileAbility(?X) -> TactileAbility(?X) .
-src_Cerebral_palsy(?X) , src_Dystonia(?X) , src_Autism(?X) , src_See(?X) , src_TactileReading(?X) , src_Thing(?X) -> Thing(?X) .
-src_Amputation(?X) , src_MovementAbility(?X) , src_SensoryAbility(?X) , src_Poliomyelitis(?X) , src_LimbMobility(?X) , src_isAssistedBy(?X,?Y) -> isAssistedBy(?X,?Y) .
-src_LowerLimbMobility(?X) , src_PhysicalAbility(?X) , src_Motorised_Wheelchair(?X) , src_TelephoneAid(?X) , src_isAffectedBy(?X,?Y) -> isAffectedBy(?X,?Y) .
-src_Deafened(?X) , src_TactileReading(?X) , src_AssistiveDevice(?X) , src_Amputation(?X) , src_Guillaume_Barre(?X) , src_BraillePillOrganiser(?X) , src_LightweightFoldable_Wheelchair(?X) -> LightweightFoldable_Wheelchair(?X) .
-src_Deaf(?X) , src_VisualDisability(?X) , src_affects(?X,?Y) , src_Multiple_sclerosis(?X) , src_Lightweight_Wheelchair(?X) -> Lightweight_Wheelchair(?X) .
-src_Manual_Wheelchair(?X) , src_Disability(?X) , src_Hear(?X) , src_isAffectedBy(?X,?Y) , src_MentalDisability(?X) , src_AssistiveDevice(?X) , src_Blind(?X) -> Blind(?X) .
-src_MentalDisability(?X) , src_Scoliosis(?X) , src_TalkingReading(?X) , src_Lightweight_Wheelchair(?X) , src_Thing(?X) , src_Reach(?X) -> Reach(?X) .
-src_Reach(?X) , src_MentalDisability(?X) , src_BatteryPowered_Wheelchair(?X) , src_Deaf(?X) -> Deaf(?X) .
-src_affects(?X,?Y) , src_BrailleWatch(?X) , src_Hemiplegia(?X) , src_UpperLimbMobility(?X) , src_TactileReading(?X) , src_Muscular_dystrophy(?X) , src_HearingDisability(?X) -> HearingDisability(?X) .
-src_SpeechDevice(?X) , src_Multiple_sclerosis(?X) , src_TactileAbility(?X) , src_Paraplegia(?X) , src_Hear(?X) , src_BrailleWritingDevice(?X) , src_Deafened(?X) -> Deafened(?X) .
-src_affects(?X,?Y) , src_isAffectedBy(?X,?Y) , src_Guillaume_Barre(?X) , src_Wheelchair(?X) , src_SymbolBoard(?X) -> SymbolBoard(?X) .
-src_LowVision(?X) , src_requiresAbility(?X,?Y) , src_Foldable_Wheelchair(?X) , src_LightweightFoldable_Wheelchair(?X) , src_Dystonia(?X) -> Dystonia(?X) .
-src_Quadriplegia(?X) , src_Deaf(?X) , src_WritingDevice(?X) , src_Lightweight_Wheelchair(?X) , src_LowVision(?X) , src_FaceToFaceCommunicationSoftware(?X) -> FaceToFaceCommunicationSoftware(?X) .
-src_requiresAbility(?X,?Y) , src_isAssistedBy(?X,?Y) , src_BraillePillOrganiser(?X) , src_Spina_Bifida(?X) , src_isAffectedBy(?X,?Y) , src_Kyphosis(?X) -> Kyphosis(?X) .
-src_LimbMobility(?X) , src_Manual_Wheelchair(?X) , src_isAffectedBy(?X,?Y) , src_Paraplegia(?X) , src_requiresAbility(?X,?Y) , src_Deafened(?X) , src_Hard_of_hearing(?X) -> Hard_of_hearing(?X) .
-src_Autism(?X) , src_requiresAbility(?X,?Y) , src_assistsWith(?X,?Y) , src_Achondroplasia(?X) , src_ReadingDevice(?X) , src_Cerebral_palsy(?X) -> Cerebral_palsy(?X) .
-src_LimbMobility(?X) , src_TactileReading(?X) , src_SightAbility(?X) , src_Epilepsy(?X) , src_BrailleAlarmClock(?X) , src_Dystonia(?X) , src_Poliomyelitis(?X) -> Poliomyelitis(?X) .
-src_Talking_Thermometer(?X) , src_Epilepsy(?X) , src_Achondroplasia(?X) , src_IntellectualDisability(?X) , src_Little_or_No_Speech(?X) -> Little_or_No_Speech(?X) .
-src_Cerebral_palsy(?X) , src_assistsWith(?X,?Y) , src_Osteogensis_Imperfecta(?X) , src_ReadingDevice(?X) , src_Scoliosis(?X) -> Scoliosis(?X) .
+src_Hear_partially(?X) , src_SpeechDevice(?X) , src_TactileAbility(?X) , src_Little_or_No_Speech(?X) , src_MovementAbility(?X) -> MovementAbility(?X) .
+src_Device(?X) , src_MentalDisability(?X) , src_Ability(?X) , src_PhysicalAbility(?X) -> PhysicalAbility(?X) .
+src_Little_or_No_Speech(?X) , src_IntellectualDisability(?X) , src_TelephoneAid(?X) , src_SpeechDevice(?X) , src_Stuttering(?X) -> Stuttering(?X) .
+src_Achondroplasia(?X) , src_IntellectualDisability(?X) , src_FaceToFaceCommunicationDevice(?X) , src_SpeechDisability(?X) -> SpeechDisability(?X) .
+src_LimbMobility(?X) , src_Hear_partially(?X) , src_TalkingReading(?X) , src_LowerLimbMobility(?X) -> LowerLimbMobility(?X) .
+src_PhysicalDisability(?X) , src_Guillaume_Barre(?X) , src_Deafened(?X) , src_Stuttering(?X) , src_BrailleWritingDevice(?X) , src_SpeechDisability(?X) , src_LimbMobility(?X) -> LimbMobility(?X) .
+src_Autism(?X) , src_Hear(?X) , src_BraillePillOrganiser(?X) , src_FaceToFaceCommunicationDevice(?X) -> FaceToFaceCommunicationDevice(?X) .
+src_Foldable_Wheelchair(?X) , src_TactileReading(?X) , src_Multiple_sclerosis(?X) , src_Communication_Device(?X) -> Communication_Device(?X) .
+src_Hemiplegia(?X) , src_Paraplegia(?X) , src_LightweightFoldable_Wheelchair(?X) , src_See_partially(?X) , src_FaceToFaceCommunicationSoftware(?X) , src_Little_or_No_Speech(?X) , src_assistsWith(?X,?Y) -> assistsWith(?X,?Y) .
+src_Stuttering(?X) , src_Hemiplegia(?X) , src_AssistiveDevice(?X) , src_FaceToFaceCommunicationSoftware(?X) , src_See_partially(?X) , src_SpeechAbility(?X) -> SpeechAbility(?X) .
+src_HearingAbility(?X) , src_ReadingDevice(?X) , src_FaceToFaceCommunicationSoftware(?X) , src_Cerebral_palsy(?X) , src_Quadriplegia(?X) , src_WritingDevice(?X) -> WritingDevice(?X) .
+src_Quadriplegia(?X) , src_Manual_Wheelchair(?X) , src_Blind(?X) , src_Device(?X) , src_AssistiveDevice(?X) , src_Multiple_sclerosis(?X) -> Multiple_sclerosis(?X) .
+src_UpperLimbMobility(?X) , src_BrailleAlarmClock(?X) , src_Kyphosis(?X) , src_PhysicalDisability(?X) -> PhysicalDisability(?X) .
+src_UpperLimbMobility(?X) , src_TactileReading(?X) , src_Ability(?X) , src_Achondroplasia(?X) -> Achondroplasia(?X) .
+src_Wheelchair(?X) , src_ListenDevice(?X) , src_assistsWith(?X,?Y) , src_Communication_Device(?X) , src_BraillePillOrganiser(?X) -> BraillePillOrganiser(?X) .
+src_TactileAbility(?X) , src_SightAbility(?X) , src_LowerLimbMobility(?X) , src_BrailleWritingDevice(?X) , src_Talking_Thermometer(?X) , src_SpeechDevice(?X) , src_TactileReading(?X) -> TactileReading(?X) .
+src_HearingDisability(?X) , src_Spina_Bifida(?X) , src_TactileReading(?X) , src_TelephoneAid(?X) -> TelephoneAid(?X) .
+src_Foldable_Wheelchair(?X) , src_SymbolBoard(?X) , src_Poliomyelitis(?X) , src_Motorised_Wheelchair(?X) , src_MentalDisability(?X) , src_requiresAbility(?X,?Y) , src_ListenDevice(?X) -> ListenDevice(?X) .
+src_LowVision(?X) , src_SpeechDisability(?X) , src_Paraplegia(?X) , src_Reach(?X) , src_SpeechDevice(?X) -> SpeechDevice(?X) .
+src_Guillaume_Barre(?X) , src_BrailleWritingDevice(?X) , src_Scoliosis(?X) , src_BatteryPowered_Wheelchair(?X) , src_Reach(?X) , src_MentalDisability(?X) -> MentalDisability(?X) .
+src_SpeechDevice(?X) , src_SpeechDisability(?X) , src_MentalDisability(?X) , src_Epilepsy(?X) , src_Disability(?X) -> Disability(?X) .
+src_SensoryAbility(?X) , src_LowerLimbMobility(?X) , src_Kyphosis(?X) , src_MobilityDevice(?X) , src_LightweightFoldable_Wheelchair(?X) , src_Foldable_Wheelchair(?X) , src_BatteryPowered_Wheelchair(?X) -> BatteryPowered_Wheelchair(?X) .
+src_FaceToFaceCommunicationDevice(?X) , src_PhysicalDisability(?X) , src_MentalDisability(?X) , src_Little_or_No_Speech(?X) , src_LimbMobility(?X) , src_SpeechDevice(?X) , src_Motorised_Wheelchair(?X) -> Motorised_Wheelchair(?X) .
+src_isAssistedBy(?X,?Y) , src_MobilityDevice(?X) , src_Quadriplegia(?X) , src_BrailleWatch(?X) , src_VisualDisability(?X) , src_Hear(?X) -> Hear(?X) .
+src_Dystonia(?X) , src_Achondroplasia(?X) , src_PhysicalDisability(?X) , src_Blind(?X) , src_HearingAbility(?X) -> HearingAbility(?X) .
+src_SymbolBoard(?X) , src_HearingAbility(?X) , src_Motorised_Wheelchair(?X) , src_Muscular_dystrophy(?X) -> Muscular_dystrophy(?X) .
+src_Osteogensis_Imperfecta(?X) , src_Quadriplegia(?X) , src_Device(?X) , src_Disability(?X) , src_requiresAbility(?X,?Y) , src_Wheelchair(?X) -> Wheelchair(?X) .
+src_isAffectedBy(?X,?Y) , src_Cerebral_palsy(?X) , src_isAssistedBy(?X,?Y) , src_Motorised_Wheelchair(?X) , src_Quadriplegia(?X) , src_MobilityDevice(?X) -> MobilityDevice(?X) .
+src_Muscular_dystrophy(?X) , src_Thing(?X) , src_TactileAbility(?X) , src_Quadriplegia(?X) , src_Paraplegia(?X) -> Paraplegia(?X) .
+src_Hear_partially(?X) , src_Hear(?X) , src_IntellectualDisability(?X) , src_UpperLimbMobility(?X) , src_HearingDisability(?X) , src_See_partially(?X) , src_affects(?X,?Y) -> affects(?X,?Y) .
+src_Muscular_dystrophy(?X) , src_Stuttering(?X) , src_SensoryAbility(?X) , src_SpeechAbility(?X) , src_isAssistedBy(?X,?Y) , src_ReadingDevice(?X) , src_See(?X) -> See(?X) .
+src_TactileReading(?X) , src_SpeechDevice(?X) , src_Little_or_No_Speech(?X) , src_Foldable_Wheelchair(?X) , src_affects(?X,?Y) , src_Amputation(?X) , src_SightAbility(?X) -> SightAbility(?X) .
+src_Reach(?X) , src_Kyphosis(?X) , src_Hear_partially(?X) , src_Epilepsy(?X) , src_Foldable_Wheelchair(?X) , src_BrailleAlarmClock(?X) -> BrailleAlarmClock(?X) .
+src_TactileReading(?X) , src_Deaf(?X) , src_Hard_of_hearing(?X) , src_BraillePillOrganiser(?X) , src_Hear_partially(?X) -> Hear_partially(?X) .
+src_Deaf(?X) , src_SensoryAbility(?X) , src_SymbolBoard(?X) , src_LimbMobility(?X) , src_Hard_of_hearing(?X) , src_Paraplegia(?X) , src_AssistiveDevice(?X) -> AssistiveDevice(?X) .
+src_Communication_Device(?X) , src_Hard_of_hearing(?X) , src_Paraplegia(?X) , src_BraillePillOrganiser(?X) , src_BatteryPowered_Wheelchair(?X) , src_UpperLimbMobility(?X) -> UpperLimbMobility(?X) .
+src_BraillePillOrganiser(?X) , src_LightweightFoldable_Wheelchair(?X) , src_UpperLimbMobility(?X) , src_Stuttering(?X) , src_SensoryAbility(?X) -> SensoryAbility(?X) .
+src_ListenDevice(?X) , src_TactileAbility(?X) , src_LowerLimbMobility(?X) , src_Ability(?X) -> Ability(?X) .
+src_Guillaume_Barre(?X) , src_BrailleWatch(?X) , src_TactileReading(?X) , src_Dystonia(?X) , src_LowVision(?X) -> LowVision(?X) .
+src_BrailleWatch(?X) , src_Epilepsy(?X) , src_Lightweight_Wheelchair(?X) , src_BrailleWritingDevice(?X) , src_Dystonia(?X) , src_Guillaume_Barre(?X) , src_VisualDisability(?X) -> VisualDisability(?X) .
+src_Hear(?X) , src_affects(?X,?Y) , src_TactileAbility(?X) , src_Talking_Thermometer(?X) -> Talking_Thermometer(?X) .
+src_SpeechDisability(?X) , src_ReadingDevice(?X) , src_PhysicalDisability(?X) , src_LimbMobility(?X) , src_Dystonia(?X) , src_TalkingReading(?X) -> TalkingReading(?X) .
+src_SymbolBoard(?X) , src_MobilityDevice(?X) , src_Ability(?X) , src_SensoryAbility(?X) , src_LowerLimbMobility(?X) , src_ReadingDevice(?X) -> ReadingDevice(?X) .
+src_isAssistedBy(?X,?Y) , src_Wheelchair(?X) , src_SpeechAbility(?X) , src_LowerLimbMobility(?X) , src_TalkingReading(?X) , src_Lightweight_Wheelchair(?X) , src_requiresAbility(?X,?Y) -> requiresAbility(?X,?Y) .
+src_assistsWith(?X,?Y) , src_Deaf(?X) , src_Disability(?X) , src_isAssistedBy(?X,?Y) , src_SpeechAbility(?X) , src_Epilepsy(?X) -> Epilepsy(?X) .
+src_BrailleWatch(?X) , src_Reach(?X) , src_Hemiplegia(?X) , src_Poliomyelitis(?X) , src_Guillaume_Barre(?X) , src_Device(?X) , src_IntellectualDisability(?X) -> IntellectualDisability(?X) .
+src_Manual_Wheelchair(?X) , src_Dystonia(?X) , src_assistsWith(?X,?Y) , src_requiresAbility(?X,?Y) , src_Autism(?X) -> Autism(?X) .
+src_See_partially(?X) , src_Wheelchair(?X) , src_assistsWith(?X,?Y) , src_Reach(?X) , src_Amputation(?X) -> Amputation(?X) .
+src_TactileReading(?X) , src_Wheelchair(?X) , src_TactileAbility(?X) , src_Lightweight_Wheelchair(?X) , src_Spina_Bifida(?X) , src_See(?X) , src_Device(?X) -> Device(?X) .
+src_AssistiveDevice(?X) , src_Hear(?X) , src_BatteryPowered_Wheelchair(?X) , src_ListenDevice(?X) , src_Manual_Wheelchair(?X) -> Manual_Wheelchair(?X) .
+src_Hear_partially(?X) , src_Talking_Thermometer(?X) , src_Osteogensis_Imperfecta(?X) , src_Spina_Bifida(?X) , src_BrailleWatch(?X) -> BrailleWatch(?X) .
+src_HearingAbility(?X) , src_Deaf(?X) , src_Hemiplegia(?X) , src_Foldable_Wheelchair(?X) -> Foldable_Wheelchair(?X) .
+src_Deaf(?X) , src_HearingAbility(?X) , src_IntellectualDisability(?X) , src_PhysicalAbility(?X) , src_Osteogensis_Imperfecta(?X) -> Osteogensis_Imperfecta(?X) .
+src_Lightweight_Wheelchair(?X) , src_SpeechAbility(?X) , src_isAffectedBy(?X,?Y) , src_Hemiplegia(?X) -> Hemiplegia(?X) .
+src_Disability(?X) , src_TalkingReading(?X) , src_ReadingDevice(?X) , src_requiresAbility(?X,?Y) , src_PhysicalDisability(?X) , src_Quadriplegia(?X) -> Quadriplegia(?X) .
+src_Muscular_dystrophy(?X) , src_SpeechDisability(?X) , src_Manual_Wheelchair(?X) , src_IntellectualDisability(?X) , src_Guillaume_Barre(?X) -> Guillaume_Barre(?X) .
+src_MobilityDevice(?X) , src_AssistiveDevice(?X) , src_TactileReading(?X) , src_SpeechDisability(?X) , src_BrailleWritingDevice(?X) -> BrailleWritingDevice(?X) .
+src_ReadingDevice(?X) , src_SensoryAbility(?X) , src_ListenDevice(?X) , src_See_partially(?X) -> See_partially(?X) .
+src_isAffectedBy(?X,?Y) , src_Little_or_No_Speech(?X) , src_Hear_partially(?X) , src_HearingAbility(?X) , src_Spina_Bifida(?X) -> Spina_Bifida(?X) .
+src_HearingDisability(?X) , src_Dystonia(?X) , src_TelephoneAid(?X) , src_See_partially(?X) , src_Spina_Bifida(?X) , src_FaceToFaceCommunicationDevice(?X) , src_TactileAbility(?X) -> TactileAbility(?X) .
+src_Hemiplegia(?X) , src_Quadriplegia(?X) , src_HearingDisability(?X) , src_Poliomyelitis(?X) , src_TalkingReading(?X) , src_Thing(?X) -> Thing(?X) .
+src_BrailleWatch(?X) , src_Paraplegia(?X) , src_HearingAbility(?X) , src_ListenDevice(?X) , src_isAssistedBy(?X,?Y) -> isAssistedBy(?X,?Y) .
+src_LowVision(?X) , src_MobilityDevice(?X) , src_requiresAbility(?X,?Y) , src_Osteogensis_Imperfecta(?X) , src_WritingDevice(?X) , src_isAffectedBy(?X,?Y) -> isAffectedBy(?X,?Y) .
+src_FaceToFaceCommunicationSoftware(?X) , src_Hear(?X) , src_ListenDevice(?X) , src_Cerebral_palsy(?X) , src_SpeechDisability(?X) , src_LightweightFoldable_Wheelchair(?X) -> LightweightFoldable_Wheelchair(?X) .
+src_MovementAbility(?X) , src_Guillaume_Barre(?X) , src_AssistiveDevice(?X) , src_Osteogensis_Imperfecta(?X) , src_Paraplegia(?X) , src_Epilepsy(?X) , src_Lightweight_Wheelchair(?X) -> Lightweight_Wheelchair(?X) .
+src_See_partially(?X) , src_TalkingReading(?X) , src_Epilepsy(?X) , src_Blind(?X) -> Blind(?X) .
+src_ListenDevice(?X) , src_Ability(?X) , src_VisualDisability(?X) , src_Motorised_Wheelchair(?X) , src_BrailleAlarmClock(?X) , src_Guillaume_Barre(?X) , src_Reach(?X) -> Reach(?X) .
+src_AssistiveDevice(?X) , src_Device(?X) , src_BrailleWatch(?X) , src_requiresAbility(?X,?Y) , src_Lightweight_Wheelchair(?X) , src_Deaf(?X) -> Deaf(?X) .
+src_Communication_Device(?X) , src_Stuttering(?X) , src_Autism(?X) , src_BrailleWatch(?X) , src_HearingDisability(?X) -> HearingDisability(?X) .
+src_BraillePillOrganiser(?X) , src_Wheelchair(?X) , src_Achondroplasia(?X) , src_Deafened(?X) -> Deafened(?X) .
+src_Stuttering(?X) , src_LightweightFoldable_Wheelchair(?X) , src_BrailleWritingDevice(?X) , src_SymbolBoard(?X) -> SymbolBoard(?X) .
+src_Autism(?X) , src_PhysicalAbility(?X) , src_MentalDisability(?X) , src_ListenDevice(?X) , src_UpperLimbMobility(?X) , src_Dystonia(?X) -> Dystonia(?X) .
+src_TactileReading(?X) , src_LightweightFoldable_Wheelchair(?X) , src_Amputation(?X) , src_FaceToFaceCommunicationSoftware(?X) -> FaceToFaceCommunicationSoftware(?X) .
+src_Device(?X) , src_Osteogensis_Imperfecta(?X) , src_TactileAbility(?X) , src_Kyphosis(?X) -> Kyphosis(?X) .
+src_ReadingDevice(?X) , src_Autism(?X) , src_SpeechDevice(?X) , src_Paraplegia(?X) , src_Hard_of_hearing(?X) -> Hard_of_hearing(?X) .
+src_WritingDevice(?X) , src_IntellectualDisability(?X) , src_SensoryAbility(?X) , src_Amputation(?X) , src_Spina_Bifida(?X) , src_Achondroplasia(?X) , src_Cerebral_palsy(?X) -> Cerebral_palsy(?X) .
+src_Deafened(?X) , src_Talking_Thermometer(?X) , src_FaceToFaceCommunicationSoftware(?X) , src_Poliomyelitis(?X) -> Poliomyelitis(?X) .
+src_ListenDevice(?X) , src_PhysicalAbility(?X) , src_Manual_Wheelchair(?X) , src_Little_or_No_Speech(?X) -> Little_or_No_Speech(?X) .
+src_Autism(?X) , src_Quadriplegia(?X) , src_Guillaume_Barre(?X) , src_BraillePillOrganiser(?X) , src_MobilityDevice(?X) , src_Epilepsy(?X) , src_Scoliosis(?X) -> Scoliosis(?X) .

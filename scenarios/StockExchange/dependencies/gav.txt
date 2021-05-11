@@ -1,30 +1,30 @@
-src_listsStock(?X,?Y) , src_hasAddress(?X,?Y) , src_involvesInstrument(?X,?Y) , src_Stock(?X) , src_Acquisition(?X) -> Acquisition(?X) .
-src_isTradedIn(?X,?Y) , src_StockExchangeList(?X) , src_isExecutedBy(?X,?Y) , src_listsStock(?X,?Y) , src_usesBroker(?X,?Y) , src_Company(?X) , src_Transaction(?X) -> Transaction(?X) .
-src_isExecutedFor(?X,?Y) , src_hasAddress(?X,?Y) , src_Acquisition(?X) , src_Address(?X) -> Address(?X) .
-src_LegalPerson(?X) , src_StockExchangeList(?X) , src_isListedIn(?X,?Y) , src_Thing(?X) -> Thing(?X) .
-src_Thing(?X) , src_Offer(?X) , src_isTradedIn(?X,?Y) , src_inverseofhasAddress(?X,?Y) -> inverseofhasAddress(?X,?Y) .
-src_Stock(?X) , src_hasAddress(?X,?Y) , src_StockExchangeList(?X) , src_hasStock(?X,?Y) , src_Company(?X) -> Company(?X) .
-src_StockExchangeList(?X) , src_Investor(?X) , src_Acquisition(?X) , src_Stock(?X) , src_Offer(?X) , src_StockBroker(?X) , src_LegalPerson(?X) -> LegalPerson(?X) .
-src_isExecutedFor(?X,?Y) , src_Trader(?X) , src_listsStock(?X,?Y) , src_Company(?X) , src_Dealer(?X) -> Dealer(?X) .
-src_FinantialInstrument(?X) , src_Company(?X) , src_StockExchangeMember(?X) , src_involvesInstrument(?X,?Y) , src_StockBroker(?X) -> StockBroker(?X) .
-src_Dealer(?X) , src_involvesInstrument(?X,?Y) , src_hasStock(?X,?Y) , src_isListedIn(?X,?Y) , src_Investor(?X) -> Investor(?X) .
-src_Investor(?X) , src_StockExchangeMember(?X) , src_StockTrader(?X) , src_Thing(?X) , src_Person(?X) -> Person(?X) .
-src_Transaction(?X) , src_involvesInstrument(?X,?Y) , src_Thing(?X) , src_listsStock(?X,?Y) , src_Person(?X) , src_PhysicalPerson(?X) , src_Offer(?X) -> Offer(?X) .
-src_isTradedIn(?X,?Y) , src_involvesInstrument(?X,?Y) , src_Acquisition(?X) , src_hasAddress(?X,?Y) -> hasAddress(?X,?Y) .
-src_FinantialInstrument(?X) , src_StockTrader(?X) , src_StockExchangeMember(?X) , src_Person(?X) , src_PhysicalPerson(?X) -> PhysicalPerson(?X) .
-src_Trader(?X) , src_Offer(?X) , src_Person(?X) , src_Transaction(?X) , src_StockExchangeMember(?X) , src_isListedIn(?X,?Y) , src_Stock(?X) -> Stock(?X) .
-src_Acquisition(?X) , src_Address(?X) , src_StockBroker(?X) , src_FinantialInstrument(?X) -> FinantialInstrument(?X) .
-src_Stock(?X) , src_StockExchangeMember(?X) , src_involvesInstrument(?X,?Y) , src_LegalPerson(?X) , src_Address(?X) , src_isListedIn(?X,?Y) -> isListedIn(?X,?Y) .
-src_Stock(?X) , src_Offer(?X) , src_hasAddress(?X,?Y) , src_StockExchangeMember(?X) , src_PhysicalPerson(?X) , src_belongsToCompany(?X,?Y) -> belongsToCompany(?X,?Y) .
-src_StockExchangeList(?X) , src_StockBroker(?X) , src_isExecutedBy(?X,?Y) , src_StockTrader(?X) , src_Person(?X) , src_LegalPerson(?X) , src_StockExchangeMember(?X) -> StockExchangeMember(?X) .
-src_Company(?X) , src_Stock(?X) , src_belongsToCompany(?X,?Y) , src_listsStock(?X,?Y) , src_tradesOnBehalfOf(?X,?Y) -> tradesOnBehalfOf(?X,?Y) .
-src_inverseofhasAddress(?X,?Y) , src_Stock(?X) , src_StockExchangeMember(?X) , src_StockExchangeList(?X) , src_StockTrader(?X) -> StockTrader(?X) .
-src_involvesInstrument(?X,?Y) , src_usesBroker(?X,?Y) , src_isTradedIn(?X,?Y) , src_Trader(?X) -> Trader(?X) .
-src_Company(?X) , src_belongsToCompany(?X,?Y) , src_PhysicalPerson(?X) , src_isListedIn(?X,?Y) , src_Offer(?X) , src_StockExchangeMember(?X) , src_isExecutedFor(?X,?Y) -> isExecutedFor(?X,?Y) .
-src_inverseofhasAddress(?X,?Y) , src_Offer(?X) , src_PhysicalPerson(?X) , src_StockExchangeMember(?X) , src_Acquisition(?X) , src_isExecutedBy(?X,?Y) -> isExecutedBy(?X,?Y) .
-src_usesBroker(?X,?Y) , src_tradesOnBehalfOf(?X,?Y) , src_Investor(?X) , src_inverseofhasAddress(?X,?Y) , src_involvesInstrument(?X,?Y) -> involvesInstrument(?X,?Y) .
-src_isTradedIn(?X,?Y) , src_LegalPerson(?X) , src_isExecutedBy(?X,?Y) , src_isListedIn(?X,?Y) , src_Dealer(?X) , src_hasStock(?X,?Y) -> hasStock(?X,?Y) .
-src_isExecutedFor(?X,?Y) , src_isTradedIn(?X,?Y) , src_Company(?X) , src_Thing(?X) , src_LegalPerson(?X) , src_StockExchangeList(?X) -> StockExchangeList(?X) .
-src_Transaction(?X) , src_Thing(?X) , src_involvesInstrument(?X,?Y) , src_StockBroker(?X) , src_listsStock(?X,?Y) -> listsStock(?X,?Y) .
-src_Address(?X) , src_hasStock(?X,?Y) , src_Stock(?X) , src_isTradedIn(?X,?Y) -> isTradedIn(?X,?Y) .
-src_Investor(?X) , src_inverseofhasAddress(?X,?Y) , src_involvesInstrument(?X,?Y) , src_Trader(?X) , src_Thing(?X) , src_usesBroker(?X,?Y) -> usesBroker(?X,?Y) .
+src_FinantialInstrument(?X) , src_LegalPerson(?X) , src_usesBroker(?X,?Y) , src_Dealer(?X) , src_Acquisition(?X) -> Acquisition(?X) .
+src_Acquisition(?X) , src_Offer(?X) , src_hasStock(?X,?Y) , src_Thing(?X) , src_StockExchangeList(?X) , src_Transaction(?X) -> Transaction(?X) .
+src_StockExchangeList(?X) , src_Company(?X) , src_isExecutedFor(?X,?Y) , src_LegalPerson(?X) , src_Address(?X) -> Address(?X) .
+src_Dealer(?X) , src_isExecutedBy(?X,?Y) , src_StockTrader(?X) , src_StockExchangeList(?X) , src_Acquisition(?X) , src_isListedIn(?X,?Y) , src_Thing(?X) -> Thing(?X) .
+src_Person(?X) , src_StockTrader(?X) , src_Trader(?X) , src_inverseofhasAddress(?X,?Y) -> inverseofhasAddress(?X,?Y) .
+src_Person(?X) , src_involvesInstrument(?X,?Y) , src_isExecutedFor(?X,?Y) , src_Address(?X) , src_Company(?X) -> Company(?X) .
+src_isTradedIn(?X,?Y) , src_isListedIn(?X,?Y) , src_Acquisition(?X) , src_StockExchangeMember(?X) , src_inverseofhasAddress(?X,?Y) , src_hasAddress(?X,?Y) , src_LegalPerson(?X) -> LegalPerson(?X) .
+src_Company(?X) , src_Acquisition(?X) , src_Stock(?X) , src_inverseofhasAddress(?X,?Y) , src_isListedIn(?X,?Y) , src_Dealer(?X) -> Dealer(?X) .
+src_involvesInstrument(?X,?Y) , src_listsStock(?X,?Y) , src_isListedIn(?X,?Y) , src_Offer(?X) , src_hasStock(?X,?Y) , src_StockBroker(?X) -> StockBroker(?X) .
+src_FinantialInstrument(?X) , src_LegalPerson(?X) , src_StockExchangeMember(?X) , src_Investor(?X) -> Investor(?X) .
+src_Offer(?X) , src_belongsToCompany(?X,?Y) , src_inverseofhasAddress(?X,?Y) , src_PhysicalPerson(?X) , src_isExecutedFor(?X,?Y) , src_FinantialInstrument(?X) , src_Person(?X) -> Person(?X) .
+src_usesBroker(?X,?Y) , src_listsStock(?X,?Y) , src_Investor(?X) , src_isExecutedBy(?X,?Y) , src_Offer(?X) -> Offer(?X) .
+src_Stock(?X) , src_Person(?X) , src_Trader(?X) , src_FinantialInstrument(?X) , src_isTradedIn(?X,?Y) , src_inverseofhasAddress(?X,?Y) , src_hasAddress(?X,?Y) -> hasAddress(?X,?Y) .
+src_involvesInstrument(?X,?Y) , src_isExecutedBy(?X,?Y) , src_hasStock(?X,?Y) , src_Acquisition(?X) , src_PhysicalPerson(?X) -> PhysicalPerson(?X) .
+src_listsStock(?X,?Y) , src_Company(?X) , src_StockTrader(?X) , src_Stock(?X) -> Stock(?X) .
+src_hasStock(?X,?Y) , src_Acquisition(?X) , src_Thing(?X) , src_Address(?X) , src_isTradedIn(?X,?Y) , src_FinantialInstrument(?X) -> FinantialInstrument(?X) .
+src_StockExchangeList(?X) , src_PhysicalPerson(?X) , src_Transaction(?X) , src_isListedIn(?X,?Y) -> isListedIn(?X,?Y) .
+src_PhysicalPerson(?X) , src_StockTrader(?X) , src_involvesInstrument(?X,?Y) , src_Person(?X) , src_belongsToCompany(?X,?Y) -> belongsToCompany(?X,?Y) .
+src_Stock(?X) , src_Dealer(?X) , src_Address(?X) , src_StockExchangeMember(?X) -> StockExchangeMember(?X) .
+src_Company(?X) , src_Transaction(?X) , src_Dealer(?X) , src_isTradedIn(?X,?Y) , src_usesBroker(?X,?Y) , src_tradesOnBehalfOf(?X,?Y) -> tradesOnBehalfOf(?X,?Y) .
+src_Investor(?X) , src_PhysicalPerson(?X) , src_Company(?X) , src_isExecutedFor(?X,?Y) , src_isListedIn(?X,?Y) , src_Offer(?X) , src_StockTrader(?X) -> StockTrader(?X) .
+src_Dealer(?X) , src_Offer(?X) , src_LegalPerson(?X) , src_listsStock(?X,?Y) , src_Person(?X) , src_Trader(?X) -> Trader(?X) .
+src_StockExchangeList(?X) , src_Dealer(?X) , src_isTradedIn(?X,?Y) , src_listsStock(?X,?Y) , src_Transaction(?X) , src_FinantialInstrument(?X) , src_isExecutedFor(?X,?Y) -> isExecutedFor(?X,?Y) .
+src_Thing(?X) , src_LegalPerson(?X) , src_isTradedIn(?X,?Y) , src_isExecutedBy(?X,?Y) -> isExecutedBy(?X,?Y) .
+src_StockTrader(?X) , src_PhysicalPerson(?X) , src_hasAddress(?X,?Y) , src_involvesInstrument(?X,?Y) -> involvesInstrument(?X,?Y) .
+src_tradesOnBehalfOf(?X,?Y) , src_listsStock(?X,?Y) , src_belongsToCompany(?X,?Y) , src_StockExchangeList(?X) , src_hasStock(?X,?Y) -> hasStock(?X,?Y) .
+src_belongsToCompany(?X,?Y) , src_inverseofhasAddress(?X,?Y) , src_usesBroker(?X,?Y) , src_Stock(?X) , src_hasAddress(?X,?Y) , src_Transaction(?X) , src_StockExchangeList(?X) -> StockExchangeList(?X) .
+src_Stock(?X) , src_isExecutedBy(?X,?Y) , src_Offer(?X) , src_LegalPerson(?X) , src_isListedIn(?X,?Y) , src_listsStock(?X,?Y) -> listsStock(?X,?Y) .
+src_Acquisition(?X) , src_StockBroker(?X) , src_hasStock(?X,?Y) , src_Dealer(?X) , src_listsStock(?X,?Y) , src_Person(?X) , src_isTradedIn(?X,?Y) -> isTradedIn(?X,?Y) .
+src_belongsToCompany(?X,?Y) , src_StockBroker(?X) , src_FinantialInstrument(?X) , src_usesBroker(?X,?Y) -> usesBroker(?X,?Y) .
