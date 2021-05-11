@@ -2,46 +2,43 @@ src_MovementAbility{
 	c0 : STRING,
 }
 
-src_LimbMobility{
+src_Communication_Device{
 	c0 : STRING,
 }
 
-src_PhysicalDisability{
-	c0 : STRING,
-	c1 : STRING,
-}
-
-src_Disability{
+src_ListenDevice{
 	c0 : STRING,
 }
 
 src_MobilityDevice{
 	c0 : STRING,
-	c1 : STRING,
 }
 
-src_UpperLimbMobility{
+src_Hear_partially{
 	c0 : STRING,
 }
 
-src_ReadingDevice{
+src_VisualDisability{
 	c0 : STRING,
 }
 
-src_Foldable_Wheelchair{
+src_Device{
 	c0 : STRING,
 }
 
-src_Spina_Bifida{
-	c0 : STRING,
-	c1 : STRING,
-}
-
-src_LightweightFoldable_Wheelchair{
+src_Quadriplegia{
 	c0 : STRING,
 }
 
-src_Dystonia{
+src_Thing{
+	c0 : STRING,
+}
+
+src_Reach{
+	c0 : STRING,
+}
+
+src_FaceToFaceCommunicationSoftware{
 	c0 : STRING,
 }
 

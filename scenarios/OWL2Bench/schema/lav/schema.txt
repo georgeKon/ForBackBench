@@ -1,145 +1,139 @@
 src_AeronauticalEngineering{
 	c0 : STRING,
+	c1 : STRING,
 }
 
-src_Publication{
+src_Professor{
 	c0 : STRING,
 }
 
-src_Science{
+src_BasketBall{
 	c0 : STRING,
 }
 
-src_BasketBallLover{
+src_Biology{
 	c0 : STRING,
 }
 
-src_FullProfessor{
-	c0 : STRING,
-}
-
-src_SupportingStaff{
-	c0 : STRING,
-}
-
-src_ConferencePaper{
-	c0 : STRING,
-}
-
-src_Economics{
-	c0 : STRING,
-}
-
-src_EmployeeEvaluationCommittee{
+src_ChemicalEngineering{
 	c0 : STRING,
 	c1 : STRING,
 }
 
-src_Geosciences{
+src_ComputerScience{
 	c0 : STRING,
 }
 
-src_Institute{
+src_Management{
 	c0 : STRING,
 }
 
-src_Mathematics{
+src_Course{
+	c0 : STRING,
+}
+
+src_English{
+	c0 : STRING,
+}
+
+src_Game{
 	c0 : STRING,
 	c1 : STRING,
+}
+
+src_LatinArts{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_MechanicalEngineering{
+	c0 : STRING,
 }
 
 src_NonScience{
 	c0 : STRING,
 }
 
-src_PGStudent{
-	c0 : STRING,
-}
-
-src_PerformingArts{
-	c0 : STRING,
-}
-
-src_Psychology{
-	c0 : STRING,
-}
-
-src_Work{
-	c0 : STRING,
-}
-
-src_SportsLover{
-	c0 : STRING,
-}
-
-src_SystemStaff{
-	c0 : STRING,
-}
-
-src_ThesisEvaluationCommittee{
-	c0 : STRING,
-}
-
-src_VisitingProfessor{
-	c0 : STRING,
-	c1 : STRING,
-}
-
-src_hasAlumnus{
-	c0 : STRING,
-	c1 : STRING,
-}
-
-src_hasAssociateProfessor{
+src_OtherStaff{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
 }
 
-src_hasSubOrganization{
+src_PhDStudent{
 	c0 : STRING,
 }
 
-src_hasDoctoralDegreeFrom{
+src_ResearchGroup{
+	c0 : STRING,
+}
+
+src_Specification{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_isTeachingAssistantOf{
+	c0 : STRING,
+}
+
+src_UGStudent{
+	c0 : STRING,
+}
+
+src_dislikes{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
 }
 
-src_hasLecturer{
-	c0 : STRING,
-}
-
-src_hasProgram{
+src_hasProfessor{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
+}
+
+src_hasCollegeDiscipline{
+	c0 : STRING,
+	c1 : STRING,
+}
+
+src_hasEmployee{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+}
+
+src_hasMasterDegreeFrom{
+	c0 : STRING,
+	c1 : STRING,
 }
 
 src_isProfessorOf{
 	c0 : STRING,
+	c1 : STRING,
 }
 
 src_hasStudent{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING,
 }
 
-src_isVisitingProfessorOf{
+src_hasUGProgram{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 }
 
-src_isWomenCollegeOf{
+src_isAffiliatedOrganizationOf{
 	c0 : STRING,
-	c1 : STRING,
 }
 
-src_hasAge{
+src_isTaughtBy{
+	c0 : STRING,
+}
+
+src_tenured{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,

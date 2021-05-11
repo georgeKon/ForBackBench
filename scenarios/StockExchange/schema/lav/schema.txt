@@ -2,14 +2,12 @@ src_Acquisition{
 	c0 : STRING,
 }
 
-src_Dealer{
+src_StockBroker{
 	c0 : STRING,
-	c1 : STRING,
 }
 
-src_FinantialInstrument{
+src_PhysicalPerson{
 	c0 : STRING,
-	c1 : STRING,
 }
 
 src_isExecutedFor{

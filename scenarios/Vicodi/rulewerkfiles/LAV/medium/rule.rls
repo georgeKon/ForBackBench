@@ -1,58 +1,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@source srcSymbol[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Symbol.csv") .
-@source srcCulturalOrganisation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Cultural-Organisation.csv") .
-@source srcHeadofState[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Head-of-State.csv") .
-@source srcPublisher[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Publisher.csv") .
-@source srcBusinessLeader[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Business-Leader.csv") .
-@source srcSettlement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Settlement.csv") .
-@source srcAbbey[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Abbey.csv") .
-@source srcMeasurableTrend[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Measurable-Trend.csv") .
-@source srcGeographer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Geographer.csv") .
-@source srcScientificInstrument[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Scientific-Instrument.csv") .
-@source srcArmament[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Armament.csv") .
-@source srcAuthor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Author.csv") .
-@source srcPoliticalSymbol[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Political-Symbol.csv") .
-@source srcStructure[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Structure.csv") .
-@source srcLanguage[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Language.csv") .
-@source srcTradeAssociation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Trade-Association.csv") .
-@source srcUniversity[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_University.csv") .
-@source srcSecularLeader[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Secular-Leader.csv") .
-@source srcNewspaper[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Newspaper.csv") .
-@source srcIntellectualConstruct[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Intellectual-Construct.csv") .
-@source srcInternationalOrganisation[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_International-Organisation.csv") .
-@source srcPerson[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Person.csv") .
-@source srchasLocationPartMember[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_hasLocationPartMember.csv") .
-@source srcWorkofArt[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Work-of-Art.csv") .
-@source srcCountry[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Country.csv") .
-@source srcSocialGroup[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Social-Group.csv") .
-@source srcReligiousMovement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Religious-Movement.csv") .
-Newspaper(!X),NonMilitaryConflict(!X),OtherReligiousLeader(!X4b80d10f209746bbb620d8b41d91f538),OtherReligiousPerson(!X),Painter(!X36fd42db002645dda454ad643af3ef58),Painting(?X0aaaac9287f548738b80f475b53ccd12) :- srcNewspaper(?X0aaaac9287f548738b80f475b53ccd12) .
-Abbey(!X3f69a0c97e524ae39ecded704be34e01),Building(!X),AbstractNotion(!X232dcc3386b14edab35ec3356187d8b8),Flavour(?X076b467f257544038df564f5c73fc885),Actor(?X8e22caf0e7614083991ac63d4116d024),Entertainer(!X),Animal(!X),NaturalObject(!X),Architect(!Xb7ff9bbb8b6d4df88e6695cb2cacbcfa),Creator(!X77b97ca63c7f42f8885bd690db13f600) :- srcAbbey(?X076b467f257544038df564f5c73fc885,?X8e22caf0e7614083991ac63d4116d024) .
-WorkofArt(!X),Pamphlet(!Xa9e91772bb4c409092aa9ec0b6c62a5b),Party(!X),Pastime(!X),Period(!X00b101f04fc148bdb40f3f8d27e4e813),PeriodinOffice(?Xb830336c37d7473f80a07c73303e4c61) :- srcWorkofArt(?Xb830336c37d7473f80a07c73303e4c61) .
-hasLocationPartMember(?X,!Y),hasRole(!X80824a62cb514369b8d19d37d4d5b2f9,!Y42588fbcc4bd42ff9e8b7eed7a3cbef1),isLocationContainerMemberOf(?X,!Y132580a3ccfa4df39f7d11a408b3957e),isRelationMemberOf(?X,?Yb2c5030431814dd2a0d3f0d9cb55f7e5),isLocationPartMemberOf(!X67fe0d4392954a1db00eb04c580672d0,!Y8e40db855d7a4339ac6472b23cec0370) :- srchasLocationPartMember(?X,?Yb2c5030431814dd2a0d3f0d9cb55f7e5) .
-Symbol(!X24d2f8808545461ca68ddb1be15eb486),Economist(!Xdd4b98766dd445c0ac58a702b2151ca6),Scientist(!X),EducationalOrganisation(!X4ba4b8668ded47c384904dc08d9ca898),Election(?Xe590dd0929564e67abf5ed2098eb6751),Emperor(!X) :- srcSymbol(?Xe590dd0929564e67abf5ed2098eb6751) .
-MeasurableTrend(!X),Meeting(!Xb03d0ae5a3a5469ba610e840e09658f5),MilitaryOrganisation(!X),MilitaryPerson(!X),MilitaryUnit(!X),Monastery(!Xf6f51f928f7e4c5f860a64869899fac5),Musician(!Xd933c13d29a34849aa4f07ee09d36bc7),NationalSymbol(?X1c440c1bc59f4d9f8fbd34a77fc63874) :- srcMeasurableTrend(?X1c440c1bc59f4d9f8fbd34a77fc63874) .
-Author(!X701d796978324748839fe964641a455a),Badge(?X80285f93d4484f5ebd7714861da5e29b),ConceptualObject(!X),Battle(!X1c5da3c783d942bbb582dad6614b2dfd),Event(!X0d73d3fe80934ffea422723b9e17a683),Board(!X),ManagementOrganisation(!X),Book(!Xa77a51791582445e8659886cde07574c),Writing(?Xface7da5c77a4cb1901285fe05e3f905) :- srcAuthor(?X80285f93d4484f5ebd7714861da5e29b,?Xface7da5c77a4cb1901285fe05e3f905) .
-CulturalOrganisation(!X92413519cad2460baac292f530519c2d),Organisation(!X),Dancer(!X),Diplomat(!X),Functionary(!X),Disaster(!X),Disease(!Xcb5d391238c749db92049c63761028ed),Dramaturge(?X7aa27dca12d3410cb7bda29c075b7e7a),Dynasty(!X) :- srcCulturalOrganisation(?X7aa27dca12d3410cb7bda29c075b7e7a) .
-ScientificInstrument(?X),Sculptor(?X),Sculpture(?X),SecularIdeology(!Xc3573b8370314af59d8581c5462b115d),SecularMovement(?X),Ship(?X),Vehicle(!Xab8aaeeba0654e9082d1eecc976b8fdc),SocialStratum(!X67deb5ac5dbf4f32a6234260b9386b67),Sportsman(!X7a08fce11f1347aba0849846c3d7d673),StereotypeGroup(!Xc5b810bb5bc84a1496e69bb85c66fe4a) :- srcScientificInstrument(?X) .
-Geographer(?X),GeographicalDiscovery(?X),GeographicalFeature(!Xc76398f12ec44c59bbb6577e557f5f6d),GeographicalRegion(?X),GovernmentalOrganisation(?X),PoliticalOrganisation(!X54ac5d0a5905401986576a0fbd9c9779),HeadofGovernment(?X) :- srcGeographer(?X) .
-IntellectualConstruct(!X),FilmMaker(!X),TimeDependent(!X3d7339b25ddf486ba7a4bf540745d386),Food(!X4d6b202a584b4016beb144bcb3e87631),ForeignMinister(?X2cf3b96f2098495ea1919262d3570e2a),Minister(!X8a0f5c4348cf4e19b55ce5e32cb5d9e1),FuzzyTemporalInterval(?X9fb46d9028084270a320d42fa08cb003),Time(!X5324178583224c498827ba3968242f32) :- srcIntellectualConstruct(?X2cf3b96f2098495ea1919262d3570e2a,?X9fb46d9028084270a320d42fa08cb003) .
-University(!X3ba1010273484741a2fb3a610280f68f),Uprising(!X3cb94630e5cb4bec9186dcd96c62ec5c),Village(?X),War(!X5a2935feaeb04fd1ab999b267e83dfcb),Water(?X16b815e0fc4746078dba222c6a40d225),exists(!X2b14576454f54ddc8a88bad0c4928d67,!Y),related(?X,!Yec06940a579e4c7c958bcdb11a50cc4d),hasCategory(?X,!Yd1f558f5bf89452c864676feb4393f5d),hasLocationContainerMember(!Xba064d2f490a4af28066fee8c906b522,!Y),hasRelationMember(!X8f95e43fdd5c4e52a2554b3a57fb6fc5,!Y0e99285f9123471a8848dc9fe7956e12) :- srcUniversity(?X,?X16b815e0fc4746078dba222c6a40d225) .
-Person(!X),Role(!X),Philanthropist(!Xba2f22c4f99544b38c283a432096ff09),Philosopher(?X08700076a1e1478787cd6aba7d1afb22),Physician(!X),PieceofMusic(!X),PoliticalRegion(!X074720ddd90e4b6089270285f1fc67bc) :- srcPerson(?X08700076a1e1478787cd6aba7d1afb22) .
-InternationalOrganisation(!X94a4476511d948b1a5cc9fa420d0ca71),IntraStateGroup(!X),Inventor(!X91b8437ac15948548534a7c3b7130683),Journal(!X9265839674284946ab81977c73163c1d),Journalist(?Xa9bac55c218e4141a86a86f14d931d49),Jurist(!X),King(!Xb16e7da47deb4dde9826e327c8c2ff0d),Landmark(?X901b988d36fe4ae5923636d9157afd23) :- srcInternationalOrganisation(?X901b988d36fe4ae5923636d9157afd23,?Xa9bac55c218e4141a86a86f14d931d49) .
-BusinessLeader(?X),Magnate(!Xb1267e0a15a04db2bfba759db913c8cd),Category(?X),VicodiOI(?X),Cathedral(!Xcdb2cc986aea4403a741ae88575431b0),Church(?X),ChurchReformer(!X8d2ef61744a94485a458a0a0d04e3aca),ReligiousLeader(?X),City(?X) :- srcBusinessLeader(?X) .
-HeadofState(?X4d1126cbaea04d3d989834f3b8af9baf),Engineer(!X7ae6277d284d4cb59111350f208b90b3),Environment(?Xfd67787a83c149a4a315a75e7a068c26),EthnicGroup(!Xf6d00e6022874c9289ddd9494fb3b017),FictionalEvent(!Xf475a238fa734c588ebeb1f404981a83),FictionalPerson(!X),Individual(!X584aeb1aa7e140c08bfa4d367a928ca6),FieldofKnowledge(!Xe50a8391de714b028553bb25daff2767) :- srcHeadofState(?X4d1126cbaea04d3d989834f3b8af9baf,?Xfd67787a83c149a4a315a75e7a068c26) .
-Publisher(!X),Queen(!X),Relic(!X),ReligiousCommunity(!X),ReligiousOrganisation(!X),ReligiousIdeology(?X7fcee167e19545d5b07fb12e5cc1efba) :- srcPublisher(?X7fcee167e19545d5b07fb12e5cc1efba) .
-Settlement(!X),Cleric(!X),PersonRole(!X7518d70fae0849aebc49bc33fbe6c205),ClericalLeader(!X61250c9ec63b4cd9b894b824b0a19bb1),Leader(!X803e073807a54c588958d801e9c7e030),Clothing(?X9d1ac01b81a847a5a4febd382828238c),Commodity(!X),Composer(!Xd010f4ae740c4aecb31a7af38f7e5054),Conductor(!X) :- srcSettlement(?X9d1ac01b81a847a5a4febd382828238c) .
-PoliticalSymbol(!Xc6d3ee6ebf8e476d9dc250acd828c69f),Politician(!X175cb429af6b4c48848f7eba39aa2565),Pollution(!Xf44c89d094be4ec4aadcf687c9d5611a),Pope(!X),PopulationMovement(!X),Prince(!X),Professor(!X),Psychologist(!X),PublicOration(?X75196780a6f4437a957a2efda9c936cc) :- srcPoliticalSymbol(?X75196780a6f4437a957a2efda9c936cc) .
-Country(!X),Location(!Xf7bdb0d7f7374c61a236d6af6206e646),Crime(!Xcdcaf387aa664d26a7d59e35dc3ba1f7),Criminal(!X),CulturalAgreement(?X19d19d978e6d49d69514d95bb01230e7) :- srcCountry(?X19d19d978e6d49d69514d95bb01230e7) .
-SocialGroup(?X),Ecclesiarch(?X),EconomicEnterprise(?X),EconomicOrganisation(?X),EconomicProcess(?X),EconomicSymbol(?X) :- srcSocialGroup(?X) .
-ReligiousMovement(!X),ReligiousOrder(!X),ReligiousPractice(!X),ReligiousSymbol(!X),RepresentativeInstitution(?X0294ce03d31840fbb19ea5bdef410541),Ritual(!X0613ea9718644992b7a009d7ce343cf6),Saint(!X),Scandal(!X) :- srcReligiousMovement(?X0294ce03d31840fbb19ea5bdef410541) .
-SecularLeader(!X),Idea(!Xf487343a6f2646bab55115e2f40a8ec9),Ideology(!X),Illness(!X),LifeEvent(?X4fab9a3e116c40859ae154c92aeb280b),IntellectualMovement(!X281b649432474571951c333c35d1c1a9),InternationalAlliance(!Xe02af26c2183438380bd2a0df2581861) :- srcSecularLeader(?X4fab9a3e116c40859ae154c92aeb280b) .
-Structure(!Xf2b49d58950b4c46a889c5d3c5d5a4bc),Sultan(!X543f6261f4f74d54af6b503c818db7fe),TechnicalScientificAdvance(?X08aa9325f43944e08931855f48b02d67),TemporalInterval(!Xefa3c9b715c841a89f6974b5e9e14715),Theologian(!X2b406ecc99824cfdbafd72e31eff4e2b) :- srcStructure(?X08aa9325f43944e08931855f48b02d67) .
-Armament(?X73703026f33c48afa9f3de8a6b739e65),Artefact(!X991f39759a4b4d3c9a032f1769c23042),ArtForm(!X0e657b37208b4b73b02c6d431790aeaa),Object(!X),Artist(!X),ArtisticMovement(!X479c037593ed4345b9a2add79ef52b72),Movement(!X420eeceac5ad43a880f2c84420a8885b),ArtisticStyle(!X),Astronaut(!X),Discoverer(!X) :- srcArmament(?X73703026f33c48afa9f3de8a6b739e65) .
-Language(!X6f2fc5b0ddf64ae292779a7889f2ded9),League(!X),Legislation(?X9f9336ebb91e47548705638a428f1eb6),LiturgicalObject(!X9eeaf4c13e0545029b321df0e4a72b25),LocationPartRelation(!X1cd5ba39eba344f78fae181889a5302b),TimeDependentRelation(!X),MasonicLodge(!X204928cdb2d841378a0cb2d017752093) :- srcLanguage(?X9f9336ebb91e47548705638a428f1eb6) .
-TradeAssociation(!X),TradesUnion(?Xb56e26415add4acc8f21595f1ea0eb57),TradesUnionist(!X57c23e0ec79d4adca58390ff5b86a31c),Train(!X44e7f060e78b4418aa0401e98df40aa6),Treaty(!X),Trial(!X) :- srcTradeAssociation(?Xb56e26415add4acc8f21595f1ea0eb57) .
+@source srcMilitaryOrganisation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/LAV/medium/src_Military-Organisation.csv") .
+MilitaryOrganisation(!Xf4a98b642e7447d4b2908a4ebb7718e5),MilitaryPerson(!X4ca41256b04345e4b97446f1473e7c68),MilitaryUnit(?X),Monastery(?X),Musician(?X),NationalSymbol(!X6cfdea6795a844d2995c811a98f1eb3a),Newspaper(?X),NonMilitaryConflict(!X34ec60f8b9c24b6eb763fdcc8baaff0d),OtherReligiousLeader(!Xc7068fd33d1e40e19ef6aca881009f2d) :- srcMilitaryOrganisation(?X) .
 Leader(?X) :- ReligiousLeader(?X) .
 Organisation(?X) :- EconomicOrganisation(?X) .
 WorkofArt(?X) :- Sculpture(?X) .
@@ -276,7 +224,7 @@ PersonRole(?X) :- Discoverer(?X) .
 Entertainer(?X) :- Actor(?X) .
 Event(?X) :- CulturalAgreement(?X) .
 Q1(?X) :- Location(?X) .
-Q2(?X,?Y) :- MilitaryPerson(?X),hasRole(?Y,?X),related(?X,?X1) .
+Q2(?X) :- MilitaryPerson(?X) .
 Q3(?X,?Y) :- TimeDependentRelation(?X),hasRelationMember(?X,?Y),Event(?Y) .
 Q4(?X,?Y) :- Object(?X),hasRole(?X,?Y),Symbol(?Y) .
 Q5(?X) :- Individual(?X),hasRole(?X,?Y),Scientist(?Y),hasRole(?X,?X1),Discoverer(?X1),hasRole(?X,?Y1),Inventor(?Y1) .

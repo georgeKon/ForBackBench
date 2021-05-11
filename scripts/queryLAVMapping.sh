@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## SETUP
-NUM_TESTS=6
+NUM_TESTS=1
 TIMEOUT=1800
 BASE_DIR=$1
 QUERY=$2
@@ -348,8 +348,9 @@ echo "===== RDFox Original ====="
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   RDFOX[$TOTAL,$i]=$START_TIME
-  OUT=$(timeout $TIMEOUT $JRE -jar ../systems/RDFox/chaseRDFox-linux.jar -chase standard -s-sch ../$BASE_DIR/schema/LAV/s-schema.txt -t-sch ../$BASE_DIR/schema/LAV/t-schema.txt -st-tgds ../$BASE_DIR/dependencies/lav.txt -src ../$BASE_DIR/data/LAV/$DATA_SIZE -t-tgds ../$BASE_DIR/dependencies/lav-t-tgds.txt -qdir ../$BASE_DIR/queries/Chasebench/Q$QUERY/)
+  OUT=$(timeout $TIMEOUT $JRE -jar ../systems/RDFox/chaseRDFox-linux.jar -chase standard -s-sch ../$BASE_DIR/schema/LAV/s-schema.txt -t-sch ../$BASE_DIR/schema/LAV/t-schema.txt -st-tgds ../$BASE_DIR/dependencies/lav.txt -src ../$BASE_DIR/data/LAV/$DATA_SIZE -t-tgds ../$BASE_DIR/dependencies/lav-t-tgds.txt -qdir ../$BASE_DIR/queries/Chasebench/Q$QUERY/ -qres ../experiments/outputs/rdfox/$BASE_DIR/LAV/answer/$DATA_SIZE/)
   if [ $? -eq 0 ]; then
+  	echo "$OUT"
     RDFOX[$TOTAL,$i]=$(($(date +%s%N) - $START_TIME))
     RDFOX[$LOAD,$i]=$(echo "$OUT" | grep "Loading source instance data" | cut -d'.' -f4 | cut -d'm' -f1)
     RDFOX[$CHASE,$i]=$(echo "$OUT" | grep "Chase took"| cut -d 'm' -f 1 | cut -d 'k' -f 2)
