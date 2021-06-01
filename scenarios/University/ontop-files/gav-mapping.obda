@@ -1,225 +1,225 @@
 [PrefixDeclaration]
-ns:  http://example.com/example.owl#
+ns:  http://www.lehigh.edu/zhp2/2004/0401/univ-bench.owl#
 
 [MappingDeclaration] @collection [[
 mappingId ID1721439543
 target  ns:ns/{var0} a ns:AdministrativeStaff . 
-source  SELECT A."c0" as var0 FROM  "src_ExamRecord" as A, "src_Course" as B, "src_Career" as C, "src_affiliateOf" as D, "src_Program" as E, "src_AdministrativeStaff" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0 FROM  "src_ExamRecord" as A, "src_Course" as B, "src_Career" as C, "src_affiliateOf" as D, "src_Program" as E, "src_AdministrativeStaff" as F WHERE A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
 mappingId ID1732663748
 target  ns:ns/{var0} a ns:Employee . 
-source  SELECT A."c0" as var0 FROM  "src_headOf" as A, "src_AssociateProfessor" as B, "src_takesCourse" as C, "src_ExamRecord" as D, "src_VisitingProfessor" as E, "src_Degree" as F, "src_Employee" as G WHERE , A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+source  SELECT A."c0" as var0 FROM  "src_headOf" as A, "src_AssociateProfessor" as B, "src_takesCourse" as C, "src_ExamRecord" as D, "src_VisitingProfessor" as E, "src_Degree" as F, "src_Employee" as G WHERE A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
 mappingId ID-1844981436
 target  ns:ns/{var0} a ns:AssistantProfessor . 
-source  SELECT A."c0" as var0 FROM  "src_isPartOfUniversity" as A, "src_Organization" as B, "src_Work" as C, "src_AdministrativeStaff" as D, "src_AssistantProfessor" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_isPartOfUniversity" as A, "src_Organization" as B, "src_Work" as C, "src_AdministrativeStaff" as D, "src_AssistantProfessor" as E WHERE A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
 mappingId ID-113304902
 target  ns:ns/{var0} a ns:Professor . 
-source  SELECT A."c0" as var0 FROM  "src_Work" as A, "src_degreeFrom" as B, "src_Course" as C, "src_isPartOfUniversity" as D, "src_Professor" as E WHERE , B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_Work" as A, "src_degreeFrom" as B, "src_Course" as C, "src_isPartOfUniversity" as D, "src_Professor" as E WHERE B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
 mappingId ID-353950172
 target  ns:ns/{var0} a ns:AssociateProfessor . 
-source  SELECT A."c0" as var0 FROM  "src_GraduateCourse" as A, "src_FullProfessor" as B, "src_hasExamRecord" as C, "src_AssociateProfessor" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_GraduateCourse" as A, "src_FullProfessor" as B, "src_hasExamRecord" as C, "src_AssociateProfessor" as D WHERE A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
 mappingId ID-830218713
 target  ns:ns/{var0} a ns:BachelorExam . 
-source  SELECT A."c0" as var0 FROM  "src_takesCourse" as A, "src_worksFor" as B, "src_member" as C, "src_tenured" as D, "src_doctoralDegreeFrom" as E, "src_UndergraduateStudent" as F, "src_BachelorExam" as G WHERE , A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+source  SELECT A."c0" as var0 FROM  "src_takesCourse" as A, "src_worksFor" as B, "src_member" as C, "src_tenured" as D, "src_doctoralDegreeFrom" as E, "src_UndergraduateStudent" as F, "src_BachelorExam" as G WHERE A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
 mappingId ID458618520
 target  ns:ns/{var0} a ns:Exam . 
-source  SELECT A."c0" as var0 FROM  "src_Degree" as A, "src_headOf" as B, "src_ExDean" as C, "src_FacultyStaff" as D, "src_Exam" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_Degree" as A, "src_headOf" as B, "src_ExDean" as C, "src_FacultyStaff" as D, "src_Exam" as E WHERE A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
 mappingId ID-7773691
 target  ns:ns/{var0} a ns:Career . 
-source  SELECT A."c0" as var0 FROM  "src_advisor" as A, "src_teacherOf" as B, "src_University" as C, "src_FullProfessor" as D, "src_Chair" as E, "src_Career" as F WHERE , A."c1" = B."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0 FROM  "src_advisor" as A, "src_teacherOf" as B, "src_University" as C, "src_FullProfessor" as D, "src_Chair" as E, "src_Career" as F WHERE A."c1" = B."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
 mappingId ID-1872025787
 target  ns:ns/{var0} a ns:Work . 
-source  SELECT A."c0" as var0 FROM  "src_advisor" as A, "src_Lecturer" as B, "src_memberOf" as C, "src_Work" as D WHERE , A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_advisor" as A, "src_Lecturer" as B, "src_memberOf" as C, "src_Work" as D WHERE A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
 mappingId ID203879546
 target  ns:ns/{var0} a ns:Chair . 
-source  SELECT A."c0" as var0 FROM  "src_hasAlumnus" as A, "src_GraduateStudent" as B, "src_Lecturer" as C, "src_advisor" as D, "src_Chair" as E WHERE , A."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_hasAlumnus" as A, "src_GraduateStudent" as B, "src_Lecturer" as C, "src_advisor" as D, "src_Chair" as E WHERE A."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
 mappingId ID-466028943
 target  ns:ns/{var0} a ns:ClericalStaff . 
-source  SELECT A."c0" as var0 FROM  "src_GraduateCourse" as A, "src_Professor" as B, "src_Student" as C, "src_Course" as D, "src_College" as E, "src_ClericalStaff" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0 FROM  "src_GraduateCourse" as A, "src_Professor" as B, "src_Student" as C, "src_Course" as D, "src_College" as E, "src_ClericalStaff" as F WHERE A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
 mappingId ID-1911398303
 target  ns:ns/{var0} a ns:College . 
-source  SELECT A."c0" as var0 FROM  "src_degreeFrom" as A, "src_teachingAssistantOf" as B, "src_hasFaculty" as C, "src_Organization" as D, "src_doctoralDegreeFrom" as E, "src_College" as F WHERE , A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0 FROM  "src_degreeFrom" as A, "src_teachingAssistantOf" as B, "src_hasFaculty" as C, "src_Organization" as D, "src_doctoralDegreeFrom" as E, "src_College" as F WHERE A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
 mappingId ID-1295837143
 target  ns:ns/{var0} a ns:Organization . 
-source  SELECT A."c0" as var0 FROM  "src_tenured" as A, "src_Career" as B, "src_doctoralDegreeFrom" as C, "src_ExDean" as D, "src_Chair" as E, "src_Organization" as F WHERE , A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0 FROM  "src_tenured" as A, "src_Career" as B, "src_doctoralDegreeFrom" as C, "src_ExDean" as D, "src_Chair" as E, "src_Organization" as F WHERE A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
 mappingId ID1950155746
 target  ns:ns/{var0} a ns:Course . 
-source  SELECT A."c0" as var0 FROM  "src_headOf" as A, "src_Student" as B, "src_AssistantProfessor" as C, "src_advisor" as D, "src_hasFaculty" as E, "src_Course" as F WHERE , A."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0 FROM  "src_headOf" as A, "src_Student" as B, "src_AssistantProfessor" as C, "src_advisor" as D, "src_hasFaculty" as E, "src_Course" as F WHERE A."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
 mappingId ID-77214016
 target  ns:ns/{var0} a ns:Dean . 
-source  SELECT A."c0" as var0 FROM  "src_SystemsStaff" as A, "src_affiliatedOrganizationOf" as B, "src_tenured" as C, "src_teachingAssistantOf" as D, "src_Faculty" as E, "src_worksFor" as F, "src_Dean" as G WHERE , B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+source  SELECT A."c0" as var0 FROM  "src_SystemsStaff" as A, "src_affiliatedOrganizationOf" as B, "src_tenured" as C, "src_teachingAssistantOf" as D, "src_Faculty" as E, "src_worksFor" as F, "src_Dean" as G WHERE B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
 mappingId ID1561349884
 target  ns:ns/{var0} ns:headOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_mastersDegreeFrom" as A, "src_member" as B, "src_Person" as C, "src_memberOf" as D, "src_Faculty" as E, "src_headOf" as F WHERE , A."c1" = B."c1" AND B."c1" = D."c1" AND D."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_mastersDegreeFrom" as A, "src_member" as B, "src_Person" as C, "src_memberOf" as D, "src_Faculty" as E, "src_headOf" as F WHERE A."c1" = B."c1" AND B."c1" = D."c1" AND D."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
 mappingId ID-1143996975
 target  ns:ns/{var0} a ns:Degree . 
-source  SELECT A."c0" as var0 FROM  "src_College" as A, "src_undergraduateDegreeFrom" as B, "src_ExamRecord" as C, "src_Degree" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_College" as A, "src_undergraduateDegreeFrom" as B, "src_ExamRecord" as C, "src_Degree" as D WHERE A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
 mappingId ID1312477428
 target  ns:ns/{var0} a ns:Director . 
-source  SELECT A."c0" as var0 FROM  "src_orgPublication" as A, "src_FacultyStaff" as B, "src_Professor" as C, "src_Director" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_orgPublication" as A, "src_FacultyStaff" as B, "src_Professor" as C, "src_Director" as D WHERE A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
 mappingId ID-1972435412
 target  ns:ns/{var0} a ns:Person . 
-source  SELECT A."c0" as var0 FROM  "src_PostDoc" as A, "src_teachingAssistantOf" as B, "src_College" as C, "src_ClericalStaff" as D, "src_Person" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_PostDoc" as A, "src_teachingAssistantOf" as B, "src_College" as C, "src_ClericalStaff" as D, "src_Person" as E WHERE A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
 mappingId ID-1354946823
 target  ns:ns/{var0} a ns:Program . 
-source  SELECT A."c0" as var0 FROM  "src_UndergraduateStudent" as A, "src_worksFor" as B, "src_member" as C, "src_GraduateStudent" as D, "src_headOf" as E, "src_Program" as F WHERE , B."c1" = C."c1" AND C."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0 FROM  "src_UndergraduateStudent" as A, "src_worksFor" as B, "src_member" as C, "src_GraduateStudent" as D, "src_headOf" as E, "src_Program" as F WHERE B."c1" = C."c1" AND C."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
 mappingId ID-1816190130
 target  ns:ns/{var0} ns:worksFor ns:ns/{var1} . 
-source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_Course" as A, "src_FacultyStaff" as B, "src_tenured" as C, "src_Person" as D, "src_headOf" as E, "src_AssociateProfessor" as F, "src_worksFor" as G WHERE , C."c1" = E."c1" AND E."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_Course" as A, "src_FacultyStaff" as B, "src_tenured" as C, "src_Person" as D, "src_headOf" as E, "src_AssociateProfessor" as F, "src_worksFor" as G WHERE C."c1" = E."c1" AND E."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
 mappingId ID-615097461
 target  ns:ns/{var0} a ns:ExDean . 
-source  SELECT A."c0" as var0 FROM  "src_PostDoc" as A, "src_affiliateOf" as B, "src_undergraduateDegreeFrom" as C, "src_AdministrativeStaff" as D, "src_Exam" as E, "src_ClericalStaff" as F, "src_ExDean" as G WHERE , B."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+source  SELECT A."c0" as var0 FROM  "src_PostDoc" as A, "src_affiliateOf" as B, "src_undergraduateDegreeFrom" as C, "src_AdministrativeStaff" as D, "src_Exam" as E, "src_ClericalStaff" as F, "src_ExDean" as G WHERE B."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
 mappingId ID-1631283366
 target  ns:ns/{var0} a ns:ExamRecord . 
-source  SELECT A."c0" as var0 FROM  "src_AdministrativeStaff" as A, "src_Person" as B, "src_University" as C, "src_orgPublication" as D, "src_ExamRecord" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_AdministrativeStaff" as A, "src_Person" as B, "src_University" as C, "src_orgPublication" as D, "src_ExamRecord" as E WHERE A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
 mappingId ID-1361255072
 target  ns:ns/{var0} a ns:Faculty . 
-source  SELECT A."c0" as var0 FROM  "src_affiliatedOrganizationOf" as A, "src_ClericalStaff" as B, "src_Lecturer" as C, "src_hasFaculty" as D, "src_teachingAssistantOf" as E, "src_Faculty" as F WHERE , A."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0 FROM  "src_affiliatedOrganizationOf" as A, "src_ClericalStaff" as B, "src_Lecturer" as C, "src_hasFaculty" as D, "src_teachingAssistantOf" as E, "src_Faculty" as F WHERE A."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
 mappingId ID447889577
 target  ns:ns/{var0} a ns:FacultyStaff . 
-source  SELECT A."c0" as var0 FROM  "src_ResearchAssistant" as A, "src_VisitingProfessor" as B, "src_publicationAuthor" as C, "src_FacultyStaff" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_ResearchAssistant" as A, "src_VisitingProfessor" as B, "src_publicationAuthor" as C, "src_FacultyStaff" as D WHERE A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
 mappingId ID-935311909
 target  ns:ns/{var0} a ns:FullProfessor . 
-source  SELECT A."c0" as var0 FROM  "src_affiliatedOrganizationOf" as A, "src_undergraduateDegreeFrom" as B, "src_Lecturer" as C, "src_SystemsStaff" as D, "src_FullProfessor" as E WHERE , A."c1" = B."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_affiliatedOrganizationOf" as A, "src_undergraduateDegreeFrom" as B, "src_Lecturer" as C, "src_SystemsStaff" as D, "src_FullProfessor" as E WHERE A."c1" = B."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
 mappingId ID-2035233683
 target  ns:ns/{var0} a ns:GraduateCourse . 
-source  SELECT A."c0" as var0 FROM  "src_tenured" as A, "src_College" as B, "src_affiliatedOrganizationOf" as C, "src_GraduateCourse" as D WHERE , A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_tenured" as A, "src_College" as B, "src_affiliatedOrganizationOf" as C, "src_GraduateCourse" as D WHERE A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
 mappingId ID139434582
 target  ns:ns/{var0} a ns:GraduateStudent . 
-source  SELECT A."c0" as var0 FROM  "src_mastersDegreeFrom" as A, "src_AssociateProfessor" as B, "src_Degree" as C, "src_GraduateStudent" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_mastersDegreeFrom" as A, "src_AssociateProfessor" as B, "src_Degree" as C, "src_GraduateStudent" as D WHERE A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
 mappingId ID1317579778
 target  ns:ns/{var0} ns:takesCourse ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_worksFor" as A, "src_FullProfessor" as B, "src_Exam" as C, "src_VisitingProfessor" as D, "src_advisor" as E, "src_takesCourse" as F WHERE , A."c1" = E."c1" AND E."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_worksFor" as A, "src_FullProfessor" as B, "src_Exam" as C, "src_VisitingProfessor" as D, "src_advisor" as E, "src_takesCourse" as F WHERE A."c1" = E."c1" AND E."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
 mappingId ID-1960568634
 target  ns:ns/{var0} a ns:Lecturer . 
-source  SELECT A."c0" as var0 FROM  "src_orgPublication" as A, "src_ExDean" as B, "src_affiliatedOrganizationOf" as C, "src_BachelorExam" as D, "src_University" as E, "src_Organization" as F, "src_Lecturer" as G WHERE , A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+source  SELECT A."c0" as var0 FROM  "src_orgPublication" as A, "src_ExDean" as B, "src_affiliatedOrganizationOf" as C, "src_BachelorExam" as D, "src_University" as E, "src_Organization" as F, "src_Lecturer" as G WHERE A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
 mappingId ID-364327216
 target  ns:ns/{var0} a ns:PostDoc . 
-source  SELECT A."c0" as var0 FROM  "src_AssistantProfessor" as A, "src_ExDean" as B, "src_Professor" as C, "src_Faculty" as D, "src_UndergraduateStudent" as E, "src_PostDoc" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0 FROM  "src_AssistantProfessor" as A, "src_ExDean" as B, "src_Professor" as C, "src_Faculty" as D, "src_UndergraduateStudent" as E, "src_PostDoc" as F WHERE A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
 mappingId ID710457229
 target  ns:ns/{var0} a ns:ResearchAssistant . 
-source  SELECT A."c0" as var0 FROM  "src_hasExamRecord" as A, "src_teachingAssistantOf" as B, "src_ClericalStaff" as C, "src_SystemsStaff" as D, "src_ResearchAssistant" as E WHERE , A."c1" = B."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_hasExamRecord" as A, "src_teachingAssistantOf" as B, "src_ClericalStaff" as C, "src_SystemsStaff" as D, "src_ResearchAssistant" as E WHERE A."c1" = B."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
 mappingId ID-1532495621
 target  ns:ns/{var0} a ns:Student . 
-source  SELECT A."c0" as var0 FROM  "src_Lecturer" as A, "src_advisor" as B, "src_mastersDegreeFrom" as C, "src_Student" as D WHERE , B."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_Lecturer" as A, "src_advisor" as B, "src_mastersDegreeFrom" as C, "src_Student" as D WHERE B."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
 mappingId ID-2055734930
 target  ns:ns/{var0} a ns:SystemsStaff . 
-source  SELECT A."c0" as var0 FROM  "src_hasAlumnus" as A, "src_worksFor" as B, "src_hasFaculty" as C, "src_BachelorExam" as D, "src_Employee" as E, "src_SystemsStaff" as F WHERE , A."c1" = B."c1" AND B."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0 FROM  "src_hasAlumnus" as A, "src_worksFor" as B, "src_hasFaculty" as C, "src_BachelorExam" as D, "src_Employee" as E, "src_SystemsStaff" as F WHERE A."c1" = B."c1" AND B."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
 mappingId ID-1972375758
 target  ns:ns/{var0} a ns:UndergraduateStudent . 
-source  SELECT A."c0" as var0 FROM  "src_publicationAuthor" as A, "src_affiliateOf" as B, "src_Chair" as C, "src_isPartOfUniversity" as D, "src_UndergraduateStudent" as E WHERE , A."c1" = B."c1" AND B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_publicationAuthor" as A, "src_affiliateOf" as B, "src_Chair" as C, "src_isPartOfUniversity" as D, "src_UndergraduateStudent" as E WHERE A."c1" = B."c1" AND B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
 mappingId ID1760055805
 target  ns:ns/{var0} a ns:University . 
-source  SELECT A."c0" as var0 FROM  "src_isPartOfUniversity" as A, "src_doctoralDegreeFrom" as B, "src_ResearchAssistant" as C, "src_ClericalStaff" as D, "src_University" as E WHERE , A."c1" = B."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_isPartOfUniversity" as A, "src_doctoralDegreeFrom" as B, "src_ResearchAssistant" as C, "src_ClericalStaff" as D, "src_University" as E WHERE A."c1" = B."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
 mappingId ID1420077654
 target  ns:ns/{var0} a ns:VisitingProfessor . 
-source  SELECT A."c0" as var0 FROM  "src_FullProfessor" as A, "src_Director" as B, "src_Professor" as C, "src_headOf" as D, "src_VisitingProfessor" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_FullProfessor" as A, "src_Director" as B, "src_Professor" as C, "src_headOf" as D, "src_VisitingProfessor" as E WHERE A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
 mappingId ID1486464010
 target  ns:ns/{var0} ns:advisor ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_GraduateStudent" as A, "src_BachelorExam" as B, "src_ClericalStaff" as C, "src_isPartOfUniversity" as D, "src_AssociateProfessor" as E, "src_Chair" as F, "src_advisor" as G WHERE , D."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_GraduateStudent" as A, "src_BachelorExam" as B, "src_ClericalStaff" as C, "src_isPartOfUniversity" as D, "src_AssociateProfessor" as E, "src_Chair" as F, "src_advisor" as G WHERE D."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
 mappingId ID1685645778
 target  ns:ns/{var0} ns:affiliateOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_Program" as A, "src_VisitingProfessor" as B, "src_Professor" as C, "src_undergraduateDegreeFrom" as D, "src_Work" as E, "src_affiliateOf" as F WHERE , D."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_Program" as A, "src_VisitingProfessor" as B, "src_Professor" as C, "src_undergraduateDegreeFrom" as D, "src_Work" as E, "src_affiliateOf" as F WHERE D."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
 mappingId ID-221623597
 target  ns:ns/{var0} ns:affiliatedOrganizationOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Chair" as A, "src_degreeFrom" as B, "src_ExDean" as C, "src_affiliatedOrganizationOf" as D WHERE , B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Chair" as A, "src_degreeFrom" as B, "src_ExDean" as C, "src_affiliatedOrganizationOf" as D WHERE B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
 mappingId ID-1416504868
 target  ns:ns/{var0} ns:degreeFrom ns:ns/{var1} . 
-source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_GraduateStudent" as A, "src_ExDean" as B, "src_headOf" as C, "src_degreeFrom" as D WHERE , C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_GraduateStudent" as A, "src_ExDean" as B, "src_headOf" as C, "src_degreeFrom" as D WHERE C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
 mappingId ID1841283069
 target  ns:ns/{var0} ns:hasAlumnus ns:ns/{var1} . 
-source  SELECT A."c0" as var0, E."c1" as var1 FROM  "src_Work" as A, "src_Exam" as B, "src_FullProfessor" as C, "src_AssociateProfessor" as D, "src_hasAlumnus" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0, E."c1" as var1 FROM  "src_Work" as A, "src_Exam" as B, "src_FullProfessor" as C, "src_AssociateProfessor" as D, "src_hasAlumnus" as E WHERE A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
 mappingId ID1071688444
 target  ns:ns/{var0} ns:doctoralDegreeFrom ns:ns/{var1} . 
-source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_Degree" as A, "src_AssistantProfessor" as B, "src_headOf" as C, "src_advisor" as D, "src_Person" as E, "src_doctoralDegreeFrom" as F WHERE , C."c1" = D."c1" AND D."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_Degree" as A, "src_AssistantProfessor" as B, "src_headOf" as C, "src_advisor" as D, "src_Person" as E, "src_doctoralDegreeFrom" as F WHERE C."c1" = D."c1" AND D."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
 mappingId ID-1737845847
 target  ns:ns/{var0} ns:hasExamRecord ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_ExamRecord" as A, "src_College" as B, "src_Employee" as C, "src_hasExamRecord" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_ExamRecord" as A, "src_College" as B, "src_Employee" as C, "src_hasExamRecord" as D WHERE A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
 mappingId ID-87491968
 target  ns:ns/{var0} ns:hasFaculty ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_SystemsStaff" as A, "src_doctoralDegreeFrom" as B, "src_Chair" as C, "src_University" as D, "src_undergraduateDegreeFrom" as E, "src_teacherOf" as F, "src_hasFaculty" as G WHERE , B."c1" = E."c1" AND E."c1" = F."c1" AND F."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_SystemsStaff" as A, "src_doctoralDegreeFrom" as B, "src_Chair" as C, "src_University" as D, "src_undergraduateDegreeFrom" as E, "src_teacherOf" as F, "src_hasFaculty" as G WHERE B."c1" = E."c1" AND E."c1" = F."c1" AND F."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
 mappingId ID1252253988
 target  ns:ns/{var0} ns:isPartOfUniversity ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_teacherOf" as A, "src_Course" as B, "src_AdministrativeStaff" as C, "src_AssociateProfessor" as D, "src_isPartOfUniversity" as E WHERE , A."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_teacherOf" as A, "src_Course" as B, "src_AdministrativeStaff" as C, "src_AssociateProfessor" as D, "src_isPartOfUniversity" as E WHERE A."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
 mappingId ID-1991092270
 target  ns:ns/{var0} ns:mastersDegreeFrom ns:ns/{var1} . 
-source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_AssistantProfessor" as A, "src_FullProfessor" as B, "src_teachingAssistantOf" as C, "src_mastersDegreeFrom" as D WHERE , C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_AssistantProfessor" as A, "src_FullProfessor" as B, "src_teachingAssistantOf" as C, "src_mastersDegreeFrom" as D WHERE C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
 mappingId ID-1189281288
 target  ns:ns/{var0} ns:member ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_takesCourse" as A, "src_affiliatedOrganizationOf" as B, "src_mastersDegreeFrom" as C, "src_ExDean" as D, "src_member" as E WHERE , A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_takesCourse" as A, "src_affiliatedOrganizationOf" as B, "src_mastersDegreeFrom" as C, "src_ExDean" as D, "src_member" as E WHERE A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
 mappingId ID-1368844092
 target  ns:ns/{var0} ns:memberOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_PostDoc" as A, "src_advisor" as B, "src_member" as C, "src_publicationAuthor" as D, "src_memberOf" as E WHERE , B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_PostDoc" as A, "src_advisor" as B, "src_member" as C, "src_publicationAuthor" as D, "src_memberOf" as E WHERE B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
 mappingId ID-1917138321
 target  ns:ns/{var0} ns:orgPublication ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_mastersDegreeFrom" as A, "src_undergraduateDegreeFrom" as B, "src_Chair" as C, "src_Director" as D, "src_hasFaculty" as E, "src_orgPublication" as F WHERE , A."c1" = B."c1" AND B."c1" = E."c1" AND E."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_mastersDegreeFrom" as A, "src_undergraduateDegreeFrom" as B, "src_Chair" as C, "src_Director" as D, "src_hasFaculty" as E, "src_orgPublication" as F WHERE A."c1" = B."c1" AND B."c1" = E."c1" AND E."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
 mappingId ID-86204593
 target  ns:ns/{var0} ns:publicationAuthor ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_affiliateOf" as A, "src_BachelorExam" as B, "src_ClericalStaff" as C, "src_Faculty" as D, "src_publicationAuthor" as E WHERE , A."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_affiliateOf" as A, "src_BachelorExam" as B, "src_ClericalStaff" as C, "src_Faculty" as D, "src_publicationAuthor" as E WHERE A."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
 mappingId ID-263559734
 target  ns:ns/{var0} ns:teacherOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_affiliateOf" as A, "src_Student" as B, "src_SystemsStaff" as C, "src_teacherOf" as D WHERE , A."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_affiliateOf" as A, "src_Student" as B, "src_SystemsStaff" as C, "src_teacherOf" as D WHERE A."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
 mappingId ID-1847640740
 target  ns:ns/{var0} ns:teachingAssistantOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_headOf" as A, "src_undergraduateDegreeFrom" as B, "src_hasAlumnus" as C, "src_Chair" as D, "src_Person" as E, "src_teachingAssistantOf" as F WHERE , A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_headOf" as A, "src_undergraduateDegreeFrom" as B, "src_hasAlumnus" as C, "src_Chair" as D, "src_Person" as E, "src_teachingAssistantOf" as F WHERE A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
 mappingId ID-870988365
 target  ns:ns/{var0} ns:tenured ns:ns/{var1} . 
-source  SELECT A."c0" as var0, E."c1" as var1 FROM  "src_Lecturer" as A, "src_University" as B, "src_VisitingProfessor" as C, "src_Organization" as D, "src_tenured" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0, E."c1" as var1 FROM  "src_Lecturer" as A, "src_University" as B, "src_VisitingProfessor" as C, "src_Organization" as D, "src_tenured" as E WHERE A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
 mappingId ID1497143177
 target  ns:ns/{var0} ns:undergraduateDegreeFrom ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_SystemsStaff" as A, "src_hasAlumnus" as B, "src_Lecturer" as C, "src_undergraduateDegreeFrom" as D WHERE , B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_SystemsStaff" as A, "src_hasAlumnus" as B, "src_Lecturer" as C, "src_undergraduateDegreeFrom" as D WHERE B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
 ]]

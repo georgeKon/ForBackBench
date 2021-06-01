@@ -407,3 +407,4 @@ Time(?X),FuzzyTemporalInterval(?X),VicodiOI(?X) :- srcFuzzyTemporalInterval(?X) 
 AbstractNotion(?X),IntellectualConstruct(?X),TimeDependent(?X),Flavour(?X),VicodiOI(?X) :- srcIntellectualConstruct(?X) .
 EconomicOrganisation(?X),Organisation(?X),TradeAssociation(?X),TimeDependent(?X),Flavour(?X),VicodiOI(?X) :- srcTradeAssociation(?X) .
 Role(?X),Creator(?X),TimeDependent(?X),PersonRole(?X),Engineer(?X),VicodiOI(?X) :- srcEngineer(?X) .
+Q5(?X) :- Individual(?X),hasRole(?X,?Y),Scientist(?Y),hasRole(?X,?X1),Discoverer(?X1),hasRole(?X,?Y1),Inventor(?Y1) .

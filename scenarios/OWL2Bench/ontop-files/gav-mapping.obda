@@ -1,913 +1,915 @@
 [PrefixDeclaration]
-ns:  http://example.com/example.owl#
+ns:  http://benchmark/OWL2Bench#
+xsd: http://www.w3.org/2001/XMLSchema#
+
 
 [MappingDeclaration] @collection [[
-mappingId ID1139589946
+mappingId ID1242750033
 target  ns:ns/{var0} a ns:AeronauticalEngineering . 
-source  SELECT A."c0" as var0 FROM  "src_hasAuthor" as A, "src_isVisitingProfessorOf" as B, "src_Software" as C, "src_Painting" as D, "src_AeronauticalEngineering" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = B."c1";
+source  SELECT A."c0" as var0 FROM  "src_Cricket" as A, "src_loves" as B, "src_hasOtherStaff" as C, "src_ClericalStaff" as D, "src_AeronauticalEngineering" as E WHERE  B."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID1973674694
+mappingId ID2043519343
 target  ns:ns/{var0} a ns:Engineering . 
-source  SELECT A."c0" as var0 FROM  "src_BasketBall" as A, "src_School" as B, "src_hasFirstName" as C, "src_Engineering" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_FullProfessor" as A, "src_UGProgram" as B, "src_Movie" as C, "src_TeachingAssistant" as D, "src_ModernArts" as E, "src_HumanitiesAndSocial" as F, "src_Engineering" as G WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1401340047
+mappingId ID-1254276841
 target  ns:ns/{var0} a ns:Anthropology . 
-source  SELECT A."c0" as var0 FROM  "src_AssociateProfessor" as A, "src_hasLecturer" as B, "src_MarineScience" as C, "src_hasUndergraduateDegreeFrom" as D, "src_isPostDocOf" as E, "src_Anthropology" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND B."c1" = D."c1" AND D."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_Cricket" as A, "src_NonScienceStudent" as B, "src_ChemicalEngineering" as C, "src_Anthropology" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID2037798063
+mappingId ID-196939868
 target  ns:ns/{var0} a ns:HumanitiesAndSocial . 
-source  SELECT A."c0" as var0 FROM  "src_Movie" as A, "src_PerformingArts" as B, "src_TheatreAndDance" as C, "src_hasDegreeFrom" as D, "src_UGStudent" as E, "src_Director" as F, "src_HumanitiesAndSocial" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+source  SELECT A."c0" as var0 FROM  "src_ConferencePaper" as A, "src_Publication" as B, "src_Science" as C, "src_isFullProfessorOf" as D, "src_PGStudent" as E, "src_Philosophy" as F, "src_HumanitiesAndSocial" as G WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-1539929544
+mappingId ID-459208165
 target  ns:ns/{var0} a ns:Architecture . 
-source  SELECT A."c0" as var0 FROM  "src_AssociateProfessor" as A, "src_hasOtherStaff" as B, "src_LatinArts" as C, "src_ChemicalEngineering" as D, "src_Architecture" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_hasResearchGroup" as A, "src_hasPart" as B, "src_isAssistantProfessorOf" as C, "src_isLecturerOf" as D, "src_AsianArts" as E, "src_TeachingCourse" as F, "src_Architecture" as G WHERE  A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1438945530
+mappingId ID1909848367
 target  ns:ns/{var0} a ns:FineArts . 
-source  SELECT A."c0" as var0 FROM  "src_isAssociateProfessorOf" as A, "src_StudentEvaluationCommittee" as B, "src_isCollegeOf" as C, "src_NonScienceStudent" as D, "src_Mathematics" as E, "src_FineArts" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_DesignManagement" as A, "src_hasSupportingStaff" as B, "src_hasFaculty" as C, "src_PetroleumlEngineering" as D, "src_BiomedicalEngineering" as E, "src_FineArts" as F WHERE  B."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-365169540
+mappingId ID1532799735
 target  ns:ns/{var0} a ns:Article . 
-source  SELECT A."c0" as var0 FROM  "src_MarineScience" as A, "src_Statistics" as B, "src_Badminton" as C, "src_isResearchGroupOf" as D, "src_Geosciences" as E, "src_Article" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0 FROM  "src_MaterialScienceEngineering" as A, "src_hasProfessor" as B, "src_isProfessorOf" as C, "src_Article" as D WHERE  B."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID185774005
+mappingId ID1358680814
 target  ns:ns/{var0} a ns:Publication . 
-source  SELECT A."c0" as var0 FROM  "src_hasAssistantProfessor" as A, "src_tenured" as B, "src_hasEvaluationCommittee" as C, "src_PublicRelationsManagement" as D, "src_Article" as E, "src_PGProgram" as F, "src_Publication" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = B."c1" AND B."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_Biology" as A, "src_hasDepartment" as B, "src_SystemStaff" as C, "src_hasProgram" as D, "src_TeachingCourse" as E, "src_isSupportingStaffOf" as F, "src_Publication" as G WHERE  B."c1" = D."c1" AND D."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-1003864838
+mappingId ID-685206154
 target  ns:ns/{var0} a ns:AsianArts . 
-source  SELECT A."c0" as var0 FROM  "src_TechnicalReport" as A, "src_School" as B, "src_isDepartmentOf" as C, "src_AsianArts" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_hasCommitteeMembers" as A, "src_SportsLover" as B, "src_isSubOrganizationOf" as C, "src_FinancialAndAccountingManagement" as D, "src_AsianArts" as E WHERE  A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID1314967721
+mappingId ID-1391530876
 target  ns:ns/{var0} a ns:AssistantProfessor . 
-source  SELECT A."c0" as var0 FROM  "src_hasFirstName" as A, "src_hasAuthor" as B, "src_hasStudent" as C, "src_Philosophy" as D, "src_School" as E, "src_Badminton" as F, "src_AssistantProfessor" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = B."c1" AND B."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_isCollegeOf" as A, "src_TeachingAssistant" as B, "src_IndustryEngineering" as C, "src_UGCourse" as D, "src_Manual" as E, "src_School" as F, "src_AssistantProfessor" as G WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-1845109580
+mappingId ID-1702511106
 target  ns:ns/{var0} a ns:Professor . 
-source  SELECT A."c0" as var0 FROM  "src_ChemicalEngineering" as A, "src_Program" as B, "src_EmployeeEvaluationCommittee" as C, "src_hasUGProgram" as D, "src_ComputerEngineering" as E, "src_FineArts" as F, "src_Professor" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+source  SELECT A."c0" as var0 FROM  "src_hasSystemStaff" as A, "src_IndustryEngineering" as B, "src_HumanitiesAndSocial" as C, "src_Music" as D, "src_Geosciences" as E, "src_Professor" as F WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID1751841768
+mappingId ID-2137322893
 target  ns:ns/{var0} a ns:AssociateProfessor . 
-source  SELECT A."c0" as var0 FROM  "src_hasResearchAssistant" as A, "src_Professor" as B, "src_isSystemStaffOf" as C, "src_AssociateProfessor" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_isFacultyOf" as A, "src_NonScience" as B, "src_hasThesisEvaluationCommittee" as C, "src_AssociateProfessor" as D WHERE  A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1169157891
+mappingId ID974806641
 target  ns:ns/{var0} a ns:Astronomy . 
-source  SELECT A."c0" as var0 FROM  "src_hasVisitingProfessor" as A, "src_UGCourse" as B, "src_Architecture" as C, "src_Astronomy" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_Student" as A, "src_isSupportingStaffOf" as B, "src_UnofficialPublication" as C, "src_Game" as D, "src_Geosciences" as E, "src_Astronomy" as F WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID988672769
+mappingId ID-986175236
 target  ns:ns/{var0} a ns:Science . 
-source  SELECT A."c0" as var0 FROM  "src_MarineScience" as A, "src_hasDoctoralDegreeFrom" as B, "src_University" as C, "src_Work" as D, "src_HumanitiesAndSocial" as E, "src_Science" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0 FROM  "src_Humanities" as A, "src_SupportingStaff" as B, "src_hasPostDoc" as C, "src_isOtherStaffOf" as D, "src_hasAssistantProfessor" as E, "src_Science" as F WHERE  C."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-900392599
+mappingId ID1104571412
 target  ns:ns/{var0} a ns:Badminton . 
-source  SELECT A."c0" as var0 FROM  "src_Painting" as A, "src_Interest" as B, "src_ModernLanguages" as C, "src_Program" as D, "src_Psychology" as E, "src_Badminton" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0 FROM  "src_Mathematics" as A, "src_MechanicalEngineering" as B, "src_Faculty" as C, "src_ThesisEvaluationCommittee" as D, "src_Humanities" as E, "src_AeronauticalEngineering" as F, "src_Badminton" as G WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-1372007280
+mappingId ID-1342577877
 target  ns:ns/{var0} a ns:Sports . 
-source  SELECT A."c0" as var0 FROM  "src_Economics" as A, "src_SalesManagement" as B, "src_OtherStaff" as C, "src_isLecturerOf" as D, "src_hasLecturer" as E, "src_Sports" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND D."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_Economics" as A, "src_isTaughtBy" as B, "src_PhDProgram" as C, "src_PostDoc" as D, "src_hasTelephone" as E, "src_Statistics" as F, "src_Sports" as G WHERE  B."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1689568868
+mappingId ID1113532790
 target  ns:ns/{var0} a ns:BasketBall . 
-source  SELECT A."c0" as var0 FROM  "src_ComputerEngineering" as A, "src_hasCollaborationWith" as B, "src_isHeadOf" as C, "src_hasResearchAssistant" as D, "src_hasAge" as E, "src_LatinArts" as F, "src_BasketBall" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_Humanities" as A, "src_VisitingProfessor" as B, "src_ModernLanguages" as C, "src_Program" as D, "src_Specification" as E, "src_BasketBall" as F WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-799474366
+mappingId ID-288130832
 target  ns:ns/{var0} a ns:BasketBallFan . 
-source  SELECT A."c0" as var0 FROM  "src_MusicsClass" as A, "src_hasResearchProject" as B, "src_Software" as C, "src_BasketBallFan" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_hasAdvisor" as A, "src_ResearchAssistant" as B, "src_Religions" as C, "src_hasLecturer" as D, "src_offerCourse" as E, "src_Tennis" as F, "src_BasketBallFan" as G WHERE  A."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1807775142
+mappingId ID-65213578
 target  ns:ns/{var0} ns:isCrazyAbout ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasPGProgram" as A, "src_hasAssociateProfessor" as B, "src_isAffiliatedOrganizationOf" as C, "src_isSupportingStaffOf" as D, "src_isTeachingAssistantOf" as E, "src_Sports" as F, "src_isCrazyAbout" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1" AND E."c1" = G."c1";
+source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_PostDoc" as A, "src_Mathematics" as B, "src_PGStudent" as C, "src_hasEmailAddress" as D, "src_EmployeeEvaluationCommittee" as E, "src_Badminton" as F, "src_isCrazyAbout" as G WHERE  D."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID2144296073
+mappingId ID-26787768
 target  ns:ns/{var0} a ns:BasketBallLover . 
-source  SELECT A."c0" as var0 FROM  "src_UnofficialPublication" as A, "src_DesignManagement" as B, "src_isAffiliatedOrganizationOf" as C, "src_UGStudent" as D, "src_BasketBallLover" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_likes" as A, "src_hasEmailAddress" as B, "src_ElectiveCourse" as C, "src_Person" as D, "src_UnofficialPublication" as E, "src_hasUGProgram" as F, "src_BasketBallLover" as G WHERE  A."c1" = B."c1" AND B."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-1986924958
+mappingId ID1747919055
 target  ns:ns/{var0} ns:loves ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_EvaluationCommittee" as A, "src_PublicRelationsManagement" as B, "src_Dean" as C, "src_loves" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Student" as A, "src_hasAge" as B, "src_IndustryEngineering" as C, "src_loves" as D WHERE  B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1477136529
+mappingId ID-17596239
 target  ns:ns/{var0} a ns:Biology . 
-source  SELECT A."c0" as var0 FROM  "src_Economics" as A, "src_Humanities" as B, "src_isAssociateProfessorOf" as C, "src_Biology" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_Anthropology" as A, "src_dislikes" as B, "src_hasAssistantProfessor" as C, "src_Course" as D, "src_Biology" as E WHERE  B."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID121164945
+mappingId ID181075420
 target  ns:ns/{var0} a ns:BiomedicalEngineering . 
-source  SELECT A."c0" as var0 FROM  "src_dislikes" as A, "src_Person" as B, "src_isCrazyAbout" as C, "src_MaterialsScience" as D, "src_BiomedicalEngineering" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_English" as A, "src_Reading" as B, "src_University" as C, "src_Badminton" as D, "src_VisitingProfessor" as E, "src_BiomedicalEngineering" as F WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-367895498
+mappingId ID1985428873
 target  ns:ns/{var0} a ns:Book . 
-source  SELECT A."c0" as var0 FROM  "src_SalesManagement" as A, "src_History" as B, "src_isOtherStaffOf" as C, "src_isFacultyOf" as D, "src_dislikes" as E, "src_AssistantProfessor" as F, "src_Book" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND C."c1" = D."c1" AND D."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_hasAge" as A, "src_FootBall" as B, "src_loves" as C, "src_Book" as D WHERE  A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID639471702
+mappingId ID-1826526612
 target  ns:ns/{var0} a ns:Chair . 
-source  SELECT A."c0" as var0 FROM  "src_loves" as A, "src_hasProgram" as B, "src_hasAssistantProfessor" as C, "src_isSystemStaffOf" as D, "src_isPartOf" as E, "src_Chair" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_UGProgram" as A, "src_PGProgram" as B, "src_isOtherStaffOf" as C, "src_isTeachingAssistantOf" as D, "src_SupplyChainManagement" as E, "src_Faculty" as F, "src_Chair" as G WHERE  C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID972126988
+mappingId ID924621569
 target  ns:ns/{var0} a ns:FullProfessor . 
-source  SELECT A."c0" as var0 FROM  "src_isAssociateProfessorOf" as A, "src_hasStudent" as B, "src_likes" as C, "src_FullProfessor" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = B."c1" AND B."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_NonScienceStudent" as A, "src_hasAdvisor" as B, "src_Chemistry" as C, "src_FullProfessor" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-516411664
+mappingId ID-306969123
 target  ns:ns/{var0} ns:isHeadOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasOtherStaff" as A, "src_TeachingCourse" as B, "src_hasTelephone" as C, "src_isHeadOf" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = C."c1" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_AeronauticalEngineering" as A, "src_hasFaculty" as B, "src_Badminton" as C, "src_SupportingStaff" as D, "src_hasResearchProject" as E, "src_WomanCollege" as F, "src_isHeadOf" as G WHERE  B."c1" = E."c1" AND E."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-1142109515
+mappingId ID-1329978673
 target  ns:ns/{var0} a ns:Department . 
-source  SELECT A."c0" as var0 FROM  "src_Person" as A, "src_hasCommitteeMembers" as B, "src_likes" as C, "src_Department" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND B."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_Chair" as A, "src_hasDegreeFrom" as B, "src_hasHead" as C, "src_isPartOf" as D, "src_ScienceStudent" as E, "src_hasEmployee" as F, "src_Department" as G WHERE  B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1935144660
+mappingId ID-1451698718
 target  ns:ns/{var0} a ns:ChemicalEngineering . 
-source  SELECT A."c0" as var0 FROM  "src_Employee" as A, "src_MaterialsScience" as B, "src_Interest" as C, "src_loves" as D, "src_University" as E, "src_Psychology" as F, "src_ChemicalEngineering" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+source  SELECT A."c0" as var0 FROM  "src_evaluatedBy" as A, "src_enrollFor" as B, "src_Psychology" as C, "src_Lecturer" as D, "src_ChemicalEngineering" as E WHERE  A."c1" = B."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-369785315
+mappingId ID284330181
 target  ns:ns/{var0} a ns:Chemistry . 
-source  SELECT A."c0" as var0 FROM  "src_PeopleWithHobby" as A, "src_Reading" as B, "src_Psychology" as C, "src_Chemistry" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_Movie" as A, "src_hasFaculty" as B, "src_enrollFor" as C, "src_OtherStaff" as D, "src_UGProgram" as E, "src_Chemistry" as F WHERE  B."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-22780691
+mappingId ID969707154
 target  ns:ns/{var0} a ns:CivilEngineering . 
-source  SELECT A."c0" as var0 FROM  "src_MaterialsScience" as A, "src_PhDProgram" as B, "src_University" as C, "src_CivilEngineering" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_evaluatedBy" as A, "src_PostDoc" as B, "src_MarineScience" as C, "src_TheatreAndDance" as D, "src_CivilEngineering" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID604649043
+mappingId ID-1684636432
 target  ns:ns/{var0} a ns:ClericalStaff . 
-source  SELECT A."c0" as var0 FROM  "src_orgPublication" as A, "src_isFacultyOf" as B, "src_Specification" as C, "src_ClericalStaff" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = B."c1";
+source  SELECT A."c0" as var0 FROM  "src_worksFor" as A, "src_isFacultyOf" as B, "src_isVisitingProfessorOf" as C, "src_Lecturer" as D, "src_hasCollaborationWith" as E, "src_ClericalStaff" as F WHERE  A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID270876431
+mappingId ID1300162231
 target  ns:ns/{var0} a ns:SupportingStaff . 
-source  SELECT A."c0" as var0 FROM  "src_Music" as A, "src_evaluates" as B, "src_hasProgram" as C, "src_SupportingStaff" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND B."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_Software" as A, "src_hasAssociateProfessor" as B, "src_ModernArts" as C, "src_ProjectManagement" as D, "src_SupportingStaff" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1835051501
+mappingId ID400877559
 target  ns:ns/{var0} a ns:CoEdCollege . 
-source  SELECT A."c0" as var0 FROM  "src_English" as A, "src_isWomenCollegeOf" as B, "src_hasWork" as C, "src_SportsFan" as D, "src_hasProgram" as E, "src_PGStudent" as F, "src_CoEdCollege" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND B."c1" = C."c1" AND C."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_Reading" as A, "src_hasSubOrganization" as B, "src_hasAdvisor" as C, "src_CoEdCollege" as D WHERE  B."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1432807453
+mappingId ID2070423930
 target  ns:ns/{var0} a ns:College . 
-source  SELECT A."c0" as var0 FROM  "src_FineArts" as A, "src_hasUndergraduateDegreeFrom" as B, "src_isVisitingProfessorOf" as C, "src_Movie" as D, "src_College" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND B."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_isCollegeOf" as A, "src_UGStudent" as B, "src_ElectricalEngineering" as C, "src_Employee" as D, "src_Science" as E, "src_hasLastName" as F, "src_College" as G WHERE  A."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-673595326
+mappingId ID-1444188214
 target  ns:ns/{var0} a ns:Organization . 
-source  SELECT A."c0" as var0 FROM  "src_UGProgram" as A, "src_MarketingManagement" as B, "src_hasMember" as C, "src_Organization" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_hasLecturer" as A, "src_Course" as B, "src_hasStudent" as C, "src_Organization" as D WHERE  A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1839611004
+mappingId ID-1727086884
 target  ns:ns/{var0} a ns:ComputerEngineering . 
-source  SELECT A."c0" as var0 FROM  "src_PublicRelationsManagement" as A, "src_hasPart" as B, "src_UGCourse" as C, "src_Architecture" as D, "src_TeachingAssistant" as E, "src_ComputerEngineering" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0 FROM  "src_Mathematics" as A, "src_isSubOrganizationOf" as B, "src_University" as C, "src_FineArts" as D, "src_ComputerEngineering" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID648212206
+mappingId ID1001891297
 target  ns:ns/{var0} a ns:ComputerScience . 
-source  SELECT A."c0" as var0 FROM  "src_WomanCollege" as A, "src_TheatreAndDance" as B, "src_Drama" as C, "src_ComputerScience" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_MusicsClass" as A, "src_Painting" as B, "src_worksFor" as C, "src_isClericalStaffOf" as D, "src_hasHead" as E, "src_ComputerScience" as F WHERE  C."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID1665565118
+mappingId ID1356646045
 target  ns:ns/{var0} a ns:ConferencePaper . 
-source  SELECT A."c0" as var0 FROM  "src_isWomenCollegeOf" as A, "src_CoEdCollege" as B, "src_hasMasterDegreeFrom" as C, "src_teachesCourse" as D, "src_ConferencePaper" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = C."c1" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0 FROM  "src_hasCommitteeMembers" as A, "src_ModernArts" as B, "src_hasWomenCollege" as C, "src_ConferencePaper" as D WHERE  A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-1256677495
+mappingId ID1704826267
 target  ns:ns/{var0} a ns:Cricket . 
-source  SELECT A."c0" as var0 FROM  "src_isCrazyAbout" as A, "src_hasPart" as B, "src_Humanities" as C, "src_Painting" as D, "src_isTeachingAssistantOf" as E, "src_Cricket" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = B."c1" AND B."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_hasLecturer" as A, "src_takesCourse" as B, "src_hasSystemStaff" as C, "src_teachesCourse" as D, "src_Travelling" as E, "src_isResearchGroupOf" as F, "src_Cricket" as G WHERE  A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1506374324
+mappingId ID-913986182
 target  ns:ns/{var0} a ns:Dean . 
-source  SELECT A."c0" as var0 FROM  "src_hasAge" as A, "src_Astronomy" as B, "src_BasketBall" as C, "src_FineArts" as D, "src_hasHead" as E, "src_Dean" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_hasPart" as A, "src_AssistantProfessor" as B, "src_hasPGProgram" as C, "src_Manual" as D, "src_Dean" as E WHERE  A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1219644807
+mappingId ID-1159470969
 target  ns:ns/{var0} a ns:DesignManagement . 
-source  SELECT A."c0" as var0 FROM  "src_hasResearchProject" as A, "src_PhDProgram" as B, "src_hasCollegeDiscipline" as C, "src_isAffiliatedOrganizationOf" as D, "src_DesignManagement" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = C."c1" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0 FROM  "src_hasPhDProgram" as A, "src_Astronomy" as B, "src_SportsLover" as C, "src_Student" as D, "src_DesignManagement" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1298089664
+mappingId ID-1354700045
 target  ns:ns/{var0} a ns:Management . 
-source  SELECT A."c0" as var0 FROM  "src_EmployeeEvaluationCommittee" as A, "src_publicationResearch" as B, "src_isPostDocOf" as C, "src_hasHead" as D, "src_ResearchAssistant" as E, "src_Management" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND B."c1" = C."c1" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0 FROM  "src_hasThesisEvaluationCommittee" as A, "src_UGStudent" as B, "src_hasEmailAddress" as C, "src_Game" as D, "src_University" as E, "src_Management" as F WHERE  A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-796041413
+mappingId ID1971453840
 target  ns:ns/{var0} a ns:Director . 
-source  SELECT A."c0" as var0 FROM  "src_BasketBallLover" as A, "src_SystemStaff" as B, "src_Architecture" as C, "src_hasPGProgram" as D, "src_Director" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_hasVisitingProfessor" as A, "src_Program" as B, "src_PhDProgram" as C, "src_Director" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-287880802
+mappingId ID-1788385807
 target  ns:ns/{var0} a ns:Program . 
-source  SELECT A."c0" as var0 FROM  "src_Game" as A, "src_Dean" as B, "src_RiskManagement" as C, "src_hasFirstName" as D, "src_Program" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_Cricket" as A, "src_TechnicalReport" as B, "src_hasOtherStaff" as C, "src_Faculty" as D, "src_ResearchGroup" as E, "src_hasLecturer" as F, "src_Program" as G WHERE  C."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-1287591010
+mappingId ID1386277732
 target  ns:ns/{var0} a ns:Drama . 
-source  SELECT A."c0" as var0 FROM  "src_isSubOrganizationOf" as A, "src_NonScience" as B, "src_FinancialAndAccountingManagement" as C, "src_MaterialsScience" as D, "src_Drama" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_hasTitle" as A, "src_EmployeeEvaluationCommittee" as B, "src_enrollIn" as C, "src_JournalArticle" as D, "src_DesignManagement" as E, "src_BasketBallLover" as F, "src_Drama" as G WHERE  A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1920245510
+mappingId ID-563320571
 target  ns:ns/{var0} a ns:Economics . 
-source  SELECT A."c0" as var0 FROM  "src_Software" as A, "src_EvaluationCommittee" as B, "src_worksFor" as C, "src_Economics" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_PGStudent" as A, "src_loves" as B, "src_UGCourse" as C, "src_Architecture" as D, "src_Economics" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-914600981
+mappingId ID-20960357
 target  ns:ns/{var0} a ns:ElectiveCourse . 
-source  SELECT A."c0" as var0 FROM  "src_FinancialAndAccountingManagement" as A, "src_Psychology" as B, "src_isLecturerOf" as C, "src_teachesCourse" as D, "src_ElectiveCourse" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0 FROM  "src_JournalArticle" as A, "src_Professor" as B, "src_Employee" as C, "src_University" as D, "src_ModernArts" as E, "src_ElectiveCourse" as F WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID894099405
+mappingId ID492839708
 target  ns:ns/{var0} a ns:Course . 
-source  SELECT A."c0" as var0 FROM  "src_CollegeDiscipline" as A, "src_PeopleWithHobby" as B, "src_Reading" as C, "src_Course" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_UnofficialPublication" as A, "src_isAdvisedBy" as B, "src_StudentEvaluationCommittee" as C, "src_MaterialsScience" as D, "src_ScienceStudent" as E, "src_Anthropology" as F, "src_Course" as G WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1224293109
+mappingId ID1126984537
 target  ns:ns/{var0} a ns:ElectricalEngineering . 
-source  SELECT A."c0" as var0 FROM  "src_isAssociateProfessorOf" as A, "src_isResearchGroupOf" as B, "src_isDepartmentOf" as C, "src_hasVisitingProfessor" as D, "src_ElectricalEngineering" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0 FROM  "src_SportsFan" as A, "src_isClericalStaffOf" as B, "src_MarineScience" as C, "src_ElectricalEngineering" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-2046230675
+mappingId ID1907982292
 target  ns:ns/{var0} a ns:Employee . 
-source  SELECT A."c0" as var0 FROM  "src_isStudentOf" as A, "src_ComputerEngineering" as B, "src_hasPostDoc" as C, "src_Person" as D, "src_hasDoctoralDegreeFrom" as E, "src_Employee" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = C."c1" AND C."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_Organization" as A, "src_publicationResearch" as B, "src_hasEmployee" as C, "src_Employee" as D WHERE  B."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1156629598
+mappingId ID1123877769
 target  ns:ns/{var0} a ns:Person . 
-source  SELECT A."c0" as var0 FROM  "src_HumanitiesAndSocial" as A, "src_Reading" as B, "src_hasFullProfessor" as C, "src_Person" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_Lecturer" as A, "src_Article" as B, "src_Employee" as C, "src_hasResearchGroup" as D, "src_AssistantProfessor" as E, "src_hasThesisEvaluationCommittee" as F, "src_Person" as G WHERE  D."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-25485530
+mappingId ID1680816858
 target  ns:ns/{var0} ns:worksFor ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Employee" as A, "src_loves" as B, "src_TheatreAndDance" as C, "src_isTaughtBy" as D, "src_worksFor" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND B."c1" = D."c1" AND D."c1" = E."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Cricket" as A, "src_isSupportingStaffOf" as B, "src_isResearchGroupOf" as C, "src_AssociateProfessor" as D, "src_worksFor" as E WHERE  B."c1" = C."c1" AND C."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1467500387
+mappingId ID-1797014046
 target  ns:ns/{var0} a ns:EmployeeEvaluationCommittee . 
-source  SELECT A."c0" as var0 FROM  "src_hasUndergraduateDegreeFrom" as A, "src_Game" as B, "src_Drama" as C, "src_EmployeeEvaluationCommittee" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_ResearchProject" as A, "src_ResearchAssistant" as B, "src_SalesManagement" as C, "src_Biology" as D, "src_EmployeeEvaluationCommittee" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-594263540
+mappingId ID-1031896070
 target  ns:ns/{var0} a ns:EvaluationCommittee . 
-source  SELECT A."c0" as var0 FROM  "src_Tennis" as A, "src_PublicRelationsManagement" as B, "src_evaluates" as C, "src_Book" as D, "src_isWomenCollegeOf" as E, "src_FinancialAndAccountingManagement" as F, "src_EvaluationCommittee" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND C."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_hasResearchGroup" as A, "src_hasLastName" as B, "src_hasDean" as C, "src_isTeachingAssistantOf" as D, "src_hasLecturer" as E, "src_EvaluationCommittee" as F WHERE  A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-578920062
+mappingId ID961427795
 target  ns:ns/{var0} a ns:CollegeDiscipline . 
-source  SELECT A."c0" as var0 FROM  "src_hasProgram" as A, "src_hasAge" as B, "src_PhDProgram" as C, "src_TeachingAssistant" as D, "src_CollegeDiscipline" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = B."c1";
+source  SELECT A."c0" as var0 FROM  "src_ChemicalEngineering" as A, "src_BasketBall" as B, "src_OtherStaff" as C, "src_CollegeDiscipline" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-257034299
+mappingId ID145286602
 target  ns:ns/{var0} a ns:English . 
-source  SELECT A."c0" as var0 FROM  "src_Statistics" as A, "src_hasPart" as B, "src_TheatreAndDance" as C, "src_Sports" as D, "src_RiskManagement" as E, "src_MediaArtsAndSciences" as F, "src_English" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+source  SELECT A."c0" as var0 FROM  "src_Economics" as A, "src_hasCommitteeMembers" as B, "src_HumanResourceManagement" as C, "src_Humanities" as D, "src_hasDepartment" as E, "src_hasEmailAddress" as F, "src_English" as G WHERE  B."c1" = E."c1" AND E."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1893392207
+mappingId ID87039882
 target  ns:ns/{var0} a ns:Faculty . 
-source  SELECT A."c0" as var0 FROM  "src_FullProfessor" as A, "src_FinancialAndAccountingManagement" as B, "src_CivilEngineering" as C, "src_takesCourse" as D, "src_hasEmployee" as E, "src_hasStudent" as F, "src_Faculty" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND D."c1" = E."c1" AND E."c1" = F."c1";
+source  SELECT A."c0" as var0 FROM  "src_hasStudentEvaluationCommittee" as A, "src_ClericalStaff" as B, "src_isClericalStaffOf" as C, "src_publicationResearch" as D, "src_hasVisitingProfessor" as E, "src_College" as F, "src_Faculty" as G WHERE  A."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-1964213955
+mappingId ID102135567
 target  ns:ns/{var0} ns:teachesCourse ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasLecturer" as A, "src_hasResearchGroup" as B, "src_PetroleumlEngineering" as C, "src_hasProfessor" as D, "src_teachesCourse" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = B."c1" AND B."c1" = D."c1" AND D."c1" = E."c1";
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_BasketBallFan" as A, "src_Science" as B, "src_hasFaculty" as C, "src_PeopleWithHobby" as D, "src_UGStudent" as E, "src_College" as F, "src_teachesCourse" as G WHERE  C."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID114829727
+mappingId ID-266955597
 target  ns:ns/{var0} a ns:FinancialAndAccountingManagement . 
-source  SELECT A."c0" as var0 FROM  "src_Manual" as A, "src_hasDoctoralDegreeFrom" as B, "src_hasSystemStaff" as C, "src_hasTelephone" as D, "src_HumanitiesAndSocial" as E, "src_Employee" as F, "src_FinancialAndAccountingManagement" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND B."c1" = C."c1" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0 FROM  "src_Organization" as A, "src_isPostDocOf" as B, "src_isTaughtBy" as C, "src_hasThesisEvaluationCommittee" as D, "src_FinancialAndAccountingManagement" as E WHERE  B."c1" = C."c1" AND C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1838553824
+mappingId ID-1163509931
 target  ns:ns/{var0} a ns:FootBall . 
-source  SELECT A."c0" as var0 FROM  "src_Architecture" as A, "src_isTaughtBy" as B, "src_Student" as C, "src_FootBall" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_ThesisEvaluationCommittee" as A, "src_isCollegeOf" as B, "src_Game" as C, "src_isLecturerOf" as D, "src_EvaluationCommittee" as E, "src_hasDepartment" as F, "src_FootBall" as G WHERE  B."c1" = D."c1" AND D."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-1270704976
+mappingId ID-328579680
 target  ns:ns/{var0} a ns:Game . 
-source  SELECT A."c0" as var0 FROM  "src_hasAdvisor" as A, "src_CollegeDiscipline" as B, "src_Director" as C, "src_ComputerScience" as D, "src_teachesCourse" as E, "src_publicationResearch" as F, "src_Game" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = E."c1" AND E."c1" = F."c1";
+source  SELECT A."c0" as var0 FROM  "src_Article" as A, "src_SalesManagement" as B, "src_Organization" as C, "src_Game" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-592812580
+mappingId ID1976643917
 target  ns:ns/{var0} a ns:Interest . 
-source  SELECT A."c0" as var0 FROM  "src_isStudentOf" as A, "src_Software" as B, "src_hasDean" as C, "src_TeachingAssistant" as D, "src_ComputerEngineering" as E, "src_Interest" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_ResearchAssistant" as A, "src_BasketBall" as B, "src_MusicsClass" as C, "src_MaterialScienceEngineering" as D, "src_University" as E, "src_Interest" as F WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID1070285516
+mappingId ID-287242758
 target  ns:ns/{var0} a ns:Geosciences . 
-source  SELECT A."c0" as var0 FROM  "src_Course" as A, "src_isLecturerOf" as B, "src_isAffiliatedOrganizationOf" as C, "src_BasketBallFan" as D, "src_Geosciences" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND B."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_isDeanOf" as A, "src_hasStudentEvaluationCommittee" as B, "src_hasPostDoc" as C, "src_Geosciences" as D WHERE  A."c1" = B."c1" AND B."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-378003091
+mappingId ID-341392912
 target  ns:ns/{var0} a ns:History . 
-source  SELECT A."c0" as var0 FROM  "src_ResearchProject" as A, "src_publicationResearch" as B, "src_Philosophy" as C, "src_BasketBall" as D, "src_isSystemStaffOf" as E, "src_History" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND B."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_isPostDocOf" as A, "src_isStudentOf" as B, "src_Article" as C, "src_History" as D WHERE  A."c1" = B."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-1094982939
+mappingId ID250699563
 target  ns:ns/{var0} a ns:HumanResourceManagement . 
-source  SELECT A."c0" as var0 FROM  "src_TheatreAndDance" as A, "src_WomanCollege" as B, "src_ComputerEngineering" as C, "src_DesignManagement" as D, "src_isStudentOf" as E, "src_HumanResourceManagement" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0 FROM  "src_dislikes" as A, "src_AssociateProfessor" as B, "src_Travelling" as C, "src_HumanResourceManagement" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID932344654
+mappingId ID2039087479
 target  ns:ns/{var0} a ns:Humanities . 
-source  SELECT A."c0" as var0 FROM  "src_ResearchAssistant" as A, "src_hasLecturer" as B, "src_School" as C, "src_hasCollaborationWith" as D, "src_isResearchGroupOf" as E, "src_Tennis" as F, "src_Humanities" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND B."c1" = D."c1" AND D."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_isProfessorOf" as A, "src_TeachingAssistant" as B, "src_hasUndergraduateDegreeFrom" as C, "src_hasUGProgram" as D, "src_Religions" as E, "src_isFullProfessorOf" as F, "src_Humanities" as G WHERE  A."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID68016291
+mappingId ID-900099552
 target  ns:ns/{var0} a ns:IndustryEngineering . 
-source  SELECT A."c0" as var0 FROM  "src_hasClericalStaff" as A, "src_SportsFan" as B, "src_hasWomenCollege" as C, "src_Travelling" as D, "src_hasAssistantProfessor" as E, "src_NonScience" as F, "src_IndustryEngineering" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = C."c1" AND C."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_TheatreAndDance" as A, "src_Cricket" as B, "src_hasAlumnus" as C, "src_dislikes" as D, "src_IndustryEngineering" as E WHERE  C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID743189313
+mappingId ID1851179938
 target  ns:ns/{var0} a ns:Institute . 
-source  SELECT A."c0" as var0 FROM  "src_Painting" as A, "src_isVisitingProfessorOf" as B, "src_hasEmployeeEvaluationCommittee" as C, "src_Institute" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND B."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_ComputerScience" as A, "src_ProjectManagement" as B, "src_Architecture" as C, "src_Institute" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID205928300
+mappingId ID-1627606758
 target  ns:ns/{var0} a ns:JournalArticle . 
-source  SELECT A."c0" as var0 FROM  "src_hasProgram" as A, "src_Chemistry" as B, "src_Tennis" as C, "src_Philosophy" as D, "src_FinancialAndAccountingManagement" as E, "src_JournalArticle" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0 FROM  "src_MaterialsScience" as A, "src_isFullProfessorOf" as B, "src_College" as C, "src_hasResearchProject" as D, "src_JournalArticle" as E WHERE  B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID1472393157
+mappingId ID-668080395
 target  ns:ns/{var0} a ns:LatinArts . 
-source  SELECT A."c0" as var0 FROM  "src_SportsFan" as A, "src_Program" as B, "src_hasPhDProgram" as C, "src_LatinArts" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_AssociateProfessor" as A, "src_Architecture" as B, "src_isOtherStaffOf" as C, "src_hasStudentEvaluationCommittee" as D, "src_hasAlumnus" as E, "src_LatinArts" as F WHERE  C."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-919983816
+mappingId ID920677404
 target  ns:ns/{var0} a ns:Lecturer . 
-source  SELECT A."c0" as var0 FROM  "src_hasWork" as A, "src_Course" as B, "src_HumanResourceManagement" as C, "src_takesCourse" as D, "src_MarketingManagement" as E, "src_hasVisitingProfessor" as F, "src_Lecturer" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = D."c1" AND D."c1" = F."c1";
+source  SELECT A."c0" as var0 FROM  "src_UGStudent" as A, "src_School" as B, "src_Drama" as C, "src_Director" as D, "src_Lecturer" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID682328441
+mappingId ID-1184713020
 target  ns:ns/{var0} a ns:Linguistics . 
-source  SELECT A."c0" as var0 FROM  "src_RiskManagement" as A, "src_Science" as B, "src_Philosophy" as C, "src_VisitingProfessor" as D, "src_FullProfessor" as E, "src_ElectiveCourse" as F, "src_Linguistics" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+source  SELECT A."c0" as var0 FROM  "src_University" as A, "src_isTaughtBy" as B, "src_MechanicalEngineering" as C, "src_Linguistics" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-1622328534
+mappingId ID695091647
 target  ns:ns/{var0} a ns:Manual . 
-source  SELECT A."c0" as var0 FROM  "src_Game" as A, "src_hasAssociateProfessor" as B, "src_PGProgram" as C, "src_AsianArts" as D, "src_AeronauticalEngineering" as E, "src_CollegeDiscipline" as F, "src_Manual" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+source  SELECT A."c0" as var0 FROM  "src_hasPart" as A, "src_isResearchAssistantOf" as B, "src_hasSystemStaff" as C, "src_publicationResearch" as D, "src_Manual" as E WHERE  A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1118370623
+mappingId ID2053687875
 target  ns:ns/{var0} a ns:MarineScience . 
-source  SELECT A."c0" as var0 FROM  "src_Movie" as A, "src_PublicRelationsManagement" as B, "src_TeachingCourse" as C, "src_enrollIn" as D, "src_MarineScience" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_enrollIn" as A, "src_ResearchProject" as B, "src_hasLecturer" as C, "src_hasResearchGroup" as D, "src_offerCourse" as E, "src_MarineScience" as F WHERE  A."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-1445401274
+mappingId ID1092931446
 target  ns:ns/{var0} a ns:MarketingManagement . 
-source  SELECT A."c0" as var0 FROM  "src_hasAssistantProfessor" as A, "src_PhDStudent" as B, "src_ThesisEvaluationCommittee" as C, "src_hasAdvisor" as D, "src_isOtherStaffOf" as E, "src_MarketingManagement" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = D."c1" AND D."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_FootBall" as A, "src_hasWork" as B, "src_Interest" as C, "src_Economics" as D, "src_MarketingManagement" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1699038883
+mappingId ID-97045753
 target  ns:ns/{var0} a ns:MaterialScienceEngineering . 
-source  SELECT A."c0" as var0 FROM  "src_hasEmployeeEvaluationCommittee" as A, "src_Professor" as B, "src_MusicsClass" as C, "src_TheatreAndDance" as D, "src_MaterialScienceEngineering" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_Person" as A, "src_isTaughtBy" as B, "src_hasAdvisor" as C, "src_MaterialScienceEngineering" as D WHERE  B."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1951373247
+mappingId ID-513783938
 target  ns:ns/{var0} a ns:MaterialsScience . 
-source  SELECT A."c0" as var0 FROM  "src_Game" as A, "src_SportsFan" as B, "src_EvaluationCommittee" as C, "src_MaterialsScience" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_Physics" as A, "src_isVisitingProfessorOf" as B, "src_hasAge" as C, "src_ResearchProject" as D, "src_MaterialsScience" as E WHERE  B."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-2128464935
+mappingId ID-851224692
 target  ns:ns/{var0} a ns:Mathematics . 
-source  SELECT A."c0" as var0 FROM  "src_Linguistics" as A, "src_Management" as B, "src_isLecturerOf" as C, "src_Employee" as D, "src_ChemicalEngineering" as E, "src_Mathematics" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0 FROM  "src_PetroleumlEngineering" as A, "src_hasAdvisor" as B, "src_Astronomy" as C, "src_isDeanOf" as D, "src_Cricket" as E, "src_Mathematics" as F WHERE  B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID1755156395
+mappingId ID-453349351
 target  ns:ns/{var0} a ns:MechanicalEngineering . 
-source  SELECT A."c0" as var0 FROM  "src_ResearchProject" as A, "src_hasMasterDegreeFrom" as B, "src_HumanitiesAndSocial" as C, "src_MediaArtsAndSciences" as D, "src_MechanicalEngineering" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_MarketingManagement" as A, "src_UGStudent" as B, "src_Cricket" as C, "src_MechanicalEngineering" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1514361601
+mappingId ID-3536197
 target  ns:ns/{var0} a ns:MediaArtsAndSciences . 
-source  SELECT A."c0" as var0 FROM  "src_Physics" as A, "src_Employee" as B, "src_hasAlumnus" as C, "src_hasTitle" as D, "src_isSystemStaffOf" as E, "src_NonScience" as F, "src_MediaArtsAndSciences" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND C."c1" = D."c1" AND D."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_isWomenCollegeOf" as A, "src_Travelling" as B, "src_Humanities" as C, "src_MediaArtsAndSciences" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID161234465
+mappingId ID-745648447
 target  ns:ns/{var0} a ns:MedievalArts . 
-source  SELECT A."c0" as var0 FROM  "src_isFacultyOf" as A, "src_Physics" as B, "src_isMemberOf" as C, "src_MedievalArts" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_AssistantProfessor" as A, "src_Publication" as B, "src_ScienceStudent" as C, "src_Physics" as D, "src_hasEmployee" as E, "src_MedievalArts" as F WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-1776264261
+mappingId ID-1292804206
 target  ns:ns/{var0} a ns:ModernArts . 
-source  SELECT A."c0" as var0 FROM  "src_hasDepartment" as A, "src_hasLastName" as B, "src_evaluates" as C, "src_RiskManagement" as D, "src_ElectiveCourse" as E, "src_isStudentOf" as F, "src_ModernArts" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = F."c1";
+source  SELECT A."c0" as var0 FROM  "src_FinancialAndAccountingManagement" as A, "src_hasStudentEvaluationCommittee" as B, "src_isStudentOf" as C, "src_hasCommitteeMembers" as D, "src_Game" as E, "src_AssistantProfessor" as F, "src_ModernArts" as G WHERE  B."c1" = C."c1" AND C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID145352726
+mappingId ID175477613
 target  ns:ns/{var0} a ns:ModernLanguages . 
-source  SELECT A."c0" as var0 FROM  "src_isPostDocOf" as A, "src_Department" as B, "src_enrollFor" as C, "src_IndustryEngineering" as D, "src_hasOtherStaff" as E, "src_ModernLanguages" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = C."c1" AND C."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_isTaughtBy" as A, "src_Astronomy" as B, "src_BasketBall" as C, "src_teachesCourse" as D, "src_SalesManagement" as E, "src_hasProfessor" as F, "src_ModernLanguages" as G WHERE  A."c1" = D."c1" AND D."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1129836526
+mappingId ID-1266094002
 target  ns:ns/{var0} a ns:Movie . 
-source  SELECT A."c0" as var0 FROM  "src_isDepartmentOf" as A, "src_Philosophy" as B, "src_FinancialAndAccountingManagement" as C, "src_UnofficialPublication" as D, "src_hasCollaborationWith" as E, "src_PeopleWithHobby" as F, "src_Movie" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_TeachingCourse" as A, "src_Institute" as B, "src_isFullProfessorOf" as C, "src_likes" as D, "src_isDeanOf" as E, "src_Movie" as F WHERE  C."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-1920662936
+mappingId ID1196837678
 target  ns:ns/{var0} a ns:Music . 
-source  SELECT A."c0" as var0 FROM  "src_offerCourse" as A, "src_hasWomenCollege" as B, "src_PetroleumlEngineering" as C, "src_Music" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = B."c1";
+source  SELECT A."c0" as var0 FROM  "src_hasAlumnus" as A, "src_SupportingStaff" as B, "src_isClericalStaffOf" as C, "src_LatinArts" as D, "src_isPartOf" as E, "src_Music" as F WHERE  A."c1" = C."c1" AND C."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID1819445616
+mappingId ID-1179983152
 target  ns:ns/{var0} a ns:MusicsClass . 
-source  SELECT A."c0" as var0 FROM  "src_isFacultyOf" as A, "src_isSupportingStaffOf" as B, "src_hasStudent" as C, "src_MusicsClass" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = B."c1" AND B."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_Interest" as A, "src_WomanCollege" as B, "src_BasketBallLover" as C, "src_Institute" as D, "src_hasAssociateProfessor" as E, "src_MusicsClass" as F WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID976645374
+mappingId ID1569138341
 target  ns:ns/{var0} a ns:NonScience . 
-source  SELECT A."c0" as var0 FROM  "src_PerformingArts" as A, "src_BasketBallLover" as B, "src_hasStudent" as C, "src_HumanResourceManagement" as D, "src_hasCollege" as E, "src_NonScience" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND C."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_OtherStaff" as A, "src_takesCourse" as B, "src_PerformingArts" as C, "src_UGCourse" as D, "src_Astronomy" as E, "src_NonScience" as F WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID968019970
+mappingId ID-1790021614
 target  ns:ns/{var0} a ns:NonScienceStudent . 
-source  SELECT A."c0" as var0 FROM  "src_TheatreAndDance" as A, "src_Geosciences" as B, "src_School" as C, "src_PhDStudent" as D, "src_isVisitingProfessorOf" as E, "src_MedievalArts" as F, "src_NonScienceStudent" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+source  SELECT A."c0" as var0 FROM  "src_hasThesisEvaluationCommittee" as A, "src_ElectricalEngineering" as B, "src_OtherStaff" as C, "src_NonScienceStudent" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID201236710
+mappingId ID-1239611364
 target  ns:ns/{var0} a ns:Student . 
-source  SELECT A."c0" as var0 FROM  "src_Badminton" as A, "src_hasCollegeDiscipline" as B, "src_BiomedicalEngineering" as C, "src_ConferencePaper" as D, "src_TeachingAssistant" as E, "src_History" as F, "src_Student" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+source  SELECT A."c0" as var0 FROM  "src_isSupportingStaffOf" as A, "src_EvaluationCommittee" as B, "src_ComputerEngineering" as C, "src_isLecturerOf" as D, "src_Director" as E, "src_hasSubOrganization" as F, "src_Student" as G WHERE  A."c1" = D."c1" AND D."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID696326628
+mappingId ID-244831519
 target  ns:ns/{var0} ns:hasMajor ns:ns/{var1} . 
-source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_ConferencePaper" as A, "src_Work" as B, "src_offerCourse" as C, "src_hasMajor" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_MarineScience" as A, "src_SupportingStaff" as B, "src_hasFirstName" as C, "src_hasMajor" as D WHERE  C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1222054101
+mappingId ID1846765141
 target  ns:ns/{var0} a ns:OperationsManagement . 
-source  SELECT A."c0" as var0 FROM  "src_hasFullProfessor" as A, "src_PeopleWithHobby" as B, "src_BasketBallLover" as C, "src_isResearchGroupOf" as D, "src_OperationsManagement" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = D."c1";
+source  SELECT A."c0" as var0 FROM  "src_Employee" as A, "src_isWomenCollegeOf" as B, "src_hasSystemStaff" as C, "src_NonScienceStudent" as D, "src_UGProgram" as E, "src_Movie" as F, "src_OperationsManagement" as G WHERE  B."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-444286828
+mappingId ID-1979301310
 target  ns:ns/{var0} a ns:OtherStaff . 
-source  SELECT A."c0" as var0 FROM  "src_HumanResourceManagement" as A, "src_PhDStudent" as B, "src_Management" as C, "src_OtherStaff" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_Biology" as A, "src_CoEdCollege" as B, "src_hasUGProgram" as C, "src_isOtherStaffOf" as D, "src_offerCourse" as E, "src_UGCourse" as F, "src_OtherStaff" as G WHERE  C."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID59998330
+mappingId ID-1096504254
 target  ns:ns/{var0} a ns:PGProgram . 
-source  SELECT A."c0" as var0 FROM  "src_WomanCollege" as A, "src_isWomenCollegeOf" as B, "src_SupportingStaff" as C, "src_hasDegreeFrom" as D, "src_PGProgram" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND B."c1" = D."c1";
+source  SELECT A."c0" as var0 FROM  "src_orgPublication" as A, "src_CollegeDiscipline" as B, "src_hasResearchProject" as C, "src_SupplyChainManagement" as D, "src_isClericalStaffOf" as E, "src_hasMajor" as F, "src_PGProgram" as G WHERE  A."c1" = C."c1" AND C."c1" = E."c1" AND E."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID727707557
+mappingId ID-1006922206
 target  ns:ns/{var0} a ns:PGStudent . 
-source  SELECT A."c0" as var0 FROM  "src_LatinArts" as A, "src_Music" as B, "src_Biology" as C, "src_Mathematics" as D, "src_Drama" as E, "src_Publication" as F, "src_PGStudent" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+source  SELECT A."c0" as var0 FROM  "src_Badminton" as A, "src_isLecturerOf" as B, "src_FootBall" as C, "src_Science" as D, "src_hasDoctoralDegreeFrom" as E, "src_Mathematics" as F, "src_PGStudent" as G WHERE  B."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-1641791875
+mappingId ID-753734842
 target  ns:ns/{var0} ns:enrollFor ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasUGProgram" as A, "src_LatinArts" as B, "src_Badminton" as C, "src_enrollFor" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = D."c1";
+source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_Employee" as A, "src_Faculty" as B, "src_Specification" as C, "src_hasOtherStaff" as D, "src_hasAssistantProfessor" as E, "src_enrollFor" as F WHERE  D."c1" = E."c1" AND E."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID2066262491
+mappingId ID934689094
 target  ns:ns/{var0} a ns:Painting . 
-source  SELECT A."c0" as var0 FROM  "src_hasFirstName" as A, "src_TeachingAssistant" as B, "src_PhDStudent" as C, "src_Movie" as D, "src_Painting" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_Economics" as A, "src_isDepartmentOf" as B, "src_hasAlumnus" as C, "src_Painting" as D WHERE  B."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-770718171
+mappingId ID-1214561103
 target  ns:ns/{var0} a ns:PeopleWithHobby . 
-source  SELECT A."c0" as var0 FROM  "src_hasUGProgram" as A, "src_isAssociateProfessorOf" as B, "src_ResearchProject" as C, "src_hasWomenCollege" as D, "src_PeopleWithHobby" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = B."c1" AND B."c1" = D."c1";
+source  SELECT A."c0" as var0 FROM  "src_DesignManagement" as A, "src_Sports" as B, "src_worksFor" as C, "src_hasUGProgram" as D, "src_PeopleWithHobby" as E WHERE  C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID1276756203
+mappingId ID495581590
 target  ns:ns/{var0} ns:likes ns:ns/{var1} . 
-source  SELECT A."c0" as var0, E."c1" as var1 FROM  "src_CollegeDiscipline" as A, "src_FineArts" as B, "src_WomanCollege" as C, "src_ConferencePaper" as D, "src_likes" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasPhDProgram" as A, "src_Linguistics" as B, "src_tenured" as C, "src_hasCollegeDiscipline" as D, "src_hasSupportingStaff" as E, "src_likes" as F WHERE  A."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1" AND E."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID1955768570
+mappingId ID-2080952179
 target  ns:ns/{var0} a ns:PerformingArts . 
-source  SELECT A."c0" as var0 FROM  "src_isTaughtBy" as A, "src_Mathematics" as B, "src_PostDoc" as C, "src_PGProgram" as D, "src_hasMajor" as E, "src_PerformingArts" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_hasSupportingStaff" as A, "src_FootBall" as B, "src_isSubOrganizationOf" as C, "src_Manual" as D, "src_Chemistry" as E, "src_ComputerScience" as F, "src_PerformingArts" as G WHERE  A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1469253263
+mappingId ID1395740726
 target  ns:ns/{var0} a ns:PetroleumlEngineering . 
-source  SELECT A."c0" as var0 FROM  "src_hasStudent" as A, "src_BasketBall" as B, "src_hasCollaborationWith" as C, "src_hasUGProgram" as D, "src_PetroleumlEngineering" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = C."c1" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0 FROM  "src_isStudentOf" as A, "src_OperationsManagement" as B, "src_Student" as C, "src_PetroleumlEngineering" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-257782307
+mappingId ID-1634563324
 target  ns:ns/{var0} a ns:PhDProgram . 
-source  SELECT A."c0" as var0 FROM  "src_isTeachingAssistantOf" as A, "src_DesignManagement" as B, "src_publicationResearch" as C, "src_Software" as D, "src_FullProfessor" as E, "src_PhDProgram" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_UGStudent" as A, "src_isResearchGroupOf" as B, "src_Anthropology" as C, "src_WomanCollege" as D, "src_PhDProgram" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1873559081
+mappingId ID-1743995638
 target  ns:ns/{var0} a ns:PhDStudent . 
-source  SELECT A."c0" as var0 FROM  "src_hasPGProgram" as A, "src_EvaluationCommittee" as B, "src_hasWork" as C, "src_PhDStudent" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_hasDean" as A, "src_PhDProgram" as B, "src_hasSupportingStaff" as C, "src_PhDStudent" as D WHERE  A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID751559273
+mappingId ID1837688537
 target  ns:ns/{var0} a ns:Philosophy . 
-source  SELECT A."c0" as var0 FROM  "src_ModernLanguages" as A, "src_Chair" as B, "src_UGCourse" as C, "src_hasEvaluationCommittee" as D, "src_Philosophy" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_BiomedicalEngineering" as A, "src_ThesisEvaluationCommittee" as B, "src_Software" as C, "src_hasDegreeFrom" as D, "src_Philosophy" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1348922928
+mappingId ID1812897180
 target  ns:ns/{var0} a ns:Physics . 
-source  SELECT A."c0" as var0 FROM  "src_hasDean" as A, "src_ModernLanguages" as B, "src_enrollFor" as C, "src_Physics" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_isSubOrganizationOf" as A, "src_isAffiliatedOrganizationOf" as B, "src_AssistantProfessor" as C, "src_isSystemStaffOf" as D, "src_IndustryEngineering" as E, "src_Physics" as F WHERE  A."c1" = B."c1" AND B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-1768334175
+mappingId ID636574421
 target  ns:ns/{var0} a ns:PostDoc . 
-source  SELECT A."c0" as var0 FROM  "src_isPartOf" as A, "src_hasMember" as B, "src_Drama" as C, "src_Painting" as D, "src_OtherStaff" as E, "src_PostDoc" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = B."c1";
+source  SELECT A."c0" as var0 FROM  "src_Lecturer" as A, "src_Anthropology" as B, "src_isFullProfessorOf" as C, "src_Mathematics" as D, "src_hasStudentEvaluationCommittee" as E, "src_PostDoc" as F WHERE  C."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID1544236799
+mappingId ID966202745
 target  ns:ns/{var0} a ns:ProjectManagement . 
-source  SELECT A."c0" as var0 FROM  "src_Music" as A, "src_UGProgram" as B, "src_English" as C, "src_ElectiveCourse" as D, "src_ProjectManagement" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_hasMajor" as A, "src_isResearchAssistantOf" as B, "src_isSystemStaffOf" as C, "src_isStudentOf" as D, "src_evaluatedBy" as E, "src_Director" as F, "src_ProjectManagement" as G WHERE  A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID914681393
+mappingId ID872917261
 target  ns:ns/{var0} a ns:Psychology . 
-source  SELECT A."c0" as var0 FROM  "src_hasEmployeeEvaluationCommittee" as A, "src_hasAlumnus" as B, "src_PetroleumlEngineering" as C, "src_Psychology" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = B."c1";
+source  SELECT A."c0" as var0 FROM  "src_Institute" as A, "src_worksFor" as B, "src_Person" as C, "src_AeronauticalEngineering" as D, "src_hasWork" as E, "src_SystemStaff" as F, "src_Psychology" as G WHERE  B."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1519904583
+mappingId ID-522834307
 target  ns:ns/{var0} a ns:PublicRelationsManagement . 
-source  SELECT A."c0" as var0 FROM  "src_Interest" as A, "src_evaluatedBy" as B, "src_Psychology" as C, "src_ProjectManagement" as D, "src_PublicRelationsManagement" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_Interest" as A, "src_hasDean" as B, "src_ThesisEvaluationCommittee" as C, "src_ClericalStaff" as D, "src_PublicRelationsManagement" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-23584819
+mappingId ID1484950130
 target  ns:ns/{var0} a ns:Reading . 
-source  SELECT A."c0" as var0 FROM  "src_hasPostDoc" as A, "src_DesignManagement" as B, "src_NonScienceStudent" as C, "src_Reading" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_Swimming" as A, "src_TeachingCourse" as B, "src_isCrazyAbout" as C, "src_hasSystemStaff" as D, "src_Manual" as E, "src_UnofficialPublication" as F, "src_Reading" as G WHERE  C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1950514218
+mappingId ID1288307121
 target  ns:ns/{var0} a ns:Religions . 
-source  SELECT A."c0" as var0 FROM  "src_LatinArts" as A, "src_MusicsClass" as B, "src_OperationsManagement" as C, "src_WomanCollege" as D, "src_Chemistry" as E, "src_hasThesisEvaluationCommittee" as F, "src_Religions" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+source  SELECT A."c0" as var0 FROM  "src_Faculty" as A, "src_hasMajor" as B, "src_BasketBallLover" as C, "src_Religions" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1945059959
+mappingId ID-1330125298
 target  ns:ns/{var0} a ns:ResearchAssistant . 
-source  SELECT A."c0" as var0 FROM  "src_HumanitiesAndSocial" as A, "src_isStudentOf" as B, "src_hasResearchProject" as C, "src_ResearchAssistant" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND B."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_isStudentOf" as A, "src_hasCollegeDiscipline" as B, "src_PGProgram" as C, "src_hasHead" as D, "src_Person" as E, "src_orgPublication" as F, "src_ResearchAssistant" as G WHERE  A."c1" = B."c1" AND B."c1" = D."c1" AND D."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-1613737589
+mappingId ID1005718938
 target  ns:ns/{var0} a ns:ResearchGroup . 
-source  SELECT A."c0" as var0 FROM  "src_TheatreAndDance" as A, "src_Swimming" as B, "src_Institute" as C, "src_Faculty" as D, "src_ResearchGroup" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_College" as A, "src_Dean" as B, "src_English" as C, "src_ResearchGroup" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-1249817169
+mappingId ID1665931984
 target  ns:ns/{var0} a ns:ResearchProject . 
-source  SELECT A."c0" as var0 FROM  "src_TechnicalReport" as A, "src_SupportingStaff" as B, "src_OtherStaff" as C, "src_Program" as D, "src_ResearchProject" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_EmployeeEvaluationCommittee" as A, "src_isAdvisedBy" as B, "src_ElectricalEngineering" as C, "src_Institute" as D, "src_ResearchProject" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-2054411433
+mappingId ID1937304885
 target  ns:ns/{var0} a ns:Work . 
-source  SELECT A."c0" as var0 FROM  "src_ConferencePaper" as A, "src_BasketBallLover" as B, "src_WomanCollege" as C, "src_hasAssistantProfessor" as D, "src_hasCommitteeMembers" as E, "src_Music" as F, "src_Work" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND D."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_AssistantProfessor" as A, "src_ConferencePaper" as B, "src_Painting" as C, "src_Work" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-273421097
+mappingId ID-1367010339
 target  ns:ns/{var0} a ns:RiskManagement . 
-source  SELECT A."c0" as var0 FROM  "src_isHeadOf" as A, "src_teachesCourse" as B, "src_isCrazyAbout" as C, "src_isDeanOf" as D, "src_hasCollaborationWith" as E, "src_RiskManagement" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_isMemberOf" as A, "src_isTeachingAssistantOf" as B, "src_Book" as C, "src_isResearchGroupOf" as D, "src_RiskManagement" as E WHERE  A."c1" = B."c1" AND B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID1128211141
+mappingId ID-1391330573
 target  ns:ns/{var0} a ns:SalesManagement . 
-source  SELECT A."c0" as var0 FROM  "src_ClericalStaff" as A, "src_hasEmployeeEvaluationCommittee" as B, "src_PostDoc" as C, "src_SalesManagement" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_hasFaculty" as A, "src_isTaughtBy" as B, "src_Economics" as C, "src_SalesManagement" as D WHERE  A."c1" = B."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1634138969
+mappingId ID-2120944961
 target  ns:ns/{var0} a ns:School . 
-source  SELECT A."c0" as var0 FROM  "src_isClericalStaffOf" as A, "src_Drama" as B, "src_CollegeDiscipline" as C, "src_School" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_CoEdCollege" as A, "src_UnofficialPublication" as B, "src_Tennis" as C, "src_ComputerScience" as D, "src_isDepartmentOf" as E, "src_School" as F WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID1774030852
+mappingId ID-147120795
 target  ns:ns/{var0} a ns:ScienceStudent . 
-source  SELECT A."c0" as var0 FROM  "src_hasMasterDegreeFrom" as A, "src_Music" as B, "src_ResearchProject" as C, "src_hasResearchAssistant" as D, "src_ScienceStudent" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = D."c1";
+source  SELECT A."c0" as var0 FROM  "src_hasCommitteeMembers" as A, "src_isFacultyOf" as B, "src_Department" as C, "src_ScienceStudent" as D WHERE  A."c1" = B."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID540003920
+mappingId ID-1255440409
 target  ns:ns/{var0} a ns:Software . 
-source  SELECT A."c0" as var0 FROM  "src_hasAuthor" as A, "src_RiskManagement" as B, "src_isSupportingStaffOf" as C, "src_UGCourse" as D, "src_isTeachingAssistantOf" as E, "src_Software" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = C."c1" AND C."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_isResearchAssistantOf" as A, "src_Reading" as B, "src_Program" as C, "src_Badminton" as D, "src_Software" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID554693526
+mappingId ID9738124
 target  ns:ns/{var0} a ns:Specification . 
-source  SELECT A."c0" as var0 FROM  "src_JournalArticle" as A, "src_Engineering" as B, "src_evaluates" as C, "src_Course" as D, "src_evaluatedBy" as E, "src_Specification" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND C."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_hasDepartment" as A, "src_hasPostDoc" as B, "src_ResearchAssistant" as C, "src_College" as D, "src_Specification" as E WHERE  A."c1" = B."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1156121672
+mappingId ID581867871
 target  ns:ns/{var0} a ns:SportsFan . 
-source  SELECT A."c0" as var0 FROM  "src_Humanities" as A, "src_hasEmployeeEvaluationCommittee" as B, "src_isResearchGroupOf" as C, "src_isDepartmentOf" as D, "src_SportsFan" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND B."c1" = C."c1" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0 FROM  "src_hasEmailAddress" as A, "src_hasThesisEvaluationCommittee" as B, "src_Linguistics" as C, "src_SportsFan" as D WHERE  A."c1" = B."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1257505452
+mappingId ID-1731965732
 target  ns:ns/{var0} a ns:SportsLover . 
-source  SELECT A."c0" as var0 FROM  "src_UGCourse" as A, "src_MaterialScienceEngineering" as B, "src_MedievalArts" as C, "src_SportsLover" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_hasVisitingProfessor" as A, "src_isTeachingAssistantOf" as B, "src_AsianArts" as C, "src_CivilEngineering" as D, "src_isStudentOf" as E, "src_SportsLover" as F WHERE  A."c1" = B."c1" AND B."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID1923293823
+mappingId ID-440512357
 target  ns:ns/{var0} a ns:Statistics . 
-source  SELECT A."c0" as var0 FROM  "src_hasOtherStaff" as A, "src_TechnicalReport" as B, "src_loves" as C, "src_SportsLover" as D, "src_FineArts" as E, "src_SportsFan" as F, "src_Statistics" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_hasResearchGroup" as A, "src_WomanCollege" as B, "src_isFacultyOf" as C, "src_ElectiveCourse" as D, "src_isAdvisedBy" as E, "src_Statistics" as F WHERE  A."c1" = C."c1" AND C."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-532517833
+mappingId ID-1234105998
 target  ns:ns/{var0} ns:enrollIn ns:ns/{var1} . 
-source  SELECT A."c0" as var0, E."c1" as var1 FROM  "src_DesignManagement" as A, "src_Swimming" as B, "src_Game" as C, "src_Physics" as D, "src_enrollIn" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasSupportingStaff" as A, "src_PhDProgram" as B, "src_ConferencePaper" as C, "src_hasPhDProgram" as D, "src_CivilEngineering" as E, "src_hasResearchAssistant" as F, "src_enrollIn" as G WHERE  A."c1" = D."c1" AND D."c1" = F."c1" AND F."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-1017029659
+mappingId ID1081844690
 target  ns:ns/{var0} a ns:StudentEvaluationCommittee . 
-source  SELECT A."c0" as var0 FROM  "src_TeachingCourse" as A, "src_MarketingManagement" as B, "src_Swimming" as C, "src_Sports" as D, "src_ComputerEngineering" as E, "src_StudentEvaluationCommittee" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0 FROM  "src_Manual" as A, "src_hasCollaborationWith" as B, "src_Reading" as C, "src_teachesCourse" as D, "src_StudentEvaluationCommittee" as E WHERE  B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID465258640
+mappingId ID1738610969
 target  ns:ns/{var0} a ns:SupplyChainManagement . 
-source  SELECT A."c0" as var0 FROM  "src_Work" as A, "src_WomanCollege" as B, "src_BasketBallLover" as C, "src_AsianArts" as D, "src_SupplyChainManagement" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_hasEmailAddress" as A, "src_hasCollaborationWith" as B, "src_Person" as C, "src_hasStudentEvaluationCommittee" as D, "src_SupplyChainManagement" as E WHERE  A."c1" = B."c1" AND B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1787443697
+mappingId ID1804831805
 target  ns:ns/{var0} a ns:Swimming . 
-source  SELECT A."c0" as var0 FROM  "src_isAdvisedBy" as A, "src_likes" as B, "src_isOtherStaffOf" as C, "src_enrollFor" as D, "src_Swimming" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0 FROM  "src_CollegeDiscipline" as A, "src_Linguistics" as B, "src_isProfessorOf" as C, "src_BasketBallFan" as D, "src_hasStudentEvaluationCommittee" as E, "src_publicationResearch" as F, "src_Swimming" as G WHERE  C."c1" = E."c1" AND E."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1945664482
+mappingId ID1212701696
 target  ns:ns/{var0} a ns:SystemStaff . 
-source  SELECT A."c0" as var0 FROM  "src_PublicRelationsManagement" as A, "src_ElectiveCourse" as B, "src_ThesisEvaluationCommittee" as C, "src_hasResearchGroup" as D, "src_Cricket" as E, "src_SystemStaff" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0 FROM  "src_enrollIn" as A, "src_SalesManagement" as B, "src_DesignManagement" as C, "src_SystemStaff" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-547761989
+mappingId ID-2013083086
 target  ns:ns/{var0} a ns:TeachingAssistant . 
-source  SELECT A."c0" as var0 FROM  "src_BasketBall" as A, "src_TheatreAndDance" as B, "src_PGStudent" as C, "src_PostDoc" as D, "src_Tennis" as E, "src_TeachingAssistant" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0 FROM  "src_isStudentOf" as A, "src_SupportingStaff" as B, "src_isDeanOf" as C, "src_ComputerEngineering" as D, "src_AssistantProfessor" as E, "src_TeachingAssistant" as F WHERE  A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-1010027590
+mappingId ID379201120
 target  ns:ns/{var0} ns:isTeachingAssistantOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Chemistry" as A, "src_isPostDocOf" as B, "src_Professor" as C, "src_isProfessorOf" as D, "src_SupportingStaff" as E, "src_isTeachingAssistantOf" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND B."c1" = D."c1" AND D."c1" = F."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isSystemStaffOf" as A, "src_Travelling" as B, "src_Course" as C, "src_Department" as D, "src_hasSystemStaff" as E, "src_TeachingAssistant" as F, "src_isTeachingAssistantOf" as G WHERE  A."c1" = E."c1" AND E."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-992677777
+mappingId ID1256798458
 target  ns:ns/{var0} a ns:TeachingCourse . 
-source  SELECT A."c0" as var0 FROM  "src_isSystemStaffOf" as A, "src_ComputerEngineering" as B, "src_Economics" as C, "src_isStudentOf" as D, "src_TeachingCourse" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = D."c1";
+source  SELECT A."c0" as var0 FROM  "src_ComputerEngineering" as A, "src_ScienceStudent" as B, "src_PhDStudent" as C, "src_TeachingCourse" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-1184488848
+mappingId ID1794515038
 target  ns:ns/{var0} a ns:TechnicalReport . 
-source  SELECT A."c0" as var0 FROM  "src_hasMajor" as A, "src_Reading" as B, "src_Religions" as C, "src_Chair" as D, "src_UGProgram" as E, "src_hasCollegeDiscipline" as F, "src_TechnicalReport" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = F."c1";
+source  SELECT A."c0" as var0 FROM  "src_isClericalStaffOf" as A, "src_BasketBallLover" as B, "src_hasAssociateProfessor" as C, "src_hasUGProgram" as D, "src_hasDean" as E, "src_PGProgram" as F, "src_TechnicalReport" as G WHERE  A."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-1580602968
+mappingId ID-1511401531
 target  ns:ns/{var0} a ns:Tennis . 
-source  SELECT A."c0" as var0 FROM  "src_hasStudent" as A, "src_ComputerEngineering" as B, "src_PublicRelationsManagement" as C, "src_Tennis" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_hasDegreeFrom" as A, "src_Badminton" as B, "src_isPartOf" as C, "src_Sports" as D, "src_University" as E, "src_Tennis" as F WHERE  A."c1" = C."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID851885886
+mappingId ID-2016731678
 target  ns:ns/{var0} a ns:TheatreAndDance . 
-source  SELECT A."c0" as var0 FROM  "src_hasOtherStaff" as A, "src_UGCourse" as B, "src_AssociateProfessor" as C, "src_FinancialAndAccountingManagement" as D, "src_Science" as E, "src_hasLastName" as F, "src_TheatreAndDance" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = F."c1";
+source  SELECT A."c0" as var0 FROM  "src_hasDean" as A, "src_VisitingProfessor" as B, "src_Travelling" as C, "src_isDepartmentOf" as D, "src_TheatreAndDance" as E WHERE  A."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID414918
+mappingId ID808708667
 target  ns:ns/{var0} a ns:ThesisEvaluationCommittee . 
-source  SELECT A."c0" as var0 FROM  "src_Linguistics" as A, "src_hasClericalStaff" as B, "src_UGCourse" as C, "src_Geosciences" as D, "src_hasDepartment" as E, "src_MaterialsScience" as F, "src_ThesisEvaluationCommittee" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND B."c1" = E."c1";
+source  SELECT A."c0" as var0 FROM  "src_worksFor" as A, "src_hasThesisEvaluationCommittee" as B, "src_isSystemStaffOf" as C, "src_hasEvaluationCommittee" as D, "src_evaluates" as E, "src_AssistantProfessor" as F, "src_ThesisEvaluationCommittee" as G WHERE  A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-725503934
+mappingId ID124523082
 target  ns:ns/{var0} a ns:Travelling . 
-source  SELECT A."c0" as var0 FROM  "src_hasLecturer" as A, "src_PostDoc" as B, "src_Institute" as C, "src_hasThesisEvaluationCommittee" as D, "src_ComputerScience" as E, "src_Travelling" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = D."c1";
+source  SELECT A."c0" as var0 FROM  "src_HumanitiesAndSocial" as A, "src_English" as B, "src_hasStudentEvaluationCommittee" as C, "src_Travelling" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-720167736
+mappingId ID1857219183
 target  ns:ns/{var0} a ns:UGCourse . 
-source  SELECT A."c0" as var0 FROM  "src_hasDegreeFrom" as A, "src_PetroleumlEngineering" as B, "src_Philosophy" as C, "src_hasSubOrganization" as D, "src_UGCourse" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = D."c1";
+source  SELECT A."c0" as var0 FROM  "src_Work" as A, "src_Professor" as B, "src_offerCourse" as C, "src_Philosophy" as D, "src_UGCourse" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID649800643
+mappingId ID212396571
 target  ns:ns/{var0} a ns:UGProgram . 
-source  SELECT A."c0" as var0 FROM  "src_PerformingArts" as A, "src_isAdvisedBy" as B, "src_OperationsManagement" as C, "src_publicationResearch" as D, "src_UGProgram" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND B."c1" = D."c1";
+source  SELECT A."c0" as var0 FROM  "src_Interest" as A, "src_ThesisEvaluationCommittee" as B, "src_isHeadOf" as C, "src_UGProgram" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-2095587805
+mappingId ID-1321709763
 target  ns:ns/{var0} a ns:UGStudent . 
-source  SELECT A."c0" as var0 FROM  "src_hasPGProgram" as A, "src_HumanResourceManagement" as B, "src_TeachingCourse" as C, "src_ElectricalEngineering" as D, "src_PublicRelationsManagement" as E, "src_isTeachingAssistantOf" as F, "src_UGStudent" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = F."c1";
+source  SELECT A."c0" as var0 FROM  "src_JournalArticle" as A, "src_DesignManagement" as B, "src_hasPart" as C, "src_UGStudent" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID2082316389
+mappingId ID-1323514598
 target  ns:ns/{var0} a ns:University . 
-source  SELECT A."c0" as var0 FROM  "src_Philosophy" as A, "src_isDepartmentOf" as B, "src_isAffiliatedOrganizationOf" as C, "src_Reading" as D, "src_PeopleWithHobby" as E, "src_University" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND B."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_hasFirstName" as A, "src_hasStudentEvaluationCommittee" as B, "src_Music" as C, "src_BiomedicalEngineering" as D, "src_hasHead" as E, "src_isFullProfessorOf" as F, "src_University" as G WHERE  A."c1" = B."c1" AND B."c1" = E."c1" AND E."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1696399407
+mappingId ID424260967
 target  ns:ns/{var0} a ns:UnofficialPublication . 
-source  SELECT A."c0" as var0 FROM  "src_hasEmployeeEvaluationCommittee" as A, "src_ResearchAssistant" as B, "src_BasketBallFan" as C, "src_AssociateProfessor" as D, "src_Religions" as E, "src_AssistantProfessor" as F, "src_UnofficialPublication" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+source  SELECT A."c0" as var0 FROM  "src_BasketBallFan" as A, "src_Economics" as B, "src_isWomenCollegeOf" as C, "src_UnofficialPublication" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID2139742273
+mappingId ID-737880709
 target  ns:ns/{var0} a ns:VisitingProfessor . 
-source  SELECT A."c0" as var0 FROM  "src_Architecture" as A, "src_isMemberOf" as B, "src_Movie" as C, "src_isProfessorOf" as D, "src_VisitingProfessor" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND B."c1" = D."c1";
+source  SELECT A."c0" as var0 FROM  "src_Chair" as A, "src_ElectricalEngineering" as B, "src_hasFullProfessor" as C, "src_isPartOf" as D, "src_VisitingProfessor" as E WHERE  C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1756202247
+mappingId ID1763088097
 target  ns:ns/{var0} a ns:WomanCollege . 
-source  SELECT A."c0" as var0 FROM  "src_hasSupportingStaff" as A, "src_Dean" as B, "src_hasResearchProject" as C, "src_WomanCollege" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_ScienceStudent" as A, "src_hasPostDoc" as B, "src_LatinArts" as C, "src_VisitingProfessor" as D, "src_hasResearchAssistant" as E, "src_ClericalStaff" as F, "src_WomanCollege" as G WHERE  B."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID33779953
+mappingId ID-1309303551
 target  ns:ns/{var0} ns:dislikes ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Badminton" as A, "src_hasFaculty" as B, "src_hasLastName" as C, "src_dislikes" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND B."c1" = C."c1" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_CoEdCollege" as A, "src_isDeanOf" as B, "src_hasPart" as C, "src_Management" as D, "src_BasketBallLover" as E, "src_dislikes" as F WHERE  B."c1" = C."c1" AND C."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID903693446
+mappingId ID-1323975891
 target  ns:ns/{var0} ns:isStudentOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_MaterialsScience" as A, "src_hasStudent" as B, "src_hasWomenCollege" as C, "src_isStudentOf" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND B."c1" = C."c1" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isResearchAssistantOf" as A, "src_Student" as B, "src_hasCollege" as C, "src_NonScienceStudent" as D, "src_SystemStaff" as E, "src_PhDStudent" as F, "src_isStudentOf" as G WHERE  A."c1" = C."c1" AND C."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID442110731
+mappingId ID-523210936
 target  ns:ns/{var0} ns:evaluatedBy ns:ns/{var1} . 
-source  SELECT A."c0" as var0, E."c1" as var1 FROM  "src_HumanitiesAndSocial" as A, "src_PGStudent" as B, "src_Game" as C, "src_MusicsClass" as D, "src_evaluatedBy" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasEvaluationCommittee" as A, "src_SportsLover" as B, "src_NonScience" as C, "src_evaluatedBy" as D WHERE  A."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-397825079
+mappingId ID-1014514496
 target  ns:ns/{var0} ns:evaluates ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasDean" as A, "src_isResearchAssistantOf" as B, "src_Director" as C, "src_hasPhDProgram" as D, "src_evaluates" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = B."c1" AND B."c1" = D."c1" AND D."c1" = E."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasEmployee" as A, "src_TheatreAndDance" as B, "src_isFullProfessorOf" as C, "src_evaluates" as D WHERE  A."c1" = C."c1" AND C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID758717873
+mappingId ID220764305
 target  ns:ns/{var0} ns:hasAlumnus ns:ns/{var1} . 
-source  SELECT A."c0" as var0, E."c1" as var1 FROM  "src_Work" as A, "src_Director" as B, "src_College" as C, "src_Lecturer" as D, "src_enrollIn" as E, "src_hasAlumnus" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND E."c1" = F."c1";
+source  SELECT A."c0" as var0, F."c1" as var1 FROM  "src_UGProgram" as A, "src_PostDoc" as B, "src_Employee" as C, "src_MechanicalEngineering" as D, "src_AsianArts" as E, "src_isFacultyOf" as F, "src_hasAlumnus" as G WHERE  F."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-1244904232
+mappingId ID-828263749
 target  ns:ns/{var0} ns:hasDegreeFrom ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isTaughtBy" as A, "src_FullProfessor" as B, "src_CivilEngineering" as C, "src_hasDoctoralDegreeFrom" as D, "src_dislikes" as E, "src_PhDStudent" as F, "src_hasDegreeFrom" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = D."c1" AND D."c1" = E."c1" AND E."c1" = G."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_RiskManagement" as A, "src_hasStudent" as B, "src_VisitingProfessor" as C, "src_ElectricalEngineering" as D, "src_PerformingArts" as E, "src_MediaArtsAndSciences" as F, "src_hasDegreeFrom" as G WHERE  B."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1440972560
+mappingId ID1916820162
 target  ns:ns/{var0} ns:hasAssistantProfessor ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasMasterDegreeFrom" as A, "src_isHeadOf" as B, "src_BiomedicalEngineering" as C, "src_AsianArts" as D, "src_BasketBallFan" as E, "src_hasAssistantProfessor" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = B."c1" AND B."c1" = F."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isVisitingProfessorOf" as A, "src_Astronomy" as B, "src_TeachingAssistant" as C, "src_Sports" as D, "src_Article" as E, "src_isTaughtBy" as F, "src_hasAssistantProfessor" as G WHERE  A."c1" = F."c1" AND F."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID583584032
+mappingId ID-956689534
 target  ns:ns/{var0} ns:isAssistantProfessorOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Chair" as A, "src_hasLastName" as B, "src_Student" as C, "src_isAssistantProfessorOf" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND B."c1" = D."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasSystemStaff" as A, "src_Badminton" as B, "src_hasMajor" as C, "src_Interest" as D, "src_BiomedicalEngineering" as E, "src_Dean" as F, "src_isAssistantProfessorOf" as G WHERE  A."c1" = C."c1" AND C."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID630268168
+mappingId ID-1895125376
 target  ns:ns/{var0} ns:hasProfessor ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasCollegeDiscipline" as A, "src_isPostDocOf" as B, "src_PublicRelationsManagement" as C, "src_PhDStudent" as D, "src_hasProfessor" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = B."c1" AND B."c1" = E."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Chemistry" as A, "src_isResearchAssistantOf" as B, "src_EvaluationCommittee" as C, "src_PeopleWithHobby" as D, "src_hasProfessor" as E WHERE  B."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID494026670
+mappingId ID-1976071174
 target  ns:ns/{var0} ns:hasAssociateProfessor ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasFaculty" as A, "src_hasSystemStaff" as B, "src_Management" as C, "src_hasDepartment" as D, "src_ChemicalEngineering" as E, "src_PGStudent" as F, "src_hasAssociateProfessor" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = B."c1" AND B."c1" = D."c1" AND D."c1" = G."c1";
+source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_PhDStudent" as A, "src_Director" as B, "src_History" as C, "src_hasSupportingStaff" as D, "src_hasAssociateProfessor" as E WHERE  D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-112744099
+mappingId ID791309447
 target  ns:ns/{var0} ns:isAssociateProfessorOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_StudentEvaluationCommittee" as A, "src_MediaArtsAndSciences" as B, "src_isSubOrganizationOf" as C, "src_isMemberOf" as D, "src_isAssociateProfessorOf" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND C."c1" = D."c1" AND D."c1" = E."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Architecture" as A, "src_isAdvisedBy" as B, "src_isResearchAssistantOf" as C, "src_SupportingStaff" as D, "src_teachesCourse" as E, "src_hasCollege" as F, "src_isAssociateProfessorOf" as G WHERE  B."c1" = C."c1" AND C."c1" = E."c1" AND E."c1" = F."c1" AND F."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID24786116
+mappingId ID-365191056
 target  ns:ns/{var0} ns:hasAuthor ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Tennis" as A, "src_hasLastName" as B, "src_hasHead" as C, "src_hasAuthor" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND B."c1" = C."c1" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isAffiliatedOrganizationOf" as A, "src_Engineering" as B, "src_ClericalStaff" as C, "src_ComputerScience" as D, "src_hasLecturer" as E, "src_hasAuthor" as F WHERE  A."c1" = E."c1" AND E."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-2126569710
+mappingId ID-1722563666
 target  ns:ns/{var0} ns:hasClericalStaff ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_SupportingStaff" as A, "src_hasResearchGroup" as B, "src_isPostDocOf" as C, "src_TeachingCourse" as D, "src_hasEmployeeEvaluationCommittee" as E, "src_hasClericalStaff" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND B."c1" = C."c1" AND C."c1" = E."c1" AND E."c1" = F."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isFullProfessorOf" as A, "src_Employee" as B, "src_WomanCollege" as C, "src_hasClericalStaff" as D WHERE  A."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID728141144
+mappingId ID768853879
 target  ns:ns/{var0} ns:hasSupportingStaff ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isPostDocOf" as A, "src_PetroleumlEngineering" as B, "src_hasTitle" as C, "src_hasSupportingStaff" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = C."c1" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isLecturerOf" as A, "src_MediaArtsAndSciences" as B, "src_JournalArticle" as C, "src_AssociateProfessor" as D, "src_FootBall" as E, "src_FinancialAndAccountingManagement" as F, "src_hasSupportingStaff" as G WHERE  A."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID2012969701
+mappingId ID2103294521
 target  ns:ns/{var0} ns:hasCollaborationWith ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_DesignManagement" as A, "src_TechnicalReport" as B, "src_Tennis" as C, "src_hasCollaborationWith" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasFullProfessor" as A, "src_WomanCollege" as B, "src_isDepartmentOf" as C, "src_hasCollaborationWith" as D WHERE  A."c1" = C."c1" AND C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-801904086
+mappingId ID104209478
 target  ns:ns/{var0} ns:hasCollege ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isSystemStaffOf" as A, "src_BasketBall" as B, "src_dislikes" as C, "src_isPostDocOf" as D, "src_loves" as E, "src_ResearchAssistant" as F, "src_hasCollege" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1" AND E."c1" = G."c1";
+source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_Physics" as A, "src_PeopleWithHobby" as B, "src_PhDStudent" as C, "src_isSystemStaffOf" as D, "src_hasCollege" as E WHERE  D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1188454647
+mappingId ID-1806074522
 target  ns:ns/{var0} ns:isCollegeOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_MaterialsScience" as A, "src_Music" as B, "src_Engineering" as C, "src_isCollegeOf" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_College" as A, "src_Interest" as B, "src_ComputerEngineering" as C, "src_hasAssistantProfessor" as D, "src_Philosophy" as E, "src_tenured" as F, "src_isCollegeOf" as G WHERE  D."c1" = F."c1" AND F."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-1210357875
+mappingId ID315233622
 target  ns:ns/{var0} ns:hasSubOrganization ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasDean" as A, "src_hasPGProgram" as B, "src_ComputerEngineering" as C, "src_hasTelephone" as D, "src_PerformingArts" as E, "src_hasSubOrganization" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = B."c1" AND B."c1" = D."c1" AND D."c1" = F."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_BiomedicalEngineering" as A, "src_hasVisitingProfessor" as B, "src_Article" as C, "src_English" as D, "src_NonScience" as E, "src_OtherStaff" as F, "src_hasSubOrganization" as G WHERE  B."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-1375063420
+mappingId ID-394690467
 target  ns:ns/{var0} ns:hasCollegeDiscipline ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Course" as A, "src_tenured" as B, "src_BasketBallFan" as C, "src_hasAssistantProfessor" as D, "src_hasCollegeDiscipline" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND B."c1" = D."c1" AND D."c1" = E."c1";
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_TeachingCourse" as A, "src_English" as B, "src_hasHead" as C, "src_PostDoc" as D, "src_hasEmailAddress" as E, "src_enrollIn" as F, "src_hasCollegeDiscipline" as G WHERE  C."c1" = E."c1" AND E."c1" = F."c1" AND F."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1301815850
+mappingId ID-668357299
 target  ns:ns/{var0} ns:hasCommitteeMembers ns:ns/{var1} . 
-source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_ChemicalEngineering" as A, "src_ScienceStudent" as B, "src_hasFirstName" as C, "src_Dean" as D, "src_hasCommitteeMembers" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND C."c1" = E."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_enrollIn" as A, "src_UGCourse" as B, "src_isVisitingProfessorOf" as C, "src_hasCommitteeMembers" as D WHERE  A."c1" = C."c1" AND C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-1890355479
+mappingId ID128873443
 target  ns:ns/{var0} ns:hasMember ns:ns/{var1} . 
-source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_JournalArticle" as A, "src_AssistantProfessor" as B, "src_orgPublication" as C, "src_hasMember" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Software" as A, "src_hasResearchAssistant" as B, "src_SportsLover" as C, "src_hasMember" as D WHERE  B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID2036733494
+mappingId ID782266246
 target  ns:ns/{var0} ns:hasDean ns:ns/{var1} . 
-source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_Architecture" as A, "src_JournalArticle" as B, "src_hasMasterDegreeFrom" as C, "src_MusicsClass" as D, "src_hasDean" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND C."c1" = E."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasTitle" as A, "src_isFacultyOf" as B, "src_Chair" as C, "src_Religions" as D, "src_hasDean" as E WHERE  A."c1" = B."c1" AND B."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1392053439
+mappingId ID884081285
 target  ns:ns/{var0} ns:isDeanOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, F."c1" as var1 FROM  "src_UGCourse" as A, "src_Specification" as B, "src_BasketBallFan" as C, "src_TeachingAssistant" as D, "src_ResearchProject" as E, "src_isDeanOf" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasPostDoc" as A, "src_ModernLanguages" as B, "src_PhDStudent" as C, "src_isDeanOf" as D WHERE  A."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID309329397
+mappingId ID-1173311831
 target  ns:ns/{var0} ns:hasDepartment ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasAdvisor" as A, "src_Specification" as B, "src_hasCollaborationWith" as C, "src_hasDepartment" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = C."c1" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Employee" as A, "src_teachesCourse" as B, "src_PhDProgram" as C, "src_hasDepartment" as D WHERE  B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-1224880809
+mappingId ID1529055510
 target  ns:ns/{var0} ns:isDepartmentOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_tenured" as A, "src_hasCollaborationWith" as B, "src_Program" as C, "src_isDepartmentOf" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = B."c1" AND B."c1" = D."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Lecturer" as A, "src_hasLecturer" as B, "src_Psychology" as C, "src_Cricket" as D, "src_Person" as E, "src_PGStudent" as F, "src_isDepartmentOf" as G WHERE  B."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-1621322362
+mappingId ID1766138677
 target  ns:ns/{var0} ns:hasDoctoralDegreeFrom ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasAssociateProfessor" as A, "src_PhDStudent" as B, "src_BiomedicalEngineering" as C, "src_evaluates" as D, "src_Student" as E, "src_hasSystemStaff" as F, "src_hasDoctoralDegreeFrom" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = D."c1" AND D."c1" = F."c1" AND F."c1" = G."c1";
+source  SELECT A."c0" as var0, E."c1" as var1 FROM  "src_Person" as A, "src_ChemicalEngineering" as B, "src_ResearchGroup" as C, "src_FootBall" as D, "src_hasDoctoralDegreeFrom" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID194147027
+mappingId ID-280966735
 target  ns:ns/{var0} ns:hasEmployee ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasClericalStaff" as A, "src_SupportingStaff" as B, "src_ComputerScience" as C, "src_Architecture" as D, "src_hasEmployee" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = E."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Statistics" as A, "src_hasCollege" as B, "src_isAssistantProfessorOf" as C, "src_isMemberOf" as D, "src_PetroleumlEngineering" as E, "src_Chair" as F, "src_hasEmployee" as G WHERE  B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-502174394
+mappingId ID916986095
 target  ns:ns/{var0} ns:hasEmployeeEvaluationCommittee ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_SystemStaff" as A, "src_Dean" as B, "src_Work" as C, "src_hasEvaluationCommittee" as D, "src_Cricket" as E, "src_hasEmployeeEvaluationCommittee" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND D."c1" = F."c1";
+source  SELECT A."c0" as var0, E."c1" as var1 FROM  "src_Biology" as A, "src_Tennis" as B, "src_Psychology" as C, "src_Astronomy" as D, "src_hasEmployeeEvaluationCommittee" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-322054722
+mappingId ID750872486
 target  ns:ns/{var0} ns:hasEvaluationCommittee ns:ns/{var1} . 
-source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_AssociateProfessor" as A, "src_Department" as B, "src_enrollIn" as C, "src_hasEvaluationCommittee" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasCollegeDiscipline" as A, "src_Lecturer" as B, "src_WomanCollege" as C, "src_hasEvaluationCommittee" as D WHERE  A."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-1440806579
+mappingId ID-266895994
 target  ns:ns/{var0} ns:hasFaculty ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_WomanCollege" as A, "src_enrollFor" as B, "src_Employee" as C, "src_isPartOf" as D, "src_Tennis" as E, "src_hasFaculty" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND B."c1" = D."c1" AND D."c1" = F."c1";
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_StudentEvaluationCommittee" as A, "src_Humanities" as B, "src_hasClericalStaff" as C, "src_isSubOrganizationOf" as D, "src_hasFaculty" as E WHERE  C."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID598641766
+mappingId ID-500177677
 target  ns:ns/{var0} ns:isFacultyOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_MarineScience" as A, "src_isFullProfessorOf" as B, "src_PGProgram" as C, "src_hasFirstName" as D, "src_hasMember" as E, "src_Humanities" as F, "src_isFacultyOf" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND B."c1" = D."c1" AND D."c1" = E."c1" AND E."c1" = G."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_ResearchAssistant" as A, "src_hasEmailAddress" as B, "src_hasVisitingProfessor" as C, "src_hasMasterDegreeFrom" as D, "src_isSubOrganizationOf" as E, "src_isFacultyOf" as F WHERE  B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1" AND E."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-1904163881
+mappingId ID-1036165126
 target  ns:ns/{var0} ns:hasFullProfessor ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasSupportingStaff" as A, "src_Reading" as B, "src_Director" as C, "src_publicationResearch" as D, "src_hasFullProfessor" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = D."c1" AND D."c1" = E."c1";
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_Game" as A, "src_TheatreAndDance" as B, "src_hasAdvisor" as C, "src_hasFullProfessor" as D WHERE  C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-1538282821
+mappingId ID1294757432
 target  ns:ns/{var0} ns:isFullProfessorOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_enrollIn" as A, "src_ComputerEngineering" as B, "src_OperationsManagement" as C, "src_isAssociateProfessorOf" as D, "src_hasOtherStaff" as E, "src_isFullProfessorOf" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = D."c1" AND D."c1" = E."c1" AND E."c1" = F."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Mathematics" as A, "src_isProfessorOf" as B, "src_FineArts" as C, "src_isFullProfessorOf" as D WHERE  B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-399208050
+mappingId ID1283592065
 target  ns:ns/{var0} ns:hasHead ns:ns/{var1} . 
-source  SELECT A."c0" as var0, E."c1" as var1 FROM  "src_Economics" as A, "src_NonScienceStudent" as B, "src_ElectricalEngineering" as C, "src_Statistics" as D, "src_hasHead" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isResearchGroupOf" as A, "src_isLecturerOf" as B, "src_English" as C, "src_hasVisitingProfessor" as D, "src_isSubOrganizationOf" as E, "src_hasHead" as F WHERE  A."c1" = B."c1" AND B."c1" = D."c1" AND D."c1" = E."c1" AND E."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-1888371810
+mappingId ID-1979314095
 target  ns:ns/{var0} ns:hasLecturer ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_UGStudent" as A, "src_hasPart" as B, "src_Religions" as C, "src_hasLecturer" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND B."c1" = D."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Philosophy" as A, "src_isSubOrganizationOf" as B, "src_hasFaculty" as C, "src_MarineScience" as D, "src_hasLecturer" as E WHERE  B."c1" = C."c1" AND C."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID823243286
+mappingId ID303815166
 target  ns:ns/{var0} ns:isLecturerOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasProfessor" as A, "src_OtherStaff" as B, "src_isStudentOf" as C, "src_isLecturerOf" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = C."c1" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_Director" as A, "src_AssociateProfessor" as B, "src_hasDepartment" as C, "src_AsianArts" as D, "src_hasEmployee" as E, "src_isLecturerOf" as F WHERE  C."c1" = E."c1" AND E."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID568453818
+mappingId ID-1572500752
 target  ns:ns/{var0} ns:hasMasterDegreeFrom ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_evaluatedBy" as A, "src_Organization" as B, "src_Faculty" as C, "src_AeronauticalEngineering" as D, "src_isFullProfessorOf" as E, "src_ConferencePaper" as F, "src_hasMasterDegreeFrom" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = E."c1" AND E."c1" = G."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Science" as A, "src_enrollFor" as B, "src_isStudentOf" as C, "src_Badminton" as D, "src_MusicsClass" as E, "src_hasMasterDegreeFrom" as F WHERE  B."c1" = C."c1" AND C."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-846703538
+mappingId ID1029750091
 target  ns:ns/{var0} ns:isMemberOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Book" as A, "src_hasTelephone" as B, "src_hasWork" as C, "src_FootBall" as D, "src_hasHead" as E, "src_isMemberOf" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND B."c1" = C."c1" AND C."c1" = E."c1" AND E."c1" = F."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isSupportingStaffOf" as A, "src_hasMember" as B, "src_Professor" as C, "src_isMemberOf" as D WHERE  A."c1" = B."c1" AND B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID206095323
+mappingId ID1943266798
 target  ns:ns/{var0} ns:hasOtherStaff ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isWomenCollegeOf" as A, "src_ModernLanguages" as B, "src_English" as C, "src_AssistantProfessor" as D, "src_isStudentOf" as E, "src_Humanities" as F, "src_hasOtherStaff" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = E."c1" AND E."c1" = G."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Economics" as A, "src_isFacultyOf" as B, "src_Humanities" as C, "src_hasOtherStaff" as D WHERE  B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID340956440
+mappingId ID-2021588003
 target  ns:ns/{var0} ns:hasPGProgram ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_Specification" as A, "src_ResearchProject" as B, "src_Astronomy" as C, "src_hasEmployeeEvaluationCommittee" as D, "src_ResearchGroup" as E, "src_hasPGProgram" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND D."c1" = F."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isTeachingAssistantOf" as A, "src_PhDStudent" as B, "src_hasEmployee" as C, "src_ResearchGroup" as D, "src_hasPGProgram" as E WHERE  A."c1" = C."c1" AND C."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-894698783
+mappingId ID-67187914
 target  ns:ns/{var0} ns:hasProgram ns:ns/{var1} . 
-source  SELECT A."c0" as var0, E."c1" as var1 FROM  "src_AssociateProfessor" as A, "src_Sports" as B, "src_OtherStaff" as C, "src_ScienceStudent" as D, "src_hasProgram" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_Geosciences" as A, "src_Faculty" as B, "src_isDepartmentOf" as C, "src_Work" as D, "src_BasketBall" as E, "src_Chair" as F, "src_hasProgram" as G WHERE  C."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID-1584607058
+mappingId ID-816051050
 target  ns:ns/{var0} ns:hasPart ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_NonScienceStudent" as A, "src_SupplyChainManagement" as B, "src_VisitingProfessor" as C, "src_hasPart" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_Institute" as A, "src_ConferencePaper" as B, "src_publicationResearch" as C, "src_hasPart" as D WHERE  C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1259669439
+mappingId ID-1887404693
 target  ns:ns/{var0} ns:isPartOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_StudentEvaluationCommittee" as A, "src_hasSubOrganization" as B, "src_Professor" as C, "src_isPartOf" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND B."c1" = D."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasResearchProject" as A, "src_English" as B, "src_ProjectManagement" as C, "src_isMemberOf" as D, "src_isPartOf" as E WHERE  A."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1186442803
+mappingId ID-1180682567
 target  ns:ns/{var0} ns:hasPhDProgram ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_IndustryEngineering" as A, "src_JournalArticle" as B, "src_Painting" as C, "src_hasPhDProgram" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Publication" as A, "src_hasAssistantProfessor" as B, "src_Travelling" as C, "src_AssistantProfessor" as D, "src_hasPhDProgram" as E WHERE  B."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID1375409196
+mappingId ID-377314372
 target  ns:ns/{var0} ns:hasPostDoc ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_SportsLover" as A, "src_Publication" as B, "src_Program" as C, "src_hasPostDoc" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0, F."c1" as var1 FROM  "src_ResearchProject" as A, "src_UGCourse" as B, "src_OperationsManagement" as C, "src_Movie" as D, "src_ChemicalEngineering" as E, "src_hasPostDoc" as F WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-1093087428
+mappingId ID1158047322
 target  ns:ns/{var0} ns:isPostDocOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasPart" as A, "src_enrollIn" as B, "src_isSupportingStaffOf" as C, "src_isFullProfessorOf" as D, "src_isAssistantProfessorOf" as E, "src_isPostDocOf" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1" AND E."c1" = F."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasEmployee" as A, "src_ChemicalEngineering" as B, "src_hasStudent" as C, "src_RiskManagement" as D, "src_isPostDocOf" as E WHERE  A."c1" = C."c1" AND C."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID1801082092
+mappingId ID-147448438
 target  ns:ns/{var0} ns:isProfessorOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isHeadOf" as A, "src_FullProfessor" as B, "src_isOtherStaffOf" as C, "src_MediaArtsAndSciences" as D, "src_isProfessorOf" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = C."c1" AND C."c1" = E."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_FinancialAndAccountingManagement" as A, "src_hasSubOrganization" as B, "src_enrollIn" as C, "src_Manual" as D, "src_Work" as E, "src_ComputerScience" as F, "src_isProfessorOf" as G WHERE  B."c1" = C."c1" AND C."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1068511093
+mappingId ID28549834
 target  ns:ns/{var0} ns:hasResearchAssistant ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isCollegeOf" as A, "src_PerformingArts" as B, "src_Engineering" as C, "src_MarketingManagement" as D, "src_hasDean" as E, "src_Publication" as F, "src_hasResearchAssistant" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = E."c1" AND E."c1" = G."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isAffiliatedOrganizationOf" as A, "src_VisitingProfessor" as B, "src_hasAdvisor" as C, "src_SalesManagement" as D, "src_PerformingArts" as E, "src_isHeadOf" as F, "src_hasResearchAssistant" as G WHERE  A."c1" = C."c1" AND C."c1" = F."c1" AND F."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1115717336
+mappingId ID-1321651008
 target  ns:ns/{var0} ns:isResearchAssistantOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_MaterialScienceEngineering" as A, "src_AeronauticalEngineering" as B, "src_ResearchGroup" as C, "src_isResearchAssistantOf" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_Economics" as A, "src_Department" as B, "src_isFacultyOf" as C, "src_hasStudent" as D, "src_ConferencePaper" as E, "src_isResearchAssistantOf" as F WHERE  C."c1" = D."c1" AND D."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID1681032069
+mappingId ID1394556869
 target  ns:ns/{var0} ns:hasResearchGroup ns:ns/{var1} . 
-source  SELECT A."c0" as var0, F."c1" as var1 FROM  "src_ThesisEvaluationCommittee" as A, "src_Badminton" as B, "src_SystemStaff" as C, "src_Mathematics" as D, "src_OperationsManagement" as E, "src_hasResearchGroup" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_College" as A, "src_PublicRelationsManagement" as B, "src_hasClericalStaff" as C, "src_TeachingCourse" as D, "src_hasResearchGroup" as E WHERE  C."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID1234642962
+mappingId ID1203102740
 target  ns:ns/{var0} ns:isResearchGroupOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasTitle" as A, "src_ScienceStudent" as B, "src_Publication" as C, "src_hasProfessor" as D, "src_isFullProfessorOf" as E, "src_isResearchGroupOf" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = D."c1" AND D."c1" = E."c1" AND E."c1" = F."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasSystemStaff" as A, "src_hasLecturer" as B, "src_hasEmailAddress" as C, "src_isResearchGroupOf" as D WHERE  A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID979395923
+mappingId ID-1113480336
 target  ns:ns/{var0} ns:hasResearchProject ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_AssociateProfessor" as A, "src_AssistantProfessor" as B, "src_MarketingManagement" as C, "src_hasResearchProject" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0, F."c1" as var1 FROM  "src_Religions" as A, "src_MechanicalEngineering" as B, "src_Reading" as C, "src_ChemicalEngineering" as D, "src_OperationsManagement" as E, "src_hasResearchProject" as F WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-458383355
+mappingId ID354881166
 target  ns:ns/{var0} ns:hasWork ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_WomanCollege" as A, "src_isAssociateProfessorOf" as B, "src_Science" as C, "src_hasWork" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND B."c1" = D."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isStudentOf" as A, "src_isPartOf" as B, "src_isOtherStaffOf" as C, "src_hasWork" as D WHERE  A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1228059374
+mappingId ID-2094309777
 target  ns:ns/{var0} ns:hasStudent ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_SportsFan" as A, "src_evaluates" as B, "src_hasCollege" as C, "src_Swimming" as D, "src_hasStudent" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND B."c1" = C."c1" AND C."c1" = E."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_HumanResourceManagement" as A, "src_offerCourse" as B, "src_isStudentOf" as C, "src_hasStudent" as D WHERE  B."c1" = C."c1" AND C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID17739048
+mappingId ID1617135613
 target  ns:ns/{var0} ns:hasStudentEvaluationCommittee ns:ns/{var1} . 
-source  SELECT A."c0" as var0, E."c1" as var1 FROM  "src_TeachingCourse" as A, "src_Swimming" as B, "src_UGStudent" as C, "src_NonScience" as D, "src_hasStudentEvaluationCommittee" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_Religions" as A, "src_BiomedicalEngineering" as B, "src_MarineScience" as C, "src_hasUndergraduateDegreeFrom" as D, "src_hasStudentEvaluationCommittee" as E WHERE  D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1523101793
+mappingId ID-694501237
 target  ns:ns/{var0} ns:isSubOrganizationOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_Physics" as A, "src_TeachingCourse" as B, "src_OtherStaff" as C, "src_isSubOrganizationOf" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_AeronauticalEngineering" as A, "src_UnofficialPublication" as B, "src_TechnicalReport" as C, "src_hasMajor" as D, "src_Geosciences" as E, "src_isProfessorOf" as F, "src_isSubOrganizationOf" as G WHERE  D."c1" = F."c1" AND F."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1209056662
+mappingId ID-1428866488
 target  ns:ns/{var0} ns:hasSystemStaff ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Department" as A, "src_tenured" as B, "src_takesCourse" as C, "src_hasSystemStaff" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND B."c1" = C."c1" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasAdvisor" as A, "src_isPostDocOf" as B, "src_Director" as C, "src_dislikes" as D, "src_MarineScience" as E, "src_hasEmployee" as F, "src_hasSystemStaff" as G WHERE  A."c1" = B."c1" AND B."c1" = D."c1" AND D."c1" = F."c1" AND F."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID1089664195
+mappingId ID634432465
 target  ns:ns/{var0} ns:hasThesisEvaluationCommittee ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_MaterialScienceEngineering" as A, "src_PGProgram" as B, "src_ResearchAssistant" as C, "src_hasThesisEvaluationCommittee" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_orgPublication" as A, "src_isDeanOf" as B, "src_Geosciences" as C, "src_Physics" as D, "src_hasThesisEvaluationCommittee" as E WHERE  A."c1" = B."c1" AND B."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID670826488
+mappingId ID-1689740859
 target  ns:ns/{var0} ns:hasUGProgram ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_OperationsManagement" as A, "src_loves" as B, "src_Architecture" as C, "src_enrollFor" as D, "src_PublicRelationsManagement" as E, "src_hasUGProgram" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND B."c1" = D."c1" AND D."c1" = F."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_takesCourse" as A, "src_hasCollegeDiscipline" as B, "src_hasPhDProgram" as C, "src_hasThesisEvaluationCommittee" as D, "src_hasCommitteeMembers" as E, "src_hasUGProgram" as F WHERE  A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1" AND E."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-2070642752
+mappingId ID-1702498038
 target  ns:ns/{var0} ns:hasUndergraduateDegreeFrom ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_Faculty" as A, "src_PublicRelationsManagement" as B, "src_UGStudent" as C, "src_isCollegeOf" as D, "src_BiomedicalEngineering" as E, "src_isHeadOf" as F, "src_hasUndergraduateDegreeFrom" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND D."c1" = F."c1" AND F."c1" = G."c1";
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_BiomedicalEngineering" as A, "src_ComputerEngineering" as B, "src_orgPublication" as C, "src_hasThesisEvaluationCommittee" as D, "src_hasUndergraduateDegreeFrom" as E WHERE  C."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-161506213
+mappingId ID1789561577
 target  ns:ns/{var0} ns:hasVisitingProfessor ns:ns/{var1} . 
-source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_Person" as A, "src_Painting" as B, "src_isDeanOf" as C, "src_Lecturer" as D, "src_Software" as E, "src_hasVisitingProfessor" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND C."c1" = F."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasDean" as A, "src_MedievalArts" as B, "src_NonScience" as C, "src_AssociateProfessor" as D, "src_hasAssistantProfessor" as E, "src_hasVisitingProfessor" as F WHERE  A."c1" = E."c1" AND E."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID14114704
+mappingId ID-1034466313
 target  ns:ns/{var0} ns:isVisitingProfessorOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasPhDProgram" as A, "src_enrollFor" as B, "src_hasAlumnus" as C, "src_isVisitingProfessorOf" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasStudentEvaluationCommittee" as A, "src_Astronomy" as B, "src_DesignManagement" as C, "src_isVisitingProfessorOf" as D WHERE  A."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1184526561
+mappingId ID1197532704
 target  ns:ns/{var0} ns:hasWomenCollege ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isPostDocOf" as A, "src_DesignManagement" as B, "src_PeopleWithHobby" as C, "src_hasWomenCollege" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = D."c1";
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_Drama" as A, "src_BasketBall" as B, "src_hasTitle" as C, "src_hasWomenCollege" as D WHERE  C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1582701498
+mappingId ID-1772752190
 target  ns:ns/{var0} ns:isAdvisedBy ns:ns/{var1} . 
-source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_Software" as A, "src_WomanCollege" as B, "src_hasDean" as C, "src_hasFaculty" as D, "src_isAdvisedBy" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND C."c1" = D."c1" AND D."c1" = E."c1";
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_Manual" as A, "src_Geosciences" as B, "src_hasAuthor" as C, "src_CivilEngineering" as D, "src_hasProgram" as E, "src_isAdvisedBy" as F WHERE  C."c1" = E."c1" AND E."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID-1307878286
+mappingId ID580549255
 target  ns:ns/{var0} ns:isAffiliatedOrganizationOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasPostDoc" as A, "src_isTeachingAssistantOf" as B, "src_enrollIn" as C, "src_isAffiliatedOrganizationOf" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0, E."c1" as var1 FROM  "src_PetroleumlEngineering" as A, "src_Badminton" as B, "src_NonScience" as C, "src_Course" as D, "src_hasTelephone" as E, "src_isAffiliatedOrganizationOf" as F WHERE  E."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID28653487
+mappingId ID-124195980
 target  ns:ns/{var0} ns:isClericalStaffOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Badminton" as A, "src_isHeadOf" as B, "src_Lecturer" as C, "src_hasResearchProject" as D, "src_ResearchGroup" as E, "src_isClericalStaffOf" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND B."c1" = D."c1" AND D."c1" = F."c1";
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_Faculty" as A, "src_Director" as B, "src_hasAlumnus" as C, "src_evaluates" as D, "src_isClericalStaffOf" as E WHERE  C."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1108946472
+mappingId ID1350033112
 target  ns:ns/{var0} ns:isSupportingStaffOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasSubOrganization" as A, "src_ModernArts" as B, "src_Architecture" as C, "src_Music" as D, "src_isSupportingStaffOf" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = E."c1";
+source  SELECT A."c0" as var0, E."c1" as var1 FROM  "src_BiomedicalEngineering" as A, "src_Director" as B, "src_ConferencePaper" as C, "src_Chair" as D, "src_isSupportingStaffOf" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1660403484
+mappingId ID1706806144
 target  ns:ns/{var0} ns:isOtherStaffOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_BiomedicalEngineering" as A, "src_isCollegeOf" as B, "src_ProjectManagement" as C, "src_hasLecturer" as D, "src_isOtherStaffOf" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND B."c1" = D."c1" AND D."c1" = E."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasFullProfessor" as A, "src_ModernArts" as B, "src_Dean" as C, "src_isOtherStaffOf" as D WHERE  A."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1510684650
+mappingId ID-1685186600
 target  ns:ns/{var0} ns:isSystemStaffOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_OtherStaff" as A, "src_Swimming" as B, "src_isAffiliatedOrganizationOf" as C, "src_isSystemStaffOf" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND C."c1" = D."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasHead" as A, "src_isWomenCollegeOf" as B, "src_CoEdCollege" as C, "src_isSupportingStaffOf" as D, "src_isSystemStaffOf" as E WHERE  A."c1" = B."c1" AND B."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1684180190
+mappingId ID566392983
 target  ns:ns/{var0} ns:isTaughtBy ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isDepartmentOf" as A, "src_hasMasterDegreeFrom" as B, "src_AsianArts" as C, "src_hasTitle" as D, "src_isTaughtBy" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = B."c1" AND B."c1" = D."c1" AND D."c1" = E."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_SupportingStaff" as A, "src_likes" as B, "src_isResearchGroupOf" as C, "src_ConferencePaper" as D, "src_isTaughtBy" as E WHERE  B."c1" = C."c1" AND C."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-289796177
+mappingId ID-1845940750
 target  ns:ns/{var0} ns:isWomenCollegeOf ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasMember" as A, "src_Geosciences" as B, "src_Mathematics" as C, "src_SalesManagement" as D, "src_PhDProgram" as E, "src_isWomenCollegeOf" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = F."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_likes" as A, "src_enrollIn" as B, "src_Person" as C, "src_isWomenCollegeOf" as D WHERE  A."c1" = B."c1" AND B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1587240415
+mappingId ID928499553
 target  ns:ns/{var0} ns:offerCourse ns:ns/{var1} . 
-source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_College" as A, "src_Book" as B, "src_isSupportingStaffOf" as C, "src_isClericalStaffOf" as D, "src_Employee" as E, "src_PGProgram" as F, "src_offerCourse" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND C."c1" = D."c1" AND D."c1" = G."c1";
+source  SELECT A."c0" as var0, F."c1" as var1 FROM  "src_ModernArts" as A, "src_PhDStudent" as B, "src_Sports" as C, "src_FootBall" as D, "src_PerformingArts" as E, "src_offerCourse" as F WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID1195509672
+mappingId ID875546614
 target  ns:ns/{var0} ns:orgPublication ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isTaughtBy" as A, "src_Chair" as B, "src_isAssistantProfessorOf" as C, "src_hasDean" as D, "src_orgPublication" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1";
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_StudentEvaluationCommittee" as A, "src_Director" as B, "src_isFullProfessorOf" as C, "src_isMemberOf" as D, "src_hasCollegeDiscipline" as E, "src_Music" as F, "src_orgPublication" as G WHERE  C."c1" = D."c1" AND D."c1" = E."c1" AND E."c1" = G."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
 
-mappingId ID967517858
+mappingId ID-505693221
 target  ns:ns/{var0} ns:publicationResearch ns:ns/{var1} . 
-source  SELECT A."c0" as var0, F."c1" as var1 FROM  "src_Sports" as A, "src_AssociateProfessor" as B, "src_English" as C, "src_HumanResourceManagement" as D, "src_School" as E, "src_publicationResearch" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasFullProfessor" as A, "src_hasResearchGroup" as B, "src_PGProgram" as C, "src_publicationResearch" as D WHERE  A."c1" = B."c1" AND B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-1524786279
+mappingId ID-1013655793
 target  ns:ns/{var0} ns:takesCourse ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_PGStudent" as A, "src_ChemicalEngineering" as B, "src_AssistantProfessor" as C, "src_hasProgram" as D, "src_isSubOrganizationOf" as E, "src_takesCourse" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND D."c1" = E."c1" AND E."c1" = F."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_ScienceStudent" as A, "src_hasCollege" as B, "src_hasEmailAddress" as C, "src_isDeanOf" as D, "src_takesCourse" as E WHERE  B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1143883837
+mappingId ID-2067036064
 target  ns:ns/{var0} ns:tenured ns:ns/{var1} . 
-source  SELECT A."c0" as var0, G."c1" as var1 FROM  "src_Lecturer" as A, "src_Department" as B, "src_IndustryEngineering" as C, "src_SystemStaff" as D, "src_Science" as E, "src_ElectricalEngineering" as F, "src_tenured" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasMember" as A, "src_Publication" as B, "src_Engineering" as C, "src_hasUGProgram" as D, "src_tenured" as E WHERE  A."c1" = D."c1" AND D."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-4410738
-target  ns:ns/{var0} ns:hasAge ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Manual" as A, "src_evaluatedBy" as B, "src_evaluates" as C, "src_isAffiliatedOrganizationOf" as D, "src_isProfessorOf" as E, "src_loves" as F, "src_hasAge" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = E."c1" AND E."c1" = F."c1" AND F."c1" = G."c1";
+mappingId ID789241958
+target  ns:ns/{var0} ns:hasAge {var0}^^xsd:string . 
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_PhDProgram" as A, "src_Astronomy" as B, "src_hasOtherStaff" as C, "src_Painting" as D, "src_AeronauticalEngineering" as E, "src_hasAge" as F WHERE  C."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID1889742840
-target  ns:ns/{var0} ns:hasEmailAddress ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_Religions" as A, "src_Chemistry" as B, "src_TeachingAssistant" as C, "src_hasEmailAddress" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+mappingId ID1129022371
+target  ns:ns/{var0} ns:hasEmailAddress {var0}^^xsd:string . 
+source  SELECT A."c0" as var0, F."c1" as var1 FROM  "src_BasketBallLover" as A, "src_Engineering" as B, "src_Work" as C, "src_SalesManagement" as D, "src_PhDProgram" as E, "src_hasEmailAddress" as F WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID180250861
-target  ns:ns/{var0} ns:hasFirstName ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_SystemStaff" as A, "src_AsianArts" as B, "src_TheatreAndDance" as C, "src_hasFirstName" as D WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+mappingId ID1371114261
+target  ns:ns/{var0} ns:hasFirstName {var0}^^xsd:string . 
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_Statistics" as A, "src_Sports" as B, "src_dislikes" as C, "src_hasFirstName" as D WHERE  C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1004768922
-target  ns:ns/{var0} ns:hasLastName ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasDoctoralDegreeFrom" as A, "src_Tennis" as B, "src_hasClericalStaff" as C, "src_BasketBall" as D, "src_hasLastName" as E WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND A."c1" = C."c1" AND C."c1" = E."c1";
+mappingId ID2032466735
+target  ns:ns/{var0} ns:hasLastName {var0}^^xsd:string . 
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_SupportingStaff" as A, "src_isSupportingStaffOf" as B, "src_UGStudent" as C, "src_hasPostDoc" as D, "src_enrollIn" as E, "src_hasLastName" as F WHERE  B."c1" = D."c1" AND D."c1" = E."c1" AND E."c1" = F."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0";
 
-mappingId ID524675801
-target  ns:ns/{var0} ns:hasTelephone ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasSupportingStaff" as A, "src_English" as B, "src_UnofficialPublication" as C, "src_SportsFan" as D, "src_PhDStudent" as E, "src_hasTelephone" as F WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND A."c1" = F."c1";
+mappingId ID-243507882
+target  ns:ns/{var0} ns:hasTelephone {var0}^^xsd:string . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isSubOrganizationOf" as A, "src_hasResearchProject" as B, "src_hasClericalStaff" as C, "src_hasTelephone" as D WHERE  A."c1" = B."c1" AND B."c1" = C."c1" AND C."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID305377674
-target  ns:ns/{var0} ns:hasTitle ns:ns/{var1} . 
-source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_ThesisEvaluationCommittee" as A, "src_hasAssociateProfessor" as B, "src_hasEmployee" as C, "src_hasUGProgram" as D, "src_Software" as E, "src_hasAlumnus" as F, "src_hasTitle" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND B."c1" = C."c1" AND C."c1" = D."c1" AND D."c1" = F."c1" AND F."c1" = G."c1";
+mappingId ID-976857306
+target  ns:ns/{var0}  ns:hasTitle {var0}^^xsd:string . 
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_Geosciences" as A, "src_isAssistantProfessorOf" as B, "src_SportsLover" as C, "src_hasTitle" as D WHERE  B."c1" = D."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID644580138
+mappingId ID-1091694066
 target  ns:ns/{var0} ns:hasAdvisor ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isWomenCollegeOf" as A, "src_NonScience" as B, "src_hasDepartment" as C, "src_College" as D, "src_PGStudent" as E, "src_Game" as F, "src_hasAdvisor" as G WHERE , A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND E."c0" = F."c0" AND F."c0" = G."c0" AND A."c1" = C."c1" AND C."c1" = G."c1";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isFullProfessorOf" as A, "src_Work" as B, "src_Anthropology" as C, "src_Organization" as D, "src_hasAdvisor" as E WHERE  A."c1" = E."c1" AND A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
 ]]
