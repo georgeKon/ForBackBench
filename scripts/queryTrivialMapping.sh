@@ -213,7 +213,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 
   $JRE -jar ../utilityTools/RulewerkLongTGDs.jar -st-tgds ../$BASE_DIR/dependencies/oneToOne-st-tgds.txt -t-tgds ../$BASE_DIR/dependencies/oneToOne-t-tgds.txt -out ../$BASE_DIR/dependencies/longTGDs.rule
  
-  GQR[$CHASE,$i]=$(($(date +%s%N) - $START_TIME))
+  GQR[$LOAD,$i]=$(($(date +%s%N) - $START_TIME))
   START_TIME=$(date +%s%N)
  
   OUT=$($JRE -jar ../systems/GQR/GQR.jar -st-tgds ../$BASE_DIR/dependencies/longTGDs.rule -q ../$BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt)
@@ -240,7 +240,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
     GQR[$TOTAL,$i]=$(($(date +%s%N) - ${GQR[$TOTAL,$i]}))
   else
     GQR[$REWRITE,$i]="-1"
-    GQR[$CHASE,$i]="-1"
+    GQR[$LOAD,$i]="-1"
 #     GQR[$CONVERT,$i]="-1"
     GQR[$SIZE,$i]="-1"
     GQR[$TUPLES,$i]="-1"
@@ -248,7 +248,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
     GQR[$TOTAL,$i]="-1"
   fi
    echo "Size: ${GQR[$SIZE,$i]}"
-  echo "Chasing: $((${GQR[$CHASE,$i]}/1000000)) milliseconds"
+  echo "Loading: $((${GQR[$LOAD,$i]}/1000000)) milliseconds"
   echo "Rewriting: $((${GQR[$REWRITE,$i]}/1000000)) milliseconds"
 #   echo "Converting: $((${GQR[$CONVERT,$i]})) milliseconds"
   echo "Executing: $((${GQR[$EXECUTE,$i]}/1000000)) milliseconds"
@@ -364,36 +364,36 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 done
 
 
-echo "===== STChase ====="
-mkdir -p ../experiments/outputs/bcastc/$BASE_DIR/rewritings
-mkdir -p ../experiments/outputs/bcastc/$BASE_DIR/answer/$DATA_SIZE
-
-for ((i=0;i<$NUM_TESTS;++i)); do
-  START_TIME=$(date +%s%N)
-  BCASTC[$TOTAL,$i]=$START_TIME 
-  
-  $JRE -jar ../utilityTools/RulewerkLongTGDs.jar -st-tgds ../$BASE_DIR/dependencies/oneToOne-st-tgds.txt -t-tgds ../$BASE_DIR/dependencies/oneToOne-t-tgds.txt -out ../$BASE_DIR/dependencies/longTGDs.rule
-  
-#   BCASTC[$PREPROCESS,$i]=$(($(date +%s%N) - $START_TIME))
-  
-  # START_TIME=$(date +%s%N)
-  OUT=$(timeout $TIMEOUT java -jar ../systems/STChase/singleStep-1.08.jar -t-sql ../$BASE_DIR/schema/oneToOne/t-schema.sql -s-sch ../$BASE_DIR/schema/oneToOne/s-schema.txt -t-sch ../$BASE_DIR/schema/oneToOne/t-schema.txt -st-tgds ../$BASE_DIR/dependencies/longTGDs.rule -q ../$BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt -data ../$BASE_DIR/data/oneToOne/$DATA_SIZE)
-  if [ $? -eq 0 ]; then
-   BCASTC[$CHASE,$i]=$(($(date +%s%N) - $START_TIME))
-   echo "$OUT" > ../experiments/outputs/bcastc/$BASE_DIR/answer/$DATA_SIZE/Q$QUERY.txt
-   BCASTC[$TUPLES,$i]=$(echo "$OUT" | grep "Count :" | cut -d':' -f2)
-   BCASTC[$TOTAL,$i]=$(($(date +%s%N) - ${BCASTC[$TOTAL,$i]}))
-  else
-#    BCASTC[$PREPROCESS,$i]="-1"
-   BCASTC[$TOTAL,$i]="-1"
-   BCASTC[$CHASE,$i]="-1"
-   BCASTC[$TUPLES,$i]="-1"
-  fi
-#   echo "Blocking: $((${BCASTC[$PREPROCESS,$i]}/1000000)) milliseconds"
-  echo "Chasing: $((${BCASTC[$CHASE,$i]}/1000000)) milliseconds"
-  echo "Time elapsed: $((${BCASTC[$TOTAL,$i]}/1000000)) milliseconds"
-  echo "# of tuples: ${BCASTC[$TUPLES,$i]}"
-done
+# echo "===== STChase ====="
+# mkdir -p ../experiments/outputs/bcastc/$BASE_DIR/rewritings
+# mkdir -p ../experiments/outputs/bcastc/$BASE_DIR/answer/$DATA_SIZE
+# 
+# for ((i=0;i<$NUM_TESTS;++i)); do
+#   START_TIME=$(date +%s%N)
+#   BCASTC[$TOTAL,$i]=$START_TIME 
+#   
+#   $JRE -jar ../utilityTools/RulewerkLongTGDs.jar -st-tgds ../$BASE_DIR/dependencies/oneToOne-st-tgds.txt -t-tgds ../$BASE_DIR/dependencies/oneToOne-t-tgds.txt -out ../$BASE_DIR/dependencies/longTGDs.rule
+#   
+# #   BCASTC[$PREPROCESS,$i]=$(($(date +%s%N) - $START_TIME))
+#   
+#   # START_TIME=$(date +%s%N)
+#   OUT=$(timeout $TIMEOUT java -jar ../systems/STChase/singleStep-1.08.jar -t-sql ../$BASE_DIR/schema/oneToOne/t-schema.sql -s-sch ../$BASE_DIR/schema/oneToOne/s-schema.txt -t-sch ../$BASE_DIR/schema/oneToOne/t-schema.txt -st-tgds ../$BASE_DIR/dependencies/longTGDs.rule -q ../$BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt -data ../$BASE_DIR/data/oneToOne/$DATA_SIZE)
+#   if [ $? -eq 0 ]; then
+#    BCASTC[$CHASE,$i]=$(($(date +%s%N) - $START_TIME))
+#    echo "$OUT" > ../experiments/outputs/bcastc/$BASE_DIR/answer/$DATA_SIZE/Q$QUERY.txt
+#    BCASTC[$TUPLES,$i]=$(echo "$OUT" | grep "Count :" | cut -d':' -f2)
+#    BCASTC[$TOTAL,$i]=$(($(date +%s%N) - ${BCASTC[$TOTAL,$i]}))
+#   else
+# #    BCASTC[$PREPROCESS,$i]="-1"
+#    BCASTC[$TOTAL,$i]="-1"
+#    BCASTC[$CHASE,$i]="-1"
+#    BCASTC[$TUPLES,$i]="-1"
+#   fi
+# #   echo "Blocking: $((${BCASTC[$PREPROCESS,$i]}/1000000)) milliseconds"
+#   echo "Chasing: $((${BCASTC[$CHASE,$i]}/1000000)) milliseconds"
+#   echo "Time elapsed: $((${BCASTC[$TOTAL,$i]}/1000000)) milliseconds"
+#   echo "# of tuples: ${BCASTC[$TUPLES,$i]}"
+# done
 
 echo "===== ONTOP RW ====="
 mkdir -p ../experiments/outputs/ontoprw/$BASE_DIR/rewritings
@@ -643,28 +643,28 @@ for ((i=0;i<$NUM_TESTS;++i)); do
     chaseSTime=$(date -u -d "$chaseStart" +"%s.%N"); 
     chaseEnd=$(echo "$rulewerkOutput" | grep "Completed materialisation of inferences"| cut -d ' ' -f2  );
     chaseETime=$(date -u -d "$chaseEnd" +"%s.%N"); 
-    RULEWERK1[$CHASE,$i]=$(date -u -d "0 $chaseETime sec - $chaseSTime sec" +%S%N | sed 's/^0*//')
-#     RulewerkChase=$(date -u -d "0 $chaseETime sec - $chaseSTime sec" +%S%N | sed 's/^0*//')
-# 	RULEWERK1[$CHASE,$i]=$(date -u -d "0 $CREATETGDSTIME sec + $RulewerkChase sec" +%S%N | sed 's/^0*//')
-   #  echo "$RulewerkChase"
-#     echo "$CREATETGDSTIME"
-#     echo "${RULEWERK1[$CHASE,$i]}"
+#     RULEWERK1[$CHASE,$i]=$(date -u -d "0 $chaseETime sec - $chaseSTime sec" +%S%N | sed 's/^0*//')
+    RulewerkChase=$(date -u -d "0 $chaseETime sec - $chaseSTime sec" +%S%N | sed 's/^0*//')
+	RULEWERK1[$CHASE,$i]=$(($CREATETGDSTIME+$RulewerkChase))
+    echo "$RulewerkChase"
+    echo "$CREATETGDSTIME"
+    echo "${RULEWERK1[$CHASE,$i]}"
 
     exEnd=$(echo "$rulewerkOutput" | grep "Finished Answering queries"| cut -d ' ' -f2 );
     exETime=$(date -u -d "$exEnd" +"%s.%N"); 
     RULEWERK1[$EXECUTE,$i]=$(date -u -d "0 $exETime sec - $chaseETime sec" +%S%N | sed 's/^0*//')
         
     RULEWERK1[$TUPLES,$i]=$(echo "$rulewerkOutput" | grep "Number of query answers"| cut -d ':' -f2)
-    RULEWERK1[$PREPROCESS,$i]=$CREATETGDSTIME
+#     RULEWERK1[$PREPROCESS,$i]=$CREATETGDSTIME
   else 
     RULEWERK1[$TOTAL,$i]="-1"
     RULEWERK1[$LOAD,$i]="-1"
     RULEWERK1[$CHASE,$i]="-1"
     RULEWERK1[$EXECUTE,$i]="-1"
     RULEWERK1[$TUPLES,$i]="-1"
-    RULEWERK1[$PREPROCESS,$i]="-1"
+#     RULEWERK1[$PREPROCESS,$i]="-1"
   fi
-  echo "Pre-process: $((${RULEWERK1[$PREPROCESS,$i]}/1000000)) milliseconds"
+#   echo "Pre-process: $((${RULEWERK1[$PREPROCESS,$i]}/1000000)) milliseconds"
   echo "Chasing: $((${RULEWERK1[$CHASE,$i]}/1000000)) milliseconds"
   echo "Loading: $((${RULEWERK1[$LOAD,$i]}/1000000)) milliseconds"
   echo "Executing: $((${RULEWERK1[$EXECUTE,$i]}/1000000)) milliseconds"
@@ -682,31 +682,31 @@ then
 	echo "Printed"
 else
 	echo "========================== Files =========================== "
-	echo "rewrite,convert,execute,total,size,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/rapid.csv
-	echo "rewrite,convert,execute,total,size,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/iqaros.csv
-	echo "rewrite,convert,execute,total,size,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/graal.csv
- 	echo "chase,execute,loading,total,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/rdfox.csv
-	echo "chase,total,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/STchase.csv
-	echo "chase,rewrite,execute,total,size,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/gqr.csv
-	echo "rewrite,convert,execute,loading,total,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/ontop.csv
-	echo "loading,rewrite,convert,execute,total,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/chaseGQR.csv
-	echo "rewrite,convert,execute,total,size,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/ontopR.csv
-	echo "chase,execute,loading,total,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/rulewerk.csv
-	echo "preprocess,chase,execute,loading,total,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/rulewerkLonger.csv
+	echo "rewrite,convert,execute,total,size,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/Rapid.csv
+	echo "rewrite,convert,execute,total,size,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/Iqaros.csv
+	echo "rewrite,convert,execute,total,size,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/Graal.csv
+ 	echo "chase,execute,loading,total,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/RDFox.csv
+# 	echo "chase,total,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/STchase.csv
+	echo "loading,rewrite,execute,total,size,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/RwLongST+GQR.csv
+	echo "rewrite,convert,execute,loading,total,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/Ontop.csv
+	echo "loading,rewrite,convert,execute,total,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/ChaseGQR.csv
+	echo "rewrite,convert,execute,total,size,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/OntopR.csv
+	echo "chase,execute,loading,total,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/Rulewerk.csv
+	echo "chase,execute,loading,total,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/RwLongSTChase.csv
 
 fi
 
 for ((i=1;i<$NUM_TESTS;++i)); do
  
- echo "${RAPID[$REWRITE,$i]},${RAPID[$CONVERT,$i]},${RAPID[$EXECUTE,$i]},${RAPID[$TOTAL,$i]},${RAPID[$SIZE,$i]},${RAPID[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/rapid.csv
- echo "${IQAROS[$REWRITE,$i]},${IQAROS[$CONVERT,$i]},${IQAROS[$EXECUTE,$i]},${IQAROS[$TOTAL,$i]},${IQAROS[$SIZE,$i]},${IQAROS[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/iqaros.csv
- echo "${GRAAL[$REWRITE,$i]},${GRAAL[$CONVERT,$i]},${GRAAL[$EXECUTE,$i]},${GRAAL[$TOTAL,$i]},${GRAAL[$SIZE,$i]},${GRAAL[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/graal.csv
- echo "${ONTOPRW[$REWRITE,$i]},${ONTOPRW[$CONVERT,$i]},${ONTOPRW[$EXECUTE,$i]},${ONTOPRW[$TOTAL,$i]},${ONTOPRW[$SIZE,$i]},${ONTOPRW[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/ontopR.csv
- echo "${RDFOX[$CHASE,$i]},${RDFOX[$EXECUTE,$i]},${RDFOX[$LOAD,$i]},${RDFOX[$TOTAL,$i]},${RDFOX[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/rdfox.csv
- echo "${GQR[$CHASE,$i]},${GQR[$REWRITE,$i]},${GQR[$EXECUTE,$i]},${GQR[$TOTAL,$i]},${GQR[$SIZE,$i]},${GQR[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/gqr.csv
- echo "${CGQR[$LOAD,$i]},${CGQR[$REWRITE,$i]},${CGQR[$CONVERT,$i]},${CGQR[$EXECUTE,$i]},${CGQR[$TOTAL,$i]},${CGQR[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/chaseGQR.csv
- echo "${ONTOP[$REWRITE,$i]},${ONTOP[$CONVERT,$i]},${ONTOP[$EXECUTE,$i]},${ONTOP[$LOAD,$i]},${ONTOP[$TOTAL,$i]},${ONTOP[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/ontop.csv
- echo "${BCASTC[$CHASE,$i]},${BCASTC[$TOTAL,$i]},${BCASTC[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/STchase.csv
- echo "${RULEWERK[$CHASE,$i]},${RULEWERK[$EXECUTE,$i]},${RULEWERK[$LOAD,$i]},${RULEWERK[$TOTAL,$i]},${RULEWERK[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/rulewerk.csv
- echo "${RULEWERK1[$PREPROCESS,$i]},${RULEWERK1[$CHASE,$i]},${RULEWERK1[$EXECUTE,$i]},${RULEWERK1[$LOAD,$i]},${RULEWERK1[$TOTAL,$i]},${RULEWERK1[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/rulewerkLonger.csv
+ echo "${RAPID[$REWRITE,$i]},${RAPID[$CONVERT,$i]},${RAPID[$EXECUTE,$i]},${RAPID[$TOTAL,$i]},${RAPID[$SIZE,$i]},${RAPID[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/Rapid.csv
+ echo "${IQAROS[$REWRITE,$i]},${IQAROS[$CONVERT,$i]},${IQAROS[$EXECUTE,$i]},${IQAROS[$TOTAL,$i]},${IQAROS[$SIZE,$i]},${IQAROS[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/Iqaros.csv
+ echo "${GRAAL[$REWRITE,$i]},${GRAAL[$CONVERT,$i]},${GRAAL[$EXECUTE,$i]},${GRAAL[$TOTAL,$i]},${GRAAL[$SIZE,$i]},${GRAAL[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/Graal.csv
+ echo "${ONTOPRW[$REWRITE,$i]},${ONTOPRW[$CONVERT,$i]},${ONTOPRW[$EXECUTE,$i]},${ONTOPRW[$TOTAL,$i]},${ONTOPRW[$SIZE,$i]},${ONTOPRW[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/OntopR.csv
+ echo "${RDFOX[$CHASE,$i]},${RDFOX[$EXECUTE,$i]},${RDFOX[$LOAD,$i]},${RDFOX[$TOTAL,$i]},${RDFOX[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/RDFox.csv
+ echo "${GQR[$LOAD,$i]},${GQR[$REWRITE,$i]},${GQR[$EXECUTE,$i]},${GQR[$TOTAL,$i]},${GQR[$SIZE,$i]},${GQR[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/RwLongST+GQR.csv
+ echo "${CGQR[$LOAD,$i]},${CGQR[$REWRITE,$i]},${CGQR[$CONVERT,$i]},${CGQR[$EXECUTE,$i]},${CGQR[$TOTAL,$i]},${CGQR[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/ChaseGQR.csv
+ echo "${ONTOP[$REWRITE,$i]},${ONTOP[$CONVERT,$i]},${ONTOP[$EXECUTE,$i]},${ONTOP[$LOAD,$i]},${ONTOP[$TOTAL,$i]},${ONTOP[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/Ontop.csv
+#  echo "${BCASTC[$CHASE,$i]},${BCASTC[$TOTAL,$i]},${BCASTC[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/STchase.csv
+ echo "${RULEWERK[$CHASE,$i]},${RULEWERK[$EXECUTE,$i]},${RULEWERK[$LOAD,$i]},${RULEWERK[$TOTAL,$i]},${RULEWERK[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/Rulewerk.csv
+ echo "${RULEWERK1[$CHASE,$i]},${RULEWERK1[$EXECUTE,$i]},${RULEWERK1[$LOAD,$i]},${RULEWERK1[$TOTAL,$i]},${RULEWERK1[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/RwLongSTChase.csv
 done

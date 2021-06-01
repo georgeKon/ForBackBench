@@ -47,8 +47,8 @@ declare -A CGQR
 # echo "===== Generating GQR st-TGDS  ...... "
 # for ((i=0;i<4;++i)); do
 # 	START_TIME=$(date +%s%N)
-# 	$JRE -jar ../systems/chasestepper/chasestepper-1.01.jar ../$BASE_DIR/dependencies/lav.txt ../$BASE_DIR/dependencies/lav-t-tgds.txt ../$BASE_DIR/queries/GQRQuery/Qlong.txt > /dev/null
-#    $JRE -jar ../utilityTools/RulewerkLongTGDs.jar -st-tgds ../$BASE_DIR/dependencies/lav.txt -t-tgds ../$BASE_DIR/dependencies/lav-t-tgds.txt -out ../$BASE_DIR/dependencies/longTGDs.rule
+# 	$JRE -jar ../systems/chasestepper/chasestepper-1.01.jar ../$BASE_DIR/dependencies/lav.txt ../$BASE_DIR/dependencies/oneToOne-t-tgds.txt ../$BASE_DIR/queries/GQRQuery/Qlong.txt > /dev/null
+#    $JRE -jar ../utilityTools/RulewerkLongTGDs.jar -st-tgds ../$BASE_DIR/dependencies/lav.txt -t-tgds ../$BASE_DIR/dependencies/oneToOne-t-tgds.txt -out ../$BASE_DIR/dependencies/longTGDs.rule
 # 	CREATETGDSTIME=$(($(date +%s%N) - $START_TIME))
 # 	mv ../$BASE_DIR/GQRQuery/Qlong-tgds.rule ../$BASE_DIR/GQRdependencies/st-tgds2.rule
 # 	cp ../$BASE_DIR/GQRdependencies/st-tgds2.rule ../$BASE_DIR/dependencies/st-tgds2.txt
@@ -70,7 +70,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   RAPID[$SIZE,$i]=$(echo "$rapidOutput" | grep -c "<-")
 
   echo "$rapidOutput" | sed 's/$/ ./g' > ../experiments/outputs/rapid/$BASE_DIR/LAV/rewritings/Q$QUERY-rewriting.txt
- 
+#  echo "$rapidOutput"
   
 	UNION=" UNION "
 	COUNTER=1
@@ -81,7 +81,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
      	echo "$q" > ../experiments/outputs/rapid/$BASE_DIR/LAV/rewritings/Q$QUERY-rewriting-$COUNTER.txt
 #   		OUT=$(java -jar ../systems/GQR/GQR-v1.08.jar -v ../$BASE_DIR/dependencies/lav.txt -q ../experiments/outputs/rapid/$BASE_DIR/LAV/rewritings/Q$QUERY-rewriting-$COUNTER.txt -d ../$BASE_DIR/dependencies/ChaseGQR/db.properties)
   OUT=$($JRE -jar ../systems/GQR/GQR.jar -st-tgds ../$BASE_DIR/dependencies/lav.txt -q ../experiments/outputs/rapid/$BASE_DIR/LAV/rewritings/Q$QUERY-rewriting-$COUNTER.txt)
-		echo "$OUT"
+# 		echo "$OUT"
 		echo "$OUT" > ../experiments/outputs/rapid/$BASE_DIR/LAV/gqr/Q$QUERY-rewriting-$COUNTER.txt
 		SINGLESQL=$(echo "$OUT"| grep "SELECT")
 # 		if [ "$QSIZE" != "$COUNTER" ]; then
@@ -92,7 +92,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 		COUNTER=$[$COUNTER +1]
 	done <../experiments/outputs/rapid/$BASE_DIR/LAV/rewritings/Q$QUERY-rewriting.txt
 
-  echo "SQL this is 2: $COMBINEDSQL"
+#   echo "SQL this is 2: $COMBINEDSQL"
   RAPID[$CONVERT,$i]=$(($(date +%s%N) - $START_TIME))
    
   nulls=$(echo "$OUT" | grep -c "rewNo:null")
@@ -100,10 +100,17 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 #     SQL=$(echo "$OUT"| grep "SELECT")
     COMBINEDSQL1=$(echo "$COMBINEDSQL" | sed 's/\(.*\)UNION/\1 /')
     SQL=$COMBINEDSQL1
+#     echo "$SQL"
     RAPID[$GQRSIZE,$i]=$(echo "UNION $SQL" |grep -o -i "UNION" | wc -l)
    
+   
+   printf 'SELECT COUNT(*) FROM (%s) AS query;\n' "${SQL%?}" >../$BASE_DIR/queries/statements.sql
     START_TIME=$(date +%s%N)
-    RAPID[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+    RAPID[$TUPLES,$i]=$(psql -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE" -f ../$BASE_DIR/queries/statements.sql | grep '-' -A1 | grep -v '-' )
+
+   
+   #  START_TIME=$(date +%s%N)
+#     RAPID[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
     echo ${RAPID[$TUPLES,$i]} > ../experiments/outputs/rapid/$BASE_DIR/LAV/answer/$DATA_SIZE/Q$QUERY.txt
     RAPID[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
      if [ -z "$SQL" ]
@@ -173,8 +180,14 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 	COMBINEDSQL1=$(echo "$COMBINEDSQL" | sed 's/\(.*\)UNION/\1 /')
     SQL=$COMBINEDSQL1
     IQAROS[$GQRSIZE,$i]=$(echo "UNION $SQL" |grep -o -i "UNION" | wc -l)
+   
+    printf 'SELECT COUNT(*) FROM (%s) AS query;\n' "${SQL%?}" >../$BASE_DIR/queries/statements.sql
     START_TIME=$(date +%s%N)
-    IQAROS[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+    IQAROS[$TUPLES,$i]=$(psql -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE" -f ../$BASE_DIR/queries/statements.sql | grep '-' -A1 | grep -v '-' )
+
+   
+   #  START_TIME=$(date +%s%N)
+#     IQAROS[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
     if [ -z "$SQL" ]
 	then
       RAPID[$TUPLES,$i]=0
@@ -213,8 +226,14 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   GRAAL[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
   GRAAL[$SIZE,$i]=$(echo "$graalOutput" | grep -c ":-")
   echo "Rewriting: $((${GRAAL[$REWRITE,$i]}/1000000)) milliseconds, Size: ${GRAAL[$SIZE,$i]}"
-  echo "$graalOutput" | sed 's/?/Q/g; s/VAR_/?/g;s/X/?/g;s/<[a-zA-Z0-9\-\_\.\/\~\:]*#//g; s/>//g; s/:-/<-/g' > ../experiments/outputs/graal/$BASE_DIR/LAV/rewritings/Q$QUERY-rewriting.txt
-  
+ 
+ echo "$graalOutput" | sed 's/?/Q/g; s/VAR_/?/g;s/X/?/g;s/<[a-zA-Z0-9\/\.\:\-\_\-]*#//g; s/>//g; s/:-/<-/g' > ../experiments/outputs/graal/$BASE_DIR/LAV/rewritings/Q$QUERY-rewriting.txt
+echo "$graalOutput" 
+# graalOutput1=$(echo "$graalOutput" | sed 's/?/Q/g; s/VAR_/?/g;s/X/?/g; s/<[a-zA-Z0-9\/\.\:\-\_\-]*#//g; s/>//g; s/:-/<-/g')
+# echo "$graalOutput1"
+# echo "$graalOutput1" > ../experiments/outputs/graal/$BASE_DIR/LAV/rewritings/Q$QUERY-rewriting.txt
+# Q(?0) <- <http://www.lehigh.edu/zhp2/2004/0401/univ-bench.owl#worksFor(?0, ?1), <http://www.lehigh.edu/zhp2/2004/0401/univ-bench.owl#affiliatedOrganizationOf(?1, ?2).
+# ?(VAR_0) :- <http://www.owl-ontologies.com/Ontology1207768242.owl#isExecutedBy>(VAR_0, VAR_0).
  #  START_TIME=$(date +%s%N)
 #   OUT=$(java -jar ../systems/GQR/GQR-v1.08.jar -v ../$BASE_DIR/dependencies/lav.txt -q ../experiments/outputs/graal/$BASE_DIR/LAV/rewritings/Q$QUERY-rewriting.txt -d ../$BASE_DIR/dependencies/ChaseGQR/db.properties)
 #   GRAAL[$CONVERT,$i]=$(($(date +%s%N) - $START_TIME))
@@ -245,12 +264,19 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 #     SQL=$(echo "$OUT"| grep "SELECT")
 	COMBINEDSQL1=$(echo "$COMBINEDSQL" | sed 's/\(.*\)UNION/\1 /')
     SQL=$COMBINEDSQL1
+    
     GRAAL[$GQRSIZE,$i]=$(echo "UNION $SQL" |grep -o -i "UNION" | wc -l)
+    
+     printf 'SELECT COUNT(*) FROM (%s) AS query;\n' "${SQL%?}" >../$BASE_DIR/queries/statements.sql
     START_TIME=$(date +%s%N)
-    GRAAL[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+    GRAAL[$TUPLES,$i]=$(psql -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE" -f ../$BASE_DIR/queries/statements.sql | grep '-' -A1 | grep -v '-' )
+
+
+  #   START_TIME=$(date +%s%N)
+#     GRAAL[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
     if [ -z "$SQL" ]
 	then
-      RAPID[$TUPLES,$i]=0
+      GRAAL[$TUPLES,$i]=0
 	fi
     echo ${GRAAL[$TUPLES,$i]} > ../experiments/outputs/graal/$BASE_DIR/LAV/answer/$DATA_SIZE/Q$QUERY.txt
     GRAAL[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
@@ -288,7 +314,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   ONTOPRW[$SIZE,$i]=$(echo "$cbq" | grep -c "<-")
   echo "$cbq" > ../experiments/outputs/ontoprw/$BASE_DIR/LAV/rewritings/Q$QUERY-rewriting.txt
   echo "Rewriting: $((${ONTOPRW[$REWRITE,$i]}/1000000)) milliseconds, Size: ${ONTOPRW[$SIZE,$i]}"
-
+# 	echo "$cbq" 
 #   START_TIME=$(date +%s%N)
 #   OUT=$(java -jar ../systems/GQR/GQR-v1.08.jar -v ../$BASE_DIR/dependencies/lav.txt -q ../experiments/outputs/ontoprw/$BASE_DIR/LAV/rewritings/Q$QUERY-rewriting.txt -d ../$BASE_DIR/dependencies/ChaseGQR/db.properties)
 #   ONTOPRW[$CONVERT,$i]=$(($(date +%s%N) - $START_TIME))
@@ -317,14 +343,23 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 #   if [ "$nulls" = "0" ]; then 
 #     SQL=$(echo "$OUT"| grep "SELECT")
 #     SQL=$COMBINEDSQL
+	COMBINEDSQL1=$(echo "$COMBINEDSQL" | sed 's/\(.*\)UNION/\1 /')
+    SQL=$COMBINEDSQL1
+    
     ONTOPRW[$GQRSIZE,$i]=$(echo "UNION $SQL" |grep -o -i "UNION" | wc -l)
+    
+    printf 'SELECT COUNT(*) FROM (%s) AS query;\n' "${SQL%?}" >../$BASE_DIR/queries/statements.sql
     START_TIME=$(date +%s%N)
-    ONTOPRW[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+    ONTOPRW[$TUPLES,$i]=$(psql -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE" -f ../$BASE_DIR/queries/statements.sql | grep '-' -A1 | grep -v '-' )
+
+    # START_TIME=$(date +%s%N)
+#     ONTOPRW[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
     if [ -z "$SQL" ]
 	then
-      RAPID[$TUPLES,$i]=0
+      ONTOPRW[$TUPLES,$i]=0
 	fi
     echo ${ONTOPRW[$TUPLES,$i]} > ../experiments/outputs/ontoprw/$BASE_DIR/LAV/answer/$DATA_SIZE/Q$QUERY.txt
+
     ONTOPRW[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
     ONTOPRW[$TOTAL,$i]=$(($(date +%s%N) - ${ONTOPRW[$TOTAL,$i]}))
   # else
@@ -348,8 +383,9 @@ echo "===== RDFox Original ====="
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   RDFOX[$TOTAL,$i]=$START_TIME
-  OUT=$(timeout $TIMEOUT $JRE -jar ../systems/RDFox/chaseRDFox-linux.jar -chase standard -s-sch ../$BASE_DIR/schema/LAV/s-schema.txt -t-sch ../$BASE_DIR/schema/LAV/t-schema.txt -st-tgds ../$BASE_DIR/dependencies/lav.txt -src ../$BASE_DIR/data/LAV/$DATA_SIZE -t-tgds ../$BASE_DIR/dependencies/lav-t-tgds.txt -qdir ../$BASE_DIR/queries/Chasebench/Q$QUERY/)
+  OUT=$(timeout $TIMEOUT $JRE -jar ../systems/RDFox/chaseRDFox-linux.jar -chase standard -s-sch ../$BASE_DIR/schema/LAV/s-schema.txt -t-sch ../$BASE_DIR/schema/LAV/t-schema.txt -st-tgds ../$BASE_DIR/dependencies/lav.txt -src ../$BASE_DIR/data/LAV/$DATA_SIZE -t-tgds ../$BASE_DIR/dependencies/oneToOne-t-tgds.txt -qdir ../$BASE_DIR/queries/Chasebench/Q$QUERY/ -qres ../experiments/outputs/rdfox/$BASE_DIR/LAV/answer/$DATA_SIZE/)
   if [ $? -eq 0 ]; then
+#   	echo "$OUT"
     RDFOX[$TOTAL,$i]=$(($(date +%s%N) - $START_TIME))
     RDFOX[$LOAD,$i]=$(echo "$OUT" | grep "Loading source instance data" | cut -d'.' -f4 | cut -d'm' -f1)
     RDFOX[$CHASE,$i]=$(echo "$OUT" | grep "Chase took"| cut -d 'm' -f 1 | cut -d 'k' -f 2)
@@ -408,7 +444,7 @@ echo "===== CGQR ====="
 mkdir -p ../experiments/outputs/chasegqr/$BASE_DIR/LAV/rewritings
 mkdir -p ../experiments/outputs/chasegqr/$BASE_DIR/LAV/gqr
 mkdir -p ../experiments/outputs/chasegqr/$BASE_DIR/LAV/answer/$DATA_SIZE
-
+# java -jar ../utilityTools/CreateCGQRTTGDs.jar ../$BASE_DIR/dependencies/oneToOne-t-tgds.txt ../$BASE_DIR/dependencies/ChaseGQR/lav-cgqr-t-tgds.txt
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   CGQR[$TOTAL,$i]=$START_TIME
@@ -469,37 +505,73 @@ done
 
 
 
-echo "===== STChase ====="
-mkdir -p ../experiments/outputs/bcastc/$BASE_DIR/LAV/rewritings
-mkdir -p ../experiments/outputs/bcastc/$BASE_DIR/LAV/gqr
-mkdir -p ../experiments/outputs/bcastc/$BASE_DIR/LAV/answer/$DATA_SIZE
-
-for ((i=0;i<$NUM_TESTS;++i)); do
-  START_TIME=$(date +%s%N)
-  BCASTC[$TOTAL,$i]=$START_TIME 
-  
-  $JRE -jar ../utilityTools/RulewerkLongTGDs.jar -st-tgds ../$BASE_DIR/dependencies/lav.txt -t-tgds ../$BASE_DIR/dependencies/lav-t-tgds.txt -out ../$BASE_DIR/dependencies/longTGDs.rule
-  
-#   BCASTC[$PREPROCESS,$i]=$(($(date +%s%N) - $START_TIME))
-  
-  # START_TIME=$(date +%s%N)
-  OUT=$(timeout $TIMEOUT java -jar ../systems/STChase/singleStep-1.08.jar -t-sql ../$BASE_DIR/schema/LAV/t-schema.sql -s-sch ../$BASE_DIR/schema/LAV/s-schema.txt -t-sch ../$BASE_DIR/schema/LAV/t-schema.txt -st-tgds ../$BASE_DIR/dependencies/longTGDs.rule -q ../$BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt -data ../$BASE_DIR/data/LAV/$DATA_SIZE)
-  if [ $? -eq 0 ]; then
-   BCASTC[$CHASE,$i]=$(($(date +%s%N) - $START_TIME))
-   echo "$OUT" > ../experiments/outputs/bcastc/$BASE_DIR/LAV/answer/$DATA_SIZE/Q$QUERY.txt
-   BCASTC[$TUPLES,$i]=$(echo "$OUT" | grep "Count :" | cut -d':' -f2)
-   BCASTC[$TOTAL,$i]=$(($(date +%s%N) - ${BCASTC[$TOTAL,$i]}))
-  else
-#    BCASTC[$PREPROCESS,$i]="-1"
-   BCASTC[$TOTAL,$i]="-1"
-   BCASTC[$CHASE,$i]="-1"
-   BCASTC[$TUPLES,$i]="-1"
-  fi
-#   echo "Blocking: $((${BCASTC[$PREPROCESS,$i]}/1000000)) milliseconds"
-  echo "Chasing: $((${BCASTC[$CHASE,$i]}/1000000)) milliseconds"
-  echo "Time elapsed: $((${BCASTC[$TOTAL,$i]}/1000000)) milliseconds"
-  echo "# of tuples: ${BCASTC[$TUPLES,$i]}"
-done
+# echo "===== STChase ====="
+# mkdir -p ../experiments/outputs/bcastc/$BASE_DIR/LAV/rewritings
+# mkdir -p ../experiments/outputs/bcastc/$BASE_DIR/LAV/gqr
+# mkdir -p ../experiments/outputs/bcastc/$BASE_DIR/LAV/answer/$DATA_SIZE
+# 
+# for ((i=0;i<$NUM_TESTS;++i)); do
+#   START_TIME=$(date +%s%N)
+#   BCASTC[$TOTAL,$i]=$START_TIME 
+#   
+#   $JRE -jar ../utilityTools/RulewerkLongTGDs.jar -st-tgds ../$BASE_DIR/dependencies/lav.txt -t-tgds ../$BASE_DIR/dependencies/oneToOne-t-tgds.txt -out ../$BASE_DIR/dependencies/longTGDs.rule
+#   
+# #   BCASTC[$PREPROCESS,$i]=$(($(date +%s%N) - $START_TIME))
+#   	psql -h $PGHOST -p $PGPORT -U $PGUSER -c "SELECT pg_terminate_backend(pg_stat_activity.pid) FROM pg_stat_activity WHERE pg_stat_activity.datname = 'temp' AND pid <> pg_backend_pid()"
+#   	psql -h $PGHOST -p $PGPORT -U $PGUSER -c "SELECT pg_terminate_backend(pg_stat_activity.pid) FROM pg_stat_activity WHERE pg_stat_activity.datname = 't' AND pid <> pg_backend_pid()"
+# 
+#   # START_TIME=$(date +%s%N)
+#   OUT=$(timeout $TIMEOUT java -jar ../systems/STChase/singleStep-1.08.jar -t-sql ../$BASE_DIR/schema/LAV/t-schema.sql -s-sch ../$BASE_DIR/schema/LAV/s-schema.txt -t-sch ../$BASE_DIR/schema/LAV/t-schema.txt -st-tgds ../$BASE_DIR/dependencies/longTGDs.rule -q ../$BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt -data ../$BASE_DIR/data/LAV/$DATA_SIZE)
+#   echo "$OUT"
+#   if [ $? -eq 0 ]; then
+# #    BCASTC[$CHASE,$i]=$(($(date +%s%N) - $START_TIME))
+#    echo "$OUT" > ../experiments/outputs/bcastc/$BASE_DIR/LAV/answer/$DATA_SIZE/Q$QUERY.txt
+#    
+#    LOADMS=$(echo "$OUT" | grep "Load :" | cut -d':' -f2 | sed 's/[^0-9]*//g')
+#     if [ -z "$LOADMS" ]
+# 	then
+#       BCASTC[$LOAD,$i]="-1"
+#       else
+#       BCASTC[$LOAD,$i]=$(($LOADMS*1000000))
+# 	fi
+#    
+#    
+#    CHASEMS=$(echo "$OUT" | grep "Applying substitutions :" | cut -d':' -f2 | sed 's/[^0-9]*//g')
+#    if [ -z "$CHASEMS" ]
+# 	then
+#       BCASTC[$CHASE,$i]="-1"
+#       else
+#       BCASTC[$CHASE,$i]=$(($CHASEMS*1000000))
+# 	fi
+#    
+#    
+#    EXECUTEMS=$(echo "$OUT" | grep "DB access:" | cut -d':' -f2 | sed 's/[^0-9]*//g')
+#     if [ -z "$EXECUTEMS" ]
+# 	then
+#       BCASTC[$EXECUTE,$i]="-1"
+#       else
+#        BCASTC[$EXECUTE,$i]=$(($EXECUTEMS*1000000))
+# 	fi
+#    
+#   
+#    
+#    BCASTC[$TUPLES,$i]=$(echo "$OUT" | grep "Count :" | cut -d':' -f2)
+#    BCASTC[$TOTAL,$i]=$(($(date +%s%N) - ${BCASTC[$TOTAL,$i]}))
+#   else
+# #    BCASTC[$PREPROCESS,$i]="-1"
+#    BCASTC[$LOAD,$i]="-1"
+#    BCASTC[$EXECUTE,$i]="-1"
+#    BCASTC[$TOTAL,$i]="-1"
+#    BCASTC[$CHASE,$i]="-1"
+#    BCASTC[$TUPLES,$i]="-1"
+#   fi
+# #   echo "Blocking: $((${BCASTC[$PREPROCESS,$i]}/1000000)) milliseconds"
+#   echo "Loading: $((${BCASTC[$LOAD,$i]}/1000000)) milliseconds"
+#   echo "Chasing: $((${BCASTC[$CHASE,$i]}/1000000)) milliseconds"
+#   echo "Executing: $((${BCASTC[$EXECUTE,$i]}/1000000)) milliseconds"
+#   echo "Time elapsed: $((${BCASTC[$TOTAL,$i]}/1000000)) milliseconds"
+#   echo "# of tuples: ${BCASTC[$TUPLES,$i]}"
+# done
 
 echo "===== GQR ====="
 mkdir -p ../experiments/outputs/gqr/$BASE_DIR/LAV/rewritings
@@ -512,15 +584,15 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   #  $JRE -jar ./../systems/chasestepper/chasestepper-1.01.jar ../$BASE_DIR/dependencies/oneToOne-st-tgds.txt ../$BASE_DIR/dependencies/oneToOne-t-tgds.txt ../$BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt > /dev/null
   #  mv ../$BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY-tgds.rule ../experiments/outputs/bcagqr/$BASE_DIR/chased-mapping
 
-  $JRE -jar ../utilityTools/RulewerkLongTGDs.jar -st-tgds ../$BASE_DIR/dependencies/lav.txt -t-tgds ../$BASE_DIR/dependencies/lav-t-tgds.txt -out ../$BASE_DIR/dependencies/longTGDs.rule
+  $JRE -jar ../utilityTools/RulewerkLongTGDs.jar -st-tgds ../$BASE_DIR/dependencies/lav.txt -t-tgds ../$BASE_DIR/dependencies/oneToOne-t-tgds.txt -out ../$BASE_DIR/dependencies/longTGDs.rule
  
-  GQR[$CHASE,$i]=$(($(date +%s%N) - $START_TIME))
+  GQR[$LOAD,$i]=$(($(date +%s%N) - $START_TIME))
   START_TIME=$(date +%s%N)
  
   OUT=$($JRE -jar ../systems/GQR/GQR.jar -st-tgds ../$BASE_DIR/dependencies/longTGDs.rule -q ../$BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt)
    
-    echo "$OUT"
-  GQR[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
+#     echo "$OUT"
+  GQR[$CONVERT,$i]=$(($(date +%s%N) - $START_TIME))
   nulls=$(echo "$OUT" | grep -c "rewNo:null")
   if [ "$nulls" = "0" ]; then 
     rw=$(echo "$OUT"|  awk '/Start Rewriting/{flag=1;next}/End Rewriting/{flag=0}flag' )
@@ -540,18 +612,18 @@ for ((i=0;i<$NUM_TESTS;++i)); do
     echo ${GQR[$TUPLES,$i]} > ../experiments/outputs/gqr/$BASE_DIR/LAV/answer/$DATA_SIZE/Q$QUERY.txt
     GQR[$TOTAL,$i]=$(($(date +%s%N) - ${GQR[$TOTAL,$i]}))
   else
-   #  GQR[$REWRITE,$i]="-1"
-#     GQR[$CHASE,$i]="-1"
-#     GQR[$CONVERT,$i]="-1"
+#     GQR[$REWRITE,$i]="-1"
+    GQR[$LOAD,$i]="-1"
+    GQR[$CONVERT,$i]="-1"
     GQR[$SIZE,$i]="-1"
     GQR[$TUPLES,$i]="-1"
     GQR[$EXECUTE,$i]="-1"
 #     GQR[$TOTAL,$i]="-1"
   fi
    echo "Size: ${GQR[$SIZE,$i]}"
-  echo "Chasing: $((${GQR[$CHASE,$i]}/1000000)) milliseconds"
-  echo "Rewriting: $((${GQR[$REWRITE,$i]}/1000000)) milliseconds"
-#   echo "Converting: $((${GQR[$CONVERT,$i]})) milliseconds"
+  echo "Loading: $((${GQR[$LOAD,$i]}/1000000)) milliseconds"
+#   echo "Rewriting: $((${GQR[$REWRITE,$i]}/1000000)) milliseconds"
+  echo "Converting: $((${GQR[$CONVERT,$i]})) milliseconds"
   echo "Executing: $((${GQR[$EXECUTE,$i]}/1000000)) milliseconds"
   echo "# of tuples: ${GQR[$TUPLES,$i]}"
   echo "Time elapsed: $((${GQR[$TOTAL,$i]}/1000000)) milliseconds"
@@ -655,7 +727,7 @@ else
 	sed -i "/$pattern/d" ../$BASE_DIR/rulewerkfiles/LAV/$DATA_SIZE/rule.rls
 	 echo "$queryString" >> ../$BASE_DIR/rulewerkfiles/LAV/$DATA_SIZE/rule.rls
 fi
-
+ 
 # start testing
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
@@ -703,98 +775,104 @@ done
 
 
 
-# echo "===== Rulewerk with long st-tgds====="
-# mkdir -p ../experiments/outputs/rulewerk/$BASE_DIR/LAV/rewritings
-# mkdir -p ../experiments/outputs/rulewerk/$BASE_DIR/LAV/answer/$DATA_SIZE
-# # write the query as a rule in rls file
-# queryString=$(<../$BASE_DIR/queries/iqaros/Q$QUERY.txt)
-# queryString=${queryString//-}
-# queryString=${queryString//_}
-# queryString=${queryString//\?0/?X}
-# queryString=${queryString//\?1/?Y}
-# queryString=${queryString//\?2/?X1}
-# queryString=${queryString//\?3/?Y1}
-# queryString=${queryString//\?4/?Y2}
-# queryString=${queryString//\?5/?Y3}
-# queryString=${queryString//Q(/Q$QUERY(}
-# old="<"
-# newreplace=":-"
-# queryString="${queryString//$old/$newreplace} ."
-# echo "$queryString"
-#  
-#  START_TIME=$(date +%s%N)
-# # ===== Generating long st-TGDS 
-#   $JRE -jar ../utilityTools/RulewerkLongTGDs.jar -st-tgds ../$BASE_DIR/dependencies/lav.txt -t-tgds ../$BASE_DIR/dependencies/lav-t-tgds.txt -out ../$BASE_DIR/dependencies/longTGDs.rule
-# CREATETGDSTIME=$(($(date +%s%N) - $START_TIME))
-# # ===== converting the long st-TGDS  to RLS
-# touch ../$BASE_DIR/dependencies/temp-t-tgds.txt
-#   $JRE -jar ../utilityTools/TGDsToRlsConverter.jar -st-tgds "../$BASE_DIR/dependencies/longTGDs.rule" -t-tgds "../$BASE_DIR/dependencies/temp-t-tgds.txt" -out "../$BASE_DIR/rulewerkfiles/LAV/$DATA_SIZE/longTGD" -data "../$BASE_DIR/data/LAV/$DATA_SIZE"
-# rm ../$BASE_DIR/dependencies/temp-t-tgds.txt
-# 
-# 
-# 
-# # check if the rule is already exists or not
-# if [[ $(grep -L "Q$QUERY(" ../$BASE_DIR/rulewerkfiles/LAV/$DATA_SIZE/longTGD/rule.rls) ]]; then   
-#   echo "$queryString" >> ../$BASE_DIR/rulewerkfiles/LAV/$DATA_SIZE/longTGD/rule.rls
-# else
-# 	pattern=$(echo "Q$QUERY(")
-# 	sed -i "/$pattern/d" ../$BASE_DIR/rulewerkfiles/LAV/$DATA_SIZE/longTGD/rule.rls
-# 	 echo "$queryString" >> ../$BASE_DIR/rulewerkfiles/LAV/$DATA_SIZE/longTGD/rule.rls
-# fi
-# 
-# # start testing
-# for ((i=0;i<$NUM_TESTS;++i)); do
-#   START_TIME=$(date +%s%N)
-#   RULEWERK1[$TOTAL,$i]=$START_TIME
-#   q=$(echo $queryString| cut -d':' -f 1)
-#   ulimit -c unlimited
-#  rulewerkOutput=$(timeout $TIMEOUT java -jar ../systems/rulewerk/RulewerkDebug.jar materialize --rule-file=../$BASE_DIR/rulewerkfiles/LAV/$DATA_SIZE/longTGD/rule.rls --query=$q )
-#   echo "$rulewerkOutput"
-#   if [ $? -eq 0 ]; then
-#     RULEWERK1[$TOTAL,$i]=$(($(date +%s%N) - $START_TIME))
-#   
-#     loadingStart=$(echo "$rulewerkOutput" | grep "Started loading knowledge base"| cut -d ' ' -f2 );
-#     loadingSTime=$(date -u -d "$loadingStart" +"%s.%N"); 
-#     loadingEnd=$(echo "$rulewerkOutput" | grep "Finished loading knowledge base"| cut -d ' ' -f2 );
-#     loadingETime=$(date -u -d "$loadingEnd" +"%s.%N"); 
-#     RULEWERK1[$LOAD,$i]=$(date -u -d "0 $loadingETime sec - $loadingSTime sec" +%S%N | sed 's/^0*//')
-# 
-#     chaseStart=$(echo "$rulewerkOutput" | grep "Started materialisation of inferences"| cut -d ' ' -f2  );
-#     chaseSTime=$(date -u -d "$chaseStart" +"%s.%N"); 
-#     chaseEnd=$(echo "$rulewerkOutput" | grep "Completed materialisation of inferences"| cut -d ' ' -f2  );
-#     chaseETime=$(date -u -d "$chaseEnd" +"%s.%N"); 
+echo "===== Rulewerk with long st-tgds====="
+mkdir -p ../experiments/outputs/rulewerk/$BASE_DIR/LAV/rewritings
+mkdir -p ../experiments/outputs/rulewerk/$BASE_DIR/LAV/answer/$DATA_SIZE
+# write the query as a rule in rls file
+queryString=$(<../$BASE_DIR/queries/iqaros/Q$QUERY.txt)
+queryString=${queryString//-}
+queryString=${queryString//_}
+queryString=${queryString//\?0/?X}
+queryString=${queryString//\?1/?Y}
+queryString=${queryString//\?2/?X1}
+queryString=${queryString//\?3/?Y1}
+queryString=${queryString//\?4/?Y2}
+queryString=${queryString//\?5/?Y3}
+queryString=${queryString//Q(/Q$QUERY(}
+old="<"
+newreplace=":-"
+queryString="${queryString//$old/$newreplace} ."
+echo "$queryString"
+ 
+ START_TIME=$(date +%s%N)
+# ===== Generating long st-TGDS 
+  $JRE -jar ../utilityTools/RulewerkLongTGDs.jar -st-tgds ../$BASE_DIR/dependencies/lav.txt -t-tgds ../$BASE_DIR/dependencies/oneToOne-t-tgds.txt -out ../$BASE_DIR/dependencies/longTGDs.rule
+CREATETGDSTIME=$(($(date +%s%N) - $START_TIME))
+# ===== converting the long st-TGDS  to RLS
+touch ../$BASE_DIR/dependencies/temp-t-tgds.txt
+  $JRE -jar ../utilityTools/TGDsToRlsConverter.jar -st-tgds "../$BASE_DIR/dependencies/longTGDs.rule" -t-tgds "../$BASE_DIR/dependencies/temp-t-tgds.txt" -out "../$BASE_DIR/rulewerkfiles/LAV/$DATA_SIZE/longTGD" -data "../$BASE_DIR/data/LAV/$DATA_SIZE"
+rm ../$BASE_DIR/dependencies/temp-t-tgds.txt
+
+
+
+# check if the rule is already exists or not
+if [[ $(grep -L "Q$QUERY(" ../$BASE_DIR/rulewerkfiles/LAV/$DATA_SIZE/longTGD/rule.rls) ]]; then   
+  echo "$queryString" >> ../$BASE_DIR/rulewerkfiles/LAV/$DATA_SIZE/longTGD/rule.rls
+else
+	pattern=$(echo "Q$QUERY(")
+	sed -i "/$pattern/d" ../$BASE_DIR/rulewerkfiles/LAV/$DATA_SIZE/longTGD/rule.rls
+	 echo "$queryString" >> ../$BASE_DIR/rulewerkfiles/LAV/$DATA_SIZE/longTGD/rule.rls
+fi
+
+# start testing
+for ((i=0;i<$NUM_TESTS;++i)); do
+  START_TIME=$(date +%s%N)
+  RULEWERK1[$TOTAL,$i]=$START_TIME
+  q=$(echo $queryString| cut -d':' -f 1)
+  ulimit -c unlimited
+ rulewerkOutput=$(timeout $TIMEOUT java -jar ../systems/rulewerk/RulewerkDebug.jar materialize --rule-file=../$BASE_DIR/rulewerkfiles/LAV/$DATA_SIZE/longTGD/rule.rls --query=$q )
+  echo "$rulewerkOutput"
+  if [ $? -eq 0 ]; then
+    RULEWERK1[$TOTAL,$i]=$(($(date +%s%N) - $START_TIME))
+  
+    loadingStart=$(echo "$rulewerkOutput" | grep "Started loading knowledge base"| cut -d ' ' -f2 );
+    loadingSTime=$(date -u -d "$loadingStart" +"%s.%N"); 
+    loadingEnd=$(echo "$rulewerkOutput" | grep "Finished loading knowledge base"| cut -d ' ' -f2 );
+    loadingETime=$(date -u -d "$loadingEnd" +"%s.%N"); 
+    RULEWERK1[$LOAD,$i]=$(date -u -d "0 $loadingETime sec - $loadingSTime sec" +%S%N | sed 's/^0*//')
+
+    chaseStart=$(echo "$rulewerkOutput" | grep "Started materialisation of inferences"| cut -d ' ' -f2  );
+    chaseSTime=$(date -u -d "$chaseStart" +"%s.%N"); 
+    chaseEnd=$(echo "$rulewerkOutput" | grep "Completed materialisation of inferences"| cut -d ' ' -f2  );
+    chaseETime=$(date -u -d "$chaseEnd" +"%s.%N"); 
 #     RULEWERK1[$CHASE,$i]=$(date -u -d "0 $chaseETime sec - $chaseSTime sec" +%S%N | sed 's/^0*//')
-# #     RulewerkChase=$(date -u -d "0 $chaseETime sec - $chaseSTime sec" +%S%N | sed 's/^0*//')
-# # 	RULEWERK1[$CHASE,$i]=$(date -u -d "0 $CREATETGDSTIME sec + $RulewerkChase sec" +%S%N | sed 's/^0*//')
-#    #  echo "$RulewerkChase"
-# #     echo "$CREATETGDSTIME"
-# #     echo "${RULEWERK1[$CHASE,$i]}"
-# 
-#     exEnd=$(echo "$rulewerkOutput" | grep "Finished Answering queries"| cut -d ' ' -f2 );
-#     exETime=$(date -u -d "$exEnd" +"%s.%N"); 
-#     RULEWERK1[$EXECUTE,$i]=$(date -u -d "0 $exETime sec - $chaseETime sec" +%S%N | sed 's/^0*//')
-#         
-#     RULEWERK1[$TUPLES,$i]=$(echo "$rulewerkOutput" | grep "Number of query answers"| cut -d ':' -f2)
+    
+    RulewerkChase=$(date -u -d "0 $chaseETime sec - $chaseSTime sec" +%S%N | sed 's/^0*//')
+	RULEWERK1[$CHASE,$i]=$(($CREATETGDSTIME+$RulewerkChase))
+    
+#     RulewerkChase=$(date -u -d "0 $chaseETime sec - $chaseSTime sec" +%S%N | sed 's/^0*//')
+# 	RULEWERK1[$CHASE,$i]=$(date -u -d "0 $CREATETGDSTIME sec + $RulewerkChase sec" +%S%N | sed 's/^0*//')
+   #  echo "$RulewerkChase"
+#     echo "$CREATETGDSTIME"
+#     echo "${RULEWERK1[$CHASE,$i]}"
+
+    exEnd=$(echo "$rulewerkOutput" | grep "Finished Answering queries"| cut -d ' ' -f2 );
+    exETime=$(date -u -d "$exEnd" +"%s.%N"); 
+    RULEWERK1[$EXECUTE,$i]=$(date -u -d "0 $exETime sec - $chaseETime sec" +%S%N | sed 's/^0*//')
+        
+    RULEWERK1[$TUPLES,$i]=$(echo "$rulewerkOutput" | grep "Number of query answers"| cut -d ':' -f2)
 #     RULEWERK1[$PREPROCESS,$i]=$CREATETGDSTIME
-#   else 
-#     RULEWERK1[$TOTAL,$i]="-1"
-#     RULEWERK1[$LOAD,$i]="-1"
-#     RULEWERK1[$CHASE,$i]="-1"
-#     RULEWERK1[$EXECUTE,$i]="-1"
-#     RULEWERK1[$TUPLES,$i]="-1"
+  else 
+    RULEWERK1[$TOTAL,$i]="-1"
+    RULEWERK1[$LOAD,$i]="-1"
+    RULEWERK1[$CHASE,$i]="-1"
+    RULEWERK1[$EXECUTE,$i]="-1"
+    RULEWERK1[$TUPLES,$i]="-1"
 #     RULEWERK1[$PREPROCESS,$i]="-1"
-#   fi
+  fi
 #   echo "Pre-process: $((${RULEWERK1[$PREPROCESS,$i]}/1000000)) milliseconds"
-#   echo "Chasing: $((${RULEWERK1[$CHASE,$i]}/1000000)) milliseconds"
-#   echo "Loading: $((${RULEWERK1[$LOAD,$i]}/1000000)) milliseconds"
-#   echo "Executing: $((${RULEWERK1[$EXECUTE,$i]}/1000000)) milliseconds"
-#   echo "Time elapsed: $((${RULEWERK1[$TOTAL,$i]}/1000000)) milliseconds"
-#   echo "# of tuples: ${RULEWERK1[$TUPLES,$i]}" 
-#   echo "QUery is : $QUERY"
-# done
+  echo "Chasing: $((${RULEWERK1[$CHASE,$i]}/1000000)) milliseconds"
+  echo "Loading: $((${RULEWERK1[$LOAD,$i]}/1000000)) milliseconds"
+  echo "Executing: $((${RULEWERK1[$EXECUTE,$i]}/1000000)) milliseconds"
+  echo "Time elapsed: $((${RULEWERK1[$TOTAL,$i]}/1000000)) milliseconds"
+  echo "# of tuples: ${RULEWERK1[$TUPLES,$i]}" 
+  echo "QUery is : $QUERY"
+done
 
 # 
-# 
+
+
+
 # echo "===== Rulewerk with long st-tgds====="
 # mkdir -p ../experiments/outputs/rulewerk/$BASE_DIR/LAV/rewritings
 # mkdir -p ../experiments/outputs/rulewerk/$BASE_DIR/LAV/answer/$DATA_SIZE
@@ -876,31 +954,30 @@ then
 	echo "Printed"
 else
 	echo "========================== Files =========================== "
-	echo "rewrite,convert,execute,total,size,tuples" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/rapid.csv
-	echo "rewrite,convert,execute,total,size,tuples" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/iqaros.csv
-	echo "rewrite,convert,execute,total,size,tuples" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/graal.csv
-	echo "rewrite,convert,execute,total,size,tuples" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/ontopR.csv
- 	echo "chase,execute,loading,total,tuples" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/rdfox.csv
-	echo "chase,total,tuples" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/STchase.csv
-	echo "chase,rewrite,execute,total,size,tuples" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/gqr.csv
+	echo "rewrite,convert,execute,total,size,tuples" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/Rapid+GQR.csv
+	echo "rewrite,convert,execute,total,size,tuples" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/Iqaros+GQR.csv
+	echo "rewrite,convert,execute,total,size,tuples" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/Graal+GQR.csv
+	echo "rewrite,convert,execute,total,size,tuples" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/OntopR+GQR.csv
+ 	echo "chase,execute,loading,total,tuples" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/RDFox.csv
+# 	echo "loading,chase,execute,total,tuples" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/STchase.csv
+	echo "loading,rewrite,execute,total,size,tuples" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/RwLongST+GQR.csv
 # 	echo "rewrite,convert,execute,loading,total,tuples" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/ontop.csv
-	echo "loading,rewrite,convert,execute,total,tuples" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/chaseGQR.csv
-	echo "chase,execute,loading,total,tuples" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/rulewerk.csv
-# 	echo "preprocess,chase,execute,loading,total,tuples" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/rulewerkLonger.csv
-
+	echo "loading,rewrite,convert,execute,total,tuples" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/ChaseGQR.csv
+	echo "chase,execute,loading,total,tuples" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/Rulewerk.csv
+	echo "chase,execute,loading,total,tuples" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/RwLongSTChase.csv
 fi
 
 for ((i=1;i<$NUM_TESTS;++i)); do
  
- echo "${RAPID[$REWRITE,$i]},${RAPID[$CONVERT,$i]},${RAPID[$EXECUTE,$i]},${RAPID[$TOTAL,$i]},${RAPID[$SIZE,$i]},${RAPID[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/rapid.csv
- echo "${IQAROS[$REWRITE,$i]},${IQAROS[$CONVERT,$i]},${IQAROS[$EXECUTE,$i]},${IQAROS[$TOTAL,$i]},${IQAROS[$SIZE,$i]},${IQAROS[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/iqaros.csv
- echo "${GRAAL[$REWRITE,$i]},${GRAAL[$CONVERT,$i]},${GRAAL[$EXECUTE,$i]},${GRAAL[$TOTAL,$i]},${GRAAL[$SIZE,$i]},${GRAAL[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/graal.csv
- echo "${ONTOPRW[$REWRITE,$i]},${ONTOPRW[$CONVERT,$i]},${ONTOPRW[$EXECUTE,$i]},${ONTOPRW[$TOTAL,$i]},${ONTOPRW[$SIZE,$i]},${ONTOPRW[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/ontopR.csv
- echo "${RDFOX[$CHASE,$i]},${RDFOX[$EXECUTE,$i]},${RDFOX[$LOAD,$i]},${RDFOX[$TOTAL,$i]},${RDFOX[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/rdfox.csv
- echo "${GQR[$CHASE,$i]},${GQR[$REWRITE,$i]},${GQR[$EXECUTE,$i]},${GQR[$TOTAL,$i]},${GQR[$SIZE,$i]},${GQR[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/gqr.csv
- echo "${CGQR[$LOAD,$i]},${CGQR[$REWRITE,$i]},${CGQR[$CONVERT,$i]},${CGQR[$EXECUTE,$i]},${CGQR[$TOTAL,$i]},${CGQR[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/chaseGQR.csv
+ echo "${RAPID[$REWRITE,$i]},${RAPID[$CONVERT,$i]},${RAPID[$EXECUTE,$i]},${RAPID[$TOTAL,$i]},${RAPID[$SIZE,$i]},${RAPID[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/Rapid+GQR.csv
+ echo "${IQAROS[$REWRITE,$i]},${IQAROS[$CONVERT,$i]},${IQAROS[$EXECUTE,$i]},${IQAROS[$TOTAL,$i]},${IQAROS[$SIZE,$i]},${IQAROS[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/Iqaros+GQR.csv
+ echo "${GRAAL[$REWRITE,$i]},${GRAAL[$CONVERT,$i]},${GRAAL[$EXECUTE,$i]},${GRAAL[$TOTAL,$i]},${GRAAL[$SIZE,$i]},${GRAAL[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/Graal+GQR.csv
+ echo "${ONTOPRW[$REWRITE,$i]},${ONTOPRW[$CONVERT,$i]},${ONTOPRW[$EXECUTE,$i]},${ONTOPRW[$TOTAL,$i]},${ONTOPRW[$SIZE,$i]},${ONTOPRW[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/OntopR+GQR.csv
+ echo "${RDFOX[$CHASE,$i]},${RDFOX[$EXECUTE,$i]},${RDFOX[$LOAD,$i]},${RDFOX[$TOTAL,$i]},${RDFOX[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/RDFox.csv
+ echo "${GQR[$LOAD,$i]},${GQR[$REWRITE,$i]},${GQR[$EXECUTE,$i]},${GQR[$TOTAL,$i]},${GQR[$SIZE,$i]},${GQR[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/RwLongST+GQR.csv
+ echo "${CGQR[$LOAD,$i]},${CGQR[$REWRITE,$i]},${CGQR[$CONVERT,$i]},${CGQR[$EXECUTE,$i]},${CGQR[$TOTAL,$i]},${CGQR[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/ChaseGQR.csv
 #  echo "${ONTOP[$REWRITE,$i]},${ONTOP[$CONVERT,$i]},${ONTOP[$EXECUTE,$i]},${ONTOP[$LOAD,$i]},${ONTOP[$TOTAL,$i]},${ONTOP[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/ontop.csv
- echo "${BCASTC[$CHASE,$i]},${BCASTC[$TOTAL,$i]},${BCASTC[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/STchase.csv
- echo "${RULEWERK[$CHASE,$i]},${RULEWERK[$EXECUTE,$i]},${RULEWERK[$LOAD,$i]},${RULEWERK[$TOTAL,$i]},${RULEWERK[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/rulewerk.csv
-#  echo "${RULEWERK1[$PREPROCESS,$i]},${RULEWERK1[$CHASE,$i]},${RULEWERK1[$EXECUTE,$i]},${RULEWERK1[$LOAD,$i]},${RULEWERK1[$TOTAL,$i]},${RULEWERK1[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/rulewerkLonger.csv
+#  echo "${BCASTC[$LOAD,$i]},${BCASTC[$CHASE,$i]},${BCASTC[$EXECUTE,$i]},${BCASTC[$TOTAL,$i]},${BCASTC[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/STchase.csv
+ echo "${RULEWERK[$CHASE,$i]},${RULEWERK[$EXECUTE,$i]},${RULEWERK[$LOAD,$i]},${RULEWERK[$TOTAL,$i]},${RULEWERK[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/LAV/$DATA_SIZE/Q$QUERY/Rulewerk.csv
+ echo "${RULEWERK1[$CHASE,$i]},${RULEWERK1[$EXECUTE,$i]},${RULEWERK1[$LOAD,$i]},${RULEWERK1[$TOTAL,$i]},${RULEWERK1[$TUPLES,$i]}" >> ../experiments/$BASE_DIR/oneToOne/$DATA_SIZE/Q$QUERY/RwLongSTChase.csv
 done

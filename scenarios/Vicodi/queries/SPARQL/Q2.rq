@@ -1,9 +1,8 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX : <http://vicodi.org/ontology#>
-SELECT DISTINCT ?0 ?1 
+SELECT DISTINCT ?0  
 WHERE
 {
 	?0  rdf:type :Military-Person .
-	?1  :hasRole ?0  .
-	?0  :related ?2 
+
 }

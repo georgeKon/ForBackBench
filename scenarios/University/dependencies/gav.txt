@@ -1,55 +1,55 @@
-src_ExamRecord(?X) , src_Course(?X) , src_Career(?X) , src_affiliateOf(?X,?Y) , src_Program(?X) , src_AdministrativeStaff(?X) -> AdministrativeStaff(?X) .
-src_headOf(?X,?Y) , src_AssociateProfessor(?X) , src_takesCourse(?X,?Y) , src_ExamRecord(?X) , src_VisitingProfessor(?X) , src_Degree(?X) , src_Employee(?X) -> Employee(?X) .
-src_isPartOfUniversity(?X,?Y) , src_Organization(?X) , src_Work(?X) , src_AdministrativeStaff(?X) , src_AssistantProfessor(?X) -> AssistantProfessor(?X) .
-src_Work(?X) , src_degreeFrom(?X,?Y) , src_Course(?X) , src_isPartOfUniversity(?X,?Y) , src_Professor(?X) -> Professor(?X) .
-src_GraduateCourse(?X) , src_FullProfessor(?X) , src_hasExamRecord(?X,?Y) , src_AssociateProfessor(?X) -> AssociateProfessor(?X) .
-src_takesCourse(?X,?Y) , src_worksFor(?X,?Y) , src_member(?X,?Y) , src_tenured(?X,?Y) , src_doctoralDegreeFrom(?X,?Y) , src_UndergraduateStudent(?X) , src_BachelorExam(?X) -> BachelorExam(?X) .
-src_Degree(?X) , src_headOf(?X,?Y) , src_ExDean(?X) , src_FacultyStaff(?X) , src_Exam(?X) -> Exam(?X) .
-src_advisor(?X,?Y) , src_teacherOf(?X,?Y) , src_University(?X) , src_FullProfessor(?X) , src_Chair(?X) , src_Career(?X) -> Career(?X) .
-src_advisor(?X,?Y) , src_Lecturer(?X) , src_memberOf(?X,?Y) , src_Work(?X) -> Work(?X) .
-src_hasAlumnus(?X,?Y) , src_GraduateStudent(?X) , src_Lecturer(?X) , src_advisor(?X,?Y) , src_Chair(?X) -> Chair(?X) .
-src_GraduateCourse(?X) , src_Professor(?X) , src_Student(?X) , src_Course(?X) , src_College(?X) , src_ClericalStaff(?X) -> ClericalStaff(?X) .
-src_degreeFrom(?X,?Y) , src_teachingAssistantOf(?X,?Y) , src_hasFaculty(?X,?Y) , src_Organization(?X) , src_doctoralDegreeFrom(?X,?Y) , src_College(?X) -> College(?X) .
-src_tenured(?X,?Y) , src_Career(?X) , src_doctoralDegreeFrom(?X,?Y) , src_ExDean(?X) , src_Chair(?X) , src_Organization(?X) -> Organization(?X) .
-src_headOf(?X,?Y) , src_Student(?X) , src_AssistantProfessor(?X) , src_advisor(?X,?Y) , src_hasFaculty(?X,?Y) , src_Course(?X) -> Course(?X) .
-src_SystemsStaff(?X) , src_affiliatedOrganizationOf(?X,?Y) , src_tenured(?X,?Y) , src_teachingAssistantOf(?X,?Y) , src_Faculty(?X) , src_worksFor(?X,?Y) , src_Dean(?X) -> Dean(?X) .
-src_mastersDegreeFrom(?X,?Y) , src_member(?X,?Y) , src_Person(?X) , src_memberOf(?X,?Y) , src_Faculty(?X) , src_headOf(?X,?Y) -> headOf(?X,?Y) .
-src_College(?X) , src_undergraduateDegreeFrom(?X,?Y) , src_ExamRecord(?X) , src_Degree(?X) -> Degree(?X) .
-src_orgPublication(?X,?Y) , src_FacultyStaff(?X) , src_Professor(?X) , src_Director(?X) -> Director(?X) .
-src_PostDoc(?X) , src_teachingAssistantOf(?X,?Y) , src_College(?X) , src_ClericalStaff(?X) , src_Person(?X) -> Person(?X) .
-src_UndergraduateStudent(?X) , src_worksFor(?X,?Y) , src_member(?X,?Y) , src_GraduateStudent(?X) , src_headOf(?X,?Y) , src_Program(?X) -> Program(?X) .
-src_Course(?X) , src_FacultyStaff(?X) , src_tenured(?X,?Y) , src_Person(?X) , src_headOf(?X,?Y) , src_AssociateProfessor(?X) , src_worksFor(?X,?Y) -> worksFor(?X,?Y) .
-src_PostDoc(?X) , src_affiliateOf(?X,?Y) , src_undergraduateDegreeFrom(?X,?Y) , src_AdministrativeStaff(?X) , src_Exam(?X) , src_ClericalStaff(?X) , src_ExDean(?X) -> ExDean(?X) .
-src_AdministrativeStaff(?X) , src_Person(?X) , src_University(?X) , src_orgPublication(?X,?Y) , src_ExamRecord(?X) -> ExamRecord(?X) .
-src_affiliatedOrganizationOf(?X,?Y) , src_ClericalStaff(?X) , src_Lecturer(?X) , src_hasFaculty(?X,?Y) , src_teachingAssistantOf(?X,?Y) , src_Faculty(?X) -> Faculty(?X) .
-src_ResearchAssistant(?X) , src_VisitingProfessor(?X) , src_publicationAuthor(?X,?Y) , src_FacultyStaff(?X) -> FacultyStaff(?X) .
-src_affiliatedOrganizationOf(?X,?Y) , src_undergraduateDegreeFrom(?X,?Y) , src_Lecturer(?X) , src_SystemsStaff(?X) , src_FullProfessor(?X) -> FullProfessor(?X) .
-src_tenured(?X,?Y) , src_College(?X) , src_affiliatedOrganizationOf(?X,?Y) , src_GraduateCourse(?X) -> GraduateCourse(?X) .
-src_mastersDegreeFrom(?X,?Y) , src_AssociateProfessor(?X) , src_Degree(?X) , src_GraduateStudent(?X) -> GraduateStudent(?X) .
-src_worksFor(?X,?Y) , src_FullProfessor(?X) , src_Exam(?X) , src_VisitingProfessor(?X) , src_advisor(?X,?Y) , src_takesCourse(?X,?Y) -> takesCourse(?X,?Y) .
-src_orgPublication(?X,?Y) , src_ExDean(?X) , src_affiliatedOrganizationOf(?X,?Y) , src_BachelorExam(?X) , src_University(?X) , src_Organization(?X) , src_Lecturer(?X) -> Lecturer(?X) .
-src_AssistantProfessor(?X) , src_ExDean(?X) , src_Professor(?X) , src_Faculty(?X) , src_UndergraduateStudent(?X) , src_PostDoc(?X) -> PostDoc(?X) .
-src_hasExamRecord(?X,?Y) , src_teachingAssistantOf(?X,?Y) , src_ClericalStaff(?X) , src_SystemsStaff(?X) , src_ResearchAssistant(?X) -> ResearchAssistant(?X) .
-src_Lecturer(?X) , src_advisor(?X,?Y) , src_mastersDegreeFrom(?X,?Y) , src_Student(?X) -> Student(?X) .
-src_hasAlumnus(?X,?Y) , src_worksFor(?X,?Y) , src_hasFaculty(?X,?Y) , src_BachelorExam(?X) , src_Employee(?X) , src_SystemsStaff(?X) -> SystemsStaff(?X) .
-src_publicationAuthor(?X,?Y) , src_affiliateOf(?X,?Y) , src_Chair(?X) , src_isPartOfUniversity(?X,?Y) , src_UndergraduateStudent(?X) -> UndergraduateStudent(?X) .
-src_isPartOfUniversity(?X,?Y) , src_doctoralDegreeFrom(?X,?Y) , src_ResearchAssistant(?X) , src_ClericalStaff(?X) , src_University(?X) -> University(?X) .
-src_FullProfessor(?X) , src_Director(?X) , src_Professor(?X) , src_headOf(?X,?Y) , src_VisitingProfessor(?X) -> VisitingProfessor(?X) .
-src_GraduateStudent(?X) , src_BachelorExam(?X) , src_ClericalStaff(?X) , src_isPartOfUniversity(?X,?Y) , src_AssociateProfessor(?X) , src_Chair(?X) , src_advisor(?X,?Y) -> advisor(?X,?Y) .
-src_Program(?X) , src_VisitingProfessor(?X) , src_Professor(?X) , src_undergraduateDegreeFrom(?X,?Y) , src_Work(?X) , src_affiliateOf(?X,?Y) -> affiliateOf(?X,?Y) .
-src_Chair(?X) , src_degreeFrom(?X,?Y) , src_ExDean(?X) , src_affiliatedOrganizationOf(?X,?Y) -> affiliatedOrganizationOf(?X,?Y) .
-src_GraduateStudent(?X) , src_ExDean(?X) , src_headOf(?X,?Y) , src_degreeFrom(?X,?Y) -> degreeFrom(?X,?Y) .
-src_Work(?X) , src_Exam(?X) , src_FullProfessor(?X) , src_AssociateProfessor(?X) , src_hasAlumnus(?X,?Y) -> hasAlumnus(?X,?Y) .
-src_Degree(?X) , src_AssistantProfessor(?X) , src_headOf(?X,?Y) , src_advisor(?X,?Y) , src_Person(?X) , src_doctoralDegreeFrom(?X,?Y) -> doctoralDegreeFrom(?X,?Y) .
-src_ExamRecord(?X) , src_College(?X) , src_Employee(?X) , src_hasExamRecord(?X,?Y) -> hasExamRecord(?X,?Y) .
-src_SystemsStaff(?X) , src_doctoralDegreeFrom(?X,?Y) , src_Chair(?X) , src_University(?X) , src_undergraduateDegreeFrom(?X,?Y) , src_teacherOf(?X,?Y) , src_hasFaculty(?X,?Y) -> hasFaculty(?X,?Y) .
-src_teacherOf(?X,?Y) , src_Course(?X) , src_AdministrativeStaff(?X) , src_AssociateProfessor(?X) , src_isPartOfUniversity(?X,?Y) -> isPartOfUniversity(?X,?Y) .
-src_AssistantProfessor(?X) , src_FullProfessor(?X) , src_teachingAssistantOf(?X,?Y) , src_mastersDegreeFrom(?X,?Y) -> mastersDegreeFrom(?X,?Y) .
-src_takesCourse(?X,?Y) , src_affiliatedOrganizationOf(?X,?Y) , src_mastersDegreeFrom(?X,?Y) , src_ExDean(?X) , src_member(?X,?Y) -> member(?X,?Y) .
-src_PostDoc(?X) , src_advisor(?X,?Y) , src_member(?X,?Y) , src_publicationAuthor(?X,?Y) , src_memberOf(?X,?Y) -> memberOf(?X,?Y) .
-src_mastersDegreeFrom(?X,?Y) , src_undergraduateDegreeFrom(?X,?Y) , src_Chair(?X) , src_Director(?X) , src_hasFaculty(?X,?Y) , src_orgPublication(?X,?Y) -> orgPublication(?X,?Y) .
-src_affiliateOf(?X,?Y) , src_BachelorExam(?X) , src_ClericalStaff(?X) , src_Faculty(?X) , src_publicationAuthor(?X,?Y) -> publicationAuthor(?X,?Y) .
-src_affiliateOf(?X,?Y) , src_Student(?X) , src_SystemsStaff(?X) , src_teacherOf(?X,?Y) -> teacherOf(?X,?Y) .
-src_headOf(?X,?Y) , src_undergraduateDegreeFrom(?X,?Y) , src_hasAlumnus(?X,?Y) , src_Chair(?X) , src_Person(?X) , src_teachingAssistantOf(?X,?Y) -> teachingAssistantOf(?X,?Y) .
-src_Lecturer(?X) , src_University(?X) , src_VisitingProfessor(?X) , src_Organization(?X) , src_tenured(?X,?Y) -> tenured(?X,?Y) .
-src_SystemsStaff(?X) , src_hasAlumnus(?X,?Y) , src_Lecturer(?X) , src_undergraduateDegreeFrom(?X,?Y) -> undergraduateDegreeFrom(?X,?Y) .
+src_degreeFrom(?X,?Y) , src_Professor(?X) , src_Student(?X) , src_Organization(?X) , src_AdministrativeStaff(?X) -> AdministrativeStaff(?X) .
+src_publicationAuthor(?X,?Y) , src_tenured(?X,?Y) , src_affiliateOf(?X,?Y) , src_VisitingProfessor(?X) , src_Employee(?X) -> Employee(?X) .
+src_headOf(?X,?Y) , src_UndergraduateStudent(?X) , src_mastersDegreeFrom(?X,?Y) , src_AssistantProfessor(?X) -> AssistantProfessor(?X) .
+src_University(?X) , src_FullProfessor(?X) , src_mastersDegreeFrom(?X,?Y) , src_Degree(?X) , src_College(?X) , src_teachingAssistantOf(?X,?Y) , src_Professor(?X) -> Professor(?X) .
+src_ResearchAssistant(?X) , src_ExDean(?X) , src_headOf(?X,?Y) , src_AssociateProfessor(?X) -> AssociateProfessor(?X) .
+src_UndergraduateStudent(?X) , src_PostDoc(?X) , src_Professor(?X) , src_BachelorExam(?X) -> BachelorExam(?X) .
+src_VisitingProfessor(?X) , src_mastersDegreeFrom(?X,?Y) , src_University(?X) , src_Exam(?X) -> Exam(?X) .
+src_worksFor(?X,?Y) , src_AssociateProfessor(?X) , src_hasAlumnus(?X,?Y) , src_Organization(?X) , src_Work(?X) , src_hasFaculty(?X,?Y) , src_Career(?X) -> Career(?X) .
+src_Faculty(?X) , src_GraduateCourse(?X) , src_worksFor(?X,?Y) , src_Employee(?X) , src_Organization(?X) , src_Work(?X) -> Work(?X) .
+src_Exam(?X) , src_mastersDegreeFrom(?X,?Y) , src_GraduateStudent(?X) , src_SystemsStaff(?X) , src_Lecturer(?X) , src_Chair(?X) -> Chair(?X) .
+src_AdministrativeStaff(?X) , src_FullProfessor(?X) , src_Chair(?X) , src_worksFor(?X,?Y) , src_ClericalStaff(?X) -> ClericalStaff(?X) .
+src_Faculty(?X) , src_publicationAuthor(?X,?Y) , src_AdministrativeStaff(?X) , src_isPartOfUniversity(?X,?Y) , src_ResearchAssistant(?X) , src_College(?X) -> College(?X) .
+src_AssistantProfessor(?X) , src_memberOf(?X,?Y) , src_Degree(?X) , src_takesCourse(?X,?Y) , src_Organization(?X) -> Organization(?X) .
+src_teacherOf(?X,?Y) , src_VisitingProfessor(?X) , src_isPartOfUniversity(?X,?Y) , src_degreeFrom(?X,?Y) , src_headOf(?X,?Y) , src_ExamRecord(?X) , src_Course(?X) -> Course(?X) .
+src_ResearchAssistant(?X) , src_University(?X) , src_Director(?X) , src_affiliatedOrganizationOf(?X,?Y) , src_hasExamRecord(?X,?Y) , src_hasAlumnus(?X,?Y) , src_Dean(?X) -> Dean(?X) .
+src_orgPublication(?X,?Y) , src_Student(?X) , src_doctoralDegreeFrom(?X,?Y) , src_degreeFrom(?X,?Y) , src_memberOf(?X,?Y) , src_headOf(?X,?Y) -> headOf(?X,?Y) .
+src_UndergraduateStudent(?X) , src_hasExamRecord(?X,?Y) , src_PostDoc(?X) , src_hasFaculty(?X,?Y) , src_Degree(?X) -> Degree(?X) .
+src_Employee(?X) , src_Faculty(?X) , src_ClericalStaff(?X) , src_Director(?X) -> Director(?X) .
+src_GraduateCourse(?X) , src_Director(?X) , src_degreeFrom(?X,?Y) , src_BachelorExam(?X) , src_Degree(?X) , src_Person(?X) -> Person(?X) .
+src_Lecturer(?X) , src_ExamRecord(?X) , src_mastersDegreeFrom(?X,?Y) , src_degreeFrom(?X,?Y) , src_Program(?X) -> Program(?X) .
+src_FullProfessor(?X) , src_Course(?X) , src_Work(?X) , src_AdministrativeStaff(?X) , src_worksFor(?X,?Y) -> worksFor(?X,?Y) .
+src_member(?X,?Y) , src_Professor(?X) , src_isPartOfUniversity(?X,?Y) , src_ExDean(?X) -> ExDean(?X) .
+src_hasFaculty(?X,?Y) , src_Professor(?X) , src_doctoralDegreeFrom(?X,?Y) , src_ResearchAssistant(?X) , src_Person(?X) , src_ExamRecord(?X) -> ExamRecord(?X) .
+src_doctoralDegreeFrom(?X,?Y) , src_hasAlumnus(?X,?Y) , src_Professor(?X) , src_ResearchAssistant(?X) , src_Faculty(?X) -> Faculty(?X) .
+src_Program(?X) , src_hasAlumnus(?X,?Y) , src_advisor(?X,?Y) , src_Organization(?X) , src_FacultyStaff(?X) -> FacultyStaff(?X) .
+src_Student(?X) , src_University(?X) , src_Course(?X) , src_ExDean(?X) , src_FullProfessor(?X) -> FullProfessor(?X) .
+src_FacultyStaff(?X) , src_AdministrativeStaff(?X) , src_mastersDegreeFrom(?X,?Y) , src_GraduateCourse(?X) -> GraduateCourse(?X) .
+src_University(?X) , src_Employee(?X) , src_degreeFrom(?X,?Y) , src_Degree(?X) , src_Dean(?X) , src_Work(?X) , src_GraduateStudent(?X) -> GraduateStudent(?X) .
+src_PostDoc(?X) , src_GraduateCourse(?X) , src_BachelorExam(?X) , src_AssistantProfessor(?X) , src_Work(?X) , src_Employee(?X) , src_takesCourse(?X,?Y) -> takesCourse(?X,?Y) .
+src_Career(?X) , src_FacultyStaff(?X) , src_PostDoc(?X) , src_University(?X) , src_Exam(?X) , src_ExDean(?X) , src_Lecturer(?X) -> Lecturer(?X) .
+src_worksFor(?X,?Y) , src_Dean(?X) , src_Exam(?X) , src_doctoralDegreeFrom(?X,?Y) , src_member(?X,?Y) , src_FacultyStaff(?X) , src_PostDoc(?X) -> PostDoc(?X) .
+src_PostDoc(?X) , src_GraduateCourse(?X) , src_Lecturer(?X) , src_SystemsStaff(?X) , src_Chair(?X) , src_advisor(?X,?Y) , src_ResearchAssistant(?X) -> ResearchAssistant(?X) .
+src_Director(?X) , src_Program(?X) , src_hasFaculty(?X,?Y) , src_BachelorExam(?X) , src_Employee(?X) , src_Student(?X) -> Student(?X) .
+src_AdministrativeStaff(?X) , src_Chair(?X) , src_BachelorExam(?X) , src_SystemsStaff(?X) -> SystemsStaff(?X) .
+src_FacultyStaff(?X) , src_hasFaculty(?X,?Y) , src_tenured(?X,?Y) , src_Organization(?X) , src_Faculty(?X) , src_ClericalStaff(?X) , src_UndergraduateStudent(?X) -> UndergraduateStudent(?X) .
+src_Work(?X) , src_Career(?X) , src_undergraduateDegreeFrom(?X,?Y) , src_University(?X) -> University(?X) .
+src_worksFor(?X,?Y) , src_ClericalStaff(?X) , src_ExDean(?X) , src_hasAlumnus(?X,?Y) , src_Program(?X) , src_ExamRecord(?X) , src_VisitingProfessor(?X) -> VisitingProfessor(?X) .
+src_hasFaculty(?X,?Y) , src_hasExamRecord(?X,?Y) , src_member(?X,?Y) , src_advisor(?X,?Y) -> advisor(?X,?Y) .
+src_Student(?X) , src_Person(?X) , src_ExamRecord(?X) , src_affiliateOf(?X,?Y) -> affiliateOf(?X,?Y) .
+src_teachingAssistantOf(?X,?Y) , src_Organization(?X) , src_Employee(?X) , src_GraduateCourse(?X) , src_member(?X,?Y) , src_Lecturer(?X) , src_affiliatedOrganizationOf(?X,?Y) -> affiliatedOrganizationOf(?X,?Y) .
+src_Degree(?X) , src_Professor(?X) , src_College(?X) , src_SystemsStaff(?X) , src_degreeFrom(?X,?Y) -> degreeFrom(?X,?Y) .
+src_Student(?X) , src_Lecturer(?X) , src_Exam(?X) , src_undergraduateDegreeFrom(?X,?Y) , src_hasAlumnus(?X,?Y) -> hasAlumnus(?X,?Y) .
+src_University(?X) , src_teacherOf(?X,?Y) , src_headOf(?X,?Y) , src_affiliateOf(?X,?Y) , src_doctoralDegreeFrom(?X,?Y) -> doctoralDegreeFrom(?X,?Y) .
+src_teacherOf(?X,?Y) , src_ClericalStaff(?X) , src_Lecturer(?X) , src_GraduateStudent(?X) , src_hasExamRecord(?X,?Y) -> hasExamRecord(?X,?Y) .
+src_BachelorExam(?X) , src_Professor(?X) , src_Program(?X) , src_Work(?X) , src_Degree(?X) , src_ExDean(?X) , src_hasFaculty(?X,?Y) -> hasFaculty(?X,?Y) .
+src_Director(?X) , src_ClericalStaff(?X) , src_UndergraduateStudent(?X) , src_Career(?X) , src_isPartOfUniversity(?X,?Y) -> isPartOfUniversity(?X,?Y) .
+src_hasFaculty(?X,?Y) , src_Student(?X) , src_Course(?X) , src_mastersDegreeFrom(?X,?Y) -> mastersDegreeFrom(?X,?Y) .
+src_Work(?X) , src_Organization(?X) , src_ClericalStaff(?X) , src_worksFor(?X,?Y) , src_teacherOf(?X,?Y) , src_member(?X,?Y) -> member(?X,?Y) .
+src_advisor(?X,?Y) , src_hasExamRecord(?X,?Y) , src_teacherOf(?X,?Y) , src_affiliateOf(?X,?Y) , src_memberOf(?X,?Y) -> memberOf(?X,?Y) .
+src_teachingAssistantOf(?X,?Y) , src_memberOf(?X,?Y) , src_Director(?X) , src_publicationAuthor(?X,?Y) , src_tenured(?X,?Y) , src_affiliateOf(?X,?Y) , src_orgPublication(?X,?Y) -> orgPublication(?X,?Y) .
+src_Lecturer(?X) , src_Exam(?X) , src_headOf(?X,?Y) , src_Person(?X) , src_affiliateOf(?X,?Y) , src_VisitingProfessor(?X) , src_publicationAuthor(?X,?Y) -> publicationAuthor(?X,?Y) .
+src_ExDean(?X) , src_memberOf(?X,?Y) , src_College(?X) , src_teacherOf(?X,?Y) -> teacherOf(?X,?Y) .
+src_Student(?X) , src_PostDoc(?X) , src_Faculty(?X) , src_teachingAssistantOf(?X,?Y) -> teachingAssistantOf(?X,?Y) .
+src_Organization(?X) , src_Professor(?X) , src_headOf(?X,?Y) , src_tenured(?X,?Y) -> tenured(?X,?Y) .
+src_worksFor(?X,?Y) , src_doctoralDegreeFrom(?X,?Y) , src_Professor(?X) , src_undergraduateDegreeFrom(?X,?Y) -> undergraduateDegreeFrom(?X,?Y) .

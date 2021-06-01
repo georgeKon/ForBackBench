@@ -630,7 +630,7 @@ PersonRole(?X) :- Discoverer(?X) .
 Entertainer(?X) :- Actor(?X) .
 Event(?X) :- CulturalAgreement(?X) .
 Q1(?X) :- Location(?X) .
-Q2(?X,?Y) :- MilitaryPerson(?X),hasRole(?Y,?X),related(?X,?X1) .
+Q2(?X) :- MilitaryPerson(?X) .
 Q3(?X,?Y) :- TimeDependentRelation(?X),hasRelationMember(?X,?Y),Event(?Y) .
 Q4(?X,?Y) :- Object(?X),hasRole(?X,?Y),Symbol(?Y) .
 Q5(?X) :- Individual(?X),hasRole(?X,?Y),Scientist(?Y),hasRole(?X,?X1),Discoverer(?X1),hasRole(?X,?Y1),Inventor(?Y1) .

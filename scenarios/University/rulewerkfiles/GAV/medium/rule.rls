@@ -1,101 +1,172 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@source srchasAlumnus[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_hasAlumnus.csv") .
 @source srcUniversity[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_University.csv") .
 @source srcResearchAssistant[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_ResearchAssistant.csv") .
-@source srcAssociateProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_AssociateProfessor.csv") .
-@source srcCollege[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_College.csv") .
 @source srcFaculty[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_Faculty.csv") .
-@source srctenured[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_tenured.csv") .
+@source srcExDean[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_ExDean.csv") .
+@source srcCareer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_Career.csv") .
 @source srcAdministrativeStaff[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_AdministrativeStaff.csv") .
 @source srcLecturer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_Lecturer.csv") .
-@source srctakesCourse[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_takesCourse.csv") .
+@source srcExam[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_Exam.csv") .
 @source srcheadOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_headOf.csv") .
 @source srcFullProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_FullProfessor.csv") .
-@source srcorgPublication[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_orgPublication.csv") .
 @source srcDirector[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_Director.csv") .
-@source srcChair[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_Chair.csv") .
+@source srcorgPublication[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_orgPublication.csv") .
 @source srcGraduateCourse[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_GraduateCourse.csv") .
-@source srcAssistantProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_AssistantProfessor.csv") .
-@source srcaffiliatedOrganizationOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_affiliatedOrganizationOf.csv") .
 @source srcpublicationAuthor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_publicationAuthor.csv") .
+@source srcAssistantProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_AssistantProfessor.csv") .
 @source srcProgram[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_Program.csv") .
-@source srcaffiliateOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_affiliateOf.csv") .
-@source srcGraduateStudent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_GraduateStudent.csv") .
-@source srcSystemsStaff[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_SystemsStaff.csv") .
-@source srcteacherOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_teacherOf.csv") .
 @source srcOrganization[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_Organization.csv") .
-@source srcCourse[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_Course.csv") .
-@source srcmastersDegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_mastersDegreeFrom.csv") .
-@source srcClericalStaff[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_ClericalStaff.csv") .
-@source srcundergraduateDegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_undergraduateDegreeFrom.csv") .
+@source srcteacherOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_teacherOf.csv") .
+@source srcBachelorExam[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_BachelorExam.csv") .
 @source srcWork[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_Work.csv") .
 @source srcdegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_degreeFrom.csv") .
 @source srcVisitingProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_VisitingProfessor.csv") .
 @source srcUndergraduateStudent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_UndergraduateStudent.csv") .
 @source srcPostDoc[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_PostDoc.csv") .
-@source srcmemberOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_memberOf.csv") .
-@source srcPerson[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_Person.csv") .
-@source srcDean[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_Dean.csv") .
-@source srcworksFor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_worksFor.csv") .
+@source srchasFaculty[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_hasFaculty.csv") .
+@source srcFacultyStaff[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_FacultyStaff.csv") .
+@source srcDegree[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_Degree.csv") .
 @source srcteachingAssistantOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_teachingAssistantOf.csv") .
+@source srcworksFor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_worksFor.csv") .
 @source srcmember[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_member.csv") .
 @source srcStudent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_Student.csv") .
 @source srcEmployee[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_Employee.csv") .
 @source srcdoctoralDegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_doctoralDegreeFrom.csv") .
-@source srcProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_Professor.csv") .
 @source srcadvisor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/GAV/medium/src_advisor.csv") .
-BachelorExam(?X) :- srcmastersDegreeFrom(?X,?Y),srcChair(?X),srcVisitingProfessor(?X),srcundergraduateDegreeFrom(?X,?Y),srcBachelorExam(?X) .
-Exam(?X) :- srcAdministrativeStaff(?X),srcWork(?X),srcGraduateCourse(?X),srcOrganization(?X),srcExam(?X) .
-Chair(?X) :- srcisPartOfUniversity(?X,?Y),srcBachelorExam(?X),srcUniversity(?X),srcAdministrativeStaff(?X),srcAssociateProfessor(?X),srcChair(?X) .
-teachingAssistantOf(?X,?Y) :- srcaffiliatedOrganizationOf(?X,?Y),srcGraduateStudent(?X),srcFaculty(?X),srcClericalStaff(?X),srcGraduateCourse(?X),srcteachingAssistantOf(?X,?Y) .
-orgPublication(?X,?Y) :- srcAssociateProfessor(?X),srcUniversity(?X),srchasExamRecord(?X,?Y),srcorgPublication(?X,?Y) .
-ExamRecord(?X) :- srcCourse(?X),srcProgram(?X),srcaffiliatedOrganizationOf(?X,?Y),srcExamRecord(?X) .
-Student(?X) :- srcdegreeFrom(?X,?Y),srcFaculty(?X),srcadvisor(?X,?Y),srcAssistantProfessor(?X),srcExam(?X),srcheadOf(?X,?Y),srcStudent(?X) .
-Faculty(?X) :- srcStudent(?X),srcPerson(?X),srchasAlumnus(?X,?Y),srcDean(?X),srcteacherOf(?X,?Y),srcFaculty(?X) .
-degreeFrom(?X,?Y) :- srcDegree(?X),srcmastersDegreeFrom(?X,?Y),srcmember(?X,?Y),srcVisitingProfessor(?X),srcdegreeFrom(?X,?Y) .
-Career(?X) :- srcmemberOf(?X,?Y),srcProgram(?X),srcChair(?X),srcFullProfessor(?X),srcCourse(?X),srcCareer(?X) .
-Work(?X) :- srcdoctoralDegreeFrom(?X,?Y),srcUndergraduateStudent(?X),srcteacherOf(?X,?Y),srcClericalStaff(?X),srcCollege(?X),srcundergraduateDegreeFrom(?X,?Y),srcWork(?X) .
-doctoralDegreeFrom(?X,?Y) :- srcUniversity(?X),srcheadOf(?X,?Y),srcBachelorExam(?X),srcaffiliatedOrganizationOf(?X,?Y),srcdoctoralDegreeFrom(?X,?Y) .
-FullProfessor(?X) :- srcundergraduateDegreeFrom(?X,?Y),srcPostDoc(?X),srchasExamRecord(?X,?Y),srcFullProfessor(?X) .
-memberOf(?X,?Y) :- srcGraduateCourse(?X),srctenured(?X,?Y),srcUniversity(?X),srcmemberOf(?X,?Y) .
-AssociateProfessor(?X) :- srcorgPublication(?X,?Y),srcCareer(?X),srcmemberOf(?X,?Y),srcAssociateProfessor(?X) .
-worksFor(?X,?Y) :- srcmemberOf(?X,?Y),srcdegreeFrom(?X,?Y),srcOrganization(?X),srcExDean(?X),srcLecturer(?X),srcworksFor(?X,?Y) .
-isPartOfUniversity(?X,?Y) :- srcPerson(?X),srcpublicationAuthor(?X,?Y),srcAdministrativeStaff(?X),srcStudent(?X),srcChair(?X),srcDirector(?X),srcisPartOfUniversity(?X,?Y) .
-ResearchAssistant(?X) :- srcStudent(?X),srcDean(?X),srcDirector(?X),srcaffiliatedOrganizationOf(?X,?Y),srcResearchAssistant(?X) .
-hasFaculty(?X,?Y) :- srcChair(?X),srcCollege(?X),srcClericalStaff(?X),srcundergraduateDegreeFrom(?X,?Y),srcExam(?X),srchasFaculty(?X,?Y) .
-GraduateStudent(?X) :- srcPostDoc(?X),srcVisitingProfessor(?X),srcorgPublication(?X,?Y),srcGraduateStudent(?X) .
-hasAlumnus(?X,?Y) :- srcPerson(?X),srcVisitingProfessor(?X),srcDirector(?X),srchasAlumnus(?X,?Y) .
-member(?X,?Y) :- srcteachingAssistantOf(?X,?Y),srcProfessor(?X),srcDirector(?X),srcExDean(?X),srcResearchAssistant(?X),srcmember(?X,?Y) .
-ClericalStaff(?X) :- srcheadOf(?X,?Y),srcFacultyStaff(?X),srcChair(?X),srcStudent(?X),srcClericalStaff(?X) .
-College(?X) :- srcOrganization(?X),srcCareer(?X),srcFaculty(?X),srchasFaculty(?X,?Y),srcCollege(?X) .
-Person(?X) :- srcAssociateProfessor(?X),srcmastersDegreeFrom(?X,?Y),srcGraduateStudent(?X),srcworksFor(?X,?Y),srcPerson(?X) .
-undergraduateDegreeFrom(?X,?Y) :- srcmember(?X,?Y),srcProgram(?X),srcCollege(?X),srcAdministrativeStaff(?X),srchasFaculty(?X,?Y),srcundergraduateDegreeFrom(?X,?Y) .
-AdministrativeStaff(?X) :- srcResearchAssistant(?X),srcmastersDegreeFrom(?X,?Y),srcClericalStaff(?X),srcFullProfessor(?X),srchasFaculty(?X,?Y),srcExDean(?X),srcAdministrativeStaff(?X) .
-Professor(?X) :- srchasAlumnus(?X,?Y),srcworksFor(?X,?Y),srcLecturer(?X),srcteacherOf(?X,?Y),srcUniversity(?X),srcExam(?X),srcProfessor(?X) .
-VisitingProfessor(?X) :- srcDean(?X),srcResearchAssistant(?X),srcCourse(?X),srcSystemsStaff(?X),srcExDean(?X),srcClericalStaff(?X),srcVisitingProfessor(?X) .
-Lecturer(?X) :- srchasAlumnus(?X,?Y),srcAssistantProfessor(?X),srcpublicationAuthor(?X,?Y),srcFullProfessor(?X),srcResearchAssistant(?X),srcLecturer(?X) .
-PostDoc(?X) :- srcStudent(?X),srcBachelorExam(?X),srcDirector(?X),srcteacherOf(?X,?Y),srcEmployee(?X),srcVisitingProfessor(?X),srcPostDoc(?X) .
-FacultyStaff(?X) :- srcAssistantProfessor(?X),srcGraduateCourse(?X),srctakesCourse(?X,?Y),srcdoctoralDegreeFrom(?X,?Y),srcFacultyStaff(?X) .
-tenured(?X,?Y) :- srcResearchAssistant(?X),srcdegreeFrom(?X,?Y),srcmemberOf(?X,?Y),srcisPartOfUniversity(?X,?Y),srctenured(?X,?Y) .
-affiliateOf(?X,?Y) :- srcChair(?X),srcpublicationAuthor(?X,?Y),srcOrganization(?X),srcmemberOf(?X,?Y),srcCourse(?X),srcUniversity(?X),srcaffiliateOf(?X,?Y) .
-teacherOf(?X,?Y) :- srcorgPublication(?X,?Y),srcPerson(?X),srcGraduateCourse(?X),srcteacherOf(?X,?Y) .
-Employee(?X) :- srcStudent(?X),srcVisitingProfessor(?X),srcDean(?X),srcEmployee(?X) .
-Program(?X) :- srcStudent(?X),srchasExamRecord(?X,?Y),srcteachingAssistantOf(?X,?Y),srcmember(?X,?Y),srcUndergraduateStudent(?X),srcProgram(?X) .
-Course(?X) :- srcEmployee(?X),srcAssistantProfessor(?X),srcDirector(?X),srcFullProfessor(?X),srcCourse(?X) .
-affiliatedOrganizationOf(?X,?Y) :- srcProgram(?X),srcChair(?X),srcaffiliateOf(?X,?Y),srcaffiliatedOrganizationOf(?X,?Y) .
-AssistantProfessor(?X) :- srcFacultyStaff(?X),srcExam(?X),srcGraduateStudent(?X),srcResearchAssistant(?X),srcDegree(?X),srcDean(?X),srcAssistantProfessor(?X) .
-Director(?X) :- srcundergraduateDegreeFrom(?X,?Y),srcaffiliatedOrganizationOf(?X,?Y),srcheadOf(?X,?Y),srcmastersDegreeFrom(?X,?Y),srcEmployee(?X),srcExam(?X),srcDirector(?X) .
-GraduateCourse(?X) :- srcmemberOf(?X,?Y),srcChair(?X),srcdegreeFrom(?X,?Y),srcheadOf(?X,?Y),srcisPartOfUniversity(?X,?Y),srcGraduateCourse(?X) .
-mastersDegreeFrom(?X,?Y) :- srcAssociateProfessor(?X),srcClericalStaff(?X),srcPostDoc(?X),srcmastersDegreeFrom(?X,?Y) .
-University(?X) :- srcadvisor(?X,?Y),srcaffiliatedOrganizationOf(?X,?Y),srcClericalStaff(?X),srcLecturer(?X),srcDegree(?X),srcUniversity(?X) .
-ExDean(?X) :- srcUniversity(?X),srcProfessor(?X),srcpublicationAuthor(?X,?Y),srcPerson(?X),srcExDean(?X) .
-Degree(?X) :- srcCollege(?X),srcExamRecord(?X),srcheadOf(?X,?Y),srcFullProfessor(?X),srcBachelorExam(?X),srcDegree(?X) .
-takesCourse(?X,?Y) :- srcCollege(?X),srcDirector(?X),srcaffiliateOf(?X,?Y),srcpublicationAuthor(?X,?Y),srctakesCourse(?X,?Y) .
-UndergraduateStudent(?X) :- srcDean(?X),srcteacherOf(?X,?Y),srcAssociateProfessor(?X),srcExDean(?X),srcClericalStaff(?X),srcUndergraduateStudent(?X) .
-publicationAuthor(?X,?Y) :- srcWork(?X),srcGraduateStudent(?X),srcUniversity(?X),srcpublicationAuthor(?X,?Y) .
-headOf(?X,?Y) :- srcteacherOf(?X,?Y),srcProgram(?X),srcCareer(?X),srcGraduateStudent(?X),srcheadOf(?X,?Y) .
-Organization(?X) :- srchasFaculty(?X,?Y),srcExamRecord(?X),srctenured(?X,?Y),srcOrganization(?X) .
-Dean(?X) :- srcUndergraduateStudent(?X),srcBachelorExam(?X),srcdoctoralDegreeFrom(?X,?Y),srchasExamRecord(?X,?Y),srchasAlumnus(?X,?Y),srcDean(?X) .
-hasExamRecord(?X,?Y) :- srcLecturer(?X),srcGraduateStudent(?X),srcundergraduateDegreeFrom(?X,?Y),srcUndergraduateStudent(?X),srcBachelorExam(?X),srchasExamRecord(?X,?Y) .
-advisor(?X,?Y) :- srcmember(?X,?Y),srchasAlumnus(?X,?Y),srcGraduateCourse(?X),srcmemberOf(?X,?Y),srcadvisor(?X,?Y) .
-SystemsStaff(?X) :- srcdegreeFrom(?X,?Y),srcmastersDegreeFrom(?X,?Y),srcheadOf(?X,?Y),srcUndergraduateStudent(?X),srcSystemsStaff(?X) .
+Organization(?X) :- srcAssistantProfessor(?X),srcmemberOf(?X,?Y),srcDegree(?X),srctakesCourse(?X,?Y),srcOrganization(?X) .
+advisor(?X,?Y) :- srchasFaculty(?X,?Y),srchasExamRecord(?X,?Y),srcmember(?X,?Y),srcadvisor(?X,?Y) .
+Exam(?X) :- srcVisitingProfessor(?X),srcmastersDegreeFrom(?X,?Y),srcUniversity(?X),srcExam(?X) .
+PostDoc(?X) :- srcworksFor(?X,?Y),srcDean(?X),srcExam(?X),srcdoctoralDegreeFrom(?X,?Y),srcmember(?X,?Y),srcFacultyStaff(?X),srcPostDoc(?X) .
+SystemsStaff(?X) :- srcAdministrativeStaff(?X),srcChair(?X),srcBachelorExam(?X),srcSystemsStaff(?X) .
+Faculty(?X) :- srcdoctoralDegreeFrom(?X,?Y),srchasAlumnus(?X,?Y),srcProfessor(?X),srcResearchAssistant(?X),srcFaculty(?X) .
+Person(?X) :- srcGraduateCourse(?X),srcDirector(?X),srcdegreeFrom(?X,?Y),srcBachelorExam(?X),srcDegree(?X),srcPerson(?X) .
+isPartOfUniversity(?X,?Y) :- srcDirector(?X),srcClericalStaff(?X),srcUndergraduateStudent(?X),srcCareer(?X),srcisPartOfUniversity(?X,?Y) .
+ClericalStaff(?X) :- srcAdministrativeStaff(?X),srcFullProfessor(?X),srcChair(?X),srcworksFor(?X,?Y),srcClericalStaff(?X) .
+hasAlumnus(?X,?Y) :- srcStudent(?X),srcLecturer(?X),srcExam(?X),srcundergraduateDegreeFrom(?X,?Y),srchasAlumnus(?X,?Y) .
+Dean(?X) :- srcResearchAssistant(?X),srcUniversity(?X),srcDirector(?X),srcaffiliatedOrganizationOf(?X,?Y),srchasExamRecord(?X,?Y),srchasAlumnus(?X,?Y),srcDean(?X) .
+AdministrativeStaff(?X) :- srcdegreeFrom(?X,?Y),srcProfessor(?X),srcStudent(?X),srcOrganization(?X),srcAdministrativeStaff(?X) .
+GraduateStudent(?X) :- srcUniversity(?X),srcEmployee(?X),srcdegreeFrom(?X,?Y),srcDegree(?X),srcDean(?X),srcWork(?X),srcGraduateStudent(?X) .
+hasFaculty(?X,?Y) :- srcBachelorExam(?X),srcProfessor(?X),srcProgram(?X),srcWork(?X),srcDegree(?X),srcExDean(?X),srchasFaculty(?X,?Y) .
+AssistantProfessor(?X) :- srcheadOf(?X,?Y),srcUndergraduateStudent(?X),srcmastersDegreeFrom(?X,?Y),srcAssistantProfessor(?X) .
+affiliateOf(?X,?Y) :- srcStudent(?X),srcPerson(?X),srcExamRecord(?X),srcaffiliateOf(?X,?Y) .
+mastersDegreeFrom(?X,?Y) :- srchasFaculty(?X,?Y),srcStudent(?X),srcCourse(?X),srcmastersDegreeFrom(?X,?Y) .
+teachingAssistantOf(?X,?Y) :- srcStudent(?X),srcPostDoc(?X),srcFaculty(?X),srcteachingAssistantOf(?X,?Y) .
+BachelorExam(?X) :- srcUndergraduateStudent(?X),srcPostDoc(?X),srcProfessor(?X),srcBachelorExam(?X) .
+FacultyStaff(?X) :- srcProgram(?X),srchasAlumnus(?X,?Y),srcadvisor(?X,?Y),srcOrganization(?X),srcFacultyStaff(?X) .
+Career(?X) :- srcworksFor(?X,?Y),srcAssociateProfessor(?X),srchasAlumnus(?X,?Y),srcOrganization(?X),srcWork(?X),srchasFaculty(?X,?Y),srcCareer(?X) .
+ResearchAssistant(?X) :- srcPostDoc(?X),srcGraduateCourse(?X),srcLecturer(?X),srcSystemsStaff(?X),srcChair(?X),srcadvisor(?X,?Y),srcResearchAssistant(?X) .
+AssociateProfessor(?X) :- srcResearchAssistant(?X),srcExDean(?X),srcheadOf(?X,?Y),srcAssociateProfessor(?X) .
+GraduateCourse(?X) :- srcFacultyStaff(?X),srcAdministrativeStaff(?X),srcmastersDegreeFrom(?X,?Y),srcGraduateCourse(?X) .
+teacherOf(?X,?Y) :- srcExDean(?X),srcmemberOf(?X,?Y),srcCollege(?X),srcteacherOf(?X,?Y) .
+Degree(?X) :- srcUndergraduateStudent(?X),srchasExamRecord(?X,?Y),srcPostDoc(?X),srchasFaculty(?X,?Y),srcDegree(?X) .
+ExamRecord(?X) :- srchasFaculty(?X,?Y),srcProfessor(?X),srcdoctoralDegreeFrom(?X,?Y),srcResearchAssistant(?X),srcPerson(?X),srcExamRecord(?X) .
+UndergraduateStudent(?X) :- srcFacultyStaff(?X),srchasFaculty(?X,?Y),srctenured(?X,?Y),srcOrganization(?X),srcFaculty(?X),srcClericalStaff(?X),srcUndergraduateStudent(?X) .
+VisitingProfessor(?X) :- srcworksFor(?X,?Y),srcClericalStaff(?X),srcExDean(?X),srchasAlumnus(?X,?Y),srcProgram(?X),srcExamRecord(?X),srcVisitingProfessor(?X) .
+Chair(?X) :- srcExam(?X),srcmastersDegreeFrom(?X,?Y),srcGraduateStudent(?X),srcSystemsStaff(?X),srcLecturer(?X),srcChair(?X) .
+Lecturer(?X) :- srcCareer(?X),srcFacultyStaff(?X),srcPostDoc(?X),srcUniversity(?X),srcExam(?X),srcExDean(?X),srcLecturer(?X) .
+Professor(?X) :- srcUniversity(?X),srcFullProfessor(?X),srcmastersDegreeFrom(?X,?Y),srcDegree(?X),srcCollege(?X),srcteachingAssistantOf(?X,?Y),srcProfessor(?X) .
+memberOf(?X,?Y) :- srcadvisor(?X,?Y),srchasExamRecord(?X,?Y),srcteacherOf(?X,?Y),srcaffiliateOf(?X,?Y),srcmemberOf(?X,?Y) .
+member(?X,?Y) :- srcWork(?X),srcOrganization(?X),srcClericalStaff(?X),srcworksFor(?X,?Y),srcteacherOf(?X,?Y),srcmember(?X,?Y) .
+FullProfessor(?X) :- srcStudent(?X),srcUniversity(?X),srcCourse(?X),srcExDean(?X),srcFullProfessor(?X) .
+degreeFrom(?X,?Y) :- srcDegree(?X),srcProfessor(?X),srcCollege(?X),srcSystemsStaff(?X),srcdegreeFrom(?X,?Y) .
+publicationAuthor(?X,?Y) :- srcLecturer(?X),srcExam(?X),srcheadOf(?X,?Y),srcPerson(?X),srcaffiliateOf(?X,?Y),srcVisitingProfessor(?X),srcpublicationAuthor(?X,?Y) .
+doctoralDegreeFrom(?X,?Y) :- srcUniversity(?X),srcteacherOf(?X,?Y),srcheadOf(?X,?Y),srcaffiliateOf(?X,?Y),srcdoctoralDegreeFrom(?X,?Y) .
+College(?X) :- srcFaculty(?X),srcpublicationAuthor(?X,?Y),srcAdministrativeStaff(?X),srcisPartOfUniversity(?X,?Y),srcResearchAssistant(?X),srcCollege(?X) .
+affiliatedOrganizationOf(?X,?Y) :- srcteachingAssistantOf(?X,?Y),srcOrganization(?X),srcEmployee(?X),srcGraduateCourse(?X),srcmember(?X,?Y),srcLecturer(?X),srcaffiliatedOrganizationOf(?X,?Y) .
+takesCourse(?X,?Y) :- srcPostDoc(?X),srcGraduateCourse(?X),srcBachelorExam(?X),srcAssistantProfessor(?X),srcWork(?X),srcEmployee(?X),srctakesCourse(?X,?Y) .
+Program(?X) :- srcLecturer(?X),srcExamRecord(?X),srcmastersDegreeFrom(?X,?Y),srcdegreeFrom(?X,?Y),srcProgram(?X) .
+University(?X) :- srcWork(?X),srcCareer(?X),srcundergraduateDegreeFrom(?X,?Y),srcUniversity(?X) .
+Employee(?X) :- srcpublicationAuthor(?X,?Y),srctenured(?X,?Y),srcaffiliateOf(?X,?Y),srcVisitingProfessor(?X),srcEmployee(?X) .
+worksFor(?X,?Y) :- srcFullProfessor(?X),srcCourse(?X),srcWork(?X),srcAdministrativeStaff(?X),srcworksFor(?X,?Y) .
+Course(?X) :- srcteacherOf(?X,?Y),srcVisitingProfessor(?X),srcisPartOfUniversity(?X,?Y),srcdegreeFrom(?X,?Y),srcheadOf(?X,?Y),srcExamRecord(?X),srcCourse(?X) .
+tenured(?X,?Y) :- srcOrganization(?X),srcProfessor(?X),srcheadOf(?X,?Y),srctenured(?X,?Y) .
+headOf(?X,?Y) :- srcorgPublication(?X,?Y),srcStudent(?X),srcdoctoralDegreeFrom(?X,?Y),srcdegreeFrom(?X,?Y),srcmemberOf(?X,?Y),srcheadOf(?X,?Y) .
+undergraduateDegreeFrom(?X,?Y) :- srcworksFor(?X,?Y),srcdoctoralDegreeFrom(?X,?Y),srcProfessor(?X),srcundergraduateDegreeFrom(?X,?Y) .
+Director(?X) :- srcEmployee(?X),srcFaculty(?X),srcClericalStaff(?X),srcDirector(?X) .
+hasExamRecord(?X,?Y) :- srcteacherOf(?X,?Y),srcClericalStaff(?X),srcLecturer(?X),srcGraduateStudent(?X),srchasExamRecord(?X,?Y) .
+Work(?X) :- srcFaculty(?X),srcGraduateCourse(?X),srcworksFor(?X,?Y),srcEmployee(?X),srcOrganization(?X),srcWork(?X) .
+Student(?X) :- srcDirector(?X),srcProgram(?X),srchasFaculty(?X,?Y),srcBachelorExam(?X),srcEmployee(?X),srcStudent(?X) .
+ExDean(?X) :- srcmember(?X,?Y),srcProfessor(?X),srcisPartOfUniversity(?X,?Y),srcExDean(?X) .
+orgPublication(?X,?Y) :- srcteachingAssistantOf(?X,?Y),srcmemberOf(?X,?Y),srcDirector(?X),srcpublicationAuthor(?X,?Y),srctenured(?X,?Y),srcaffiliateOf(?X,?Y),srcorgPublication(?X,?Y) .
+University(?X1) :- undergraduateDegreeFrom(?X,?X1) .
+Professor(?X) :- AssistantProfessor(?X) .
+isPartOfUniversity(?X,?Y) :- hasFaculty(?Y,?X) .
+Person(?X) :- degreeFrom(?X,?X1) .
+AdministrativeStaff(?X) :- SystemsStaff(?X) .
+worksFor(?X,!Y),Organization(!Y) :- Employee(?X) .
+Organization(?X1) :- affiliatedOrganizationOf(?X,?X1) .
+Organization(?X) :- Program(?X) .
+FacultyStaff(?X) :- teacherOf(?X,?X1) .
+Student(?X) :- ResearchAssistant(?X) .
+University(?X) :- hasAlumnus(?X,?X1) .
+headOf(?X,!Y),Program(!Y) :- Director(?X) .
+Course(?X) :- GraduateCourse(?X) .
+Faculty(?X1) :- hasFaculty(?X,?X1) .
+Organization(?X) :- member(?X,?X1) .
+Professor(?X) :- Chair(?X) .
+AdministrativeStaff(?X) :- ClericalStaff(?X) .
+Professor(?X1) :- advisor(?X,?X1) .
+Work(?X) :- Career(?X) .
+Person(?X) :- Student(?X) .
+hasAlumnus(?X,?Y) :- degreeFrom(?Y,?X) .
+Student(?X) :- hasExamRecord(?X,?X1) .
+Person(?X) :- mastersDegreeFrom(?X,?X1) .
+Organization(?X) :- affiliatedOrganizationOf(?X,?X1) .
+University(?X1) :- degreeFrom(?X,?X1) .
+degreeFrom(?X,?Y) :- doctoralDegreeFrom(?X,?Y) .
+Professor(?X) :- AssociateProfessor(?X) .
+Person(?X1) :- publicationAuthor(?X,?X1) .
+FacultyStaff(?X) :- Lecturer(?X) .
+takesCourse(?X,!Y),Course(!Y) :- Student(?X) .
+memberOf(?X,?Y) :- member(?Y,?X) .
+Person(?X1) :- hasAlumnus(?X,?X1) .
+Person(?X) :- undergraduateDegreeFrom(?X,?X1) .
+Professor(?X) :- tenured(?X,?X1) .
+Professor(?X) :- Dean(?X) .
+Work(?X) :- ExamRecord(?X) .
+takesCourse(?X,!Y),GraduateCourse(!Y) :- GraduateStudent(?X) .
+FacultyStaff(?X) :- PostDoc(?X) .
+Course(?X1) :- teacherOf(?X,?X1) .
+Organization(?X) :- University(?X) .
+Work(?X) :- Course(?X) .
+Organization(?X) :- College(?X) .
+Person(?X) :- Employee(?X) .
+Course(?X1) :- teachingAssistantOf(?X,?X1) .
+Work(?X) :- Degree(?X) .
+Person(?X1) :- affiliateOf(?X,?X1) .
+Student(?X) :- UndergraduateStudent(?X) .
+ExamRecord(?X1) :- hasExamRecord(?X,?X1) .
+headOf(?X,!Y),College(!Y) :- Dean(?X) .
+Employee(?X) :- AdministrativeStaff(?X) .
+hasFaculty(?X,?Y) :- isPartOfUniversity(?Y,?X) .
+Organization(?X) :- orgPublication(?X,?X1) .
+memberOf(?X,?Y) :- worksFor(?X,?Y) .
+Person(?X) :- Director(?X) .
+Person(?X) :- doctoralDegreeFrom(?X,?X1) .
+University(?X1) :- isPartOfUniversity(?X,?X1) .
+Professor(?X) :- VisitingProfessor(?X) .
+degreeFrom(?X,?Y) :- mastersDegreeFrom(?X,?Y) .
+Employee(?X) :- FacultyStaff(?X) .
+Faculty(?X) :- isPartOfUniversity(?X,?X1) .
+member(?X,?Y) :- memberOf(?Y,?X) .
+Person(?X1) :- member(?X,?X1) .
+worksFor(?X,?Y) :- headOf(?X,?Y) .
+Person(?X) :- advisor(?X,?X1) .
+FacultyStaff(?X) :- Professor(?X) .
+University(?X) :- hasFaculty(?X,?X1) .
+University(?X1) :- mastersDegreeFrom(?X,?X1) .
+Person(?X) :- GraduateStudent(?X) .
+University(?X1) :- doctoralDegreeFrom(?X,?X1) .
+degreeFrom(?X,?Y) :- hasAlumnus(?Y,?X) .
+Organization(?X) :- affiliateOf(?X,?X1) .
+Organization(?X) :- Faculty(?X) .
+Work(?X) :- Exam(?X) .
+Professor(?X) :- FullProfessor(?X) .
+degreeFrom(?X,?Y) :- undergraduateDegreeFrom(?X,?Y) .
+Exam(?X) :- BachelorExam(?X) .
+Professor(?X) :- ExDean(?X) .
+Q1(?X) :- worksFor(?X,?Y),affiliatedOrganizationOf(?Y,?X1) .
+Q2(?X,?Y) :- Person(?X),teacherOf(?X,?Y),Course(?Y) .
+Q3(?X,?Y,?X1) :- Student(?X),advisor(?X,?Y),takesCourse(?X,?X1),teacherOf(?Y,?X1),Course(?X1) .
+Q4(?X,?Y) :- Person(?X),worksFor(?X,?Y),Organization(?Y) .
+Q5(?X) :- Person(?X),worksFor(?X,?Y),University(?Y),hasAlumnus(?Y,?X) .

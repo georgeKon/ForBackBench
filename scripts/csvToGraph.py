@@ -15,6 +15,7 @@ def drawGraph(folder,query,subplots):
     plt.grid(axis='x')
     plt.grid(which='minor',axis='x',linestyle=':',linewidth=0.4)
     files = os.listdir(folder+'/'+query)
+    files.sort()
     load=[0.0]*len(files)
     preprocess=[0.0]*len(files)
     chase=[0.0]*len(files)
@@ -29,7 +30,7 @@ def drawGraph(folder,query,subplots):
         try:
             file = pd.read_csv(folder+'/'+query+'/'+fileName)
             if 'loading' in file:
-                if (fileName == 'rdfox.csv' or fileName == 'rdfoxLong.csv'):
+                if (fileName == 'RDFox.csv' or fileName == 'rdfoxLong.csv'):
                     try:
                         if(file['loading'].min() != -1):
                             load[index]=file['loading'].mean()
@@ -49,7 +50,7 @@ def drawGraph(folder,query,subplots):
                 except:
                     print("Errors in preprocess times in " + folder+'/'+query+'/'+fileName)
             if 'chase' in file:
-                if (fileName == 'rdfox.csv' or fileName == 'rdfoxLong.csv'):
+                if (fileName == 'RDFox.csv' or fileName == 'rdfoxLong.csv'):
                     try:
                         if(file['chase'].min() != -1):
                         	chase[index]=file['chase'].mean()
@@ -62,7 +63,7 @@ def drawGraph(folder,query,subplots):
                     except:
                         print("Errors in preprocess times in " + folder+'/'+query+'/'+fileName)       
             if 'execute' in file:
-                if (fileName == 'rdfox.csv' or fileName == 'rdfoxLong.csv'):
+                if (fileName == 'RDFox.csv' or fileName == 'rdfoxLong.csv'):
                     try:
                         if(file['execute'].min() != -1):
                             execute[index]=file['execute'].mean()
@@ -124,10 +125,13 @@ def drawGraph(folder,query,subplots):
     executes=plt.barh(size,execute,width,left=np.array(load)+np.array(preprocess)+np.array(chase)+np.array(rewrite)+np.array(convert)+np.array(gqr))
     plt.title(query)
     files = [f.replace('chasestepper.csv', 'BCA.csv') for f in files]
-    ticks = map(lambda x: x.split('.')[0].capitalize(),files)
+    ticks = map(lambda x: x.split('.')[0],files)
+    print(ticks)
     plt.yticks(size,ticks)
     if subplots % 10 == 1:
-    	  plt.legend((loads[0],rewrites[0],preprocesss[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Preprocess','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
+          plt.legend((loads[0],rewrites[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
+#           plt.legend((loads[0],rewrites[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Chase','Execute','LAVrewrite'], loc=7, bbox_to_anchor=(1.1, 0.5))
+#     	  plt.legend((loads[0],rewrites[0],preprocesss[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Preprocess','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
 #         plt.legend((loads[0],rewrites[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
 #         plt.legend((loads[0],rewrites[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
 
