@@ -261,7 +261,7 @@ SensoryAbility(?X) :- HearingAbility(?X) .
 SpeechDisability(?X) :- Stuttering(?X) .
 SightAbility(?X) :- See(?X) .
 Q1(?X) :- Device(?X),assistsWith(?X,?Y) .
-Q2(?X) :- Device(?X),assistsWith(?X,?Y),UpperLimbMobility(?Y) .
 Q3(?X) :- Device(?X),assistsWith(?X,?Y),Hear(?Y),affects(?X1,?Y),Autism(?X1) .
-Q4(?X) :- Device(?X),assistsWith(?X,?Y),PhysicalAbility(?Y) .
 Q5(?X) :- Device(?X),assistsWith(?X,?Y),PhysicalAbility(?Y),affects(?X1,?Y),Quadriplegia(?X1) .
+Q2(?X) :- Device(?X),assistsWith(?X,?Y),UpperLimbMobility(?Y) .
+Q4(?X) :- Device(?X),assistsWith(?X,?Y),PhysicalAbility(?Y) .

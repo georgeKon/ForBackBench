@@ -43,16 +43,17 @@ declare -A RULEWERK1
 declare -A CGQR
 
 # SS="SELECT DISTINCT A.\"c0\" FROM \"src_Device\" as A, \"src_PhysicalAbility\" as B, \"src_Quadriplegia\" as C, \"src_affects\" as D, \"src_assistsWith\" as E WHERE A.\"c0\" = E.\"c0\" AND C.\"c0\" = D.\"c0\" AND B.\"c0\" = D.\"c1\" AND D.\"c1\" = E.\"c1\";"
-# testQ5=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SS%?}) AS query;" | grep '-' -A1 | grep -v '-' )
+# testQ5=$(timeout $TIMEOUT psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SS%?}) AS query;" | grep '-' -A1 | grep -v '-' )
 # echo "$testQ5"
 echo "===== RAPID ====="
 echo "$DATA_SIZE"
 mkdir -p ../experiments/outputs/rapid/$BASE_DIR/rewritings
 mkdir -p ../experiments/outputs/rapid/$BASE_DIR/answer/$DATA_SIZE
+RapidTimeoutCounter=0
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   RAPID[$TOTAL,$i]=$START_TIME
-  rapidOutput=$($JRE -jar ../systems/rapid/Rapid2.jar DU SHORT ../$BASE_DIR/owl/ontology.owl ../$BASE_DIR/queries/iqaros/Q$QUERY.txt 2> /dev/null | grep -G '^Q' | grep 'io_' -v | grep -v 'AUX')
+  rapidOutput=$(timeout $TIMEOUT $JRE -jar ../systems/rapid/Rapid2.jar DU SHORT ../$BASE_DIR/owl/ontology.owl ../$BASE_DIR/queries/iqaros/Q$QUERY.txt 2> /dev/null | grep -G '^Q' | grep 'io_' -v | grep -v 'AUX')
   RAPID[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
   echo "$rapidOutput" > ../experiments/outputs/rapid/$BASE_DIR/rewritings/Q$QUERY-rewriting.txt
   #  echo "$rapidOutput"
@@ -60,7 +61,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   echo "Rewriting: $((${RAPID[$REWRITE,$i]}/1000000)) milliseconds, Size: ${RAPID[$SIZE,$i]}"
   # echo "$rapidOutput"
 ##########   --  Filter Rewriting  --
-  #filteredRW=$($JRE -jar ../utilityTools/FilterRwritings.jar -rw "../experiments/outputs/rapid/$BASE_DIR/rewritings/Q$QUERY-rewriting.txt" -out "../experiments/outputs/rapid/$BASE_DIR/rewritings/Q$QUERY-Filtered-Rewriting.txt" )
+  #filteredRW=$(timeout $TIMEOUT $JRE -jar ../utilityTools/FilterRwritings.jar -rw "../experiments/outputs/rapid/$BASE_DIR/rewritings/Q$QUERY-rewriting.txt" -out "../experiments/outputs/rapid/$BASE_DIR/rewritings/Q$QUERY-Filtered-Rewriting.txt" )
   #rapidCB=$(echo "$filteredRW" | sed 's/$/ ./g')
 ##########
 
@@ -78,29 +79,41 @@ for ((i=0;i<$NUM_TESTS;++i)); do
  
   #  printf 'SELECT COUNT(*) FROM (%s) AS query;\n' "${SQL%?}" >$BASE_DIR/queries/statements.sql
   #   START_TIME=$(date +%s%N)
-  #   RAPID[$TUPLES,$i]=$(psql -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE" -f ../$BASE_DIR/queries/statements.sql | grep '-' -A1 | grep -v '-' )
+  #   RAPID[$TUPLES,$i]=$(timeout $TIMEOUT psql -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE" -f ../$BASE_DIR/queries/statements.sql | grep '-' -A1 | grep -v '-' )
 
   START_TIME=$(date +%s%N)
-  RAPID[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-' )
+  RAPID[$TUPLES,$i]=$(timeout $TIMEOUT psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-' )
  
   echo ${RAPID[$TUPLES,$i]} > ../experiments/outputs/rapid/$BASE_DIR/answer/$DATA_SIZE/Q$QUERY.txt
   RAPID[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
+  	ExcuteingTime=$((${RAPID[$EXECUTE,$i]}/1000000))
+ 	echo "$ExcuteingTime"
+
+	if [ $ExcuteingTime -ge 1800000 ] 
+	then
+		let "RapidTimeoutCounter+=1"
+    	echo "command timeout $RapidTimeoutCounter"
+	fi
   RAPID[$TOTAL,$i]=$(($(date +%s%N) - ${RAPID[$TOTAL,$i]}))
   echo "Executing: $((${RAPID[$EXECUTE,$i]}/1000000)) milliseconds"
   echo "Time elapsed: $((${RAPID[$TOTAL,$i]}/1000000)) milliseconds"
   echo "# of tuples: ${RAPID[$TUPLES,$i]}"
-  OUTSQL=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT * FROM (${SQL%?}) AS query;" )
+  OUTSQL=$(timeout $TIMEOUT psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT * FROM (${SQL%?}) AS query;" )
   # 	echo "$OUTSQL"
-
+ if [ $RapidTimeoutCounter -eq 2 ]
+	then
+    	break
+	fi
 done
 # # 
 echo "===== IQAROS ====="
 mkdir -p ../experiments/outputs/iqaros/$BASE_DIR/rewritings
 mkdir -p ../experiments/outputs/iqaros/$BASE_DIR/answer/$DATA_SIZE
+IQAROSTimeoutCounter=0
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   IQAROS[$TOTAL,$i]=$START_TIME 
-  iqarosOutput=$($JRE -jar ../systems/iqaros/iqaros.jar ../$BASE_DIR/owl/ontology.owl ../$BASE_DIR/queries/iqaros/Q$QUERY.txt 2> /dev/null | grep -G '^Q' | grep 'io_' -v)
+  iqarosOutput=$(timeout $TIMEOUT $JRE -jar ../systems/iqaros/iqaros.jar ../$BASE_DIR/owl/ontology.owl ../$BASE_DIR/queries/iqaros/Q$QUERY.txt 2> /dev/null | grep -G '^Q' | grep 'io_' -v)
   IQAROS[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
   #   echo "$iqarosOutput"
   IQAROS[$SIZE,$i]=$(echo "$iqarosOutput" | grep -c "<-")
@@ -120,26 +133,37 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 
   # printf 'SELECT COUNT(*) FROM (%s) AS query;\n' "${SQL%?}" >$BASE_DIR/queries/statements.sql
   #   START_TIME=$(date +%s%N)
-  #   IQAROS[$TUPLES,$i]=$(psql -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE" -f ../$BASE_DIR/queries/statements.sql | grep '-' -A1 | grep -v '-' )
+  #   IQAROS[$TUPLES,$i]=$(timeout $TIMEOUT psql -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE" -f ../$BASE_DIR/queries/statements.sql | grep '-' -A1 | grep -v '-' )
   #   
   START_TIME=$(date +%s%N)
-  IQAROS[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+  IQAROS[$TUPLES,$i]=$(timeout $TIMEOUT psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
   echo ${IQAROS[$TUPLES,$i]} > ../experiments/outputs/iqaros/$BASE_DIR/answer/$DATA_SIZE/Q$QUERY.txt
   IQAROS[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
+    IqExcuteingTime=$((${IQAROS[$EXECUTE,$i]}/1000000))
+
+	if [ $IqExcuteingTime -ge 1800000 ] 
+	then
+		let "IQAROSTimeoutCounter+=1"
+    	echo "command timeout $IQAROSTimeoutCounter"
+	fi
   IQAROS[$TOTAL,$i]=$(($(date +%s%N) - ${IQAROS[$TOTAL,$i]}))
   echo "Executing: $((${IQAROS[$EXECUTE,$i]}/1000000)) milliseconds"
   echo "Time elapsed: $((${IQAROS[$TOTAL,$i]}/1000000)) milliseconds"
   echo "# of tuples: ${IQAROS[$TUPLES,$i]}"
- 
+ if [ $IQAROSTimeoutCounter -eq 2 ]
+	then
+    	break
+	fi
 done
 
 echo "===== GRAAL ====="
 mkdir -p ../experiments/outputs/graal/$BASE_DIR/rewritings
 mkdir -p ../experiments/outputs/graal/$BASE_DIR/answer/$DATA_SIZE
+GRAALTimeoutCounter=0
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   GRAAL[$TOTAL,$i]=$START_TIME
-  graalOutput=$($JRE -jar ../systems/graal/obda-benchmark-graal-1.0-SNAPSHOT-spring-boot.jar ../$BASE_DIR/owl/ontology.owl ../$BASE_DIR/queries/SPARQL/Q$QUERY.rq 2> /dev/null | grep -G '^?' | grep 'io_' -v)
+  graalOutput=$(timeout $TIMEOUT $JRE -jar ../systems/graal/obda-benchmark-graal-1.0-SNAPSHOT-spring-boot.jar ../$BASE_DIR/owl/ontology.owl ../$BASE_DIR/queries/SPARQL/Q$QUERY.rq 2> /dev/null | grep -G '^?' | grep 'io_' -v)
   GRAAL[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
   GRAAL[$SIZE,$i]=$(echo "$graalOutput" | grep -c ":-")
   echo "$graalOutput" > ../experiments/outputs/graal/$BASE_DIR/rewritings/Q$QUERY-rewriting.txt
@@ -158,24 +182,36 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 
   #  printf 'SELECT COUNT(*) FROM (%s) AS query;\n' "${SQL%?}" >$BASE_DIR/queries/statements.sql
   #   START_TIME=$(date +%s%N)
-  #   GRAAL[$TUPLES,$i]=$(psql -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE" -f ../$BASE_DIR/queries/statements.sql | grep '-' -A1 | grep -v '-' )
+  #   GRAAL[$TUPLES,$i]=$(timeout $TIMEOUT psql -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE" -f ../$BASE_DIR/queries/statements.sql | grep '-' -A1 | grep -v '-' )
   #   
   START_TIME=$(date +%s%N)
-  GRAAL[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+  GRAAL[$TUPLES,$i]=$(timeout $TIMEOUT psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
   echo ${GRAAL[$TUPLES,$i]} > ../experiments/outputs/graal/$BASE_DIR/answer/$DATA_SIZE/Q$QUERY.txt
  
   GRAAL[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
+   gExcuteingTime=$((${GRAAL[$EXECUTE,$i]}/1000000))
+
+	if [ $gExcuteingTime -ge 1800000 ] 
+	then
+		let "GRAALTimeoutCounter+=1"
+    	echo "command timeout $GRAALTimeoutCounter"
+	fi
   GRAAL[$TOTAL,$i]=$(($(date +%s%N) - ${GRAAL[$TOTAL,$i]}))
   echo "Executing: $((${GRAAL[$EXECUTE,$i]}/1000000)) milliseconds"
   echo "Time elapsed: $((${GRAAL[$TOTAL,$i]}/1000000)) milliseconds"
   echo "# of tuples: ${GRAAL[$TUPLES,$i]}"
-  OUTSQL=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT * FROM (${SQL%?}) AS query;" )
-  #   echo "$OUTSQL"	
+  OUTSQL=$(timeout $TIMEOUT psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT * FROM (${SQL%?}) AS query;" )
+  #   echo "$OUTSQL"
+   if [ $GRAALTimeoutCounter -eq 2 ]
+	then
+    	break
+	fi	
 done
 
 # #  
 echo "===== RDFox ====="
 mkdir -p ../experiments/outputs/rdfox/$BASE_DIR
+RDFOXTimeoutCounter=0
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   RDFOX[$TOTAL,$i]=$START_TIME
@@ -194,12 +230,18 @@ for ((i=0;i<$NUM_TESTS;++i)); do
     RDFOX[$CHASE,$i]="-1"
     RDFOX[$EXECUTE,$i]="-1"
     RDFOX[$TUPLES,$i]="-1"
+    let "RDFOXTimeoutCounter+=1"
+    echo "command timeout $RDFOXTimeoutCounter"
   fi
   echo "Chasing: $((${RDFOX[$CHASE,$i]})) milliseconds"
   echo "Loading: $((${RDFOX[$LOAD,$i]})) milliseconds"
   echo "Executing: $((${RDFOX[$EXECUTE,$i]})) milliseconds"
   echo "Time elapsed: $((${RDFOX[$TOTAL,$i]}/1000000)) milliseconds"
   echo "# of tuples: ${RDFOX[$TUPLES,$i]}"
+  if [ $RDFOXTimeoutCounter -eq 2 ]
+	then
+    	break
+	fi
 done
  
 echo "===== GQR ====="
@@ -211,12 +253,12 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   #  $JRE -jar ./../systems/chasestepper/chasestepper-1.01.jar ../$BASE_DIR/dependencies/oneToOne-st-tgds.txt ../$BASE_DIR/dependencies/oneToOne-t-tgds.txt ../$BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt > /dev/null
   #  mv ../$BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY-tgds.rule ../experiments/outputs/bcagqr/$BASE_DIR/chased-mapping
 
-  $JRE -jar ../utilityTools/RulewerkLongTGDs.jar -st-tgds ../$BASE_DIR/dependencies/oneToOne-st-tgds.txt -t-tgds ../$BASE_DIR/dependencies/oneToOne-t-tgds.txt -out ../$BASE_DIR/dependencies/longTGDs.rule
+  timeout $TIMEOUT $JRE -jar ../utilityTools/RulewerkLongTGDs.jar -st-tgds ../$BASE_DIR/dependencies/oneToOne-st-tgds.txt -t-tgds ../$BASE_DIR/dependencies/oneToOne-t-tgds.txt -out ../$BASE_DIR/dependencies/longTGDs.rule
  
   GQR[$LOAD,$i]=$(($(date +%s%N) - $START_TIME))
   START_TIME=$(date +%s%N)
  
-  OUT=$($JRE -jar ../systems/GQR/GQR.jar -st-tgds ../$BASE_DIR/dependencies/longTGDs.rule -q ../$BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt)
+  OUT=$(timeout $TIMEOUT $JRE -jar ../systems/GQR/GQR.jar -st-tgds ../$BASE_DIR/dependencies/longTGDs.rule -q ../$BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt)
    
 #     echo "$OUT"
   GQR[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
@@ -233,8 +275,8 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 	#GQR[$CONVERT,$i]=$((${GQR[$CONVERT,$i]}*1000000))
     printf 'SELECT COUNT(*) FROM (%s) AS query;\n' "${SQL%?}" >../$BASE_DIR/queries/statements.sql
     START_TIME=$(date +%s%N)
-    GQR[$TUPLES,$i]=$(psql -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE" -f ../$BASE_DIR/queries/statements.sql | grep '-' -A1 | grep -v '-' )
-#     GQR[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+    GQR[$TUPLES,$i]=$(timeout $TIMEOUT psql -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE" -f ../$BASE_DIR/queries/statements.sql | grep '-' -A1 | grep -v '-' )
+#     GQR[$TUPLES,$i]=$(timeout $TIMEOUT psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
 	GQR[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
     echo ${GQR[$TUPLES,$i]} > ../experiments/outputs/gqr/$BASE_DIR/answer/$DATA_SIZE/Q$QUERY.txt
     GQR[$TOTAL,$i]=$(($(date +%s%N) - ${GQR[$TOTAL,$i]}))
@@ -275,7 +317,7 @@ done
 #     echo "$SQL" > ../experiments/outputs/bcagqr/$BASE_DIR/rewritings/Q$QUERY-rewriting.txt
 #     BCAGQR[$SIZE,$i]=$(echo "UNION $SQL" |grep -o -i "UNION" | wc -l)
 #     START_TIME=$(date +%s%N)
-#     BCAGQR[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+#     BCAGQR[$TUPLES,$i]=$(timeout $TIMEOUT psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
 #     echo ${BCAGQR[$TUPLES,$i]} > ../experiments/outputs/bcagqr/$BASE_DIR/answer/$DATA_SIZE/Q$QUERY.txt
 #     BCAGQR[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
 #     BCAGQR[$TOTAL,$i]=$(($(date +%s%N) - ${BCAGQR[$TOTAL,$i]}))
@@ -297,6 +339,7 @@ done
 
 echo "===== ONTOP ====="
 mkdir -p ../experiments/outputs/ontop/$BASE_DIR/log/$DATA_SIZE
+ONTOPTimeoutCounter=0
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   ONTOP[$TOTAL,$i]=$START_TIME
@@ -354,6 +397,8 @@ for ((i=0;i<$NUM_TESTS;++i)); do
     ONTOP[$CONVERT,$i]="-1"
     ONTOP[$EXECUTE,$i]="-1"
     ONTOP[$TUPLES,$i]="-1"
+     let "ONTOPTimeoutCounter+=1"
+    echo "command timeout $ONTOPTimeoutCounter"
   fi
   
   echo "Loading: $((${ONTOP[$LOAD,$i]}/1000000)) milliseconds"
@@ -361,6 +406,10 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   echo "Executing: $((${ONTOP[$EXECUTE,$i]}/1000000)) milliseconds"
   echo "Time elapsed: $((${ONTOP[$TOTAL,$i]}/1000000)) milliseconds"
   echo "# of tuples: ${ONTOP[$TUPLES,$i]}"
+   if [ $ONTOPTimeoutCounter -eq 2 ]
+	then
+    	break
+	fi
 done
 
 
@@ -372,7 +421,7 @@ done
 #   START_TIME=$(date +%s%N)
 #   BCASTC[$TOTAL,$i]=$START_TIME 
 #   
-#   $JRE -jar ../utilityTools/RulewerkLongTGDs.jar -st-tgds ../$BASE_DIR/dependencies/oneToOne-st-tgds.txt -t-tgds ../$BASE_DIR/dependencies/oneToOne-t-tgds.txt -out ../$BASE_DIR/dependencies/longTGDs.rule
+#   timeout $TIMEOUT $JRE -jar ../utilityTools/RulewerkLongTGDs.jar -st-tgds ../$BASE_DIR/dependencies/oneToOne-st-tgds.txt -t-tgds ../$BASE_DIR/dependencies/oneToOne-t-tgds.txt -out ../$BASE_DIR/dependencies/longTGDs.rule
 #   
 # #   BCASTC[$PREPROCESS,$i]=$(($(date +%s%N) - $START_TIME))
 #   
@@ -398,10 +447,11 @@ done
 echo "===== ONTOP RW ====="
 mkdir -p ../experiments/outputs/ontoprw/$BASE_DIR/rewritings
 mkdir -p ../experiments/outputs/ontoprw/$BASE_DIR/answer/$DATA_SIZE
+ontopRTimeoutCounter=0
 for ((i=0;i<$NUM_TESTS;++i)); do
  START_TIME=$(date +%s%N | sed 's/^0*//')
  ONTOPRW[$TOTAL,$i]=$START_TIME
- OUTPUT=$($JRE -jar ../systems/tw-rewriting/tw-rewriting.jar ../$BASE_DIR/owl/ontology.owl ../$BASE_DIR/queries/SPARQL/Q$QUERY.rq | sed '/FINAL REWRITING/,$!d; /REWRITING OVER/,$d' | grep 'io_' -v)
+ OUTPUT=$(timeout $TIMEOUT $JRE -jar ../systems/tw-rewriting/tw-rewriting.jar ../$BASE_DIR/owl/ontology.owl ../$BASE_DIR/queries/SPARQL/Q$QUERY.rq | sed '/FINAL REWRITING/,$!d; /REWRITING OVER/,$d' | grep 'io_' -v)
  ONTOPRW[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME)) 
  echo "$OUTPUT" > ../experiments/outputs/ontoprw/$BASE_DIR/rewritings/Q$QUERY-rewriting.txt
  #  echo "output: $OUTPUT"
@@ -424,19 +474,29 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 
   #  printf 'SELECT COUNT(*) FROM (%s) AS query;\n' "${SQL%?}" >$BASE_DIR/queries/statements.sql
   #   START_TIME=$(date +%s%N)
-  #   ONTOPRW[$TUPLES,$i]=$(psql -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE" -f ../$BASE_DIR/queries/statements.sql | grep '-' -A1 | grep -v '-' )
+  #   ONTOPRW[$TUPLES,$i]=$(timeout $TIMEOUT psql -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE" -f ../$BASE_DIR/queries/statements.sql | grep '-' -A1 | grep -v '-' )
 
   START_TIME=$(date +%s%N)
-  ONTOPRW[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+  ONTOPRW[$TUPLES,$i]=$(timeout $TIMEOUT psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
   echo ${ONTOPRW[$TUPLES,$i]} > ../experiments/outputs/ontoprw/$BASE_DIR/answer/$DATA_SIZE/Q$QUERY.txt
   ONTOPRW[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
+   ontopRExcuteingTime=$((${ONTOPRW[$EXECUTE,$i]}/1000000))
+
+	if [ $ontopRExcuteingTime -ge 1800000 ] 
+	then
+		let "ontopRTimeoutCounter+=1"
+    	echo "command timeout $ontopRTimeoutCounter"
+	fi
   ONTOPRW[$TOTAL,$i]=$(($(date +%s%N) - ${ONTOPRW[$TOTAL,$i]}))
   echo "Executing: $((${ONTOPRW[$EXECUTE,$i]}/1000000)) milliseconds"
   echo "Time elapsed: $((${ONTOPRW[$TOTAL,$i]}/1000000)) milliseconds"
   echo "# of tuples: ${ONTOPRW[$TUPLES,$i]}"
-  OUTSQL=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT * FROM (${SQL%?}) AS query;" )
+  OUTSQL=$(timeout $TIMEOUT psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT * FROM (${SQL%?}) AS query;" )
   #   echo "$OUTSQL"
-
+  if [ $ontopRTimeoutCounter -eq 2 ]
+	then
+    	break
+	fi
 done
 
 
@@ -452,7 +512,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   #   mv ../$BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY-tgds.rule ../experiments/outputs/bcagqr/$BASE_DIR/chased-mapping
   #   BCAGQR[$PREPROCESS,$i]=$(($(date +%s%N) - $START_TIME))
   START_TIME=$(date +%s%N)
-  OUT=$($JRE -jar ../systems/ChaseGQR/ChaseGQR.jar -t ../$BASE_DIR/dependencies/ChaseGQR/cgqr-t-tgds.txt -v ../$BASE_DIR/dependencies/oneToOne-st-tgds.txt -q ../$BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt -d ../$BASE_DIR/dependencies/ChaseGQR/db.properties)
+  OUT=$(timeout $TIMEOUT $JRE -jar ../systems/ChaseGQR/ChaseGQR.jar -t ../$BASE_DIR/dependencies/ChaseGQR/cgqr-t-tgds.txt -v ../$BASE_DIR/dependencies/oneToOne-st-tgds.txt -q ../$BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt -d ../$BASE_DIR/dependencies/ChaseGQR/db.properties)
 #   CGQR[$GQR,$i]=$(($(date +%s%N) - $START_TIME))
   if [ $? -eq 0 ]; then
   
@@ -532,6 +592,7 @@ else
 fi
 
 # start testing
+RULEWERKTimeoutCounter=0
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   RULEWERK[$TOTAL,$i]=$START_TIME
@@ -543,6 +604,8 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   #   echo "$rulewerkOutput1"
   #   echo "========== END OLD ============" 
   rulewerkOutput=$(timeout $TIMEOUT java -jar ../systems/rulewerk/RulewerkDebug.jar materialize --rule-file=../$BASE_DIR/rulewerkfiles/oneToOne/$DATA_SIZE/rule.rls --query=$q )
+#      rulewerkOutput=$(timeout $TIMEOUT java -jar ../systems/rulewerk/RulewerkDebug.jar materialize --rule-file=../$BASE_DIR/rulewerkfiles/oneToOne/$DATA_SIZE/rule.rls --chase-algorithm=SKOLEM_CHASE --query=$q )
+
   echo "$rulewerkOutput"
   if [ $? -eq 0 ]; then
     RULEWERK[$TOTAL,$i]=$(($(date +%s%N) - $START_TIME))
@@ -571,6 +634,8 @@ for ((i=0;i<$NUM_TESTS;++i)); do
     RULEWERK[$CHASE,$i]="-1"
     RULEWERK[$EXECUTE,$i]="-1"
     RULEWERK[$TUPLES,$i]="-1"
+    let "RULEWERKTimeoutCounter+=1"
+    echo "command timeout $RULEWERKTimeoutCounter"
   fi
   
   echo "Chasing: $((${RULEWERK[$CHASE,$i]}/1000000)) milliseconds"
@@ -579,6 +644,10 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   echo "Time elapsed: $((${RULEWERK[$TOTAL,$i]}/1000000)) milliseconds"
   echo "# of tuples: ${RULEWERK[$TUPLES,$i]}" 
   echo "QUery is : $QUERY"
+   if [ $RULEWERKTimeoutCounter -eq 2 ]
+	then
+    	break
+	fi
 done
 
 
@@ -604,11 +673,11 @@ echo "$queryString"
  
  START_TIME=$(date +%s%N)
 # ===== Generating long st-TGDS 
-  $JRE -jar ../utilityTools/RulewerkLongTGDs.jar -st-tgds ../$BASE_DIR/dependencies/oneToOne-st-tgds.txt -t-tgds ../$BASE_DIR/dependencies/oneToOne-t-tgds.txt -out ../$BASE_DIR/dependencies/longTGDs.rule
+  timeout $TIMEOUT $JRE -jar ../utilityTools/RulewerkLongTGDs.jar -st-tgds ../$BASE_DIR/dependencies/oneToOne-st-tgds.txt -t-tgds ../$BASE_DIR/dependencies/oneToOne-t-tgds.txt -out ../$BASE_DIR/dependencies/longTGDs.rule
 CREATETGDSTIME=$(($(date +%s%N) - $START_TIME))
 # ===== converting the long st-TGDS  to RLS
 touch ../$BASE_DIR/dependencies/temp-t-tgds.txt
-  $JRE -jar ../utilityTools/TGDsToRlsConverter.jar -st-tgds "../$BASE_DIR/dependencies/longTGDs.rule" -t-tgds "../$BASE_DIR/dependencies/temp-t-tgds.txt" -out "../$BASE_DIR/rulewerkfiles/oneToOne/$DATA_SIZE/longTGD" -data "../$BASE_DIR/data/oneToOne/$DATA_SIZE"
+  timeout $TIMEOUT $JRE -jar ../utilityTools/TGDsToRlsConverter.jar -st-tgds "../$BASE_DIR/dependencies/longTGDs.rule" -t-tgds "../$BASE_DIR/dependencies/temp-t-tgds.txt" -out "../$BASE_DIR/rulewerkfiles/oneToOne/$DATA_SIZE/longTGD" -data "../$BASE_DIR/data/oneToOne/$DATA_SIZE"
 rm ../$BASE_DIR/dependencies/temp-t-tgds.txt
 
 
@@ -623,6 +692,7 @@ else
 fi
 
 # start testing
+RULEWERK1TimeoutCounter=0
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   RULEWERK1[$TOTAL,$i]=$START_TIME
@@ -663,14 +733,20 @@ for ((i=0;i<$NUM_TESTS;++i)); do
     RULEWERK1[$EXECUTE,$i]="-1"
     RULEWERK1[$TUPLES,$i]="-1"
 #     RULEWERK1[$PREPROCESS,$i]="-1"
+ 	let "RULEWERK1TimeoutCounter+=1"
+    echo "command timeout $RULEWERK1TimeoutCounter"
   fi
 #   echo "Pre-process: $((${RULEWERK1[$PREPROCESS,$i]}/1000000)) milliseconds"
   echo "Chasing: $((${RULEWERK1[$CHASE,$i]}/1000000)) milliseconds"
   echo "Loading: $((${RULEWERK1[$LOAD,$i]}/1000000)) milliseconds"
   echo "Executing: $((${RULEWERK1[$EXECUTE,$i]}/1000000)) milliseconds"
-  echo "Time elapsed: $((${RULEWERK1[$TOTAL,$i]}/1000000)) milliseconds"
+  echo "Time elapsed: $((${RULEWERK1[$TOTAL,$i]})) milliseconds"
   echo "# of tuples: ${RULEWERK1[$TUPLES,$i]}" 
   echo "QUery is : $QUERY"
+   if [ $RULEWERK1TimeoutCounter -eq 2 ]
+	then
+    	break
+	fi
 done
 
 

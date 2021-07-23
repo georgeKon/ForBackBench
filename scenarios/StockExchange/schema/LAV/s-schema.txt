@@ -1,12 +1,11 @@
 src_Acquisition{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c0 : STRING
 }
 
 src_Transaction{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_Address{
@@ -16,7 +15,9 @@ src_Address{
 
 src_Thing{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
 }
 
 src_inverseofhasAddress{
@@ -27,8 +28,7 @@ src_inverseofhasAddress{
 
 src_Company{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 
 src_LegalPerson{
@@ -53,7 +53,8 @@ src_Investor{
 
 src_Person{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_Offer{
@@ -74,26 +75,27 @@ src_PhysicalPerson{
 
 src_Stock{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
-}
-
-src_FinantialInstrument{
-	c0 : STRING,
 	c1 : STRING
 }
 
-src_isListedIn{
+src_FinantialInstrument{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING
 }
 
-src_belongsToCompany{
+src_isListedIn{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING
+}
+
+src_belongsToCompany{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
 }
 
 src_StockExchangeMember{
@@ -103,16 +105,18 @@ src_StockExchangeMember{
 
 src_tradesOnBehalfOf{
 	c0 : STRING,
+	c1 : STRING
+}
+
+src_StockTrader{
+	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING
 }
 
-src_StockTrader{
-	c0 : STRING
-}
-
 src_Trader{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_isExecutedFor{
@@ -123,9 +127,7 @@ src_isExecutedFor{
 
 src_isExecutedBy{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
+	c1 : STRING
 }
 
 src_involvesInstrument{
@@ -137,7 +139,8 @@ src_involvesInstrument{
 src_hasStock{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING
+	c2 : STRING,
+	c3 : STRING
 }
 
 src_StockExchangeList{
@@ -147,14 +150,12 @@ src_StockExchangeList{
 
 src_listsStock{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 
 src_isTradedIn{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 
 src_usesBroker{

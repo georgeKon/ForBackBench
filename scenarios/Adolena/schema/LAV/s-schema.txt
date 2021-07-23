@@ -13,9 +13,7 @@ src_Stuttering{
 }
 
 src_SpeechDisability{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c0 : STRING
 }
 
 src_LowerLimbMobility{
@@ -23,8 +21,7 @@ src_LowerLimbMobility{
 }
 
 src_LimbMobility{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_FaceToFaceCommunicationDevice{
@@ -54,8 +51,7 @@ src_WritingDevice{
 }
 
 src_Multiple_sclerosis{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_PhysicalDisability{
@@ -64,7 +60,9 @@ src_PhysicalDisability{
 }
 
 src_Achondroplasia{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_BraillePillOrganiser{
@@ -88,13 +86,13 @@ src_ListenDevice{
 }
 
 src_SpeechDevice{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_MentalDisability{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 
 src_Disability{
@@ -114,7 +112,8 @@ src_Motorised_Wheelchair{
 
 src_Hear{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_HearingAbility{
@@ -132,8 +131,7 @@ src_Wheelchair{
 }
 
 src_MobilityDevice{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Paraplegia{
@@ -143,8 +141,7 @@ src_Paraplegia{
 
 src_affects{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 
 src_See{
@@ -176,20 +173,16 @@ src_UpperLimbMobility{
 }
 
 src_SensoryAbility{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c0 : STRING
 }
 
 src_Ability{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_LowVision{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 
 src_VisualDisability{
@@ -203,17 +196,18 @@ src_Talking_Thermometer{
 }
 
 src_TalkingReading{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_ReadingDevice{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_requiresAbility{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_Epilepsy{
@@ -227,14 +221,12 @@ src_IntellectualDisability{
 }
 
 src_Autism{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Amputation{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 
 src_Device{
@@ -244,11 +236,13 @@ src_Device{
 
 src_Manual_Wheelchair{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_BrailleWatch{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Foldable_Wheelchair{
@@ -262,13 +256,11 @@ src_Osteogensis_Imperfecta{
 
 src_Hemiplegia{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 
 src_Quadriplegia{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Guillaume_Barre{
@@ -294,7 +286,8 @@ src_Spina_Bifida{
 
 src_TactileAbility{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_Thing{
@@ -309,36 +302,35 @@ src_isAssistedBy{
 
 src_isAffectedBy{
 	c0 : STRING,
-	c1 : STRING
-}
-
-src_LightweightFoldable_Wheelchair{
-	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING
 }
 
+src_LightweightFoldable_Wheelchair{
+	c0 : STRING,
+	c1 : STRING
+}
+
 src_Lightweight_Wheelchair{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Blind{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Reach{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Deaf{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_HearingDisability{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Deafened{
@@ -347,8 +339,7 @@ src_Deafened{
 }
 
 src_SymbolBoard{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Dystonia{
@@ -358,31 +349,31 @@ src_Dystonia{
 
 src_FaceToFaceCommunicationSoftware{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 
 src_Kyphosis{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Hard_of_hearing{
-	c0 : STRING
-}
-
-src_Cerebral_palsy{
 	c0 : STRING,
 	c1 : STRING
 }
 
-src_Poliomyelitis{
+src_Cerebral_palsy{
 	c0 : STRING
+}
+
+src_Poliomyelitis{
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Little_or_No_Speech{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_Scoliosis{

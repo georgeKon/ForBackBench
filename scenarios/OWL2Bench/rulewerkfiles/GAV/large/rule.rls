@@ -1,454 +1,750 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@source srcMediaArtsAndSciences[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_MediaArtsAndSciences.csv") .
+@source srcStudentEvaluationCommittee[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_StudentEvaluationCommittee.csv") .
+@source srcorgPublication[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_orgPublication.csv") .
 @source srchasPhDProgram[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasPhDProgram.csv") .
 @source srchasPostDoc[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasPostDoc.csv") .
+@source srchasTelephone[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasTelephone.csv") .
+@source srcSupportingStaff[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_SupportingStaff.csv") .
 @source srcisTaughtBy[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isTaughtBy.csv") .
+@source srcReligions[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Religions.csv") .
+@source srchasLecturer[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasLecturer.csv") .
 @source srchasCollaborationWith[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasCollaborationWith.csv") .
+@source srchasDean[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasDean.csv") .
+@source srcBadminton[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Badminton.csv") .
+@source srcPhilosophy[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Philosophy.csv") .
 @source srcBasketBallLover[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_BasketBallLover.csv") .
 @source srcAeronauticalEngineering[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_AeronauticalEngineering.csv") .
+@source srcOrganization[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Organization.csv") .
+@source srcisSubOrganizationOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isSubOrganizationOf.csv") .
+@source srcAnthropology[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Anthropology.csv") .
+@source srchasMasterDegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasMasterDegreeFrom.csv") .
+@source srchasWork[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasWork.csv") .
 @source srchasCollege[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasCollege.csv") .
-@source srcEnglish[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_English.csv") .
+@source srcWork[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Work.csv") .
 @source srcComputerScience[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ComputerScience.csv") .
-@source srcElectiveCourse[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ElectiveCourse.csv") .
-@source srcSalesManagement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_SalesManagement.csv") .
-@source srcevaluatedBy[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_evaluatedBy.csv") .
+@source srcisAssistantProfessorOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isAssistantProfessorOf.csv") .
+@source srcEconomics[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Economics.csv") .
+@source srcChemicalEngineering[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ChemicalEngineering.csv") .
 @source srcTechnicalReport[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_TechnicalReport.csv") .
 @source srcElectricalEngineering[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ElectricalEngineering.csv") .
-@source srcDepartment[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Department.csv") .
-@source srcPhDStudent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_PhDStudent.csv") .
 @source srcEvaluationCommittee[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_EvaluationCommittee.csv") .
-@source srclikes[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_likes.csv") .
-@source srctenured[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_tenured.csv") .
+@source srcOtherStaff[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_OtherStaff.csv") .
+@source srcArchitecture[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Architecture.csv") .
+@source srcPetroleumlEngineering[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_PetroleumlEngineering.csv") .
+@source srchasProgram[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasProgram.csv") .
+@source srcCollegeDiscipline[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_CollegeDiscipline.csv") .
+@source srcNonScience[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_NonScience.csv") .
+@source srcGeosciences[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Geosciences.csv") .
 @source srcLinguistics[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Linguistics.csv") .
-@source srcStudent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Student.csv") .
-@source srcProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Professor.csv") .
 @source srchasAssociateProfessor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasAssociateProfessor.csv") .
 @source srcpublicationResearch[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_publicationResearch.csv") .
 @source srcisOtherStaffOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isOtherStaffOf.csv") .
-@source srchasDegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasDegreeFrom.csv") .
+@source srcisAdvisedBy[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isAdvisedBy.csv") .
+@source srcPGStudent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_PGStudent.csv") .
 @source srchasEmployee[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasEmployee.csv") .
+@source srcDean[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Dean.csv") .
+@source srchasSubOrganization[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasSubOrganization.csv") .
 @source srcisAffiliatedOrganizationOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isAffiliatedOrganizationOf.csv") .
-@source srcReading[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Reading.csv") .
-@source srcBasketBall[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_BasketBall.csv") .
+@source srchasAge[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasAge.csv") .
+@source srcSupplyChainManagement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_SupplyChainManagement.csv") .
+@source srcDesignManagement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_DesignManagement.csv") .
+@source srcUniversity[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_University.csv") .
+@source srcResearchProject[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ResearchProject.csv") .
 @source srcSwimming[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Swimming.csv") .
-@source srchasUndergraduateDegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasUndergraduateDegreeFrom.csv") .
+@source srcHumanitiesAndSocial[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_HumanitiesAndSocial.csv") .
 @source srcisResearchGroupOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isResearchGroupOf.csv") .
+@source srcStatistics[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Statistics.csv") .
 @source srcProgram[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Program.csv") .
 @source srcManual[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Manual.csv") .
+@source srcAssociateProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_AssociateProfessor.csv") .
+@source srcTeachingCourse[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_TeachingCourse.csv") .
+@source srchasCommitteeMembers[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasCommitteeMembers.csv") .
+@source srchasFirstName[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasFirstName.csv") .
+@source srcSpecification[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Specification.csv") .
+@source srcMarketingManagement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_MarketingManagement.csv") .
 @source srcUGStudent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_UGStudent.csv") .
-@source srcHistory[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_History.csv") .
-@source srcSportsLover[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_SportsLover.csv") .
-@source srcisStudentOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isStudentOf.csv") .
+@source srcInterest[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Interest.csv") .
 @source srcMusicsClass[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_MusicsClass.csv") .
-@source srchasResearchProject[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasResearchProject.csv") .
+@source srcisStudentOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isStudentOf.csv") .
+@source srcIndustryEngineering[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_IndustryEngineering.csv") .
+@source srchasStudent[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasStudent.csv") .
 @source srchasWomenCollege[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasWomenCollege.csv") .
 @source srcGame[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Game.csv") .
 @source srchasDepartment[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasDepartment.csv") .
+@source srcAsianArts[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_AsianArts.csv") .
 @source srcSportsFan[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_SportsFan.csv") .
 @source srcLecturer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Lecturer.csv") .
 @source srcisWomenCollegeOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isWomenCollegeOf.csv") .
 @source srcisMemberOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isMemberOf.csv") .
-@source srcUGProgram[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_UGProgram.csv") .
-@source srcEmployee[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Employee.csv") .
+@source srchasPGProgram[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasPGProgram.csv") .
 @source srcPostDoc[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_PostDoc.csv") .
+@source srcEmployee[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Employee.csv") .
+@source srcProjectManagement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ProjectManagement.csv") .
 @source srcWomanCollege[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_WomanCollege.csv") .
 @source srcArticle[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Article.csv") .
-@source srcMarineScience[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_MarineScience.csv") .
+@source srcisCollegeOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isCollegeOf.csv") .
 @source srcRiskManagement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_RiskManagement.csv") .
+@source srchasProfessor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasProfessor.csv") .
 @source srchasUGProgram[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasUGProgram.csv") .
+@source srchasAuthor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasAuthor.csv") .
 @source srcCourse[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Course.csv") .
 @source srctakesCourse[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_takesCourse.csv") .
-@source srchasStudentEvaluationCommittee[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasStudentEvaluationCommittee.csv") .
+@source srcFineArts[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_FineArts.csv") .
+@source srchasSupportingStaff[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasSupportingStaff.csv") .
 @source srcisPartOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isPartOf.csv") .
 @source srcFootBall[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_FootBall.csv") .
-@source srcUnofficialPublication[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_UnofficialPublication.csv") .
 @source srcChemistry[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Chemistry.csv") .
+@source srchasEmployeeEvaluationCommittee[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasEmployeeEvaluationCommittee.csv") .
+@source srcisVisitingProfessorOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isVisitingProfessorOf.csv") .
 @source srcResearchAssistant[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ResearchAssistant.csv") .
 @source srcenrollIn[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_enrollIn.csv") .
-@source srcSoftware[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Software.csv") .
+@source srcMedievalArts[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_MedievalArts.csv") .
 @source srcisSupportingStaffOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isSupportingStaffOf.csv") .
 @source srcEngineering[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Engineering.csv") .
-@source srcPGProgram[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_PGProgram.csv") .
+@source srcTravelling[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Travelling.csv") .
+@source srchasLastName[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasLastName.csv") .
+@source srcBiology[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Biology.csv") .
+@source srchasAdvisor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasAdvisor.csv") .
 @source srcisAssociateProfessorOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isAssociateProfessorOf.csv") .
-@source srcisClericalStaffOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isClericalStaffOf.csv") .
-@source srcofferCourse[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_offerCourse.csv") .
+@source srcConferencePaper[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ConferencePaper.csv") .
+@source srchasDoctoralDegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasDoctoralDegreeFrom.csv") .
+@source srchasTitle[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasTitle.csv") .
+@source srcResearchGroup[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ResearchGroup.csv") .
+@source srcAssistantProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_AssistantProfessor.csv") .
+@source srcDirector[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Director.csv") .
 @source srcPainting[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Painting.csv") .
-@source srchasAssistantProfessor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasAssistantProfessor.csv") .
-@source srchasEmailAddress[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasEmailAddress.csv") .
+@source srchasMajor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasMajor.csv") .
+@source srcThesisEvaluationCommittee[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ThesisEvaluationCommittee.csv") .
+@source srchasCollegeDiscipline[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasCollegeDiscipline.csv") .
 @source srcComputerEngineering[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ComputerEngineering.csv") .
+@source srchasEmailAddress[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasEmailAddress.csv") .
 @source srcLatinArts[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_LatinArts.csv") .
 @source srcHumanResourceManagement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_HumanResourceManagement.csv") .
+@source srcMusic[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Music.csv") .
 @source srcworksFor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_worksFor.csv") .
+@source srcPublicRelationsManagement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_PublicRelationsManagement.csv") .
+@source srcDrama[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Drama.csv") .
 @source srcisPostDocOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isPostDocOf.csv") .
+@source srcTennis[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Tennis.csv") .
+@source srcMechanicalEngineering[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_MechanicalEngineering.csv") .
 @source srcCivilEngineering[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_CivilEngineering.csv") .
 @source srchasResearchAssistant[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasResearchAssistant.csv") .
 @source srcMaterialScienceEngineering[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_MaterialScienceEngineering.csv") .
 @source srchasFullProfessor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasFullProfessor.csv") .
-@source srcBasketBallFan[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_BasketBallFan.csv") .
-@source srcMaterialsScience[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_MaterialsScience.csv") .
-@source srchasHead[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasHead.csv") .
-@source srcloves[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_loves.csv") .
-@source srcisHeadOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isHeadOf.csv") .
-@source srcMathematics[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Mathematics.csv") .
-@source srcMovie[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Movie.csv") .
-@source srchasPart[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasPart.csv") .
-@source srchasFaculty[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasFaculty.csv") .
-@source srchasResearchGroup[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasResearchGroup.csv") .
-@source srcScience[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Science.csv") .
-@source srcUGCourse[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_UGCourse.csv") .
-@source srchasSystemStaff[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasSystemStaff.csv") .
-@source srcEmployeeEvaluationCommittee[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_EmployeeEvaluationCommittee.csv") .
-@source srcisProfessorOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isProfessorOf.csv") .
-@source srcPeopleWithHobby[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_PeopleWithHobby.csv") .
-@source srcisDepartmentOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isDepartmentOf.csv") .
-@source srcScienceStudent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ScienceStudent.csv") .
-@source srcSports[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Sports.csv") .
-@source srcStudentEvaluationCommittee[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_StudentEvaluationCommittee.csv") .
-@source srcorgPublication[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_orgPublication.csv") .
-@source srchasTelephone[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasTelephone.csv") .
-@source srcVisitingProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_VisitingProfessor.csv") .
-@source srcModernArts[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ModernArts.csv") .
-@source srcSupportingStaff[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_SupportingStaff.csv") .
-@source srcisFacultyOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isFacultyOf.csv") .
-@source srcReligions[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Religions.csv") .
-@source srchasClericalStaff[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasClericalStaff.csv") .
-@source srchasLecturer[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasLecturer.csv") .
-@source srchasDean[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasDean.csv") .
-@source srcBadminton[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Badminton.csv") .
-@source srcPhilosophy[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Philosophy.csv") .
-@source srcOrganization[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Organization.csv") .
-@source srcisSubOrganizationOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isSubOrganizationOf.csv") .
-@source srchasWork[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasWork.csv") .
-@source srcAnthropology[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Anthropology.csv") .
-@source srchasMasterDegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasMasterDegreeFrom.csv") .
-@source srcWork[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Work.csv") .
-@source srcisAssistantProfessorOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isAssistantProfessorOf.csv") .
-@source srcEconomics[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Economics.csv") .
-@source srcChemicalEngineering[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ChemicalEngineering.csv") .
-@source srcCollege[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_College.csv") .
-@source srcAstronomy[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Astronomy.csv") .
-@source srcOtherStaff[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_OtherStaff.csv") .
-@source srcArchitecture[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Architecture.csv") .
-@source srchasProgram[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasProgram.csv") .
-@source srcPetroleumlEngineering[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_PetroleumlEngineering.csv") .
-@source srcCollegeDiscipline[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_CollegeDiscipline.csv") .
-@source srcTeachingAssistant[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_TeachingAssistant.csv") .
-@source srcNonScience[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_NonScience.csv") .
-@source srcGeosciences[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Geosciences.csv") .
-@source srcisTeachingAssistantOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isTeachingAssistantOf.csv") .
-@source srcisAdvisedBy[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isAdvisedBy.csv") .
-@source srcPGStudent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_PGStudent.csv") .
-@source srcDean[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Dean.csv") .
-@source srchasSubOrganization[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasSubOrganization.csv") .
-@source srcSupplyChainManagement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_SupplyChainManagement.csv") .
-@source srchasAge[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasAge.csv") .
-@source srcDesignManagement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_DesignManagement.csv") .
-@source srcResearchProject[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ResearchProject.csv") .
-@source srcUniversity[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_University.csv") .
-@source srchasVisitingProfessor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasVisitingProfessor.csv") .
-@source srcHumanitiesAndSocial[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_HumanitiesAndSocial.csv") .
-@source srcStatistics[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Statistics.csv") .
-@source srcAssociateProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_AssociateProfessor.csv") .
-@source srcTeachingCourse[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_TeachingCourse.csv") .
-@source srchasFirstName[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasFirstName.csv") .
-@source srcSpecification[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Specification.csv") .
-@source srchasCommitteeMembers[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasCommitteeMembers.csv") .
-@source srcMarketingManagement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_MarketingManagement.csv") .
-@source srcInterest[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Interest.csv") .
-@source srcIndustryEngineering[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_IndustryEngineering.csv") .
-@source srchasStudent[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasStudent.csv") .
-@source srcFinancialAndAccountingManagement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_FinancialAndAccountingManagement.csv") .
-@source srcCoEdCollege[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_CoEdCollege.csv") .
-@source srcAsianArts[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_AsianArts.csv") .
-@source srcClericalStaff[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ClericalStaff.csv") .
-@source srcJournalArticle[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_JournalArticle.csv") .
-@source srchasPGProgram[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasPGProgram.csv") .
-@source srcCricket[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Cricket.csv") .
-@source srchasAlumnus[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasAlumnus.csv") .
-@source srcPhysics[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Physics.csv") .
-@source srcProjectManagement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ProjectManagement.csv") .
-@source srcisCollegeOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isCollegeOf.csv") .
-@source srchasProfessor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasProfessor.csv") .
-@source srchasAuthor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasAuthor.csv") .
-@source srcFineArts[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_FineArts.csv") .
-@source srchasSupportingStaff[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasSupportingStaff.csv") .
-@source srchasMember[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasMember.csv") .
-@source srcisVisitingProfessorOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isVisitingProfessorOf.csv") .
-@source srchasEmployeeEvaluationCommittee[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasEmployeeEvaluationCommittee.csv") .
-@source srcMedievalArts[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_MedievalArts.csv") .
-@source srcTravelling[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Travelling.csv") .
-@source srcBook[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Book.csv") .
-@source srchasLastName[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasLastName.csv") .
-@source srcBiology[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Biology.csv") .
-@source srcChair[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Chair.csv") .
-@source srchasEvaluationCommittee[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasEvaluationCommittee.csv") .
-@source srcevaluates[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_evaluates.csv") .
-@source srcConferencePaper[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ConferencePaper.csv") .
-@source srchasDoctoralDegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasDoctoralDegreeFrom.csv") .
-@source srchasTitle[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasTitle.csv") .
-@source srcPublication[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Publication.csv") .
-@source srcResearchGroup[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ResearchGroup.csv") .
-@source srcAssistantProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_AssistantProfessor.csv") .
-@source srcDirector[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Director.csv") .
-@source srchasMajor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasMajor.csv") .
-@source srchasCollegeDiscipline[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasCollegeDiscipline.csv") .
-@source srcThesisEvaluationCommittee[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ThesisEvaluationCommittee.csv") .
-@source srcSystemStaff[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_SystemStaff.csv") .
-@source srcMusic[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Music.csv") .
-@source srcPublicRelationsManagement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_PublicRelationsManagement.csv") .
-@source srcisFullProfessorOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isFullProfessorOf.csv") .
-@source srcDrama[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Drama.csv") .
-@source srcModernLanguages[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ModernLanguages.csv") .
-@source srcTennis[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Tennis.csv") .
-@source srcMechanicalEngineering[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_MechanicalEngineering.csv") .
-@source srcisResearchAssistantOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isResearchAssistantOf.csv") .
-@source srcFullProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_FullProfessor.csv") .
-@source srchasThesisEvaluationCommittee[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasThesisEvaluationCommittee.csv") .
 @source srcOperationsManagement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_OperationsManagement.csv") .
 @source srcSchool[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_School.csv") .
 @source srcPhDProgram[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_PhDProgram.csv") .
+@source srcBasketBallFan[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_BasketBallFan.csv") .
+@source srcMaterialsScience[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_MaterialsScience.csv") .
+@source srchasHead[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasHead.csv") .
+@source srcisHeadOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isHeadOf.csv") .
+@source srcloves[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_loves.csv") .
+@source srcMathematics[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Mathematics.csv") .
 @source srcPsychology[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Psychology.csv") .
+@source srcMovie[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Movie.csv") .
 @source srcBiomedicalEngineering[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_BiomedicalEngineering.csv") .
 @source srcNonScienceStudent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_NonScienceStudent.csv") .
-@source srcFaculty[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Faculty.csv") .
-@source srcPerson[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Person.csv") .
+@source srchasFaculty[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasFaculty.csv") .
+@source srchasPart[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasPart.csv") .
+@source srchasResearchGroup[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasResearchGroup.csv") .
+@source srcUGCourse[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_UGCourse.csv") .
 @source srcenrollFor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_enrollFor.csv") .
-@source srcHumanities[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Humanities.csv") .
+@source srcEmployeeEvaluationCommittee[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_EmployeeEvaluationCommittee.csv") .
+@source srchasSystemStaff[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasSystemStaff.csv") .
 @source srcdislikes[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_dislikes.csv") .
 @source srcTheatreAndDance[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_TheatreAndDance.csv") .
-@source srcInstitute[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Institute.csv") .
 @source srcisCrazyAbout[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isCrazyAbout.csv") .
 @source srcManagement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Management.csv") .
-@source srcisSystemStaffOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isSystemStaffOf.csv") .
+@source srcisProfessorOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isProfessorOf.csv") .
+@source srcInstitute[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Institute.csv") .
 @source srchasOtherStaff[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_hasOtherStaff.csv") .
 @source srcisDeanOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isDeanOf.csv") .
+@source srcisDepartmentOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isDepartmentOf.csv") .
+@source srcPeopleWithHobby[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_PeopleWithHobby.csv") .
+@source srcSports[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_Sports.csv") .
 @source srcteachesCourse[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_teachesCourse.csv") .
+@source srcScienceStudent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_ScienceStudent.csv") .
 @source srcPerformingArts[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_PerformingArts.csv") .
 @source srcisLecturerOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/GAV/large/src_isLecturerOf.csv") .
-hasPGProgram(?X,?Y) :- srcMediaArtsAndSciences(?X),srcCoEdCollege(?X),srcisSupportingStaffOf(?X,?Y),srchasPGProgram(?X,?Y) .
-isOtherStaffOf(?X,?Y) :- srcUniversity(?X),srcAeronauticalEngineering(?X),srchasPart(?X,?Y),srcisOtherStaffOf(?X,?Y) .
-FullProfessor(?X) :- srcChair(?X),srchasAuthor(?X,?Y),srchasCollegeDiscipline(?X,?Y),srcisDeanOf(?X,?Y),srcIndustryEngineering(?X),srchasAdvisor(?X,?Y),srcFullProfessor(?X) .
-hasEvaluationCommittee(?X,?Y) :- srcThesisEvaluationCommittee(?X),srchasPGProgram(?X,?Y),srcevaluates(?X,?Y),srchasEvaluationCommittee(?X,?Y) .
-Employee(?X) :- srcStudentEvaluationCommittee(?X),srcSystemStaff(?X),srcElectiveCourse(?X),srchasLastName(?X,?Y),srcEmployee(?X) .
-ProjectManagement(?X) :- srcAstronomy(?X),srcisProfessorOf(?X,?Y),srcNonScienceStudent(?X),srcProjectManagement(?X) .
-PublicRelationsManagement(?X) :- srcWork(?X),srchasPostDoc(?X,?Y),srcSwimming(?X),srcEvaluationCommittee(?X),srcPerson(?X),srcScience(?X),srcPublicRelationsManagement(?X) .
-Chemistry(?X) :- srchasDegreeFrom(?X,?Y),srcStudent(?X),srcDirector(?X),srcInterest(?X),srcResearchAssistant(?X),srcSchool(?X),srcChemistry(?X) .
-Organization(?X) :- srcMaterialsScience(?X),srcTeachingCourse(?X),srcEconomics(?X),srcDirector(?X),srcevaluatedBy(?X,?Y),srcOrganization(?X) .
-UnofficialPublication(?X) :- srcofferCourse(?X,?Y),srcScience(?X),srchasVisitingProfessor(?X,?Y),srcUnofficialPublication(?X) .
-TeachingCourse(?X) :- srcenrollIn(?X,?Y),srcisTeachingAssistantOf(?X,?Y),srchasEvaluationCommittee(?X,?Y),srcTeachingCourse(?X) .
-hasClericalStaff(?X,?Y) :- srchasHead(?X,?Y),srchasAssistantProfessor(?X,?Y),srcNonScience(?X),srcAssistantProfessor(?X),srcBiomedicalEngineering(?X),srchasClericalStaff(?X,?Y) .
-hasLecturer(?X,?Y) :- srchasEvaluationCommittee(?X,?Y),srcElectricalEngineering(?X),srcUGStudent(?X),srchasUndergraduateDegreeFrom(?X,?Y),srcVisitingProfessor(?X),srchasLecturer(?X,?Y) .
-evaluatedBy(?X,?Y) :- srcevaluates(?X,?Y),srcUnofficialPublication(?X),srchasMember(?X,?Y),srchasClericalStaff(?X,?Y),srcevaluatedBy(?X,?Y) .
-Article(?X) :- srcUGCourse(?X),srcCollegeDiscipline(?X),srcAssistantProfessor(?X),srcisCrazyAbout(?X,?Y),srcPeopleWithHobby(?X),srcArticle(?X) .
-HumanResourceManagement(?X) :- srcWomanCollege(?X),srcGame(?X),srcMaterialScienceEngineering(?X),srcMusicsClass(?X),srcTennis(?X),srcDrama(?X),srcHumanResourceManagement(?X) .
-Course(?X) :- srcPublicRelationsManagement(?X),srcMechanicalEngineering(?X),srchasCollegeDiscipline(?X,?Y),srcCourse(?X) .
-isCollegeOf(?X,?Y) :- srcThesisEvaluationCommittee(?X),srcEngineering(?X),srcisAdvisedBy(?X,?Y),srcMedievalArts(?X),srcisCollegeOf(?X,?Y) .
-College(?X) :- srcDean(?X),srcMaterialsScience(?X),srcSystemStaff(?X),srcCollege(?X) .
-ModernLanguages(?X) :- srcisProfessorOf(?X,?Y),srcisWomenCollegeOf(?X,?Y),srcisResearchGroupOf(?X,?Y),srcModernLanguages(?X) .
-hasPostDoc(?X,?Y) :- srcPainting(?X),srcReligions(?X),srcSpecification(?X),srcMaterialScienceEngineering(?X),srchasPostDoc(?X,?Y) .
-Psychology(?X) :- srcPeopleWithHobby(?X),srchasVisitingProfessor(?X,?Y),srchasAssociateProfessor(?X,?Y),srcPsychology(?X) .
-ThesisEvaluationCommittee(?X) :- srchasEmailAddress(?X,?Y),srcPerformingArts(?X),srctenured(?X,?Y),srcStudent(?X),srcThesisEvaluationCommittee(?X) .
-UGProgram(?X) :- srcWork(?X),srcLinguistics(?X),srcevaluatedBy(?X,?Y),srcTheatreAndDance(?X),srchasProfessor(?X,?Y),srcUGProgram(?X) .
-Geosciences(?X) :- srcisResearchGroupOf(?X,?Y),srcFinancialAndAccountingManagement(?X),srcMusicsClass(?X),srcLatinArts(?X),srcGeosciences(?X) .
-teachesCourse(?X,?Y) :- srcBook(?X),srcModernLanguages(?X),srcNonScienceStudent(?X),srcMediaArtsAndSciences(?X),srcorgPublication(?X,?Y),srcReligions(?X),srcteachesCourse(?X,?Y) .
-isFullProfessorOf(?X,?Y) :- srcTheatreAndDance(?X),srchasThesisEvaluationCommittee(?X,?Y),srcFaculty(?X),srcAsianArts(?X),srchasUGProgram(?X,?Y),srcisFullProfessorOf(?X,?Y) .
-dislikes(?X,?Y) :- srcScienceStudent(?X),srcisFacultyOf(?X,?Y),srchasAssociateProfessor(?X,?Y),srcPsychology(?X),srcdislikes(?X,?Y) .
-IndustryEngineering(?X) :- srcisTaughtBy(?X,?Y),srcFootBall(?X),srchasWork(?X,?Y),srcLatinArts(?X),srcBook(?X),srcIndustryEngineering(?X) .
-Painting(?X) :- srcPerformingArts(?X),srcisSubOrganizationOf(?X,?Y),srcTravelling(?X),srchasAssociateProfessor(?X,?Y),srcPainting(?X) .
-hasDepartment(?X,?Y) :- srcAsianArts(?X),srcLecturer(?X),srcBasketBall(?X),srchasDepartment(?X,?Y) .
-hasStudent(?X,?Y) :- srcThesisEvaluationCommittee(?X),srchasMasterDegreeFrom(?X,?Y),srchasHead(?X,?Y),srchasStudent(?X,?Y) .
-Religions(?X) :- srcisTaughtBy(?X,?Y),srchasDegreeFrom(?X,?Y),srcisFacultyOf(?X,?Y),srchasEmailAddress(?X,?Y),srcOrganization(?X),srcVisitingProfessor(?X),srcReligions(?X) .
-isResearchAssistantOf(?X,?Y) :- srcisLecturerOf(?X,?Y),srcResearchProject(?X),srcStudent(?X),srcMaterialsScience(?X),srcPhDStudent(?X),srcSpecification(?X),srcisResearchAssistantOf(?X,?Y) .
-SalesManagement(?X) :- srcSportsFan(?X),srcPostDoc(?X),srcisDepartmentOf(?X,?Y),srcSalesManagement(?X) .
-hasFaculty(?X,?Y) :- srcAsianArts(?X),srcEmployeeEvaluationCommittee(?X),srcFullProfessor(?X),srchasAssistantProfessor(?X,?Y),srcSchool(?X),srchasFaculty(?X,?Y) .
-PeopleWithHobby(?X) :- srcFinancialAndAccountingManagement(?X),srcisLecturerOf(?X,?Y),srchasAssociateProfessor(?X,?Y),srcPeopleWithHobby(?X) .
-AssistantProfessor(?X) :- srcUGCourse(?X),srchasAlumnus(?X,?Y),srcScienceStudent(?X),srcofferCourse(?X,?Y),srcAssistantProfessor(?X) .
-isSystemStaffOf(?X,?Y) :- srchasResearchProject(?X,?Y),srchasSubOrganization(?X,?Y),srcGame(?X),srcGeosciences(?X),srcUGCourse(?X),srcDesignManagement(?X),srcisSystemStaffOf(?X,?Y) .
-FinancialAndAccountingManagement(?X) :- srchasCollege(?X,?Y),srcisDepartmentOf(?X,?Y),srcPGProgram(?X),srchasLecturer(?X,?Y),srcFinancialAndAccountingManagement(?X) .
-hasDean(?X,?Y) :- srcPsychology(?X),srchasMajor(?X,?Y),srcHistory(?X),srcCourse(?X),srcTravelling(?X),srcTechnicalReport(?X),srchasDean(?X,?Y) .
-ElectricalEngineering(?X) :- srcBasketBall(?X),srcisPartOf(?X,?Y),srcJournalArticle(?X),srchasClericalStaff(?X,?Y),srcTeachingCourse(?X),srcTeachingAssistant(?X),srcElectricalEngineering(?X) .
-hasEmployeeEvaluationCommittee(?X,?Y) :- srcTennis(?X),srcCollege(?X),srchasPostDoc(?X,?Y),srcloves(?X,?Y),srcUGCourse(?X),srchasSubOrganization(?X,?Y),srchasEmployeeEvaluationCommittee(?X,?Y) .
-isFacultyOf(?X,?Y) :- srcSchool(?X),srcWomanCollege(?X),srcTravelling(?X),srchasSubOrganization(?X,?Y),srcMusic(?X),srcisFacultyOf(?X,?Y) .
-hasAlumnus(?X,?Y) :- srcisFullProfessorOf(?X,?Y),srchasResearchProject(?X,?Y),srchasLecturer(?X,?Y),srchasAlumnus(?X,?Y) .
-hasWork(?X,?Y) :- srcReligions(?X),srcPhDStudent(?X),srcElectiveCourse(?X),srchasWork(?X,?Y) .
-ComputerScience(?X) :- srchasStudentEvaluationCommittee(?X,?Y),srcevaluates(?X,?Y),srcAssistantProfessor(?X),srchasTelephone(?X,?Y),srcManual(?X),srcProgram(?X),srcComputerScience(?X) .
-hasResearchGroup(?X,?Y) :- srcAssociateProfessor(?X),srcBasketBallFan(?X),srcElectiveCourse(?X),srcMovie(?X),srcPetroleumlEngineering(?X),srcisCrazyAbout(?X,?Y),srchasResearchGroup(?X,?Y) .
-isVisitingProfessorOf(?X,?Y) :- srcisDepartmentOf(?X,?Y),srchasDepartment(?X,?Y),srcPhilosophy(?X),srcisVisitingProfessorOf(?X,?Y) .
-Person(?X) :- srchasDoctoralDegreeFrom(?X,?Y),srcMechanicalEngineering(?X),srchasWork(?X,?Y),srclikes(?X,?Y),srcPerson(?X) .
-TheatreAndDance(?X) :- srcisPostDocOf(?X,?Y),srcBasketBallFan(?X),srcManagement(?X),srcDirector(?X),srchasCollaborationWith(?X,?Y),srcTheatreAndDance(?X) .
-SportsLover(?X) :- srcenrollFor(?X,?Y),srcComputerScience(?X),srcisAffiliatedOrganizationOf(?X,?Y),srcUniversity(?X),srcisTaughtBy(?X,?Y),srcLatinArts(?X),srcSportsLover(?X) .
-PerformingArts(?X) :- srchasDepartment(?X,?Y),srcMusic(?X),srcProjectManagement(?X),srcworksFor(?X,?Y),srcloves(?X,?Y),srcMathematics(?X),srcPerformingArts(?X) .
-Economics(?X) :- srcPerformingArts(?X),srcSpecification(?X),srcisDeanOf(?X,?Y),srcDirector(?X),srcFaculty(?X),srcEconomics(?X) .
-isTeachingAssistantOf(?X,?Y) :- srchasEvaluationCommittee(?X,?Y),srcCollege(?X),srchasResearchAssistant(?X,?Y),srcisTeachingAssistantOf(?X,?Y) .
-hasEmailAddress(?X,?Y) :- srcMaterialScienceEngineering(?X),srcResearchAssistant(?X),srcWomanCollege(?X),srcComputerEngineering(?X),srctenured(?X,?Y),srcSoftware(?X),srchasEmailAddress(?X,?Y) .
-Sports(?X) :- srcProjectManagement(?X),srcReading(?X),srchasTelephone(?X,?Y),srcBiomedicalEngineering(?X),srcSports(?X) .
-MaterialScienceEngineering(?X) :- srchasResearchAssistant(?X,?Y),srcisAffiliatedOrganizationOf(?X,?Y),srcComputerScience(?X),srcMaterialScienceEngineering(?X) .
-hasAuthor(?X,?Y) :- srcCricket(?X),srchasAge(?X,?Y),srcisAffiliatedOrganizationOf(?X,?Y),srcHumanities(?X),srchasAuthor(?X,?Y) .
-Anthropology(?X) :- srcisAdvisedBy(?X,?Y),srcDrama(?X),srchasMajor(?X,?Y),srcEnglish(?X),srcisTaughtBy(?X,?Y),srcAnthropology(?X) .
-hasStudentEvaluationCommittee(?X,?Y) :- srchasAdvisor(?X,?Y),srcisPartOf(?X,?Y),srcisSubOrganizationOf(?X,?Y),srchasResearchGroup(?X,?Y),srchasStudentEvaluationCommittee(?X,?Y) .
-Architecture(?X) :- srchasPhDProgram(?X,?Y),srcModernLanguages(?X),srcAssistantProfessor(?X),srcisVisitingProfessorOf(?X,?Y),srchasDean(?X,?Y),srcArchitecture(?X) .
-hasVisitingProfessor(?X,?Y) :- srcSupportingStaff(?X),srchasResearchAssistant(?X,?Y),srchasThesisEvaluationCommittee(?X,?Y),srchasEmailAddress(?X,?Y),srcNonScience(?X),srcCricket(?X),srchasVisitingProfessor(?X,?Y) .
-evaluates(?X,?Y) :- srcTeachingAssistant(?X),srcFullProfessor(?X),srcProgram(?X),srcConferencePaper(?X),srcisAssociateProfessorOf(?X,?Y),srclikes(?X,?Y),srcevaluates(?X,?Y) .
-hasDoctoralDegreeFrom(?X,?Y) :- srcBook(?X),srchasAlumnus(?X,?Y),srcFullProfessor(?X),srchasDoctoralDegreeFrom(?X,?Y) .
-Manual(?X) :- srchasResearchGroup(?X,?Y),srcEvaluationCommittee(?X),srcisDepartmentOf(?X,?Y),srcReligions(?X),srcDesignManagement(?X),srcManual(?X) .
-University(?X) :- srcScienceStudent(?X),srchasEmployee(?X,?Y),srchasStudentEvaluationCommittee(?X,?Y),srcUniversity(?X) .
-hasProgram(?X,?Y) :- srcisLecturerOf(?X,?Y),srchasClericalStaff(?X,?Y),srchasEmployee(?X,?Y),srcenrollFor(?X,?Y),srcPeopleWithHobby(?X),srcSwimming(?X),srchasProgram(?X,?Y) .
-isAffiliatedOrganizationOf(?X,?Y) :- srcCricket(?X),srcMusic(?X),srchasThesisEvaluationCommittee(?X,?Y),srchasDean(?X,?Y),srcGame(?X),srchasWomenCollege(?X,?Y),srcisAffiliatedOrganizationOf(?X,?Y) .
-PetroleumlEngineering(?X) :- srchasUGProgram(?X,?Y),srcisCollegeOf(?X,?Y),srcisDepartmentOf(?X,?Y),srcGame(?X),srchasPostDoc(?X,?Y),srcEmployeeEvaluationCommittee(?X),srcPetroleumlEngineering(?X) .
-hasCollegeDiscipline(?X,?Y) :- srcAnthropology(?X),srcReligions(?X),srcEmployee(?X),srcMediaArtsAndSciences(?X),srchasCollegeDiscipline(?X,?Y) .
-FineArts(?X) :- srcPhysics(?X),srcReligions(?X),srcDirector(?X),srcFineArts(?X) .
-isClericalStaffOf(?X,?Y) :- srcisPostDocOf(?X,?Y),srcisDeanOf(?X,?Y),srcFootBall(?X),srcMaterialsScience(?X),srcUGProgram(?X),srcisClericalStaffOf(?X,?Y) .
-isWomenCollegeOf(?X,?Y) :- srchasResearchAssistant(?X,?Y),srcElectiveCourse(?X),srcHumanities(?X),srchasEmailAddress(?X,?Y),srchasAuthor(?X,?Y),srcisWomenCollegeOf(?X,?Y) .
-HumanitiesAndSocial(?X) :- srcBasketBallFan(?X),srcisFacultyOf(?X,?Y),srcFootBall(?X),srcUGProgram(?X),srcInstitute(?X),srcisVisitingProfessorOf(?X,?Y),srcHumanitiesAndSocial(?X) .
-hasDegreeFrom(?X,?Y) :- srcChemistry(?X),srcCollege(?X),srchasCollegeDiscipline(?X,?Y),srcAssistantProfessor(?X),srcAstronomy(?X),srchasDegreeFrom(?X,?Y) .
-PhDStudent(?X) :- srcPhysics(?X),srcFullProfessor(?X),srchasTitle(?X,?Y),srcSupportingStaff(?X),srchasWork(?X,?Y),srcPhDStudent(?X) .
-AeronauticalEngineering(?X) :- srchasDean(?X,?Y),srcWomanCollege(?X),srcModernArts(?X),srcJournalArticle(?X),srcAeronauticalEngineering(?X) .
-hasEmployee(?X,?Y) :- srcisProfessorOf(?X,?Y),srcDean(?X),srcisTaughtBy(?X,?Y),srcNonScience(?X),srcInterest(?X),srcEnglish(?X),srchasEmployee(?X,?Y) .
-isSupportingStaffOf(?X,?Y) :- srcFullProfessor(?X),srcpublicationResearch(?X,?Y),srchasMasterDegreeFrom(?X,?Y),srcisStudentOf(?X,?Y),srcenrollIn(?X,?Y),srcLinguistics(?X),srcisSupportingStaffOf(?X,?Y) .
-Interest(?X) :- srcUniversity(?X),srcIndustryEngineering(?X),srchasMember(?X,?Y),srcInterest(?X) .
-Humanities(?X) :- srcBasketBallLover(?X),srchasUndergraduateDegreeFrom(?X,?Y),srcOtherStaff(?X),srcHumanities(?X) .
-MaterialsScience(?X) :- srcScience(?X),srcResearchProject(?X),srcResearchGroup(?X),srcProgram(?X),srcMaterialsScience(?X) .
-Institute(?X) :- srcWomanCollege(?X),srcOperationsManagement(?X),srcteachesCourse(?X,?Y),srcElectiveCourse(?X),srcisLecturerOf(?X,?Y),srcInstitute(?X) .
-hasPhDProgram(?X,?Y) :- srchasPGProgram(?X,?Y),srcAstronomy(?X),srcSupportingStaff(?X),srcisResearchGroupOf(?X,?Y),srcGeosciences(?X),srcElectricalEngineering(?X),srchasPhDProgram(?X,?Y) .
-offerCourse(?X,?Y) :- srcHumanResourceManagement(?X),srcPerformingArts(?X),srcScience(?X),srcSalesManagement(?X),srcSwimming(?X),srcofferCourse(?X,?Y) .
-Philosophy(?X) :- srcResearchGroup(?X),srchasCollege(?X,?Y),srcTravelling(?X),srcSportsLover(?X),srcElectiveCourse(?X),srcPhilosophy(?X) .
-Software(?X) :- srcHumanResourceManagement(?X),srcTennis(?X),srcisSystemStaffOf(?X,?Y),srcSoftware(?X) .
-ConferencePaper(?X) :- srcCoEdCollege(?X),srcisResearchGroupOf(?X,?Y),srcFaculty(?X),srcWork(?X),srchasDepartment(?X,?Y),srchasStudentEvaluationCommittee(?X,?Y),srcConferencePaper(?X) .
-Student(?X) :- srcOrganization(?X),srchasTelephone(?X,?Y),srcBook(?X),srcReading(?X),srchasEmailAddress(?X,?Y),srcStudent(?X) .
-ResearchAssistant(?X) :- srcReligions(?X),srcPublicRelationsManagement(?X),srcArticle(?X),srcResearchAssistant(?X) .
-isResearchGroupOf(?X,?Y) :- srcModernLanguages(?X),srcHumanResourceManagement(?X),srchasLecturer(?X,?Y),srchasDean(?X,?Y),srcEvaluationCommittee(?X),srcisResearchGroupOf(?X,?Y) .
-hasFirstName(?X,?Y) :- srcHumanities(?X),srcBiomedicalEngineering(?X),srcEnglish(?X),srcTechnicalReport(?X),srcisTaughtBy(?X,?Y),srcisAffiliatedOrganizationOf(?X,?Y),srchasFirstName(?X,?Y) .
-hasCommitteeMembers(?X,?Y) :- srchasStudent(?X,?Y),srcisProfessorOf(?X,?Y),srcTeachingAssistant(?X),srcDirector(?X),srcJournalArticle(?X),srcEvaluationCommittee(?X),srchasCommitteeMembers(?X,?Y) .
-isMemberOf(?X,?Y) :- srchasAlumnus(?X,?Y),srchasOtherStaff(?X,?Y),srcWork(?X),srcisMemberOf(?X,?Y) .
-NonScienceStudent(?X) :- srchasPGProgram(?X,?Y),srchasCollaborationWith(?X,?Y),srchasResearchGroup(?X,?Y),srcPhilosophy(?X),srcBiomedicalEngineering(?X),srcMarketingManagement(?X),srcNonScienceStudent(?X) .
-isProfessorOf(?X,?Y) :- srcStatistics(?X),srcStudent(?X),srcOtherStaff(?X),srcisProfessorOf(?X,?Y) .
-isLecturerOf(?X,?Y) :- srcRiskManagement(?X),srcisVisitingProfessorOf(?X,?Y),srcResearchGroup(?X),srcEconomics(?X),srcisLecturerOf(?X,?Y) .
-Music(?X) :- srcInterest(?X),srchasFaculty(?X,?Y),srcPainting(?X),srcJournalArticle(?X),srcisHeadOf(?X,?Y),srcDirector(?X),srcMusic(?X) .
-CoEdCollege(?X) :- srcisTeachingAssistantOf(?X,?Y),srcFineArts(?X),srcArticle(?X),srcLecturer(?X),srcisDepartmentOf(?X,?Y),srcEnglish(?X),srcCoEdCollege(?X) .
-enrollIn(?X,?Y) :- srchasDoctoralDegreeFrom(?X,?Y),srcPublication(?X),srcSportsFan(?X),srcSpecification(?X),srcPhDStudent(?X),srcenrollIn(?X,?Y) .
-orgPublication(?X,?Y) :- srclikes(?X,?Y),srchasFaculty(?X,?Y),srcOrganization(?X),srcisStudentOf(?X,?Y),srcAssistantProfessor(?X),srcorgPublication(?X,?Y) .
-ClericalStaff(?X) :- srchasPGProgram(?X,?Y),srcTeachingAssistant(?X),srchasEmailAddress(?X,?Y),srcOperationsManagement(?X),srcClericalStaff(?X) .
-School(?X) :- srcClericalStaff(?X),srcPublicRelationsManagement(?X),srcisTaughtBy(?X,?Y),srchasSubOrganization(?X,?Y),srcBiology(?X),srcSchool(?X) .
-BasketBallFan(?X) :- srchasAssistantProfessor(?X,?Y),srcisHeadOf(?X,?Y),srcCoEdCollege(?X),srcevaluatedBy(?X,?Y),srcSchool(?X),srcBasketBallFan(?X) .
-hasTelephone(?X,?Y) :- srcisSupportingStaffOf(?X,?Y),srcPhDProgram(?X),srcCourse(?X),srchasTelephone(?X,?Y) .
-hasUGProgram(?X,?Y) :- srcThesisEvaluationCommittee(?X),srcisHeadOf(?X,?Y),srcMusic(?X),srchasUGProgram(?X,?Y) .
-hasResearchAssistant(?X,?Y) :- srchasMember(?X,?Y),srcMovie(?X),srcSoftware(?X),srcChair(?X),srchasResearchAssistant(?X,?Y) .
-Mathematics(?X) :- srcGame(?X),srcEvaluationCommittee(?X),srcCollegeDiscipline(?X),srchasHead(?X,?Y),srcworksFor(?X,?Y),srchasEmployee(?X,?Y),srcMathematics(?X) .
-English(?X) :- srchasLastName(?X,?Y),srchasCollegeDiscipline(?X,?Y),srcisVisitingProfessorOf(?X,?Y),srcEnglish(?X) .
-isAssociateProfessorOf(?X,?Y) :- srchasPGProgram(?X,?Y),srcisPostDocOf(?X,?Y),srchasSupportingStaff(?X,?Y),srchasCollege(?X,?Y),srcSportsLover(?X),srchasDean(?X,?Y),srcisAssociateProfessorOf(?X,?Y) .
-enrollFor(?X,?Y) :- srcSportsLover(?X),srchasHead(?X,?Y),srcSpecification(?X),srchasMember(?X,?Y),srcenrollFor(?X,?Y) .
-isPostDocOf(?X,?Y) :- srchasResearchAssistant(?X,?Y),srcSports(?X),srcElectiveCourse(?X),srchasResearchProject(?X,?Y),srcisSystemStaffOf(?X,?Y),srcisPostDocOf(?X,?Y) .
-Movie(?X) :- srcAeronauticalEngineering(?X),srchasDepartment(?X,?Y),srchasTelephone(?X,?Y),srcevaluates(?X,?Y),srcMechanicalEngineering(?X),srcWork(?X),srcMovie(?X) .
-TeachingAssistant(?X) :- srcHumanResourceManagement(?X),srcBiomedicalEngineering(?X),srchasCommitteeMembers(?X,?Y),srcSpecification(?X),srcTeachingAssistant(?X) .
-isTaughtBy(?X,?Y) :- srcConferencePaper(?X),srcStatistics(?X),srcOperationsManagement(?X),srcBiomedicalEngineering(?X),srcisTaughtBy(?X,?Y) .
-Linguistics(?X) :- srcisHeadOf(?X,?Y),srcBiomedicalEngineering(?X),srcEvaluationCommittee(?X),srcAstronomy(?X),srchasMasterDegreeFrom(?X,?Y),srcLinguistics(?X) .
-NonScience(?X) :- srchasEmployee(?X,?Y),srcisPostDocOf(?X,?Y),srcCivilEngineering(?X),srcNonScience(?X) .
-isStudentOf(?X,?Y) :- srcNonScience(?X),srchasEmployee(?X,?Y),srchasPGProgram(?X,?Y),srcisStudentOf(?X,?Y) .
-Work(?X) :- srcStudent(?X),srcScienceStudent(?X),srcloves(?X,?Y),srchasStudentEvaluationCommittee(?X,?Y),srcBasketBallFan(?X),srcGeosciences(?X),srcWork(?X) .
-hasAssistantProfessor(?X,?Y) :- srcisVisitingProfessorOf(?X,?Y),srchasAssociateProfessor(?X,?Y),srcStudentEvaluationCommittee(?X),srcModernLanguages(?X),srchasAssistantProfessor(?X,?Y) .
-isAdvisedBy(?X,?Y) :- srcisTeachingAssistantOf(?X,?Y),srchasStudentEvaluationCommittee(?X,?Y),srcDesignManagement(?X),srchasLecturer(?X,?Y),srcBadminton(?X),srcMovie(?X),srcisAdvisedBy(?X,?Y) .
-isDeanOf(?X,?Y) :- srcMarineScience(?X),srcBadminton(?X),srchasEmployee(?X,?Y),srcisDeanOf(?X,?Y) .
-SystemStaff(?X) :- srcScience(?X),srcPGProgram(?X),srchasLecturer(?X,?Y),srcTheatreAndDance(?X),srcSoftware(?X),srcSystemStaff(?X) .
-isHeadOf(?X,?Y) :- srcisAffiliatedOrganizationOf(?X,?Y),srcWomanCollege(?X),srchasUndergraduateDegreeFrom(?X,?Y),srcisHeadOf(?X,?Y) .
-hasHead(?X,?Y) :- srcFinancialAndAccountingManagement(?X),srcCoEdCollege(?X),srcBasketBallLover(?X),srcHumanities(?X),srcScienceStudent(?X),srcResearchAssistant(?X),srchasHead(?X,?Y) .
-hasOtherStaff(?X,?Y) :- srcCollegeDiscipline(?X),srcIndustryEngineering(?X),srcMusicsClass(?X),srcDepartment(?X),srcSupplyChainManagement(?X),srchasOtherStaff(?X,?Y) .
-Tennis(?X) :- srcComputerScience(?X),srcAssociateProfessor(?X),srcisTeachingAssistantOf(?X,?Y),srcHistory(?X),srcTennis(?X) .
-hasMasterDegreeFrom(?X,?Y) :- srcPGProgram(?X),srchasMajor(?X,?Y),srcProgram(?X),srchasPhDProgram(?X,?Y),srcMovie(?X),srcHistory(?X),srchasMasterDegreeFrom(?X,?Y) .
-hasProfessor(?X,?Y) :- srcBadminton(?X),srcInstitute(?X),srchasUGProgram(?X,?Y),srchasProfessor(?X,?Y) .
-Reading(?X) :- srcevaluates(?X,?Y),srcisAssistantProfessorOf(?X,?Y),srcSystemStaff(?X),srchasUndergraduateDegreeFrom(?X,?Y),srcReading(?X) .
-DesignManagement(?X) :- srcisVisitingProfessorOf(?X,?Y),srcMaterialScienceEngineering(?X),srcLatinArts(?X),srcProgram(?X),srcofferCourse(?X,?Y),srcDesignManagement(?X) .
-ModernArts(?X) :- srcisFacultyOf(?X,?Y),srcManual(?X),srcisTeachingAssistantOf(?X,?Y),srchasFirstName(?X,?Y),srcisClericalStaffOf(?X,?Y),srcModernArts(?X) .
-hasSubOrganization(?X,?Y) :- srcUniversity(?X),srcisAssistantProfessorOf(?X,?Y),srcAstronomy(?X),srchasDean(?X,?Y),srchasSubOrganization(?X,?Y) .
-ComputerEngineering(?X) :- srcLinguistics(?X),srcDepartment(?X),srcResearchProject(?X),srcModernLanguages(?X),srcSports(?X),srchasPGProgram(?X,?Y),srcComputerEngineering(?X) .
-Lecturer(?X) :- srchasProfessor(?X,?Y),srcCourse(?X),srchasCollege(?X,?Y),srcLecturer(?X) .
-Specification(?X) :- srcisDepartmentOf(?X,?Y),srcAsianArts(?X),srcResearchProject(?X),srcSpecification(?X) .
-EmployeeEvaluationCommittee(?X) :- srcAeronauticalEngineering(?X),srcLecturer(?X),srchasTitle(?X,?Y),srchasClericalStaff(?X,?Y),srcisResearchAssistantOf(?X,?Y),srcEmployeeEvaluationCommittee(?X) .
-BiomedicalEngineering(?X) :- srcIndustryEngineering(?X),srchasProfessor(?X,?Y),srcPhysics(?X),srcDirector(?X),srcBiomedicalEngineering(?X) .
-hasLastName(?X,?Y) :- srcBasketBallLover(?X),srcDean(?X),srcComputerEngineering(?X),srcUGCourse(?X),srcMediaArtsAndSciences(?X),srcPGStudent(?X),srchasLastName(?X,?Y) .
-FootBall(?X) :- srchasSystemStaff(?X,?Y),srcPhilosophy(?X),srcWork(?X),srcFootBall(?X) .
-hasSystemStaff(?X,?Y) :- srchasDegreeFrom(?X,?Y),srcCollege(?X),srctakesCourse(?X,?Y),srcNonScience(?X),srcevaluates(?X,?Y),srcSportsFan(?X),srchasSystemStaff(?X,?Y) .
-Drama(?X) :- srcPetroleumlEngineering(?X),srcScience(?X),srchasPart(?X,?Y),srcBadminton(?X),srchasWork(?X,?Y),srcDrama(?X) .
-JournalArticle(?X) :- srcCourse(?X),srcReading(?X),srcisClericalStaffOf(?X,?Y),srchasDepartment(?X,?Y),srchasWork(?X,?Y),srcFaculty(?X),srcJournalArticle(?X) .
-isSubOrganizationOf(?X,?Y) :- srchasEmployee(?X,?Y),srcWomanCollege(?X),srcSports(?X),srcPhysics(?X),srcPublicRelationsManagement(?X),srcisSubOrganizationOf(?X,?Y) .
-worksFor(?X,?Y) :- srcClericalStaff(?X),srchasSystemStaff(?X,?Y),srcSupportingStaff(?X),srcResearchProject(?X),srcElectricalEngineering(?X),srcworksFor(?X,?Y) .
-hasUndergraduateDegreeFrom(?X,?Y) :- srcBiology(?X),srcUGCourse(?X),srchasDoctoralDegreeFrom(?X,?Y),srchasUndergraduateDegreeFrom(?X,?Y) .
-ElectiveCourse(?X) :- srcModernLanguages(?X),srcBasketBallFan(?X),srcVisitingProfessor(?X),srcGeosciences(?X),srcUniversity(?X),srcisStudentOf(?X,?Y),srcElectiveCourse(?X) .
-hasAdvisor(?X,?Y) :- srclikes(?X,?Y),srcSystemStaff(?X),srcPhilosophy(?X),srcReligions(?X),srcisTaughtBy(?X,?Y),srchasAdvisor(?X,?Y) .
-hasFullProfessor(?X,?Y) :- srcisClericalStaffOf(?X,?Y),srcFinancialAndAccountingManagement(?X),srcClericalStaff(?X),srcisCollegeOf(?X,?Y),srcStudentEvaluationCommittee(?X),srcMechanicalEngineering(?X),srchasFullProfessor(?X,?Y) .
-ResearchProject(?X) :- srchasCommitteeMembers(?X,?Y),srcEvaluationCommittee(?X),srchasUGProgram(?X,?Y),srcisProfessorOf(?X,?Y),srcResearchProject(?X) .
-CivilEngineering(?X) :- srcStatistics(?X),srcBadminton(?X),srcEvaluationCommittee(?X),srcisAssociateProfessorOf(?X,?Y),srcCivilEngineering(?X) .
-Faculty(?X) :- srcHistory(?X),srcPublication(?X),srcTravelling(?X),srcFaculty(?X) .
-Book(?X) :- srchasCollaborationWith(?X,?Y),srcUGStudent(?X),srcSportsFan(?X),srcBook(?X) .
-History(?X) :- srcUGCourse(?X),srchasEmployee(?X,?Y),srcWomanCollege(?X),srcHistory(?X) .
-hasWomenCollege(?X,?Y) :- srcChair(?X),srcScience(?X),srchasSubOrganization(?X,?Y),srchasWomenCollege(?X,?Y) .
-BasketBall(?X) :- srchasUndergraduateDegreeFrom(?X,?Y),srcSportsFan(?X),srcUnofficialPublication(?X),srcBook(?X),srcLinguistics(?X),srcBasketBall(?X) .
-MedievalArts(?X) :- srcStudent(?X),srcworksFor(?X,?Y),srchasMajor(?X,?Y),srcWork(?X),srcFinancialAndAccountingManagement(?X),srcCricket(?X),srcMedievalArts(?X) .
-Engineering(?X) :- srcevaluates(?X,?Y),srchasCollaborationWith(?X,?Y),srchasWork(?X,?Y),srcisSupportingStaffOf(?X,?Y),srcEngineering(?X) .
-EvaluationCommittee(?X) :- srcDirector(?X),srcSwimming(?X),srcBasketBallFan(?X),srcPerson(?X),srcCivilEngineering(?X),srchasPart(?X,?Y),srcEvaluationCommittee(?X) .
-publicationResearch(?X,?Y) :- srcisTeachingAssistantOf(?X,?Y),srcMathematics(?X),srchasClericalStaff(?X,?Y),srcHistory(?X),srcPGProgram(?X),srcpublicationResearch(?X,?Y) .
-hasAge(?X,?Y) :- srcPostDoc(?X),srcTheatreAndDance(?X),srcSupplyChainManagement(?X),srchasAge(?X,?Y) .
-SupplyChainManagement(?X) :- srchasCollege(?X,?Y),srcSports(?X),srchasCollegeDiscipline(?X,?Y),srcisSystemStaffOf(?X,?Y),srcSoftware(?X),srcSupplyChainManagement(?X) .
-PostDoc(?X) :- srchasFirstName(?X,?Y),srcisVisitingProfessorOf(?X,?Y),srcPeopleWithHobby(?X),srchasEvaluationCommittee(?X,?Y),srcJournalArticle(?X),srcMarineScience(?X),srcPostDoc(?X) .
-AssociateProfessor(?X) :- srchasClericalStaff(?X,?Y),srcScience(?X),srchasSubOrganization(?X,?Y),srchasWomenCollege(?X,?Y),srchasProgram(?X,?Y),srchasSystemStaff(?X,?Y),srcAssociateProfessor(?X) .
-likes(?X,?Y) :- srcWork(?X),srcModernLanguages(?X),srcCivilEngineering(?X),srcStatistics(?X),srclikes(?X,?Y) .
-PGProgram(?X) :- srcPostDoc(?X),srcCollege(?X),srcFootBall(?X),srcSports(?X),srcPGProgram(?X) .
-BasketBallLover(?X) :- srcBasketBall(?X),srcNonScienceStudent(?X),srcDirector(?X),srcPerson(?X),srcisAffiliatedOrganizationOf(?X,?Y),srcBasketBallLover(?X) .
-LatinArts(?X) :- srcEmployee(?X),srchasStudent(?X,?Y),srchasDoctoralDegreeFrom(?X,?Y),srcAssociateProfessor(?X),srcLatinArts(?X) .
-MarineScience(?X) :- srchasEmailAddress(?X,?Y),srcModernArts(?X),srcFullProfessor(?X),srcisAssistantProfessorOf(?X,?Y),srcMarineScience(?X) .
-ScienceStudent(?X) :- srchasFirstName(?X,?Y),srcArticle(?X),srcloves(?X,?Y),srcHumanitiesAndSocial(?X),srcScienceStudent(?X) .
-hasTitle(?X,?Y) :- srcMedievalArts(?X),srcisStudentOf(?X,?Y),srchasDoctoralDegreeFrom(?X,?Y),srchasFullProfessor(?X,?Y),srcBiomedicalEngineering(?X),srchasTitle(?X,?Y) .
-Science(?X) :- srcevaluatedBy(?X,?Y),srchasCollaborationWith(?X,?Y),srcCourse(?X),srcloves(?X,?Y),srchasOtherStaff(?X,?Y),srcScience(?X) .
-hasMajor(?X,?Y) :- srcConferencePaper(?X),srchasLecturer(?X,?Y),srcUniversity(?X),srchasEmployeeEvaluationCommittee(?X,?Y),srcHumanities(?X),srchasMajor(?X,?Y) .
-Game(?X) :- srcisPartOf(?X,?Y),srchasCollege(?X,?Y),srcisMemberOf(?X,?Y),srchasWork(?X,?Y),srcNonScience(?X),srcGame(?X) .
-PGStudent(?X) :- srcworksFor(?X,?Y),srcTravelling(?X),srchasAssociateProfessor(?X,?Y),srcSupplyChainManagement(?X),srcofferCourse(?X,?Y),srcPGStudent(?X) .
-Director(?X) :- srchasLastName(?X,?Y),srcloves(?X,?Y),srchasStudentEvaluationCommittee(?X,?Y),srcDirector(?X) .
-isCrazyAbout(?X,?Y) :- srcisAdvisedBy(?X,?Y),srcisLecturerOf(?X,?Y),srcisHeadOf(?X,?Y),srcisCrazyAbout(?X,?Y) .
-SupportingStaff(?X) :- srcenrollFor(?X,?Y),srcPublicRelationsManagement(?X),srchasTelephone(?X,?Y),srcHumanResourceManagement(?X),srcPGStudent(?X),srcCivilEngineering(?X),srcSupportingStaff(?X) .
-StudentEvaluationCommittee(?X) :- srchasMasterDegreeFrom(?X,?Y),srcisAffiliatedOrganizationOf(?X,?Y),srcIndustryEngineering(?X),srcAstronomy(?X),srcteachesCourse(?X,?Y),srcStudentEvaluationCommittee(?X) .
-PhDProgram(?X) :- srcSportsLover(?X),srcElectricalEngineering(?X),srcGame(?X),srcPGStudent(?X),srchasFirstName(?X,?Y),srcisAssistantProfessorOf(?X,?Y),srcPhDProgram(?X) .
-MarketingManagement(?X) :- srcUGStudent(?X),srcMathematics(?X),srcManagement(?X),srcTeachingCourse(?X),srcSupportingStaff(?X),srchasAdvisor(?X,?Y),srcMarketingManagement(?X) .
-OperationsManagement(?X) :- srchasSystemStaff(?X,?Y),srchasWomenCollege(?X,?Y),srchasCollaborationWith(?X,?Y),srcManagement(?X),srcOperationsManagement(?X) .
-Department(?X) :- srcFinancialAndAccountingManagement(?X),srcPhDStudent(?X),srcisStudentOf(?X,?Y),srcUnofficialPublication(?X),srcPGStudent(?X),srcisCollegeOf(?X,?Y),srcDepartment(?X) .
-Statistics(?X) :- srcOperationsManagement(?X),srcWork(?X),srcPhilosophy(?X),srcSupportingStaff(?X),srcStatistics(?X) .
-UGCourse(?X) :- srcisFullProfessorOf(?X,?Y),srcBasketBallLover(?X),srcBiomedicalEngineering(?X),srcUGCourse(?X) .
-WomanCollege(?X) :- srchasClericalStaff(?X,?Y),srcenrollIn(?X,?Y),srcSwimming(?X),srcWomanCollege(?X) .
-VisitingProfessor(?X) :- srcBasketBallFan(?X),srcPhysics(?X),srcEnglish(?X),srcteachesCourse(?X,?Y),srcRiskManagement(?X),srcVisitingProfessor(?X) .
-SportsFan(?X) :- srcevaluates(?X,?Y),srcSupportingStaff(?X),srcPetroleumlEngineering(?X),srcPostDoc(?X),srcLecturer(?X),srcSportsFan(?X) .
-Badminton(?X) :- srcElectricalEngineering(?X),srcDrama(?X),srchasStudentEvaluationCommittee(?X,?Y),srcteachesCourse(?X,?Y),srcBadminton(?X) .
-hasMember(?X,?Y) :- srchasAssistantProfessor(?X,?Y),srcSalesManagement(?X),srcMaterialScienceEngineering(?X),srcSports(?X),srcisFacultyOf(?X,?Y),srchasMember(?X,?Y) .
-isAssistantProfessorOf(?X,?Y) :- srchasAge(?X,?Y),srcFullProfessor(?X),srcUniversity(?X),srcSportsFan(?X),srcPsychology(?X),srcisAssistantProfessorOf(?X,?Y) .
-MusicsClass(?X) :- srcArticle(?X),srcisHeadOf(?X,?Y),srchasWomenCollege(?X,?Y),srcMusicsClass(?X) .
-Chair(?X) :- srcMediaArtsAndSciences(?X),srcProfessor(?X),srchasEmployeeEvaluationCommittee(?X,?Y),srchasTitle(?X,?Y),srchasDepartment(?X,?Y),srchasFullProfessor(?X,?Y),srcChair(?X) .
-OtherStaff(?X) :- srcModernArts(?X),srcisAdvisedBy(?X,?Y),srcEmployee(?X),srcGeosciences(?X),srcSpecification(?X),srchasCollege(?X,?Y),srcOtherStaff(?X) .
-hasPart(?X,?Y) :- srcisStudentOf(?X,?Y),srcProfessor(?X),srcisSystemStaffOf(?X,?Y),srchasEmailAddress(?X,?Y),srcisDepartmentOf(?X,?Y),srcisResearchGroupOf(?X,?Y),srchasPart(?X,?Y) .
-Dean(?X) :- srcisPartOf(?X,?Y),srcDesignManagement(?X),srcBiology(?X),srcDean(?X) .
-Management(?X) :- srchasTitle(?X,?Y),srcHistory(?X),srcTechnicalReport(?X),srcisAssistantProfessorOf(?X,?Y),srcResearchGroup(?X),srchasCollegeDiscipline(?X,?Y),srcManagement(?X) .
-Swimming(?X) :- srcSchool(?X),srcInterest(?X),srcBook(?X),srchasAssistantProfessor(?X,?Y),srcisTaughtBy(?X,?Y),srcPetroleumlEngineering(?X),srcSwimming(?X) .
-hasResearchProject(?X,?Y) :- srchasEmployeeEvaluationCommittee(?X,?Y),srcConferencePaper(?X),srcworksFor(?X,?Y),srcUGCourse(?X),srcPublication(?X),srchasMajor(?X,?Y),srchasResearchProject(?X,?Y) .
-MediaArtsAndSciences(?X) :- srcTravelling(?X),srcTeachingAssistant(?X),srchasLecturer(?X,?Y),srcStudentEvaluationCommittee(?X),srcisAdvisedBy(?X,?Y),srcMediaArtsAndSciences(?X) .
-CollegeDiscipline(?X) :- srchasCollaborationWith(?X,?Y),srcisTeachingAssistantOf(?X,?Y),srcUGCourse(?X),srchasDean(?X,?Y),srcCollegeDiscipline(?X) .
-Biology(?X) :- srcDean(?X),srctenured(?X,?Y),srcWork(?X),srchasEmployeeEvaluationCommittee(?X,?Y),srcPGProgram(?X),srcPerson(?X),srcBiology(?X) .
-isDepartmentOf(?X,?Y) :- srcNonScience(?X),srcisOtherStaffOf(?X,?Y),srcDesignManagement(?X),srcComputerScience(?X),srcConferencePaper(?X),srctenured(?X,?Y),srcisDepartmentOf(?X,?Y) .
-ResearchGroup(?X) :- srchasWork(?X,?Y),srcAsianArts(?X),srchasResearchProject(?X,?Y),srcloves(?X,?Y),srcBasketBallLover(?X),srcManual(?X),srcResearchGroup(?X) .
-hasSupportingStaff(?X,?Y) :- srcStudent(?X),srcBasketBall(?X),srcisVisitingProfessorOf(?X,?Y),srcStatistics(?X),srchasSupportingStaff(?X,?Y) .
-isPartOf(?X,?Y) :- srcisAssistantProfessorOf(?X,?Y),srctakesCourse(?X,?Y),srcNonScienceStudent(?X),srcisAffiliatedOrganizationOf(?X,?Y),srcSchool(?X),srcVisitingProfessor(?X),srcisPartOf(?X,?Y) .
-UGStudent(?X) :- srcUGCourse(?X),srcEconomics(?X),srcOrganization(?X),srcMediaArtsAndSciences(?X),srcClericalStaff(?X),srcUGStudent(?X) .
-Program(?X) :- srcHumanResourceManagement(?X),srcDesignManagement(?X),srcMechanicalEngineering(?X),srcProgram(?X) .
-loves(?X,?Y) :- srchasEmployeeEvaluationCommittee(?X,?Y),srcFinancialAndAccountingManagement(?X),srcisClericalStaffOf(?X,?Y),srchasPGProgram(?X,?Y),srchasMasterDegreeFrom(?X,?Y),srcloves(?X,?Y) .
-tenured(?X,?Y) :- srcEmployee(?X),srcisMemberOf(?X,?Y),srcenrollIn(?X,?Y),srcClericalStaff(?X),srctenured(?X,?Y) .
-Cricket(?X) :- srcTravelling(?X),srcorgPublication(?X,?Y),srcofferCourse(?X,?Y),srcSpecification(?X),srcLatinArts(?X),srcChemicalEngineering(?X),srcCricket(?X) .
-takesCourse(?X,?Y) :- srcisAdvisedBy(?X,?Y),srcisResearchAssistantOf(?X,?Y),srcResearchGroup(?X),srcPerformingArts(?X),srchasEmployee(?X,?Y),srcEngineering(?X),srctakesCourse(?X,?Y) .
-hasCollege(?X,?Y) :- srcIndustryEngineering(?X),srcisClericalStaffOf(?X,?Y),srcLecturer(?X),srcisHeadOf(?X,?Y),srchasCollege(?X,?Y) .
-hasCollaborationWith(?X,?Y) :- srclikes(?X,?Y),srcisAssistantProfessorOf(?X,?Y),srcisStudentOf(?X,?Y),srchasResearchGroup(?X,?Y),srchasCollaborationWith(?X,?Y) .
-Astronomy(?X) :- srcGame(?X),srchasVisitingProfessor(?X,?Y),srchasWork(?X,?Y),srcMediaArtsAndSciences(?X),srcAstronomy(?X) .
-AsianArts(?X) :- srcBasketBallFan(?X),srcStudent(?X),srchasFirstName(?X,?Y),srcCourse(?X),srcAsianArts(?X) .
-Travelling(?X) :- srcChair(?X),srcSports(?X),srchasAuthor(?X,?Y),srcMathematics(?X),srcMovie(?X),srcEngineering(?X),srcTravelling(?X) .
-RiskManagement(?X) :- srcStatistics(?X),srcFaculty(?X),srcNonScience(?X),srcResearchGroup(?X),srcRiskManagement(?X) .
-hasAssociateProfessor(?X,?Y) :- srcSportsLover(?X),srcModernLanguages(?X),srcBiology(?X),srcStatistics(?X),srchasStudentEvaluationCommittee(?X,?Y),srcNonScienceStudent(?X),srchasAssociateProfessor(?X,?Y) .
-Professor(?X) :- srcPhysics(?X),srcGeosciences(?X),srchasWork(?X,?Y),srcProfessor(?X) .
-MechanicalEngineering(?X) :- srcManual(?X),srchasStudent(?X,?Y),srcDirector(?X),srcMechanicalEngineering(?X) .
-ChemicalEngineering(?X) :- srcResearchAssistant(?X),srchasPart(?X,?Y),srcGame(?X),srcChemicalEngineering(?X) .
-Publication(?X) :- srcSoftware(?X),srcMechanicalEngineering(?X),srcDean(?X),srcteachesCourse(?X,?Y),srcLinguistics(?X),srcPublication(?X) .
-TechnicalReport(?X) :- srcSupplyChainManagement(?X),srcisPartOf(?X,?Y),srcMusic(?X),srcTechnicalReport(?X) .
-hasThesisEvaluationCommittee(?X,?Y) :- srcChemicalEngineering(?X),srcEnglish(?X),srcdislikes(?X,?Y),srchasDoctoralDegreeFrom(?X,?Y),srcisPartOf(?X,?Y),srchasThesisEvaluationCommittee(?X,?Y) .
-Physics(?X) :- srcCollegeDiscipline(?X),srcTeachingCourse(?X),srcPublicRelationsManagement(?X),srcSchool(?X),srcPhysics(?X) .
+hasMajor(?X,?Y) :- srcBasketBallLover(?X),srchasMajor(?X,?Y) .
+hasHead(?X,?Y) :- srcNonScienceStudent(?X),srcMediaArtsAndSciences(?X),srcPhilosophy(?X),srchasHead(?X,?Y) .
+Travelling(?X) :- srcPhDProgram(?X),srcScience(?X),srcTravelling(?X) .
+FullProfessor(?X) :- srchasProfessor(?X,?Y),srcisProfessorOf(?X,?Y),srchasDean(?X,?Y),srcAnthropology(?X),srcFullProfessor(?X) .
+Biology(?X) :- srcMaterialsScience(?X),srcCollegeDiscipline(?X),srcManagement(?X),srcOperationsManagement(?X),srcBiology(?X) .
+SportsFan(?X) :- srcArchitecture(?X),srcSportsFan(?X) .
+enrollFor(?X,?Y) :- srcMovie(?X),srcisLecturerOf(?X,?Y),srcenrollFor(?X,?Y) .
+ProjectManagement(?X) :- srchasAssociateProfessor(?X,?Y),srcProjectManagement(?X) .
+hasProgram(?X,?Y) :- srcDrama(?X),srcSpecification(?X),srcClericalStaff(?X),srchasWork(?X,?Y),srchasProgram(?X,?Y) .
+ChemicalEngineering(?X) :- srchasSubOrganization(?X,?Y),srcChemicalEngineering(?X) .
+Director(?X) :- srcPetroleumlEngineering(?X),srcProgram(?X),srcDirector(?X) .
+StudentEvaluationCommittee(?X) :- srchasAdvisor(?X,?Y),srcStudentEvaluationCommittee(?X) .
+hasPGProgram(?X,?Y) :- srcEngineering(?X),srchasPGProgram(?X,?Y) .
+isAffiliatedOrganizationOf(?X,?Y) :- srcCourse(?X),srcisMemberOf(?X,?Y),srcisAffiliatedOrganizationOf(?X,?Y) .
+hasSupportingStaff(?X,?Y) :- srcTravelling(?X),srcSoftware(?X),srcMusicsClass(?X),srchasSupportingStaff(?X,?Y) .
+hasPhDProgram(?X,?Y) :- srcloves(?X,?Y),srcSports(?X),srcTheatreAndDance(?X),srchasPhDProgram(?X,?Y) .
+hasMember(?X,?Y) :- srchasWork(?X,?Y),srchasAge(?X,?Y),srcEngineering(?X),srcInstitute(?X),srchasMember(?X,?Y) .
+isCrazyAbout(?X,?Y) :- srcPainting(?X),srchasDegreeFrom(?X,?Y),srcHumanities(?X),srcworksFor(?X,?Y),srcisCrazyAbout(?X,?Y) .
+School(?X) :- srchasFirstName(?X,?Y),srchasSystemStaff(?X,?Y),srchasEmailAddress(?X,?Y),srcisMemberOf(?X,?Y),srcSchool(?X) .
+hasVisitingProfessor(?X,?Y) :- srcStudentEvaluationCommittee(?X),srchasVisitingProfessor(?X,?Y) .
+Astronomy(?X) :- srcEvaluationCommittee(?X),srcSchool(?X),srchasEmailAddress(?X,?Y),srchasResearchProject(?X,?Y),srcAstronomy(?X) .
+hasThesisEvaluationCommittee(?X,?Y) :- srchasAuthor(?X,?Y),srchasThesisEvaluationCommittee(?X,?Y) .
+BasketBallLover(?X) :- srchasAuthor(?X,?Y),srcReading(?X),srcPostDoc(?X),srcBasketBallLover(?X) .
+ModernArts(?X) :- srchasResearchAssistant(?X,?Y),srcElectiveCourse(?X),srcisCrazyAbout(?X,?Y),srchasStudent(?X,?Y),srcModernArts(?X) .
+isFullProfessorOf(?X,?Y) :- srcBiology(?X),srcisDeanOf(?X,?Y),srcMarketingManagement(?X),srcPhysics(?X),srcisFullProfessorOf(?X,?Y) .
+FinancialAndAccountingManagement(?X) :- srcMovie(?X),srcisAssociateProfessorOf(?X,?Y),srchasLecturer(?X,?Y),srcFinancialAndAccountingManagement(?X) .
+BasketBallFan(?X) :- srcisCollegeOf(?X,?Y),srcMusicsClass(?X),srcSystemStaff(?X),srcBasketBallFan(?X) .
+isMemberOf(?X,?Y) :- srchasFaculty(?X,?Y),srcisMemberOf(?X,?Y) .
+Philosophy(?X) :- srcMusic(?X),srcCivilEngineering(?X),srcisHeadOf(?X,?Y),srcResearchGroup(?X),srcPhilosophy(?X) .
+UGProgram(?X) :- srcisSubOrganizationOf(?X,?Y),srcUGProgram(?X) .
+English(?X) :- srchasCollaborationWith(?X,?Y),srcEnglish(?X) .
+offerCourse(?X,?Y) :- srcisHeadOf(?X,?Y),srchasMajor(?X,?Y),srcisPartOf(?X,?Y),srcofferCourse(?X,?Y) .
+Employee(?X) :- srcDean(?X),srcEmployee(?X) .
+PhDProgram(?X) :- srcHumanResourceManagement(?X),srcGeosciences(?X),srcPhDProgram(?X) .
+ResearchGroup(?X) :- srcPublicRelationsManagement(?X),srcisHeadOf(?X,?Y),srchasPostDoc(?X,?Y),srcResearchGroup(?X) .
+HumanitiesAndSocial(?X) :- srcSports(?X),srcisHeadOf(?X,?Y),srcHumanitiesAndSocial(?X) .
+ComputerScience(?X) :- srchasDean(?X,?Y),srchasAge(?X,?Y),srcEvaluationCommittee(?X),srcComputerScience(?X) .
+VisitingProfessor(?X) :- srcFootBall(?X),srcConferencePaper(?X),srcVisitingProfessor(?X) .
+Professor(?X) :- srcTheatreAndDance(?X),srcProfessor(?X) .
+Work(?X) :- srcEmployee(?X),srcPGStudent(?X),srcWork(?X) .
+CivilEngineering(?X) :- srcisPostDocOf(?X,?Y),srcMathematics(?X),srcCivilEngineering(?X) .
+hasCollegeDiscipline(?X,?Y) :- srcNonScience(?X),srcInstitute(?X),srcMaterialScienceEngineering(?X),srchasFirstName(?X,?Y),srchasCollegeDiscipline(?X,?Y) .
+EvaluationCommittee(?X) :- srcSwimming(?X),srcPhysics(?X),srcFinancialAndAccountingManagement(?X),srcEvaluationCommittee(?X) .
+Person(?X) :- srcDean(?X),srcPerson(?X) .
+hasFaculty(?X,?Y) :- srchasMajor(?X,?Y),srcHumanResourceManagement(?X),srchasFaculty(?X,?Y) .
+Architecture(?X) :- srchasMasterDegreeFrom(?X,?Y),srchasEmployeeEvaluationCommittee(?X,?Y),srcArchitecture(?X) .
+hasUndergraduateDegreeFrom(?X,?Y) :- srcAeronauticalEngineering(?X),srchasUndergraduateDegreeFrom(?X,?Y) .
+AsianArts(?X) :- srcFootBall(?X),srcPetroleumlEngineering(?X),srcComputerEngineering(?X),srcAsianArts(?X) .
+hasTelephone(?X,?Y) :- srcisMemberOf(?X,?Y),srcisPostDocOf(?X,?Y),srcSpecification(?X),srcReligions(?X),srchasTelephone(?X,?Y) .
+hasDepartment(?X,?Y) :- srcloves(?X,?Y),srcChemistry(?X),srchasPhDProgram(?X,?Y),srcpublicationResearch(?X,?Y),srchasDepartment(?X,?Y) .
+ModernLanguages(?X) :- srchasProgram(?X,?Y),srcUniversity(?X),srcModernLanguages(?X) .
+College(?X) :- srcdislikes(?X,?Y),srcArticle(?X),srcCollege(?X) .
+DesignManagement(?X) :- srcpublicationResearch(?X,?Y),srcTechnicalReport(?X),srcDesignManagement(?X) .
+teachesCourse(?X,?Y) :- srchasPGProgram(?X,?Y),srcComputerScience(?X),srcTennis(?X),srchasWomenCollege(?X,?Y),srcteachesCourse(?X,?Y) .
+UGStudent(?X) :- srcWomanCollege(?X),srcEconomics(?X),srcMaterialScienceEngineering(?X),srchasResearchGroup(?X,?Y),srcUGStudent(?X) .
+hasEmailAddress(?X,?Y) :- srcHumanResourceManagement(?X),srcPsychology(?X),srchasEmailAddress(?X,?Y) .
+Publication(?X) :- srchasDepartment(?X,?Y),srcPublication(?X) .
+SupportingStaff(?X) :- srcSwimming(?X),srchasDegreeFrom(?X,?Y),srcSupportingStaff(?X) .
+Interest(?X) :- srcisAssociateProfessorOf(?X,?Y),srcMaterialScienceEngineering(?X),srcTennis(?X),srcUGCourse(?X),srcInterest(?X) .
+isAdvisedBy(?X,?Y) :- srcTeachingCourse(?X),srcReligions(?X),srcSportsFan(?X),srcisAdvisedBy(?X,?Y) .
+MusicsClass(?X) :- srcisStudentOf(?X,?Y),srchasCollege(?X,?Y),srchasSupportingStaff(?X,?Y),srchasPostDoc(?X,?Y),srcMusicsClass(?X) .
+RiskManagement(?X) :- srcAsianArts(?X),srchasResearchProject(?X,?Y),srcRiskManagement(?X) .
+enrollIn(?X,?Y) :- srcloves(?X,?Y),srcenrollIn(?X,?Y) .
+hasAssistantProfessor(?X,?Y) :- srchasTitle(?X,?Y),srchasAssistantProfessor(?X,?Y) .
+ResearchAssistant(?X) :- srcisLecturerOf(?X,?Y),srcMarketingManagement(?X),srcScience(?X),srcResearchAssistant(?X) .
+Lecturer(?X) :- srcManual(?X),srcBadminton(?X),srcCourse(?X),srcLecturer(?X) .
+isCollegeOf(?X,?Y) :- srcUGCourse(?X),srcPhilosophy(?X),srcWomanCollege(?X),srcisCollegeOf(?X,?Y) .
+ElectiveCourse(?X) :- srcComputerScience(?X),srchasEmailAddress(?X,?Y),srcMarineScience(?X),srcElectiveCourse(?X) .
+Tennis(?X) :- srcMaterialsScience(?X),srcModernLanguages(?X),srcTennis(?X) .
+IndustryEngineering(?X) :- srcEconomics(?X),srcHumanitiesAndSocial(?X),srcisAssistantProfessorOf(?X,?Y),srcIndustryEngineering(?X) .
+hasDegreeFrom(?X,?Y) :- srcisLecturerOf(?X,?Y),srchasDegreeFrom(?X,?Y) .
+MedievalArts(?X) :- srcBasketBallFan(?X),srchasUndergraduateDegreeFrom(?X,?Y),srcMedievalArts(?X) .
+ComputerEngineering(?X) :- srcFootBall(?X),srcDean(?X),srcCivilEngineering(?X),srcProjectManagement(?X),srcComputerEngineering(?X) .
+PostDoc(?X) :- srcAssociateProfessor(?X),srcCollegeDiscipline(?X),srcPostDoc(?X) .
+TheatreAndDance(?X) :- srcisPostDocOf(?X,?Y),srchasMajor(?X,?Y),srcDrama(?X),srcTheatreAndDance(?X) .
+WomanCollege(?X) :- srcDirector(?X),srcpublicationResearch(?X,?Y),srcWomanCollege(?X) .
+Course(?X) :- srcGeosciences(?X),srcPublication(?X),srcCourse(?X) .
+hasResearchGroup(?X,?Y) :- srcTeachingCourse(?X),srchasDepartment(?X,?Y),srchasResearchGroup(?X,?Y) .
+Sports(?X) :- srcComputerScience(?X),srcUniversity(?X),srcisOtherStaffOf(?X,?Y),srcFineArts(?X),srcSports(?X) .
+Faculty(?X) :- srcComputerEngineering(?X),srcStatistics(?X),srcUniversity(?X),srcFaculty(?X) .
+Statistics(?X) :- srcInterest(?X),srcProgram(?X),srcStatistics(?X) .
+isFacultyOf(?X,?Y) :- srcScienceStudent(?X),srcisLecturerOf(?X,?Y),srcMediaArtsAndSciences(?X),srcisFacultyOf(?X,?Y) .
+SalesManagement(?X) :- srcLinguistics(?X),srcEmployeeEvaluationCommittee(?X),srcSalesManagement(?X) .
+Religions(?X) :- srchasFirstName(?X,?Y),srchasAlumnus(?X,?Y),srcSupplyChainManagement(?X),srcMarketingManagement(?X),srcReligions(?X) .
+UGCourse(?X) :- srcPsychology(?X),srcUGCourse(?X) .
+ElectricalEngineering(?X) :- srcComputerEngineering(?X),srchasHead(?X,?Y),srcOrganization(?X),srcPublicRelationsManagement(?X),srcElectricalEngineering(?X) .
+isSubOrganizationOf(?X,?Y) :- srchasAge(?X,?Y),srcComputerEngineering(?X),srcisProfessorOf(?X,?Y),srcisSubOrganizationOf(?X,?Y) .
+hasEvaluationCommittee(?X,?Y) :- srchasDepartment(?X,?Y),srchasEvaluationCommittee(?X,?Y) .
+hasAge(?X,?Y) :- srcisSupportingStaffOf(?X,?Y),srchasAge(?X,?Y) .
+Chemistry(?X) :- srcLatinArts(?X),srchasAssociateProfessor(?X,?Y),srcTheatreAndDance(?X),srcChemistry(?X) .
+CollegeDiscipline(?X) :- srcDirector(?X),srcHumanResourceManagement(?X),srcMedievalArts(?X),srcLatinArts(?X),srcCollegeDiscipline(?X) .
+Swimming(?X) :- srcNonScience(?X),srchasClericalStaff(?X,?Y),srcSports(?X),srcSwimming(?X) .
+evaluatedBy(?X,?Y) :- srcConferencePaper(?X),srcevaluatedBy(?X,?Y) .
+hasCommitteeMembers(?X,?Y) :- srcPeopleWithHobby(?X),srchasCommitteeMembers(?X,?Y) .
+Painting(?X) :- srcGame(?X),srclikes(?X,?Y),srcPhDProgram(?X),srchasVisitingProfessor(?X,?Y),srcPainting(?X) .
+Psychology(?X) :- srcisLecturerOf(?X,?Y),srcpublicationResearch(?X,?Y),srcCollegeDiscipline(?X),srcPsychology(?X) .
+hasPart(?X,?Y) :- srchasPostDoc(?X,?Y),srcConferencePaper(?X),srchasDepartment(?X,?Y),srcMaterialsScience(?X),srchasPart(?X,?Y) .
+hasCollaborationWith(?X,?Y) :- srcDesignManagement(?X),srcGame(?X),srcLatinArts(?X),srchasCollaborationWith(?X,?Y) .
+Geosciences(?X) :- srcLecturer(?X),srcUniversity(?X),srchasCollaborationWith(?X,?Y),srcSystemStaff(?X),srcGeosciences(?X) .
+ScienceStudent(?X) :- srcisHeadOf(?X,?Y),srcAeronauticalEngineering(?X),srcScienceStudent(?X) .
+hasFirstName(?X,?Y) :- srcArchitecture(?X),srchasAge(?X,?Y),srcConferencePaper(?X),srchasFirstName(?X,?Y) .
+AeronauticalEngineering(?X) :- srcAnthropology(?X),srcUniversity(?X),srcAeronauticalEngineering(?X) .
+SupplyChainManagement(?X) :- srchasAssociateProfessor(?X,?Y),srcSupplyChainManagement(?X) .
+isHeadOf(?X,?Y) :- srcisVisitingProfessorOf(?X,?Y),srcLatinArts(?X),srcBasketBallLover(?X),srcResearchProject(?X),srcisHeadOf(?X,?Y) .
+isPostDocOf(?X,?Y) :- srcPostDoc(?X),srcUGStudent(?X),srcInterest(?X),srcDirector(?X),srcisPostDocOf(?X,?Y) .
+hasClericalStaff(?X,?Y) :- srcPetroleumlEngineering(?X),srchasClericalStaff(?X,?Y) .
+Badminton(?X) :- srcorgPublication(?X,?Y),srcBadminton(?X) .
+hasPostDoc(?X,?Y) :- srcEconomics(?X),srcisSystemStaffOf(?X,?Y),srcTeachingAssistant(?X),srchasPostDoc(?X,?Y) .
+Movie(?X) :- srcSchool(?X),srchasFirstName(?X,?Y),srcMovie(?X) .
+Software(?X) :- srcOtherStaff(?X),srcResearchAssistant(?X),srcSoftware(?X) .
+hasUGProgram(?X,?Y) :- srchasResearchGroup(?X,?Y),srchasAuthor(?X,?Y),srcPhysics(?X),srchasUGProgram(?X,?Y) .
+Article(?X) :- srcisAffiliatedOrganizationOf(?X,?Y),srcFaculty(?X),srcArticle(?X) .
+Cricket(?X) :- srcMusic(?X),srchasEmployeeEvaluationCommittee(?X,?Y),srcSupplyChainManagement(?X),srcCricket(?X) .
+LatinArts(?X) :- srcBasketBallLover(?X),srchasEvaluationCommittee(?X,?Y),srctenured(?X,?Y),srcLinguistics(?X),srcLatinArts(?X) .
+isOtherStaffOf(?X,?Y) :- srcConferencePaper(?X),srcFootBall(?X),srcResearchGroup(?X),srclikes(?X,?Y),srcisOtherStaffOf(?X,?Y) .
+isAssociateProfessorOf(?X,?Y) :- srcisSupportingStaffOf(?X,?Y),srcEngineering(?X),srcMathematics(?X),srcisAssociateProfessorOf(?X,?Y) .
+TeachingAssistant(?X) :- srcisDeanOf(?X,?Y),srcTeachingAssistant(?X) .
+isProfessorOf(?X,?Y) :- srchasUGProgram(?X,?Y),srcisProfessorOf(?X,?Y) .
+AssociateProfessor(?X) :- srcPGStudent(?X),srcisMemberOf(?X,?Y),srcModernArts(?X),srcProfessor(?X),srcAssociateProfessor(?X) .
+hasEmployee(?X,?Y) :- srcpublicationResearch(?X,?Y),srchasFullProfessor(?X,?Y),srcEmployee(?X),srchasEmployee(?X,?Y) .
+HumanResourceManagement(?X) :- srcThesisEvaluationCommittee(?X),srcHumanResourceManagement(?X) .
+takesCourse(?X,?Y) :- srchasLastName(?X,?Y),srcSupportingStaff(?X),srctakesCourse(?X,?Y) .
+BasketBall(?X) :- srcFineArts(?X),srcBasketBall(?X) .
+Physics(?X) :- srcisAssociateProfessorOf(?X,?Y),srcGeosciences(?X),srcCollege(?X),srcPhysics(?X) .
+History(?X) :- srchasSystemStaff(?X,?Y),srcBiomedicalEngineering(?X),srcFullProfessor(?X),srcMarineScience(?X),srcHistory(?X) .
+PerformingArts(?X) :- srchasCollege(?X,?Y),srcdislikes(?X,?Y),srcworksFor(?X,?Y),srcisResearchGroupOf(?X,?Y),srcPerformingArts(?X) .
+AssistantProfessor(?X) :- srcisVisitingProfessorOf(?X,?Y),srcEnglish(?X),srcBadminton(?X),srcAssociateProfessor(?X),srcAssistantProfessor(?X) .
+isSystemStaffOf(?X,?Y) :- srcMaterialScienceEngineering(?X),srcenrollFor(?X,?Y),srchasEmployee(?X,?Y),srcisSystemStaffOf(?X,?Y) .
+hasLecturer(?X,?Y) :- srcProgram(?X),srcManagement(?X),srchasLecturer(?X,?Y) .
+hasTitle(?X,?Y) :- srcisTaughtBy(?X,?Y),srchasEmployee(?X,?Y),srchasTitle(?X,?Y) .
+Chair(?X) :- srchasHead(?X,?Y),srcScience(?X),srchasPGProgram(?X,?Y),srcChair(?X) .
+Linguistics(?X) :- srchasAuthor(?X,?Y),srcLinguistics(?X) .
+likes(?X,?Y) :- srcResearchProject(?X),srcSportsLover(?X),srclikes(?X,?Y) .
+isDeanOf(?X,?Y) :- srcisSupportingStaffOf(?X,?Y),srcisDeanOf(?X,?Y) .
+loves(?X,?Y) :- srchasLecturer(?X,?Y),srcisAdvisedBy(?X,?Y),srcloves(?X,?Y) .
+OperationsManagement(?X) :- srcisAssociateProfessorOf(?X,?Y),srchasResearchAssistant(?X,?Y),srcisClericalStaffOf(?X,?Y),srcLinguistics(?X),srcOperationsManagement(?X) .
+Science(?X) :- srcFootBall(?X),srchasProgram(?X,?Y),srcScience(?X) .
+PeopleWithHobby(?X) :- srcisCrazyAbout(?X,?Y),srchasAssistantProfessor(?X,?Y),srcSchool(?X),srcPeopleWithHobby(?X) .
+NonScienceStudent(?X) :- srcworksFor(?X,?Y),srcNonScienceStudent(?X) .
+ConferencePaper(?X) :- srchasProgram(?X,?Y),srctenured(?X,?Y),srchasAssistantProfessor(?X,?Y),srcMusicsClass(?X),srcConferencePaper(?X) .
+Dean(?X) :- srcElectricalEngineering(?X),srcHumanities(?X),srchasMasterDegreeFrom(?X,?Y),srcDean(?X) .
+CoEdCollege(?X) :- srchasOtherStaff(?X,?Y),srcComputerEngineering(?X),srcCoEdCollege(?X) .
+hasEmployeeEvaluationCommittee(?X,?Y) :- srcTravelling(?X),srcisAffiliatedOrganizationOf(?X,?Y),srcUGCourse(?X),srchasPostDoc(?X,?Y),srchasEmployeeEvaluationCommittee(?X,?Y) .
+hasWomenCollege(?X,?Y) :- srcisPostDocOf(?X,?Y),srchasWork(?X,?Y),srcisDepartmentOf(?X,?Y),srcElectricalEngineering(?X),srchasWomenCollege(?X,?Y) .
+hasAssociateProfessor(?X,?Y) :- srcBadminton(?X),srcElectricalEngineering(?X),srcUGCourse(?X),srchasAssociateProfessor(?X,?Y) .
+hasFullProfessor(?X,?Y) :- srcSupplyChainManagement(?X),srchasFullProfessor(?X,?Y) .
+isWomenCollegeOf(?X,?Y) :- srcSchool(?X),srchasUGProgram(?X,?Y),srcAssistantProfessor(?X),srcisWomenCollegeOf(?X,?Y) .
+hasSubOrganization(?X,?Y) :- srcPhDProgram(?X),srchasPGProgram(?X,?Y),srcFineArts(?X),srcTechnicalReport(?X),srchasSubOrganization(?X,?Y) .
+hasAlumnus(?X,?Y) :- srcenrollIn(?X,?Y),srcevaluatedBy(?X,?Y),srchasWomenCollege(?X,?Y),srctakesCourse(?X,?Y),srchasAlumnus(?X,?Y) .
+hasDean(?X,?Y) :- srcChemicalEngineering(?X),srchasEmailAddress(?X,?Y),srchasDean(?X,?Y) .
+hasProfessor(?X,?Y) :- srcEmployeeEvaluationCommittee(?X),srcLinguistics(?X),srcAssociateProfessor(?X),srchasProfessor(?X,?Y) .
+SystemStaff(?X) :- srcPublicRelationsManagement(?X),srchasAge(?X,?Y),srcSystemStaff(?X) .
+hasOtherStaff(?X,?Y) :- srcAnthropology(?X),srcPhysics(?X),srcPainting(?X),srcRiskManagement(?X),srchasOtherStaff(?X,?Y) .
+Organization(?X) :- srcTeachingCourse(?X),srcisCollegeOf(?X,?Y),srcOrganization(?X) .
+isClericalStaffOf(?X,?Y) :- srchasLastName(?X,?Y),srcManual(?X),srcisClericalStaffOf(?X,?Y) .
+isAssistantProfessorOf(?X,?Y) :- srcCollegeDiscipline(?X),srcisSupportingStaffOf(?X,?Y),srcMaterialsScience(?X),srcisAssistantProfessorOf(?X,?Y) .
+evaluates(?X,?Y) :- srchasWomenCollege(?X,?Y),srcdislikes(?X,?Y),srcSoftware(?X),srclikes(?X,?Y),srcevaluates(?X,?Y) .
+Engineering(?X) :- srcdislikes(?X,?Y),srcDean(?X),srcisDeanOf(?X,?Y),srchasFullProfessor(?X,?Y),srcEngineering(?X) .
+OtherStaff(?X) :- srcisHeadOf(?X,?Y),srcClericalStaff(?X),srcTheatreAndDance(?X),srchasDegreeFrom(?X,?Y),srcOtherStaff(?X) .
+isVisitingProfessorOf(?X,?Y) :- srcIndustryEngineering(?X),srcResearchAssistant(?X),srcOrganization(?X),srcisStudentOf(?X,?Y),srcisVisitingProfessorOf(?X,?Y) .
+Economics(?X) :- srcResearchGroup(?X),srcisPartOf(?X,?Y),srcOtherStaff(?X),srcEconomics(?X) .
+University(?X) :- srcisDepartmentOf(?X,?Y),srcTeachingCourse(?X),srcPublicRelationsManagement(?X),srcEngineering(?X),srcUniversity(?X) .
+tenured(?X,?Y) :- srcSupportingStaff(?X),srcCollegeDiscipline(?X),srctenured(?X,?Y) .
+hasMasterDegreeFrom(?X,?Y) :- srcAnthropology(?X),srcAssistantProfessor(?X),srchasAssistantProfessor(?X,?Y),srchasMasterDegreeFrom(?X,?Y) .
+Music(?X) :- srcisDepartmentOf(?X,?Y),srcSchool(?X),srcCricket(?X),srcMusic(?X) .
+isTeachingAssistantOf(?X,?Y) :- srcisAssociateProfessorOf(?X,?Y),srchasEmployee(?X,?Y),srcisTeachingAssistantOf(?X,?Y) .
+orgPublication(?X,?Y) :- srcSwimming(?X),srcSupplyChainManagement(?X),srcorgPublication(?X,?Y) .
+isDepartmentOf(?X,?Y) :- srcSpecification(?X),srcisCollegeOf(?X,?Y),srcisDepartmentOf(?X,?Y) .
+isResearchAssistantOf(?X,?Y) :- srcMedievalArts(?X),srcisResearchAssistantOf(?X,?Y) .
+dislikes(?X,?Y) :- srcworksFor(?X,?Y),srcenrollFor(?X,?Y),srcpublicationResearch(?X,?Y),srcdislikes(?X,?Y) .
+JournalArticle(?X) :- srcArticle(?X),srcJournalArticle(?X) .
+MarineScience(?X) :- srcAeronauticalEngineering(?X),srchasDean(?X,?Y),srcMarineScience(?X) .
+Reading(?X) :- srcUniversity(?X),srcReading(?X) .
+Department(?X) :- srchasDoctoralDegreeFrom(?X,?Y),srchasDepartment(?X,?Y),srcFootBall(?X),srcGame(?X),srcDepartment(?X) .
+Institute(?X) :- srcMusicsClass(?X),srcInstitute(?X) .
+isPartOf(?X,?Y) :- srcResearchAssistant(?X),srcisPartOf(?X,?Y) .
+hasResearchAssistant(?X,?Y) :- srcUGStudent(?X),srcMaterialsScience(?X),srcPeopleWithHobby(?X),srchasResearchAssistant(?X,?Y) .
+isLecturerOf(?X,?Y) :- srctakesCourse(?X,?Y),srcScienceStudent(?X),srcisLecturerOf(?X,?Y) .
+TechnicalReport(?X) :- srcisSupportingStaffOf(?X,?Y),srcPsychology(?X),srcPGProgram(?X),srcTechnicalReport(?X) .
+isStudentOf(?X,?Y) :- srcResearchGroup(?X),srcisStudentOf(?X,?Y) .
+hasDoctoralDegreeFrom(?X,?Y) :- srcProjectManagement(?X),srcCoEdCollege(?X),srchasDoctoralDegreeFrom(?X,?Y) .
+MarketingManagement(?X) :- srcCollegeDiscipline(?X),srcPerson(?X),srcMarketingManagement(?X) .
+Specification(?X) :- srcWork(?X),srcSpecification(?X) .
+hasAuthor(?X,?Y) :- srcisAssociateProfessorOf(?X,?Y),srcEmployee(?X),srcisSubOrganizationOf(?X,?Y),srchasAuthor(?X,?Y) .
+FootBall(?X) :- srcSportsFan(?X),srcpublicationResearch(?X,?Y),srcisFullProfessorOf(?X,?Y),srcFootBall(?X) .
+Humanities(?X) :- srcScienceStudent(?X),srcBasketBallLover(?X),srcProjectManagement(?X),srchasAlumnus(?X,?Y),srcHumanities(?X) .
+worksFor(?X,?Y) :- srcManagement(?X),srcworksFor(?X,?Y) .
+PublicRelationsManagement(?X) :- srcDesignManagement(?X),srchasResearchGroup(?X,?Y),srcPublicRelationsManagement(?X) .
+EmployeeEvaluationCommittee(?X) :- srcWomanCollege(?X),srcChair(?X),srcEmployeeEvaluationCommittee(?X) .
+Student(?X) :- srcisCrazyAbout(?X,?Y),srcPhysics(?X),srcUniversity(?X),srchasVisitingProfessor(?X,?Y),srcStudent(?X) .
+PhDStudent(?X) :- srchasLastName(?X,?Y),srcPhDStudent(?X) .
+hasWork(?X,?Y) :- srcPainting(?X),srchasDegreeFrom(?X,?Y),srcPhDProgram(?X),srchasFullProfessor(?X,?Y),srchasWork(?X,?Y) .
+FineArts(?X) :- srcProjectManagement(?X),srcFineArts(?X) .
+Game(?X) :- srcenrollFor(?X,?Y),srchasProfessor(?X,?Y),srcSchool(?X),srcAeronauticalEngineering(?X),srcGame(?X) .
+hasResearchProject(?X,?Y) :- srcPsychology(?X),srcSoftware(?X),srchasResearchProject(?X,?Y) .
+SportsLover(?X) :- srchasAuthor(?X,?Y),srcPhDProgram(?X),srcSportsFan(?X),srcSportsLover(?X) .
+hasStudent(?X,?Y) :- srcMedievalArts(?X),srcTennis(?X),srcPGStudent(?X),srchasStudent(?X,?Y) .
+PGStudent(?X) :- srcRiskManagement(?X),srcPGStudent(?X) .
+Mathematics(?X) :- srchasCollaborationWith(?X,?Y),srcSystemStaff(?X),srcisTeachingAssistantOf(?X,?Y),srcDesignManagement(?X),srcMathematics(?X) .
+TeachingCourse(?X) :- srcisResearchGroupOf(?X,?Y),srchasAlumnus(?X,?Y),srcDesignManagement(?X),srcTeachingCourse(?X) .
+hasCollege(?X,?Y) :- srcWomanCollege(?X),srchasCollege(?X,?Y) .
+MaterialScienceEngineering(?X) :- srchasTitle(?X,?Y),srcComputerEngineering(?X),srchasSystemStaff(?X,?Y),srcMaterialScienceEngineering(?X) .
+Program(?X) :- srchasLecturer(?X,?Y),srcPhDStudent(?X),srcProgram(?X) .
+Management(?X) :- srcisOtherStaffOf(?X,?Y),srcisCrazyAbout(?X,?Y),srchasDoctoralDegreeFrom(?X,?Y),srchasStudent(?X,?Y),srcManagement(?X) .
+hasLastName(?X,?Y) :- srchasEmployeeEvaluationCommittee(?X,?Y),srcHumanitiesAndSocial(?X),srchasLastName(?X,?Y) .
+isResearchGroupOf(?X,?Y) :- srcWomanCollege(?X),srcHumanResourceManagement(?X),srcisDepartmentOf(?X,?Y),srcisResearchGroupOf(?X,?Y) .
+BiomedicalEngineering(?X) :- srchasCollaborationWith(?X,?Y),srcBiomedicalEngineering(?X) .
+PGProgram(?X) :- srcMovie(?X),srcFullProfessor(?X),srchasLecturer(?X,?Y),srcBiology(?X),srcPGProgram(?X) .
+publicationResearch(?X,?Y) :- srcisWomenCollegeOf(?X,?Y),srcpublicationResearch(?X,?Y) .
+MechanicalEngineering(?X) :- srcStatistics(?X),srcMechanicalEngineering(?X) .
+hasStudentEvaluationCommittee(?X,?Y) :- srcResearchGroup(?X),srcCivilEngineering(?X),srcofferCourse(?X,?Y),srchasStudentEvaluationCommittee(?X,?Y) .
+Drama(?X) :- srcPsychology(?X),srcPublication(?X),srchasResearchProject(?X,?Y),srcDrama(?X) .
+ThesisEvaluationCommittee(?X) :- srchasEmployee(?X,?Y),srchasCommitteeMembers(?X,?Y),srcComputerEngineering(?X),srcisTeachingAssistantOf(?X,?Y),srcThesisEvaluationCommittee(?X) .
+NonScience(?X) :- srcisSubOrganizationOf(?X,?Y),srcPerformingArts(?X),srcLinguistics(?X),srcNonScience(?X) .
+Book(?X) :- srcMarketingManagement(?X),srcMaterialScienceEngineering(?X),srcBook(?X) .
+PetroleumlEngineering(?X) :- srchasStudent(?X,?Y),srcTechnicalReport(?X),srcPetroleumlEngineering(?X) .
+isTaughtBy(?X,?Y) :- srcOperationsManagement(?X),srchasCollegeDiscipline(?X,?Y),srchasDean(?X,?Y),srchasTelephone(?X,?Y),srcisTaughtBy(?X,?Y) .
+hasSystemStaff(?X,?Y) :- srchasSubOrganization(?X,?Y),srchasUndergraduateDegreeFrom(?X,?Y),srcPhDStudent(?X),srchasSystemStaff(?X,?Y) .
+Manual(?X) :- srcisStudentOf(?X,?Y),srchasProfessor(?X,?Y),srcPetroleumlEngineering(?X),srcManual(?X) .
+MediaArtsAndSciences(?X) :- srchasStudent(?X,?Y),srcGame(?X),srcMediaArtsAndSciences(?X) .
+MaterialsScience(?X) :- srchasWork(?X,?Y),srcisHeadOf(?X,?Y),srcMaterialsScience(?X) .
+Anthropology(?X) :- srchasCommitteeMembers(?X,?Y),srcFinancialAndAccountingManagement(?X),srcAnthropology(?X) .
+ClericalStaff(?X) :- srcIndustryEngineering(?X),srcBasketBallLover(?X),srcGame(?X),srcClericalStaff(?X) .
+isSupportingStaffOf(?X,?Y) :- srchasFullProfessor(?X,?Y),srchasFirstName(?X,?Y),srchasCollege(?X,?Y),srcisSupportingStaffOf(?X,?Y) .
+ResearchProject(?X) :- srchasMasterDegreeFrom(?X,?Y),srchasPostDoc(?X,?Y),srcMovie(?X),srchasCollege(?X,?Y),srcResearchProject(?X) .
+hasAdvisor(?X,?Y) :- srchasSupportingStaff(?X,?Y),srchasAdvisor(?X,?Y) .
+UnofficialPublication(?X) :- srcEmployeeEvaluationCommittee(?X),srchasMajor(?X,?Y),srcisTeachingAssistantOf(?X,?Y),srcOrganization(?X),srcUnofficialPublication(?X) .
+AssociateProfessor(?X1) :- hasAssociateProfessor(?X,?X1) .
+Person(?X) :- likes(?X,?X1) .
+Organization(?X) :- hasMember(?X,?X1) .
+FineArts(?X) :- Architecture(?X) .
+Management(?X) :- HumanResourceManagement(?X) .
+University(?X1) :- hasDoctoralDegreeFrom(?X,?X1) .
+Management(?X) :- SalesManagement(?X) .
+hasProgram(?X,?Y) :- hasUGProgram(?X,?Y) .
+SupportingStaff(?X) :- OtherStaff(?X) .
+Management(?X) :- FinancialAndAccountingManagement(?X) .
+Interest(?X) :- Music(?X) .
+HumanitiesAndSocial(?X) :- Linguistics(?X) .
+College(?X) :- hasDepartment(?X,?X1) .
+isCrazyAbout(?X,!Y),BasketBall(!Y) :- BasketBallFan(?X) .
+Management(?X) :- MarketingManagement(?X) .
+Interest(?X) :- Movie(?X) .
+HumanitiesAndSocial(?X) :- Philosophy(?X) .
+worksFor(?X,?Y) :- isFacultyOf(?X,?Y) .
+Organization(?X) :- hasStudentEvaluationCommittee(?X,?X1) .
+hasSupportingStaff(?X,?Y) :- hasOtherStaff(?X,?Y) .
+Program(?X1) :- hasProgram(?X,?X1) .
+Person(?X) :- evaluatedBy(?X,?X1) .
+Faculty(?X1) :- hasFaculty(?X,?X1) .
+teachesCourse(?X,!Y),Course(!Y) :- Faculty(?X) .
+Organization(?X) :- hasEmployeeEvaluationCommittee(?X,?X1) .
+Engineering(?X) :- PetroleumlEngineering(?X) .
+Department(?X) :- hasVisitingProfessor(?X,?X1) .
+Publication(?X) :- Software(?X) .
+Organization(?X1) :- isPartOf(?X,?X1) .
+Department(?X) :- hasProfessor(?X,?X1) .
+Organization(?X) :- isAffiliatedOrganizationOf(?X,?X1) .
+College(?X1) :- isDepartmentOf(?X,?X1) .
+Department(?X) :- hasFullProfessor(?X,?X1) .
+Engineering(?X) :- MaterialScienceEngineering(?X) .
+Professor(?X) :- tenured(?X,?X1) .
+CollegeDiscipline(?X) :- Engineering(?X) .
+Publication(?X) :- Book(?X) .
+Person(?X) :- isMemberOf(?X,?X1) .
+hasMajor(?X,!Y),NonScience(!Y) :- NonScienceStudent(?X) .
+StudentEvaluationCommittee(?X1) :- hasStudentEvaluationCommittee(?X,?X1) .
+Organization(?X) :- hasEvaluationCommittee(?X,?X1) .
+isSupportingStaffOf(?X,?Y) :- isSystemStaffOf(?X,?Y) .
+Organization(?X1) :- isMemberOf(?X,?X1) .
+Organization(?X) :- isSubOrganizationOf(?X,?X1) .
+Person(?X) :- hasAge(?X,?X1) .
+Sports(?X) :- Tennis(?X) .
+Organization(?X1) :- isDeanOf(?X,?X1) .
+Organization(?X1) :- isStudentOf(?X,?X1) .
+Person(?X) :- hasUndergraduateDegreeFrom(?X,?X1) .
+hasMember(?X,?Y) :- hasStudent(?X,?Y) .
+Person(?X) :- hasFirstName(?X,?X1) .
+loves(?X,!Y),BasketBall(!Y) :- BasketBallLover(?X) .
+isResearchAssistantOf(?X,?Y) :- hasResearchAssistant(?Y,?X) .
+isAssistantProfessorOf(?X,?Y) :- hasAssistantProfessor(?Y,?X) .
+isSupportingStaffOf(?X,?Y) :- isClericalStaffOf(?X,?Y) .
+Person(?X1) :- hasCommitteeMembers(?X,?X1) .
+Professor(?X) :- VisitingProfessor(?X) .
+Interest(?X1) :- dislikes(?X,?X1) .
+Course(?X) :- ElectiveCourse(?X) .
+Sports(?X) :- BasketBall(?X) .
+enrollFor(?X,!Y),PGProgram(!Y) :- PGStudent(?X) .
+hasEvaluationCommittee(?X,?Y) :- hasEmployeeEvaluationCommittee(?X,?Y) .
+isPostDocOf(?X,?Y) :- hasPostDoc(?Y,?X) .
+hasSupportingStaff(?X,?Y) :- hasClericalStaff(?X,?Y) .
+Department(?X) :- hasProgram(?X,?X1) .
+Employee(?X) :- worksFor(?X,?X1) .
+PostDoc(?X1) :- hasPostDoc(?X,?X1) .
+Department(?X) :- hasSupportingStaff(?X,?X1) .
+isCollegeOf(?X,?Y) :- isWomenCollegeOf(?X,?Y) .
+Organization(?X) :- Institute(?X) .
+Management(?X) :- SupplyChainManagement(?X) .
+University(?X1) :- isCollegeOf(?X,?X1) .
+teachesCourse(?X,?Y) :- isTaughtBy(?Y,?X) .
+HumanitiesAndSocial(?X) :- Religions(?X) .
+isDeanOf(?X,?Y) :- hasDean(?Y,?X) .
+Publication(?X) :- Article(?X) .
+isFacultyOf(?X,?Y) :- isPostDocOf(?X,?Y) .
+isProfessorOf(?X,?Y) :- isAssistantProfessorOf(?X,?Y) .
+enrollFor(?X,!Y),UGProgram(!Y) :- UGStudent(?X) .
+Organization(?X) :- School(?X) .
+Work(?X) :- TeachingCourse(?X) .
+SupportingStaff(?X) :- ClericalStaff(?X) .
+isPartOf(?X,?Y) :- hasPart(?Y,?X) .
+Interest(?X1) :- isCrazyAbout(?X,?X1) .
+Science(?X) :- Chemistry(?X) .
+Professor(?X) :- AssistantProfessor(?X) .
+StudentEvaluationCommittee(?X) :- ThesisEvaluationCommittee(?X) .
+Student(?X) :- NonScienceStudent(?X) .
+Program(?X) :- PGProgram(?X) .
+hasProfessor(?X,?Y) :- hasFullProfessor(?X,?Y) .
+FineArts(?X) :- ModernArts(?X) .
+Person(?X) :- loves(?X,?X1) .
+Department(?X) :- hasClericalStaff(?X,?X1) .
+worksFor(?X,!Y),Organization(!Y) :- Employee(?X) .
+Employee(?X) :- hasWork(?X,?X1) .
+EvaluationCommittee(?X) :- StudentEvaluationCommittee(?X) .
+Organization(?X) :- isPartOf(?X,?X1) .
+Publication(?X) :- Manual(?X) .
+evaluates(?X,?Y) :- evaluatedBy(?Y,?X) .
+EvaluationCommittee(?X) :- evaluates(?X,?X1) .
+University(?X) :- hasAlumnus(?X,?X1) .
+Program(?X) :- UGProgram(?X) .
+Sports(?X) :- Badminton(?X) .
+College(?X) :- hasCollegeDiscipline(?X,?X1) .
+hasProgram(?X,?Y) :- hasPhDProgram(?X,?Y) .
+Department(?X) :- isDepartmentOf(?X,?X1) .
+isFacultyOf(?X,?Y) :- hasFaculty(?Y,?X) .
+VisitingProfessor(?X1) :- hasVisitingProfessor(?X,?X1) .
+Science(?X) :- ComputerScience(?X) .
+isMemberOf(?X,?Y) :- hasMember(?Y,?X) .
+Professor(?X1) :- hasProfessor(?X,?X1) .
+Engineering(?X) :- ComputerEngineering(?X) .
+University(?X1) :- isResearchGroupOf(?X,?X1) .
+Professor(?X) :- AssociateProfessor(?X) .
+AssistantProfessor(?X1) :- hasAssistantProfessor(?X,?X1) .
+PhDProgram(?X1) :- hasPhDProgram(?X,?X1) .
+Organization(?X1) :- isAffiliatedOrganizationOf(?X,?X1) .
+Person(?X1) :- hasAlumnus(?X,?X1) .
+Interest(?X1) :- loves(?X,?X1) .
+Department(?X) :- hasSystemStaff(?X,?X1) .
+Program(?X) :- PhDProgram(?X) .
+Faculty(?X) :- Professor(?X) .
+ResearchProject(?X1) :- hasResearchProject(?X,?X1) .
+Student(?X1) :- hasStudent(?X,?X1) .
+isSubOrganizationOf(?X,?Y) :- hasSubOrganization(?Y,?X) .
+Lecturer(?X1) :- hasLecturer(?X,?X1) .
+Organization(?X) :- University(?X) .
+Person(?X) :- hasMasterDegreeFrom(?X,?X1) .
+Engineering(?X) :- IndustryEngineering(?X) .
+Person(?X) :- hasCollaborationWith(?X,?X1) .
+isHeadOf(?X,!Y),College(!Y) :- Dean(?X) .
+Person(?X1) :- evaluates(?X,?X1) .
+Department(?X) :- hasUGProgram(?X,?X1) .
+ResearchGroup(?X) :- hasResearchProject(?X,?X1) .
+isFullProfessorOf(?X,?Y) :- isHeadOf(?X,?Y) .
+hasEmployee(?X,?Y) :- hasResearchAssistant(?X,?Y) .
+Organization(?X1) :- isSubOrganizationOf(?X,?X1) .
+hasWork(?X,?Y) :- hasResearchProject(?X,?Y) .
+Organization(?X) :- College(?X) .
+Department(?X) :- hasOtherStaff(?X,?X1) .
+Person(?X) :- hasDoctoralDegreeFrom(?X,?X1) .
+hasProfessor(?X,?Y) :- hasAssociateProfessor(?X,?Y) .
+FullProfessor(?X) :- Chair(?X) .
+isFacultyOf(?X,?Y) :- isProfessorOf(?X,?Y) .
+College(?X) :- School(?X) .
+Faculty(?X) :- PostDoc(?X) .
+ResearchGroup(?X) :- hasResearchAssistant(?X,?X1) .
+Organization(?X) :- orgPublication(?X,?X1) .
+University(?X1) :- hasDegreeFrom(?X,?X1) .
+hasStudentEvaluationCommittee(?X,?Y) :- hasThesisEvaluationCommittee(?X,?Y) .
+isCollegeOf(?X,?Y) :- hasCollege(?Y,?X) .
+HumanitiesAndSocial(?X) :- Anthropology(?X) .
+Sports(?X) :- Cricket(?X) .
+CollegeDiscipline(?X1) :- hasCollegeDiscipline(?X,?X1) .
+isCrazyAbout(?X,!Y),Sports(!Y) :- SportsFan(?X) .
+FineArts(?X) :- MusicsClass(?X) .
+Employee(?X) :- ResearchAssistant(?X) .
+isSubOrganizationOf(?X,?Y) :- isDepartmentOf(?X,?Y) .
+hasPart(?X,?X1) :- hasSubOrganization(?X,?X1) .
+isMemberOf(?X,?Y) :- worksFor(?X,?Y) .
+EvaluationCommittee(?X1) :- evaluatedBy(?X,?X1) .
+hasFaculty(?X,?Y) :- hasPostDoc(?X,?Y) .
+Engineering(?X) :- ChemicalEngineering(?X) .
+HumanitiesAndSocial(?X) :- Humanities(?X) .
+Course(?X) :- UGCourse(?X) .
+hasEmployee(?X,?Y) :- hasFaculty(?X,?Y) .
+enrollFor(?X,!Y),PhDProgram(!Y) :- PhDStudent(?X) .
+CollegeDiscipline(?X) :- Management(?X) .
+Person(?X) :- hasTelephone(?X,?X1) .
+Student(?X) :- enrollIn(?X,?X1) .
+Person(?X) :- hasDegreeFrom(?X,?X1) .
+hasProfessor(?X,?Y) :- hasVisitingProfessor(?X,?Y) .
+isProfessorOf(?X,?Y) :- isFullProfessorOf(?X,?Y) .
+isStudentOf(?X,?Y) :- enrollIn(?X,?Y) .
+FineArts(?X) :- LatinArts(?X) .
+hasSubOrganization(?X,?Y) :- hasResearchGroup(?X,?Y) .
+isAssociateProfessorOf(?X,?Y) :- hasAssociateProfessor(?Y,?X) .
+TeachingAssistant(?X) :- isTeachingAssistantOf(?X,?X1) .
+Student(?X) :- isStudentOf(?X,?X1) .
+FullProfessor(?X1) :- hasFullProfessor(?X,?X1) .
+worksFor(?X,?Y) :- hasEmployee(?Y,?X) .
+PGProgram(?X1) :- hasPGProgram(?X,?X1) .
+hasCollege(?X,?Y) :- hasWomenCollege(?X,?Y) .
+Faculty(?X) :- teachesCourse(?X,?X1) .
+HumanitiesAndSocial(?X) :- Psychology(?X) .
+ResearchGroup(?X1) :- hasResearchGroup(?X,?X1) .
+Organization(?X) :- Department(?X) .
+hasProfessor(?X,?Y) :- hasAssistantProfessor(?X,?Y) .
+hasDegreeFrom(?X,?Y) :- hasUndergraduateDegreeFrom(?X,?Y) .
+worksFor(?X,?Y) :- isResearchAssistantOf(?X,?Y) .
+Science(?X) :- Mathematics(?X) .
+FineArts(?X) :- AsianArts(?X) .
+likes(?X,?Y) :- loves(?X,?Y) .
+hasMajor(?X,!Y),Science(!Y) :- ScienceStudent(?X) .
+FineArts(?X) :- MedievalArts(?X) .
+isTeachingAssistantOf(?X,!Y),Course(!Y) :- TeachingAssistant(?X) .
+Publication(?X1) :- orgPublication(?X,?X1) .
+hasMember(?X,?Y) :- hasEmployee(?X,?Y) .
+ResearchAssistant(?X1) :- hasResearchAssistant(?X,?X1) .
+ResearchGroup(?X) :- isResearchGroupOf(?X,?X1) .
+Course(?X1) :- takesCourse(?X,?X1) .
+Sports(?X) :- FootBall(?X) .
+isHeadOf(?X,!Y),Program(!Y) :- Director(?X) .
+Interest(?X1) :- likes(?X,?X1) .
+Person(?X1) :- hasDean(?X,?X1) .
+Department(?X) :- hasLecturer(?X,?X1) .
+isFullProfessorOf(?X,?Y) :- hasFullProfessor(?Y,?X) .
+hasFaculty(?X,?Y) :- hasLecturer(?X,?Y) .
+Engineering(?X) :- AeronauticalEngineering(?X) .
+HumanitiesAndSocial(?X) :- History(?X) .
+Department(?X) :- hasPostDoc(?X,?X1) .
+isMemberOf(?X,?Y) :- isStudentOf(?X,?Y) .
+HumanitiesAndSocial(?X) :- Economics(?X) .
+Interest(?X) :- Painting(?X) .
+Organization(?X1) :- worksFor(?X,?X1) .
+CollegeDiscipline(?X) :- HumanitiesAndSocial(?X) .
+Faculty(?X) :- Lecturer(?X) .
+Organization(?X) :- hasThesisEvaluationCommittee(?X,?X1) .
+Person(?X) :- Employee(?X) .
+hasDegreeFrom(?X,?Y) :- hasMasterDegreeFrom(?X,?Y) .
+Department(?X) :- hasAssociateProfessor(?X,?X1) .
+Science(?X) :- MaterialsScience(?X) .
+Course(?X) :- TeachingCourse(?X) .
+HumanitiesAndSocial(?X) :- ModernLanguages(?X) .
+Management(?X) :- ProjectManagement(?X) .
+College(?X) :- WomanCollege(?X) .
+CollegeDiscipline(?X) :- Science(?X) .
+University(?X1) :- hasUndergraduateDegreeFrom(?X,?X1) .
+Person(?X) :- hasEmailAddress(?X,?X1) .
+ClericalStaff(?X1) :- hasClericalStaff(?X,?X1) .
+Course(?X1) :- isTeachingAssistantOf(?X,?X1) .
+Organization(?X) :- ResearchGroup(?X) .
+Work(?X) :- ResearchProject(?X) .
+ThesisEvaluationCommittee(?X1) :- hasThesisEvaluationCommittee(?X,?X1) .
+EvaluationCommittee(?X1) :- hasEvaluationCommittee(?X,?X1) .
+Organization(?X) :- hasStudent(?X,?X1) .
+College(?X) :- CoEdCollege(?X) .
+University(?X1) :- hasMasterDegreeFrom(?X,?X1) .
+EmployeeEvaluationCommittee(?X1) :- hasEmployeeEvaluationCommittee(?X,?X1) .
+hasEvaluationCommittee(?X,?Y) :- hasStudentEvaluationCommittee(?X,?Y) .
+Publication(?X) :- UnofficialPublication(?X) .
+University(?X) :- hasResearchGroup(?X,?X1) .
+Organization(?X1) :- hasSubOrganization(?X,?X1) .
+Article(?X) :- JournalArticle(?X) .
+hasEmployee(?X,?Y) :- hasSupportingStaff(?X,?Y) .
+hasDegreeFrom(?X,?Y) :- hasDoctoralDegreeFrom(?X,?Y) .
+hasDegreeFrom(?X,?Y) :- hasAlumnus(?Y,?X) .
+University(?X) :- hasCollege(?X,?X1) .
+isDepartmentOf(?X,?Y) :- hasDepartment(?Y,?X) .
+Faculty(?X1) :- isTaughtBy(?X,?X1) .
+Publication(?X) :- publicationResearch(?X,?X1) .
+Organization(?X) :- hasSubOrganization(?X,?X1) .
+Interest(?X) :- Reading(?X) .
+hasSubOrganization(?X,?Y) :- hasCollege(?X,?Y) .
+Interest(?X) :- Game(?X) .
+Course(?X1) :- teachesCourse(?X,?X1) .
+Organization(?X) :- hasPart(?X,?X1) .
+Department(?X1) :- enrollIn(?X,?X1) .
+Department(?X1) :- hasDepartment(?X,?X1) .
+Management(?X) :- PublicRelationsManagement(?X) .
+isPartOf(?X,?X1) :- isSubOrganizationOf(?X,?X1) .
+isSubOrganizationOf(?X,?Y) :- isCollegeOf(?X,?Y) .
+Interest(?X) :- Sports(?X) .
+FineArts(?X) :- Drama(?X) .
+Professor(?X) :- FullProfessor(?X) .
+hasFullProfessor(?X,?Y) :- hasHead(?X,?Y) .
+Organization(?X1) :- hasPart(?X,?X1) .
+Course(?X1) :- offerCourse(?X,?X1) .
+loves(?X,!Y),Sports(!Y) :- SportsLover(?X) .
+worksFor(?X,?Y) :- isSupportingStaffOf(?X,?Y) .
+Article(?X) :- TechnicalReport(?X) .
+Department(?X) :- hasAssistantProfessor(?X,?X1) .
+FullProfessor(?X) :- Director(?X) .
+Organization(?X1) :- isFacultyOf(?X,?X1) .
+Person(?X1) :- hasCollaborationWith(?X,?X1) .
+Person(?X) :- isAdvisedBy(?X,?X1) .
+EvaluationCommittee(?X) :- EmployeeEvaluationCommittee(?X) .
+OtherStaff(?X1) :- hasOtherStaff(?X,?X1) .
+FineArts(?X) :- MediaArtsAndSciences(?X) .
+isFacultyOf(?X,?Y) :- isLecturerOf(?X,?Y) .
+FullProfessor(?X) :- Dean(?X) .
+isSupportingStaffOf(?X,?Y) :- isOtherStaffOf(?X,?Y) .
+isStudentOf(?X,?Y) :- hasStudent(?Y,?X) .
+Department(?X) :- offerCourse(?X,?X1) .
+enrollIn(?X,!Y),Department(!Y) :- Student(?X) .
+Interest(?X) :- Travelling(?X) .
+Department(?X) :- hasFaculty(?X,?X1) .
+SystemStaff(?X1) :- hasSystemStaff(?X,?X1) .
+Work(?X1) :- hasWork(?X,?X1) .
+isAdvisedBy(?X,?X1) :- hasAdvisor(?X,?X1) .
+FineArts(?X) :- TheatreAndDance(?X) .
+Engineering(?X) :- CivilEngineering(?X) .
+Management(?X) :- RiskManagement(?X) .
+hasSubOrganization(?X,?Y) :- hasDepartment(?X,?Y) .
+Organization(?X) :- hasDean(?X,?X1) .
+Science(?X) :- Statistics(?X) .
+EvaluationCommittee(?X) :- hasCommitteeMembers(?X,?X1) .
+loves(?X,?Y) :- isCrazyAbout(?X,?Y) .
+Department(?X) :- hasPGProgram(?X,?X1) .
+Management(?X) :- DesignManagement(?X) .
+Person(?X1) :- hasAuthor(?X,?X1) .
+Sports(?X) :- Swimming(?X) .
+Publication(?X) :- hasAuthor(?X,?X1) .
+isProfessorOf(?X,?Y) :- hasProfessor(?Y,?X) .
+Engineering(?X) :- MechanicalEngineering(?X) .
+FineArts(?X) :- PerformingArts(?X) .
+Department(?X) :- hasPhDProgram(?X,?X1) .
+Person(?X) :- hasLastName(?X,?X1) .
+hasProgram(?X,?Y) :- hasPGProgram(?X,?Y) .
+Engineering(?X) :- BiomedicalEngineering(?X) .
+College(?X1) :- hasCollege(?X,?X1) .
+CollegeDiscipline(?X) :- NonScience(?X) .
+isHeadOf(?X,!Y),Department(!Y) :- Chair(?X) .
+Person(?X) :- hasTitle(?X,?X1) .
+SupportingStaff(?X) :- SystemStaff(?X) .
+hasMember(?X,?Y) :- hasCommitteeMembers(?X,?Y) .
+isVisitingProfessorOf(?X,?Y) :- hasVisitingProfessor(?Y,?X) .
+Person(?X) :- isDeanOf(?X,?X1) .
+Course(?X) :- isTaughtBy(?X,?X1) .
+College(?X) :- isCollegeOf(?X,?X1) .
+Student(?X) :- takesCourse(?X,?X1) .
+Management(?X) :- OperationsManagement(?X) .
+Science(?X) :- Geosciences(?X) .
+isHeadOf(?X,?Y) :- hasHead(?Y,?X) .
+Person(?X1) :- hasMember(?X,?X1) .
+SupportingStaff(?X1) :- hasSupportingStaff(?X,?X1) .
+Publication(?X) :- Specification(?X) .
+Person(?X) :- isCrazyAbout(?X,?X1) .
+Faculty(?X) :- isFacultyOf(?X,?X1) .
+Article(?X) :- ConferencePaper(?X) .
+Person(?X) :- dislikes(?X,?X1) .
+Science(?X) :- Astronomy(?X) .
+HumanitiesAndSocial(?X) :- English(?X) .
+isSubOrganizationOf(?X,?Y) :- isResearchGroupOf(?X,?Y) .
+Science(?X) :- MarineScience(?X) .
+isProfessorOf(?X,?Y) :- isAssociateProfessorOf(?X,?Y) .
+isResearchGroupOf(?X,?Y) :- hasResearchGroup(?Y,?X) .
+isLecturerOf(?X,?Y) :- hasLecturer(?Y,?X) .
+Engineering(?X) :- ElectricalEngineering(?X) .
+hasFaculty(?X,?Y) :- hasProfessor(?X,?Y) .
+isProfessorOf(?X,?Y) :- isVisitingProfessorOf(?X,?Y) .
+CollegeDiscipline(?X) :- FineArts(?X) .
+hasSupportingStaff(?X,?Y) :- hasSystemStaff(?X,?Y) .
+Science(?X) :- Biology(?X) .
+Science(?X) :- Physics(?X) .
+likes(?X,!Y),Interest(!Y) :- PeopleWithHobby(?X) .
+Person(?X) :- hasMajor(?X,?X1) .
+Professor(?X1) :- isAdvisedBy(?X,?X1) .
+hasWork(?X,?Y) :- teachesCourse(?X,?Y) .
+UGProgram(?X1) :- hasUGProgram(?X,?X1) .
+Q1(?X,?Y) :- isAdvisedBy(?X,?Y) .
+Q2(?X,?Y) :- Student(?X),isStudentOf(?X,?Y),isPartOf(?Y,?X1),hasCollegeDiscipline(?X1,?Y1),Engineering(?Y1) .
+Q3(?X,?Y) :- isAffiliatedOrganizationOf(?X,?Y)  .
+Q4(?X) :- hasCollegeDiscipline(?X,?Y),NonScience(?Y) .
+Q5(?X) :- Student(?X),Organization(?Y),hasDean(?Y,?X1),teachesCourse(?X1,?Y1),takesCourse(?X,?Y1) .

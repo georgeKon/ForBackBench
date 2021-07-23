@@ -1,11 +1,9 @@
 src_Abbey{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Building{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Abstract-Notion{
@@ -14,8 +12,7 @@ src_Abstract-Notion{
 }
 
 src_Flavour{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Actor{
@@ -24,8 +21,7 @@ src_Actor{
 }
 
 src_Entertainer{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Animal{
@@ -34,7 +30,8 @@ src_Animal{
 }
 
 src_Natural-Object{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Architect{
@@ -43,7 +40,8 @@ src_Architect{
 }
 
 src_Creator{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Armament{
@@ -58,18 +56,17 @@ src_Artefact{
 
 src_Art-Form{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 
 src_Object{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Artist{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_Artistic-Movement{
@@ -78,7 +75,8 @@ src_Artistic-Movement{
 }
 
 src_Movement{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Artistic-Style{
@@ -97,7 +95,8 @@ src_Discoverer{
 }
 
 src_Author{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Badge{
@@ -105,12 +104,12 @@ src_Badge{
 }
 
 src_Conceptual-Object{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Battle{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Event{
@@ -119,7 +118,8 @@ src_Event{
 }
 
 src_Board{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Management-Organisation{
@@ -153,8 +153,7 @@ src_Category{
 }
 
 src_VicodiOI{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Cathedral{
@@ -164,8 +163,7 @@ src_Cathedral{
 
 src_Church{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 
 src_Church-Reformer{
@@ -193,13 +191,12 @@ src_Cleric{
 }
 
 src_Person-Role{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Clerical-Leader{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c0 : STRING
 }
 
 src_Leader{
@@ -228,7 +225,8 @@ src_Conductor{
 }
 
 src_Country{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Location{
@@ -242,13 +240,13 @@ src_Crime{
 }
 
 src_Criminal{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Cultural-Agreement{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 
 src_Cultural-Organisation{
@@ -258,8 +256,7 @@ src_Cultural-Organisation{
 
 src_Organisation{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 
 src_Dancer{
@@ -278,7 +275,9 @@ src_Functionary{
 }
 
 src_Disaster{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_Disease{
@@ -297,13 +296,13 @@ src_Dynasty{
 }
 
 src_Social-Group{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Ecclesiarch{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 
 src_Economic-Enterprise{
@@ -317,14 +316,11 @@ src_Economic-Organisation{
 }
 
 src_Economic-Process{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c0 : STRING
 }
 
 src_Economic-Symbol{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Symbol{
@@ -332,7 +328,8 @@ src_Symbol{
 }
 
 src_Economist{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Scientist{
@@ -341,34 +338,36 @@ src_Scientist{
 
 src_Educational-Organisation{
 	c0 : STRING,
-	c1 : STRING
-}
-
-src_Election{
-	c0 : STRING
-}
-
-src_Emperor{
-	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING
 }
 
-src_Head-of-State{
+src_Election{
 	c0 : STRING,
 	c1 : STRING
 }
 
-src_Engineer{
+src_Emperor{
 	c0 : STRING
+}
+
+src_Head-of-State{
+	c0 : STRING
+}
+
+src_Engineer{
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Environment{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Ethnic-Group{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Fictional-Event{
@@ -382,13 +381,13 @@ src_Fictional-Person{
 }
 
 src_Individual{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Field-of-Knowledge{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 
 src_Intellectual-Construct{
@@ -412,7 +411,8 @@ src_Food{
 }
 
 src_Foreign-Minister{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Minister{
@@ -421,7 +421,8 @@ src_Minister{
 }
 
 src_FuzzyTemporalInterval{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Time{
@@ -436,7 +437,8 @@ src_Geographer{
 
 src_Geographical-Discovery{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_Geographical-Feature{
@@ -446,7 +448,8 @@ src_Geographical-Feature{
 
 src_Geographical-Region{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_Governmental-Organisation{
@@ -485,7 +488,8 @@ src_Illness{
 }
 
 src_Life-Event{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Intellectual-Movement{
@@ -504,7 +508,9 @@ src_International-Organisation{
 }
 
 src_Intra-State-Group{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_Inventor{
@@ -528,21 +534,22 @@ src_Jurist{
 }
 
 src_King{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Landmark{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Language{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_League{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Legislation{
@@ -551,18 +558,17 @@ src_Legislation{
 }
 
 src_Liturgical-Object{
-	c0 : STRING
-}
-
-src_Location-Part-Relation{
 	c0 : STRING,
 	c1 : STRING
 }
 
+src_Location-Part-Relation{
+	c0 : STRING
+}
+
 src_Time-Dependent-Relation{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 
 src_Masonic-Lodge{
@@ -592,7 +598,8 @@ src_Military-Person{
 
 src_Military-Unit{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_Monastery{
@@ -601,7 +608,8 @@ src_Monastery{
 }
 
 src_Musician{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_National-Symbol{
@@ -620,8 +628,7 @@ src_Non-Military-Conflict{
 }
 
 src_Other-Religious-Leader{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Other-Religious-Person{
@@ -640,12 +647,13 @@ src_Painting{
 }
 
 src_Work-of-Art{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_Pamphlet{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Party{
@@ -659,8 +667,7 @@ src_Pastime{
 }
 
 src_Period{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Period-in-Office{
@@ -669,7 +676,8 @@ src_Period-in-Office{
 }
 
 src_Person{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Role{
@@ -688,7 +696,8 @@ src_Philosopher{
 }
 
 src_Physician{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Piece-of-Music{
@@ -697,8 +706,7 @@ src_Piece-of-Music{
 }
 
 src_Political-Region{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Political-Symbol{
@@ -707,7 +715,8 @@ src_Political-Symbol{
 }
 
 src_Politician{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Pollution{
@@ -727,7 +736,8 @@ src_Population-Movement{
 
 src_Prince{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_Professor{
@@ -770,12 +780,12 @@ src_Religious-Organisation{
 
 src_Religious-Ideology{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 
 src_Religious-Movement{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Religious-Order{
@@ -793,11 +803,13 @@ src_Religious-Symbol{
 }
 
 src_Representative-Institution{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Ritual{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Saint{
@@ -806,8 +818,7 @@ src_Saint{
 }
 
 src_Scandal{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Scientific-Instrument{
@@ -821,19 +832,15 @@ src_Sculptor{
 }
 
 src_Sculpture{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c0 : STRING
 }
 
 src_Secular-Ideology{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Secular-Movement{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Ship{
@@ -842,8 +849,7 @@ src_Ship{
 }
 
 src_Vehicle{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Social-Stratum{
@@ -858,26 +864,27 @@ src_Sportsman{
 
 src_Stereotype-Group{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 
 src_Structure{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Sultan{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_Technical-Scientific-Advance{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_TemporalInterval{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Theologian{
@@ -890,13 +897,11 @@ src_Trade-Association{
 }
 
 src_Trades-Union{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Trades-Unionist{
-	c0 : STRING,
-	c1 : STRING
+	c0 : STRING
 }
 
 src_Train{
@@ -910,9 +915,7 @@ src_Treaty{
 }
 
 src_Trial{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c0 : STRING
 }
 
 src_University{
@@ -932,11 +935,13 @@ src_Village{
 
 src_War{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_Water{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_exists{
@@ -959,7 +964,8 @@ src_hasCategory{
 
 src_hasLocationContainerMember{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_hasRelationMember{
@@ -970,31 +976,29 @@ src_hasRelationMember{
 
 src_hasLocationPartMember{
 	c0 : STRING,
+	c1 : STRING
+}
+
+src_hasRole{
+	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING
 }
 
-src_hasRole{
+src_isLocationContainerMemberOf{
+	c0 : STRING,
+	c1 : STRING
+}
+
+src_isRelationMemberOf{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING
 }
 
-src_isLocationContainerMemberOf{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
-}
-
-src_isRelationMemberOf{
-	c0 : STRING,
-	c1 : STRING
-}
-
 src_isLocationPartMemberOf{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 

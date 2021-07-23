@@ -1,409 +1,619 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@source srcTradesUnionist[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Trades-Unionist.csv") .
-@source srcGeographicalRegion[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Geographical-Region.csv") .
-@source srcTimeDependent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Time-Dependent.csv") .
-@source srcRitual[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Ritual.csv") .
-@source srcSymbol[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Symbol.csv") .
-@source srcLocationPartRelation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Location-Part-Relation.csv") .
-@source srcPrince[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Prince.csv") .
-@source srcRole[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Role.csv") .
-@source srcPublicOration[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Public-Oration.csv") .
-@source srcReligiousLeader[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Religious-Leader.csv") .
-@source srcAnimal[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Animal.csv") .
-@source srcNewspaper[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Newspaper.csv") .
-@source srcCulturalAgreement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Cultural-Agreement.csv") .
-@source srcFood[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Food.csv") .
-@source srchasLocationPartMember[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_hasLocationPartMember.csv") .
-@source srcArtist[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Artist.csv") .
-@source srcOtherReligiousPerson[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Other-Religious-Person.csv") .
-@source srcReligiousOrder[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Religious-Order.csv") .
 @source srcEconomicSymbol[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Economic-Symbol.csv") .
-@source srcCreator[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Creator.csv") .
-@source srcHeadofGovernment[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Head-of-Government.csv") .
-@source srcJurist[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Jurist.csv") .
-@source srcMilitaryOrganisation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Military-Organisation.csv") .
-@source srchasRole[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_hasRole.csv") .
-@source srcPainting[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Painting.csv") .
-@source srcGeographicalDiscovery[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Geographical-Discovery.csv") .
-@source srcTradeAssociation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Trade-Association.csv") .
-@source srcLandmark[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Landmark.csv") .
-@source srcEcclesiarch[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Ecclesiarch.csv") .
-@source srcReligiousSymbol[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Religious-Symbol.csv") .
-@source srcBuilding[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Building.csv") .
-@source srcGeographer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Geographer.csv") .
-@source srcSultan[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Sultan.csv") .
-@source srcIllness[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Illness.csv") .
-@source srcDisease[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Disease.csv") .
-@source srcWar[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_War.csv") .
-@source srcAbstractNotion[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Abstract-Notion.csv") .
-@source srcBadge[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Badge.csv") .
-@source srcMovement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Movement.csv") .
-@source srcFlavour[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Flavour.csv") .
-@source srcGovernmentalOrganisation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Governmental-Organisation.csv") .
-@source srcrelated[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_related.csv") .
-@source srcLanguage[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Language.csv") .
-@source srcPeriodinOffice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Period-in-Office.csv") .
-@source srcMinister[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Minister.csv") .
-@source srcSecularIdeology[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Secular-Ideology.csv") .
-@source srcEthnicGroup[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Ethnic-Group.csv") .
-@source srcMusician[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Musician.csv") .
-@source srcTime[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Time.csv") .
-@source srcForeignMinister[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Foreign-Minister.csv") .
-@source srcReligiousPractice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Religious-Practice.csv") .
-@source srcChurchReformer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Church-Reformer.csv") .
-@source srcSculpture[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Sculpture.csv") .
-@source srcObject[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Object.csv") .
-@source srcPainter[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Painter.csv") .
-@source srcPhilanthropist[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Philanthropist.csv") .
-@source srcTemporalInterval[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_TemporalInterval.csv") .
-@source srcFictionalEvent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Fictional-Event.csv") .
-@source srcCrime[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Crime.csv") .
-@source srcBoard[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Board.csv") .
-@source srcCommodity[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Commodity.csv") .
-@source srcInventor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Inventor.csv") .
-@source srcEntertainer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Entertainer.csv") .
-@source srcPamphlet[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Pamphlet.csv") .
-@source srcisLocationContainerMemberOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_isLocationContainerMemberOf.csv") .
-@source srcSocialStratum[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Social-Stratum.csv") .
-@source srcSocialGroup[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Social-Group.csv") .
-@source srcBattle[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Battle.csv") .
-@source srcPoliticalRegion[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Political-Region.csv") .
-@source srcProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Professor.csv") .
-@source srcPhysician[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Physician.csv") .
-@source srcJournalist[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Journalist.csv") .
-@source srcEmperor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Emperor.csv") .
-@source srcSecularMovement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Secular-Movement.csv") .
-@source srcRepresentativeInstitution[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Representative-Institution.csv") .
-@source srcPopulationMovement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Population-Movement.csv") .
-@source srcCulturalOrganisation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Cultural-Organisation.csv") .
-@source srcIdeology[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Ideology.csv") .
-@source srcPublisher[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Publisher.csv") .
-@source srcArtForm[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Art-Form.csv") .
-@source srcCategory[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Category.csv") .
-@source srcDancer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Dancer.csv") .
-@source srcMilitaryUnit[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Military-Unit.csv") .
-@source srcVehicle[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Vehicle.csv") .
-@source srcIntellectualConstruct[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Intellectual-Construct.csv") .
-@source srcPersonRole[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Person-Role.csv") .
-@source srcLiturgicalObject[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Liturgical-Object.csv") .
-@source srcSaint[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Saint.csv") .
-@source srcPope[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Pope.csv") .
-@source srcFunctionary[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Functionary.csv") .
-@source srchasLocationContainerMember[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_hasLocationContainerMember.csv") .
-@source srcAuthor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Author.csv") .
-@source srcShip[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Ship.csv") .
-@source srcCleric[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Cleric.csv") .
-@source srcNaturalObject[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Natural-Object.csv") .
-@source srcScientist[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Scientist.csv") .
-@source srcPerson[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Person.csv") .
-@source srcPastime[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Pastime.csv") .
-@source srcFieldofKnowledge[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Field-of-Knowledge.csv") .
-@source srcDynasty[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Dynasty.csv") .
-@source srcManagementOrganisation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Management-Organisation.csv") .
-@source srcHeadofState[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Head-of-State.csv") .
-@source srcGeographicalFeature[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Geographical-Feature.csv") .
-@source srcisRelationMemberOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_isRelationMemberOf.csv") .
-@source srcArmament[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Armament.csv") .
-@source srcPoliticalSymbol[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Political-Symbol.csv") .
-@source srcOtherReligiousLeader[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Other-Religious-Leader.csv") .
-@source srcTrain[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Train.csv") .
-@source srcEconomist[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Economist.csv") .
-@source srcReligiousMovement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Religious-Movement.csv") .
-@source srcReligiousIdeology[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Religious-Ideology.csv") .
-@source srcArtisticStyle[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Artistic-Style.csv") .
-@source srcChurch[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Church.csv") .
-@source srcMeasurableTrend[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Measurable-Trend.csv") .
-@source srcFilmMaker[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Film-Maker.csv") .
-@source srcNationalSymbol[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_National-Symbol.csv") .
-@source srcEconomicOrganisation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Economic-Organisation.csv") .
-@source srcTechnicalScientificAdvance[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Technical-Scientific-Advance.csv") .
-@source srcCathedral[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Cathedral.csv") .
-@source srchasRelationMember[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_hasRelationMember.csv") .
-@source srcCountry[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Country.csv") .
-@source srcAbbey[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Abbey.csv") .
-@source srcEconomicProcess[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Economic-Process.csv") .
-@source srcArchitect[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Architect.csv") .
-@source srcScientificInstrument[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Scientific-Instrument.csv") .
-@source srcDisaster[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Disaster.csv") .
-@source srcDiscoverer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Discoverer.csv") .
-@source srcisLocationPartMemberOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_isLocationPartMemberOf.csv") .
-@source srcArtefact[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Artefact.csv") .
-@source srcMagnate[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Magnate.csv") .
-@source srcMasonicLodge[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Masonic-Lodge.csv") .
-@source srcEvent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Event.csv") .
-@source srcOrganisation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Organisation.csv") .
-@source srcBusinessLeader[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Business-Leader.csv") .
-@source srcLeague[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_League.csv") .
-@source srcTimeDependentRelation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Time-Dependent-Relation.csv") .
-@source srcConceptualObject[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Conceptual-Object.csv") .
-@source srcKing[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_King.csv") .
-@source srcReligiousCommunity[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Religious-Community.csv") .
-@source srcTrial[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Trial.csv") .
-@source srcLegislation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Legislation.csv") .
-@source srcCity[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_City.csv") .
-@source srcPhilosopher[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Philosopher.csv") .
-@source srcDiplomat[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Diplomat.csv") .
-@source srcIndividual[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Individual.csv") .
-@source srcPeriod[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Period.csv") .
-@source srcTradesUnion[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Trades-Union.csv") .
-@source srcCriminal[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Criminal.csv") .
-@source srcComposer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Composer.csv") .
-@source srcActor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Actor.csv") .
-@source srcVicodiOI[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_VicodiOI.csv") .
-@source srcPsychologist[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Psychologist.csv") .
-@source srcPollution[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Pollution.csv") .
-@source srcWater[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Water.csv") .
-@source srcIdea[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Idea.csv") .
-@source srcFuzzyTemporalInterval[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_FuzzyTemporalInterval.csv") .
-@source srcSettlement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Settlement.csv") .
-@source srcStereotypeGroup[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Stereotype-Group.csv") .
-@source srcScandal[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Scandal.csv") .
-@source srcReligiousOrganisation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Religious-Organisation.csv") .
-@source srcSecularLeader[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Secular-Leader.csv") .
-@source srcPieceofMusic[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Piece-of-Music.csv") .
-@source srcMonastery[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Monastery.csv") .
-@source srcUprising[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Uprising.csv") .
 @source srcLifeEvent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Life-Event.csv") .
-@source srcWorkofArt[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Work-of-Art.csv") .
-@source srcClothing[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Clothing.csv") .
-@source srcLeader[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Leader.csv") .
-@source srcParty[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Party.csv") .
-@source srcSculptor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Sculptor.csv") .
-@source srcClericalLeader[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Clerical-Leader.csv") .
-@source srchasCategory[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_hasCategory.csv") .
-@source srcEducationalOrganisation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Educational-Organisation.csv") .
-@source srcNonMilitaryConflict[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Non-Military-Conflict.csv") .
-@source srcSportsman[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Sportsman.csv") .
-@source srcArtisticMovement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Artistic-Movement.csv") .
-@source srcTreaty[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Treaty.csv") .
-@source srcUniversity[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_University.csv") .
-@source srcConductor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Conductor.csv") .
-@source srcInternationalOrganisation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_International-Organisation.csv") .
-@source srcElection[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Election.csv") .
-@source srcPoliticalOrganisation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Political-Organisation.csv") .
-@source srcIntellectualMovement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Intellectual-Movement.csv") .
-@source srcRelic[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Relic.csv") .
-@source srcQueen[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Queen.csv") .
 @source srcBook[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Book.csv") .
-@source srcEconomicEnterprise[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Economic-Enterprise.csv") .
-@source srcPolitician[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Politician.csv") .
+@source srcPastime[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Pastime.csv") .
+@source srcRitual[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Ritual.csv") .
+@source srcClericalLeader[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Clerical-Leader.csv") .
+@source srcDisaster[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Disaster.csv") .
+@source srcPopulationMovement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Population-Movement.csv") .
+@source srcConductor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Conductor.csv") .
+@source srcPhilanthropist[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Philanthropist.csv") .
+@source srcTrial[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Trial.csv") .
+@source srcManagementOrganisation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Management-Organisation.csv") .
+@source srcReligiousIdeology[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Religious-Ideology.csv") .
+@source srcisLocationContainerMemberOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_isLocationContainerMemberOf.csv") .
+@source srcDramaturge[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Dramaturge.csv") .
+@source srcTemporalInterval[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_TemporalInterval.csv") .
+@source srcTrain[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Train.csv") .
+@source srcCleric[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Cleric.csv") .
+@source srcPublicOration[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Public-Oration.csv") .
+@source srcConceptualObject[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Conceptual-Object.csv") .
+@source srcCulturalAgreement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Cultural-Agreement.csv") .
+@source srcFunctionary[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Functionary.csv") .
+@source srcTradesUnion[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Trades-Union.csv") .
+@source srcMovement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Movement.csv") .
+@source srcArtefact[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Artefact.csv") .
+@source srcChurch[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Church.csv") .
+@source srcScientificInstrument[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Scientific-Instrument.csv") .
+@source srcSaint[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Saint.csv") .
+@source srcPoliticalSymbol[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Political-Symbol.csv") .
+@source srcAbstractNotion[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Abstract-Notion.csv") .
+@source srcInventor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Inventor.csv") .
+@source srchasLocationContainerMember[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_hasLocationContainerMember.csv") .
 @source srcLocation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Location.csv") .
-@source srcWriting[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Writing.csv") .
-@source srcTheologian[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Theologian.csv") .
-@source srcFictionalPerson[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Fictional-Person.csv") .
-@source srcEngineer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Engineer.csv") .
+@source srcSecularLeader[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Secular-Leader.csv") .
+@source srcSettlement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Settlement.csv") .
+@source srcWorkofArt[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Work-of-Art.csv") .
+@source srcFuzzyTemporalInterval[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_FuzzyTemporalInterval.csv") .
+@source srcisLocationPartMemberOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_isLocationPartMemberOf.csv") .
+@source srcSecularIdeology[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Secular-Ideology.csv") .
+@source srcSocialGroup[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Social-Group.csv") .
+@source srcIllness[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Illness.csv") .
+@source srchasCategory[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_hasCategory.csv") .
+@source srcPainter[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Painter.csv") .
+@source srcCreator[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Creator.csv") .
+@source srcCrime[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Crime.csv") .
+@source srcGeographicalFeature[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Geographical-Feature.csv") .
+@source srcWater[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Water.csv") .
+@source srcPollution[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Pollution.csv") .
+@source srcPolitician[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Politician.csv") .
+@source srcHeadofGovernment[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Head-of-Government.csv") .
+@source srcLiturgicalObject[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Liturgical-Object.csv") .
+@source srcLegislation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Legislation.csv") .
+@source srcEcclesiarch[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Ecclesiarch.csv") .
+@source srcSecularMovement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Secular-Movement.csv") .
+@source srcDiplomat[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Diplomat.csv") .
+@source srcQueen[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Queen.csv") .
+@source srcStructure[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Structure.csv") .
+@source srcTimeDependentRelation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Time-Dependent-Relation.csv") .
+@source srcDisease[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Disease.csv") .
+@source srcEconomicOrganisation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Economic-Organisation.csv") .
+@source srcPoliticalOrganisation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Political-Organisation.csv") .
+@source srchasRelationMember[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_hasRelationMember.csv") .
+@source srcIdea[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Idea.csv") .
+@source srcRole[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Role.csv") .
+@source srcLeader[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Leader.csv") .
+@source srcArchitect[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Architect.csv") .
+@source srcPamphlet[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Pamphlet.csv") .
+@source srcPsychologist[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Psychologist.csv") .
+@source srcNaturalObject[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Natural-Object.csv") .
+@source srcEducationalOrganisation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Educational-Organisation.csv") .
+@source srcJurist[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Jurist.csv") .
+@source srcActor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Actor.csv") .
+@source srcElection[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Election.csv") .
+@source srcNationalSymbol[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_National-Symbol.csv") .
+@source srcEconomist[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Economist.csv") .
+@source srcMilitaryUnit[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Military-Unit.csv") .
+@source srcRepresentativeInstitution[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Representative-Institution.csv") .
+@source srcBattle[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Battle.csv") .
+@source srcexists[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_exists.csv") .
 @source srcEnvironment[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Environment.csv") .
 @source srcAstronaut[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Astronaut.csv") .
-@source srcexists[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_exists.csv") .
-@source srcJournal[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Journal.csv") .
-@source srcDramaturge[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Dramaturge.csv") .
-@source srcVillage[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Village.csv") .
-@source srcMilitaryPerson[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Military-Person.csv") .
-@source srcInternationalAlliance[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_International-Alliance.csv") .
 @source srcMeeting[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Meeting.csv") .
-@source srcStructure[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Structure.csv") .
+@source srcMusician[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Musician.csv") .
+@source srcBoard[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Board.csv") .
+@source srcInternationalAlliance[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_International-Alliance.csv") .
+@source srcIntellectualConstruct[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Intellectual-Construct.csv") .
+@source srcPainting[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Painting.csv") .
+@source srcPublisher[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Publisher.csv") .
+@source srcScientist[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Scientist.csv") .
+@source srcEvent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Event.csv") .
+@source srcAbbey[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Abbey.csv") .
+@source srcCity[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_City.csv") .
+@source srcPhilosopher[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Philosopher.csv") .
+@source srcDancer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Dancer.csv") .
+@source srcPerson[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Person.csv") .
+@source srcOrganisation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Organisation.csv") .
+@source srcMinister[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Minister.csv") .
+@source srcGeographicalRegion[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Geographical-Region.csv") .
+@source srcShip[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Ship.csv") .
+@source srcBusinessLeader[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Business-Leader.csv") .
+@source srcCathedral[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Cathedral.csv") .
+@source srcJournal[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Journal.csv") .
+@source srcDiscoverer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Discoverer.csv") .
+@source srcMagnate[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Magnate.csv") .
+@source srcPoliticalRegion[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Political-Region.csv") .
+@source srcForeignMinister[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Foreign-Minister.csv") .
+@source srcAuthor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Author.csv") .
+@source srcSymbol[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Symbol.csv") .
+@source srcFilmMaker[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Film-Maker.csv") .
+@source srcReligiousOrganisation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Religious-Organisation.csv") .
+@source srcIdeology[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Ideology.csv") .
+@source srcrelated[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_related.csv") .
+@source srcMonastery[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Monastery.csv") .
+@source srcMasonicLodge[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Masonic-Lodge.csv") .
+@source srcChurchReformer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Church-Reformer.csv") .
+@source srcReligiousOrder[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Religious-Order.csv") .
+@source srcPersonRole[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Person-Role.csv") .
+@source srcProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Professor.csv") .
+@source srcEconomicProcess[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Economic-Process.csv") .
+@source srcSocialStratum[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Social-Stratum.csv") .
+@source srcReligiousSymbol[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Religious-Symbol.csv") .
+@source srcWriting[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Writing.csv") .
+@source srcGeographicalDiscovery[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Geographical-Discovery.csv") .
+@source srcKing[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_King.csv") .
+@source srcTheologian[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Theologian.csv") .
+@source srcIndividual[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Individual.csv") .
+@source srcLandmark[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Landmark.csv") .
+@source srcComposer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Composer.csv") .
+@source srchasLocationPartMember[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_hasLocationPartMember.csv") .
+@source srcEntertainer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Entertainer.csv") .
+@source srcArmament[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Armament.csv") .
+@source srcMilitaryPerson[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Military-Person.csv") .
+@source srcCountry[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Country.csv") .
 @source srcIntraStateGroup[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Intra-State-Group.csv") .
-Entertainer(?X) :- srcLiturgicalObject(?X),srcLocation(?X),srcCommodity(?X),srcArtisticMovement(?X),srcSecularLeader(?X),srcEntertainer(?X) .
-ArtisticMovement(?X) :- srcRole(?X),srcReligiousPractice(?X),srcPollution(?X),srcTradeAssociation(?X),srcClothing(?X),srcDisease(?X),srcArtisticMovement(?X) .
-Cathedral(?X) :- srcSportsman(?X),srcPublisher(?X),srcFuzzyTemporalInterval(?X),srchasRole(?X,?Y),srcInventor(?X),srcCathedral(?X) .
-Philanthropist(?X) :- srcLegislation(?X),srcFilmMaker(?X),srcOtherReligiousPerson(?X),srchasCategory(?X,?Y),srcisRelationMemberOf(?X,?Y),srcTimeDependent(?X),srcPhilanthropist(?X) .
-HeadofState(?X) :- srcPhilanthropist(?X),srcAnimal(?X),srcTrain(?X),srcDiscoverer(?X),srchasCategory(?X,?Y),srcHeadofState(?X) .
-Queen(?X) :- srcNewspaper(?X),srcCleric(?X),srcArtForm(?X),srchasLocationContainerMember(?X,?Y),srcQueen(?X) .
-Emperor(?X) :- srchasRelationMember(?X,?Y),srcPollution(?X),srcStereotypeGroup(?X),srcSaint(?X),srcFuzzyTemporalInterval(?X),srcPerson(?X),srcEmperor(?X) .
-MasonicLodge(?X) :- srcFieldofKnowledge(?X),srcDancer(?X),srcGeographer(?X),srcEcclesiarch(?X),srcMasonicLodge(?X) .
-Structure(?X) :- srcConductor(?X),srcEntertainer(?X),srcBoard(?X),srcEconomist(?X),srcStructure(?X) .
-Leader(?X) :- srcPolitician(?X),srcisLocationPartMemberOf(?X,?Y),srcRelic(?X),srcQueen(?X),srcVillage(?X),srcLeader(?X) .
-Sculptor(?X) :- srcEconomicOrganisation(?X),srcArtisticMovement(?X),srcCommodity(?X),srcFilmMaker(?X),srcisLocationPartMemberOf(?X,?Y),srcSculptor(?X) .
-Movement(?X) :- srcPollution(?X),srcEngineer(?X),srcStructure(?X),srcFictionalPerson(?X),srcAbstractNotion(?X),srcMovement(?X) .
-PoliticalSymbol(?X) :- srcFieldofKnowledge(?X),srcFlavour(?X),srchasLocationContainerMember(?X,?Y),srcPoliticalSymbol(?X) .
-Commodity(?X) :- srcRepresentativeInstitution(?X),srcMasonicLodge(?X),srcReligiousIdeology(?X),srcWorkofArt(?X),srcCommodity(?X) .
-GeographicalFeature(?X) :- srcCommodity(?X),srcReligiousSymbol(?X),srcisLocationContainerMemberOf(?X,?Y),srcPollution(?X),srcReligiousLeader(?X),srcGeographicalFeature(?X) .
-PersonRole(?X) :- srcCulturalAgreement(?X),srcTime(?X),srcSecularIdeology(?X),srcReligiousCommunity(?X),srcPersonRole(?X) .
-Professor(?X) :- srcPersonRole(?X),srcPeriod(?X),srcMonastery(?X),srcKing(?X),srcHeadofState(?X),srcIndividual(?X),srcProfessor(?X) .
-NationalSymbol(?X) :- srchasLocationPartMember(?X,?Y),srcPollution(?X),srcEmperor(?X),srcNationalSymbol(?X) .
-Artefact(?X) :- srcPoliticalSymbol(?X),srcEconomicOrganisation(?X),srcArtisticMovement(?X),srcPolitician(?X),srcTreaty(?X),srcReligiousIdeology(?X),srcArtefact(?X) .
-City(?X) :- srcTradeAssociation(?X),srcArtefact(?X),srcSultan(?X),srcPoliticalOrganisation(?X),srcSocialStratum(?X),srcCity(?X) .
-Magnate(?X) :- srchasRelationMember(?X,?Y),srcPamphlet(?X),srcCriminal(?X),srcEvent(?X),srcMagnate(?X) .
-Object(?X) :- srcElection(?X),srcLocation(?X),srcSculptor(?X),srcTime(?X),srcBattle(?X),srcCreator(?X),srcObject(?X) .
-NaturalObject(?X) :- srcHeadofGovernment(?X),srcLiturgicalObject(?X),srcIllness(?X),srcScientist(?X),srcNaturalObject(?X) .
-hasCategory(?X,?Y) :- srcCreator(?X),srcFood(?X),srcCrime(?X),srcBadge(?X),srcSculpture(?X),srcFuzzyTemporalInterval(?X),srchasCategory(?X,?Y) .
-Ecclesiarch(?X) :- srcVillage(?X),srcLegislation(?X),srcLeader(?X),srcisLocationContainerMemberOf(?X,?Y),srcSaint(?X),srcEcclesiarch(?X) .
-Ideology(?X) :- srcEvent(?X),srcPhilanthropist(?X),srcPieceofMusic(?X),srcPublicOration(?X),srcReligiousPractice(?X),srcGeographicalDiscovery(?X),srcIdeology(?X) .
-Pope(?X) :- srcMilitaryOrganisation(?X),srcTheologian(?X),srcexists(?X,?Y),srcGeographicalRegion(?X),srcTradesUnion(?X),srcPope(?X) .
-PeriodinOffice(?X) :- srcBuilding(?X),srcDiscoverer(?X),srcPeriod(?X),srchasCategory(?X,?Y),srcCreator(?X),srcAnimal(?X),srcPeriodinOffice(?X) .
-FieldofKnowledge(?X) :- srcPamphlet(?X),srcGeographicalDiscovery(?X),srcDynasty(?X),srcInternationalOrganisation(?X),srcTrial(?X),srcFieldofKnowledge(?X) .
-Uprising(?X) :- srchasRole(?X,?Y),srcPersonRole(?X),srcSocialGroup(?X),srcUprising(?X) .
-hasRole(?X,?Y) :- srcCulturalAgreement(?X),srcPersonRole(?X),srcSymbol(?X),srchasRole(?X,?Y) .
-TemporalInterval(?X) :- srcBoard(?X),srcVehicle(?X),srcEnvironment(?X),srcTemporalInterval(?X) .
-TradesUnion(?X) :- srcDancer(?X),srcPolitician(?X),srcDisaster(?X),srcVehicle(?X),srcTradesUnion(?X) .
-Train(?X) :- srcIdeology(?X),srcGeographicalDiscovery(?X),srchasLocationContainerMember(?X,?Y),srcLegislation(?X),srcTrain(?X) .
-Relic(?X) :- srcOrganisation(?X),srcJurist(?X),srcSocialGroup(?X),srcPublicOration(?X),srcRelic(?X) .
-StereotypeGroup(?X) :- srcReligiousOrder(?X),srcInventor(?X),srcSecularIdeology(?X),srcNaturalObject(?X),srcMilitaryOrganisation(?X),srcCriminal(?X),srcStereotypeGroup(?X) .
-Conductor(?X) :- srcGeographicalDiscovery(?X),srcSecularLeader(?X),srcArtefact(?X),srcTreaty(?X),srcBusinessLeader(?X),srcTrial(?X),srcConductor(?X) .
-PublicOration(?X) :- srcPieceofMusic(?X),srcCountry(?X),srcVicodiOI(?X),srcDynasty(?X),srcEvent(?X),srcParty(?X),srcPublicOration(?X) .
-hasRelationMember(?X,?Y) :- srcDynasty(?X),srcLifeEvent(?X),srcMinister(?X),srcChurch(?X),srcEcclesiarch(?X),srchasRelationMember(?X,?Y) .
-Abbey(?X) :- srcArtForm(?X),srcParty(?X),srchasCategory(?X,?Y),srcPublicOration(?X),srcAbbey(?X) .
-Food(?X) :- srcPamphlet(?X),srcReligiousOrder(?X),srcDramaturge(?X),srcFood(?X) .
-Jurist(?X) :- srcMusician(?X),srcLandmark(?X),srcFuzzyTemporalInterval(?X),srcCategory(?X),srcPhysician(?X),srcJurist(?X) .
-Saint(?X) :- srcScandal(?X),srcChurchReformer(?X),srcForeignMinister(?X),srcFunctionary(?X),srcCategory(?X),srcPhilosopher(?X),srcSaint(?X) .
-FictionalEvent(?X) :- srcPieceofMusic(?X),srchasRelationMember(?X,?Y),srcrelated(?X,?Y),srcFictionalEvent(?X) .
-Actor(?X) :- srcEntertainer(?X),srcFlavour(?X),srcElection(?X),srcJurist(?X),srcActor(?X) .
-Organisation(?X) :- srcPerson(?X),srcPrince(?X),srcGeographicalDiscovery(?X),srcSaint(?X),srcOrganisation(?X) .
-ReligiousSymbol(?X) :- srcBattle(?X),srcTemporalInterval(?X),srcCulturalAgreement(?X),srcCrime(?X),srcLanguage(?X),srcLiturgicalObject(?X),srcReligiousSymbol(?X) .
-Period(?X) :- srcLocationPartRelation(?X),srchasLocationContainerMember(?X,?Y),srcLiturgicalObject(?X),srcPeriod(?X) .
-FuzzyTemporalInterval(?X) :- srcEconomicSymbol(?X),srcObject(?X),srcTechnicalScientificAdvance(?X),srcGeographicalRegion(?X),srcMovement(?X),srcFuzzyTemporalInterval(?X) .
-SecularLeader(?X) :- srcJurist(?X),srcIdeology(?X),srcBuilding(?X),srcComposer(?X),srcSecularLeader(?X) .
-Flavour(?X) :- srcUprising(?X),srcPoliticalRegion(?X),srcReligiousSymbol(?X),srcBook(?X),srcFlavour(?X) .
-SecularMovement(?X) :- srcFunctionary(?X),srcArtForm(?X),srcPersonRole(?X),srcTimeDependentRelation(?X),srcLiturgicalObject(?X),srcObject(?X),srcSecularMovement(?X) .
-Musician(?X) :- srcWriting(?X),srcPamphlet(?X),srcTimeDependentRelation(?X),srcCleric(?X),srcArtForm(?X),srcMusician(?X) .
-isLocationContainerMemberOf(?X,?Y) :- srcDiplomat(?X),srcBusinessLeader(?X),srcSculptor(?X),srcCleric(?X),srcReligiousLeader(?X),srcisLocationContainerMemberOf(?X,?Y) .
-GeographicalRegion(?X) :- srcFuzzyTemporalInterval(?X),srcRitual(?X),srcMilitaryPerson(?X),srcVehicle(?X),srcGeographicalRegion(?X) .
-EthnicGroup(?X) :- srcFood(?X),srcEconomicSymbol(?X),srcGovernmentalOrganisation(?X),srcEthnicGroup(?X) .
-Animal(?X) :- srcArtisticStyle(?X),srcSecularLeader(?X),srcisLocationContainerMemberOf(?X,?Y),srcTradesUnionist(?X),srcObject(?X),srcAnimal(?X) .
-IntraStateGroup(?X) :- srcLandmark(?X),srcSultan(?X),srcPainting(?X),srcPoliticalOrganisation(?X),srcIntraStateGroup(?X) .
-Functionary(?X) :- srcGeographicalDiscovery(?X),srcSocialStratum(?X),srcChurchReformer(?X),srcisLocationPartMemberOf(?X,?Y),srcPerson(?X),srcFunctionary(?X) .
-Newspaper(?X) :- srcPoliticalRegion(?X),srcActor(?X),srcUniversity(?X),srcLanguage(?X),srcEntertainer(?X),srcAstronaut(?X),srcNewspaper(?X) .
-EconomicOrganisation(?X) :- srcPeriod(?X),srcLegislation(?X),srcCriminal(?X),srcexists(?X,?Y),srcHeadofState(?X),srcEconomicOrganisation(?X) .
-Treaty(?X) :- srcKing(?X),srcCategory(?X),srcMovement(?X),srcTime(?X),srcSportsman(?X),srcPhilanthropist(?X),srcTreaty(?X) .
-Legislation(?X) :- srcArchitect(?X),srcShip(?X),srcNaturalObject(?X),srcrelated(?X,?Y),srcElection(?X),srcTradeAssociation(?X),srcLegislation(?X) .
-Person(?X) :- srcBoard(?X),srcWriting(?X),srcElection(?X),srcLocation(?X),srcIdeology(?X),srcPerson(?X) .
-RepresentativeInstitution(?X) :- srcPainter(?X),srcGovernmentalOrganisation(?X),srcObject(?X),srcFunctionary(?X),srcRepresentativeInstitution(?X) .
-FictionalPerson(?X) :- srcEconomicOrganisation(?X),srcAstronaut(?X),srcTradesUnion(?X),srcFictionalPerson(?X) .
-SocialGroup(?X) :- srcClericalLeader(?X),srcEnvironment(?X),srcMilitaryUnit(?X),srcSecularMovement(?X),srcManagementOrganisation(?X),srcSecularLeader(?X),srcSocialGroup(?X) .
-Author(?X) :- srcReligiousCommunity(?X),srcGovernmentalOrganisation(?X),srcJournalist(?X),srcFunctionary(?X),srcFieldofKnowledge(?X),srcAuthor(?X) .
-Ship(?X) :- srcPublisher(?X),srcClothing(?X),srcElection(?X),srcLocation(?X),srcCathedral(?X),srcIndividual(?X),srcShip(?X) .
-PoliticalRegion(?X) :- srcArtForm(?X),srcMusician(?X),srcDiscoverer(?X),srcPoliticalRegion(?X) .
-Minister(?X) :- srcEconomicProcess(?X),srcRitual(?X),srcStereotypeGroup(?X),srcMagnate(?X),srcNaturalObject(?X),srcMinister(?X) .
-GovernmentalOrganisation(?X) :- srcPainter(?X),srcJurist(?X),srcEducationalOrganisation(?X),srcParty(?X),srcTrial(?X),srcGovernmentalOrganisation(?X) .
-WorkofArt(?X) :- srcReligiousIdeology(?X),srcPeriod(?X),srcBattle(?X),srcUprising(?X),srchasRelationMember(?X,?Y),srcWorkofArt(?X) .
-Building(?X) :- srcPastime(?X),srcEconomicProcess(?X),srcGovernmentalOrganisation(?X),srcComposer(?X),srcBuilding(?X) .
-Sportsman(?X) :- srcTimeDependentRelation(?X),srcDynasty(?X),srcFood(?X),srcSportsman(?X) .
-Role(?X) :- srcJurist(?X),srcPastime(?X),srcWar(?X),srcRole(?X) .
-ReligiousPractice(?X) :- srcReligiousIdeology(?X),srcPopulationMovement(?X),srcPeriodinOffice(?X),srcLiturgicalObject(?X),srcMilitaryUnit(?X),srcReligiousPractice(?X) .
-TradeAssociation(?X) :- srcTreaty(?X),srcCategory(?X),srcDancer(?X),srcTheologian(?X),srcJurist(?X),srcManagementOrganisation(?X),srcTradeAssociation(?X) .
-ReligiousIdeology(?X) :- srcParty(?X),srcWriting(?X),srcRole(?X),srcTheologian(?X),srcMilitaryOrganisation(?X),srcScientificInstrument(?X),srcReligiousIdeology(?X) .
-IntellectualMovement(?X) :- srcDisaster(?X),srcRole(?X),srcVehicle(?X),srcIntellectualMovement(?X) .
-Artist(?X) :- srchasLocationContainerMember(?X,?Y),srcLocation(?X),srcisLocationPartMemberOf(?X,?Y),srcArtist(?X) .
-Ritual(?X) :- srcSecularIdeology(?X),srcPope(?X),srcJournal(?X),srcRitual(?X) .
-Engineer(?X) :- srcManagementOrganisation(?X),srchasLocationContainerMember(?X,?Y),srcPainting(?X),srcAnimal(?X),srcLegislation(?X),srcArtefact(?X),srcEngineer(?X) .
-TradesUnionist(?X) :- srcFlavour(?X),srcRole(?X),srcTradeAssociation(?X),srcReligiousLeader(?X),srcTradesUnionist(?X) .
-SocialStratum(?X) :- srcMonastery(?X),srcFlavour(?X),srcNonMilitaryConflict(?X),srcSecularIdeology(?X),srcSocialStratum(?X) .
-Time(?X) :- srcKing(?X),srcBuilding(?X),srcMusician(?X),srcTemporalInterval(?X),srcUniversity(?X),srcEmperor(?X),srcTime(?X) .
-Language(?X) :- srcPhilanthropist(?X),srchasRelationMember(?X,?Y),srcArchitect(?X),srcBook(?X),srcEconomicSymbol(?X),srcPainter(?X),srcLanguage(?X) .
-CulturalOrganisation(?X) :- srcArmament(?X),srcPublisher(?X),srcCity(?X),srcTime(?X),srcForeignMinister(?X),srcJurist(?X),srcCulturalOrganisation(?X) .
-Sculpture(?X) :- srcOtherReligiousPerson(?X),srcActor(?X),srcNewspaper(?X),srcTimeDependent(?X),srcGeographer(?X),srcCategory(?X),srcSculpture(?X) .
-Scandal(?X) :- srcJournalist(?X),srcIntellectualMovement(?X),srcEntertainer(?X),srcScandal(?X) .
-CulturalAgreement(?X) :- srcMeeting(?X),srcLanguage(?X),srcArtisticStyle(?X),srcWar(?X),srcCulturalAgreement(?X) .
-EconomicEnterprise(?X) :- srcEntertainer(?X),srcTemporalInterval(?X),srcDiscoverer(?X),srcSecularLeader(?X),srcEconomicEnterprise(?X) .
-PieceofMusic(?X) :- srcTime(?X),srcPollution(?X),srcRelic(?X),srcTradesUnion(?X),srcPieceofMusic(?X) .
-Prince(?X) :- srchasCategory(?X,?Y),srcGeographicalRegion(?X),srcFunctionary(?X),srcTheologian(?X),srcEngineer(?X),srcPrince(?X) .
-Vehicle(?X) :- srcUniversity(?X),srcTradeAssociation(?X),srcOtherReligiousPerson(?X),srcSecularIdeology(?X),srcScandal(?X),srcVehicle(?X) .
-LiturgicalObject(?X) :- srcIntellectualConstruct(?X),srcMilitaryUnit(?X),srcSocialGroup(?X),srcGeographicalFeature(?X),srcLiturgicalObject(?X) .
-Battle(?X) :- srcAstronaut(?X),srcPoliticalOrganisation(?X),srcPeriodinOffice(?X),srcBattle(?X) .
-ClericalLeader(?X) :- srcPolitician(?X),srcSocialGroup(?X),srcOtherReligiousPerson(?X),srcWater(?X),srcMilitaryUnit(?X),srcPeriodinOffice(?X),srcClericalLeader(?X) .
-War(?X) :- srcStereotypeGroup(?X),srcCulturalOrganisation(?X),srcPolitician(?X),srcArchitect(?X),srcWar(?X) .
-League(?X) :- srcTime(?X),srcCleric(?X),srcOrganisation(?X),srcArtisticStyle(?X),srcNonMilitaryConflict(?X),srcLeague(?X) .
-Journal(?X) :- srcNaturalObject(?X),srcCleric(?X),srcBoard(?X),srchasLocationContainerMember(?X,?Y),srcJournal(?X) .
-Country(?X) :- srcPsychologist(?X),srcClothing(?X),srcVillage(?X),srcSettlement(?X),srcReligiousLeader(?X),srcCountry(?X) .
-EconomicProcess(?X) :- srcMusician(?X),srcCulturalAgreement(?X),srcIntellectualConstruct(?X),srcEconomicProcess(?X) .
-Water(?X) :- srcMasonicLodge(?X),srcClericalLeader(?X),srcGeographicalFeature(?X),srcWater(?X) .
-Creator(?X) :- srcStructure(?X),srcArtisticMovement(?X),srcLocationPartRelation(?X),srcCreator(?X) .
-EconomicSymbol(?X) :- srcEconomist(?X),srcPhilanthropist(?X),srcRepresentativeInstitution(?X),srcEconomicSymbol(?X) .
-FilmMaker(?X) :- srcWriting(?X),srcEcclesiarch(?X),srcJournal(?X),srchasLocationPartMember(?X,?Y),srcFilmMaker(?X) .
-Individual(?X) :- srcNaturalObject(?X),srcIllness(?X),srcMilitaryPerson(?X),srcEconomist(?X),srcUprising(?X),srcIndividual(?X) .
-ReligiousOrder(?X) :- srcSettlement(?X),srcArtisticMovement(?X),srcArtefact(?X),srcReligiousOrder(?X) .
-hasLocationPartMember(?X,?Y) :- srcOtherReligiousLeader(?X),srcIndividual(?X),srcCathedral(?X),srcNationalSymbol(?X),srcPublisher(?X),srcBadge(?X),srchasLocationPartMember(?X,?Y) .
-Landmark(?X) :- srcCulturalOrganisation(?X),srcDisease(?X),srcActor(?X),srcInternationalOrganisation(?X),srcLandmark(?X) .
-Meeting(?X) :- srcCrime(?X),srcSultan(?X),srcIntraStateGroup(?X),srcMeeting(?X) .
-Scientist(?X) :- srcRitual(?X),srcOtherReligiousLeader(?X),srcPsychologist(?X),srcUniversity(?X),srcOtherReligiousPerson(?X),srcScientist(?X) .
-Psychologist(?X) :- srcConceptualObject(?X),srcNationalSymbol(?X),srcDiscoverer(?X),srcEconomicEnterprise(?X),srcPsychologist(?X) .
-ManagementOrganisation(?X) :- srcEnvironment(?X),srcFictionalPerson(?X),srcBadge(?X),srcisLocationContainerMemberOf(?X,?Y),srcAbbey(?X),srcBook(?X),srcManagementOrganisation(?X) .
-HeadofGovernment(?X) :- srcPhysician(?X),srcNonMilitaryConflict(?X),srcDancer(?X),srcHeadofGovernment(?X) .
-GeographicalDiscovery(?X) :- srcSymbol(?X),srcTrain(?X),srcSculptor(?X),srcEngineer(?X),srcTradesUnion(?X),srcGeographicalDiscovery(?X) .
-Publisher(?X) :- srcisLocationContainerMemberOf(?X,?Y),srcGeographicalFeature(?X),srchasRelationMember(?X,?Y),srcPublisher(?X) .
-ConceptualObject(?X) :- srcOtherReligiousLeader(?X),srcDiplomat(?X),srcDramaturge(?X),srcTimeDependent(?X),srcAstronaut(?X),srcMilitaryOrganisation(?X),srcConceptualObject(?X) .
-Trial(?X) :- srcLeader(?X),srcPeriodinOffice(?X),srcBuilding(?X),srcTimeDependent(?X),srcTrial(?X) .
-Illness(?X) :- srcSculpture(?X),srcConductor(?X),srcSecularMovement(?X),srcTheologian(?X),srcCleric(?X),srcIllness(?X) .
-MilitaryPerson(?X) :- srcElection(?X),srcTimeDependent(?X),srcLocation(?X),srcMilitaryPerson(?X) .
-TimeDependent(?X) :- srcArtefact(?X),srcDisaster(?X),srcPoliticalRegion(?X),srcChurch(?X),srcTimeDependent(?X) .
-ReligiousLeader(?X) :- srcProfessor(?X),srcStereotypeGroup(?X),srcRepresentativeInstitution(?X),srcVicodiOI(?X),srcReligiousLeader(?X) .
-SecularIdeology(?X) :- srcBadge(?X),srcAbbey(?X),srcFictionalEvent(?X),srcScientist(?X),srcPoliticalRegion(?X),srcStructure(?X),srcSecularIdeology(?X) .
-Diplomat(?X) :- srcEntertainer(?X),srcMilitaryOrganisation(?X),srcRitual(?X),srcTradesUnionist(?X),srcDiplomat(?X) .
-Location(?X) :- srcMonastery(?X),srcIdea(?X),srcObject(?X),srcMovement(?X),srcLocation(?X) .
-Village(?X) :- srcPoliticalOrganisation(?X),srcRitual(?X),srcSecularLeader(?X),srcFilmMaker(?X),srcPope(?X),srcVillage(?X) .
-related(?X,?Y) :- srcNewspaper(?X),srcBadge(?X),srcPsychologist(?X),srcJournalist(?X),srcCountry(?X),srcrelated(?X,?Y) .
-Writing(?X) :- srcTechnicalScientificAdvance(?X),srcDiscoverer(?X),srcIntellectualMovement(?X),srcPopulationMovement(?X),srcPainter(?X),srcWriting(?X) .
-hasLocationContainerMember(?X,?Y) :- srcStereotypeGroup(?X),srcArchitect(?X),srcBook(?X),srcFieldofKnowledge(?X),srcFuzzyTemporalInterval(?X),srchasLocationContainerMember(?X,?Y) .
-IntellectualConstruct(?X) :- srcReligiousSymbol(?X),srcLeader(?X),srcTimeDependentRelation(?X),srcArtForm(?X),srcEconomicOrganisation(?X),srcIntellectualConstruct(?X) .
-Geographer(?X) :- srcStructure(?X),srchasLocationContainerMember(?X,?Y),srcIdea(?X),srcEconomicSymbol(?X),srcAuthor(?X),srcGeographer(?X) .
-Cleric(?X) :- srcPrince(?X),srcKing(?X),srcVehicle(?X),srcRole(?X),srcCleric(?X) .
-ScientificInstrument(?X) :- srcCrime(?X),srcScientist(?X),srcTrain(?X),srcEntertainer(?X),srcScientificInstrument(?X) .
-Dramaturge(?X) :- srcTime(?X),srcMilitaryOrganisation(?X),srcPollution(?X),srcElection(?X),srcDramaturge(?X) .
-Church(?X) :- srcCity(?X),srcMilitaryOrganisation(?X),srcDisease(?X),srcInventor(?X),srcChurch(?X) .
-Architect(?X) :- srcMeeting(?X),srcPhysician(?X),srcFunctionary(?X),srcWorkofArt(?X),srcMilitaryPerson(?X),srcSecularIdeology(?X),srcArchitect(?X) .
-Painting(?X) :- srcEmperor(?X),srcForeignMinister(?X),srcSculptor(?X),srcSculpture(?X),srcCriminal(?X),srcPsychologist(?X),srcPainting(?X) .
-Category(?X) :- srcGeographer(?X),srcRepresentativeInstitution(?X),srcPhysician(?X),srcSculptor(?X),srcDiplomat(?X),srcDisaster(?X),srcCategory(?X) .
-PopulationMovement(?X) :- srcEmperor(?X),srcMilitaryPerson(?X),srcArtist(?X),srcPoliticalOrganisation(?X),srcSecularMovement(?X),srcPopulationMovement(?X) .
-King(?X) :- srcWar(?X),srcFictionalPerson(?X),srcIndividual(?X),srcReligiousOrganisation(?X),srcPolitician(?X),srcDramaturge(?X),srcKing(?X) .
-Party(?X) :- srcisLocationContainerMemberOf(?X,?Y),srcLocationPartRelation(?X),srcReligiousMovement(?X),srcMilitaryUnit(?X),srcRelic(?X),srcParty(?X) .
-Pollution(?X) :- srcNationalSymbol(?X),srcEconomist(?X),srcGeographer(?X),srcSettlement(?X),srcClothing(?X),srcCulturalAgreement(?X),srcPollution(?X) .
-Disease(?X) :- srcCulturalAgreement(?X),srcCulturalOrganisation(?X),srcSportsman(?X),srcDisease(?X) .
-Sultan(?X) :- srcMinister(?X),srcMilitaryUnit(?X),srcMagnate(?X),srcSultan(?X) .
-Criminal(?X) :- srcFieldofKnowledge(?X),srcReligiousCommunity(?X),srcBook(?X),srcCriminal(?X) .
-Philosopher(?X) :- srcTrain(?X),srcTimeDependentRelation(?X),srcGeographer(?X),srcPhilosopher(?X) .
-AbstractNotion(?X) :- srcHeadofState(?X),srcArtisticStyle(?X),srcMovement(?X),srcReligiousIdeology(?X),srcBuilding(?X),srcAbstractNotion(?X) .
-TimeDependentRelation(?X) :- srcLandmark(?X),srcNonMilitaryConflict(?X),srcBadge(?X),srcLanguage(?X),srcTimeDependentRelation(?X) .
-LocationPartRelation(?X) :- srcWar(?X),srcStructure(?X),srcTradesUnionist(?X),srcScientificInstrument(?X),srcCity(?X),srcLocationPartRelation(?X) .
-Composer(?X) :- srcNationalSymbol(?X),srcisLocationPartMemberOf(?X,?Y),srcKing(?X),srcReligiousOrder(?X),srcComposer(?X) .
-LifeEvent(?X) :- srcGeographicalFeature(?X),srcComposer(?X),srcMeeting(?X),srcDynasty(?X),srcOrganisation(?X),srcLifeEvent(?X) .
-ReligiousOrganisation(?X) :- srcSettlement(?X),srcLocation(?X),srcPainter(?X),srcReligiousOrganisation(?X) .
-Event(?X) :- srcexists(?X,?Y),srcBuilding(?X),srcTrain(?X),srcForeignMinister(?X),srcScientist(?X),srcEvent(?X) .
-BusinessLeader(?X) :- srcMasonicLodge(?X),srcJournal(?X),srcLeader(?X),srcRitual(?X),srcTechnicalScientificAdvance(?X),srcCountry(?X),srcBusinessLeader(?X) .
-MeasurableTrend(?X) :- srcActor(?X),srcVicodiOI(?X),srcPhysician(?X),srcPainter(?X),srcPastime(?X),srcMeasurableTrend(?X) .
-VicodiOI(?X) :- srcQueen(?X),srcPublicOration(?X),srcWater(?X),srcInternationalAlliance(?X),srcJurist(?X),srcVicodiOI(?X) .
-ArtisticStyle(?X) :- srcComposer(?X),srcEconomicProcess(?X),srcScandal(?X),srcBook(?X),srcNewspaper(?X),srcArtisticMovement(?X),srcArtisticStyle(?X) .
-Discoverer(?X) :- srcWorkofArt(?X),srcisLocationContainerMemberOf(?X,?Y),srcConductor(?X),srcCulturalOrganisation(?X),srcPublisher(?X),srcArchitect(?X),srcDiscoverer(?X) .
-ChurchReformer(?X) :- srcWater(?X),srcFuzzyTemporalInterval(?X),srcDiscoverer(?X),srcCommodity(?X),srcChurchReformer(?X) .
-Dynasty(?X) :- srcBuilding(?X),srcTimeDependent(?X),srcCulturalAgreement(?X),srcChurch(?X),srcDynasty(?X) .
-Environment(?X) :- srcDancer(?X),srcAstronaut(?X),srcLegislation(?X),srcJournalist(?X),srcTrain(?X),srcEnvironment(?X) .
-MilitaryUnit(?X) :- srcScientificInstrument(?X),srcTradesUnion(?X),srcisLocationPartMemberOf(?X,?Y),srcEconomicEnterprise(?X),srcMilitaryUnit(?X) .
-ForeignMinister(?X) :- srcDisease(?X),srcPoliticalSymbol(?X),srcCrime(?X),srcForeignMinister(?X) .
-EducationalOrganisation(?X) :- srchasCategory(?X,?Y),srcMeasurableTrend(?X),srchasRelationMember(?X,?Y),srcEducationalOrganisation(?X) .
-Journalist(?X) :- srcAstronaut(?X),srcCriminal(?X),srcPainter(?X),srcJournalist(?X) .
-ReligiousMovement(?X) :- srcChurch(?X),srcLeader(?X),srcCommodity(?X),srcPoliticalOrganisation(?X),srcIndividual(?X),srcReligiousMovement(?X) .
-Theologian(?X) :- srcJournal(?X),srcTradesUnion(?X),srchasRole(?X,?Y),srcReligiousOrganisation(?X),srcPublicOration(?X),srcTheologian(?X) .
-isLocationPartMemberOf(?X,?Y) :- srcPoliticalSymbol(?X),srcArtisticMovement(?X),srcLanguage(?X),srcFood(?X),srcisLocationPartMemberOf(?X,?Y) .
-isRelationMemberOf(?X,?Y) :- srcGovernmentalOrganisation(?X),srcPollution(?X),srcPsychologist(?X),srcMusician(?X),srcIllness(?X),srcPerson(?X),srcisRelationMemberOf(?X,?Y) .
-Astronaut(?X) :- srcClothing(?X),srcPainting(?X),srcFictionalPerson(?X),srcChurch(?X),srcComposer(?X),srcAstronaut(?X) .
-Painter(?X) :- srcMeeting(?X),srcMusician(?X),srcArmament(?X),srcBook(?X),srcReligiousIdeology(?X),srcPainter(?X) .
-Economist(?X) :- srcGeographicalFeature(?X),srcAbstractNotion(?X),srcEconomicOrganisation(?X),srcReligiousMovement(?X),srcEconomist(?X) .
-MilitaryOrganisation(?X) :- srcUniversity(?X),srcLiturgicalObject(?X),srcMeeting(?X),srcBoard(?X),srcReligiousMovement(?X),srcActor(?X),srcMilitaryOrganisation(?X) .
-exists(?X,?Y) :- srcPastime(?X),srcDisease(?X),srcDisaster(?X),srcexists(?X,?Y) .
-ArtForm(?X) :- srcCrime(?X),srcSaint(?X),srcChurchReformer(?X),srcArtForm(?X) .
-ReligiousCommunity(?X) :- srcReligiousOrder(?X),srcClothing(?X),srcConceptualObject(?X),srcReligiousCommunity(?X) .
-Dancer(?X) :- srcArtisticStyle(?X),srcTheologian(?X),srcIntellectualConstruct(?X),srcScientificInstrument(?X),srcKing(?X),srcSocialStratum(?X),srcDancer(?X) .
-Physician(?X) :- srcMovement(?X),srcEcclesiarch(?X),srcRelic(?X),srcPollution(?X),srcCriminal(?X),srcPhysician(?X) .
-InternationalAlliance(?X) :- srcMusician(?X),srcMonastery(?X),srcOrganisation(?X),srcIntellectualConstruct(?X),srcArchitect(?X),srcIntellectualMovement(?X),srcInternationalAlliance(?X) .
-Clothing(?X) :- srcSaint(?X),srcVicodiOI(?X),srcPersonRole(?X),srcFilmMaker(?X),srcSculpture(?X),srcClothing(?X) .
-Crime(?X) :- srcEntertainer(?X),srcConceptualObject(?X),srcArmament(?X),srcIndividual(?X),srcOtherReligiousPerson(?X),srcChurchReformer(?X),srcCrime(?X) .
-Pastime(?X) :- srcFictionalPerson(?X),srcLiturgicalObject(?X),srcPainter(?X),srcReligiousPractice(?X),srcPoliticalOrganisation(?X),srcReligiousLeader(?X),srcPastime(?X) .
-OtherReligiousPerson(?X) :- srcEcclesiarch(?X),srcAstronaut(?X),srcEconomicOrganisation(?X),srcSecularMovement(?X),srcEngineer(?X),srcOtherReligiousPerson(?X) .
-Monastery(?X) :- srcPrince(?X),srcPolitician(?X),srcReligiousOrganisation(?X),srcPeriod(?X),srcPamphlet(?X),srcexists(?X,?Y),srcMonastery(?X) .
-Disaster(?X) :- srcReligiousOrganisation(?X),srchasRole(?X,?Y),srcexists(?X,?Y),srcEconomicOrganisation(?X),srcDiscoverer(?X),srcDisaster(?X) .
-Symbol(?X) :- srcSculptor(?X),srcPieceofMusic(?X),srcFood(?X),srcSymbol(?X) .
-Inventor(?X) :- srcDynasty(?X),srcUniversity(?X),srcWater(?X),srcMasonicLodge(?X),srcHeadofGovernment(?X),srcInventor(?X) .
-Settlement(?X) :- srcIndividual(?X),srcComposer(?X),srcReligiousLeader(?X),srcPollution(?X),srcPoliticalSymbol(?X),srcSettlement(?X) .
-Politician(?X) :- srcCulturalAgreement(?X),srcPope(?X),srcChurch(?X),srcDiscoverer(?X),srcPolitician(?X) .
-TechnicalScientificAdvance(?X) :- srcAbbey(?X),srcDiplomat(?X),srcFictionalEvent(?X),srcFunctionary(?X),srcEconomicEnterprise(?X),srcTechnicalScientificAdvance(?X) .
-Election(?X) :- srcReligiousOrder(?X),srcArchitect(?X),srcSymbol(?X),srcPainter(?X),srcChurchReformer(?X),srcElection(?X) .
-Badge(?X) :- srcPastime(?X),srcCrime(?X),srcArmament(?X),srcPoliticalSymbol(?X),srcBadge(?X) .
-Book(?X) :- srcMinister(?X),srcEconomicEnterprise(?X),srcTradesUnionist(?X),srcBook(?X) .
-Armament(?X) :- srcMasonicLodge(?X),srcCathedral(?X),srcMilitaryUnit(?X),srcSculpture(?X),srcOtherReligiousPerson(?X),srcArmament(?X) .
-PoliticalOrganisation(?X) :- srcWorkofArt(?X),srcCountry(?X),srcArchitect(?X),srcPoliticalSymbol(?X),srcNonMilitaryConflict(?X),srcPoliticalOrganisation(?X) .
-InternationalOrganisation(?X) :- srcNaturalObject(?X),srcPhilanthropist(?X),srcCleric(?X),srcInternationalOrganisation(?X) .
-Board(?X) :- srcEconomicEnterprise(?X),srcGeographicalRegion(?X),srcUprising(?X),srcTreaty(?X),srcWar(?X),srcBoard(?X) .
-NonMilitaryConflict(?X) :- srcScandal(?X),srcChurch(?X),srcProfessor(?X),srcNonMilitaryConflict(?X) .
-Pamphlet(?X) :- srcDancer(?X),srcFictionalPerson(?X),srcTreaty(?X),srcPopulationMovement(?X),srcSocialStratum(?X),srcPamphlet(?X) .
-OtherReligiousLeader(?X) :- srcPsychologist(?X),srcEntertainer(?X),srcClericalLeader(?X),srcSecularMovement(?X),srcTheologian(?X),srcOtherReligiousLeader(?X) .
-Idea(?X) :- srcSymbol(?X),srcRitual(?X),srcEducationalOrganisation(?X),srcIdea(?X) .
-University(?X) :- srcCulturalAgreement(?X),srcIdeology(?X),srcBook(?X),srcLanguage(?X),srcUniversity(?X) .
+@source srcPieceofMusic[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Piece-of-Music.csv") .
+@source srcNonMilitaryConflict[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Non-Military-Conflict.csv") .
+@source srcReligiousCommunity[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Religious-Community.csv") .
+@source srcObject[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Object.csv") .
+@source srcUniversity[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_University.csv") .
+@source srcIntellectualMovement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Intellectual-Movement.csv") .
+@source srcCriminal[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Criminal.csv") .
+@source srcScandal[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Scandal.csv") .
+@source srcFictionalEvent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Fictional-Event.csv") .
+@source srcParty[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Party.csv") .
+@source srcEthnicGroup[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Ethnic-Group.csv") .
+@source srcEngineer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Engineer.csv") .
+@source srcTreaty[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Treaty.csv") .
+@source srcJournalist[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Journalist.csv") .
+@source srcWar[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_War.csv") .
+@source srcVillage[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Village.csv") .
+@source srcLeague[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_League.csv") .
+@source srcMilitaryOrganisation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Military-Organisation.csv") .
+@source srcReligiousMovement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Religious-Movement.csv") .
+@source srcFlavour[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Flavour.csv") .
+@source srcSportsman[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Sportsman.csv") .
+@source srchasRole[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_hasRole.csv") .
+@source srcFood[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Food.csv") .
+@source srcBuilding[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Building.csv") .
+@source srcNewspaper[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Newspaper.csv") .
+@source srcEconomicEnterprise[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Economic-Enterprise.csv") .
+@source srcGeographer[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Geographer.csv") .
+@source srcFieldofKnowledge[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Field-of-Knowledge.csv") .
+@source srcPeriodinOffice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Period-in-Office.csv") .
+@source srcAnimal[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Animal.csv") .
+@source srcArtist[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Artist.csv") .
+@source srcisRelationMemberOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_isRelationMemberOf.csv") .
+@source srcOtherReligiousPerson[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Other-Religious-Person.csv") .
+@source srcTechnicalScientificAdvance[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Technical-Scientific-Advance.csv") .
+@source srcEmperor[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Emperor.csv") .
+@source srcBadge[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Badge.csv") .
+@source srcArtisticMovement[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Artistic-Movement.csv") .
+@source srcFictionalPerson[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Fictional-Person.csv") .
+@source srcVehicle[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Vehicle.csv") .
+@source srcClothing[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Clothing.csv") .
+@source srcPeriod[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Period.csv") .
+@source srcCommodity[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Commodity.csv") .
+@source srcTimeDependent[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Time-Dependent.csv") .
+@source srcInternationalOrganisation[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_International-Organisation.csv") .
+@source srcUprising[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Uprising.csv") .
+@source srcStereotypeGroup[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Stereotype-Group.csv") .
+@source srcArtForm[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Art-Form.csv") .
+@source srcSculpture[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Sculpture.csv") .
+@source srcRelic[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Relic.csv") .
+@source srcReligiousPractice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Religious-Practice.csv") .
+@source srcCategory[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Category.csv") .
+@source srcVicodiOI[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_VicodiOI.csv") .
+@source srcSultan[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Vicodi/data/GAV/small/src_Sultan.csv") .
+TechnicalScientificAdvance(?X) :- srcEconomicSymbol(?X),srcTechnicalScientificAdvance(?X) .
+MilitaryUnit(?X) :- srcisLocationContainerMemberOf(?X,?Y),srcMilitaryUnit(?X) .
+Board(?X) :- srcGeographicalRegion(?X),srcBoard(?X) .
+StereotypeGroup(?X) :- srcLeague(?X),srcStereotypeGroup(?X) .
+Battle(?X) :- srcRitual(?X),srcMinister(?X),srcBattle(?X) .
+Time(?X) :- srcScandal(?X),srcCriminal(?X),srcPoliticalSymbol(?X),srcTime(?X) .
+FieldofKnowledge(?X) :- srcTechnicalScientificAdvance(?X),srcMilitaryOrganisation(?X),srcFieldofKnowledge(?X) .
+EthnicGroup(?X) :- srcSecularMovement(?X),srcEthnicGroup(?X) .
+LocationPartRelation(?X) :- srcCreator(?X),srcEnvironment(?X),srcTemporalInterval(?X),srcIllness(?X),srcLocationPartRelation(?X) .
+PopulationMovement(?X) :- srcEnvironment(?X),srcArtForm(?X),srcVicodiOI(?X),srcPopulationMovement(?X) .
+GovernmentalOrganisation(?X) :- srcCountry(?X),srcParty(?X),srcGovernmentalOrganisation(?X) .
+Food(?X) :- srcSportsman(?X),srcEvent(?X),srcFood(?X) .
+PoliticalSymbol(?X) :- srcEconomicProcess(?X),srcPerson(?X),srcPoliticalSymbol(?X) .
+FuzzyTemporalInterval(?X) :- srcVicodiOI(?X),srcInternationalAlliance(?X),srcFuzzyTemporalInterval(?X) .
+Individual(?X) :- srcMeeting(?X),srcIndividual(?X) .
+PersonRole(?X) :- srcIndividual(?X),srcTimeDependentRelation(?X),srcCathedral(?X),srcPersonRole(?X) .
+Dramaturge(?X) :- srcHeadofGovernment(?X),srcTradeAssociation(?X),srcMusician(?X),srcGovernmentalOrganisation(?X),srcDramaturge(?X) .
+Legislation(?X) :- srcConductor(?X),srcCriminal(?X),srcLegislation(?X) .
+exists(?X,?Y) :- srcFuzzyTemporalInterval(?X),srcPoliticalOrganisation(?X),srcexists(?X,?Y) .
+Queen(?X) :- srcChurchReformer(?X),srcPublicOration(?X),srcActor(?X),srcEvent(?X),srcQueen(?X) .
+IntraStateGroup(?X) :- srcAuthor(?X),srcGeographicalRegion(?X),srcIntraStateGroup(?X) .
+Actor(?X) :- srcCity(?X),srcMasonicLodge(?X),srcDisease(?X),srcMeeting(?X),srcActor(?X) .
+isRelationMemberOf(?X,?Y) :- srcGeographicalFeature(?X),srcChurch(?X),srcLandmark(?X),srcisRelationMemberOf(?X,?Y) .
+Role(?X) :- srcFunctionary(?X),srcMusician(?X),srcRole(?X) .
+ReligiousOrder(?X) :- srchasRole(?X,?Y),srcTradesUnion(?X),srcReligiousOrder(?X) .
+hasCategory(?X,?Y) :- srcEconomicEnterprise(?X),srcIllness(?X),srcGeographer(?X),srcMeeting(?X),srchasCategory(?X,?Y) .
+Ecclesiarch(?X) :- srcTimeDependentRelation(?X),srcClericalLeader(?X),srcPhilanthropist(?X),srcEcclesiarch(?X) .
+ArtisticStyle(?X) :- srcTemporalInterval(?X),srcArmament(?X),srcArtisticStyle(?X) .
+Architect(?X) :- srcTrain(?X),srcEvent(?X),srcPeriod(?X),srcArchitect(?X) .
+related(?X,?Y) :- srcScientist(?X),srcJournal(?X),srcrelated(?X,?Y) .
+Monastery(?X) :- srcPainting(?X),srcMonastery(?X) .
+MilitaryOrganisation(?X) :- srcSecularIdeology(?X),srcAnimal(?X),srcMilitaryOrganisation(?X) .
+League(?X) :- srcChurch(?X),srcLeague(?X) .
+ClericalLeader(?X) :- srcObject(?X),srcIdea(?X),srcArtisticStyle(?X),srcClericalLeader(?X) .
+SocialStratum(?X) :- srcNaturalObject(?X),srcSculpture(?X),srcSocialStratum(?X) .
+Magnate(?X) :- srcIdea(?X),srcMagnate(?X) .
+ReligiousOrganisation(?X) :- srcFilmMaker(?X),srcPerson(?X),srcPublisher(?X),srcGeographicalFeature(?X),srcReligiousOrganisation(?X) .
+CulturalOrganisation(?X) :- srcCrime(?X),srcScientist(?X),srcGovernmentalOrganisation(?X),srcCulturalOrganisation(?X) .
+Dancer(?X) :- srcPersonRole(?X),srcIntellectualConstruct(?X),srcIdea(?X),srcDancer(?X) .
+Structure(?X) :- srcOrganisation(?X),srcInternationalOrganisation(?X),srcStructure(?X) .
+Artefact(?X) :- srcReligiousOrder(?X),srcTheologian(?X),srcIndividual(?X),srcStereotypeGroup(?X),srcArtefact(?X) .
+ScientificInstrument(?X) :- srcQueen(?X),srcPamphlet(?X),srcScientificInstrument(?X) .
+TradeAssociation(?X) :- srcJournal(?X),srcTradeAssociation(?X) .
+ArtisticMovement(?X) :- srcEconomicEnterprise(?X),srcLeague(?X),srcBoard(?X),srcCulturalOrganisation(?X),srcArtisticMovement(?X) .
+ReligiousPractice(?X) :- srcSaint(?X),srcMinister(?X),srcReligiousPractice(?X) .
+TemporalInterval(?X) :- srcPainter(?X),srchasRelationMember(?X,?Y),srcRitual(?X),srcPeriodinOffice(?X),srcTemporalInterval(?X) .
+Conductor(?X) :- srcTrain(?X),srcClericalLeader(?X),srcSecularIdeology(?X),srcRelic(?X),srcConductor(?X) .
+SocialGroup(?X) :- srcDramaturge(?X),srcSocialGroup(?X) .
+NationalSymbol(?X) :- srcReligiousMovement(?X),srcJurist(?X),srcCategory(?X),srcElection(?X),srcNationalSymbol(?X) .
+Composer(?X) :- srcPerson(?X),srcComposer(?X) .
+Astronaut(?X) :- srchasRole(?X,?Y),srcReligiousOrder(?X),srcisRelationMemberOf(?X,?Y),srcAstronaut(?X) .
+ConceptualObject(?X) :- srcComposer(?X),srcCathedral(?X),srcConceptualObject(?X) .
+Creator(?X) :- srcMilitaryUnit(?X),srcUniversity(?X),srcTradesUnion(?X),srcCreator(?X) .
+Jurist(?X) :- srcClericalLeader(?X),srcKing(?X),srcClothing(?X),srcFictionalPerson(?X),srcJurist(?X) .
+GeographicalDiscovery(?X) :- srcPollution(?X),srcGeographicalDiscovery(?X) .
+Meeting(?X) :- srcEthnicGroup(?X),srcGeographicalFeature(?X),srcMeeting(?X) .
+Vehicle(?X) :- srcJournal(?X),srcPollution(?X),srcVehicle(?X) .
+City(?X) :- srcBadge(?X),srcCity(?X) .
+Ideology(?X) :- srcDisaster(?X),srcIdeology(?X) .
+Pope(?X) :- srcBoard(?X),srcPope(?X) .
+Criminal(?X) :- srchasRole(?X,?Y),srcCriminal(?X) .
+LifeEvent(?X) :- srcDisease(?X),srcDiplomat(?X),srcLifeEvent(?X) .
+Person(?X) :- srcLeader(?X),srcReligiousMovement(?X),srcPerson(?X) .
+Scientist(?X) :- srcIntraStateGroup(?X),srcSocialGroup(?X),srcIdeology(?X),srcScientist(?X) .
+Election(?X) :- srcAstronaut(?X),srcStructure(?X),srcElection(?X) .
+hasLocationPartMember(?X,?Y) :- srcJurist(?X),srcActor(?X),srchasLocationPartMember(?X,?Y) .
+ForeignMinister(?X) :- srcPoliticalOrganisation(?X),srcMusician(?X),srcFuzzyTemporalInterval(?X),srcForeignMinister(?X) .
+Treaty(?X) :- srcEconomist(?X),srcReligiousIdeology(?X),srcArtisticMovement(?X),srcTreaty(?X) .
+Author(?X) :- srcOtherReligiousPerson(?X),srcStereotypeGroup(?X),srcElection(?X),srcAuthor(?X) .
+CulturalAgreement(?X) :- srcSultan(?X),srcJournal(?X),srcTradesUnion(?X),srcLocation(?X),srcCulturalAgreement(?X) .
+Relic(?X) :- srcUniversity(?X),srcScientificInstrument(?X),srcQueen(?X),srcRelic(?X) .
+Engineer(?X) :- srchasLocationContainerMember(?X,?Y),srcEngineer(?X) .
+Church(?X) :- srcNationalSymbol(?X),srcIntellectualMovement(?X),srcChurch(?X) .
+GeographicalRegion(?X) :- srcMagnate(?X),srcDramaturge(?X),srcLegislation(?X),srcGeographicalRegion(?X) .
+ReligiousMovement(?X) :- srcTrain(?X),srcLeader(?X),srcMilitaryOrganisation(?X),srcCriminal(?X),srcReligiousMovement(?X) .
+Newspaper(?X) :- srcSaint(?X),srcCulturalAgreement(?X),srcNewspaper(?X) .
+Cleric(?X) :- srcMovement(?X),srcSportsman(?X),srcComposer(?X),srcNationalSymbol(?X),srcCleric(?X) .
+EconomicProcess(?X) :- srcArchitect(?X),srcEconomicProcess(?X) .
+Event(?X) :- srcChurch(?X),srcEvent(?X) .
+Disaster(?X) :- srcSecularIdeology(?X),srcShip(?X),srcPhilanthropist(?X),srcDisaster(?X) .
+Village(?X) :- srcEconomicSymbol(?X),srcArtefact(?X),srcJournalist(?X),srcFictionalEvent(?X),srcVillage(?X) .
+PoliticalRegion(?X) :- srchasCategory(?X,?Y),srcLegislation(?X),srcTrain(?X),srcPoliticalRegion(?X) .
+hasLocationContainerMember(?X,?Y) :- srcEducationalOrganisation(?X),srcArchitect(?X),srcPhilanthropist(?X),srchasLocationContainerMember(?X,?Y) .
+NaturalObject(?X) :- srcMusician(?X),srcNaturalObject(?X) .
+Animal(?X) :- srcTrain(?X),srcAuthor(?X),srcSymbol(?X),srcAnimal(?X) .
+EconomicOrganisation(?X) :- srcInternationalAlliance(?X),srchasCategory(?X,?Y),srcCathedral(?X),srcSaint(?X),srcEconomicOrganisation(?X) .
+Publisher(?X) :- srcManagementOrganisation(?X),srcTradeAssociation(?X),srcDynasty(?X),srcConductor(?X),srcPublisher(?X) .
+Sculpture(?X) :- srcManagementOrganisation(?X),srcShip(?X),srcPersonRole(?X),srcJurist(?X),srcSculpture(?X) .
+ReligiousLeader(?X) :- srcIdeology(?X),srcMagnate(?X),srcMilitaryOrganisation(?X),srcLeader(?X),srcReligiousLeader(?X) .
+Ritual(?X) :- srcexists(?X,?Y),srcPeriod(?X),srcIdeology(?X),srcRitual(?X) .
+Commodity(?X) :- srcOtherReligiousPerson(?X),srcCommodity(?X) .
+Leader(?X) :- srcPoliticalRegion(?X),srcArtisticStyle(?X),srcChurch(?X),srcisLocationPartMemberOf(?X,?Y),srcLeader(?X) .
+Illness(?X) :- srcLandmark(?X),srcFictionalEvent(?X),srcEntertainer(?X),srcSymbol(?X),srcIllness(?X) .
+Party(?X) :- srcShip(?X),srcParty(?X) .
+WorkofArt(?X) :- srcMilitaryPerson(?X),srcPoliticalSymbol(?X),srcWorkofArt(?X) .
+EconomicSymbol(?X) :- srcFlavour(?X),srcEconomicSymbol(?X) .
+ReligiousIdeology(?X) :- srcClericalLeader(?X),srcGovernmentalOrganisation(?X),srcReligiousIdeology(?X) .
+TradesUnionist(?X) :- srcReligiousSymbol(?X),srcReligiousIdeology(?X),srcActor(?X),srcPersonRole(?X),srcTradesUnionist(?X) .
+ArtForm(?X) :- srcFictionalPerson(?X),srcArtForm(?X) .
+Sportsman(?X) :- srcNationalSymbol(?X),srcCriminal(?X),srcPoliticalSymbol(?X),srcFuzzyTemporalInterval(?X),srcSportsman(?X) .
+hasRelationMember(?X,?Y) :- srcNonMilitaryConflict(?X),srcBadge(?X),srchasRelationMember(?X,?Y) .
+TradesUnion(?X) :- srcMonastery(?X),srcCategory(?X),srcPublicOration(?X),srcTradesUnion(?X) .
+Crime(?X) :- srcrelated(?X,?Y),srcIllness(?X),srcAbstractNotion(?X),srcSettlement(?X),srcCrime(?X) .
+IntellectualConstruct(?X) :- srcProfessor(?X),srcSettlement(?X),srcReligiousPractice(?X),srcIntellectualConstruct(?X) .
+TimeDependent(?X) :- srcTimeDependentRelation(?X),srcComposer(?X),srcTimeDependent(?X) .
+Writing(?X) :- srcisLocationPartMemberOf(?X,?Y),srcPopulationMovement(?X),srcCommodity(?X),srcWriting(?X) .
+ReligiousCommunity(?X) :- srcPhilosopher(?X),srcHeadofState(?X),srcReligiousCommunity(?X) .
+EducationalOrganisation(?X) :- srcLiturgicalObject(?X),srcClericalLeader(?X),srcArtefact(?X),srcMeasurableTrend(?X),srcEducationalOrganisation(?X) .
+OtherReligiousPerson(?X) :- srcCountry(?X),srcJournalist(?X),srcAnimal(?X),srcOtherReligiousPerson(?X) .
+Abbey(?X) :- srcArtisticMovement(?X),srcComposer(?X),srcAbbey(?X) .
+Badge(?X) :- srcFlavour(?X),srcUprising(?X),srcNewspaper(?X),srcEthnicGroup(?X),srcBadge(?X) .
+LiturgicalObject(?X) :- srcCleric(?X),srcBadge(?X),srcPopulationMovement(?X),srcPainting(?X),srcLiturgicalObject(?X) .
+PeriodinOffice(?X) :- srcLiturgicalObject(?X),srcScientificInstrument(?X),srcTimeDependentRelation(?X),srcDiscoverer(?X),srcPeriodinOffice(?X) .
+SecularMovement(?X) :- srcEcclesiarch(?X),srcPieceofMusic(?X),srcSecularMovement(?X) .
+ReligiousSymbol(?X) :- srcInternationalAlliance(?X),srcShip(?X),srcEconomicEnterprise(?X),srcReligiousSymbol(?X) .
+Ship(?X) :- srcLiturgicalObject(?X),srcPastime(?X),srcReligiousIdeology(?X),srcShip(?X) .
+FilmMaker(?X) :- srcNewspaper(?X),srcFilmMaker(?X) .
+Politician(?X) :- srcSecularIdeology(?X),srcMinister(?X),srcShip(?X),srcSocialGroup(?X),srcPolitician(?X) .
+Emperor(?X) :- srcArtisticMovement(?X),srcEvent(?X),srchasRole(?X,?Y),srcEmperor(?X) .
+FictionalEvent(?X) :- srcMinister(?X),srcConceptualObject(?X),srcRepresentativeInstitution(?X),srcFictionalEvent(?X) .
+Dynasty(?X) :- srcBoard(?X),srcOrganisation(?X),srcDynasty(?X) .
+ManagementOrganisation(?X) :- srcDiplomat(?X),srcDramaturge(?X),srcManagementOrganisation(?X) .
+Location(?X) :- srcRole(?X),srcLocation(?X) .
+InternationalAlliance(?X) :- srcSportsman(?X),srcPope(?X),srcInternationalAlliance(?X) .
+AbstractNotion(?X) :- srcBusinessLeader(?X),srcNaturalObject(?X),srcLeader(?X),srcAbstractNotion(?X) .
+Musician(?X) :- srcChurch(?X),srcTradesUnion(?X),srcSultan(?X),srcCriminal(?X),srcMusician(?X) .
+MasonicLodge(?X) :- srcCriminal(?X),srcLanguage(?X),srcReligiousPractice(?X),srcPainter(?X),srcMasonicLodge(?X) .
+Pollution(?X) :- srcMilitaryOrganisation(?X),srcPollution(?X) .
+MeasurableTrend(?X) :- srcParty(?X),srcDisease(?X),srcProfessor(?X),srcMeasurableTrend(?X) .
+Prince(?X) :- srcEducationalOrganisation(?X),srcMeasurableTrend(?X),srcPrince(?X) .
+Journalist(?X) :- srcDancer(?X),srcInternationalAlliance(?X),srcJournalist(?X) .
+Economist(?X) :- srcIntellectualConstruct(?X),srcEngineer(?X),srcParty(?X),srcEconomist(?X) .
+Painting(?X) :- srcVillage(?X),srcReligiousCommunity(?X),srcPainting(?X) .
+PieceofMusic(?X) :- srcDisaster(?X),srcForeignMinister(?X),srcPieceofMusic(?X) .
+University(?X) :- srcSultan(?X),srcStructure(?X),srcEconomicSymbol(?X),srcUniversity(?X) .
+MilitaryPerson(?X) :- srcisRelationMemberOf(?X,?Y),srcSecularIdeology(?X),srcMilitaryPerson(?X) .
+OtherReligiousLeader(?X) :- srcEconomist(?X),srcBook(?X),srcOtherReligiousLeader(?X) .
+Movement(?X) :- srcKing(?X),srcCrime(?X),srcMovement(?X) .
+Water(?X) :- srcHeadofGovernment(?X),srcWater(?X) .
+Functionary(?X) :- srcMagnate(?X),srcSportsman(?X),srcVicodiOI(?X),srcFunctionary(?X) .
+RepresentativeInstitution(?X) :- srcCrime(?X),srchasCategory(?X,?Y),srcPhilanthropist(?X),srcPainting(?X),srcRepresentativeInstitution(?X) .
+Environment(?X) :- srcSocialStratum(?X),srcTimeDependent(?X),srcEnvironment(?X) .
+Psychologist(?X) :- srcEconomicSymbol(?X),srcPolitician(?X),srcRitual(?X),srcPsychologist(?X) .
+isLocationPartMemberOf(?X,?Y) :- srcArtefact(?X),srcWater(?X),srcActor(?X),srcisLocationPartMemberOf(?X,?Y) .
+Cathedral(?X) :- srcMilitaryPerson(?X),srcCathedral(?X) .
+Country(?X) :- srcDisaster(?X),srcCountry(?X) .
+Diplomat(?X) :- srcEvent(?X),srcEnvironment(?X),srcEconomicProcess(?X),srcArmament(?X),srcDiplomat(?X) .
+IntellectualMovement(?X) :- srcProfessor(?X),srcEthnicGroup(?X),srcIntellectualMovement(?X) .
+HeadofState(?X) :- srcTreaty(?X),srcCountry(?X),srcLocationPartRelation(?X),srcHeadofState(?X) .
+Pamphlet(?X) :- srcEmperor(?X),srcCity(?X),srcPamphlet(?X) .
+Artist(?X) :- srcArtisticMovement(?X),srcScandal(?X),srcLocation(?X),srcArtist(?X) .
+Minister(?X) :- srcOrganisation(?X),srcMinister(?X) .
+Landmark(?X) :- srcEmperor(?X),srcLandmark(?X) .
+Object(?X) :- srcArtist(?X),srcObject(?X) .
+PublicOration(?X) :- srcElection(?X),srcFieldofKnowledge(?X),srcUniversity(?X),srcMinister(?X),srcPublicOration(?X) .
+Period(?X) :- srcBusinessLeader(?X),srcVicodiOI(?X),srcTheologian(?X),srcPhilanthropist(?X),srcPeriod(?X) .
+Building(?X) :- srcAuthor(?X),srcMilitaryUnit(?X),srcSocialGroup(?X),srcPeriodinOffice(?X),srcBuilding(?X) .
+Clothing(?X) :- srcArtefact(?X),srcPerson(?X),srcClothing(?X) .
+hasRole(?X,?Y) :- srcNaturalObject(?X),srcBook(?X),srcEngineer(?X),srchasRole(?X,?Y) .
+King(?X) :- srcIllness(?X),srcDancer(?X),srcPublicOration(?X),srcIdeology(?X),srcKing(?X) .
+Idea(?X) :- srcDramaturge(?X),srcCleric(?X),srcPainter(?X),srcParty(?X),srcIdea(?X) .
+Uprising(?X) :- srcAuthor(?X),srcPeriod(?X),srcMusician(?X),srcUprising(?X) .
+Sultan(?X) :- srcPieceofMusic(?X),srcSultan(?X) .
+Disease(?X) :- srcEconomicOrganisation(?X),srcFilmMaker(?X),srcDisease(?X) .
+ChurchReformer(?X) :- srcPieceofMusic(?X),srcGeographicalRegion(?X),srcEconomicSymbol(?X),srcTimeDependent(?X),srcChurchReformer(?X) .
+Category(?X) :- srcSecularLeader(?X),srcPerson(?X),srcMeeting(?X),srcPollution(?X),srcCategory(?X) .
+EconomicEnterprise(?X) :- srcStructure(?X),srcEconomicEnterprise(?X) .
+Organisation(?X) :- srcPolitician(?X),srcLanguage(?X),srcLiturgicalObject(?X),srcObject(?X),srcOrganisation(?X) .
+SecularLeader(?X) :- srcCulturalAgreement(?X),srcTradeAssociation(?X),srcStructure(?X),srcSecularLeader(?X) .
+FictionalPerson(?X) :- srcMagnate(?X),srcTechnicalScientificAdvance(?X),srcEconomicEnterprise(?X),srcFictionalPerson(?X) .
+Sculptor(?X) :- srcReligiousMovement(?X),srcPamphlet(?X),srcLifeEvent(?X),srcSculptor(?X) .
+Painter(?X) :- srcMovement(?X),srcPainter(?X) .
+Scandal(?X) :- srcReligiousPractice(?X),srcScientificInstrument(?X),srcScandal(?X) .
+GeographicalFeature(?X) :- srcEconomist(?X),srcGeographicalFeature(?X) .
+Physician(?X) :- srcArtefact(?X),srcPhysician(?X) .
+Theologian(?X) :- srcLiturgicalObject(?X),srcTrain(?X),srcObject(?X),srcTheologian(?X) .
+Settlement(?X) :- srcEconomicProcess(?X),srcBuilding(?X),srcEntertainer(?X),srcSettlement(?X) .
+Journal(?X) :- srcPublisher(?X),srcMinister(?X),srcLeader(?X),srcJournal(?X) .
+Philosopher(?X) :- srcCleric(?X),srcPopulationMovement(?X),srcScandal(?X),srcPamphlet(?X),srcPhilosopher(?X) .
+SecularIdeology(?X) :- srcIdea(?X),srcPeriod(?X),srcIndividual(?X),srcJournal(?X),srcSecularIdeology(?X) .
+Symbol(?X) :- srcForeignMinister(?X),srcTechnicalScientificAdvance(?X),srcFictionalPerson(?X),srcOtherReligiousPerson(?X),srcSymbol(?X) .
+Flavour(?X) :- srcActor(?X),srcFlavour(?X) .
+NonMilitaryConflict(?X) :- srcWriting(?X),srcNonMilitaryConflict(?X) .
+Philanthropist(?X) :- srcEducationalOrganisation(?X),srcUprising(?X),srcPhilanthropist(?X) .
+Train(?X) :- srcEntertainer(?X),srcBusinessLeader(?X),srcSettlement(?X),srcTrain(?X) .
+Entertainer(?X) :- srcMusician(?X),srcArtist(?X),srcDiscoverer(?X),srcEntertainer(?X) .
+Professor(?X) :- srcParty(?X),srcProfessor(?X) .
+Language(?X) :- srcScientist(?X),srcDiscoverer(?X),srcexists(?X,?Y),srcLanguage(?X) .
+Inventor(?X) :- srcCathedral(?X),srcKing(?X),srcLeader(?X),srcNationalSymbol(?X),srcInventor(?X) .
+InternationalOrganisation(?X) :- srcMeeting(?X),srcReligiousOrganisation(?X),srcEconomicEnterprise(?X),srcInternationalOrganisation(?X) .
+Discoverer(?X) :- srcMeeting(?X),srcCity(?X),srcPhilosopher(?X),srcDiscoverer(?X) .
+Armament(?X) :- srcCathedral(?X),srcArmament(?X) .
+TimeDependentRelation(?X) :- srcIdea(?X),srcEcclesiarch(?X),srcTimeDependentRelation(?X) .
+VicodiOI(?X) :- srcEconomicEnterprise(?X),srcLiturgicalObject(?X),srcSecularLeader(?X),srcConductor(?X),srcVicodiOI(?X) .
+Book(?X) :- srcSocialGroup(?X),srcEngineer(?X),srcChurch(?X),srcBook(?X) .
+Pastime(?X) :- srcMovement(?X),srcPainter(?X),srcPastime(?X) .
+BusinessLeader(?X) :- srcReligiousOrganisation(?X),srcSculpture(?X),srcBusinessLeader(?X) .
+isLocationContainerMemberOf(?X,?Y) :- srcMasonicLodge(?X),srcisLocationContainerMemberOf(?X,?Y) .
+War(?X) :- srcVillage(?X),srcWar(?X) .
+HeadofGovernment(?X) :- srcSultan(?X),srcConductor(?X),srcHeadofGovernment(?X) .
+PoliticalOrganisation(?X) :- srcActor(?X),srcDisease(?X),srcRitual(?X),srcPoliticalOrganisation(?X) .
+Trial(?X) :- srcFilmMaker(?X),srcPsychologist(?X),srcTradesUnion(?X),srcOtherReligiousPerson(?X),srcTrial(?X) .
+Geographer(?X) :- srcMasonicLodge(?X),srcArtefact(?X),srcProfessor(?X),srcVillage(?X),srcGeographer(?X) .
+Saint(?X) :- srcSportsman(?X),srcArmament(?X),srcSaint(?X) .
+Leader(?X) :- ReligiousLeader(?X) .
+Organisation(?X) :- EconomicOrganisation(?X) .
+WorkofArt(?X) :- Sculpture(?X) .
+PersonRole(?X) :- OtherReligiousPerson(?X) .
+Artefact(?X) :- Pollution(?X) .
+PersonRole(?X) :- Creator(?X) .
+HeadofState(?X) :- Queen(?X) .
+Entertainer(?X) :- Musician(?X) .
+Event(?X) :- Scandal(?X) .
+WorkofArt(?X) :- PieceofMusic(?X) .
+PersonRole(?X) :- Entertainer(?X) .
+Event(?X) :- War(?X) .
+SocialGroup(?X) :- SocialStratum(?X) .
+Organisation(?X) :- CulturalOrganisation(?X) .
+Event(?X) :- TechnicalScientificAdvance(?X) .
+AbstractNotion(?X) :- IntellectualConstruct(?X) .
+IntellectualConstruct(?X) :- FieldofKnowledge(?X) .
+Artefact(?X) :- WorkofArt(?X) .
+Symbol(?X) :- ReligiousSymbol(?X) .
+SecularLeader(?X) :- HeadofState(?X) .
+TimeDependent(?X) :- Role(?X) .
+Artefact(?X) :- Writing(?X) .
+Event(?X) :- Battle(?X) .
+AbstractNotion(?X) :- MeasurableTrend(?X) .
+Flavour(?X) :- hasRole(?X,?X1) .
+PersonRole(?X) :- MilitaryPerson(?X) .
+SecularLeader(?X) :- Magnate(?X) .
+Functionary(?X) :- Jurist(?X) .
+related(?X,?Y) :- exists(?X,?Y) .
+Writing(?X) :- Newspaper(?X) .
+HeadofState(?X) :- Prince(?X) .
+Artefact(?X) :- LiturgicalObject(?X) .
+Event(?X) :- Period(?X) .
+ConceptualObject(?X) :- ReligiousPractice(?X) .
+ReligiousLeader(?X) :- Ecclesiarch(?X) .
+Event(?X) :- EconomicProcess(?X) .
+Event(?X) :- PeriodinOffice(?X) .
+Creator(?X) :- Author(?X) .
+NaturalObject(?X) :- Environment(?X) .
+LocationPartRelation(?X1) :- isLocationContainerMemberOf(?X,?X1) .
+VicodiOI(?X) :- Time(?X) .
+Organisation(?X) :- ManagementOrganisation(?X) .
+ConceptualObject(?X) :- Pastime(?X) .
+Scientist(?X) :- Psychologist(?X) .
+Scientist(?X) :- Economist(?X) .
+TimeDependentRelation(?X) :- hasRelationMember(?X,?X1) .
+Creator(?X) :- Journalist(?X) .
+Symbol(?X) :- EconomicSymbol(?X) .
+GeographicalFeature(?X) :- Water(?X) .
+GeographicalFeature(?X) :- GeographicalRegion(?X) .
+Movement(?X) :- ArtisticMovement(?X) .
+PersonRole(?X) :- Saint(?X) .
+Minister(?X) :- ForeignMinister(?X) .
+Creator(?X) :- Engineer(?X) .
+LocationPartRelation(?X) :- hasLocationContainerMember(?X,?X1) .
+related(?X,?Y) :- isRelationMemberOf(?X,?Y) .
+Creator(?X) :- Artist(?X) .
+Time(?X) :- FuzzyTemporalInterval(?X) .
+ConceptualObject(?X) :- Badge(?X) .
+HeadofState(?X) :- Sultan(?X) .
+PersonRole(?X) :- Theologian(?X) .
+TimeDependent(?X) :- hasCategory(?X,?X1) .
+Entertainer(?X) :- Dancer(?X) .
+Artefact(?X) :- ScientificInstrument(?X) .
+Event(?X) :- FictionalEvent(?X) .
+Creator(?X) :- Architect(?X) .
+Functionary(?X) :- Minister(?X) .
+Vehicle(?X) :- Ship(?X) .
+PersonRole(?X) :- Sportsman(?X) .
+Movement(?X) :- IntellectualMovement(?X) .
+Object(?X) :- Artefact(?X) .
+Leader(?X) :- ClericalLeader(?X) .
+Artefact(?X) :- Clothing(?X) .
+Writing(?X) :- Journal(?X) .
+Flavour(?X) :- Individual(?X) .
+Event(?X) :- NonMilitaryConflict(?X) .
+Symbol(?X) :- NationalSymbol(?X) .
+Location(?X) :- GeographicalFeature(?X) .
+Artist(?X) :- Sculptor(?X) .
+SecularLeader(?X) :- TradesUnionist(?X) .
+TimeDependentRelation(?X1) :- isRelationMemberOf(?X,?X1) .
+Creator(?X) :- FilmMaker(?X) .
+Event(?X) :- LifeEvent(?X) .
+Settlement(?X) :- Village(?X) .
+Location(?X) :- PoliticalRegion(?X) .
+Building(?X) :- Cathedral(?X) .
+PersonRole(?X) :- Professor(?X) .
+EducationalOrganisation(?X) :- University(?X) .
+NaturalObject(?X) :- Food(?X) .
+Organisation(?X) :- PoliticalOrganisation(?X) .
+Scientist(?X) :- Philosopher(?X) .
+TimeDependentRelation(?X) :- LocationPartRelation(?X) .
+ReligiousOrganisation(?X) :- ReligiousOrder(?X) .
+ReligiousLeader(?X) :- ChurchReformer(?X) .
+Flavour(?X) :- SocialGroup(?X) .
+Magnate(?X) :- BusinessLeader(?X) .
+AbstractNotion(?X) :- Idea(?X) .
+Artefact(?X) :- Structure(?X) .
+AbstractNotion(?X) :- ArtForm(?X) .
+Event(?X) :- Disaster(?X) .
+Event(?X) :- Legislation(?X) .
+isRelationMemberOf(?X,?Y) :- isLocationContainerMemberOf(?X,?Y) .
+Organisation(?X) :- InternationalOrganisation(?X) .
+HeadofState(?X) :- Emperor(?X) .
+Organisation(?X) :- MilitaryOrganisation(?X) .
+LocationPartRelation(?X1) :- isLocationPartMemberOf(?X,?X1) .
+WorkofArt(?X) :- Painting(?X) .
+PersonRole(?X) :- Scientist(?X) .
+LifeEvent(?X) :- Illness(?X) .
+SocialGroup(?X) :- EthnicGroup(?X) .
+Flavour(?X) :- Organisation(?X) .
+Artefact(?X) :- Armament(?X) .
+Artist(?X) :- Painter(?X) .
+ReligiousLeader(?X) :- Pope(?X) .
+PoliticalOrganisation(?X) :- League(?X) .
+Flavour(?X) :- AbstractNotion(?X) .
+Ideology(?X) :- SecularIdeology(?X) .
+Writing(?X) :- Book(?X) .
+SocialGroup(?X) :- StereotypeGroup(?X) .
+Role(?X1) :- hasRole(?X,?X1) .
+Event(?X) :- Trial(?X) .
+Time(?X1) :- exists(?X,?X1) .
+Ideology(?X) :- ReligiousIdeology(?X) .
+ReligiousLeader(?X) :- OtherReligiousLeader(?X) .
+Object(?X) :- NaturalObject(?X) .
+Functionary(?X) :- Politician(?X) .
+Symbol(?X) :- PoliticalSymbol(?X) .
+Creator(?X) :- Publisher(?X) .
+PersonRole(?X) :- Leader(?X) .
+Role(?X) :- PersonRole(?X) .
+Settlement(?X) :- City(?X) .
+TimeDependent(?X) :- isRelationMemberOf(?X,?X1) .
+TimeDependent(?X1) :- hasRelationMember(?X,?X1) .
+Event(?X) :- PublicOration(?X) .
+ReligiousOrganisation(?X) :- ReligiousCommunity(?X) .
+VicodiOI(?X) :- related(?X,?X1) .
+AbstractNotion(?X) :- Ideology(?X) .
+Event(?X) :- PopulationMovement(?X) .
+PoliticalOrganisation(?X) :- GovernmentalOrganisation(?X) .
+PoliticalOrganisation(?X) :- InternationalAlliance(?X) .
+Role(?X) :- Symbol(?X) .
+SocialGroup(?X) :- Movement(?X) .
+related(?X,?Y) :- hasCategory(?X,?Y) .
+Vehicle(?X) :- Train(?X) .
+CulturalOrganisation(?X) :- ReligiousOrganisation(?X) .
+Time(?X) :- TemporalInterval(?X) .
+Flavour(?X) :- Location(?X) .
+PersonRole(?X) :- Inventor(?X) .
+Leader(?X) :- SecularLeader(?X) .
+CulturalOrganisation(?X) :- MasonicLodge(?X) .
+related(?X,?Y) :- hasRole(?X,?Y) .
+Event(?X) :- Meeting(?X) .
+Scientist(?X) :- Geographer(?X) .
+PersonRole(?X) :- Physician(?X) .
+PoliticalOrganisation(?X) :- RepresentativeInstitution(?X) .
+Discoverer(?X) :- Astronaut(?X) .
+Event(?X) :- GeographicalDiscovery(?X) .
+Building(?X) :- Church(?X) .
+Writing(?X) :- Pamphlet(?X) .
+Individual(?X) :- FictionalPerson(?X) .
+AbstractNotion(?X) :- ArtisticStyle(?X) .
+Location(?X) :- Country(?X) .
+Creator(?X) :- Dramaturge(?X) .
+Event(?X) :- Uprising(?X) .
+NaturalObject(?X) :- Commodity(?X) .
+Building(?X) :- Monastery(?X) .
+Artist(?X) :- Composer(?X) .
+Entertainer(?X) :- Conductor(?X) .
+Movement(?X) :- SecularMovement(?X) .
+Object(?X) :- ConceptualObject(?X) .
+Functionary(?X) :- Diplomat(?X) .
+PersonRole(?X) :- Functionary(?X) .
+VicodiOI(?X) :- TimeDependent(?X) .
+HeadofState(?X) :- King(?X) .
+Artefact(?X) :- Relic(?X) .
+hasRelationMember(?X,?Y) :- hasLocationContainerMember(?X,?Y) .
+Organisation(?X) :- EducationalOrganisation(?X) .
+AbstractNotion(?X) :- Language(?X) .
+TimeDependent(?X) :- TimeDependentRelation(?X) .
+VicodiOI(?X1) :- related(?X,?X1) .
+Individual(?X) :- Person(?X) .
+MilitaryOrganisation(?X) :- MilitaryUnit(?X) .
+PersonRole(?X) :- Philanthropist(?X) .
+Location(?X) :- isLocationContainerMemberOf(?X,?X1) .
+Flavour(?X) :- Event(?X) .
+EconomicOrganisation(?X) :- TradesUnion(?X) .
+ManagementOrganisation(?X) :- Board(?X) .
+Location(?X1) :- hasLocationContainerMember(?X,?X1) .
+Location(?X1) :- hasLocationPartMember(?X,?X1) .
+TimeDependent(?X) :- Flavour(?X) .
+Movement(?X) :- ReligiousMovement(?X) .
+EconomicOrganisation(?X) :- TradeAssociation(?X) .
+EconomicOrganisation(?X) :- EconomicEnterprise(?X) .
+Building(?X) :- Abbey(?X) .
+NaturalObject(?X) :- Disease(?X) .
+Event(?X) :- Treaty(?X) .
+NaturalObject(?X) :- Animal(?X) .
+Artefact(?X) :- Building(?X) .
+PoliticalOrganisation(?X) :- Party(?X) .
+LocationPartRelation(?X) :- hasLocationPartMember(?X,?X1) .
+Event(?X) :- Crime(?X) .
+isRelationMemberOf(?X,?Y) :- isLocationPartMemberOf(?X,?Y) .
+Artefact(?X) :- Vehicle(?X) .
+SecularLeader(?X) :- HeadofGovernment(?X) .
+GeographicalFeature(?X) :- Landmark(?X) .
+hasRelationMember(?X,?Y) :- hasLocationPartMember(?X,?Y) .
+ConceptualObject(?X) :- Ritual(?X) .
+SocialGroup(?X) :- Dynasty(?X) .
+Event(?X) :- Election(?X) .
+TimeDependent(?X) :- exists(?X,?X1) .
+Location(?X) :- isLocationPartMemberOf(?X,?X1) .
+PersonRole(?X) :- Cleric(?X) .
+Location(?X) :- Settlement(?X) .
+Location(?X) :- IntraStateGroup(?X) .
+Category(?X1) :- hasCategory(?X,?X1) .
+VicodiOI(?X) :- Category(?X) .
+Flavour(?X) :- Object(?X) .
+related(?X,?Y) :- hasRelationMember(?X,?Y) .
+PersonRole(?X) :- Criminal(?X) .
+PersonRole(?X) :- Discoverer(?X) .
+Entertainer(?X) :- Actor(?X) .
+Event(?X) :- CulturalAgreement(?X) .
+Q1(?X) :- Location(?X) .
+Q2(?X) :- MilitaryPerson(?X) .
+Q3(?X,?Y) :- TimeDependentRelation(?X),hasRelationMember(?X,?Y),Event(?Y) .
+Q4(?X,?Y) :- Object(?X),hasRole(?X,?Y),Symbol(?Y) .
+Q5(?X) :- Individual(?X),hasRole(?X,?Y),Scientist(?Y),hasRole(?X,?X1),Discoverer(?X1),hasRole(?X,?Y1),Inventor(?Y1) .

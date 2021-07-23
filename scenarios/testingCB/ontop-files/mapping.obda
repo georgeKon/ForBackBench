@@ -1,0 +1,125 @@
+[PrefixDeclaration]
+ns:  http://example.com/example.owl#
+
+[MappingDeclaration] @collection [[
+mappingId ID963050309
+target  ns:ns/{var0} a ns:Acquisition . 
+source  SELECT A."c0" as var0 FROM  "src_Acquisition" as A;
+
+mappingId ID-49396012
+target  ns:ns/{var0} a ns:Transaction . 
+source  SELECT A."c0" as var0 FROM  "src_Transaction" as A;
+
+mappingId ID-514546382
+target  ns:ns/{var0} a ns:Address . 
+source  SELECT A."c0" as var0 FROM  "src_Address" as A;
+
+mappingId ID-1002787008
+target  ns:ns/{var0} a ns:Thing . 
+source  SELECT A."c0" as var0 FROM  "src_Thing" as A;
+
+mappingId ID208339989
+target  ns:ns/{var0} ns:inverseofhasAddress ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_inverseofhasAddress" as A;
+
+mappingId ID-1365624136
+target  ns:ns/{var0} a ns:Company . 
+source  SELECT A."c0" as var0 FROM  "src_Company" as A;
+
+mappingId ID1671073726
+target  ns:ns/{var0} a ns:LegalPerson . 
+source  SELECT A."c0" as var0 FROM  "src_LegalPerson" as A;
+
+mappingId ID1303893713
+target  ns:ns/{var0} a ns:Dealer . 
+source  SELECT A."c0" as var0 FROM  "src_Dealer" as A;
+
+mappingId ID-169463895
+target  ns:ns/{var0} a ns:StockBroker . 
+source  SELECT A."c0" as var0 FROM  "src_StockBroker" as A;
+
+mappingId ID813216814
+target  ns:ns/{var0} a ns:Investor . 
+source  SELECT A."c0" as var0 FROM  "src_Investor" as A;
+
+mappingId ID1310513531
+target  ns:ns/{var0} a ns:Person . 
+source  SELECT A."c0" as var0 FROM  "src_Person" as A;
+
+mappingId ID59740915
+target  ns:ns/{var0} a ns:Offer . 
+source  SELECT A."c0" as var0 FROM  "src_Offer" as A;
+
+mappingId ID-1174896638
+target  ns:ns/{var0} ns:hasAddress ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasAddress" as A;
+
+mappingId ID1503634037
+target  ns:ns/{var0} a ns:PhysicalPerson . 
+source  SELECT A."c0" as var0 FROM  "src_PhysicalPerson" as A;
+
+mappingId ID-607131792
+target  ns:ns/{var0} a ns:Stock . 
+source  SELECT A."c0" as var0 FROM  "src_Stock" as A;
+
+mappingId ID1602420033
+target  ns:ns/{var0} a ns:FinantialInstrument . 
+source  SELECT A."c0" as var0 FROM  "src_FinantialInstrument" as A;
+
+mappingId ID224212203
+target  ns:ns/{var0} ns:isListedIn ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isListedIn" as A;
+
+mappingId ID-1482157316
+target  ns:ns/{var0} ns:belongsToCompany ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_belongsToCompany" as A;
+
+mappingId ID-1271508304
+target  ns:ns/{var0} a ns:StockExchangeMember . 
+source  SELECT A."c0" as var0 FROM  "src_StockExchangeMember" as A;
+
+mappingId ID-763333727
+target  ns:ns/{var0} ns:tradesOnBehalfOf ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_tradesOnBehalfOf" as A;
+
+mappingId ID644044622
+target  ns:ns/{var0} a ns:StockTrader . 
+source  SELECT A."c0" as var0 FROM  "src_StockTrader" as A;
+
+mappingId ID-1891697624
+target  ns:ns/{var0} a ns:Trader . 
+source  SELECT A."c0" as var0 FROM  "src_Trader" as A;
+
+mappingId ID1715688910
+target  ns:ns/{var0} ns:isExecutedFor ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isExecutedFor" as A;
+
+mappingId ID72510118
+target  ns:ns/{var0} ns:isExecutedBy ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isExecutedBy" as A;
+
+mappingId ID-1751964221
+target  ns:ns/{var0} ns:involvesInstrument ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_involvesInstrument" as A;
+
+mappingId ID-1533972395
+target  ns:ns/{var0} ns:hasStock ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_hasStock" as A;
+
+mappingId ID1408376207
+target  ns:ns/{var0} a ns:StockExchangeList . 
+source  SELECT A."c0" as var0 FROM  "src_StockExchangeList" as A;
+
+mappingId ID-1820425675
+target  ns:ns/{var0} ns:listsStock ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_listsStock" as A;
+
+mappingId ID-1385875863
+target  ns:ns/{var0} ns:isTradedIn ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isTradedIn" as A;
+
+mappingId ID303725851
+target  ns:ns/{var0} ns:usesBroker ns:ns/{var1} . 
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_usesBroker" as A;
+
+]]

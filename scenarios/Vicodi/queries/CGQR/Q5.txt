@@ -1,0 +1,1 @@
+QX5(X0) :- Individual(X0),hasRole(X0,X1),Scientist(X1),hasRole(X0,X2),Discoverer(X2),hasRole(X0,X3),Inventor(X3) .

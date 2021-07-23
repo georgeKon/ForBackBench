@@ -13,7 +13,7 @@ JRE=java
 mkdir -p ../experiments/$BASE_DIR/GAV/$DATA_SIZE/Q$QUERY
 
 # mkdir -p ../experiments/outputs/$BASE_DIR/GAV/$DATA_SIZE/Q$QUERY
-
+ 
 # Read database config file
 source <(grep = ../$BASE_DIR/postgres-config.ini)
 export PGPASSWORD
@@ -46,7 +46,7 @@ echo "$DATA_SIZE"
 mkdir -p ../experiments/outputs/rapid/$BASE_DIR/GAV/rewritings
 mkdir -p ../experiments/outputs/rapid/$BASE_DIR/GAV/answer/$DATA_SIZE
 
-
+RapidTimeoutCounter=0
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   RAPID[$TOTAL,$i]=$START_TIME
@@ -64,9 +64,9 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 
   rapidCB=$(echo "$rapidOutput" | sed 's/$/ ./g')
  # echo "rapidCBFiltered:  $rapidCB"
-#   echo "rapidCB: $rapidCB"
+  echo "-- start unfold --"
   START_TIME=$(date +%s%N) 
-  UNFOLD=$(java -jar ../utilityTools/unfoldingV1.jar "$rapidCB" ../$BASE_DIR/dependencies/gav.txt)
+  UNFOLD=$(timeout $TIMEOUT $JRE -jar ../utilityTools/unfoldingV1.jar "$rapidCB" ../$BASE_DIR/dependencies/gav.txt)
 #   echo "unfold: $UNFOLD"
   if [ -z "$UNFOLD" ]
    then
@@ -76,18 +76,41 @@ for ((i=0;i<$NUM_TESTS;++i)); do
       RAPID[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
     else
      START_TIME=$(date +%s%N)
+  	echo "-- start convert --"
      ulimit -c unlimited
-     SQL=$(java -jar ../utilityTools/SQLConverterRealDB.jar "$UNFOLD" ../$BASE_DIR/schema/GAV/s-schema.txt )
+     SQL=$(timeout $TIMEOUT $JRE -jar ../utilityTools/SQLConverterRealDB.jar "$UNFOLD" ../$BASE_DIR/schema/GAV/s-schema.txt )
 	 # ulimit -s 65536
 	 #   SQL=$( java -jar ../utilityTools/sqlConvert-1.08.jar "$UNFOLD"  ../$BASE_DIR/ontop-files/mapping.obda )
  	 #SQL=$(obdaconvert ucq "$RAPID" ../$BASE_DIR/schema/GAV/t-schema.txt rapid --string --src)
 #  	 SQL="SELECT DISTINCT AA.\"c0\" FROM \"src_Symbol\" as AA, \"src_Food\" as BA, \"src_Prince\" as CA, \"src_Sculpture\" as DA, \"src_Conceptual-Object\" as EA, \"src_City\" as FA WHERE AA.\"c0\" = BA.\"c0\" AND BA.\"c0\" = CA.\"c0\" AND CA.\"c0\" = DA.\"c0\" AND DA.\"c0\" = EA.\"c0\" AND EA.\"c0\" = FA.\"c0\" UNION SELECT DISTINCT AA.\"c0\" FROM \"src_Journalist\" as AA, \"src_Cathedral\" as BA, \"src_Dynasty\" as CA, \"src_Country\" as DA WHERE AA.\"c0\" = BA.\"c0\" AND BA.\"c0\" = CA.\"c0\" AND CA.\"c0\" = DA.\"c0\" UNION SELECT DISTINCT AA.\"c0\" FROM \"src_Creator\" as AA, \"src_Life-Event\" as BA, \"src_University\" as CA, \"src_Governmental-Organisation\" as DA, \"src_Geographical-Feature\" as EA WHERE AA.\"c0\" = BA.\"c0\" AND BA.\"c0\" = CA.\"c0\" AND CA.\"c0\" = DA.\"c0\" AND DA.\"c0\" = EA.\"c0\" UNION SELECT DISTINCT AA.\"c0\" FROM \"src_Structure\" as AA, \"src_Geographer\" as BA, \"src_Time-Dependent\" as CA, \"src_Religious-Movement\" as DA, \"src_Secular-Ideology\" as EA, \"src_Piece-of-Music\" as FA, \"src_Geographical-Region\" as GA WHERE AA.\"c0\" = BA.\"c0\" AND BA.\"c0\" = CA.\"c0\" AND CA.\"c0\" = DA.\"c0\" AND DA.\"c0\" = EA.\"c0\" AND EA.\"c0\" = FA.\"c0\" AND FA.\"c0\" = GA.\"c0\" UNION SELECT DISTINCT AA.\"c0\" FROM \"src_Work-of-Art\" as AA, \"src_Head-of-State\" as BA, \"src_Movement\" as CA, \"src_Intra-State-Group\" as DA WHERE AA.\"c0\" = BA.\"c0\" AND BA.\"c0\" = CA.\"c0\" AND CA.\"c0\" = DA.\"c0\" UNION SELECT DISTINCT AA.\"c0\" FROM \"src_Location\" as AA, \"src_Commodity\" as BA, \"src_Newspaper\" as CA, \"src_Landmark\" as DA WHERE AA.\"c0\" = BA.\"c0\" AND BA.\"c0\" = CA.\"c0\" AND CA.\"c0\" = DA.\"c0\" UNION SELECT DISTINCT AA.\"c0\" FROM \"src_Social-Stratum\" as AA, \"src_Geographer\" as BA, \"src_Economic-Organisation\" as CA, \"src_Pamphlet\" as DA, \"src_Location\" as EA WHERE AA.\"c0\" = BA.\"c0\" AND BA.\"c0\" = CA.\"c0\" AND CA.\"c0\" = DA.\"c0\" AND DA.\"c0\" = EA.\"c0\" UNION SELECT DISTINCT AA.\"c0\" FROM \"src_Cleric\" as AA, \"src_Other-Religious-Person\" as BA, \"src_Pollution\" as CA, \"src_Period\" as DA, \"src_Animal\" as EA, \"src_Clerical-Leader\" as FA, \"src_Political-Region\" as GA WHERE AA.\"c0\" = BA.\"c0\" AND BA.\"c0\" = CA.\"c0\" AND CA.\"c0\" = DA.\"c0\" AND DA.\"c0\" = EA.\"c0\" AND EA.\"c0\" = FA.\"c0\" AND FA.\"c0\" = GA.\"c0\" UNION SELECT DISTINCT AA.\"c0\" FROM \"src_Trades-Unionist\" as AA, \"src_Economic-Process\" as BA, \"src_National-Symbol\" as CA, \"src_Person\" as DA, \"src_Settlement\" as EA WHERE AA.\"c0\" = BA.\"c0\" AND BA.\"c0\" = CA.\"c0\" AND CA.\"c0\" = DA.\"c0\" AND DA.\"c0\" = EA.\"c0\" UNION SELECT DISTINCT AA.\"c0\" FROM \"src_Fictional-Person\" as AA, \"src_Artist\" as BA, \"src_Water\" as CA, \"src_Person\" as DA, \"src_King\" as EA, \"src_Village\" as FA WHERE AA.\"c0\" = BA.\"c0\" AND BA.\"c0\" = CA.\"c0\" AND CA.\"c0\" = DA.\"c0\" AND DA.\"c0\" = EA.\"c0\" AND EA.\"c0\" = FA.\"c0\" UNION SELECT DISTINCT AA.\"c0\" FROM \"src_Composer\" as AA, \"src_International-Alliance\" as BA, \"src_Trade-Association\" as CA, \"src_related\" as DA, \"src_Water\" as EA WHERE AA.\"c0\" = BA.\"c0\" AND BA.\"c0\" = CA.\"c0\" AND CA.\"c0\" = DA.\"c0\" AND DA.\"c0\" = EA.\"c0\" UNION SELECT DISTINCT EA.\"c1\" FROM \"src_Board\" as AA, \"src_TemporalInterval\" as BA, \"src_Representative-Institution\" as CA, \"src_Business-Leader\" as DA, \"src_hasRole\" as EA, \"src_King\" as FA, \"src_hasLocationContainerMember\" as GA WHERE EA.\"c1\" = GA.\"c1\" AND AA.\"c0\" = BA.\"c0\" AND BA.\"c0\" = CA.\"c0\" AND CA.\"c0\" = DA.\"c0\" AND DA.\"c0\" = EA.\"c0\" AND EA.\"c0\" = FA.\"c0\" AND FA.\"c0\" = GA.\"c0\" UNION SELECT DISTINCT FA.\"c1\" FROM \"src_Economic-Enterprise\" as AA, \"src_Flavour\" as BA, \"src_Artistic-Style\" as CA, \"src_Pope\" as DA, \"src_Painting\" as EA, \"src_hasLocationPartMember\" as FA WHERE AA.\"c0\" = BA.\"c0\" AND BA.\"c0\" = CA.\"c0\" AND CA.\"c0\" = DA.\"c0\" AND DA.\"c0\" = EA.\"c0\" AND EA.\"c0\" = FA.\"c0\" UNION SELECT DISTINCT AA.\"c0\" FROM \"src_Entertainer\" as AA, \"src_Scientist\" as BA, \"src_Sportsman\" as CA, \"src_related\" as DA, \"src_Ship\" as EA, \"src_isLocationContainerMemberOf\" as FA WHERE AA.\"c0\" = BA.\"c0\" AND BA.\"c0\" = CA.\"c0\" AND CA.\"c0\" = DA.\"c0\" AND DA.\"c0\" = EA.\"c0\" AND EA.\"c0\" = FA.\"c0\" AND DA.\"c1\" = FA.\"c1\" UNION SELECT DISTINCT AA.\"c0\" FROM \"src_Politician\" as AA, \"src_Piece-of-Music\" as BA, \"src_Geographical-Feature\" as CA, \"src_Board\" as DA, \"src_Cleric\" as EA, \"src_isLocationPartMemberOf\" as FA WHERE AA.\"c0\" = BA.\"c0\" AND BA.\"c0\" = CA.\"c0\" AND CA.\"c0\" = DA.\"c0\" AND DA.\"c0\" = EA.\"c0\" AND EA.\"c0\" = FA.\"c0\";"
 #  	 echo "SQL: $SQL"
  	 RAPID[$CONVERT,$i]=$(($(date +%s%N) - $START_TIME))
+ 	 echo "-- start execute --"
  	 START_TIME=$(date +%s%N)
-     RAPID[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-' )
+     RAPID[$TUPLES,$i]=$(timeout $TIMEOUT psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-' )
+ 	 pid=$!
+
+#  	 timeout $TIMEOUT psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-' 
+#      RAPID[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-' )
+#  	 pid=$!
+#  	 CODE=$?
+#  	 sleep 60
+# 	 kill "$pid"
+#  	 echo "$CODE"
+# #  	 RAPID[$TUPLES,$i]=$CODE
  	 RAPID[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
+ 	  echo "${RAPID[$EXECUTE,$i]}"
+ 	ExcuteingTime=$((${RAPID[$EXECUTE,$i]}/1000000))
+ 	echo "$ExcuteingTime"
+
+	if [ $ExcuteingTime -ge 1800000 ] 
+	then
+		let "RapidTimeoutCounter+=1"
+# 		kill "$pid"
+    	echo "command timeout $RapidTimeoutCounter"
+	fi
   fi
+  
   
   echo "Converting: $((${RAPID[$CONVERT,$i]}/1000000)) milliseconds"
  
@@ -100,12 +123,17 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   echo "Executing: $((${RAPID[$EXECUTE,$i]}/1000000)) milliseconds"
    echo "Time elapsed: $((${RAPID[$TOTAL,$i]}/1000000)) milliseconds"
   echo "# of tuples: ${RAPID[$TUPLES,$i]}"
+  if [ $RapidTimeoutCounter -eq 2 ]
+	then
+    	break
+	fi
 done
 # # # 
 echo "===== IQAROS ====="
 mkdir -p ../experiments/outputs/iqaros/$BASE_DIR/GAV/rewritings
 mkdir -p ../experiments/outputs/iqaros/$BASE_DIR/GAV/answer/$DATA_SIZE
 
+IQAROSTimeoutCounter=0
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   IQAROS[$TOTAL,$i]=$START_TIME 
@@ -119,7 +147,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   iqCB=$(echo "$iqarosOutput" | sed 's/\^/,/g; s/$/ ./g; s/X/?/g')
 #   echo "$iqCB"
   START_TIME=$(date +%s%N)
-  UNFOLD=$(java -jar ../utilityTools/unfoldingV1.jar "$iqCB" ../$BASE_DIR/dependencies/gav.txt)
+  UNFOLD=$(timeout $TIMEOUT $JRE -jar ../utilityTools/unfoldingV1.jar "$iqCB" ../$BASE_DIR/dependencies/gav.txt)
 #  echo "unfold: $UNFOLD"
    if [ -z "$UNFOLD" ]
    then
@@ -129,7 +157,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
       IQAROS[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
     else
   	  START_TIME=$(date +%s%N)
-      SQL=$(java -jar ../utilityTools/SQLConverterRealDB.jar "$UNFOLD" ../$BASE_DIR/schema/GAV/s-schema.txt )
+      SQL=$(timeout $TIMEOUT $JRE -jar ../utilityTools/SQLConverterRealDB.jar "$UNFOLD" ../$BASE_DIR/schema/GAV/s-schema.txt )
       #SQL=$(obdaconvert ucq "$IQAROS" ../$BASE_DIR/schema/GAV/t-schema.txt iqaros --string --src)
       #   SQL=$(java -jar ../utilityTools/sqlConvert-1.09.jar "$iqCB" --src ../$BASE_DIR/ontop-files/mapping.obda)
 	  #  echo "$SQL";
@@ -139,8 +167,16 @@ for ((i=0;i<$NUM_TESTS;++i)); do
       IQAROS[$CONVERT,$i]=$(($(date +%s%N) - $START_TIME))
 
       START_TIME=$(date +%s%N)
-      IQAROS[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+      IQAROS[$TUPLES,$i]=$(timeout $TIMEOUT psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
       IQAROS[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
+     
+      IqExcuteingTime=$((${IQAROS[$EXECUTE,$i]}/1000000))
+
+	if [ $IqExcuteingTime -ge 1800000 ] 
+	then
+		let "IQAROSTimeoutCounter+=1"
+    	echo "command timeout $IQAROSTimeoutCounter"
+	fi
    fi
   echo ${IQAROS[$TUPLES,$i]} > ../experiments/outputs/iqaros/$BASE_DIR/GAV/answer/$DATA_SIZE/Q$QUERY.txt
   IQAROS[$TOTAL,$i]=$(($(date +%s%N) - ${IQAROS[$TOTAL,$i]}))
@@ -148,12 +184,17 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   echo "Executing: $((${IQAROS[$EXECUTE,$i]}/1000000)) milliseconds"
   echo "Time elapsed: $((${IQAROS[$TOTAL,$i]}/1000000)) milliseconds"
   echo "# of tuples: ${IQAROS[$TUPLES,$i]}"
+  if [ $IQAROSTimeoutCounter -eq 2 ]
+	then
+    	break
+	fi
 done
 
 echo "===== GRAAL ===="
 mkdir -p ../experiments/outputs/graal/$BASE_DIR/GAV/rewritings
 mkdir -p ../experiments/outputs/graal/$BASE_DIR/GAV/answer/$DATA_SIZE
 
+GRAALTimeoutCounter=0
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   GRAAL[$TOTAL,$i]=$START_TIME
@@ -162,10 +203,11 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   GRAAL[$SIZE,$i]=$(echo "$graalOutput" | grep -c ":-")
   echo "$graalOutput" > ../experiments/outputs/graal/$BASE_DIR/GAV/rewritings/Q$QUERY-rewriting.txt
   echo "Rewriting: $((${GRAAL[$REWRITE,$i]}/1000000)) milliseconds, Size: ${GRAAL[$SIZE,$i]}"
-  graalCB=$(echo "$graalOutput" | sed 's/?/Q/g; s/VAR_/?/g;s,<[a-zA-Z0-9\:\/~][^#]*#,,g; s/>//g; s/:-/<-/g')
+  graalCB=$(echo "$graalOutput" | sed 's/?/Q/g; s/VAR_/?/g;s/X/?/g;s,<[a-zA-Z0-9\:\/~][^#]*#,,g; s/>//g; s/:-/<-/g')
+
 #   echo "$graalCB"
   START_TIME=$(date +%s%N)
-  UNFOLD=$(java -jar ../utilityTools/unfoldingV1.jar "$graalCB" ../$BASE_DIR/dependencies/gav.txt)
+  UNFOLD=$(timeout $TIMEOUT java -jar ../utilityTools/unfoldingV1.jar "$graalCB" ../$BASE_DIR/dependencies/gav.txt)
 #    echo "unfold: $UNFOLD"
 
   if [ -z "$UNFOLD" ]
@@ -176,7 +218,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
       GRAAL[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
     else
  	 START_TIME=$(date +%s%N)
-     SQL=$(java -jar ../utilityTools/SQLConverterRealDB.jar "$UNFOLD" ../$BASE_DIR/schema/GAV/s-schema.txt )
+     SQL=$(timeout $TIMEOUT $JRE -jar ../utilityTools/SQLConverterRealDB.jar "$UNFOLD" ../$BASE_DIR/schema/GAV/s-schema.txt )
      GRAAL[$CONVERT,$i]=$(($(date +%s%N) - $START_TIME))
      #SQL=$(obdaconvert ucq "$GRAAL" ../$BASE_DIR/schema/GAV/t-schema.txt graal --string --src)
      #   SQL=$(java -jar ../utilityTools/sqlConvert-1.09.jar "$graalCB" --src ../$BASE_DIR/ontop-files/mapping.obda)
@@ -185,8 +227,15 @@ for ((i=0;i<$NUM_TESTS;++i)); do
      #   START_TIME=$(date +%s%N)
      #   GRAAL[$TUPLES,$i]=$(psql -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE" -f ../$BASE_DIR/queries/statements.sql | grep '-' -A1 | grep -v '-' )
 	 START_TIME=$(date +%s%N)
-     GRAAL[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+     GRAAL[$TUPLES,$i]=$(timeout $TIMEOUT psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
      GRAAL[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
+     gExcuteingTime=$((${GRAAL[$EXECUTE,$i]}/1000000))
+
+	if [ $gExcuteingTime -ge 1800000 ] 
+	then
+		let "GRAALTimeoutCounter+=1"
+    	echo "command timeout $GRAALTimeoutCounter"
+	fi
    fi
   
   echo ${GRAAL[$TUPLES,$i]} > ../experiments/outputs/graal/$BASE_DIR/GAV/answer/$DATA_SIZE/Q$QUERY.txt
@@ -195,10 +244,15 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   echo "Executing: $((${GRAAL[$EXECUTE,$i]}/1000000)) milliseconds"
   echo "Time elapsed: $((${GRAAL[$TOTAL,$i]}/1000000)) milliseconds"
   echo "# of tuples: ${GRAAL[$TUPLES,$i]}"
+  if [ $GRAALTimeoutCounter -eq 2 ]
+	then
+    	break
+	fi
 done
  
 echo "===== RDFox ====="
 mkdir -p ../experiments/outputs/rdfox/$BASE_DIR
+RDFOXTimeoutCounter=0
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   RDFOX[$TOTAL,$i]=$START_TIME
@@ -212,6 +266,8 @@ for ((i=0;i<$NUM_TESTS;++i)); do
     RDFOX[$EXECUTE,$i]=$(echo "$OUT" | grep "Total time" | cut -d ':' -f 2 | cut -d 'm' -f 1)
     RDFOX[$TUPLES,$i]=$(echo "$OUT" | grep "Query" -A1 | grep -v "Query" | cut -d ':' -f 2)
   else 
+  	let "RDFOXTimeoutCounter+=1"
+    echo "command timeout $RDFOXTimeoutCounter"
     RDFOX[$TOTAL,$i]="-1"
     RDFOX[$LOAD,$i]="-1"
     RDFOX[$CHASE,$i]="-1"
@@ -223,6 +279,10 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   echo "Executing: $((${RDFOX[$EXECUTE,$i]})) milliseconds"
   echo "Time elapsed: $((${RDFOX[$TOTAL,$i]}/1000000)) milliseconds"
   echo "# of tuples: ${RDFOX[$TUPLES,$i]}"
+  if [ $RDFOXTimeoutCounter -eq 2 ]
+	then
+    	break
+	fi
 done
  
 # echo "===== GQR ====="
@@ -258,7 +318,7 @@ done
 #     printf 'SELECT COUNT(*) FROM (%s) AS query;\n' "${SQL%?}" >$BASE_DIR/queries/statements.sql
 #     START_TIME=$(date +%s%N)
 #     GQR[$TUPLES,$i]=$(psql -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE" -f ../$BASE_DIR/queries/statements.sql | grep '-' -A1 | grep -v '-' )
-#    #GQR[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+#    #GQR[$TUPLES,$i]=$(timeout $TIMEOUT psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
 # 	  GQR[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
 #     echo ${GQR[$TUPLES,$i]} > ../experiments/outputs/gqr/$BASE_DIR/GAV/answer/$DATA_SIZE/Q$QUERY.txt
 #     GQR[$TOTAL,$i]=$(($(date +%s%N) - ${GQR[$TOTAL,$i]}))
@@ -300,7 +360,7 @@ done
 #     echo "$SQL" > ../experiments/outputs/bcagqr/$BASE_DIR/GAV/rewritings/Q$QUERY-rewriting.txt
 #     BCAGQR[$SIZE,$i]=$(echo "UNION $SQL" |grep -o -i "UNION" | wc -l)
 #     START_TIME=$(date +%s%N)
-#     BCAGQR[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+#     BCAGQR[$TUPLES,$i]=$(timeout $TIMEOUT psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
 #     echo ${BCAGQR[$TUPLES,$i]} > ../experiments/outputs/bcagqr/$BASE_DIR/GAV/answer/$DATA_SIZE/Q$QUERY.txt
 #     BCAGQR[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
 #     BCAGQR[$TOTAL,$i]=$(($(date +%s%N) - ${BCAGQR[$TOTAL,$i]}))
@@ -321,13 +381,15 @@ done
 # done
 
 echo "===== ONTOP ====="
-mkdir -p ../experiments/outputs/ontop/$BASE_DIR/log/$DATA_SIZE
+mkdir -p ../experiments/outputs/ontop/$BASE_DIR/GAV/log/$DATA_SIZE
+
+ONTOPTimeoutCounter=0
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   ONTOP[$TOTAL,$i]=$START_TIME
   ontopOutput=$(timeout $TIMEOUT  ./../systems/ontop/ontop query -t ../$BASE_DIR/owl/ontology.owl -q ../$BASE_DIR/queries/SPARQL/Q$QUERY.rq -m ../$BASE_DIR/ontop-files/gav-mapping.obda -p ../$BASE_DIR/ontop-files/properties.txt)
   if [ $? -eq 0 ]; then
-   echo "$ontopOutput" > ../experiments/outputs/ontop/$BASE_DIR/log/$DATA_SIZE/Q$QUERY-log.txt
+   echo "$ontopOutput" > ../experiments/outputs/ontop/$BASE_DIR/GAV/log/$DATA_SIZE/Q$QUERY-log.txt
    
    ONTOP[$TOTAL,$i]=$(($(date +%s%N) - ${ONTOP[$TOTAL,$i]}))
    loadStart=$(echo "$ontopOutput" | grep "Loaded OntologyID"  | cut -d'[' -f 1);
@@ -377,8 +439,14 @@ for ((i=0;i<$NUM_TESTS;++i)); do
     ONTOP[$CONVERT,$i]="-1"
     ONTOP[$EXECUTE,$i]="-1"
     ONTOP[$TUPLES,$i]="-1"
+    let "ONTOPTimeoutCounter+=1"
+    echo "command timeout $ONTOPTimeoutCounter"
   fi
   
+  if [ $ONTOPTimeoutCounter -eq 2 ]
+	then
+    	break
+	fi
 #   echo "Executing: ${ONTOP[$EXECUTE,$i]}"
   echo "Loading: $((${ONTOP[$LOAD,$i]}/1000000)) milliseconds"
   echo "Rewriting: $((${ONTOP[$REWRITE,$i]}/1000000)) milliseconds"
@@ -399,7 +467,7 @@ done
 #   $JRE -jar ../utilityTools/RulewerkLongTGDs.jar -st-tgds ../$BASE_DIR/dependencies/gav.txt -t-tgds ../$BASE_DIR/dependencies/gav-t-tgds.txt -out ../$BASE_DIR/dependencies/longTGDs.rule
 # 
 #   BCASTC[$BLOCK,$i]=$(($(date +%s%N) - $START_TIME))
-#   psql -h $PGHOST -p $PGPORT -U $PGUSER -c "SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE  pid <> pg_backend_pid()AND datname = 'temp';"
+#   timeout $TIMEOUT psql -h $PGHOST -p $PGPORT -U $PGUSER -c "SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE  pid <> pg_backend_pid()AND datname = 'temp';"
 #   START_TIME=$(date +%s%N)
 #   OUT=$(timeout $TIMEOUT java -jar ../systems/STChase/singleStep-1.08.jar -t-sql ../$BASE_DIR/schema/GAV/t-schema.sql -s-sch ../$BASE_DIR/schema/GAV/s-schema.txt -t-sch ../$BASE_DIR/schema/GAV/t-schema.txt -st-tgds ../$BASE_DIR/dependencies/longTGDs.rule -q ../$BASE_DIR/queries/Chasebench/Q$QUERY/Q$QUERY.txt -data ../$BASE_DIR/data/GAV/$DATA_SIZE)
 #   if [ $? -eq 0 ]; then
@@ -423,6 +491,7 @@ echo "===== ONTOP RW ====="
 mkdir -p ../experiments/outputs/ontoprw/$BASE_DIR/GAV/rewritings
 mkdir -p ../experiments/outputs/ontoprw/$BASE_DIR/GAV/answer/$DATA_SIZE
 
+ontopRTimeoutCounter=0
 for ((i=0;i<$NUM_TESTS;++i)); do
  START_TIME=$(date +%s%N | sed 's/^0*//')
  ONTOPRW[$TOTAL,$i]=$START_TIME
@@ -438,7 +507,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
  echo "Rewriting: $((${ONTOPRW[$REWRITE,$i]}/1000000)) milliseconds, Size: ${ONTOPRW[$SIZE,$i]}"
 
  START_TIME=$(date +%s%N)
- UNFOLD=$(java -jar ../utilityTools/unfoldingV1.jar "$TW" ../$BASE_DIR/dependencies/gav.txt)
+ UNFOLD=$(timeout $TIMEOUT java -jar ../utilityTools/unfoldingV1.jar "$TW" ../$BASE_DIR/dependencies/gav.txt)
 
  if [ -z "$UNFOLD" ]
    then
@@ -451,8 +520,16 @@ for ((i=0;i<$NUM_TESTS;++i)); do
      SQL=$(java -jar ../utilityTools/SQLConverterRealDB.jar "$UNFOLD" ../$BASE_DIR/schema/GAV/s-schema.txt )
      ONTOPRW[$CONVERT,$i]=$(($(date +%s%N) - $START_TIME))
      START_TIME=$(date +%s%N)
-     ONTOPRW[$TUPLES,$i]=$(psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
+     ONTOPRW[$TUPLES,$i]=$(timeout $TIMEOUT psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -c "SELECT COUNT(*) FROM (${SQL%?}) AS query;" | grep '-' -A1 | grep -v '-')
      ONTOPRW[$EXECUTE,$i]=$(($(date +%s%N) - $START_TIME))
+     
+     ontopRExcuteingTime=$((${ONTOPRW[$EXECUTE,$i]}/1000000))
+
+	if [ $ontopRExcuteingTime -ge 1800000 ] 
+	then
+		let "ontopRTimeoutCounter+=1"
+    	echo "command timeout $ontopRTimeoutCounter"
+	fi
   fi
 #   SQL=$(java -jar ../utilityTools/sqlConvert-1.09.jar "$TW" --src ../$BASE_DIR/ontop-files/mapping.obda)
 
@@ -466,6 +543,10 @@ for ((i=0;i<$NUM_TESTS;++i)); do
  echo "Executing: $((${ONTOPRW[$EXECUTE,$i]}/1000000)) milliseconds"
  echo "Time elapsed: $((${ONTOPRW[$TOTAL,$i]}/1000000)) milliseconds"
  echo "# of tuples: ${ONTOPRW[$TUPLES,$i]}"
+ if [ $ontopRTimeoutCounter -eq 2 ]
+	then
+    	break
+	fi
 done
 # 
 
@@ -494,6 +575,7 @@ if [[ $(grep -L "$queryString" ../$BASE_DIR/rulewerkfiles/GAV/$DATA_SIZE/rule.rl
 fi
 
 # start testing
+RULEWERKTimeoutCounter=0
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   RULEWERK[$TOTAL,$i]=$START_TIME
@@ -530,6 +612,8 @@ for ((i=0;i<$NUM_TESTS;++i)); do
     RULEWERK[$CHASE,$i]="-1"
     RULEWERK[$EXECUTE,$i]="-1"
     RULEWERK[$TUPLES,$i]="-1"
+    let "RULEWERKTimeoutCounter+=1"
+    echo "command timeout $RULEWERKTimeoutCounter"
   fi
   
   echo "Chasing: $((${RULEWERK[$CHASE,$i]}/1000000)) milliseconds"
@@ -538,6 +622,10 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   echo "Time elapsed: $((${RULEWERK[$TOTAL,$i]}/1000000)) milliseconds"
   echo "# of tuples: ${RULEWERK[$TUPLES,$i]}" 
   echo "QUery is : $QUERY"
+   if [ $RULEWERKTimeoutCounter -eq 2 ]
+	then
+    	break
+	fi
 done
 
 

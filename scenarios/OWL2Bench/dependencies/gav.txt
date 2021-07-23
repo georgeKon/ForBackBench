@@ -1,227 +1,227 @@
-src_Cricket(?X) , src_loves(?X,?Y) , src_hasOtherStaff(?X,?Y) , src_ClericalStaff(?X) , src_AeronauticalEngineering(?X) -> AeronauticalEngineering(?X) .
-src_FullProfessor(?X) , src_UGProgram(?X) , src_Movie(?X) , src_TeachingAssistant(?X) , src_ModernArts(?X) , src_HumanitiesAndSocial(?X) , src_Engineering(?X) -> Engineering(?X) .
-src_Cricket(?X) , src_NonScienceStudent(?X) , src_ChemicalEngineering(?X) , src_Anthropology(?X) -> Anthropology(?X) .
-src_ConferencePaper(?X) , src_Publication(?X) , src_Science(?X) , src_isFullProfessorOf(?X,?Y) , src_PGStudent(?X) , src_Philosophy(?X) , src_HumanitiesAndSocial(?X) -> HumanitiesAndSocial(?X) .
-src_hasResearchGroup(?X,?Y) , src_hasPart(?X,?Y) , src_isAssistantProfessorOf(?X,?Y) , src_isLecturerOf(?X,?Y) , src_AsianArts(?X) , src_TeachingCourse(?X) , src_Architecture(?X) -> Architecture(?X) .
-src_DesignManagement(?X) , src_hasSupportingStaff(?X,?Y) , src_hasFaculty(?X,?Y) , src_PetroleumlEngineering(?X) , src_BiomedicalEngineering(?X) , src_FineArts(?X) -> FineArts(?X) .
-src_MaterialScienceEngineering(?X) , src_hasProfessor(?X,?Y) , src_isProfessorOf(?X,?Y) , src_Article(?X) -> Article(?X) .
-src_Biology(?X) , src_hasDepartment(?X,?Y) , src_SystemStaff(?X) , src_hasProgram(?X,?Y) , src_TeachingCourse(?X) , src_isSupportingStaffOf(?X,?Y) , src_Publication(?X) -> Publication(?X) .
-src_hasCommitteeMembers(?X,?Y) , src_SportsLover(?X) , src_isSubOrganizationOf(?X,?Y) , src_FinancialAndAccountingManagement(?X) , src_AsianArts(?X) -> AsianArts(?X) .
-src_isCollegeOf(?X,?Y) , src_TeachingAssistant(?X) , src_IndustryEngineering(?X) , src_UGCourse(?X) , src_Manual(?X) , src_School(?X) , src_AssistantProfessor(?X) -> AssistantProfessor(?X) .
-src_hasSystemStaff(?X,?Y) , src_IndustryEngineering(?X) , src_HumanitiesAndSocial(?X) , src_Music(?X) , src_Geosciences(?X) , src_Professor(?X) -> Professor(?X) .
-src_isFacultyOf(?X,?Y) , src_NonScience(?X) , src_hasThesisEvaluationCommittee(?X,?Y) , src_AssociateProfessor(?X) -> AssociateProfessor(?X) .
-src_Student(?X) , src_isSupportingStaffOf(?X,?Y) , src_UnofficialPublication(?X) , src_Game(?X) , src_Geosciences(?X) , src_Astronomy(?X) -> Astronomy(?X) .
-src_Humanities(?X) , src_SupportingStaff(?X) , src_hasPostDoc(?X,?Y) , src_isOtherStaffOf(?X,?Y) , src_hasAssistantProfessor(?X,?Y) , src_Science(?X) -> Science(?X) .
-src_Mathematics(?X) , src_MechanicalEngineering(?X) , src_Faculty(?X) , src_ThesisEvaluationCommittee(?X) , src_Humanities(?X) , src_AeronauticalEngineering(?X) , src_Badminton(?X) -> Badminton(?X) .
-src_Economics(?X) , src_isTaughtBy(?X,?Y) , src_PhDProgram(?X) , src_PostDoc(?X) , src_hasTelephone(?X,?Y) , src_Statistics(?X) , src_Sports(?X) -> Sports(?X) .
-src_Humanities(?X) , src_VisitingProfessor(?X) , src_ModernLanguages(?X) , src_Program(?X) , src_Specification(?X) , src_BasketBall(?X) -> BasketBall(?X) .
-src_hasAdvisor(?X,?Y) , src_ResearchAssistant(?X) , src_Religions(?X) , src_hasLecturer(?X,?Y) , src_offerCourse(?X,?Y) , src_Tennis(?X) , src_BasketBallFan(?X) -> BasketBallFan(?X) .
-src_PostDoc(?X) , src_Mathematics(?X) , src_PGStudent(?X) , src_hasEmailAddress(?X,?Y) , src_EmployeeEvaluationCommittee(?X) , src_Badminton(?X) , src_isCrazyAbout(?X,?Y) -> isCrazyAbout(?X,?Y) .
-src_likes(?X,?Y) , src_hasEmailAddress(?X,?Y) , src_ElectiveCourse(?X) , src_Person(?X) , src_UnofficialPublication(?X) , src_hasUGProgram(?X,?Y) , src_BasketBallLover(?X) -> BasketBallLover(?X) .
-src_Student(?X) , src_hasAge(?X,?Y) , src_IndustryEngineering(?X) , src_loves(?X,?Y) -> loves(?X,?Y) .
-src_Anthropology(?X) , src_dislikes(?X,?Y) , src_hasAssistantProfessor(?X,?Y) , src_Course(?X) , src_Biology(?X) -> Biology(?X) .
-src_English(?X) , src_Reading(?X) , src_University(?X) , src_Badminton(?X) , src_VisitingProfessor(?X) , src_BiomedicalEngineering(?X) -> BiomedicalEngineering(?X) .
-src_hasAge(?X,?Y) , src_FootBall(?X) , src_loves(?X,?Y) , src_Book(?X) -> Book(?X) .
-src_UGProgram(?X) , src_PGProgram(?X) , src_isOtherStaffOf(?X,?Y) , src_isTeachingAssistantOf(?X,?Y) , src_SupplyChainManagement(?X) , src_Faculty(?X) , src_Chair(?X) -> Chair(?X) .
-src_NonScienceStudent(?X) , src_hasAdvisor(?X,?Y) , src_Chemistry(?X) , src_FullProfessor(?X) -> FullProfessor(?X) .
-src_AeronauticalEngineering(?X) , src_hasFaculty(?X,?Y) , src_Badminton(?X) , src_SupportingStaff(?X) , src_hasResearchProject(?X,?Y) , src_WomanCollege(?X) , src_isHeadOf(?X,?Y) -> isHeadOf(?X,?Y) .
-src_Chair(?X) , src_hasDegreeFrom(?X,?Y) , src_hasHead(?X,?Y) , src_isPartOf(?X,?Y) , src_ScienceStudent(?X) , src_hasEmployee(?X,?Y) , src_Department(?X) -> Department(?X) .
-src_evaluatedBy(?X,?Y) , src_enrollFor(?X,?Y) , src_Psychology(?X) , src_Lecturer(?X) , src_ChemicalEngineering(?X) -> ChemicalEngineering(?X) .
-src_Movie(?X) , src_hasFaculty(?X,?Y) , src_enrollFor(?X,?Y) , src_OtherStaff(?X) , src_UGProgram(?X) , src_Chemistry(?X) -> Chemistry(?X) .
-src_evaluatedBy(?X,?Y) , src_PostDoc(?X) , src_MarineScience(?X) , src_TheatreAndDance(?X) , src_CivilEngineering(?X) -> CivilEngineering(?X) .
-src_worksFor(?X,?Y) , src_isFacultyOf(?X,?Y) , src_isVisitingProfessorOf(?X,?Y) , src_Lecturer(?X) , src_hasCollaborationWith(?X,?Y) , src_ClericalStaff(?X) -> ClericalStaff(?X) .
-src_Software(?X) , src_hasAssociateProfessor(?X,?Y) , src_ModernArts(?X) , src_ProjectManagement(?X) , src_SupportingStaff(?X) -> SupportingStaff(?X) .
-src_Reading(?X) , src_hasSubOrganization(?X,?Y) , src_hasAdvisor(?X,?Y) , src_CoEdCollege(?X) -> CoEdCollege(?X) .
-src_isCollegeOf(?X,?Y) , src_UGStudent(?X) , src_ElectricalEngineering(?X) , src_Employee(?X) , src_Science(?X) , src_hasLastName(?X,?Y) , src_College(?X) -> College(?X) .
-src_hasLecturer(?X,?Y) , src_Course(?X) , src_hasStudent(?X,?Y) , src_Organization(?X) -> Organization(?X) .
-src_Mathematics(?X) , src_isSubOrganizationOf(?X,?Y) , src_University(?X) , src_FineArts(?X) , src_ComputerEngineering(?X) -> ComputerEngineering(?X) .
-src_MusicsClass(?X) , src_Painting(?X) , src_worksFor(?X,?Y) , src_isClericalStaffOf(?X,?Y) , src_hasHead(?X,?Y) , src_ComputerScience(?X) -> ComputerScience(?X) .
-src_hasCommitteeMembers(?X,?Y) , src_ModernArts(?X) , src_hasWomenCollege(?X,?Y) , src_ConferencePaper(?X) -> ConferencePaper(?X) .
-src_hasLecturer(?X,?Y) , src_takesCourse(?X,?Y) , src_hasSystemStaff(?X,?Y) , src_teachesCourse(?X,?Y) , src_Travelling(?X) , src_isResearchGroupOf(?X,?Y) , src_Cricket(?X) -> Cricket(?X) .
-src_hasPart(?X,?Y) , src_AssistantProfessor(?X) , src_hasPGProgram(?X,?Y) , src_Manual(?X) , src_Dean(?X) -> Dean(?X) .
-src_hasPhDProgram(?X,?Y) , src_Astronomy(?X) , src_SportsLover(?X) , src_Student(?X) , src_DesignManagement(?X) -> DesignManagement(?X) .
-src_hasThesisEvaluationCommittee(?X,?Y) , src_UGStudent(?X) , src_hasEmailAddress(?X,?Y) , src_Game(?X) , src_University(?X) , src_Management(?X) -> Management(?X) .
-src_hasVisitingProfessor(?X,?Y) , src_Program(?X) , src_PhDProgram(?X) , src_Director(?X) -> Director(?X) .
-src_Cricket(?X) , src_TechnicalReport(?X) , src_hasOtherStaff(?X,?Y) , src_Faculty(?X) , src_ResearchGroup(?X) , src_hasLecturer(?X,?Y) , src_Program(?X) -> Program(?X) .
-src_hasTitle(?X,?Y) , src_EmployeeEvaluationCommittee(?X) , src_enrollIn(?X,?Y) , src_JournalArticle(?X) , src_DesignManagement(?X) , src_BasketBallLover(?X) , src_Drama(?X) -> Drama(?X) .
-src_PGStudent(?X) , src_loves(?X,?Y) , src_UGCourse(?X) , src_Architecture(?X) , src_Economics(?X) -> Economics(?X) .
-src_JournalArticle(?X) , src_Professor(?X) , src_Employee(?X) , src_University(?X) , src_ModernArts(?X) , src_ElectiveCourse(?X) -> ElectiveCourse(?X) .
-src_UnofficialPublication(?X) , src_isAdvisedBy(?X,?Y) , src_StudentEvaluationCommittee(?X) , src_MaterialsScience(?X) , src_ScienceStudent(?X) , src_Anthropology(?X) , src_Course(?X) -> Course(?X) .
-src_SportsFan(?X) , src_isClericalStaffOf(?X,?Y) , src_MarineScience(?X) , src_ElectricalEngineering(?X) -> ElectricalEngineering(?X) .
-src_Organization(?X) , src_publicationResearch(?X,?Y) , src_hasEmployee(?X,?Y) , src_Employee(?X) -> Employee(?X) .
-src_Lecturer(?X) , src_Article(?X) , src_Employee(?X) , src_hasResearchGroup(?X,?Y) , src_AssistantProfessor(?X) , src_hasThesisEvaluationCommittee(?X,?Y) , src_Person(?X) -> Person(?X) .
-src_Cricket(?X) , src_isSupportingStaffOf(?X,?Y) , src_isResearchGroupOf(?X,?Y) , src_AssociateProfessor(?X) , src_worksFor(?X,?Y) -> worksFor(?X,?Y) .
-src_ResearchProject(?X) , src_ResearchAssistant(?X) , src_SalesManagement(?X) , src_Biology(?X) , src_EmployeeEvaluationCommittee(?X) -> EmployeeEvaluationCommittee(?X) .
-src_hasResearchGroup(?X,?Y) , src_hasLastName(?X,?Y) , src_hasDean(?X,?Y) , src_isTeachingAssistantOf(?X,?Y) , src_hasLecturer(?X,?Y) , src_EvaluationCommittee(?X) -> EvaluationCommittee(?X) .
-src_ChemicalEngineering(?X) , src_BasketBall(?X) , src_OtherStaff(?X) , src_CollegeDiscipline(?X) -> CollegeDiscipline(?X) .
-src_Economics(?X) , src_hasCommitteeMembers(?X,?Y) , src_HumanResourceManagement(?X) , src_Humanities(?X) , src_hasDepartment(?X,?Y) , src_hasEmailAddress(?X,?Y) , src_English(?X) -> English(?X) .
-src_hasStudentEvaluationCommittee(?X,?Y) , src_ClericalStaff(?X) , src_isClericalStaffOf(?X,?Y) , src_publicationResearch(?X,?Y) , src_hasVisitingProfessor(?X,?Y) , src_College(?X) , src_Faculty(?X) -> Faculty(?X) .
-src_BasketBallFan(?X) , src_Science(?X) , src_hasFaculty(?X,?Y) , src_PeopleWithHobby(?X) , src_UGStudent(?X) , src_College(?X) , src_teachesCourse(?X,?Y) -> teachesCourse(?X,?Y) .
-src_Organization(?X) , src_isPostDocOf(?X,?Y) , src_isTaughtBy(?X,?Y) , src_hasThesisEvaluationCommittee(?X,?Y) , src_FinancialAndAccountingManagement(?X) -> FinancialAndAccountingManagement(?X) .
-src_ThesisEvaluationCommittee(?X) , src_isCollegeOf(?X,?Y) , src_Game(?X) , src_isLecturerOf(?X,?Y) , src_EvaluationCommittee(?X) , src_hasDepartment(?X,?Y) , src_FootBall(?X) -> FootBall(?X) .
-src_Article(?X) , src_SalesManagement(?X) , src_Organization(?X) , src_Game(?X) -> Game(?X) .
-src_ResearchAssistant(?X) , src_BasketBall(?X) , src_MusicsClass(?X) , src_MaterialScienceEngineering(?X) , src_University(?X) , src_Interest(?X) -> Interest(?X) .
-src_isDeanOf(?X,?Y) , src_hasStudentEvaluationCommittee(?X,?Y) , src_hasPostDoc(?X,?Y) , src_Geosciences(?X) -> Geosciences(?X) .
-src_isPostDocOf(?X,?Y) , src_isStudentOf(?X,?Y) , src_Article(?X) , src_History(?X) -> History(?X) .
-src_dislikes(?X,?Y) , src_AssociateProfessor(?X) , src_Travelling(?X) , src_HumanResourceManagement(?X) -> HumanResourceManagement(?X) .
-src_isProfessorOf(?X,?Y) , src_TeachingAssistant(?X) , src_hasUndergraduateDegreeFrom(?X,?Y) , src_hasUGProgram(?X,?Y) , src_Religions(?X) , src_isFullProfessorOf(?X,?Y) , src_Humanities(?X) -> Humanities(?X) .
-src_TheatreAndDance(?X) , src_Cricket(?X) , src_hasAlumnus(?X,?Y) , src_dislikes(?X,?Y) , src_IndustryEngineering(?X) -> IndustryEngineering(?X) .
-src_ComputerScience(?X) , src_ProjectManagement(?X) , src_Architecture(?X) , src_Institute(?X) -> Institute(?X) .
-src_MaterialsScience(?X) , src_isFullProfessorOf(?X,?Y) , src_College(?X) , src_hasResearchProject(?X,?Y) , src_JournalArticle(?X) -> JournalArticle(?X) .
-src_AssociateProfessor(?X) , src_Architecture(?X) , src_isOtherStaffOf(?X,?Y) , src_hasStudentEvaluationCommittee(?X,?Y) , src_hasAlumnus(?X,?Y) , src_LatinArts(?X) -> LatinArts(?X) .
-src_UGStudent(?X) , src_School(?X) , src_Drama(?X) , src_Director(?X) , src_Lecturer(?X) -> Lecturer(?X) .
-src_University(?X) , src_isTaughtBy(?X,?Y) , src_MechanicalEngineering(?X) , src_Linguistics(?X) -> Linguistics(?X) .
-src_hasPart(?X,?Y) , src_isResearchAssistantOf(?X,?Y) , src_hasSystemStaff(?X,?Y) , src_publicationResearch(?X,?Y) , src_Manual(?X) -> Manual(?X) .
-src_enrollIn(?X,?Y) , src_ResearchProject(?X) , src_hasLecturer(?X,?Y) , src_hasResearchGroup(?X,?Y) , src_offerCourse(?X,?Y) , src_MarineScience(?X) -> MarineScience(?X) .
-src_FootBall(?X) , src_hasWork(?X,?Y) , src_Interest(?X) , src_Economics(?X) , src_MarketingManagement(?X) -> MarketingManagement(?X) .
-src_Person(?X) , src_isTaughtBy(?X,?Y) , src_hasAdvisor(?X,?Y) , src_MaterialScienceEngineering(?X) -> MaterialScienceEngineering(?X) .
-src_Physics(?X) , src_isVisitingProfessorOf(?X,?Y) , src_hasAge(?X,?Y) , src_ResearchProject(?X) , src_MaterialsScience(?X) -> MaterialsScience(?X) .
-src_PetroleumlEngineering(?X) , src_hasAdvisor(?X,?Y) , src_Astronomy(?X) , src_isDeanOf(?X,?Y) , src_Cricket(?X) , src_Mathematics(?X) -> Mathematics(?X) .
-src_MarketingManagement(?X) , src_UGStudent(?X) , src_Cricket(?X) , src_MechanicalEngineering(?X) -> MechanicalEngineering(?X) .
-src_isWomenCollegeOf(?X,?Y) , src_Travelling(?X) , src_Humanities(?X) , src_MediaArtsAndSciences(?X) -> MediaArtsAndSciences(?X) .
-src_AssistantProfessor(?X) , src_Publication(?X) , src_ScienceStudent(?X) , src_Physics(?X) , src_hasEmployee(?X,?Y) , src_MedievalArts(?X) -> MedievalArts(?X) .
-src_FinancialAndAccountingManagement(?X) , src_hasStudentEvaluationCommittee(?X,?Y) , src_isStudentOf(?X,?Y) , src_hasCommitteeMembers(?X,?Y) , src_Game(?X) , src_AssistantProfessor(?X) , src_ModernArts(?X) -> ModernArts(?X) .
-src_isTaughtBy(?X,?Y) , src_Astronomy(?X) , src_BasketBall(?X) , src_teachesCourse(?X,?Y) , src_SalesManagement(?X) , src_hasProfessor(?X,?Y) , src_ModernLanguages(?X) -> ModernLanguages(?X) .
-src_TeachingCourse(?X) , src_Institute(?X) , src_isFullProfessorOf(?X,?Y) , src_likes(?X,?Y) , src_isDeanOf(?X,?Y) , src_Movie(?X) -> Movie(?X) .
-src_hasAlumnus(?X,?Y) , src_SupportingStaff(?X) , src_isClericalStaffOf(?X,?Y) , src_LatinArts(?X) , src_isPartOf(?X,?Y) , src_Music(?X) -> Music(?X) .
-src_Interest(?X) , src_WomanCollege(?X) , src_BasketBallLover(?X) , src_Institute(?X) , src_hasAssociateProfessor(?X,?Y) , src_MusicsClass(?X) -> MusicsClass(?X) .
-src_OtherStaff(?X) , src_takesCourse(?X,?Y) , src_PerformingArts(?X) , src_UGCourse(?X) , src_Astronomy(?X) , src_NonScience(?X) -> NonScience(?X) .
-src_hasThesisEvaluationCommittee(?X,?Y) , src_ElectricalEngineering(?X) , src_OtherStaff(?X) , src_NonScienceStudent(?X) -> NonScienceStudent(?X) .
-src_isSupportingStaffOf(?X,?Y) , src_EvaluationCommittee(?X) , src_ComputerEngineering(?X) , src_isLecturerOf(?X,?Y) , src_Director(?X) , src_hasSubOrganization(?X,?Y) , src_Student(?X) -> Student(?X) .
-src_MarineScience(?X) , src_SupportingStaff(?X) , src_hasFirstName(?X,?Y) , src_hasMajor(?X,?Y) -> hasMajor(?X,?Y) .
-src_Employee(?X) , src_isWomenCollegeOf(?X,?Y) , src_hasSystemStaff(?X,?Y) , src_NonScienceStudent(?X) , src_UGProgram(?X) , src_Movie(?X) , src_OperationsManagement(?X) -> OperationsManagement(?X) .
-src_Biology(?X) , src_CoEdCollege(?X) , src_hasUGProgram(?X,?Y) , src_isOtherStaffOf(?X,?Y) , src_offerCourse(?X,?Y) , src_UGCourse(?X) , src_OtherStaff(?X) -> OtherStaff(?X) .
-src_orgPublication(?X,?Y) , src_CollegeDiscipline(?X) , src_hasResearchProject(?X,?Y) , src_SupplyChainManagement(?X) , src_isClericalStaffOf(?X,?Y) , src_hasMajor(?X,?Y) , src_PGProgram(?X) -> PGProgram(?X) .
-src_Badminton(?X) , src_isLecturerOf(?X,?Y) , src_FootBall(?X) , src_Science(?X) , src_hasDoctoralDegreeFrom(?X,?Y) , src_Mathematics(?X) , src_PGStudent(?X) -> PGStudent(?X) .
-src_Employee(?X) , src_Faculty(?X) , src_Specification(?X) , src_hasOtherStaff(?X,?Y) , src_hasAssistantProfessor(?X,?Y) , src_enrollFor(?X,?Y) -> enrollFor(?X,?Y) .
-src_Economics(?X) , src_isDepartmentOf(?X,?Y) , src_hasAlumnus(?X,?Y) , src_Painting(?X) -> Painting(?X) .
-src_DesignManagement(?X) , src_Sports(?X) , src_worksFor(?X,?Y) , src_hasUGProgram(?X,?Y) , src_PeopleWithHobby(?X) -> PeopleWithHobby(?X) .
-src_hasPhDProgram(?X,?Y) , src_Linguistics(?X) , src_tenured(?X,?Y) , src_hasCollegeDiscipline(?X,?Y) , src_hasSupportingStaff(?X,?Y) , src_likes(?X,?Y) -> likes(?X,?Y) .
-src_hasSupportingStaff(?X,?Y) , src_FootBall(?X) , src_isSubOrganizationOf(?X,?Y) , src_Manual(?X) , src_Chemistry(?X) , src_ComputerScience(?X) , src_PerformingArts(?X) -> PerformingArts(?X) .
-src_isStudentOf(?X,?Y) , src_OperationsManagement(?X) , src_Student(?X) , src_PetroleumlEngineering(?X) -> PetroleumlEngineering(?X) .
-src_UGStudent(?X) , src_isResearchGroupOf(?X,?Y) , src_Anthropology(?X) , src_WomanCollege(?X) , src_PhDProgram(?X) -> PhDProgram(?X) .
-src_hasDean(?X,?Y) , src_PhDProgram(?X) , src_hasSupportingStaff(?X,?Y) , src_PhDStudent(?X) -> PhDStudent(?X) .
-src_BiomedicalEngineering(?X) , src_ThesisEvaluationCommittee(?X) , src_Software(?X) , src_hasDegreeFrom(?X,?Y) , src_Philosophy(?X) -> Philosophy(?X) .
-src_isSubOrganizationOf(?X,?Y) , src_isAffiliatedOrganizationOf(?X,?Y) , src_AssistantProfessor(?X) , src_isSystemStaffOf(?X,?Y) , src_IndustryEngineering(?X) , src_Physics(?X) -> Physics(?X) .
-src_Lecturer(?X) , src_Anthropology(?X) , src_isFullProfessorOf(?X,?Y) , src_Mathematics(?X) , src_hasStudentEvaluationCommittee(?X,?Y) , src_PostDoc(?X) -> PostDoc(?X) .
-src_hasMajor(?X,?Y) , src_isResearchAssistantOf(?X,?Y) , src_isSystemStaffOf(?X,?Y) , src_isStudentOf(?X,?Y) , src_evaluatedBy(?X,?Y) , src_Director(?X) , src_ProjectManagement(?X) -> ProjectManagement(?X) .
-src_Institute(?X) , src_worksFor(?X,?Y) , src_Person(?X) , src_AeronauticalEngineering(?X) , src_hasWork(?X,?Y) , src_SystemStaff(?X) , src_Psychology(?X) -> Psychology(?X) .
-src_Interest(?X) , src_hasDean(?X,?Y) , src_ThesisEvaluationCommittee(?X) , src_ClericalStaff(?X) , src_PublicRelationsManagement(?X) -> PublicRelationsManagement(?X) .
-src_Swimming(?X) , src_TeachingCourse(?X) , src_isCrazyAbout(?X,?Y) , src_hasSystemStaff(?X,?Y) , src_Manual(?X) , src_UnofficialPublication(?X) , src_Reading(?X) -> Reading(?X) .
-src_Faculty(?X) , src_hasMajor(?X,?Y) , src_BasketBallLover(?X) , src_Religions(?X) -> Religions(?X) .
-src_isStudentOf(?X,?Y) , src_hasCollegeDiscipline(?X,?Y) , src_PGProgram(?X) , src_hasHead(?X,?Y) , src_Person(?X) , src_orgPublication(?X,?Y) , src_ResearchAssistant(?X) -> ResearchAssistant(?X) .
-src_College(?X) , src_Dean(?X) , src_English(?X) , src_ResearchGroup(?X) -> ResearchGroup(?X) .
-src_EmployeeEvaluationCommittee(?X) , src_isAdvisedBy(?X,?Y) , src_ElectricalEngineering(?X) , src_Institute(?X) , src_ResearchProject(?X) -> ResearchProject(?X) .
-src_AssistantProfessor(?X) , src_ConferencePaper(?X) , src_Painting(?X) , src_Work(?X) -> Work(?X) .
-src_isMemberOf(?X,?Y) , src_isTeachingAssistantOf(?X,?Y) , src_Book(?X) , src_isResearchGroupOf(?X,?Y) , src_RiskManagement(?X) -> RiskManagement(?X) .
-src_hasFaculty(?X,?Y) , src_isTaughtBy(?X,?Y) , src_Economics(?X) , src_SalesManagement(?X) -> SalesManagement(?X) .
-src_CoEdCollege(?X) , src_UnofficialPublication(?X) , src_Tennis(?X) , src_ComputerScience(?X) , src_isDepartmentOf(?X,?Y) , src_School(?X) -> School(?X) .
-src_hasCommitteeMembers(?X,?Y) , src_isFacultyOf(?X,?Y) , src_Department(?X) , src_ScienceStudent(?X) -> ScienceStudent(?X) .
-src_isResearchAssistantOf(?X,?Y) , src_Reading(?X) , src_Program(?X) , src_Badminton(?X) , src_Software(?X) -> Software(?X) .
-src_hasDepartment(?X,?Y) , src_hasPostDoc(?X,?Y) , src_ResearchAssistant(?X) , src_College(?X) , src_Specification(?X) -> Specification(?X) .
-src_hasEmailAddress(?X,?Y) , src_hasThesisEvaluationCommittee(?X,?Y) , src_Linguistics(?X) , src_SportsFan(?X) -> SportsFan(?X) .
-src_hasVisitingProfessor(?X,?Y) , src_isTeachingAssistantOf(?X,?Y) , src_AsianArts(?X) , src_CivilEngineering(?X) , src_isStudentOf(?X,?Y) , src_SportsLover(?X) -> SportsLover(?X) .
-src_hasResearchGroup(?X,?Y) , src_WomanCollege(?X) , src_isFacultyOf(?X,?Y) , src_ElectiveCourse(?X) , src_isAdvisedBy(?X,?Y) , src_Statistics(?X) -> Statistics(?X) .
-src_hasSupportingStaff(?X,?Y) , src_PhDProgram(?X) , src_ConferencePaper(?X) , src_hasPhDProgram(?X,?Y) , src_CivilEngineering(?X) , src_hasResearchAssistant(?X,?Y) , src_enrollIn(?X,?Y) -> enrollIn(?X,?Y) .
-src_Manual(?X) , src_hasCollaborationWith(?X,?Y) , src_Reading(?X) , src_teachesCourse(?X,?Y) , src_StudentEvaluationCommittee(?X) -> StudentEvaluationCommittee(?X) .
-src_hasEmailAddress(?X,?Y) , src_hasCollaborationWith(?X,?Y) , src_Person(?X) , src_hasStudentEvaluationCommittee(?X,?Y) , src_SupplyChainManagement(?X) -> SupplyChainManagement(?X) .
-src_CollegeDiscipline(?X) , src_Linguistics(?X) , src_isProfessorOf(?X,?Y) , src_BasketBallFan(?X) , src_hasStudentEvaluationCommittee(?X,?Y) , src_publicationResearch(?X,?Y) , src_Swimming(?X) -> Swimming(?X) .
-src_enrollIn(?X,?Y) , src_SalesManagement(?X) , src_DesignManagement(?X) , src_SystemStaff(?X) -> SystemStaff(?X) .
-src_isStudentOf(?X,?Y) , src_SupportingStaff(?X) , src_isDeanOf(?X,?Y) , src_ComputerEngineering(?X) , src_AssistantProfessor(?X) , src_TeachingAssistant(?X) -> TeachingAssistant(?X) .
-src_isSystemStaffOf(?X,?Y) , src_Travelling(?X) , src_Course(?X) , src_Department(?X) , src_hasSystemStaff(?X,?Y) , src_TeachingAssistant(?X) , src_isTeachingAssistantOf(?X,?Y) -> isTeachingAssistantOf(?X,?Y) .
-src_ComputerEngineering(?X) , src_ScienceStudent(?X) , src_PhDStudent(?X) , src_TeachingCourse(?X) -> TeachingCourse(?X) .
-src_isClericalStaffOf(?X,?Y) , src_BasketBallLover(?X) , src_hasAssociateProfessor(?X,?Y) , src_hasUGProgram(?X,?Y) , src_hasDean(?X,?Y) , src_PGProgram(?X) , src_TechnicalReport(?X) -> TechnicalReport(?X) .
-src_hasDegreeFrom(?X,?Y) , src_Badminton(?X) , src_isPartOf(?X,?Y) , src_Sports(?X) , src_University(?X) , src_Tennis(?X) -> Tennis(?X) .
-src_hasDean(?X,?Y) , src_VisitingProfessor(?X) , src_Travelling(?X) , src_isDepartmentOf(?X,?Y) , src_TheatreAndDance(?X) -> TheatreAndDance(?X) .
-src_worksFor(?X,?Y) , src_hasThesisEvaluationCommittee(?X,?Y) , src_isSystemStaffOf(?X,?Y) , src_hasEvaluationCommittee(?X,?Y) , src_evaluates(?X,?Y) , src_AssistantProfessor(?X) , src_ThesisEvaluationCommittee(?X) -> ThesisEvaluationCommittee(?X) .
-src_HumanitiesAndSocial(?X) , src_English(?X) , src_hasStudentEvaluationCommittee(?X,?Y) , src_Travelling(?X) -> Travelling(?X) .
-src_Work(?X) , src_Professor(?X) , src_offerCourse(?X,?Y) , src_Philosophy(?X) , src_UGCourse(?X) -> UGCourse(?X) .
-src_Interest(?X) , src_ThesisEvaluationCommittee(?X) , src_isHeadOf(?X,?Y) , src_UGProgram(?X) -> UGProgram(?X) .
-src_JournalArticle(?X) , src_DesignManagement(?X) , src_hasPart(?X,?Y) , src_UGStudent(?X) -> UGStudent(?X) .
-src_hasFirstName(?X,?Y) , src_hasStudentEvaluationCommittee(?X,?Y) , src_Music(?X) , src_BiomedicalEngineering(?X) , src_hasHead(?X,?Y) , src_isFullProfessorOf(?X,?Y) , src_University(?X) -> University(?X) .
-src_BasketBallFan(?X) , src_Economics(?X) , src_isWomenCollegeOf(?X,?Y) , src_UnofficialPublication(?X) -> UnofficialPublication(?X) .
-src_Chair(?X) , src_ElectricalEngineering(?X) , src_hasFullProfessor(?X,?Y) , src_isPartOf(?X,?Y) , src_VisitingProfessor(?X) -> VisitingProfessor(?X) .
-src_ScienceStudent(?X) , src_hasPostDoc(?X,?Y) , src_LatinArts(?X) , src_VisitingProfessor(?X) , src_hasResearchAssistant(?X,?Y) , src_ClericalStaff(?X) , src_WomanCollege(?X) -> WomanCollege(?X) .
-src_CoEdCollege(?X) , src_isDeanOf(?X,?Y) , src_hasPart(?X,?Y) , src_Management(?X) , src_BasketBallLover(?X) , src_dislikes(?X,?Y) -> dislikes(?X,?Y) .
-src_isResearchAssistantOf(?X,?Y) , src_Student(?X) , src_hasCollege(?X,?Y) , src_NonScienceStudent(?X) , src_SystemStaff(?X) , src_PhDStudent(?X) , src_isStudentOf(?X,?Y) -> isStudentOf(?X,?Y) .
-src_hasEvaluationCommittee(?X,?Y) , src_SportsLover(?X) , src_NonScience(?X) , src_evaluatedBy(?X,?Y) -> evaluatedBy(?X,?Y) .
-src_hasEmployee(?X,?Y) , src_TheatreAndDance(?X) , src_isFullProfessorOf(?X,?Y) , src_evaluates(?X,?Y) -> evaluates(?X,?Y) .
-src_UGProgram(?X) , src_PostDoc(?X) , src_Employee(?X) , src_MechanicalEngineering(?X) , src_AsianArts(?X) , src_isFacultyOf(?X,?Y) , src_hasAlumnus(?X,?Y) -> hasAlumnus(?X,?Y) .
-src_RiskManagement(?X) , src_hasStudent(?X,?Y) , src_VisitingProfessor(?X) , src_ElectricalEngineering(?X) , src_PerformingArts(?X) , src_MediaArtsAndSciences(?X) , src_hasDegreeFrom(?X,?Y) -> hasDegreeFrom(?X,?Y) .
-src_isVisitingProfessorOf(?X,?Y) , src_Astronomy(?X) , src_TeachingAssistant(?X) , src_Sports(?X) , src_Article(?X) , src_isTaughtBy(?X,?Y) , src_hasAssistantProfessor(?X,?Y) -> hasAssistantProfessor(?X,?Y) .
-src_hasSystemStaff(?X,?Y) , src_Badminton(?X) , src_hasMajor(?X,?Y) , src_Interest(?X) , src_BiomedicalEngineering(?X) , src_Dean(?X) , src_isAssistantProfessorOf(?X,?Y) -> isAssistantProfessorOf(?X,?Y) .
-src_Chemistry(?X) , src_isResearchAssistantOf(?X,?Y) , src_EvaluationCommittee(?X) , src_PeopleWithHobby(?X) , src_hasProfessor(?X,?Y) -> hasProfessor(?X,?Y) .
-src_PhDStudent(?X) , src_Director(?X) , src_History(?X) , src_hasSupportingStaff(?X,?Y) , src_hasAssociateProfessor(?X,?Y) -> hasAssociateProfessor(?X,?Y) .
-src_Architecture(?X) , src_isAdvisedBy(?X,?Y) , src_isResearchAssistantOf(?X,?Y) , src_SupportingStaff(?X) , src_teachesCourse(?X,?Y) , src_hasCollege(?X,?Y) , src_isAssociateProfessorOf(?X,?Y) -> isAssociateProfessorOf(?X,?Y) .
-src_isAffiliatedOrganizationOf(?X,?Y) , src_Engineering(?X) , src_ClericalStaff(?X) , src_ComputerScience(?X) , src_hasLecturer(?X,?Y) , src_hasAuthor(?X,?Y) -> hasAuthor(?X,?Y) .
-src_isFullProfessorOf(?X,?Y) , src_Employee(?X) , src_WomanCollege(?X) , src_hasClericalStaff(?X,?Y) -> hasClericalStaff(?X,?Y) .
-src_isLecturerOf(?X,?Y) , src_MediaArtsAndSciences(?X) , src_JournalArticle(?X) , src_AssociateProfessor(?X) , src_FootBall(?X) , src_FinancialAndAccountingManagement(?X) , src_hasSupportingStaff(?X,?Y) -> hasSupportingStaff(?X,?Y) .
-src_hasFullProfessor(?X,?Y) , src_WomanCollege(?X) , src_isDepartmentOf(?X,?Y) , src_hasCollaborationWith(?X,?Y) -> hasCollaborationWith(?X,?Y) .
-src_Physics(?X) , src_PeopleWithHobby(?X) , src_PhDStudent(?X) , src_isSystemStaffOf(?X,?Y) , src_hasCollege(?X,?Y) -> hasCollege(?X,?Y) .
-src_College(?X) , src_Interest(?X) , src_ComputerEngineering(?X) , src_hasAssistantProfessor(?X,?Y) , src_Philosophy(?X) , src_tenured(?X,?Y) , src_isCollegeOf(?X,?Y) -> isCollegeOf(?X,?Y) .
-src_BiomedicalEngineering(?X) , src_hasVisitingProfessor(?X,?Y) , src_Article(?X) , src_English(?X) , src_NonScience(?X) , src_OtherStaff(?X) , src_hasSubOrganization(?X,?Y) -> hasSubOrganization(?X,?Y) .
-src_TeachingCourse(?X) , src_English(?X) , src_hasHead(?X,?Y) , src_PostDoc(?X) , src_hasEmailAddress(?X,?Y) , src_enrollIn(?X,?Y) , src_hasCollegeDiscipline(?X,?Y) -> hasCollegeDiscipline(?X,?Y) .
-src_enrollIn(?X,?Y) , src_UGCourse(?X) , src_isVisitingProfessorOf(?X,?Y) , src_hasCommitteeMembers(?X,?Y) -> hasCommitteeMembers(?X,?Y) .
-src_Software(?X) , src_hasResearchAssistant(?X,?Y) , src_SportsLover(?X) , src_hasMember(?X,?Y) -> hasMember(?X,?Y) .
-src_hasTitle(?X,?Y) , src_isFacultyOf(?X,?Y) , src_Chair(?X) , src_Religions(?X) , src_hasDean(?X,?Y) -> hasDean(?X,?Y) .
-src_hasPostDoc(?X,?Y) , src_ModernLanguages(?X) , src_PhDStudent(?X) , src_isDeanOf(?X,?Y) -> isDeanOf(?X,?Y) .
-src_Employee(?X) , src_teachesCourse(?X,?Y) , src_PhDProgram(?X) , src_hasDepartment(?X,?Y) -> hasDepartment(?X,?Y) .
-src_Lecturer(?X) , src_hasLecturer(?X,?Y) , src_Psychology(?X) , src_Cricket(?X) , src_Person(?X) , src_PGStudent(?X) , src_isDepartmentOf(?X,?Y) -> isDepartmentOf(?X,?Y) .
-src_Person(?X) , src_ChemicalEngineering(?X) , src_ResearchGroup(?X) , src_FootBall(?X) , src_hasDoctoralDegreeFrom(?X,?Y) -> hasDoctoralDegreeFrom(?X,?Y) .
-src_Statistics(?X) , src_hasCollege(?X,?Y) , src_isAssistantProfessorOf(?X,?Y) , src_isMemberOf(?X,?Y) , src_PetroleumlEngineering(?X) , src_Chair(?X) , src_hasEmployee(?X,?Y) -> hasEmployee(?X,?Y) .
-src_Biology(?X) , src_Tennis(?X) , src_Psychology(?X) , src_Astronomy(?X) , src_hasEmployeeEvaluationCommittee(?X,?Y) -> hasEmployeeEvaluationCommittee(?X,?Y) .
-src_hasCollegeDiscipline(?X,?Y) , src_Lecturer(?X) , src_WomanCollege(?X) , src_hasEvaluationCommittee(?X,?Y) -> hasEvaluationCommittee(?X,?Y) .
-src_StudentEvaluationCommittee(?X) , src_Humanities(?X) , src_hasClericalStaff(?X,?Y) , src_isSubOrganizationOf(?X,?Y) , src_hasFaculty(?X,?Y) -> hasFaculty(?X,?Y) .
-src_ResearchAssistant(?X) , src_hasEmailAddress(?X,?Y) , src_hasVisitingProfessor(?X,?Y) , src_hasMasterDegreeFrom(?X,?Y) , src_isSubOrganizationOf(?X,?Y) , src_isFacultyOf(?X,?Y) -> isFacultyOf(?X,?Y) .
-src_Game(?X) , src_TheatreAndDance(?X) , src_hasAdvisor(?X,?Y) , src_hasFullProfessor(?X,?Y) -> hasFullProfessor(?X,?Y) .
-src_Mathematics(?X) , src_isProfessorOf(?X,?Y) , src_FineArts(?X) , src_isFullProfessorOf(?X,?Y) -> isFullProfessorOf(?X,?Y) .
-src_isResearchGroupOf(?X,?Y) , src_isLecturerOf(?X,?Y) , src_English(?X) , src_hasVisitingProfessor(?X,?Y) , src_isSubOrganizationOf(?X,?Y) , src_hasHead(?X,?Y) -> hasHead(?X,?Y) .
-src_Philosophy(?X) , src_isSubOrganizationOf(?X,?Y) , src_hasFaculty(?X,?Y) , src_MarineScience(?X) , src_hasLecturer(?X,?Y) -> hasLecturer(?X,?Y) .
-src_Director(?X) , src_AssociateProfessor(?X) , src_hasDepartment(?X,?Y) , src_AsianArts(?X) , src_hasEmployee(?X,?Y) , src_isLecturerOf(?X,?Y) -> isLecturerOf(?X,?Y) .
-src_Science(?X) , src_enrollFor(?X,?Y) , src_isStudentOf(?X,?Y) , src_Badminton(?X) , src_MusicsClass(?X) , src_hasMasterDegreeFrom(?X,?Y) -> hasMasterDegreeFrom(?X,?Y) .
-src_isSupportingStaffOf(?X,?Y) , src_hasMember(?X,?Y) , src_Professor(?X) , src_isMemberOf(?X,?Y) -> isMemberOf(?X,?Y) .
-src_Economics(?X) , src_isFacultyOf(?X,?Y) , src_Humanities(?X) , src_hasOtherStaff(?X,?Y) -> hasOtherStaff(?X,?Y) .
-src_isTeachingAssistantOf(?X,?Y) , src_PhDStudent(?X) , src_hasEmployee(?X,?Y) , src_ResearchGroup(?X) , src_hasPGProgram(?X,?Y) -> hasPGProgram(?X,?Y) .
-src_Geosciences(?X) , src_Faculty(?X) , src_isDepartmentOf(?X,?Y) , src_Work(?X) , src_BasketBall(?X) , src_Chair(?X) , src_hasProgram(?X,?Y) -> hasProgram(?X,?Y) .
-src_Institute(?X) , src_ConferencePaper(?X) , src_publicationResearch(?X,?Y) , src_hasPart(?X,?Y) -> hasPart(?X,?Y) .
-src_hasResearchProject(?X,?Y) , src_English(?X) , src_ProjectManagement(?X) , src_isMemberOf(?X,?Y) , src_isPartOf(?X,?Y) -> isPartOf(?X,?Y) .
-src_Publication(?X) , src_hasAssistantProfessor(?X,?Y) , src_Travelling(?X) , src_AssistantProfessor(?X) , src_hasPhDProgram(?X,?Y) -> hasPhDProgram(?X,?Y) .
-src_ResearchProject(?X) , src_UGCourse(?X) , src_OperationsManagement(?X) , src_Movie(?X) , src_ChemicalEngineering(?X) , src_hasPostDoc(?X,?Y) -> hasPostDoc(?X,?Y) .
-src_hasEmployee(?X,?Y) , src_ChemicalEngineering(?X) , src_hasStudent(?X,?Y) , src_RiskManagement(?X) , src_isPostDocOf(?X,?Y) -> isPostDocOf(?X,?Y) .
-src_FinancialAndAccountingManagement(?X) , src_hasSubOrganization(?X,?Y) , src_enrollIn(?X,?Y) , src_Manual(?X) , src_Work(?X) , src_ComputerScience(?X) , src_isProfessorOf(?X,?Y) -> isProfessorOf(?X,?Y) .
-src_isAffiliatedOrganizationOf(?X,?Y) , src_VisitingProfessor(?X) , src_hasAdvisor(?X,?Y) , src_SalesManagement(?X) , src_PerformingArts(?X) , src_isHeadOf(?X,?Y) , src_hasResearchAssistant(?X,?Y) -> hasResearchAssistant(?X,?Y) .
-src_Economics(?X) , src_Department(?X) , src_isFacultyOf(?X,?Y) , src_hasStudent(?X,?Y) , src_ConferencePaper(?X) , src_isResearchAssistantOf(?X,?Y) -> isResearchAssistantOf(?X,?Y) .
-src_College(?X) , src_PublicRelationsManagement(?X) , src_hasClericalStaff(?X,?Y) , src_TeachingCourse(?X) , src_hasResearchGroup(?X,?Y) -> hasResearchGroup(?X,?Y) .
-src_hasSystemStaff(?X,?Y) , src_hasLecturer(?X,?Y) , src_hasEmailAddress(?X,?Y) , src_isResearchGroupOf(?X,?Y) -> isResearchGroupOf(?X,?Y) .
-src_Religions(?X) , src_MechanicalEngineering(?X) , src_Reading(?X) , src_ChemicalEngineering(?X) , src_OperationsManagement(?X) , src_hasResearchProject(?X,?Y) -> hasResearchProject(?X,?Y) .
-src_isStudentOf(?X,?Y) , src_isPartOf(?X,?Y) , src_isOtherStaffOf(?X,?Y) , src_hasWork(?X,?Y) -> hasWork(?X,?Y) .
-src_HumanResourceManagement(?X) , src_offerCourse(?X,?Y) , src_isStudentOf(?X,?Y) , src_hasStudent(?X,?Y) -> hasStudent(?X,?Y) .
-src_Religions(?X) , src_BiomedicalEngineering(?X) , src_MarineScience(?X) , src_hasUndergraduateDegreeFrom(?X,?Y) , src_hasStudentEvaluationCommittee(?X,?Y) -> hasStudentEvaluationCommittee(?X,?Y) .
-src_AeronauticalEngineering(?X) , src_UnofficialPublication(?X) , src_TechnicalReport(?X) , src_hasMajor(?X,?Y) , src_Geosciences(?X) , src_isProfessorOf(?X,?Y) , src_isSubOrganizationOf(?X,?Y) -> isSubOrganizationOf(?X,?Y) .
-src_hasAdvisor(?X,?Y) , src_isPostDocOf(?X,?Y) , src_Director(?X) , src_dislikes(?X,?Y) , src_MarineScience(?X) , src_hasEmployee(?X,?Y) , src_hasSystemStaff(?X,?Y) -> hasSystemStaff(?X,?Y) .
-src_orgPublication(?X,?Y) , src_isDeanOf(?X,?Y) , src_Geosciences(?X) , src_Physics(?X) , src_hasThesisEvaluationCommittee(?X,?Y) -> hasThesisEvaluationCommittee(?X,?Y) .
-src_takesCourse(?X,?Y) , src_hasCollegeDiscipline(?X,?Y) , src_hasPhDProgram(?X,?Y) , src_hasThesisEvaluationCommittee(?X,?Y) , src_hasCommitteeMembers(?X,?Y) , src_hasUGProgram(?X,?Y) -> hasUGProgram(?X,?Y) .
-src_BiomedicalEngineering(?X) , src_ComputerEngineering(?X) , src_orgPublication(?X,?Y) , src_hasThesisEvaluationCommittee(?X,?Y) , src_hasUndergraduateDegreeFrom(?X,?Y) -> hasUndergraduateDegreeFrom(?X,?Y) .
-src_hasDean(?X,?Y) , src_MedievalArts(?X) , src_NonScience(?X) , src_AssociateProfessor(?X) , src_hasAssistantProfessor(?X,?Y) , src_hasVisitingProfessor(?X,?Y) -> hasVisitingProfessor(?X,?Y) .
-src_hasStudentEvaluationCommittee(?X,?Y) , src_Astronomy(?X) , src_DesignManagement(?X) , src_isVisitingProfessorOf(?X,?Y) -> isVisitingProfessorOf(?X,?Y) .
-src_Drama(?X) , src_BasketBall(?X) , src_hasTitle(?X,?Y) , src_hasWomenCollege(?X,?Y) -> hasWomenCollege(?X,?Y) .
-src_Manual(?X) , src_Geosciences(?X) , src_hasAuthor(?X,?Y) , src_CivilEngineering(?X) , src_hasProgram(?X,?Y) , src_isAdvisedBy(?X,?Y) -> isAdvisedBy(?X,?Y) .
-src_PetroleumlEngineering(?X) , src_Badminton(?X) , src_NonScience(?X) , src_Course(?X) , src_hasTelephone(?X,?Y) , src_isAffiliatedOrganizationOf(?X,?Y) -> isAffiliatedOrganizationOf(?X,?Y) .
-src_Faculty(?X) , src_Director(?X) , src_hasAlumnus(?X,?Y) , src_evaluates(?X,?Y) , src_isClericalStaffOf(?X,?Y) -> isClericalStaffOf(?X,?Y) .
-src_BiomedicalEngineering(?X) , src_Director(?X) , src_ConferencePaper(?X) , src_Chair(?X) , src_isSupportingStaffOf(?X,?Y) -> isSupportingStaffOf(?X,?Y) .
-src_hasFullProfessor(?X,?Y) , src_ModernArts(?X) , src_Dean(?X) , src_isOtherStaffOf(?X,?Y) -> isOtherStaffOf(?X,?Y) .
-src_hasHead(?X,?Y) , src_isWomenCollegeOf(?X,?Y) , src_CoEdCollege(?X) , src_isSupportingStaffOf(?X,?Y) , src_isSystemStaffOf(?X,?Y) -> isSystemStaffOf(?X,?Y) .
-src_SupportingStaff(?X) , src_likes(?X,?Y) , src_isResearchGroupOf(?X,?Y) , src_ConferencePaper(?X) , src_isTaughtBy(?X,?Y) -> isTaughtBy(?X,?Y) .
-src_likes(?X,?Y) , src_enrollIn(?X,?Y) , src_Person(?X) , src_isWomenCollegeOf(?X,?Y) -> isWomenCollegeOf(?X,?Y) .
-src_ModernArts(?X) , src_PhDStudent(?X) , src_Sports(?X) , src_FootBall(?X) , src_PerformingArts(?X) , src_offerCourse(?X,?Y) -> offerCourse(?X,?Y) .
-src_StudentEvaluationCommittee(?X) , src_Director(?X) , src_isFullProfessorOf(?X,?Y) , src_isMemberOf(?X,?Y) , src_hasCollegeDiscipline(?X,?Y) , src_Music(?X) , src_orgPublication(?X,?Y) -> orgPublication(?X,?Y) .
-src_hasFullProfessor(?X,?Y) , src_hasResearchGroup(?X,?Y) , src_PGProgram(?X) , src_publicationResearch(?X,?Y) -> publicationResearch(?X,?Y) .
-src_ScienceStudent(?X) , src_hasCollege(?X,?Y) , src_hasEmailAddress(?X,?Y) , src_isDeanOf(?X,?Y) , src_takesCourse(?X,?Y) -> takesCourse(?X,?Y) .
-src_hasMember(?X,?Y) , src_Publication(?X) , src_Engineering(?X) , src_hasUGProgram(?X,?Y) , src_tenured(?X,?Y) -> tenured(?X,?Y) .
-src_PhDProgram(?X) , src_Astronomy(?X) , src_hasOtherStaff(?X,?Y) , src_Painting(?X) , src_AeronauticalEngineering(?X) , src_hasAge(?X,?Y) -> hasAge(?X,?Y) .
-src_BasketBallLover(?X) , src_Engineering(?X) , src_Work(?X) , src_SalesManagement(?X) , src_PhDProgram(?X) , src_hasEmailAddress(?X,?Y) -> hasEmailAddress(?X,?Y) .
-src_Statistics(?X) , src_Sports(?X) , src_dislikes(?X,?Y) , src_hasFirstName(?X,?Y) -> hasFirstName(?X,?Y) .
-src_SupportingStaff(?X) , src_isSupportingStaffOf(?X,?Y) , src_UGStudent(?X) , src_hasPostDoc(?X,?Y) , src_enrollIn(?X,?Y) , src_hasLastName(?X,?Y) -> hasLastName(?X,?Y) .
-src_isSubOrganizationOf(?X,?Y) , src_hasResearchProject(?X,?Y) , src_hasClericalStaff(?X,?Y) , src_hasTelephone(?X,?Y) -> hasTelephone(?X,?Y) .
-src_Geosciences(?X) , src_isAssistantProfessorOf(?X,?Y) , src_SportsLover(?X) , src_hasTitle(?X,?Y) -> hasTitle(?X,?Y) .
-src_isFullProfessorOf(?X,?Y) , src_Work(?X) , src_Anthropology(?X) , src_Organization(?X) , src_hasAdvisor(?X,?Y) -> hasAdvisor(?X,?Y) .
+src_hasMasterDegreeFrom(?X,?Y) , src_AeronauticalEngineering(?X) -> AeronauticalEngineering(?X) .
+src_College(?X) , src_hasLecturer(?X,?Y) , src_hasUndergraduateDegreeFrom(?X,?Y) , src_School(?X) , src_Engineering(?X) -> Engineering(?X) .
+src_FootBall(?X) , src_publicationResearch(?X,?Y) , src_Anthropology(?X) -> Anthropology(?X) .
+src_College(?X) , src_Course(?X) , src_HumanitiesAndSocial(?X) -> HumanitiesAndSocial(?X) .
+src_Professor(?X) , src_Software(?X) , src_Architecture(?X) -> Architecture(?X) .
+src_JournalArticle(?X) , src_Dean(?X) , src_MedievalArts(?X) , src_FineArts(?X) -> FineArts(?X) .
+src_hasOtherStaff(?X,?Y) , src_hasPhDProgram(?X,?Y) , src_Article(?X) -> Article(?X) .
+src_WomanCollege(?X) , src_Publication(?X) -> Publication(?X) .
+src_hasFaculty(?X,?Y) , src_loves(?X,?Y) , src_ChemicalEngineering(?X) , src_AsianArts(?X) -> AsianArts(?X) .
+src_offerCourse(?X,?Y) , src_loves(?X,?Y) , src_AssistantProfessor(?X) -> AssistantProfessor(?X) .
+src_ThesisEvaluationCommittee(?X) , src_Professor(?X) -> Professor(?X) .
+src_Student(?X) , src_College(?X) , src_Cricket(?X) , src_AssociateProfessor(?X) -> AssociateProfessor(?X) .
+src_History(?X) , src_PublicRelationsManagement(?X) , src_Astronomy(?X) -> Astronomy(?X) .
+src_AssociateProfessor(?X) , src_isResearchGroupOf(?X,?Y) , src_Science(?X) -> Science(?X) .
+src_ModernArts(?X) , src_Anthropology(?X) , src_Badminton(?X) -> Badminton(?X) .
+src_University(?X) , src_Sports(?X) -> Sports(?X) .
+src_AsianArts(?X) , src_BasketBall(?X) -> BasketBall(?X) .
+src_Biology(?X) , src_hasDepartment(?X,?Y) , src_FullProfessor(?X) , src_BasketBallFan(?X) -> BasketBallFan(?X) .
+src_hasPhDProgram(?X,?Y) , src_enrollFor(?X,?Y) , src_English(?X) , src_isCrazyAbout(?X,?Y) -> isCrazyAbout(?X,?Y) .
+src_hasMember(?X,?Y) , src_BasketBallLover(?X) -> BasketBallLover(?X) .
+src_hasCollaborationWith(?X,?Y) , src_likes(?X,?Y) , src_isLecturerOf(?X,?Y) , src_isSubOrganizationOf(?X,?Y) , src_loves(?X,?Y) -> loves(?X,?Y) .
+src_hasResearchProject(?X,?Y) , src_Biology(?X) -> Biology(?X) .
+src_Work(?X) , src_PGProgram(?X) , src_dislikes(?X,?Y) , src_hasWork(?X,?Y) , src_BiomedicalEngineering(?X) -> BiomedicalEngineering(?X) .
+src_orgPublication(?X,?Y) , src_HumanitiesAndSocial(?X) , src_isResearchGroupOf(?X,?Y) , src_Book(?X) -> Book(?X) .
+src_ClericalStaff(?X) , src_ModernLanguages(?X) , src_isResearchAssistantOf(?X,?Y) , src_ElectricalEngineering(?X) , src_Chair(?X) -> Chair(?X) .
+src_evaluatedBy(?X,?Y) , src_FullProfessor(?X) -> FullProfessor(?X) .
+src_hasDepartment(?X,?Y) , src_PhDStudent(?X) , src_Tennis(?X) , src_isHeadOf(?X,?Y) -> isHeadOf(?X,?Y) .
+src_hasTitle(?X,?Y) , src_hasMasterDegreeFrom(?X,?Y) , src_EvaluationCommittee(?X) , src_Science(?X) , src_Department(?X) -> Department(?X) .
+src_PerformingArts(?X) , src_hasPart(?X,?Y) , src_hasEmailAddress(?X,?Y) , src_ChemicalEngineering(?X) -> ChemicalEngineering(?X) .
+src_Music(?X) , src_ConferencePaper(?X) , src_hasUndergraduateDegreeFrom(?X,?Y) , src_hasWomenCollege(?X,?Y) , src_Chemistry(?X) -> Chemistry(?X) .
+src_hasAssociateProfessor(?X,?Y) , src_CivilEngineering(?X) -> CivilEngineering(?X) .
+src_hasMasterDegreeFrom(?X,?Y) , src_hasProfessor(?X,?Y) , src_isAffiliatedOrganizationOf(?X,?Y) , src_ClericalStaff(?X) -> ClericalStaff(?X) .
+src_hasProgram(?X,?Y) , src_isCrazyAbout(?X,?Y) , src_isFullProfessorOf(?X,?Y) , src_History(?X) , src_SupportingStaff(?X) -> SupportingStaff(?X) .
+src_isAdvisedBy(?X,?Y) , src_hasEmployeeEvaluationCommittee(?X,?Y) , src_ResearchAssistant(?X) , src_CoEdCollege(?X) -> CoEdCollege(?X) .
+src_ChemicalEngineering(?X) , src_hasResearchGroup(?X,?Y) , src_AsianArts(?X) , src_MusicsClass(?X) , src_College(?X) -> College(?X) .
+src_hasStudent(?X,?Y) , src_orgPublication(?X,?Y) , src_isMemberOf(?X,?Y) , src_Organization(?X) -> Organization(?X) .
+src_PGStudent(?X) , src_hasStudentEvaluationCommittee(?X,?Y) , src_Book(?X) , src_hasEmployee(?X,?Y) , src_ComputerEngineering(?X) -> ComputerEngineering(?X) .
+src_isTaughtBy(?X,?Y) , src_Dean(?X) , src_ComputerScience(?X) -> ComputerScience(?X) .
+src_MedievalArts(?X) , src_ComputerScience(?X) , src_offerCourse(?X,?Y) , src_isPartOf(?X,?Y) , src_ConferencePaper(?X) -> ConferencePaper(?X) .
+src_Drama(?X) , src_Cricket(?X) -> Cricket(?X) .
+src_hasDepartment(?X,?Y) , src_hasPhDProgram(?X,?Y) , src_Physics(?X) , src_Dean(?X) -> Dean(?X) .
+src_hasFaculty(?X,?Y) , src_SystemStaff(?X) , src_Engineering(?X) , src_hasEvaluationCommittee(?X,?Y) , src_DesignManagement(?X) -> DesignManagement(?X) .
+src_EmployeeEvaluationCommittee(?X) , src_hasResearchAssistant(?X,?Y) , src_hasDoctoralDegreeFrom(?X,?Y) , src_Management(?X) -> Management(?X) .
+src_hasPhDProgram(?X,?Y) , src_Specification(?X) , src_SalesManagement(?X) , src_Director(?X) -> Director(?X) .
+src_hasCollegeDiscipline(?X,?Y) , src_hasProfessor(?X,?Y) , src_Chair(?X) , src_hasMember(?X,?Y) , src_Program(?X) -> Program(?X) .
+src_hasTitle(?X,?Y) , src_ComputerScience(?X) , src_Drama(?X) -> Drama(?X) .
+src_UGCourse(?X) , src_Sports(?X) , src_Economics(?X) -> Economics(?X) .
+src_Chair(?X) , src_tenured(?X,?Y) , src_Department(?X) , src_ElectiveCourse(?X) -> ElectiveCourse(?X) .
+src_Director(?X) , src_Course(?X) -> Course(?X) .
+src_hasDegreeFrom(?X,?Y) , src_isSupportingStaffOf(?X,?Y) , src_English(?X) , src_ResearchAssistant(?X) , src_ElectricalEngineering(?X) -> ElectricalEngineering(?X) .
+src_evaluates(?X,?Y) , src_Engineering(?X) , src_ElectricalEngineering(?X) , src_Employee(?X) -> Employee(?X) .
+src_OtherStaff(?X) , src_ResearchProject(?X) , src_hasMember(?X,?Y) , src_Person(?X) -> Person(?X) .
+src_hasEmployeeEvaluationCommittee(?X,?Y) , src_worksFor(?X,?Y) -> worksFor(?X,?Y) .
+src_VisitingProfessor(?X) , src_hasResearchGroup(?X,?Y) , src_isAdvisedBy(?X,?Y) , src_PerformingArts(?X) , src_EmployeeEvaluationCommittee(?X) -> EmployeeEvaluationCommittee(?X) .
+src_IndustryEngineering(?X) , src_Department(?X) , src_Engineering(?X) , src_EvaluationCommittee(?X) -> EvaluationCommittee(?X) .
+src_hasThesisEvaluationCommittee(?X,?Y) , src_hasEvaluationCommittee(?X,?Y) , src_hasEmployee(?X,?Y) , src_AssociateProfessor(?X) , src_CollegeDiscipline(?X) -> CollegeDiscipline(?X) .
+src_hasLecturer(?X,?Y) , src_hasAlumnus(?X,?Y) , src_hasUGProgram(?X,?Y) , src_ProjectManagement(?X) , src_English(?X) -> English(?X) .
+src_BiomedicalEngineering(?X) , src_Faculty(?X) -> Faculty(?X) .
+src_PhDStudent(?X) , src_ProjectManagement(?X) , src_ModernArts(?X) , src_teachesCourse(?X,?Y) -> teachesCourse(?X,?Y) .
+src_Geosciences(?X) , src_hasUGProgram(?X,?Y) , src_isResearchAssistantOf(?X,?Y) , src_FinancialAndAccountingManagement(?X) -> FinancialAndAccountingManagement(?X) .
+src_Swimming(?X) , src_Science(?X) , src_FootBall(?X) -> FootBall(?X) .
+src_MusicsClass(?X) , src_Game(?X) -> Game(?X) .
+src_hasFaculty(?X,?Y) , src_UGStudent(?X) , src_hasLecturer(?X,?Y) , src_Interest(?X) -> Interest(?X) .
+src_MediaArtsAndSciences(?X) , src_RiskManagement(?X) , src_Reading(?X) , src_Person(?X) , src_Geosciences(?X) -> Geosciences(?X) .
+src_MaterialScienceEngineering(?X) , src_Interest(?X) , src_History(?X) -> History(?X) .
+src_Mathematics(?X) , src_HumanResourceManagement(?X) -> HumanResourceManagement(?X) .
+src_History(?X) , src_Director(?X) , src_MarketingManagement(?X) , src_Humanities(?X) -> Humanities(?X) .
+src_isWomenCollegeOf(?X,?Y) , src_SupportingStaff(?X) , src_Religions(?X) , src_hasMember(?X,?Y) , src_IndustryEngineering(?X) -> IndustryEngineering(?X) .
+src_TeachingAssistant(?X) , src_isAssociateProfessorOf(?X,?Y) , src_Institute(?X) -> Institute(?X) .
+src_Professor(?X) , src_isHeadOf(?X,?Y) , src_isOtherStaffOf(?X,?Y) , src_JournalArticle(?X) -> JournalArticle(?X) .
+src_DesignManagement(?X) , src_TeachingCourse(?X) , src_ResearchProject(?X) , src_isSupportingStaffOf(?X,?Y) , src_LatinArts(?X) -> LatinArts(?X) .
+src_WomanCollege(?X) , src_hasUndergraduateDegreeFrom(?X,?Y) , src_Lecturer(?X) -> Lecturer(?X) .
+src_WomanCollege(?X) , src_Software(?X) , src_CoEdCollege(?X) , src_hasPart(?X,?Y) , src_Linguistics(?X) -> Linguistics(?X) .
+src_hasMajor(?X,?Y) , src_Manual(?X) -> Manual(?X) .
+src_HumanitiesAndSocial(?X) , src_isVisitingProfessorOf(?X,?Y) , src_TeachingAssistant(?X) , src_MarineScience(?X) -> MarineScience(?X) .
+src_hasEmployee(?X,?Y) , src_hasLastName(?X,?Y) , src_MarketingManagement(?X) -> MarketingManagement(?X) .
+src_PublicRelationsManagement(?X) , src_Employee(?X) , src_Faculty(?X) , src_MaterialScienceEngineering(?X) -> MaterialScienceEngineering(?X) .
+src_Physics(?X) , src_likes(?X,?Y) , src_MaterialsScience(?X) -> MaterialsScience(?X) .
+src_FinancialAndAccountingManagement(?X) , src_Geosciences(?X) , src_Cricket(?X) , src_Mathematics(?X) -> Mathematics(?X) .
+src_UGProgram(?X) , src_hasEvaluationCommittee(?X,?Y) , src_hasWork(?X,?Y) , src_MechanicalEngineering(?X) -> MechanicalEngineering(?X) .
+src_History(?X) , src_MediaArtsAndSciences(?X) -> MediaArtsAndSciences(?X) .
+src_MechanicalEngineering(?X) , src_ResearchProject(?X) , src_Person(?X) , src_MedievalArts(?X) -> MedievalArts(?X) .
+src_hasPart(?X,?Y) , src_ModernArts(?X) -> ModernArts(?X) .
+src_hasTitle(?X,?Y) , src_TheatreAndDance(?X) , src_Religions(?X) , src_ResearchProject(?X) , src_ModernLanguages(?X) -> ModernLanguages(?X) .
+src_tenured(?X,?Y) , src_Movie(?X) -> Movie(?X) .
+src_Architecture(?X) , src_WomanCollege(?X) , src_Music(?X) -> Music(?X) .
+src_Chair(?X) , src_hasResearchAssistant(?X,?Y) , src_MusicsClass(?X) -> MusicsClass(?X) .
+src_PhDStudent(?X) , src_NonScience(?X) -> NonScience(?X) .
+src_hasOtherStaff(?X,?Y) , src_TeachingCourse(?X) , src_Physics(?X) , src_NonScienceStudent(?X) -> NonScienceStudent(?X) .
+src_isSystemStaffOf(?X,?Y) , src_ElectricalEngineering(?X) , src_Student(?X) -> Student(?X) .
+src_hasAlumnus(?X,?Y) , src_MarketingManagement(?X) , src_BasketBallLover(?X) , src_hasMajor(?X,?Y) -> hasMajor(?X,?Y) .
+src_NonScienceStudent(?X) , src_ScienceStudent(?X) , src_ResearchAssistant(?X) , src_OperationsManagement(?X) -> OperationsManagement(?X) .
+src_ConferencePaper(?X) , src_OtherStaff(?X) -> OtherStaff(?X) .
+src_hasEmployeeEvaluationCommittee(?X,?Y) , src_Director(?X) , src_isLecturerOf(?X,?Y) , src_PGProgram(?X) -> PGProgram(?X) .
+src_Psychology(?X) , src_Physics(?X) , src_PGStudent(?X) -> PGStudent(?X) .
+src_isFacultyOf(?X,?Y) , src_hasDean(?X,?Y) , src_enrollFor(?X,?Y) -> enrollFor(?X,?Y) .
+src_hasAdvisor(?X,?Y) , src_Dean(?X) , src_ModernArts(?X) , src_Painting(?X) -> Painting(?X) .
+src_SportsLover(?X) , src_PeopleWithHobby(?X) -> PeopleWithHobby(?X) .
+src_hasPhDProgram(?X,?Y) , src_likes(?X,?Y) -> likes(?X,?Y) .
+src_Dean(?X) , src_PerformingArts(?X) -> PerformingArts(?X) .
+src_Astronomy(?X) , src_takesCourse(?X,?Y) , src_College(?X) , src_PetroleumlEngineering(?X) -> PetroleumlEngineering(?X) .
+src_EvaluationCommittee(?X) , src_hasTitle(?X,?Y) , src_Science(?X) , src_isStudentOf(?X,?Y) , src_PhDProgram(?X) -> PhDProgram(?X) .
+src_Publication(?X) , src_Cricket(?X) , src_PhDStudent(?X) -> PhDStudent(?X) .
+src_FootBall(?X) , src_Software(?X) , src_Philosophy(?X) -> Philosophy(?X) .
+src_offerCourse(?X,?Y) , src_isHeadOf(?X,?Y) , src_evaluatedBy(?X,?Y) , src_MarketingManagement(?X) , src_Physics(?X) -> Physics(?X) .
+src_UGCourse(?X) , src_EmployeeEvaluationCommittee(?X) , src_PostDoc(?X) -> PostDoc(?X) .
+src_isAssistantProfessorOf(?X,?Y) , src_ResearchAssistant(?X) , src_Mathematics(?X) , src_OperationsManagement(?X) , src_ProjectManagement(?X) -> ProjectManagement(?X) .
+src_ComputerScience(?X) , src_Psychology(?X) -> Psychology(?X) .
+src_RiskManagement(?X) , src_likes(?X,?Y) , src_hasAuthor(?X,?Y) , src_PublicRelationsManagement(?X) -> PublicRelationsManagement(?X) .
+src_isSystemStaffOf(?X,?Y) , src_Reading(?X) -> Reading(?X) .
+src_ResearchGroup(?X) , src_teachesCourse(?X,?Y) , src_Tennis(?X) , src_hasFirstName(?X,?Y) , src_Religions(?X) -> Religions(?X) .
+src_PerformingArts(?X) , src_ModernArts(?X) , src_ResearchAssistant(?X) -> ResearchAssistant(?X) .
+src_isCrazyAbout(?X,?Y) , src_hasOtherStaff(?X,?Y) , src_LatinArts(?X) , src_hasStudentEvaluationCommittee(?X,?Y) , src_ResearchGroup(?X) -> ResearchGroup(?X) .
+src_hasTitle(?X,?Y) , src_AsianArts(?X) , src_ResearchProject(?X) -> ResearchProject(?X) .
+src_isAdvisedBy(?X,?Y) , src_teachesCourse(?X,?Y) , src_hasProfessor(?X,?Y) , src_Work(?X) -> Work(?X) .
+src_MarketingManagement(?X) , src_WomanCollege(?X) , src_hasVisitingProfessor(?X,?Y) , src_PhDProgram(?X) , src_RiskManagement(?X) -> RiskManagement(?X) .
+src_hasHead(?X,?Y) , src_Mathematics(?X) , src_SalesManagement(?X) -> SalesManagement(?X) .
+src_hasUGProgram(?X,?Y) , src_hasStudentEvaluationCommittee(?X,?Y) , src_Tennis(?X) , src_Specification(?X) , src_School(?X) -> School(?X) .
+src_Professor(?X) , src_PublicRelationsManagement(?X) , src_ScienceStudent(?X) -> ScienceStudent(?X) .
+src_ConferencePaper(?X) , src_BasketBallFan(?X) , src_TechnicalReport(?X) , src_SupportingStaff(?X) , src_Software(?X) -> Software(?X) .
+src_hasOtherStaff(?X,?Y) , src_PGStudent(?X) , src_isAssociateProfessorOf(?X,?Y) , src_AsianArts(?X) , src_Specification(?X) -> Specification(?X) .
+src_UGStudent(?X) , src_SportsFan(?X) -> SportsFan(?X) .
+src_hasAlumnus(?X,?Y) , src_SportsLover(?X) -> SportsLover(?X) .
+src_hasFirstName(?X,?Y) , src_Department(?X) , src_Statistics(?X) -> Statistics(?X) .
+src_Manual(?X) , src_IndustryEngineering(?X) , src_hasEmailAddress(?X,?Y) , src_enrollIn(?X,?Y) -> enrollIn(?X,?Y) .
+src_Professor(?X) , src_SupportingStaff(?X) , src_isResearchAssistantOf(?X,?Y) , src_Science(?X) , src_StudentEvaluationCommittee(?X) -> StudentEvaluationCommittee(?X) .
+src_Drama(?X) , src_hasStudent(?X,?Y) , src_SupplyChainManagement(?X) -> SupplyChainManagement(?X) .
+src_Drama(?X) , src_Swimming(?X) -> Swimming(?X) .
+src_hasAlumnus(?X,?Y) , src_hasAdvisor(?X,?Y) , src_SystemStaff(?X) -> SystemStaff(?X) .
+src_UGProgram(?X) , src_TeachingAssistant(?X) -> TeachingAssistant(?X) .
+src_StudentEvaluationCommittee(?X) , src_hasAssociateProfessor(?X,?Y) , src_TeachingCourse(?X) , src_hasSupportingStaff(?X,?Y) , src_isTeachingAssistantOf(?X,?Y) -> isTeachingAssistantOf(?X,?Y) .
+src_hasCollaborationWith(?X,?Y) , src_publicationResearch(?X,?Y) , src_PublicRelationsManagement(?X) , src_TeachingCourse(?X) -> TeachingCourse(?X) .
+src_Management(?X) , src_hasOtherStaff(?X,?Y) , src_hasAssistantProfessor(?X,?Y) , src_isDepartmentOf(?X,?Y) , src_TechnicalReport(?X) -> TechnicalReport(?X) .
+src_hasSubOrganization(?X,?Y) , src_hasTitle(?X,?Y) , src_Tennis(?X) -> Tennis(?X) .
+src_MarketingManagement(?X) , src_RiskManagement(?X) , src_TheatreAndDance(?X) -> TheatreAndDance(?X) .
+src_Religions(?X) , src_ThesisEvaluationCommittee(?X) -> ThesisEvaluationCommittee(?X) .
+src_CivilEngineering(?X) , src_Painting(?X) , src_ClericalStaff(?X) , src_Travelling(?X) -> Travelling(?X) .
+src_hasDegreeFrom(?X,?Y) , src_PetroleumlEngineering(?X) , src_Game(?X) , src_UGCourse(?X) -> UGCourse(?X) .
+src_HumanitiesAndSocial(?X) , src_isFullProfessorOf(?X,?Y) , src_hasDoctoralDegreeFrom(?X,?Y) , src_hasFaculty(?X,?Y) , src_UGProgram(?X) -> UGProgram(?X) .
+src_Physics(?X) , src_ComputerScience(?X) , src_Manual(?X) , src_SystemStaff(?X) , src_UGStudent(?X) -> UGStudent(?X) .
+src_hasThesisEvaluationCommittee(?X,?Y) , src_Chair(?X) , src_Engineering(?X) , src_University(?X) -> University(?X) .
+src_hasPart(?X,?Y) , src_hasTelephone(?X,?Y) , src_hasHead(?X,?Y) , src_UnofficialPublication(?X) -> UnofficialPublication(?X) .
+src_hasPGProgram(?X,?Y) , src_hasWork(?X,?Y) , src_VisitingProfessor(?X) -> VisitingProfessor(?X) .
+src_FootBall(?X) , src_isSubOrganizationOf(?X,?Y) , src_WomanCollege(?X) -> WomanCollege(?X) .
+src_Reading(?X) , src_Music(?X) , src_Professor(?X) , src_ProjectManagement(?X) , src_dislikes(?X,?Y) -> dislikes(?X,?Y) .
+src_HumanitiesAndSocial(?X) , src_Specification(?X) , src_isStudentOf(?X,?Y) -> isStudentOf(?X,?Y) .
+src_Institute(?X) , src_Program(?X) , src_isResearchAssistantOf(?X,?Y) , src_evaluatedBy(?X,?Y) -> evaluatedBy(?X,?Y) .
+src_enrollIn(?X,?Y) , src_SupportingStaff(?X) , src_evaluates(?X,?Y) -> evaluates(?X,?Y) .
+src_evaluates(?X,?Y) , src_BasketBall(?X) , src_hasResearchProject(?X,?Y) , src_hasAlumnus(?X,?Y) -> hasAlumnus(?X,?Y) .
+src_isResearchAssistantOf(?X,?Y) , src_Software(?X) , src_hasDegreeFrom(?X,?Y) -> hasDegreeFrom(?X,?Y) .
+src_UGCourse(?X) , src_BiomedicalEngineering(?X) , src_FineArts(?X) , src_hasAssistantProfessor(?X,?Y) -> hasAssistantProfessor(?X,?Y) .
+src_hasCommitteeMembers(?X,?Y) , src_Management(?X) , src_Architecture(?X) , src_isAssistantProfessorOf(?X,?Y) -> isAssistantProfessorOf(?X,?Y) .
+src_Chair(?X) , src_hasProfessor(?X,?Y) -> hasProfessor(?X,?Y) .
+src_LatinArts(?X) , src_isTaughtBy(?X,?Y) , src_PGStudent(?X) , src_hasAssociateProfessor(?X,?Y) -> hasAssociateProfessor(?X,?Y) .
+src_MediaArtsAndSciences(?X) , src_isAssociateProfessorOf(?X,?Y) -> isAssociateProfessorOf(?X,?Y) .
+src_FullProfessor(?X) , src_hasAuthor(?X,?Y) -> hasAuthor(?X,?Y) .
+src_Publication(?X) , src_Chair(?X) , src_Person(?X) , src_enrollFor(?X,?Y) , src_hasClericalStaff(?X,?Y) -> hasClericalStaff(?X,?Y) .
+src_Psychology(?X) , src_hasUGProgram(?X,?Y) , src_hasSupportingStaff(?X,?Y) -> hasSupportingStaff(?X,?Y) .
+src_DesignManagement(?X) , src_MaterialScienceEngineering(?X) , src_SystemStaff(?X) , src_hasFirstName(?X,?Y) , src_hasCollaborationWith(?X,?Y) -> hasCollaborationWith(?X,?Y) .
+src_ModernArts(?X) , src_hasCollege(?X,?Y) -> hasCollege(?X,?Y) .
+src_isPartOf(?X,?Y) , src_isAffiliatedOrganizationOf(?X,?Y) , src_ModernArts(?X) , src_isFacultyOf(?X,?Y) , src_isCollegeOf(?X,?Y) -> isCollegeOf(?X,?Y) .
+src_hasThesisEvaluationCommittee(?X,?Y) , src_Statistics(?X) , src_LatinArts(?X) , src_PerformingArts(?X) , src_hasSubOrganization(?X,?Y) -> hasSubOrganization(?X,?Y) .
+src_SystemStaff(?X) , src_hasCollegeDiscipline(?X,?Y) -> hasCollegeDiscipline(?X,?Y) .
+src_hasCollege(?X,?Y) , src_PublicRelationsManagement(?X) , src_enrollFor(?X,?Y) , src_hasCommitteeMembers(?X,?Y) -> hasCommitteeMembers(?X,?Y) .
+src_Employee(?X) , src_MaterialsScience(?X) , src_PGStudent(?X) , src_IndustryEngineering(?X) , src_hasMember(?X,?Y) -> hasMember(?X,?Y) .
+src_hasPhDProgram(?X,?Y) , src_SupplyChainManagement(?X) , src_Publication(?X) , src_isStudentOf(?X,?Y) , src_hasDean(?X,?Y) -> hasDean(?X,?Y) .
+src_isTaughtBy(?X,?Y) , src_isPostDocOf(?X,?Y) , src_isDeanOf(?X,?Y) -> isDeanOf(?X,?Y) .
+src_hasLastName(?X,?Y) , src_hasDepartment(?X,?Y) -> hasDepartment(?X,?Y) .
+src_hasCommitteeMembers(?X,?Y) , src_isDepartmentOf(?X,?Y) -> isDepartmentOf(?X,?Y) .
+src_OtherStaff(?X) , src_hasTelephone(?X,?Y) , src_hasDoctoralDegreeFrom(?X,?Y) -> hasDoctoralDegreeFrom(?X,?Y) .
+src_BasketBall(?X) , src_Science(?X) , src_ElectiveCourse(?X) , src_hasEmployee(?X,?Y) -> hasEmployee(?X,?Y) .
+src_Anthropology(?X) , src_hasEmployeeEvaluationCommittee(?X,?Y) -> hasEmployeeEvaluationCommittee(?X,?Y) .
+src_tenured(?X,?Y) , src_hasUndergraduateDegreeFrom(?X,?Y) , src_Swimming(?X) , src_hasEvaluationCommittee(?X,?Y) -> hasEvaluationCommittee(?X,?Y) .
+src_isVisitingProfessorOf(?X,?Y) , src_hasFaculty(?X,?Y) -> hasFaculty(?X,?Y) .
+src_hasTitle(?X,?Y) , src_isAdvisedBy(?X,?Y) , src_dislikes(?X,?Y) , src_isFacultyOf(?X,?Y) -> isFacultyOf(?X,?Y) .
+src_Chemistry(?X) , src_isSystemStaffOf(?X,?Y) , src_hasUndergraduateDegreeFrom(?X,?Y) , src_hasMember(?X,?Y) , src_hasFullProfessor(?X,?Y) -> hasFullProfessor(?X,?Y) .
+src_AssociateProfessor(?X) , src_PerformingArts(?X) , src_Director(?X) , src_isFullProfessorOf(?X,?Y) -> isFullProfessorOf(?X,?Y) .
+src_College(?X) , src_BasketBall(?X) , src_PhDProgram(?X) , src_hasHead(?X,?Y) -> hasHead(?X,?Y) .
+src_TechnicalReport(?X) , src_hasLecturer(?X,?Y) -> hasLecturer(?X,?Y) .
+src_TechnicalReport(?X) , src_isLecturerOf(?X,?Y) -> isLecturerOf(?X,?Y) .
+src_hasEmployeeEvaluationCommittee(?X,?Y) , src_hasMasterDegreeFrom(?X,?Y) -> hasMasterDegreeFrom(?X,?Y) .
+src_hasHead(?X,?Y) , src_College(?X) , src_isMemberOf(?X,?Y) -> isMemberOf(?X,?Y) .
+src_FootBall(?X) , src_BasketBallLover(?X) , src_PostDoc(?X) , src_isAffiliatedOrganizationOf(?X,?Y) , src_hasOtherStaff(?X,?Y) -> hasOtherStaff(?X,?Y) .
+src_hasResearchProject(?X,?Y) , src_MaterialScienceEngineering(?X) , src_hasSupportingStaff(?X,?Y) , src_Biology(?X) , src_hasPGProgram(?X,?Y) -> hasPGProgram(?X,?Y) .
+src_hasTelephone(?X,?Y) , src_TeachingAssistant(?X) , src_hasProgram(?X,?Y) -> hasProgram(?X,?Y) .
+src_Engineering(?X) , src_Organization(?X) , src_hasPart(?X,?Y) -> hasPart(?X,?Y) .
+src_FinancialAndAccountingManagement(?X) , src_hasProgram(?X,?Y) , src_hasClericalStaff(?X,?Y) , src_isPartOf(?X,?Y) -> isPartOf(?X,?Y) .
+src_hasAuthor(?X,?Y) , src_hasAssociateProfessor(?X,?Y) , src_hasPhDProgram(?X,?Y) -> hasPhDProgram(?X,?Y) .
+src_BasketBall(?X) , src_MarineScience(?X) , src_hasResearchGroup(?X,?Y) , src_hasPostDoc(?X,?Y) -> hasPostDoc(?X,?Y) .
+src_hasWork(?X,?Y) , src_PGProgram(?X) , src_NonScience(?X) , src_isPostDocOf(?X,?Y) -> isPostDocOf(?X,?Y) .
+src_hasCommitteeMembers(?X,?Y) , src_isProfessorOf(?X,?Y) -> isProfessorOf(?X,?Y) .
+src_Engineering(?X) , src_hasResearchAssistant(?X,?Y) -> hasResearchAssistant(?X,?Y) .
+src_NonScienceStudent(?X) , src_CoEdCollege(?X) , src_TeachingCourse(?X) , src_PhDProgram(?X) , src_isResearchAssistantOf(?X,?Y) -> isResearchAssistantOf(?X,?Y) .
+src_Astronomy(?X) , src_evaluatedBy(?X,?Y) , src_hasResearchGroup(?X,?Y) -> hasResearchGroup(?X,?Y) .
+src_isSubOrganizationOf(?X,?Y) , src_Lecturer(?X) , src_Software(?X) , src_TeachingCourse(?X) , src_isResearchGroupOf(?X,?Y) -> isResearchGroupOf(?X,?Y) .
+src_SystemStaff(?X) , src_hasSupportingStaff(?X,?Y) , src_FinancialAndAccountingManagement(?X) , src_hasResearchProject(?X,?Y) -> hasResearchProject(?X,?Y) .
+src_UGStudent(?X) , src_FinancialAndAccountingManagement(?X) , src_hasAlumnus(?X,?Y) , src_hasWork(?X,?Y) -> hasWork(?X,?Y) .
+src_Painting(?X) , src_DesignManagement(?X) , src_hasStudent(?X,?Y) -> hasStudent(?X,?Y) .
+src_FootBall(?X) , src_isSubOrganizationOf(?X,?Y) , src_hasStudentEvaluationCommittee(?X,?Y) -> hasStudentEvaluationCommittee(?X,?Y) .
+src_MusicsClass(?X) , src_isSubOrganizationOf(?X,?Y) -> isSubOrganizationOf(?X,?Y) .
+src_hasAssistantProfessor(?X,?Y) , src_isLecturerOf(?X,?Y) , src_offerCourse(?X,?Y) , src_hasSystemStaff(?X,?Y) -> hasSystemStaff(?X,?Y) .
+src_History(?X) , src_hasThesisEvaluationCommittee(?X,?Y) -> hasThesisEvaluationCommittee(?X,?Y) .
+src_HumanResourceManagement(?X) , src_evaluates(?X,?Y) , src_hasUGProgram(?X,?Y) -> hasUGProgram(?X,?Y) .
+src_Travelling(?X) , src_PostDoc(?X) , src_takesCourse(?X,?Y) , src_Science(?X) , src_hasUndergraduateDegreeFrom(?X,?Y) -> hasUndergraduateDegreeFrom(?X,?Y) .
+src_PostDoc(?X) , src_Director(?X) , src_hasVisitingProfessor(?X,?Y) -> hasVisitingProfessor(?X,?Y) .
+src_PetroleumlEngineering(?X) , src_isVisitingProfessorOf(?X,?Y) -> isVisitingProfessorOf(?X,?Y) .
+src_MechanicalEngineering(?X) , src_UGCourse(?X) , src_hasWomenCollege(?X,?Y) -> hasWomenCollege(?X,?Y) .
+src_PhDProgram(?X) , src_isAdvisedBy(?X,?Y) -> isAdvisedBy(?X,?Y) .
+src_OtherStaff(?X) , src_isHeadOf(?X,?Y) , src_isAffiliatedOrganizationOf(?X,?Y) -> isAffiliatedOrganizationOf(?X,?Y) .
+src_UGCourse(?X) , src_isProfessorOf(?X,?Y) , src_hasOtherStaff(?X,?Y) , src_teachesCourse(?X,?Y) , src_isClericalStaffOf(?X,?Y) -> isClericalStaffOf(?X,?Y) .
+src_PostDoc(?X) , src_isSupportingStaffOf(?X,?Y) -> isSupportingStaffOf(?X,?Y) .
+src_worksFor(?X,?Y) , src_hasMasterDegreeFrom(?X,?Y) , src_NonScienceStudent(?X) , src_hasDepartment(?X,?Y) , src_isOtherStaffOf(?X,?Y) -> isOtherStaffOf(?X,?Y) .
+src_UGProgram(?X) , src_isHeadOf(?X,?Y) , src_isAssistantProfessorOf(?X,?Y) , src_evaluatedBy(?X,?Y) , src_isSystemStaffOf(?X,?Y) -> isSystemStaffOf(?X,?Y) .
+src_isCrazyAbout(?X,?Y) , src_ModernLanguages(?X) , src_Sports(?X) , src_isTaughtBy(?X,?Y) -> isTaughtBy(?X,?Y) .
+src_hasDean(?X,?Y) , src_ModernArts(?X) , src_orgPublication(?X,?Y) , src_isWomenCollegeOf(?X,?Y) -> isWomenCollegeOf(?X,?Y) .
+src_PeopleWithHobby(?X) , src_isWomenCollegeOf(?X,?Y) , src_hasResearchGroup(?X,?Y) , src_UGStudent(?X) , src_offerCourse(?X,?Y) -> offerCourse(?X,?Y) .
+src_Specification(?X) , src_School(?X) , src_orgPublication(?X,?Y) -> orgPublication(?X,?Y) .
+src_isHeadOf(?X,?Y) , src_PublicRelationsManagement(?X) , src_hasAlumnus(?X,?Y) , src_publicationResearch(?X,?Y) -> publicationResearch(?X,?Y) .
+src_ResearchAssistant(?X) , src_Painting(?X) , src_History(?X) , src_MarineScience(?X) , src_takesCourse(?X,?Y) -> takesCourse(?X,?Y) .
+src_Geosciences(?X) , src_PGProgram(?X) , src_isSupportingStaffOf(?X,?Y) , src_PGStudent(?X) , src_tenured(?X,?Y) -> tenured(?X,?Y) .
+src_SalesManagement(?X) , src_ChemicalEngineering(?X) , src_Interest(?X) , src_hasAge(?X,?Y) -> hasAge(?X,?Y) .
+src_evaluatedBy(?X,?Y) , src_AssociateProfessor(?X) , src_isClericalStaffOf(?X,?Y) , src_hasEmailAddress(?X,?Y) -> hasEmailAddress(?X,?Y) .
+src_Management(?X) , src_CollegeDiscipline(?X) , src_hasFirstName(?X,?Y) -> hasFirstName(?X,?Y) .
+src_EmployeeEvaluationCommittee(?X) , src_hasLastName(?X,?Y) -> hasLastName(?X,?Y) .
+src_MusicsClass(?X) , src_NonScience(?X) , src_takesCourse(?X,?Y) , src_hasTelephone(?X,?Y) -> hasTelephone(?X,?Y) .
+src_TeachingAssistant(?X) , src_MusicsClass(?X) , src_Employee(?X) , src_HumanitiesAndSocial(?X) , src_hasTitle(?X,?Y) -> hasTitle(?X,?Y) .
+src_Travelling(?X) , src_PGStudent(?X) , src_PerformingArts(?X) , src_hasAdvisor(?X,?Y) -> hasAdvisor(?X,?Y) .

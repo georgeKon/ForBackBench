@@ -1,0 +1,114 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@source srcStockExchangeMember[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_StockExchangeMember.csv") .
+@source srclistsStock[4] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_listsStock.csv") .
+@source srcInvestor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_Investor.csv") .
+@source srcinverseofhasAddress[4] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_inverseofhasAddress.csv") .
+@source srctradesOnBehalfOf[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_tradesOnBehalfOf.csv") .
+@source srcStock[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_Stock.csv") .
+@source srcLegalPerson[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_LegalPerson.csv") .
+@source srcTrader[4] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_Trader.csv") .
+@source srcThing[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_Thing.csv") .
+@source srcPhysicalPerson[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_PhysicalPerson.csv") .
+@source srcStockTrader[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_StockTrader.csv") .
+@source srcDealer[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_Dealer.csv") .
+@source srcisExecutedBy[5] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_isExecutedBy.csv") .
+@source srcFinantialInstrument[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_FinantialInstrument.csv") .
+@source srcbelongsToCompany[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_belongsToCompany.csv") .
+@source srchasStock[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_hasStock.csv") .
+@source srcTransaction[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_Transaction.csv") .
+@source srcPerson[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_Person.csv") .
+@source srcisExecutedFor[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_isExecutedFor.csv") .
+@source srcinvolvesInstrument[4] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_involvesInstrument.csv") .
+@source srcusesBroker[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_usesBroker.csv") .
+@source srcStockExchangeList[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_StockExchangeList.csv") .
+@source srchasAddress[4] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_hasAddress.csv") .
+@source srcAddress[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_Address.csv") .
+@source srcAcquisition[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_Acquisition.csv") .
+@source srcCompany[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_Company.csv") .
+@source srcisTradedIn[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_isTradedIn.csv") .
+@source srcStockBroker[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_StockBroker.csv") .
+@source srcOffer[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_Offer.csv") .
+@source srcisListedIn[4] : load-csv("/home/aa2c19/obdabenchmark/scenarios/testingCB/data/LAV/small/src_isListedIn.csv") .
+Thing(?X),LegalPerson(!X0cf994b4a70b4e9f91646e0812cdf98e),Investor(?X),isListedIn(?X,?Ycf3b077912254bd489594db60ebd0924),Offer(!X310e9d954889492aa54e454519037b6f),FinantialInstrument(!Xdbbe468155b647709c45d949e69f9b18),StockBroker(?X0db7574b472e4689b95ba7ff26878dad),Stock(!Xecbdd7066a804e8d8014ca72c04beb50) :- srcThing(?X,?Ycf3b077912254bd489594db60ebd0924,?X0db7574b472e4689b95ba7ff26878dad) .
+StockTrader(?X),hasAddress(?X,?Y),PhysicalPerson(!X0335ee957ca74ca39328bd41462586a8),isListedIn(!X8c610b642202467db92d9bbaf9ba460a,?Y),listsStock(!X423aec780ae043df89d977c0a5265bb2,?Y),usesBroker(!X3a7730331a0349fd961ef4112de40246,!Y683e27350db542e8b50b6c6ff3e83748),isTradedIn(?X,?Ye9d01ca83d9c4d1cabfde44bb720f0d5),LegalPerson(?X) :- srcStockTrader(?X,?Ye9d01ca83d9c4d1cabfde44bb720f0d5,?Y) .
+tradesOnBehalfOf(?X,?Y),Trader(!Xc49562462efe46d68cb6eef7c26e4711),StockExchangeList(?X),PhysicalPerson(?X),isExecutedBy(?X,?Y),isExecutedFor(!Xf7225f1c505643f28c562867112b7344,!Y3463892a02c649cd9b3503e088e0dde4),hasStock(?Xfc0bbd1420594bf5baa82d79260ee99d,!Y2c4a643e780249c5bdec83a26e28c260),Person(?X) :- srctradesOnBehalfOf(?X,?Y,?Xfc0bbd1420594bf5baa82d79260ee99d) .
+Investor(?X),StockExchangeList(?X4d1fb98f25414ac39f46fdd05256b27a),StockExchangeMember(!X7e03a09506d5463799e77c6e38d63076),Stock(?X),involvesInstrument(?X,!Y),Dealer(?X),Thing(!X4cf21270ae9240f5bad15442ff8080cf),Transaction(!X4a77d0579f264bad81c2e9421c54be30) :- srcInvestor(?X,?X4d1fb98f25414ac39f46fdd05256b27a) .
+StockExchangeMember(?X),StockExchangeList(?X),Dealer(?X),isListedIn(!X9595192ea200401395a2404fbd7159ac,?Y),Transaction(?X),isTradedIn(!X931a80a10ecd42588932505cda314791,!Y9c075f589b3240649f7303d3e3d82a62),listsStock(?X,?Y),Company(!Xde4747245d3a42a08b062571e32aa365) :- srcStockExchangeMember(?X,?Y) .
+inverseofhasAddress(?X,?Y),hasAddress(!X4eb778525c5c4713a026303ee6a64492,!Ya83a6bc939c3423dadf756ab1d5061f1),Address(?X),StockExchangeList(?X),Transaction(?Xbd86875e20344dbdbd0d5d92d2135337),tradesOnBehalfOf(?Xaa627e53122c4db49cfdce72e4760d42,!Y6512baa8cb8f4902b2f8df5897468131),LegalPerson(!X70ae5e5810c24c70b511e9fb2b467cf2) :- srcinverseofhasAddress(?X,?Y,?Xaa627e53122c4db49cfdce72e4760d42,?Xbd86875e20344dbdbd0d5d92d2135337) .
+Company(?X),Investor(!X35d80ee710094f0081f76791cf273c83),Thing(?X),Person(?X),StockBroker(?X),isTradedIn(!X4eb02bec8c9249a5997d49bfebfefb1d,!Y),listsStock(?X,!Y660a970d92144e5fbd3b41f2de7193af) :- srcCompany(?X) .
+Acquisition(?X),usesBroker(!Xeb7352a948b447c19bb081473eded0f3,?Y881e3f72ab1e4205a9b6d528a695447b),Person(?X),hasStock(?X,!Y078085f0c3bf4ac4931f54ad87e17709),StockTrader(?X),Offer(?X),Dealer(!Xe439149c8a394a78a07bab214aef9d41) :- srcAcquisition(?X,?Y881e3f72ab1e4205a9b6d528a695447b) .
+Transaction(?X),listsStock(?X,!Y),Trader(!Xcfb88ff1b7424aeb949419189b31e41c),isListedIn(!X5e601dc901cd412b9b078994b15d888a,!Y),Dealer(?Xa17f4b717ed74f249e534c38cbd1e8ae),Company(?X),isTradedIn(!Xb2c6e5897d9b418da29f83a0a62531de,!Yb65a1766f2844da692db40d5ad74815d) :- srcTransaction(?X,?Xa17f4b717ed74f249e534c38cbd1e8ae) .
+hasStock(?X,?Y),StockExchangeList(!X3681cd44ae984255b7e61d47bcf37f0d),belongsToCompany(!X0854d53b5e4c4f4bacb44b48428ddb9d,?Y),Offer(!Xafd1cf391551449b9792cbf4465b2201),tradesOnBehalfOf(!X82f7ef3bce63412ea0fb08b91e7e7576,!Y540b406b654148d18b173284e9c31d61),involvesInstrument(!Xc523f788ce2c47d7b9adbc0c929dc062,?Y) :- srchasStock(?X,?Y) .
+StockExchangeList(?X),Trader(?X),belongsToCompany(!X7ef4349855964a63a1550328010ac972,!Y),Dealer(!X6232003d57a048beb5d8780f60072b10),Address(?X),hasStock(!X751bd146c8c24d8f97b9849ca2ba79c0,!Y),FinantialInstrument(!Xb1af8fbfc2fe4cacb01bb2ff8f397759) :- srcStockExchangeList(?X) .
+Dealer(?X),hasStock(!Xd34acaf5a8964188a97cc8460d6445e3,!Y),hasAddress(?X0d0cb1c3011b48e7ba4e971c0104e7e7,!Y),isExecutedBy(?X,!Y),Trader(?X),Address(!Xd3307c0450284dac86850124478fa801),isListedIn(!Xe27d12f94a9849389bb8f6e388363096,!Y) :- srcDealer(?X,?X0d0cb1c3011b48e7ba4e971c0104e7e7) .
+hasAddress(?X,?Y),Offer(!X2e15b41e926449a0918174fbf5af292f),isExecutedFor(!X6abab82fc32149cebfd7e763c6eb1ae8,?Ybfcf571118e64396b3cfcb597f0b2ed7),Person(?X),StockTrader(!X66664d41d6194e92b8886491db696fd2),usesBroker(?X,!Yb2259eb4ceb64b1480e237ff8f7a95b4),isTradedIn(!Xd9f77f5570d4470f85e57129c0cfe5d1,!Y50770a910aa346c0999dc012978d5049),Acquisition(?X),Dealer(?X047e169f6a114010b07156113c051235) :- srchasAddress(?X,?Y,?Ybfcf571118e64396b3cfcb597f0b2ed7,?X047e169f6a114010b07156113c051235) .
+Offer(?X),isExecutedBy(?X,!Y),StockExchangeMember(?X0aa632fd1d714d3aa9119297c88cd8b7),listsStock(!X56f64a8ced7a47d182cc5f00677a3a33,!Y),Dealer(?X),inverseofhasAddress(?X,!Yae4a89dd38e849f38cac4a9e04e754d5),Person(?X6c04dac96eed4713969df08d675a291e),isExecutedFor(?X,!Y),tradesOnBehalfOf(!Xae7176477c9847d7bc38639d819e3a4f,!Y) :- srcOffer(?X,?X6c04dac96eed4713969df08d675a291e,?X0aa632fd1d714d3aa9119297c88cd8b7) .
+isListedIn(?X,?Y),isExecutedBy(?X,!Yb15ec1b6a6a1463680139f48333edea6),Person(!Xf2b3e62ef15c45e9a8041bc998fdb3cf),usesBroker(?X,!Yb3d1df7c666b4beb845a6982e5518d90),Thing(?Xb65ebc901a4942c792f44c7ac1f3d8e0),belongsToCompany(!Xa0e9963683cb4287a7a6341204a81f8b,!Y2af0840da6134d2dacebd2b6b0077c2f),Offer(?X),isTradedIn(?X,?Y9ce7e195090a439d8690b1ec6c418ad2),listsStock(?X,!Ycfc95928b8e041aabbd905c34189ac6a) :- srcisListedIn(?X,?Y,?Y9ce7e195090a439d8690b1ec6c418ad2,?Xb65ebc901a4942c792f44c7ac1f3d8e0) .
+StockBroker(?X),Thing(!Xdbeebfc3b18a49559a3c786c43d34709),Person(!X1bddb4e767ea40fc8be328b7e205a58b),StockExchangeList(?X7e5d50349d984dd5a4fc4a037d89cb2c),Address(!X5da0baf8acf64b3e8a706a1111affd48),Offer(?X),PhysicalPerson(?X),StockTrader(!X4ef4c18ec0d04bfa8fb063d3efae4c7d),isExecutedFor(?X,!Y90d111f552f346359e30e5f44bffc331) :- srcStockBroker(?X,?X7e5d50349d984dd5a4fc4a037d89cb2c) .
+Stock(?X),PhysicalPerson(?X),Company(?X),hasStock(!Xb724a737f389485d92d44b8056ccb695,?Yf8cbfebd871447b4b8d683dd24707810),tradesOnBehalfOf(!X60b59f6656be4082ba81315f121d762f,!Y),inverseofhasAddress(?X,!Y33e322f1e6a845858c3c9d342b58e1ae) :- srcStock(?X,?Yf8cbfebd871447b4b8d683dd24707810) .
+involvesInstrument(?X,?Y),StockExchangeList(?X),Stock(?X),LegalPerson(!X2ef5a04ee02d44a28d42c61a6e520c7f),usesBroker(?X,?Y),hasStock(!X23bb7adaa8f4488489d5705fe6a2e66d,?Y),Dealer(?Xad244c9b69b74d49b712f777665be7d4),tradesOnBehalfOf(?X,?Ye283f73fd6dc4724be0487633195fade),Transaction(?X),Acquisition(!Xb1a7454d99b54f5f8386b460c241a22d) :- srcinvolvesInstrument(?X,?Y,?Xad244c9b69b74d49b712f777665be7d4,?Ye283f73fd6dc4724be0487633195fade) .
+Person(?X),listsStock(?X,!Ybe409b65e9fb4ca1bb56f6fcb822225e),hasAddress(?X,!Yd8906a6ae4c5472ca504fe84403f5a1a),StockTrader(!X07e12580d57047129a87a76b9ff0934a),StockExchangeMember(?X),isExecutedFor(?X,?Y76c03a65402f4c5797725c669889fa65),Dealer(?X) :- srcPerson(?X,?Y76c03a65402f4c5797725c669889fa65) .
+LegalPerson(?X),involvesInstrument(!Xc4ee78b9887b400d8fa345a0e9b80d4f,!Y),Acquisition(!X8e2e17c353814bd5bcfa41e8702c4a59),usesBroker(?X,!Y),StockExchangeList(?X),StockExchangeMember(?X39672a80bddf4398beb7abfc8dee8e8c) :- srcLegalPerson(?X,?X39672a80bddf4398beb7abfc8dee8e8c) .
+usesBroker(?X,?Y),Acquisition(!X487a75224e6748df82520a47fe6828e5),Trader(?X64f4608fa49e4557b7775e2b31ea5eb1),Thing(!X1bcbda81007b4397a4e3648842ca437d),Offer(?X),Transaction(?X),LegalPerson(?X),Person(?X),hasStock(?X,!Ye2eb89ca0df442fcac93f9ed818157e0) :- srcusesBroker(?X,?Y,?X64f4608fa49e4557b7775e2b31ea5eb1) .
+Trader(?X),Acquisition(!X70c57128e08047a1b8cc7339f99180f3),isListedIn(?X,?Ya4817888547e437ca8207419b448eae9),isTradedIn(?X6691863cedeb4300af28068dd7da5b58,!Y),usesBroker(!X891f32a961084b4cb5984c54241bbbf3,!Y),Transaction(!X7194091c5c2a440e9b313cc449cad841),Dealer(!Xd625b17bf5584ab9b8f54b7c0016db69),inverseofhasAddress(?X,!Y),Address(!Xf0e0ef43cc8f48268a79f0fb632ec393),hasStock(?X,?Y47cc8ad170214fa19fb2704d4d0f2d17) :- srcTrader(?X,?Y47cc8ad170214fa19fb2704d4d0f2d17,?Ya4817888547e437ca8207419b448eae9,?X6691863cedeb4300af28068dd7da5b58) .
+listsStock(?X,?Y),Stock(?X325ec9a933a34ae98a3802f2f6156394),Thing(!X44bd04779eb84fbe93af872977f749f7),inverseofhasAddress(?X,?Y),Address(?X),isListedIn(?X,?Y),usesBroker(!Xc103826d712f4ff4ba83ffd6d3ffbad5,!Yaf7ceb9509394eefb191f2085e70fbb2),Transaction(?Xe69ff2093b2e465083af33179ce16931) :- srclistsStock(?X,?Y,?Xe69ff2093b2e465083af33179ce16931,?X325ec9a933a34ae98a3802f2f6156394) .
+PhysicalPerson(?X),listsStock(?X,?Y),Offer(?X),Dealer(!Xe34635a0a8ab44fb90bbc5478ca50d22),Acquisition(?X),isExecutedBy(!X049b9f86edfe4180af04600aa117be60,!Y85d52d633af54434b60a4bbd7b5f9064),Address(!X5494ee50ece241829d37370ac1da4e75),Person(!X60fefd185cd24600b2cc1310394c0c0d),involvesInstrument(?X,?Y1add1bae933e4d43be8f1a118c977031),tradesOnBehalfOf(?X,?Y) :- srcPhysicalPerson(?X,?Y,?Y1add1bae933e4d43be8f1a118c977031) .
+belongsToCompany(?X,?Y),StockBroker(!X9ef3cce910fc4aef8d080dc8c8b6afac),Person(?X84ed58d285e347318c4484ab7f703c58),Thing(?X),isExecutedBy(!X554b878cebd14775ae10eed8c2337b61,?Y),involvesInstrument(!X90d5092c99ec4a4693bf7a47e8ec6b77,!Yebc760c26f794bf6829d4e5c14d1a745) :- srcbelongsToCompany(?X,?Y,?X84ed58d285e347318c4484ab7f703c58) .
+isExecutedBy(?X,?Y),inverseofhasAddress(?X8b16755a2bb94ce18319747d660196ef,?Ydd33bb00922c466a952cd9d170a7d015),belongsToCompany(?X,!Y00db4c1bc4a5419599e6bcabe04f17fc),Investor(?X),Dealer(!Xc300f7b71314413198bc877f450d47cc),isListedIn(!X7de1427d6fe44b57b6274f8047012e06,!Y9932a625cb6548deb476f21f250dd112),listsStock(!Xbee4e74a89b44656aac5601b51ba209b,!Y41bdb2e2b8ba495faa5e26d5d4a8889a),usesBroker(!X54364ef02e22497ab4b12ea931e997c5,?Yea3621462f734e7ba89b7d02aee51376),Offer(?X) :- srcisExecutedBy(?X,?Y,?X8b16755a2bb94ce18319747d660196ef,?Ydd33bb00922c466a952cd9d170a7d015,?Yea3621462f734e7ba89b7d02aee51376) .
+isExecutedFor(?X,?Y),Investor(?X),StockExchangeMember(?Xfceb9dab6edc494285601341837e4410),Person(?X),isExecutedBy(?X,!Y3b009028e4ed409fbe3274ec64f94298),FinantialInstrument(!X6981e12ae6594cd7a28ed011e93a6d0e),StockTrader(!X9efa71dbe49c4633ad375a18714d6c09) :- srcisExecutedFor(?X,?Y,?Xfceb9dab6edc494285601341837e4410) .
+Address(?X),Person(!Xa294287fc8f148999c9cd61132f6339f),hasAddress(?X041d357022a84c05a0b299621da0ccad,!Y),Thing(?X),Trader(?X),isListedIn(?X,!Y),Company(!X42afdf77747f4232a85175a65c597072),tradesOnBehalfOf(!X9d06975a420f435d8c47b07fa3abacd9,!Y),Stock(?X) :- srcAddress(?X,?X041d357022a84c05a0b299621da0ccad) .
+FinantialInstrument(?X),inverseofhasAddress(?X,?Y),StockExchangeMember(?X),isListedIn(!Xdd41ccf83e2f437995763079658bd613,?Y),StockExchangeList(?X),tradesOnBehalfOf(?X,!Y8550a487f1e246bfb6b2f439d5d1ca84) :- srcFinantialInstrument(?X,?Y) .
+isTradedIn(?X,?Y),LegalPerson(!X73e99f3aea754f50ace23e7971d97a80),StockExchangeMember(!Xffa52c366af94e7781c569ef0c202c4c),isExecutedFor(?X,?Y),Transaction(!X8340551e02bf4c54b39dc0a75c0cc691),hasAddress(?X,!Y8b7ca6b6ac844b03bfb35a6da0ed98cf),involvesInstrument(!Xa151d06a3a5548c58a8f7a6260e6132a,!Yc62dca4f16c34f238804004c78a6ebf7) :- srcisTradedIn(?X,?Y) .
+Person(?X) :- hasAddress(?X,?X1) .
+Thing(?X) :- StockExchangeMember(?X) .
+Person(?X) :- LegalPerson(?X) .
+Person(?X) :- Investor(?X) .
+FinantialInstrument(?X) :- Stock(?X) .
+isExecutedBy(?X,!Y),Thing(!Y) :- Transaction(?X) .
+StockExchangeMember(?X) :- StockBroker(?X) .
+Company(?X1) :- belongsToCompany(?X,?X1) .
+Transaction(?X) :- isExecutedBy(?X,?X1) .
+Transaction(?X1) :- isTradedIn(?X,?X1) .
+Thing(?X) :- Investor(?X) .
+Person(?X1) :- inverseofhasAddress(?X,?X1) .
+Transaction(?X) :- isExecutedFor(?X,?X1) .
+hasAddress(?X,!Y),Thing(!Y) :- Person(?X) .
+involvesInstrument(?X,?Y) :- isTradedIn(?Y,?X) .
+involvesInstrument(?X,!Y),Thing(!Y) :- Transaction(?X) .
+listsStock(?X,?Y) :- isListedIn(?Y,?X) .
+StockBroker(?X) :- Trader(?X) .
+isListedIn(?X,?Y) :- listsStock(?Y,?X) .
+hasAddress(?X,?Y) :- inverseofhasAddress(?Y,?X) .
+Stock(?X) :- belongsToCompany(?X,?X1) .
+hasStock(?X,?Y) :- belongsToCompany(?Y,?X) .
+tradesOnBehalfOf(?X,!Y),Thing(!Y) :- StockBroker(?X) .
+belongsToCompany(?X,!Y),Thing(!Y) :- Stock(?X) .
+Thing(?X) :- Transaction(?X) .
+Person(?X) :- PhysicalPerson(?X) .
+Address(?X1) :- hasAddress(?X,?X1) .
+Investor(?X1) :- isExecutedFor(?X,?X1) .
+StockExchangeMember(?X1) :- isExecutedBy(?X,?X1) .
+Stock(?X1) :- listsStock(?X,?X1) .
+inverseofhasAddress(?X,?Y) :- hasAddress(?Y,?X) .
+inverseofhasAddress(?X,!Y),Thing(!Y) :- Address(?X) .
+Transaction(?X) :- Acquisition(?X) .
+Thing(?X) :- Address(?X) .
+StockBroker(?X) :- Dealer(?X) .
+FinantialInstrument(?X1) :- involvesInstrument(?X,?X1) .
+Stock(?X) :- isListedIn(?X,?X1) .
+Thing(?X) :- Person(?X) .
+Company(?X) :- hasStock(?X,?X1) .
+LegalPerson(?X) :- Company(?X) .
+isExecutedFor(?X,!Y),Thing(!Y) :- Transaction(?X) .
+Address(?X) :- inverseofhasAddress(?X,?X1) .
+belongsToCompany(?Y,?X) :- hasStock(?X,?Y) .
+LegalPerson(?X) :- PhysicalPerson(?X) .
+isListedIn(?X,!Y),Thing(!Y) :- Stock(?X) .
+Person(?X) :- StockExchangeMember(?X) .
+Stock(?X1) :- hasStock(?X,?X1) .
+tradesOnBehalfOf(?X,?Y) :- usesBroker(?Y,?X) .
+usesBroker(?X,?Y) :- tradesOnBehalfOf(?Y,?X) .
+StockBroker(?X) :- StockTrader(?X) .
+Transaction(?X) :- involvesInstrument(?X,?X1) .
+Transaction(?X) :- Offer(?X) .
+StockExchangeList(?X1) :- isListedIn(?X,?X1) .

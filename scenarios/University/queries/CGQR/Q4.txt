@@ -1,0 +1,1 @@
+QX4(X0,X1) :- Person(X0),worksFor(X0,X1),Organization(X1) .

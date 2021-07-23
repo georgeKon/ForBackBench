@@ -1,0 +1,1 @@
+Q4(0) :- hasCollegeDiscipline(0,1),NonScience(1) .

@@ -234,7 +234,7 @@ target  ns:ns/{c0} a NAP:TactileAbility .
 source  SELECT * FROM "src_TactileAbility"
 
 mappingId ID-87070383
-target  ns:ns/{c0} a NAP:Thing . 
+target  ns:ns/{c0} a owl:Thing . 
 source  SELECT * FROM "src_Thing"
 
 mappingId ID-1181267530

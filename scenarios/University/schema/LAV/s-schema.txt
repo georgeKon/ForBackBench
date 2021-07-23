@@ -6,7 +6,8 @@ src_AdministrativeStaff{
 
 src_Employee{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_AssistantProfessor{
@@ -16,27 +17,34 @@ src_AssistantProfessor{
 }
 
 src_Professor{
-	c0 : STRING
-}
-
-src_AssociateProfessor{
-	c0 : STRING,
-	c1 : STRING
-}
-
-src_BachelorExam{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING
 }
 
+src_AssociateProfessor{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING
+}
+
+src_BachelorExam{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
 src_Exam{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_Career{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_Work{
@@ -59,12 +67,14 @@ src_College{
 }
 
 src_Organization{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_Course{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_Dean{
@@ -75,17 +85,20 @@ src_Dean{
 src_headOf{
 	c0 : STRING,
 	c1 : STRING,
+	c2 : STRING
+}
+
+src_Degree{
+	c0 : STRING,
+	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING
 }
 
-src_Degree{
-	c0 : STRING
-}
-
 src_Director{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_Person{
@@ -94,18 +107,21 @@ src_Person{
 }
 
 src_Program{
-	c0 : STRING
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_worksFor{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_ExDean{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING
+	c2 : STRING,
+	c3 : STRING
 }
 
 src_ExamRecord{
@@ -115,18 +131,19 @@ src_ExamRecord{
 
 src_Faculty{
 	c0 : STRING,
-	c1 : STRING
-}
-
-src_FacultyStaff{
-	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING
 }
 
-src_FullProfessor{
+src_FacultyStaff{
 	c0 : STRING,
 	c1 : STRING
+}
+
+src_FullProfessor{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_GraduateCourse{
@@ -137,13 +154,15 @@ src_GraduateCourse{
 src_GraduateStudent{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING
+	c2 : STRING,
+	c3 : STRING
 }
 
 src_takesCourse{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING
+	c2 : STRING,
+	c3 : STRING
 }
 
 src_Lecturer{
@@ -153,34 +172,36 @@ src_Lecturer{
 
 src_PostDoc{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
 }
 
 src_ResearchAssistant{
-	c0 : STRING
-}
-
-src_Student{
 	c0 : STRING,
 	c1 : STRING
 }
 
-src_SystemsStaff{
+src_Student{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING
 }
 
-src_UndergraduateStudent{
+src_SystemsStaff{
 	c0 : STRING,
 	c1 : STRING
 }
 
-src_University{
+src_UndergraduateStudent{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
+	c2 : STRING
+}
+
+src_University{
+	c0 : STRING,
+	c1 : STRING
 }
 
 src_VisitingProfessor{
@@ -190,25 +211,28 @@ src_VisitingProfessor{
 
 src_advisor{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
 }
 
 src_affiliateOf{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 
 src_affiliatedOrganizationOf{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING
+	c2 : STRING,
+	c3 : STRING
 }
 
 src_degreeFrom{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING
+	c2 : STRING,
+	c3 : STRING
 }
 
 src_hasAlumnus{
@@ -219,7 +243,8 @@ src_hasAlumnus{
 
 src_doctoralDegreeFrom{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_hasExamRecord{
@@ -230,15 +255,13 @@ src_hasExamRecord{
 
 src_hasFaculty{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
+	c1 : STRING
 }
 
 src_isPartOfUniversity{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
+	c2 : STRING
 }
 
 src_mastersDegreeFrom{
@@ -249,7 +272,8 @@ src_mastersDegreeFrom{
 src_member{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING
+	c2 : STRING,
+	c3 : STRING
 }
 
 src_memberOf{
@@ -272,20 +296,20 @@ src_publicationAuthor{
 
 src_teacherOf{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_teachingAssistantOf{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING
+	c2 : STRING,
+	c3 : STRING
 }
 
 src_tenured{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
+	c1 : STRING
 }
 
 src_undergraduateDegreeFrom{

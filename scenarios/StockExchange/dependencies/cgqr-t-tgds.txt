@@ -1,0 +1,53 @@
+c0(z) :- Acquisition(X), Transaction(X) .
+c1(z) :- Address(X), Thing(X) .
+c2(z) :- Address(X), inverseofhasAddress(X,Y) .
+c3(z) :- Company(X), LegalPerson(X) .
+c4(z) :- Dealer(X), StockBroker(X) .
+c5(z) :- Investor(X), Person(X) .
+c6(z) :- Investor(X), Thing(X) .
+c7(z) :- LegalPerson(X), Person(X) .
+c8(z) :- Offer(X), Transaction(X) .
+c9(z) :- Person(X), Thing(X) .
+c10(z) :- Person(X), hasAddress(X,Y) .
+c11(z) :- PhysicalPerson(X), Person(X) .
+c12(z) :- Stock(X), FinantialInstrument(X) .
+c13(z) :- Stock(X), isListedIn(X,Y), Thing(Y) .
+c14(z) :- Stock(X), belongsToCompany(X,Y), Thing(Y) .
+c15(z) :- StockBroker(X), StockExchangeMember(X) .
+c16(z) :- StockBroker(X), tradesOnBehalfOf(X,Y), Thing(Y) .
+c17(z) :- StockExchangeMember(X), Person(X) .
+c18(z) :- StockExchangeMember(X), Thing(X) .
+c19(z) :- StockTrader(X), StockBroker(X) .
+c20(z) :- Trader(X), StockBroker(X) .
+c21(z) :- Transaction(X), Thing(X) .
+c22(z) :- Transaction(X), isExecutedFor(X,Y), Thing(Y) .
+c23(z) :- Transaction(X), isExecutedBy(X,Y), Thing(Y) .
+c24(z) :- Transaction(X), involvesInstrument(X,Y), Thing(Y) .
+c25(z) :- belongsToCompany(X,X1), Stock(X) .
+c26(z) :- belongsToCompany(X,X1), Company(X1) .
+c27(z) :- belongsToCompany(Y,X), hasStock(X,Y) .
+c28(z) :- hasStock(Y,X), belongsToCompany(X,Y) .
+c29(z) :- hasAddress(X,X1), Person(X) .
+c30(z) :- hasAddress(X,X1), Address(X1) .
+c31(z) :- hasStock(X,X1), Company(X) .
+c32(z) :- hasStock(X,X1), Stock(X1) .
+c33(z) :- inverseofhasAddress(X,X1), Address(X) .
+c34(z) :- inverseofhasAddress(X,X1), Person(X1) .
+c35(z) :- inverseofhasAddress(Y,X), hasAddress(X,Y) .
+c36(z) :- hasAddress(Y,X), inverseofhasAddress(X,Y) .
+c37(z) :- involvesInstrument(X,X1), Transaction(X) .
+c38(z) :- involvesInstrument(X,X1), FinantialInstrument(X1) .
+c39(z) :- isExecutedBy(X,X1), Transaction(X) .
+c40(z) :- isExecutedBy(X,X1), StockExchangeMember(X1) .
+c41(z) :- isExecutedFor(X,X1), Transaction(X) .
+c42(z) :- isExecutedFor(X,X1), Investor(X1) .
+c43(z) :- isListedIn(X,X1), Stock(X) .
+c44(z) :- isListedIn(X,X1), StockExchangeList(X1) .
+c45(z) :- isListedIn(Y,X), listsStock(X,Y) .
+c46(z) :- listsStock(Y,X), isListedIn(X,Y) .
+c47(z) :- isTradedIn(X,X1), Transaction(X1) .
+c48(z) :- isTradedIn(Y,X), involvesInstrument(X,Y) .
+c49(z) :- involvesInstrument(Y,X), isTradedIn(X,Y) .
+c50(z) :- listsStock(X,X1), Stock(X1) .
+c51(z) :- usesBroker(Y,X), tradesOnBehalfOf(X,Y) .
+c52(z) :- tradesOnBehalfOf(Y,X), usesBroker(X,Y) .

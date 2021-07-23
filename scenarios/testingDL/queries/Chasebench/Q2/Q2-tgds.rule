@@ -1,0 +1,97 @@
+src_AdministrativeStaff(?X) -> Employee(?X), Person(?X), worksFor(?X,?0A1), memberOf(?X,?0A1), member(?0A1,?X), Organization(?0A1), Organization(?0A1) .
+src_advisor(?X,?X1) -> Person(?X), Professor(?X1), Faculty(?X1), Employee(?X1), Person(?X1), worksFor(?X1,?1A1), memberOf(?X1,?1A1), member(?1A1,?X1), Organization(?1A1), Organization(?1A1) .
+src_affiliatedOrganizationOf(?X,?X1) -> Organization(?X), Organization(?X1) .
+src_affiliateOf(?X,?X1) -> Organization(?X), Person(?X1) .
+src_age(?X,?X1) -> Person(?X) .
+src_Article(?X) -> Publication(?X) .
+src_AssistantProfessor(?X) -> Professor(?X), Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?6A1), memberOf(?X,?6A1), member(?6A1,?X), Organization(?6A1), Organization(?6A1) .
+src_AssociateProfessor(?X) -> Professor(?X), Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?7A1), memberOf(?X,?7A1), member(?7A1,?X), Organization(?7A1), Organization(?7A1) .
+src_Book(?X) -> Publication(?X) .
+src_Chair(?X) -> headOf(?X,?9A1), worksFor(?X,?9A1), memberOf(?X,?9A1), member(?9A1,?X), Organization(?9A1), Person(?X), Department(?9A1), Professor(?X), Faculty(?X), Employee(?X), worksFor(?X,?9A2), memberOf(?X,?9A2), member(?9A2,?X), Organization(?9A2), Organization(?9A2) .
+src_ClericalStaff(?X) -> AdministrativeStaff(?X), Employee(?X), Person(?X), worksFor(?X,?10A1), memberOf(?X,?10A1), member(?10A1,?X), Organization(?10A1), Organization(?10A1) .
+src_College(?X) -> Organization(?X) .
+src_ConferencePaper(?X) -> Article(?X), Publication(?X) .
+src_Course(?X) -> Work(?X) .
+src_Dean(?X) -> headOf(?X,?14A1), worksFor(?X,?14A1), memberOf(?X,?14A1), member(?14A1,?X), Organization(?14A1), Person(?X), College(?14A1), Professor(?X), Faculty(?X), Employee(?X), worksFor(?X,?14A2), memberOf(?X,?14A2), member(?14A2,?X), Organization(?14A2), Organization(?14A2) .
+src_degreeFrom(?X,?X1) -> Person(?X), University(?X1), Organization(?X1), hasAlumnus(?X1,?X) .
+src_Department(?X) -> Organization(?X) .
+src_Director(?X) -> headOf(?X,?17A1), worksFor(?X,?17A1), memberOf(?X,?17A1), member(?17A1,?X), Organization(?17A1), Person(?X), Program(?17A1) .
+src_doctoralDegreeFrom(?X,?X1) -> Person(?X), University(?X1), Organization(?X1), degreeFrom(?X,?X1), hasAlumnus(?X1,?X) .
+src_emailAddress(?X,?X1) -> Person(?X) .
+src_Employee(?X) -> Person(?X), worksFor(?X,?20A1), memberOf(?X,?20A1), member(?20A1,?X), Organization(?20A1), Organization(?20A1) .
+src_Faculty(?X) -> Employee(?X), Person(?X), worksFor(?X,?21A1), memberOf(?X,?21A1), member(?21A1,?X), Organization(?21A1), Organization(?21A1) .
+src_FullProfessor(?X) -> Professor(?X), Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?22A1), memberOf(?X,?22A1), member(?22A1,?X), Organization(?22A1), Organization(?22A1) .
+src_GraduateCourse(?X) -> Course(?X), Work(?X) .
+src_GraduateStudent(?X) -> Person(?X), takesCourse(?X,?24A1), GraduateCourse(?24A1), Course(?24A1), Work(?24A1) .
+src_hasAlumnus(?X,?X1) -> Person(?X1), University(?X), Organization(?X), degreeFrom(?X1,?X) .
+src_headOf(?X,?Y) -> worksFor(?X,?Y), memberOf(?X,?Y), member(?Y,?X), Organization(?Y), Person(?X) .
+src_Institute(?X) -> Organization(?X) .
+src_JournalArticle(?X) -> Article(?X), Publication(?X) .
+src_Lecturer(?X) -> Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?29A1), memberOf(?X,?29A1), member(?29A1,?X), Organization(?29A1), Organization(?29A1) .
+src_listedCourse(?X,?X1) -> Course(?X1), Work(?X1), Schedule(?X) .
+src_Manual(?X) -> Publication(?X) .
+src_mastersDegreeFrom(?X,?X1) -> Person(?X), University(?X1), Organization(?X1), degreeFrom(?X,?X1), hasAlumnus(?X1,?X) .
+src_member(?X,?X1) -> Organization(?X), Person(?X1), memberOf(?X1,?X) .
+src_memberOf(?Y,?X) -> member(?X,?Y), Organization(?X), Person(?Y) .
+src_orgPublication(?X,?X1) -> Organization(?X), Publication(?X1) .
+src_PostDoc(?X) -> Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?36A1), memberOf(?X,?36A1), member(?36A1,?X), Organization(?36A1), Organization(?36A1) .
+src_Professor(?X) -> Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?37A1), memberOf(?X,?37A1), member(?37A1,?X), Organization(?37A1), Organization(?37A1) .
+src_Program(?X) -> Organization(?X) .
+src_publicationAuthor(?X,?X1) -> Person(?X1), Publication(?X) .
+src_publicationDate(?X,?X1) -> Publication(?X) .
+src_publicationResearch(?X,?X1) -> Publication(?X), Research(?X1), Work(?X1) .
+src_Research(?X) -> Work(?X) .
+src_ResearchAssistant(?X) -> Person(?X), worksFor(?X,?43A1), memberOf(?X,?43A1), member(?43A1,?X), Organization(?43A1), ResearchGroup(?43A1) .
+src_ResearchGroup(?X) -> Organization(?X) .
+src_researchProject(?X,?X1) -> Research(?X1), Work(?X1), ResearchGroup(?X), Organization(?X) .
+src_Software(?X) -> Publication(?X) .
+src_softwareDocumentation(?X,?X1) -> Publication(?X1), Software(?X), Publication(?X) .
+src_softwareVersion(?X,?X1) -> Software(?X), Publication(?X) .
+src_Specification(?X) -> Publication(?X) .
+src_Student(?X) -> Person(?X), takesCourse(?X,?50A1), Course(?50A1), Work(?50A1) .
+src_subOrganizationOf(?X,?X1) -> Organization(?X), Organization(?X1) .
+src_SystemsStaff(?X) -> AdministrativeStaff(?X), Employee(?X), Person(?X), worksFor(?X,?52A1), memberOf(?X,?52A1), member(?52A1,?X), Organization(?52A1), Organization(?52A1) .
+src_teacherOf(?X,?X1) -> Course(?X1), Work(?X1), Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?53A1), memberOf(?X,?53A1), member(?53A1,?X), Organization(?53A1), Organization(?53A1) .
+src_TeachingAssistant(?X) -> Person(?X), teachingAssistantOf(?X,?54A1), Course(?54A1), Work(?54A1), Course(?54A1) .
+src_teachingAssistantOf(?X,?X1) -> Course(?X1), Work(?X1), TeachingAssistant(?X), Person(?X), teachingAssistantOf(?X,?55A1), Course(?55A1), Work(?55A1), Course(?55A1) .
+src_TechnicalReport(?X) -> Article(?X), Publication(?X) .
+src_telephone(?X,?X1) -> Person(?X) .
+src_tenured(?X,?X1) -> Professor(?X), Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?58A1), memberOf(?X,?58A1), member(?58A1,?X), Organization(?58A1), Organization(?58A1) .
+src_title(?X,?X1) -> Person(?X) .
+src_undergraduateDegreeFrom(?X,?X1) -> Person(?X), University(?X1), Organization(?X1), degreeFrom(?X,?X1), hasAlumnus(?X1,?X) .
+src_UndergraduateStudent(?X) -> Student(?X), Person(?X), takesCourse(?X,?61A1), Course(?61A1), Work(?61A1) .
+src_University(?X) -> Organization(?X) .
+src_UnofficialPublication(?X) -> Publication(?X) .
+src_VisitingProfessor(?X) -> Professor(?X), Faculty(?X), Employee(?X), Person(?X), worksFor(?X,?64A1), memberOf(?X,?64A1), member(?64A1,?X), Organization(?64A1), Organization(?64A1) .
+src_worksFor(?X,?Y) -> memberOf(?X,?Y), member(?Y,?X), Organization(?Y), Person(?X) .
+src_advisor(?X,?Y) -> advisor(?X,?Y) .
+src_affiliatedOrganizationOf(?X,?Y) -> affiliatedOrganizationOf(?X,?Y) .
+src_AssistantProfessor(?X) -> AssistantProfessor(?X) .
+src_AssociateProfessor(?X) -> AssociateProfessor(?X) .
+src_Course(?X) -> Course(?X) .
+src_Department(?X) -> Department(?X) .
+src_doctoralDegreeFrom(?X,?Y) -> doctoralDegreeFrom(?X,?Y) .
+src_emailAddress(?X,?Y) -> emailAddress(?X,?Y) .
+src_FullProfessor(?X) -> FullProfessor(?X) .
+src_GraduateCourse(?X) -> GraduateCourse(?X) .
+src_GraduateStudent(?X) -> GraduateStudent(?X) .
+src_headOf(?X,?Y) -> headOf(?X,?Y) .
+src_Lecturer(?X) -> Lecturer(?X) .
+src_mastersDegreeFrom(?X,?Y) -> mastersDegreeFrom(?X,?Y) .
+src_memberOf(?X,?Y) -> memberOf(?X,?Y) .
+src_name(?X,?Y) -> name(?X,?Y) .
+src_Publication(?X) -> Publication(?X) .
+src_publicationAuthor(?X,?Y) -> publicationAuthor(?X,?Y) .
+src_ResearchAssistant(?X) -> ResearchAssistant(?X) .
+src_ResearchGroup(?X) -> ResearchGroup(?X) .
+src_researchInterest(?X,?Y) -> researchInterest(?X,?Y) .
+src_subOrganizationOf(?X,?Y) -> subOrganizationOf(?X,?Y) .
+src_takesCourse(?X,?Y) -> takesCourse(?X,?Y) .
+src_teacherOf(?X,?Y) -> teacherOf(?X,?Y) .
+src_TeachingAssistant(?X) -> TeachingAssistant(?X) .
+src_teachingAssistantOf(?X,?Y) -> teachingAssistantOf(?X,?Y) .
+src_telephone(?X,?Y) -> telephone(?X,?Y) .
+src_undergraduateDegreeFrom(?X,?Y) -> undergraduateDegreeFrom(?X,?Y) .
+src_UndergraduateStudent(?X) -> UndergraduateStudent(?X) .
+src_University(?X) -> University(?X) .
+src_worksFor(?X,?Y) -> worksFor(?X,?Y) .

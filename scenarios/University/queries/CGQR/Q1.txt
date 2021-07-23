@@ -1,0 +1,1 @@
+QX1(X) :- worksFor(X,Y),affiliatedOrganizationOf(Y,Z) .

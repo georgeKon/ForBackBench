@@ -4,8 +4,7 @@ src_wellbore_development_all{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c5 : STRING
 }
 
 src_licence{
@@ -17,16 +16,9 @@ src_licence{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
-}
-
-src_wellbore_exploration_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -37,6 +29,19 @@ src_wellbore_exploration_all{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_tuf_petreg_licence_licencee{
@@ -46,7 +51,10 @@ src_tuf_petreg_licence_licencee{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_wellbore_core_photo{
@@ -58,7 +66,8 @@ src_wellbore_core_photo{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -73,9 +82,7 @@ src_pipLine{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c4 : STRING
 }
 
 src_wellbore_shallow_all{
@@ -84,17 +91,15 @@ src_wellbore_shallow_all{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_wellbore_coordinates{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c3 : STRING
 }
 
 src_wellbore_core{
@@ -103,7 +108,10 @@ src_wellbore_core{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_tuf_petreg_message{
@@ -111,9 +119,7 @@ src_tuf_petreg_message{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c4 : STRING
 }
 
 src_wellbore_development_all{
@@ -122,7 +128,11 @@ src_wellbore_development_all{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_licence_petreg_message{
@@ -162,10 +172,73 @@ src_field_production_monthly{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_field_licensee_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_licence_task{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_pipLine{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_field_reserves{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_licence{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_licence{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -179,65 +252,6 @@ src_field_licensee_hst{
 	c10 : STRING
 }
 
-src_licence_task{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_wellbore_exploration_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_pipLine{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_field_reserves{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_licence{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_licence{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
-}
-
 src_field{
 	c0 : STRING,
 	c1 : STRING,
@@ -248,7 +262,8 @@ src_field{
 	c6 : STRING,
 	c7 : STRING,
 	c8 : STRING,
-	c9 : STRING
+	c9 : STRING,
+	c10 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -265,9 +280,7 @@ src_wellbore_development_all{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c5 : STRING
 }
 
 src_field_production_totalt_NCS_month{
@@ -276,7 +289,9 @@ src_field_production_totalt_NCS_month{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_wellbore_document{
@@ -288,10 +303,7 @@ src_wellbore_document{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING
+	c8 : STRING
 }
 
 src_wellbore_shallow_all{
@@ -299,16 +311,14 @@ src_wellbore_shallow_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
 }
 
 src_wellbore_coordinates{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
+	c3 : STRING
 }
 
 src_wellbore_development_all{
@@ -316,9 +326,7 @@ src_wellbore_development_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c4 : STRING
 }
 
 src_dscArea{
@@ -327,8 +335,7 @@ src_dscArea{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c5 : STRING
 }
 
 src_facility_moveable{
@@ -336,7 +343,9 @@ src_facility_moveable{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_wellbore_shallow_all{
@@ -347,8 +356,7 @@ src_wellbore_shallow_all{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
+	c7 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -377,7 +385,9 @@ src_discovery_reserves{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_licence{
@@ -386,7 +396,9 @@ src_licence{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_field_licensee_hst{
@@ -398,7 +410,9 @@ src_field_licensee_hst{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
 }
 
 src_wellbore_core_photo{
@@ -412,7 +426,8 @@ src_wellbore_core_photo{
 	c7 : STRING,
 	c8 : STRING,
 	c9 : STRING,
-	c10 : STRING
+	c10 : STRING,
+	c11 : STRING
 }
 
 src_wellbore_document{
@@ -424,9 +439,7 @@ src_wellbore_document{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
+	c8 : STRING
 }
 
 src_wellbore_npdid_overview{
@@ -435,7 +448,17 @@ src_wellbore_npdid_overview{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -445,14 +468,6 @@ src_wellbore_exploration_all{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING
-}
-
-src_wellbore_exploration_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
 }
 
 src_bsns_arr_area{
@@ -465,9 +480,7 @@ src_bsns_arr_area{
 	c6 : STRING,
 	c7 : STRING,
 	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING
+	c9 : STRING
 }
 
 src_bsns_arr_area_area_poly_hst{
@@ -479,29 +492,31 @@ src_bsns_arr_area_area_poly_hst{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_wellbore_shallow_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING
 }
 
 src_field_production_yearly{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_pipLine{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
+	c2 : STRING
 }
 
 src_field_reserves{
@@ -509,10 +524,38 @@ src_field_reserves{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_wellbore_shallow_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_wellbore_development_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_wellbore_development_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -521,34 +564,6 @@ src_wellbore_exploration_all{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING
-}
-
-src_wellbore_shallow_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
 }
 
 src_bsns_arr_area_licensee_hst{
@@ -561,23 +576,12 @@ src_bsns_arr_area_licensee_hst{
 	c6 : STRING,
 	c7 : STRING,
 	c8 : STRING,
-	c9 : STRING
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING
 }
 
 src_licence{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
-}
-
-src_prlAreaSplitByBlock{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -592,6 +596,17 @@ src_prlAreaSplitByBlock{
 	c11 : STRING
 }
 
+src_prlAreaSplitByBlock{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
+}
+
 src_facility_moveable{
 	c0 : STRING,
 	c1 : STRING,
@@ -599,7 +614,8 @@ src_facility_moveable{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_seaMultiline{
@@ -608,7 +624,9 @@ src_seaMultiline{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_seaMultiline{
@@ -628,7 +646,9 @@ src_bsns_arr_area_transfer_hst{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_licence_petreg_licence{
@@ -637,7 +657,9 @@ src_licence_petreg_licence{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_facility_moveable{
@@ -660,7 +682,8 @@ src_field_licensee_hst{
 	c7 : STRING,
 	c8 : STRING,
 	c9 : STRING,
-	c10 : STRING
+	c10 : STRING,
+	c11 : STRING
 }
 
 src_prlAreaSplitByBlock{
@@ -679,15 +702,13 @@ src_field_reserves{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING
 }
 
 src_wellbore_exploration_all{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
+	c1 : STRING
 }
 
 src_seis_acquisition{
@@ -695,16 +716,15 @@ src_seis_acquisition{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c4 : STRING
 }
 
 src_facility_fixed{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING
 }
 
 src_wellbore_casing_and_lot{
@@ -714,7 +734,10 @@ src_wellbore_casing_and_lot{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_discovery_reserves{
@@ -723,10 +746,7 @@ src_discovery_reserves{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
+	c5 : STRING
 }
 
 src_seaMultiline{
@@ -734,8 +754,7 @@ src_seaMultiline{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
 }
 
 src_wellbore_shallow_all{
@@ -756,7 +775,9 @@ src_wellbore_document{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -771,9 +792,7 @@ src_wellbore_shallow_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c3 : STRING
 }
 
 src_field_production_monthly{
@@ -786,10 +805,41 @@ src_field_production_monthly{
 	c6 : STRING,
 	c7 : STRING,
 	c8 : STRING,
-	c9 : STRING
+	c9 : STRING,
+	c10 : STRING
 }
 
 src_bsns_arr_area_licensee_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
+}
+
+src_wellbore_coordinates{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_seis_acquisition_coordinates_inc_turnarea{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -804,16 +854,7 @@ src_bsns_arr_area_licensee_hst{
 	c11 : STRING
 }
 
-src_wellbore_coordinates{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_wellbore_exploration_all{
+src_wellbore_development_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -823,45 +864,11 @@ src_wellbore_exploration_all{
 	c6 : STRING
 }
 
-src_seis_acquisition_coordinates_inc_turnarea{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
 src_wellbore_exploration_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_licence_phase_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
+	c3 : STRING
 }
 
 src_licence_phase_hst{
@@ -877,30 +884,23 @@ src_licence_phase_hst{
 	c9 : STRING
 }
 
+src_licence_phase_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
 src_wlbPoint{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_tuf_petreg_message{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_licence_petreg_message{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c3 : STRING
 }
 
 src_tuf_petreg_message{
@@ -911,7 +911,30 @@ src_tuf_petreg_message{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_licence_petreg_message{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_tuf_petreg_message{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING
 }
 
 src_seis_acquisition{
@@ -919,8 +942,7 @@ src_seis_acquisition{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
 }
 
 src_field_production_yearly{
@@ -930,7 +952,8 @@ src_field_production_yearly{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_wellbore_oil_sample{
@@ -954,10 +977,7 @@ src_licence_licensee_hst{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
+	c7 : STRING
 }
 
 src_tuf_operator_hst{
@@ -972,7 +992,9 @@ src_facility_fixed{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_bsns_arr_area{
@@ -980,11 +1002,52 @@ src_bsns_arr_area{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
 }
 
 src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_licence_petreg_message{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_wellbore_npdid_overview{
+	c0 : STRING,
+	c1 : STRING
+}
+
+src_wellbore_development_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_field_production_yearly{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_bsns_arr_area_licensee_hst{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -996,30 +1059,7 @@ src_wellbore_exploration_all{
 	c8 : STRING
 }
 
-src_licence_petreg_message{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_wellbore_npdid_overview{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
-}
-
-src_field_production_yearly{
+src_bsns_arr_area_licensee_hst{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -1027,27 +1067,9 @@ src_field_production_yearly{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
-}
-
-src_bsns_arr_area_licensee_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_bsns_arr_area_licensee_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_wellbore_shallow_all{
@@ -1064,8 +1086,7 @@ src_wellbore_core{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
 }
 
 src_dscArea{
@@ -1077,7 +1098,9 @@ src_dscArea{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
 }
 
 src_wellbore_development_all{
@@ -1095,81 +1118,7 @@ src_seis_acquisition_coordinates_inc_turnarea{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
-}
-
-src_prlAreaSplitByBlock{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_wellbore_oil_sample{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
-}
-
-src_wellbore_exploration_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
 	c6 : STRING
-}
-
-src_prlAreaSplitByBlock{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
-}
-
-src_wellbore_shallow_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
-}
-
-src_wellbore_exploration_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
 }
 
 src_wellbore_development_all{
@@ -1181,11 +1130,86 @@ src_wellbore_development_all{
 	c5 : STRING
 }
 
-src_company{
+src_prlAreaSplitByBlock{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
+}
+
+src_wellbore_oil_sample{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_prlAreaSplitByBlock{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
+}
+
+src_wellbore_shallow_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_wellbore_exploration_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING
+}
+
+src_wellbore_development_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_company{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_licence_phase_hst{
@@ -1197,16 +1221,18 @@ src_licence_phase_hst{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
+	c8 : STRING
 }
 
 src_wellbore_development_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_licence_licensee_hst{
@@ -1217,11 +1243,7 @@ src_licence_licensee_hst{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING
+	c7 : STRING
 }
 
 src_prlArea{
@@ -1236,8 +1258,7 @@ src_prlArea{
 	c8 : STRING,
 	c9 : STRING,
 	c10 : STRING,
-	c11 : STRING,
-	c12 : STRING
+	c11 : STRING
 }
 
 src_licence_petreg_licence_oper{
@@ -1245,8 +1266,7 @@ src_licence_petreg_licence_oper{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
 }
 
 src_field_production_totalt_NCS_month{
@@ -1256,8 +1276,7 @@ src_field_production_totalt_NCS_month{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c6 : STRING
 }
 
 src_wellbore_document{
@@ -1276,7 +1295,11 @@ src_wellbore_development_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_wellbore_mud{
@@ -1285,7 +1308,11 @@ src_wellbore_mud{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_wellbore_dst{
@@ -1295,7 +1322,9 @@ src_wellbore_dst{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_licence_transfer_hst{
@@ -1306,8 +1335,7 @@ src_licence_transfer_hst{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
+	c7 : STRING
 }
 
 src_field{
@@ -1326,25 +1354,6 @@ src_discovery{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_wellbore_coordinates{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING
@@ -1356,6 +1365,23 @@ src_wellbore_development_all{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING
+}
+
+src_wellbore_coordinates{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_wellbore_development_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_company_reserves{
@@ -1377,10 +1403,7 @@ src_tuf_owner_hst{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING
+	c8 : STRING
 }
 
 src_pipLine{
@@ -1388,8 +1411,7 @@ src_pipLine{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
 }
 
 src_wellbore_dst{
@@ -1398,20 +1420,32 @@ src_wellbore_dst{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_bsns_arr_area_operator{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_wellbore_exploration_all{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_seaArea{
@@ -1429,7 +1463,8 @@ src_facility_moveable{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_wellbore_casing_and_lot{
@@ -1451,9 +1486,7 @@ src_seis_acquisition_coordinates_inc_turnarea{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c7 : STRING
 }
 
 src_discovery{
@@ -1461,15 +1494,13 @@ src_discovery{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_licence{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
+	c1 : STRING
 }
 
 src_facility_moveable{
@@ -1482,7 +1513,8 @@ src_wellbore_exploration_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING
 }
 
 src_wellbore_formation_top{
@@ -1492,21 +1524,23 @@ src_wellbore_formation_top{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_wellbore_exploration_all{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
+	c1 : STRING
 }
 
 src_wellbore_development_all{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_licence_licensee_hst{
@@ -1518,16 +1552,16 @@ src_licence_licensee_hst{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
 }
 
 src_discovery{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c3 : STRING
 }
 
 src_seis_acquisition{
@@ -1544,14 +1578,18 @@ src_seis_acquisition{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_fclPoint{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_company{
@@ -1560,8 +1598,7 @@ src_company{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c5 : STRING
 }
 
 src_licence_task{
@@ -1572,7 +1609,8 @@ src_licence_task{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -1580,8 +1618,7 @@ src_wellbore_exploration_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
 }
 
 src_wellbore_coordinates{
@@ -1590,26 +1627,10 @@ src_wellbore_coordinates{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c5 : STRING
 }
 
 src_field{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_field_production_totalt_NCS_year{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
-}
-
-src_facility_moveable{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -1620,7 +1641,37 @@ src_facility_moveable{
 	c7 : STRING
 }
 
+src_field_production_totalt_NCS_year{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_facility_moveable{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
 src_licence_oper_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_bsns_arr_area{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -1630,21 +1681,15 @@ src_licence_oper_hst{
 	c6 : STRING
 }
 
-src_bsns_arr_area{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
 src_wellbore_development_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_tuf_operator_hst{
@@ -1656,17 +1701,14 @@ src_tuf_operator_hst{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING,
-	c12 : STRING
+	c8 : STRING
 }
 
 src_field_production_totalt_NCS_year{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING
+	c2 : STRING,
+	c3 : STRING
 }
 
 src_wellbore_shallow_all{
@@ -1675,8 +1717,7 @@ src_wellbore_shallow_all{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c5 : STRING
 }
 
 src_licence_area_poly_hst{
@@ -1727,7 +1768,9 @@ src_wellbore_development_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_licence_phase_hst{
@@ -1758,15 +1801,17 @@ src_wellbore_mud{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
+	c7 : STRING
 }
 
 src_company{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_company_reserves{
@@ -1776,7 +1821,8 @@ src_company_reserves{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_licence{
@@ -1788,8 +1834,7 @@ src_licence{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c8 : STRING
 }
 
 src_wellbore_document{
@@ -1802,9 +1847,7 @@ src_wellbore_document{
 	c6 : STRING,
 	c7 : STRING,
 	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING
+	c9 : STRING
 }
 
 src_tuf_petreg_message{
@@ -1815,7 +1858,9 @@ src_tuf_petreg_message{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_field{
@@ -1824,20 +1869,22 @@ src_field{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c5 : STRING
 }
 
 src_wellbore_exploration_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_wellbore_development_all{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_bsns_arr_area_transfer_hst{
@@ -1855,7 +1902,11 @@ src_bsns_arr_area_transfer_hst{
 src_field_production_totalt_NCS_year{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_wellbore_coordinates{
@@ -1863,8 +1914,7 @@ src_wellbore_coordinates{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
 }
 
 src_licence_task{
@@ -1876,7 +1926,8 @@ src_licence_task{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_tuf_operator_hst{
@@ -1886,7 +1937,10 @@ src_tuf_operator_hst{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_wellbore_mud{
@@ -1907,7 +1961,10 @@ src_seis_acquisition{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
 }
 
 src_wellbore_dst{
@@ -1916,7 +1973,11 @@ src_wellbore_dst{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_wellbore_mud{
@@ -1934,7 +1995,9 @@ src_facility_moveable{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_seaArea{
@@ -1946,17 +2009,15 @@ src_seaArea{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_baaArea{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c3 : STRING
 }
 
 src_field_activity_status_hst{
@@ -1967,7 +2028,9 @@ src_field_activity_status_hst{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_licence{
@@ -1984,11 +2047,7 @@ src_wellbore_development_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c3 : STRING
 }
 
 src_wellbore_formation_top{
@@ -1998,7 +2057,8 @@ src_wellbore_formation_top{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_tuf_petreg_licence{
@@ -2017,7 +2077,10 @@ src_field_activity_status_hst{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_field_activity_status_hst{
@@ -2027,13 +2090,17 @@ src_field_activity_status_hst{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_seis_acquisition{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_discovery{
@@ -2050,9 +2117,7 @@ src_field_reserves{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c3 : STRING
 }
 
 src_facility_fixed{
@@ -2060,18 +2125,15 @@ src_facility_fixed{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_licence_petreg_licence{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c3 : STRING
 }
 
 src_seaArea{
@@ -2080,7 +2142,8 @@ src_seaArea{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_baaArea{
@@ -2089,7 +2152,8 @@ src_baaArea{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_wellbore_dst{
@@ -2100,7 +2164,11 @@ src_wellbore_dst{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING
 }
 
 src_seis_acquisition{
@@ -2108,9 +2176,7 @@ src_seis_acquisition{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c4 : STRING
 }
 
 src_pipLine{
@@ -2118,8 +2184,7 @@ src_pipLine{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
 }
 
 src_licence_transfer_hst{
@@ -2154,7 +2219,12 @@ src_field_production_monthly{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING,
+	c12 : STRING
 }
 
 src_wellbore_development_all{
@@ -2170,7 +2240,8 @@ src_wellbore_npdid_overview{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_company{
@@ -2186,31 +2257,21 @@ src_wellbore_exploration_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_wellbore_exploration_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c3 : STRING
 }
 
 src_wellbore_oil_sample{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_licence_petreg_message{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -2222,11 +2283,21 @@ src_licence_petreg_message{
 	c8 : STRING
 }
 
-src_wellbore_shallow_all{
+src_licence_petreg_message{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING
+}
+
+src_wellbore_shallow_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -2261,9 +2332,7 @@ src_bsns_arr_area_licensee_hst{
 	c7 : STRING,
 	c8 : STRING,
 	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING,
-	c12 : STRING
+	c10 : STRING
 }
 
 src_discovery{
@@ -2271,7 +2340,8 @@ src_discovery{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_wellbore_shallow_all{
@@ -2279,7 +2349,11 @@ src_wellbore_shallow_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_field_owner_hst{
@@ -2290,15 +2364,18 @@ src_field_owner_hst{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c7 : STRING
 }
 
 src_seis_acquisition{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_apaAreaNet{
@@ -2322,8 +2399,7 @@ src_licence_task{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c6 : STRING
 }
 
 src_wellbore_development_all{
@@ -2335,7 +2411,8 @@ src_wellbore_development_all{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_discovery{
@@ -2345,8 +2422,7 @@ src_discovery{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c6 : STRING
 }
 
 src_company_reserves{
@@ -2357,7 +2433,9 @@ src_company_reserves{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_bsns_arr_area{
@@ -2365,8 +2443,7 @@ src_bsns_arr_area{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
 }
 
 src_licence{
@@ -2378,9 +2455,7 @@ src_licence{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
+	c8 : STRING
 }
 
 src_discovery_reserves{
@@ -2400,8 +2475,7 @@ src_seaArea{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c6 : STRING
 }
 
 src_wellbore_core{
@@ -2411,10 +2485,7 @@ src_wellbore_core{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c6 : STRING
 }
 
 src_discovery{
@@ -2426,8 +2497,7 @@ src_discovery{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c8 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -2435,18 +2505,14 @@ src_wellbore_exploration_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c4 : STRING
 }
 
 src_wellbore_exploration_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c3 : STRING
 }
 
 src_field_investment_yearly{
@@ -2455,12 +2521,7 @@ src_field_investment_yearly{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
+	c5 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -2482,20 +2543,13 @@ src_bsns_arr_area_area_poly_hst{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING,
-	c12 : STRING,
-	c13 : STRING,
-	c14 : STRING
+	c8 : STRING
 }
 
 src_tuf_petreg_licence_oper{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
+	c2 : STRING
 }
 
 src_apaAreaGross{
@@ -2504,8 +2558,7 @@ src_apaAreaGross{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c5 : STRING
 }
 
 src_tuf_petreg_licence_licencee{
@@ -2516,7 +2569,9 @@ src_tuf_petreg_licence_licencee{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_wellbore_development_all{
@@ -2533,24 +2588,23 @@ src_tuf_petreg_licence_licencee{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c5 : STRING
 }
 
 src_wellbore_formation_top{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_company{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c2 : STRING
 }
 
 src_seis_acquisition{
@@ -2558,7 +2612,8 @@ src_seis_acquisition{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_licence_petreg_message{
@@ -2570,7 +2625,9 @@ src_licence_petreg_message{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
 }
 
 src_prlArea{
@@ -2590,7 +2647,9 @@ src_wellbore_casing_and_lot{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_wellbore_document{
@@ -2599,8 +2658,7 @@ src_wellbore_document{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c5 : STRING
 }
 
 src_licence_transfer_hst{
@@ -2612,7 +2670,10 @@ src_licence_transfer_hst{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING
 }
 
 src_tuf_owner_hst{
@@ -2621,7 +2682,10 @@ src_tuf_owner_hst{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_tuf_petreg_licence{
@@ -2639,7 +2703,17 @@ src_pipLine{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_wellbore_development_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_wellbore_development_all{
@@ -2653,18 +2727,11 @@ src_wellbore_development_all{
 	c7 : STRING
 }
 
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
 src_company{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING
+	c2 : STRING,
+	c3 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -2687,7 +2754,8 @@ src_bsns_arr_area_transfer_hst{
 	c7 : STRING,
 	c8 : STRING,
 	c9 : STRING,
-	c10 : STRING
+	c10 : STRING,
+	c11 : STRING
 }
 
 src_discovery{
@@ -2696,9 +2764,7 @@ src_discovery{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c5 : STRING
 }
 
 src_seis_acquisition_coordinates_inc_turnarea{
@@ -2708,9 +2774,7 @@ src_seis_acquisition_coordinates_inc_turnarea{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
+	c6 : STRING
 }
 
 src_field_operator_hst{
@@ -2721,7 +2785,12 @@ src_field_operator_hst{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING,
+	c12 : STRING
 }
 
 src_wellbore_core{
@@ -2729,16 +2798,14 @@ src_wellbore_core{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_facility_fixed{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c2 : STRING
 }
 
 src_bsns_arr_area_licensee_hst{
@@ -2751,16 +2818,14 @@ src_bsns_arr_area_licensee_hst{
 	c6 : STRING,
 	c7 : STRING,
 	c8 : STRING,
-	c9 : STRING
+	c9 : STRING,
+	c10 : STRING
 }
 
 src_wellbore_oil_sample{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c2 : STRING
 }
 
 src_field_licensee_hst{
@@ -2800,8 +2865,7 @@ src_wellbore_shallow_all{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c5 : STRING
 }
 
 src_licence_licensee_hst{
@@ -2826,8 +2890,7 @@ src_seaArea{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c8 : STRING
 }
 
 src_seaArea{
@@ -2835,7 +2898,9 @@ src_seaArea{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_wellbore_development_all{
@@ -2843,16 +2908,14 @@ src_wellbore_development_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
 }
 
 src_wellbore_formation_top{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
+	c3 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -2860,9 +2923,7 @@ src_wellbore_exploration_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c4 : STRING
 }
 
 src_tuf_owner_hst{
@@ -2880,7 +2941,9 @@ src_tuf_petreg_message{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_pipLine{
@@ -2889,9 +2952,7 @@ src_pipLine{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c5 : STRING
 }
 
 src_company_reserves{
@@ -2904,7 +2965,10 @@ src_company_reserves{
 	c6 : STRING,
 	c7 : STRING,
 	c8 : STRING,
-	c9 : STRING
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING,
+	c12 : STRING
 }
 
 src_wellbore_npdid_overview{
@@ -2920,10 +2984,7 @@ src_facility_fixed{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c3 : STRING
 }
 
 src_wellbore_development_all{
@@ -2932,9 +2993,7 @@ src_wellbore_development_all{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c5 : STRING
 }
 
 src_wellbore_development_all{
@@ -2942,10 +3001,7 @@ src_wellbore_development_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c4 : STRING
 }
 
 src_company_reserves{
@@ -2955,7 +3011,10 @@ src_company_reserves{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_wellbore_core_photo{
@@ -2967,25 +3026,23 @@ src_wellbore_core_photo{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_licence_petreg_licence{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
 }
 
 src_wellbore_exploration_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
+	c3 : STRING
 }
 
 src_bsns_arr_area_area_poly_hst{
@@ -2997,8 +3054,7 @@ src_bsns_arr_area_area_poly_hst{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c8 : STRING
 }
 
 src_seis_acquisition{
@@ -3008,10 +3064,7 @@ src_seis_acquisition{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c6 : STRING
 }
 
 src_licence{
@@ -3032,17 +3085,14 @@ src_tuf_operator_hst{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c8 : STRING
 }
 
 src_wellbore_development_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c3 : STRING
 }
 
 src_field_operator_hst{
@@ -3068,7 +3118,9 @@ src_wellbore_dst{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_tuf_owner_hst{
@@ -3079,7 +3131,9 @@ src_tuf_owner_hst{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_wellbore_development_all{
@@ -3094,81 +3148,10 @@ src_wellbore_development_all{
 
 src_discovery_reserves{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c1 : STRING
 }
 
 src_seis_acquisition{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_licence{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_wellbore_npdid_overview{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_wellbore_shallow_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_wellbore_core{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_wellbore_coordinates{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_wellbore_dst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_wellbore_formation_top{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -3178,117 +3161,10 @@ src_wellbore_formation_top{
 	c6 : STRING,
 	c7 : STRING,
 	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
-}
-
-src_facility_fixed{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_wellbore_coordinates{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_bsns_arr_area{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c9 : STRING
 }
 
 src_licence{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
-}
-
-src_facility_fixed{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_facility_fixed{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_tuf_operator_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_wellbore_coordinates{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
-}
-
-src_wellbore_dst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
-}
-
-src_seaArea{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_tuf_petreg_licence_oper{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_prlArea{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -3303,8 +3179,165 @@ src_wellbore_npdid_overview{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
+	c4 : STRING
+}
+
+src_wellbore_shallow_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING
+}
+
+src_wellbore_core{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
+}
+
+src_wellbore_coordinates{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_wellbore_dst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_wellbore_formation_top{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_facility_fixed{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING
+}
+
+src_wellbore_coordinates{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_bsns_arr_area{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
+}
+
+src_licence{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_facility_fixed{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_facility_fixed{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_tuf_operator_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_wellbore_coordinates{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
+}
+
+src_wellbore_dst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
+}
+
+src_seaArea{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_tuf_petreg_licence_oper{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_prlArea{
@@ -3318,6 +3351,26 @@ src_prlArea{
 	c7 : STRING,
 	c8 : STRING,
 	c9 : STRING
+}
+
+src_wellbore_npdid_overview{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_prlArea{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_strat_litho_wellbore{
@@ -3337,14 +3390,16 @@ src_wellbore_development_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING
 }
 
 src_licence{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING
 }
 
 src_wellbore_dst{
@@ -3353,7 +3408,10 @@ src_wellbore_dst{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_prlAreaSplitByBlock{
@@ -3374,13 +3432,17 @@ src_field{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_facility_fixed{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_wellbore_dst{
@@ -3400,7 +3462,10 @@ src_field_production_yearly{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_wellbore_development_all{
@@ -3408,25 +3473,13 @@ src_wellbore_development_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
 }
 
 src_seaMultiline{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_wellbore_exploration_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
+	c2 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -3434,6 +3487,15 @@ src_wellbore_exploration_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_strat_litho_wellbore{
@@ -3446,8 +3508,7 @@ src_strat_litho_wellbore{
 	c6 : STRING,
 	c7 : STRING,
 	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
+	c9 : STRING
 }
 
 src_wellbore_core{
@@ -3466,7 +3527,8 @@ src_wellbore_exploration_all{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_facility_fixed{
@@ -3484,7 +3546,10 @@ src_licence_area_poly_hst{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_discovery_reserves{
@@ -3495,7 +3560,10 @@ src_discovery_reserves{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
 }
 
 src_fldArea{
@@ -3505,9 +3573,7 @@ src_fldArea{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
+	c6 : STRING
 }
 
 src_wellbore_oil_sample{
@@ -3517,9 +3583,7 @@ src_wellbore_oil_sample{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
+	c6 : STRING
 }
 
 src_facility_moveable{
@@ -3527,8 +3591,7 @@ src_facility_moveable{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
 }
 
 src_licence{
@@ -3536,7 +3599,8 @@ src_licence{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_wellbore_shallow_all{
@@ -3544,8 +3608,7 @@ src_wellbore_shallow_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
 }
 
 src_field{
@@ -3558,18 +3621,12 @@ src_field{
 	c6 : STRING,
 	c7 : STRING,
 	c8 : STRING,
-	c9 : STRING
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING
 }
 
 src_facility_moveable{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_wellbore_shallow_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -3584,6 +3641,15 @@ src_wellbore_shallow_all{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING
+}
+
+src_wellbore_shallow_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_seaArea{
@@ -3609,8 +3675,7 @@ src_prlAreaSplitByBlock{
 	c6 : STRING,
 	c7 : STRING,
 	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
+	c9 : STRING
 }
 
 src_field_operator_hst{
@@ -3630,7 +3695,8 @@ src_wellbore_exploration_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING
 }
 
 src_apaAreaNet{
@@ -3642,8 +3708,7 @@ src_apaAreaNet{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c8 : STRING
 }
 
 src_wellbore_document{
@@ -3654,10 +3719,7 @@ src_wellbore_document{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
+	c7 : STRING
 }
 
 src_wellbore_development_all{
@@ -3665,8 +3727,7 @@ src_wellbore_development_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
 }
 
 src_tuf_operator_hst{
@@ -3676,7 +3737,8 @@ src_tuf_operator_hst{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_licence_petreg_licence{
@@ -3695,7 +3757,9 @@ src_field_production_monthly{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -3709,10 +3773,7 @@ src_wellbore_exploration_all{
 src_pipLine{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c2 : STRING
 }
 
 src_company_reserves{
@@ -3721,9 +3782,7 @@ src_company_reserves{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c5 : STRING
 }
 
 src_bsns_arr_area_licensee_hst{
@@ -3734,9 +3793,7 @@ src_bsns_arr_area_licensee_hst{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c7 : STRING
 }
 
 src_prlAreaSplitByBlock{
@@ -3768,10 +3825,7 @@ src_seaMultiline{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c3 : STRING
 }
 
 src_tuf_petreg_message{
@@ -3782,7 +3836,10 @@ src_tuf_petreg_message{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
 }
 
 src_wellbore_development_all{
@@ -3790,7 +3847,8 @@ src_wellbore_development_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_wellbore_casing_and_lot{
@@ -3800,10 +3858,7 @@ src_wellbore_casing_and_lot{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c6 : STRING
 }
 
 src_bsns_arr_area_transfer_hst{
@@ -3816,7 +3871,9 @@ src_bsns_arr_area_transfer_hst{
 	c6 : STRING,
 	c7 : STRING,
 	c8 : STRING,
-	c9 : STRING
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING
 }
 
 src_wellbore_mud{
@@ -3834,7 +3891,12 @@ src_wellbore_exploration_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_field_production_monthly{
@@ -3846,9 +3908,7 @@ src_field_production_monthly{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
+	c8 : STRING
 }
 
 src_wellbore_mud{
@@ -3865,17 +3925,14 @@ src_wellbore_exploration_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_facility_moveable{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c2 : STRING
 }
 
 src_field_operator_hst{
@@ -3885,7 +3942,8 @@ src_field_operator_hst{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_facility_fixed{
@@ -3894,12 +3952,7 @@ src_facility_fixed{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
+	c5 : STRING
 }
 
 src_wellbore_coordinates{
@@ -3908,8 +3961,7 @@ src_wellbore_coordinates{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c5 : STRING
 }
 
 src_wellbore_shallow_all{
@@ -3919,7 +3971,8 @@ src_wellbore_shallow_all{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_bsns_arr_area{
@@ -3927,9 +3980,7 @@ src_bsns_arr_area{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c4 : STRING
 }
 
 src_field_investment_yearly{
@@ -3955,8 +4006,7 @@ src_field_reserves{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c5 : STRING
 }
 
 src_seis_acquisition{
@@ -3964,7 +4014,10 @@ src_seis_acquisition{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_wellbore_dst{
@@ -3983,33 +4036,6 @@ src_bsns_arr_area{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
-}
-
-src_wellbore_exploration_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
-}
-
-src_discovery_reserves{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
-}
-
-src_wellbore_shallow_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING
 }
@@ -4021,7 +4047,36 @@ src_wellbore_exploration_all{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_discovery_reserves{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
+}
+
+src_wellbore_shallow_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_strat_litho_wellbore{
@@ -4032,7 +4087,8 @@ src_strat_litho_wellbore{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_company_reserves{
@@ -4044,8 +4100,7 @@ src_company_reserves{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c8 : STRING
 }
 
 src_seis_acquisition{
@@ -4053,7 +4108,8 @@ src_seis_acquisition{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_wellbore_shallow_all{
@@ -4083,18 +4139,14 @@ src_field_licensee_hst{
 	c6 : STRING,
 	c7 : STRING,
 	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
+	c9 : STRING
 }
 
 src_facility_fixed{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c3 : STRING
 }
 
 src_wellbore_shallow_all{
@@ -4102,10 +4154,23 @@ src_wellbore_shallow_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_wellbore_core_photo{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_strat_litho_wellbore_core{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -4118,17 +4183,6 @@ src_wellbore_core_photo{
 	c9 : STRING
 }
 
-src_strat_litho_wellbore_core{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
 src_licence_transfer_hst{
 	c0 : STRING,
 	c1 : STRING,
@@ -4138,7 +4192,9 @@ src_licence_transfer_hst{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
 }
 
 src_facility_fixed{
@@ -4156,19 +4212,17 @@ src_field_production_totalt_NCS_year{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_wellbore_shallow_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
+	c3 : STRING
 }
 
 src_strat_litho_wellbore{
@@ -4197,7 +4251,8 @@ src_facility_fixed{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_wellbore_formation_top{
@@ -4205,7 +4260,9 @@ src_wellbore_formation_top{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_field{
@@ -4215,10 +4272,7 @@ src_field{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c6 : STRING
 }
 
 src_wellbore_dst{
@@ -4228,7 +4282,8 @@ src_wellbore_dst{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_wellbore_formation_top{
@@ -4247,16 +4302,16 @@ src_wellbore_development_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c4 : STRING
 }
 
 src_seaMultiline{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -4275,7 +4330,8 @@ src_seaArea{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_field{
@@ -4299,1122 +4355,6 @@ src_field_licensee_hst{
 }
 
 src_prlAreaSplitByBlock{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
-}
-
-src_wellbore_dst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_tuf_operator_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_bsns_arr_area_transfer_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
-}
-
-src_bsns_arr_area{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_licence_area_poly_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
-}
-
-src_fclPoint{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_facility_moveable{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
-}
-
-src_wellbore_exploration_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_field_production_totalt_NCS_month{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
-}
-
-src_wellbore_shallow_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_facility_fixed{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_licence_oper_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
-}
-
-src_licence_petreg_message{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_licence{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_wellbore_mud{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_wellbore_formation_top{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_field_reserves{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_wellbore_formation_top{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_facility_fixed{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_facility_fixed{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_facility_fixed{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_tuf_owner_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
-}
-
-src_licence_licensee_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
-}
-
-src_facility_fixed{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_seis_acquisition{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_licence_area_poly_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
-}
-
-src_wellbore_mud{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_facility_fixed{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_bsns_arr_area{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_company_reserves{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
-}
-
-src_bsns_arr_area_area_poly_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_baaArea{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_wellbore_coordinates{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_seis_acquisition_progress{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_field_production_yearly{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_licence_task{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_licence{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_field_production_yearly{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
-}
-
-src_seis_acquisition{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_wellbore_exploration_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_wellbore_core{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_facility_fixed{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_company_reserves{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_licence_licensee_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
-}
-
-src_strat_litho_wellbore_core{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_wellbore_core{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
-}
-
-src_prlArea{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
-}
-
-src_company_reserves{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
-}
-
-src_wellbore_formation_top{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
-}
-
-src_licence_petreg_licence{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_tuf_owner_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
-}
-
-src_field_production_totalt_NCS_month{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_company_reserves{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_wellbore_exploration_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_licence_petreg_licence_licencee{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_licence_licensee_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
-}
-
-src_wellbore_shallow_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_field_reserves{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
-}
-
-src_bsns_arr_area_licensee_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_wellbore_shallow_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
-}
-
-src_licence_oper_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_field_production_yearly{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_wellbore_shallow_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_field_activity_status_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_field_owner_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
-}
-
-src_tuf_owner_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
-}
-
-src_licence{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_facility_fixed{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_bsns_arr_area_transfer_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_field_investment_yearly{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_discovery{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
-}
-
-src_bsns_arr_area_operator{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
-}
-
-src_wellbore_shallow_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
-}
-
-src_tuf_petreg_message{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_company{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_wellbore_core{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_prlArea{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING
-}
-
-src_licence_petreg_message{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_wellbore_exploration_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_licence{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_field_investment_yearly{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_wellbore_exploration_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
-}
-
-src_tuf_owner_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_facility_fixed{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
-}
-
-src_tuf_petreg_message{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_tuf_petreg_licence_licencee{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_facility_moveable{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
-}
-
-src_field_owner_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
-}
-
-src_facility_fixed{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_tuf_petreg_licence{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_licence_petreg_licence_oper{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_licence_petreg_message{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_wellbore_shallow_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_licence_area_poly_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
-}
-
-src_wellbore_shallow_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
-}
-
-src_field_licensee_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING
-}
-
-src_licence{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_wellbore_coordinates{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
-}
-
-src_field_operator_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_field_licensee_hst{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -5430,7 +4370,55 @@ src_field_licensee_hst{
 	c12 : STRING
 }
 
-src_bsns_arr_area_area_poly_hst{
+src_wellbore_dst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_tuf_operator_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_bsns_arr_area_transfer_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_bsns_arr_area{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_licence_area_poly_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
+}
+
+src_fclPoint{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -5440,7 +4428,127 @@ src_bsns_arr_area_area_poly_hst{
 	c6 : STRING
 }
 
-src_tuf_petreg_licence{
+src_facility_moveable{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING
+}
+
+src_field_production_totalt_NCS_month{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_wellbore_shallow_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_facility_fixed{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_licence_oper_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
+}
+
+src_licence_petreg_message{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_licence{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
+}
+
+src_wellbore_mud{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_wellbore_formation_top{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
+}
+
+src_field_reserves{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_wellbore_formation_top{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_wellbore_development_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -5449,6 +4557,452 @@ src_tuf_petreg_licence{
 }
 
 src_facility_fixed{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_facility_fixed{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_facility_fixed{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_tuf_owner_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_licence_licensee_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_facility_fixed{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_seis_acquisition{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_licence_area_poly_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_wellbore_mud{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING,
+	c12 : STRING
+}
+
+src_facility_fixed{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_bsns_arr_area{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_company_reserves{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_bsns_arr_area_area_poly_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING,
+	c12 : STRING,
+	c13 : STRING
+}
+
+src_baaArea{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_wellbore_coordinates{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_seis_acquisition_progress{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_wellbore_development_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_field_production_yearly{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_licence_task{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_licence{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_field_production_yearly{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_seis_acquisition{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_wellbore_core{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_facility_fixed{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_company_reserves{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_licence_licensee_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING
+}
+
+src_strat_litho_wellbore_core{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_wellbore_core{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_prlArea{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
+}
+
+src_company_reserves{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
+}
+
+src_wellbore_formation_top{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
+}
+
+src_licence_petreg_licence{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_tuf_owner_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
+}
+
+src_field_production_totalt_NCS_month{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_company_reserves{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_licence_petreg_licence_licencee{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_licence_licensee_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
+}
+
+src_wellbore_shallow_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_field_reserves{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
+}
+
+src_bsns_arr_area_licensee_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
+}
+
+src_wellbore_shallow_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
+}
+
+src_licence_oper_hst{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -5467,25 +5021,51 @@ src_wellbore_development_all{
 	c5 : STRING
 }
 
-src_wellbore_exploration_all{
+src_field_production_yearly{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
 }
 
-src_field_production_monthly{
+src_wellbore_shallow_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_field_activity_status_hst{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
 }
 
-src_bsns_arr_area_transfer_hst{
+src_wellbore_development_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_field_owner_hst{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -5497,7 +5077,18 @@ src_bsns_arr_area_transfer_hst{
 	c8 : STRING
 }
 
-src_facility_fixed{
+src_tuf_owner_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
+}
+
+src_licence{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -5506,10 +5097,461 @@ src_facility_fixed{
 	c5 : STRING
 }
 
-src_wellbore_shallow_all{
+src_facility_fixed{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING
+}
+
+src_wellbore_development_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_bsns_arr_area_transfer_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
+}
+
+src_field_investment_yearly{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_discovery{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
+}
+
+src_bsns_arr_area_operator{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_wellbore_development_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING
+}
+
+src_wellbore_shallow_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_tuf_petreg_message{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_company{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_wellbore_core{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
+}
+
+src_prlArea{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_licence_petreg_message{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_licence{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_wellbore_development_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_field_investment_yearly{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_tuf_owner_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_facility_fixed{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_tuf_petreg_message{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_tuf_petreg_licence_licencee{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_facility_moveable{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_field_owner_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
+}
+
+src_facility_fixed{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_tuf_petreg_licence{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_licence_petreg_licence_oper{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
+}
+
+src_wellbore_development_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_licence_petreg_message{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
+}
+
+src_wellbore_shallow_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_licence_area_poly_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING
+}
+
+src_wellbore_shallow_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_field_licensee_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_licence{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_wellbore_coordinates{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_field_operator_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING,
+	c12 : STRING,
+	c13 : STRING
+}
+
+src_wellbore_development_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_field_licensee_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_bsns_arr_area_area_poly_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_tuf_petreg_licence{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_facility_fixed{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING
+}
+
+src_wellbore_development_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
+}
+
+src_field_production_monthly{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_bsns_arr_area_transfer_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_facility_fixed{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_wellbore_shallow_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_wellbore_coordinates{
@@ -5528,15 +5570,15 @@ src_seis_acquisition{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c6 : STRING
 }
 
 src_seaMultiline{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING
 }
 
 src_baaArea{
@@ -5544,16 +5586,17 @@ src_baaArea{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c4 : STRING
 }
 
 src_seis_acquisition{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_discovery_reserves{
@@ -5572,11 +5615,7 @@ src_licence_petreg_licence{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
+	c4 : STRING
 }
 
 src_field_operator_hst{
@@ -5586,7 +5625,9 @@ src_field_operator_hst{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_seaArea{
@@ -5595,7 +5636,8 @@ src_seaArea{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_tuf_petreg_licence_oper{
@@ -5612,7 +5654,8 @@ src_seis_acquisition{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_licence_task{
@@ -5622,19 +5665,14 @@ src_licence_task{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
+	c6 : STRING
 }
 
 src_facility_fixed{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c3 : STRING
 }
 
 src_licence{
@@ -5667,7 +5705,9 @@ src_licence{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_wellbore_document{
@@ -5676,7 +5716,12 @@ src_wellbore_document{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
 }
 
 src_licence_oper_hst{
@@ -5687,9 +5732,7 @@ src_licence_oper_hst{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c7 : STRING
 }
 
 src_licence{
@@ -5699,16 +5742,13 @@ src_licence{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c6 : STRING
 }
 
 src_wellbore_exploration_all{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
+	c2 : STRING
 }
 
 src_facility_fixed{
@@ -5716,8 +5756,7 @@ src_facility_fixed{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
 }
 
 src_seis_acquisition{
@@ -5731,9 +5770,7 @@ src_facility_fixed{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c3 : STRING
 }
 
 src_company_reserves{
@@ -5744,9 +5781,7 @@ src_company_reserves{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c7 : STRING
 }
 
 src_prlArea{
@@ -5757,7 +5792,8 @@ src_prlArea{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_strat_litho_wellbore{
@@ -5786,7 +5822,10 @@ src_wellbore_casing_and_lot{
 
 src_wellbore_formation_top{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
 }
 
 src_bsns_arr_area_transfer_hst{
@@ -5797,7 +5836,11 @@ src_bsns_arr_area_transfer_hst{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING
 }
 
 src_licence_oper_hst{
@@ -5809,14 +5852,18 @@ src_licence_oper_hst{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c8 : STRING
 }
 
 src_licence{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_licence_area_poly_hst{
@@ -5829,7 +5876,8 @@ src_licence_area_poly_hst{
 	c6 : STRING,
 	c7 : STRING,
 	c8 : STRING,
-	c9 : STRING
+	c9 : STRING,
+	c10 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -5839,11 +5887,7 @@ src_wellbore_exploration_all{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
+	c6 : STRING
 }
 
 src_wellbore_formation_top{
@@ -5855,18 +5899,14 @@ src_wellbore_formation_top{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
+	c8 : STRING
 }
 
 src_field{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c3 : STRING
 }
 
 src_wellbore_coordinates{
@@ -5874,7 +5914,9 @@ src_wellbore_coordinates{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_field_reserves{
@@ -5882,7 +5924,10 @@ src_field_reserves{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_baaArea{
@@ -5892,17 +5937,15 @@ src_baaArea{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_bsns_arr_area{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c3 : STRING
 }
 
 src_bsns_arr_area_area_poly_hst{
@@ -5914,8 +5957,7 @@ src_bsns_arr_area_area_poly_hst{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c8 : STRING
 }
 
 src_licence{
@@ -5936,7 +5978,10 @@ src_wellbore_development_all{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -5945,7 +5990,8 @@ src_wellbore_exploration_all{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_discovery_reserves{
@@ -5957,7 +6003,8 @@ src_discovery_reserves{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_seis_acquisition_progress{
@@ -5977,7 +6024,8 @@ src_company{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_tuf_petreg_licence{
@@ -5986,35 +6034,12 @@ src_tuf_petreg_licence{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_wellbore_exploration_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_seis_acquisition{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_seis_acquisition{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_seaArea{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -6027,7 +6052,7 @@ src_seaArea{
 	c9 : STRING
 }
 
-src_wellbore_casing_and_lot{
+src_seis_acquisition{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -6037,14 +6062,45 @@ src_wellbore_casing_and_lot{
 	c6 : STRING
 }
 
-src_pipLine{
+src_seis_acquisition{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_seaArea{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_wellbore_casing_and_lot{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
+}
+
+src_pipLine{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_wellbore_document{
@@ -6064,10 +6120,7 @@ src_seaMultiline{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c3 : STRING
 }
 
 src_field_production_totalt_NCS_year{
@@ -6085,7 +6138,9 @@ src_company_reserves{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_bsns_arr_area_transfer_hst{
@@ -6111,30 +6166,18 @@ src_company{
 	c6 : STRING,
 	c7 : STRING,
 	c8 : STRING,
-	c9 : STRING
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING
 }
 
 src_wellbore_core{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
+	c2 : STRING
 }
 
 src_seis_acquisition_coordinates_inc_turnarea{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
-}
-
-src_field_licensee_hst{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -6148,26 +6191,7 @@ src_field_licensee_hst{
 	c10 : STRING
 }
 
-src_wellbore_casing_and_lot{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_company{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_wellbore_exploration_all{
+src_field_licensee_hst{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -6175,20 +6199,31 @@ src_wellbore_exploration_all{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
-src_licence_task{
+src_wellbore_casing_and_lot{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
-src_wellbore_development_all{
+src_company{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING
+}
+
+src_wellbore_exploration_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -6196,13 +6231,26 @@ src_wellbore_development_all{
 	c4 : STRING
 }
 
-src_wellbore_shallow_all{
+src_licence_task{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
+}
+
+src_wellbore_development_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_wellbore_shallow_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
 }
 
 src_licence_phase_hst{
@@ -6215,7 +6263,10 @@ src_licence_phase_hst{
 	c6 : STRING,
 	c7 : STRING,
 	c8 : STRING,
-	c9 : STRING
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING,
+	c12 : STRING
 }
 
 src_wellbore_core{
@@ -6257,7 +6308,9 @@ src_discovery{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_prlArea{
@@ -6272,10 +6325,7 @@ src_prlArea{
 	c8 : STRING,
 	c9 : STRING,
 	c10 : STRING,
-	c11 : STRING,
-	c12 : STRING,
-	c13 : STRING,
-	c14 : STRING
+	c11 : STRING
 }
 
 src_licence_transfer_hst{
@@ -6286,60 +6336,11 @@ src_licence_transfer_hst{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_wellbore_dst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
-}
-
-src_licence_task{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_wellbore_oil_sample{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_field_production_totalt_NCS_month{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -6353,17 +6354,34 @@ src_field_production_totalt_NCS_month{
 	c10 : STRING
 }
 
-src_field_production_yearly{
+src_licence_task{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
 }
 
-src_bsns_arr_area_operator{
+src_wellbore_oil_sample{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING
+}
+
+src_wellbore_development_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -6371,7 +6389,7 @@ src_bsns_arr_area_operator{
 	c4 : STRING
 }
 
-src_wellbore_exploration_all{
+src_wellbore_development_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -6382,14 +6400,51 @@ src_wellbore_exploration_all{
 	c7 : STRING
 }
 
-src_facility_moveable{
+src_field_production_totalt_NCS_month{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING
+}
+
+src_field_production_yearly{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_bsns_arr_area_operator{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_facility_moveable{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_licence{
@@ -6398,8 +6453,7 @@ src_licence{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c5 : STRING
 }
 
 src_licence_transfer_hst{
@@ -6421,7 +6475,11 @@ src_wellbore_core{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING
 }
 
 src_field_activity_status_hst{
@@ -6450,7 +6508,8 @@ src_tuf_petreg_licence{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING
 }
 
 src_field{
@@ -6465,31 +6524,17 @@ src_wellbore_shallow_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c4 : STRING
 }
 
 src_wellbore_exploration_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c3 : STRING
 }
 
 src_apaAreaGross{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_discovery{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -6500,7 +6545,7 @@ src_discovery{
 	c7 : STRING
 }
 
-src_bsns_arr_area{
+src_discovery{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -6508,11 +6553,21 @@ src_bsns_arr_area{
 	c4 : STRING
 }
 
-src_wellbore_exploration_all{
+src_bsns_arr_area{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_pipLine{
@@ -6541,12 +6596,7 @@ src_discovery{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
+	c3 : STRING
 }
 
 src_facility_fixed{
@@ -6563,10 +6613,7 @@ src_wellbore_shallow_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c4 : STRING
 }
 
 src_tuf_petreg_licence{
@@ -6578,14 +6625,10 @@ src_tuf_petreg_licence{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
-}
-
-src_discovery{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING
 }
 
 src_discovery{
@@ -6596,14 +6639,19 @@ src_discovery{
 	c4 : STRING
 }
 
+src_discovery{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
 src_wellbore_exploration_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c4 : STRING
 }
 
 src_wellbore_development_all{
@@ -6622,18 +6670,14 @@ src_field_operator_hst{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
+	c7 : STRING
 }
 
 src_tuf_petreg_licence{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
+	c3 : STRING
 }
 
 src_seaMultiline{
@@ -6651,11 +6695,20 @@ src_field_production_totalt_NCS_year{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c6 : STRING
 }
 
 src_pipLine{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_wellbore_exploration_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -6669,30 +6722,14 @@ src_wellbore_exploration_all{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_wellbore_exploration_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c5 : STRING
 }
 
 src_fclPoint{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c3 : STRING
 }
 
 src_discovery_reserves{
@@ -6703,9 +6740,7 @@ src_discovery_reserves{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c7 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -6714,7 +6749,8 @@ src_wellbore_exploration_all{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_seaArea{
@@ -6733,7 +6769,9 @@ src_bsns_arr_area{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_licence_area_poly_hst{
@@ -6745,7 +6783,8 @@ src_licence_area_poly_hst{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_prlAreaSplitByBlock{
@@ -6771,8 +6810,7 @@ src_field_production_totalt_NCS_month{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c8 : STRING
 }
 
 src_licence_area_poly_hst{
@@ -6784,7 +6822,69 @@ src_licence_area_poly_hst{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
+}
+
+src_licence_transfer_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
+}
+
+src_wellbore_npdid_overview{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
 	c8 : STRING
+}
+
+src_wellbore_development_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_seis_acquisition{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_field_owner_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_licence_transfer_hst{
@@ -6800,18 +6900,7 @@ src_licence_transfer_hst{
 	c9 : STRING
 }
 
-src_wellbore_npdid_overview{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_wellbore_development_all{
+src_licence_task{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -6821,32 +6910,8 @@ src_wellbore_development_all{
 	c6 : STRING,
 	c7 : STRING,
 	c8 : STRING,
-	c9 : STRING
-}
-
-src_wellbore_exploration_all{
-	c0 : STRING,
-	c1 : STRING
-}
-
-src_seis_acquisition{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
-}
-
-src_field_owner_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c9 : STRING,
+	c10 : STRING
 }
 
 src_licence_transfer_hst{
@@ -6860,32 +6925,7 @@ src_licence_transfer_hst{
 	c7 : STRING,
 	c8 : STRING,
 	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING
-}
-
-src_licence_task{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_licence_transfer_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c10 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -6913,7 +6953,8 @@ src_seis_acquisition_coordinates_inc_turnarea{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_seaMultiline{
@@ -6921,7 +6962,8 @@ src_seaMultiline{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_field_reserves{
@@ -6944,16 +6986,17 @@ src_bsns_arr_area{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c4 : STRING
 }
 
 src_wellbore_shallow_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_wellbore_development_all{
@@ -6961,7 +7004,9 @@ src_wellbore_development_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_field{
@@ -6979,26 +7024,35 @@ src_wellbore_exploration_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_wellbore_npdid_overview{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING
 }
 
 src_field_production_totalt_NCS_month{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_field_reserves{
 	c0 : STRING,
-	c1 : STRING
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
 }
 
 src_licence_licensee_hst{
@@ -7010,9 +7064,7 @@ src_licence_licensee_hst{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
+	c8 : STRING
 }
 
 src_licence_petreg_licence_oper{
@@ -7020,10 +7072,7 @@ src_licence_petreg_licence_oper{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c4 : STRING
 }
 
 src_wellbore_formation_top{
@@ -7031,12 +7080,15 @@ src_wellbore_formation_top{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c4 : STRING
+}
+
+src_wellbore_shallow_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
 }
 
 src_wellbore_shallow_all{
@@ -7045,14 +7097,8 @@ src_wellbore_shallow_all{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
-}
-
-src_wellbore_shallow_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_field_reserves{
@@ -7063,7 +7109,8 @@ src_field_reserves{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_wellbore_shallow_all{
@@ -7072,7 +7119,8 @@ src_wellbore_shallow_all{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_baaArea{
@@ -7084,8 +7132,7 @@ src_baaArea{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c8 : STRING
 }
 
 src_seis_acquisition_coordinates_inc_turnarea{
@@ -7107,10 +7154,7 @@ src_licence{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
+	c7 : STRING
 }
 
 src_licence_phase_hst{
@@ -7122,7 +7166,10 @@ src_licence_phase_hst{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING
 }
 
 src_wellbore_npdid_overview{
@@ -7130,16 +7177,14 @@ src_wellbore_npdid_overview{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_facility_fixed{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c2 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -7148,8 +7193,7 @@ src_wellbore_exploration_all{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c5 : STRING
 }
 
 src_wellbore_shallow_all{
@@ -7157,18 +7201,12 @@ src_wellbore_shallow_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c4 : STRING
 }
 
 src_wellbore_exploration_all{
 	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c1 : STRING
 }
 
 src_facility_fixed{
@@ -7176,8 +7214,7 @@ src_facility_fixed{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
 }
 
 src_licence_transfer_hst{
@@ -7188,7 +7225,8 @@ src_licence_transfer_hst{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_strat_litho_wellbore_core{
@@ -7209,49 +7247,10 @@ src_seaMultiline{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c5 : STRING
 }
 
 src_wellbore_oil_sample{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_field_production_monthly{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_wellbore_dst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_discovery_reserves{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -7264,7 +7263,13 @@ src_discovery_reserves{
 	c9 : STRING
 }
 
-src_apaAreaNet{
+src_wellbore_development_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING
+}
+
+src_field_production_monthly{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -7275,6 +7280,46 @@ src_apaAreaNet{
 	c7 : STRING
 }
 
+src_wellbore_dst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
+}
+
+src_discovery_reserves{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_apaAreaNet{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
+}
+
 src_licence_task{
 	c0 : STRING,
 	c1 : STRING,
@@ -7282,16 +7327,15 @@ src_licence_task{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_facility_fixed{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c3 : STRING
 }
 
 src_wellbore_development_all{
@@ -7300,8 +7344,7 @@ src_wellbore_development_all{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c5 : STRING
 }
 
 src_company_reserves{
@@ -7312,7 +7355,8 @@ src_company_reserves{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_licence_task{
@@ -7330,7 +7374,9 @@ src_wellbore_exploration_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_facility_fixed{
@@ -7338,10 +7384,7 @@ src_facility_fixed{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c4 : STRING
 }
 
 src_facility_fixed{
@@ -7358,10 +7401,73 @@ src_tuf_owner_hst{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_wellbore_development_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_prlAreaSplitByBlock{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_licence_oper_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_field_production_totalt_NCS_month{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_facility_fixed{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_pipLine{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_company{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -7372,7 +7478,7 @@ src_wellbore_development_all{
 	c7 : STRING
 }
 
-src_prlAreaSplitByBlock{
+src_wellbore_exploration_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -7386,59 +7492,14 @@ src_prlAreaSplitByBlock{
 	c10 : STRING
 }
 
-src_licence_oper_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_field_production_totalt_NCS_month{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_facility_fixed{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_pipLine{
+src_field_reserves{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING
 }
 
-src_company{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
-}
-
-src_wellbore_exploration_all{
+src_pipLine{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -7447,31 +7508,13 @@ src_wellbore_exploration_all{
 	c5 : STRING
 }
 
-src_field_reserves{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_pipLine{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
 src_discovery{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_licence_area_poly_hst{
@@ -7492,7 +7535,9 @@ src_pipLine{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_bsns_arr_area_area_poly_hst{
@@ -7516,8 +7561,7 @@ src_apaAreaNet{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c8 : STRING
 }
 
 src_wellbore_development_all{
@@ -7539,7 +7583,8 @@ src_licence_task{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_wellbore_formation_top{
@@ -7547,7 +7592,17 @@ src_wellbore_formation_top{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -7556,12 +7611,6 @@ src_wellbore_exploration_all{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING
-}
-
-src_wellbore_exploration_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
 }
 
 src_licence_petreg_message{
@@ -7570,10 +7619,7 @@ src_licence_petreg_message{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
+	c5 : STRING
 }
 
 src_company{
@@ -7581,9 +7627,7 @@ src_company{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c4 : STRING
 }
 
 src_strat_litho_wellbore{
@@ -7594,7 +7638,9 @@ src_strat_litho_wellbore{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_tuf_petreg_licence_oper{
@@ -7602,7 +7648,12 @@ src_tuf_petreg_licence_oper{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_discovery{
@@ -7624,7 +7675,8 @@ src_prlArea{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_discovery{
@@ -7632,26 +7684,11 @@ src_discovery{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_bsns_arr_area{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_wellbore_npdid_overview{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_wellbore_npdid_overview{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -7661,7 +7698,14 @@ src_wellbore_npdid_overview{
 	c6 : STRING
 }
 
-src_wellbore_dst{
+src_wellbore_npdid_overview{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_wellbore_npdid_overview{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -7669,11 +7713,16 @@ src_wellbore_dst{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING
+	c7 : STRING
+}
+
+src_wellbore_dst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_apaAreaNet{
@@ -7696,7 +7745,8 @@ src_wellbore_exploration_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -7704,7 +7754,8 @@ src_wellbore_exploration_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -7724,11 +7775,31 @@ src_wellbore_core_photo{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c6 : STRING
 }
 
 src_bsns_arr_area_transfer_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
+}
+
+src_strat_litho_wellbore_core{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_bsns_arr_area_area_poly_hst{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -7743,61 +7814,38 @@ src_bsns_arr_area_transfer_hst{
 	c11 : STRING
 }
 
-src_strat_litho_wellbore_core{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_bsns_arr_area_area_poly_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
-}
-
 src_facility_moveable{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c5 : STRING
 }
 
 src_tuf_owner_hst{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c3 : STRING
 }
 
 src_wellbore_development_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING
 }
 
 src_discovery{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_licence_area_poly_hst{
@@ -7818,12 +7866,17 @@ src_licence_petreg_message{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c3 : STRING
 }
 
 src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_facility_fixed{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -7840,21 +7893,7 @@ src_facility_fixed{
 	c5 : STRING
 }
 
-src_facility_fixed{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
 src_wellbore_exploration_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
-}
-
-src_discovery{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -7864,13 +7903,18 @@ src_discovery{
 	c6 : STRING
 }
 
+src_discovery{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
 src_licence{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c3 : STRING
 }
 
 src_wellbore_casing_and_lot{
@@ -7881,8 +7925,7 @@ src_wellbore_casing_and_lot{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
+	c7 : STRING
 }
 
 src_seaMultiline{
@@ -7890,9 +7933,71 @@ src_seaMultiline{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
+	c4 : STRING
+}
+
+src_seis_acquisition{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING
+}
+
+src_facility_fixed{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_facility_fixed{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING
+}
+
+src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_seis_acquisition{
@@ -7904,14 +8009,19 @@ src_seis_acquisition{
 	c5 : STRING
 }
 
-src_facility_fixed{
+src_tuf_petreg_message{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
 }
 
-src_wellbore_exploration_all{
+src_wlbPoint{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -7919,23 +8029,23 @@ src_wellbore_exploration_all{
 	c4 : STRING
 }
 
-src_wellbore_exploration_all{
+src_facility_moveable{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
 }
 
-src_facility_fixed{
+src_seaArea{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING
 }
 
-src_wellbore_exploration_all{
+src_wellbore_formation_top{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -7945,7 +8055,7 @@ src_wellbore_exploration_all{
 	c6 : STRING
 }
 
-src_wellbore_exploration_all{
+src_wellbore_development_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -7955,6 +8065,42 @@ src_wellbore_exploration_all{
 }
 
 src_wellbore_exploration_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING
+}
+
+src_company_reserves{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
+}
+
+src_wellbore_development_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_facility_fixed{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_tuf_petreg_licence_licencee{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -7967,128 +8113,19 @@ src_wellbore_exploration_all{
 	c9 : STRING
 }
 
-src_seis_acquisition{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
-}
-
-src_tuf_petreg_message{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_wlbPoint{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_facility_moveable{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_seaArea{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING
-}
-
-src_wellbore_formation_top{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_wellbore_exploration_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_company_reserves{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_facility_fixed{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
-}
-
-src_tuf_petreg_licence_licencee{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
 src_licence_petreg_licence_licencee{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c4 : STRING
 }
 
 src_wellbore_exploration_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c3 : STRING
 }
 
 src_seis_acquisition_coordinates_inc_turnarea{
@@ -8099,28 +8136,12 @@ src_seis_acquisition_coordinates_inc_turnarea{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_field_reserves{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_wellbore_formation_top{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -8131,11 +8152,38 @@ src_wellbore_formation_top{
 	c7 : STRING
 }
 
-src_wellbore_shallow_all{
+src_wellbore_development_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING
+}
+
+src_wellbore_formation_top{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING,
+	c12 : STRING,
+	c13 : STRING
+}
+
+src_wellbore_shallow_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -8150,7 +8198,9 @@ src_wellbore_shallow_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_licence_phase_hst{
@@ -8163,7 +8213,8 @@ src_licence_phase_hst{
 	c6 : STRING,
 	c7 : STRING,
 	c8 : STRING,
-	c9 : STRING
+	c9 : STRING,
+	c10 : STRING
 }
 
 src_tuf_petreg_message{
@@ -8181,7 +8232,8 @@ src_wellbore_coordinates{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_seis_acquisition{
@@ -8198,7 +8250,9 @@ src_licence_licensee_hst{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
 }
 
 src_wellbore_coordinates{
@@ -8216,9 +8270,7 @@ src_wellbore_exploration_all{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c5 : STRING
 }
 
 src_wellbore_coordinates{
@@ -8253,7 +8305,9 @@ src_wellbore_dst{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_wellbore_core{
@@ -8272,7 +8326,11 @@ src_wellbore_oil_sample{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
 }
 
 src_bsns_arr_area_transfer_hst{
@@ -8282,24 +8340,26 @@ src_bsns_arr_area_transfer_hst{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING
 }
 
 src_wellbore_npdid_overview{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c2 : STRING
 }
 
 src_field_production_totalt_NCS_year{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING
 }
 
 src_field_reserves{
@@ -8307,7 +8367,8 @@ src_field_reserves{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_tuf_petreg_licence{
@@ -8325,7 +8386,8 @@ src_facility_moveable{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_wellbore_development_all{
@@ -8342,8 +8404,7 @@ src_licence_petreg_licence_licencee{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c5 : STRING
 }
 
 src_wellbore_development_all{
@@ -8362,17 +8423,13 @@ src_field_production_monthly{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING
+	c8 : STRING
 }
 
 src_company{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c2 : STRING
 }
 
 src_field_production_monthly{
@@ -8393,25 +8450,23 @@ src_wellbore_mud{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c5 : STRING
 }
 
 src_seis_acquisition{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c3 : STRING
 }
 
 src_wellbore_development_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_wellbore_oil_sample{
@@ -8434,7 +8489,10 @@ src_licence_transfer_hst{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING
 }
 
 src_licence_petreg_licence_licencee{
@@ -8444,9 +8502,7 @@ src_licence_petreg_licence_licencee{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
+	c6 : STRING
 }
 
 src_wellbore_oil_sample{
@@ -8455,9 +8511,7 @@ src_wellbore_oil_sample{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c5 : STRING
 }
 
 src_bsns_arr_area_transfer_hst{
@@ -8466,18 +8520,13 @@ src_bsns_arr_area_transfer_hst{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
+	c5 : STRING
 }
 
 src_field{
 	c0 : STRING,
 	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
+	c2 : STRING
 }
 
 src_field{
@@ -8488,7 +8537,9 @@ src_field{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_bsns_arr_area_licensee_hst{
@@ -8509,24 +8560,23 @@ src_wellbore_development_all{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c4 : STRING
 }
 
 src_field{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c3 : STRING
 }
 
 src_wellbore_exploration_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -8543,9 +8593,7 @@ src_tuf_owner_hst{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c4 : STRING
 }
 
 src_prlAreaSplitByBlock{
@@ -8565,14 +8613,16 @@ src_wellbore_exploration_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING
 }
 
 src_field{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING
 }
 
 src_apaAreaNet{
@@ -8583,14 +8633,20 @@ src_apaAreaNet{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING
+	c7 : STRING
 }
 
 src_wellbore_mud{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_pipLine{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -8602,32 +8658,19 @@ src_wellbore_mud{
 	c8 : STRING
 }
 
-src_pipLine{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
 src_field_reserves{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c4 : STRING
 }
 
 src_licence_petreg_licence_oper{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING
+	c3 : STRING
 }
 
 src_facility_fixed{
@@ -8635,7 +8678,8 @@ src_facility_fixed{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING
 }
 
 src_company_reserves{
@@ -8646,7 +8690,10 @@ src_company_reserves{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING
 }
 
 src_licence{
@@ -8654,9 +8701,7 @@ src_licence{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c4 : STRING
 }
 
 src_licence_petreg_licence{
@@ -8671,19 +8716,14 @@ src_seis_acquisition{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c3 : STRING
 }
 
 src_facility_fixed{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c3 : STRING
 }
 
 src_field_activity_status_hst{
@@ -8695,10 +8735,7 @@ src_field_activity_status_hst{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING
+	c8 : STRING
 }
 
 src_bsns_arr_area_transfer_hst{
@@ -8709,11 +8746,7 @@ src_bsns_arr_area_transfer_hst{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING
+	c7 : STRING
 }
 
 src_wellbore_core{
@@ -8721,10 +8754,7 @@ src_wellbore_core{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c4 : STRING
 }
 
 src_tuf_operator_hst{
@@ -8735,15 +8765,18 @@ src_tuf_operator_hst{
 	c4 : STRING,
 	c5 : STRING,
 	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
+	c7 : STRING
 }
 
 src_wellbore_development_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_facility_fixed{
@@ -8759,9 +8792,7 @@ src_tuf_petreg_licence{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c3 : STRING
 }
 
 src_licence_licensee_hst{
@@ -8783,29 +8814,20 @@ src_wellbore_development_all{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
+	c3 : STRING
+}
+
+src_bsns_arr_area{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING
 }
 
 src_bsns_arr_area{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_bsns_arr_area{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
+	c3 : STRING
 }
 
 src_tuf_petreg_licence{
@@ -8814,43 +8836,10 @@ src_tuf_petreg_licence{
 	c2 : STRING,
 	c3 : STRING,
 	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
+	c5 : STRING
 }
 
 src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_wellbore_development_all{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_wellbore_core_photo{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING
-}
-
-src_pipLine{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -8858,45 +8847,13 @@ src_pipLine{
 	c4 : STRING
 }
 
-src_licence_area_poly_hst{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING
-}
-
-src_facility_fixed{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING
-}
-
-src_facility_fixed{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING
-}
-
-src_seis_acquisition{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING
-}
-
 src_wellbore_development_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING
+}
+
+src_wellbore_core_photo{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -8909,7 +8866,75 @@ src_wellbore_development_all{
 	c9 : STRING
 }
 
+src_pipLine{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING
+}
+
+src_licence_area_poly_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING
+}
+
+src_facility_fixed{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_facility_fixed{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING
+}
+
+src_seis_acquisition{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
+}
+
+src_wellbore_development_all{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING
+}
+
 src_field_owner_hst{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING
+}
+
+src_dscArea{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -8927,19 +8952,10 @@ src_dscArea{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
-}
-
-src_dscArea{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING
+	c8 : STRING,
+	c9 : STRING
 }
 
 src_licence_petreg_licence{
@@ -8947,7 +8963,9 @@ src_licence_petreg_licence{
 	c1 : STRING,
 	c2 : STRING,
 	c3 : STRING,
-	c4 : STRING
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING
 }
 
 src_wellbore_exploration_all{
@@ -8957,7 +8975,8 @@ src_wellbore_exploration_all{
 	c3 : STRING,
 	c4 : STRING,
 	c5 : STRING,
-	c6 : STRING
+	c6 : STRING,
+	c7 : STRING
 }
 
 src_wellbore_exploration_all{

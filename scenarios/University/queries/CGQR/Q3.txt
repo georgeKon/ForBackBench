@@ -1,0 +1,1 @@
+QX3(X0,X1,X2) :- Student(X0),advisor(X0,X1),takesCourse(X0,X2),teacherOf(X1,X2),Course(X2) .

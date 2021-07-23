@@ -1,204 +1,204 @@
-src_Natural-Object(?X) , src_Dramaturge(?X) , src_Social-Stratum(?X) , src_Piece-of-Music(?X) , src_Abbey(?X) -> Abbey(?X) .
-src_Functionary(?X) , src_FuzzyTemporalInterval(?X) , src_Prince(?X) , src_Building(?X) -> Building(?X) .
-src_Time-Dependent(?X) , src_National-Symbol(?X) , src_Queen(?X) , src_Abstract-Notion(?X) -> Abstract-Notion(?X) .
-src_hasCategory(?X,?Y) , src_Geographical-Discovery(?X) , src_Armament(?X) , src_Intellectual-Construct(?X) , src_Flavour(?X) -> Flavour(?X) .
-src_Ritual(?X) , src_Artistic-Movement(?X) , src_Theologian(?X) , src_Clothing(?X) , src_Water(?X) , src_Time-Dependent-Relation(?X) , src_Actor(?X) -> Actor(?X) .
-src_FuzzyTemporalInterval(?X) , src_Sculpture(?X) , src_Cathedral(?X) , src_Water(?X) , src_Entertainer(?X) -> Entertainer(?X) .
-src_Intellectual-Construct(?X) , src_International-Alliance(?X) , src_Journal(?X) , src_hasRelationMember(?X,?Y) , src_Animal(?X) -> Animal(?X) .
-src_Technical-Scientific-Advance(?X) , src_Period-in-Office(?X) , src_FuzzyTemporalInterval(?X) , src_Trades-Union(?X) , src_Natural-Object(?X) -> Natural-Object(?X) .
-src_Party(?X) , src_isLocationPartMemberOf(?X,?Y) , src_isRelationMemberOf(?X,?Y) , src_Architect(?X) -> Architect(?X) .
-src_TemporalInterval(?X) , src_War(?X) , src_Secular-Leader(?X) , src_Settlement(?X) , src_Measurable-Trend(?X) , src_Creator(?X) -> Creator(?X) .
-src_Religious-Ideology(?X) , src_Ship(?X) , src_FuzzyTemporalInterval(?X) , src_Geographer(?X) , src_Church(?X) , src_Landmark(?X) , src_Armament(?X) -> Armament(?X) .
-src_Magnate(?X) , src_Cleric(?X) , src_hasLocationPartMember(?X,?Y) , src_Fictional-Event(?X) , src_Artefact(?X) -> Artefact(?X) .
-src_Artistic-Style(?X) , src_Country(?X) , src_Stereotype-Group(?X) , src_Art-Form(?X) -> Art-Form(?X) .
-src_Non-Military-Conflict(?X) , src_Physician(?X) , src_Architect(?X) , src_Politician(?X) , src_Economic-Enterprise(?X) , src_Object(?X) -> Object(?X) .
-src_Cleric(?X) , src_Management-Organisation(?X) , src_hasLocationContainerMember(?X,?Y) , src_Functionary(?X) , src_Artist(?X) -> Artist(?X) .
-src_Abstract-Notion(?X) , src_Jurist(?X) , src_Professor(?X) , src_Meeting(?X) , src_Individual(?X) , src_Artistic-Movement(?X) -> Artistic-Movement(?X) .
-src_Religious-Ideology(?X) , src_Astronaut(?X) , src_TemporalInterval(?X) , src_Movement(?X) -> Movement(?X) .
-src_Organisation(?X) , src_Uprising(?X) , src_Environment(?X) , src_Role(?X) , src_Period-in-Office(?X) , src_Artistic-Style(?X) -> Artistic-Style(?X) .
-src_Artist(?X) , src_Painting(?X) , src_Person-Role(?X) , src_Astronaut(?X) -> Astronaut(?X) .
-src_Engineer(?X) , src_Musician(?X) , src_hasLocationContainerMember(?X,?Y) , src_Life-Event(?X) , src_Ethnic-Group(?X) , src_Discoverer(?X) -> Discoverer(?X) .
-src_Natural-Object(?X) , src_Illness(?X) , src_Religious-Leader(?X) , src_Other-Religious-Person(?X) , src_League(?X) , src_isLocationPartMemberOf(?X,?Y) , src_Author(?X) -> Author(?X) .
-src_Intra-State-Group(?X) , src_Building(?X) , src_Piece-of-Music(?X) , src_Badge(?X) -> Badge(?X) .
-src_Saint(?X) , src_Geographer(?X) , src_Intellectual-Movement(?X) , src_Governmental-Organisation(?X) , src_Organisation(?X) , src_Political-Region(?X) , src_Conceptual-Object(?X) -> Conceptual-Object(?X) .
-src_Artistic-Style(?X) , src_Educational-Organisation(?X) , src_Dynasty(?X) , src_Foreign-Minister(?X) , src_Relic(?X) , src_Battle(?X) -> Battle(?X) .
-src_Fictional-Person(?X) , src_Secular-Movement(?X) , src_Religious-Leader(?X) , src_Liturgical-Object(?X) , src_Event(?X) -> Event(?X) .
-src_Jurist(?X) , src_Social-Group(?X) , src_Role(?X) , src_Journalist(?X) , src_Magnate(?X) , src_Board(?X) -> Board(?X) .
-src_Field-of-Knowledge(?X) , src_Settlement(?X) , src_TemporalInterval(?X) , src_Illness(?X) , src_Relic(?X) , src_Management-Organisation(?X) -> Management-Organisation(?X) .
-src_Natural-Object(?X) , src_National-Symbol(?X) , src_Other-Religious-Leader(?X) , src_Political-Organisation(?X) , src_Abstract-Notion(?X) , src_Book(?X) -> Book(?X) .
-src_Magnate(?X) , src_Religious-Community(?X) , src_Water(?X) , src_Economic-Process(?X) , src_Writing(?X) -> Writing(?X) .
-src_Head-of-Government(?X) , src_Writing(?X) , src_exists(?X,?Y) , src_Business-Leader(?X) -> Business-Leader(?X) .
-src_International-Alliance(?X) , src_Pamphlet(?X) , src_Other-Religious-Person(?X) , src_Ship(?X) , src_Magnate(?X) -> Magnate(?X) .
-src_Time-Dependent(?X) , src_Abbey(?X) , src_Professor(?X) , src_Role(?X) , src_Geographical-Region(?X) , src_Art-Form(?X) , src_Category(?X) -> Category(?X) .
-src_Church(?X) , src_Dancer(?X) , src_Newspaper(?X) , src_Location(?X) , src_Movement(?X) , src_Badge(?X) , src_VicodiOI(?X) -> VicodiOI(?X) .
-src_Train(?X) , src_Relic(?X) , src_hasCategory(?X,?Y) , src_Illness(?X) , src_City(?X) , src_Party(?X) , src_Cathedral(?X) -> Cathedral(?X) .
-src_isRelationMemberOf(?X,?Y) , src_Legislation(?X) , src_Religious-Community(?X) , src_Philosopher(?X) , src_Church(?X) -> Church(?X) .
-src_Country(?X) , src_Life-Event(?X) , src_Conceptual-Object(?X) , src_Field-of-Knowledge(?X) , src_Political-Symbol(?X) , src_Church-Reformer(?X) -> Church-Reformer(?X) .
-src_Artistic-Movement(?X) , src_Sculpture(?X) , src_Disease(?X) , src_Time-Dependent-Relation(?X) , src_Religious-Leader(?X) -> Religious-Leader(?X) .
-src_Clothing(?X) , src_Church(?X) , src_Person(?X) , src_City(?X) -> City(?X) .
-src_Population-Movement(?X) , src_Secular-Ideology(?X) , src_Economist(?X) , src_Technical-Scientific-Advance(?X) , src_Settlement(?X) -> Settlement(?X) .
-src_Dancer(?X) , src_Conceptual-Object(?X) , src_Country(?X) , src_Management-Organisation(?X) , src_Battle(?X) , src_Cleric(?X) -> Cleric(?X) .
-src_hasLocationPartMember(?X,?Y) , src_Time-Dependent(?X) , src_Other-Religious-Leader(?X) , src_Saint(?X) , src_exists(?X,?Y) , src_Person-Role(?X) -> Person-Role(?X) .
-src_Fictional-Person(?X) , src_Conductor(?X) , src_Psychologist(?X) , src_Writing(?X) , src_Location-Part-Relation(?X) , src_Clerical-Leader(?X) -> Clerical-Leader(?X) .
-src_Trades-Unionist(?X) , src_Pollution(?X) , src_Magnate(?X) , src_Intellectual-Movement(?X) , src_Field-of-Knowledge(?X) , src_Leader(?X) -> Leader(?X) .
-src_Religious-Leader(?X) , src_Role(?X) , src_Cultural-Organisation(?X) , src_Political-Symbol(?X) , src_Queen(?X) , src_Clothing(?X) -> Clothing(?X) .
-src_Sportsman(?X) , src_Social-Group(?X) , src_Secular-Leader(?X) , src_Secular-Movement(?X) , src_Criminal(?X) , src_Commodity(?X) -> Commodity(?X) .
-src_Event(?X) , src_Organisation(?X) , src_Scientific-Instrument(?X) , src_Composer(?X) -> Composer(?X) .
-src_Period(?X) , src_Time-Dependent(?X) , src_Intra-State-Group(?X) , src_Military-Person(?X) , src_Party(?X) , src_Conductor(?X) -> Conductor(?X) .
-src_Social-Group(?X) , src_Governmental-Organisation(?X) , src_Religious-Ideology(?X) , src_Theologian(?X) , src_Professor(?X) , src_Country(?X) -> Country(?X) .
-src_Flavour(?X) , src_Film-Maker(?X) , src_Writing(?X) , src_Minister(?X) , src_International-Alliance(?X) , src_Location(?X) -> Location(?X) .
-src_Creator(?X) , src_Cathedral(?X) , src_Religious-Practice(?X) , src_Economist(?X) , src_Trades-Union(?X) , src_Time(?X) , src_Crime(?X) -> Crime(?X) .
-src_related(?X,?Y) , src_Water(?X) , src_hasCategory(?X,?Y) , src_Train(?X) , src_Criminal(?X) -> Criminal(?X) .
-src_Category(?X) , src_Battle(?X) , src_Person-Role(?X) , src_Cultural-Agreement(?X) -> Cultural-Agreement(?X) .
-src_Person-Role(?X) , src_Church-Reformer(?X) , src_Religious-Symbol(?X) , src_Ethnic-Group(?X) , src_Psychologist(?X) , src_Time(?X) , src_Cultural-Organisation(?X) -> Cultural-Organisation(?X) .
-src_Queen(?X) , src_isLocationContainerMemberOf(?X,?Y) , src_Pamphlet(?X) , src_Meeting(?X) , src_Role(?X) , src_Organisation(?X) -> Organisation(?X) .
-src_Role(?X) , src_Event(?X) , src_National-Symbol(?X) , src_Intra-State-Group(?X) , src_Dancer(?X) -> Dancer(?X) .
-src_Landmark(?X) , src_Geographical-Feature(?X) , src_Musician(?X) , src_Diplomat(?X) -> Diplomat(?X) .
-src_Secular-Leader(?X) , src_Trial(?X) , src_Scientist(?X) , src_Pastime(?X) , src_Functionary(?X) -> Functionary(?X) .
-src_Sultan(?X) , src_Time-Dependent(?X) , src_Fictional-Person(?X) , src_Trades-Union(?X) , src_Disease(?X) , src_Military-Person(?X) , src_Disaster(?X) -> Disaster(?X) .
-src_Governmental-Organisation(?X) , src_International-Alliance(?X) , src_Secular-Ideology(?X) , src_Religious-Movement(?X) , src_Geographer(?X) , src_Intellectual-Movement(?X) , src_Disease(?X) -> Disease(?X) .
-src_Intra-State-Group(?X) , src_Emperor(?X) , src_Liturgical-Object(?X) , src_Settlement(?X) , src_Dramaturge(?X) -> Dramaturge(?X) .
-src_Sultan(?X) , src_Illness(?X) , src_Trades-Union(?X) , src_Commodity(?X) , src_Political-Region(?X) , src_Dynasty(?X) -> Dynasty(?X) .
-src_Sculpture(?X) , src_Natural-Object(?X) , src_Artistic-Movement(?X) , src_Jurist(?X) , src_Non-Military-Conflict(?X) , src_Ritual(?X) , src_Social-Group(?X) -> Social-Group(?X) .
-src_League(?X) , src_Cleric(?X) , src_Life-Event(?X) , src_Musician(?X) , src_Water(?X) , src_Other-Religious-Person(?X) , src_Ecclesiarch(?X) -> Ecclesiarch(?X) .
-src_Disease(?X) , src_Psychologist(?X) , src_Prince(?X) , src_Scientific-Instrument(?X) , src_Economic-Enterprise(?X) -> Economic-Enterprise(?X) .
-src_Country(?X) , src_Disease(?X) , src_hasLocationPartMember(?X,?Y) , src_Idea(?X) , src_Intellectual-Construct(?X) , src_Ship(?X) , src_Economic-Organisation(?X) -> Economic-Organisation(?X) .
-src_Intellectual-Movement(?X) , src_hasLocationPartMember(?X,?Y) , src_Animal(?X) , src_Economic-Process(?X) -> Economic-Process(?X) .
-src_War(?X) , src_Population-Movement(?X) , src_Foreign-Minister(?X) , src_Religious-Leader(?X) , src_Philosopher(?X) , src_Religious-Community(?X) , src_Economic-Symbol(?X) -> Economic-Symbol(?X) .
-src_Meeting(?X) , src_Political-Region(?X) , src_Piece-of-Music(?X) , src_Religious-Symbol(?X) , src_Film-Maker(?X) , src_isRelationMemberOf(?X,?Y) , src_Symbol(?X) -> Symbol(?X) .
-src_City(?X) , src_FuzzyTemporalInterval(?X) , src_League(?X) , src_Economist(?X) -> Economist(?X) .
-src_Religious-Ideology(?X) , src_Liturgical-Object(?X) , src_Artistic-Style(?X) , src_Cultural-Organisation(?X) , src_Scientist(?X) -> Scientist(?X) .
-src_Idea(?X) , src_Pollution(?X) , src_Location(?X) , src_Educational-Organisation(?X) -> Educational-Organisation(?X) .
-src_Environment(?X) , src_Pamphlet(?X) , src_Head-of-State(?X) , src_Uprising(?X) , src_Election(?X) -> Election(?X) .
-src_Person(?X) , src_Pamphlet(?X) , src_Technical-Scientific-Advance(?X) , src_Church(?X) , src_Piece-of-Music(?X) , src_Emperor(?X) -> Emperor(?X) .
-src_Other-Religious-Person(?X) , src_Language(?X) , src_Person(?X) , src_Head-of-State(?X) -> Head-of-State(?X) .
-src_Physician(?X) , src_Disease(?X) , src_Social-Group(?X) , src_Trade-Association(?X) , src_Period-in-Office(?X) , src_Language(?X) , src_Engineer(?X) -> Engineer(?X) .
-src_Structure(?X) , src_Movement(?X) , src_Discoverer(?X) , src_Environment(?X) -> Environment(?X) .
-src_Food(?X) , src_related(?X,?Y) , src_Person(?X) , src_Art-Form(?X) , src_Ethnic-Group(?X) -> Ethnic-Group(?X) .
-src_Intellectual-Construct(?X) , src_Scientist(?X) , src_League(?X) , src_Secular-Movement(?X) , src_Cultural-Agreement(?X) , src_Fictional-Event(?X) -> Fictional-Event(?X) .
-src_Architect(?X) , src_Military-Unit(?X) , src_Intra-State-Group(?X) , src_Artistic-Movement(?X) , src_Period-in-Office(?X) , src_Fictional-Person(?X) -> Fictional-Person(?X) .
-src_Other-Religious-Person(?X) , src_Animal(?X) , src_Ethnic-Group(?X) , src_Badge(?X) , src_Sculpture(?X) , src_Individual(?X) -> Individual(?X) .
-src_Ideology(?X) , src_Fictional-Event(?X) , src_Professor(?X) , src_Field-of-Knowledge(?X) -> Field-of-Knowledge(?X) .
-src_Environment(?X) , src_Life-Event(?X) , src_Musician(?X) , src_International-Organisation(?X) , src_Trial(?X) , src_Intellectual-Construct(?X) -> Intellectual-Construct(?X) .
-src_Train(?X) , src_Economic-Organisation(?X) , src_Scientific-Instrument(?X) , src_Head-of-Government(?X) , src_Military-Person(?X) , src_Artistic-Movement(?X) , src_Film-Maker(?X) -> Film-Maker(?X) .
-src_Artist(?X) , src_Country(?X) , src_Religious-Practice(?X) , src_Abstract-Notion(?X) , src_Saint(?X) , src_Religious-Community(?X) , src_Time-Dependent(?X) -> Time-Dependent(?X) .
-src_Environment(?X) , src_Artefact(?X) , src_Intra-State-Group(?X) , src_Political-Symbol(?X) , src_Painting(?X) , src_Food(?X) -> Food(?X) .
-src_Election(?X) , src_Church-Reformer(?X) , src_King(?X) , src_Foreign-Minister(?X) -> Foreign-Minister(?X) .
-src_Painter(?X) , src_Professor(?X) , src_Location(?X) , src_Minister(?X) -> Minister(?X) .
-src_Economic-Process(?X) , src_Sultan(?X) , src_Commodity(?X) , src_FuzzyTemporalInterval(?X) -> FuzzyTemporalInterval(?X) .
-src_Religious-Order(?X) , src_Philanthropist(?X) , src_Board(?X) , src_Time(?X) -> Time(?X) .
-src_Time-Dependent(?X) , src_Minister(?X) , src_Military-Unit(?X) , src_Geographer(?X) -> Geographer(?X) .
-src_Symbol(?X) , src_War(?X) , src_hasRelationMember(?X,?Y) , src_Artistic-Style(?X) , src_Actor(?X) , src_Geographical-Discovery(?X) -> Geographical-Discovery(?X) .
-src_Philosopher(?X) , src_Vehicle(?X) , src_Social-Stratum(?X) , src_International-Organisation(?X) , src_University(?X) , src_Geographical-Feature(?X) -> Geographical-Feature(?X) .
-src_Organisation(?X) , src_Church-Reformer(?X) , src_TemporalInterval(?X) , src_Geographical-Region(?X) -> Geographical-Region(?X) .
-src_Religious-Practice(?X) , src_isRelationMemberOf(?X,?Y) , src_Discoverer(?X) , src_Functionary(?X) , src_Governmental-Organisation(?X) -> Governmental-Organisation(?X) .
-src_hasRole(?X,?Y) , src_Management-Organisation(?X) , src_Work-of-Art(?X) , src_Geographer(?X) , src_Cleric(?X) , src_Film-Maker(?X) , src_Political-Organisation(?X) -> Political-Organisation(?X) .
-src_Treaty(?X) , src_Trial(?X) , src_Battle(?X) , src_related(?X,?Y) , src_Art-Form(?X) , src_isRelationMemberOf(?X,?Y) , src_Head-of-Government(?X) -> Head-of-Government(?X) .
-src_Other-Religious-Person(?X) , src_Religious-Practice(?X) , src_Creator(?X) , src_Secular-Leader(?X) -> Secular-Leader(?X) .
-src_Field-of-Knowledge(?X) , src_Religious-Practice(?X) , src_Queen(?X) , src_Scientific-Instrument(?X) , src_Idea(?X) -> Idea(?X) .
-src_Vehicle(?X) , src_Category(?X) , src_Dancer(?X) , src_Theologian(?X) , src_Person(?X) , src_Ideology(?X) -> Ideology(?X) .
-src_Book(?X) , src_Monastery(?X) , src_Economic-Process(?X) , src_Abstract-Notion(?X) , src_Illness(?X) -> Illness(?X) .
-src_Badge(?X) , src_Time-Dependent(?X) , src_isRelationMemberOf(?X,?Y) , src_Life-Event(?X) -> Life-Event(?X) .
-src_exists(?X,?Y) , src_Ethnic-Group(?X) , src_hasLocationContainerMember(?X,?Y) , src_Intellectual-Movement(?X) -> Intellectual-Movement(?X) .
-src_Geographical-Discovery(?X) , src_Painting(?X) , src_Management-Organisation(?X) , src_Head-of-State(?X) , src_International-Alliance(?X) -> International-Alliance(?X) .
-src_FuzzyTemporalInterval(?X) , src_isRelationMemberOf(?X,?Y) , src_Landmark(?X) , src_International-Organisation(?X) -> International-Organisation(?X) .
-src_Religious-Organisation(?X) , src_Artist(?X) , src_Commodity(?X) , src_Composer(?X) , src_Journalist(?X) , src_Foreign-Minister(?X) , src_Intra-State-Group(?X) -> Intra-State-Group(?X) .
-src_Religious-Order(?X) , src_Journal(?X) , src_Management-Organisation(?X) , src_Astronaut(?X) , src_Inventor(?X) -> Inventor(?X) .
-src_Time(?X) , src_Artist(?X) , src_Cultural-Organisation(?X) , src_Period(?X) , src_Church(?X) , src_Journal(?X) -> Journal(?X) .
-src_Economic-Process(?X) , src_Geographical-Feature(?X) , src_Governmental-Organisation(?X) , src_Public-Oration(?X) , src_Clothing(?X) , src_Engineer(?X) , src_Journalist(?X) -> Journalist(?X) .
-src_Engineer(?X) , src_Newspaper(?X) , src_Badge(?X) , src_Structure(?X) , src_Intra-State-Group(?X) , src_Jurist(?X) -> Jurist(?X) .
-src_Politician(?X) , src_Newspaper(?X) , src_Intellectual-Construct(?X) , src_King(?X) -> King(?X) .
-src_Dynasty(?X) , src_Artefact(?X) , src_Secular-Ideology(?X) , src_Landmark(?X) -> Landmark(?X) .
-src_Person(?X) , src_Movement(?X) , src_Economic-Organisation(?X) , src_Language(?X) -> Language(?X) .
-src_Religious-Community(?X) , src_Pastime(?X) , src_Illness(?X) , src_Artefact(?X) , src_League(?X) -> League(?X) .
-src_Management-Organisation(?X) , src_Commodity(?X) , src_Language(?X) , src_Emperor(?X) , src_Legislation(?X) -> Legislation(?X) .
-src_Pastime(?X) , src_Diplomat(?X) , src_Technical-Scientific-Advance(?X) , src_Leader(?X) , src_Liturgical-Object(?X) -> Liturgical-Object(?X) .
-src_Author(?X) , src_International-Alliance(?X) , src_hasRole(?X,?Y) , src_Location-Part-Relation(?X) -> Location-Part-Relation(?X) .
-src_Illness(?X) , src_Meeting(?X) , src_Board(?X) , src_Trade-Association(?X) , src_Time-Dependent(?X) , src_Time-Dependent-Relation(?X) -> Time-Dependent-Relation(?X) .
-src_Scientific-Instrument(?X) , src_Social-Stratum(?X) , src_Intellectual-Movement(?X) , src_Economic-Process(?X) , src_Cathedral(?X) , src_Economist(?X) , src_Masonic-Lodge(?X) -> Masonic-Lodge(?X) .
-src_Artefact(?X) , src_Entertainer(?X) , src_Landmark(?X) , src_Sculpture(?X) , src_Measurable-Trend(?X) -> Measurable-Trend(?X) .
-src_Religious-Order(?X) , src_Art-Form(?X) , src_War(?X) , src_Geographical-Region(?X) , src_Political-Organisation(?X) , src_Landmark(?X) , src_Meeting(?X) -> Meeting(?X) .
-src_Military-Unit(?X) , src_hasRelationMember(?X,?Y) , src_Country(?X) , src_Geographical-Region(?X) , src_Religious-Organisation(?X) , src_Artistic-Style(?X) , src_Military-Organisation(?X) -> Military-Organisation(?X) .
-src_Secular-Movement(?X) , src_Creator(?X) , src_Period(?X) , src_Battle(?X) , src_Ideology(?X) , src_Military-Person(?X) -> Military-Person(?X) .
-src_isRelationMemberOf(?X,?Y) , src_Scientist(?X) , src_Disaster(?X) , src_Military-Unit(?X) -> Military-Unit(?X) .
-src_Trial(?X) , src_Dynasty(?X) , src_Social-Stratum(?X) , src_exists(?X,?Y) , src_Religious-Symbol(?X) , src_Dancer(?X) , src_Monastery(?X) -> Monastery(?X) .
-src_Other-Religious-Person(?X) , src_Pamphlet(?X) , src_Dramaturge(?X) , src_Religious-Organisation(?X) , src_Settlement(?X) , src_Publisher(?X) , src_Musician(?X) -> Musician(?X) .
-src_Discoverer(?X) , src_Country(?X) , src_Minister(?X) , src_National-Symbol(?X) -> National-Symbol(?X) .
-src_Dramaturge(?X) , src_Piece-of-Music(?X) , src_Functionary(?X) , src_Battle(?X) , src_Newspaper(?X) -> Newspaper(?X) .
-src_Discoverer(?X) , src_hasLocationPartMember(?X,?Y) , src_Publisher(?X) , src_Train(?X) , src_Fictional-Person(?X) , src_Military-Person(?X) , src_Non-Military-Conflict(?X) -> Non-Military-Conflict(?X) .
-src_Abstract-Notion(?X) , src_Dramaturge(?X) , src_Artefact(?X) , src_Other-Religious-Leader(?X) -> Other-Religious-Leader(?X) .
-src_Period(?X) , src_Environment(?X) , src_Train(?X) , src_Sculpture(?X) , src_Stereotype-Group(?X) , src_Disaster(?X) , src_Other-Religious-Person(?X) -> Other-Religious-Person(?X) .
-src_Individual(?X) , src_Trades-Union(?X) , src_hasRelationMember(?X,?Y) , src_Event(?X) , src_Geographer(?X) , src_Object(?X) , src_Painter(?X) -> Painter(?X) .
-src_Psychologist(?X) , src_Diplomat(?X) , src_Conductor(?X) , src_Publisher(?X) , src_Painting(?X) -> Painting(?X) .
-src_Emperor(?X) , src_Governmental-Organisation(?X) , src_Period(?X) , src_Work-of-Art(?X) -> Work-of-Art(?X) .
-src_Religious-Symbol(?X) , src_Sculptor(?X) , src_Philosopher(?X) , src_City(?X) , src_Pamphlet(?X) -> Pamphlet(?X) .
-src_Head-of-Government(?X) , src_King(?X) , src_Secular-Leader(?X) , src_Fictional-Person(?X) , src_Animal(?X) , src_hasLocationContainerMember(?X,?Y) , src_Party(?X) -> Party(?X) .
-src_Role(?X) , src_Religious-Symbol(?X) , src_Dynasty(?X) , src_Clothing(?X) , src_Pastime(?X) -> Pastime(?X) .
-src_Other-Religious-Leader(?X) , src_Inventor(?X) , src_Economist(?X) , src_Political-Organisation(?X) , src_Period(?X) -> Period(?X) .
-src_Scientific-Instrument(?X) , src_Theologian(?X) , src_hasRelationMember(?X,?Y) , src_Period-in-Office(?X) -> Period-in-Office(?X) .
-src_Publisher(?X) , src_hasLocationPartMember(?X,?Y) , src_Location(?X) , src_Language(?X) , src_Person(?X) -> Person(?X) .
-src_Non-Military-Conflict(?X) , src_Language(?X) , src_Flavour(?X) , src_Symbol(?X) , src_Armament(?X) , src_Role(?X) -> Role(?X) .
-src_Period-in-Office(?X) , src_Other-Religious-Person(?X) , src_League(?X) , src_Philanthropist(?X) -> Philanthropist(?X) .
-src_Military-Person(?X) , src_Trades-Union(?X) , src_Social-Stratum(?X) , src_Emperor(?X) , src_Prince(?X) , src_Philosopher(?X) -> Philosopher(?X) .
-src_Magnate(?X) , src_Illness(?X) , src_hasLocationPartMember(?X,?Y) , src_Physician(?X) -> Physician(?X) .
-src_Journalist(?X) , src_Sculptor(?X) , src_Journal(?X) , src_Piece-of-Music(?X) -> Piece-of-Music(?X) .
-src_Religious-Order(?X) , src_Clothing(?X) , src_Ship(?X) , src_University(?X) , src_Political-Region(?X) -> Political-Region(?X) .
-src_Fictional-Person(?X) , src_Trade-Association(?X) , src_Cleric(?X) , src_Economist(?X) , src_Artefact(?X) , src_Political-Symbol(?X) -> Political-Symbol(?X) .
-src_Stereotype-Group(?X) , src_Economic-Symbol(?X) , src_Inventor(?X) , src_Party(?X) , src_Business-Leader(?X) , src_Politician(?X) -> Politician(?X) .
-src_Writing(?X) , src_Party(?X) , src_City(?X) , src_Social-Group(?X) , src_International-Organisation(?X) , src_Pollution(?X) -> Pollution(?X) .
-src_Economic-Enterprise(?X) , src_Idea(?X) , src_Functionary(?X) , src_isLocationContainerMemberOf(?X,?Y) , src_Landmark(?X) , src_hasLocationPartMember(?X,?Y) , src_Pope(?X) -> Pope(?X) .
-src_Other-Religious-Person(?X) , src_Pastime(?X) , src_Cultural-Agreement(?X) , src_Population-Movement(?X) -> Population-Movement(?X) .
-src_Journal(?X) , src_Management-Organisation(?X) , src_Business-Leader(?X) , src_Prince(?X) -> Prince(?X) .
-src_Geographical-Region(?X) , src_Landmark(?X) , src_University(?X) , src_Badge(?X) , src_Theologian(?X) , src_Professor(?X) -> Professor(?X) .
-src_Secular-Ideology(?X) , src_Population-Movement(?X) , src_exists(?X,?Y) , src_Social-Group(?X) , src_hasLocationPartMember(?X,?Y) , src_Animal(?X) , src_Psychologist(?X) -> Psychologist(?X) .
-src_Work-of-Art(?X) , src_Treaty(?X) , src_Creator(?X) , src_Movement(?X) , src_Artist(?X) , src_Public-Oration(?X) -> Public-Oration(?X) .
-src_Religious-Ideology(?X) , src_National-Symbol(?X) , src_Writing(?X) , src_Publisher(?X) -> Publisher(?X) .
-src_King(?X) , src_Foreign-Minister(?X) , src_Musician(?X) , src_International-Alliance(?X) , src_Queen(?X) -> Queen(?X) .
-src_Artefact(?X) , src_Actor(?X) , src_Commodity(?X) , src_Monastery(?X) , src_Relic(?X) -> Relic(?X) .
-src_Intra-State-Group(?X) , src_Village(?X) , src_Clerical-Leader(?X) , src_Meeting(?X) , src_Fictional-Event(?X) , src_Architect(?X) , src_Religious-Community(?X) -> Religious-Community(?X) .
-src_City(?X) , src_Time(?X) , src_Trade-Association(?X) , src_Psychologist(?X) , src_Religious-Organisation(?X) -> Religious-Organisation(?X) .
-src_Organisation(?X) , src_Building(?X) , src_Trades-Union(?X) , src_Field-of-Knowledge(?X) , src_Structure(?X) , src_Religious-Ideology(?X) -> Religious-Ideology(?X) .
-src_War(?X) , src_Scandal(?X) , src_Physician(?X) , src_University(?X) , src_Professor(?X) , src_Religious-Movement(?X) -> Religious-Movement(?X) .
-src_Dramaturge(?X) , src_Religious-Symbol(?X) , src_Period(?X) , src_Event(?X) , src_Religious-Order(?X) -> Religious-Order(?X) .
-src_Church-Reformer(?X) , src_Leader(?X) , src_Location(?X) , src_International-Alliance(?X) , src_Scientific-Instrument(?X) , src_Prince(?X) , src_Religious-Practice(?X) -> Religious-Practice(?X) .
-src_VicodiOI(?X) , src_Physician(?X) , src_Technical-Scientific-Advance(?X) , src_Painter(?X) , src_Religious-Symbol(?X) -> Religious-Symbol(?X) .
-src_Jurist(?X) , src_Minister(?X) , src_Artistic-Movement(?X) , src_Train(?X) , src_Representative-Institution(?X) -> Representative-Institution(?X) .
-src_Magnate(?X) , src_Organisation(?X) , src_Location(?X) , src_Ritual(?X) -> Ritual(?X) .
-src_Other-Religious-Leader(?X) , src_Trial(?X) , src_Art-Form(?X) , src_Ideology(?X) , src_Film-Maker(?X) , src_Person-Role(?X) , src_Saint(?X) -> Saint(?X) .
-src_Religious-Community(?X) , src_Representative-Institution(?X) , src_Trades-Union(?X) , src_Functionary(?X) , src_Scandal(?X) -> Scandal(?X) .
-src_Theologian(?X) , src_Saint(?X) , src_Jurist(?X) , src_Scientific-Instrument(?X) -> Scientific-Instrument(?X) .
-src_League(?X) , src_Pollution(?X) , src_Role(?X) , src_Politician(?X) , src_Geographical-Region(?X) , src_Sculptor(?X) -> Sculptor(?X) .
-src_Musician(?X) , src_Stereotype-Group(?X) , src_Publisher(?X) , src_Conceptual-Object(?X) , src_Sculpture(?X) -> Sculpture(?X) .
-src_Masonic-Lodge(?X) , src_Economic-Enterprise(?X) , src_Animal(?X) , src_Secular-Ideology(?X) -> Secular-Ideology(?X) .
-src_hasLocationPartMember(?X,?Y) , src_Cultural-Organisation(?X) , src_Conductor(?X) , src_Jurist(?X) , src_Church-Reformer(?X) , src_Piece-of-Music(?X) , src_Secular-Movement(?X) -> Secular-Movement(?X) .
-src_Settlement(?X) , src_Jurist(?X) , src_Diplomat(?X) , src_Religious-Symbol(?X) , src_Fictional-Event(?X) , src_Ship(?X) -> Ship(?X) .
-src_Religious-Movement(?X) , src_Artefact(?X) , src_International-Alliance(?X) , src_Sultan(?X) , src_Event(?X) , src_Treaty(?X) , src_Vehicle(?X) -> Vehicle(?X) .
-src_Military-Organisation(?X) , src_related(?X,?Y) , src_FuzzyTemporalInterval(?X) , src_Church(?X) , src_Settlement(?X) , src_Legislation(?X) , src_Social-Stratum(?X) -> Social-Stratum(?X) .
-src_Vehicle(?X) , src_Trade-Association(?X) , src_Economic-Enterprise(?X) , src_Role(?X) , src_Trades-Union(?X) , src_Sportsman(?X) -> Sportsman(?X) .
-src_Educational-Organisation(?X) , src_Disaster(?X) , src_Secular-Ideology(?X) , src_Geographer(?X) , src_Stereotype-Group(?X) -> Stereotype-Group(?X) .
-src_Landmark(?X) , src_exists(?X,?Y) , src_Country(?X) , src_Structure(?X) -> Structure(?X) .
-src_Flavour(?X) , src_Person(?X) , src_Church(?X) , src_Liturgical-Object(?X) , src_Time-Dependent(?X) , src_Sultan(?X) -> Sultan(?X) .
-src_Time-Dependent-Relation(?X) , src_Pamphlet(?X) , src_Church(?X) , src_Technical-Scientific-Advance(?X) -> Technical-Scientific-Advance(?X) .
-src_Monastery(?X) , src_Creator(?X) , src_Architect(?X) , src_TemporalInterval(?X) -> TemporalInterval(?X) .
-src_Geographical-Region(?X) , src_Clothing(?X) , src_Organisation(?X) , src_Cultural-Agreement(?X) , src_Social-Group(?X) , src_Theologian(?X) -> Theologian(?X) .
-src_Jurist(?X) , src_Actor(?X) , src_University(?X) , src_Trade-Association(?X) -> Trade-Association(?X) .
-src_Pastime(?X) , src_Church-Reformer(?X) , src_Geographical-Discovery(?X) , src_International-Organisation(?X) , src_Architect(?X) , src_Philanthropist(?X) , src_Trades-Union(?X) -> Trades-Union(?X) .
-src_Legislation(?X) , src_Dancer(?X) , src_Non-Military-Conflict(?X) , src_Jurist(?X) , src_Composer(?X) , src_Trades-Unionist(?X) -> Trades-Unionist(?X) .
-src_Newspaper(?X) , src_Period-in-Office(?X) , src_Person(?X) , src_Religious-Symbol(?X) , src_Uprising(?X) , src_Train(?X) -> Train(?X) .
-src_War(?X) , src_hasLocationContainerMember(?X,?Y) , src_Cleric(?X) , src_Building(?X) , src_Treaty(?X) -> Treaty(?X) .
-src_Time-Dependent(?X) , src_Object(?X) , src_Ecclesiarch(?X) , src_Food(?X) , src_Artefact(?X) , src_Trades-Unionist(?X) , src_Trial(?X) -> Trial(?X) .
-src_Role(?X) , src_Physician(?X) , src_Abstract-Notion(?X) , src_King(?X) , src_Animal(?X) , src_Cultural-Organisation(?X) , src_University(?X) -> University(?X) .
-src_Person-Role(?X) , src_Animal(?X) , src_Political-Organisation(?X) , src_Representative-Institution(?X) , src_Economic-Process(?X) , src_Board(?X) , src_Uprising(?X) -> Uprising(?X) .
-src_Trades-Unionist(?X) , src_Time(?X) , src_Period(?X) , src_Village(?X) -> Village(?X) .
-src_Time-Dependent(?X) , src_Period(?X) , src_Architect(?X) , src_hasLocationPartMember(?X,?Y) , src_Religious-Order(?X) , src_Commodity(?X) , src_War(?X) -> War(?X) .
-src_isLocationPartMemberOf(?X,?Y) , src_Economic-Process(?X) , src_Intellectual-Construct(?X) , src_isLocationContainerMemberOf(?X,?Y) , src_Inventor(?X) , src_Educational-Organisation(?X) , src_Water(?X) -> Water(?X) .
-src_Scandal(?X) , src_Composer(?X) , src_Object(?X) , src_Religious-Ideology(?X) , src_Pollution(?X) , src_exists(?X,?Y) -> exists(?X,?Y) .
-src_Settlement(?X) , src_Meeting(?X) , src_International-Alliance(?X) , src_related(?X,?Y) -> related(?X,?Y) .
-src_Other-Religious-Leader(?X) , src_Trades-Unionist(?X) , src_Professor(?X) , src_Actor(?X) , src_Artistic-Movement(?X) , src_Film-Maker(?X) , src_hasCategory(?X,?Y) -> hasCategory(?X,?Y) .
-src_Vehicle(?X) , src_Meeting(?X) , src_Sculptor(?X) , src_Physician(?X) , src_hasLocationContainerMember(?X,?Y) -> hasLocationContainerMember(?X,?Y) .
-src_Cultural-Organisation(?X) , src_Leader(?X) , src_War(?X) , src_Foreign-Minister(?X) , src_hasRelationMember(?X,?Y) -> hasRelationMember(?X,?Y) .
-src_Water(?X) , src_Engineer(?X) , src_Ship(?X) , src_Book(?X) , src_hasLocationPartMember(?X,?Y) -> hasLocationPartMember(?X,?Y) .
-src_Landmark(?X) , src_Animal(?X) , src_Intra-State-Group(?X) , src_Politician(?X) , src_Population-Movement(?X) , src_hasRole(?X,?Y) -> hasRole(?X,?Y) .
-src_Building(?X) , src_Theologian(?X) , src_Movement(?X) , src_Criminal(?X) , src_isLocationContainerMemberOf(?X,?Y) -> isLocationContainerMemberOf(?X,?Y) .
-src_Newspaper(?X) , src_Fictional-Event(?X) , src_Book(?X) , src_Physician(?X) , src_Film-Maker(?X) , src_Diplomat(?X) , src_isRelationMemberOf(?X,?Y) -> isRelationMemberOf(?X,?Y) .
-src_isLocationContainerMemberOf(?X,?Y) , src_Fictional-Person(?X) , src_Ship(?X) , src_Object(?X) , src_isLocationPartMemberOf(?X,?Y) -> isLocationPartMemberOf(?X,?Y) .
+src_Clerical-Leader(?X) , src_Church-Reformer(?X) , src_Abbey(?X) -> Abbey(?X) .
+src_Commodity(?X) , src_Building(?X) -> Building(?X) .
+src_Relic(?X) , src_Abstract-Notion(?X) -> Abstract-Notion(?X) .
+src_Geographical-Feature(?X) , src_Geographer(?X) , src_Flavour(?X) -> Flavour(?X) .
+src_hasLocationContainerMember(?X,?Y) , src_Jurist(?X) , src_Actor(?X) -> Actor(?X) .
+src_Population-Movement(?X) , src_Theologian(?X) , src_Entertainer(?X) -> Entertainer(?X) .
+src_Cultural-Organisation(?X) , src_hasCategory(?X,?Y) , src_Book(?X) , src_Animal(?X) -> Animal(?X) .
+src_Secular-Movement(?X) , src_Writing(?X) , src_Symbol(?X) , src_Natural-Object(?X) -> Natural-Object(?X) .
+src_Newspaper(?X) , src_Art-Form(?X) , src_Painting(?X) , src_Architect(?X) -> Architect(?X) .
+src_Dancer(?X) , src_Intellectual-Movement(?X) , src_Author(?X) , src_Creator(?X) -> Creator(?X) .
+src_Trial(?X) , src_Trades-Unionist(?X) , src_Armament(?X) -> Armament(?X) .
+src_related(?X,?Y) , src_Cleric(?X) , src_Ideology(?X) , src_Artefact(?X) -> Artefact(?X) .
+src_Population-Movement(?X) , src_Art-Form(?X) -> Art-Form(?X) .
+src_Head-of-State(?X) , src_Object(?X) -> Object(?X) .
+src_Liturgical-Object(?X) , src_Economic-Organisation(?X) , src_Illness(?X) , src_Armament(?X) , src_Artist(?X) -> Artist(?X) .
+src_Governmental-Organisation(?X) , src_Artistic-Movement(?X) -> Artistic-Movement(?X) .
+src_Film-Maker(?X) , src_Geographical-Feature(?X) , src_Masonic-Lodge(?X) , src_Movement(?X) -> Movement(?X) .
+src_Head-of-State(?X) , src_Other-Religious-Leader(?X) , src_Church(?X) , src_Philosopher(?X) , src_Artistic-Style(?X) -> Artistic-Style(?X) .
+src_Church-Reformer(?X) , src_Representative-Institution(?X) , src_Astronaut(?X) -> Astronaut(?X) .
+src_Structure(?X) , src_Religious-Leader(?X) , src_Discoverer(?X) -> Discoverer(?X) .
+src_Economic-Process(?X) , src_Painting(?X) , src_Ethnic-Group(?X) , src_Author(?X) -> Author(?X) .
+src_Village(?X) , src_Location(?X) , src_Church(?X) , src_Badge(?X) -> Badge(?X) .
+src_Train(?X) , src_Sportsman(?X) , src_Engineer(?X) , src_Business-Leader(?X) , src_Conceptual-Object(?X) -> Conceptual-Object(?X) .
+src_Monastery(?X) , src_Minister(?X) , src_Battle(?X) -> Battle(?X) .
+src_Publisher(?X) , src_Theologian(?X) , src_Water(?X) , src_Journal(?X) , src_Event(?X) -> Event(?X) .
+src_Commodity(?X) , src_Time(?X) , src_Professor(?X) , src_Trades-Union(?X) , src_Board(?X) -> Board(?X) .
+src_Criminal(?X) , src_Church(?X) , src_Management-Organisation(?X) -> Management-Organisation(?X) .
+src_Head-of-Government(?X) , src_Cathedral(?X) , src_Train(?X) , src_Book(?X) -> Book(?X) .
+src_Structure(?X) , src_Queen(?X) , src_Writing(?X) -> Writing(?X) .
+src_Pope(?X) , src_Time(?X) , src_Head-of-State(?X) , src_Scientific-Instrument(?X) , src_Business-Leader(?X) -> Business-Leader(?X) .
+src_Geographer(?X) , src_Trades-Unionist(?X) , src_Dancer(?X) , src_Magnate(?X) -> Magnate(?X) .
+src_Conceptual-Object(?X) , src_Economic-Process(?X) , src_Category(?X) -> Category(?X) .
+src_Fictional-Event(?X) , src_VicodiOI(?X) -> VicodiOI(?X) .
+src_Category(?X) , src_Cathedral(?X) -> Cathedral(?X) .
+src_Religious-Movement(?X) , src_Church(?X) -> Church(?X) .
+src_isLocationContainerMemberOf(?X,?Y) , src_isLocationPartMemberOf(?X,?Y) , src_Writing(?X) , src_Church-Reformer(?X) -> Church-Reformer(?X) .
+src_Leader(?X) , src_Entertainer(?X) , src_hasCategory(?X,?Y) , src_Economic-Symbol(?X) , src_Religious-Leader(?X) -> Religious-Leader(?X) .
+src_Musician(?X) , src_Diplomat(?X) , src_City(?X) -> City(?X) .
+src_Military-Organisation(?X) , src_Settlement(?X) -> Settlement(?X) .
+src_Military-Unit(?X) , src_Cleric(?X) -> Cleric(?X) .
+src_Writing(?X) , src_Management-Organisation(?X) , src_Liturgical-Object(?X) , src_Saint(?X) , src_Person-Role(?X) -> Person-Role(?X) .
+src_Ecclesiarch(?X) , src_Artistic-Movement(?X) , src_Pope(?X) , src_Economic-Enterprise(?X) , src_Clerical-Leader(?X) -> Clerical-Leader(?X) .
+src_Public-Oration(?X) , src_Leader(?X) -> Leader(?X) .
+src_Scientist(?X) , src_Work-of-Art(?X) , src_Clothing(?X) -> Clothing(?X) .
+src_Uprising(?X) , src_Religious-Organisation(?X) , src_Commodity(?X) -> Commodity(?X) .
+src_Treaty(?X) , src_Composer(?X) -> Composer(?X) .
+src_Person-Role(?X) , src_Secular-Ideology(?X) , src_Religious-Order(?X) , src_Conductor(?X) -> Conductor(?X) .
+src_Religious-Practice(?X) , src_Country(?X) -> Country(?X) .
+src_Food(?X) , src_Location(?X) -> Location(?X) .
+src_Time-Dependent(?X) , src_Crime(?X) -> Crime(?X) .
+src_Head-of-Government(?X) , src_Architect(?X) , src_Criminal(?X) -> Criminal(?X) .
+src_Ethnic-Group(?X) , src_Trial(?X) , src_Ecclesiarch(?X) , src_Journalist(?X) , src_Cultural-Agreement(?X) -> Cultural-Agreement(?X) .
+src_Journal(?X) , src_Field-of-Knowledge(?X) , src_Legislation(?X) , src_Cultural-Organisation(?X) -> Cultural-Organisation(?X) .
+src_Art-Form(?X) , src_Organisation(?X) -> Organisation(?X) .
+src_Uprising(?X) , src_Dancer(?X) -> Dancer(?X) .
+src_Social-Group(?X) , src_King(?X) , src_Scandal(?X) , src_Diplomat(?X) -> Diplomat(?X) .
+src_Leader(?X) , src_Ecclesiarch(?X) , src_Animal(?X) , src_Religious-Ideology(?X) , src_Functionary(?X) -> Functionary(?X) .
+src_Natural-Object(?X) , src_Art-Form(?X) , src_International-Organisation(?X) , src_Disaster(?X) -> Disaster(?X) .
+src_isRelationMemberOf(?X,?Y) , src_Trial(?X) , src_Cleric(?X) , src_Idea(?X) , src_Disease(?X) -> Disease(?X) .
+src_hasLocationPartMember(?X,?Y) , src_Party(?X) , src_Dramaturge(?X) -> Dramaturge(?X) .
+src_Governmental-Organisation(?X) , src_Film-Maker(?X) , src_Water(?X) , src_Head-of-State(?X) , src_Dynasty(?X) -> Dynasty(?X) .
+src_Stereotype-Group(?X) , src_Social-Group(?X) -> Social-Group(?X) .
+src_Measurable-Trend(?X) , src_Organisation(?X) , src_Ecclesiarch(?X) -> Ecclesiarch(?X) .
+src_Disaster(?X) , src_Religious-Practice(?X) , src_Theologian(?X) , src_Economic-Enterprise(?X) -> Economic-Enterprise(?X) .
+src_Cathedral(?X) , src_Trades-Union(?X) , src_FuzzyTemporalInterval(?X) , src_Religious-Leader(?X) , src_Economic-Organisation(?X) -> Economic-Organisation(?X) .
+src_Author(?X) , src_Leader(?X) , src_VicodiOI(?X) , src_Economic-Process(?X) -> Economic-Process(?X) .
+src_Discoverer(?X) , src_Pastime(?X) , src_Legislation(?X) , src_Movement(?X) , src_Economic-Symbol(?X) -> Economic-Symbol(?X) .
+src_Time-Dependent-Relation(?X) , src_Prince(?X) , src_Political-Region(?X) , src_hasCategory(?X,?Y) , src_Symbol(?X) -> Symbol(?X) .
+src_Creator(?X) , src_Economist(?X) -> Economist(?X) .
+src_Natural-Object(?X) , src_Management-Organisation(?X) , src_Scientist(?X) -> Scientist(?X) .
+src_Diplomat(?X) , src_Educational-Organisation(?X) -> Educational-Organisation(?X) .
+src_Legislation(?X) , src_Stereotype-Group(?X) , src_Election(?X) -> Election(?X) .
+src_Economic-Enterprise(?X) , src_Stereotype-Group(?X) , src_Leader(?X) , src_Emperor(?X) -> Emperor(?X) .
+src_Political-Region(?X) , src_Head-of-State(?X) -> Head-of-State(?X) .
+src_Train(?X) , src_Idea(?X) , src_Water(?X) , src_Engineer(?X) -> Engineer(?X) .
+src_isLocationContainerMemberOf(?X,?Y) , src_Category(?X) , src_related(?X,?Y) , src_Environment(?X) -> Environment(?X) .
+src_Badge(?X) , src_Ethnic-Group(?X) -> Ethnic-Group(?X) .
+src_Monastery(?X) , src_Fictional-Event(?X) -> Fictional-Event(?X) .
+src_Scientist(?X) , src_Individual(?X) , src_Structure(?X) , src_Fictional-Person(?X) -> Fictional-Person(?X) .
+src_Sultan(?X) , src_Religious-Community(?X) , src_Legislation(?X) , src_Trade-Association(?X) , src_Individual(?X) -> Individual(?X) .
+src_FuzzyTemporalInterval(?X) , src_Stereotype-Group(?X) , src_Organisation(?X) , src_Field-of-Knowledge(?X) -> Field-of-Knowledge(?X) .
+src_Writing(?X) , src_Religious-Organisation(?X) , src_Pamphlet(?X) , src_Dynasty(?X) , src_Intellectual-Construct(?X) -> Intellectual-Construct(?X) .
+src_Publisher(?X) , src_Symbol(?X) , src_Flavour(?X) , src_Film-Maker(?X) -> Film-Maker(?X) .
+src_related(?X,?Y) , src_Time-Dependent(?X) -> Time-Dependent(?X) .
+src_Non-Military-Conflict(?X) , src_Food(?X) -> Food(?X) .
+src_Religious-Practice(?X) , src_Military-Person(?X) , src_Foreign-Minister(?X) -> Foreign-Minister(?X) .
+src_University(?X) , src_Abstract-Notion(?X) , src_Train(?X) , src_Dramaturge(?X) , src_Minister(?X) -> Minister(?X) .
+src_Painter(?X) , src_Magnate(?X) , src_Artist(?X) , src_hasLocationPartMember(?X,?Y) , src_FuzzyTemporalInterval(?X) -> FuzzyTemporalInterval(?X) .
+src_Intra-State-Group(?X) , src_Time(?X) -> Time(?X) .
+src_International-Alliance(?X) , src_Theologian(?X) , src_Individual(?X) , src_Geographer(?X) -> Geographer(?X) .
+src_Economic-Process(?X) , src_Religious-Ideology(?X) , src_Stereotype-Group(?X) , src_Measurable-Trend(?X) , src_Geographical-Discovery(?X) -> Geographical-Discovery(?X) .
+src_TemporalInterval(?X) , src_Work-of-Art(?X) , src_Author(?X) , src_Object(?X) , src_Geographical-Feature(?X) -> Geographical-Feature(?X) .
+src_Liturgical-Object(?X) , src_Newspaper(?X) , src_Geographical-Region(?X) -> Geographical-Region(?X) .
+src_Conductor(?X) , src_Governmental-Organisation(?X) -> Governmental-Organisation(?X) .
+src_National-Symbol(?X) , src_Political-Organisation(?X) -> Political-Organisation(?X) .
+src_Commodity(?X) , src_Work-of-Art(?X) , src_Conductor(?X) , src_Head-of-Government(?X) -> Head-of-Government(?X) .
+src_Governmental-Organisation(?X) , src_Secular-Leader(?X) -> Secular-Leader(?X) .
+src_FuzzyTemporalInterval(?X) , src_isLocationContainerMemberOf(?X,?Y) , src_Life-Event(?X) , src_Idea(?X) -> Idea(?X) .
+src_Religious-Ideology(?X) , src_Ideology(?X) -> Ideology(?X) .
+src_Work-of-Art(?X) , src_Country(?X) , src_Professor(?X) , src_Illness(?X) -> Illness(?X) .
+src_Journal(?X) , src_Cleric(?X) , src_VicodiOI(?X) , src_Life-Event(?X) -> Life-Event(?X) .
+src_Composer(?X) , src_Economist(?X) , src_Intellectual-Movement(?X) -> Intellectual-Movement(?X) .
+src_Artefact(?X) , src_Illness(?X) , src_Role(?X) , src_International-Alliance(?X) -> International-Alliance(?X) .
+src_Event(?X) , src_International-Organisation(?X) -> International-Organisation(?X) .
+src_Time-Dependent(?X) , src_Intra-State-Group(?X) -> Intra-State-Group(?X) .
+src_Economic-Symbol(?X) , src_Inventor(?X) -> Inventor(?X) .
+src_Publisher(?X) , src_Geographical-Discovery(?X) , src_Jurist(?X) , src_Journal(?X) -> Journal(?X) .
+src_Sculptor(?X) , src_Person(?X) , src_Journalist(?X) -> Journalist(?X) .
+src_Cultural-Agreement(?X) , src_Uprising(?X) , src_Educational-Organisation(?X) , src_Jurist(?X) -> Jurist(?X) .
+src_Armament(?X) , src_Public-Oration(?X) , src_Pope(?X) , src_Artist(?X) , src_King(?X) -> King(?X) .
+src_Illness(?X) , src_Symbol(?X) , src_Religious-Order(?X) , src_Representative-Institution(?X) , src_Landmark(?X) -> Landmark(?X) .
+src_Idea(?X) , src_Language(?X) -> Language(?X) .
+src_Dramaturge(?X) , src_Emperor(?X) , src_Conceptual-Object(?X) , src_Prince(?X) , src_League(?X) -> League(?X) .
+src_Location(?X) , src_Trades-Unionist(?X) , src_Piece-of-Music(?X) , src_Emperor(?X) , src_Legislation(?X) -> Legislation(?X) .
+src_League(?X) , src_Settlement(?X) , src_Ecclesiarch(?X) , src_Liturgical-Object(?X) -> Liturgical-Object(?X) .
+src_Religious-Organisation(?X) , src_Religious-Movement(?X) , src_Location-Part-Relation(?X) -> Location-Part-Relation(?X) .
+src_Painting(?X) , src_Idea(?X) , src_Religious-Community(?X) , src_Prince(?X) , src_Time-Dependent-Relation(?X) -> Time-Dependent-Relation(?X) .
+src_exists(?X,?Y) , src_Masonic-Lodge(?X) -> Masonic-Lodge(?X) .
+src_Other-Religious-Leader(?X) , src_Measurable-Trend(?X) -> Measurable-Trend(?X) .
+src_Individual(?X) , src_Meeting(?X) -> Meeting(?X) .
+src_Abstract-Notion(?X) , src_hasCategory(?X,?Y) , src_Period(?X) , src_Political-Symbol(?X) , src_Military-Organisation(?X) -> Military-Organisation(?X) .
+src_Flavour(?X) , src_Economic-Organisation(?X) , src_Composer(?X) , src_Environment(?X) , src_Military-Person(?X) -> Military-Person(?X) .
+src_Religious-Order(?X) , src_Ship(?X) , src_Physician(?X) , src_Criminal(?X) , src_Military-Unit(?X) -> Military-Unit(?X) .
+src_Category(?X) , src_Dancer(?X) , src_Sculpture(?X) , src_Monastery(?X) -> Monastery(?X) .
+src_Work-of-Art(?X) , src_Church(?X) , src_Measurable-Trend(?X) , src_Musician(?X) -> Musician(?X) .
+src_Military-Person(?X) , src_Head-of-State(?X) , src_National-Symbol(?X) -> National-Symbol(?X) .
+src_Idea(?X) , src_Newspaper(?X) -> Newspaper(?X) .
+src_hasRole(?X,?Y) , src_Book(?X) , src_Non-Military-Conflict(?X) -> Non-Military-Conflict(?X) .
+src_Population-Movement(?X) , src_Intra-State-Group(?X) , src_Journal(?X) , src_Other-Religious-Leader(?X) -> Other-Religious-Leader(?X) .
+src_Military-Organisation(?X) , src_Geographical-Region(?X) , src_Other-Religious-Person(?X) -> Other-Religious-Person(?X) .
+src_Conceptual-Object(?X) , src_Representative-Institution(?X) , src_Painter(?X) -> Painter(?X) .
+src_hasCategory(?X,?Y) , src_Commodity(?X) , src_Journalist(?X) , src_Legislation(?X) , src_Painting(?X) -> Painting(?X) .
+src_Artistic-Style(?X) , src_Secular-Movement(?X) , src_Battle(?X) , src_Abbey(?X) , src_Work-of-Art(?X) -> Work-of-Art(?X) .
+src_Organisation(?X) , src_Social-Stratum(?X) , src_Pamphlet(?X) -> Pamphlet(?X) .
+src_Building(?X) , src_Piece-of-Music(?X) , src_Time-Dependent-Relation(?X) , src_Party(?X) -> Party(?X) .
+src_Inventor(?X) , src_Pastime(?X) -> Pastime(?X) .
+src_Artistic-Movement(?X) , src_Economist(?X) , src_Period(?X) -> Period(?X) .
+src_Functionary(?X) , src_Location-Part-Relation(?X) , src_Period-in-Office(?X) -> Period-in-Office(?X) .
+src_Location(?X) , src_Sultan(?X) , src_Person(?X) -> Person(?X) .
+src_Representative-Institution(?X) , src_hasLocationContainerMember(?X,?Y) , src_Language(?X) , src_Role(?X) -> Role(?X) .
+src_Economic-Process(?X) , src_Trial(?X) , src_Engineer(?X) , src_Book(?X) , src_Philanthropist(?X) -> Philanthropist(?X) .
+src_Sculptor(?X) , src_Political-Organisation(?X) , src_Philosopher(?X) -> Philosopher(?X) .
+src_Cleric(?X) , src_Physician(?X) -> Physician(?X) .
+src_King(?X) , src_Piece-of-Music(?X) -> Piece-of-Music(?X) .
+src_Cleric(?X) , src_Head-of-State(?X) , src_Stereotype-Group(?X) , src_Party(?X) , src_Political-Region(?X) -> Political-Region(?X) .
+src_Inventor(?X) , src_International-Organisation(?X) , src_Legislation(?X) , src_Party(?X) , src_Political-Symbol(?X) -> Political-Symbol(?X) .
+src_Intellectual-Construct(?X) , src_Politician(?X) -> Politician(?X) .
+src_Geographer(?X) , src_Cathedral(?X) , src_Pollution(?X) -> Pollution(?X) .
+src_Work-of-Art(?X) , src_Business-Leader(?X) , src_Pope(?X) -> Pope(?X) .
+src_hasRole(?X,?Y) , src_Population-Movement(?X) -> Population-Movement(?X) .
+src_Philanthropist(?X) , src_Uprising(?X) , src_King(?X) , src_Geographical-Feature(?X) , src_Prince(?X) -> Prince(?X) .
+src_Flavour(?X) , src_Religious-Leader(?X) , src_Abstract-Notion(?X) , src_isRelationMemberOf(?X,?Y) , src_Professor(?X) -> Professor(?X) .
+src_Inventor(?X) , src_Masonic-Lodge(?X) , src_Musician(?X) , src_Psychologist(?X) -> Psychologist(?X) .
+src_Monastery(?X) , src_Measurable-Trend(?X) , src_Public-Oration(?X) -> Public-Oration(?X) .
+src_Commodity(?X) , src_Sultan(?X) , src_Intellectual-Construct(?X) , src_Publisher(?X) -> Publisher(?X) .
+src_Geographer(?X) , src_Queen(?X) -> Queen(?X) .
+src_Military-Person(?X) , src_Physician(?X) , src_Relic(?X) -> Relic(?X) .
+src_Secular-Ideology(?X) , src_Philanthropist(?X) , src_Author(?X) , src_Religious-Community(?X) -> Religious-Community(?X) .
+src_Conductor(?X) , src_Religious-Organisation(?X) -> Religious-Organisation(?X) .
+src_Fictional-Event(?X) , src_Religious-Ideology(?X) -> Religious-Ideology(?X) .
+src_Food(?X) , src_Religious-Movement(?X) -> Religious-Movement(?X) .
+src_Film-Maker(?X) , src_Economic-Organisation(?X) , src_Religious-Order(?X) -> Religious-Order(?X) .
+src_Religious-Symbol(?X) , src_Educational-Organisation(?X) , src_Intra-State-Group(?X) , src_Psychologist(?X) , src_Religious-Practice(?X) -> Religious-Practice(?X) .
+src_isRelationMemberOf(?X,?Y) , src_Piece-of-Music(?X) , src_Educational-Organisation(?X) , src_Period-in-Office(?X) , src_Religious-Symbol(?X) -> Religious-Symbol(?X) .
+src_hasCategory(?X,?Y) , src_Discoverer(?X) , src_Scientific-Instrument(?X) , src_Social-Stratum(?X) , src_Representative-Institution(?X) -> Representative-Institution(?X) .
+src_Dancer(?X) , src_Settlement(?X) , src_Movement(?X) , src_Ritual(?X) -> Ritual(?X) .
+src_hasCategory(?X,?Y) , src_Saint(?X) -> Saint(?X) .
+src_University(?X) , src_Board(?X) , src_Language(?X) , src_Scandal(?X) -> Scandal(?X) .
+src_Sculpture(?X) , src_Disease(?X) , src_related(?X,?Y) , src_Scientific-Instrument(?X) -> Scientific-Instrument(?X) .
+src_Environment(?X) , src_Sculptor(?X) -> Sculptor(?X) .
+src_Painting(?X) , src_Individual(?X) , src_Water(?X) , src_Meeting(?X) , src_Sculpture(?X) -> Sculpture(?X) .
+src_Flavour(?X) , src_Artistic-Style(?X) , src_Legislation(?X) , src_Secular-Ideology(?X) -> Secular-Ideology(?X) .
+src_Secular-Ideology(?X) , src_Artefact(?X) , src_Secular-Movement(?X) -> Secular-Movement(?X) .
+src_Election(?X) , src_Economic-Process(?X) , src_Engineer(?X) , src_Military-Unit(?X) , src_Ship(?X) -> Ship(?X) .
+src_Journalist(?X) , src_hasRole(?X,?Y) , src_Person(?X) , src_Vehicle(?X) -> Vehicle(?X) .
+src_Journal(?X) , src_Social-Stratum(?X) -> Social-Stratum(?X) .
+src_Event(?X) , src_Technical-Scientific-Advance(?X) , src_Leader(?X) , src_Sportsman(?X) -> Sportsman(?X) .
+src_related(?X,?Y) , src_Stereotype-Group(?X) -> Stereotype-Group(?X) .
+src_Political-Symbol(?X) , src_Idea(?X) , src_Conductor(?X) , src_Structure(?X) -> Structure(?X) .
+src_Scientist(?X) , src_Sultan(?X) -> Sultan(?X) .
+src_Actor(?X) , src_Dynasty(?X) , src_Representative-Institution(?X) , src_Cultural-Agreement(?X) , src_Technical-Scientific-Advance(?X) -> Technical-Scientific-Advance(?X) .
+src_Board(?X) , src_Location(?X) , src_Discoverer(?X) , src_Structure(?X) , src_TemporalInterval(?X) -> TemporalInterval(?X) .
+src_Event(?X) , src_Monastery(?X) , src_Philanthropist(?X) , src_Time-Dependent-Relation(?X) , src_Theologian(?X) -> Theologian(?X) .
+src_Ecclesiarch(?X) , src_Trade-Association(?X) -> Trade-Association(?X) .
+src_Pamphlet(?X) , src_Ethnic-Group(?X) , src_Trades-Union(?X) -> Trades-Union(?X) .
+src_Military-Unit(?X) , src_Ideology(?X) , src_Religious-Practice(?X) , src_Cultural-Agreement(?X) , src_Trades-Unionist(?X) -> Trades-Unionist(?X) .
+src_Conductor(?X) , src_Sculpture(?X) , src_Sultan(?X) , src_Crime(?X) , src_Train(?X) -> Train(?X) .
+src_Person(?X) , src_Discoverer(?X) , src_Field-of-Knowledge(?X) , src_Treaty(?X) -> Treaty(?X) .
+src_Actor(?X) , src_Secular-Movement(?X) , src_Trial(?X) -> Trial(?X) .
+src_Field-of-Knowledge(?X) , src_Saint(?X) , src_Period(?X) , src_Clothing(?X) , src_University(?X) -> University(?X) .
+src_Life-Event(?X) , src_National-Symbol(?X) , src_Time-Dependent-Relation(?X) , src_Writing(?X) , src_Uprising(?X) -> Uprising(?X) .
+src_Period-in-Office(?X) , src_Village(?X) -> Village(?X) .
+src_Secular-Leader(?X) , src_War(?X) -> War(?X) .
+src_Business-Leader(?X) , src_Water(?X) -> Water(?X) .
+src_Landmark(?X) , src_exists(?X,?Y) -> exists(?X,?Y) .
+src_Religious-Practice(?X) , src_Actor(?X) , src_related(?X,?Y) -> related(?X,?Y) .
+src_hasLocationPartMember(?X,?Y) , src_Psychologist(?X) , src_Relic(?X) , src_hasCategory(?X,?Y) -> hasCategory(?X,?Y) .
+src_Disease(?X) , src_hasLocationContainerMember(?X,?Y) -> hasLocationContainerMember(?X,?Y) .
+src_Minister(?X) , src_Time-Dependent(?X) , src_hasRelationMember(?X,?Y) -> hasRelationMember(?X,?Y) .
+src_Educational-Organisation(?X) , src_Badge(?X) , src_King(?X) , src_hasLocationPartMember(?X,?Y) -> hasLocationPartMember(?X,?Y) .
+src_Leader(?X) , src_Economic-Organisation(?X) , src_hasRole(?X,?Y) -> hasRole(?X,?Y) .
+src_isRelationMemberOf(?X,?Y) , src_isLocationPartMemberOf(?X,?Y) , src_isLocationContainerMemberOf(?X,?Y) -> isLocationContainerMemberOf(?X,?Y) .
+src_hasLocationPartMember(?X,?Y) , src_Conductor(?X) , src_isRelationMemberOf(?X,?Y) -> isRelationMemberOf(?X,?Y) .
+src_Location-Part-Relation(?X) , src_hasCategory(?X,?Y) , src_Geographical-Region(?X) , src_isLocationPartMemberOf(?X,?Y) -> isLocationPartMemberOf(?X,?Y) .

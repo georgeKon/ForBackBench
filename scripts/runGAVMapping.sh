@@ -2,8 +2,8 @@
 
 # query.sh runs a test on one query of a scenario
 NUM_TESTS=1
-SCENARIOS=("scenarios/Adolena")
-SIZES=("small")
+SCENARIOS=("scenarios/StockExchange")
+SIZES=("large")
 
 for BASE_DIR in "${SCENARIOS[@]}"; do
   for SIZE in ${SIZES[*]}; do
@@ -13,6 +13,7 @@ for BASE_DIR in "${SCENARIOS[@]}"; do
     export PGPASSWORD
     START_TIME=$(date +%s%N)
 	psql -h $PGHOST -p $PGPORT -U $PGUSER -c "SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE datname = 'npd';"
+   	psql -h $PGHOST -p $PGPORT -U $PGUSER -c "SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE datname = 'deep';"
     psql -h $PGHOST -p $PGPORT -U $PGUSER -c "DROP DATABASE IF EXISTS \"${PGDATABASE}\";"
     psql -h $PGHOST -p $PGPORT -U $PGUSER -c "CREATE DATABASE \"${PGDATABASE}\";"
     psql -h $PGHOST -p $PGPORT -U $PGUSER -d $PGDATABASE -f ../$BASE_DIR/schema/GAV/s-schema.sql
@@ -23,7 +24,7 @@ for BASE_DIR in "${SCENARIOS[@]}"; do
     done
 
     # then we run all 5 queries
-    for ((i=1;i<=1;++i)); do
+    for ((i=1;i<=5;++i)); do
       ./queryGAVMapping.sh $BASE_DIR $i $SIZE
     done
   done

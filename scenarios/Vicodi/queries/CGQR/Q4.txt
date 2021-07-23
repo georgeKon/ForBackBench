@@ -1,0 +1,1 @@
+QX4(X0,X1) :- Object(X0),hasRole(X0,X1),Symbol(X1) .

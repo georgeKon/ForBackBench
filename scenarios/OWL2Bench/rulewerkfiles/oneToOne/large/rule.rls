@@ -118,6 +118,7 @@
 @source srcResearchAssistant[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/oneToOne/large/src_ResearchAssistant.csv") .
 @source srchasTelephone[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/oneToOne/large/src_hasTelephone.csv") .
 @source srchasCommitteeMembers[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/oneToOne/large/src_hasCommitteeMembers.csv") .
+@source srchasAdvisor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/oneToOne/large/src_hasAdvisor.csv") .
 @source srcPerson[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/oneToOne/large/src_Person.csv") .
 @source srcMathematics[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/oneToOne/large/src_Mathematics.csv") .
 @source srcisFacultyOf[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/OWL2Bench/data/oneToOne/large/src_isFacultyOf.csv") .

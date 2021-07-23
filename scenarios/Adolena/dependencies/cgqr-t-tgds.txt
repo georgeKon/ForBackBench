@@ -1,0 +1,103 @@
+c0(z) :- MovementAbility(X), PhysicalAbility(X) .
+c1(z) :- Stuttering(X), SpeechDisability(X) .
+c2(z) :- LowerLimbMobility(X), LimbMobility(X) .
+c3(z) :- FaceToFaceCommunicationDevice(X), Communication00009999Device(X) .
+c4(z) :- FaceToFaceCommunicationDevice(X), assistsWith(X,Y), SpeechAbility(Y) .
+c5(z) :- WritingDevice(X), Communication00009999Device(X) .
+c6(z) :- Multiple00009999sclerosis(X), PhysicalDisability(X) .
+c7(z) :- Achondroplasia(X), PhysicalDisability(X) .
+c8(z) :- BraillePillOrganiser(X), TactileReading(X) .
+c9(z) :- TelephoneAid(X), ListenDevice(X) .
+c10(z) :- TelephoneAid(X), SpeechDevice(X) .
+c11(z) :- MentalDisability(X), Disability(X) .
+c12(z) :- BatteryPowered00009999Wheelchair(X), Motorised00009999Wheelchair(X) .
+c13(z) :- Hear(X), HearingAbility(X) .
+c14(z) :- Muscular00009999dystrophy(X), PhysicalDisability(X) .
+c15(z) :- Wheelchair(X), MobilityDevice(X) .
+c16(z) :- Wheelchair(X), assistsWith(X,Y), LimbMobility(Y) .
+c17(z) :- Paraplegia(X), affects(X,Y), LowerLimbMobility(Y) .
+c18(z) :- Paraplegia(X), PhysicalDisability(X) .
+c19(z) :- See(X), SightAbility(X) .
+c20(z) :- BrailleAlarmClock(X), TactileReading(X) .
+c21(z) :- Hear00009999partially(X), HearingAbility(X) .
+c22(z) :- Communication00009999Device(X), AssistiveDevice(X) .
+c23(z) :- Motorised00009999Wheelchair(X), Wheelchair(X) .
+c24(z) :- Motorised00009999Wheelchair(X), assistsWith(X,Y), UpperLimbMobility(Y) .
+c25(z) :- Motorised00009999Wheelchair(X), assistsWith(X,Y), LowerLimbMobility(Y) .
+c26(z) :- SensoryAbility(X), Ability(X) .
+c27(z) :- LowVision(X), VisualDisability(X) .
+c28(z) :- HearingAbility(X), SensoryAbility(X) .
+c29(z) :- Talking00009999Thermometer(X), TalkingReading(X) .
+c30(z) :- SightAbility(X), SensoryAbility(X) .
+c31(z) :- TalkingReading(X), ReadingDevice(X) .
+c32(z) :- TalkingReading(X), assistsWith(X,Y), SightAbility(Y) .
+c33(z) :- TalkingReading(X), requiresAbility(X,Y), HearingAbility(Y) .
+c34(z) :- Epilepsy(X), MentalDisability(X) .
+c35(z) :- IntellectualDisability(X), MentalDisability(X) .
+c36(z) :- Autism(X), MentalDisability(X) .
+c37(z) :- Amputation(X), PhysicalDisability(X) .
+c38(z) :- AssistiveDevice(X), Device(X) .
+c39(z) :- AssistiveDevice(X), assistsWith(X,Y), Ability(Y) .
+c40(z) :- Manual00009999Wheelchair(X), requiresAbility(X,Y), UpperLimbMobility(Y) .
+c41(z) :- Manual00009999Wheelchair(X), Wheelchair(X) .
+c42(z) :- Manual00009999Wheelchair(X), assistsWith(X,Y), LowerLimbMobility(Y) .
+c43(z) :- BrailleWatch(X), TactileReading(X) .
+c44(z) :- Foldable00009999Wheelchair(X), Manual00009999Wheelchair(X) .
+c45(z) :- Osteogensis00009999Imperfecta(X), PhysicalDisability(X) .
+c46(z) :- Hemiplegia(X), PhysicalDisability(X) .
+c47(z) :- Quadriplegia(X), PhysicalDisability(X) .
+c48(z) :- Quadriplegia(X), affects(X,Y), UpperLimbMobility(Y) .
+c49(z) :- Quadriplegia(X), affects(X,Y), LowerLimbMobility(Y) .
+c50(z) :- Guillaume00009999Barre(X), PhysicalDisability(X) .
+c51(z) :- SpeechAbility(X), Ability(X) .
+c52(z) :- BrailleWritingDevice(X), WritingDevice(X) .
+c53(z) :- BrailleWritingDevice(X), assistsWith(X,Y), SightAbility(Y) .
+c54(z) :- See00009999partially(X), SightAbility(X) .
+c55(z) :- Spina00009999Bifida(X), PhysicalDisability(X) .
+c56(z) :- ReadingDevice(X), Communication00009999Device(X) .
+c57(z) :- ReadingDevice(X), assistsWith(X,Y), SightAbility(Y) .
+c58(z) :- TactileAbility(X), SensoryAbility(X) .
+c59(z) :- PhysicalAbility(X), Ability(X) .
+c60(z) :- Ability(X), Thing(X) .
+c61(z) :- Ability(X), isAssistedBy(X,Y), Device(Y) .
+c62(z) :- Ability(X), isAffectedBy(X,Y), Disability(Y) .
+c63(z) :- LightweightFoldable00009999Wheelchair(X), Foldable00009999Wheelchair(X) .
+c64(z) :- LightweightFoldable00009999Wheelchair(X), Lightweight00009999Wheelchair(X) .
+c65(z) :- Blind(X), VisualDisability(X) .
+c66(z) :- Reach(X), MovementAbility(X) .
+c67(z) :- UpperLimbMobility(X), LimbMobility(X) .
+c68(z) :- Disability(X), Thing(X) .
+c69(z) :- TactileReading(X), ReadingDevice(X) .
+c70(z) :- TactileReading(X), assistsWith(X,Y), SightAbility(Y) .
+c71(z) :- TactileReading(X), requiresAbility(X,Y), TactileAbility(Y) .
+c72(z) :- Deaf(X), affects(X,Y), SpeechAbility(Y) .
+c73(z) :- Deaf(X), HearingDisability(X) .
+c74(z) :- Deafened(X), HearingDisability(X) .
+c75(z) :- SymbolBoard(X), FaceToFaceCommunicationDevice(X) .
+c76(z) :- ListenDevice(X), Communication00009999Device(X) .
+c77(z) :- ListenDevice(X), assistsWith(X,Y), HearingAbility(Y) .
+c78(z) :- Dystonia(X), PhysicalDisability(X) .
+c79(z) :- PhysicalDisability(X), affects(X,Y), PhysicalAbility(Y) .
+c80(z) :- PhysicalDisability(X), Disability(X) .
+c81(z) :- FaceToFaceCommunicationSoftware(X), FaceToFaceCommunicationDevice(X) .
+c82(z) :- Kyphosis(X), PhysicalDisability(X) .
+c83(z) :- Hard00009999of00009999hearing(X), HearingDisability(X) .
+c84(z) :- HearingDisability(X), affects(X,Y), HearingAbility(Y) .
+c85(z) :- HearingDisability(X), Disability(X) .
+c86(z) :- Cerebral00009999palsy(X), PhysicalDisability(X) .
+c87(z) :- SpeechDevice(X), Communication00009999Device(X) .
+c88(z) :- SpeechDevice(X), assistsWith(X,Y), SpeechAbility(Y) .
+c89(z) :- Lightweight00009999Wheelchair(X), Manual00009999Wheelchair(X) .
+c90(z) :- LimbMobility(X), MovementAbility(X) .
+c91(z) :- VisualDisability(X), Disability(X) .
+c92(z) :- MobilityDevice(X), AssistiveDevice(X) .
+c93(z) :- MobilityDevice(X), assistsWith(X,Y), MovementAbility(Y) .
+c94(z) :- SpeechDisability(X), Disability(X) .
+c95(z) :- Poliomyelitis(X), PhysicalDisability(X) .
+c96(z) :- Little00009999or00009999No00009999Speech(X), affects(X,Y), SpeechAbility(Y) .
+c97(z) :- Little00009999or00009999No00009999Speech(X), SpeechDisability(X) .
+c98(z) :- Scoliosis(X), PhysicalDisability(X) .
+c99(z) :- affects(Y,X), isAffectedBy(X,Y) .
+c100(z) :- isAffectedBy(Y,X), affects(X,Y) .
+c101(z) :- isAssistedBy(Y,X), assistsWith(X,Y) .
+c102(z) :- assistsWith(Y,X), isAssistedBy(X,Y) .

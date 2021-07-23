@@ -1,0 +1,112 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@source srcFullProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_FullProfessor.csv") .
+@source srcaffiliateOf[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_affiliateOf.csv") .
+@source srcDirector[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_Director.csv") .
+@source srctakesCourse[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_takesCourse.csv") .
+@source srcPerson[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_Person.csv") .
+@source srcGraduateStudent[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_GraduateStudent.csv") .
+@source srcDegree[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_Degree.csv") .
+@source srcaffiliatedOrganizationOf[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_affiliatedOrganizationOf.csv") .
+@source srcUndergraduateStudent[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_UndergraduateStudent.csv") .
+@source srcAssistantProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_AssistantProfessor.csv") .
+@source srcUniversity[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_University.csv") .
+@source srcStudent[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_Student.csv") .
+@source srcisPartOfUniversity[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_isPartOfUniversity.csv") .
+@source srcSystemsStaff[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_SystemsStaff.csv") .
+@source srcorgPublication[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_orgPublication.csv") .
+@source srcAdministrativeStaff[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_AdministrativeStaff.csv") .
+@source srcBachelorExam[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_BachelorExam.csv") .
+@source srcdegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_degreeFrom.csv") .
+@source srcExDean[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_ExDean.csv") .
+@source srcundergraduateDegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_undergraduateDegreeFrom.csv") .
+@source srcEmployee[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_Employee.csv") .
+@source srcPostDoc[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_PostDoc.csv") .
+@source srcLecturer[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_Lecturer.csv") .
+@source srcProgram[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_Program.csv") .
+@source srcworksFor[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_worksFor.csv") .
+@source srctenured[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_tenured.csv") .
+@source srchasFaculty[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_hasFaculty.csv") .
+@source srcDean[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_Dean.csv") .
+@source srcExam[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_Exam.csv") .
+@source srcAssociateProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_AssociateProfessor.csv") .
+@source srcExamRecord[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_ExamRecord.csv") .
+@source srcCareer[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_Career.csv") .
+@source srcOrganization[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_Organization.csv") .
+@source srcadvisor[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_advisor.csv") .
+@source srcteacherOf[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_teacherOf.csv") .
+@source srcFaculty[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_Faculty.csv") .
+@source srcdoctoralDegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_doctoralDegreeFrom.csv") .
+@source srcteachingAssistantOf[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_teachingAssistantOf.csv") .
+@source srcChair[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_Chair.csv") .
+@source srcCollege[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_College.csv") .
+@source srcmember[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_member.csv") .
+@source srcVisitingProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_VisitingProfessor.csv") .
+@source srcpublicationAuthor[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_publicationAuthor.csv") .
+@source srcResearchAssistant[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_ResearchAssistant.csv") .
+@source srcClericalStaff[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_ClericalStaff.csv") .
+@source srcFacultyStaff[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_FacultyStaff.csv") .
+@source srcmemberOf[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_memberOf.csv") .
+@source srchasAlumnus[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_hasAlumnus.csv") .
+@source srcmastersDegreeFrom[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_mastersDegreeFrom.csv") .
+@source srcProfessor[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_Professor.csv") .
+@source srcCourse[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_Course.csv") .
+@source srchasExamRecord[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_hasExamRecord.csv") .
+@source srcheadOf[2] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_headOf.csv") .
+@source srcGraduateCourse[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_GraduateCourse.csv") .
+@source srcWork[1] : load-csv("/home/aa2c19/obdabenchmark/scripts/../scenarios/University/data/oneToOne/huge/src_Work.csv") .
+memberOf(?Y,?X),member(?X,?Y),Person(?Y),Organization(?X) :- srcmember(?X,?Y) .
+doctoralDegreeFrom(?X,?Y),degreeFrom(?X,?Y),University(?Y),Person(?X),Organization(?Y),hasAlumnus(?Y,?X) :- srcdoctoralDegreeFrom(?X,?Y) .
+Career(?X),Work(?X) :- srcCareer(?X) .
+College(?X),Organization(?X) :- srcCollege(?X) .
+Student(?X),Person(?X),Work(!n98),Course(!n99),takesCourse(?X,!n100) :- srcStudent(?X) .
+worksFor(?X,?Y),memberOf(?X,?Y),member(?Y,?X),Person(?X),headOf(?X,?Y),Organization(?Y) :- srcheadOf(?X,?Y) .
+memberOf(?X,?Y),member(?Y,?X),Person(?X),Organization(?Y) :- srcmemberOf(?X,?Y) .
+worksFor(?X,!n73),worksFor(?X,!n74),memberOf(?X,!n75),memberOf(?X,!n76),Dean(?X),Employee(?X),College(!n77),member(!n78,?X),member(!n79,?X),Person(?X),Professor(?X),headOf(?X,!n80),Organization(!n81),Organization(!n82),FacultyStaff(?X) :- srcDean(?X) .
+Faculty(?X),University(?Y),Organization(?X),Organization(?Y),hasFaculty(?Y,?X),isPartOfUniversity(?X,?Y) :- srcisPartOfUniversity(?X,?Y) .
+Degree(?X),Work(?X) :- srcDegree(?X) .
+degreeFrom(?Y,?X),University(?X),Person(?Y),Organization(?X),hasAlumnus(?X,?Y) :- srchasAlumnus(?X,?Y) .
+worksFor(?X,!n58),memberOf(?X,!n59),Employee(?X),member(!n60,?X),Person(?X),Professor(?X),Organization(!n61),FacultyStaff(?X),ExDean(?X) :- srcExDean(?X) .
+worksFor(?X,!n87),memberOf(?X,!n88),Employee(?X),member(!n89,?X),Person(?X),Professor(?X),Organization(!n90),Chair(?X),FacultyStaff(?X) :- srcChair(?X) .
+Work(?Y),Course(?Y),teachingAssistantOf(?X,?Y) :- srcteachingAssistantOf(?X,?Y) .
+Student(?X),Person(?X),hasExamRecord(?X,?Y),ExamRecord(?Y),Work(?Y),Work(!n91),Course(!n92),takesCourse(?X,!n93) :- srchasExamRecord(?X,?Y) .
+takesCourse(?X,?Y) :- srctakesCourse(?X,?Y) .
+worksFor(?X,!n1),memberOf(?X,!n2),Employee(?X),FullProfessor(?X),member(!n3,?X),Person(?X),Professor(?X),Organization(!n4),FacultyStaff(?X) :- srcFullProfessor(?X) .
+BachelorExam(?X),Work(?X),Exam(?X) :- srcBachelorExam(?X) .
+worksFor(?X,!n17),memberOf(?X,!n18),Employee(?X),member(!n19,?X),Person(?X),Professor(?X),Organization(!n20),FacultyStaff(?X) :- srcProfessor(?X) .
+worksFor(?X,!n13),memberOf(?X,!n14),Employee(?X),member(!n15,?X),Person(?X),Professor(?X),Organization(!n16),FacultyStaff(?X),VisitingProfessor(?X) :- srcVisitingProfessor(?X) .
+worksFor(?X,!n32),memberOf(?X,!n33),Employee(?X),member(!n34,?X),Person(?X),Organization(!n35) :- srcEmployee(?X) .
+Organization(?X) :- srcOrganization(?X) .
+publicationAuthor(?X,?Y),Person(?Y) :- srcpublicationAuthor(?X,?Y) .
+worksFor(?X,!n40),Program(!n41),memberOf(?X,!n42),Director(?X),member(!n43,?X),Person(?X),headOf(?X,!n44),Organization(!n45) :- srcDirector(?X) .
+worksFor(?X,!n46),memberOf(?X,!n47),Employee(?X),member(!n48,?X),Person(?X),Professor(?X),Organization(!n49),tenured(?X,?Y),FacultyStaff(?X) :- srctenured(?X,?Y) .
+worksFor(?X,?Y),memberOf(?X,?Y),member(?Y,?X),Person(?X),Organization(?Y) :- srcworksFor(?X,?Y) .
+Person(?X) :- srcPerson(?X) .
+ExamRecord(?X),Work(?X) :- srcExamRecord(?X) .
+worksFor(?X,!n83),memberOf(?X,!n84),Employee(?X),member(!n85,?X),AdministrativeStaff(?X),Person(?X),Organization(!n86),ClericalStaff(?X) :- srcClericalStaff(?X) .
+GraduateCourse(?X),Work(?X),Course(?X) :- srcGraduateCourse(?X) .
+worksFor(?Y,!n21),memberOf(?Y,!n22),Employee(?Y),member(!n23,?Y),Person(?X),Person(?Y),Professor(?Y),Organization(!n24),FacultyStaff(?Y),advisor(?X,?Y) :- srcadvisor(?X,?Y) .
+Student(?X),Person(?X),ResearchAssistant(?X),Work(!n25),Course(!n26),takesCourse(?X,!n27) :- srcResearchAssistant(?X) .
+undergraduateDegreeFrom(?X,?Y),degreeFrom(?X,?Y),University(?Y),Person(?X),Organization(?Y),hasAlumnus(?Y,?X) :- srcundergraduateDegreeFrom(?X,?Y) .
+GraduateCourse(!n5),Person(?X),Work(!n6),Course(!n7),GraduateStudent(?X),takesCourse(?X,!n8) :- srcGraduateStudent(?X) .
+University(?X),Organization(?X) :- srcUniversity(?X) .
+Faculty(?Y),University(?X),Organization(?Y),Organization(?X),hasFaculty(?X,?Y),isPartOfUniversity(?Y,?X) :- srchasFaculty(?X,?Y) .
+worksFor(?X,!n50),memberOf(?X,!n51),Employee(?X),member(!n52,?X),Person(?X),Organization(!n53),FacultyStaff(?X) :- srcFacultyStaff(?X) .
+worksFor(?X,!n65),memberOf(?X,!n66),Employee(?X),PostDoc(?X),member(!n67,?X),Person(?X),Organization(!n68),FacultyStaff(?X) :- srcPostDoc(?X) .
+degreeFrom(?X,?Y),University(?Y),Person(?X),Organization(?Y),hasAlumnus(?Y,?X) :- srcdegreeFrom(?X,?Y) .
+worksFor(?X,!n54),memberOf(?X,!n55),AssociateProfessor(?X),Employee(?X),member(!n56,?X),Person(?X),Professor(?X),Organization(!n57),FacultyStaff(?X) :- srcAssociateProfessor(?X) .
+Work(?X),Exam(?X) :- srcExam(?X) .
+worksFor(?X,!n28),memberOf(?X,!n29),Employee(?X),member(!n30,?X),Person(?X),Professor(?X),Organization(!n31),FacultyStaff(?X),AssistantProfessor(?X) :- srcAssistantProfessor(?X) .
+Organization(?X),Organization(?Y),affiliatedOrganizationOf(?X,?Y) :- srcaffiliatedOrganizationOf(?X,?Y) .
+Program(?X),Organization(?X) :- srcProgram(?X) .
+Faculty(?X),Organization(?X) :- srcFaculty(?X) .
+Student(?X),Person(?X),UndergraduateStudent(?X),Work(!n62),Course(!n63),takesCourse(?X,!n64) :- srcUndergraduateStudent(?X) .
+worksFor(?X,!n69),memberOf(?X,!n70),SystemsStaff(?X),Employee(?X),member(!n71,?X),AdministrativeStaff(?X),Person(?X),Organization(!n72) :- srcSystemsStaff(?X) .
+Person(?Y),Organization(?X),affiliateOf(?X,?Y) :- srcaffiliateOf(?X,?Y) .
+worksFor(?X,!n36),memberOf(?X,!n37),Lecturer(?X),Employee(?X),member(!n38,?X),Person(?X),Organization(!n39),FacultyStaff(?X) :- srcLecturer(?X) .
+degreeFrom(?X,?Y),University(?Y),mastersDegreeFrom(?X,?Y),Person(?X),Organization(?Y),hasAlumnus(?Y,?X) :- srcmastersDegreeFrom(?X,?Y) .
+orgPublication(?X,?Y),Organization(?X) :- srcorgPublication(?X,?Y) .
+worksFor(?X,!n9),memberOf(?X,!n10),Employee(?X),member(!n11,?X),AdministrativeStaff(?X),Person(?X),Organization(!n12) :- srcAdministrativeStaff(?X) .
+Work(?X),Course(?X) :- srcCourse(?X) .
+worksFor(?X,!n94),memberOf(?X,!n95),Employee(?X),member(!n96,?X),Person(?X),Organization(!n97),FacultyStaff(?X),Work(?Y),teacherOf(?X,?Y),Course(?Y) :- srcteacherOf(?X,?Y) .
+Work(?X) :- srcWork(?X) .
+Q5(?X) :- Person(?X),worksFor(?X,?Y),University(?Y),hasAlumnus(?Y,?X) .

@@ -1,0 +1,1 @@
+Q3(0,1) :- isAffiliatedOrganizationOf(0,1) .

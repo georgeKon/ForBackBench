@@ -19,10 +19,7 @@ src_Acquisition{
 	c17 : STRING,
 	c18 : STRING,
 	c19 : STRING,
-	c20 : STRING,
-	c21 : STRING,
-	c22 : STRING,
-	c23 : STRING
+	c20 : STRING
 }
 
 src_Transaction{
@@ -47,9 +44,7 @@ src_Transaction{
 	c18 : STRING,
 	c19 : STRING,
 	c20 : STRING,
-	c21 : STRING,
-	c22 : STRING,
-	c23 : STRING
+	c21 : STRING
 }
 
 src_Address{
@@ -71,10 +66,7 @@ src_Address{
 	c15 : STRING,
 	c16 : STRING,
 	c17 : STRING,
-	c18 : STRING,
-	c19 : STRING,
-	c20 : STRING,
-	c21 : STRING
+	c18 : STRING
 }
 
 src_inverseofhasAddress{
@@ -98,7 +90,10 @@ src_inverseofhasAddress{
 	c17 : STRING,
 	c18 : STRING,
 	c19 : STRING,
-	c20 : STRING
+	c20 : STRING,
+	c21 : STRING,
+	c22 : STRING,
+	c23 : STRING
 }
 
 src_Company{
@@ -120,7 +115,10 @@ src_Company{
 	c15 : STRING,
 	c16 : STRING,
 	c17 : STRING,
-	c18 : STRING
+	c18 : STRING,
+	c19 : STRING,
+	c20 : STRING,
+	c21 : STRING
 }
 
 src_LegalPerson{
@@ -146,7 +144,10 @@ src_LegalPerson{
 	c19 : STRING,
 	c20 : STRING,
 	c21 : STRING,
-	c22 : STRING
+	c22 : STRING,
+	c23 : STRING,
+	c24 : STRING,
+	c25 : STRING
 }
 
 src_Dealer{
@@ -167,51 +168,13 @@ src_Dealer{
 	c14 : STRING,
 	c15 : STRING,
 	c16 : STRING,
-	c17 : STRING
+	c17 : STRING,
+	c18 : STRING,
+	c19 : STRING,
+	c20 : STRING
 }
 
 src_StockBroker{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING,
-	c12 : STRING,
-	c13 : STRING,
-	c14 : STRING,
-	c15 : STRING
-}
-
-src_Investor{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING,
-	c12 : STRING,
-	c13 : STRING,
-	c14 : STRING,
-	c15 : STRING,
-	c16 : STRING,
-	c17 : STRING,
-	c18 : STRING
-}
-
-src_Person{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -234,11 +197,124 @@ src_Person{
 	c19 : STRING,
 	c20 : STRING,
 	c21 : STRING,
-	c22 : STRING,
-	c23 : STRING
+	c22 : STRING
+}
+
+src_Investor{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING,
+	c12 : STRING,
+	c13 : STRING,
+	c14 : STRING,
+	c15 : STRING,
+	c16 : STRING,
+	c17 : STRING
+}
+
+src_Person{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING,
+	c12 : STRING,
+	c13 : STRING,
+	c14 : STRING,
+	c15 : STRING,
+	c16 : STRING,
+	c17 : STRING,
+	c18 : STRING,
+	c19 : STRING
 }
 
 src_Offer{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING,
+	c12 : STRING,
+	c13 : STRING,
+	c14 : STRING,
+	c15 : STRING,
+	c16 : STRING,
+	c17 : STRING,
+	c18 : STRING,
+	c19 : STRING,
+	c20 : STRING
+}
+
+src_hasAddress{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING,
+	c12 : STRING,
+	c13 : STRING,
+	c14 : STRING,
+	c15 : STRING,
+	c16 : STRING,
+	c17 : STRING,
+	c18 : STRING
+}
+
+src_PhysicalPerson{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING,
+	c12 : STRING,
+	c13 : STRING,
+	c14 : STRING,
+	c15 : STRING,
+	c16 : STRING,
+	c17 : STRING,
+	c18 : STRING,
+	c19 : STRING,
+	c20 : STRING
+}
+
+src_Stock{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -269,7 +345,49 @@ src_Offer{
 	c27 : STRING
 }
 
-src_hasAddress{
+src_FinantialInstrument{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING,
+	c12 : STRING,
+	c13 : STRING,
+	c14 : STRING
+}
+
+src_isListedIn{
+	c0 : STRING,
+	c1 : STRING,
+	c2 : STRING,
+	c3 : STRING,
+	c4 : STRING,
+	c5 : STRING,
+	c6 : STRING,
+	c7 : STRING,
+	c8 : STRING,
+	c9 : STRING,
+	c10 : STRING,
+	c11 : STRING,
+	c12 : STRING,
+	c13 : STRING,
+	c14 : STRING,
+	c15 : STRING,
+	c16 : STRING,
+	c17 : STRING,
+	c18 : STRING,
+	c19 : STRING,
+	c20 : STRING
+}
+
+src_belongsToCompany{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -297,7 +415,7 @@ src_hasAddress{
 	c24 : STRING
 }
 
-src_PhysicalPerson{
+src_StockExchangeMember{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -316,11 +434,10 @@ src_PhysicalPerson{
 	c15 : STRING,
 	c16 : STRING,
 	c17 : STRING,
-	c18 : STRING,
-	c19 : STRING
+	c18 : STRING
 }
 
-src_Stock{
+src_tradesOnBehalfOf{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -339,21 +456,7 @@ src_Stock{
 	c15 : STRING
 }
 
-src_FinantialInstrument{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING
-}
-
-src_isListedIn{
+src_StockTrader{
 	c0 : STRING,
 	c1 : STRING,
 	c2 : STRING,
@@ -376,95 +479,7 @@ src_isListedIn{
 	c19 : STRING,
 	c20 : STRING,
 	c21 : STRING,
-	c22 : STRING,
-	c23 : STRING
-}
-
-src_belongsToCompany{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING,
-	c12 : STRING,
-	c13 : STRING,
-	c14 : STRING,
-	c15 : STRING,
-	c16 : STRING,
-	c17 : STRING
-}
-
-src_StockExchangeMember{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING,
-	c12 : STRING,
-	c13 : STRING,
-	c14 : STRING,
-	c15 : STRING,
-	c16 : STRING,
-	c17 : STRING,
-	c18 : STRING,
-	c19 : STRING
-}
-
-src_tradesOnBehalfOf{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING,
-	c12 : STRING,
-	c13 : STRING,
-	c14 : STRING,
-	c15 : STRING,
-	c16 : STRING,
-	c17 : STRING,
-	c18 : STRING
-}
-
-src_StockTrader{
-	c0 : STRING,
-	c1 : STRING,
-	c2 : STRING,
-	c3 : STRING,
-	c4 : STRING,
-	c5 : STRING,
-	c6 : STRING,
-	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING,
-	c12 : STRING,
-	c13 : STRING,
-	c14 : STRING,
-	c15 : STRING,
-	c16 : STRING,
-	c17 : STRING
+	c22 : STRING
 }
 
 src_Trader{
@@ -485,7 +500,9 @@ src_Trader{
 	c14 : STRING,
 	c15 : STRING,
 	c16 : STRING,
-	c17 : STRING
+	c17 : STRING,
+	c18 : STRING,
+	c19 : STRING
 }
 
 src_isExecutedFor{
@@ -513,7 +530,9 @@ src_isExecutedFor{
 	c21 : STRING,
 	c22 : STRING,
 	c23 : STRING,
-	c24 : STRING
+	c24 : STRING,
+	c25 : STRING,
+	c26 : STRING
 }
 
 src_isExecutedBy{
@@ -537,10 +556,7 @@ src_isExecutedBy{
 	c17 : STRING,
 	c18 : STRING,
 	c19 : STRING,
-	c20 : STRING,
-	c21 : STRING,
-	c22 : STRING,
-	c23 : STRING
+	c20 : STRING
 }
 
 src_involvesInstrument{
@@ -560,19 +576,7 @@ src_involvesInstrument{
 	c13 : STRING,
 	c14 : STRING,
 	c15 : STRING,
-	c16 : STRING,
-	c17 : STRING,
-	c18 : STRING,
-	c19 : STRING,
-	c20 : STRING,
-	c21 : STRING,
-	c22 : STRING,
-	c23 : STRING,
-	c24 : STRING,
-	c25 : STRING,
-	c26 : STRING,
-	c27 : STRING,
-	c28 : STRING
+	c16 : STRING
 }
 
 src_hasStock{
@@ -594,7 +598,8 @@ src_hasStock{
 	c15 : STRING,
 	c16 : STRING,
 	c17 : STRING,
-	c18 : STRING
+	c18 : STRING,
+	c19 : STRING
 }
 
 src_StockExchangeList{
@@ -606,12 +611,7 @@ src_StockExchangeList{
 	c5 : STRING,
 	c6 : STRING,
 	c7 : STRING,
-	c8 : STRING,
-	c9 : STRING,
-	c10 : STRING,
-	c11 : STRING,
-	c12 : STRING,
-	c13 : STRING
+	c8 : STRING
 }
 
 src_listsStock{
@@ -660,7 +660,8 @@ src_isTradedIn{
 	c21 : STRING,
 	c22 : STRING,
 	c23 : STRING,
-	c24 : STRING
+	c24 : STRING,
+	c25 : STRING
 }
 
 src_usesBroker{
@@ -677,6 +678,11 @@ src_usesBroker{
 	c10 : STRING,
 	c11 : STRING,
 	c12 : STRING,
-	c13 : STRING
+	c13 : STRING,
+	c14 : STRING,
+	c15 : STRING,
+	c16 : STRING,
+	c17 : STRING,
+	c18 : STRING
 }
 

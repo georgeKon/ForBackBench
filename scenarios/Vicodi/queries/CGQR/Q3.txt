@@ -1,0 +1,1 @@
+QX3(X0,X1) :- Time00009911Dependent00009911Relation(X0),hasRelationMember(X0,X1),Event(X1) .
