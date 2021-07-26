@@ -61,39 +61,34 @@ This project has many tools tools and also uses the gradle build system
 This is where the experiment results go
 
 ```
-outputs/
+experiments/outputs/
 
-|-- rewriting-tool/ := Rewriting tools output (Iqaros, Rapid, Graal, OntopRW)
+|-- tool/ := Rewriting tools output (Iqaros, Rapid, Graal, OntopRW, ChaseGQR, GQR, RDFox, Rulewerk)
 | |-- scenario/ := For each scenario
 | | |-- rewriting/ := Q1-5
 | | | |-- QX-rewritings.txt := Rewriting
 | | |-- answers/ := Tuples Returned
 | | | |-- size/
 | | | | |-- QX.txt := Result for each query
+| | |-- GAV/ := For GAV scenario
+| | | |-- answers/ := Tuples Returned
+| | | | |-- size/
+| | | |-- rewriting/ := Q1-5
+| | | | |-- QX-rewritings.txt := Rewriting
+| | |-- LAV/ := For LAV scenario
+| | | |-- answers/ := Tuples Returned
+| | | | |-- size/
+| | | |-- rewriting/ := Q1-5
+| | | | |-- QX-rewritings.txt := Rewriting
 
 |-- ontop/ := Ontop outputs
 | |-- scenarios
 | | |-- log/ := Ontop Output Log files
 | | | |-- size/
 | | | | |-- QX.txt := Log file for each query
+| | |-- GAV/ := For GAV scenario
+| | | |-- log/ := Ontop Output Log files
 
-|-- bcagqr/ := BCA and GQR
-| |-- scenario/ := For each scenario
-| | |-- chased-mappings/ := Q1-5
-| | | |-- QX-tgds.rule := BCA chased mappings
-| | |-- rewriting/ := Q1-5
-| | | |-- QX-rewritings.txt := Rewriting
-| | |-- answers/ := Tuples Returned
-| | | |-- size/
-| | | | |-- QX.txt := Result for each query
-
-|-- bcastc/ := BCA and ST Chase
-| |-- scenario/ := For each scenario
-| | |-- chased-mappings/ := Q1-5
-| | | |-- QX-tgds.rule := BCA chased mappings
-| | |-- answers/ := Tuples Returned
-| | | |-- size/
-| | | | |-- QX.txt := Result for each query
 
 ```
 
@@ -102,11 +97,12 @@ outputs/
 This is where the experiment results go
 
 ```
-experiments/
+experiments/scenarios
 |-- scenario/ := Scenario Name
-| |-- size/ := small/medium/large dataset
-| | |-- query/ := Q1-5
-| | | |-- tool.csv := result of that query with each tool in the scenario
+| |-- Mapping/ := GAV/LAV/oneToOne mapping
+| | |-- size/ := small/medium/large dataset
+| | | |-- query/ := Q1-5
+| | | | |-- tool.csv := result of that query with each tool in the scenario
 ```
 
 ## Scenario folder structure
@@ -114,10 +110,17 @@ experiments/
 ```
 name/
 |-- data/               := CSV data files
-| |-- a.csv
+| |-- Mapping/ := GAV/LAV/oneToOne mapping
+| | |-- size/ := small/medium/large dataset
+| | | |-- a.csv
 |-- dependencies/
-| |-- st-tgds.txt       := ChaseBench rules
-| |-- t-tgds.txt        := ChaseBench rules
+| |-- oneToOne-st-tgds.txt       := ChaseBench rules
+| |-- oneToOne-t-tgds.txt        := ChaseBench rules
+| |-- lav.txt        := ChaseBench rules
+| |-- gav.txt        := ChaseBench rules
+| |-- ChaseGQR/ := ChaseGQR rules
+| | |-- cgqr-t-tgds.txt        := ChaseGQR rules
+| | |-- db.properties    := ChaseGQR specific DB config file. (Similar to config.ini)
 |-- owl/
 | |-- ontology.owl      := OWL ontology file
 |-- queries
@@ -129,13 +132,19 @@ name/
 |   |-- Qx/
 |     |-- Qx.txt
 |-- schema/
-| |-- s-schema.sql      := PostgreSQL sql
-| |-- s-schema.txt      := ChaseBench schema
-| |-- t-schema.sql      := PostgreSQL sql
-| |-- t-schema.txt      := ChaseBench schema
+| |-- Mapping/ := GAV/LAV/oneToOne mapping
+| | |-- s-schema.sql      := PostgreSQL sql
+| | |-- s-schema.txt      := ChaseBench schema
+| | |-- t-schema.sql      := PostgreSQL sql
+| | |-- t-schema.txt      := ChaseBench schema
 |-- ontop-files
 | |-- mapping.obda      := Ontop Mapping file (Similar to st-tgds)
+| |-- gav-mapping.obda      := Ontop GAV Mapping file (Similar to st-tgds)
 | |-- properties.txt    := Ontop specific DB config file. (Similar to config.ini)
+|-- rulewerkfiles/               := Rulewerk rules files
+| |-- Mapping/ := GAV/LAV/oneToOne mapping
+| | |-- size/ := small/medium/large dataset
+| | | |-- rule.rls
 |--postgres-config.ini          := INI database config
 ```
 
@@ -171,36 +180,6 @@ name/
 
 There hasn't been an automated way of generating the `properties.txt` but a manual copy from is simple `config.ini`
 
-## Scripts
-
-Bootstrap DL Lite scenarios with `./scripts/bootstrap.sh <folder> dllite [data]` - add data if you also want to generate data
-
-Bootstrap ChaseBench scenarios with `./scripts/bootstrap.sh <folder> chasebench`
-The setup.sh script is used to automate the bootstrapping of multiple scenarios - edit it as you need. Within the bootstrap.sh script, you will need to change the SIZES list to match which data sizes you wish to generate.
-
-The generate.sh script automates data generation - use `./scripts/generate.sh <folder> <size>` where 'folder' is the top level scenario name and 'size' is a data size defined
-in the config.ini in tools/datagenerator
-
-build.sh drops a database if exists, then creates and imports - use `./scripts/build.sh <folder> <size>` where 'folder' is the top level scenario name and 'size' is a data size defined in the data folder of that scenario. The database information is taken from the scenario config.ini file
-
-query.sh is the main heavy lifter of the scripts, and runs a test of a query on each tool, 6 times. It is invoked using `./scripts/query.sh <folder> <query number> <size>`, where 'folder' is the top level scenario name, query number is self explanatory and 'size' is a data size defined in the data folder of that scenario. Below will be a guide to modifying this script to expand it to more tools.
-
-Most of these commands are automated using the run.sh script. At the moment, the parameters of the test have to be changed in the script itself, but this could be changed to take command line arguments
-
-### Run.sh
-
-This script automates the running of the query script. To add scenarios this script expand the `SCENARIOS` array to become something like
-
-```
-SCENARIOS=("scenarios/<SCENARIO NAME>" "scenarios/<SCENARIO NAME>")
-```
-To add test data sizes do the same but with the `SIZES` array to become something like
-
-```
-SIZES=("small" "medium")
-```
-
-The run the deep datasets change the SIZES to ```"deep"```
 
 ## Getting it to run
 
@@ -211,11 +190,65 @@ cd obda-benchmark
 yarn && yarn build && sudo npm link
 ```
 
-Then, make sure you have the scenario folders set up as you need, following the layout defined above. You can use the setup.sh or bootstrap.sh scripts to automate the building of much of them.
+To run experiments there are 3 different types of mappings:
+- simple One-To-One mapping (runTrivialMapping.sh)
+- Complex LAV mapping (runLAVMapping.sh)
+- Complex GAV mapping (runGAVMapping.sh)
 
-Then, you need to edit the query.sh and run.sh scripts to define which tools you wish to run, over which scenarios and data sizes.
+Each run scripts run its corresponding Query script (queryTrivialMapping.sh, queryLAVMapping.sh, and queryGAVMapping.sh).
 
-When the code has finished, the results are printed to set of CSV files found in the test/ folder of the scenarios.
+
+First, make sure you have the scenario folders set up as you need, following the layout defined above. 
+If you want to create new scenario, you can use the bootstrap.sh script to automate the building of much of them as described below. 
+
+Then, you can edit the corresponding Query script to define which tools you wish to run.
+Also, you need to edit the selected run script to define which scenarios and data sizes you wish to run.
+
+Finally, run the expriment: 
+```
+cd scripts
+./runTrivialMapping.sh
+```
+
+When the code has finished, the results are printed to set of CSV files found in the experiments folder of the scenarios.
+
+
+## Scripts
+
+### bootstrap.sh
+This script build the scenario folder structure from DL Lite or ChaseBench scenarios.
+
+To create a scenario from DL Lite scenario, use the command `./scripts/bootstrap.sh <folder> dllite [data]` - add data if you also want to generate data
+
+To create a scenario from ChaseBench scenario, use the command  `./scripts/bootstrap.sh <folder> chasebench`
+
+The setup.sh script is used to automate the bootstrapping of multiple scenarios - edit it as you need. Within the bootstrap.sh script, you will need to change the SIZES list to match which data sizes you wish to generate.
+
+### generate.sh 
+The generate.sh script automates data generation - use `./scripts/generate.sh <folder> <size>` where 'folder' is the top level scenario name and 'size' is a data size defined
+in the config.ini in tools/datagenerator
+
+###build.sh
+This scripts drops a database if exists, then creates and imports - use `./scripts/build.sh <folder> <size>` where 'folder' is the top level scenario name and 'size' is a data size defined in the data folder of that scenario. The database information is taken from the scenario config.ini file
+
+###Query scripts (queryTrivialMapping.sh, queryLAVMapping.sh, and queryGAVMapping.sh)
+This is the main heavy lifter of the scripts, and runs a test of a query on each tool, 6 times. It is invoked inside run scripts using `./queryTrivialMapping.sh <folder> <query number> <size>`, where 'folder' is the top level scenario name, query number is self explanatory and 'size' is a data size defined in the data folder of that scenario. Below will be a guide to modifying this script to expand it to more tools.
+
+Most of these commands are automated using the run.sh script. At the moment, the parameters of the test have to be changed in the script itself, but this could be changed to take command line arguments
+
+### Run scripts (runTrivialMapping.sh, runLAVMapping.sh, and runGAVMapping.sh)
+This script automates the running of the query scripts. To add scenarios this script expand the `SCENARIOS` array to become something like
+
+```
+SCENARIOS=("scenarios/<SCENARIO NAME>" "scenarios/<SCENARIO NAME>")
+```
+To add test data sizes do the same but with the `SIZES` array to become something like
+
+```
+SIZES=("small" "medium")
+```
+
+
 
 ## Tools
 
