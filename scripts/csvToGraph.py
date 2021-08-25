@@ -10,9 +10,13 @@ import sys
 
 
 def drawGraph(folder,query,subplots):
+    font = {'weight' : 'bold',
+        'size'   : 16}
+    plt.rc('font', **font)
     plt.subplot(subplots)
     plt.minorticks_on()
     plt.grid(axis='x')
+    plt.xscale("log")
     plt.grid(which='minor',axis='x',linestyle=':',linewidth=0.4)
     files = os.listdir(folder+'/'+query)
     files.sort()
@@ -199,8 +203,7 @@ def drawGraph(folder,query,subplots):
     print('gqr',gqr)
 
     size=np.arange(len(preprocess))
-    width = 0.35
-
+    width = 0.65
     loads=plt.barh(size,load,width)
     preprocesss=plt.barh(size,preprocess,width,left=load)
     chases=plt.barh(size,chase,width,left=np.array(load)+np.array(preprocess))
@@ -214,8 +217,8 @@ def drawGraph(folder,query,subplots):
     print(ticks)
     plt.yticks(size,ticks)
     if subplots % 10 == 1:
-#           plt.legend((loads[0],rewrites[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Chase','Execute','LAVrewrite'], loc=7, bbox_to_anchor=(1.1, 0.5))
-          plt.legend((loads[0],rewrites[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
+#           plt.legend((loads[0],rewrites[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Chase','Execute','LAVrewrite'], loc=7, bbox_to_anchor=(1.12, 0.5))
+          plt.legend((loads[0],rewrites[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.12, 0.5))
 #     	  plt.legend((loads[0],rewrites[0],preprocesss[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Preprocess','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
 #         plt.legend((loads[0],rewrites[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
 #         plt.legend((loads[0],rewrites[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
@@ -229,10 +232,10 @@ if len(sys.argv) > 1:
         if query.startswith('Q'):
             drawGraph(folder,query,subplots)
             subplots = subplots + 1
-    plt.xlabel('Time (milliseconds)')
-    plt.subplots_adjust(left=0.08,bottom=0.1,top=0.95,right=0.9,wspace=0.04,hspace=0.5)   
+    plt.xlabel('Time (milliseconds)', fontsize=24,labelpad=40)
+    plt.subplots_adjust(left=0.08,bottom=0.1,top=0.95,right=0.9,wspace=0.04,hspace=0.4)   
     fig = plt.gcf()
-    fig.set_size_inches(25.5, 15.5)
+    fig.set_size_inches(27.5, 19.9)
     plt.savefig(folder+".png",orientation='landscape',format='png')
 else:
     print("No folder included")
