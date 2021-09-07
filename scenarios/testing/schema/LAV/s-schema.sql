@@ -1,2 +1,0 @@
-DROP TABLE IF EXISTS "src_A";
-CREATE TABLE "src_A" (c0 text);

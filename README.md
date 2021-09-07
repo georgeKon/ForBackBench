@@ -1,16 +1,19 @@
 # Overview
 
-The project is split across 4 repositories
+The project is split across 3 repositories
 
 - obdabenchmark <https://git.soton.ac.uk/gk1e17/obdabenchmark> (Written by JE)
 - chasestepper <https://git.soton.ac.uk/jde1g16/chasestepper> (Written by JE, modified by NB)
+<!-- 
 - obda-converter <https://github.com/JamesErrington/obda-converter> (Written by JE)
+ -->
 - obdabenchmarkingtools <https://git.soton.ac.uk/gk1e17/obda-chase-bench> (Written by NB)
 
 This structure is very fluid and can be easily changed if needed - probably will need to be as the 'chasestepper' name was only meant to be a placeholder, and having stuff across 2 different git systems on 3 accounts probably isn't the best
 
 obda-converter is a JavaScript project, written using TypeScript and bundled with NPM. obdabenchmark also contains a TypeScript segment, but is mostly bash scripts, data integration tools and scenario data. chasestepper is a Java project, bundled with Gradle - this could be altered to use maven or some other system if needed but is probably not recommended? It also contains the data generator files. Obdabenchmarkingtools is the recent addition to the previous 3 tools. Originally this was just a tool to generate mappings for Ontop but has significantly more tools bundled with it. Recommend looking at <https://git.soton.ac.uk/gk1e17/obda-chase-bench/blob/master/README.md> for more information on that.
 
+<!-- 
 ### ChaseStepper
 
 To build
@@ -18,6 +21,7 @@ To build
 - `gradle chasestepperJar`
 - `gradle dataJar`
 - Can also use `gradle clean` to clear previous builds
+ -->
 
 ### Obdabenchmark
 
@@ -28,6 +32,7 @@ To build
 - `yarn build`
 - Use `sudo npm link` to update the local binary command
 
+<!-- 
 ### Obda-converter
 
 To download dependencies
@@ -40,8 +45,11 @@ To build
 
 - `yarn build`
 - Use `sudo npm link` to update the local binary command
+ -->
 
+<!-- 
 The `obdabenchmark llunatic <folder>` command is used to generate the llunatic xml files for a scenario
+ -->
 
 ### Obdabenchmarkingtools
 
@@ -56,7 +64,53 @@ This project has many tools tools and also uses the gradle build system
 - `gradle stChase`
 - `gradle deepData`
 
-## Output Folder Structure
+
+
+## Getting it to run
+
+When first using the codebase, you need to download the Javascript dependencies and build the scripts. To do this:
+
+```
+cd obdabenchmark
+yarn && yarn build && sudo npm link
+```
+
+To run experiments there are 3 different types of mappings:
+- simple One-To-One mapping (runTrivialMapping.sh)
+- Complex LAV mapping (runLAVMapping.sh)
+- Complex GAV mapping (runGAVMapping.sh)
+
+Each run scripts run its corresponding Query script (queryTrivialMapping.sh, queryLAVMapping.sh, and queryGAVMapping.sh).
+
+
+First, make sure you have the scenario folders set up as you need, following the layout defined below. 
+If you want to create new scenario, you can use the bootstrap.sh script to automate the building of much of them as described below. 
+
+Then, you can edit the corresponding Query script to define which systems you wish to run.
+Also, you need to edit the selected run script to define which scenarios and data sizes you wish to run.
+
+Finally, run the expriment: 
+```
+cd scripts
+./runTrivialMapping.sh
+```
+
+When the code has finished, the results are printed to set of CSV files found in the experiments folder of the scenarios.
+
+### Experiments Folder Structure
+
+This is where the experiment results go
+
+```
+experiments/scenarios
+|-- scenario/ := Scenario Name
+| |-- Mapping/ := GAV/LAV/oneToOne mapping
+| | |-- size/ := small/medium/large dataset
+| | | |-- query/ := Q1-5
+| | | | |-- tool.csv := result of that query with each tool in the scenario
+```
+
+### Output Folder Structure
 
 This is where the experiment results go
 
@@ -92,20 +146,49 @@ experiments/outputs/
 
 ```
 
-## Experiments Folder Structure
+## Scripts
 
-This is where the experiment results go
+### bootstrap.sh
+This script build the scenario folder structure from DL Lite or ChaseBench scenarios.
+
+The majority of this structure can be bootstrapped using the provided scripts. 
+For a DL-Lite scenario, the minimum set up to be bootstrapped is the following:
 
 ```
-experiments/scenarios
-|-- scenario/ := Scenario Name
-| |-- Mapping/ := GAV/LAV/oneToOne mapping
-| | |-- size/ := small/medium/large dataset
-| | | |-- query/ := Q1-5
-| | | | |-- tool.csv := result of that query with each tool in the scenario
+name/
+|-- data/
+| |-- a.csv
+|-- dependencies/
+| |-- ontology.owl
+|-- queries
+| |-- Qx.rq
+|-- config.ini
 ```
 
-## Scenario folder structure
+For a ChaseBench scenario:
+
+```
+name/
+|-- data/
+| |-- a.csv
+|-- dependencies/
+| |-- st-tgds.txt
+| |-- t-tgds.txt
+|-- queries
+| |-- Qx.txt
+|-- schema/
+| |-- s-schema.txt
+| |-- t-schema.txt
+|-- config.ini
+```
+
+To create a scenario from DL Lite scenario, use the command `./scripts/bootstrap.sh <folder> dllite [data]` - add data if you also want to generate data
+
+To create a scenario from ChaseBench scenario, use the command  `./scripts/bootstrap.sh <folder> chasebench`
+
+The setup.sh script is used to automate the bootstrapping of multiple scenarios - edit it as you need. Within the bootstrap.sh script, you will need to change the SIZES list to match which data sizes you wish to generate.
+
+#### Scenario folder structure
 
 ```
 name/
@@ -147,82 +230,8 @@ name/
 | | | |-- rule.rls
 |--postgres-config.ini          := INI database config
 ```
-
-The majority of this structure can be bootstrapped using the provided scripts. For a DL-Lite scenario, the minimum set up to be bootstrapped is the following:
-
-```
-name/
-|-- data/
-| |-- a.csv
-|-- dependencies/
-| |-- ontology.owl
-|-- queries
-| |-- Qx.rq
-|-- config.ini
-```
-
-For a ChaseBench scenario:
-
-```
-name/
-|-- data/
-| |-- a.csv
-|-- dependencies/
-| |-- st-tgds.txt
-| |-- t-tgds.txt
-|-- queries
-| |-- Qx.txt
-|-- schema/
-| |-- s-schema.txt
-| |-- t-schema.txt
-|-- config.ini
-```
-
 There hasn't been an automated way of generating the `properties.txt` but a manual copy from is simple `config.ini`
 
-
-## Getting it to run
-
-When first using the codebase, you need to download the Javascript dependencies and build the scripts. To do this:
-
-```
-cd obda-benchmark
-yarn && yarn build && sudo npm link
-```
-
-To run experiments there are 3 different types of mappings:
-- simple One-To-One mapping (runTrivialMapping.sh)
-- Complex LAV mapping (runLAVMapping.sh)
-- Complex GAV mapping (runGAVMapping.sh)
-
-Each run scripts run its corresponding Query script (queryTrivialMapping.sh, queryLAVMapping.sh, and queryGAVMapping.sh).
-
-
-First, make sure you have the scenario folders set up as you need, following the layout defined above. 
-If you want to create new scenario, you can use the bootstrap.sh script to automate the building of much of them as described below. 
-
-Then, you can edit the corresponding Query script to define which tools you wish to run.
-Also, you need to edit the selected run script to define which scenarios and data sizes you wish to run.
-
-Finally, run the expriment: 
-```
-cd scripts
-./runTrivialMapping.sh
-```
-
-When the code has finished, the results are printed to set of CSV files found in the experiments folder of the scenarios.
-
-
-## Scripts
-
-### bootstrap.sh
-This script build the scenario folder structure from DL Lite or ChaseBench scenarios.
-
-To create a scenario from DL Lite scenario, use the command `./scripts/bootstrap.sh <folder> dllite [data]` - add data if you also want to generate data
-
-To create a scenario from ChaseBench scenario, use the command  `./scripts/bootstrap.sh <folder> chasebench`
-
-The setup.sh script is used to automate the bootstrapping of multiple scenarios - edit it as you need. Within the bootstrap.sh script, you will need to change the SIZES list to match which data sizes you wish to generate.
 
 ### generate.sh 
 The generate.sh script automates data generation - use `./scripts/generate.sh <folder> <size>` where 'folder' is the top level scenario name and 'size' is a data size defined
@@ -299,6 +308,7 @@ The RDFox jar is taken from the ChaseBench, and is invoked with the following co
 java -jar chaseRDFox-linux.jar -threads <number> -chase [standard | skolem] -s-sch <source schema> -t-sch <target schema> -st-tgds <source to target tgds> -src <data folder> -t-tgds <target tgds> -qdir <query folder>
 ```
 
+<!-- 
 I have added a run.sh script that simplifies running the code based on the folder structure defined above:
 
 ```
@@ -306,6 +316,7 @@ I have added a run.sh script that simplifies running the code based on the folde
 ```
 
 Queries have to use letters for variables
+ -->
 
 ### BCA
 
@@ -335,6 +346,7 @@ java -jar ./tools/obdabenchmarkingtools/stChase-1.08.jar -t-sql <Target Schema i
 
 This tool has a more in-depth on the obdabenchmarkingtools github project
 
+<!-- 
 ### ChaseFun
 
 The ChaseFun code is from George's dropbox, and includes a jar, a start script, and some sample properties files. I have not got ChaseFun to work properly, but I have made some progress and can provide some help.
@@ -376,12 +388,15 @@ I have tried using only lower case in the database names, no luck. Googling this
 #### Known Issue
 
 In ChaseFun, you can only have one file named 's-schema' or 't-schema', regardless of file extension. This means you will have to rename the SQL files, or add a ~ to the start of the file name.
+ -->
 
 ### Ontop
 
 Ontop has finally decided to cooperate however requires is own unique files to run. Download from here <https://sourceforge.net/projects/ontop4obda/files/> and documentation here <https://ontop.inf.unibz.it/documentation/>.
 
-There is also a seperate download for the tree-witness rewriter that is used internally <http://www.dcs.bbk.ac.uk/~roman/tw-rewriting/> and that can be used as such:
+To generate the Ontop mapping we use the Ontop mapping generator that created by the developers of this framework.
+T<!-- 
+here is also a seperate download for the tree-witness rewriter that is used internally <http://www.dcs.bbk.ac.uk/~roman/tw-rewriting/> and that can be used as such:
 
 ```
 java -jar tw-rewriting.jar <OWL ontology file> <SPARQL query file>
@@ -396,6 +411,7 @@ For the end-to-end, the download comes with a script with various commands - one
 ```
 
 I would recommend not using this bootstrapping tool as it just doesn't really work and using the Ontop mapping generator that I have created. It probably isn't completely correctly either but it is much closer to working that their own tool. It does work for all the currently tested scenarios (It returns the same answers as the other tools)
+ -->
 
 The other command is to query
 
@@ -403,6 +419,7 @@ The other command is to query
 ./ontop query -t <OWL ontology file> -q  <SPARQL query file> -m <Ontop Mapping file> -p <database properties file>
 ```
 
+<!-- 
 ### Llunatic
 
 While Llunatic I think has been discounted from this due to it only using one thread and therefore being very slow compared to RDFox, I can still provide some pointers for its use.
@@ -422,6 +439,18 @@ obdabenchmark llunatic <folder>
 If you provide a valid scenario folder of the structure defined above, this command should produce an XML file for each query for each data size you have data for.
 
 I think there were still issues with its use for some of the scenarios, but we definitely got it to work for LUBM.
+ -->
+
+
+### Rulewerk
+
+The Rulewerk jar is taken from the Rulewerk GitHub repository, and is invoked with the following command:
+
+```
+java -jar ../systems/rulewerk/RulewerkDebug.jar materialize --rule-file=.<rules file> --query=<query>
+```
+
+
 
 ## Query Script
 
@@ -446,28 +475,6 @@ ENDEVENT=$(echo <ONTOP OUTPUT> | grep <END MESSAGE>  | cut -d'[' -f 1);
 ENDTIME=$(date -u -d <ENDEVENT> +"%s.%N");
 ONTOP[$ACTION,$i]=$(date -u -d "0 $ENDTIME sec - $STARTTIME sec" +%S%N | sed 's/^0*//')
 ```
-
-
-#### Issue
-
-With Ontop sometimes it throws a curveball saying the query is empty. I haven't worked out why yet. It is a valid query and I think there are valid responses for that. This results in the timing being end event I was looking for not existing. Like below:
-
-```
-16:15:51.066 [main] DEBUG i.u.i.o.a.r.impl.QuestQueryProcessor - Directly translated (SPARQL) intermediate query:
-ans1(x)
-CONSTRUCT [x] []
-   JOIN
-      INTENSIONAL file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#Device(x)
-      INTENSIONAL http://ksg.meraka.co.za/adolena.owl#assistsWith(x,y)
-      INTENSIONAL file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#PhysicalAbility(y)
-
-16:15:51.066 [main] DEBUG i.u.i.o.a.r.impl.QuestQueryProcessor - Start the unfolding...
-16:15:51.071 [main] DEBUG i.u.i.o.a.r.impl.QuestQueryProcessor - Empty query --> no solution.
-16:15:51.072 [Thread-2] DEBUG i.u.i.o.a.c.impl.QuestStatement - Executing the query and get the result...
-16:15:51.073 [Thread-2] DEBUG i.u.i.o.a.c.impl.QuestStatement - Execution finished.
-```
-
-There is now error handling so that if a tool fails the whole of that run is set to having a time of -1 which can be caught by the tools that produce the graphs
 
 ### Recording the times
 
@@ -499,7 +506,9 @@ Finally these arrays are written to csv files. The current settings will just ap
 
 ### Other Notes
 
+<!-- 
 There is a sister script to run.sh and query.sh called newRun.sh and newQuery.sh. Imaginatively named. These are used when the source to target tgds are non linear. These use GQR to bridge the gap between the rewritings and the source data. These have only been tested on one scenario.
+ -->
 
 Some of these tools require the use of Java8 (RDFox and Ontop). Not at least java8. Don't question it. If you're using something more modern (As you should) use something like sdkman, add ```JRE=~/.sdkman/candidates/java/8.0.201-oracle/bin/java``` to the top of the query script and replace ```java``` with ```$JRE```. It's what I've done personally. Most of the tools in obdabenchmarkingtools shouldn't care as long as its newer than Java8.
 
