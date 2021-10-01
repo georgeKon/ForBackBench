@@ -28,7 +28,11 @@ scripts/testers
 outputs
 experiments
 data
-
+scenarios/StockExchange/data/huge
+tools/ontopmappinggenerator/singleStep-1.08.jar
+utilityTools/old_tools
+tools
+scenarios/*/queries/statements.sql
 utilityTools/old_tools
 scripts/old_scripts
 systems/Llunatic
