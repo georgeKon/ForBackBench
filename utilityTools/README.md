@@ -163,7 +163,7 @@ java -jar GenerateDataFromTGD.jar --tgd <*tgd file*> --output <*output dir*> --r
 This is an extension of the DataExchangeGenerator project, used to populate a dataset based on a TGD mapping (GAV or LAV). This tools is designed to append to existing data files in its output directory rather than overwriting them.
 
 
-## modifyChaseBench-1.08.jar
+## ModifyChaseBench
 
 ### NAME
 
@@ -185,9 +185,10 @@ java -jar utilityTools/modifyChaseBench-1.08.jar -st-tgds [*st-tgd file*] -t-tgd
 
 This takes the old chasebench scenarios and makes them work with ontology based systems. As in, it chops the atoms or relations so that they are only binary and unary. This sometimes will give problems with existential and meaningless unanswerable queries, but they do usually run.
 
+### NOTE
+The jar file for this tool can be build directly from the source code 'ModifyChaseBench.java'.
 
 
-<!-- 
 ## OBDAtoTGDsGAV.jar
 
 ### NAME
@@ -195,13 +196,37 @@ This takes the old chasebench scenarios and makes them work with ontology based 
 `OBDAtoTGDsGAV` \\- Convert OBDA mapping file to GAV TGDs
 
 ### SYNOPSIS
+java -jar utilityTools/OBDAtoTGDsGAV.jar [*mapping file*] [*schema file*] [*Output file*]
+
+```
+mapping        <file>   | the file containing the OBDA mapping
+schema         <file>   | the file containing the source schema in ChaseBench format
+out          <folder>   | the output folder location.
+```
+
+### DESCRIPTION
+This takes an OBDA mapping file and creates GAV source-to-traget TGD file. 
+
+
+## ConvertCBschemaToSQL.jar
+
+### NAME
+
+`ConvertCBschemaToSQL` \\- Generate SQL schema from ChaseBench schema.
+
+### SYNOPSIS
+
+java -jar utilityTools/ConvertCBschemaToSQL.jar -s-sch [*ChaseBench schema file*] -out [*Output file*]
+
+
+```
+-s-sch       <file>   | the file containing the schema in ChaseBench format
+-out         <file>   | the output file that will contain the SQL schema.
+```
 
 
 ### DESCRIPTION
- -->
-
-
-
+This takes database schema in ChaseBench format and creates an SQL schema file.
 
 
 ## ontopMappingGenerator-1.09.jar
@@ -286,7 +311,7 @@ To build a long TGD for each single body in st-TGD, Rulewerk is used to chase st
 
 
 
-## schemaGenerator-1.08.jar
+## schemaGenerator
 
 ### NAME
 
@@ -306,10 +331,12 @@ java -jar schemaGenerator-1.08.jar -st-tgds [*st-tgd file*] -t-tgds [*t-tgd file
 ### DESCRIPTION
 This takes in the st-tgds and t-tgds rules and returns source and target schemas. This is entirely uses the CB tools to this. With no file output location this will not print to the terminal and the results will be ignored so make sure they are included. This won't print anything to the command line
 
+### NOTE
+The jar file for this tool can be build directly from the source code 'Schema.java'.
 
 
 
-## SQLConverterRealDB-v1.08.jar
+## SQLConverterRealDB.jar
 
 ### NAME
 
@@ -414,7 +441,7 @@ The generated owl:
 ```
 
 
-## unfoldingV1.jar
+## UnfoldingV1.jar
 
 ### NAME
 
