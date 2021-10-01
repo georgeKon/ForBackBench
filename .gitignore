@@ -31,6 +31,8 @@ data
 scenarios/*/data/huge
 scenarios/*/data/huge/huge.tar.xz
 tools/ontopmappinggenerator/singleStep-1.08.jar
+**/huge/huge.tar.xz
+**/queries/statements.sql
 utilityTools/old_tools
 tools
 scenarios/*/queries/statements.sql

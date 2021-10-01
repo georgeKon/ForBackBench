@@ -186,8 +186,8 @@ Professor(?X) :- FullProfessor(?X) .
 degreeFrom(?X,?Y) :- undergraduateDegreeFrom(?X,?Y) .
 Exam(?X) :- BachelorExam(?X) .
 Professor(?X) :- ExDean(?X) .
-Q3(?X,?Y,?X1) :- Student(?X),advisor(?X,?Y),takesCourse(?X,?X1),teacherOf(?Y,?X1),Course(?X1) .
-Q4(?X,?Y) :- Person(?X),worksFor(?X,?Y),Organization(?Y) .
 Q5(?X) :- Person(?X),worksFor(?X,?Y),University(?Y),hasAlumnus(?Y,?X) .
 Q1(?X) :- worksFor(?X,?Y),affiliatedOrganizationOf(?Y,?X1) .
 Q2(?X,?Y) :- Person(?X),teacherOf(?X,?Y),Course(?Y) .
+Q3(?X,?Y,?X1) :- Student(?X),advisor(?X,?Y),takesCourse(?X,?X1),teacherOf(?Y,?X1),Course(?X1) .
+Q4(?X,?Y) :- Person(?X),worksFor(?X,?Y),Organization(?Y) .
