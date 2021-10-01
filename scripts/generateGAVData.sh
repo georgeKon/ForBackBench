@@ -33,7 +33,7 @@ SIZE=$2
   	  	echo "$UNFOLD" >> experiments/outputs/rapid/$BASE_DIR/GAV/unfoldedQueries/Q-unfold.txt
   	fi
     done
-    java -jar utilityTools/GenerateDataFromTGD.jar --tgd $BASE_DIR/dependencies/gav.txt --rows 1000 --query experiments/outputs/rapid/$BASE_DIR/GAV/unfoldedQueries/Q-unfold.txt --output $BASE_DIR/data/GAV/$SIZE
+    java -jar utilityTools/GenerateDataFromTGD.jar --tgd $BASE_DIR/dependencies/gav.txt --rows 100 --query experiments/outputs/rapid/$BASE_DIR/GAV/unfoldedQueries/Q-unfold.txt --output $BASE_DIR/data/GAV/$SIZE
 
 #   done
 # done

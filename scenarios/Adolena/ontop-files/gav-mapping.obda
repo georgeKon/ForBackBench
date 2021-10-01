@@ -4,320 +4,320 @@ NAP: file:///home/aurona/0AlleWerk/Navorsing/Ontologies/NAP/NAP#
 owl: http://www.w3.org/2002/07/owl#
 
 [MappingDeclaration] @collection [[
-mappingId ID578790788
+mappingId ID-712798576
 target  ns:ns/{var0} a NAP:MovementAbility . 
-source  SELECT A."c0" as var0 FROM  "src_isAffectedBy" as A, "src_assistsWith" as B, "src_MovementAbility" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND A."c1" = B."c1";
+source  SELECT A."c0" as var0 FROM  "src_Cerebral_palsy" as A, "src_Epilepsy" as B, "src_BatteryPowered_Wheelchair" as C, "src_MovementAbility" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1345367867
+mappingId ID153220574
 target  ns:ns/{var0} a NAP:PhysicalAbility . 
-source  SELECT A."c0" as var0 FROM  "src_Quadriplegia" as A, "src_Scoliosis" as B, "src_Lightweight_Wheelchair" as C, "src_isAssistedBy" as D, "src_PhysicalAbility" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_Dystonia" as A, "src_BrailleWatch" as B, "src_PhysicalAbility" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID-1046560731
+mappingId ID-394936441
 target  ns:ns/{var0} a NAP:Stuttering . 
-source  SELECT A."c0" as var0 FROM  "src_SensoryAbility" as A, "src_Stuttering" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_Disability" as A, "src_Device" as B, "src_Scoliosis" as C, "src_Stuttering" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-1976217133
+mappingId ID-200645101
 target  ns:ns/{var0} a NAP:SpeechDisability . 
-source  SELECT A."c0" as var0 FROM  "src_Deaf" as A, "src_Reach" as B, "src_SpeechDisability" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
+source  SELECT A."c0" as var0 FROM  "src_BrailleWritingDevice" as A, "src_SpeechDisability" as B WHERE  A."c0" = B."c0";
 
-mappingId ID1665234579
+mappingId ID1201968383
 target  ns:ns/{var0} a NAP:LowerLimbMobility . 
-source  SELECT A."c0" as var0 FROM  "src_Blind" as A, "src_Amputation" as B, "src_LowerLimbMobility" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
+source  SELECT A."c0" as var0 FROM  "src_LightweightFoldable_Wheelchair" as A, "src_BatteryPowered_Wheelchair" as B, "src_LowerLimbMobility" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID160487174
+mappingId ID-167792302
 target  ns:ns/{var0} a NAP:LimbMobility . 
-source  SELECT A."c0" as var0 FROM  "src_Reach" as A, "src_SpeechDevice" as B, "src_Deaf" as C, "src_LimbMobility" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_ListenDevice" as A, "src_Little_or_No_Speech" as B, "src_LimbMobility" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID1091994213
+mappingId ID-1037786210
 target  ns:ns/{var0} a NAP:FaceToFaceCommunicationDevice . 
-source  SELECT A."c0" as var0 FROM  "src_Spina_Bifida" as A, "src_See" as B, "src_FaceToFaceCommunicationDevice" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
+source  SELECT A."c0" as var0 FROM  "src_TelephoneAid" as A, "src_HearingAbility" as B, "src_affects" as C, "src_PhysicalAbility" as D, "src_FaceToFaceCommunicationDevice" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID1178979824
+mappingId ID1904351840
 target  ns:ns/{var0} a NAP:Communication_Device . 
-source  SELECT A."c0" as var0 FROM  "src_TactileReading" as A, "src_Disability" as B, "src_TelephoneAid" as C, "src_Communication_Device" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_Blind" as A, "src_TactileReading" as B, "src_Spina_Bifida" as C, "src_Communication_Device" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-225097175
+mappingId ID1183752383
 target  ns:ns/{var0} ns:assistsWith ns:ns/{var1} . 
-source  SELECT A."c0" as var0, E."c1" as var1 FROM  "src_Cerebral_palsy" as A, "src_HearingAbility" as B, "src_IntellectualDisability" as C, "src_Hemiplegia" as D, "src_assistsWith" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0, C."c1" as var1 FROM  "src_VisualDisability" as A, "src_TalkingReading" as B, "src_assistsWith" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID-1596937291
+mappingId ID870460874
 target  ns:ns/{var0} a NAP:SpeechAbility . 
-source  SELECT A."c0" as var0 FROM  "src_ReadingDevice" as A, "src_SpeechAbility" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_Cerebral_palsy" as A, "src_SightAbility" as B, "src_See" as C, "src_Spina_Bifida" as D, "src_SpeechAbility" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID354116769
+mappingId ID1645156618
 target  ns:ns/{var0} a ns:WritingDevice . 
-source  SELECT A."c0" as var0 FROM  "src_Muscular_dystrophy" as A, "src_Communication_Device" as B, "src_WritingDevice" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
+source  SELECT A."c0" as var0 FROM  "src_TactileAbility" as A, "src_WritingDevice" as B WHERE  A."c0" = B."c0";
 
-mappingId ID-1383003558
+mappingId ID-1518994845
 target  ns:ns/{var0} a NAP:Multiple_sclerosis . 
-source  SELECT A."c0" as var0 FROM  "src_Hard_of_hearing" as A, "src_Achondroplasia" as B, "src_BrailleWatch" as C, "src_Disability" as D, "src_Multiple_sclerosis" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_Thing" as A, "src_Multiple_sclerosis" as B WHERE  A."c0" = B."c0";
 
-mappingId ID1826857272
+mappingId ID1495699198
 target  ns:ns/{var0} a NAP:PhysicalDisability . 
-source  SELECT A."c0" as var0 FROM  "src_SensoryAbility" as A, "src_Achondroplasia" as B, "src_PhysicalDisability" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
+source  SELECT A."c0" as var0 FROM  "src_Dystonia" as A, "src_Paraplegia" as B, "src_PhysicalDisability" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID-1737160109
+mappingId ID1147028550
 target  ns:ns/{var0} a NAP:Achondroplasia . 
-source  SELECT A."c0" as var0 FROM  "src_HearingDisability" as A, "src_Motorised_Wheelchair" as B, "src_Achondroplasia" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
+source  SELECT A."c0" as var0 FROM  "src_SightAbility" as A, "src_Autism" as B, "src_LimbMobility" as C, "src_Achondroplasia" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-1026997718
+mappingId ID666052704
 target  ns:ns/{var0} a ns:BraillePillOrganiser . 
-source  SELECT A."c0" as var0 FROM  "src_Poliomyelitis" as A, "src_BraillePillOrganiser" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_Autism" as A, "src_Wheelchair" as B, "src_Stuttering" as C, "src_MobilityDevice" as D, "src_BraillePillOrganiser" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1241534721
+mappingId ID-125665085
 target  ns:ns/{var0} a ns:TactileReading . 
-source  SELECT A."c0" as var0 FROM  "src_Lightweight_Wheelchair" as A, "src_TactileReading" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_Paraplegia" as A, "src_TactileReading" as B WHERE  A."c0" = B."c0";
 
-mappingId ID-1625542924
+mappingId ID2056994015
 target  ns:ns/{var0} a NAP:TelephoneAid . 
-source  SELECT A."c0" as var0 FROM  "src_MovementAbility" as A, "src_TelephoneAid" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_Muscular_dystrophy" as A, "src_Poliomyelitis" as B, "src_Blind" as C, "src_TelephoneAid" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-1672627293
+mappingId ID-834776104
 target  ns:ns/{var0} a ns:ListenDevice . 
-source  SELECT A."c0" as var0 FROM  "src_SpeechAbility" as A, "src_ListenDevice" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_Hear_partially" as A, "src_LowVision" as B, "src_Talking_Thermometer" as C, "src_ListenDevice" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1820207617
+mappingId ID220222843
 target  ns:ns/{var0} a ns:SpeechDevice . 
-source  SELECT A."c0" as var0 FROM  "src_BrailleWatch" as A, "src_SpeechDevice" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_LowVision" as A, "src_SpeechDevice" as B WHERE  A."c0" = B."c0";
 
-mappingId ID123872681
+mappingId ID1229773861
 target  ns:ns/{var0} a NAP:MentalDisability . 
-source  SELECT A."c0" as var0 FROM  "src_BatteryPowered_Wheelchair" as A, "src_MentalDisability" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_Lightweight_Wheelchair" as A, "src_TactileReading" as B, "src_MentalDisability" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID-369978696
+mappingId ID-1517302934
 target  ns:ns/{var0} a NAP:Disability . 
-source  SELECT A."c0" as var0 FROM  "src_Quadriplegia" as A, "src_Disability" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_Poliomyelitis" as A, "src_Stuttering" as B, "src_LightweightFoldable_Wheelchair" as C, "src_Disability" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1736667695
+mappingId ID343828614
 target  ns:ns/{var0} a NAP:BatteryPowered_Wheelchair . 
-source  SELECT A."c0" as var0 FROM  "src_Autism" as A, "src_UpperLimbMobility" as B, "src_Disability" as C, "src_BatteryPowered_Wheelchair" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_Guillaume_Barre" as A, "src_BatteryPowered_Wheelchair" as B WHERE  A."c0" = B."c0";
 
-mappingId ID-360348332
+mappingId ID1836385935
 target  ns:ns/{var0} a NAP:Motorised_Wheelchair . 
-source  SELECT A."c0" as var0 FROM  "src_See" as A, "src_Epilepsy" as B, "src_Motorised_Wheelchair" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
+source  SELECT A."c0" as var0 FROM  "src_SpeechDisability" as A, "src_Motorised_Wheelchair" as B WHERE  A."c0" = B."c0";
 
-mappingId ID983210025
+mappingId ID2029243053
 target  ns:ns/{var0} a NAP:Hear . 
-source  SELECT A."c0" as var0 FROM  "src_Blind" as A, "src_Guillaume_Barre" as B, "src_Hear" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
+source  SELECT A."c0" as var0 FROM  "src_Osteogensis_Imperfecta" as A, "src_TactileAbility" as B, "src_Manual_Wheelchair" as C, "src_Hear" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1360153642
+mappingId ID-619598140
 target  ns:ns/{var0} a NAP:HearingAbility . 
-source  SELECT A."c0" as var0 FROM  "src_Quadriplegia" as A, "src_HearingAbility" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_Foldable_Wheelchair" as A, "src_Amputation" as B, "src_LightweightFoldable_Wheelchair" as C, "src_HearingAbility" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID876549536
+mappingId ID447310963
 target  ns:ns/{var0} a NAP:Muscular_dystrophy . 
-source  SELECT A."c0" as var0 FROM  "src_SpeechDevice" as A, "src_MobilityDevice" as B, "src_LowVision" as C, "src_Muscular_dystrophy" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_Hear" as A, "src_Muscular_dystrophy" as B WHERE  A."c0" = B."c0";
 
-mappingId ID-328162744
+mappingId ID-1075656578
 target  ns:ns/{var0} a NAP:Wheelchair . 
-source  SELECT A."c0" as var0 FROM  "src_SensoryAbility" as A, "src_Wheelchair" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_requiresAbility" as A, "src_Kyphosis" as B, "src_Wheelchair" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID2108431828
+mappingId ID-1229706813
 target  ns:ns/{var0} a NAP:MobilityDevice . 
-source  SELECT A."c0" as var0 FROM  "src_Scoliosis" as A, "src_Quadriplegia" as B, "src_MobilityDevice" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
+source  SELECT A."c0" as var0 FROM  "src_TactileReading" as A, "src_MobilityDevice" as B WHERE  A."c0" = B."c0";
 
-mappingId ID2002472348
+mappingId ID-1316750177
 target  ns:ns/{var0} a NAP:Paraplegia . 
-source  SELECT A."c0" as var0 FROM  "src_isAffectedBy" as A, "src_BatteryPowered_Wheelchair" as B, "src_MentalDisability" as C, "src_Kyphosis" as D, "src_Paraplegia" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_FaceToFaceCommunicationDevice" as A, "src_Little_or_No_Speech" as B, "src_Paraplegia" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID959049552
+mappingId ID-764033216
 target  ns:ns/{var0} ns:affects ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isAssistedBy" as A, "src_affects" as B WHERE  A."c0" = B."c0" AND A."c1" = B."c1";
+source  SELECT A."c0" as var0, B."c1" as var1 FROM  "src_FaceToFaceCommunicationDevice" as A, "src_affects" as B WHERE  A."c0" = B."c0";
 
-mappingId ID19310329
+mappingId ID1656882282
 target  ns:ns/{var0} a NAP:See . 
-source  SELECT A."c0" as var0 FROM  "src_Ability" as A, "src_Osteogensis_Imperfecta" as B, "src_See" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
+source  SELECT A."c0" as var0 FROM  "src_SpeechDevice" as A, "src_ReadingDevice" as B, "src_SymbolBoard" as C, "src_Communication_Device" as D, "src_See" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-695546834
+mappingId ID1759526425
 target  ns:ns/{var0} a NAP:SightAbility . 
-source  SELECT A."c0" as var0 FROM  "src_Wheelchair" as A, "src_ReadingDevice" as B, "src_Disability" as C, "src_LightweightFoldable_Wheelchair" as D, "src_SightAbility" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_VisualDisability" as A, "src_assistsWith" as B, "src_Amputation" as C, "src_Hear_partially" as D, "src_SightAbility" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID2120929461
-target  ns:ns/{var0} a ns:BrailleAlarmClock . 
-source  SELECT A."c0" as var0 FROM  "src_Talking_Thermometer" as A, "src_Guillaume_Barre" as B, "src_WritingDevice" as C, "src_BrailleAlarmClock" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+mappingId ID-1941131789
+target  ns:ns/{var0} a NAP:BrailleAlarmClock . 
+source  SELECT A."c0" as var0 FROM  "src_Kyphosis" as A, "src_BrailleAlarmClock" as B WHERE  A."c0" = B."c0";
 
-mappingId ID82545693
+mappingId ID595726255
 target  ns:ns/{var0} a NAP:Hear_partially . 
-source  SELECT A."c0" as var0 FROM  "src_BatteryPowered_Wheelchair" as A, "src_Kyphosis" as B, "src_Reach" as C, "src_BrailleAlarmClock" as D, "src_Hear_partially" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_Little_or_No_Speech" as A, "src_Poliomyelitis" as B, "src_FaceToFaceCommunicationSoftware" as C, "src_Hear_partially" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-1412288322
+mappingId ID1773337227
 target  ns:ns/{var0} a NAP:AssistiveDevice . 
-source  SELECT A."c0" as var0 FROM  "src_FaceToFaceCommunicationDevice" as A, "src_AssistiveDevice" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_Spina_Bifida" as A, "src_TalkingReading" as B, "src_SightAbility" as C, "src_AssistiveDevice" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1410309861
+mappingId ID-1514866707
 target  ns:ns/{var0} a NAP:UpperLimbMobility . 
-source  SELECT A."c0" as var0 FROM  "src_Hard_of_hearing" as A, "src_UpperLimbMobility" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_Lightweight_Wheelchair" as A, "src_See_partially" as B, "src_UpperLimbMobility" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID1841975632
+mappingId ID-1868052498
 target  ns:ns/{var0} a NAP:SensoryAbility . 
-source  SELECT A."c0" as var0 FROM  "src_BatteryPowered_Wheelchair" as A, "src_SensoryAbility" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_Hear" as A, "src_PhysicalDisability" as B, "src_Little_or_No_Speech" as C, "src_Osteogensis_Imperfecta" as D, "src_SensoryAbility" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1530697856
+mappingId ID955822985
 target  ns:ns/{var0} a NAP:Ability . 
-source  SELECT A."c0" as var0 FROM  "src_Muscular_dystrophy" as A, "src_Achondroplasia" as B, "src_Ability" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
+source  SELECT A."c0" as var0 FROM  "src_UpperLimbMobility" as A, "src_isAssistedBy" as B, "src_Kyphosis" as C, "src_Ability" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-244112463
+mappingId ID861083201
 target  ns:ns/{var0} a NAP:LowVision . 
-source  SELECT A."c0" as var0 FROM  "src_assistsWith" as A, "src_Paraplegia" as B, "src_affects" as C, "src_LowVision" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = C."c1";
+source  SELECT A."c0" as var0 FROM  "src_MobilityDevice" as A, "src_UpperLimbMobility" as B, "src_LowVision" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID456026880
+mappingId ID-1249331317
 target  ns:ns/{var0} a NAP:VisualDisability . 
-source  SELECT A."c0" as var0 FROM  "src_isAssistedBy" as A, "src_FaceToFaceCommunicationSoftware" as B, "src_VisualDisability" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
+source  SELECT A."c0" as var0 FROM  "src_BrailleWritingDevice" as A, "src_Amputation" as B, "src_VisualDisability" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID-1755786589
+mappingId ID-1177575384
 target  ns:ns/{var0} a NAP:Talking_Thermometer . 
-source  SELECT A."c0" as var0 FROM  "src_BrailleWatch" as A, "src_LightweightFoldable_Wheelchair" as B, "src_Talking_Thermometer" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
+source  SELECT A."c0" as var0 FROM  "src_MentalDisability" as A, "src_Device" as B, "src_Quadriplegia" as C, "src_TelephoneAid" as D, "src_Talking_Thermometer" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-290868259
+mappingId ID1005304258
 target  ns:ns/{var0} a ns:TalkingReading . 
-source  SELECT A."c0" as var0 FROM  "src_SpeechDisability" as A, "src_TalkingReading" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_SymbolBoard" as A, "src_Little_or_No_Speech" as B, "src_Amputation" as C, "src_TalkingReading" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-499159442
+mappingId ID1676341100
 target  ns:ns/{var0} a ns:ReadingDevice . 
-source  SELECT A."c0" as var0 FROM  "src_Cerebral_palsy" as A, "src_Deaf" as B, "src_SensoryAbility" as C, "src_Motorised_Wheelchair" as D, "src_ReadingDevice" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_WritingDevice" as A, "src_Communication_Device" as B, "src_Multiple_sclerosis" as C, "src_ReadingDevice" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1169903960
+mappingId ID897799701
 target  ns:ns/{var0} NAP:requiresAbility ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_MentalDisability" as A, "src_ListenDevice" as B, "src_Kyphosis" as C, "src_requiresAbility" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_assistsWith" as A, "src_Manual_Wheelchair" as B, "src_Deafened" as C, "src_requiresAbility" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = D."c1";
 
-mappingId ID-249507164
+mappingId ID99135514
 target  ns:ns/{var0} a NAP:Epilepsy . 
-source  SELECT A."c0" as var0 FROM  "src_Multiple_sclerosis" as A, "src_Epilepsy" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_LowerLimbMobility" as A, "src_Motorised_Wheelchair" as B, "src_Epilepsy" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID306435099
+mappingId ID-626523430
 target  ns:ns/{var0} a NAP:IntellectualDisability . 
-source  SELECT A."c0" as var0 FROM  "src_MentalDisability" as A, "src_IntellectualDisability" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_SpeechDevice" as A, "src_BatteryPowered_Wheelchair" as B, "src_IntellectualDisability" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID1667614233
+mappingId ID1676315899
 target  ns:ns/{var0} a NAP:Autism . 
-source  SELECT A."c0" as var0 FROM  "src_Wheelchair" as A, "src_Guillaume_Barre" as B, "src_TalkingReading" as C, "src_Autism" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_SensoryAbility" as A, "src_BrailleWatch" as B, "src_Autism" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID-1963957178
+mappingId ID1321694854
 target  ns:ns/{var0} a NAP:Amputation . 
-source  SELECT A."c0" as var0 FROM  "src_BrailleWatch" as A, "src_MentalDisability" as B, "src_isAssistedBy" as C, "src_SpeechAbility" as D, "src_Amputation" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_SpeechDevice" as A, "src_HearingDisability" as B, "src_SymbolBoard" as C, "src_Amputation" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-1022390361
+mappingId ID957524944
 target  ns:ns/{var0} a NAP:Device . 
-source  SELECT A."c0" as var0 FROM  "src_Stuttering" as A, "src_BrailleAlarmClock" as B, "src_IntellectualDisability" as C, "src_Cerebral_palsy" as D, "src_Device" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_See" as A, "src_Ability" as B, "src_Device" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID-1548854665
+mappingId ID-1219384443
 target  ns:ns/{var0} a NAP:Manual_Wheelchair . 
-source  SELECT A."c0" as var0 FROM  "src_AssistiveDevice" as A, "src_Talking_Thermometer" as B, "src_Hear_partially" as C, "src_Manual_Wheelchair" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_Hard_of_hearing" as A, "src_Manual_Wheelchair" as B WHERE  A."c0" = B."c0";
 
-mappingId ID91332262
+mappingId ID542031043
 target  ns:ns/{var0} a ns:BrailleWatch . 
-source  SELECT A."c0" as var0 FROM  "src_Osteogensis_Imperfecta" as A, "src_Deafened" as B, "src_TelephoneAid" as C, "src_requiresAbility" as D, "src_BrailleWatch" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_MobilityDevice" as A, "src_Kyphosis" as B, "src_BatteryPowered_Wheelchair" as C, "src_SpeechDisability" as D, "src_BrailleWatch" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID800814237
+mappingId ID2112971508
 target  ns:ns/{var0} a NAP:Foldable_Wheelchair . 
-source  SELECT A."c0" as var0 FROM  "src_Hard_of_hearing" as A, "src_Foldable_Wheelchair" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_BrailleAlarmClock" as A, "src_Foldable_Wheelchair" as B WHERE  A."c0" = B."c0";
 
-mappingId ID1730708555
+mappingId ID-1142435875
 target  ns:ns/{var0} a NAP:Osteogensis_Imperfecta . 
-source  SELECT A."c0" as var0 FROM  "src_Deaf" as A, "src_Osteogensis_Imperfecta" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_Ability" as A, "src_Disability" as B, "src_Osteogensis_Imperfecta" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID-1595432811
+mappingId ID-116296307
 target  ns:ns/{var0} a NAP:Hemiplegia . 
-source  SELECT A."c0" as var0 FROM  "src_Device" as A, "src_ReadingDevice" as B, "src_SpeechDisability" as C, "src_See" as D, "src_Hemiplegia" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_See" as A, "src_Ability" as B, "src_AssistiveDevice" as C, "src_VisualDisability" as D, "src_Hemiplegia" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-1581259948
+mappingId ID291738769
 target  ns:ns/{var0} a NAP:Quadriplegia . 
-source  SELECT A."c0" as var0 FROM  "src_PhysicalDisability" as A, "src_Quadriplegia" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_SightAbility" as A, "src_Quadriplegia" as B WHERE  A."c0" = B."c0";
 
-mappingId ID-2132330022
+mappingId ID-1974470123
 target  ns:ns/{var0} a NAP:Guillaume_Barre . 
-source  SELECT A."c0" as var0 FROM  "src_Amputation" as A, "src_HearingAbility" as B, "src_Guillaume_Barre" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
+source  SELECT A."c0" as var0 FROM  "src_PhysicalAbility" as A, "src_Hear_partially" as B, "src_Guillaume_Barre" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID1863990679
+mappingId ID1909365392
 target  ns:ns/{var0} a ns:BrailleWritingDevice . 
-source  SELECT A."c0" as var0 FROM  "src_Muscular_dystrophy" as A, "src_BraillePillOrganiser" as B, "src_Hemiplegia" as C, "src_Deaf" as D, "src_BrailleWritingDevice" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_LowVision" as A, "src_WritingDevice" as B, "src_Multiple_sclerosis" as C, "src_Scoliosis" as D, "src_BrailleWritingDevice" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID-876393256
+mappingId ID-852141321
 target  ns:ns/{var0} a NAP:See_partially . 
-source  SELECT A."c0" as var0 FROM  "src_Achondroplasia" as A, "src_LowVision" as B, "src_See_partially" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
+source  SELECT A."c0" as var0 FROM  "src_SightAbility" as A, "src_TelephoneAid" as B, "src_Talking_Thermometer" as C, "src_Hemiplegia" as D, "src_See_partially" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID845689721
+mappingId ID1459974274
 target  ns:ns/{var0} a NAP:Spina_Bifida . 
-source  SELECT A."c0" as var0 FROM  "src_isAffectedBy" as A, "src_MobilityDevice" as B, "src_SensoryAbility" as C, "src_Spina_Bifida" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_Foldable_Wheelchair" as A, "src_Spina_Bifida" as B WHERE  A."c0" = B."c0";
 
-mappingId ID1253198234
+mappingId ID1065382147
 target  ns:ns/{var0} a NAP:TactileAbility . 
-source  SELECT A."c0" as var0 FROM  "src_Epilepsy" as A, "src_MentalDisability" as B, "src_TactileAbility" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
+source  SELECT A."c0" as var0 FROM  "src_BatteryPowered_Wheelchair" as A, "src_LightweightFoldable_Wheelchair" as B, "src_TelephoneAid" as C, "src_TactileAbility" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-389550241
+mappingId ID1225876580
 target  ns:ns/{var0} a owl:Thing . 
-source  SELECT A."c0" as var0 FROM  "src_Deafened" as A, "src_Muscular_dystrophy" as B, "src_TalkingReading" as C, "src_UpperLimbMobility" as D, "src_Thing" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_isAssistedBy" as A, "src_Epilepsy" as B, "src_Thing" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID-134194958
+mappingId ID388280164
 target  ns:ns/{var0} NAP:isAssistedBy ns:ns/{var1} . 
-source  SELECT A."c0" as var0, A."c1" as var1 FROM  "src_isAffectedBy" as A, "src_Talking_Thermometer" as B, "src_Motorised_Wheelchair" as C, "src_isAssistedBy" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND A."c1" = D."c1";
+source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_LowerLimbMobility" as A, "src_Dystonia" as B, "src_SpeechDevice" as C, "src_isAssistedBy" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1140238213
+mappingId ID2042823313
 target  ns:ns/{var0} NAP:isAffectedBy ns:ns/{var1} . 
-source  SELECT A."c0" as var0, D."c1" as var1 FROM  "src_Quadriplegia" as A, "src_Lightweight_Wheelchair" as B, "src_Reach" as C, "src_isAffectedBy" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0, E."c1" as var1 FROM  "src_Achondroplasia" as A, "src_Ability" as B, "src_Hear_partially" as C, "src_Talking_Thermometer" as D, "src_isAffectedBy" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID1134137932
+mappingId ID-144839357
 target  ns:ns/{var0} a NAP:LightweightFoldable_Wheelchair . 
-source  SELECT A."c0" as var0 FROM  "src_Epilepsy" as A, "src_Hard_of_hearing" as B, "src_LightweightFoldable_Wheelchair" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
+source  SELECT A."c0" as var0 FROM  "src_BrailleAlarmClock" as A, "src_LightweightFoldable_Wheelchair" as B WHERE  A."c0" = B."c0";
 
-mappingId ID-156407060
+mappingId ID-1376613444
 target  ns:ns/{var0} a NAP:Lightweight_Wheelchair . 
-source  SELECT A."c0" as var0 FROM  "src_Quadriplegia" as A, "src_Achondroplasia" as B, "src_Lightweight_Wheelchair" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
+source  SELECT A."c0" as var0 FROM  "src_LimbMobility" as A, "src_Stuttering" as B, "src_Dystonia" as C, "src_VisualDisability" as D, "src_Lightweight_Wheelchair" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID1419799998
+mappingId ID-248876102
 target  ns:ns/{var0} a NAP:Blind . 
-source  SELECT A."c0" as var0 FROM  "src_HearingDisability" as A, "src_VisualDisability" as B, "src_TactileAbility" as C, "src_Blind" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_SymbolBoard" as A, "src_Foldable_Wheelchair" as B, "src_ReadingDevice" as C, "src_Blind" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID730751552
+mappingId ID1532512112
 target  ns:ns/{var0} a NAP:Reach . 
-source  SELECT A."c0" as var0 FROM  "src_SymbolBoard" as A, "src_Autism" as B, "src_Paraplegia" as C, "src_See" as D, "src_Reach" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_PhysicalDisability" as A, "src_UpperLimbMobility" as B, "src_LowerLimbMobility" as C, "src_Reach" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID172182822
+mappingId ID29506307
 target  ns:ns/{var0} a NAP:Deaf . 
-source  SELECT A."c0" as var0 FROM  "src_BrailleWritingDevice" as A, "src_Talking_Thermometer" as B, "src_Hear_partially" as C, "src_Deaf" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_Reach" as A, "src_Hear" as B, "src_PhysicalDisability" as C, "src_Deaf" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID-1489413157
+mappingId ID-634705969
 target  ns:ns/{var0} a NAP:HearingDisability . 
-source  SELECT A."c0" as var0 FROM  "src_TelephoneAid" as A, "src_SensoryAbility" as B, "src_UpperLimbMobility" as C, "src_HearingDisability" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_SightAbility" as A, "src_MentalDisability" as B, "src_HearingDisability" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID171485260
+mappingId ID-350306301
 target  ns:ns/{var0} a NAP:Deafened . 
-source  SELECT A."c0" as var0 FROM  "src_LowerLimbMobility" as A, "src_Blind" as B, "src_Amputation" as C, "src_isAssistedBy" as D, "src_Deafened" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_PhysicalDisability" as A, "src_See" as B, "src_Deafened" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID114127446
+mappingId ID1881371804
 target  ns:ns/{var0} a NAP:SymbolBoard . 
-source  SELECT A."c0" as var0 FROM  "src_Hard_of_hearing" as A, "src_SightAbility" as B, "src_PhysicalDisability" as C, "src_Hemiplegia" as D, "src_SymbolBoard" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_SensoryAbility" as A, "src_Deafened" as B, "src_Hear" as C, "src_BraillePillOrganiser" as D, "src_SymbolBoard" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID869440348
+mappingId ID-73063517
 target  ns:ns/{var0} a NAP:Dystonia . 
-source  SELECT A."c0" as var0 FROM  "src_Wheelchair" as A, "src_LightweightFoldable_Wheelchair" as B, "src_MovementAbility" as C, "src_Dystonia" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_ReadingDevice" as A, "src_requiresAbility" as B, "src_Manual_Wheelchair" as C, "src_TelephoneAid" as D, "src_Dystonia" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
-mappingId ID831778629
+mappingId ID1319991008
 target  ns:ns/{var0} a NAP:FaceToFaceCommunicationSoftware . 
-source  SELECT A."c0" as var0 FROM  "src_Foldable_Wheelchair" as A, "src_FaceToFaceCommunicationSoftware" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_MovementAbility" as A, "src_FaceToFaceCommunicationSoftware" as B WHERE  A."c0" = B."c0";
 
-mappingId ID-488563651
+mappingId ID1092773780
 target  ns:ns/{var0} a NAP:Kyphosis . 
-source  SELECT A."c0" as var0 FROM  "src_HearingDisability" as A, "src_isAffectedBy" as B, "src_MentalDisability" as C, "src_Kyphosis" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
+source  SELECT A."c0" as var0 FROM  "src_Dystonia" as A, "src_Hear_partially" as B, "src_PhysicalAbility" as C, "src_Kyphosis" as D WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0";
 
-mappingId ID1766770709
+mappingId ID733098923
 target  ns:ns/{var0} a NAP:Hard_of_hearing . 
-source  SELECT A."c0" as var0 FROM  "src_Thing" as A, "src_See" as B, "src_Hear" as C, "src_Guillaume_Barre" as D, "src_Hard_of_hearing" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_FaceToFaceCommunicationDevice" as A, "src_Guillaume_Barre" as B, "src_affects" as C, "src_isAffectedBy" as D, "src_Hard_of_hearing" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0" AND C."c1" = D."c1";
 
-mappingId ID2008760975
+mappingId ID1945905270
 target  ns:ns/{var0} a NAP:Cerebral_palsy . 
-source  SELECT A."c0" as var0 FROM  "src_Lightweight_Wheelchair" as A, "src_Cerebral_palsy" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_BrailleWritingDevice" as A, "src_Deaf" as B, "src_Cerebral_palsy" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID755386656
+mappingId ID761494451
 target  ns:ns/{var0} a NAP:Poliomyelitis . 
-source  SELECT A."c0" as var0 FROM  "src_Reach" as A, "src_Foldable_Wheelchair" as B, "src_Poliomyelitis" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
+source  SELECT A."c0" as var0 FROM  "src_Talking_Thermometer" as A, "src_Poliomyelitis" as B WHERE  A."c0" = B."c0";
 
-mappingId ID-991320239
+mappingId ID305019761
 target  ns:ns/{var0} a NAP:Little_or_No_Speech . 
-source  SELECT A."c0" as var0 FROM  "src_See_partially" as A, "src_Thing" as B, "src_Guillaume_Barre" as C, "src_IntellectualDisability" as D, "src_Little_or_No_Speech" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
+source  SELECT A."c0" as var0 FROM  "src_BatteryPowered_Wheelchair" as A, "src_See_partially" as B, "src_Little_or_No_Speech" as C WHERE  A."c0" = B."c0" AND B."c0" = C."c0";
 
-mappingId ID1982808948
+mappingId ID-577323288
 target  ns:ns/{var0} a NAP:Scoliosis . 
-source  SELECT A."c0" as var0 FROM  "src_Amputation" as A, "src_Scoliosis" as B WHERE  A."c0" = B."c0";
+source  SELECT A."c0" as var0 FROM  "src_Amputation" as A, "src_BrailleAlarmClock" as B, "src_Blind" as C, "src_Dystonia" as D, "src_Scoliosis" as E WHERE  A."c0" = B."c0" AND B."c0" = C."c0" AND C."c0" = D."c0" AND D."c0" = E."c0";
 
 ]]

@@ -11,12 +11,12 @@ import sys
 
 def drawGraph(folder,query,subplots):
     font = {'weight' : 'bold',
-        'size'   : 16}
+        'size'   : 19}
     plt.rc('font', **font)
     plt.subplot(subplots)
     plt.minorticks_on()
     plt.grid(axis='x')
-    plt.xscale("log")
+#     plt.xscale("log")
     plt.grid(which='minor',axis='x',linestyle=':',linewidth=0.4)
     files = os.listdir(folder+'/'+query)
     files.sort()
@@ -203,7 +203,7 @@ def drawGraph(folder,query,subplots):
     print('gqr',gqr)
 
     size=np.arange(len(preprocess))
-    width = 0.65
+    width = 0.85
     loads=plt.barh(size,load,width)
     preprocesss=plt.barh(size,preprocess,width,left=load)
     chases=plt.barh(size,chase,width,left=np.array(load)+np.array(preprocess))
@@ -211,14 +211,16 @@ def drawGraph(folder,query,subplots):
     gqrs=plt.barh(size,gqr,width,left=np.array(load)+np.array(preprocess)+np.array(chase)+np.array(rewrite))
     converts=plt.barh(size,convert , width,left=np.array(load)+np.array(preprocess)+np.array(chase)+np.array(rewrite)+np.array(gqr))
     executes=plt.barh(size,execute,width,left=np.array(load)+np.array(preprocess)+np.array(chase)+np.array(rewrite)+np.array(convert)+np.array(gqr))
-    plt.title(query)
+    plt.title(query,fontweight='bold')
     files = [f.replace('chasestepper.csv', 'BCA.csv') for f in files]
     ticks = map(lambda x: x.split('.')[0],files)
     print(ticks)
     plt.yticks(size,ticks)
     if subplots % 10 == 1:
+#           plt.legend((loads[0],rewrites[0],chases[0],converts[0],executes[0]), ['Load','Rewrite','Chase','Convert','Execute'], loc='upper left', bbox_to_anchor=(-0.04, -5.17),ncol=5,  prop={"size":24}, edgecolor="black")
+          plt.legend((loads[0],rewrites[0],chases[0],converts[0],executes[0]), ['Load','Rewrite','Chase','LAVrewrite','Execute'], loc='upper left', bbox_to_anchor=(-0.04, -5.17),ncol=5,  prop={"size":24}, edgecolor="black")
 #           plt.legend((loads[0],rewrites[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Chase','Execute','LAVrewrite'], loc=7, bbox_to_anchor=(1.12, 0.5))
-          plt.legend((loads[0],rewrites[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.12, 0.5))
+#           plt.legend((loads[0],rewrites[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.12, 0.5))
 #     	  plt.legend((loads[0],rewrites[0],preprocesss[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Preprocess','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
 #         plt.legend((loads[0],rewrites[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
 #         plt.legend((loads[0],rewrites[0],chases[0],executes[0],converts[0]), ['Load','Rewrite','Chase','Execute','Convert'], loc=7, bbox_to_anchor=(1.1, 0.5))
@@ -232,10 +234,10 @@ if len(sys.argv) > 1:
         if query.startswith('Q'):
             drawGraph(folder,query,subplots)
             subplots = subplots + 1
-    plt.xlabel('Time (milliseconds)', fontsize=24,labelpad=40)
-    plt.subplots_adjust(left=0.08,bottom=0.1,top=0.95,right=0.9,wspace=0.04,hspace=0.4)   
+    plt.xlabel('Time (milliseconds)',fontweight='bold', fontsize=26,labelpad=35)
+    plt.subplots_adjust(left=0.10,bottom=0.1,top=0.95,right=0.97,wspace=0.03,hspace=0.25)   
     fig = plt.gcf()
-    fig.set_size_inches(27.5, 19.9)
+    fig.set_size_inches(37.5, 20.5)
     plt.savefig(folder+".png",orientation='landscape',format='png')
 else:
     print("No folder included")

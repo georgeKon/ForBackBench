@@ -50,7 +50,7 @@ RapidTimeoutCounter=0
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   RAPID[$TOTAL,$i]=$START_TIME
-  rapidOutput=$($JRE -jar ../systems/rapid/Rapid2.jar DU SHORT ../$BASE_DIR/owl/ontology.owl ../$BASE_DIR/queries/iqaros/Q$QUERY.txt 2> /dev/null | grep -G '^Q' | grep 'io_' -v | grep -v 'AUX')
+  rapidOutput=$(timeout $TIMEOUT $JRE -jar ../systems/rapid/Rapid2.jar DU SHORT ../$BASE_DIR/owl/ontology.owl ../$BASE_DIR/queries/iqaros/Q$QUERY.txt 2> /dev/null | grep -G '^Q' | grep 'io_' -v | grep -v 'AUX')
   RAPID[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
   echo "$rapidOutput" > ../experiments/outputs/rapid/$BASE_DIR/GAV/rewritings/Q$QUERY-rewriting.txt
   RAPID[$SIZE,$i]=$(echo "$rapidOutput" | grep -c "<-")
@@ -123,7 +123,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   echo "Executing: $((${RAPID[$EXECUTE,$i]}/1000000)) milliseconds"
    echo "Time elapsed: $((${RAPID[$TOTAL,$i]}/1000000)) milliseconds"
   echo "# of tuples: ${RAPID[$TUPLES,$i]}"
-  if [ $RapidTimeoutCounter -eq 2 ]
+  if [ $RapidTimeoutCounter -eq 1 ]
 	then
     	break
 	fi
@@ -137,7 +137,7 @@ IQAROSTimeoutCounter=0
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   IQAROS[$TOTAL,$i]=$START_TIME 
-  iqarosOutput=$($JRE -jar ../systems/iqaros/iqaros.jar ../$BASE_DIR/owl/ontology.owl ../$BASE_DIR/queries/iqaros/Q$QUERY.txt 2> /dev/null | grep -G '^Q' | grep 'io_' -v)
+  iqarosOutput=$(timeout $TIMEOUT $JRE -jar ../systems/iqaros/iqaros.jar ../$BASE_DIR/owl/ontology.owl ../$BASE_DIR/queries/iqaros/Q$QUERY.txt 2> /dev/null | grep -G '^Q' | grep 'io_' -v)
   IQAROS[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
   
   IQAROS[$SIZE,$i]=$(echo "$iqarosOutput" | grep -c "<-")
@@ -184,7 +184,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   echo "Executing: $((${IQAROS[$EXECUTE,$i]}/1000000)) milliseconds"
   echo "Time elapsed: $((${IQAROS[$TOTAL,$i]}/1000000)) milliseconds"
   echo "# of tuples: ${IQAROS[$TUPLES,$i]}"
-  if [ $IQAROSTimeoutCounter -eq 2 ]
+  if [ $IQAROSTimeoutCounter -eq 1 ]
 	then
     	break
 	fi
@@ -198,7 +198,7 @@ GRAALTimeoutCounter=0
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   GRAAL[$TOTAL,$i]=$START_TIME
-  graalOutput=$($JRE -jar ../systems/graal/obda-benchmark-graal-1.0-SNAPSHOT-spring-boot.jar ../$BASE_DIR/owl/ontology.owl ../$BASE_DIR/queries/SPARQL/Q$QUERY.rq 2> /dev/null | grep -G '^?' | grep 'io_' -v)
+  graalOutput=$(timeout $TIMEOUT $JRE -jar ../systems/graal/obda-benchmark-graal-1.0-SNAPSHOT-spring-boot.jar ../$BASE_DIR/owl/ontology.owl ../$BASE_DIR/queries/SPARQL/Q$QUERY.rq 2> /dev/null | grep -G '^?' | grep 'io_' -v)
   GRAAL[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME))
   GRAAL[$SIZE,$i]=$(echo "$graalOutput" | grep -c ":-")
   echo "$graalOutput" > ../experiments/outputs/graal/$BASE_DIR/GAV/rewritings/Q$QUERY-rewriting.txt
@@ -244,7 +244,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   echo "Executing: $((${GRAAL[$EXECUTE,$i]}/1000000)) milliseconds"
   echo "Time elapsed: $((${GRAAL[$TOTAL,$i]}/1000000)) milliseconds"
   echo "# of tuples: ${GRAAL[$TUPLES,$i]}"
-  if [ $GRAALTimeoutCounter -eq 2 ]
+  if [ $GRAALTimeoutCounter -eq 1 ]
 	then
     	break
 	fi
@@ -279,7 +279,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   echo "Executing: $((${RDFOX[$EXECUTE,$i]})) milliseconds"
   echo "Time elapsed: $((${RDFOX[$TOTAL,$i]}/1000000)) milliseconds"
   echo "# of tuples: ${RDFOX[$TUPLES,$i]}"
-  if [ $RDFOXTimeoutCounter -eq 2 ]
+  if [ $RDFOXTimeoutCounter -eq 1 ]
 	then
     	break
 	fi
@@ -387,7 +387,7 @@ ONTOPTimeoutCounter=0
 for ((i=0;i<$NUM_TESTS;++i)); do
   START_TIME=$(date +%s%N)
   ONTOP[$TOTAL,$i]=$START_TIME
-  ontopOutput=$(timeout $TIMEOUT  ./../systems/ontop/ontop query -t ../$BASE_DIR/owl/ontology.owl -q ../$BASE_DIR/queries/SPARQL/Q$QUERY.rq -m ../$BASE_DIR/ontop-files/gav-mapping.obda -p ../$BASE_DIR/ontop-files/properties.txt)
+  ontopOutput=$(timeout $TIMEOUT ./../systems/ontop/ontop query -t ../$BASE_DIR/owl/ontology.owl -q ../$BASE_DIR/queries/SPARQL/Q$QUERY.rq -m ../$BASE_DIR/ontop-files/gav-mapping.obda -p ../$BASE_DIR/ontop-files/properties.txt)
   if [ $? -eq 0 ]; then
    echo "$ontopOutput" > ../experiments/outputs/ontop/$BASE_DIR/GAV/log/$DATA_SIZE/Q$QUERY-log.txt
    
@@ -443,7 +443,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
     echo "command timeout $ONTOPTimeoutCounter"
   fi
   
-  if [ $ONTOPTimeoutCounter -eq 2 ]
+  if [ $ONTOPTimeoutCounter -eq 1 ]
 	then
     	break
 	fi
@@ -495,7 +495,7 @@ ontopRTimeoutCounter=0
 for ((i=0;i<$NUM_TESTS;++i)); do
  START_TIME=$(date +%s%N | sed 's/^0*//')
  ONTOPRW[$TOTAL,$i]=$START_TIME
- OUTPUT=$($JRE -jar ../systems/tw-rewriting/tw-rewriting.jar ../$BASE_DIR/owl/ontology.owl ../$BASE_DIR/queries/SPARQL/Q$QUERY.rq | sed '/FINAL REWRITING/,$!d; /REWRITING OVER/,$d' | grep 'io_' -v)
+ OUTPUT=$(timeout $TIMEOUT $JRE -jar ../systems/tw-rewriting/tw-rewriting.jar ../$BASE_DIR/owl/ontology.owl ../$BASE_DIR/queries/SPARQL/Q$QUERY.rq | sed '/FINAL REWRITING/,$!d; /REWRITING OVER/,$d' | grep 'io_' -v)
  ONTOPRW[$REWRITE,$i]=$(($(date +%s%N) - $START_TIME)) 
  echo "$OUTPUT" > ../experiments/outputs/ontoprw/$BASE_DIR/GAV/rewritings/Q$QUERY-rewriting.txt
  subs=$(echo "$OUTPUT" | grep ':-' | grep -v 'q' | sed 's/$/ ./g')
@@ -543,7 +543,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
  echo "Executing: $((${ONTOPRW[$EXECUTE,$i]}/1000000)) milliseconds"
  echo "Time elapsed: $((${ONTOPRW[$TOTAL,$i]}/1000000)) milliseconds"
  echo "# of tuples: ${ONTOPRW[$TUPLES,$i]}"
- if [ $ontopRTimeoutCounter -eq 2 ]
+ if [ $ontopRTimeoutCounter -eq 1 ]
 	then
     	break
 	fi
@@ -622,7 +622,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   echo "Time elapsed: $((${RULEWERK[$TOTAL,$i]}/1000000)) milliseconds"
   echo "# of tuples: ${RULEWERK[$TUPLES,$i]}" 
   echo "QUery is : $QUERY"
-   if [ $RULEWERKTimeoutCounter -eq 2 ]
+   if [ $RULEWERKTimeoutCounter -eq 1 ]
 	then
     	break
 	fi
