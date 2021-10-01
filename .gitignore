@@ -1,4 +1,4 @@
-.env
+l.env
 .vscode
 *.log
 *.code-workspace
@@ -29,6 +29,7 @@ outputs
 experiments
 data
 scenarios/*/data/huge
+scenarios/*/data/huge/huge.tar.xz
 tools/ontopmappinggenerator/singleStep-1.08.jar
 utilityTools/old_tools
 tools
