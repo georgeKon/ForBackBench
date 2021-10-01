@@ -1,5 +1,5 @@
 # Utility Tools
-This README describes the package of converter tools and other helper functions developed to assist the cross-approach comparison model by converting between formats such as ChaseBench and OWL2. These tools are used by the ForBackBench `scripts/` to run, but can also be used as standalone tools in other projects if desired.
+This README describes the package of converter tools and other helper functions developed to assist the cross-approach comparison model by converting between formats such as ChaseBench and OWL2 QL. These tools are used by the ForBackBench `scripts/` to run, but can also be used as standalone tools in other projects if desired. The source code folder also contains the source codes for all these tools. 
 
 
 ## CreateCGQRTTGDs.jar
