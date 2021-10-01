@@ -4,6 +4,16 @@
 *.code-workspace
 
 scenarios/deep
+scenarios/Deep200
+scenarios/Deep300
+scenarios/DeepSTs
+scenarios/GQR
+scenarios/GQRDeep
+scenarios/GQRTester
+scenarios/GQRV
+scenarios/LUBM_new
+scenarios/Ontology-256
+scenarios/RapidGQR
 scenarios/LUBM
 scenarios/V
 scenarios/A
@@ -19,6 +29,12 @@ outputs
 experiments
 data
 
+utilityTools/old_tools
+scripts/old_scripts
+systems/Llunatic
+systems/chasefun
+node_modules
+
 tools/Llunatic-build
 tools/tw-rewriting.jar
 tools/obda-benchmark-graal-1.0-SNAPSHOT.jar
@@ -26,3 +42,4 @@ tools/graal-2-0.0.1-SNAPSHOT-spring-boot.jar
 tools/Llunatic-master
 # Ignore retrieval script
 retrieve.sh
+
