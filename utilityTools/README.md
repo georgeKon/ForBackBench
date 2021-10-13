@@ -199,7 +199,7 @@ The jar file for this tool can be build directly from the source code 'ModifyCha
 java -jar utilityTools/OBDAtoTGDsGAV.jar [*mapping file*] [*schema file*] [*Output file*]
 
 ```
-mapping        <file>   | the file containing the OBDA mapping
+mapping        <file>   | the file containing the GAV OBDA mapping
 schema         <file>   | the file containing the source schema in ChaseBench format
 out          <folder>   | the output folder location.
 ```
