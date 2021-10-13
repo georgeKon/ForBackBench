@@ -237,9 +237,9 @@ name/
 ### Data Generation (generate.sh)
 #### One-to-one mappings data
 The generate.sh script automates data generation for One-to-one mappings by using the command:
-`./scripts/generate.sh <folder> <size>`, where:
-`<folder>` is the top level scenario name such as `scenarios/Deep100`
-`<size>` is a data size defined in the config.ini in tools/datagenerator and it takes one of four values `small, medium, large, huge`.
+```./scripts/generate.sh <folder> <size>```, where:
+```<folder>  is the top level scenario name such as `scenarios/Deep100`
+<size> is a data size defined in the config.ini in tools/datagenerator and it takes one of four values `small, medium, large, huge```.
 
 
 #### GAV/LAV mappings data
