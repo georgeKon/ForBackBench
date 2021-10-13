@@ -20,6 +20,7 @@ ForBackBench framework is a benchmark infrastructure that provides a set of test
 <!-- To download dependencies - `yarn` - this must be done on first downloading the code
 <!-- , or any time the 'node_modules' folder is deleted
  -->
+ <!-- 
 To build
 
 - `yarn build`
@@ -75,19 +76,24 @@ To run experiments there are 3 different types of mappings:
 
 Each run scripts run its corresponding Query script (queryTrivialMapping.sh, queryLAVMapping.sh, and queryGAVMapping.sh).
 
+To run experiments, you should follow these steps: 
 
-First, make sure you have the scenario folders set up as you need, following the layout defined below. 
-If you want to create new scenario, you can use the bootstrap.sh script to automate the building of much of them as described below. 
+1- Make sure you have the scenario folders set up as you need, following the layout defined below. 
+Note: If you want to create new scenario that is not in the scenario folder, you can use the bootstrap.sh script to automate the building of much of them as described below. 
 
-Then, you have to generate the data for the scenario you want to run as described in Data Generation below.
+2- You have to generate the data for the scenario you want as described in Data Generation below.
 
-Then, you can edit the corresponding Query script to define which systems you wish to run.
-Also, you need to edit the selected run script to define which scenarios and data sizes you wish to run.
+3- You need to edit the selected run script to define which scenarios and data sizes you wish to run as defined in Run scripts section below.
+<!-- You can edit the corresponding Query script to define which systems you wish to run as defined in Query scripts section below. -->
 
-Finally, run the expriment: 
+4- Run the expriment, using the command:
 ```
 cd scripts
-./runTrivialMapping.sh
+./runTrivialMapping.sh 
+or
+./runLAVMapping.sh
+or
+./runGAVMapping.sh
 ```
 
 When the code has finished, the results are printed to set of CSV files found in the experiments folder of the scenarios.
