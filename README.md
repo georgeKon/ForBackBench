@@ -38,7 +38,7 @@ To build
 
 - `yarn build`
 - Use `sudo npm link` to update the local binary command
- -->
+
 
 <!-- 
 The `obdabenchmark llunatic <folder>` command is used to generate the llunatic xml files for a scenario
