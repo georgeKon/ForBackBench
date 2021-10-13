@@ -79,7 +79,7 @@ Each run scripts run its corresponding Query script (queryTrivialMapping.sh, que
 To run experiments, you should follow these steps: 
 
 1- Make sure you have the scenario folders set up as you need, following the layout defined below. 
-Note: If you want to create new scenario that is not in the scenario folder, you can use the bootstrap.sh script to automate the building of much of them as described below. 
+Note: If you want to create new scenario that is not currently in the scenario folder, you can use the bootstrap.sh script to automate the building of much of them as described below. 
 
 2- You have to generate the data for the scenario you want as described in Data Generation below.
 
@@ -249,7 +249,9 @@ The generate.sh script automates data generation for One-to-one mappings by usin
 #### GAV/LAV mappings data
 If you need to generate data for GAV or LAV mapping, you can simply use our Utility Tool in the command line:
 ```java -jar utilityTools/GenerateDataFromTGD.jar --tgd <file of LAV/GAV source-to-traget TGD>  --output <path for the data folder>```, where:
-```<file of LAV/GAV source-to-traget TGD> is the source-to-traget TGD and it loacted in scenario/dependencies/ folder. For example in Deep scenario, GAV is "scenarios/Deep100/dependencies/gav.txt" and LAV is "scenarios/Deep100/dependencies/lav.txt"
+
+```
+<file of LAV/GAV source-to-traget TGD> is the source-to-traget TGD and it loacted in scenario/dependencies/ folder. For example in Deep scenario, GAV is "scenarios/Deep100/dependencies/gav.txt" and LAV is "scenarios/Deep100/dependencies/lav.txt"
 <path for the data folder> this should be follow the folder structure defined above such as "scenarios/Deep100/data/LAV/small" for small data in LAV and "scenarios/Deep100/data/GAV/small" for GAV.
 ```
 
