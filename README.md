@@ -260,7 +260,7 @@ If you need to generate data for GAV or LAV mapping, you can simply use our Util
 This scripts drops a database if exists, then creates and imports - use `./scripts/build.sh <folder> <size>` where 'folder' is the top level scenario name and 'size' is a data size defined in the data folder of that scenario. The database information is taken from the scenario config.ini file
 
 ### Query scripts (queryTrivialMapping.sh, queryLAVMapping.sh, and queryGAVMapping.sh)
-This is the main heavy lifter of the scripts, and runs a test of a query on each tool, 6 times. It is invoked inside run scripts using `./queryTrivialMapping.sh <folder> <query number> <size>`, where 'folder' is the top level scenario name, query number is self explanatory and 'size' is a data size defined in the data folder of that scenario. Below will be a guide to modifying this script to expand it to more tools.
+This is the main heavy lifter of the scripts, and runs a test of a query on each tool, 6 times. It is invoked inside run scripts using `./queryTrivialMapping.sh <folder> <query number> <size>`, where 'folder' is the top level scenario name, query number is self explanatory and 'size' is a data size defined in the data folder of that scenario. 
 
 Most of these commands are automated using the Run scripts.
 
