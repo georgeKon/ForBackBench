@@ -229,9 +229,18 @@ name/
  -->
 
 ### Data Generation (generate.sh)
-The generate.sh script automates data generation for One-to-one mappings - use `./scripts/generate.sh <folder> <size>` where 'folder' is the top level scenario name and 'size' is a data size defined in the config.ini in tools/datagenerator. 
-If you need to generate data for GAV or LAV mappin, then you can simply use our Utility Tool in the command line:
-`java -jar utilityTools/GenerateDataFromTGD.jar --tgd <file of LAV/GAV source-to-traget TGD>  --output <path for the data folder>`
+#### One-to-one mappings data
+The generate.sh script automates data generation for One-to-one mappings by using the command:
+`./scripts/generate.sh <folder> <size>`, where:
+`<folder>` is the top level scenario name such as `scenarios/Deep100`
+`<size>` is a data size defined in the config.ini in tools/datagenerator and it takes one of four values `small, medium, large, huge`.
+
+
+#### GAV/LAV mappings data
+If you need to generate data for GAV or LAV mapping, you can simply use our Utility Tool in the command line:
+`java -jar utilityTools/GenerateDataFromTGD.jar --tgd <file of LAV/GAV source-to-traget TGD>  --output <path for the data folder>`, where:
+`<file of LAV/GAV source-to-traget TGD>` is the source-to-traget TGD and it loacted in scenario/dependices/ folder. For example in Deep scenario, GAV is `scenarios/Deep100/dependencies/gav.txt` and LAV is `scenarios/Deep100/dependencies/lav.txt`
+`<path for the data folder>` this should be follow the folder structure defined above such as `scenarios/Deep100/data/LAV/small` for small data in LAV and `scenarios/Deep100/data/GAV/small` for GAV.
 
 
 ### Build Database (build.sh)
