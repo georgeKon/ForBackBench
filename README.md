@@ -238,7 +238,7 @@ name/
 #### One-to-one mappings data
 The generate.sh script automates data generation for One-to-one mappings by using the command:
 
-```./scripts/generate.sh <folder> <size>```, where:
+```./scripts/generate.sh <folder> <size> oneToOne```, where:
 
 ```
 <folder>  is the top level scenario name such as "scenarios/Deep100"
