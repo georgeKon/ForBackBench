@@ -306,3 +306,57 @@ To add test data sizes do the same but with the `SIZES` array to become somethin
 SIZES=("small" "medium")
 ```
 
+
+# Re-run the online appendices experiments:
+
+To run all experiments that in the online appendices:
+1. Setup the environment by downloading the project and install all required program in the steps 1 to 7 in Getting it to run section. 
+2. Generate Data for each scenario for all mappings and all data sizes. Let takes Deep scenario with medium data size as example:
+    1. One-to-one mappings data: 
+    ```
+    ./scripts/generate.sh <folder> <size> oneToOne  
+    ```
+    Example, Deep scenario with medium data size
+     ```
+     mkdir -p scenarios/Deep100/data/oneToOne/medium
+     ./scripts/generate.sh scenarios/Deep100 medium oneToOne
+     ```
+    2. LAV mapping data:  
+    ```
+    java -jar utilityTools/GenerateDataFromTGD.jar --tgd scenarios/Deep100/dependencies/lav.txt --rows 500 --output scenarios/Deep100/data/LAV/medium
+    ```
+    3. GAV mapping data: 
+    ``` 
+    ./scripts/generateGAVData.sh scenarios/Deep100 medium
+    ```
+Repeat these steps for all data sizes for all scenarios you want.
+
+3. Run Expirements:
+You need to edit the SCENARIOS and SIZES array inside the selected run script(runTrivialMapping.sh, runLAVMapping.sh, or runGAVMapping.sh) to define which scenarios and data sizes you wish to run. 
+For example, to run Deep scenario with medium data size on OneToOne mapping:
+	1. Open the run script (runTrivialMapping.sh), modify:
+	```
+	SCENARIOS=("scenarios/Deep100")
+	SIZES=("medium")
+	```
+	2. Run the Expirement:
+	```
+	cd scripts
+	./runTrivialMapping.sh 
+	```
+Repeat this step with LAV mapping (runLAVMapping.sh), or GAV mapping(runGAVMapping.sh) as you need.
+
+4. Draw the graph:
+**For OneToOne mapping:**
+```
+python scripts/csvToGraph.py experiments/scenarios/Deep100/oneToOne/medium 
+```
+**For LAV mapping:**
+```
+python scripts/csvToGraph.py experiments/scenarios/Deep100/LAV/medium 
+```
+**For GAV mapping:**
+```
+python scripts/csvToGraph.py experiments/scenarios/Deep100/GAV/medium 
+```
+Repeat this step with each experiments you run.	
