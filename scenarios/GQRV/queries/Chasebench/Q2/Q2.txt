@@ -1,1 +1,0 @@
-Q2(?0,?1) <- Military-Person(?0),hasRole(?1,?0),related(?0,?2) .
