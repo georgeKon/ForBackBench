@@ -331,9 +331,6 @@ java -jar schemaGenerator-1.08.jar -st-tgds [*st-tgd file*] -t-tgds [*t-tgd file
 ### DESCRIPTION
 This takes in the st-tgds and t-tgds rules and returns source and target schemas. This is entirely uses the CB tools to this. With no file output location this will not print to the terminal and the results will be ignored so make sure they are included. This won't print anything to the command line
 
-### NOTE
-The jar file for this tool can be build directly from the source code 'Schema.java'.
-
 
 
 ## SQLConverterRealDB.jar
