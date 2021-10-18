@@ -1,1 +1,0 @@
-SELECT COUNT(*) FROM (SELECT DISTINCT A."c1" FROM "src_m231004" as A, "src_m168004" as B WHERE A."c1" = B."c0" UNION SELECT DISTINCT A."c0" FROM "src_m168004" as A, "src_m102004" as B WHERE A."c0" = B."c0") AS query;
