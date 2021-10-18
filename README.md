@@ -76,17 +76,47 @@ To run experiments there are 3 different types of mappings:
 
 Each run scripts run its corresponding Query script (queryTrivialMapping.sh, queryLAVMapping.sh, and queryGAVMapping.sh).
 
-To run experiments, you should follow these steps: 
+**To run experiments, you should follow these steps:**
 
-1- Make sure you have the scenario folders set up as you need, following the layout defined below. 
+**First,** make sure you have the scenario folders set up as you need, following the layout defined below. Note: If you want to create new scenario that is not currently in the scenario folder, you can use the bootstrap.sh script to automate the building of much of them as described below.
+
+**Second,** follow these steps to set up the ForBackBench environment requirements:
+1. This step for Windows only, install any bash command line such as Git bash.
+2. Install Java.
+3. Install Node.js
+4. Install PostgreSQL.
+5. Install yarn from command line:
+```
+	npm install --global yarn
+	Then, add it to environment variable by following commands:
+	cd C:\Users\userName\AppData\Roaming\npm\node_modules\yarn\bin
+	set path=%PATH%;%CD%
+	setx path "%PATH%"
+ ```
+6. Install dependencies:
+```
+	cd (to obda-benchmark folder inside project folder )
+	yarn && yarn build && npm link
+ ```
+7. add obdabenchmark command to the environment variable by following commands:
+```
+	cd C:\Users\userName\AppData\Roaming\npm
+	set path=%PATH%;%CD%
+	setx path "%PATH%"
+ ```
+8. Generate Data as described in Data Generation below 
+9. Run experiment:
+You may need to edit the selected run script to define which scenarios and data sizes you wish to run as defined in Run scripts section below, then use the commands:
+
+<!-- 1- Make sure you have the scenario folders set up as you need, following the layout defined below. 
 Note: If you want to create new scenario that is not currently in the scenario folder, you can use the bootstrap.sh script to automate the building of much of them as described below. 
 
 2- You have to generate the data for the scenario you want as described in Data Generation below.
 
 3- You need to edit the selected run script to define which scenarios and data sizes you wish to run as defined in Run scripts section below.
-<!-- You can edit the corresponding Query script to define which systems you wish to run as defined in Query scripts section below. -->
+ You can edit the corresponding Query script to define which systems you wish to run as defined in Query scripts section below. -->
 
-4- Run the expriment, using the command:
+<!-- 4- Run the expriment, using the command: -->
 ```
 cd scripts
 ./runTrivialMapping.sh 
