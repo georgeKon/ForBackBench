@@ -1,1 +1,0 @@
-Q9(?0,?1) <- Professor(?0),worksFor(?0,?2),name(?0,?1),emailAddress(?0,?3),telephone(?0,?4) .

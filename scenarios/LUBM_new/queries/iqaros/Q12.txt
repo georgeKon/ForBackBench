@@ -1,1 +1,0 @@
-Q(?0,?1) <- Student(?0),Course(?1),takesCourse(?0,?1),teacherOf(?2,?1)

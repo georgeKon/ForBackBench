@@ -1,1 +1,0 @@
-Q(?0) <- Publication(?0),publicationAuthor(?0,?1)

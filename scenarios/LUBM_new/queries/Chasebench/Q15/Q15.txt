@@ -1,1 +1,0 @@
-Q15(?0) <- Student(?0),takesCourse(?0,?1) .

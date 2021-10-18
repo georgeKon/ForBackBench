@@ -1,1 +1,0 @@
-Q7(?0,?1) <- GraduateStudent(?0),University(?1),Department(?2),memberOf(?0,?2),subOrganizationOf(?2,?1),undergraduateDegreeFrom(?0,?1) .

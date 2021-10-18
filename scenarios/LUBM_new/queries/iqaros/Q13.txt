@@ -1,1 +1,0 @@
-Q(?0,?1) <- Student(?0),Department(?1),memberOf(?0,?1),subOrganizationOf(?1,?2),emailAddress(?0,?3)
