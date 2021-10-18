@@ -1,1 +1,0 @@
-Q(?0,?1) <- wonderad30nl0ce0(?0,?1),raisevnm17nl0ce1(?2,?3),knotvnm27nl0ce1(?4,?5),threadvi13nl0ce0(?6,?2)

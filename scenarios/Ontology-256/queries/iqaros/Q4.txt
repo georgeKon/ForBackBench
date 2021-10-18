@@ -1,1 +1,0 @@
-Q(?0,?1) <- animalvh6nl0ce0(?0,?2),lookvi13nl0ce1(?1,?0),presentvnm15nl0ce0(?3,?0)

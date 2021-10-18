@@ -1,9 +1,0 @@
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX : <http://example.com/example.owl#>
-SELECT DISTINCT ?0 ?1
-WHERE
-{
-	?1 :shakevnm23nl0ce1 ?2 .
-	?3 :recordvnm23nl0ce2 ?0 .
-	?3 :whistlead49nl0ce0 ?4
-}
