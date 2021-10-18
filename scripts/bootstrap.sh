@@ -21,7 +21,7 @@ if [[ $2 = "chasebench" ]]
 then
   cp $BASE_DIR/dependencies/oneToOne-st-tgds.txt $BASE_DIR/dependencies/st-tgds.txt
   cp $BASE_DIR/dependencies/oneToOne-t-tgds.txt $BASE_DIR/dependencies/t-tgds.txt
-  java -jar utilityTools/modifyChaseBench-1.08.jar -st-tgds $BASE_DIR/dependencies/st-tgds.txt -t-tgds $BASE_DIR/dependencies/t-tgds.txt -q $BASE_DIR/queries
+  java -jar utilityTools/modifyChaseBench-1.08.jar -st-tgds $BASE_DIR/dependencies/st-tgds.txt -t-tgds $BASE_DIR/dependencies/t-tgds.txt -q $BASE_DIR/queries/Chasebench
   java -jar utilityTools/schemaGenerator-1.08.jar -st-tgds $BASE_DIR/dependencies/oneToOne-st-tgds.txt -t-tgds $BASE_DIR/dependencies/oneToOne-t-tgds.txt -s-schema $BASE_DIR/schema/oneToOne/s-schema.txt -t-schema $BASE_DIR/schema/oneToOne/t-schema.txt
   cp $BASE_DIR/schema/oneToOne/s-schema.txt $BASE_DIR/schema/s-schema.txt
   cp $BASE_DIR/schema/oneToOne/t-schema.txt $BASE_DIR/schema/t-schema.txt
