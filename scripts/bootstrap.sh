@@ -53,8 +53,15 @@ if [[ $3 = "data" ]]; then
    
     # Generate LAV data set
     mkdir -p $BASE_DIR/data/LAV/$size
-	java -jar utilityTools/GenerateDataFromTGD.jar --tgd $BASE_DIR/dependencies/lav.txt  --output $BASE_DIR/data/LAV/$size
-
+   if [ $size="small" ]; then
+	java -jar utilityTools/GenerateDataFromTGD.jar --tgd $BASE_DIR/dependencies/lav.txt --rows 100 --output $BASE_DIR/data/LAV/$size
+  fi
+  if [  $size="medium" ]; then
+	java -jar utilityTools/GenerateDataFromTGD.jar --tgd $BASE_DIR/dependencies/lav.txt --rows 500 --output $BASE_DIR/data/LAV/$size
+  fi
+  if [  $size="large" ]; then
+	java -jar utilityTools/GenerateDataFromTGD.jar --tgd $BASE_DIR/dependencies/lav.txt --rows 1000 --output $BASE_DIR/data/LAV/$size
+  fi
     # Generate GAV data set
      mkdir -p $BASE_DIR/data/GAV/$size
      ./scripts/generateGAVData.sh $BASE_DIR $size
@@ -118,8 +125,15 @@ cp -r $BASE_DIR/schema/oneToOne/. $BASE_DIR/schema/GAV
       
     # Generate LAV data set
      mkdir -p $BASE_DIR/data/LAV/$size
-	java -jar utilityTools/GenerateDataFromTGD.jar --tgd $BASE_DIR/dependencies/lav.txt  --output $BASE_DIR/data/LAV/$size
-
+   if [ $size="small" ]; then
+	java -jar utilityTools/GenerateDataFromTGD.jar --tgd $BASE_DIR/dependencies/lav.txt --rows 100 --output $BASE_DIR/data/LAV/$size
+  fi
+  if [  $size="medium" ]; then
+	java -jar utilityTools/GenerateDataFromTGD.jar --tgd $BASE_DIR/dependencies/lav.txt --rows 500 --output $BASE_DIR/data/LAV/$size
+  fi
+  if [  $size="large" ]; then
+	java -jar utilityTools/GenerateDataFromTGD.jar --tgd $BASE_DIR/dependencies/lav.txt --rows 1000 --output $BASE_DIR/data/LAV/$size
+  fi
     # Generate GAV data set
      mkdir -p $BASE_DIR/data/GAV/$size
      ./scripts/generateGAVData.sh $BASE_DIR $size
