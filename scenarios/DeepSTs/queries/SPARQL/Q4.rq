@@ -1,5 +1,0 @@
-PREFIX : <http://example.com/example.owl#>
-SELECT DISTINCT ?0 WHERE {
-  ?0 :m62004 ?1 .
-  ?0 :m175004 ?2
-}
