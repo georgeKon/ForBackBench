@@ -1,5 +1,0 @@
-
-jdbc.driver=org.postgresql.Driver
-jdbc.url=jdbc:postgresql://localhost/stockexchange
-jdbc.user=postgres
-jdbc.password=password
