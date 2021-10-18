@@ -185,9 +185,9 @@ java -jar utilityTools/modifyChaseBench-1.08.jar -st-tgds [*st-tgd file*] -t-tgd
 
 This takes the old chasebench scenarios and makes them work with ontology based systems. As in, it chops the atoms or relations so that they are only binary and unary. This sometimes will give problems with existential and meaningless unanswerable queries, but they do usually run.
 
-### NOTE
+<!-- ### NOTE
 The jar file for this tool can be build directly from the source code 'ModifyChaseBench.java'.
-
+ -->
 
 ## OBDAtoTGDsGAV.jar
 
