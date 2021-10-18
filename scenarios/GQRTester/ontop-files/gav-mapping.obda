@@ -1,5 +1,0 @@
-[PrefixDeclaration]
-ns:  http://example.com/example.owl#
-
-[MappingDeclaration] @collection [[
-]]
