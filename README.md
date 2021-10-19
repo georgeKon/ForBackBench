@@ -62,13 +62,13 @@ This project has many tools tools and also uses the gradle build system
 
 ## Getting it to run
 
-When first using the codebase, you need to download the Javascript dependencies and build the scripts. To do this:
+<!-- When first using the codebase, you need to download the Javascript dependencies and build the scripts. To do this:
 
 ```
 cd to project folder
 yarn && yarn build && sudo npm link
 ```
-
+ -->
 To run experiments there are 3 different types of mappings:
 - Simple One-To-One mapping (runTrivialMapping.sh)
 - Complex LAV mapping (runLAVMapping.sh)
