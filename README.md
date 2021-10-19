@@ -71,8 +71,8 @@ yarn && yarn build && sudo npm link
  -->
 To run experiments there are 3 different types of mappings:
 - Simple One-To-One mapping (runTrivialMapping.sh)
-- Complex LAV mapping (runLAVMapping.sh)
-- Complex GAV mapping (runGAVMapping.sh)
+- LAV mapping (runLAVMapping.sh)
+- GAV mapping (runGAVMapping.sh)
 
 Each run scripts run its corresponding Query script (queryTrivialMapping.sh, queryLAVMapping.sh, and queryGAVMapping.sh).
 
