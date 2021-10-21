@@ -1,9 +1,9 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@source srcresearchInterest[3] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/LAV/small/src_researchInterest.csv") .
-@source srcadvisor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/LAV/small/src_advisor.csv") .
-@source srcundergraduateDegreeFrom[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/LAV/small/src_undergraduateDegreeFrom.csv") .
-@source srcDepartment[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/LAV/small/src_Department.csv") .
-@source srcGraduateStudent[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/University/data/LAV/small/src_GraduateStudent.csv") .
+@source srcresearchInterest[3] : load-csv("../scenarios/University/data/LAV/small/src_researchInterest.csv") .
+@source srcadvisor[2] : load-csv("../scenarios/University/data/LAV/small/src_advisor.csv") .
+@source srcundergraduateDegreeFrom[1] : load-csv("../scenarios/University/data/LAV/small/src_undergraduateDegreeFrom.csv") .
+@source srcDepartment[1] : load-csv("../scenarios/University/data/LAV/small/src_Department.csv") .
+@source srcGraduateStudent[2] : load-csv("../scenarios/University/data/LAV/small/src_GraduateStudent.csv") .
 advisor(!X,!Ya245ab6c941c4bb7abfa57a64b4367f1),affiliatedOrganizationOf(?Xd023af1eaa124331bece28a142574935,!Y40a3b4f8821447288d50c459890cdb0d),AssistantProfessor(!X9211ca3227b04406954f9ca1dd4110b0),AssociateProfessor(?X14463efea32941f794d03869f48b1127),Course(!X85b4316c85b34044952b2793cabc3194) :- srcadvisor(?X14463efea32941f794d03869f48b1127,?Xd023af1eaa124331bece28a142574935) .
 GraduateStudent(!X),headOf(!X64360ff0efe2471a9a4e6ee6d3999196,?Y),Lecturer(!X717518f3506a44938ba846d9ca8ee75e),mastersDegreeFrom(!X,?Y),memberOf(!X9094608f8f98486995b00d16cc863430,?Y),name(!Xe204c301152048ecb70e0533121e5236,!Y4adeaa90abb742669e975e196b6dae2a),Publication(!X),publicationAuthor(!Xfbf6b18839984cb6b737967f2f5035fc,?Y7b0294e561b74d6b89a48d019aec5ea7),ResearchAssistant(!X),ResearchGroup(!X) :- srcGraduateStudent(?Y,?Y7b0294e561b74d6b89a48d019aec5ea7) .
 Department(!X8b7ae18410d44f7b8dbe1e42f8ed2177),doctoralDegreeFrom(!X3b2c6bd4cd7143549441838ce55be134,?Y),emailAddress(!X,?Y),FullProfessor(!X000011799d0b45849a7d0120be9e1f96),GraduateCourse(!X7b570c87b99b48fdb8f286eb5b2b82e4) :- srcDepartment(?Y) .
