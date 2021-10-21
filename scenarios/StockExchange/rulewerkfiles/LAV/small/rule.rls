@@ -1,8 +1,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@source srcAcquisition[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/LAV/small/src_Acquisition.csv") .
-@source srcFinantialInstrument[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/LAV/small/src_FinantialInstrument.csv") .
-@source srcDealer[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/LAV/small/src_Dealer.csv") .
-@source srcisExecutedFor[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/StockExchange/data/LAV/small/src_isExecutedFor.csv") .
+@source srcAcquisition[1] : load-csv("../scenarios/StockExchange/data/LAV/small/src_Acquisition.csv") .
+@source srcFinantialInstrument[2] : load-csv("../scenarios/StockExchange/data/LAV/small/src_FinantialInstrument.csv") .
+@source srcDealer[2] : load-csv("../scenarios/StockExchange/data/LAV/small/src_Dealer.csv") .
+@source srcisExecutedFor[2] : load-csv("../scenarios/StockExchange/data/LAV/small/src_isExecutedFor.csv") .
 Dealer(!X),StockBroker(!Xfb39f3e280384d65a4d3256cdd5e792d),Investor(!X),Person(!X99255de44f2d46d895b40851de46c6dd),Offer(!Xb1ba13599253447c8d26f5c4db66c5e6),hasAddress(!X22ad933c3c41423b8ec87574300a6cf4,?Yb7ace39a689345b3980638917c398256),PhysicalPerson(?Xf48a98e2c57b48fdafccb32ff4423211),Stock(!Xfb4088429e3043bf931725b11fef189b) :- srcDealer(?Xf48a98e2c57b48fdafccb32ff4423211,?Yb7ace39a689345b3980638917c398256) .
 FinantialInstrument(!X6ec92409f4ad41159e1381c823501a92),isListedIn(!X3dbacf1abace4dd78740e9d4b63d9cfc,?Y),belongsToCompany(!Xdcfbcd03b9d44a8aa21f2cb34aa762c3,?Y),StockExchangeMember(!X),tradesOnBehalfOf(!X,?Y15bae8dcc8e041cca02d19ed294a4090),StockTrader(!X),Trader(!X2575cb88c66e41aaa8a9b7c2cc763c8d) :- srcFinantialInstrument(?Y,?Y15bae8dcc8e041cca02d19ed294a4090) .
 isExecutedFor(!Xe2d83efef8724ced9bce3d03bad70cdd,!Y),isExecutedBy(?X6f8136a163414f48a87c212d4863cb1e,!Y),involvesInstrument(!Xeb053fdd242640c2826be45052399009,!Y),hasStock(!X,!Y85c7b9ffcd5d4d069c8e735bfc19893a),StockExchangeList(?X63dc00e422ee4faba568a9d18c796307),listsStock(!X,!Yc4aa1ad5e95c420a802beca9b1cb6570),isTradedIn(!X,!Y),usesBroker(!X65645cf4ce3d41e3afde612bc29c25c5,!Y) :- srcisExecutedFor(?X63dc00e422ee4faba568a9d18c796307,?X6f8136a163414f48a87c212d4863cb1e) .
