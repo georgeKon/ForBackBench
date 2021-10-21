@@ -70,7 +70,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   rapidCB=$(echo "$rapidOutput" | sed 's/$/ ./g')
   # echo "rapidCBFiltered:  $rapidCB"
   #  echo "rapidCB: $rapidOutput"
-  SQL=$(java -jar ../utilityTools/SQLConverterRealDB.jar "$rapidCB" ../$BASE_DIR/schema/oneToOne/s-schema.txt --src )
+  SQL=$(java -jar ../utilityTools/SQLConverterRealDB-v1.08.jar "$rapidCB" ../$BASE_DIR/schema/oneToOne/s-schema.txt --src )
   #   SQL=$(java -jar ../utilityTools/sqlConvert-1.08.jar "$rapidCB" --src ../$BASE_DIR/ontop-files/mapping.obda)
   #SQL=$(obdaconvert ucq "$RAPID" ../$BASE_DIR/schema/oneToOne/t-schema.txt rapid --string --src)
   #   echo "$SQL"
@@ -124,7 +124,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
 
   START_TIME=$(date +%s%N)
   #SQL=$(obdaconvert ucq "$IQAROS" ../$BASE_DIR/schema/oneToOne/t-schema.txt iqaros --string --src)
-  SQL=$(java -jar ../utilityTools/SQLConverterRealDB.jar "$iqCB" ../$BASE_DIR/schema/oneToOne/s-schema.txt --src )
+  SQL=$(java -jar ../utilityTools/SQLConverterRealDB-v1.08.jar "$iqCB" ../$BASE_DIR/schema/oneToOne/s-schema.txt --src )
 
   #   SQL=$(java -jar ../utilityTools/sqlConvert-1.08.jar "$iqCB" --src ../$BASE_DIR/ontop-files/mapping.obda)
   #   echo "$SQL" 
@@ -171,7 +171,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
   graalCB=$(echo "$graalOutput" | sed 's/?/Q/g; s/VAR_/?/g;s/X/?/g;s,<[a-zA-Z0-9\:\/~][^#]*#,,g; s/>//g; s/:-/<-/g')
   START_TIME=$(date +%s%N)
   #SQL=$(obdaconvert ucq "$GRAAL" ../$BASE_DIR/schema/oneToOne/t-schema.txt graal --string --src)
-  SQL=$(java -jar ../utilityTools/SQLConverterRealDB.jar "$graalCB" ../$BASE_DIR/schema/oneToOne/s-schema.txt --src )
+  SQL=$(java -jar ../utilityTools/SQLConverterRealDB-v1.08.jar "$graalCB" ../$BASE_DIR/schema/oneToOne/s-schema.txt --src )
 
   #   SQL=$(java -jar ../utilityTools/sqlConvert-1.08.jar "$graalCB" --src ../$BASE_DIR/ontop-files/mapping.obda)
 #   echo "$graalOutput"
@@ -465,7 +465,7 @@ for ((i=0;i<$NUM_TESTS;++i)); do
  echo "Rewriting: $((${ONTOPRW[$REWRITE,$i]}/1000000)) milliseconds, Size: ${ONTOPRW[$SIZE,$i]}"
 #  echo "TW: $TW"
  START_TIME=$(date +%s%N)
- SQL=$(java -jar ../utilityTools/SQLConverterRealDB.jar "$TW" ../$BASE_DIR/schema/oneToOne/s-schema.txt --src )
+ SQL=$(java -jar ../utilityTools/SQLConverterRealDB-v1.08.jar "$TW" ../$BASE_DIR/schema/oneToOne/s-schema.txt --src )
 
   #   SQL=$(java -jar ../utilityTools/sqlConvert-1.08.jar "$TW" --src ../$BASE_DIR/ontop-files/mapping.obda)
   #echo "$SQL"
