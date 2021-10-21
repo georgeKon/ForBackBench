@@ -1,15 +1,15 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@source srcSpinaBifida[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/LAV/medium/src_Spina_Bifida.csv") .
-@source srcReadingDevice[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/LAV/medium/src_ReadingDevice.csv") .
-@source srcDisability[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/LAV/medium/src_Disability.csv") .
-@source srcMobilityDevice[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/LAV/medium/src_MobilityDevice.csv") .
-@source srcUpperLimbMobility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/LAV/medium/src_UpperLimbMobility.csv") .
-@source srcLightweightFoldableWheelchair[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/LAV/medium/src_LightweightFoldable_Wheelchair.csv") .
-@source srcDystonia[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/LAV/medium/src_Dystonia.csv") .
-@source srcPhysicalDisability[2] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/LAV/medium/src_PhysicalDisability.csv") .
-@source srcMovementAbility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/LAV/medium/src_MovementAbility.csv") .
-@source srcLimbMobility[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/LAV/medium/src_LimbMobility.csv") .
-@source srcFoldableWheelchair[1] : load-csv("/home/aa2c19/obdabenchmark/scenarios/Adolena/data/LAV/medium/src_Foldable_Wheelchair.csv") .
+@source srcSpinaBifida[2] : load-csv("../scenarios/Adolena/data/LAV/medium/src_Spina_Bifida.csv") .
+@source srcReadingDevice[1] : load-csv("../scenarios/Adolena/data/LAV/medium/src_ReadingDevice.csv") .
+@source srcDisability[1] : load-csv("../scenarios/Adolena/data/LAV/medium/src_Disability.csv") .
+@source srcMobilityDevice[2] : load-csv("../scenarios/Adolena/data/LAV/medium/src_MobilityDevice.csv") .
+@source srcUpperLimbMobility[1] : load-csv("../scenarios/Adolena/data/LAV/medium/src_UpperLimbMobility.csv") .
+@source srcLightweightFoldableWheelchair[1] : load-csv("../scenarios/Adolena/data/LAV/medium/src_LightweightFoldable_Wheelchair.csv") .
+@source srcDystonia[1] : load-csv("../scenarios/Adolena/data/LAV/medium/src_Dystonia.csv") .
+@source srcPhysicalDisability[2] : load-csv("../scenarios/Adolena/data/LAV/medium/src_PhysicalDisability.csv") .
+@source srcMovementAbility[1] : load-csv("../scenarios/Adolena/data/LAV/medium/src_MovementAbility.csv") .
+@source srcLimbMobility[1] : load-csv("../scenarios/Adolena/data/LAV/medium/src_LimbMobility.csv") .
+@source srcFoldableWheelchair[1] : load-csv("../scenarios/Adolena/data/LAV/medium/src_Foldable_Wheelchair.csv") .
 ReadingDevice(!X0397e42add804414b4c70f17c37346e9),requiresAbility(!Xf2a8782b16de41a780c93b5c08bd8217,!Y),Epilepsy(!X),IntellectualDisability(!X),Autism(!X),Amputation(!X),Device(?Xc956148d605947f3b0310dbfae3551ef),ManualWheelchair(!X),BrailleWatch(!X) :- srcReadingDevice(?Xc956148d605947f3b0310dbfae3551ef) .
 Dystonia(!Xf4fd26734bd94f63afddfe5f92ea74af),FaceToFaceCommunicationSoftware(?X),Kyphosis(?X),Hardofhearing(!X28a37f9f89844770981631ea586fa6b6),Cerebralpalsy(!X3151e66f24444664883247505e8e198d),Poliomyelitis(?X),LittleorNoSpeech(?X),Scoliosis(?X) :- srcDystonia(?X) .
 MovementAbility(?X),PhysicalAbility(!X9e015f7b4b3d43afa0b8f04eb9824a46),Stuttering(!Xdbeda2d562964b0091771a7d42cbd8c9),SpeechDisability(?X),LowerLimbMobility(?X) :- srcMovementAbility(?X) .
