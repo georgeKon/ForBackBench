@@ -98,7 +98,7 @@ Each run scripts run its corresponding Query script (queryTrivialMapping.sh, que
 	cd (to obda-benchmark folder inside project folder )
 	yarn && yarn build && npm link
  ```
-7. add obdabenchmark command to the environment variable by following commands:
+7. Add obdabenchmark command to the environment variable by following commands (this setp only is needed if you building a new scenario):
 ```
 	cd C:\Users\userName\AppData\Roaming\npm
 	set path=%PATH%;%CD%
@@ -360,3 +360,7 @@ python scripts/csvToGraph.py experiments/scenarios/Deep100/LAV/medium
 python scripts/csvToGraph.py experiments/scenarios/Deep100/GAV/medium 
 ```
 Repeat this step with each experiments you run.	
+
+
+
+**Note: to run each utility in isolation read** [this](https://github.com/georgeKon/ForBackBench/tree/OBDI/utilityTools#readme) 
