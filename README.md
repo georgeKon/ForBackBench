@@ -128,6 +128,11 @@ or
 
 When the code has finished, the results are printed to set of CSV files found in the experiments folder of the scenarios.
 
+#### Notes:
+- For Mac and Linux, these steps to run experiments and systems jar files.
+- For windows, follow same steps as Mac and Linux, but for [RDFox](https://github.com/dbunibas/chasebench/tree/master/tools/rdfox) and [ONTOP](https://sourceforge.net/projects/ontop4obda/files/) systems check the developers of the tools.
+- To run each utility in isolation read [this](https://github.com/georgeKon/ForBackBench/tree/OBDI/utilityTools#readme) 
+
 ### Experiments Folder Structure
 
 This is where the experiment results go
@@ -363,4 +368,5 @@ Repeat this step with each experiments you run.
 
 
 
-**Note: to run each utility in isolation read** [this](https://github.com/georgeKon/ForBackBench/tree/OBDI/utilityTools#readme) 
+<!-- **Note: to run each utility in isolation read** [this](https://github.com/georgeKon/ForBackBench/tree/OBDI/utilityTools#readme) 
+ -->
